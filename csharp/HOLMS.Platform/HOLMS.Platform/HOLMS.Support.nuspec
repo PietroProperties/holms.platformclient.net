@@ -21,4 +21,3 @@
     <file src="bin\Debug\HOLMS.Support.dll" target="lib\netstandard1.5\HOLMS.Support.dll" />
   </files>
 </package>
-

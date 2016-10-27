@@ -1,15 +1,16 @@
 ﻿{
   "supports": {},
   "dependencies": {
-    "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
-    "NETStandard.Library": "1.6.0",
     "Google.Protobuf": "3.1.0",
     "Grpc": "1.0.1-pre1",
+    "Grpc.Auth": "1.0.1-pre1",
+    "Grpc.Tools": "1.0.1-pre1",
+    "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+    "Moq": "4.6.38-alpha",
+    "NETStandard.Library": "1.6.0",
     "NodaTime": "2.0.0-alpha20160729",
-    "System.IdentityModel.Tokens.Jwt": "5.0.0",
-    "System.Runtime": "4.1.0.0",
-    "System.Runtime.Extensions": "4.1.0.0",
-    "System.Security.Claims": "4.0.1"
+    "System.IdentityModel.Tokens.Jwt": "5.0.0"
   },
   "frameworks": {
     "netstandard1.5": {}

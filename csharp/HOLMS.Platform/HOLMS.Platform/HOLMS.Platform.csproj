@@ -36,12 +36,19 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="HOLMS.Application.Client.nuspec" />
     <None Include="project.json" />
     <None Include="HOLMS.Support.nuspec" />
-    <None Include="Types\build.bat" />
     <None Include="HOLMS.Types.nuspec" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application.Client\AccessToken.cs" />
+    <Compile Include="Application.Client\ApplicationClient.cs" />
+    <Compile Include="Application.Client\AuthrnCapability.cs" />
+    <Compile Include="Application.Client\IApplicationClient.cs" />
+    <Compile Include="Application.Client\IApplicationClientConfig.cs" />
+    <Compile Include="Application.Client\MockApplicationClient.cs" />
+    <Compile Include="Application.Client\SessionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Support\Constants.cs" />
     <Compile Include="Support\Conversions\DateTimeConversions.cs" />
@@ -586,6 +593,7 @@
     <Compile Include="Types\Topics\PBXConnectorTopics.cs" />
     <Compile Include="Types\Topics\SupplyContextTopics.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
