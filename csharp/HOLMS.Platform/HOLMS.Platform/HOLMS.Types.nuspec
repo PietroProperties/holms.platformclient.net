@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>HOLMS.Types</id>
+    <version>$version$</version>
+    <title>HOLMS.Types</title>
+    <authors>shortbar</authors>
+    <owners>shortbar</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>RPC and data structure definitions for HOLMS.</description>
+    <copyright>Copyright © shortbar 2016</copyright>
+    <dependencies>
+      <dependency id="Google.Protobuf" version="3.1.0" />
+      <dependency id="Grpc" version="1.0.1-pre1" />
+      <dependency id="System.Runtime" version="4.1.0.0" />
+      <dependency id="System.Runtime.Extensions" version="4.1.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Debug\HOLMS.Types.dll" target="lib\netstandard1.5\HOLMS.Types.dll" />
+  </files>
+</package>

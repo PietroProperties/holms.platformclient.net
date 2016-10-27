@@ -1,0 +1,14 @@
+﻿using HOLMS.Types.Extensions;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HOLMS.Types.Operations.Housekeeping {
+    public partial class HousekeepingTime : EntityDTO<HousekeepingTimeIndicator> {
+        public override HousekeepingTimeIndicator GetIndicator() {
+            return EntityId;
+        }
+    }
+}
