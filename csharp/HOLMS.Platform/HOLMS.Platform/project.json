@@ -14,5 +14,6 @@
   },
   "frameworks": {
     "netstandard1.5": {}
-  }
+  },
+  "version": "1.0-*" 
 }
