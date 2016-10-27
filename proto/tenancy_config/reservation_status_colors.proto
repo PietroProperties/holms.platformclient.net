@@ -1,0 +1,28 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "primitive/status_color.proto";
+
+message ReservationStatusColors {
+	.holms.types.primitive.StatusColor unguaranteed_not_due_individual = 1;
+    .holms.types.primitive.StatusColor unguaranteed_not_due_group = 2;
+    .holms.types.primitive.StatusColor guaranteed_color_individual = 3;
+    .holms.types.primitive.StatusColor guaranteed_color_group = 4;
+    .holms.types.primitive.StatusColor unguaranteed_overdue_individual = 5;
+    .holms.types.primitive.StatusColor unguaranteed_overdue_group = 6;
+    .holms.types.primitive.StatusColor arrival_color_individual = 7;
+    .holms.types.primitive.StatusColor arrival_color_group = 8;
+    .holms.types.primitive.StatusColor inhouse_color_individual = 9;
+    .holms.types.primitive.StatusColor inhouse_color_group = 10;
+    .holms.types.primitive.StatusColor departure_color_individual = 11;
+    .holms.types.primitive.StatusColor departure_color_group = 12;
+    .holms.types.primitive.StatusColor checked_out_color_individual = 13;
+    .holms.types.primitive.StatusColor checked_out_color_group = 14;
+    .holms.types.primitive.StatusColor no_show_color_individual = 15;
+    .holms.types.primitive.StatusColor no_show_color_group = 16;
+    .holms.types.primitive.StatusColor canceled_color_individual = 17;
+    .holms.types.primitive.StatusColor canceled_color_group = 18;
+}

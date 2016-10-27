@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.pbx_events;
+option csharp_namespace = "HOLMS.Types.Operations.PBXEvents";
+option go_package = "operations/pbxevents";
+
+import "google/protobuf/timestamp.proto";
+
+message PBXEvent {
+	string raw_event_text = 1;
+	google.protobuf.Timestamp recorded_at = 2;
+}

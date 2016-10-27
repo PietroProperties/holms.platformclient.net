@@ -1,0 +1,36 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "google/protobuf/empty.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "booking/reservations/reservation_note.proto";
+import "booking/indicators/reservation_note_indicator.proto";
+
+message ReservationNoteSvcGetNotesResponse {
+	repeated .holms.types.booking.reservations.ReservationNote notes = 1;
+}
+
+message ReservationNoteFulfillmentRequest {
+	.holms.types.booking.indicators.ReservationNoteIndicator note = 1;
+	bool is_fulfilled = 2;
+}
+
+service ReservationNoteSvc {
+	rpc SetNoteFulfillment(ReservationNoteFulfillmentRequest)
+		returns (google.protobuf.Empty);
+
+	rpc GetReservationNotes (.holms.types.booking.indicators.ReservationIndicator)
+		returns (ReservationNoteSvcGetNotesResponse);
+
+	rpc AddReservationNote (.holms.types.booking.reservations.ReservationNote)
+		returns (google.protobuf.Empty);
+
+	rpc UpdateReservationNote (.holms.types.booking.reservations.ReservationNote)
+		returns (google.protobuf.Empty);
+
+	rpc RemoveReservationNote (.holms.types.booking.indicators.ReservationNoteIndicator)
+		returns (google.protobuf.Empty);
+}

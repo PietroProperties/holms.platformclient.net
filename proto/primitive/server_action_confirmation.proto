@@ -1,0 +1,9 @@
+﻿syntax = "proto3";
+
+package holms.types.primitive;
+option csharp_namespace = "HOLMS.Types.Primitive";
+option go_package = "primitive";
+
+message ServerActionConfirmation {
+	bool action_successful = 1;
+}

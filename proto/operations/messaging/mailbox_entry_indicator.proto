@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.messaging;
+option csharp_namespace = "HOLMS.Types.Operations.Messaging";
+option go_package = "operations/messaging";
+
+import "primitive/uuid.proto";
+
+message MailboxEntryIndicator {
+	.holms.types.primitive.Uuid id = 1;
+}

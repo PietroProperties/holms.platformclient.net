@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+package holms.types.money.folio;
+option csharp_namespace = "HOLMS.Types.Money.Folio";
+option go_package = "money/folio";
+
+import "primitive/monetary_amount.proto";
+import "money/folio/posted_charge_credit_tax_fee.proto";
+import "google/protobuf/timestamp.proto";
+
+message PostedChargeCredit {
+	string description = 1;
+	.holms.types.primitive.MonetaryAmount pre_tax_fee_subtotal = 2;
+	
+	// We need guest owner, just didn't put it in yet
+	//.holms.types.crm.guests.GuestIndicator guest_owner = 3;
+	
+	repeated PostedChargeCreditTaxFee taxes_fees = 4;
+	google.protobuf.Timestamp posted_time = 5;
+	repeated PostedChargeCreditTaxFee taxes = 6;
+	repeated PostedChargeCreditTaxFee fees = 7;
+}

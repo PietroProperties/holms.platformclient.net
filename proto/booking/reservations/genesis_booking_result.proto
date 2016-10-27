@@ -1,0 +1,19 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+import "booking/indicators/reservation_indicator.proto";
+
+message GenesisBookingResult {
+	holms.types.booking.indicators.ReservationIndicator res_indicator = 1;
+	enum BookingResult { 
+		BOOKED = 0;
+		UNAVAILABLE = 1;
+		UNPRICEABLE = 2;
+		POLICY_VIOLATION = 3;
+	}
+	BookingResult result = 2;
+	string booking_number = 3;
+}

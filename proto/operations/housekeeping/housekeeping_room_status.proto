@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.housekeeping;
+option csharp_namespace = "HOLMS.Types.Operations.Housekeeping";
+option go_package = "operations/housekeeping";
+
+import "operations/housekeeping/room_arrival_departure_status.proto";
+import "operations/rooms/room_indicator.proto";
+
+message HousekeepingRoomStatus {
+    holms.types.operations.rooms.RoomIndicator room = 1;
+    holms.types.operations.housekeeping.RoomArrivalDepartureStatus status = 2;
+    bool is_occupied = 3;
+}

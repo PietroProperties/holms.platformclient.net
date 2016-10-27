@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.crm.guests;
+option csharp_namespace = "HOLMS.Types.CRM.Guests";
+option go_package = "crm/guests";
+
+import "primitive/uuid.proto";
+
+message GuestIndicator {
+	holms.types.primitive.Uuid id = 1;
+}

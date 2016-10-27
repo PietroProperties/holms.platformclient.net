@@ -1,0 +1,24 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "booking/indicators/reservation_indicator.proto";
+import "booking/check_in/check_in_request_result.proto";
+
+message CheckInRequest {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	string presented_id = 2;
+	string vehicle_id = 3;
+	bool request_keep_guarantee = 4;
+}
+
+message CheckInServiceRequestResponse {
+	.holms.types.booking.check_in.CheckInRequestResult result = 1;
+}
+
+service CheckInService {
+	rpc StartStay (CheckInRequest)
+		returns (CheckInServiceRequestResponse);
+}

@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+option go_package = "tenancyconfig/rpc";
+
+import "primitive/zip_code.proto";
+
+message ZipCodeSvcGetCityStateByZipReq {
+	string zip_code = 1;
+}
+
+service ZipCodeSvc {
+	rpc GetCityStateByZip (ZipCodeSvcGetCityStateByZipReq) 
+		returns (.holms.types.primitive.ZipCode);
+}

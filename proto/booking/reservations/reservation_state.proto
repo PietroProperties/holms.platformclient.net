@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+enum ReservationState {
+        Open = 0;
+        Cancelled = 1;
+        NoShow = 2;
+        CheckedIn = 3;
+        CheckedOut = 4;
+		Genesis = 5;
+}

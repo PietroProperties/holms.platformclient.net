@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+option go_package = "money/cards";
+
+import "primitive/monetary_amount.proto";
+import "money/cards/card_terminal_indicator.proto";
+
+message PaymentCardAuthorizationRequest {
+	holms.types.primitive.MonetaryAmount amount = 1;
+	CardTerminalIndicator terminal_id = 2;
+}

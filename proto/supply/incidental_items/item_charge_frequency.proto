@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.incidental_items;
+option csharp_namespace = "HOLMS.Types.Supply.IncidentalItems";
+option go_package = "supply/incidentalitems";
+
+enum ItemChargeFrequency {
+	DAILY_CHARGE = 0;
+	ONE_TIME_CHARGE = 1;
+}

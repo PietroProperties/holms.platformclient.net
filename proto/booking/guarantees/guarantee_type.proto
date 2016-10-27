@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.guarantees;
+option csharp_namespace = "HOLMS.Types.Booking.Guarantees";
+option go_package = "booking/guarantees";
+
+enum GuaranteeType {
+	CHECK = 0;
+	CARD = 1;
+}

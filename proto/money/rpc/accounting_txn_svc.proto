@@ -1,0 +1,50 @@
+﻿syntax = "proto3";
+
+package holms.types.money.rpc;
+option csharp_namespace = "HOLMS.Types.Money.RPC";
+option go_package = "money/rpc";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+import "primitive/pb_inclusive_calendar_date_range.proto";
+import "crm/guests/guest_indicator.proto";
+import "money/accounting/accounting_transaction_export_format.proto";
+import "money/accounting/accounting_txn_export_status.proto";
+import "money/accounting/accounting_transaction_with_guest.proto";
+import "money/accounting/iif_export_configuration.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+message AssignGuestOwnerToTxnReq {
+	.holms.types.money.accounting.AccountingTransactionWithGuest accounting_transaction_with_guest = 1;
+	.holms.types.crm.guests.GuestIndicator guest = 2;
+}
+
+message AccountTxnExportSvcGetPropertyTransactionsInFormatRequest {
+	.holms.types.money.accounting.AccountingTransactionExportFormat format = 1;
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
+	.holms.types.primitive.PbInclusiveCalendarDateRange date_range = 3;
+}
+
+message AccountTxnExportSvcGetPropertyTransactionsInFormatResponse {
+	bytes exported_transactions = 1;
+}
+
+service AccountingTxnSvc {
+	rpc AssignGuestOwnerToTransaction(AssignGuestOwnerToTxnReq) 
+		returns (google.protobuf.Empty);
+	
+	rpc GetTenancyExportConfig (google.protobuf.Empty) 
+		returns (.holms.types.money.accounting.IIFExportConfiguration);
+
+	rpc SetTenancyExportConfig (.holms.types.money.accounting.IIFExportConfiguration)
+		returns (.holms.types.money.accounting.IIFExportConfiguration);
+
+	rpc GetExportJobStatus(google.protobuf.Empty)
+		returns (.holms.types.money.accounting.AccountingTxnExportStatus);
+
+	rpc UpdateLastExportRunTime(google.protobuf.Timestamp) 
+		returns (google.protobuf.Empty);
+
+	rpc GetPropertyTransactionsInFormat(AccountTxnExportSvcGetPropertyTransactionsInFormatRequest)
+		returns (AccountTxnExportSvcGetPropertyTransactionsInFormatResponse);
+}

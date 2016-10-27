@@ -1,0 +1,23 @@
+﻿syntax = "proto3";
+
+package holms.types.money.accounting;
+option csharp_namespace = "HOLMS.Types.Money.Accounting";
+option go_package = "money/accounting";
+
+import "money/accounting/account_indicator.proto";
+import "money/accounting/ledger_account_category.proto";
+import "money/accounting/transaction_line_designation.proto";
+import "money/accounting/transaction_line_transfer.proto";
+import "primitive/monetary_amount.proto";
+
+message AccountingTransactionLine {
+	holms.types.primitive.MonetaryAmount debit_amount = 1;
+	holms.types.primitive.MonetaryAmount credit_amount = 2;
+	string narration = 3;
+	holms.types.money.accounting.AccountIndicator account = 4;
+	string account_name = 5;
+	LedgerAccountCategory account_type = 6;
+	TransactionLineDesignation designation = 7;
+	TransactionLineTransfer transfer_indication = 8;
+}
+  

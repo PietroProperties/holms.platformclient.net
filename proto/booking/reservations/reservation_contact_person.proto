@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+import "booking/indicators/reservation_contact_person_indicator.proto";
+
+message ReservationContactPerson {
+    holms.types.booking.indicators.ReservationContactPersonIndicator entity_id = 1;
+    string name = 2;
+    string email = 3;
+}

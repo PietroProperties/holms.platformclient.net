@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.check_in;
+option csharp_namespace = "HOLMS.Types.Booking.CheckIn";
+option go_package = "booking/checkin";
+
+import "booking/indicators/reservation_indicator.proto";
+import "primitive/pb_local_date.proto";
+import "crm/guests/guest_indicator.proto";
+import "primitive/monetary_amount.proto";
+import "operations/rooms/room_indicator.proto";
+
+message ReservationCheckInNotification {
+	string j_w_token = 1;
+	holms.types.booking.indicators.ReservationIndicator reservation = 2;
+	holms.types.primitive.PbLocalDate check_in_date = 3;
+	holms.types.operations.rooms.RoomIndicator room_id = 4;
+	holms.types.crm.guests.GuestIndicator guest_id = 5;
+	holms.types.primitive.MonetaryAmount average_rate = 6;
+	string reservation_booking_number = 7;
+	bool keep_guarantee_requested = 8;
+}

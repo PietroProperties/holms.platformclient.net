@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package holms.types.booking.reservations;
+
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+
+import "booking/indicators/reservation_indicator.proto";
+
+message ReservationBookedNotification {
+	string j_w_token = 1;
+	holms.types.booking.indicators.ReservationIndicator reservation = 2;
+}

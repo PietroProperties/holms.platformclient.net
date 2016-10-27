@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package holms.types.pbx_connector;
+option csharp_namespace = "HOLMS.Types.PBXConnector";
+
+message TCPRoomStatusMessage {
+	string j_w_token = 1;
+	string terminal_identifier = 2;
+	string status_code = 3;
+}

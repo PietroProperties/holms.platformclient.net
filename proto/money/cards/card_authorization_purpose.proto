@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+option go_package = "money/cards";
+
+enum CardAuthorizationPurpose {
+	CARD_AUTHORIZATION_PURPOSE_PAYMENT = 0;
+	CARD_AUTHORIZATION_PURPOSE_GUARANTEE = 1;
+}

@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.incidental_items;
+option csharp_namespace = "HOLMS.Types.Supply.IncidentalItems";
+option go_package = "supply/incidentalsupply";
+
+import "booking/indicators/incidental_item_reservation_indicator.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
+
+message IncidentalItemAvailabilityQuery {
+	holms.types.booking.indicators.IncidentalItemReservationIndicator entity_id = 1;
+	bool is_for_existing_ii_reservation = 2;
+	holms.types.primitive.PbInclusiveOpsdateRange date_range = 3;
+	holms.types.supply.incidental_items.IncidentalItemIndicator reserved_item = 4;
+}

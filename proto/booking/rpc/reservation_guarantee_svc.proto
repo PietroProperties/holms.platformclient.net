@@ -1,0 +1,51 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "primitive/monetary_amount.proto";
+import "booking/guarantees/card_guarantee_tender_result.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "money/cards/not_present_payment_card.proto";
+import "money/cards/payment_card_indicator.proto";
+
+message ResGSvcTenderCheckGuaranteeRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	.holms.types.primitive.MonetaryAmount amount_tendered = 2;
+	string check_number = 3;
+}
+
+message ResGSvcTenderCheckGuaranteeResponse {
+	bool result = 1;
+}
+
+message ResGSvcTenderNewNotPresentCardGuaranteeRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	.holms.types.money.cards.NotPresentPaymentCard card = 2;
+}
+
+message ResGSvcTenderStoredNotPresentCardGuaranteeRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	.holms.types.money.cards.PaymentCardIndicator card = 2;
+}
+
+message ResGSvcTenderNotPresentCardGuaranteeResponse {
+	.holms.types.booking.guarantees.CardGuaranteeTenderResult result = 1;
+}
+
+
+service ReservationGuaranteeSvc {
+	rpc GetRemainingGuaranteeOwed (.holms.types.booking.indicators.ReservationIndicator)
+		returns (.holms.types.primitive.MonetaryAmount);
+
+	rpc TenderCheckGuarantee (ResGSvcTenderCheckGuaranteeRequest)
+		returns (ResGSvcTenderCheckGuaranteeResponse);
+
+	rpc TenderNewNotPresentCardGuarantee (ResGSvcTenderNewNotPresentCardGuaranteeRequest)
+		returns (ResGSvcTenderNotPresentCardGuaranteeResponse);
+
+	rpc TenderStoredNotPresentCardGuarantee (ResGSvcTenderStoredNotPresentCardGuaranteeRequest)
+		returns (ResGSvcTenderNotPresentCardGuaranteeResponse);
+}
+

@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "primitive/template_indicator.proto";
+
+message DefaultTemplates {
+	holms.types.primitive.TemplateIndicator reservation_confirmation_template_id = 1;
+	holms.types.primitive.TemplateIndicator arrival_letter_template_id = 2;
+	holms.types.primitive.TemplateIndicator individual_folio_template_id = 3;
+	holms.types.primitive.TemplateIndicator group_folio_template_id = 4;
+}

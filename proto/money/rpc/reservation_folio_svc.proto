@@ -1,0 +1,156 @@
+﻿syntax = "proto3";
+
+package holms.types.money.rpc;
+option csharp_namespace = "HOLMS.Types.Money.RPC";
+option go_package = "money/rpc";
+
+import "booking/indicators/reservation_indicator.proto";
+import "google/protobuf/empty.proto";
+import "money/cards/card_authorization_purpose.proto";
+import "money/cards/card_authorization_response.proto";
+import "money/cards/merchant_authorization_indicator.proto";
+import "money/cards/not_present_payment_card.proto";
+import "money/cards/payment_card_indicator.proto";
+import "money/cards/tokenized_payment_card.proto";
+import "money/folio/folio_state.proto";
+import "primitive/monetary_amount.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
+
+enum ReservationFolioSvcPostChargesResult {
+	RESERVATION_FOLIO_SVC_POST_CHARGES_RESULT_OK = 0;
+	RESERVATION_FOLIO_SVC_POST_CHARGES_RESULT_MISSING_HOUSE_ACCOUNT = 1;
+	RESERVATION_FOLIO_SVC_POST_CHARGES_RESULT_MISSING_RESERVATION = 2;
+}
+
+message ReservationFolioSvcPostChargesResponse {
+	ReservationFolioSvcPostChargesResult result = 1;
+}
+
+enum ReservationFolioSvcGetFolioStateResult {
+	RESERVATION_FOLIO_SVC_GET_FOLIO_STATE_OK = 0;
+	RESERVATION_FOLIO_SVC_GET_FOLIO_STATE_MISSING_HOUSE_ACCOUNT = 1;
+
+}
+
+message ReservationFolioSvcGetFolioStateResponse {
+	ReservationFolioSvcGetFolioStateResult result = 1;
+	.holms.types.money.folio.FolioState folio_state = 2;
+}
+
+enum ReservationFolioSvcPostCashPaymentResult {
+	RESERVATION_FOLIO_SVC_POST_CASH_PAYMENT_OK = 0;
+	RESERVATION_FOLIO_SVC_POST_CASH_PAYMENT_MISSING_HOUSE_ACCOUNT = 1;
+	RESERVATION_FOLIO_SVC_POST_CASH_PAYMENT_INVALID_AMOUNT = 2;
+}
+
+message ReservationFolioSvcPostCashPaymentResponse {
+	ReservationFolioSvcPostCashPaymentResult result = 1;
+}
+
+enum ReservationFolioSvcPostCheckPaymentResult {
+	RESERVATION_FOLIO_SVC_POST_CHECK_PAYMENT_OK = 0;
+	RESERVATION_FOLIO_SVC_POST_CHECK_PAYMENT_MISSING_HOUSE_ACCOUNT = 1;
+	RESERVATION_FOLIO_SVC_POST_CHECK_PAYMENT_INVALID_AMOUNT = 2;
+}
+
+message ReservationFolioSvcPostCheckPaymentResponse {
+	ReservationFolioSvcPostCheckPaymentResult result = 1;
+}
+
+message ReservationFolioSvcPostCheckPaymentRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	.holms.types.primitive.MonetaryAmount amount = 2;
+}
+
+message CardAuthorizationFromTokenRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	.holms.types.money.cards.PaymentCardIndicator card = 2;
+	holms.types.primitive.MonetaryAmount amount = 3;
+	holms.types.money.cards.CardAuthorizationPurpose purpose = 4;
+}
+
+message CardAuthorizationFromPresentCardRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	holms.types.primitive.MonetaryAmount amount = 2;
+	holms.types.money.cards.CardAuthorizationPurpose purpose = 3;
+}
+
+message CardAuthorizationFromNotPresentCardRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	.holms.types.money.cards.NotPresentPaymentCard card = 2;
+	holms.types.primitive.MonetaryAmount amount = 3;
+	holms.types.money.cards.CardAuthorizationPurpose purpose = 4;
+}
+
+enum ReservationFolioSvcPostCardPaymentResult {
+	RESERVATION_FOLIO_SVC_POST_CARD_PAYMENT_OK = 0;
+	RESERVATION_FOLIO_SVC_POST_CARD_PAYMENT_MISSING_HOUSE_ACCOUNT = 1;
+	RESERVATION_FOLIO_SVC_POST_CARD_PAYMENT_MISSING_ASSET_ACCOUNT = 2;
+	RESERVATION_FOLIO_SVC_POST_CARD_PAYMENT_INVALID_AMOUNT = 3;
+	RESERVATION_FOLIO_SVC_POST_CARD_PAYMENT_AUTHORIZATION_UNAVAILABLE = 4;
+}
+
+message ReservationFolioSvcPostCardPaymentResponse {
+	ReservationFolioSvcPostCardPaymentResult result = 1;
+}
+
+message ReservationFolioSvcPostCardPaymentRequest {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	holms.types.money.cards.MerchantAuthorizationIndicator authorization = 2;
+	holms.types.primitive.MonetaryAmount amount = 3;
+}
+
+message ReservationFolioSvcPostCashPaymentRequest {
+	holms.types.primitive.MonetaryAmount amount_paid = 1;
+	holms.types.booking.indicators.ReservationIndicator reservation = 2;
+}
+
+message ReservationFolioSvcGetOnFileCardsResponse {
+	repeated holms.types.money.cards.TokenizedPaymentCard cards = 1;
+}
+
+message ReservationFolioSvcPostLodgingChargeCorrectionRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	string description = 2;
+	.holms.types.primitive.MonetaryAmount adjustment_subtotal = 3;
+	bool adjustment_taken_from_guest = 4;
+}
+
+message ReservationFolioSvcPostInventoryChargeCorrectionRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	.holms.types.supply.incidental_items.IncidentalItemIndicator inventory_item = 2;
+	string description = 3;
+	.holms.types.primitive.MonetaryAmount adjustment_subtotal = 4;
+	bool adjustment_taken_from_guest = 5;
+}
+
+service ReservationFolioSvc {
+	rpc GetFolioState(.holms.types.booking.indicators.ReservationIndicator)
+		returns(ReservationFolioSvcGetFolioStateResponse);
+
+	// Cards
+
+	rpc AddCardAuthorizationFromToken(CardAuthorizationFromTokenRequest)
+		returns (.holms.types.money.cards.CardAuthorizationResponse);
+	rpc AddCardAuthorizationFromPresentedCard(CardAuthorizationFromPresentCardRequest)
+		returns (.holms.types.money.cards.CardAuthorizationResponse);
+	rpc AddCardAuthorizationFromNotPresentCard(CardAuthorizationFromNotPresentCardRequest)
+		returns (.holms.types.money.cards.CardAuthorizationResponse);
+	rpc GetOnFileCards(holms.types.booking.indicators.ReservationIndicator) 
+		returns(ReservationFolioSvcGetOnFileCardsResponse);
+	
+	// Payments
+
+	rpc PostCardPayment(ReservationFolioSvcPostCardPaymentRequest)
+		returns (ReservationFolioSvcPostCardPaymentResponse);
+	rpc PostCheckPayment(ReservationFolioSvcPostCheckPaymentRequest)
+		returns (ReservationFolioSvcPostCheckPaymentResponse);
+	rpc PostCashPayment(ReservationFolioSvcPostCashPaymentRequest)
+		returns (ReservationFolioSvcPostCashPaymentResponse);
+
+	// Charge corrections
+	rpc PostLodgingChargeCorrection (ReservationFolioSvcPostLodgingChargeCorrectionRequest)
+		returns (google.protobuf.Empty);
+	rpc PostInventoryChargeCorrection (ReservationFolioSvcPostInventoryChargeCorrectionRequest)
+		returns (google.protobuf.Empty);
+}

@@ -1,0 +1,34 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rpc;
+option csharp_namespace = "HOLMS.Types.Operations.RPC";
+option go_package = "operations/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "operations/calendar_message.proto";
+
+message CalendarMsgSvcEnumResponse {
+	repeated .holms.types.operations.CalendarMessage messages = 1;
+}
+
+service CalendarMsgSvc {
+	rpc All(.google.protobuf.Empty) 
+		returns (CalendarMsgSvcEnumResponse);
+
+	rpc GetById(.holms.types.operations.CalendarMessageIndicator) 
+		returns (.holms.types.operations.CalendarMessage);
+
+	rpc Create(.holms.types.operations.CalendarMessage) 
+		returns (.holms.types.operations.CalendarMessage);
+
+	rpc Update(.holms.types.operations.CalendarMessage) 
+		returns (.holms.types.operations.CalendarMessage);
+
+	rpc Delete(.holms.types.operations.CalendarMessage) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+
+	rpc AllDuring(.holms.types.primitive.PbInclusiveOpsdateRange) 
+		returns (CalendarMsgSvcEnumResponse);
+}

@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.money.folio;
+option csharp_namespace = "HOLMS.Types.Money.Folio";
+option go_package = "money/folio";
+
+import "primitive/monetary_amount.proto";
+import "money/folio/posted_card_authorization.proto";
+import "money/folio/posted_charge_credit.proto";
+import "money/folio/posted_payment.proto";
+
+message FolioState {
+	repeated PostedChargeCredit charge_credits = 1;
+	repeated PostedCardAuthorization card_authorizations = 2;
+	repeated PostedPayment payments = 3;
+
+	.holms.types.primitive.MonetaryAmount gross_payments = 4;
+	.holms.types.primitive.MonetaryAmount available_payment_authorization_balance = 5;
+	.holms.types.primitive.MonetaryAmount available_guarantee_authorization_balance = 6;
+}
+

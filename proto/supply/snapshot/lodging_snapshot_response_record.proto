@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.snapshot;
+option csharp_namespace = "HOLMS.Types.Supply.Snapshot";
+option go_package = "supply/snapshot";
+
+import "primitive/pb_local_date.proto";
+import "primitive/monetary_amount.proto";
+import "supply/room_types/room_type_indicator.proto";
+import "supply/snapshot/lodging_snapshot_quantity.proto";
+
+message LodgingSnapshotResponseRecord {
+	holms.types.supply.room_types.RoomTypeIndicator room_type = 1;
+	holms.types.primitive.PbLocalDate date = 2;
+
+	holms.types.primitive.MonetaryAmount offered_price = 3;
+	holms.types.supply.snapshot.LodgingSnapshotQuantity quantities = 4;
+}

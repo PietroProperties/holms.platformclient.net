@@ -1,0 +1,23 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+option go_package = "money/cards";
+
+import "money/cards/card_merchant_indicator.proto";
+import "money/cards/merchant_batch_indicator.proto";
+import "money/cards/merchant_capture.proto";
+import "money/cards/processor_transaction_result.proto";
+import "primitive/monetary_amount.proto";
+
+message MerchantBatch {
+	MerchantBatchIndicator entity_id = 1;
+	CardMerchantIndicator merchant_id = 2;
+	string merchant_name = 3;
+	ProcessorTransactionResult result = 4;
+	int32 sequence_number = 5;
+	int32 transaction_count = 6;
+	holms.types.primitive.MonetaryAmount total_amount = 7;
+	string date = 8;
+	repeated .holms.types.money.cards.MerchantCapture captures = 9;
+}

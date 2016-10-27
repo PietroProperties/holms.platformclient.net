@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+enum ReservationRawGuaranteeStatus {
+	RAW_GUARANTEE_STATUS_GUARANTEED = 0;
+	RAW_GUARANTEE_STATUS_NOT_GUARANTEED = 1;
+	RAW_GUARANTEE_STATUS_HAS_PROVISIONAL_GUARANTEE = 2;
+}
+

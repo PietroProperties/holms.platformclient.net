@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.snapshot;
+option csharp_namespace = "HOLMS.Types.Supply.Snapshot";
+option go_package = "supply/snapshot";
+
+message LodgingSnapshotQuantity {
+	int32 base_supply = 1;
+	int32 available = 2;
+	int32 reserved = 3;
+	int32 management_holds = 4;
+	int32 maintenance_holds = 5;
+	int32 group_booking_holds_total = 6;
+	int32 group_booking_holds_used = 7;
+}

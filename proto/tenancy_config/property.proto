@@ -1,0 +1,39 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "google/protobuf/duration.proto";
+import "google/protobuf/timestamp.proto";
+import "money/cards/card_merchant_indicator.proto";
+import "primitive/monetary_amount.proto";
+import "booking/indicators/cancellation_policy_indicator.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+message Property {
+	.holms.types.tenancy_config.indicators.PropertyIndicator entity_id = 1;
+	string description = 2;
+	google.protobuf.Duration checkin_time_of_day = 3;
+	google.protobuf.Duration check_out_time_of_day = 4;
+	google.protobuf.Duration rollover_time_of_day = 5;
+    uint32 allowed_early_checkin_hours = 6;
+	string iif_docnum_prefix = 7;
+	string iif_customer_name = 8;
+	holms.types.primitive.MonetaryAmount checkin_deposit = 9;
+	google.protobuf.Timestamp last_revenue_accrual_start = 10;
+	google.protobuf.Timestamp last_date_hk_rollover_ran = 11;
+	string address1 = 12;
+	string address2 = 13;
+	string city = 14;
+	string state = 15;
+	string zip = 16;
+	string phone_number = 17;
+	holms.types.money.cards.CardMerchantIndicator card_merchant = 18;
+	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 19;
+	holms.types.primitive.MonetaryAmount maximum_authorization_amount = 20;
+	int32 default_stay_length = 21;
+	string website = 22;
+	string reservation_email = 23;
+	string fax_number = 30;
+}

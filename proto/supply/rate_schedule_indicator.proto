@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.supply;
+option csharp_namespace = "HOLMS.Types.Supply";
+option go_package = "supply";
+
+import "primitive/uuid.proto";
+
+message RateScheduleIndicator {
+	holms.types.primitive.Uuid id = 1;
+}

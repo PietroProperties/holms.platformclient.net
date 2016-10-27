@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.supply;
+option csharp_namespace = "HOLMS.Types.Supply";
+option go_package = "supply";
+
+import "booking/indicators/group_booking_indicator.proto";
+import "supply/room_types/room_type_indicator.proto";
+
+message GroupBookingHold {
+	holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	holms.types.supply.room_types.RoomTypeIndicator room_type = 2;
+	uint32 total_quantity = 3;
+	uint32 used_quantity = 4;
+}

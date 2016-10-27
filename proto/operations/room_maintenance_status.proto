@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+package holms.types.operations;
+option csharp_namespace = "HOLMS.Types.Operations";
+option go_package = "operations";
+
+enum RoomMaintenanceState {
+	CLEAN = 0;
+    CLEAN_AND_SHEETS_CHANGED = 1;
+    DEEP_CLEANING = 2;
+    DIRTY = 3;
+    DUST_ROOM = 4;
+    INSPECT = 5;
+    LEFT_DIRTY = 6;
+    MAID_IN_ROOM = 7;
+    SHOW_ROOM = 8;
+}

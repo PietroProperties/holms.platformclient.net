@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "google/protobuf/duration.proto";
+import "primitive/monetary_amount.proto";
+
+message RoomCallBillingRates {
+	google.protobuf.Duration free_call_grace_period = 1;
+	string local_area_code = 2;
+	.holms.types.primitive.MonetaryAmount local_first_minute_charge = 3;
+	.holms.types.primitive.MonetaryAmount local_additional_minute_charge = 4;
+	.holms.types.primitive.MonetaryAmount long_distance_first_minute_charge = 5;
+	.holms.types.primitive.MonetaryAmount long_distance_additional_minute_charge = 6;
+	.holms.types.primitive.MonetaryAmount international_first_minute_charge = 7;
+	.holms.types.primitive.MonetaryAmount international_additional_minute_charge = 8;
+	.holms.types.primitive.MonetaryAmount toll_free_flat_rate = 9;
+	.holms.types.primitive.MonetaryAmount directory_assistance_flat_rate = 10;
+}

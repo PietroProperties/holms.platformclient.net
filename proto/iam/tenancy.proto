@@ -1,0 +1,29 @@
+﻿syntax = "proto3";
+
+package holms.types.iam;
+option csharp_namespace = "HOLMS.Types.IAM";
+option go_package = "iam";
+
+import "iam/tenancy_indicator.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+import "tenancy_config/reservation_defaults.proto";
+import "tenancy_config/phone_code.proto";
+import "tenancy_config/hk_phone_codes.proto";
+import "tenancy_config/reservation_status_colors.proto";
+import "tenancy_config/room_call_billing_rates.proto";
+import "tenancy_config/room_status_colors.proto";
+
+message Tenancy {
+	holms.types.iam.TenancyIndicator entity_id = 1;
+	string tenancy_name = 2;
+	int32 dust_clean_after_days = 3;
+	int32 mandatory_cleaning_after_in_house_days = 4;
+	int32 mandatory_sheet_cleaning_after_in_house_days = 5;
+	repeated holms.types.tenancy_config.indicators.PropertyIndicator properties = 6;
+	repeated holms.types.tenancy_config.PhoneCode phone_codes = 7;
+	holms.types.tenancy_config.ReservationDefaults reservation_defaults = 8;
+	holms.types.tenancy_config.ReservationStatusColors reservation_status_colors = 9;
+	holms.types.tenancy_config.RoomStatusColors room_status_colors = 10;
+	holms.types.tenancy_config.HKPhoneCodes h_k_phone_codes = 11;
+	holms.types.tenancy_config.RoomCallBillingRates room_call_billing_rates = 12;
+}

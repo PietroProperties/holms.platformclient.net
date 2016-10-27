@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+message RoomStatusSettings {
+	int32 dust_room_after_in_house_days = 1;
+	int32 mandatory_cleaning_after_in_house_days = 2;
+	int32 sheet_change_required_after_in_house_days = 3;
+}

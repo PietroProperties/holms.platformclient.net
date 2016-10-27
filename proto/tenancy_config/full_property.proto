@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "supply/room_types/full_room_type.proto";
+import "tenancy_config/property.proto";
+
+message FullProperty {
+	holms.types.tenancy_config.Property property = 1;
+	repeated holms.types.supply.room_types.FullRoomType room_types = 2;
+}

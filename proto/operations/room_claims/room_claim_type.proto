@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.room_claims;
+option csharp_namespace = "HOLMS.Types.Operations.RoomClaims";
+option go_package = "operations/roomclaims";
+
+enum RoomClaimType {
+	RESERVATION = 0;
+	OUT_OF_ORDER = 1;
+}

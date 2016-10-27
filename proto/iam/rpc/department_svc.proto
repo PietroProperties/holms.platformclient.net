@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.iam.rpc;
+option csharp_namespace = "HOLMS.Types.IAM.RPC";
+option go_package = "iam/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "iam/department.proto";
+import "iam/department_indicator.proto";
+
+message DepartmentSvcAllResponse {
+	repeated .holms.types.iam.Department departments = 1;
+}
+
+service DepartmentSvc {
+	rpc All(.google.protobuf.Empty) 
+		returns (DepartmentSvcAllResponse);
+
+	rpc GetById(.holms.types.iam.DepartmentIndicator) 
+		returns (.holms.types.iam.Department);
+
+	rpc Create(.holms.types.iam.Department) 
+		returns (.holms.types.iam.Department);
+
+	rpc Update(.holms.types.iam.Department) 
+		returns (.holms.types.iam.Department);
+
+	rpc Delete(.holms.types.iam.Department) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

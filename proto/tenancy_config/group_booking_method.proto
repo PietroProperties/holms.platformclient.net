@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "tenancy_config/indicators/group_booking_method_indicator.proto";
+
+message GroupBookingMethod {
+	.holms.types.tenancy_config.indicators.GroupBookingMethodIndicator entity_id = 1;
+	string description = 2;
+}

@@ -1,0 +1,40 @@
+﻿syntax = "proto3";
+
+package holms.types.iam.rpc;
+option csharp_namespace = "HOLMS.Types.IAM.RPC";
+option go_package = "iam/rpc";
+
+import "iam/client_instance_indicator.proto";
+import "primitive/session_context.proto";
+
+enum SessionSvcStartSessionResult {
+    SUCCESS = 0;
+	INACTIVE = 1;
+	FAILURE = 2;
+}
+
+message SessionSvcStartSessionRequest {
+	string candidate_username = 1;
+	string candidate_password = 2;
+	.holms.types.iam.ClientInstanceIndicator client_instance_id = 3;
+	string oauth_client_id = 4;
+}
+
+message TokenRefreshRequest {
+	string grant_type = 1;
+	string refresh_token = 2;
+	string scope = 3;
+}
+
+message SessionSvcStartSessionResponse {
+	SessionSvcStartSessionResult result = 1;
+	.holms.types.primitive.SessionContext session_context = 2;
+}
+
+service SessionSvc {
+	rpc TryStartSession (SessionSvcStartSessionRequest)	
+		returns (SessionSvcStartSessionResponse);
+		
+	rpc RefreshAccessToken (TokenRefreshRequest)	
+		returns (SessionSvcStartSessionResponse);
+}

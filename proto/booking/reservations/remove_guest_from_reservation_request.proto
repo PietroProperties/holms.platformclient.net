@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+import "crm/guests/guest_indicator.proto";
+import "booking/indicators/reservation_indicator.proto";
+
+message RemoveGuestFromReservationRequest {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	holms.types.crm.guests.GuestIndicator guest = 2;
+}

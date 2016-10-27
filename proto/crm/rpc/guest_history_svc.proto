@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.crm.rpc;
+option csharp_namespace = "HOLMS.Types.CRM.RPC";
+option go_package = "crm/rpc";
+
+import "crm/guests/guest_indicator.proto";
+import "crm/guests/guest_history.proto";
+
+service GuestHistorySvc {
+	rpc GetGuestHistory (.holms.types.crm.guests.GuestIndicator) returns (.holms.types.crm.guests.GuestHistory);
+}

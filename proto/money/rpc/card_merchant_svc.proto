@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.money.rpc;
+option csharp_namespace = "HOLMS.Types.Money.RPC";
+option go_package = "money/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "money/cards/card_merchant.proto";
+import "money/cards/card_merchant_indicator.proto";
+
+message CardMerchantSvcEnumResponse {
+	repeated .holms.types.money.cards.CardMerchant card_merchants = 1;
+}
+
+service CardMerchantSvc {
+	rpc All(.google.protobuf.Empty) 
+		returns (CardMerchantSvcEnumResponse);
+
+	rpc GetById(.holms.types.money.cards.CardMerchantIndicator)
+		returns (.holms.types.money.cards.CardMerchant);
+
+	rpc Create(.holms.types.money.cards.CardMerchant)
+		returns (.holms.types.money.cards.CardMerchant);
+
+	rpc Update(.holms.types.money.cards.CardMerchant)
+		returns (.holms.types.money.cards.CardMerchant);
+
+	rpc Delete(.holms.types.money.cards.CardMerchant) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

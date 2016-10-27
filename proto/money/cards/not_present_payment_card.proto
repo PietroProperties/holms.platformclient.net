@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+option go_package = "money/cards";
+
+message NotPresentPaymentCard {
+	string card_number = 1;
+	string cvc = 2;
+	int32 expiry_month = 3;
+	int32 four_digit_expiry_year = 4;
+	string zipcode = 5;
+	string cardholder_name = 6;
+}

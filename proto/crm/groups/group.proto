@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+package holms.types.crm.groups;
+option csharp_namespace = "HOLMS.Types.CRM.Groups";
+option go_package = "crm/groups";
+
+import "crm/groups/group_indicator.proto";
+import "crm/groups/group_type.proto";
+import "primitive/contact_information.proto";
+import "primitive/monetary_amount.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+message Group {
+    .holms.types.crm.groups.GroupIndicator entity_id = 1;
+	string name = 2;
+	GroupType group_type = 3;
+	string group_number = 4;
+	.holms.types.primitive.MonetaryAmount credit_limit = 5;
+	bool active = 6;
+	.holms.types.primitive.ContactInformation contact_info = 7;
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 8;
+}

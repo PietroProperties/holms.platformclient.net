@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+option go_package = "tenancyconfig/rpc";
+
+import "google/protobuf/empty.proto";
+import "tenancy_config/room_status_colors.proto";
+
+service RoomStatusColorsSvc {
+	rpc Get (google.protobuf.Empty) 
+		returns (.holms.types.tenancy_config.RoomStatusColors);
+
+	rpc Set (.holms.types.tenancy_config.RoomStatusColors)
+		returns (.holms.types.tenancy_config.RoomStatusColors);
+}

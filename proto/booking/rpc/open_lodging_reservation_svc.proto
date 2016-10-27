@@ -1,0 +1,87 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "google/protobuf/empty.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "operations/room_claims/room_assignment_by_night.proto";
+import "operations/room_claims/reservation_room_assignment_result.proto";
+import "booking/reservations/reservation_room_assignment_schedule.proto";
+import "booking/reservations/reservation_contact_person.proto";
+import "booking/indicators/reservation_contact_person_indicator.proto";	
+import "booking/history/history_event.proto";
+import "operations/housekeeping/housekeeping_time_indicator.proto";
+import "booking/reservations/recommended_checkin_card_authorization_amounts.proto";
+import "booking/reservation_associated_parties.proto";
+import "booking/history/reservation_creation_summary.proto";
+import "booking/history/reservation_amendment_summary.proto";
+
+message UpdateRoomAssignmentsRequest {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	repeated holms.types.operations.room_claims.RoomAssignmentByNight assignments = 2;
+}
+
+message UpdateRoomAssignmentsResponse {
+	holms.types.operations.room_claims.ReservationRoomAssignmentResult result = 1;
+}
+
+message GetReservationHistoryResponse {
+	repeated holms.types.booking.history.HistoryEvent res_history_log = 1;
+}
+
+message GetReservationContactsResponse {
+	repeated holms.types.booking.reservations.ReservationContactPerson contacts = 1;
+}
+
+message RemoveReservationContactRequest {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	holms.types.booking.indicators.ReservationContactPersonIndicator contact = 2;
+}
+
+message AddReservationContactRequest {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	string name = 2;
+	string email = 3;
+}
+
+message HousekeepingTimePreferenceRequest {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	holms.types.operations.housekeeping.HousekeepingTimeIndicator requested_hk_time = 2;
+}
+
+service OpenLodgingReservationSvc {
+	rpc GetReservationHistory (holms.types.booking.indicators.ReservationIndicator)
+		returns (GetReservationHistoryResponse);
+
+	rpc UpdateRoomAssignments (UpdateRoomAssignmentsRequest)
+		returns (UpdateRoomAssignmentsResponse);
+
+	rpc GetRoomAssignments (holms.types.booking.indicators.ReservationIndicator) 
+		returns (holms.types.booking.reservations.ReservationRoomAssignmentSchedule);
+
+	rpc GetReservationContacts (holms.types.booking.indicators.ReservationIndicator)
+		returns (GetReservationContactsResponse);
+
+	rpc RemoveReservationContact(RemoveReservationContactRequest)
+		returns (google.protobuf.Empty);
+
+	rpc AddContactPerson(AddReservationContactRequest)
+		returns (google.protobuf.Empty);
+
+	rpc SetHousekeepingTimePreference(HousekeepingTimePreferenceRequest)
+		returns (google.protobuf.Empty);
+
+	rpc GetRecommendedCheckinAuthorizationAmounts(holms.types.booking.indicators.ReservationIndicator)
+		returns (holms.types.booking.reservations.RecommendedCheckinAuthorizationAmounts);
+
+	rpc GetReservationAssociatedParties(holms.types.booking.indicators.ReservationIndicator)
+		returns(holms.types.booking.ReservationAssociatedParties);
+
+	rpc GetReservationCreationSummary(holms.types.booking.indicators.ReservationIndicator)
+		returns(holms.types.booking.history.ReservationCreationSummary);
+
+	rpc GetReservationAmendmentSummary(holms.types.booking.indicators.ReservationIndicator)
+		returns(holms.types.booking.history.ReservationAmendmentSummary);
+}

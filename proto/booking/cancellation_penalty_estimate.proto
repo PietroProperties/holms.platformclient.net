@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.booking;
+option csharp_namespace = "HOLMS.Types.Booking";
+option go_package = "booking";
+
+import "primitive/monetary_amount.proto";
+import "booking/indicators/reservation_indicator.proto";
+
+message CancellationPenaltyEstimate {
+	.holms.types.primitive.MonetaryAmount penalty_amount = 1;
+	.holms.types.booking.indicators.ReservationIndicator reservation = 2;
+}
+

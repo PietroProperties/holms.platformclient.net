@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.crm.guests;
+option csharp_namespace = "HOLMS.Types.CRM.Guests";
+option go_package = "crm/guests";
+
+import "crm/guests/guest_indicator.proto";
+import "primitive/contact_information.proto";
+
+message Guest {
+	holms.types.crm.guests.GuestIndicator entity_id = 1;
+	holms.types.primitive.ContactInformation contact_info = 2;
+}

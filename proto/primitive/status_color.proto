@@ -1,0 +1,30 @@
+﻿syntax = "proto3";
+
+package holms.types.primitive;
+option csharp_namespace = "HOLMS.Types.Primitive";
+option go_package = "primitive";
+
+enum StatusColor {
+	AQUAMARINE = 0;
+    BISQUE = 1;
+    BLUE_VIOLET = 2;
+    CORAL = 3;
+    DARK_GREEN = 4;
+    DARK_OLIVE_GREEN = 5;
+    DARK_ORANGE = 6;
+    FOREST_GREEN = 7;
+    GOLD = 8;
+    LIGHT_GRAY = 9;
+    LIGHT_PINK = 10;
+    MEDIUM_ORCHID = 11;
+    NAVY = 12;
+    OLIVE = 13;
+    ORCHID = 14;
+    ORANGE_RED = 15;
+    PALE_VIOLET_RED = 16;
+    ROYAL_BLUE = 17;
+    TAN = 18;
+    TEAL = 19;
+    THISTLE = 20;
+    WHITE = 21;
+}

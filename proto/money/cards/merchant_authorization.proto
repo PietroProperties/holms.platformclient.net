@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+option go_package = "money/cards";
+
+import "money/cards/processor_transaction_result.proto";
+import "money/cards/card_merchant_indicator.proto";
+import "money/cards/merchant_authorization_indicator.proto";
+import "primitive/monetary_amount.proto";
+
+message MerchantAuthorization {
+	MerchantAuthorizationIndicator entity_id = 1;
+	CardMerchantIndicator merchant_id = 2;
+	string card_member_name = 3;
+	string txn_id = 4;
+	string masked_pan = 5;
+	holms.types.primitive.MonetaryAmount amount = 6;
+	ProcessorTransactionResult result = 7;
+	string brand = 8;
+}

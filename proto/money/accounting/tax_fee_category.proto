@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+package holms.types.money.accounting;
+option csharp_namespace = "HOLMS.Types.Money.Accounting";
+option go_package = "money/accounting";
+
+enum TaxFeeCategory {
+    TAX = 0;
+    FEE = 1;
+}

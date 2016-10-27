@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.booking;
+option csharp_namespace = "HOLMS.Types.Booking";
+option go_package = "booking";
+
+enum CancellationResponse {
+    SUCCESSFUL = 0;
+    MISMATCHED_ESTIMATE = 1;
+    ALREADY_CANCELLED = 2;
+}

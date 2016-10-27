@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package holms.types.booking.history;
+option csharp_namespace = "HOLMS.Types.Booking.History";
+
+import "supply/room_types/room_type.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "supply/qualification.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "booking/pricing/reservation_price_estimate.proto";
+
+message ReservationAmendmentSummary {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	string booking_id = 2;
+
+	holms.types.primitive.PbInclusiveOpsdateRange date_range_prior = 3;
+	holms.types.supply.room_types.RoomType room_type_prior = 4;
+	uint32 number_adults_prior = 5;
+	uint32 number_children_prior = 6;
+	holms.types.supply.Qualification qualification_prior = 7;
+	holms.types.booking.pricing.ReservationPriceEstimate price_estimate_prior = 8;
+
+	holms.types.primitive.PbInclusiveOpsdateRange date_range_latter = 9;
+	holms.types.supply.room_types.RoomType room_type_latter = 10;
+	uint32 number_adults_latter = 11;
+	uint32 number_children_latter = 12;
+	holms.types.supply.Qualification qualification_latter = 13;
+	holms.types.booking.pricing.ReservationPriceEstimate price_estimate_latter = 14;
+}

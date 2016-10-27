@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package holms.types.crm.rpc;
+option csharp_namespace = "HOLMS.Types.CRM.RPC";
+
+import "google/protobuf/empty.proto";
+import "crm/guests/guest_indicator.proto";
+import "booking/reservations/reservation_contact_person.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "tenancy_config/property_confirmation_letter_text.proto";
+import "tenancy_config/property_cancellation_letter_text.proto";
+import "tenancy_config/property_arrival_letter_text.proto";
+import "primitive/pb_local_date.proto";
+
+message CorrespondenceRequest {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	repeated holms.types.crm.guests.GuestIndicator guests = 2;
+	repeated holms.types.booking.reservations.ReservationContactPerson contacts = 3;
+}
+
+message CorrespondenceServiceDocumentResponse {
+	string document = 1;
+}
+
+service CorrespondenceSvc {
+	rpc SendConfirmationLetter(CorrespondenceRequest)
+		returns(google.protobuf.Empty);
+
+	rpc PreviewConfirmationLetter(holms.types.tenancy_config.PropertyConfirmationLetterText)
+		returns(CorrespondenceServiceDocumentResponse);
+
+	rpc SendCancellationEmail(CorrespondenceRequest)
+		returns(google.protobuf.Empty);
+
+	rpc PreviewCancellationEmail(holms.types.tenancy_config.PropertyCancellationLetterText)
+		returns(CorrespondenceServiceDocumentResponse);
+
+	rpc GetArrivalLetterDocument(.holms.types.booking.indicators.ReservationIndicator)
+		returns(CorrespondenceServiceDocumentResponse);
+
+	rpc GetArrivalLetterDocumentsArrivingOn(.holms.types.primitive.PbLocalDate)
+		returns(CorrespondenceServiceDocumentResponse);
+
+	rpc PreviewArrivalLetter(.holms.types.tenancy_config.PropertyArrivalLetterText)
+		returns(CorrespondenceServiceDocumentResponse);
+}

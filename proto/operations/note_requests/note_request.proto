@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.note_requests;
+option csharp_namespace = "HOLMS.Types.Operations.NoteRequests";
+option go_package = "operations/noterequests";
+
+import "operations/note_requests/note_request_indicator.proto";
+import "operations/note_requests/note_category.proto";
+import "operations/note_requests/note_type.proto";
+
+message NoteRequest {
+	.holms.types.operations.note_requests.NoteRequestIndicator entity_id = 1;
+    string subject = 2;
+	// TODO(DA) Change this to department indicator, later
+	NoteCategory department = 3;
+	NoteType note_type = 4;
+	bool available_on_website = 5;
+}

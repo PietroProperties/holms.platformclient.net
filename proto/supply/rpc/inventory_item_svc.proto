@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.rpc;
+option csharp_namespace = "HOLMS.Types.Supply.RPC";
+option go_package = "supply/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "supply/incidental_items/incidental_item.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
+
+message InventoryItemSvcAllResponse {
+	repeated .holms.types.supply.incidental_items.IncidentalItem items = 1;
+}
+
+service InventoryItemSvc {
+	rpc All(.google.protobuf.Empty) 
+		returns (InventoryItemSvcAllResponse);
+
+	rpc GetById(.holms.types.supply.incidental_items.IncidentalItemIndicator)
+        returns (.holms.types.supply.incidental_items.IncidentalItem);
+
+	rpc Create(.holms.types.supply.incidental_items.IncidentalItem)
+        returns (.holms.types.supply.incidental_items.IncidentalItem);
+
+	rpc Update(.holms.types.supply.incidental_items.IncidentalItem)
+        returns (.holms.types.supply.incidental_items.IncidentalItem);
+
+	rpc Delete(.holms.types.supply.incidental_items.IncidentalItem)
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

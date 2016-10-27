@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+option go_package = "money/cards";
+
+import "money/cards/card_merchant_indicator.proto";
+import "money/cards/card_processor_indicator.proto";
+
+message CardMerchant {
+	CardMerchantIndicator entity_id = 1;
+	string name = 2;
+	string portico_secret_key = 3;
+	CardProcessorIndicator card_processor = 4;
+	string card_agreement = 5;
+}

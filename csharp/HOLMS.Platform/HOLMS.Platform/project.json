@@ -5,8 +5,11 @@
     "NETStandard.Library": "1.6.0",
     "Google.Protobuf": "3.1.0",
     "Grpc": "1.0.1-pre1",
+    "NodaTime": "2.0.0-alpha20160729",
+    "System.IdentityModel.Tokens.Jwt": "5.0.0",
     "System.Runtime": "4.1.0.0",
-    "System.Runtime.Extensions": "4.1.0.0"
+    "System.Runtime.Extensions": "4.1.0.0",
+    "System.Security.Claims": "4.0.1"
   },
   "frameworks": {
     "netstandard1.5": {}

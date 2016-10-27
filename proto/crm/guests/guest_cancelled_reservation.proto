@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.crm.guests;
+option csharp_namespace = "HOLMS.Types.CRM.Guests";
+option go_package = "crm/guests";
+
+import "booking/indicators/reservation_indicator.proto";
+import "crm/guests/guest_indicator.proto";
+
+message GuestCancelledReservation {
+	bool penalty_applied = 1;
+	int32 days_before_reservation_start = 2;
+	holms.types.booking.indicators.ReservationIndicator reservation_id = 3;
+	holms.types.crm.guests.GuestIndicator guest_id = 4;
+}

@@ -1,0 +1,43 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.rpc;
+option csharp_namespace = "HOLMS.Types.Supply.RPC";
+option go_package = "supply/rpc";
+
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "supply/qualification_indicator.proto";
+import "supply/rate_schedule_indicator.proto";
+import "supply/snapshot/lodging_snapshot_request_response.proto";
+import "supply/snapshot/incidentals_snapshot_request_response.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+message SupplySnapshotSvcSnapshotWithQualReq {
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
+	.holms.types.supply.QualificationIndicator qualification = 3;
+}
+
+message SupplySnapshotSvcPublicWithScheduleReq {
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
+	.holms.types.supply.RateScheduleIndicator rate_schedule = 3;
+}
+
+message IncidentalSnapshotRequest {
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
+}
+
+service SupplySnapshotSvc {
+	rpc LodgingSnapshotFromQualificationStrict (SupplySnapshotSvcSnapshotWithQualReq)
+		returns (.holms.types.supply.snapshot.LodgingSnapshotRequestResponse);
+
+	rpc LodgingSnapshotFromQualificationMerged (SupplySnapshotSvcSnapshotWithQualReq)
+		returns (.holms.types.supply.snapshot.LodgingSnapshotRequestResponse);
+
+	rpc LodgingSnapshotFromRateScheduleWithOnlyPublicInventory(SupplySnapshotSvcPublicWithScheduleReq)
+		returns (.holms.types.supply.snapshot.LodgingSnapshotRequestResponse);
+
+	rpc IncidentalSnapshot (IncidentalSnapshotRequest)
+		returns (.holms.types.supply.snapshot.IncidentalsSnapshotRequestResponse);
+}

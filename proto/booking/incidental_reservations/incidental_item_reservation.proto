@@ -1,0 +1,23 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.incidental_reservations;
+option csharp_namespace = "HOLMS.Types.Booking.IncidentalReservations";
+option go_package = "booking/incidentalreservations";
+
+import "booking/indicators/incidental_item_reservation_indicator.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "primitive/monetary_amount.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
+
+message IncidentalItemReservation {
+	holms.types.booking.indicators.IncidentalItemReservationIndicator entity_id = 1;
+	holms.types.booking.indicators.ReservationIndicator reservation = 2;
+	holms.types.primitive.PbInclusiveOpsdateRange date_range = 3;
+	holms.types.supply.incidental_items.IncidentalItemIndicator reserved_item = 4;
+	uint32 amount_reserved = 5;
+
+	// Compted/extended properties
+	holms.types.primitive.MonetaryAmount total_cost = 6;
+	string inventory_item_name = 7;
+}

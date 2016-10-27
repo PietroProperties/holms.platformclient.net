@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.incidental_items;
+option csharp_namespace = "HOLMS.Types.Supply.IncidentalItems";
+option go_package = "supply/incidentalitems";
+
+import "primitive/uuid.proto";
+
+message IncidentalItemIndicator {
+	holms.types.primitive.Uuid id = 1;
+}

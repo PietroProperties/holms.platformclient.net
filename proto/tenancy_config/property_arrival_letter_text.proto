@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config;
+
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+
+import "tenancy_config/indicators/property_indicator.proto";
+
+message PropertyArrivalLetterText {
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
+	string arrival_letter_opening_text = 2;
+	string arrival_policy_agreement_text = 3;
+	string liability_disclaimer = 4;
+}
+

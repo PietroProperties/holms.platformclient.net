@@ -1,0 +1,27 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+option go_package = "money/cards";
+
+import "money/cards/card_merchant_indicator.proto";
+import "money/cards/merchant_authorization.proto";
+import "money/cards/merchant_capture_indicator.proto";
+import "primitive/monetary_amount.proto";
+
+message MerchantCapture {
+	MerchantCaptureIndicator entity_id = 1;
+	CardMerchantIndicator merchant_id = 2;
+	holms.types.primitive.MonetaryAmount amount = 3;
+	CaptureStatus status = 4;
+	MerchantAuthorization authorization = 5;
+	string txn_id = 6;
+	string folio_booking_number = 7;
+}
+
+enum CaptureStatus {
+    PENDING = 0;
+    VOIDED = 1;
+    COMPLETED = 2;
+	FAILURE = 3;
+}

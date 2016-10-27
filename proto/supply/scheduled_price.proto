@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+package holms.types.supply;
+option csharp_namespace = "HOLMS.Types.Supply";
+option go_package = "supply";
+
+import "supply/room_types/room_type.proto";
+import "primitive/monetary_amount.proto";
+import "primitive/pb_local_date.proto";
+import "supply/rate_schedule.proto";
+
+message ScheduledPrice {
+    holms.types.primitive.PbLocalDate date = 1;
+    RateSchedule rate_schedule = 2;
+    holms.types.supply.room_types.RoomType room_type = 3;
+    holms.types.primitive.MonetaryAmount nightly_price = 4;
+}

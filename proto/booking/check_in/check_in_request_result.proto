@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.check_in;
+option csharp_namespace = "HOLMS.Types.Booking.CheckIn";
+option go_package = "booking/checkin";
+
+enum CheckInRequestResult {
+    OK = 0;
+    ALREADY_CHECKED_IN = 1;
+    MISSING_ASSIGNED_ROOM = 2;
+    MISSING_CARD = 3;
+    MISSING_GUEST_NAME = 4;
+    NO_OPEN_RESERVATION = 5;
+    RESERVATION_RULE_VIOLATION = 6;
+    TOO_EARLY_TO_CHECKIN = 7;
+    RESERVATION_NOT_GUARANTEED = 8;
+}

@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+option go_package = "money/cards";
+
+import "primitive/uuid.proto";
+
+message MerchantVerificationResponseIndicator {
+	.holms.types.primitive.Uuid id = 1;
+}

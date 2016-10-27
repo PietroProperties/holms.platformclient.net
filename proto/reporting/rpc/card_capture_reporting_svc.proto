@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package holms.types.reporting.rpc;
+option csharp_namespace = "HOLMS.Types.Reporting.RPC";
+
+import "money/cards/card_merchant_indicator.proto";
+import "primitive/pb_inclusive_calendar_date_range.proto";
+
+message CardCaptureReportingSvcGetPendingCapturesRequest {
+	.holms.types.money.cards.CardMerchantIndicator card_merchant = 1;
+}
+
+message CardCaptureReportSvcGetTransmittedCapturesRequest {
+	.holms.types.money.cards.CardMerchantIndicator card_merchant = 1;
+	.holms.types.primitive.PbInclusiveCalendarDateRange date_range = 2;
+}
+
+message CardCaptureReportingSvcReportResponse {
+	string document = 1;
+}
+
+service CardCaptureReportingSvc {
+	rpc GetPendingCapturesReport(CardCaptureReportingSvcGetPendingCapturesRequest)
+		returns (CardCaptureReportingSvcReportResponse);
+	rpc GetTransmittedCapturesReport(CardCaptureReportSvcGetTransmittedCapturesRequest)
+		returns (CardCaptureReportingSvcReportResponse);
+}

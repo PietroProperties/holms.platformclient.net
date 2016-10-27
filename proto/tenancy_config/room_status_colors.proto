@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "primitive/status_color.proto";
+
+message RoomStatusColors {
+	.holms.types.primitive.StatusColor clean_color = 1;
+    .holms.types.primitive.StatusColor dirty_color = 2;
+    .holms.types.primitive.StatusColor deep_clean_color = 3;
+    .holms.types.primitive.StatusColor inspect_color = 4;
+    .holms.types.primitive.StatusColor dust_color = 5;
+    .holms.types.primitive.StatusColor out_of_order_color = 6;
+    .holms.types.primitive.StatusColor blocked_color = 7;
+    .holms.types.primitive.StatusColor maid_in_room_color = 8;
+    .holms.types.primitive.StatusColor show_room_color = 9;
+    .holms.types.primitive.StatusColor left_dirty_color = 10;
+    .holms.types.primitive.StatusColor holds_color = 11;
+}

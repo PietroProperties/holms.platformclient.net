@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+package holms.types.money.accounting;
+option csharp_namespace = "HOLMS.Types.Money.Accounting";
+option go_package = "money/accounting";
+
+import "money/accounting/account_indicator.proto";
+import "money/accounting/ledger_account_category.proto";
+
+message Account {
+	AccountIndicator entity_id = 1;
+	string account_number = 2;
+	string description = 3;
+	LedgerAccountCategory account_category = 4;
+	bool is_programmatically_generated = 5;
+	string quickbooks_identifier = 6;
+	string quickbooks_inventory_identifier = 7;
+}

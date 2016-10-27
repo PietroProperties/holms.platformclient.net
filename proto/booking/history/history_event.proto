@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.history;
+option csharp_namespace = "HOLMS.Types.Booking.History";
+option go_package = "booking/history";
+
+import "iam/staff_member.proto";
+import "booking/history/history_event_detail.proto";
+import "google/protobuf/timestamp.proto";
+
+message HistoryEvent {
+	string description = 1;
+	int32 order = 2;
+	iam.StaffMember staff_member = 3;
+	google.protobuf.Timestamp timestamp = 4;
+	repeated booking.history.HistoryEventDetail details = 5;
+}

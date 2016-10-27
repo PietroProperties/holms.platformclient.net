@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.primitive;
+option csharp_namespace = "HOLMS.Types.Primitive";
+option go_package = "primitive";
+
+import "primitive/uuid.proto";
+import "iam/staff_member_indicator.proto";
+
+enum Capability {
+    //UNKNOWN added to prevent issues with version changes, see:
+    //http://androiddevblog.com/protocol-buffers-pitfall-adding-enum-values/
+    UNKNOWN = 0;
+    CREDIT_CARD_SETUP = 1;
+    GROUP_MANAGEMENT = 2;
+    HOUSEKEEPING_MANAGEMENT = 3;
+    STAFF_MANAGEMENT = 4;
+    SYSTEM_SETTINGS = 5;
+    YIELD_MANAGEMENT = 6;
+    RATE_OVERRIDE = 7;
+}
+
+message SessionContext {
+	string access_token = 1;
+	string refresh_token = 2;
+	string tenancy_name = 3;
+	string user_name = 4;
+	.holms.types.iam.StaffMemberIndicator user = 5;
+	repeated Capability capabilities = 6;
+	uint64 expires_in = 7;
+}

@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.money.accounting;
+option csharp_namespace = "HOLMS.Types.Money.Accounting";
+option go_package = "money/accounting";
+
+import "google/protobuf/timestamp.proto";
+
+message AccountingTxnExportStatus {
+	google.protobuf.Timestamp last_export_completed = 1;
+	bool due_for_next_run = 2;
+}

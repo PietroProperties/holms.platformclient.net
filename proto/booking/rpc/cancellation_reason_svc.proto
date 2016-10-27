@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "primitive/uuid.proto";
+import "booking/cancellation_reason.proto";
+
+message CancellationReasonSvcEnumResponse {
+	repeated .holms.types.booking.CancellationReason cancellation_reasons = 1;
+}
+
+service CancellationReasonSvc {
+	rpc All(.google.protobuf.Empty) 
+		returns (CancellationReasonSvcEnumResponse);
+
+	rpc GetById(.holms.types.primitive.Uuid) 
+		returns (.holms.types.booking.CancellationReason);
+
+	rpc Create(.holms.types.booking.CancellationReason) 
+		returns (.holms.types.booking.CancellationReason);
+
+	rpc Update(.holms.types.booking.CancellationReason) 
+		returns (.holms.types.booking.CancellationReason);
+
+	rpc Delete(.holms.types.booking.CancellationReason) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package holms.types.booking;
+option csharp_namespace = "HOLMS.Types.Booking";
+
+import "booking/indicators/reservation_indicator.proto";
+import "crm/guests/guest_indicator.proto";
+import "booking/reservations/reservation_contact_person.proto";
+
+message ReservationAssociatedParties {
+	holms.types.crm.guests.GuestIndicator primary_guest = 1;
+	repeated holms.types.crm.guests.GuestIndicator additional_guests = 2;
+	repeated holms.types.booking.reservations.ReservationContactPerson contact_persons = 3;
+	holms.types.booking.indicators.ReservationIndicator reservation = 4;
+}

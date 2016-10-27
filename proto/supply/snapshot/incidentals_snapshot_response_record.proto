@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.snapshot;
+option csharp_namespace = "HOLMS.Types.Supply.Snapshot";
+option go_package = "supply/snapshot";
+
+import "primitive/pb_local_date.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
+
+message IncidentalsSnapshotResponseRecord {
+	.holms.types.supply.incidental_items.IncidentalItemIndicator item = 1;
+	holms.types.primitive.PbLocalDate date = 2;
+	int32 number_available = 3;
+}

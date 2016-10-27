@@ -1,0 +1,26 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.room_types;
+option csharp_namespace = "HOLMS.Types.Supply.RoomTypes";
+option go_package = "supply/roomtypes";
+
+import "supply/room_types/room_type_indicator.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+message RoomType {
+	holms.types.supply.room_types.RoomTypeIndicator entity_id = 1;
+    string description = 2;
+	string web_description = 3;
+	int32 normal_occupancy = 4;
+	int32 max_occupancy = 5;
+	int32 cleaning_time_checkout_mins = 6;
+	int32 cleaning_time_stayover_mins = 7;
+    int32 cleaning_time_dust_mins = 8;
+	int32 cleaning_time_deep_mins = 9;
+	int32 base_management_holds = 10;
+	int32 additional_web_holds = 11;
+	bool available_on_website = 12;
+	
+	holms.types.tenancy_config.indicators.PropertyIndicator property_id = 13;
+	string property_name = 14;
+}

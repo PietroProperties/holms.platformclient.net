@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "primitive/character_case_type.proto";
+import "supply/rate_schedule_indicator.proto";
+
+message ReservationDefaults {
+	holms.types.supply.RateScheduleIndicator default_rate_schedule = 1;
+	bool show_cancellation_policy = 2;
+	bool require_phone_number = 3;
+	.holms.types.primitive.CharacterCaseType character_case = 4;
+	int32 block_drop_days = 5;
+}

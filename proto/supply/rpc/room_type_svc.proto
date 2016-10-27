@@ -1,0 +1,39 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.rpc;
+option csharp_namespace = "HOLMS.Types.Supply.RPC";
+option go_package = "supply/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "supply/room_types/full_room_type.proto";
+import "supply/room_types/room_type.proto";
+import "supply/room_types/room_type_indicator.proto";
+
+message RoomTypeSvcAllResponse {
+	repeated .holms.types.supply.room_types.RoomType room_types = 1;
+}
+
+message RoomTypeSvcAllWithRoomsResponse {
+	repeated .holms.types.supply.room_types.FullRoomType room_types = 1;
+}
+
+service RoomTypeSvc {
+	rpc All (google.protobuf.Empty) 
+		returns (RoomTypeSvcAllResponse);
+
+	rpc AllWithRooms (google.protobuf.Empty) 
+		returns (RoomTypeSvcAllWithRoomsResponse);
+
+	rpc GetById (.holms.types.supply.room_types.RoomTypeIndicator)
+		returns (.holms.types.supply.room_types.RoomType);
+
+	rpc Create (.holms.types.supply.room_types.RoomType)
+		returns (.holms.types.supply.room_types.RoomType);
+
+	rpc Update (.holms.types.supply.room_types.RoomType)
+		returns (.holms.types.supply.room_types.RoomType);
+
+	rpc Delete (.holms.types.supply.room_types.RoomType)
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.pricing;
+option csharp_namespace = "HOLMS.Types.Booking.Pricing";
+option go_package = "booking/pricing";
+
+enum PriceOverrideAction {
+	RELEASE = 0;
+	APPLY = 1;
+}

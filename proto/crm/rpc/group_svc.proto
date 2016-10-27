@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+package holms.types.crm.rpc;
+option csharp_namespace = "HOLMS.Types.CRM.RPC";
+option go_package = "crm/rpc";
+
+import "google/protobuf/empty.proto";
+import "crm/groups/group.proto";
+
+message GroupSvcAllResponse {
+	repeated .holms.types.crm.groups.Group groups = 1;
+}
+
+service GroupSvc {
+	rpc All(google.protobuf.Empty) returns (GroupSvcAllResponse);
+	rpc Create(google.protobuf.Empty) returns (.holms.types.crm.groups.Group);
+	rpc Update(.holms.types.crm.groups.Group) returns (.holms.types.crm.groups.Group);
+}

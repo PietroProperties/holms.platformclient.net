@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "booking/cancellation_penalty_estimate.proto";
+import "booking/cancellation_response.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "booking/reservations/cancelled_reservation.proto";
+import "booking/cancellation_request.proto";
+
+message ReservationCancellationSvcCancelReservationResponse {
+	.holms.types.booking.CancellationResponse result = 1;
+}
+
+message ReservationCancellationSvcGetCancelledReservationResponse {
+	bool reservation_is_cancelled = 1;
+	.holms.types.booking.reservations.CancelledReservation reservation = 2;
+}
+
+service ReservationCancellationSvc {
+	rpc EstimateCancellationPenalty(.holms.types.booking.indicators.ReservationIndicator)
+		returns (.holms.types.booking.CancellationPenaltyEstimate);
+
+	rpc CancelReservation(.holms.types.booking.CancellationRequest)
+		returns (ReservationCancellationSvcCancelReservationResponse);
+
+	rpc GetCancelledReservation(.holms.types.booking.indicators.ReservationIndicator)
+		returns (ReservationCancellationSvcGetCancelledReservationResponse);
+}

@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.primitive;
+option csharp_namespace = "HOLMS.Types.Primitive";
+option go_package = "primitive";
+
+import "primitive/uuid.proto";
+
+message TemplateIndicator {
+	Uuid id = 1;
+}

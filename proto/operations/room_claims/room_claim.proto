@@ -1,0 +1,23 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.room_claims;
+option csharp_namespace = "HOLMS.Types.Operations.RoomClaims";
+option go_package = "operations/roomclaims";
+
+import "booking/indicators/reservation_indicator.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "operations/room_claims/room_claim_indicator.proto";
+import "operations/room_claims/room_claim_type.proto";
+import "operations/rooms/room.proto";
+
+message RoomClaim {
+	RoomClaimIndicator entity_id = 1;
+	RoomClaimType claim_type = 2;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 3;
+	.holms.types.operations.rooms.Room room = 4;
+
+	string maintenance_hold_reason = 5;
+
+	// Following are only non-null for case of a reservation
+	.holms.types.booking.indicators.ReservationIndicator reservation = 6;
+}

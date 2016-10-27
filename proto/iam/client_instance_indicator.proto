@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.iam;
+option csharp_namespace = "HOLMS.Types.IAM";
+option go_package = "iam";
+
+import "primitive/uuid.proto";
+
+message ClientInstanceIndicator {
+	.holms.types.primitive.Uuid id = 1;
+}

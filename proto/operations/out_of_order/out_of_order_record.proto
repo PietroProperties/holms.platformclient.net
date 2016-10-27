@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.out_of_order;
+option csharp_namespace = "HOLMS.Types.Operations.OutOfOrder";
+option go_package = "operations/outoforder";
+
+import "google/protobuf/timestamp.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "operations/out_of_order/out_of_order_record_indicator.proto";
+import "operations/rooms/room.proto";
+import "iam/staff_member.proto";
+
+message OutOfOrderRecord {
+	.holms.types.operations.out_of_order.OutOfOrderRecordIndicator entity_id = 1;
+	string reason = 2;
+	holms.types.primitive.PbInclusiveOpsdateRange date_range = 3;
+	.holms.types.iam.StaffMember entered_by = 4;
+	.holms.types.iam.StaffMember updated_by = 5;
+	google.protobuf.Timestamp updated_at = 6;
+	.holms.types.operations.rooms.Room room = 7;
+}

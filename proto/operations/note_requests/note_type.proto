@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.note_requests;
+option csharp_namespace = "HOLMS.Types.Operations.NoteRequests";
+option go_package = "operations/noterequests";
+
+enum NoteType {
+	NOTE = 0;
+	TASK = 1;
+}

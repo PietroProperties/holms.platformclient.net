@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "google/protobuf/empty.proto";
+
+service GuaranteeAuthorizerService {
+    rpc AuthorizeForTenancy (google.protobuf.Empty)
+        returns (google.protobuf.Empty);
+}

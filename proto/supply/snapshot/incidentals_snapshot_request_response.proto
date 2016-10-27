@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.snapshot;
+option csharp_namespace = "HOLMS.Types.Supply.Snapshot";
+option go_package = "supply/snapshot";
+
+import "supply/snapshot/incidentals_snapshot_response_record.proto";
+
+message IncidentalsSnapshotRequestResponse {
+	repeated IncidentalsSnapshotResponseRecord response = 1;
+}

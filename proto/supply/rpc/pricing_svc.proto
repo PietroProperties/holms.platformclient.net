@@ -1,0 +1,35 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.rpc;
+option csharp_namespace = "HOLMS.Types.Supply.RPC";
+option go_package = "supply/rpc";
+
+import "google/protobuf/empty.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "supply/room_types/room_type_indicator.proto";
+import "supply/price_update_request.proto";
+import "supply/rate_schedule_indicator.proto";
+import "supply/scheduled_price.proto";
+
+message PricingSvcQueryRequest {
+	.holms.types.supply.RateScheduleIndicator rate_schedule = 1;
+	repeated .holms.types.supply.room_types.RoomTypeIndicator room_types = 2;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 3;
+}
+
+message PricingSvcQueryResponse {
+	repeated .holms.types.supply.ScheduledPrice prices = 1;
+}
+
+message PricingSvcUpdateRequest {
+	.holms.types.supply.RateScheduleIndicator rate_schedule = 1;
+	repeated .holms.types.supply.PriceUpdateRequest price_updates = 2;
+}
+
+service PricingSvc {
+	rpc Query (PricingSvcQueryRequest) 
+		returns (PricingSvcQueryResponse);
+
+	rpc Update (PricingSvcUpdateRequest) 
+		returns (google.protobuf.Empty);
+}

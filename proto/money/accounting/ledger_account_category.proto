@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.money.accounting;
+option csharp_namespace = "HOLMS.Types.Money.Accounting";
+option go_package = "money/accounting";
+
+enum LedgerAccountCategory {
+        ASSET = 0;
+        LIABILITY = 1;
+        EQUITY = 2;
+        REVENUE = 3;
+        EXPENSES = 4;
+}

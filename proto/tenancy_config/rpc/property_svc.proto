@@ -1,0 +1,93 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+option go_package = "tenancyconfig/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "tenancy_config/full_property.proto";
+import "tenancy_config/property.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+import "tenancy_config/property_confirmation_letter_text.proto";
+import "tenancy_config/property_cancellation_letter_text.proto";
+import "tenancy_config/property_arrival_letter_text.proto";
+
+message PropertySvcAllResponse {
+	repeated .holms.types.tenancy_config.Property properties = 1;
+}
+
+message PropertySvcAllFullResponse {
+	repeated .holms.types.tenancy_config.FullProperty properties = 1;
+}
+
+message PropertySvcAccrueRevenueRequest {
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
+	uint32 run_every_mins = 2;
+}
+
+message GetAllConfirmationBodyTextsResponse {
+	repeated .holms.types.tenancy_config.PropertyConfirmationLetterText texts = 1;
+}
+
+message GetAllCancellationBodyTextsResponse {
+	repeated .holms.types.tenancy_config.PropertyCancellationLetterText texts = 1;
+}
+
+message GetAllArrivalBodyTextsResponse {
+	repeated .holms.types.tenancy_config.PropertyArrivalLetterText texts = 1;
+}
+
+service PropertySvc {
+	/* Basic CRUD */
+	rpc All (google.protobuf.Empty) 
+		returns (PropertySvcAllResponse);
+
+	rpc GetById (.holms.types.tenancy_config.indicators.PropertyIndicator)
+		returns (.holms.types.tenancy_config.Property);
+
+	rpc Create (.holms.types.tenancy_config.Property)
+		returns (.holms.types.tenancy_config.Property);
+
+	rpc Update (.holms.types.tenancy_config.Property)
+		returns (.holms.types.tenancy_config.Property);
+
+	rpc Delete (.holms.types.tenancy_config.Property)
+		returns (.holms.types.primitive.ServerActionConfirmation);
+			
+	rpc AllFull (google.protobuf.Empty) 
+		returns (PropertySvcAllFullResponse);
+
+	rpc GetFullProperty (.holms.types.tenancy_config.indicators.PropertyIndicator)
+		returns (.holms.types.tenancy_config.FullProperty);
+
+	rpc AccrueRevenue (PropertySvcAccrueRevenueRequest) 
+		returns (google.protobuf.Empty);
+
+	rpc GetAllConfirmationBodyTexts(google.protobuf.Empty)
+		returns (GetAllConfirmationBodyTextsResponse);
+
+	rpc GetConfirmationBodyText(.holms.types.tenancy_config.indicators.PropertyIndicator)
+		returns(.holms.types.tenancy_config.PropertyConfirmationLetterText);
+
+	rpc SetPropertyConfirmationBodyText(.holms.types.tenancy_config.PropertyConfirmationLetterText)
+		returns (google.protobuf.Empty);
+
+	rpc GetAllArrivalBodyTexts(google.protobuf.Empty)
+		returns (GetAllArrivalBodyTextsResponse);
+
+	rpc GetArrivalBodyText(.holms.types.tenancy_config.indicators.PropertyIndicator)
+		returns(.holms.types.tenancy_config.PropertyArrivalLetterText);
+
+	rpc SetPropertyArrivalBodyText(.holms.types.tenancy_config.PropertyArrivalLetterText)
+		returns (google.protobuf.Empty);
+
+	rpc GetAllCancellationBodyTexts(google.protobuf.Empty)
+		returns (GetAllCancellationBodyTextsResponse);
+
+	rpc GetCancellationBodyText(.holms.types.tenancy_config.indicators.PropertyIndicator)
+		returns(.holms.types.tenancy_config.PropertyCancellationLetterText);
+
+	rpc SetPropertyCancellationBodyText(.holms.types.tenancy_config.PropertyCancellationLetterText)
+		returns (google.protobuf.Empty);
+}

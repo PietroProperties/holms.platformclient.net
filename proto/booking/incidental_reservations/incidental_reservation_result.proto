@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.incidental_reservations;
+option csharp_namespace = "HOLMS.Types.Booking.IncidentalReservations";
+option go_package = "booking/incidentalreservations";
+
+message IncidentalReservationResult {
+	enum ReservationResult {
+		SUCCESSFUL = 0;
+		FAILED = 1;
+		UNAVAILABLE = 2;
+		MISMATCHED_DATES = 3;
+	}
+	ReservationResult result = 1;
+}

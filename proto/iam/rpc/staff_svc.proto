@@ -1,0 +1,34 @@
+﻿syntax = "proto3";
+
+package holms.types.iam.rpc;
+option csharp_namespace = "HOLMS.Types.IAM.RPC";
+option go_package = "iam/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "iam/staff_member.proto";
+import "iam/staff_member_indicator.proto";
+
+message StaffSvcGetAllResponse {
+	repeated .holms.types.iam.StaffMember staff_members = 1;
+}
+
+service StaffSvc {
+	rpc All (google.protobuf.Empty) 
+		returns (StaffSvcGetAllResponse);
+
+	rpc GetHousekeepers (google.protobuf.Empty) 
+		returns (StaffSvcGetAllResponse);
+
+	rpc GetById (.holms.types.iam.StaffMemberIndicator)
+		returns (.holms.types.iam.StaffMember);
+
+	rpc Create (.holms.types.iam.StaffMember) 
+		returns (.holms.types.iam.StaffMember);
+
+	rpc Update (.holms.types.iam.StaffMember) 
+		returns (.holms.types.iam.StaffMember);
+
+	rpc Delete (.holms.types.iam.StaffMember) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

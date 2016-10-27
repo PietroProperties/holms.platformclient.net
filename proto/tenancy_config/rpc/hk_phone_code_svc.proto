@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+option go_package = "tenancyconfig/rpc";
+
+import "google/protobuf/empty.proto";
+import "tenancy_config/hk_phone_codes.proto";
+
+service HkPhoneCodeSvc {
+	rpc Get(google.protobuf.Empty)
+		returns(holms.types.tenancy_config.HKPhoneCodes);
+
+	rpc UpdatePhoneCodes(holms.types.tenancy_config.HKPhoneCodes)
+		returns(google.protobuf.Empty);
+}

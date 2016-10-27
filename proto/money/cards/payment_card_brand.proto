@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+option go_package = "money/cards";
+
+enum PaymentCardBrand {
+	AMEX = 0;
+    DINERS = 1;
+    DISCOVER = 2;
+    MASTERCARD = 3;
+    VISA = 4;
+    UNKNOWN = 5;
+}

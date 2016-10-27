@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.rpc;
+option csharp_namespace = "HOLMS.Types.Supply.RPC";
+option go_package = "supply/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "supply/rate_schedule.proto";
+import "supply/rate_schedule_indicator.proto";
+
+message RateScheduleSvcAllResponse {
+	repeated .holms.types.supply.RateSchedule rate_schedules = 1;
+}
+
+service RateScheduleSvc {
+	rpc All (google.protobuf.Empty) 
+		returns (RateScheduleSvcAllResponse);
+
+	rpc GetById (.holms.types.supply.RateScheduleIndicator) 
+		returns (.holms.types.supply.RateSchedule);
+
+	rpc Create (.holms.types.supply.RateSchedule) 
+		returns (.holms.types.supply.RateSchedule);
+
+	rpc Update (.holms.types.supply.RateSchedule) 
+		returns (.holms.types.supply.RateSchedule);
+
+	rpc Delete (.holms.types.supply.RateSchedule) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

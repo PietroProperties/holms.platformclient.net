@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+
+import "booking/indicators/reservation_indicator.proto";
+import "booking/checkout/checkout_candidate_viability.proto";
+
+enum CheckoutSvcCheckOutResult {
+	CHECKOUT_SVC_CHECK_OUT_SUCCESSFUL = 0;
+	CHECKOUT_SVC_CHECK_OUT_NOT_CHECKED_IN = 1;
+	CHECKOUT_SVC_CHECK_OUT_INAPPROPRIATE_DEPARTURE_DATE = 2;
+	CHECKOUT_SVC_CHECK_OUT_UNKNOWN_FAILURE = 3;
+}
+
+enum CheckoutSvcAmendForEarlyImmediateCheckoutResult {
+	CHECKOUT_SVC_AMEND_FOR_EARLY_IMMEDIATE_CHECKOUT_SUCCESSFUL = 0;
+	CHECKOUT_SVC_AMEND_FOR_EARLY_IMMEDIATE_CHECKOUT_FAILURE = 1;
+}
+
+message CheckoutSvcCheckOutResponse {
+	CheckoutSvcCheckOutResult Result = 1;
+}
+
+message CheckoutSvcAmendForEarlyImmediateCheckoutResponse {
+	CheckoutSvcAmendForEarlyImmediateCheckoutResult Result = 1;
+}
+
+service CheckoutSvc {
+	rpc GetCheckoutCandidateViability(.holms.types.booking.indicators.ReservationIndicator)
+		returns (.holms.types.booking.checkout.CheckoutCandidateViability);
+	rpc CheckOutReservation(.holms.types.booking.indicators.ReservationIndicator)
+		returns (CheckoutSvcCheckOutResponse);
+	rpc AmendForEarlyImmediateCheckout(.holms.types.booking.indicators.ReservationIndicator)
+		returns (CheckoutSvcAmendForEarlyImmediateCheckoutResponse);
+}

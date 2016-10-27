@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+option go_package = "money/cards";
+
+import "money/cards/not_present_payment_card.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+import "crm/guests/guest_indicator.proto";
+
+message PaymentCardVerificationRequest {
+	holms.types.crm.guests.GuestIndicator guest = 1;
+	holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
+	holms.types.money.cards.NotPresentPaymentCard card = 3;
+}

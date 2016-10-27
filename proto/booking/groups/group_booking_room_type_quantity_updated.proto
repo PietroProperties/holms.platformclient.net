@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.groups;
+option csharp_namespace = "HOLMS.Types.Booking.Groups";
+option go_package = "booking/groups";
+
+import "booking/indicators/group_booking_indicator.proto";
+import "booking/groups/group_booking_room_type_quantity.proto";
+
+message GroupBookingRoomTypeQuantityUpdated {
+	string j_w_token = 1;
+	.holms.types.booking.indicators.GroupBookingIndicator group_booking = 2;
+	repeated GroupBookingRoomTypeQuantity room_type_quantities = 3;
+}

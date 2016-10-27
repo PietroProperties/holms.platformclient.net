@@ -1,0 +1,28 @@
+﻿syntax = "proto3";
+
+package holms.types.pbx_connector;
+option csharp_namespace = "HOLMS.Types.PBXConnector";
+option go_package = "pbxconnector";
+
+import "google/protobuf/duration.proto";
+import "google/protobuf/timestamp.proto";
+
+enum MitelPhoneCircuitType {
+	MITEL_PHONE_CIRCUIT_TYPE_INTERNAL_EXTENSION = 0;
+	MITEL_PHONE_CIRCUIT_TYPE_CO_TRUNK_NUMBER = 1;
+	MITEL_PHONE_CIRCUIT_TYPE_NON_CO_TRUNK_NUMBER = 2;
+}
+
+message MitelPhoneCircuit {
+	MitelPhoneCircuitType circuit_type = 1;
+	string circuit_identifier = 2;
+}
+
+message MitelCallEnded {
+	google.protobuf.Timestamp start_time = 1;
+	google.protobuf.Duration duration = 2;
+	MitelPhoneCircuit call_origin = 3;
+	string leading_digits_dialed = 4;
+	string main_digits_dialed = 5;
+	MitelPhoneCircuit call_destination = 6;
+}

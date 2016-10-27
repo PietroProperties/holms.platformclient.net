@@ -1,0 +1,53 @@
+﻿syntax = "proto3";
+
+package holms.types.money.rpc;
+option csharp_namespace = "HOLMS.Types.Money.RPC";
+option go_package = "money/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "money/cards/card_terminal_indicator.proto";
+import "money/cards/card_merchant_indicator.proto";
+import "money/cards/card_terminal.proto";
+import "booking/indicators/reservation_indicator.proto";
+
+message CardTerminalSvcAllResponse {
+    repeated .holms.types.money.cards.CardTerminal card_terminals = 1;
+}
+
+enum CardTerminalResponseCode {
+    ERROR = 0;
+    OK = 1;
+    TIMEOUT = 2;
+}
+
+message CardTerminalSvcVerifyTerminalResponse {
+    CardTerminalResponseCode response = 1;
+}
+
+message CardAuthorizationRequestForReservation {
+	holms.types.booking.indicators.ReservationIndicator reservation_id = 1;
+}
+
+service CardTerminalSvc {
+    rpc All (google.protobuf.Empty) 
+		returns (CardTerminalSvcAllResponse);
+
+    rpc AllFromMerchant (.holms.types.money.cards.CardMerchantIndicator) 
+		returns (CardTerminalSvcAllResponse);
+
+    rpc GetById (.holms.types.money.cards.CardTerminalIndicator) 
+		returns (.holms.types.money.cards.CardTerminal);
+
+    rpc Create (.holms.types.money.cards.CardTerminal) 
+		returns (.holms.types.money.cards.CardTerminal);
+
+    rpc Update (.holms.types.money.cards.CardTerminal) 
+		returns (.holms.types.money.cards.CardTerminal);
+
+    rpc Delete (.holms.types.money.cards.CardTerminal) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+
+    rpc VerifyPAXTerminalConnectivity (.holms.types.money.cards.CardTerminal) 
+		returns (CardTerminalSvcVerifyTerminalResponse);
+}

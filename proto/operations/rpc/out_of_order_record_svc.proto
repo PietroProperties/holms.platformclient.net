@@ -1,0 +1,80 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rpc;
+option csharp_namespace = "HOLMS.Types.Operations.RPC";
+option go_package = "operations/rpc";
+
+import "operations/out_of_order/out_of_order_record.proto";
+import "operations/out_of_order/out_of_order_record_indicator.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+message OutOfOrderRecordSvcAllResponse {
+	repeated .holms.types.operations.out_of_order.OutOfOrderRecord records = 1;
+}
+
+enum OutOfOrderRecordGetByIdResult {
+	OUT_OF_ORDER_RECORD_FOUND = 0;
+	OUT_OF_ORDER_RECORD_NOT_FOUND = 1;
+}
+
+message OutOfOrderRecordGetByIdResponse {
+	OutOfOrderRecordGetByIdResult result = 1;
+	.holms.types.operations.out_of_order.OutOfOrderRecord record = 2;
+}
+
+enum OutOfOrderRecordCreateResult {
+	OUT_OF_ORDER_RECORD_CREATE_SUCCESS = 0;
+	OUT_OF_ORDER_RECORD_CREATE_MAINT_CONFLICT = 1;
+	OUT_OF_ORDER_RECORD_CREATE_RESERVATION_CONFLICT = 2;
+	OUT_OF_ORDER_RECORD_CREATE_ROOM_NOT_FOUND = 3;
+	OUT_OF_ORDER_RECORD_CREATE_NO_SUPPLY = 4;
+}
+
+message OutOfOrderRecordCreateResponse {
+	OutOfOrderRecordCreateResult result = 1;
+	.holms.types.operations.out_of_order.OutOfOrderRecord record = 2;
+}
+
+enum OutOfOrderRecordUpdateResult {
+	OUT_OF_ORDER_RECORD_UPDATE_SUCCESSFUL = 0;
+	OUT_OF_ORDER_RECORD_UPDATE_PRIOR_NOT_FOUND = 1;
+	OUT_OF_ORDER_RECORD_UPDATE_MAINT_CONFLICT = 2;
+	OUT_OF_ORDER_RECORD_UPDATE_RESERVATION_CONFLICT = 3;
+	OUT_OF_ORDER_RECORD_UPDATE_ROOM_NOT_FOUND = 4;
+	OUT_OF_ORDER_RECORD_UPDATE_NO_AVAILABILITY = 5;
+}
+
+message OutOfOrderRecordUpdateResponse {
+	OutOfOrderRecordUpdateResult result = 1;
+	.holms.types.operations.out_of_order.OutOfOrderRecord record = 2;
+}
+
+enum OutOfOrderRecordCancelResult {
+	OUT_OF_ORDER_RECORD_CANCEL_SUCCESSFUL = 0;
+	OUT_OF_ORDER_RECORD_CANCEL_PRIOR_NOT_FOUND = 1;
+}
+
+message OutOfOrderRecordCancelResponse {
+	OutOfOrderRecordCancelResult result = 1;
+}
+
+enum OutOfOrderRecordDeleteResult {
+	OUT_OF_ORDER_RECORD_DELETE_SUCCESSFUL = 0;
+	OUT_OF_ORDER_RECORD_DELETE_PRIOR_NOT_FOUND = 1;
+}
+
+message OutOfOrderRecordDeleteResponse {
+	OutOfOrderRecordDeleteResult result = 1;
+}
+
+service OutOfOrderRecordSvc {
+	rpc All(.holms.types.tenancy_config.indicators.PropertyIndicator) returns (OutOfOrderRecordSvcAllResponse);
+	rpc GetById(.holms.types.operations.out_of_order.OutOfOrderRecordIndicator)
+		returns (OutOfOrderRecordGetByIdResponse);
+	rpc Create (.holms.types.operations.out_of_order.OutOfOrderRecord)
+		returns (OutOfOrderRecordCreateResponse);
+	rpc Update (.holms.types.operations.out_of_order.OutOfOrderRecord)
+		returns (OutOfOrderRecordUpdateResponse);
+	rpc Delete (.holms.types.operations.out_of_order.OutOfOrderRecordIndicator)
+		returns (OutOfOrderRecordDeleteResponse);
+}

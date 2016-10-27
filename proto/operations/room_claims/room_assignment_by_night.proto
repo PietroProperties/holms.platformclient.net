@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.room_claims;
+option csharp_namespace = "HOLMS.Types.Operations.RoomClaims";
+option go_package = "operations/roomclaims";
+
+import "primitive/pb_local_date.proto";
+import "operations/rooms/room_indicator.proto";
+
+message RoomAssignmentByNight {
+	.holms.types.operations.rooms.RoomIndicator room = 1;
+	.holms.types.primitive.PbLocalDate date = 2;
+}

@@ -1,0 +1,32 @@
+﻿syntax = "proto3";
+
+package holms.types.primitive;
+option csharp_namespace = "HOLMS.Types.Primitive";
+option go_package = "primitive";
+
+message ContactInformation {
+	string given_name = 1;
+	string given_name_2 = 2;
+	string family_name = 3;
+	string email = 4;
+	string home_phone = 5;
+	string mobile_phone = 6;
+	string fax_number = 7;
+	string office_phone = 8;
+
+	string office_address_1 = 9;
+	string office_address_2 = 10;
+	string office_city = 11;
+	string office_state = 12;
+	string office_zip = 13;
+	string office_nation = 14;
+
+	string home_address_1 = 15;
+	string home_address_2 = 16;
+	string home_city = 17;
+	string home_state = 18;
+	string home_zip = 19;
+	string home_nation = 20;
+
+	string company_name = 21;
+}

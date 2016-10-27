@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rooms;
+option csharp_namespace = "HOLMS.Types.Operations.Rooms";
+option go_package = "operations/rooms";
+
+import "primitive/uuid.proto";
+
+message RoomIndicator {
+	holms.types.primitive.Uuid id = 1;
+}

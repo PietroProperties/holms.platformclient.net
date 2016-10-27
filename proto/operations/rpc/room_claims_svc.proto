@@ -1,0 +1,72 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rpc;
+option csharp_namespace = "HOLMS.Types.Operations.RPC";
+option go_package = "operations/rpc";
+
+import "booking/indicators/reservation_indicator.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "primitive/pb_local_date.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+import "operations/room_claims/reservation_room_assignment_result.proto";
+import "operations/room_claims/room_assignment_by_night.proto";
+import "operations/room_claims/room_claim.proto";
+import "operations/room_claims/continuous_room_claim.proto";
+import "operations/rooms/room.proto";
+import "operations/rooms/room_with_claim_info.proto";
+
+message RoomClaimsSvcSearchRequest {
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
+}
+
+message RoomClaimsSvcSearchResponse {
+	repeated .holms.types.operations.room_claims.RoomClaim claims = 1;
+}
+
+message ContinuousRoomClaimsSvcSearchResponse {
+	repeated .holms.types.operations.room_claims.ContinuousRoomClaim claims = 1;
+}
+
+message RoomClaimsSvcGetClaimableByReservationRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	repeated .holms.types.primitive.PbLocalDate dates = 2;
+}
+
+message RoomClaimsSvcGetClaimableByReservationResponse {
+	repeated .holms.types.operations.rooms.Room rooms = 1;
+}
+
+message RoomClaimsSvcUpdateReservationRoomClaimsRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	repeated .holms.types.operations.room_claims.RoomAssignmentByNight requests = 2;
+}
+
+message RoomClaimsSvcUpdateReservationRoomClaimsResponse {
+	.holms.types.operations.room_claims.ReservationRoomAssignmentResult result = 1;
+}
+
+message GetAllRoomsWithClaimsResponse {
+	repeated .holms.types.operations.rooms.RoomWithClaimInfo rooms = 1;
+}
+
+message GetAllRoomsWithClaimsRequest {
+	repeated .holms.types.primitive.PbLocalDate dates = 1;
+}
+
+service RoomClaimsSvc {
+	rpc Search(RoomClaimsSvcSearchRequest) 
+		returns (RoomClaimsSvcSearchResponse);
+
+	rpc SearchContinuousClaims(RoomClaimsSvcSearchRequest) 
+		returns (ContinuousRoomClaimsSvcSearchResponse);
+
+	rpc GetClaimableByReservation(RoomClaimsSvcGetClaimableByReservationRequest)
+		returns (RoomClaimsSvcGetClaimableByReservationResponse);
+
+	rpc UpdateReservationRoomClaims(RoomClaimsSvcUpdateReservationRoomClaimsRequest)
+		returns (RoomClaimsSvcUpdateReservationRoomClaimsResponse);
+
+	rpc GetAllRoomsWithClaims(GetAllRoomsWithClaimsRequest) 
+		returns (GetAllRoomsWithClaimsResponse);
+}

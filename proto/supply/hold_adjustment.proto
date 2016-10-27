@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.supply;
+option csharp_namespace = "HOLMS.Types.Supply";
+option go_package = "supply";
+
+import "supply/room_types/room_type_indicator.proto";
+import "primitive/pb_local_date.proto";
+
+message HoldAdjustment {
+	.holms.types.supply.room_types.RoomTypeIndicator room_type = 1;
+	.holms.types.primitive.PbLocalDate date = 2;
+	int32 adjustment_amount = 3;
+}

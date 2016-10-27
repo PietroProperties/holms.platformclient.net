@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.messaging;
+option csharp_namespace = "HOLMS.Types.Operations.Messaging";
+option go_package = "operations/messaging";
+
+enum MessageBin {
+	INBOX = 0;
+	OUTBOX = 1;
+	DRAFT = 2;
+}

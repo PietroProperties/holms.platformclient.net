@@ -1,0 +1,44 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "google/protobuf/empty.proto";
+import "booking/groups/group_booking.proto";
+import "booking/groups/group_booking_ext.proto";
+import "booking/indicators/group_booking_indicator.proto";
+import "booking/groups/group_booking_room_type_quantity.proto";
+import "crm/groups/group_indicator.proto";
+import "supply/price_update_request.proto";
+
+message GroupBookingSvcAllBookings {
+	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
+}
+
+message GroupBookingSvcPriceUpdateRequest {
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	repeated .holms.types.supply.PriceUpdateRequest prices = 2;
+}
+
+message GroupBookingSvcQuantityUpdateRequest {
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	repeated .holms.types.booking.groups.GroupBookingRoomTypeQuantity quantities = 2;
+}
+
+service GroupBookingSvc {
+	rpc All (google.protobuf.Empty) 
+		returns (GroupBookingSvcAllBookings);
+
+	rpc Create (.holms.types.crm.groups.GroupIndicator)
+		returns (.holms.types.booking.groups.GroupBookingExt);
+
+	rpc Update (.holms.types.booking.groups.GroupBooking)
+		returns (.holms.types.booking.groups.GroupBookingExt);
+
+	rpc UpdateGroupBookingPrices (GroupBookingSvcPriceUpdateRequest)
+		returns (google.protobuf.Empty);
+
+	rpc UpdateQuantities (GroupBookingSvcQuantityUpdateRequest)
+		returns (google.protobuf.Empty);
+}

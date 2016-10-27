@@ -1,0 +1,30 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.channels;
+option csharp_namespace = "HOLMS.Types.Booking.Channels";
+option go_package = "booking/channels";
+
+import "booking/channels/commission_type.proto";
+import "booking/indicators/travel_agent_indicator.proto";
+import "primitive/fixed_point_ratio.proto";
+import "primitive/monetary_amount.proto";
+
+message TravelAgent {
+    .holms.types.booking.indicators.TravelAgentIndicator entity_id = 1;
+    string iata_id = 2;
+    CommissionType commission_type = 3;
+    .holms.types.primitive.MonetaryAmount commission_amount = 4;
+    .holms.types.primitive.FixedPointRatio commission_percentage = 5;
+
+    string given_name = 6;
+    string family_name = 7;
+    string business_address1 = 8;
+    string business_address2 = 9;
+    string business_city = 10;
+    string business_state = 11;
+    string business_zip = 12;
+    string business_nation = 13;
+    string business_phone_number = 14;
+    string business_fax_number = 15;
+    string business_email_address = 16;
+}

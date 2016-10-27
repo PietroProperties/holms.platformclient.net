@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.out_of_order;
+option csharp_namespace = "HOLMS.Types.Operations.OutOfOrder";
+option go_package = "operations/outoforder";
+
+import "operations/out_of_order/out_of_order_record.proto";
+import "primitive/crud_action.proto";
+import "iam/authenticated_client_claims.proto";
+
+message OutOfOrderRecordCrud {
+	holms.types.iam.AuthenticatedClientClaims authenticated_client_claims = 1;
+	holms.types.primitive.CrudAction crud_action = 2;
+	OutOfOrderRecord out_of_order_record = 3;
+}

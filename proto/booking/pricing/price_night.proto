@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.pricing;
+option csharp_namespace = "HOLMS.Types.Booking.Pricing";
+option go_package = "booking/pricing";
+
+import "primitive/pb_local_date.proto";
+import "primitive/monetary_amount.proto";
+
+message PriceNight {
+    holms.types.primitive.PbLocalDate opsdate = 1;
+    holms.types.primitive.MonetaryAmount price = 2;
+}

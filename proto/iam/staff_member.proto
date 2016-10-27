@@ -1,0 +1,25 @@
+﻿syntax = "proto3";
+
+package holms.types.iam;
+option csharp_namespace = "HOLMS.Types.IAM";
+option go_package = "iam";
+
+import "google/protobuf/timestamp.proto";
+import "primitive/contact_information.proto";
+import "iam/department_indicator.proto";
+import "iam/staff_member_indicator.proto";
+
+message StaffMember {
+	holms.types.iam.StaffMemberIndicator entity_id = 1;
+	string user_id = 2;
+	string password = 3;
+	string display_name = 4;
+	string emergency_contact_phone_number = 5;
+	bool is_phone_data_displayable = 6;
+	google.protobuf.Timestamp date_hired = 7;
+	bool is_active = 8;
+	
+	holms.types.iam.DepartmentIndicator department = 9;
+	string department_name = 10;
+	.holms.types.primitive.ContactInformation contact_info = 11;
+}

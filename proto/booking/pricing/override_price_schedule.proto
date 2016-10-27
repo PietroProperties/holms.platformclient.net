@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.pricing;
+option csharp_namespace = "HOLMS.Types.Booking.Pricing";
+option go_package = "booking/pricing";
+
+import "booking/indicators/reservation_indicator.proto";
+import "booking/pricing/price_night.proto";
+import "primitive/pb_local_date.proto";
+
+message OverridePriceSchedule {
+    .holms.types.booking.indicators.ReservationIndicator reservation = 1;
+    repeated .holms.types.booking.pricing.PriceNight prices_with_overrides = 2;
+    repeated .holms.types.booking.pricing.PriceNight prices_without_overrides = 3;
+    repeated .holms.types.primitive.PbLocalDate overridden_nights = 4;
+}

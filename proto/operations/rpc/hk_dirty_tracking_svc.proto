@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rpc;
+option csharp_namespace = "HOLMS.Types.Operations.RPC";
+option go_package = "operations/rpc";
+
+import "google/protobuf/empty.proto";
+
+service HKDirtyTrackingSvc {
+	rpc RunUpdateJobIfScheduled(google.protobuf.Empty) 
+		returns (google.protobuf.Empty);
+
+	rpc RunUpdateJobImmediately(google.protobuf.Empty) 
+		returns (google.protobuf.Empty);
+}

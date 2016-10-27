@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.attractions;
+option csharp_namespace = "HOLMS.Types.Operations.Attractions";
+option go_package = "operations/attractions";
+
+import "primitive/uuid.proto";
+
+message AttractionCategoryIndicator {
+	.holms.types.primitive.Uuid id = 1;
+}

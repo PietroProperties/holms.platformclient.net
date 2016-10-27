@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+import "primitive/monetary_amount.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "booking/cancellation_policy.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "booking/reservations/reservation_state.proto";
+import "crm/guests/guest.proto";
+import "supply/room_types/room_type.proto";
+import "supply/qualification.proto";
+
+message CancelledReservation {
+	holms.types.booking.indicators.ReservationIndicator entity_id = 1;
+	string booking_id = 2;
+	holms.types.booking.reservations.ReservationState state = 3;
+	holms.types.crm.guests.Guest guest = 4;
+	holms.types.primitive.PbInclusiveOpsdateRange date_range = 5;
+	int32 number_adults = 6;
+	int32 number_children = 7;
+	holms.types.supply.room_types.RoomType room_type = 8;
+	repeated holms.types.crm.guests.Guest additional_guests = 9;
+	.holms.types.supply.Qualification qualification = 10;
+	bool tax_exempt = 11;
+	primitive.MonetaryAmount cancellation_penalty_applied = 12;
+	string cancellation_reason = 13;
+	.holms.types.booking.CancellationPolicy cancellation_policy = 14;
+}

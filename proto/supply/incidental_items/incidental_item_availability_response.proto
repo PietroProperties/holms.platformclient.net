@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.incidental_items;
+option csharp_namespace = "HOLMS.Types.Supply.IncidentalItems";
+option go_package = "supply/incidentalitems";
+
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
+
+message IncidentalItemAvailabilityResponse {
+	int32 number_available = 1;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
+	.holms.types.supply.incidental_items.IncidentalItemIndicator incidental_item = 3;
+}

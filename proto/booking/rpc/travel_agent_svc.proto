@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "booking/channels/travel_agent.proto";
+import "booking/indicators/travel_agent_indicator.proto";
+
+message TravelAgentSvcEnumResponse {
+	repeated .holms.types.booking.channels.TravelAgent agents = 1;
+}
+
+service TravelAgentSvc {
+	rpc All(.google.protobuf.Empty) 
+		returns (TravelAgentSvcEnumResponse);
+
+	rpc GetById(.holms.types.booking.indicators.TravelAgentIndicator) 
+		returns (.holms.types.booking.channels.TravelAgent);
+
+	rpc Create(.holms.types.booking.channels.TravelAgent) 
+		returns (.holms.types.booking.channels.TravelAgent);
+
+	rpc Update(.holms.types.booking.channels.TravelAgent) 
+		returns (.holms.types.booking.channels.TravelAgent);
+
+	rpc Delete(.holms.types.booking.channels.TravelAgent) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

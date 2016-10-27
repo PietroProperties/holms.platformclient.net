@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "supply/room_types/room_type_indicator.proto";
+import "supply/qualification_indicator.proto";
+
+message ReservationFRPAmendmentRequest {
+    holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
+    holms.types.booking.indicators.ReservationIndicator reservation = 2;
+    holms.types.supply.room_types.RoomTypeIndicator room_type = 3;
+    holms.types.supply.QualificationIndicator q = 4;
+    bool tax_exempt = 5;
+    int32 adult_guest_count = 6;
+    int32 child_guest_count = 7;
+}
+

@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+package holms.types.primitive;
+option csharp_namespace = "HOLMS.Types.Primitive";
+option go_package = "primitive";
+
+enum TemplateFormat {
+	RTF = 0;
+	HTML = 1;
+}

@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+enum ReservationQueryFilter {
+	ALL_DATES = 0;
+	ARRIVALS = 1;
+	CURRENT_AND_FUTURE = 2;
+	DEPARTURES = 3;
+	IN_HOUSE = 4;
+	TODAY = 5;
+}

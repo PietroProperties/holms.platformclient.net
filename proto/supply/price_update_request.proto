@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.supply;
+option csharp_namespace = "HOLMS.Types.Supply";
+option go_package = "supply";
+
+import "supply/room_types/room_type_indicator.proto";
+import "primitive/monetary_amount.proto";
+import "primitive/pb_local_date.proto";
+
+message PriceUpdateRequest {
+	.holms.types.primitive.PbLocalDate date = 1;
+	.holms.types.supply.room_types.RoomTypeIndicator room_type = 2;
+	.holms.types.primitive.MonetaryAmount monetary_amount = 3;
+}

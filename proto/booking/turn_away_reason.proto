@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.booking;
+option csharp_namespace = "HOLMS.Types.Booking";
+option go_package = "booking";
+
+import "booking/indicators/turn_away_reason_indicator.proto";
+
+message TurnAwayReason {
+	.holms.types.booking.indicators.TurnAwayReasonIndicator entity_id = 1;
+	string description = 2;
+}

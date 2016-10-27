@@ -1,0 +1,24 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rooms;
+option csharp_namespace = "HOLMS.Types.Operations.Rooms";
+option go_package = "operations/rooms";
+
+import "google/protobuf/timestamp.proto";
+import "operations/room_maintenance_status.proto";
+import "operations/rooms/room_indicator.proto";
+import "supply/room_types/room_type_indicator.proto";
+
+message Room {
+	holms.types.operations.rooms.RoomIndicator entity_id = 1;
+	string room_number = 2;
+	string description = 3;
+	string additional_description = 4;
+	int32 nights_occupied_counter = 5;
+	google.protobuf.Timestamp last_cleaned_at = 6;
+	holms.types.operations.RoomMaintenanceState maintenance_state = 7;
+	holms.types.supply.room_types.RoomTypeIndicator room_type_id = 8;
+	string room_type_description = 9;
+	holms.types.operations.rooms.RoomIndicator connected_room = 10;
+	string trunk_id = 11;
+}

@@ -1,0 +1,35 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "booking/cancellation_policy.proto";
+import "booking/indicators/cancellation_policy_indicator.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+message CancellationPolicySvcEnumResponse {
+	repeated .holms.types.booking.CancellationPolicy cancellation_policies = 1;
+}
+
+service CancellationPolicySvc {
+	rpc All(.google.protobuf.Empty) 
+		returns (CancellationPolicySvcEnumResponse);
+
+	rpc GetById(.holms.types.booking.indicators.CancellationPolicyIndicator)
+		returns (.holms.types.booking.CancellationPolicy);
+
+	rpc Create(.holms.types.booking.CancellationPolicy) 
+		returns (.holms.types.booking.CancellationPolicy);
+
+	rpc Update(.holms.types.booking.CancellationPolicy) 
+		returns (.holms.types.booking.CancellationPolicy);
+
+	rpc Delete(.holms.types.booking.CancellationPolicy) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+
+	rpc GetPropertyCancellationPolicy(.holms.types.tenancy_config.indicators.PropertyIndicator) 
+		returns (.holms.types.booking.CancellationPolicy);
+}

@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.primitive;
+option csharp_namespace = "HOLMS.Types.Primitive";
+option go_package = "primitive";
+
+enum CharacterCaseType {
+	AUTO_CAPS = 0;
+	UPPERCASE = 1;
+	NONE = 2;
+}

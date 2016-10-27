@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.booking;
+option csharp_namespace = "HOLMS.Types.Booking";
+option go_package = "booking";
+
+import "primitive/pb_local_date.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+message DateRestriction {
+	holms.types.tenancy_config.indicators.PropertyIndicator property_id = 1;
+	holms.types.primitive.PbLocalDate opsdate = 2;
+	bool closed_to_arrival = 3;
+	uint32 minimum_stay_nights = 4;
+}

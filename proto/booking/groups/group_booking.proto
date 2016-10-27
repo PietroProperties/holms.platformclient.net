@@ -1,0 +1,38 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.groups;
+option csharp_namespace = "HOLMS.Types.Booking.Groups";
+option go_package = "booking/groups";
+
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "primitive/uuid.proto";
+import "booking/indicators/cancellation_policy_indicator.proto";
+import "booking/indicators/travel_agent_indicator.proto";
+import "booking/indicators/group_booking_indicator.proto";
+import "booking/groups/group_booking_status.proto";
+import "crm/groups/group_indicator.proto";
+import "money/accounting/account_indicator.proto";
+import "supply/rate_schedule_indicator.proto";
+import "tenancy_config/indicators/group_booking_method_indicator.proto";
+
+message GroupBooking {
+    .holms.types.booking.indicators.GroupBookingIndicator entity_id = 1;
+    GroupBookingStatus status = 2;
+    bool tax_exempt = 3;
+    string tax_id = 4;
+    bool group_pays_lodging = 5;
+    bool group_pays_incidentals = 6;
+    string additional_notes = 7;
+    string customer_booking_id = 8;
+    .holms.types.primitive.PbInclusiveOpsdateRange date_range = 9;
+    .holms.types.money.accounting.AccountIndicator house_account = 10;
+
+    .holms.types.supply.RateScheduleIndicator rate_schedule = 11;
+    .holms.types.crm.groups.GroupIndicator group = 12;
+    .holms.types.primitive.Uuid confirmation_template_id = 13;
+    .holms.types.tenancy_config.indicators.GroupBookingMethodIndicator booking_method = 14;
+    .holms.types.primitive.Uuid arrival_template_id = 15;
+    .holms.types.primitive.Uuid reservation_source_id = 16;
+    .holms.types.booking.indicators.TravelAgentIndicator travel_agent = 17;
+    .holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 18;
+}

@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.money.accounting;
+option csharp_namespace = "HOLMS.Types.Money.Accounting";
+option go_package = "money/accounting";
+
+import "google/protobuf/timestamp.proto";
+import "money/accounting/accounting_transaction_line.proto";
+import "primitive/uuid.proto";
+
+message AccountingTransaction {
+	google.protobuf.Timestamp posted_time = 1;
+	string narration = 2;
+	repeated holms.types.money.accounting.AccountingTransactionLine lines = 3;
+	holms.types.primitive.Uuid Id = 4;
+}

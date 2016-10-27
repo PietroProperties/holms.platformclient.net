@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+option go_package = "tenancyconfig/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "primitive/uuid.proto";
+import "tenancy_config/group_booking_method.proto";
+
+message GroupBookingSvcAllResponse {
+	repeated .holms.types.tenancy_config.GroupBookingMethod methods = 1;
+}
+
+service GroupBookingMethodSvc {
+	rpc All(.google.protobuf.Empty) 
+		returns (GroupBookingSvcAllResponse);
+
+	rpc GetById(.holms.types.primitive.Uuid) 
+		returns (.holms.types.tenancy_config.GroupBookingMethod);
+
+	rpc Create(.holms.types.tenancy_config.GroupBookingMethod)
+		returns (.holms.types.tenancy_config.GroupBookingMethod);
+
+	rpc Update(.holms.types.tenancy_config.GroupBookingMethod)
+		returns (.holms.types.tenancy_config.GroupBookingMethod);
+
+	rpc Delete(.holms.types.tenancy_config.GroupBookingMethod)
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.primitive;
+option csharp_namespace = "HOLMS.Types.Primitive";
+option go_package = "primitive";
+
+message FixedPointRatio {
+	// Rate, expressed in parts per million, giving 1ppm precision,
+	// equivalent to .000001 or 0.0001%
+	uint32 rate_ppm = 1;
+}

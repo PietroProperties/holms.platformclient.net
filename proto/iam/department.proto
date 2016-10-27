@@ -1,0 +1,42 @@
+﻿syntax = "proto3";
+
+package holms.types.iam;
+option csharp_namespace = "HOLMS.Types.IAM";
+option go_package = "iam";
+
+import "iam/department_indicator.proto";
+
+message Department {
+	DepartmentIndicator entity_id = 1;
+	string name = 2;
+	bool is_housekeeper = 3;
+
+	bool cap_staff_mgmt = 4;
+	bool cap_group_mgmt = 5;
+	bool cap_housekeeping_mgmt = 6;
+
+	bool cap_accounting_reports = 7;
+	bool cap_management_reports = 8;
+    bool cap_workstation_parameters = 9;
+	bool cap_save_display_settings = 10;
+	bool cap_lodgeic_reset = 11;
+
+	bool cap_events_waitlist_setup = 12;
+	bool cap_system_settings = 13;
+	bool cap_yield_mgmt = 14;
+	bool cap_hold_mgmt = 15;
+	bool cap_guest_blacklist_add_remove = 16;
+	bool cap_overbook_rooms = 17;
+	bool cap_override_rates = 18;
+	bool cap_call_accounting_advanced_setup = 19;
+
+	bool cap_gift_shop_sales_setup = 20;
+
+	bool cap_credit_card_setup = 21;
+	bool cap_credit_card_worksheet = 22;
+	bool cap_credit_card_capture_settle = 23;
+	bool cap_credit_card_reporting = 24;
+
+	bool cap_expedia_qc_mgmt = 25;
+	bool cap_web_setup = 26;
+}

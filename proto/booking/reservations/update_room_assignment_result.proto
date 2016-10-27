@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+enum UpdateRoomAssignmentResult {
+	ROOM_ASSIGNMENT_UPDATE_SUCCESS = 0;
+	ROOM_ASSIGNMENT_RESERVATION_NOT_FOUND = 1;
+
+}

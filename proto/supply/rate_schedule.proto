@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+package holms.types.supply;
+option csharp_namespace = "HOLMS.Types.Supply";
+option go_package = "supply";
+
+import "google/protobuf/timestamp.proto";
+import "primitive/monetary_amount.proto";
+import "supply/rate_schedule_indicator.proto";
+
+message RateSchedule {
+	RateScheduleIndicator id = 1;
+	string name = 2;
+	string description = 3;
+	holms.types.primitive.MonetaryAmount additional_person_nightly_charge = 4;
+	google.protobuf.Timestamp must_book_before = 5;
+	RateScheduleIndicator overlaid_on = 6;
+}

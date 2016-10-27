@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+option go_package = "money/cards";
+
+message ProcessorTransactionResponse {
+	ProcessorTransactionResult result = 1;
+}
+
+enum ProcessorTransactionResult {
+    SUCCESS = 0;
+    DECLINED = 1;
+    INVALID_REQUEST = 2;
+	AUTHENTICATION_FAILURE = 3;
+	GATEWAY_FAILURE = 4;
+	TIMEOUT = 5;
+	ABORTED = 6;
+	NETWORK_FAILURE = 7;
+	UNKNOWN_FAILURE = 8;
+}

@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.note_requests;
+option csharp_namespace = "HOLMS.Types.Operations.NoteRequests";
+option go_package = "operations/noterequests";
+
+import "primitive/uuid.proto";
+
+message NoteRequestIndicator {
+	.holms.types.primitive.Uuid id = 1;
+}

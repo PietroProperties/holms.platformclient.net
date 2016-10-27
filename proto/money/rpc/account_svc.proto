@@ -1,0 +1,65 @@
+﻿syntax = "proto3";
+
+package holms.types.money.rpc;
+option csharp_namespace = "HOLMS.Types.Money.RPC";
+option go_package = "money/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "money/accounting/account.proto";
+import "money/accounting/account_activity_ledger.proto";
+import "money/accounting/account_indicator.proto";
+import "money/accounting/ledger_account_category.proto";
+
+message AccountSvcEnumResponse {
+	repeated .holms.types.money.accounting.Account accounts = 1;
+}
+
+message AccountSvcAllByCategoryReq {
+	repeated .holms.types.money.accounting.LedgerAccountCategory categories = 1;
+}
+
+enum AccountSvcCreateStatus {
+	ACCOUNT_SVC_CREATE_SUCCESS = 0;
+	ACCOUNT_SVC_CREATE_UNKNOWN_FAILURE = 1;
+	ACCOUNT_SVC_CREATE_NONUNIQUE_ACC_NUMBER = 2;
+}
+
+enum AccountSvcUpdateStatus {
+	ACCOUNT_SVC_UPDATE_SUCCESS = 0;
+	ACCOUNT_SVC_UPDATE_UNKNOWN_FAILURE = 1;
+	ACCOUNT_SVC_UPDATE_NONUNIQUE_ACC_NUMBER = 2;
+}
+
+message AccountSvcCreateResponse {
+	AccountSvcCreateStatus status = 1;
+	.holms.types.money.accounting.Account account = 2;
+}
+
+message AccountSvcUpdateResponse {
+	AccountSvcUpdateStatus status = 1;
+	.holms.types.money.accounting.Account account = 2;
+}
+
+service AccountSvc {
+	rpc All(.google.protobuf.Empty) 
+		returns (AccountSvcEnumResponse);
+
+	rpc GetById(.holms.types.money.accounting.AccountIndicator) 
+		returns (.holms.types.money.accounting.Account);
+
+	rpc Create(.holms.types.money.accounting.Account) 
+		returns (AccountSvcCreateResponse);
+
+	rpc Update(.holms.types.money.accounting.Account) 
+		returns (AccountSvcUpdateResponse);
+
+	rpc Delete(.holms.types.money.accounting.Account) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+	
+	rpc AllByCategory(AccountSvcAllByCategoryReq) 
+		returns (AccountSvcEnumResponse);
+
+	rpc GetLedgerForAccount(.holms.types.money.accounting.AccountIndicator)
+		returns (.holms.types.money.accounting.AccountActivityLedger);
+}

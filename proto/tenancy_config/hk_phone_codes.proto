@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+message HKPhoneCodes {
+    string maid_in_room = 1;
+    string inspect = 2;
+    string clean_sheets_not_changed = 3;
+    string clean_and_sheets_changed = 4;
+}

@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.room_types;
+option csharp_namespace = "HOLMS.Types.Supply.RoomTypes";
+option go_package = "supply/roomtypes";
+
+import "operations/rooms/room.proto";
+import "supply/room_types/room_type.proto";
+
+message FullRoomType {
+	RoomType room_type = 1;
+	repeated holms.types.operations.rooms.Room rooms = 2;
+}

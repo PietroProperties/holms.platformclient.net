@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.groups;
+option csharp_namespace = "HOLMS.Types.Booking.Groups";
+option go_package = "booking/groups";
+
+enum GroupBookingStatus {
+	TENTATIVE = 0;
+	DEFINITE = 1;
+	CANCELLED = 2;
+}

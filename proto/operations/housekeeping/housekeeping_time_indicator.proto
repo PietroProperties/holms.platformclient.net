@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.housekeeping;
+option csharp_namespace = "HOLMS.Types.Operations.Housekeeping";
+option go_package = "operations/housekeeping";
+
+import "primitive/uuid.proto";
+
+message HousekeepingTimeIndicator {
+	.holms.types.primitive.Uuid id = 1;
+}

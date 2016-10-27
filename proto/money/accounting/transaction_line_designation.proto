@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.money.accounting;
+option csharp_namespace = "HOLMS.Types.Money.Accounting";
+option go_package = "money/accounting";
+
+enum TransactionLineDesignation {
+    TAX_CHARGED_TO_CUSTOMER = 0;
+	FEE_CHARGED_TO_CUSTOMER = 1;
+	UNDESIGNATED = 2;
+	CARD_PAYMENT = 3;
+	CHECK_PAYMENT = 4;
+	CASH_PAYMENT = 5;
+}

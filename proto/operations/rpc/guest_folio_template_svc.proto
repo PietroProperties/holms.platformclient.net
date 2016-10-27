@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rpc;
+option csharp_namespace = "HOLMS.Types.Operations.RPC";
+option go_package = "operations/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "operations/guest_folio_template.proto";
+import "primitive/uuid.proto";
+
+message GuestFolioTemplateSvcEnumResponse {
+	repeated .holms.types.operations.GuestFolioTemplate guest_folio_templates = 1;
+}
+
+service GuestFolioTemplateSvc {
+	rpc All(.google.protobuf.Empty) 
+		returns (GuestFolioTemplateSvcEnumResponse);
+
+	rpc GetById(.holms.types.primitive.Uuid) 
+		returns (.holms.types.operations.GuestFolioTemplate);
+
+	rpc Create(.holms.types.operations.GuestFolioTemplate) 
+		returns (.holms.types.operations.GuestFolioTemplate);
+
+	rpc Update(.holms.types.operations.GuestFolioTemplate) 
+		returns (.holms.types.operations.GuestFolioTemplate);
+
+	rpc Delete(.holms.types.operations.GuestFolioTemplate) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

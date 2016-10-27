@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.housekeeping;
+option csharp_namespace = "HOLMS.Types.Operations.Housekeeping";
+option go_package = "operations/housekeeping";
+
+import "google/protobuf/duration.proto";
+import "operations/housekeeping/housekeeping_time_indicator.proto";
+
+message HousekeepingTime {
+	HousekeepingTimeIndicator entity_id = 1;
+	string name = 2;
+	google.protobuf.Duration time_past_local_midnight = 3;
+}

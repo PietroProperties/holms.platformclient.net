@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.primitive;
+option csharp_namespace = "HOLMS.Types.Primitive";
+option go_package = "primitive";
+
+import "primitive/pb_local_date.proto";
+
+message PbInclusiveOpsdateRange {
+	// We might need to revise this later -- we should have a first-class
+	// date type, but it doesn't seem that one is provided by protobuf
+
+	PbLocalDate start_date = 1;
+	PbLocalDate end_date = 2;
+}

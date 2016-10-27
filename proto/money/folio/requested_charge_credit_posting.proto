@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+package holms.types.money.folio;
+option csharp_namespace = "HOLMS.Types.Money.Folio";
+option go_package = "money/folio";
+
+import "primitive/monetary_amount.proto";
+import "money/folio/charge_credit_type.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
+
+message RequestedChargeCreditPosting {
+	string description = 1;
+	ChargeCreditType charge_credit_type = 2;
+	.holms.types.primitive.MonetaryAmount untaxed_amount = 3;
+	bool tax_exempt = 4;
+	// Only used when charge type == incidental item
+	.holms.types.supply.incidental_items.IncidentalItemIndicator incidental_item = 5;
+}

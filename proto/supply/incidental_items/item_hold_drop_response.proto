@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package holms.types.supply.incidental_items;
+option csharp_namespace = "HOLMS.Types.Supply.IncidentalItems";
+option go_package = "supply/incidentalitems";
+
+enum ItemHoldDropResult {
+    ITEM_HOLD_DROP_RESULT_DROPPED = 0;
+    ITEM_HOLD_DROP_RESULT_ITEM_NOT_FOUND = 1;
+    ITEM_HOLD_DROP_RESULT_UNKNOWN_ERROR = 2;
+}
+
+message ItemHoldDropResponse {
+	ItemHoldDropResult result = 1;
+}
+

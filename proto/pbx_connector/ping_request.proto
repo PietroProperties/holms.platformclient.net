@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.pbx_connector;
+option csharp_namespace = "HOLMS.Types.PBXConnector";
+option go_package = "pbxconnector";
+
+import "primitive/uuid.proto";
+
+message PingRequest {
+	// To prevent aliasing of concurrent pings
+	.holms.types.primitive.Uuid ping_cookie = 1;
+}

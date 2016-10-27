@@ -1,0 +1,28 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "booking/incidental_reservations/incidental_item_reservation.proto";
+import "booking/indicators/incidental_item_reservation_indicator.proto";
+import "booking/incidental_reservations/incidental_reservation_result.proto";
+import "booking/indicators/reservation_indicator.proto";
+
+message IncidentalItemReservationGetForReservationResponse {
+	repeated .holms.types.booking.incidental_reservations.IncidentalItemReservation inventory_reservations = 1;
+}
+
+service IncidentalItemReservationSvc {
+	rpc CreateReservation (.holms.types.booking.incidental_reservations.IncidentalItemReservation)
+		returns (.holms.types.booking.incidental_reservations.IncidentalReservationResult);
+
+	rpc UpdateReservation (.holms.types.booking.incidental_reservations.IncidentalItemReservation)
+		returns (.holms.types.booking.incidental_reservations.IncidentalReservationResult);
+
+	rpc DropReservation (.holms.types.booking.indicators.IncidentalItemReservationIndicator)
+		returns (.holms.types.booking.incidental_reservations.IncidentalReservationResult);
+
+	rpc GetReservedInventoryForReservation (.holms.types.booking.indicators.ReservationIndicator)
+		returns (IncidentalItemReservationGetForReservationResponse);
+}

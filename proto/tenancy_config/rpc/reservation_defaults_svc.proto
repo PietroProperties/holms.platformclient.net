@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+option go_package = "tenancyconfig/rpc";
+
+import "google/protobuf/empty.proto";
+import "tenancy_config/reservation_defaults.proto";
+
+service ReservationDefaultsSvc {
+	rpc Get (google.protobuf.Empty) 
+		returns (.holms.types.tenancy_config.ReservationDefaults);
+
+	rpc Set (.holms.types.tenancy_config.ReservationDefaults)
+		returns (.holms.types.tenancy_config.ReservationDefaults);
+}

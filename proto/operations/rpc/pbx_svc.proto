@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rpc;
+option csharp_namespace = "HOLMS.Types.Operations.RPC";
+option go_package = "operations/rpc";
+
+import "google/protobuf/empty.proto";
+import "operations/pbx_events/pbx_event.proto";
+
+message PBXSvcAllResponse {
+	repeated .holms.types.operations.pbx_events.PBXEvent pbx_events = 1;
+}
+
+message PBXSvcGetActiveConnectorCountResponse {
+	int32 ping_responses = 1;
+}
+
+service PBXSvc {
+	rpc GetAllEvents (google.protobuf.Empty) returns (PBXSvcAllResponse);
+	rpc GetActiveConnectorCount (google.protobuf.Empty) returns (PBXSvcGetActiveConnectorCountResponse);
+}

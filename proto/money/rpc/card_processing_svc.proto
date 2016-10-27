@@ -1,0 +1,58 @@
+﻿syntax = "proto3";
+
+package holms.types.money.rpc;
+option csharp_namespace = "HOLMS.Types.Money.RPC";
+option go_package = "money/rpc";
+
+import "google/protobuf/empty.proto";
+import "primitive/pb_inclusive_calendar_date_range.proto";
+import "money/cards/card_merchant_indicator.proto";
+import "money/cards/merchant_capture.proto";
+import "money/cards/merchant_capture_indicator.proto";
+import "money/cards/merchant_batch.proto";
+import "money/cards/payment_card_verification_request.proto";
+import "money/cards/processor_transaction_result.proto";
+
+message CardProcessingSvcCaptureEnumResponse {
+	repeated .holms.types.money.cards.MerchantCapture captures = 1;
+}
+
+message MerchantBatchEnumResponse {
+	repeated .holms.types.money.cards.MerchantBatch batches = 1;
+}
+
+message CardProcessingSvcCancelPendingCaptureResponse {
+	CardProcessingSvcCancelPendingCaptureResult result = 1;
+}
+
+enum CardProcessingSvcCancelPendingCaptureResult {
+	CARD_PROCESSING_SVC_CANCEL_PENDING_CAPTURE_SUCCESS = 0;
+	CARD_PROCESSING_SVC_CANCEL_PENDING_CAPTURE_NOT_FOUND = 1;
+	CARD_PROCESSING_SVC_CANCEL_PENDING_CAPTURE_NOT_CANCELLABLE = 2;
+	CARD_PROCESSING_SVC_CANCEL_PENDING_CAPTURE_UNKNOWN_ERROR = 3;
+}
+
+message CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse {
+	.holms.types.money.cards.ProcessorTransactionResult result = 1;
+}
+
+service CardProcessingSvc {
+	rpc GetAllPendingCaptures(.google.protobuf.Empty) 
+		returns (CardProcessingSvcCaptureEnumResponse);
+
+	rpc GetAllBatches(.holms.types.primitive.PbInclusiveCalendarDateRange) 
+		returns (MerchantBatchEnumResponse);
+
+	rpc OpenAndSettleBatchFromPendingCapturesSpecificMerchant(.holms.types.money.cards.CardMerchantIndicator) 
+		returns (.holms.types.money.cards.MerchantBatch);
+
+	rpc OpenAndSettleBatchFromPendingCapturesAllMerchants(.google.protobuf.Empty) 
+		returns (MerchantBatchEnumResponse);
+
+	rpc CancelPendingCapture(.holms.types.money.cards.MerchantCaptureIndicator)
+		returns (CardProcessingSvcCancelPendingCaptureResponse);
+
+	rpc VerifyAndTokenizeNotPresentCard(.holms.types.money.cards.PaymentCardVerificationRequest)
+		returns (CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse);
+}
+

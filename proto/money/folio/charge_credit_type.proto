@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.money.folio;
+option csharp_namespace = "HOLMS.Types.Money.Folio";
+option go_package = "money/folio";
+
+enum ChargeCreditType {
+	FOLIO_CHARGE_TYPE_LODGING = 0;
+	FOLIO_CHARGE_TYPE_INCIDENTAL = 1;
+	FOLIO_CHARGE_TYPE_ROOM_CALL = 2;
+}

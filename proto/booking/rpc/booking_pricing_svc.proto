@@ -1,0 +1,28 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "booking/pricing/genesis_price_estimate_request_dto.proto";
+import "booking/pricing/reservation_price_estimate.proto";
+import "booking/pricing/open_price_estimate_request.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "booking/pricing/override_price_schedule.proto";
+import "booking/pricing/override_request.proto";
+import "google/protobuf/empty.proto";
+
+service BookingPricingSvc {
+	rpc EstimateGenesisReservation(.holms.types.booking.pricing.GenesisPriceEstimateRequestDTO)
+		returns (.holms.types.booking.pricing.ReservationPriceEstimate);
+	rpc EstimateOpenReservation(.holms.types.booking.pricing.OpenPriceEstimateRequest)
+		returns (.holms.types.booking.pricing.ReservationPriceEstimate);
+	rpc GetOverridesSchedule(.holms.types.booking.indicators.ReservationIndicator)
+		returns(.holms.types.booking.pricing.OverridePriceSchedule);
+	rpc EstimateForOverrides(.holms.types.booking.pricing.OverrideRequest)
+		returns(.holms.types.booking.pricing.ReservationPriceEstimate);
+	rpc ExecutePriceOverride(.holms.types.booking.pricing.OverrideRequest)
+		returns(google.protobuf.Empty);
+	rpc EstimateOpenReservationAsIs(.holms.types.booking.indicators.ReservationIndicator)
+		returns (.holms.types.booking.pricing.ReservationPriceEstimate);
+}

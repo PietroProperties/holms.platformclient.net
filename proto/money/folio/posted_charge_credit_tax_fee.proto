@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.money.folio;
+option csharp_namespace = "HOLMS.Types.Money.Folio";
+option go_package = "money/folio";
+
+import "primitive/monetary_amount.proto";
+
+message PostedChargeCreditTaxFee {
+	string description = 1;
+	.holms.types.primitive.MonetaryAmount amount = 2;
+}

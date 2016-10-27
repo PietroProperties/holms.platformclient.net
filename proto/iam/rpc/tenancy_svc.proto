@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.iam.rpc;
+option csharp_namespace = "HOLMS.Types.IAM.RPC";
+option go_package = "iam/rpc";
+
+import "google/protobuf/empty.proto";
+import "iam/tenancy.proto";
+
+service TenancySvc {
+	rpc Get (google.protobuf.Empty) 
+		returns (Tenancy);
+}

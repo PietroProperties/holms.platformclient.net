@@ -1,0 +1,60 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.rpc;
+option csharp_namespace = "HOLMS.Types.Supply.RPC";
+option go_package = "supply/rpc";
+
+import "google/protobuf/empty.proto";
+import "booking/indicators/group_booking_indicator.proto";
+import "supply/group_booking_hold.proto";
+import "supply/hold_adjustment.proto";
+import "supply/maintenance_hold_indicator.proto";
+
+message HoldsSvcAdjustManagementHoldsRequest {
+	repeated .holms.types.supply.HoldAdjustment hold_adjustments = 2;
+}
+
+message HoldsSvcGetGroupBookingHoldsResponse {
+	repeated .holms.types.supply.GroupBookingHold group_booking_holds = 1;
+}
+
+enum HoldsSvcCreateMaintenanceHoldResult {
+	CREATE_MAINTENANCE_HOLD_SUCCESS = 0;
+	CREATE_MAINTENANCE_HOLD_ROOM_TYPE_NOT_FOUND = 1;
+	CREATE_MAINTENANCE_HOLD_NO_AVAILABILITY = 2;
+}
+
+message HoldsSvcCreateMaintenanceHoldResponse {
+	HoldsSvcCreateMaintenanceHoldResult result = 1;
+	.holms.types.supply.MaintenanceHoldIndicator maintenance_hold = 2;
+}
+
+enum HoldsSvcUpdateMaintenanceHoldResult {
+	UPDATE_MAINTENANCE_HOLD_SUCCESS = 0;
+	UPDATE_MAINTENANCE_HOLD_MISSING_HOLD = 1;
+	UPDATE_MAINTENANCE_HOLD_ROOM_TYPE_NOT_FOUND = 2;
+	UPDATE_MAINTENANCE_HOLD_NO_AVAILABILITY = 3;
+}
+
+message HoldsSvcUpdateMaintenanceHoldResponse {
+	HoldsSvcUpdateMaintenanceHoldResult result = 1;
+	.holms.types.supply.MaintenanceHoldIndicator maintenance_hold = 2;
+}
+
+enum HoldsSvcDeleteMaintenanceHoldResult {
+	DELETE_MAINTENANCE_HOLD_SUCCESS = 0;
+	DELETE_MAINTENANCE_HOLD_MISSING_HOLD = 1;
+}
+
+message HoldsSvcDeleteMaintenanceHoldResponse {
+	HoldsSvcDeleteMaintenanceHoldResult result = 1;
+	.holms.types.supply.MaintenanceHoldIndicator maintenance_hold = 3;
+}
+
+service HoldsSvc {
+	rpc AdjustManagementHolds(HoldsSvcAdjustManagementHoldsRequest) 
+		returns (google.protobuf.Empty);
+
+	rpc GetGroupBookingHolds(holms.types.booking.indicators.GroupBookingIndicator) 
+		returns (HoldsSvcGetGroupBookingHoldsResponse);
+}

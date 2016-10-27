@@ -1,0 +1,42 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rpc;
+option csharp_namespace = "HOLMS.Types.Operations.RPC";
+option go_package = "operations/rpc";
+
+import "google/protobuf/empty.proto";
+import "operations/messaging/mailbox_entry.proto";
+import "operations/messaging/mailbox_entry_indicator.proto";
+import "operations/messaging/message_bin.proto";
+
+message StaffMsgSvcFetchForCurrentUserRequest {
+	.holms.types.operations.messaging.MessageBin bin = 1;
+}
+
+message StaffMsgSvcManyResponse {
+	repeated .holms.types.operations.messaging.MailboxEntry mailbox_entries = 1;
+}
+
+message StaffMsgSvcGetUnreadCountResponse {
+	uint32 count = 1;
+}
+
+service StaffMsgSvc {
+	rpc FetchMessageBoxForCurrentUser(StaffMsgSvcFetchForCurrentUserRequest)
+		returns (StaffMsgSvcManyResponse);
+
+	rpc DeleteMessage (.holms.types.operations.messaging.MailboxEntryIndicator)
+		returns (google.protobuf.Empty);
+
+	rpc GetUnreadCount (google.protobuf.Empty) 
+		returns (StaffMsgSvcGetUnreadCountResponse);
+
+	rpc SendMessage (.holms.types.operations.messaging.MailboxEntry) 
+		returns (google.protobuf.Empty);
+
+	rpc UpdateViewedTime (.holms.types.operations.messaging.MailboxEntryIndicator)
+		returns (google.protobuf.Empty);
+
+	rpc UpsertDraft (.holms.types.operations.messaging.MailboxEntry) 
+		returns (google.protobuf.Empty);
+}

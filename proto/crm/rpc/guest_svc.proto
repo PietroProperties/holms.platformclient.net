@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.crm.rpc;
+option csharp_namespace = "HOLMS.Types.CRM.RPC";
+option go_package = "crm/rpc";
+
+import "google/protobuf/empty.proto";
+import "crm/guests/guest_indicator.proto";
+import "crm/guests/guest.proto";
+
+message GuestSvcManyGuestsResponse {
+	repeated .holms.types.crm.guests.Guest guests = 1;
+}
+
+message GuestSvcGetManyRequest {
+	repeated .holms.types.crm.guests.GuestIndicator ids = 1;
+}
+
+message GuestSvcPrefixSearchRequest {
+	string family_name_prefix = 1;
+	string given_name_prefix = 2;
+}
+
+service GuestSvc {
+	rpc All(google.protobuf.Empty) returns (GuestSvcManyGuestsResponse);
+	rpc GetById (.holms.types.crm.guests.GuestIndicator) returns (.holms.types.crm.guests.Guest);
+	rpc GetSeveralById (GuestSvcGetManyRequest) returns (GuestSvcManyGuestsResponse);
+	rpc SearchByNamePrefix (GuestSvcPrefixSearchRequest) returns (GuestSvcManyGuestsResponse);
+	rpc Create (.holms.types.crm.guests.Guest) returns (.holms.types.crm.guests.Guest);
+	rpc Update (.holms.types.crm.guests.Guest) returns (.holms.types.crm.guests.Guest);
+}

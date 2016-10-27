@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.packages;
+option csharp_namespace = "HOLMS.Types.Supply.Packages";
+option go_package = "supply/packages";
+
+import "supply/priced_offered_lodging.proto";
+
+message LodgingPackage {
+	bool bookable = 1;
+	repeated holms.types.supply.PricedOfferedLodging offers = 2;
+}

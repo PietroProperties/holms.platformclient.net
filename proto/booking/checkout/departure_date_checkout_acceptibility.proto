@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package holms.types.booking.checkout;
+
+option csharp_namespace = "HOLMS.Types.Booking.Checkout";
+
+enum DepartureDateCheckoutAcceptibility {
+	OnTimeForCheckout = 0;
+	TooEarlyForCheckout = 1;
+	OverdueForCheckout = 2;
+	TardyForCheckout = 3;
+}

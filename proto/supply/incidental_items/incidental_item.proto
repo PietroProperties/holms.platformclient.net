@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.incidental_items;
+option csharp_namespace = "HOLMS.Types.Supply.IncidentalItems";
+option go_package = "supply/incidentalitems";
+
+import "primitive/monetary_amount.proto";
+import "money/accounting/account_indicator.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
+import "supply/incidental_items/item_charge_frequency.proto";
+
+message IncidentalItem {
+	.holms.types.supply.incidental_items.IncidentalItemIndicator entity_id = 1;
+	string description = 2;
+	uint32 quanity_owned = 3;
+	holms.types.primitive.MonetaryAmount price = 4;
+	bool incurs_taxes = 5;
+	bool incurs_fees = 6;
+	ItemChargeFrequency charge_frequency = 7;
+	holms.types.money.accounting.AccountIndicator revenue_account = 8;
+}

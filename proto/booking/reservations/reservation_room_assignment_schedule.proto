@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+import "primitive/pb_local_date.proto";
+import "operations/rooms/room.proto";
+
+message ReservationRoomNight {
+	.holms.types.operations.rooms.Room room = 1;
+	.holms.types.primitive.PbLocalDate date = 2;
+}
+
+message ReservationRoomAssignmentSchedule {
+	repeated ReservationRoomNight assignments = 1;
+}

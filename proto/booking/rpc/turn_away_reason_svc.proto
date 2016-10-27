@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "booking/turn_away_reason.proto";
+import "booking/indicators/turn_away_reason_indicator.proto";
+
+message TurnAwayReasonSvcAllResponse {
+	repeated .holms.types.booking.TurnAwayReason reasons = 1;
+}
+
+service TurnAwayReasonSvc {
+	rpc All (google.protobuf.Empty) 
+		returns (TurnAwayReasonSvcAllResponse);
+
+	rpc GetById (.holms.types.booking.indicators.TurnAwayReasonIndicator)
+		returns (.holms.types.booking.TurnAwayReason);
+
+	rpc Create (.holms.types.booking.TurnAwayReason) 
+		returns (.holms.types.booking.TurnAwayReason);
+
+	rpc Update (.holms.types.booking.TurnAwayReason)
+		returns (.holms.types.booking.TurnAwayReason);
+
+	rpc Delete (.holms.types.booking.TurnAwayReason)
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

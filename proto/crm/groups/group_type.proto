@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+package holms.types.crm.groups;
+option csharp_namespace = "HOLMS.Types.CRM.Groups";
+option go_package = "crm/groups";
+
+enum GroupType {
+	ACCOUNT = 0;
+	EVENT = 1;
+}

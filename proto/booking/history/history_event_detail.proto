@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.history;
+option csharp_namespace = "HOLMS.Types.Booking.History";
+option go_package = "booking/history";
+
+message HistoryEventDetail {
+	string category = 1;
+	string content = 2;
+}

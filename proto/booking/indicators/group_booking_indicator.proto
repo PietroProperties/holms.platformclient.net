@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.indicators;
+option csharp_namespace = "HOLMS.Types.Booking.Indicators";
+option go_package = "booking/indicators";
+
+import "primitive/uuid.proto";
+
+message GroupBookingIndicator {
+	holms.types.primitive.Uuid id = 1;
+}

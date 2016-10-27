@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.booking;
+option csharp_namespace = "HOLMS.Types.Booking";
+option go_package = "booking";
+
+import "booking/indicators/cancellation_policy_indicator.proto";
+import "booking/cancellation_fee_category.proto";
+import "primitive/fixed_point_ratio.proto";
+import "primitive/monetary_amount.proto";
+
+message CancellationPolicy {
+	holms.types.booking.indicators.CancellationPolicyIndicator entity_id = 1;
+	string description = 2;
+	int32 no_penalty_days = 3;
+	int32 forfeit_deposit_days = 4;
+	CancellationFeeCategory fee_category = 5;
+	.holms.types.primitive.MonetaryAmount cancellation_fee_amount = 6;
+	.holms.types.primitive.FixedPointRatio cancellation_fee_rate = 7;
+	string cancellation_policy_text = 8;
+}

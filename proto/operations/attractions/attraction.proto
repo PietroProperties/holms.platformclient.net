@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.attractions;
+option csharp_namespace = "HOLMS.Types.Operations.Attractions";
+option go_package = "operations/attractions";
+
+import "operations/attractions/attraction_indicator.proto";
+import "operations/attractions/attraction_category_indicator.proto";
+
+message Attraction {
+	.holms.types.operations.attractions.AttractionIndicator entity_id = 1;
+	string name = 2;
+	string information = 3;
+	
+	string category_name = 4;
+	.holms.types.operations.attractions.AttractionCategoryIndicator category = 5;
+}

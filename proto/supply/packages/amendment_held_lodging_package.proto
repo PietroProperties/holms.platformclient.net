@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.packages;
+option csharp_namespace = "HOLMS.Types.Supply.Packages";
+option go_package = "supply/packages";
+
+import "google/protobuf/timestamp.proto";
+import "supply/packages/lodging_package.proto";
+import "supply/reservation_amendment_hold_indicator.proto";
+
+message AmendmentHeldLodgingPackage {
+	holms.types.supply.ReservationAmendmentHoldIndicator hold_indicator = 1;
+	google.protobuf.Timestamp expires_at = 2;
+	holms.types.supply.packages.LodgingPackage package = 3;
+}

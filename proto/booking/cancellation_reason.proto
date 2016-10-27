@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.booking;
+option csharp_namespace = "HOLMS.Types.Booking";
+option go_package = "booking";
+
+import "primitive/uuid.proto";
+
+message CancellationReason {
+	.holms.types.primitive.Uuid entity_id = 1;
+	string reason_text = 2;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package holms.types.booking.guarantees;
+option csharp_namespace = "HOLMS.Types.Booking.Guarantees";
+
+import "booking/indicators/reservation_indicator.proto";
+
+message GuaranteeTenderedNotification {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	bool was_first_tendered_guarantee = 2;
+	string jwt_token = 3;
+}

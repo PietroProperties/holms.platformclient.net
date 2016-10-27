@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+option go_package = "money/cards";
+
+import "money/cards/card_merchant_indicator.proto";
+import "money/cards/card_terminal_indicator.proto";
+import "iam/client_instance.proto";
+
+message CardTerminal {
+	CardTerminalIndicator entity_id = 1;
+	CardMerchantIndicator merchant_id = 2;
+	holms.types.iam.ClientInstance station_id = 3;
+	string name = 4;
+	string ip_address = 5;
+	int32 port = 6;
+}

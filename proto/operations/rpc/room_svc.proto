@@ -1,0 +1,38 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rpc;
+option csharp_namespace = "HOLMS.Types.Operations.RPC";
+option go_package = "operations/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "operations/rooms/room.proto";
+
+message RoomSvcAllResponse {
+	repeated .holms.types.operations.rooms.Room rooms = 1;
+}
+
+enum RoomSvcCRUDResult {
+	CRUD_SUCCESS = 0;
+	UNKNOWN_ERROR = 1;
+	DUPLICATE_TRUNK_ID = 2;
+}
+
+message RoomSvcCRUDResponse {
+	RoomSvcCRUDResult crud_result = 1;
+	holms.types.operations.rooms.Room room = 2;
+}
+
+service RoomSvc {
+	rpc All (google.protobuf.Empty) 
+		returns (RoomSvcAllResponse);
+
+	rpc Create (.holms.types.operations.rooms.Room) 
+		returns (RoomSvcCRUDResponse);
+
+	rpc Update (.holms.types.operations.rooms.Room) 
+		returns (RoomSvcCRUDResponse);
+
+	rpc Delete (.holms.types.operations.rooms.Room) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.iam;
+option csharp_namespace = "HOLMS.Types.IAM";
+option go_package = "iam";
+
+import "iam/staff_member_indicator.proto";
+import "iam/tenancy_indicator.proto";
+import "iam/client_instance_indicator.proto";
+
+message AuthenticatedClientClaims {
+	.holms.types.iam.StaffMemberIndicator user = 1;
+	.holms.types.iam.TenancyIndicator tenancy = 2;
+	.holms.types.iam.ClientInstanceIndicator client = 3;
+
+}

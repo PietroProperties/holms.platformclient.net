@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rpc;
+option csharp_namespace = "HOLMS.Types.Operations.RPC";
+option go_package = "operations/rpc";
+
+import "google/protobuf/timestamp.proto";
+import "operations/housekeeping/housekeeping_room_status.proto";
+
+message HKActionCalculatorServiceManyRoomStatus {
+    repeated .holms.types.operations.housekeeping.HousekeepingRoomStatus statuses = 1;
+}
+
+service RoomUseStatusCalculatorSvc {
+    rpc GetRoomStatuses(google.protobuf.Timestamp) 
+		returns (HKActionCalculatorServiceManyRoomStatus);
+}

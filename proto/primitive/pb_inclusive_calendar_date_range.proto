@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.primitive;
+option csharp_namespace = "HOLMS.Types.Primitive";
+option go_package = "primitive";
+
+import "primitive/pb_local_date.proto";
+
+message PbInclusiveCalendarDateRange {
+	PbLocalDate start_date = 1;
+	PbLocalDate end_date = 2;
+}

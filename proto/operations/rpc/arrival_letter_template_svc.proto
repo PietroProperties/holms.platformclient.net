@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rpc;
+option csharp_namespace = "HOLMS.Types.Operations.RPC";
+option go_package = "operations/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "operations/arrival_letter_template.proto";
+import "primitive/uuid.proto";
+
+message ArrivalLetterTemplateSvcEnumResponse {
+	repeated .holms.types.operations.ArrivalLetterTemplate arrival_letters = 1;
+}
+
+service ArrivalLetterTemplateSvc {
+	rpc All(.google.protobuf.Empty) 
+		returns (ArrivalLetterTemplateSvcEnumResponse);
+
+	rpc GetById(.holms.types.primitive.Uuid) 
+		returns (.holms.types.operations.ArrivalLetterTemplate);
+
+	rpc Create(.holms.types.operations.ArrivalLetterTemplate) 
+		returns (.holms.types.operations.ArrivalLetterTemplate);
+
+	rpc Update(.holms.types.operations.ArrivalLetterTemplate) 
+		returns (.holms.types.operations.ArrivalLetterTemplate);
+
+	rpc Delete(.holms.types.operations.ArrivalLetterTemplate) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

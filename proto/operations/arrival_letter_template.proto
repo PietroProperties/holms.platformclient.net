@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.operations;
+option csharp_namespace = "HOLMS.Types.Operations";
+option go_package = "operations";
+
+import "primitive/uuid.proto";
+
+message ArrivalLetterTemplate {
+	.holms.types.primitive.Uuid entity_id = 1;
+	string title = 2;
+	string rtf_template = 3;
+	string html_template = 4;
+}

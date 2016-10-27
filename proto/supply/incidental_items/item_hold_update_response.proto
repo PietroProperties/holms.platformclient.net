@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package holms.types.supply.incidental_items;
+option csharp_namespace = "HOLMS.Types.Supply.IncidentalItems";
+option go_package = "supply/incidentalitems";
+
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
+
+enum ItemHoldUpdateResult {
+    ITEM_HOLD_UPDATE_SUCCESS = 0;
+    ITEM_HOLD_UPDATE_RESULT_ITEM_NOT_FOUND = 1;
+    ITEM_HOLD_UPDATE_RESULT_NO_AVAILABILITY = 2;
+}
+
+message ItemHoldUpdateResponse {
+    ItemHoldUpdateResult result = 1;
+}
+

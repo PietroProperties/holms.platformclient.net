@@ -1,0 +1,26 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+import "booking/reservations/reservation_guarantee_status.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "booking/reservations/reservation_state.proto";
+import "crm/guests/guest.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "supply/room_types/room_type.proto";
+import "iam/tenancy_indicator.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+message ReservationSummary {
+	holms.types.booking.indicators.ReservationIndicator entity_id = 1;
+	string booking_id = 2;
+	holms.types.booking.reservations.ReservationState state = 3;
+	holms.types.crm.guests.Guest guest = 4;
+	holms.types.primitive.PbInclusiveOpsdateRange date_range = 5;
+	holms.types.supply.room_types.RoomType room_type = 6;
+	holms.types.booking.reservations.ReservationGuaranteeStatus guarantee_status = 7;
+	.holms.types.iam.TenancyIndicator tenancy = 8;
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 9;
+}

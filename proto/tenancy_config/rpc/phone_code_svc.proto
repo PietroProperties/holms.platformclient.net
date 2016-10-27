@@ -1,0 +1,27 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+option go_package = "tenancyconfig/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "tenancy_config/phone_code.proto";
+
+message PhoneCodes {
+	repeated .holms.types.tenancy_config.PhoneCode codes = 1;
+}
+
+service PhoneCodeSvc {
+	rpc All(google.protobuf.Empty)
+		returns(PhoneCodes);
+
+	rpc Update(holms.types.tenancy_config.PhoneCode)
+		returns(holms.types.tenancy_config.PhoneCode);
+
+	rpc Delete(holms.types.tenancy_config.PhoneCode)
+		returns(.holms.types.primitive.ServerActionConfirmation);
+
+	rpc Create(holms.types.tenancy_config.PhoneCode)
+		returns(holms.types.tenancy_config.PhoneCode);
+}

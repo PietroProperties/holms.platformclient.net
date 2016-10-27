@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+option go_package = "tenancyconfig/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "tenancy_config/reservation_source.proto";
+import "tenancy_config/indicators/reservation_source_indicator.proto";
+
+message ReservationSourceSvcAllResponse {
+	repeated .holms.types.tenancy_config.ReservationSource reservation_sources = 1;
+}
+
+service ReservationSourceSvc {
+	rpc All (google.protobuf.Empty) 
+		returns (ReservationSourceSvcAllResponse);
+
+	rpc GetById (.holms.types.tenancy_config.indicators.ReservationSourceIndicator)
+		returns (.holms.types.tenancy_config.ReservationSource);
+
+	rpc Create (.holms.types.tenancy_config.ReservationSource)
+		returns (.holms.types.tenancy_config.ReservationSource);
+
+	rpc Update (.holms.types.tenancy_config.ReservationSource)
+		returns (.holms.types.tenancy_config.ReservationSource);
+
+	rpc Delete (.holms.types.tenancy_config.ReservationSource)
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

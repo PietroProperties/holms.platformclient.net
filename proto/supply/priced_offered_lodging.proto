@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.supply;
+option csharp_namespace = "HOLMS.Types.Supply";
+option go_package = "supply";
+
+import "supply/room_types/room_type_indicator.proto";
+import "primitive/monetary_amount.proto";
+import "primitive/pb_local_date.proto";
+import "supply/qualification_indicator.proto";
+import "supply/rate_schedule_indicator.proto";
+
+message PricedOfferedLodging {
+	holms.types.supply.room_types.RoomTypeIndicator room_type = 1;
+	holms.types.primitive.PbLocalDate date = 2;
+	
+	int32 available = 3;
+	RateScheduleIndicator rate_schedule = 4;
+	holms.types.primitive.MonetaryAmount nightly_price = 5;
+	QualificationIndicator qualification = 6;
+}

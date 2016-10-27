@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.money.accounting;
+option csharp_namespace = "HOLMS.Types.Money.Accounting";
+option go_package = "money/accounting";
+
+import "money/accounting/account_indicator.proto";
+import "money/accounting/accounting_transaction.proto";
+import "money/accounting/accounting_transaction_line.proto";
+
+message AccountActivityLedger {
+	AccountIndicator account = 1;
+	repeated holms.types.money.accounting.AccountingTransaction transactions = 2;
+	repeated holms.types.money.accounting.AccountingTransactionLine lines = 3;
+}

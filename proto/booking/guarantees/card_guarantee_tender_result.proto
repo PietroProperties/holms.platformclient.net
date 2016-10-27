@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.guarantees;
+option csharp_namespace = "HOLMS.Types.Booking.Guarantees";
+option go_package = "booking/guarantees";
+
+enum CardGuaranteeTenderResult {
+	CARD_GUARANTEE_TENDER_RESULT_SUCCESS = 0;
+	CARD_GUARANTEE_TENDER_RESULT_RESERVATION_NOT_FOUND = 1;
+	CARD_GUARANTEE_TENDER_RESULT_CARD_VERIFICATION_FAILED = 2;
+	CARD_GUARANTEE_TENDER_RESULT_CARD_AUTHORIZATION_FAILED = 3;
+}

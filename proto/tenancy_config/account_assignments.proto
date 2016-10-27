@@ -1,0 +1,23 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "money/accounting/account_indicator.proto";
+
+message AccountAssignments {
+	.holms.types.money.accounting.AccountIndicator cash_asset_account = 1;
+	.holms.types.money.accounting.AccountIndicator check_asset_account = 2;
+    .holms.types.money.accounting.AccountIndicator travelers_check_asset_account = 3;
+        
+	.holms.types.money.accounting.AccountIndicator amex_receivable_account = 4;
+	.holms.types.money.accounting.AccountIndicator discover_receivable_account = 5;
+	.holms.types.money.accounting.AccountIndicator visa_receivable_account = 6;
+	.holms.types.money.accounting.AccountIndicator mastercard_receivable_account = 7;
+	.holms.types.money.accounting.AccountIndicator diners_club_receivable_account = 8;
+
+	.holms.types.money.accounting.AccountIndicator group_lodging_revenue_account = 9;
+	.holms.types.money.accounting.AccountIndicator lodging_revenue_account = 10;
+	.holms.types.money.accounting.AccountIndicator room_call_revenue_account = 11;
+}

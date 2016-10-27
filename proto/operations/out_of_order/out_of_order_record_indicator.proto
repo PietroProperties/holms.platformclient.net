@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.out_of_order;
+option csharp_namespace = "HOLMS.Types.Operations.OutOfOrder";
+option go_package = "operations/outoforder";
+
+import "primitive/uuid.proto";
+
+message OutOfOrderRecordIndicator {
+	.holms.types.primitive.Uuid id = 1;
+}

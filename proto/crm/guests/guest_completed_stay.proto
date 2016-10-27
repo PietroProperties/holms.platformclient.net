@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+
+package holms.types.crm.guests;
+option csharp_namespace = "HOLMS.Types.CRM.Guests";
+option go_package = "crm/guests";
+
+import "primitive/monetary_amount.proto";
+import "primitive/pb_local_date.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "crm/guests/guest_indicator.proto";
+import "operations/rooms/room_indicator.proto";
+
+message GuestCompletedStay {
+	holms.types.primitive.PbLocalDate check_in_date = 1;
+	holms.types.primitive.MonetaryAmount average_rate = 2;
+	string reservation_booking_number = 3;
+	holms.types.booking.indicators.ReservationIndicator reservation_id = 4;
+	string room_number = 5;
+	holms.types.crm.guests.GuestIndicator guest_id = 6;
+}

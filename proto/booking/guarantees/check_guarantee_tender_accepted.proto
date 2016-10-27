@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.booking;
+option csharp_namespace = "HOLMS.Types.Booking.Guarantees";
+option go_package = "booking/guarantees";
+
+import "booking/indicators/reservation_indicator.proto";
+import "primitive/monetary_amount.proto";
+import "iam/authenticated_client_claims.proto";
+
+message CheckGuaranteeTenderAccepted {
+	holms.types.iam.AuthenticatedClientClaims authenticated_client_claims = 1;
+	holms.types.booking.indicators.ReservationIndicator reservation = 2;
+	holms.types.primitive.MonetaryAmount amount_received = 3;
+	string check_number = 4;
+}

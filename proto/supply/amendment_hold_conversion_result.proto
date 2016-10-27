@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.supply;
+option csharp_namespace = "HOLMS.Types.Supply";
+option go_package = "supply";
+
+import "supply/reservation_amendment_hold_indicator.proto";
+
+message AmendmentHoldConversionResult {
+	ReservationAmendmentHoldIndicator hold_indicator = 1;
+	bool conversion_successful = 2;
+}

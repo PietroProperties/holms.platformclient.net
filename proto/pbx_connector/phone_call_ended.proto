@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.pbx_connector;
+option csharp_namespace = "HOLMS.Types.PBXConnector";
+option go_package = "pbxconnector";
+
+import "google/protobuf/timestamp.proto";
+import "pbx_connector/mitel_call_ended.proto";
+
+message PhoneCallEnded {
+	string j_w_token = 1;
+	string raw_msg = 2;
+	google.protobuf.Timestamp msg_received_at = 3;
+	MitelCallEnded mitel_call_ended = 4;
+}

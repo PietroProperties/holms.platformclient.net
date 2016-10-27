@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rooms;
+option csharp_namespace = "HOLMS.Types.Operations.Rooms";
+option go_package = "operations/rooms";
+
+import "operations/rooms/room.proto";
+import "primitive/crud_action.proto";
+
+message RoomCrud {
+	string j_w_token = 1;
+	holms.types.primitive.CrudAction crud_action = 2;
+	Room before = 3;
+	Room after = 4;
+}

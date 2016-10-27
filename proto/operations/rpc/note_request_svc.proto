@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.rpc;
+option csharp_namespace = "HOLMS.Types.Operations.RPC";
+option go_package = "operations/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "operations/note_requests/note_request_indicator.proto";
+import "operations/note_requests/note_request.proto";
+
+message NoteRequestSvcAllResponse {
+	repeated .holms.types.operations.note_requests.NoteRequest note_requests = 1;
+}
+
+service NoteRequestSvc {
+	rpc All (google.protobuf.Empty) 
+		returns (NoteRequestSvcAllResponse);
+
+	rpc GetById (.holms.types.operations.note_requests.NoteRequestIndicator)
+		returns (.holms.types.operations.note_requests.NoteRequest);
+
+	rpc Create (.holms.types.operations.note_requests.NoteRequest)
+		returns (.holms.types.operations.note_requests.NoteRequest);
+
+	rpc Update (.holms.types.operations.note_requests.NoteRequest)
+		returns (.holms.types.operations.note_requests.NoteRequest);
+
+	rpc Delete (.holms.types.operations.note_requests.NoteRequest)
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

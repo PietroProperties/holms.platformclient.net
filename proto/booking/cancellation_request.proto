@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.booking;
+option csharp_namespace = "HOLMS.Types.Booking";
+option go_package = "booking";
+
+import "booking/indicators/reservation_indicator.proto";
+import "booking/cancellation_penalty_estimate.proto";
+
+message CancellationRequest {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	bool apply_penalty = 2;
+	string cancellation_reason = 3;
+	holms.types.booking.CancellationPenaltyEstimate penalty_estimate = 4;
+	string requesting_party = 5;
+}

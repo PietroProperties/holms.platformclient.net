@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.operations;
+option csharp_namespace = "HOLMS.Types.Operations";
+option go_package = "operations";
+
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "primitive/uuid.proto";
+import "operations/calendar_message_type.proto";
+
+message CalendarMessageIndicator {
+	.holms.types.primitive.Uuid id = 1;
+}
+
+message CalendarMessage {
+	CalendarMessageIndicator entity_id = 1;
+    string description = 2;
+    string additional_information = 3;
+	CalendarMessageType event_type = 4;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 5;
+}
