@@ -30,7 +30,7 @@ namespace HOLMS.Types.Booking.Reservations {
             "aW9uX2luZGljYXRvci5wcm90bxosYm9va2luZy9yZXNlcnZhdGlvbnMvcmVz",
             "ZXJ2YXRpb25fc3RhdGUucHJvdG8aFmNybS9ndWVzdHMvZ3Vlc3QucHJvdG8a",
             "IXN1cHBseS9yb29tX3R5cGVzL3Jvb21fdHlwZS5wcm90bxoac3VwcGx5L3F1",
-            "YWxpZmljYXRpb24ucHJvdG8izAUKFENhbmNlbGxlZFJlc2VydmF0aW9uEkcK",
+            "YWxpZmljYXRpb24ucHJvdG8i5gUKFENhbmNlbGxlZFJlc2VydmF0aW9uEkcK",
             "CWVudGl0eV9pZBgBIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNh",
             "dG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchISCgpib29raW5nX2lkGAIgASgJ",
             "EkEKBXN0YXRlGAMgASgOMjIuaG9sbXMudHlwZXMuYm9va2luZy5yZXNlcnZh",
@@ -46,12 +46,13 @@ namespace HOLMS.Types.Booking.Reservations {
             "YXBwbGllZBgMIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFy",
             "eUFtb3VudBIbChNjYW5jZWxsYXRpb25fcmVhc29uGA0gASgJEkQKE2NhbmNl",
             "bGxhdGlvbl9wb2xpY3kYDiABKAsyJy5ob2xtcy50eXBlcy5ib29raW5nLkNh",
-            "bmNlbGxhdGlvblBvbGljeUI5WhRib29raW5nL3Jlc2VydmF0aW9uc6oCIEhP",
-            "TE1TLlR5cGVzLkJvb2tpbmcuUmVzZXJ2YXRpb25zYgZwcm90bzM="));
+            "bmNlbGxhdGlvblBvbGljeRIYChByZXF1ZXN0aW5nX3BhcnR5GA8gASgJQjla",
+            "FGJvb2tpbmcvcmVzZXJ2YXRpb25zqgIgSE9MTVMuVHlwZXMuQm9va2luZy5S",
+            "ZXNlcnZhdGlvbnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Booking.CancellationPolicyReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationStateReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.Supply.QualificationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.CancelledReservation), global::HOLMS.Types.Booking.Reservations.CancelledReservation.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "NumberAdults", "NumberChildren", "RoomType", "AdditionalGuests", "Qualification", "TaxExempt", "CancellationPenaltyApplied", "CancellationReason", "CancellationPolicy" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.CancelledReservation), global::HOLMS.Types.Booking.Reservations.CancelledReservation.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "NumberAdults", "NumberChildren", "RoomType", "AdditionalGuests", "Qualification", "TaxExempt", "CancellationPenaltyApplied", "CancellationReason", "CancellationPolicy", "RequestingParty" }, null, null, null)
           }));
     }
     #endregion
@@ -96,6 +97,7 @@ namespace HOLMS.Types.Booking.Reservations {
       CancellationPenaltyApplied = other.cancellationPenaltyApplied_ != null ? other.CancellationPenaltyApplied.Clone() : null;
       cancellationReason_ = other.cancellationReason_;
       CancellationPolicy = other.cancellationPolicy_ != null ? other.CancellationPolicy.Clone() : null;
+      requestingParty_ = other.requestingParty_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -256,6 +258,17 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
+    /// <summary>Field number for the "requesting_party" field.</summary>
+    public const int RequestingPartyFieldNumber = 15;
+    private string requestingParty_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RequestingParty {
+      get { return requestingParty_; }
+      set {
+        requestingParty_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CancelledReservation);
@@ -283,6 +296,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (!object.Equals(CancellationPenaltyApplied, other.CancellationPenaltyApplied)) return false;
       if (CancellationReason != other.CancellationReason) return false;
       if (!object.Equals(CancellationPolicy, other.CancellationPolicy)) return false;
+      if (RequestingParty != other.RequestingParty) return false;
       return true;
     }
 
@@ -303,6 +317,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (cancellationPenaltyApplied_ != null) hash ^= CancellationPenaltyApplied.GetHashCode();
       if (CancellationReason.Length != 0) hash ^= CancellationReason.GetHashCode();
       if (cancellationPolicy_ != null) hash ^= CancellationPolicy.GetHashCode();
+      if (RequestingParty.Length != 0) hash ^= RequestingParty.GetHashCode();
       return hash;
     }
 
@@ -366,6 +381,10 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(114);
         output.WriteMessage(CancellationPolicy);
       }
+      if (RequestingParty.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(RequestingParty);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -410,6 +429,9 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (cancellationPolicy_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CancellationPolicy);
+      }
+      if (RequestingParty.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RequestingParty);
       }
       return size;
     }
@@ -479,6 +501,9 @@ namespace HOLMS.Types.Booking.Reservations {
           cancellationPolicy_ = new global::HOLMS.Types.Booking.CancellationPolicy();
         }
         CancellationPolicy.MergeFrom(other.CancellationPolicy);
+      }
+      if (other.RequestingParty.Length != 0) {
+        RequestingParty = other.RequestingParty;
       }
     }
 
@@ -565,6 +590,10 @@ namespace HOLMS.Types.Booking.Reservations {
               cancellationPolicy_ = new global::HOLMS.Types.Booking.CancellationPolicy();
             }
             input.ReadMessage(cancellationPolicy_);
+            break;
+          }
+          case 122: {
+            RequestingParty = input.ReadString();
             break;
           }
         }
