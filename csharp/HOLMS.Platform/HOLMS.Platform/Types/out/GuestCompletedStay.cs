@@ -26,19 +26,18 @@ namespace HOLMS.Types.CRM.Guests {
             "cy50eXBlcy5jcm0uZ3Vlc3RzGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50",
             "LnByb3RvGh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90bxouYm9va2lu",
             "Zy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90bxogY3Jt",
-            "L2d1ZXN0cy9ndWVzdF9pbmRpY2F0b3IucHJvdG8aJW9wZXJhdGlvbnMvcm9v",
-            "bXMvcm9vbV9pbmRpY2F0b3IucHJvdG8izQIKEkd1ZXN0Q29tcGxldGVkU3Rh",
-            "eRI5Cg1jaGVja19pbl9kYXRlGAEgASgLMiIuaG9sbXMudHlwZXMucHJpbWl0",
-            "aXZlLlBiTG9jYWxEYXRlEjsKDGF2ZXJhZ2VfcmF0ZRgCIAEoCzIlLmhvbG1z",
-            "LnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIiChpyZXNlcnZhdGlv",
-            "bl9ib29raW5nX251bWJlchgDIAEoCRJMCg5yZXNlcnZhdGlvbl9pZBgEIAEo",
-            "CzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlv",
-            "bkluZGljYXRvchITCgtyb29tX251bWJlchgFIAEoCRI4CghndWVzdF9pZBgG",
-            "IAEoCzImLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJbmRpY2F0b3JC",
-            "JVoKY3JtL2d1ZXN0c6oCFkhPTE1TLlR5cGVzLkNSTS5HdWVzdHNiBnByb3Rv",
-            "Mw=="));
+            "L2d1ZXN0cy9ndWVzdF9pbmRpY2F0b3IucHJvdG8izQIKEkd1ZXN0Q29tcGxl",
+            "dGVkU3RheRI5Cg1jaGVja19pbl9kYXRlGAEgASgLMiIuaG9sbXMudHlwZXMu",
+            "cHJpbWl0aXZlLlBiTG9jYWxEYXRlEjsKDGF2ZXJhZ2VfcmF0ZRgCIAEoCzIl",
+            "LmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIiChpyZXNl",
+            "cnZhdGlvbl9ib29raW5nX251bWJlchgDIAEoCRJMCg5yZXNlcnZhdGlvbl9p",
+            "ZBgEIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNl",
+            "cnZhdGlvbkluZGljYXRvchITCgtyb29tX251bWJlchgFIAEoCRI4CghndWVz",
+            "dF9pZBgGIAEoCzImLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJbmRp",
+            "Y2F0b3JCJVoKY3JtL2d1ZXN0c6oCFkhPTE1TLlR5cGVzLkNSTS5HdWVzdHNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.Guests.GuestCompletedStay), global::HOLMS.Types.CRM.Guests.GuestCompletedStay.Parser, new[]{ "CheckInDate", "AverageRate", "ReservationBookingNumber", "ReservationId", "RoomNumber", "GuestId" }, null, null, null)
           }));

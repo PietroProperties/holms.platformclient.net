@@ -23,18 +23,17 @@ namespace HOLMS.Types.Supply.RPC {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiZzdXBwbHkvcnBjL2luY2lkZW50YWxfc3VwcGx5X3N2Yy5wcm90bxIWaG9s",
-            "bXMudHlwZXMuc3VwcGx5LnJwYxoqcHJpbWl0aXZlL3BiX2luY2x1c2l2ZV9v",
-            "cHNkYXRlX3JhbmdlLnByb3RvGkBzdXBwbHkvaW5jaWRlbnRhbF9pdGVtcy9p",
-            "bmNpZGVudGFsX2l0ZW1fYXZhaWxhYmlsaXR5X3F1ZXJ5LnByb3RvGkNzdXBw",
-            "bHkvaW5jaWRlbnRhbF9pdGVtcy9pbmNpZGVudGFsX2l0ZW1fYXZhaWxhYmls",
-            "aXR5X3Jlc3BvbnNlLnByb3RvMroBChNJbmNpZGVudGFsU3VwcGx5U3ZjEqIB",
-            "ChFDaGVja0F2YWlsYWJpbGl0eRJELmhvbG1zLnR5cGVzLnN1cHBseS5pbmNp",
-            "ZGVudGFsX2l0ZW1zLkluY2lkZW50YWxJdGVtQXZhaWxhYmlsaXR5UXVlcnka",
-            "Ry5ob2xtcy50eXBlcy5zdXBwbHkuaW5jaWRlbnRhbF9pdGVtcy5JbmNpZGVu",
-            "dGFsSXRlbUF2YWlsYWJpbGl0eVJlc3BvbnNlQiVaCnN1cHBseS9ycGOqAhZI",
-            "T0xNUy5UeXBlcy5TdXBwbHkuUlBDYgZwcm90bzM="));
+            "bXMudHlwZXMuc3VwcGx5LnJwYxpAc3VwcGx5L2luY2lkZW50YWxfaXRlbXMv",
+            "aW5jaWRlbnRhbF9pdGVtX2F2YWlsYWJpbGl0eV9xdWVyeS5wcm90bxpDc3Vw",
+            "cGx5L2luY2lkZW50YWxfaXRlbXMvaW5jaWRlbnRhbF9pdGVtX2F2YWlsYWJp",
+            "bGl0eV9yZXNwb25zZS5wcm90bzK6AQoTSW5jaWRlbnRhbFN1cHBseVN2YxKi",
+            "AQoRQ2hlY2tBdmFpbGFiaWxpdHkSRC5ob2xtcy50eXBlcy5zdXBwbHkuaW5j",
+            "aWRlbnRhbF9pdGVtcy5JbmNpZGVudGFsSXRlbUF2YWlsYWJpbGl0eVF1ZXJ5",
+            "GkcuaG9sbXMudHlwZXMuc3VwcGx5LmluY2lkZW50YWxfaXRlbXMuSW5jaWRl",
+            "bnRhbEl0ZW1BdmFpbGFiaWxpdHlSZXNwb25zZUIlWgpzdXBwbHkvcnBjqgIW",
+            "SE9MTVMuVHlwZXMuU3VwcGx5LlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemAvailabilityQueryReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemAvailabilityResponseReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemAvailabilityQueryReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemAvailabilityResponseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null));
     }
     #endregion

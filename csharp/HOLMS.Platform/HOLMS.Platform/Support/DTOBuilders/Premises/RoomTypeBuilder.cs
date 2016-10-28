@@ -22,7 +22,6 @@ namespace HOLMS.Support.DTOBuilders.Premises {
             var rt = new RoomType {
                 EntityId = Id,
                 Description = Description,
-                WebDescription = WebDescription ?? string.Empty,
                 NormalOccupancy = NormalOccupancy,
                 MaxOccupancy = MaxOccupancy,
                 CleaningTimeDustMins = CleaningTimeDustMins,
@@ -31,7 +30,6 @@ namespace HOLMS.Support.DTOBuilders.Premises {
                 CleaningTimeDeepMins = CleaningTimeDeepMins,
                 BaseManagementHolds = BaseManagementHolds,
                 AdditionalWebHolds = AdditionalWebHolds,
-                AvailableOnWebsite = AvailableOnWebsite
             };
 
             if (PropertyId != null) {
