@@ -16,11 +16,13 @@ namespace HOLMS.Support.Security {
 
         public string SignedToken { get; private set; }
 
-        public JWToken(ClientInstanceIndicator client, StaffMemberIndicator user, TenancyIndicator tenancy, DateTime requestTime, bool hasExpiration) {
-            CreateToken(client, user, tenancy, requestTime, hasExpiration);
+        public JWToken(ClientInstanceIndicator client, StaffMemberIndicator user,
+            TenancyIndicator tenancy, DateTime requestTime, bool hasExpiration, SigningCredentials creds) {
+            CreateToken(client, user, tenancy, requestTime, hasExpiration, creds);
         }
 
-        private void CreateToken(ClientInstanceIndicator client, StaffMemberIndicator user, TenancyIndicator tenancy, DateTime requestTime, bool hasExpiration) {
+        private void CreateToken(ClientInstanceIndicator client, StaffMemberIndicator user,
+            TenancyIndicator tenancy, DateTime requestTime, bool hasExpiration, SigningCredentials creds) {
             var claimsIdentity =
                     new ClaimsIdentity(new List<Claim>() {
                                             new Claim(UserIdKey, user.GuidID.ToString()),
@@ -31,7 +33,7 @@ namespace HOLMS.Support.Security {
                 Audience = Audience,
                 Issuer = Issuer,
                 Subject = claimsIdentity,
-                SigningCredentials = StubSecurityKeyFactory.SigningCredentials,
+                SigningCredentials = creds,
             };
             if (hasExpiration) {
                 securityTokenDescriptor.Expires = requestTime.ToUniversalTime()
