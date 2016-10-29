@@ -23,20 +23,20 @@ namespace HOLMS.Types.Primitive {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch9wcmltaXRpdmUvc2Vzc2lvbl9jb250ZXh0LnByb3RvEhVob2xtcy50eXBl",
-            "cy5wcmltaXRpdmUaFHByaW1pdGl2ZS91dWlkLnByb3RvGiBpYW0vc3RhZmZf",
-            "bWVtYmVyX2luZGljYXRvci5wcm90byLoAQoOU2Vzc2lvbkNvbnRleHQSFAoM",
-            "YWNjZXNzX3Rva2VuGAEgASgJEhUKDXJlZnJlc2hfdG9rZW4YAiABKAkSFAoM",
-            "dGVuYW5jeV9uYW1lGAMgASgJEhEKCXVzZXJfbmFtZRgEIAEoCRIzCgR1c2Vy",
-            "GAUgASgLMiUuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNhdG9y",
-            "EjcKDGNhcGFiaWxpdGllcxgGIAMoDjIhLmhvbG1zLnR5cGVzLnByaW1pdGl2",
-            "ZS5DYXBhYmlsaXR5EhIKCmV4cGlyZXNfaW4YByABKAQqtwEKCkNhcGFiaWxp",
-            "dHkSCwoHVU5LTk9XThAAEhUKEUNSRURJVF9DQVJEX1NFVFVQEAESFAoQR1JP",
-            "VVBfTUFOQUdFTUVOVBACEhsKF0hPVVNFS0VFUElOR19NQU5BR0VNRU5UEAMS",
-            "FAoQU1RBRkZfTUFOQUdFTUVOVBAEEhMKD1NZU1RFTV9TRVRUSU5HUxAFEhQK",
-            "EFlJRUxEX01BTkFHRU1FTlQQBhIRCg1SQVRFX09WRVJSSURFEAdCI1oJcHJp",
-            "bWl0aXZlqgIVSE9MTVMuVHlwZXMuUHJpbWl0aXZlYgZwcm90bzM="));
+            "cy5wcmltaXRpdmUaIGlhbS9zdGFmZl9tZW1iZXJfaW5kaWNhdG9yLnByb3Rv",
+            "IugBCg5TZXNzaW9uQ29udGV4dBIUCgxhY2Nlc3NfdG9rZW4YASABKAkSFQoN",
+            "cmVmcmVzaF90b2tlbhgCIAEoCRIUCgx0ZW5hbmN5X25hbWUYAyABKAkSEQoJ",
+            "dXNlcl9uYW1lGAQgASgJEjMKBHVzZXIYBSABKAsyJS5ob2xtcy50eXBlcy5p",
+            "YW0uU3RhZmZNZW1iZXJJbmRpY2F0b3ISNwoMY2FwYWJpbGl0aWVzGAYgAygO",
+            "MiEuaG9sbXMudHlwZXMucHJpbWl0aXZlLkNhcGFiaWxpdHkSEgoKZXhwaXJl",
+            "c19pbhgHIAEoBCq3AQoKQ2FwYWJpbGl0eRILCgdVTktOT1dOEAASFQoRQ1JF",
+            "RElUX0NBUkRfU0VUVVAQARIUChBHUk9VUF9NQU5BR0VNRU5UEAISGwoXSE9V",
+            "U0VLRUVQSU5HX01BTkFHRU1FTlQQAxIUChBTVEFGRl9NQU5BR0VNRU5UEAQS",
+            "EwoPU1lTVEVNX1NFVFRJTkdTEAUSFAoQWUlFTERfTUFOQUdFTUVOVBAGEhEK",
+            "DVJBVEVfT1ZFUlJJREUQB0IjWglwcmltaXRpdmWqAhVIT0xNUy5UeXBlcy5Q",
+            "cmltaXRpdmViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Primitive.Capability), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Primitive.SessionContext), global::HOLMS.Types.Primitive.SessionContext.Parser, new[]{ "AccessToken", "RefreshToken", "TenancyName", "UserName", "User", "Capabilities", "ExpiresIn" }, null, null, null)
           }));

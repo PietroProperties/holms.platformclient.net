@@ -24,19 +24,16 @@ namespace HOLMS.Types.Supply.IncidentalItems {
           string.Concat(
             "CjdzdXBwbHkvaW5jaWRlbnRhbF9pdGVtcy9pdGVtX2hvbGRfdXBkYXRlX3Jl",
             "c3BvbnNlLnByb3RvEiNob2xtcy50eXBlcy5zdXBwbHkuaW5jaWRlbnRhbF9p",
-            "dGVtcxoqcHJpbWl0aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnBy",
-            "b3RvGi5ib29raW5nL2luZGljYXRvcnMvcmVzZXJ2YXRpb25faW5kaWNhdG9y",
-            "LnByb3RvGjdzdXBwbHkvaW5jaWRlbnRhbF9pdGVtcy9pbmNpZGVudGFsX2l0",
-            "ZW1faW5kaWNhdG9yLnByb3RvImMKFkl0ZW1Ib2xkVXBkYXRlUmVzcG9uc2US",
-            "SQoGcmVzdWx0GAEgASgOMjkuaG9sbXMudHlwZXMuc3VwcGx5LmluY2lkZW50",
-            "YWxfaXRlbXMuSXRlbUhvbGRVcGRhdGVSZXN1bHQqjQEKFEl0ZW1Ib2xkVXBk",
-            "YXRlUmVzdWx0EhwKGElURU1fSE9MRF9VUERBVEVfU1VDQ0VTUxAAEioKJklU",
-            "RU1fSE9MRF9VUERBVEVfUkVTVUxUX0lURU1fTk9UX0ZPVU5EEAESKwonSVRF",
-            "TV9IT0xEX1VQREFURV9SRVNVTFRfTk9fQVZBSUxBQklMSVRZEAJCPVoWc3Vw",
-            "cGx5L2luY2lkZW50YWxpdGVtc6oCIkhPTE1TLlR5cGVzLlN1cHBseS5JbmNp",
-            "ZGVudGFsSXRlbXNiBnByb3RvMw=="));
+            "dGVtcyJjChZJdGVtSG9sZFVwZGF0ZVJlc3BvbnNlEkkKBnJlc3VsdBgBIAEo",
+            "DjI5LmhvbG1zLnR5cGVzLnN1cHBseS5pbmNpZGVudGFsX2l0ZW1zLkl0ZW1I",
+            "b2xkVXBkYXRlUmVzdWx0Ko0BChRJdGVtSG9sZFVwZGF0ZVJlc3VsdBIcChhJ",
+            "VEVNX0hPTERfVVBEQVRFX1NVQ0NFU1MQABIqCiZJVEVNX0hPTERfVVBEQVRF",
+            "X1JFU1VMVF9JVEVNX05PVF9GT1VORBABEisKJ0lURU1fSE9MRF9VUERBVEVf",
+            "UkVTVUxUX05PX0FWQUlMQUJJTElUWRACQj1aFnN1cHBseS9pbmNpZGVudGFs",
+            "aXRlbXOqAiJIT0xNUy5UeXBlcy5TdXBwbHkuSW5jaWRlbnRhbEl0ZW1zYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Supply.IncidentalItems.ItemHoldUpdateResult), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.IncidentalItems.ItemHoldUpdateResponse), global::HOLMS.Types.Supply.IncidentalItems.ItemHoldUpdateResponse.Parser, new[]{ "Result" }, null, null, null)
           }));

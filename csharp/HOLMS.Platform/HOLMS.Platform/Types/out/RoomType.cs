@@ -25,24 +25,23 @@ namespace HOLMS.Types.Supply.RoomTypes {
             "CiFzdXBwbHkvcm9vbV90eXBlcy9yb29tX3R5cGUucHJvdG8SHWhvbG1zLnR5",
             "cGVzLnN1cHBseS5yb29tX3R5cGVzGitzdXBwbHkvcm9vbV90eXBlcy9yb29t",
             "X3R5cGVfaW5kaWNhdG9yLnByb3RvGjJ0ZW5hbmN5X2NvbmZpZy9pbmRpY2F0",
-            "b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byL7AwoIUm9vbVR5cGUSQwoJ",
+            "b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byLEAwoIUm9vbVR5cGUSQwoJ",
             "ZW50aXR5X2lkGAEgASgLMjAuaG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlw",
-            "ZXMuUm9vbVR5cGVJbmRpY2F0b3ISEwoLZGVzY3JpcHRpb24YAiABKAkSFwoP",
-            "d2ViX2Rlc2NyaXB0aW9uGAMgASgJEhgKEG5vcm1hbF9vY2N1cGFuY3kYBCAB",
-            "KAUSFQoNbWF4X29jY3VwYW5jeRgFIAEoBRIjChtjbGVhbmluZ190aW1lX2No",
-            "ZWNrb3V0X21pbnMYBiABKAUSIwobY2xlYW5pbmdfdGltZV9zdGF5b3Zlcl9t",
-            "aW5zGAcgASgFEh8KF2NsZWFuaW5nX3RpbWVfZHVzdF9taW5zGAggASgFEh8K",
-            "F2NsZWFuaW5nX3RpbWVfZGVlcF9taW5zGAkgASgFEh0KFWJhc2VfbWFuYWdl",
-            "bWVudF9ob2xkcxgKIAEoBRIcChRhZGRpdGlvbmFsX3dlYl9ob2xkcxgLIAEo",
-            "BRIcChRhdmFpbGFibGVfb25fd2Vic2l0ZRgMIAEoCBJNCgtwcm9wZXJ0eV9p",
-            "ZBgNIAEoCzI4LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRv",
-            "cnMuUHJvcGVydHlJbmRpY2F0b3ISFQoNcHJvcGVydHlfbmFtZRgOIAEoCUIx",
-            "WhBzdXBwbHkvcm9vbXR5cGVzqgIcSE9MTVMuVHlwZXMuU3VwcGx5LlJvb21U",
-            "eXBlc2IGcHJvdG8z"));
+            "ZXMuUm9vbVR5cGVJbmRpY2F0b3ISEwoLZGVzY3JpcHRpb24YAiABKAkSGAoQ",
+            "bm9ybWFsX29jY3VwYW5jeRgEIAEoBRIVCg1tYXhfb2NjdXBhbmN5GAUgASgF",
+            "EiMKG2NsZWFuaW5nX3RpbWVfY2hlY2tvdXRfbWlucxgGIAEoBRIjChtjbGVh",
+            "bmluZ190aW1lX3N0YXlvdmVyX21pbnMYByABKAUSHwoXY2xlYW5pbmdfdGlt",
+            "ZV9kdXN0X21pbnMYCCABKAUSHwoXY2xlYW5pbmdfdGltZV9kZWVwX21pbnMY",
+            "CSABKAUSHQoVYmFzZV9tYW5hZ2VtZW50X2hvbGRzGAogASgFEhwKFGFkZGl0",
+            "aW9uYWxfd2ViX2hvbGRzGAsgASgFEk0KC3Byb3BlcnR5X2lkGA0gASgLMjgu",
+            "aG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0",
+            "eUluZGljYXRvchIVCg1wcm9wZXJ0eV9uYW1lGA4gASgJQjFaEHN1cHBseS9y",
+            "b29tdHlwZXOqAhxIT0xNUy5UeXBlcy5TdXBwbHkuUm9vbVR5cGVzYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RoomTypes.RoomType), global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser, new[]{ "EntityId", "Description", "WebDescription", "NormalOccupancy", "MaxOccupancy", "CleaningTimeCheckoutMins", "CleaningTimeStayoverMins", "CleaningTimeDustMins", "CleaningTimeDeepMins", "BaseManagementHolds", "AdditionalWebHolds", "AvailableOnWebsite", "PropertyId", "PropertyName" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RoomTypes.RoomType), global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser, new[]{ "EntityId", "Description", "NormalOccupancy", "MaxOccupancy", "CleaningTimeCheckoutMins", "CleaningTimeStayoverMins", "CleaningTimeDustMins", "CleaningTimeDeepMins", "BaseManagementHolds", "AdditionalWebHolds", "PropertyId", "PropertyName" }, null, null, null)
           }));
     }
     #endregion
@@ -75,7 +74,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
     public RoomType(RoomType other) : this() {
       EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
       description_ = other.description_;
-      webDescription_ = other.webDescription_;
       normalOccupancy_ = other.normalOccupancy_;
       maxOccupancy_ = other.maxOccupancy_;
       cleaningTimeCheckoutMins_ = other.cleaningTimeCheckoutMins_;
@@ -84,7 +82,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
       cleaningTimeDeepMins_ = other.cleaningTimeDeepMins_;
       baseManagementHolds_ = other.baseManagementHolds_;
       additionalWebHolds_ = other.additionalWebHolds_;
-      availableOnWebsite_ = other.availableOnWebsite_;
       PropertyId = other.propertyId_ != null ? other.PropertyId.Clone() : null;
       propertyName_ = other.propertyName_;
     }
@@ -113,17 +110,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
       get { return description_; }
       set {
         description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "web_description" field.</summary>
-    public const int WebDescriptionFieldNumber = 3;
-    private string webDescription_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string WebDescription {
-      get { return webDescription_; }
-      set {
-        webDescription_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -215,17 +201,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
     }
 
-    /// <summary>Field number for the "available_on_website" field.</summary>
-    public const int AvailableOnWebsiteFieldNumber = 12;
-    private bool availableOnWebsite_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool AvailableOnWebsite {
-      get { return availableOnWebsite_; }
-      set {
-        availableOnWebsite_ = value;
-      }
-    }
-
     /// <summary>Field number for the "property_id" field.</summary>
     public const int PropertyIdFieldNumber = 13;
     private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator propertyId_;
@@ -263,7 +238,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
       if (!object.Equals(EntityId, other.EntityId)) return false;
       if (Description != other.Description) return false;
-      if (WebDescription != other.WebDescription) return false;
       if (NormalOccupancy != other.NormalOccupancy) return false;
       if (MaxOccupancy != other.MaxOccupancy) return false;
       if (CleaningTimeCheckoutMins != other.CleaningTimeCheckoutMins) return false;
@@ -272,7 +246,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
       if (CleaningTimeDeepMins != other.CleaningTimeDeepMins) return false;
       if (BaseManagementHolds != other.BaseManagementHolds) return false;
       if (AdditionalWebHolds != other.AdditionalWebHolds) return false;
-      if (AvailableOnWebsite != other.AvailableOnWebsite) return false;
       if (!object.Equals(PropertyId, other.PropertyId)) return false;
       if (PropertyName != other.PropertyName) return false;
       return true;
@@ -283,7 +256,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
       int hash = 1;
       if (entityId_ != null) hash ^= EntityId.GetHashCode();
       if (Description.Length != 0) hash ^= Description.GetHashCode();
-      if (WebDescription.Length != 0) hash ^= WebDescription.GetHashCode();
       if (NormalOccupancy != 0) hash ^= NormalOccupancy.GetHashCode();
       if (MaxOccupancy != 0) hash ^= MaxOccupancy.GetHashCode();
       if (CleaningTimeCheckoutMins != 0) hash ^= CleaningTimeCheckoutMins.GetHashCode();
@@ -292,7 +264,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
       if (CleaningTimeDeepMins != 0) hash ^= CleaningTimeDeepMins.GetHashCode();
       if (BaseManagementHolds != 0) hash ^= BaseManagementHolds.GetHashCode();
       if (AdditionalWebHolds != 0) hash ^= AdditionalWebHolds.GetHashCode();
-      if (AvailableOnWebsite != false) hash ^= AvailableOnWebsite.GetHashCode();
       if (propertyId_ != null) hash ^= PropertyId.GetHashCode();
       if (PropertyName.Length != 0) hash ^= PropertyName.GetHashCode();
       return hash;
@@ -312,10 +283,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
       if (Description.Length != 0) {
         output.WriteRawTag(18);
         output.WriteString(Description);
-      }
-      if (WebDescription.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(WebDescription);
       }
       if (NormalOccupancy != 0) {
         output.WriteRawTag(32);
@@ -349,10 +316,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
         output.WriteRawTag(88);
         output.WriteInt32(AdditionalWebHolds);
       }
-      if (AvailableOnWebsite != false) {
-        output.WriteRawTag(96);
-        output.WriteBool(AvailableOnWebsite);
-      }
       if (propertyId_ != null) {
         output.WriteRawTag(106);
         output.WriteMessage(PropertyId);
@@ -371,9 +334,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
       if (Description.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
-      }
-      if (WebDescription.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(WebDescription);
       }
       if (NormalOccupancy != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(NormalOccupancy);
@@ -399,9 +359,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
       if (AdditionalWebHolds != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(AdditionalWebHolds);
       }
-      if (AvailableOnWebsite != false) {
-        size += 1 + 1;
-      }
       if (propertyId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PropertyId);
       }
@@ -424,9 +381,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
       if (other.Description.Length != 0) {
         Description = other.Description;
-      }
-      if (other.WebDescription.Length != 0) {
-        WebDescription = other.WebDescription;
       }
       if (other.NormalOccupancy != 0) {
         NormalOccupancy = other.NormalOccupancy;
@@ -451,9 +405,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
       if (other.AdditionalWebHolds != 0) {
         AdditionalWebHolds = other.AdditionalWebHolds;
-      }
-      if (other.AvailableOnWebsite != false) {
-        AvailableOnWebsite = other.AvailableOnWebsite;
       }
       if (other.propertyId_ != null) {
         if (propertyId_ == null) {
@@ -483,10 +434,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
           }
           case 18: {
             Description = input.ReadString();
-            break;
-          }
-          case 26: {
-            WebDescription = input.ReadString();
             break;
           }
           case 32: {
@@ -519,10 +466,6 @@ namespace HOLMS.Types.Supply.RoomTypes {
           }
           case 88: {
             AdditionalWebHolds = input.ReadInt32();
-            break;
-          }
-          case 96: {
-            AvailableOnWebsite = input.ReadBool();
             break;
           }
           case 106: {

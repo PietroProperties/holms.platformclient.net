@@ -4,7 +4,6 @@ package holms.types.primitive;
 option csharp_namespace = "HOLMS.Types.Primitive";
 option go_package = "primitive";
 
-import "primitive/uuid.proto";
 import "iam/staff_member_indicator.proto";
 
 enum Capability {

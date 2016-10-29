@@ -8,7 +8,6 @@ import "primitive/monetary_amount.proto";
 import "primitive/pb_local_date.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "crm/guests/guest_indicator.proto";
-import "operations/rooms/room_indicator.proto";
 
 message GuestCompletedStay {
 	holms.types.primitive.PbLocalDate check_in_date = 1;
