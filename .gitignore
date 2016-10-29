@@ -1,3 +1,4 @@
 csharp/HOLMS.Platform/HOLMS.Platform/bin/
 csharp/HOLMS.Platform/HOLMS.Platform/obj/
- 
+*.DotSettings.user
+

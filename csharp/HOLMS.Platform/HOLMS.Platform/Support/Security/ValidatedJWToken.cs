@@ -26,11 +26,11 @@ namespace HOLMS.Support.Security {
             };
         }
 
-        public static ValidatedJWToken CreateWithValidation(string rawData) {
+        public static ValidatedJWToken CreateWithValidation(string rawData, SecurityKey key) {
             var tokenValidationParameters = new TokenValidationParameters() {
                 ValidAudiences = new [] { JWToken.Audience },
                 ValidIssuers = new [] { JWToken.Issuer },
-                IssuerSigningKey = StubSecurityKeyFactory.SecurityKey,
+                IssuerSigningKey = key,
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();
