@@ -28,4 +28,5 @@ message CancelledReservation {
 	primitive.MonetaryAmount cancellation_penalty_applied = 12;
 	string cancellation_reason = 13;
 	.holms.types.booking.CancellationPolicy cancellation_policy = 14;
+	string requesting_party = 15;
 }
