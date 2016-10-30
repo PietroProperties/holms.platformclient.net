@@ -14,6 +14,7 @@ namespace HOLMS.Types.Reporting.RPC {
 
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest> __Marshaller_FrontDeskReportingSvcRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Marshaller_FrontDeskReportingSvcReportResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest> __Marshaller_FrontDeskReportingSvcInHouseGuestsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest> __Marshaller_FrontDeskReportingSvcHousekeepingRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetArrivalsReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
@@ -30,11 +31,11 @@ namespace HOLMS.Types.Reporting.RPC {
         __Marshaller_FrontDeskReportingSvcRequest,
         __Marshaller_FrontDeskReportingSvcReportResponse);
 
-    static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetInHouseGuestsReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
+    static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetInHouseGuestsReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
         MethodType.Unary,
         __ServiceName,
         "GetInHouseGuestsReport",
-        __Marshaller_FrontDeskReportingSvcRequest,
+        __Marshaller_FrontDeskReportingSvcInHouseGuestsRequest,
         __Marshaller_FrontDeskReportingSvcReportResponse);
 
     static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetNoShowsReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
@@ -70,7 +71,7 @@ namespace HOLMS.Types.Reporting.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetInHouseGuestsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetInHouseGuestsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -142,19 +143,19 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetDeparturesReport, null, options, request);
       }
-      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetInHouseGuestsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetInHouseGuestsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetInHouseGuestsReport(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetInHouseGuestsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetInHouseGuestsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetInHouseGuestsReport, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetInHouseGuestsReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetInHouseGuestsReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetInHouseGuestsReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetInHouseGuestsReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetInHouseGuestsReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetInHouseGuestsReport, null, options, request);
       }

@@ -7,8 +7,19 @@ option go_package = "operations/rpc";
 import "google/protobuf/timestamp.proto";
 import "iam/staff_member_indicator.proto";
 
+enum InHouseGuestReportSorting {
+	BY_GUEST_NAME = 0;
+	BY_ROOM_NUMBER = 1;
+}
+	
 message FrontDeskReportingSvcRequest {
 	google.protobuf.Timestamp date = 1;
+}
+
+message FrontDeskReportingSvcInHouseGuestsRequest {
+	google.protobuf.Timestamp date = 1;
+	InHouseGuestReportSorting sort_type = 2;
+	
 }
 
 message FrontDeskReportingSvcHousekeepingRequest {
@@ -27,7 +38,7 @@ service FrontDeskReportingSvc {
     rpc GetDeparturesReport(FrontDeskReportingSvcRequest)
         returns (FrontDeskReportingSvcReportResponse);
 
-    rpc GetInHouseGuestsReport(FrontDeskReportingSvcRequest)
+    rpc GetInHouseGuestsReport(FrontDeskReportingSvcInHouseGuestsRequest)
         returns (FrontDeskReportingSvcReportResponse);
 
     rpc GetNoShowsReport(FrontDeskReportingSvcRequest)

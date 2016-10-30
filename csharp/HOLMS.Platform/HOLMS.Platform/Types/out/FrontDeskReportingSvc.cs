@@ -26,34 +26,40 @@ namespace HOLMS.Types.Reporting.RPC {
             "bxIZaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYxofZ29vZ2xlL3Byb3RvYnVm",
             "L3RpbWVzdGFtcC5wcm90bxogaWFtL3N0YWZmX21lbWJlcl9pbmRpY2F0b3Iu",
             "cHJvdG8iSAocRnJvbnREZXNrUmVwb3J0aW5nU3ZjUmVxdWVzdBIoCgRkYXRl",
-            "GAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCJ6CihGcm9udERl",
-            "c2tSZXBvcnRpbmdTdmNIb3VzZWtlZXBpbmdSZXF1ZXN0EjsKDHN0YWZmX21l",
-            "bWJlchgBIAEoCzIlLmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1lbWJlckluZGlj",
-            "YXRvchIRCglhZGRfbm90ZXMYAiABKAkiNwojRnJvbnREZXNrUmVwb3J0aW5n",
-            "U3ZjUmVwb3J0UmVzcG9uc2USEAoIZG9jdW1lbnQYASABKAkygwYKFUZyb250",
-            "RGVza1JlcG9ydGluZ1N2YxKMAQoRR2V0QXJyaXZhbHNSZXBvcnQSNy5ob2xt",
-            "cy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1Jl",
-            "cXVlc3QaPi5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVza1Jl",
-            "cG9ydGluZ1N2Y1JlcG9ydFJlc3BvbnNlEo4BChNHZXREZXBhcnR1cmVzUmVw",
-            "b3J0EjcuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBv",
-            "cnRpbmdTdmNSZXF1ZXN0Gj4uaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5G",
-            "cm9udERlc2tSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZRKRAQoWR2V0SW5I",
-            "b3VzZUd1ZXN0c1JlcG9ydBI3LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMu",
-            "RnJvbnREZXNrUmVwb3J0aW5nU3ZjUmVxdWVzdBo+LmhvbG1zLnR5cGVzLnJl",
-            "cG9ydGluZy5ycGMuRnJvbnREZXNrUmVwb3J0aW5nU3ZjUmVwb3J0UmVzcG9u",
-            "c2USiwEKEEdldE5vU2hvd3NSZXBvcnQSNy5ob2xtcy50eXBlcy5yZXBvcnRp",
-            "bmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1JlcXVlc3QaPi5ob2xtcy50",
-            "eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1JlcG9y",
-            "dFJlc3BvbnNlEqcBCiBHZXRIb3VzZWtlZXBpbmdBc3NpZ25tZW50c1JlcG9y",
-            "dBJDLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNrUmVwb3J0",
-            "aW5nU3ZjSG91c2VrZWVwaW5nUmVxdWVzdBo+LmhvbG1zLnR5cGVzLnJlcG9y",
-            "dGluZy5ycGMuRnJvbnREZXNrUmVwb3J0aW5nU3ZjUmVwb3J0UmVzcG9uc2VC",
-            "LFoOb3BlcmF0aW9ucy9ycGOqAhlIT0xNUy5UeXBlcy5SZXBvcnRpbmcuUlBD",
-            "YgZwcm90bzM="));
+            "GAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCKeAQopRnJvbnRE",
+            "ZXNrUmVwb3J0aW5nU3ZjSW5Ib3VzZUd1ZXN0c1JlcXVlc3QSKAoEZGF0ZRgB",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASRwoJc29ydF90eXBl",
+            "GAIgASgOMjQuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5JbkhvdXNlR3Vl",
+            "c3RSZXBvcnRTb3J0aW5nInoKKEZyb250RGVza1JlcG9ydGluZ1N2Y0hvdXNl",
+            "a2VlcGluZ1JlcXVlc3QSOwoMc3RhZmZfbWVtYmVyGAEgASgLMiUuaG9sbXMu",
+            "dHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNhdG9yEhEKCWFkZF9ub3RlcxgC",
+            "IAEoCSI3CiNGcm9udERlc2tSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZRIQ",
+            "Cghkb2N1bWVudBgBIAEoCSpCChlJbkhvdXNlR3Vlc3RSZXBvcnRTb3J0aW5n",
+            "EhEKDUJZX0dVRVNUX05BTUUQABISCg5CWV9ST09NX05VTUJFUhABMpAGChVG",
+            "cm9udERlc2tSZXBvcnRpbmdTdmMSjAEKEUdldEFycml2YWxzUmVwb3J0Ejcu",
+            "aG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdT",
+            "dmNSZXF1ZXN0Gj4uaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERl",
+            "c2tSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZRKOAQoTR2V0RGVwYXJ0dXJl",
+            "c1JlcG9ydBI3LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNr",
+            "UmVwb3J0aW5nU3ZjUmVxdWVzdBo+LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5y",
+            "cGMuRnJvbnREZXNrUmVwb3J0aW5nU3ZjUmVwb3J0UmVzcG9uc2USngEKFkdl",
+            "dEluSG91c2VHdWVzdHNSZXBvcnQSRC5ob2xtcy50eXBlcy5yZXBvcnRpbmcu",
+            "cnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y0luSG91c2VHdWVzdHNSZXF1ZXN0",
+            "Gj4uaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRp",
+            "bmdTdmNSZXBvcnRSZXNwb25zZRKLAQoQR2V0Tm9TaG93c1JlcG9ydBI3Lmhv",
+            "bG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNrUmVwb3J0aW5nU3Zj",
+            "UmVxdWVzdBo+LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNr",
+            "UmVwb3J0aW5nU3ZjUmVwb3J0UmVzcG9uc2USpwEKIEdldEhvdXNla2VlcGlu",
+            "Z0Fzc2lnbm1lbnRzUmVwb3J0EkMuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJw",
+            "Yy5Gcm9udERlc2tSZXBvcnRpbmdTdmNIb3VzZWtlZXBpbmdSZXF1ZXN0Gj4u",
+            "aG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdT",
+            "dmNSZXBvcnRSZXNwb25zZUIsWg5vcGVyYXRpb25zL3JwY6oCGUhPTE1TLlR5",
+            "cGVzLlJlcG9ydGluZy5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.RPC.InHouseGuestReportSorting), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest.Parser, new[]{ "Date" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest.Parser, new[]{ "Date", "SortType" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser, new[]{ "StaffMember", "AddNotes" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse.Parser, new[]{ "Document" }, null, null, null)
           }));
@@ -61,6 +67,14 @@ namespace HOLMS.Types.Reporting.RPC {
     #endregion
 
   }
+  #region Enums
+  public enum InHouseGuestReportSorting {
+    [pbr::OriginalName("BY_GUEST_NAME")] ByGuestName = 0,
+    [pbr::OriginalName("BY_ROOM_NUMBER")] ByRoomNumber = 1,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class FrontDeskReportingSvcRequest : pb::IMessage<FrontDeskReportingSvcRequest> {
     private static readonly pb::MessageParser<FrontDeskReportingSvcRequest> _parser = new pb::MessageParser<FrontDeskReportingSvcRequest>(() => new FrontDeskReportingSvcRequest());
@@ -185,6 +199,157 @@ namespace HOLMS.Types.Reporting.RPC {
 
   }
 
+  public sealed partial class FrontDeskReportingSvcInHouseGuestsRequest : pb::IMessage<FrontDeskReportingSvcInHouseGuestsRequest> {
+    private static readonly pb::MessageParser<FrontDeskReportingSvcInHouseGuestsRequest> _parser = new pb::MessageParser<FrontDeskReportingSvcInHouseGuestsRequest>(() => new FrontDeskReportingSvcInHouseGuestsRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FrontDeskReportingSvcInHouseGuestsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FrontDeskReportingSvcInHouseGuestsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FrontDeskReportingSvcInHouseGuestsRequest(FrontDeskReportingSvcInHouseGuestsRequest other) : this() {
+      Date = other.date_ != null ? other.Date.Clone() : null;
+      sortType_ = other.sortType_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FrontDeskReportingSvcInHouseGuestsRequest Clone() {
+      return new FrontDeskReportingSvcInHouseGuestsRequest(this);
+    }
+
+    /// <summary>Field number for the "date" field.</summary>
+    public const int DateFieldNumber = 1;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp date_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Date {
+      get { return date_; }
+      set {
+        date_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sort_type" field.</summary>
+    public const int SortTypeFieldNumber = 2;
+    private global::HOLMS.Types.Reporting.RPC.InHouseGuestReportSorting sortType_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Reporting.RPC.InHouseGuestReportSorting SortType {
+      get { return sortType_; }
+      set {
+        sortType_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FrontDeskReportingSvcInHouseGuestsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FrontDeskReportingSvcInHouseGuestsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Date, other.Date)) return false;
+      if (SortType != other.SortType) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (date_ != null) hash ^= Date.GetHashCode();
+      if (SortType != 0) hash ^= SortType.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (date_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Date);
+      }
+      if (SortType != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) SortType);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (date_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Date);
+      }
+      if (SortType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SortType);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FrontDeskReportingSvcInHouseGuestsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.date_ != null) {
+        if (date_ == null) {
+          date_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Date.MergeFrom(other.Date);
+      }
+      if (other.SortType != 0) {
+        SortType = other.SortType;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (date_ == null) {
+              date_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(date_);
+            break;
+          }
+          case 16: {
+            sortType_ = (global::HOLMS.Types.Reporting.RPC.InHouseGuestReportSorting) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class FrontDeskReportingSvcHousekeepingRequest : pb::IMessage<FrontDeskReportingSvcHousekeepingRequest> {
     private static readonly pb::MessageParser<FrontDeskReportingSvcHousekeepingRequest> _parser = new pb::MessageParser<FrontDeskReportingSvcHousekeepingRequest>(() => new FrontDeskReportingSvcHousekeepingRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -192,7 +357,7 @@ namespace HOLMS.Types.Reporting.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[1]; }
+      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -343,7 +508,7 @@ namespace HOLMS.Types.Reporting.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[2]; }
+      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
