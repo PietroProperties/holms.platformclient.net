@@ -13,7 +13,6 @@ using HOLMS.Types.Supply.RPC;
 using HOLMS.Types.TenancyConfig.RPC;
 using HOLMS.Types.Reporting.RPC;
 using System.Threading;
-using HOLMS.Types.Extensions.Support;
 using Microsoft.Extensions.Logging;
 
 namespace HOLMS.Application.Client {
@@ -85,7 +84,6 @@ namespace HOLMS.Application.Client {
         public HousekeepingManagementSvc.HousekeepingManagementSvcClient HousekeepingManagementSvc { get; protected set; }
         public HousekeepingTimeSvc.HousekeepingTimeSvcClient HousekeepingTimeSvc { get; protected set; }
         public NoteRequestSvc.NoteRequestSvcClient NoteRequestSvc { get; protected set; }
-        public OperationsReportsSvc.OperationsReportsSvcClient OperationsReportsAppSvc { get; protected set; }
         public OutOfOrderRecordSvc.OutOfOrderRecordSvcClient OutOfOrderRecordSvc { get; protected set; }
         public PBXSvc.PBXSvcClient PBXSvc { get; protected set; }
         public RoomClaimsSvc.RoomClaimsSvcClient RoomClaimsSvc { get; protected set; }
@@ -122,6 +120,7 @@ namespace HOLMS.Application.Client {
         #region Reporting
 
         public CardCaptureReportingSvc.CardCaptureReportingSvcClient CardCaptureReportingSvc { get; protected set; }
+        public FrontDeskReportingSvc.FrontDeskReportingSvcClient FrontDeskReportingSvc { get; protected set; }
 
         #endregion
 
@@ -232,7 +231,6 @@ namespace HOLMS.Application.Client {
             HousekeepingManagementSvc = new HousekeepingManagementSvc.HousekeepingManagementSvcClient(_authenticatedChannel);
             HousekeepingTimeSvc = new HousekeepingTimeSvc.HousekeepingTimeSvcClient(_authenticatedChannel);
             NoteRequestSvc = new NoteRequestSvc.NoteRequestSvcClient(_authenticatedChannel);
-            OperationsReportsAppSvc = new OperationsReportsSvc.OperationsReportsSvcClient(_authenticatedChannel);
             OutOfOrderRecordSvc = new OutOfOrderRecordSvc.OutOfOrderRecordSvcClient(_authenticatedChannel);
             PBXSvc = new PBXSvc.PBXSvcClient(_authenticatedChannel);
             RoomClaimsSvc = new RoomClaimsSvc.RoomClaimsSvcClient(_authenticatedChannel);
@@ -269,6 +267,7 @@ namespace HOLMS.Application.Client {
             #region Reporting
 
             CardCaptureReportingSvc = new CardCaptureReportingSvc.CardCaptureReportingSvcClient(_authenticatedChannel);
+            FrontDeskReportingSvc = new FrontDeskReportingSvc.FrontDeskReportingSvcClient(_authenticatedChannel);
 
             #endregion
         }

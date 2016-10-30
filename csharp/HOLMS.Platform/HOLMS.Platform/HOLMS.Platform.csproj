@@ -216,7 +216,6 @@
     <Compile Include="Types\out\ArrivalLetterTemplate.cs" />
     <Compile Include="Types\out\ArrivalLetterTemplateSvc.cs" />
     <Compile Include="Types\out\ArrivalLetterTemplateSvcGrpc.cs" />
-    <Compile Include="Types\out\ArrivalsReport.cs" />
     <Compile Include="Types\out\Attraction.cs" />
     <Compile Include="Types\out\AttractionCategory.cs" />
     <Compile Include="Types\out\AttractionCategoryIndicator.cs" />
@@ -296,10 +295,11 @@
     <Compile Include="Types\out\DepartmentSvc.cs" />
     <Compile Include="Types\out\DepartmentSvcGrpc.cs" />
     <Compile Include="Types\out\DepartureDateCheckoutAcceptibility.cs" />
-    <Compile Include="Types\out\DeparturesReport.cs" />
     <Compile Include="Types\out\FixedPointRatio.cs" />
     <Compile Include="Types\out\FolioChargePostedNotification.cs" />
     <Compile Include="Types\out\FolioState.cs" />
+    <Compile Include="Types\out\FrontDeskReportingSvc.cs" />
+    <Compile Include="Types\out\FrontDeskReportingSvcGrpc.cs" />
     <Compile Include="Types\out\FrpAmendmentResponse.cs" />
     <Compile Include="Types\out\FullProperty.cs" />
     <Compile Include="Types\out\FullRoomType.cs" />
@@ -352,7 +352,6 @@
     <Compile Include="Types\out\HoldsSvc.cs" />
     <Compile Include="Types\out\HoldsSvcGrpc.cs" />
     <Compile Include="Types\out\HousekeepingAssignment.cs" />
-    <Compile Include="Types\out\HousekeepingAssignmentsReport.cs" />
     <Compile Include="Types\out\HousekeepingRoomStatus.cs" />
     <Compile Include="Types\out\HousekeepingTime.cs" />
     <Compile Include="Types\out\HousekeepingTimeIndicator.cs" />
@@ -372,7 +371,6 @@
     <Compile Include="Types\out\IncidentalsSnapshotResponseRecord.cs" />
     <Compile Include="Types\out\IncidentalSupplySvc.cs" />
     <Compile Include="Types\out\IncidentalSupplySvcGrpc.cs" />
-    <Compile Include="Types\out\InHouseGuestsReport.cs" />
     <Compile Include="Types\out\InventoryItemSvc.cs" />
     <Compile Include="Types\out\InventoryItemSvcGrpc.cs" />
     <Compile Include="Types\out\ItemChargeFrequency.cs" />
@@ -403,7 +401,6 @@
     <Compile Include="Types\out\MessageBin.cs" />
     <Compile Include="Types\out\MitelCallEnded.cs" />
     <Compile Include="Types\out\MonetaryAmount.cs" />
-    <Compile Include="Types\out\NoShowsReport.cs" />
     <Compile Include="Types\out\NoteCategory.cs" />
     <Compile Include="Types\out\NoteRequest.cs" />
     <Compile Include="Types\out\NoteRequestIndicator.cs" />
@@ -414,8 +411,6 @@
     <Compile Include="Types\out\OpenLodgingReservationSvc.cs" />
     <Compile Include="Types\out\OpenLodgingReservationSvcGrpc.cs" />
     <Compile Include="Types\out\OpenPriceEstimateRequest.cs" />
-    <Compile Include="Types\out\OperationsReportsSvc.cs" />
-    <Compile Include="Types\out\OperationsReportsSvcGrpc.cs" />
     <Compile Include="Types\out\OutOfOrderRecord.cs" />
     <Compile Include="Types\out\OutOfOrderRecordCrud.cs" />
     <Compile Include="Types\out\OutOfOrderRecordIndicator.cs" />
