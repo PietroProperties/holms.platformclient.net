@@ -42,8 +42,8 @@ namespace HOLMS.Types.Reporting.RPC {
             "ZWRDYXB0dXJlc1JlcG9ydBJMLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMu",
             "Q2FyZENhcHR1cmVSZXBvcnRTdmNHZXRUcmFuc21pdHRlZENhcHR1cmVzUmVx",
             "dWVzdBpALmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuQ2FyZENhcHR1cmVS",
-            "ZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZUIcqgIZSE9MTVMuVHlwZXMuUmVw",
-            "b3J0aW5nLlJQQ2IGcHJvdG8z"));
+            "ZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZUIsWg5vcGVyYXRpb25zL3JwY6oC",
+            "GUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRangeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

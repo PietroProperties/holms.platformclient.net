@@ -30,6 +30,7 @@ namespace HOLMS.Application.Client {
         CheckoutSvc.CheckoutSvcClient CheckOutSvc { get; }
         ClientInstanceSvc.ClientInstanceSvcClient ClientInstancesSvc { get; }
         DepartmentSvc.DepartmentSvcClient DepartmentsSvc { get; }
+        FrontDeskReportingSvc.FrontDeskReportingSvcClient FrontDeskReportingSvc { get; }
         GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc { get; }
         GroupBookingSvc.GroupBookingSvcClient GroupBookingSvc { get; }
         GroupSvc.GroupSvcClient GroupSvc { get; }
@@ -45,7 +46,6 @@ namespace HOLMS.Application.Client {
         ILogger Logger { get; }
         NoteRequestSvc.NoteRequestSvcClient NoteRequestSvc { get; }
         OpenLodgingReservationSvc.OpenLodgingReservationSvcClient OpenLodgingReservationSvc { get; }
-        OperationsReportsSvc.OperationsReportsSvcClient OperationsReportsAppSvc { get; }
         OutOfOrderRecordSvc.OutOfOrderRecordSvcClient OutOfOrderRecordSvc { get; }
         PBXSvc.PBXSvcClient PBXSvc { get; }
         PhoneCodeSvc.PhoneCodeSvcClient PhoneCodeSvc { get; }

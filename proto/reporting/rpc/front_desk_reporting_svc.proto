@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package holms.types.reporting.rpc;
+option csharp_namespace = "HOLMS.Types.Reporting.RPC";
+option go_package = "operations/rpc";
+
+import "google/protobuf/timestamp.proto";
+import "iam/staff_member_indicator.proto";
+
+enum InHouseGuestReportSorting {
+	BY_GUEST_NAME = 0;
+	BY_ROOM_NUMBER = 1;
+}
+	
+message FrontDeskReportingSvcRequest {
+	google.protobuf.Timestamp date = 1;
+}
+
+message FrontDeskReportingSvcInHouseGuestsRequest {
+	google.protobuf.Timestamp date = 1;
+	InHouseGuestReportSorting sort_type = 2;
+	
+}
+
+message FrontDeskReportingSvcHousekeepingRequest {
+	.holms.types.iam.StaffMemberIndicator staff_member = 1;
+	string add_notes = 2;
+}
+
+message FrontDeskReportingSvcReportResponse {
+	string document = 1;
+}
+
+service FrontDeskReportingSvc {
+    rpc GetArrivalsReport(FrontDeskReportingSvcRequest)
+        returns (FrontDeskReportingSvcReportResponse);
+
+    rpc GetDeparturesReport(FrontDeskReportingSvcRequest)
+        returns (FrontDeskReportingSvcReportResponse);
+
+    rpc GetInHouseGuestsReport(FrontDeskReportingSvcInHouseGuestsRequest)
+        returns (FrontDeskReportingSvcReportResponse);
+
+    rpc GetNoShowsReport(FrontDeskReportingSvcRequest)
+        returns (FrontDeskReportingSvcReportResponse);
+
+	rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
+		returns (FrontDeskReportingSvcReportResponse);
+}

@@ -170,6 +170,12 @@ namespace HOLMS.Application.Client {
             }
         }
 
+        public FrontDeskReportingSvc.FrontDeskReportingSvcClient FrontDeskReportingSvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
+
         public GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc {
             get {
                 throw new NotImplementedException();
@@ -261,12 +267,6 @@ namespace HOLMS.Application.Client {
         }
 
         public OpenLodgingReservationSvc.OpenLodgingReservationSvcClient OpenLodgingReservationSvc {
-            get {
-                throw new NotImplementedException();
-            }
-        }
-
-        public OperationsReportsSvc.OperationsReportsSvcClient OperationsReportsAppSvc {
             get {
                 throw new NotImplementedException();
             }

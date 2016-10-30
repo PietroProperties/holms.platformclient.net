@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package holms.types.reporting.rpc;
 option csharp_namespace = "HOLMS.Types.Reporting.RPC";
+option go_package = "operations/rpc";
 
 import "money/cards/card_merchant_indicator.proto";
 import "primitive/pb_inclusive_calendar_date_range.proto";
