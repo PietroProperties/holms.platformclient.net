@@ -29,8 +29,9 @@ service CorrespondenceSvc {
 	rpc PreviewConfirmationLetter(holms.types.tenancy_config.PropertyConfirmationLetterText)
 		returns(CorrespondenceServiceDocumentResponse);
 
-	rpc SendCancellationEmail(CorrespondenceRequest)
-		returns(google.protobuf.Empty);
+	rpc SendCancellationEmail(CorrespondenceRequest) returns(google.protobuf.Empty);
+
+	rpc SendGuestFolio(CorrespondenceRequest) returns (google.protobuf.Empty);
 
 	rpc PreviewCancellationEmail(holms.types.tenancy_config.PropertyCancellationLetterText)
 		returns(CorrespondenceServiceDocumentResponse);

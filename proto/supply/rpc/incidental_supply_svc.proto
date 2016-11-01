@@ -7,7 +7,6 @@ option go_package = "supply/rpc";
 import "supply/incidental_items/incidental_item_availability_query.proto";
 import "supply/incidental_items/incidental_item_availability_response.proto";
 
-
 service IncidentalSupplySvc {
 	rpc CheckAvailability (.holms.types.supply.incidental_items.IncidentalItemAvailabilityQuery)
 		returns (.holms.types.supply.incidental_items.IncidentalItemAvailabilityResponse);
