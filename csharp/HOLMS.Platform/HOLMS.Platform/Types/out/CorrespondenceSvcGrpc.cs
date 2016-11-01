@@ -42,6 +42,13 @@ namespace HOLMS.Types.CRM.RPC {
         __Marshaller_CorrespondenceRequest,
         __Marshaller_Empty);
 
+    static readonly Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SendGuestFolio = new Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "SendGuestFolio",
+        __Marshaller_CorrespondenceRequest,
+        __Marshaller_Empty);
+
     static readonly Method<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_PreviewCancellationEmail = new Method<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
         MethodType.Unary,
         __ServiceName,
@@ -90,6 +97,11 @@ namespace HOLMS.Types.CRM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SendCancellationEmail(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SendGuestFolio(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -187,6 +199,22 @@ namespace HOLMS.Types.CRM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SendCancellationEmail, null, options, request);
       }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendGuestFolio(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SendGuestFolio(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendGuestFolio(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SendGuestFolio, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendGuestFolioAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SendGuestFolioAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendGuestFolioAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SendGuestFolio, null, options, request);
+      }
       public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse PreviewCancellationEmail(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PreviewCancellationEmail(request, new CallOptions(headers, deadline, cancellationToken));
@@ -264,6 +292,7 @@ namespace HOLMS.Types.CRM.RPC {
           .AddMethod(__Method_SendConfirmationLetter, serviceImpl.SendConfirmationLetter)
           .AddMethod(__Method_PreviewConfirmationLetter, serviceImpl.PreviewConfirmationLetter)
           .AddMethod(__Method_SendCancellationEmail, serviceImpl.SendCancellationEmail)
+          .AddMethod(__Method_SendGuestFolio, serviceImpl.SendGuestFolio)
           .AddMethod(__Method_PreviewCancellationEmail, serviceImpl.PreviewCancellationEmail)
           .AddMethod(__Method_GetArrivalLetterDocument, serviceImpl.GetArrivalLetterDocument)
           .AddMethod(__Method_GetArrivalLetterDocumentsArrivingOn, serviceImpl.GetArrivalLetterDocumentsArrivingOn)

@@ -4,10 +4,8 @@ package holms.types.supply.rpc;
 option csharp_namespace = "HOLMS.Types.Supply.RPC";
 option go_package = "supply/rpc";
 
-import "primitive/pb_inclusive_opsdate_range.proto";
 import "supply/incidental_items/incidental_item_availability_query.proto";
 import "supply/incidental_items/incidental_item_availability_response.proto";
-
 
 service IncidentalSupplySvc {
 	rpc CheckAvailability (.holms.types.supply.incidental_items.IncidentalItemAvailabilityQuery)
