@@ -19,11 +19,10 @@ message FrontDeskReportingSvcRequest {
 message FrontDeskReportingSvcInHouseGuestsRequest {
 	google.protobuf.Timestamp date = 1;
 	InHouseGuestReportSorting sort_type = 2;
-	
 }
 
 message FrontDeskReportingSvcHousekeepingRequest {
-	.holms.types.iam.StaffMemberIndicator staff_member = 1;
+	repeated .holms.types.iam.StaffMemberIndicator staff_members = 1;
 	string add_notes = 2;
 }
 
