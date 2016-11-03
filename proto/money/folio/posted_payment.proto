@@ -6,8 +6,12 @@ option go_package = "money/folio";
 
 import "google/protobuf/timestamp.proto";
 import "primitive/monetary_amount.proto";
+import "money/folio/payment_type.proto";
 
 message PostedPayment {
 	google.protobuf.Timestamp posted_at = 1;
 	.holms.types.primitive.MonetaryAmount amount = 2;
+	string narration = 3;
+	PaymentType payment_type = 4;
 }
+

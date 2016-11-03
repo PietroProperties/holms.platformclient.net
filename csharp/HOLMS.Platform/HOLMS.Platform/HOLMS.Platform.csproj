@@ -422,6 +422,7 @@
     <Compile Include="Types\out\PaymentCardBrand.cs" />
     <Compile Include="Types\out\PaymentCardIndicator.cs" />
     <Compile Include="Types\out\PaymentCardVerificationRequest.cs" />
+    <Compile Include="Types\out\PaymentType.cs" />
     <Compile Include="Types\out\PbInclusiveCalendarDateRange.cs" />
     <Compile Include="Types\out\PbInclusiveOpsdateRange.cs" />
     <Compile Include="Types\out\PbLocalDate.cs" />

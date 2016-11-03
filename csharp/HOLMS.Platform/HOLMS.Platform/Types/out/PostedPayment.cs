@@ -24,15 +24,17 @@ namespace HOLMS.Types.Money.Folio {
           string.Concat(
             "CiBtb25leS9mb2xpby9wb3N0ZWRfcGF5bWVudC5wcm90bxIXaG9sbXMudHlw",
             "ZXMubW9uZXkuZm9saW8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJv",
-            "dG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8idQoNUG9zdGVk",
-            "UGF5bWVudBItCglwb3N0ZWRfYXQYASABKAsyGi5nb29nbGUucHJvdG9idWYu",
-            "VGltZXN0YW1wEjUKBmFtb3VudBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1p",
-            "dGl2ZS5Nb25ldGFyeUFtb3VudEInWgttb25leS9mb2xpb6oCF0hPTE1TLlR5",
-            "cGVzLk1vbmV5LkZvbGlvYgZwcm90bzM="));
+            "dG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8aHm1vbmV5L2Zv",
+            "bGlvL3BheW1lbnRfdHlwZS5wcm90byLEAQoNUG9zdGVkUGF5bWVudBItCglw",
+            "b3N0ZWRfYXQYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjUK",
+            "BmFtb3VudBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFy",
+            "eUFtb3VudBIRCgluYXJyYXRpb24YAyABKAkSOgoMcGF5bWVudF90eXBlGAQg",
+            "ASgOMiQuaG9sbXMudHlwZXMubW9uZXkuZm9saW8uUGF5bWVudFR5cGVCJ1oL",
+            "bW9uZXkvZm9saW+qAhdIT0xNUy5UeXBlcy5Nb25leS5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Folio.PaymentTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedPayment), global::HOLMS.Types.Money.Folio.PostedPayment.Parser, new[]{ "PostedAt", "Amount" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedPayment), global::HOLMS.Types.Money.Folio.PostedPayment.Parser, new[]{ "PostedAt", "Amount", "Narration", "PaymentType" }, null, null, null)
           }));
     }
     #endregion
@@ -65,6 +67,8 @@ namespace HOLMS.Types.Money.Folio {
     public PostedPayment(PostedPayment other) : this() {
       PostedAt = other.postedAt_ != null ? other.PostedAt.Clone() : null;
       Amount = other.amount_ != null ? other.Amount.Clone() : null;
+      narration_ = other.narration_;
+      paymentType_ = other.paymentType_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -94,6 +98,28 @@ namespace HOLMS.Types.Money.Folio {
       }
     }
 
+    /// <summary>Field number for the "narration" field.</summary>
+    public const int NarrationFieldNumber = 3;
+    private string narration_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Narration {
+      get { return narration_; }
+      set {
+        narration_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "payment_type" field.</summary>
+    public const int PaymentTypeFieldNumber = 4;
+    private global::HOLMS.Types.Money.Folio.PaymentType paymentType_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Folio.PaymentType PaymentType {
+      get { return paymentType_; }
+      set {
+        paymentType_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PostedPayment);
@@ -109,6 +135,8 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (!object.Equals(PostedAt, other.PostedAt)) return false;
       if (!object.Equals(Amount, other.Amount)) return false;
+      if (Narration != other.Narration) return false;
+      if (PaymentType != other.PaymentType) return false;
       return true;
     }
 
@@ -117,6 +145,8 @@ namespace HOLMS.Types.Money.Folio {
       int hash = 1;
       if (postedAt_ != null) hash ^= PostedAt.GetHashCode();
       if (amount_ != null) hash ^= Amount.GetHashCode();
+      if (Narration.Length != 0) hash ^= Narration.GetHashCode();
+      if (PaymentType != 0) hash ^= PaymentType.GetHashCode();
       return hash;
     }
 
@@ -135,6 +165,14 @@ namespace HOLMS.Types.Money.Folio {
         output.WriteRawTag(18);
         output.WriteMessage(Amount);
       }
+      if (Narration.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Narration);
+      }
+      if (PaymentType != 0) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) PaymentType);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -145,6 +183,12 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (amount_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Amount);
+      }
+      if (Narration.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Narration);
+      }
+      if (PaymentType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PaymentType);
       }
       return size;
     }
@@ -165,6 +209,12 @@ namespace HOLMS.Types.Money.Folio {
           amount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
         Amount.MergeFrom(other.Amount);
+      }
+      if (other.Narration.Length != 0) {
+        Narration = other.Narration;
+      }
+      if (other.PaymentType != 0) {
+        PaymentType = other.PaymentType;
       }
     }
 
@@ -188,6 +238,14 @@ namespace HOLMS.Types.Money.Folio {
               amount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(amount_);
+            break;
+          }
+          case 26: {
+            Narration = input.ReadString();
+            break;
+          }
+          case 32: {
+            paymentType_ = (global::HOLMS.Types.Money.Folio.PaymentType) input.ReadEnum();
             break;
           }
         }
