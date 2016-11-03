@@ -5,6 +5,7 @@ option csharp_namespace = "HOLMS.Types.Booking.RPC";
 option go_package = "booking/rpc";
 
 import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
 import "booking/reservations/book_genesis_reservation_request.proto";
 import "booking/reservations/genesis_booking_result.proto";
 import "booking/indicators/reservation_indicator.proto";
@@ -55,4 +56,16 @@ service LodgingBookingSvc {
 	
 	rpc GetReservationSummary(.holms.types.booking.indicators.ReservationIndicator) 
 		returns (LodgingBookingSvcGetReservationSummaryResponse);
+
+	rpc GetArrivalsByDate(google.protobuf.Timestamp)
+		returns (LodgingBookingSvcGetFilteredReservationListResponse);
+
+	rpc GetDeparturesByDate(google.protobuf.Timestamp)
+		returns (LodgingBookingSvcGetFilteredReservationListResponse);
+
+	rpc GetNoShowsByDate(google.protobuf.Timestamp)
+		returns (LodgingBookingSvcGetFilteredReservationListResponse);
+
+	rpc GetStayOversByDate(google.protobuf.Timestamp)
+		returns (LodgingBookingSvcGetFilteredReservationListResponse);
 }
