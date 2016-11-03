@@ -102,7 +102,6 @@
     <Compile Include="Types\Extensions\Booking\CancellationPolicy.cs" />
     <Compile Include="Types\Extensions\Booking\CancellationReason.cs" />
     <Compile Include="Types\Extensions\Booking\Channels\TravelAgent.cs" />
-    <Compile Include="Types\Extensions\Booking\ConfirmationLetterTemplate.cs" />
     <Compile Include="Types\Extensions\Booking\History\HistoryEvent.cs" />
     <Compile Include="Types\Extensions\Booking\IncidentalReservations\IncidentalItemReservation.cs" />
     <Compile Include="Types\Extensions\Booking\Indicators\CancellationPolicyIndicator.cs" />

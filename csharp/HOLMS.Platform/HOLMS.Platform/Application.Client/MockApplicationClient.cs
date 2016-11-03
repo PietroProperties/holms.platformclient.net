@@ -152,12 +152,6 @@ namespace HOLMS.Application.Client {
             }
         }
 
-        public ConfirmationLetterTemplateSvc.ConfirmationLetterTemplateSvcClient ConfLetterTmlpSvc {
-            get {
-                throw new NotImplementedException();
-            }
-        }
-
         public DefaultTemplatesSvc.DefaultTemplatesSvcClient DefaultTemplatesSvc {
             get {
                 throw new NotImplementedException();

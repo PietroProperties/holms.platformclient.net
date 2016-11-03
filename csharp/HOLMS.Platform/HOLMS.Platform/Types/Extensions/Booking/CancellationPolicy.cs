@@ -11,7 +11,6 @@ namespace HOLMS.Types.Booking {
             EntityId = id;
             Description = description;
             NoPenaltyDays = noPenaltyDays;
-            ForfeitDepositDays = forfeitDepositDays;
             FeeCategory = c;
             CancellationFeeAmount = new MonetaryAmount(cancellationFeeAmount);
             CancellationFeeRate = new FixedPointRatio(cancellationFeeRate);
