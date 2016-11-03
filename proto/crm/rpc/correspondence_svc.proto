@@ -23,25 +23,23 @@ message CorrespondenceServiceDocumentResponse {
 }
 
 service CorrespondenceSvc {
-	rpc SendConfirmationLetter(CorrespondenceRequest)
-		returns(google.protobuf.Empty);
-
-	rpc PreviewConfirmationLetter(holms.types.tenancy_config.PropertyConfirmationLetterText)
-		returns(CorrespondenceServiceDocumentResponse);
-
+	// Email
+	rpc SendConfirmationLetter(CorrespondenceRequest) returns(google.protobuf.Empty);
 	rpc SendCancellationEmail(CorrespondenceRequest) returns(google.protobuf.Empty);
-
 	rpc SendGuestFolio(CorrespondenceRequest) returns (google.protobuf.Empty);
 
-	rpc PreviewCancellationEmail(holms.types.tenancy_config.PropertyCancellationLetterText)
+	// Print (get HTML)
+	rpc PreviewArrivalLetter(.holms.types.tenancy_config.PropertyArrivalLetterText)
 		returns(CorrespondenceServiceDocumentResponse);
-
+	rpc GetArrivalLetterDocumentsArrivingOn(.holms.types.primitive.PbLocalDate)
+		returns(CorrespondenceServiceDocumentResponse);
 	rpc GetArrivalLetterDocument(.holms.types.booking.indicators.ReservationIndicator)
 		returns(CorrespondenceServiceDocumentResponse);
 
-	rpc GetArrivalLetterDocumentsArrivingOn(.holms.types.primitive.PbLocalDate)
+	rpc PreviewConfirmationLetter(holms.types.tenancy_config.PropertyConfirmationLetterText)
 		returns(CorrespondenceServiceDocumentResponse);
-
-	rpc PreviewArrivalLetter(.holms.types.tenancy_config.PropertyArrivalLetterText)
+	rpc PreviewCancellationEmail(holms.types.tenancy_config.PropertyCancellationLetterText)
 		returns(CorrespondenceServiceDocumentResponse);
+	rpc GetReservationFolioPrintDoc(.holms.types.booking.indicators.ReservationIndicator)
+		returns(CorrespondenceServiceDocumentResponse); 
 }
