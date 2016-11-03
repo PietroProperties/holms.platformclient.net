@@ -16,6 +16,7 @@ import "booking/reservations/reservation_frp_amendment_request.proto";
 import "booking/reservations/frp_amendment_response.proto";
 import "booking/reservations/reservation_query_filter.proto";
 import "booking/reservations/reservation_summary.proto";
+import "booking/reservations/reservation_reporting_summary.proto";
 
 message LodgingBookingSvcGetFilteredReservationListRequest {
 	.holms.types.booking.reservations.ReservationQueryFilter filter = 1;
@@ -23,6 +24,10 @@ message LodgingBookingSvcGetFilteredReservationListRequest {
 
 message LodgingBookingSvcGetFilteredReservationListResponse {
 	repeated .holms.types.booking.reservations.ReservationSummary reservations = 1;
+}
+
+message LodgingBookingSvcGetReservationReportingListResponse {
+	repeated .holms.types.booking.reservations.ReservationReportingSummary reservations = 1;
 }
 
 enum LodgingBookingSvcGetReservationSummaryResult {
@@ -58,14 +63,14 @@ service LodgingBookingSvc {
 		returns (LodgingBookingSvcGetReservationSummaryResponse);
 
 	rpc GetArrivalsByDate(google.protobuf.Timestamp)
-		returns (LodgingBookingSvcGetFilteredReservationListResponse);
+		returns (LodgingBookingSvcGetReservationReportingListResponse);
 
 	rpc GetDeparturesByDate(google.protobuf.Timestamp)
-		returns (LodgingBookingSvcGetFilteredReservationListResponse);
+		returns (LodgingBookingSvcGetReservationReportingListResponse);
 
 	rpc GetNoShowsByDate(google.protobuf.Timestamp)
-		returns (LodgingBookingSvcGetFilteredReservationListResponse);
+		returns (LodgingBookingSvcGetReservationReportingListResponse);
 
 	rpc GetStayOversByDate(google.protobuf.Timestamp)
-		returns (LodgingBookingSvcGetFilteredReservationListResponse);
+		returns (LodgingBookingSvcGetReservationReportingListResponse);
 }

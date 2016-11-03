@@ -498,6 +498,7 @@
     <Compile Include="Types\out\ReservationPriceEstimateRequest.cs" />
     <Compile Include="Types\out\ReservationQueryFilter.cs" />
     <Compile Include="Types\out\ReservationRawGuaranteeStatus.cs" />
+    <Compile Include="Types\out\ReservationReportingSummary.cs" />
     <Compile Include="Types\out\ReservationRoomAssignmentResult.cs" />
     <Compile Include="Types\out\ReservationRoomAssignmentSchedule.cs" />
     <Compile Include="Types\out\ReservationSource.cs" />

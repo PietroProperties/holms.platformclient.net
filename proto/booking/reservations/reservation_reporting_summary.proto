@@ -1,0 +1,24 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+import "booking/indicators/reservation_indicator.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "primitive/monetary_amount.proto";
+
+message ReservationReportingSummary {
+	holms.types.booking.indicators.ReservationIndicator entity_id = 1;
+	string booking_id = 2;
+	string primary_guest = 3;
+	repeated string guests = 4;
+	repeated .holms.types.primitive.MonetaryAmount guest_balances = 5;
+	holms.types.primitive.PbInclusiveOpsdateRange date_range = 6;
+	string room_type = 7;
+	string room = 8;
+	.holms.types.primitive.MonetaryAmount folio_balance = 9;
+	.holms.types.primitive.MonetaryAmount first_night_rate = 10;
+	string group_booking_id = 11;
+	int32 total_guests = 12;
+}
