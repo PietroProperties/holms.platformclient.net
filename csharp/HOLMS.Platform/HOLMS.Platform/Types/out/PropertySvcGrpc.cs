@@ -26,6 +26,8 @@ namespace HOLMS.Types.TenancyConfig.RPC {
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText> __Marshaller_PropertyArrivalLetterText = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.RPC.GetAllCancellationBodyTextsResponse> __Marshaller_GetAllCancellationBodyTextsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.RPC.GetAllCancellationBodyTextsResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText> __Marshaller_PropertyCancellationLetterText = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse> __Marshaller_GetAllEmailSenderConfigsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig> __Marshaller_PropertyEmailSenderConfig = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.TenancyConfig.RPC.PropertySvcAllResponse> __Method_All = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.TenancyConfig.RPC.PropertySvcAllResponse>(
         MethodType.Unary,
@@ -146,6 +148,27 @@ namespace HOLMS.Types.TenancyConfig.RPC {
         __Marshaller_PropertyCancellationLetterText,
         __Marshaller_Empty);
 
+    static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse> __Method_GetAllEmailSenderConfigs = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetAllEmailSenderConfigs",
+        __Marshaller_Empty,
+        __Marshaller_GetAllEmailSenderConfigsResponse);
+
+    static readonly Method<global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator, global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig> __Method_GetEmailSenderConfig = new Method<global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator, global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetEmailSenderConfig",
+        __Marshaller_PropertyIndicator,
+        __Marshaller_PropertyEmailSenderConfig);
+
+    static readonly Method<global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetEmailSenderConfig = new Method<global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "SetEmailSenderConfig",
+        __Marshaller_PropertyEmailSenderConfig,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -239,6 +262,21 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetPropertyCancellationBodyText(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse> GetAllEmailSenderConfigs(global::Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig> GetEmailSenderConfig(global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetEmailSenderConfig(global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -552,6 +590,54 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetPropertyCancellationBodyText, null, options, request);
       }
+      public virtual global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse GetAllEmailSenderConfigs(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetAllEmailSenderConfigs(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse GetAllEmailSenderConfigs(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetAllEmailSenderConfigs, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse> GetAllEmailSenderConfigsAsync(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetAllEmailSenderConfigsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse> GetAllEmailSenderConfigsAsync(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetAllEmailSenderConfigs, null, options, request);
+      }
+      public virtual global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig GetEmailSenderConfig(global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetEmailSenderConfig(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig GetEmailSenderConfig(global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetEmailSenderConfig, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig> GetEmailSenderConfigAsync(global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetEmailSenderConfigAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig> GetEmailSenderConfigAsync(global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetEmailSenderConfig, null, options, request);
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetEmailSenderConfig(global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SetEmailSenderConfig(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetEmailSenderConfig(global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SetEmailSenderConfig, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetEmailSenderConfigAsync(global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SetEmailSenderConfigAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetEmailSenderConfigAsync(global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SetEmailSenderConfig, null, options, request);
+      }
       protected override PropertySvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new PropertySvcClient(configuration);
@@ -578,7 +664,10 @@ namespace HOLMS.Types.TenancyConfig.RPC {
           .AddMethod(__Method_SetPropertyArrivalBodyText, serviceImpl.SetPropertyArrivalBodyText)
           .AddMethod(__Method_GetAllCancellationBodyTexts, serviceImpl.GetAllCancellationBodyTexts)
           .AddMethod(__Method_GetCancellationBodyText, serviceImpl.GetCancellationBodyText)
-          .AddMethod(__Method_SetPropertyCancellationBodyText, serviceImpl.SetPropertyCancellationBodyText).Build();
+          .AddMethod(__Method_SetPropertyCancellationBodyText, serviceImpl.SetPropertyCancellationBodyText)
+          .AddMethod(__Method_GetAllEmailSenderConfigs, serviceImpl.GetAllEmailSenderConfigs)
+          .AddMethod(__Method_GetEmailSenderConfig, serviceImpl.GetEmailSenderConfig)
+          .AddMethod(__Method_SetEmailSenderConfig, serviceImpl.SetEmailSenderConfig).Build();
     }
 
   }
