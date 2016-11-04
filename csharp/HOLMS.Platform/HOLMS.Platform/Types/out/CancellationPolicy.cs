@@ -26,22 +26,21 @@ namespace HOLMS.Types.Booking {
             "cGVzLmJvb2tpbmcaNmJvb2tpbmcvaW5kaWNhdG9ycy9jYW5jZWxsYXRpb25f",
             "cG9saWN5X2luZGljYXRvci5wcm90bxonYm9va2luZy9jYW5jZWxsYXRpb25f",
             "ZmVlX2NhdGVnb3J5LnByb3RvGiFwcmltaXRpdmUvZml4ZWRfcG9pbnRfcmF0",
-            "aW8ucHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8ipQMK",
+            "aW8ucHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8ihwMK",
             "EkNhbmNlbGxhdGlvblBvbGljeRJOCgllbnRpdHlfaWQYASABKAsyOy5ob2xt",
             "cy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuQ2FuY2VsbGF0aW9uUG9saWN5",
             "SW5kaWNhdG9yEhMKC2Rlc2NyaXB0aW9uGAIgASgJEhcKD25vX3BlbmFsdHlf",
-            "ZGF5cxgDIAEoBRIcChRmb3JmZWl0X2RlcG9zaXRfZGF5cxgEIAEoBRJCCgxm",
-            "ZWVfY2F0ZWdvcnkYBSABKA4yLC5ob2xtcy50eXBlcy5ib29raW5nLkNhbmNl",
-            "bGxhdGlvbkZlZUNhdGVnb3J5EkYKF2NhbmNlbGxhdGlvbl9mZWVfYW1vdW50",
-            "GAYgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
-            "EkUKFWNhbmNlbGxhdGlvbl9mZWVfcmF0ZRgHIAEoCzImLmhvbG1zLnR5cGVz",
-            "LnByaW1pdGl2ZS5GaXhlZFBvaW50UmF0aW8SIAoYY2FuY2VsbGF0aW9uX3Bv",
-            "bGljeV90ZXh0GAggASgJQh9aB2Jvb2tpbmeqAhNIT0xNUy5UeXBlcy5Cb29r",
-            "aW5nYgZwcm90bzM="));
+            "ZGF5cxgDIAEoBRJCCgxmZWVfY2F0ZWdvcnkYBCABKA4yLC5ob2xtcy50eXBl",
+            "cy5ib29raW5nLkNhbmNlbGxhdGlvbkZlZUNhdGVnb3J5EkYKF2NhbmNlbGxh",
+            "dGlvbl9mZWVfYW1vdW50GAUgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZl",
+            "Lk1vbmV0YXJ5QW1vdW50EkUKFWNhbmNlbGxhdGlvbl9mZWVfcmF0ZRgGIAEo",
+            "CzImLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5GaXhlZFBvaW50UmF0aW8SIAoY",
+            "Y2FuY2VsbGF0aW9uX3BvbGljeV90ZXh0GAcgASgJQh9aB2Jvb2tpbmeqAhNI",
+            "T0xNUy5UeXBlcy5Cb29raW5nYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.CancellationFeeCategoryReflection.Descriptor, global::HOLMS.Types.Primitive.FixedPointRatioReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.CancellationPolicy), global::HOLMS.Types.Booking.CancellationPolicy.Parser, new[]{ "EntityId", "Description", "NoPenaltyDays", "ForfeitDepositDays", "FeeCategory", "CancellationFeeAmount", "CancellationFeeRate", "CancellationPolicyText" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.CancellationPolicy), global::HOLMS.Types.Booking.CancellationPolicy.Parser, new[]{ "EntityId", "Description", "NoPenaltyDays", "FeeCategory", "CancellationFeeAmount", "CancellationFeeRate", "CancellationPolicyText" }, null, null, null)
           }));
     }
     #endregion
@@ -75,7 +74,6 @@ namespace HOLMS.Types.Booking {
       EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
       description_ = other.description_;
       noPenaltyDays_ = other.noPenaltyDays_;
-      forfeitDepositDays_ = other.forfeitDepositDays_;
       feeCategory_ = other.feeCategory_;
       CancellationFeeAmount = other.cancellationFeeAmount_ != null ? other.CancellationFeeAmount.Clone() : null;
       CancellationFeeRate = other.cancellationFeeRate_ != null ? other.CancellationFeeRate.Clone() : null;
@@ -120,19 +118,8 @@ namespace HOLMS.Types.Booking {
       }
     }
 
-    /// <summary>Field number for the "forfeit_deposit_days" field.</summary>
-    public const int ForfeitDepositDaysFieldNumber = 4;
-    private int forfeitDepositDays_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ForfeitDepositDays {
-      get { return forfeitDepositDays_; }
-      set {
-        forfeitDepositDays_ = value;
-      }
-    }
-
     /// <summary>Field number for the "fee_category" field.</summary>
-    public const int FeeCategoryFieldNumber = 5;
+    public const int FeeCategoryFieldNumber = 4;
     private global::HOLMS.Types.Booking.CancellationFeeCategory feeCategory_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Booking.CancellationFeeCategory FeeCategory {
@@ -143,7 +130,7 @@ namespace HOLMS.Types.Booking {
     }
 
     /// <summary>Field number for the "cancellation_fee_amount" field.</summary>
-    public const int CancellationFeeAmountFieldNumber = 6;
+    public const int CancellationFeeAmountFieldNumber = 5;
     private global::HOLMS.Types.Primitive.MonetaryAmount cancellationFeeAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.MonetaryAmount CancellationFeeAmount {
@@ -154,7 +141,7 @@ namespace HOLMS.Types.Booking {
     }
 
     /// <summary>Field number for the "cancellation_fee_rate" field.</summary>
-    public const int CancellationFeeRateFieldNumber = 7;
+    public const int CancellationFeeRateFieldNumber = 6;
     private global::HOLMS.Types.Primitive.FixedPointRatio cancellationFeeRate_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.FixedPointRatio CancellationFeeRate {
@@ -165,7 +152,7 @@ namespace HOLMS.Types.Booking {
     }
 
     /// <summary>Field number for the "cancellation_policy_text" field.</summary>
-    public const int CancellationPolicyTextFieldNumber = 8;
+    public const int CancellationPolicyTextFieldNumber = 7;
     private string cancellationPolicyText_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string CancellationPolicyText {
@@ -191,7 +178,6 @@ namespace HOLMS.Types.Booking {
       if (!object.Equals(EntityId, other.EntityId)) return false;
       if (Description != other.Description) return false;
       if (NoPenaltyDays != other.NoPenaltyDays) return false;
-      if (ForfeitDepositDays != other.ForfeitDepositDays) return false;
       if (FeeCategory != other.FeeCategory) return false;
       if (!object.Equals(CancellationFeeAmount, other.CancellationFeeAmount)) return false;
       if (!object.Equals(CancellationFeeRate, other.CancellationFeeRate)) return false;
@@ -205,7 +191,6 @@ namespace HOLMS.Types.Booking {
       if (entityId_ != null) hash ^= EntityId.GetHashCode();
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (NoPenaltyDays != 0) hash ^= NoPenaltyDays.GetHashCode();
-      if (ForfeitDepositDays != 0) hash ^= ForfeitDepositDays.GetHashCode();
       if (FeeCategory != 0) hash ^= FeeCategory.GetHashCode();
       if (cancellationFeeAmount_ != null) hash ^= CancellationFeeAmount.GetHashCode();
       if (cancellationFeeRate_ != null) hash ^= CancellationFeeRate.GetHashCode();
@@ -232,24 +217,20 @@ namespace HOLMS.Types.Booking {
         output.WriteRawTag(24);
         output.WriteInt32(NoPenaltyDays);
       }
-      if (ForfeitDepositDays != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(ForfeitDepositDays);
-      }
       if (FeeCategory != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(32);
         output.WriteEnum((int) FeeCategory);
       }
       if (cancellationFeeAmount_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(42);
         output.WriteMessage(CancellationFeeAmount);
       }
       if (cancellationFeeRate_ != null) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(50);
         output.WriteMessage(CancellationFeeRate);
       }
       if (CancellationPolicyText.Length != 0) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(58);
         output.WriteString(CancellationPolicyText);
       }
     }
@@ -265,9 +246,6 @@ namespace HOLMS.Types.Booking {
       }
       if (NoPenaltyDays != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(NoPenaltyDays);
-      }
-      if (ForfeitDepositDays != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ForfeitDepositDays);
       }
       if (FeeCategory != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) FeeCategory);
@@ -300,9 +278,6 @@ namespace HOLMS.Types.Booking {
       }
       if (other.NoPenaltyDays != 0) {
         NoPenaltyDays = other.NoPenaltyDays;
-      }
-      if (other.ForfeitDepositDays != 0) {
-        ForfeitDepositDays = other.ForfeitDepositDays;
       }
       if (other.FeeCategory != 0) {
         FeeCategory = other.FeeCategory;
@@ -348,28 +323,24 @@ namespace HOLMS.Types.Booking {
             break;
           }
           case 32: {
-            ForfeitDepositDays = input.ReadInt32();
-            break;
-          }
-          case 40: {
             feeCategory_ = (global::HOLMS.Types.Booking.CancellationFeeCategory) input.ReadEnum();
             break;
           }
-          case 50: {
+          case 42: {
             if (cancellationFeeAmount_ == null) {
               cancellationFeeAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(cancellationFeeAmount_);
             break;
           }
-          case 58: {
+          case 50: {
             if (cancellationFeeRate_ == null) {
               cancellationFeeRate_ = new global::HOLMS.Types.Primitive.FixedPointRatio();
             }
             input.ReadMessage(cancellationFeeRate_);
             break;
           }
-          case 66: {
+          case 58: {
             CancellationPolicyText = input.ReadString();
             break;
           }

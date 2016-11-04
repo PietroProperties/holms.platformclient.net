@@ -23,10 +23,10 @@ namespace HOLMS.Types.Booking {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cidib29raW5nL2NhbmNlbGxhdGlvbl9mZWVfY2F0ZWdvcnkucHJvdG8SE2hv",
-            "bG1zLnR5cGVzLmJvb2tpbmcqagoXQ2FuY2VsbGF0aW9uRmVlQ2F0ZWdvcnkS",
+            "bG1zLnR5cGVzLmJvb2tpbmcqUgoXQ2FuY2VsbGF0aW9uRmVlQ2F0ZWdvcnkS",
             "EwoPUEVSQ0VOVF9PRl9TVEFZEAASEQoNRE9MTEFSX0FNT1VOVBABEg8KC05J",
-            "R0hUU19TVEFZEAISFgoSUEVSQ0VOVF9PRl9ERVBPU0lUEANCH1oHYm9va2lu",
-            "Z6oCE0hPTE1TLlR5cGVzLkJvb2tpbmdiBnByb3RvMw=="));
+            "R0hUU19TVEFZEAJCH1oHYm9va2luZ6oCE0hPTE1TLlR5cGVzLkJvb2tpbmdi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Booking.CancellationFeeCategory), }, null));
@@ -39,7 +39,6 @@ namespace HOLMS.Types.Booking {
     [pbr::OriginalName("PERCENT_OF_STAY")] PercentOfStay = 0,
     [pbr::OriginalName("DOLLAR_AMOUNT")] DollarAmount = 1,
     [pbr::OriginalName("NIGHTS_STAY")] NightsStay = 2,
-    [pbr::OriginalName("PERCENT_OF_DEPOSIT")] PercentOfDeposit = 3,
   }
 
   #endregion

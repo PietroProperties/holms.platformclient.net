@@ -8,5 +8,4 @@ enum CancellationFeeCategory {
 	PERCENT_OF_STAY = 0;
 	DOLLAR_AMOUNT = 1;
 	NIGHTS_STAY = 2;
-	PERCENT_OF_DEPOSIT = 3;
 }

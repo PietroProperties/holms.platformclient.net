@@ -278,9 +278,6 @@
     <Compile Include="Types\out\ClientInstanceSvcGrpc.cs" />
     <Compile Include="Types\out\CommissionType.cs" />
     <Compile Include="Types\out\CompleteOpenReservation.cs" />
-    <Compile Include="Types\out\ConfirmationLetterTemplate.cs" />
-    <Compile Include="Types\out\ConfirmationLetterTemplateSvc.cs" />
-    <Compile Include="Types\out\ConfirmationLetterTemplateSvcGrpc.cs" />
     <Compile Include="Types\out\ContactInformation.cs" />
     <Compile Include="Types\out\ContinuousRoomClaim.cs" />
     <Compile Include="Types\out\CorrespondenceSvc.cs" />
