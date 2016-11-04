@@ -42,4 +42,6 @@ service CorrespondenceSvc {
 		returns(CorrespondenceServiceDocumentResponse);
 	rpc GetReservationFolioPrintDoc(.holms.types.booking.indicators.ReservationIndicator)
 		returns(CorrespondenceServiceDocumentResponse); 
+	rpc GetReservationConfirmationPrintDoc(holms.types.booking.indicators.ReservationIndicator)
+		returns(CorrespondenceServiceDocumentResponse);
 }
