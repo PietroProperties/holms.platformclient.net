@@ -84,6 +84,13 @@ namespace HOLMS.Types.CRM.RPC {
         __Marshaller_ReservationIndicator,
         __Marshaller_CorrespondenceServiceDocumentResponse);
 
+    static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_GetReservationConfirmationPrintDoc = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetReservationConfirmationPrintDoc",
+        __Marshaller_ReservationIndicator,
+        __Marshaller_CorrespondenceServiceDocumentResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -140,6 +147,11 @@ namespace HOLMS.Types.CRM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetReservationFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetReservationConfirmationPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -337,6 +349,22 @@ namespace HOLMS.Types.CRM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationFolioPrintDoc, null, options, request);
       }
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetReservationConfirmationPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetReservationConfirmationPrintDoc(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetReservationConfirmationPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetReservationConfirmationPrintDoc, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetReservationConfirmationPrintDocAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetReservationConfirmationPrintDocAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetReservationConfirmationPrintDocAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetReservationConfirmationPrintDoc, null, options, request);
+      }
       protected override CorrespondenceSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new CorrespondenceSvcClient(configuration);
@@ -355,7 +383,8 @@ namespace HOLMS.Types.CRM.RPC {
           .AddMethod(__Method_GetArrivalLetterDocument, serviceImpl.GetArrivalLetterDocument)
           .AddMethod(__Method_PreviewConfirmationLetter, serviceImpl.PreviewConfirmationLetter)
           .AddMethod(__Method_PreviewCancellationEmail, serviceImpl.PreviewCancellationEmail)
-          .AddMethod(__Method_GetReservationFolioPrintDoc, serviceImpl.GetReservationFolioPrintDoc).Build();
+          .AddMethod(__Method_GetReservationFolioPrintDoc, serviceImpl.GetReservationFolioPrintDoc)
+          .AddMethod(__Method_GetReservationConfirmationPrintDoc, serviceImpl.GetReservationConfirmationPrintDoc).Build();
     }
 
   }

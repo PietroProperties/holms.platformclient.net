@@ -37,7 +37,7 @@ namespace HOLMS.Types.CRM.RPC {
             "LnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJbmRpY2F0b3ISTAoIY29udGFjdHMY",
             "AyADKAsyOi5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5SZXNl",
             "cnZhdGlvbkNvbnRhY3RQZXJzb24iOQolQ29ycmVzcG9uZGVuY2VTZXJ2aWNl",
-            "RG9jdW1lbnRSZXNwb25zZRIQCghkb2N1bWVudBgBIAEoCTKECQoRQ29ycmVz",
+            "RG9jdW1lbnRSZXNwb25zZRIQCghkb2N1bWVudBgBIAEoCTKdCgoRQ29ycmVz",
             "cG9uZGVuY2VTdmMSXAoWU2VuZENvbmZpcm1hdGlvbkxldHRlchIqLmhvbG1z",
             "LnR5cGVzLmNybS5ycGMuQ29ycmVzcG9uZGVuY2VSZXF1ZXN0GhYuZ29vZ2xl",
             "LnByb3RvYnVmLkVtcHR5ElsKFVNlbmRDYW5jZWxsYXRpb25FbWFpbBIqLmhv",
@@ -63,8 +63,11 @@ namespace HOLMS.Types.CRM.RPC {
             "bWVudFJlc3BvbnNlEo8BChtHZXRSZXNlcnZhdGlvbkZvbGlvUHJpbnREb2MS",
             "NC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25J",
             "bmRpY2F0b3IaOi5ob2xtcy50eXBlcy5jcm0ucnBjLkNvcnJlc3BvbmRlbmNl",
-            "U2VydmljZURvY3VtZW50UmVzcG9uc2VCFqoCE0hPTE1TLlR5cGVzLkNSTS5S",
-            "UENiBnByb3RvMw=="));
+            "U2VydmljZURvY3VtZW50UmVzcG9uc2USlgEKIkdldFJlc2VydmF0aW9uQ29u",
+            "ZmlybWF0aW9uUHJpbnREb2MSNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGlj",
+            "YXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3IaOi5ob2xtcy50eXBlcy5jcm0u",
+            "cnBjLkNvcnJlc3BvbmRlbmNlU2VydmljZURvY3VtZW50UmVzcG9uc2VCFqoC",
+            "E0hPTE1TLlR5cGVzLkNSTS5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationContactPersonReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterTextReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
