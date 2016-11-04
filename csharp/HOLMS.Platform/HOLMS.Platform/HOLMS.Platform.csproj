@@ -447,6 +447,7 @@
     <Compile Include="Types\out\PropertyArrivalLetterText.cs" />
     <Compile Include="Types\out\PropertyCancellationLetterText.cs" />
     <Compile Include="Types\out\PropertyConfirmationLetterText.cs" />
+    <Compile Include="Types\out\PropertyEmailSenderConfig.cs" />
     <Compile Include="Types\out\PropertyIndicator.cs" />
     <Compile Include="Types\out\PropertySvc.cs" />
     <Compile Include="Types\out\PropertySvcGrpc.cs" />
