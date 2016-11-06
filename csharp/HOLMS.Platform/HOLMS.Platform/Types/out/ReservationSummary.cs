@@ -31,7 +31,7 @@ namespace HOLMS.Types.Booking.Reservations {
             "Yl9pbmNsdXNpdmVfb3BzZGF0ZV9yYW5nZS5wcm90bxohc3VwcGx5L3Jvb21f",
             "dHlwZXMvcm9vbV90eXBlLnByb3RvGhtpYW0vdGVuYW5jeV9pbmRpY2F0b3Iu",
             "cHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMvcHJvcGVydHlfaW5k",
-            "aWNhdG9yLnByb3RvIroEChJSZXNlcnZhdGlvblN1bW1hcnkSRwoJZW50aXR5",
+            "aWNhdG9yLnByb3RvItQEChJSZXNlcnZhdGlvblN1bW1hcnkSRwoJZW50aXR5",
             "X2lkGAEgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJl",
             "c2VydmF0aW9uSW5kaWNhdG9yEhIKCmJvb2tpbmdfaWQYAiABKAkSQQoFc3Rh",
             "dGUYAyABKA4yMi5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5S",
@@ -44,12 +44,13 @@ namespace HOLMS.Types.Booking.Reservations {
             "ZVN0YXR1cxIyCgd0ZW5hbmN5GAggASgLMiEuaG9sbXMudHlwZXMuaWFtLlRl",
             "bmFuY3lJbmRpY2F0b3ISSgoIcHJvcGVydHkYCSABKAsyOC5ob2xtcy50eXBl",
             "cy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9y",
-            "QjlaFGJvb2tpbmcvcmVzZXJ2YXRpb25zqgIgSE9MTVMuVHlwZXMuQm9va2lu",
-            "Zy5SZXNlcnZhdGlvbnNiBnByb3RvMw=="));
+            "EhgKEGdyb3VwX2Jvb2tpbmdfaWQYCiABKAlCOVoUYm9va2luZy9yZXNlcnZh",
+            "dGlvbnOqAiBIT0xNUy5UeXBlcy5Cb29raW5nLlJlc2VydmF0aW9uc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationStateReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationSummary), global::HOLMS.Types.Booking.Reservations.ReservationSummary.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "RoomType", "GuaranteeStatus", "Tenancy", "Property" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationSummary), global::HOLMS.Types.Booking.Reservations.ReservationSummary.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "RoomType", "GuaranteeStatus", "Tenancy", "Property", "GroupBookingId" }, null, null, null)
           }));
     }
     #endregion
@@ -89,6 +90,7 @@ namespace HOLMS.Types.Booking.Reservations {
       guaranteeStatus_ = other.guaranteeStatus_;
       Tenancy = other.tenancy_ != null ? other.Tenancy.Clone() : null;
       Property = other.property_ != null ? other.Property.Clone() : null;
+      groupBookingId_ = other.groupBookingId_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -195,6 +197,17 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
+    /// <summary>Field number for the "group_booking_id" field.</summary>
+    public const int GroupBookingIdFieldNumber = 10;
+    private string groupBookingId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string GroupBookingId {
+      get { return groupBookingId_; }
+      set {
+        groupBookingId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationSummary);
@@ -217,6 +230,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (GuaranteeStatus != other.GuaranteeStatus) return false;
       if (!object.Equals(Tenancy, other.Tenancy)) return false;
       if (!object.Equals(Property, other.Property)) return false;
+      if (GroupBookingId != other.GroupBookingId) return false;
       return true;
     }
 
@@ -232,6 +246,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (GuaranteeStatus != 0) hash ^= GuaranteeStatus.GetHashCode();
       if (tenancy_ != null) hash ^= Tenancy.GetHashCode();
       if (property_ != null) hash ^= Property.GetHashCode();
+      if (GroupBookingId.Length != 0) hash ^= GroupBookingId.GetHashCode();
       return hash;
     }
 
@@ -278,6 +293,10 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(74);
         output.WriteMessage(Property);
       }
+      if (GroupBookingId.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(GroupBookingId);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -309,6 +328,9 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (property_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
+      }
+      if (GroupBookingId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(GroupBookingId);
       }
       return size;
     }
@@ -362,6 +384,9 @@ namespace HOLMS.Types.Booking.Reservations {
           property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
         }
         Property.MergeFrom(other.Property);
+      }
+      if (other.GroupBookingId.Length != 0) {
+        GroupBookingId = other.GroupBookingId;
       }
     }
 
@@ -425,6 +450,10 @@ namespace HOLMS.Types.Booking.Reservations {
               property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
             }
             input.ReadMessage(property_);
+            break;
+          }
+          case 82: {
+            GroupBookingId = input.ReadString();
             break;
           }
         }
