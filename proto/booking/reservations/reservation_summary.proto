@@ -23,4 +23,5 @@ message ReservationSummary {
 	holms.types.booking.reservations.ReservationGuaranteeStatus guarantee_status = 7;
 	.holms.types.iam.TenancyIndicator tenancy = 8;
 	.holms.types.tenancy_config.indicators.PropertyIndicator property = 9;
+	string group_booking_id = 10;
 }
