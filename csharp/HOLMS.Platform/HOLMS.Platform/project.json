@@ -2,9 +2,9 @@
   "supports": {},
   "dependencies": {
     "Google.Protobuf": "3.1.0",
-    "Grpc": "1.0.1-pre1",
-    "Grpc.Auth": "1.0.1-pre1",
-    "Grpc.Tools": "1.0.1-pre1",
+    "Grpc": "1.0.1",
+    "Grpc.Auth": "1.0.1",
+    "Grpc.Tools": "1.0.1",
     "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
     "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
     "Moq": "4.6.38-alpha",

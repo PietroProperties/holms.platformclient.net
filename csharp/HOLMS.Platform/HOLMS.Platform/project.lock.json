@@ -120,17 +120,17 @@
           "lib/netstandard1.0/Google.Protobuf.dll": {}
         }
       },
-      "Grpc/1.0.1-pre1": {
+      "Grpc/1.0.1": {
         "type": "package",
         "dependencies": {
-          "Grpc.Core": "1.0.1-pre1"
+          "Grpc.Core": "1.0.1"
         }
       },
-      "Grpc.Auth/1.0.1-pre1": {
+      "Grpc.Auth/1.0.1": {
         "type": "package",
         "dependencies": {
           "Google.Apis.Auth": "1.16.0",
-          "Grpc.Core": "1.0.1-pre1",
+          "Grpc.Core": "1.0.1",
           "NETStandard.Library": "1.6.0"
         },
         "compile": {
@@ -140,7 +140,7 @@
           "lib/netstandard1.5/Grpc.Auth.dll": {}
         }
       },
-      "Grpc.Core/1.0.1-pre1": {
+      "Grpc.Core/1.0.1": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0",
@@ -181,7 +181,7 @@
           }
         }
       },
-      "Grpc.Tools/1.0.1-pre1": {
+      "Grpc.Tools/1.0.1": {
         "type": "package"
       },
       "Microsoft.CSharp/4.0.1": {
@@ -1858,21 +1858,21 @@
         "lib/netstandard1.0/Google.Protobuf.xml"
       ]
     },
-    "Grpc/1.0.1-pre1": {
-      "sha512": "g1wxNauOjMGPfloWUtl+uMwqOkh6JOlTkK8rCXLpOF79lVrnjz/391yGSNTeoDJ5dwheUFAhX8fiXPTkMdO8TQ==",
+    "Grpc/1.0.1": {
+      "sha512": "B9GcKzqeKPlgMJ0W6G/MEBb5wi3++gxHjo4H6xTQBcPv6AuJZSnLCTocnwV8rQUGhQZG/9rtdLOxid3J2EK9Tg==",
       "type": "package",
-      "path": "Grpc/1.0.1-pre1",
+      "path": "Grpc/1.0.1",
       "files": [
-        "Grpc.1.0.1-pre1.nupkg.sha512",
+        "Grpc.1.0.1.nupkg.sha512",
         "Grpc.nuspec"
       ]
     },
-    "Grpc.Auth/1.0.1-pre1": {
-      "sha512": "z/b2Y+3cTrd3FD4n2M1gWDel/i8TQ+AqEWF22FXRVSOe+zCHST0K1ADIxNLKkdM9dtv21KtKNAzBkqDcL/tZKA==",
+    "Grpc.Auth/1.0.1": {
+      "sha512": "d1s15zuiLRw4O11G0pK6n5BtApSr3ZomZ9QWx6yuSHNnuftOeq7EZZpieLm5aUfFag0cksbr4+qHTsJCNNfFqg==",
       "type": "package",
-      "path": "Grpc.Auth/1.0.1-pre1",
+      "path": "Grpc.Auth/1.0.1",
       "files": [
-        "Grpc.Auth.1.0.1-pre1.nupkg.sha512",
+        "Grpc.Auth.1.0.1.nupkg.sha512",
         "Grpc.Auth.nuspec",
         "lib/net45/Grpc.Auth.dll",
         "lib/net45/Grpc.Auth.xml",
@@ -1880,12 +1880,12 @@
         "lib/netstandard1.5/Grpc.Auth.xml"
       ]
     },
-    "Grpc.Core/1.0.1-pre1": {
-      "sha512": "4GXZhUElQR8tbiE4z8Iqzmvt0eD8R4T2wkK1621Al7wimu+AT8Xwh0MugjS1lb3G2cbGPybyKQDB4+eNUxMQPg==",
+    "Grpc.Core/1.0.1": {
+      "sha512": "mkHT9Kph4Nt1uZwgff2gUjQzXJ8Nn7BhiHv4mz1FDaScmuqOEk9ACfoaiGa8yeTkuPGU0eCd4KkBJlUXbbfScg==",
       "type": "package",
-      "path": "Grpc.Core/1.0.1-pre1",
+      "path": "Grpc.Core/1.0.1",
       "files": [
-        "Grpc.Core.1.0.1-pre1.nupkg.sha512",
+        "Grpc.Core.1.0.1.nupkg.sha512",
         "Grpc.Core.nuspec",
         "build/net45/Grpc.Core.targets",
         "lib/net45/Grpc.Core.dll",
@@ -1900,12 +1900,12 @@
         "runtimes/win/native/grpc_csharp_ext.x86.dll"
       ]
     },
-    "Grpc.Tools/1.0.1-pre1": {
-      "sha512": "2zXea8899q9sLiLwWXe69KAC74NclxEDh3jfgCQa5UxiyNwSVOHt+OGv0rvIsxB+yN7H4wqxmXTrp/9lzQINsw==",
+    "Grpc.Tools/1.0.1": {
+      "sha512": "qt7PSVTpKspWLqTp6l4JzYkEbh4PEfOsziOo0sDz9WDv0mfncy6VLDEdQ1SKaI8rfwn/n7yTAwVqPamG/rcusg==",
       "type": "package",
-      "path": "Grpc.Tools/1.0.1-pre1",
+      "path": "Grpc.Tools/1.0.1",
       "files": [
-        "Grpc.Tools.1.0.1-pre1.nupkg.sha512",
+        "Grpc.Tools.1.0.1.nupkg.sha512",
         "Grpc.Tools.nuspec",
         "tools/linux_x64/grpc_csharp_plugin",
         "tools/linux_x64/protoc",
@@ -6053,9 +6053,9 @@
   "projectFileDependencyGroups": {
     "": [
       "Google.Protobuf >= 3.1.0",
-      "Grpc >= 1.0.1-pre1",
-      "Grpc.Auth >= 1.0.1-pre1",
-      "Grpc.Tools >= 1.0.1-pre1",
+      "Grpc >= 1.0.1",
+      "Grpc.Auth >= 1.0.1",
+      "Grpc.Tools >= 1.0.1",
       "Microsoft.Extensions.Logging.Abstractions >= 1.0.0",
       "Microsoft.NETCore.Portable.Compatibility >= 1.0.1",
       "Moq >= 4.6.38-alpha",
