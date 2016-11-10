@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security;
 using HOLMS.Types.IAM;
 using Microsoft.IdentityModel.Tokens;
 
@@ -31,14 +32,22 @@ namespace HOLMS.Support.Security {
                 ValidAudiences = new [] { JWToken.Audience },
                 ValidIssuers = new [] { JWToken.Issuer },
                 IssuerSigningKey = key,
-                ValidateLifetime = true,
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();
             SecurityToken validatedToken;
             tokenHandler.ValidateToken(rawData, tokenValidationParameters, out validatedToken);
 
-            return new ValidatedJWToken(tokenHandler.ReadToken(rawData) as JwtSecurityToken);
+            var tok = tokenHandler.ReadToken(rawData) as JwtSecurityToken;
+
+            var expirationClaim = tok.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Exp);
+            if (expirationClaim != null) {
+                if (tok.ValidTo < DateTime.Now) {
+                    throw new SecurityException("Presented token is expired");
+                }
+            }
+
+            return new ValidatedJWToken(tok);
         }
     }
 }
