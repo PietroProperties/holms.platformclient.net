@@ -31,6 +31,7 @@ namespace HOLMS.Support.Security {
                 ValidAudiences = new [] { JWToken.Audience },
                 ValidIssuers = new [] { JWToken.Issuer },
                 IssuerSigningKey = key,
+                ValidateLifetime = true,
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();
