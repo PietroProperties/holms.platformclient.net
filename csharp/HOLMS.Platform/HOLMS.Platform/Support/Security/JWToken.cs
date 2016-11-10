@@ -15,16 +15,18 @@ namespace HOLMS.Support.Security {
         public const string Issuer = "private.shortbar.com";
 
         public string SignedToken { get; private set; }
+        public Guid Id { get; }
 
         public JWToken(ClientInstanceIndicator client, StaffMemberIndicator user,
             TenancyIndicator tenancy, DateTime requestTime, bool hasExpiration, SigningCredentials creds) {
+            Id = Guid.NewGuid();
             CreateToken(client, user, tenancy, requestTime, hasExpiration, creds);
         }
 
         private void CreateToken(ClientInstanceIndicator client, StaffMemberIndicator user,
             TenancyIndicator tenancy, DateTime requestTime, bool hasExpiration, SigningCredentials creds) {
             var claims = new List<Claim> {
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(JwtRegisteredClaimNames.Jti, Id.ToString()),
                 new Claim(UserIdKey, user.GuidID.ToString()),
                 new Claim(TenancyIdKey, tenancy.GuidID.ToString()),
                 new Claim(ClientIdKey, client.GuidID.ToString())
