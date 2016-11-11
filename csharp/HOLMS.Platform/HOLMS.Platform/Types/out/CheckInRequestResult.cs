@@ -23,14 +23,14 @@ namespace HOLMS.Types.Booking.CheckIn {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci5ib29raW5nL2NoZWNrX2luL2NoZWNrX2luX3JlcXVlc3RfcmVzdWx0LnBy",
-            "b3RvEhxob2xtcy50eXBlcy5ib29raW5nLmNoZWNrX2luKu4BChRDaGVja0lu",
+            "b3RvEhxob2xtcy50eXBlcy5ib29raW5nLmNoZWNrX2luKoECChRDaGVja0lu",
             "UmVxdWVzdFJlc3VsdBIGCgJPSxAAEhYKEkFMUkVBRFlfQ0hFQ0tFRF9JThAB",
             "EhkKFU1JU1NJTkdfQVNTSUdORURfUk9PTRACEhAKDE1JU1NJTkdfQ0FSRBAD",
             "EhYKEk1JU1NJTkdfR1VFU1RfTkFNRRAEEhcKE05PX09QRU5fUkVTRVJWQVRJ",
             "T04QBRIeChpSRVNFUlZBVElPTl9SVUxFX1ZJT0xBVElPThAGEhgKFFRPT19F",
             "QVJMWV9UT19DSEVDS0lOEAcSHgoaUkVTRVJWQVRJT05fTk9UX0dVQVJBTlRF",
-            "RUQQCEIvWg9ib29raW5nL2NoZWNraW6qAhtIT0xNUy5UeXBlcy5Cb29raW5n",
-            "LkNoZWNrSW5iBnByb3RvMw=="));
+            "RUQQCBIRCg1ST09NX09DQ1VQSUVEEAlCL1oPYm9va2luZy9jaGVja2luqgIb",
+            "SE9MTVMuVHlwZXMuQm9va2luZy5DaGVja0luYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Booking.CheckIn.CheckInRequestResult), }, null));
@@ -49,6 +49,7 @@ namespace HOLMS.Types.Booking.CheckIn {
     [pbr::OriginalName("RESERVATION_RULE_VIOLATION")] ReservationRuleViolation = 6,
     [pbr::OriginalName("TOO_EARLY_TO_CHECKIN")] TooEarlyToCheckin = 7,
     [pbr::OriginalName("RESERVATION_NOT_GUARANTEED")] ReservationNotGuaranteed = 8,
+    [pbr::OriginalName("ROOM_OCCUPIED")] RoomOccupied = 9,
   }
 
   #endregion
