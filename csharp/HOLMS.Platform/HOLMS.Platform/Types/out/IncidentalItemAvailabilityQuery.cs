@@ -27,20 +27,21 @@ namespace HOLMS.Types.Supply.IncidentalItems {
             "aWRlbnRhbF9pdGVtcxo+Ym9va2luZy9pbmRpY2F0b3JzL2luY2lkZW50YWxf",
             "aXRlbV9yZXNlcnZhdGlvbl9pbmRpY2F0b3IucHJvdG8aKnByaW1pdGl2ZS9w",
             "Yl9pbmNsdXNpdmVfb3BzZGF0ZV9yYW5nZS5wcm90bxo3c3VwcGx5L2luY2lk",
-            "ZW50YWxfaXRlbXMvaW5jaWRlbnRhbF9pdGVtX2luZGljYXRvci5wcm90byK5",
+            "ZW50YWxfaXRlbXMvaW5jaWRlbnRhbF9pdGVtX2luZGljYXRvci5wcm90byLo",
             "AgofSW5jaWRlbnRhbEl0ZW1BdmFpbGFiaWxpdHlRdWVyeRJVCgllbnRpdHlf",
             "aWQYASABKAsyQi5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuSW5j",
             "aWRlbnRhbEl0ZW1SZXNlcnZhdGlvbkluZGljYXRvchImCh5pc19mb3JfZXhp",
             "c3RpbmdfaWlfcmVzZXJ2YXRpb24YAiABKAgSQgoKZGF0ZV9yYW5nZRgDIAEo",
             "CzIuLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkluY2x1c2l2ZU9wc2RhdGVS",
             "YW5nZRJTCg1yZXNlcnZlZF9pdGVtGAQgASgLMjwuaG9sbXMudHlwZXMuc3Vw",
-            "cGx5LmluY2lkZW50YWxfaXRlbXMuSW5jaWRlbnRhbEl0ZW1JbmRpY2F0b3JC",
-            "PloXc3VwcGx5L2luY2lkZW50YWxzdXBwbHmqAiJIT0xNUy5UeXBlcy5TdXBw",
-            "bHkuSW5jaWRlbnRhbEl0ZW1zYgZwcm90bzM="));
+            "cGx5LmluY2lkZW50YWxfaXRlbXMuSW5jaWRlbnRhbEl0ZW1JbmRpY2F0b3IS",
+            "LQolcXVhbnRpdHlfaGVsZF9ieV9leGlzdGluZ19yZXNlcnZhdGlvbhgFIAEo",
+            "DUI+WhdzdXBwbHkvaW5jaWRlbnRhbHN1cHBseaoCIkhPTE1TLlR5cGVzLlN1",
+            "cHBseS5JbmNpZGVudGFsSXRlbXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.IncidentalItemReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemAvailabilityQuery), global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemAvailabilityQuery.Parser, new[]{ "EntityId", "IsForExistingIiReservation", "DateRange", "ReservedItem" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemAvailabilityQuery), global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemAvailabilityQuery.Parser, new[]{ "EntityId", "IsForExistingIiReservation", "DateRange", "ReservedItem", "QuantityHeldByExistingReservation" }, null, null, null)
           }));
     }
     #endregion
@@ -75,6 +76,7 @@ namespace HOLMS.Types.Supply.IncidentalItems {
       isForExistingIiReservation_ = other.isForExistingIiReservation_;
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
       ReservedItem = other.reservedItem_ != null ? other.ReservedItem.Clone() : null;
+      quantityHeldByExistingReservation_ = other.quantityHeldByExistingReservation_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -126,6 +128,17 @@ namespace HOLMS.Types.Supply.IncidentalItems {
       }
     }
 
+    /// <summary>Field number for the "quantity_held_by_existing_reservation" field.</summary>
+    public const int QuantityHeldByExistingReservationFieldNumber = 5;
+    private uint quantityHeldByExistingReservation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint QuantityHeldByExistingReservation {
+      get { return quantityHeldByExistingReservation_; }
+      set {
+        quantityHeldByExistingReservation_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as IncidentalItemAvailabilityQuery);
@@ -143,6 +156,7 @@ namespace HOLMS.Types.Supply.IncidentalItems {
       if (IsForExistingIiReservation != other.IsForExistingIiReservation) return false;
       if (!object.Equals(DateRange, other.DateRange)) return false;
       if (!object.Equals(ReservedItem, other.ReservedItem)) return false;
+      if (QuantityHeldByExistingReservation != other.QuantityHeldByExistingReservation) return false;
       return true;
     }
 
@@ -153,6 +167,7 @@ namespace HOLMS.Types.Supply.IncidentalItems {
       if (IsForExistingIiReservation != false) hash ^= IsForExistingIiReservation.GetHashCode();
       if (dateRange_ != null) hash ^= DateRange.GetHashCode();
       if (reservedItem_ != null) hash ^= ReservedItem.GetHashCode();
+      if (QuantityHeldByExistingReservation != 0) hash ^= QuantityHeldByExistingReservation.GetHashCode();
       return hash;
     }
 
@@ -179,6 +194,10 @@ namespace HOLMS.Types.Supply.IncidentalItems {
         output.WriteRawTag(34);
         output.WriteMessage(ReservedItem);
       }
+      if (QuantityHeldByExistingReservation != 0) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(QuantityHeldByExistingReservation);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -195,6 +214,9 @@ namespace HOLMS.Types.Supply.IncidentalItems {
       }
       if (reservedItem_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReservedItem);
+      }
+      if (QuantityHeldByExistingReservation != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(QuantityHeldByExistingReservation);
       }
       return size;
     }
@@ -224,6 +246,9 @@ namespace HOLMS.Types.Supply.IncidentalItems {
           reservedItem_ = new global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicator();
         }
         ReservedItem.MergeFrom(other.ReservedItem);
+      }
+      if (other.QuantityHeldByExistingReservation != 0) {
+        QuantityHeldByExistingReservation = other.QuantityHeldByExistingReservation;
       }
     }
 
@@ -258,6 +283,10 @@ namespace HOLMS.Types.Supply.IncidentalItems {
               reservedItem_ = new global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicator();
             }
             input.ReadMessage(reservedItem_);
+            break;
+          }
+          case 40: {
+            QuantityHeldByExistingReservation = input.ReadUInt32();
             break;
           }
         }
