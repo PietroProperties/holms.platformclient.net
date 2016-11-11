@@ -24,7 +24,6 @@ namespace HOLMS.Application.Client {
         private readonly IApplicationClientConfig _sp;
         private readonly string _clientId;
 
-        private Channel _loginChannel;
         private Channel _authenticatedChannel;
         private Timer _refreshTimer;
 
@@ -60,7 +59,6 @@ namespace HOLMS.Application.Client {
         #region IAM
         public ClientInstanceSvc.ClientInstanceSvcClient ClientInstancesSvc { get; protected set; }
         public DepartmentSvc.DepartmentSvcClient DepartmentsSvc { get; protected set; }
-        public SessionSvc.SessionSvcClient SessionSvc { get; protected set; }
         public StaffSvc.StaffSvcClient StaffSvc { get; protected set; }
         public TenancySvc.TenancySvcClient TenancySvc { get; protected set; }
         #endregion
@@ -134,12 +132,6 @@ namespace HOLMS.Application.Client {
             _sp = config;
             Logger = logger;
             _clientId = oauth2ClientId;
-
-            // We have to use a "secure" channel to activate SSL
-            // The server uses SSL encryption exclusively.
-            _loginChannel = new Channel($"{config.AppSvcHostname}:{config.AppSvcPort}",
-                AccessToken.NullToken.ToChannelCredentials());
-            SessionSvc = new SessionSvc.SessionSvcClient(_loginChannel);
         }
 
         public string ServerName => _sp.AppSvcHostname;
@@ -151,12 +143,47 @@ namespace HOLMS.Application.Client {
                 ClientInstanceId = new ClientInstanceIndicator(_sp.ClientInstanceId),
                 OauthClientId = _clientId,
             };
-            var sessionResponse = await SessionSvc.TryStartSessionAsync(startReq, new CallOptions(null, DateTime.UtcNow.AddSeconds(30)));
+
+            // NOTE(DA) This section of the code has given me more grief than would be expected.
+            //
+            // Our gRPC server only uses SSL. We have one port open and it expects all incoming
+            // traffic to be SSL. This means our client has to speak SSL to the server.
+            //
+            // Somewhat annoyingly (though we'll grudgingly admit the safety benefits), gRPC is
+            // very opinionated in its use of SSL. There is only one way to get it to use SSL --
+            // supply a bearer credential -- which is exactly what we don't have, we're trying to
+            // get one with this call! (Chicken and egg problem).
+            //
+            // We resort to forgery to trick gRPC into using SSL. We keep this forged channel
+            // separate and use it only for authentication purposes, throwing it out after we use
+            // it here.
+            //
+            // We were originally keeping the channel around to avoid recreating it, but it's used
+            // pretty infrequently, which means (1) we don't care about performance and (2) it was
+            // sitting idle too long, and NAT rules were killing it off. Don't try it, we did it
+            // and it didn't work.
+            //
+            // Future: currently, we don't support "session multiplexing" -- users of this
+            // component (AppClient) start a single session, and expect it to stay open for the
+            // life of the client. We need session multiplexing for service-service communication
+            // where we have numerous security contexts existing side-by-side. We need to do some
+            // thinking on how to design an interface that facilitates both use cases without making
+            // either needlessly complicated. One option would be to force the client to suply a
+            // credential at call time, implementing an optional ApplicationClient-maintained
+            // "credential registry" or "session registry" that the client could use to retrieve
+            // the token at call-time, if desired.
+
+            var loginChannel = new Channel($"{_sp.AppSvcHostname}:{_sp.AppSvcPort}",
+                AccessToken.NullToken.ToChannelCredentials());
+            var ss = new SessionSvc.SessionSvcClient(loginChannel);
+
+            var sessionResponse = await ss.TryStartSessionAsync(startReq, new CallOptions(null, DateTime.UtcNow.AddSeconds(30)));
             if (sessionResponse.Result == SessionSvcStartSessionResult.Success) {
                 SS = new SessionService(sessionResponse.SessionContext);
                 StartServicesChannelRefresh(sessionResponse.SessionContext);
             }
 
+            await loginChannel.ShutdownAsync();
             return sessionResponse.Result;
         }
 
@@ -278,7 +305,13 @@ namespace HOLMS.Application.Client {
                 GrantType = "refresh_token",
                 RefreshToken = SC.RefreshToken,
             };
-            var sessionResponse = await SessionSvc.RefreshAccessTokenAsync(refreshRequest, new CallOptions(null, DateTime.UtcNow.AddSeconds(30)));
+
+            var refreshChannel = new Channel($"{_sp.AppSvcHostname}:{_sp.AppSvcPort}",
+                AccessToken.NullToken.ToChannelCredentials());
+            var ss = new SessionSvc.SessionSvcClient(refreshChannel);
+            var sessionResponse = await ss.RefreshAccessTokenAsync(refreshRequest, new CallOptions(null, DateTime.UtcNow.AddSeconds(30)));
+            await refreshChannel.ShutdownAsync();
+
             if (sessionResponse.Result == SessionSvcStartSessionResult.Success) {
                 Logger.LogInformation($"Successfully refreshed session");
                 SS = new SessionService(sessionResponse.SessionContext);
@@ -292,11 +325,10 @@ namespace HOLMS.Application.Client {
         public void Dispose() {
             _refreshTimer?.Dispose();
             _refreshTimer = null;
-            _loginChannel?.ShutdownAsync().Wait();
             _authenticatedChannel?.ShutdownAsync().Wait();
             //Kill everything else we might have missed
             GrpcEnvironment.ShutdownChannelsAsync().Wait();
-            _loginChannel = _authenticatedChannel = null;
+            _authenticatedChannel = null;
         }
     }
 }

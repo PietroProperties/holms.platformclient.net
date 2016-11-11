@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using HOLMS.Types.Booking.RPC;
 using HOLMS.Types.CRM.RPC;
-using HOLMS.Types.Extensions.Support;
 using HOLMS.Types.IAM.RPC;
 using HOLMS.Types.Money.RPC;
 using HOLMS.Types.Operations.RPC;
