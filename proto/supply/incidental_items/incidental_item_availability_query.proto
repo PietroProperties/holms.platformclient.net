@@ -13,4 +13,5 @@ message IncidentalItemAvailabilityQuery {
 	bool is_for_existing_ii_reservation = 2;
 	holms.types.primitive.PbInclusiveOpsdateRange date_range = 3;
 	holms.types.supply.incidental_items.IncidentalItemIndicator reserved_item = 4;
+	uint32 quantity_held_by_existing_reservation = 5;
 }
