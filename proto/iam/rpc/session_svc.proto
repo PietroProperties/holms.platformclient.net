@@ -13,6 +13,11 @@ enum SessionSvcStartSessionResult {
 	FAILURE = 2;
 }
 
+enum TokenInvalidationResult {
+    INVALIDATION_SUCCESS = 0;
+	INVALIDATION_FAILURE = 1;
+}
+
 message SessionSvcStartSessionRequest {
 	string candidate_username = 1;
 	string candidate_password = 2;
@@ -26,6 +31,14 @@ message TokenRefreshRequest {
 	string scope = 3;
 }
 
+message TokenInvalidationRequest {
+	string refresh_token = 1;
+}
+
+message TokenInvalidationResponse {
+	TokenInvalidationResult result = 1;
+}
+
 message SessionSvcStartSessionResponse {
 	SessionSvcStartSessionResult result = 1;
 	.holms.types.primitive.SessionContext session_context = 2;
@@ -35,6 +48,9 @@ service SessionSvc {
 	rpc TryStartSession (SessionSvcStartSessionRequest)	
 		returns (SessionSvcStartSessionResponse);
 		
-	rpc RefreshAccessToken (TokenRefreshRequest)	
+	rpc RefreshAccessToken (TokenRefreshRequest)
 		returns (SessionSvcStartSessionResponse);
+
+	rpc InvalidateRefreshToken(TokenInvalidationRequest)
+		returns (TokenInvalidationResponse);
 }

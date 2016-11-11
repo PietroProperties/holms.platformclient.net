@@ -15,6 +15,8 @@ namespace HOLMS.Types.IAM.RPC {
     static readonly Marshaller<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest> __Marshaller_SessionSvcStartSessionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse> __Marshaller_SessionSvcStartSessionResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.IAM.RPC.TokenRefreshRequest> __Marshaller_TokenRefreshRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.RPC.TokenRefreshRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.IAM.RPC.TokenInvalidationRequest> __Marshaller_TokenInvalidationRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.RPC.TokenInvalidationRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.IAM.RPC.TokenInvalidationResponse> __Marshaller_TokenInvalidationResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.RPC.TokenInvalidationResponse.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest, global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse> __Method_TryStartSession = new Method<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest, global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse>(
         MethodType.Unary,
@@ -29,6 +31,13 @@ namespace HOLMS.Types.IAM.RPC {
         "RefreshAccessToken",
         __Marshaller_TokenRefreshRequest,
         __Marshaller_SessionSvcStartSessionResponse);
+
+    static readonly Method<global::HOLMS.Types.IAM.RPC.TokenInvalidationRequest, global::HOLMS.Types.IAM.RPC.TokenInvalidationResponse> __Method_InvalidateRefreshToken = new Method<global::HOLMS.Types.IAM.RPC.TokenInvalidationRequest, global::HOLMS.Types.IAM.RPC.TokenInvalidationResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "InvalidateRefreshToken",
+        __Marshaller_TokenInvalidationRequest,
+        __Marshaller_TokenInvalidationResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -45,6 +54,11 @@ namespace HOLMS.Types.IAM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse> RefreshAccessToken(global::HOLMS.Types.IAM.RPC.TokenRefreshRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.IAM.RPC.TokenInvalidationResponse> InvalidateRefreshToken(global::HOLMS.Types.IAM.RPC.TokenInvalidationRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -106,6 +120,22 @@ namespace HOLMS.Types.IAM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_RefreshAccessToken, null, options, request);
       }
+      public virtual global::HOLMS.Types.IAM.RPC.TokenInvalidationResponse InvalidateRefreshToken(global::HOLMS.Types.IAM.RPC.TokenInvalidationRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return InvalidateRefreshToken(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.IAM.RPC.TokenInvalidationResponse InvalidateRefreshToken(global::HOLMS.Types.IAM.RPC.TokenInvalidationRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_InvalidateRefreshToken, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.IAM.RPC.TokenInvalidationResponse> InvalidateRefreshTokenAsync(global::HOLMS.Types.IAM.RPC.TokenInvalidationRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return InvalidateRefreshTokenAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.IAM.RPC.TokenInvalidationResponse> InvalidateRefreshTokenAsync(global::HOLMS.Types.IAM.RPC.TokenInvalidationRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_InvalidateRefreshToken, null, options, request);
+      }
       protected override SessionSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new SessionSvcClient(configuration);
@@ -117,7 +147,8 @@ namespace HOLMS.Types.IAM.RPC {
     {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_TryStartSession, serviceImpl.TryStartSession)
-          .AddMethod(__Method_RefreshAccessToken, serviceImpl.RefreshAccessToken).Build();
+          .AddMethod(__Method_RefreshAccessToken, serviceImpl.RefreshAccessToken)
+          .AddMethod(__Method_InvalidateRefreshToken, serviceImpl.InvalidateRefreshToken).Build();
     }
 
   }
