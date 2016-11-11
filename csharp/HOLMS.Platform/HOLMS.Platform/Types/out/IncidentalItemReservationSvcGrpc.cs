@@ -14,7 +14,7 @@ namespace HOLMS.Types.Booking.RPC {
 
     static readonly Marshaller<global::HOLMS.Types.Booking.IncidentalReservations.IncidentalItemReservation> __Marshaller_IncidentalItemReservation = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.IncidentalReservations.IncidentalItemReservation.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult> __Marshaller_IncidentalReservationResult = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.IncidentalItemReservationIndicator> __Marshaller_IncidentalItemReservationIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.IncidentalItemReservationIndicator.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.IncidentalItemReservationRemoveItemRequest> __Marshaller_IncidentalItemReservationRemoveItemRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.IncidentalItemReservationRemoveItemRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> __Marshaller_ReservationIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse> __Marshaller_IncidentalItemReservationGetForReservationResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse.Parser.ParseFrom);
 
@@ -32,11 +32,11 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_IncidentalItemReservation,
         __Marshaller_IncidentalReservationResult);
 
-    static readonly Method<global::HOLMS.Types.Booking.Indicators.IncidentalItemReservationIndicator, global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult> __Method_DropReservation = new Method<global::HOLMS.Types.Booking.Indicators.IncidentalItemReservationIndicator, global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult>(
+    static readonly Method<global::HOLMS.Types.Booking.RPC.IncidentalItemReservationRemoveItemRequest, global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult> __Method_DropReservation = new Method<global::HOLMS.Types.Booking.RPC.IncidentalItemReservationRemoveItemRequest, global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult>(
         MethodType.Unary,
         __ServiceName,
         "DropReservation",
-        __Marshaller_IncidentalItemReservationIndicator,
+        __Marshaller_IncidentalItemReservationRemoveItemRequest,
         __Marshaller_IncidentalReservationResult);
 
     static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse> __Method_GetReservedInventoryForReservation = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse>(
@@ -65,7 +65,7 @@ namespace HOLMS.Types.Booking.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult> DropReservation(global::HOLMS.Types.Booking.Indicators.IncidentalItemReservationIndicator request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult> DropReservation(global::HOLMS.Types.Booking.RPC.IncidentalItemReservationRemoveItemRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -132,19 +132,19 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateReservation, null, options, request);
       }
-      public virtual global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult DropReservation(global::HOLMS.Types.Booking.Indicators.IncidentalItemReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult DropReservation(global::HOLMS.Types.Booking.RPC.IncidentalItemReservationRemoveItemRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return DropReservation(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult DropReservation(global::HOLMS.Types.Booking.Indicators.IncidentalItemReservationIndicator request, CallOptions options)
+      public virtual global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult DropReservation(global::HOLMS.Types.Booking.RPC.IncidentalItemReservationRemoveItemRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_DropReservation, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult> DropReservationAsync(global::HOLMS.Types.Booking.Indicators.IncidentalItemReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult> DropReservationAsync(global::HOLMS.Types.Booking.RPC.IncidentalItemReservationRemoveItemRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return DropReservationAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult> DropReservationAsync(global::HOLMS.Types.Booking.Indicators.IncidentalItemReservationIndicator request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.IncidentalReservations.IncidentalReservationResult> DropReservationAsync(global::HOLMS.Types.Booking.RPC.IncidentalItemReservationRemoveItemRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DropReservation, null, options, request);
       }

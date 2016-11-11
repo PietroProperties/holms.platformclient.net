@@ -13,6 +13,11 @@ message IncidentalItemReservationGetForReservationResponse {
 	repeated .holms.types.booking.incidental_reservations.IncidentalItemReservation inventory_reservations = 1;
 }
 
+message IncidentalItemReservationRemoveItemRequest {
+	holms.types.booking.indicators.IncidentalItemReservationIndicator item_reservation = 1;
+	holms.types.booking.indicators.ReservationIndicator lodging_reservation = 2;
+}
+
 service IncidentalItemReservationSvc {
 	rpc CreateReservation (.holms.types.booking.incidental_reservations.IncidentalItemReservation)
 		returns (.holms.types.booking.incidental_reservations.IncidentalReservationResult);
@@ -20,7 +25,7 @@ service IncidentalItemReservationSvc {
 	rpc UpdateReservation (.holms.types.booking.incidental_reservations.IncidentalItemReservation)
 		returns (.holms.types.booking.incidental_reservations.IncidentalReservationResult);
 
-	rpc DropReservation (.holms.types.booking.indicators.IncidentalItemReservationIndicator)
+	rpc DropReservation (IncidentalItemReservationRemoveItemRequest)
 		returns (.holms.types.booking.incidental_reservations.IncidentalReservationResult);
 
 	rpc GetReservedInventoryForReservation (.holms.types.booking.indicators.ReservationIndicator)
