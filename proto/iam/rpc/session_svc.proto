@@ -26,6 +26,10 @@ message TokenRefreshRequest {
 	string scope = 3;
 }
 
+message LogoutRequest {
+	string refresh_token = 1;
+}
+
 message SessionSvcStartSessionResponse {
 	SessionSvcStartSessionResult result = 1;
 	.holms.types.primitive.SessionContext session_context = 2;
@@ -35,6 +39,9 @@ service SessionSvc {
 	rpc TryStartSession (SessionSvcStartSessionRequest)	
 		returns (SessionSvcStartSessionResponse);
 		
-	rpc RefreshAccessToken (TokenRefreshRequest)	
+	rpc RefreshAccessToken (TokenRefreshRequest)
+		returns (SessionSvcStartSessionResponse);
+
+	rpc Logout(LogoutRequest)
 		returns (SessionSvcStartSessionResponse);
 }

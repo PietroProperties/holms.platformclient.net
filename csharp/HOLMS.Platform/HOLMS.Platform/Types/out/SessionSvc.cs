@@ -30,24 +30,28 @@ namespace HOLMS.Types.IAM.RPC {
             "Y2VfaWQYAyABKAsyKC5ob2xtcy50eXBlcy5pYW0uQ2xpZW50SW5zdGFuY2VJ",
             "bmRpY2F0b3ISFwoPb2F1dGhfY2xpZW50X2lkGAQgASgJIk8KE1Rva2VuUmVm",
             "cmVzaFJlcXVlc3QSEgoKZ3JhbnRfdHlwZRgBIAEoCRIVCg1yZWZyZXNoX3Rv",
-            "a2VuGAIgASgJEg0KBXNjb3BlGAMgASgJIqMBCh5TZXNzaW9uU3ZjU3RhcnRT",
-            "ZXNzaW9uUmVzcG9uc2USQQoGcmVzdWx0GAEgASgOMjEuaG9sbXMudHlwZXMu",
-            "aWFtLnJwYy5TZXNzaW9uU3ZjU3RhcnRTZXNzaW9uUmVzdWx0Ej4KD3Nlc3Np",
-            "b25fY29udGV4dBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5TZXNz",
-            "aW9uQ29udGV4dCpGChxTZXNzaW9uU3ZjU3RhcnRTZXNzaW9uUmVzdWx0EgsK",
-            "B1NVQ0NFU1MQABIMCghJTkFDVElWRRABEgsKB0ZBSUxVUkUQAjL9AQoKU2Vz",
-            "c2lvblN2YxJ6Cg9UcnlTdGFydFNlc3Npb24SMi5ob2xtcy50eXBlcy5pYW0u",
-            "cnBjLlNlc3Npb25TdmNTdGFydFNlc3Npb25SZXF1ZXN0GjMuaG9sbXMudHlw",
-            "ZXMuaWFtLnJwYy5TZXNzaW9uU3ZjU3RhcnRTZXNzaW9uUmVzcG9uc2UScwoS",
-            "UmVmcmVzaEFjY2Vzc1Rva2VuEiguaG9sbXMudHlwZXMuaWFtLnJwYy5Ub2tl",
-            "blJlZnJlc2hSZXF1ZXN0GjMuaG9sbXMudHlwZXMuaWFtLnJwYy5TZXNzaW9u",
-            "U3ZjU3RhcnRTZXNzaW9uUmVzcG9uc2VCH1oHaWFtL3JwY6oCE0hPTE1TLlR5",
-            "cGVzLklBTS5SUENiBnByb3RvMw=="));
+            "a2VuGAIgASgJEg0KBXNjb3BlGAMgASgJIiYKDUxvZ291dFJlcXVlc3QSFQoN",
+            "cmVmcmVzaF90b2tlbhgBIAEoCSKjAQoeU2Vzc2lvblN2Y1N0YXJ0U2Vzc2lv",
+            "blJlc3BvbnNlEkEKBnJlc3VsdBgBIAEoDjIxLmhvbG1zLnR5cGVzLmlhbS5y",
+            "cGMuU2Vzc2lvblN2Y1N0YXJ0U2Vzc2lvblJlc3VsdBI+Cg9zZXNzaW9uX2Nv",
+            "bnRleHQYAiABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuU2Vzc2lvbkNv",
+            "bnRleHQqRgocU2Vzc2lvblN2Y1N0YXJ0U2Vzc2lvblJlc3VsdBILCgdTVUND",
+            "RVNTEAASDAoISU5BQ1RJVkUQARILCgdGQUlMVVJFEAIy4AIKClNlc3Npb25T",
+            "dmMSegoPVHJ5U3RhcnRTZXNzaW9uEjIuaG9sbXMudHlwZXMuaWFtLnJwYy5T",
+            "ZXNzaW9uU3ZjU3RhcnRTZXNzaW9uUmVxdWVzdBozLmhvbG1zLnR5cGVzLmlh",
+            "bS5ycGMuU2Vzc2lvblN2Y1N0YXJ0U2Vzc2lvblJlc3BvbnNlEnMKElJlZnJl",
+            "c2hBY2Nlc3NUb2tlbhIoLmhvbG1zLnR5cGVzLmlhbS5ycGMuVG9rZW5SZWZy",
+            "ZXNoUmVxdWVzdBozLmhvbG1zLnR5cGVzLmlhbS5ycGMuU2Vzc2lvblN2Y1N0",
+            "YXJ0U2Vzc2lvblJlc3BvbnNlEmEKBkxvZ291dBIiLmhvbG1zLnR5cGVzLmlh",
+            "bS5ycGMuTG9nb3V0UmVxdWVzdBozLmhvbG1zLnR5cGVzLmlhbS5ycGMuU2Vz",
+            "c2lvblN2Y1N0YXJ0U2Vzc2lvblJlc3BvbnNlQh9aB2lhbS9ycGOqAhNIT0xN",
+            "Uy5UeXBlcy5JQU0uUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.ClientInstanceIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.SessionContextReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResult), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest), global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest.Parser, new[]{ "CandidateUsername", "CandidatePassword", "ClientInstanceId", "OauthClientId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.TokenRefreshRequest), global::HOLMS.Types.IAM.RPC.TokenRefreshRequest.Parser, new[]{ "GrantType", "RefreshToken", "Scope" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.LogoutRequest), global::HOLMS.Types.IAM.RPC.LogoutRequest.Parser, new[]{ "RefreshToken" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse), global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse.Parser, new[]{ "Result", "SessionContext" }, null, null, null)
           }));
     }
@@ -444,6 +448,123 @@ namespace HOLMS.Types.IAM.RPC {
 
   }
 
+  public sealed partial class LogoutRequest : pb::IMessage<LogoutRequest> {
+    private static readonly pb::MessageParser<LogoutRequest> _parser = new pb::MessageParser<LogoutRequest>(() => new LogoutRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LogoutRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.IAM.RPC.SessionSvcReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogoutRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogoutRequest(LogoutRequest other) : this() {
+      refreshToken_ = other.refreshToken_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogoutRequest Clone() {
+      return new LogoutRequest(this);
+    }
+
+    /// <summary>Field number for the "refresh_token" field.</summary>
+    public const int RefreshTokenFieldNumber = 1;
+    private string refreshToken_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RefreshToken {
+      get { return refreshToken_; }
+      set {
+        refreshToken_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LogoutRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LogoutRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RefreshToken != other.RefreshToken) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RefreshToken.Length != 0) hash ^= RefreshToken.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (RefreshToken.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(RefreshToken);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RefreshToken.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RefreshToken);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LogoutRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RefreshToken.Length != 0) {
+        RefreshToken = other.RefreshToken;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            RefreshToken = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class SessionSvcStartSessionResponse : pb::IMessage<SessionSvcStartSessionResponse> {
     private static readonly pb::MessageParser<SessionSvcStartSessionResponse> _parser = new pb::MessageParser<SessionSvcStartSessionResponse>(() => new SessionSvcStartSessionResponse());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -451,7 +572,7 @@ namespace HOLMS.Types.IAM.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.IAM.RPC.SessionSvcReflection.Descriptor.MessageTypes[2]; }
+      get { return global::HOLMS.Types.IAM.RPC.SessionSvcReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -15,6 +15,7 @@ namespace HOLMS.Types.IAM.RPC {
     static readonly Marshaller<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest> __Marshaller_SessionSvcStartSessionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse> __Marshaller_SessionSvcStartSessionResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.IAM.RPC.TokenRefreshRequest> __Marshaller_TokenRefreshRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.RPC.TokenRefreshRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.IAM.RPC.LogoutRequest> __Marshaller_LogoutRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.RPC.LogoutRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest, global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse> __Method_TryStartSession = new Method<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest, global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse>(
         MethodType.Unary,
@@ -28,6 +29,13 @@ namespace HOLMS.Types.IAM.RPC {
         __ServiceName,
         "RefreshAccessToken",
         __Marshaller_TokenRefreshRequest,
+        __Marshaller_SessionSvcStartSessionResponse);
+
+    static readonly Method<global::HOLMS.Types.IAM.RPC.LogoutRequest, global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse> __Method_Logout = new Method<global::HOLMS.Types.IAM.RPC.LogoutRequest, global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "Logout",
+        __Marshaller_LogoutRequest,
         __Marshaller_SessionSvcStartSessionResponse);
 
     /// <summary>Service descriptor</summary>
@@ -45,6 +53,11 @@ namespace HOLMS.Types.IAM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse> RefreshAccessToken(global::HOLMS.Types.IAM.RPC.TokenRefreshRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse> Logout(global::HOLMS.Types.IAM.RPC.LogoutRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -106,6 +119,22 @@ namespace HOLMS.Types.IAM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_RefreshAccessToken, null, options, request);
       }
+      public virtual global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse Logout(global::HOLMS.Types.IAM.RPC.LogoutRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return Logout(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse Logout(global::HOLMS.Types.IAM.RPC.LogoutRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Logout, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse> LogoutAsync(global::HOLMS.Types.IAM.RPC.LogoutRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return LogoutAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResponse> LogoutAsync(global::HOLMS.Types.IAM.RPC.LogoutRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Logout, null, options, request);
+      }
       protected override SessionSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new SessionSvcClient(configuration);
@@ -117,7 +146,8 @@ namespace HOLMS.Types.IAM.RPC {
     {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_TryStartSession, serviceImpl.TryStartSession)
-          .AddMethod(__Method_RefreshAccessToken, serviceImpl.RefreshAccessToken).Build();
+          .AddMethod(__Method_RefreshAccessToken, serviceImpl.RefreshAccessToken)
+          .AddMethod(__Method_Logout, serviceImpl.Logout).Build();
     }
 
   }
