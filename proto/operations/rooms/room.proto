@@ -4,6 +4,7 @@ package holms.types.operations.rooms;
 option csharp_namespace = "HOLMS.Types.Operations.Rooms";
 option go_package = "operations/rooms";
 
+import "booking/indicators/reservation_indicator.proto";
 import "google/protobuf/timestamp.proto";
 import "operations/room_maintenance_status.proto";
 import "operations/rooms/room_indicator.proto";
@@ -21,4 +22,5 @@ message Room {
 	string room_type_description = 9;
 	holms.types.operations.rooms.RoomIndicator connected_room = 10;
 	string trunk_id = 11;
+	holms.types.booking.indicators.ReservationIndicator occupying_reservation = 12;
 }
