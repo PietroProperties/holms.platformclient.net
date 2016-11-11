@@ -70,7 +70,6 @@ namespace HOLMS.Application.Client {
         RoomUseStatusCalculatorSvc.RoomUseStatusCalculatorSvcClient RoomUseStatusCalculatorSvc { get; }
         SessionContext SC { get; }
         string ServerName { get; }
-        SessionSvc.SessionSvcClient SessionSvc { get; }
         SessionService SS { get; }
         StaffMsgSvc.StaffMsgSvcClient StaffMsgSvc { get; }
         StaffSvc.StaffSvcClient StaffSvc { get; }
