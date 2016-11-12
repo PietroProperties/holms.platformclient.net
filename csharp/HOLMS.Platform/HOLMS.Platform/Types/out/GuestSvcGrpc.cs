@@ -18,6 +18,7 @@ namespace HOLMS.Types.CRM.RPC {
     static readonly Marshaller<global::HOLMS.Types.CRM.Guests.Guest> __Marshaller_Guest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Guests.Guest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.CRM.RPC.GuestSvcGetManyRequest> __Marshaller_GuestSvcGetManyRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestSvcGetManyRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.CRM.RPC.GuestSvcPrefixSearchRequest> __Marshaller_GuestSvcPrefixSearchRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestSvcPrefixSearchRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest> __Marshaller_GuestSvcSearchByEmailRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> __Method_All = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse>(
         MethodType.Unary,
@@ -45,6 +46,13 @@ namespace HOLMS.Types.CRM.RPC {
         __ServiceName,
         "SearchByNamePrefix",
         __Marshaller_GuestSvcPrefixSearchRequest,
+        __Marshaller_GuestSvcManyGuestsResponse);
+
+    static readonly Method<global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> __Method_SearchByEmailAddress = new Method<global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "SearchByEmailAddress",
+        __Marshaller_GuestSvcSearchByEmailRequest,
         __Marshaller_GuestSvcManyGuestsResponse);
 
     static readonly Method<global::HOLMS.Types.CRM.Guests.Guest, global::HOLMS.Types.CRM.Guests.Guest> __Method_Create = new Method<global::HOLMS.Types.CRM.Guests.Guest, global::HOLMS.Types.CRM.Guests.Guest>(
@@ -86,6 +94,11 @@ namespace HOLMS.Types.CRM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> SearchByNamePrefix(global::HOLMS.Types.CRM.RPC.GuestSvcPrefixSearchRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> SearchByEmailAddress(global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -189,6 +202,22 @@ namespace HOLMS.Types.CRM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SearchByNamePrefix, null, options, request);
       }
+      public virtual global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse SearchByEmailAddress(global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SearchByEmailAddress(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse SearchByEmailAddress(global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SearchByEmailAddress, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> SearchByEmailAddressAsync(global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SearchByEmailAddressAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> SearchByEmailAddressAsync(global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SearchByEmailAddress, null, options, request);
+      }
       public virtual global::HOLMS.Types.CRM.Guests.Guest Create(global::HOLMS.Types.CRM.Guests.Guest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Create(request, new CallOptions(headers, deadline, cancellationToken));
@@ -235,6 +264,7 @@ namespace HOLMS.Types.CRM.RPC {
           .AddMethod(__Method_GetById, serviceImpl.GetById)
           .AddMethod(__Method_GetSeveralById, serviceImpl.GetSeveralById)
           .AddMethod(__Method_SearchByNamePrefix, serviceImpl.SearchByNamePrefix)
+          .AddMethod(__Method_SearchByEmailAddress, serviceImpl.SearchByEmailAddress)
           .AddMethod(__Method_Create, serviceImpl.Create)
           .AddMethod(__Method_Update, serviceImpl.Update).Build();
     }
