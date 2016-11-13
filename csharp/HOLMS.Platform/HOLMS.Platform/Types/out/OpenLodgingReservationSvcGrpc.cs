@@ -26,6 +26,7 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly Marshaller<global::HOLMS.Types.Booking.ReservationAssociatedParties> __Marshaller_ReservationAssociatedParties = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.ReservationAssociatedParties.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.History.ReservationCreationSummary> __Marshaller_ReservationCreationSummary = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.History.ReservationCreationSummary.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.History.ReservationAmendmentSummary> __Marshaller_ReservationAmendmentSummary = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.History.ReservationAmendmentSummary.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest> __Marshaller_VehiclePlateInformationUpdateRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.GetReservationHistoryResponse> __Method_GetReservationHistory = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.GetReservationHistoryResponse>(
         MethodType.Unary,
@@ -104,6 +105,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_ReservationIndicator,
         __Marshaller_ReservationAmendmentSummary);
 
+    static readonly Method<global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UpdateVehiclePlateInformation = new Method<global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "UpdateVehiclePlateInformation",
+        __Marshaller_VehiclePlateInformationUpdateRequest,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -164,6 +172,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.History.ReservationAmendmentSummary> GetReservationAmendmentSummary(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> UpdateVehiclePlateInformation(global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -369,6 +382,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationAmendmentSummary, null, options, request);
       }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateVehiclePlateInformation(global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UpdateVehiclePlateInformation(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateVehiclePlateInformation(global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateVehiclePlateInformation, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateVehiclePlateInformationAsync(global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UpdateVehiclePlateInformationAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateVehiclePlateInformationAsync(global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateVehiclePlateInformation, null, options, request);
+      }
       protected override OpenLodgingReservationSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new OpenLodgingReservationSvcClient(configuration);
@@ -389,7 +418,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetRecommendedCheckinAuthorizationAmounts, serviceImpl.GetRecommendedCheckinAuthorizationAmounts)
           .AddMethod(__Method_GetReservationAssociatedParties, serviceImpl.GetReservationAssociatedParties)
           .AddMethod(__Method_GetReservationCreationSummary, serviceImpl.GetReservationCreationSummary)
-          .AddMethod(__Method_GetReservationAmendmentSummary, serviceImpl.GetReservationAmendmentSummary).Build();
+          .AddMethod(__Method_GetReservationAmendmentSummary, serviceImpl.GetReservationAmendmentSummary)
+          .AddMethod(__Method_UpdateVehiclePlateInformation, serviceImpl.UpdateVehiclePlateInformation).Build();
     }
 
   }

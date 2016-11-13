@@ -51,6 +51,11 @@ message HousekeepingTimePreferenceRequest {
 	holms.types.operations.housekeeping.HousekeepingTimeIndicator requested_hk_time = 2;
 }
 
+message VehiclePlateInformationUpdateRequest {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	string vehicle_plate_information = 2;
+}
+
 service OpenLodgingReservationSvc {
 	rpc GetReservationHistory (holms.types.booking.indicators.ReservationIndicator)
 		returns (GetReservationHistoryResponse);
@@ -84,4 +89,7 @@ service OpenLodgingReservationSvc {
 
 	rpc GetReservationAmendmentSummary(holms.types.booking.indicators.ReservationIndicator)
 		returns(holms.types.booking.history.ReservationAmendmentSummary);
+
+	rpc UpdateVehiclePlateInformation(VehiclePlateInformationUpdateRequest)
+		returns(google.protobuf.Empty);
 }
