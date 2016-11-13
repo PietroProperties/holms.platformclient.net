@@ -31,7 +31,7 @@ namespace HOLMS.Types.Booking.Reservations {
             "Yl9pbmNsdXNpdmVfb3BzZGF0ZV9yYW5nZS5wcm90bxohc3VwcGx5L3Jvb21f",
             "dHlwZXMvcm9vbV90eXBlLnByb3RvGhtpYW0vdGVuYW5jeV9pbmRpY2F0b3Iu",
             "cHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMvcHJvcGVydHlfaW5k",
-            "aWNhdG9yLnByb3RvItQEChJSZXNlcnZhdGlvblN1bW1hcnkSRwoJZW50aXR5",
+            "aWNhdG9yLnByb3RvIvcEChJSZXNlcnZhdGlvblN1bW1hcnkSRwoJZW50aXR5",
             "X2lkGAEgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJl",
             "c2VydmF0aW9uSW5kaWNhdG9yEhIKCmJvb2tpbmdfaWQYAiABKAkSQQoFc3Rh",
             "dGUYAyABKA4yMi5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5S",
@@ -44,13 +44,13 @@ namespace HOLMS.Types.Booking.Reservations {
             "ZVN0YXR1cxIyCgd0ZW5hbmN5GAggASgLMiEuaG9sbXMudHlwZXMuaWFtLlRl",
             "bmFuY3lJbmRpY2F0b3ISSgoIcHJvcGVydHkYCSABKAsyOC5ob2xtcy50eXBl",
             "cy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9y",
-            "EhgKEGdyb3VwX2Jvb2tpbmdfaWQYCiABKAlCOVoUYm9va2luZy9yZXNlcnZh",
-            "dGlvbnOqAiBIT0xNUy5UeXBlcy5Cb29raW5nLlJlc2VydmF0aW9uc2IGcHJv",
-            "dG8z"));
+            "EhgKEGdyb3VwX2Jvb2tpbmdfaWQYCiABKAkSIQoZdmVoaWNsZV9wbGF0ZV9p",
+            "bmZvcm1hdGlvbhgLIAEoCUI5WhRib29raW5nL3Jlc2VydmF0aW9uc6oCIEhP",
+            "TE1TLlR5cGVzLkJvb2tpbmcuUmVzZXJ2YXRpb25zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationStateReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationSummary), global::HOLMS.Types.Booking.Reservations.ReservationSummary.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "RoomType", "GuaranteeStatus", "Tenancy", "Property", "GroupBookingId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationSummary), global::HOLMS.Types.Booking.Reservations.ReservationSummary.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "RoomType", "GuaranteeStatus", "Tenancy", "Property", "GroupBookingId", "VehiclePlateInformation" }, null, null, null)
           }));
     }
     #endregion
@@ -91,6 +91,7 @@ namespace HOLMS.Types.Booking.Reservations {
       Tenancy = other.tenancy_ != null ? other.Tenancy.Clone() : null;
       Property = other.property_ != null ? other.Property.Clone() : null;
       groupBookingId_ = other.groupBookingId_;
+      vehiclePlateInformation_ = other.vehiclePlateInformation_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -208,6 +209,17 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
+    /// <summary>Field number for the "vehicle_plate_information" field.</summary>
+    public const int VehiclePlateInformationFieldNumber = 11;
+    private string vehiclePlateInformation_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string VehiclePlateInformation {
+      get { return vehiclePlateInformation_; }
+      set {
+        vehiclePlateInformation_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationSummary);
@@ -231,6 +243,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (!object.Equals(Tenancy, other.Tenancy)) return false;
       if (!object.Equals(Property, other.Property)) return false;
       if (GroupBookingId != other.GroupBookingId) return false;
+      if (VehiclePlateInformation != other.VehiclePlateInformation) return false;
       return true;
     }
 
@@ -247,6 +260,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (tenancy_ != null) hash ^= Tenancy.GetHashCode();
       if (property_ != null) hash ^= Property.GetHashCode();
       if (GroupBookingId.Length != 0) hash ^= GroupBookingId.GetHashCode();
+      if (VehiclePlateInformation.Length != 0) hash ^= VehiclePlateInformation.GetHashCode();
       return hash;
     }
 
@@ -297,6 +311,10 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(82);
         output.WriteString(GroupBookingId);
       }
+      if (VehiclePlateInformation.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(VehiclePlateInformation);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -331,6 +349,9 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (GroupBookingId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(GroupBookingId);
+      }
+      if (VehiclePlateInformation.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(VehiclePlateInformation);
       }
       return size;
     }
@@ -387,6 +408,9 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (other.GroupBookingId.Length != 0) {
         GroupBookingId = other.GroupBookingId;
+      }
+      if (other.VehiclePlateInformation.Length != 0) {
+        VehiclePlateInformation = other.VehiclePlateInformation;
       }
     }
 
@@ -454,6 +478,10 @@ namespace HOLMS.Types.Booking.Reservations {
           }
           case 82: {
             GroupBookingId = input.ReadString();
+            break;
+          }
+          case 90: {
+            VehiclePlateInformation = input.ReadString();
             break;
           }
         }

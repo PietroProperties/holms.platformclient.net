@@ -32,7 +32,7 @@ namespace HOLMS.Types.Booking.Reservations {
             "bxoWY3JtL2d1ZXN0cy9ndWVzdC5wcm90bxohc3VwcGx5L3Jvb21fdHlwZXMv",
             "cm9vbV90eXBlLnByb3RvGhpzdXBwbHkvcXVhbGlmaWNhdGlvbi5wcm90bxov",
             "b3BlcmF0aW9ucy9ob3VzZWtlZXBpbmcvaG91c2VrZWVwaW5nX3RpbWUucHJv",
-            "dG8ikwYKF0NvbXBsZXRlT3BlblJlc2VydmF0aW9uEkcKCWVudGl0eV9pZBgB",
+            "dG8itgYKF0NvbXBsZXRlT3BlblJlc2VydmF0aW9uEkcKCWVudGl0eV9pZBgB",
             "IAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZh",
             "dGlvbkluZGljYXRvchISCgpib29raW5nX2lkGAIgASgJEkEKBXN0YXRlGAMg",
             "ASgOMjIuaG9sbXMudHlwZXMuYm9va2luZy5yZXNlcnZhdGlvbnMuUmVzZXJ2",
@@ -49,13 +49,13 @@ namespace HOLMS.Types.Booking.Reservations {
             "U3RhdHVzEkcKGHVucGFpZF9ndWFyYW50ZWVfYmFsYW5jZRgNIAEoCzIlLmhv",
             "bG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJRChJoa190aW1l",
             "X3ByZWZlcmVuY2UYDyABKAsyNS5ob2xtcy50eXBlcy5vcGVyYXRpb25zLmhv",
-            "dXNla2VlcGluZy5Ib3VzZWtlZXBpbmdUaW1lQjlaFGJvb2tpbmcvcmVzZXJ2",
-            "YXRpb25zqgIgSE9MTVMuVHlwZXMuQm9va2luZy5SZXNlcnZhdGlvbnNiBnBy",
-            "b3RvMw=="));
+            "dXNla2VlcGluZy5Ib3VzZWtlZXBpbmdUaW1lEiEKGXZlaGljbGVfcGxhdGVf",
+            "aW5mb3JtYXRpb24YECABKAlCOVoUYm9va2luZy9yZXNlcnZhdGlvbnOqAiBI",
+            "T0xNUy5UeXBlcy5Cb29raW5nLlJlc2VydmF0aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationStateReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.Supply.QualificationReflection.Descriptor, global::HOLMS.Types.Operations.Housekeeping.HousekeepingTimeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.CompleteOpenReservation), global::HOLMS.Types.Booking.Reservations.CompleteOpenReservation.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "NumberAdults", "NumberChildren", "RoomType", "AdditionalGuests", "Qualification", "TaxExempt", "GuaranteeStatus", "UnpaidGuaranteeBalance", "HkTimePreference" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.CompleteOpenReservation), global::HOLMS.Types.Booking.Reservations.CompleteOpenReservation.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "NumberAdults", "NumberChildren", "RoomType", "AdditionalGuests", "Qualification", "TaxExempt", "GuaranteeStatus", "UnpaidGuaranteeBalance", "HkTimePreference", "VehiclePlateInformation" }, null, null, null)
           }));
     }
     #endregion
@@ -100,6 +100,7 @@ namespace HOLMS.Types.Booking.Reservations {
       guaranteeStatus_ = other.guaranteeStatus_;
       UnpaidGuaranteeBalance = other.unpaidGuaranteeBalance_ != null ? other.UnpaidGuaranteeBalance.Clone() : null;
       HkTimePreference = other.hkTimePreference_ != null ? other.HkTimePreference.Clone() : null;
+      vehiclePlateInformation_ = other.vehiclePlateInformation_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -260,6 +261,17 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
+    /// <summary>Field number for the "vehicle_plate_information" field.</summary>
+    public const int VehiclePlateInformationFieldNumber = 16;
+    private string vehiclePlateInformation_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string VehiclePlateInformation {
+      get { return vehiclePlateInformation_; }
+      set {
+        vehiclePlateInformation_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CompleteOpenReservation);
@@ -287,6 +299,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (GuaranteeStatus != other.GuaranteeStatus) return false;
       if (!object.Equals(UnpaidGuaranteeBalance, other.UnpaidGuaranteeBalance)) return false;
       if (!object.Equals(HkTimePreference, other.HkTimePreference)) return false;
+      if (VehiclePlateInformation != other.VehiclePlateInformation) return false;
       return true;
     }
 
@@ -307,6 +320,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (GuaranteeStatus != 0) hash ^= GuaranteeStatus.GetHashCode();
       if (unpaidGuaranteeBalance_ != null) hash ^= UnpaidGuaranteeBalance.GetHashCode();
       if (hkTimePreference_ != null) hash ^= HkTimePreference.GetHashCode();
+      if (VehiclePlateInformation.Length != 0) hash ^= VehiclePlateInformation.GetHashCode();
       return hash;
     }
 
@@ -370,6 +384,10 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(122);
         output.WriteMessage(HkTimePreference);
       }
+      if (VehiclePlateInformation.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(VehiclePlateInformation);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -414,6 +432,9 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (hkTimePreference_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(HkTimePreference);
+      }
+      if (VehiclePlateInformation.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(VehiclePlateInformation);
       }
       return size;
     }
@@ -483,6 +504,9 @@ namespace HOLMS.Types.Booking.Reservations {
           hkTimePreference_ = new global::HOLMS.Types.Operations.Housekeeping.HousekeepingTime();
         }
         HkTimePreference.MergeFrom(other.HkTimePreference);
+      }
+      if (other.VehiclePlateInformation.Length != 0) {
+        VehiclePlateInformation = other.VehiclePlateInformation;
       }
     }
 
@@ -569,6 +593,10 @@ namespace HOLMS.Types.Booking.Reservations {
               hkTimePreference_ = new global::HOLMS.Types.Operations.Housekeeping.HousekeepingTime();
             }
             input.ReadMessage(hkTimePreference_);
+            break;
+          }
+          case 130: {
+            VehiclePlateInformation = input.ReadString();
             break;
           }
         }

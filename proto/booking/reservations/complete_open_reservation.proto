@@ -29,4 +29,5 @@ message CompleteOpenReservation {
 	holms.types.booking.reservations.ReservationGuaranteeStatus guarantee_status = 12;
 	holms.types.primitive.MonetaryAmount unpaid_guarantee_balance = 13;
 	holms.types.operations.housekeeping.HousekeepingTime hk_time_preference = 15;
+	string vehicle_plate_information = 16;
 }

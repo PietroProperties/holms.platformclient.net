@@ -24,4 +24,5 @@ message ReservationSummary {
 	.holms.types.iam.TenancyIndicator tenancy = 8;
 	.holms.types.tenancy_config.indicators.PropertyIndicator property = 9;
 	string group_booking_id = 10;
+	string vehicle_plate_information = 11;
 }
