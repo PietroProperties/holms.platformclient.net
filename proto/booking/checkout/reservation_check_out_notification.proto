@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.check_out;
+option csharp_namespace = "HOLMS.Types.Booking.CheckOut";
+option go_package = "booking/checkout";
+
+import "booking/indicators/reservation_indicator.proto";
+import "crm/guests/guest_indicator.proto";
+
+message ReservationCheckOutNotification {
+	string j_w_token = 1;
+	holms.types.booking.indicators.ReservationIndicator reservation = 2;
+	holms.types.crm.guests.GuestIndicator guest_id = 3;
+	string reservation_booking_number = 4;
+}

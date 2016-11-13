@@ -471,6 +471,7 @@
     <Compile Include="Types\out\ReservationCancellationSvc.cs" />
     <Compile Include="Types\out\ReservationCancellationSvcGrpc.cs" />
     <Compile Include="Types\out\ReservationCheckInNotification.cs" />
+    <Compile Include="Types\out\ReservationCheckOutNotification.cs" />
     <Compile Include="Types\out\ReservationContactPerson.cs" />
     <Compile Include="Types\out\ReservationContactPersonIndicator.cs" />
     <Compile Include="Types\out\ReservationCreationSummary.cs" />
