@@ -13,6 +13,8 @@ import "supply/room_types/room_type.proto";
 import "iam/tenancy_indicator.proto";
 import "tenancy_config/indicators/property_indicator.proto";
 
+import "operations/rooms/room_indicator.proto";
+
 message ReservationSummary {
 	holms.types.booking.indicators.ReservationIndicator entity_id = 1;
 	string booking_id = 2;
@@ -25,4 +27,7 @@ message ReservationSummary {
 	.holms.types.tenancy_config.indicators.PropertyIndicator property = 9;
 	string group_booking_id = 10;
 	string vehicle_plate_information = 11;
+
+	string current_or_terminal_occupied_room_number = 12;
+	holms.types.operations.rooms.RoomIndicator current_or_terminal_occupied_room = 13;
 }

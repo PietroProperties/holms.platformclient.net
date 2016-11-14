@@ -13,6 +13,7 @@ import "crm/guests/guest.proto";
 import "supply/room_types/room_type.proto";
 import "supply/qualification.proto";
 import "operations/housekeeping/housekeeping_time.proto";
+import "operations/rooms/room_indicator.proto";
 
 message CompleteOpenReservation {
 	holms.types.booking.indicators.ReservationIndicator entity_id = 1;
@@ -30,4 +31,7 @@ message CompleteOpenReservation {
 	holms.types.primitive.MonetaryAmount unpaid_guarantee_balance = 13;
 	holms.types.operations.housekeeping.HousekeepingTime hk_time_preference = 15;
 	string vehicle_plate_information = 16;
+
+	string current_or_terminal_occupied_room_number = 17;
+	holms.types.operations.rooms.RoomIndicator current_or_terminal_occupied_room = 18;
 }
