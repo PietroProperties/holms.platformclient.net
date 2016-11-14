@@ -5,6 +5,7 @@ option csharp_namespace = "HOLMS.Types.Reporting.RPC";
 option go_package = "operations/rpc";
 
 import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
 import "iam/staff_member_indicator.proto";
 
 enum InHouseGuestReportSorting {
@@ -44,5 +45,8 @@ service FrontDeskReportingSvc {
         returns (FrontDeskReportingSvcReportResponse);
 
 	rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
+		returns (FrontDeskReportingSvcReportResponse);
+
+	rpc GetVehiclesReport(google.protobuf.Empty)
 		returns (FrontDeskReportingSvcReportResponse);
 }
