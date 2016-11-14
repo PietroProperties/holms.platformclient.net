@@ -32,6 +32,8 @@ message CompleteOpenReservation {
 	holms.types.operations.housekeeping.HousekeepingTime hk_time_preference = 15;
 	string vehicle_plate_information = 16;
 
-	string current_or_terminal_occupied_room_number = 17;
-	holms.types.operations.rooms.RoomIndicator current_or_terminal_occupied_room = 18;
+	string current_occupied_room_number = 17;
+	holms.types.operations.rooms.RoomIndicator current_occupied_room = 18;
+	string terminal_occupied_room_number = 19;
+	holms.types.operations.rooms.RoomIndicator terminal_occupied_room = 20;
 }

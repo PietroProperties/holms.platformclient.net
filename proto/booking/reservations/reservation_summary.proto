@@ -28,6 +28,8 @@ message ReservationSummary {
 	string group_booking_id = 10;
 	string vehicle_plate_information = 11;
 
-	string current_or_terminal_occupied_room_number = 12;
-	holms.types.operations.rooms.RoomIndicator current_or_terminal_occupied_room = 13;
+	string current_occupied_room_number = 12;
+	holms.types.operations.rooms.RoomIndicator current_occupied_room = 13;
+	string terminal_occupied_room_number = 14;
+	holms.types.operations.rooms.RoomIndicator terminal_occupied_room = 15;
 }
