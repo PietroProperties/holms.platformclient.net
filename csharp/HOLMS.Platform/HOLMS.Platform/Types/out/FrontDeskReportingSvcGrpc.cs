@@ -16,6 +16,7 @@ namespace HOLMS.Types.Reporting.RPC {
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Marshaller_FrontDeskReportingSvcReportResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest> __Marshaller_FrontDeskReportingSvcInHouseGuestsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest> __Marshaller_FrontDeskReportingSvcHousekeepingRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetArrivalsReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
         MethodType.Unary,
@@ -52,6 +53,13 @@ namespace HOLMS.Types.Reporting.RPC {
         __Marshaller_FrontDeskReportingSvcHousekeepingRequest,
         __Marshaller_FrontDeskReportingSvcReportResponse);
 
+    static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetVehiclesReport = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetVehiclesReport",
+        __Marshaller_Empty,
+        __Marshaller_FrontDeskReportingSvcReportResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -82,6 +90,11 @@ namespace HOLMS.Types.Reporting.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetHousekeepingAssignmentsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetVehiclesReport(global::Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -191,6 +204,22 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetHousekeepingAssignmentsReport, null, options, request);
       }
+      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetVehiclesReport(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetVehiclesReport(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetVehiclesReport(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetVehiclesReport, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetVehiclesReportAsync(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetVehiclesReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetVehiclesReportAsync(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetVehiclesReport, null, options, request);
+      }
       protected override FrontDeskReportingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new FrontDeskReportingSvcClient(configuration);
@@ -205,7 +234,8 @@ namespace HOLMS.Types.Reporting.RPC {
           .AddMethod(__Method_GetDeparturesReport, serviceImpl.GetDeparturesReport)
           .AddMethod(__Method_GetInHouseGuestsReport, serviceImpl.GetInHouseGuestsReport)
           .AddMethod(__Method_GetNoShowsReport, serviceImpl.GetNoShowsReport)
-          .AddMethod(__Method_GetHousekeepingAssignmentsReport, serviceImpl.GetHousekeepingAssignmentsReport).Build();
+          .AddMethod(__Method_GetHousekeepingAssignmentsReport, serviceImpl.GetHousekeepingAssignmentsReport)
+          .AddMethod(__Method_GetVehiclesReport, serviceImpl.GetVehiclesReport).Build();
     }
 
   }
