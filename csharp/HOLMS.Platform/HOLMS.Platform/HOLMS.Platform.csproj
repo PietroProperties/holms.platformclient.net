@@ -523,6 +523,7 @@
     <Compile Include="Types\out\RoomCrud.cs" />
     <Compile Include="Types\out\RoomIndicator.cs" />
     <Compile Include="Types\out\RoomMaintenanceStatus.cs" />
+    <Compile Include="Types\out\RoomOccupancyChangedNotification.cs" />
     <Compile Include="Types\out\RoomStatusColors.cs" />
     <Compile Include="Types\out\RoomStatusColorsSvc.cs" />
     <Compile Include="Types\out\RoomStatusColorsSvcGrpc.cs" />

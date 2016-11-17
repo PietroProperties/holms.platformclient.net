@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package holms.types.operations.rooms;
+option csharp_namespace = "HOLMS.Types.Operations.Rooms";
+
+import "booking/indicators/reservation_indicator.proto";
+import "operations/rooms/room_indicator.proto";
+
+message RoomOccupancyChangedNotification {
+	string j_w_token = 1;
+	holms.types.operations.rooms.RoomIndicator room = 2;
+	holms.types.booking.indicators.ReservationIndicator reservation = 3;
+}

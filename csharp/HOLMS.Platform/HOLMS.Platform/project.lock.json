@@ -1989,9 +1989,8 @@
       ]
     },
     "Microsoft.IdentityModel.Logging/1.0.0": {
-      "sha512": "8lt3q7o9xSLyKfja/D2J67N8EZLwISjXktkwxK275yOrZY16iNCHCWqtDVP1M/DHuC/LWFMoheF3lmaJC9UXQg==",
+      "sha512": "Ol7aYJKsY1UDDTnCjXai17G3bJ0Q7Xj97Ao4nCoSU3+sc1/uMaWhCs3RjsZnrapYbdBPtt1xTPbhC8R6M1MqWQ==",
       "type": "package",
-      "path": "Microsoft.IdentityModel.Logging/1.0.0",
       "files": [
         "Microsoft.IdentityModel.Logging.1.0.0.nupkg.sha512",
         "Microsoft.IdentityModel.Logging.nuspec",
@@ -2002,9 +2001,8 @@
       ]
     },
     "Microsoft.IdentityModel.Tokens/5.0.0": {
-      "sha512": "VwNw+fm2nlbkL3GRO8b6WBlqs6M4q9Dft0CAg0TMHUYwuiU+4dciiIlZRC6q/HEcllKUvc0KDXt20n2PGcO1pA==",
+      "sha512": "EINdydCekJeyG+IyaB/3GbIfEeaOIU5GJiMmpCI+G+o1g9RvRHkS1hpG4KCp3J5nOLzr31k+rRtNrEQcJJEGOQ==",
       "type": "package",
-      "path": "Microsoft.IdentityModel.Tokens/5.0.0",
       "files": [
         "Microsoft.IdentityModel.Tokens.5.0.0.nupkg.sha512",
         "Microsoft.IdentityModel.Tokens.nuspec",
@@ -3239,9 +3237,8 @@
       ]
     },
     "System.IdentityModel.Tokens.Jwt/5.0.0": {
-      "sha512": "Ne69BCr2FPAysLG7pOM/+U/XFwGg849GIML2NuqtfEwBC3l74SaUPN3AmJfHccBcgOSDL3jVLQ3/ZQTtd3g6JA==",
+      "sha512": "qq2qmY/lV/474QRm5/YBRX44Ez3K4qcqIeB7PC3TG+LlFRoTtVokUttj4TFTXyzOZ1B2JsuEFNFfW1W2FdtsFg==",
       "type": "package",
-      "path": "System.IdentityModel.Tokens.Jwt/5.0.0",
       "files": [
         "System.IdentityModel.Tokens.Jwt.5.0.0.nupkg.sha512",
         "System.IdentityModel.Tokens.Jwt.nuspec",
@@ -6066,7 +6063,5 @@
       "System.Runtime.Extensions >= 4.1.0"
     ],
     ".NETStandard,Version=v1.5": []
-  },
-  "tools": {},
-  "projectFileToolGroups": {}
+  }
 }

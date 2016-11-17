@@ -7,6 +7,8 @@ option go_package = "operations/rpc";
 import "primitive/server_action_confirmation.proto";
 import "google/protobuf/empty.proto";
 import "operations/rooms/room.proto";
+import "operations/rooms/room_indicator.proto";
+import "booking/indicators/reservation_indicator.proto";
 
 message RoomSvcAllResponse {
 	repeated .holms.types.operations.rooms.Room rooms = 1;
@@ -23,6 +25,38 @@ message RoomSvcCRUDResponse {
 	holms.types.operations.rooms.Room room = 2;
 }
 
+enum RoomSvcOccupancyClaimResult {
+	OCCUPANCY_CLAIM_SUCCESS = 0;
+	FAIL_ROOM_ALREADY_OCCUPIED = 1;
+	FAIL_RESERVATION_HAS_EXISTING_CLAIM = 2;
+	FAIL_UNKNOWN = 3;
+}
+
+enum RoomSvcOccupancyReleaseResult {
+	OCCUPANCY_RELEASE_SUCCESS = 0;
+	FAIL_NO_EXISTING_OCCUPANCY_CLAIM = 1;
+	FAIL_RESERVATION_OCCUPYING_DIFFERENT_ROOM = 2;
+	FAIL_UNNOWN = 4; 
+}
+
+message RoomSvcOccupancyRequest {
+	.holms.types.operations.rooms.RoomIndicator room = 1;
+	.holms.types.booking.indicators.ReservationIndicator reservation = 2;
+}
+
+message RoomSvcClaimOccupancyResponse {
+	RoomSvcOccupancyClaimResult result = 1;
+}
+
+message RoomSvcReleaseOccupancyResponse {
+	RoomSvcOccupancyReleaseResult result = 1;
+}
+
+message RoomSvcGetByOccupyingReservationResponse {
+	bool reservation_has_room_claim = 1;
+	.holms.types.operations.rooms.Room claimed_room = 2;
+}
+
 service RoomSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (RoomSvcAllResponse);
@@ -35,4 +69,13 @@ service RoomSvc {
 
 	rpc Delete (.holms.types.operations.rooms.Room) 
 		returns (.holms.types.primitive.ServerActionConfirmation);
+
+	rpc GetByOccupyingReservation(.holms.types.booking.indicators.ReservationIndicator)
+		returns (RoomSvcGetByOccupyingReservationResponse);
+
+	rpc ClaimRoomOccupancy(RoomSvcOccupancyRequest)
+		returns (RoomSvcClaimOccupancyResponse);
+
+	rpc ReleaseRoomOccupancy(RoomSvcOccupancyRequest)
+		returns (RoomSvcReleaseOccupancyResponse);
 }

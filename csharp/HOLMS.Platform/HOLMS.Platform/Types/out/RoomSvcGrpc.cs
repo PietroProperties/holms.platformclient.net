@@ -17,6 +17,11 @@ namespace HOLMS.Types.Operations.RPC {
     static readonly Marshaller<global::HOLMS.Types.Operations.Rooms.Room> __Marshaller_Room = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.Rooms.Room.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Operations.RPC.RoomSvcCRUDResponse> __Marshaller_RoomSvcCRUDResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.RoomSvcCRUDResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Primitive.ServerActionConfirmation> __Marshaller_ServerActionConfirmation = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.ServerActionConfirmation.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> __Marshaller_ReservationIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Operations.RPC.RoomSvcGetByOccupyingReservationResponse> __Marshaller_RoomSvcGetByOccupyingReservationResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.RoomSvcGetByOccupyingReservationResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest> __Marshaller_RoomSvcOccupancyRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Operations.RPC.RoomSvcClaimOccupancyResponse> __Marshaller_RoomSvcClaimOccupancyResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.RoomSvcClaimOccupancyResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Operations.RPC.RoomSvcReleaseOccupancyResponse> __Marshaller_RoomSvcReleaseOccupancyResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.RoomSvcReleaseOccupancyResponse.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Operations.RPC.RoomSvcAllResponse> __Method_All = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Operations.RPC.RoomSvcAllResponse>(
         MethodType.Unary,
@@ -46,6 +51,27 @@ namespace HOLMS.Types.Operations.RPC {
         __Marshaller_Room,
         __Marshaller_ServerActionConfirmation);
 
+    static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Operations.RPC.RoomSvcGetByOccupyingReservationResponse> __Method_GetByOccupyingReservation = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Operations.RPC.RoomSvcGetByOccupyingReservationResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetByOccupyingReservation",
+        __Marshaller_ReservationIndicator,
+        __Marshaller_RoomSvcGetByOccupyingReservationResponse);
+
+    static readonly Method<global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest, global::HOLMS.Types.Operations.RPC.RoomSvcClaimOccupancyResponse> __Method_ClaimRoomOccupancy = new Method<global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest, global::HOLMS.Types.Operations.RPC.RoomSvcClaimOccupancyResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "ClaimRoomOccupancy",
+        __Marshaller_RoomSvcOccupancyRequest,
+        __Marshaller_RoomSvcClaimOccupancyResponse);
+
+    static readonly Method<global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest, global::HOLMS.Types.Operations.RPC.RoomSvcReleaseOccupancyResponse> __Method_ReleaseRoomOccupancy = new Method<global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest, global::HOLMS.Types.Operations.RPC.RoomSvcReleaseOccupancyResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "ReleaseRoomOccupancy",
+        __Marshaller_RoomSvcOccupancyRequest,
+        __Marshaller_RoomSvcReleaseOccupancyResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -71,6 +97,21 @@ namespace HOLMS.Types.Operations.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Primitive.ServerActionConfirmation> Delete(global::HOLMS.Types.Operations.Rooms.Room request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Operations.RPC.RoomSvcGetByOccupyingReservationResponse> GetByOccupyingReservation(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Operations.RPC.RoomSvcClaimOccupancyResponse> ClaimRoomOccupancy(global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Operations.RPC.RoomSvcReleaseOccupancyResponse> ReleaseRoomOccupancy(global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -164,6 +205,54 @@ namespace HOLMS.Types.Operations.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Delete, null, options, request);
       }
+      public virtual global::HOLMS.Types.Operations.RPC.RoomSvcGetByOccupyingReservationResponse GetByOccupyingReservation(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetByOccupyingReservation(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Operations.RPC.RoomSvcGetByOccupyingReservationResponse GetByOccupyingReservation(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetByOccupyingReservation, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.RoomSvcGetByOccupyingReservationResponse> GetByOccupyingReservationAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetByOccupyingReservationAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.RoomSvcGetByOccupyingReservationResponse> GetByOccupyingReservationAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetByOccupyingReservation, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Operations.RPC.RoomSvcClaimOccupancyResponse ClaimRoomOccupancy(global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ClaimRoomOccupancy(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Operations.RPC.RoomSvcClaimOccupancyResponse ClaimRoomOccupancy(global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ClaimRoomOccupancy, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.RoomSvcClaimOccupancyResponse> ClaimRoomOccupancyAsync(global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ClaimRoomOccupancyAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.RoomSvcClaimOccupancyResponse> ClaimRoomOccupancyAsync(global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ClaimRoomOccupancy, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Operations.RPC.RoomSvcReleaseOccupancyResponse ReleaseRoomOccupancy(global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ReleaseRoomOccupancy(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Operations.RPC.RoomSvcReleaseOccupancyResponse ReleaseRoomOccupancy(global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReleaseRoomOccupancy, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.RoomSvcReleaseOccupancyResponse> ReleaseRoomOccupancyAsync(global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ReleaseRoomOccupancyAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.RoomSvcReleaseOccupancyResponse> ReleaseRoomOccupancyAsync(global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReleaseRoomOccupancy, null, options, request);
+      }
       protected override RoomSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new RoomSvcClient(configuration);
@@ -177,7 +266,10 @@ namespace HOLMS.Types.Operations.RPC {
           .AddMethod(__Method_All, serviceImpl.All)
           .AddMethod(__Method_Create, serviceImpl.Create)
           .AddMethod(__Method_Update, serviceImpl.Update)
-          .AddMethod(__Method_Delete, serviceImpl.Delete).Build();
+          .AddMethod(__Method_Delete, serviceImpl.Delete)
+          .AddMethod(__Method_GetByOccupyingReservation, serviceImpl.GetByOccupyingReservation)
+          .AddMethod(__Method_ClaimRoomOccupancy, serviceImpl.ClaimRoomOccupancy)
+          .AddMethod(__Method_ReleaseRoomOccupancy, serviceImpl.ReleaseRoomOccupancy).Build();
     }
 
   }
