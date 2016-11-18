@@ -16,20 +16,14 @@ using Microsoft.Extensions.Logging;
 namespace HOLMS.Application.Client {
     public class MockApplicationClient : IApplicationClient {
         public Mock<SessionContext> SCMock { get; private set; }
-
-        public MockApplicationClient() {
-            CreateMocks();
-        }
-
-        private void CreateMocks() {
-            SCMock = new Mock<SessionContext>();
-        }
+        public Mock<PropertySvc.PropertySvcClient> PropertySvcMock { get; }
 
         public ILogger Logger { get; }
 
-
         public MockApplicationClient(ILogger logger) {
             Logger = logger;
+            SCMock = new Mock<SessionContext>();
+            PropertySvcMock = new Mock<PropertySvc.PropertySvcClient>();
         }
 
         public async Task<SessionSvcStartSessionResult> StartSession(string candidateUsername, string candidatePassword) {
@@ -289,11 +283,7 @@ namespace HOLMS.Application.Client {
             }
         }
 
-        public PropertySvc.PropertySvcClient PropertySvc {
-            get {
-                throw new NotImplementedException();
-            }
-        }
+        public PropertySvc.PropertySvcClient PropertySvc => PropertySvcMock.Object;
 
         public QualificationSvc.QualificationSvcClient QualificationSvc {
             get {
