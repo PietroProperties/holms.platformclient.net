@@ -17,6 +17,7 @@ namespace HOLMS.Application.Client {
     public class MockApplicationClient : IApplicationClient {
         public Mock<SessionContext> SCMock { get; private set; }
         public Mock<PropertySvc.PropertySvcClient> PropertySvcMock { get; }
+        public Mock<CancellationPolicySvc.CancellationPolicySvcClient> CancellationPolicySvcMock { get; }
 
         public ILogger Logger { get; }
 
@@ -24,6 +25,7 @@ namespace HOLMS.Application.Client {
             Logger = logger;
             SCMock = new Mock<SessionContext>();
             PropertySvcMock = new Mock<PropertySvc.PropertySvcClient>();
+            CancellationPolicySvcMock = new Mock<CancellationPolicySvc.CancellationPolicySvcClient>();
         }
 
         public async Task<SessionSvcStartSessionResult> StartSession(string candidateUsername, string candidatePassword) {
@@ -91,11 +93,8 @@ namespace HOLMS.Application.Client {
             }
         }
 
-        public CancellationPolicySvc.CancellationPolicySvcClient CancellationPolicySvc {
-            get {
-                throw new NotImplementedException();
-            }
-        }
+        public CancellationPolicySvc.CancellationPolicySvcClient CancellationPolicySvc =>
+            CancellationPolicySvcMock.Object;
 
         public CancellationReasonSvc.CancellationReasonSvcClient CancellationReasonSvc {
             get {
