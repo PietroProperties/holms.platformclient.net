@@ -44,9 +44,12 @@ service FrontDeskReportingSvc {
     rpc GetNoShowsReport(FrontDeskReportingSvcRequest)
         returns (FrontDeskReportingSvcReportResponse);
 
-	rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
-		returns (FrontDeskReportingSvcReportResponse);
+    rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
+        returns (FrontDeskReportingSvcReportResponse);
 
-	rpc GetVehiclesReport(google.protobuf.Empty)
-		returns (FrontDeskReportingSvcReportResponse);
+    rpc GetReservationCreditReport(google.protobuf.Empty)
+        returns (FrontDeskReportingSvcReportResponse); 
+    
+    rpc GetVehiclesReport(google.protobuf.Empty)
+        returns (FrontDeskReportingSvcReportResponse);
 }

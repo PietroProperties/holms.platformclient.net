@@ -36,7 +36,7 @@ namespace HOLMS.Types.Reporting.RPC {
             "TWVtYmVySW5kaWNhdG9yEhEKCWFkZF9ub3RlcxgCIAEoCSI3CiNGcm9udERl",
             "c2tSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZRIQCghkb2N1bWVudBgBIAEo",
             "CSpCChlJbkhvdXNlR3Vlc3RSZXBvcnRTb3J0aW5nEhEKDUJZX0dVRVNUX05B",
-            "TUUQABISCg5CWV9ST09NX05VTUJFUhABMv0GChVGcm9udERlc2tSZXBvcnRp",
+            "TUUQABISCg5CWV9ST09NX05VTUJFUhABMvMHChVGcm9udERlc2tSZXBvcnRp",
             "bmdTdmMSjAEKEUdldEFycml2YWxzUmVwb3J0EjcuaG9sbXMudHlwZXMucmVw",
             "b3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNSZXF1ZXN0Gj4uaG9s",
             "bXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNS",
@@ -54,10 +54,13 @@ namespace HOLMS.Types.Reporting.RPC {
             "b3J0EkMuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBv",
             "cnRpbmdTdmNIb3VzZWtlZXBpbmdSZXF1ZXN0Gj4uaG9sbXMudHlwZXMucmVw",
             "b3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25z",
-            "ZRJrChFHZXRWZWhpY2xlc1JlcG9ydBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
-            "eRo+LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNrUmVwb3J0",
-            "aW5nU3ZjUmVwb3J0UmVzcG9uc2VCLFoOb3BlcmF0aW9ucy9ycGOqAhlIT0xN",
-            "Uy5UeXBlcy5SZXBvcnRpbmcuUlBDYgZwcm90bzM="));
+            "ZRJ0ChpHZXRSZXNlcnZhdGlvbkNyZWRpdFJlcG9ydBIWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eRo+LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnRE",
+            "ZXNrUmVwb3J0aW5nU3ZjUmVwb3J0UmVzcG9uc2USawoRR2V0VmVoaWNsZXNS",
+            "ZXBvcnQSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaPi5ob2xtcy50eXBlcy5y",
+            "ZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1JlcG9ydFJlc3Bv",
+            "bnNlQixaDm9wZXJhdGlvbnMvcnBjqgIZSE9MTVMuVHlwZXMuUmVwb3J0aW5n",
+            "LlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.RPC.InHouseGuestReportSorting), }, new pbr::GeneratedClrTypeInfo[] {
