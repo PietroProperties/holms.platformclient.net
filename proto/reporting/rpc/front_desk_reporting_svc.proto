@@ -7,6 +7,7 @@ option go_package = "operations/rpc";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 import "iam/staff_member_indicator.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
 
 enum InHouseGuestReportSorting {
 	BY_GUEST_NAME = 0;
@@ -20,6 +21,10 @@ message FrontDeskReportingSvcRequest {
 message FrontDeskReportingSvcInHouseGuestsRequest {
 	google.protobuf.Timestamp date = 1;
 	InHouseGuestReportSorting sort_type = 2;
+}
+
+message FrontDeskReportingSvcCancelledReservationsRequest {
+	holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
 }
 
 message FrontDeskReportingSvcHousekeepingRequest {
@@ -51,5 +56,8 @@ service FrontDeskReportingSvc {
         returns (FrontDeskReportingSvcReportResponse); 
     
     rpc GetVehiclesReport(google.protobuf.Empty)
+        returns (FrontDeskReportingSvcReportResponse);
+    
+    rpc GetCancelledReservationsReport(FrontDeskReportingSvcCancelledReservationsRequest)
         returns (FrontDeskReportingSvcReportResponse);
 }
