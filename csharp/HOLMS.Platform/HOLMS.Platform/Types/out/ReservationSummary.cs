@@ -32,7 +32,7 @@ namespace HOLMS.Types.Booking.Reservations {
             "dHlwZXMvcm9vbV90eXBlLnByb3RvGhtpYW0vdGVuYW5jeV9pbmRpY2F0b3Iu",
             "cHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMvcHJvcGVydHlfaW5k",
             "aWNhdG9yLnByb3RvGiVvcGVyYXRpb25zL3Jvb21zL3Jvb21faW5kaWNhdG9y",
-            "LnByb3RvIt0GChJSZXNlcnZhdGlvblN1bW1hcnkSRwoJZW50aXR5X2lkGAEg",
+            "LnByb3RvIo0HChJSZXNlcnZhdGlvblN1bW1hcnkSRwoJZW50aXR5X2lkGAEg",
             "ASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0",
             "aW9uSW5kaWNhdG9yEhIKCmJvb2tpbmdfaWQYAiABKAkSQQoFc3RhdGUYAyAB",
             "KA4yMi5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5SZXNlcnZh",
@@ -51,12 +51,13 @@ namespace HOLMS.Types.Booking.Reservations {
             "cGVzLm9wZXJhdGlvbnMucm9vbXMuUm9vbUluZGljYXRvchIlCh10ZXJtaW5h",
             "bF9vY2N1cGllZF9yb29tX251bWJlchgOIAEoCRJLChZ0ZXJtaW5hbF9vY2N1",
             "cGllZF9yb29tGA8gASgLMisuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5yb29t",
-            "cy5Sb29tSW5kaWNhdG9yQjlaFGJvb2tpbmcvcmVzZXJ2YXRpb25zqgIgSE9M",
-            "TVMuVHlwZXMuQm9va2luZy5SZXNlcnZhdGlvbnNiBnByb3RvMw=="));
+            "cy5Sb29tSW5kaWNhdG9yEhUKDW51bWJlcl9hZHVsdHMYECABKAUSFwoPbnVt",
+            "YmVyX2NoaWxkcmVuGBEgASgFQjlaFGJvb2tpbmcvcmVzZXJ2YXRpb25zqgIg",
+            "SE9MTVMuVHlwZXMuQm9va2luZy5SZXNlcnZhdGlvbnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationStateReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationSummary), global::HOLMS.Types.Booking.Reservations.ReservationSummary.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "RoomType", "GuaranteeStatus", "Tenancy", "Property", "GroupBookingId", "VehiclePlateInformation", "CurrentOccupiedRoomNumber", "CurrentOccupiedRoom", "TerminalOccupiedRoomNumber", "TerminalOccupiedRoom" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationSummary), global::HOLMS.Types.Booking.Reservations.ReservationSummary.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "RoomType", "GuaranteeStatus", "Tenancy", "Property", "GroupBookingId", "VehiclePlateInformation", "CurrentOccupiedRoomNumber", "CurrentOccupiedRoom", "TerminalOccupiedRoomNumber", "TerminalOccupiedRoom", "NumberAdults", "NumberChildren" }, null, null, null)
           }));
     }
     #endregion
@@ -102,6 +103,8 @@ namespace HOLMS.Types.Booking.Reservations {
       CurrentOccupiedRoom = other.currentOccupiedRoom_ != null ? other.CurrentOccupiedRoom.Clone() : null;
       terminalOccupiedRoomNumber_ = other.terminalOccupiedRoomNumber_;
       TerminalOccupiedRoom = other.terminalOccupiedRoom_ != null ? other.TerminalOccupiedRoom.Clone() : null;
+      numberAdults_ = other.numberAdults_;
+      numberChildren_ = other.numberChildren_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -274,6 +277,28 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
+    /// <summary>Field number for the "number_adults" field.</summary>
+    public const int NumberAdultsFieldNumber = 16;
+    private int numberAdults_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int NumberAdults {
+      get { return numberAdults_; }
+      set {
+        numberAdults_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "number_children" field.</summary>
+    public const int NumberChildrenFieldNumber = 17;
+    private int numberChildren_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int NumberChildren {
+      get { return numberChildren_; }
+      set {
+        numberChildren_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationSummary);
@@ -302,6 +327,8 @@ namespace HOLMS.Types.Booking.Reservations {
       if (!object.Equals(CurrentOccupiedRoom, other.CurrentOccupiedRoom)) return false;
       if (TerminalOccupiedRoomNumber != other.TerminalOccupiedRoomNumber) return false;
       if (!object.Equals(TerminalOccupiedRoom, other.TerminalOccupiedRoom)) return false;
+      if (NumberAdults != other.NumberAdults) return false;
+      if (NumberChildren != other.NumberChildren) return false;
       return true;
     }
 
@@ -323,6 +350,8 @@ namespace HOLMS.Types.Booking.Reservations {
       if (currentOccupiedRoom_ != null) hash ^= CurrentOccupiedRoom.GetHashCode();
       if (TerminalOccupiedRoomNumber.Length != 0) hash ^= TerminalOccupiedRoomNumber.GetHashCode();
       if (terminalOccupiedRoom_ != null) hash ^= TerminalOccupiedRoom.GetHashCode();
+      if (NumberAdults != 0) hash ^= NumberAdults.GetHashCode();
+      if (NumberChildren != 0) hash ^= NumberChildren.GetHashCode();
       return hash;
     }
 
@@ -393,6 +422,14 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(122);
         output.WriteMessage(TerminalOccupiedRoom);
       }
+      if (NumberAdults != 0) {
+        output.WriteRawTag(128, 1);
+        output.WriteInt32(NumberAdults);
+      }
+      if (NumberChildren != 0) {
+        output.WriteRawTag(136, 1);
+        output.WriteInt32(NumberChildren);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -442,6 +479,12 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (terminalOccupiedRoom_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(TerminalOccupiedRoom);
+      }
+      if (NumberAdults != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(NumberAdults);
+      }
+      if (NumberChildren != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(NumberChildren);
       }
       return size;
     }
@@ -519,6 +562,12 @@ namespace HOLMS.Types.Booking.Reservations {
           terminalOccupiedRoom_ = new global::HOLMS.Types.Operations.Rooms.RoomIndicator();
         }
         TerminalOccupiedRoom.MergeFrom(other.TerminalOccupiedRoom);
+      }
+      if (other.NumberAdults != 0) {
+        NumberAdults = other.NumberAdults;
+      }
+      if (other.NumberChildren != 0) {
+        NumberChildren = other.NumberChildren;
       }
     }
 
@@ -612,6 +661,14 @@ namespace HOLMS.Types.Booking.Reservations {
               terminalOccupiedRoom_ = new global::HOLMS.Types.Operations.Rooms.RoomIndicator();
             }
             input.ReadMessage(terminalOccupiedRoom_);
+            break;
+          }
+          case 128: {
+            NumberAdults = input.ReadInt32();
+            break;
+          }
+          case 136: {
+            NumberChildren = input.ReadInt32();
             break;
           }
         }

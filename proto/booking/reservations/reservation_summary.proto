@@ -32,4 +32,6 @@ message ReservationSummary {
 	holms.types.operations.rooms.RoomIndicator current_occupied_room = 13;
 	string terminal_occupied_room_number = 14;
 	holms.types.operations.rooms.RoomIndicator terminal_occupied_room = 15;
+	int32 number_adults = 16;
+	int32 number_children = 17;
 }

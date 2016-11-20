@@ -6,6 +6,7 @@ option go_package = "booking/reservations";
 
 import "primitive/monetary_amount.proto";
 import "primitive/pb_inclusive_opsdate_range.proto";
+import "primitive/pb_local_date.proto";
 import "booking/cancellation_policy.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "booking/reservations/reservation_state.proto";
@@ -29,4 +30,5 @@ message CancelledReservation {
 	string cancellation_reason = 13;
 	.holms.types.booking.CancellationPolicy cancellation_policy = 14;
 	string requesting_party = 15;
+	holms.types.primitive.PbLocalDate cancellation_date = 16;
 }
