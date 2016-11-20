@@ -323,12 +323,25 @@ namespace HOLMS.Application.Client {
         }
 
         public void Dispose() {
+            Logout();
             _refreshTimer?.Dispose();
             _refreshTimer = null;
             _authenticatedChannel?.ShutdownAsync().Wait();
             //Kill everything else we might have missed
             GrpcEnvironment.ShutdownChannelsAsync().Wait();
             _authenticatedChannel = null;
+        }
+
+        private async void Logout() {
+            var refreshChannel = new Channel($"{_sp.AppSvcHostname}:{_sp.AppSvcPort}",
+                AccessToken.NullToken.ToChannelCredentials());
+            var ss = new SessionSvc.SessionSvcClient(refreshChannel);
+            var request = new TokenInvalidationRequest {
+                RefreshToken = SC.RefreshToken,
+            };
+            var invalidationResponse = await ss.InvalidateRefreshTokenAsync(request);
+            var loggingInfo = invalidationResponse.Result == TokenInvalidationResult.InvalidationFailure ? "un" : "";
+            Logger.LogInformation($"Invalidation of Refresh Token was {loggingInfo}successful");
         }
     }
 }
