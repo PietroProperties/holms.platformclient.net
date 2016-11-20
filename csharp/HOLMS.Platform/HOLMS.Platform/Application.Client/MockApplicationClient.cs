@@ -16,16 +16,12 @@ using Microsoft.Extensions.Logging;
 namespace HOLMS.Application.Client {
     public class MockApplicationClient : IApplicationClient {
         public Mock<SessionContext> SCMock { get; private set; }
-        public Mock<PropertySvc.PropertySvcClient> PropertySvcMock { get; }
-        public Mock<CancellationPolicySvc.CancellationPolicySvcClient> CancellationPolicySvcMock { get; }
 
         public ILogger Logger { get; }
 
         public MockApplicationClient(ILogger logger) {
             Logger = logger;
             SCMock = new Mock<SessionContext>();
-            PropertySvcMock = new Mock<PropertySvc.PropertySvcClient>();
-            CancellationPolicySvcMock = new Mock<CancellationPolicySvc.CancellationPolicySvcClient>();
         }
 
         public async Task<SessionSvcStartSessionResult> StartSession(string candidateUsername, string candidatePassword) {
@@ -92,9 +88,6 @@ namespace HOLMS.Application.Client {
                 throw new NotImplementedException();
             }
         }
-
-        public CancellationPolicySvc.CancellationPolicySvcClient CancellationPolicySvc =>
-            CancellationPolicySvcMock.Object;
 
         public CancellationReasonSvc.CancellationReasonSvcClient CancellationReasonSvc {
             get {
@@ -281,9 +274,7 @@ namespace HOLMS.Application.Client {
                 throw new NotImplementedException();
             }
         }
-
-        public PropertySvc.PropertySvcClient PropertySvc => PropertySvcMock.Object;
-
+        
         public QualificationSvc.QualificationSvcClient QualificationSvc {
             get {
                 throw new NotImplementedException();
@@ -455,6 +446,18 @@ namespace HOLMS.Application.Client {
         }
 
         public ZipCodeSvc.ZipCodeSvcClient ZipCodesService {
+            get {
+                throw new NotImplementedException();
+            }
+        }
+
+        public PropertySvc.PropertySvcClient PropertySvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
+
+        public CancellationPolicySvc.CancellationPolicySvcClient CancellationPolicySvc {
             get {
                 throw new NotImplementedException();
             }
