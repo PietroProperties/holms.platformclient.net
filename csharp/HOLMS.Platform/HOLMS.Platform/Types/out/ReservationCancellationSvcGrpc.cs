@@ -17,6 +17,8 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly Marshaller<global::HOLMS.Types.Booking.CancellationRequest> __Marshaller_CancellationRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.CancellationRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcCancelReservationResponse> __Marshaller_ReservationCancellationSvcCancelReservationResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcCancelReservationResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcGetCancelledReservationResponse> __Marshaller_ReservationCancellationSvcGetCancelledReservationResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcGetCancelledReservationResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange> __Marshaller_PbInclusiveCalendarDateRange = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcSearchCancelledReservationsResponse> __Marshaller_ReservationCancellationSvcSearchCancelledReservationsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcSearchCancelledReservationsResponse.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.CancellationPenaltyEstimate> __Method_EstimateCancellationPenalty = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.CancellationPenaltyEstimate>(
         MethodType.Unary,
@@ -39,6 +41,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_ReservationIndicator,
         __Marshaller_ReservationCancellationSvcGetCancelledReservationResponse);
 
+    static readonly Method<global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange, global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcSearchCancelledReservationsResponse> __Method_SearchCancelledReservations = new Method<global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange, global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcSearchCancelledReservationsResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "SearchCancelledReservations",
+        __Marshaller_PbInclusiveCalendarDateRange,
+        __Marshaller_ReservationCancellationSvcSearchCancelledReservationsResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -59,6 +68,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcGetCancelledReservationResponse> GetCancelledReservation(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcSearchCancelledReservationsResponse> SearchCancelledReservations(global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -136,6 +150,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetCancelledReservation, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcSearchCancelledReservationsResponse SearchCancelledReservations(global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SearchCancelledReservations(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcSearchCancelledReservationsResponse SearchCancelledReservations(global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SearchCancelledReservations, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcSearchCancelledReservationsResponse> SearchCancelledReservationsAsync(global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SearchCancelledReservationsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationCancellationSvcSearchCancelledReservationsResponse> SearchCancelledReservationsAsync(global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SearchCancelledReservations, null, options, request);
+      }
       protected override ReservationCancellationSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new ReservationCancellationSvcClient(configuration);
@@ -148,7 +178,8 @@ namespace HOLMS.Types.Booking.RPC {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_EstimateCancellationPenalty, serviceImpl.EstimateCancellationPenalty)
           .AddMethod(__Method_CancelReservation, serviceImpl.CancelReservation)
-          .AddMethod(__Method_GetCancelledReservation, serviceImpl.GetCancelledReservation).Build();
+          .AddMethod(__Method_GetCancelledReservation, serviceImpl.GetCancelledReservation)
+          .AddMethod(__Method_SearchCancelledReservations, serviceImpl.SearchCancelledReservations).Build();
     }
 
   }
