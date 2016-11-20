@@ -15,13 +15,11 @@ using Microsoft.Extensions.Logging;
 
 namespace HOLMS.Application.Client {
     public class MockApplicationClient : IApplicationClient {
-        public Mock<SessionContext> SCMock { get; private set; }
 
         public ILogger Logger { get; }
 
         public MockApplicationClient(ILogger logger) {
             Logger = logger;
-            SCMock = new Mock<SessionContext>();
         }
 
         public async Task<SessionSvcStartSessionResult> StartSession(string candidateUsername, string candidatePassword) {
