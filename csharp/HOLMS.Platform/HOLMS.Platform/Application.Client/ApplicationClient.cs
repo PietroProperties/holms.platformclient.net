@@ -332,14 +332,14 @@ namespace HOLMS.Application.Client {
             _authenticatedChannel = null;
         }
 
-        private async void Logout() {
+        private void Logout() {
             var refreshChannel = new Channel($"{_sp.AppSvcHostname}:{_sp.AppSvcPort}",
                 AccessToken.NullToken.ToChannelCredentials());
             var ss = new SessionSvc.SessionSvcClient(refreshChannel);
             var request = new TokenInvalidationRequest {
                 RefreshToken = SC.RefreshToken,
             };
-            var invalidationResponse = await ss.InvalidateRefreshTokenAsync(request);
+            var invalidationResponse = ss.InvalidateRefreshToken(request);
             var loggingInfo = invalidationResponse.Result == TokenInvalidationResult.InvalidationFailure ? "un" : "";
             Logger.LogInformation($"Invalidation of Refresh Token was {loggingInfo}successful");
         }
