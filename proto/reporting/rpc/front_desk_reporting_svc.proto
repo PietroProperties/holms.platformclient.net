@@ -36,6 +36,11 @@ message FrontDeskReportingSvcReportResponse {
 	string document = 1;
 }
 
+message FrontDeskReportingSvcCalendarDateIntervalRequest {
+	google.protobuf.Timestamp reporting_interval_start = 1;
+	google.protobuf.Timestamp reporting_interval_end = 2;
+}
+
 service FrontDeskReportingSvc {
     rpc GetArrivalsReport(FrontDeskReportingSvcRequest)
         returns (FrontDeskReportingSvcReportResponse);
@@ -54,6 +59,12 @@ service FrontDeskReportingSvc {
 
     rpc GetReservationCreditReport(google.protobuf.Empty)
         returns (FrontDeskReportingSvcReportResponse); 
+
+    rpc GetLedgerActivitySummary(FrontDeskReportingSvcCalendarDateIntervalRequest)
+        returns (FrontDeskReportingSvcReportResponse);
+
+    rpc GetFolioActivitySummary(FrontDeskReportingSvcCalendarDateIntervalRequest)
+        returns (FrontDeskReportingSvcReportResponse);
     
     rpc GetVehiclesReport(google.protobuf.Empty)
         returns (FrontDeskReportingSvcReportResponse);
@@ -61,3 +72,4 @@ service FrontDeskReportingSvc {
     rpc GetCancelledReservationsReport(FrontDeskReportingSvcCancelledReservationsRequest)
         returns (FrontDeskReportingSvcReportResponse);
 }
+
