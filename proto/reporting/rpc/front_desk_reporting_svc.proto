@@ -45,31 +45,32 @@ service FrontDeskReportingSvc {
     rpc GetArrivalsReport(FrontDeskReportingSvcRequest)
         returns (FrontDeskReportingSvcReportResponse);
 
+    rpc GetCancelledReservationsReport(FrontDeskReportingSvcCancelledReservationsRequest)
+        returns (FrontDeskReportingSvcReportResponse);
+
     rpc GetDeparturesReport(FrontDeskReportingSvcRequest)
-        returns (FrontDeskReportingSvcReportResponse);
-
-    rpc GetInHouseGuestsReport(FrontDeskReportingSvcInHouseGuestsRequest)
-        returns (FrontDeskReportingSvcReportResponse);
-
-    rpc GetNoShowsReport(FrontDeskReportingSvcRequest)
-        returns (FrontDeskReportingSvcReportResponse);
-
-    rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
-        returns (FrontDeskReportingSvcReportResponse);
-
-    rpc GetReservationCreditReport(google.protobuf.Empty)
-        returns (FrontDeskReportingSvcReportResponse); 
-
-    rpc GetLedgerActivitySummary(FrontDeskReportingSvcCalendarDateIntervalRequest)
         returns (FrontDeskReportingSvcReportResponse);
 
     rpc GetFolioActivitySummary(FrontDeskReportingSvcCalendarDateIntervalRequest)
         returns (FrontDeskReportingSvcReportResponse);
     
+    rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
+        returns (FrontDeskReportingSvcReportResponse);
+
+    rpc GetInHouseGuestsReport(FrontDeskReportingSvcInHouseGuestsRequest)
+        returns (FrontDeskReportingSvcReportResponse);
+
+    rpc GetLedgerActivitySummary(FrontDeskReportingSvcCalendarDateIntervalRequest)
+        returns (FrontDeskReportingSvcReportResponse);
+
+    rpc GetNoShowsReport(FrontDeskReportingSvcRequest)
+        returns (FrontDeskReportingSvcReportResponse);
+
+    rpc GetReservationCreditReport(google.protobuf.Empty)
+        returns (FrontDeskReportingSvcReportResponse); 
+
     rpc GetVehiclesReport(google.protobuf.Empty)
         returns (FrontDeskReportingSvcReportResponse);
     
-    rpc GetCancelledReservationsReport(FrontDeskReportingSvcCancelledReservationsRequest)
-        returns (FrontDeskReportingSvcReportResponse);
 }
 
