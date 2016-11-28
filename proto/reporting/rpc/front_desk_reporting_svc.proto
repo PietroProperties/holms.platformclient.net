@@ -23,6 +23,11 @@ message FrontDeskReportingSvcInHouseGuestsRequest {
 	InHouseGuestReportSorting sort_type = 2;
 }
 
+message FrontDeskReportingSvcCalendarDateIntervalRequest {
+	google.protobuf.Timestamp reporting_interval_start = 1;
+	google.protobuf.Timestamp reporting_interval_end = 2;
+}
+
 message FrontDeskReportingSvcCancelledReservationsRequest {
 	holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
 }
@@ -36,12 +41,9 @@ message FrontDeskReportingSvcReportResponse {
 	string document = 1;
 }
 
-message FrontDeskReportingSvcCalendarDateIntervalRequest {
-	google.protobuf.Timestamp reporting_interval_start = 1;
-	google.protobuf.Timestamp reporting_interval_end = 2;
-}
-
 service FrontDeskReportingSvc {
+    // Daily reports -- these should get consolidated into a single call
+    // with all reports selected as booleans like include_XXX
     rpc GetArrivalsReport(FrontDeskReportingSvcRequest)
         returns (FrontDeskReportingSvcReportResponse);
 
@@ -51,26 +53,30 @@ service FrontDeskReportingSvc {
     rpc GetDeparturesReport(FrontDeskReportingSvcRequest)
         returns (FrontDeskReportingSvcReportResponse);
 
-    rpc GetFolioActivitySummary(FrontDeskReportingSvcCalendarDateIntervalRequest)
-        returns (FrontDeskReportingSvcReportResponse);
-    
-    rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
-        returns (FrontDeskReportingSvcReportResponse);
-
     rpc GetInHouseGuestsReport(FrontDeskReportingSvcInHouseGuestsRequest)
-        returns (FrontDeskReportingSvcReportResponse);
-
-    rpc GetLedgerActivitySummary(FrontDeskReportingSvcCalendarDateIntervalRequest)
         returns (FrontDeskReportingSvcReportResponse);
 
     rpc GetNoShowsReport(FrontDeskReportingSvcRequest)
         returns (FrontDeskReportingSvcReportResponse);
 
-    rpc GetReservationCreditReport(google.protobuf.Empty)
-        returns (FrontDeskReportingSvcReportResponse); 
+    // Folio activity
+    rpc GetFolioActivityReport(FrontDeskReportingSvcCalendarDateIntervalRequest)
+        returns (FrontDeskReportingSvcReportResponse);
 
+    // Folio credit
+    rpc GetFolioCreditReport(google.protobuf.Empty)
+        returns (FrontDeskReportingSvcReportResponse);
+
+    // Ledger summary
+    rpc GetLedgerActivitySummary(FrontDeskReportingSvcCalendarDateIntervalRequest)
+        returns (FrontDeskReportingSvcReportResponse);
+
+    // Vehicle report
     rpc GetVehiclesReport(google.protobuf.Empty)
         returns (FrontDeskReportingSvcReportResponse);
-    
+
+    // Not sure where this goes?
+    rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
+        returns (FrontDeskReportingSvcReportResponse);
 }
 
