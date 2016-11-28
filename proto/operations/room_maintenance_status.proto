@@ -9,6 +9,7 @@ enum RoomMaintenanceState {
 	DIRTY_STAYOVER = 1;
 	DIRTY_CHECKOUT = 2;
 	DIRTY_OUT_OF_ORDER = 3;
-	MAID_IN_ROOM = 4;
-	INSPECT = 5;
+	DUSTY = 4;
+	MAID_IN_ROOM = 5;
+	INSPECT = 6;
 }

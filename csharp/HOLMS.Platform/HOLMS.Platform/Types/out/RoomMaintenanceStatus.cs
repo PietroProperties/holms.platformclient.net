@@ -23,11 +23,11 @@ namespace HOLMS.Types.Operations {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CihvcGVyYXRpb25zL3Jvb21fbWFpbnRlbmFuY2Vfc3RhdHVzLnByb3RvEhZo",
-            "b2xtcy50eXBlcy5vcGVyYXRpb25zKoABChRSb29tTWFpbnRlbmFuY2VTdGF0",
+            "b2xtcy50eXBlcy5vcGVyYXRpb25zKosBChRSb29tTWFpbnRlbmFuY2VTdGF0",
             "ZRIJCgVDTEVBThAAEhIKDkRJUlRZX1NUQVlPVkVSEAESEgoORElSVFlfQ0hF",
-            "Q0tPVVQQAhIWChJESVJUWV9PVVRfT0ZfT1JERVIQAxIQCgxNQUlEX0lOX1JP",
-            "T00QBBILCgdJTlNQRUNUEAVCJVoKb3BlcmF0aW9uc6oCFkhPTE1TLlR5cGVz",
-            "Lk9wZXJhdGlvbnNiBnByb3RvMw=="));
+            "Q0tPVVQQAhIWChJESVJUWV9PVVRfT0ZfT1JERVIQAxIJCgVEVVNUWRAEEhAK",
+            "DE1BSURfSU5fUk9PTRAFEgsKB0lOU1BFQ1QQBkIlWgpvcGVyYXRpb25zqgIW",
+            "SE9MTVMuVHlwZXMuT3BlcmF0aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Operations.RoomMaintenanceState), }, null));
@@ -41,8 +41,9 @@ namespace HOLMS.Types.Operations {
     [pbr::OriginalName("DIRTY_STAYOVER")] DirtyStayover = 1,
     [pbr::OriginalName("DIRTY_CHECKOUT")] DirtyCheckout = 2,
     [pbr::OriginalName("DIRTY_OUT_OF_ORDER")] DirtyOutOfOrder = 3,
-    [pbr::OriginalName("MAID_IN_ROOM")] MaidInRoom = 4,
-    [pbr::OriginalName("INSPECT")] Inspect = 5,
+    [pbr::OriginalName("DUSTY")] Dusty = 4,
+    [pbr::OriginalName("MAID_IN_ROOM")] MaidInRoom = 5,
+    [pbr::OriginalName("INSPECT")] Inspect = 6,
   }
 
   #endregion
