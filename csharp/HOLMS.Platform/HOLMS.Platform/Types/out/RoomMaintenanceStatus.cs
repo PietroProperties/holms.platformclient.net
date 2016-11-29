@@ -23,12 +23,11 @@ namespace HOLMS.Types.Operations {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CihvcGVyYXRpb25zL3Jvb21fbWFpbnRlbmFuY2Vfc3RhdHVzLnByb3RvEhZo",
-            "b2xtcy50eXBlcy5vcGVyYXRpb25zKqoBChRSb29tTWFpbnRlbmFuY2VTdGF0",
-            "ZRIJCgVDTEVBThAAEhwKGENMRUFOX0FORF9TSEVFVFNfQ0hBTkdFRBABEhEK",
-            "DURFRVBfQ0xFQU5JTkcQAhIJCgVESVJUWRADEg0KCURVU1RfUk9PTRAEEgsK",
-            "B0lOU1BFQ1QQBRIOCgpMRUZUX0RJUlRZEAYSEAoMTUFJRF9JTl9ST09NEAcS",
-            "DQoJU0hPV19ST09NEAhCJVoKb3BlcmF0aW9uc6oCFkhPTE1TLlR5cGVzLk9w",
-            "ZXJhdGlvbnNiBnByb3RvMw=="));
+            "b2xtcy50eXBlcy5vcGVyYXRpb25zKosBChRSb29tTWFpbnRlbmFuY2VTdGF0",
+            "ZRIJCgVDTEVBThAAEhIKDkRJUlRZX1NUQVlPVkVSEAESEgoORElSVFlfQ0hF",
+            "Q0tPVVQQAhIWChJESVJUWV9PVVRfT0ZfT1JERVIQAxIJCgVEVVNUWRAEEhAK",
+            "DE1BSURfSU5fUk9PTRAFEgsKB0lOU1BFQ1QQBkIlWgpvcGVyYXRpb25zqgIW",
+            "SE9MTVMuVHlwZXMuT3BlcmF0aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Operations.RoomMaintenanceState), }, null));
@@ -39,14 +38,12 @@ namespace HOLMS.Types.Operations {
   #region Enums
   public enum RoomMaintenanceState {
     [pbr::OriginalName("CLEAN")] Clean = 0,
-    [pbr::OriginalName("CLEAN_AND_SHEETS_CHANGED")] CleanAndSheetsChanged = 1,
-    [pbr::OriginalName("DEEP_CLEANING")] DeepCleaning = 2,
-    [pbr::OriginalName("DIRTY")] Dirty = 3,
-    [pbr::OriginalName("DUST_ROOM")] DustRoom = 4,
-    [pbr::OriginalName("INSPECT")] Inspect = 5,
-    [pbr::OriginalName("LEFT_DIRTY")] LeftDirty = 6,
-    [pbr::OriginalName("MAID_IN_ROOM")] MaidInRoom = 7,
-    [pbr::OriginalName("SHOW_ROOM")] ShowRoom = 8,
+    [pbr::OriginalName("DIRTY_STAYOVER")] DirtyStayover = 1,
+    [pbr::OriginalName("DIRTY_CHECKOUT")] DirtyCheckout = 2,
+    [pbr::OriginalName("DIRTY_OUT_OF_ORDER")] DirtyOutOfOrder = 3,
+    [pbr::OriginalName("DUSTY")] Dusty = 4,
+    [pbr::OriginalName("MAID_IN_ROOM")] MaidInRoom = 5,
+    [pbr::OriginalName("INSPECT")] Inspect = 6,
   }
 
   #endregion
