@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="Application.Client\AccessToken.cs" />
     <Compile Include="Application.Client\ApplicationClient.cs" />
-    <Compile Include="Application.Client\AuthrnCapability.cs" />
     <Compile Include="Application.Client\IApplicationClient.cs" />
     <Compile Include="Application.Client\IApplicationClientConfig.cs" />
     <Compile Include="Application.Client\MockApplicationClient.cs" />
