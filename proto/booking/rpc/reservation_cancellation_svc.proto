@@ -10,6 +10,7 @@ import "booking/indicators/reservation_indicator.proto";
 import "booking/reservations/cancelled_reservation.proto";
 import "booking/cancellation_request.proto";
 import "primitive/pb_inclusive_calendar_date_range.proto";
+import "booking/reservations/reservation_summary.proto";
 
 message ReservationCancellationSvcCancelReservationResponse {
 	.holms.types.booking.CancellationResponse result = 1;
@@ -21,7 +22,7 @@ message ReservationCancellationSvcGetCancelledReservationResponse {
 }
 
 message ReservationCancellationSvcSearchCancelledReservationsResponse {
-	repeated .holms.types.booking.reservations.CancelledReservation reservation = 1;
+	repeated .holms.types.booking.reservations.ReservationSummary reservations = 1;
 }
 
 service ReservationCancellationSvc {
