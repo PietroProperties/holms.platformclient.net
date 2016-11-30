@@ -24,16 +24,16 @@ namespace HOLMS.Types.Booking.Reservations {
           string.Concat(
             "CjFib29raW5nL3Jlc2VydmF0aW9ucy9nZW5lc2lzX2Jvb2tpbmdfcmVzdWx0",
             "LnByb3RvEiBob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucxouYm9v",
-            "a2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90byKm",
+            "a2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90byKz",
             "AgoUR2VuZXNpc0Jvb2tpbmdSZXN1bHQSSwoNcmVzX2luZGljYXRvchgBIAEo",
             "CzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlv",
             "bkluZGljYXRvchJUCgZyZXN1bHQYAiABKA4yRC5ob2xtcy50eXBlcy5ib29r",
             "aW5nLnJlc2VydmF0aW9ucy5HZW5lc2lzQm9va2luZ1Jlc3VsdC5Cb29raW5n",
-            "UmVzdWx0EhYKDmJvb2tpbmdfbnVtYmVyGAMgASgJIlMKDUJvb2tpbmdSZXN1",
+            "UmVzdWx0EhYKDmJvb2tpbmdfbnVtYmVyGAMgASgJImAKDUJvb2tpbmdSZXN1",
             "bHQSCgoGQk9PS0VEEAASDwoLVU5BVkFJTEFCTEUQARIPCgtVTlBSSUNFQUJM",
-            "RRACEhQKEFBPTElDWV9WSU9MQVRJT04QA0I5WhRib29raW5nL3Jlc2VydmF0",
-            "aW9uc6oCIEhPTE1TLlR5cGVzLkJvb2tpbmcuUmVzZXJ2YXRpb25zYgZwcm90",
-            "bzM="));
+            "RRACEhQKEFBPTElDWV9WSU9MQVRJT04QAxILCgdJTlZBTElEEARCOVoUYm9v",
+            "a2luZy9yZXNlcnZhdGlvbnOqAiBIT0xNUy5UeXBlcy5Cb29raW5nLlJlc2Vy",
+            "dmF0aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -230,6 +230,7 @@ namespace HOLMS.Types.Booking.Reservations {
         [pbr::OriginalName("UNAVAILABLE")] Unavailable = 1,
         [pbr::OriginalName("UNPRICEABLE")] Unpriceable = 2,
         [pbr::OriginalName("POLICY_VIOLATION")] PolicyViolation = 3,
+        [pbr::OriginalName("INVALID")] Invalid = 4,
       }
 
     }

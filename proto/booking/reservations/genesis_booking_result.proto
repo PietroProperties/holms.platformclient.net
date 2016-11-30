@@ -13,6 +13,7 @@ message GenesisBookingResult {
 		UNAVAILABLE = 1;
 		UNPRICEABLE = 2;
 		POLICY_VIOLATION = 3;
+		INVALID = 4;
 	}
 	BookingResult result = 2;
 	string booking_number = 3;
