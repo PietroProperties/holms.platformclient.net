@@ -35,6 +35,10 @@ message LodgingBookingSvcGetReservationSummaryResponse {
 	.holms.types.booking.reservations.ReservationSummary reservation_summary = 2;
 }
 
+message GetReservationSummariesRequest {
+	repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
+}
+
 service LodgingBookingSvc {
 	rpc GetFilteredReservationList (LodgingBookingSvcGetFilteredReservationListRequest)
 		returns (LodgingBookingSvcGetFilteredReservationListResponse);
@@ -56,6 +60,9 @@ service LodgingBookingSvc {
 	
 	rpc GetReservationSummary(.holms.types.booking.indicators.ReservationIndicator) 
 		returns (LodgingBookingSvcGetReservationSummaryResponse);
+
+	rpc GetReservationSummaries(GetReservationSummariesRequest)
+		returns (LodgingBookingSvcGetFilteredReservationListResponse);
 
 	rpc GetArrivalsByDate(google.protobuf.Timestamp)
 		returns (LodgingBookingSvcGetFilteredReservationListResponse);
