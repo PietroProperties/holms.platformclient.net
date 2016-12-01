@@ -9,6 +9,7 @@ import "google/protobuf/empty.proto";
 import "operations/rooms/room.proto";
 import "operations/rooms/room_indicator.proto";
 import "booking/indicators/reservation_indicator.proto";
+import "primitive/pb_local_date.proto";
 
 message RoomSvcAllResponse {
 	repeated .holms.types.operations.rooms.Room rooms = 1;
@@ -42,6 +43,7 @@ enum RoomSvcOccupancyReleaseResult {
 message RoomSvcOccupancyRequest {
 	.holms.types.operations.rooms.RoomIndicator room = 1;
 	.holms.types.booking.indicators.ReservationIndicator reservation = 2;
+	.holms.types.primitive.PbLocalDate reservation_departure_opsdate = 3;
 }
 
 message RoomSvcClaimOccupancyResponse {
