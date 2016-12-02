@@ -156,6 +156,9 @@ namespace HOLMS.Types.Booking.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      ///  Obsolete, use endpoint on check-in service instead
+      /// </summary>
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts> GetRecommendedCheckinAuthorizationAmounts(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
@@ -318,18 +321,30 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetHousekeepingTimePreference, null, options, request);
       }
+      /// <summary>
+      ///  Obsolete, use endpoint on check-in service instead
+      /// </summary>
       public virtual global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts GetRecommendedCheckinAuthorizationAmounts(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetRecommendedCheckinAuthorizationAmounts(request, new CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///  Obsolete, use endpoint on check-in service instead
+      /// </summary>
       public virtual global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts GetRecommendedCheckinAuthorizationAmounts(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetRecommendedCheckinAuthorizationAmounts, null, options, request);
       }
+      /// <summary>
+      ///  Obsolete, use endpoint on check-in service instead
+      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts> GetRecommendedCheckinAuthorizationAmountsAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetRecommendedCheckinAuthorizationAmountsAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///  Obsolete, use endpoint on check-in service instead
+      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts> GetRecommendedCheckinAuthorizationAmountsAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetRecommendedCheckinAuthorizationAmounts, null, options, request);
