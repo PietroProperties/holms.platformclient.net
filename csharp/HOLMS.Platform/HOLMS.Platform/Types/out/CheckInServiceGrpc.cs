@@ -14,6 +14,10 @@ namespace HOLMS.Types.Booking.RPC {
 
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.CheckInRequest> __Marshaller_CheckInRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.CheckInRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.CheckInServiceRequestResponse> __Marshaller_CheckInServiceRequestResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.CheckInServiceRequestResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> __Marshaller_ReservationIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GetPreCheckinInfoResponse> __Marshaller_GetPreCheckinInfoResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GetPreCheckinInfoResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.SetPreCheckinInfoRequest> __Marshaller_SetPreCheckinInfoRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.SetPreCheckinInfoRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Booking.RPC.CheckInRequest, global::HOLMS.Types.Booking.RPC.CheckInServiceRequestResponse> __Method_StartStay = new Method<global::HOLMS.Types.Booking.RPC.CheckInRequest, global::HOLMS.Types.Booking.RPC.CheckInServiceRequestResponse>(
         MethodType.Unary,
@@ -21,6 +25,20 @@ namespace HOLMS.Types.Booking.RPC {
         "StartStay",
         __Marshaller_CheckInRequest,
         __Marshaller_CheckInServiceRequestResponse);
+
+    static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.GetPreCheckinInfoResponse> __Method_GetPreCheckinInfo = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.GetPreCheckinInfoResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetPreCheckinInfo",
+        __Marshaller_ReservationIndicator,
+        __Marshaller_GetPreCheckinInfoResponse);
+
+    static readonly Method<global::HOLMS.Types.Booking.RPC.SetPreCheckinInfoRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetPreCheckinInfo = new Method<global::HOLMS.Types.Booking.RPC.SetPreCheckinInfoRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "SetPreCheckinInfo",
+        __Marshaller_SetPreCheckinInfoRequest,
+        __Marshaller_Empty);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -32,6 +50,16 @@ namespace HOLMS.Types.Booking.RPC {
     public abstract class CheckInServiceBase
     {
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.CheckInServiceRequestResponse> StartStay(global::HOLMS.Types.Booking.RPC.CheckInRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GetPreCheckinInfoResponse> GetPreCheckinInfo(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetPreCheckinInfo(global::HOLMS.Types.Booking.RPC.SetPreCheckinInfoRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -77,6 +105,38 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_StartStay, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.GetPreCheckinInfoResponse GetPreCheckinInfo(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetPreCheckinInfo(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.GetPreCheckinInfoResponse GetPreCheckinInfo(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetPreCheckinInfo, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GetPreCheckinInfoResponse> GetPreCheckinInfoAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetPreCheckinInfoAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GetPreCheckinInfoResponse> GetPreCheckinInfoAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetPreCheckinInfo, null, options, request);
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetPreCheckinInfo(global::HOLMS.Types.Booking.RPC.SetPreCheckinInfoRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SetPreCheckinInfo(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetPreCheckinInfo(global::HOLMS.Types.Booking.RPC.SetPreCheckinInfoRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SetPreCheckinInfo, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetPreCheckinInfoAsync(global::HOLMS.Types.Booking.RPC.SetPreCheckinInfoRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SetPreCheckinInfoAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetPreCheckinInfoAsync(global::HOLMS.Types.Booking.RPC.SetPreCheckinInfoRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SetPreCheckinInfo, null, options, request);
+      }
       protected override CheckInServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new CheckInServiceClient(configuration);
@@ -87,7 +147,9 @@ namespace HOLMS.Types.Booking.RPC {
     public static ServerServiceDefinition BindService(CheckInServiceBase serviceImpl)
     {
       return ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_StartStay, serviceImpl.StartStay).Build();
+          .AddMethod(__Method_StartStay, serviceImpl.StartStay)
+          .AddMethod(__Method_GetPreCheckinInfo, serviceImpl.GetPreCheckinInfo)
+          .AddMethod(__Method_SetPreCheckinInfo, serviceImpl.SetPreCheckinInfo).Build();
     }
 
   }

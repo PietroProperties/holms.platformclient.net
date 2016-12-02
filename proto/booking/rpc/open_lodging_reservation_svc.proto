@@ -78,6 +78,7 @@ service OpenLodgingReservationSvc {
 	rpc SetHousekeepingTimePreference(HousekeepingTimePreferenceRequest)
 		returns (google.protobuf.Empty);
 
+// Obsolete, use endpoint on check-in service instead
 	rpc GetRecommendedCheckinAuthorizationAmounts(holms.types.booking.indicators.ReservationIndicator)
 		returns (holms.types.booking.reservations.RecommendedCheckinAuthorizationAmounts);
 
