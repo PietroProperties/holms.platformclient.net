@@ -8,6 +8,7 @@ import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 import "iam/staff_member_indicator.proto";
 import "primitive/pb_inclusive_opsdate_range.proto";
+import "tenancy_config/indicators/property_indicator.proto";
 
 enum InHouseGuestReportSorting {
 	BY_GUEST_NAME = 0;
@@ -35,6 +36,11 @@ message FrontDeskReportingSvcCancelledReservationsRequest {
 message FrontDeskReportingSvcHousekeepingRequest {
 	repeated .holms.types.iam.StaffMemberIndicator staff_members = 1;
 	string add_notes = 2;
+}
+
+message FrontDeskReportingSvcGetGeneralAvailabilityReport {
+	holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
+	holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
 }
 
 message FrontDeskReportingSvcReportResponse {
@@ -74,6 +80,10 @@ service FrontDeskReportingSvc {
     // Vehicle report
     rpc GetVehiclesReport(google.protobuf.Empty)
         returns (FrontDeskReportingSvcReportResponse);
+
+    // Distribution
+    rpc GetGeneralAvailabilityReport(FrontDeskReportingSvcGetGeneralAvailabilityReport)
+    	returns (FrontDeskReportingSvcReportResponse);
 
     // Not sure where this goes?
     rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
