@@ -20,14 +20,14 @@ message CheckInServiceRequestResponse {
 	.holms.types.booking.check_in.CheckInRequestResult result = 1;
 }
 
-message GetPreCheckinInfoResponse {
+message CheckInSvcGetPreCheckinInfoResponse {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
 	string vehicle_plates = 2;
 	string personal_identification = 3;
 	holms.types.booking.reservations.RecommendedCheckinAuthorizationAmounts recommended_authorizations = 4;
 }
 
-message SetPreCheckinInfoRequest {
+message CheckInSvcSetPreCheckinInfoRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
 	string vehicle_plates = 2;
 	string personal_identification = 3;
@@ -38,8 +38,8 @@ service CheckInService {
 		returns (CheckInServiceRequestResponse);
 
 	rpc GetPreCheckinInfo (holms.types.booking.indicators.ReservationIndicator)
-		returns (GetPreCheckinInfoResponse);
+		returns (CheckInSvcGetPreCheckinInfoResponse);
 
-	rpc SetPreCheckinInfo (SetPreCheckinInfoRequest)
+	rpc SetPreCheckinInfo (CheckInSvcSetPreCheckinInfoRequest)
 		returns (google.protobuf.Empty);
 }
