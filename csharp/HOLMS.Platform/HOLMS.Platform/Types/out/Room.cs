@@ -27,26 +27,28 @@ namespace HOLMS.Types.Operations.Rooms {
             "bl9pbmRpY2F0b3IucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAu",
             "cHJvdG8aKG9wZXJhdGlvbnMvcm9vbV9tYWludGVuYW5jZV9zdGF0dXMucHJv",
             "dG8aJW9wZXJhdGlvbnMvcm9vbXMvcm9vbV9pbmRpY2F0b3IucHJvdG8aK3N1",
-            "cHBseS9yb29tX3R5cGVzL3Jvb21fdHlwZV9pbmRpY2F0b3IucHJvdG8iwgQK",
-            "BFJvb20SPgoJZW50aXR5X2lkGAEgASgLMisuaG9sbXMudHlwZXMub3BlcmF0",
-            "aW9ucy5yb29tcy5Sb29tSW5kaWNhdG9yEhMKC3Jvb21fbnVtYmVyGAIgASgJ",
-            "EhMKC2Rlc2NyaXB0aW9uGAMgASgJEh4KFmFkZGl0aW9uYWxfZGVzY3JpcHRp",
-            "b24YBCABKAkSHwoXbmlnaHRzX29jY3VwaWVkX2NvdW50ZXIYBSABKAUSMwoP",
-            "bGFzdF9jbGVhbmVkX2F0GAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
-            "dGFtcBJHChFtYWludGVuYW5jZV9zdGF0ZRgHIAEoDjIsLmhvbG1zLnR5cGVz",
-            "Lm9wZXJhdGlvbnMuUm9vbU1haW50ZW5hbmNlU3RhdGUSRgoMcm9vbV90eXBl",
-            "X2lkGAggASgLMjAuaG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9v",
-            "bVR5cGVJbmRpY2F0b3ISHQoVcm9vbV90eXBlX2Rlc2NyaXB0aW9uGAkgASgJ",
-            "EkMKDmNvbm5lY3RlZF9yb29tGAogASgLMisuaG9sbXMudHlwZXMub3BlcmF0",
-            "aW9ucy5yb29tcy5Sb29tSW5kaWNhdG9yEhAKCHRydW5rX2lkGAsgASgJElMK",
-            "FW9jY3VweWluZ19yZXNlcnZhdGlvbhgMIAEoCzI0LmhvbG1zLnR5cGVzLmJv",
-            "b2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvckIxWhBvcGVy",
-            "YXRpb25zL3Jvb21zqgIcSE9MTVMuVHlwZXMuT3BlcmF0aW9ucy5Sb29tc2IG",
-            "cHJvdG8z"));
+            "cHBseS9yb29tX3R5cGVzL3Jvb21fdHlwZV9pbmRpY2F0b3IucHJvdG8aHXBy",
+            "aW1pdGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvIqAFCgRSb29tEj4KCWVudGl0",
+            "eV9pZBgBIAEoCzIrLmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucm9vbXMuUm9v",
+            "bUluZGljYXRvchITCgtyb29tX251bWJlchgCIAEoCRITCgtkZXNjcmlwdGlv",
+            "bhgDIAEoCRIeChZhZGRpdGlvbmFsX2Rlc2NyaXB0aW9uGAQgASgJEh8KF25p",
+            "Z2h0c19vY2N1cGllZF9jb3VudGVyGAUgASgFEjMKD2xhc3RfY2xlYW5lZF9h",
+            "dBgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASRwoRbWFpbnRl",
+            "bmFuY2Vfc3RhdGUYByABKA4yLC5ob2xtcy50eXBlcy5vcGVyYXRpb25zLlJv",
+            "b21NYWludGVuYW5jZVN0YXRlEkYKDHJvb21fdHlwZV9pZBgIIAEoCzIwLmhv",
+            "bG1zLnR5cGVzLnN1cHBseS5yb29tX3R5cGVzLlJvb21UeXBlSW5kaWNhdG9y",
+            "Eh0KFXJvb21fdHlwZV9kZXNjcmlwdGlvbhgJIAEoCRJDCg5jb25uZWN0ZWRf",
+            "cm9vbRgKIAEoCzIrLmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucm9vbXMuUm9v",
+            "bUluZGljYXRvchIQCgh0cnVua19pZBgLIAEoCRJTChVvY2N1cHlpbmdfcmVz",
+            "ZXJ2YXRpb24YDCABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRv",
+            "cnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISXAowZXhwZWN0ZWRfb2NjdXB5aW5n",
+            "X3Jlc2VydmF0aW9uX2RlcGFydHVyZV9vcHNkYXRlGA0gASgLMiIuaG9sbXMu",
+            "dHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlQjFaEG9wZXJhdGlvbnMvcm9v",
+            "bXOqAhxIT0xNUy5UeXBlcy5PcGVyYXRpb25zLlJvb21zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Operations.RoomMaintenanceStatusReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Operations.RoomMaintenanceStatusReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.Rooms.Room), global::HOLMS.Types.Operations.Rooms.Room.Parser, new[]{ "EntityId", "RoomNumber", "Description", "AdditionalDescription", "NightsOccupiedCounter", "LastCleanedAt", "MaintenanceState", "RoomTypeId", "RoomTypeDescription", "ConnectedRoom", "TrunkId", "OccupyingReservation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.Rooms.Room), global::HOLMS.Types.Operations.Rooms.Room.Parser, new[]{ "EntityId", "RoomNumber", "Description", "AdditionalDescription", "NightsOccupiedCounter", "LastCleanedAt", "MaintenanceState", "RoomTypeId", "RoomTypeDescription", "ConnectedRoom", "TrunkId", "OccupyingReservation", "ExpectedOccupyingReservationDepartureOpsdate" }, null, null, null)
           }));
     }
     #endregion
@@ -89,6 +91,7 @@ namespace HOLMS.Types.Operations.Rooms {
       ConnectedRoom = other.connectedRoom_ != null ? other.ConnectedRoom.Clone() : null;
       trunkId_ = other.trunkId_;
       OccupyingReservation = other.occupyingReservation_ != null ? other.OccupyingReservation.Clone() : null;
+      ExpectedOccupyingReservationDepartureOpsdate = other.expectedOccupyingReservationDepartureOpsdate_ != null ? other.ExpectedOccupyingReservationDepartureOpsdate.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -228,6 +231,17 @@ namespace HOLMS.Types.Operations.Rooms {
       }
     }
 
+    /// <summary>Field number for the "expected_occupying_reservation_departure_opsdate" field.</summary>
+    public const int ExpectedOccupyingReservationDepartureOpsdateFieldNumber = 13;
+    private global::HOLMS.Types.Primitive.PbLocalDate expectedOccupyingReservationDepartureOpsdate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate ExpectedOccupyingReservationDepartureOpsdate {
+      get { return expectedOccupyingReservationDepartureOpsdate_; }
+      set {
+        expectedOccupyingReservationDepartureOpsdate_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Room);
@@ -253,6 +267,7 @@ namespace HOLMS.Types.Operations.Rooms {
       if (!object.Equals(ConnectedRoom, other.ConnectedRoom)) return false;
       if (TrunkId != other.TrunkId) return false;
       if (!object.Equals(OccupyingReservation, other.OccupyingReservation)) return false;
+      if (!object.Equals(ExpectedOccupyingReservationDepartureOpsdate, other.ExpectedOccupyingReservationDepartureOpsdate)) return false;
       return true;
     }
 
@@ -271,6 +286,7 @@ namespace HOLMS.Types.Operations.Rooms {
       if (connectedRoom_ != null) hash ^= ConnectedRoom.GetHashCode();
       if (TrunkId.Length != 0) hash ^= TrunkId.GetHashCode();
       if (occupyingReservation_ != null) hash ^= OccupyingReservation.GetHashCode();
+      if (expectedOccupyingReservationDepartureOpsdate_ != null) hash ^= ExpectedOccupyingReservationDepartureOpsdate.GetHashCode();
       return hash;
     }
 
@@ -329,6 +345,10 @@ namespace HOLMS.Types.Operations.Rooms {
         output.WriteRawTag(98);
         output.WriteMessage(OccupyingReservation);
       }
+      if (expectedOccupyingReservationDepartureOpsdate_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(ExpectedOccupyingReservationDepartureOpsdate);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -369,6 +389,9 @@ namespace HOLMS.Types.Operations.Rooms {
       }
       if (occupyingReservation_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(OccupyingReservation);
+      }
+      if (expectedOccupyingReservationDepartureOpsdate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExpectedOccupyingReservationDepartureOpsdate);
       }
       return size;
     }
@@ -428,6 +451,12 @@ namespace HOLMS.Types.Operations.Rooms {
           occupyingReservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
         }
         OccupyingReservation.MergeFrom(other.OccupyingReservation);
+      }
+      if (other.expectedOccupyingReservationDepartureOpsdate_ != null) {
+        if (expectedOccupyingReservationDepartureOpsdate_ == null) {
+          expectedOccupyingReservationDepartureOpsdate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        ExpectedOccupyingReservationDepartureOpsdate.MergeFrom(other.ExpectedOccupyingReservationDepartureOpsdate);
       }
     }
 
@@ -500,6 +529,13 @@ namespace HOLMS.Types.Operations.Rooms {
               occupyingReservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
             }
             input.ReadMessage(occupyingReservation_);
+            break;
+          }
+          case 106: {
+            if (expectedOccupyingReservationDepartureOpsdate_ == null) {
+              expectedOccupyingReservationDepartureOpsdate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(expectedOccupyingReservationDepartureOpsdate_);
             break;
           }
         }

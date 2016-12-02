@@ -9,6 +9,7 @@ import "google/protobuf/timestamp.proto";
 import "operations/room_maintenance_status.proto";
 import "operations/rooms/room_indicator.proto";
 import "supply/room_types/room_type_indicator.proto";
+import "primitive/pb_local_date.proto";
 
 message Room {
 	holms.types.operations.rooms.RoomIndicator entity_id = 1;
@@ -23,4 +24,5 @@ message Room {
 	holms.types.operations.rooms.RoomIndicator connected_room = 10;
 	string trunk_id = 11;
 	holms.types.booking.indicators.ReservationIndicator occupying_reservation = 12;
+	holms.types.primitive.PbLocalDate expected_occupying_reservation_departure_opsdate = 13;
 }
