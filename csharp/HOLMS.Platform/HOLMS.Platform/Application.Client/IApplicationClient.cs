@@ -41,6 +41,7 @@ namespace HOLMS.Application.Client {
         HoldsSvc.HoldsSvcClient HoldsSvc { get; }
         HousekeepingManagementSvc.HousekeepingManagementSvcClient HousekeepingManagementSvc { get; }
         HousekeepingTimeSvc.HousekeepingTimeSvcClient HousekeepingTimeSvc { get; }
+        IncidentalItemReservationSvc.IncidentalItemReservationSvcClient IncidentalResSvc { get; }
         InventoryItemSvc.InventoryItemSvcClient InventoryItemSvc { get; }
         LodgingBookingSvc.LodgingBookingSvcClient LodgingBookingSvc { get; }
         ILogger Logger { get; }
