@@ -25,16 +25,18 @@ namespace HOLMS.Types.IAM {
             "CiVpYW0vYXV0aGVudGljYXRlZF9jbGllbnRfY2xhaW1zLnByb3RvEg9ob2xt",
             "cy50eXBlcy5pYW0aIGlhbS9zdGFmZl9tZW1iZXJfaW5kaWNhdG9yLnByb3Rv",
             "GhtpYW0vdGVuYW5jeV9pbmRpY2F0b3IucHJvdG8aI2lhbS9jbGllbnRfaW5z",
-            "dGFuY2VfaW5kaWNhdG9yLnByb3RvIr4BChlBdXRoZW50aWNhdGVkQ2xpZW50",
-            "Q2xhaW1zEjMKBHVzZXIYASABKAsyJS5ob2xtcy50eXBlcy5pYW0uU3RhZmZN",
-            "ZW1iZXJJbmRpY2F0b3ISMgoHdGVuYW5jeRgCIAEoCzIhLmhvbG1zLnR5cGVz",
-            "LmlhbS5UZW5hbmN5SW5kaWNhdG9yEjgKBmNsaWVudBgDIAEoCzIoLmhvbG1z",
-            "LnR5cGVzLmlhbS5DbGllbnRJbnN0YW5jZUluZGljYXRvckIXWgNpYW2qAg9I",
-            "T0xNUy5UeXBlcy5JQU1iBnByb3RvMw=="));
+            "dGFuY2VfaW5kaWNhdG9yLnByb3RvGh9wcmltaXRpdmUvc2Vzc2lvbl9jb250",
+            "ZXh0LnByb3RvIv8BChlBdXRoZW50aWNhdGVkQ2xpZW50Q2xhaW1zEjMKBHVz",
+            "ZXIYASABKAsyJS5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXJJbmRpY2F0",
+            "b3ISMgoHdGVuYW5jeRgCIAEoCzIhLmhvbG1zLnR5cGVzLmlhbS5UZW5hbmN5",
+            "SW5kaWNhdG9yEjgKBmNsaWVudBgDIAEoCzIoLmhvbG1zLnR5cGVzLmlhbS5D",
+            "bGllbnRJbnN0YW5jZUluZGljYXRvchI/ChBzZWN1cml0eV9hY3Rpb25zGAQg",
+            "AygOMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLlNlY3VyaXR5QWN0aW9uQhda",
+            "A2lhbaoCD0hPTE1TLlR5cGVzLklBTWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.IAM.ClientInstanceIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.IAM.ClientInstanceIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.SessionContextReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.AuthenticatedClientClaims), global::HOLMS.Types.IAM.AuthenticatedClientClaims.Parser, new[]{ "User", "Tenancy", "Client" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.AuthenticatedClientClaims), global::HOLMS.Types.IAM.AuthenticatedClientClaims.Parser, new[]{ "User", "Tenancy", "Client", "SecurityActions" }, null, null, null)
           }));
     }
     #endregion
@@ -68,6 +70,7 @@ namespace HOLMS.Types.IAM {
       User = other.user_ != null ? other.User.Clone() : null;
       Tenancy = other.tenancy_ != null ? other.Tenancy.Clone() : null;
       Client = other.client_ != null ? other.Client.Clone() : null;
+      securityActions_ = other.securityActions_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -108,6 +111,16 @@ namespace HOLMS.Types.IAM {
       }
     }
 
+    /// <summary>Field number for the "security_actions" field.</summary>
+    public const int SecurityActionsFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Primitive.SecurityAction> _repeated_securityActions_codec
+        = pb::FieldCodec.ForEnum(34, x => (int) x, x => (global::HOLMS.Types.Primitive.SecurityAction) x);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Primitive.SecurityAction> securityActions_ = new pbc::RepeatedField<global::HOLMS.Types.Primitive.SecurityAction>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Primitive.SecurityAction> SecurityActions {
+      get { return securityActions_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AuthenticatedClientClaims);
@@ -124,6 +137,7 @@ namespace HOLMS.Types.IAM {
       if (!object.Equals(User, other.User)) return false;
       if (!object.Equals(Tenancy, other.Tenancy)) return false;
       if (!object.Equals(Client, other.Client)) return false;
+      if(!securityActions_.Equals(other.securityActions_)) return false;
       return true;
     }
 
@@ -133,6 +147,7 @@ namespace HOLMS.Types.IAM {
       if (user_ != null) hash ^= User.GetHashCode();
       if (tenancy_ != null) hash ^= Tenancy.GetHashCode();
       if (client_ != null) hash ^= Client.GetHashCode();
+      hash ^= securityActions_.GetHashCode();
       return hash;
     }
 
@@ -155,6 +170,7 @@ namespace HOLMS.Types.IAM {
         output.WriteRawTag(26);
         output.WriteMessage(Client);
       }
+      securityActions_.WriteTo(output, _repeated_securityActions_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -169,6 +185,7 @@ namespace HOLMS.Types.IAM {
       if (client_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Client);
       }
+      size += securityActions_.CalculateSize(_repeated_securityActions_codec);
       return size;
     }
 
@@ -195,6 +212,7 @@ namespace HOLMS.Types.IAM {
         }
         Client.MergeFrom(other.Client);
       }
+      securityActions_.Add(other.securityActions_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -224,6 +242,11 @@ namespace HOLMS.Types.IAM {
               client_ = new global::HOLMS.Types.IAM.ClientInstanceIndicator();
             }
             input.ReadMessage(client_);
+            break;
+          }
+          case 34:
+          case 32: {
+            securityActions_.AddEntriesFrom(input, _repeated_securityActions_codec);
             break;
           }
         }

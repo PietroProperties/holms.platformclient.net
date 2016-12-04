@@ -6,7 +6,7 @@ option go_package = "primitive";
 
 import "iam/staff_member_indicator.proto";
 
-enum UserEntitlements {
+enum SecurityAction {
 	GET_SUPPLY_SNAPSHOT = 0;
 	GET_ROOM_TYPES = 1;
 	CHANGE_SYSTEM_SETTINGS = 2;
@@ -30,6 +30,6 @@ message SessionContext {
 	string tenancy_name = 3;
 	string user_name = 4;
 	.holms.types.iam.StaffMemberIndicator user = 5;
-	repeated UserEntitlements user_entitlements = 6;
+	repeated SecurityAction security_actions = 6;
 	uint64 expires_in = 7;
 }

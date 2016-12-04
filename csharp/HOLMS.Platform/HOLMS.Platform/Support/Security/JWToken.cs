@@ -1,5 +1,7 @@
 ﻿using HOLMS.Types.IAM;
+using HOLMS.Types.Primitive;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -10,7 +12,7 @@ namespace HOLMS.Support.Security {
         public const int AccessTokenExpirationMinutes = 60;
         public const string ClientIdKey = "client_id";
         public const string TenancyIdKey = "tenancy_id";
-        public const string UserEntitlementsKey = "user_entitlements";
+        public const string GrantsDocumentKey = "user_entitlements";
         public const string UserIdKey = JwtRegisteredClaimNames.Sub;
         public const string Audience = "private.shortbar.com";
         public const string Issuer = "private.shortbar.com";
@@ -18,20 +20,20 @@ namespace HOLMS.Support.Security {
         public string SignedToken { get; private set; }
         public Guid Id { get; }
 
-        public JWToken(ClientInstanceIndicator client, StaffMemberIndicator user, dynamic userEntitlements,
+        public JWToken(ClientInstanceIndicator client, StaffMemberIndicator user, IEnumerable<SecurityAction> securityActions,
             TenancyIndicator tenancy, DateTime requestTime, bool hasExpiration, SigningCredentials creds) {
             Id = Guid.NewGuid();
-            CreateToken(client, user, userEntitlements, tenancy, requestTime, hasExpiration, creds);
+            CreateToken(client, user, securityActions, tenancy, requestTime, hasExpiration, creds);
         }
 
-        private void CreateToken(ClientInstanceIndicator client, StaffMemberIndicator user, string userEntitlements,
+        private void CreateToken(ClientInstanceIndicator client, StaffMemberIndicator user, IEnumerable<SecurityAction> securityActions,
             TenancyIndicator tenancy, DateTime requestTime, bool hasExpiration, SigningCredentials creds) {
             var claims = new List<Claim> {
                 new Claim(JwtRegisteredClaimNames.Jti, Id.ToString()),
                 new Claim(UserIdKey, user.GuidID.ToString()),
                 new Claim(TenancyIdKey, tenancy.GuidID.ToString()),
                 new Claim(ClientIdKey, client.GuidID.ToString()),
-                new Claim(UserEntitlementsKey, userEntitlements),
+                new Claim(GrantsDocumentKey, JsonConvert.SerializeObject(securityActions)),
             };
 
             var expiry = hasExpiration

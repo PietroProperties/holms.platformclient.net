@@ -9,41 +9,41 @@ namespace HOLMS.Application.Client {
         public SessionContext SessionContext { get; protected set; }
         public string SessionUsername => SessionContext.UserName;
 
-        public bool VerifyUserEntitlement(UserEntitlements e) {
+        public bool IsTokenAuthorized(SecurityAction e) {
             if (SessionContext.User == null) {
                 return false;
             }
 
             switch (e) {
-                case UserEntitlements.AdjustFolio:
+                case SecurityAction.AdjustFolio:
                     return false;
-                case UserEntitlements.ChangeSystemSettings:
+                case SecurityAction.ChangeSystemSettings:
                     return false;
-                case UserEntitlements.GetRoomTypes:
+                case SecurityAction.GetRoomTypes:
                     return false;
-                case UserEntitlements.GetSupplySnapshot:
+                case SecurityAction.GetSupplySnapshot:
                     return false;
-                case UserEntitlements.ManageGroups:
+                case SecurityAction.ManageGroups:
                     return false;
-                case UserEntitlements.ManageGuests:
+                case SecurityAction.ManageGuests:
                     return false;
-                case UserEntitlements.ManageHousekeeping:
+                case SecurityAction.ManageHousekeeping:
                     return false;
-                case UserEntitlements.ManageIncidentalReservation:
+                case SecurityAction.ManageIncidentalReservation:
                     return false;
-                case UserEntitlements.ManageMoney:
+                case SecurityAction.ManageMoney:
                     return false;
-                case UserEntitlements.ManagePricing:
+                case SecurityAction.ManagePricing:
                     return false;
-                case UserEntitlements.ManageReservation:
+                case SecurityAction.ManageReservation:
                     return false;
-                case UserEntitlements.ManageSupply:
+                case SecurityAction.ManageSupply:
                     return false;
-                case UserEntitlements.ManageUsers:
+                case SecurityAction.ManageUsers:
                     return false;
-                case UserEntitlements.PerformBackgroundJob:
+                case SecurityAction.PerformBackgroundJob:
                     return false;
-                case UserEntitlements.ReadUsers:
+                case SecurityAction.ReadUsers:
                     return false;
                 default:
                     return false;
