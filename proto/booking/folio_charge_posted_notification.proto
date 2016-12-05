@@ -6,6 +6,7 @@ option go_package = "booking";
 
 import "primitive/monetary_amount.proto";
 import "primitive/pb_local_date.proto";
+import "booking/indicators/reservation_indicator.proto";
 import "crm/guests/guest_indicator.proto";
 import "operations/rooms/room_indicator.proto";
 import "supply/room_types/room_type_indicator.proto";
@@ -17,4 +18,5 @@ message FolioChargePostedNotification {
 	holms.types.operations.rooms.RoomIndicator room_id = 4;
 	holms.types.supply.room_types.RoomTypeIndicator room_type_id = 5;
 	holms.types.crm.guests.GuestIndicator guest_id = 6;
+	holms.types.booking.indicators.ReservationIndicator reservation_id = 7;
 }
