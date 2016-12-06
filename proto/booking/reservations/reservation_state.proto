@@ -7,8 +7,6 @@ option go_package = "booking/reservations";
 enum ReservationState {
         Open = 0;
         Cancelled = 1;
-        NoShow = 2;
-        CheckedIn = 3;
-        CheckedOut = 4;
-		Genesis = 5;
+        CheckedIn = 2;
+        CheckedOut = 3;
 }
