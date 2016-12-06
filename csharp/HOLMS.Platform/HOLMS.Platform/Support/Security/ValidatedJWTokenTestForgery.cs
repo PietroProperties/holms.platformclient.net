@@ -1,4 +1,5 @@
-﻿using HOLMS.Types.IAM;
+﻿using HOLMS.Platform.Support.Security;
+using HOLMS.Types.IAM;
 using HOLMS.Types.Primitive;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace HOLMS.Support.Security {
                 User = user,
                 Client = clientInstance,
             };
-            ACC.SecurityActions.AddRange(securityActions);
+            ACC.SecurityActions.UnionWith(securityActions);
 
             RawTokenData = new JWToken(clientInstance, user, securityActions, tenancy, DateTime.Now, hasExpiration,
                 sskf.SigningCredentials).SignedToken;

@@ -33,33 +33,34 @@ namespace HOLMS.Types.Booking.RPC {
             "cmVzZW50ZWRfaWQYAiABKAkSEgoKdmVoaWNsZV9pZBgDIAEoCRIeChZyZXF1",
             "ZXN0X2tlZXBfZ3VhcmFudGVlGAQgASgIImMKHUNoZWNrSW5TZXJ2aWNlUmVx",
             "dWVzdFJlc3BvbnNlEkIKBnJlc3VsdBgBIAEoDjIyLmhvbG1zLnR5cGVzLmJv",
-            "b2tpbmcuY2hlY2tfaW4uQ2hlY2tJblJlcXVlc3RSZXN1bHQijQIKGUdldFBy",
-            "ZUNoZWNraW5JbmZvUmVzcG9uc2USSQoLcmVzZXJ2YXRpb24YASABKAsyNC5o",
-            "b2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRp",
-            "Y2F0b3ISFgoOdmVoaWNsZV9wbGF0ZXMYAiABKAkSHwoXcGVyc29uYWxfaWRl",
-            "bnRpZmljYXRpb24YAyABKAkSbAoacmVjb21tZW5kZWRfYXV0aG9yaXphdGlv",
-            "bnMYBCABKAsySC5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5S",
-            "ZWNvbW1lbmRlZENoZWNraW5BdXRob3JpemF0aW9uQW1vdW50cyKeAQoYU2V0",
-            "UHJlQ2hlY2tpbkluZm9SZXF1ZXN0EkkKC3Jlc2VydmF0aW9uGAEgASgLMjQu",
-            "aG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5k",
-            "aWNhdG9yEhYKDnZlaGljbGVfcGxhdGVzGAIgASgJEh8KF3BlcnNvbmFsX2lk",
-            "ZW50aWZpY2F0aW9uGAMgASgJMt0CCg5DaGVja0luU2VydmljZRJsCglTdGFy",
-            "dFN0YXkSJy5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5DaGVja0luUmVxdWVz",
-            "dBo2LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkNoZWNrSW5TZXJ2aWNlUmVx",
-            "dWVzdFJlc3BvbnNlEn0KEUdldFByZUNoZWNraW5JbmZvEjQuaG9sbXMudHlw",
-            "ZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yGjIu",
-            "aG9sbXMudHlwZXMuYm9va2luZy5ycGMuR2V0UHJlQ2hlY2tpbkluZm9SZXNw",
-            "b25zZRJeChFTZXRQcmVDaGVja2luSW5mbxIxLmhvbG1zLnR5cGVzLmJvb2tp",
-            "bmcucnBjLlNldFByZUNoZWNraW5JbmZvUmVxdWVzdBoWLmdvb2dsZS5wcm90",
-            "b2J1Zi5FbXB0eUInWgtib29raW5nL3JwY6oCF0hPTE1TLlR5cGVzLkJvb2tp",
-            "bmcuUlBDYgZwcm90bzM="));
+            "b2tpbmcuY2hlY2tfaW4uQ2hlY2tJblJlcXVlc3RSZXN1bHQilwIKI0NoZWNr",
+            "SW5TdmNHZXRQcmVDaGVja2luSW5mb1Jlc3BvbnNlEkkKC3Jlc2VydmF0aW9u",
+            "GAEgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2Vy",
+            "dmF0aW9uSW5kaWNhdG9yEhYKDnZlaGljbGVfcGxhdGVzGAIgASgJEh8KF3Bl",
+            "cnNvbmFsX2lkZW50aWZpY2F0aW9uGAMgASgJEmwKGnJlY29tbWVuZGVkX2F1",
+            "dGhvcml6YXRpb25zGAQgASgLMkguaG9sbXMudHlwZXMuYm9va2luZy5yZXNl",
+            "cnZhdGlvbnMuUmVjb21tZW5kZWRDaGVja2luQXV0aG9yaXphdGlvbkFtb3Vu",
+            "dHMiqAEKIkNoZWNrSW5TdmNTZXRQcmVDaGVja2luSW5mb1JlcXVlc3QSSQoL",
+            "cmVzZXJ2YXRpb24YASABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGlj",
+            "YXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISFgoOdmVoaWNsZV9wbGF0ZXMY",
+            "AiABKAkSHwoXcGVyc29uYWxfaWRlbnRpZmljYXRpb24YAyABKAky8gIKDkNo",
+            "ZWNrSW5TZXJ2aWNlEmwKCVN0YXJ0U3RheRInLmhvbG1zLnR5cGVzLmJvb2tp",
+            "bmcucnBjLkNoZWNrSW5SZXF1ZXN0GjYuaG9sbXMudHlwZXMuYm9va2luZy5y",
+            "cGMuQ2hlY2tJblNlcnZpY2VSZXF1ZXN0UmVzcG9uc2UShwEKEUdldFByZUNo",
+            "ZWNraW5JbmZvEjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJl",
+            "c2VydmF0aW9uSW5kaWNhdG9yGjwuaG9sbXMudHlwZXMuYm9va2luZy5ycGMu",
+            "Q2hlY2tJblN2Y0dldFByZUNoZWNraW5JbmZvUmVzcG9uc2USaAoRU2V0UHJl",
+            "Q2hlY2tpbkluZm8SOy5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5DaGVja0lu",
+            "U3ZjU2V0UHJlQ2hlY2tpbkluZm9SZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVm",
+            "LkVtcHR5QidaC2Jvb2tpbmcvcnBjqgIXSE9MTVMuVHlwZXMuQm9va2luZy5S",
+            "UENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.CheckIn.CheckInRequestResultReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.RecommendedCheckinCardAuthorizationAmountsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.CheckInRequest), global::HOLMS.Types.Booking.RPC.CheckInRequest.Parser, new[]{ "Reservation", "PresentedId", "VehicleId", "RequestKeepGuarantee" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.CheckInServiceRequestResponse), global::HOLMS.Types.Booking.RPC.CheckInServiceRequestResponse.Parser, new[]{ "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GetPreCheckinInfoResponse), global::HOLMS.Types.Booking.RPC.GetPreCheckinInfoResponse.Parser, new[]{ "Reservation", "VehiclePlates", "PersonalIdentification", "RecommendedAuthorizations" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.SetPreCheckinInfoRequest), global::HOLMS.Types.Booking.RPC.SetPreCheckinInfoRequest.Parser, new[]{ "Reservation", "VehiclePlates", "PersonalIdentification" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.CheckInSvcGetPreCheckinInfoResponse), global::HOLMS.Types.Booking.RPC.CheckInSvcGetPreCheckinInfoResponse.Parser, new[]{ "Reservation", "VehiclePlates", "PersonalIdentification", "RecommendedAuthorizations" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.CheckInSvcSetPreCheckinInfoRequest), global::HOLMS.Types.Booking.RPC.CheckInSvcSetPreCheckinInfoRequest.Parser, new[]{ "Reservation", "VehiclePlates", "PersonalIdentification" }, null, null, null)
           }));
     }
     #endregion
@@ -390,10 +391,10 @@ namespace HOLMS.Types.Booking.RPC {
 
   }
 
-  public sealed partial class GetPreCheckinInfoResponse : pb::IMessage<GetPreCheckinInfoResponse> {
-    private static readonly pb::MessageParser<GetPreCheckinInfoResponse> _parser = new pb::MessageParser<GetPreCheckinInfoResponse>(() => new GetPreCheckinInfoResponse());
+  public sealed partial class CheckInSvcGetPreCheckinInfoResponse : pb::IMessage<CheckInSvcGetPreCheckinInfoResponse> {
+    private static readonly pb::MessageParser<CheckInSvcGetPreCheckinInfoResponse> _parser = new pb::MessageParser<CheckInSvcGetPreCheckinInfoResponse>(() => new CheckInSvcGetPreCheckinInfoResponse());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<GetPreCheckinInfoResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<CheckInSvcGetPreCheckinInfoResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -406,14 +407,14 @@ namespace HOLMS.Types.Booking.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetPreCheckinInfoResponse() {
+    public CheckInSvcGetPreCheckinInfoResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetPreCheckinInfoResponse(GetPreCheckinInfoResponse other) : this() {
+    public CheckInSvcGetPreCheckinInfoResponse(CheckInSvcGetPreCheckinInfoResponse other) : this() {
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
       vehiclePlates_ = other.vehiclePlates_;
       personalIdentification_ = other.personalIdentification_;
@@ -421,8 +422,8 @@ namespace HOLMS.Types.Booking.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetPreCheckinInfoResponse Clone() {
-      return new GetPreCheckinInfoResponse(this);
+    public CheckInSvcGetPreCheckinInfoResponse Clone() {
+      return new CheckInSvcGetPreCheckinInfoResponse(this);
     }
 
     /// <summary>Field number for the "reservation" field.</summary>
@@ -471,11 +472,11 @@ namespace HOLMS.Types.Booking.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as GetPreCheckinInfoResponse);
+      return Equals(other as CheckInSvcGetPreCheckinInfoResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(GetPreCheckinInfoResponse other) {
+    public bool Equals(CheckInSvcGetPreCheckinInfoResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -543,7 +544,7 @@ namespace HOLMS.Types.Booking.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GetPreCheckinInfoResponse other) {
+    public void MergeFrom(CheckInSvcGetPreCheckinInfoResponse other) {
       if (other == null) {
         return;
       }
@@ -603,10 +604,10 @@ namespace HOLMS.Types.Booking.RPC {
 
   }
 
-  public sealed partial class SetPreCheckinInfoRequest : pb::IMessage<SetPreCheckinInfoRequest> {
-    private static readonly pb::MessageParser<SetPreCheckinInfoRequest> _parser = new pb::MessageParser<SetPreCheckinInfoRequest>(() => new SetPreCheckinInfoRequest());
+  public sealed partial class CheckInSvcSetPreCheckinInfoRequest : pb::IMessage<CheckInSvcSetPreCheckinInfoRequest> {
+    private static readonly pb::MessageParser<CheckInSvcSetPreCheckinInfoRequest> _parser = new pb::MessageParser<CheckInSvcSetPreCheckinInfoRequest>(() => new CheckInSvcSetPreCheckinInfoRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<SetPreCheckinInfoRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<CheckInSvcSetPreCheckinInfoRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -619,22 +620,22 @@ namespace HOLMS.Types.Booking.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SetPreCheckinInfoRequest() {
+    public CheckInSvcSetPreCheckinInfoRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SetPreCheckinInfoRequest(SetPreCheckinInfoRequest other) : this() {
+    public CheckInSvcSetPreCheckinInfoRequest(CheckInSvcSetPreCheckinInfoRequest other) : this() {
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
       vehiclePlates_ = other.vehiclePlates_;
       personalIdentification_ = other.personalIdentification_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SetPreCheckinInfoRequest Clone() {
-      return new SetPreCheckinInfoRequest(this);
+    public CheckInSvcSetPreCheckinInfoRequest Clone() {
+      return new CheckInSvcSetPreCheckinInfoRequest(this);
     }
 
     /// <summary>Field number for the "reservation" field.</summary>
@@ -672,11 +673,11 @@ namespace HOLMS.Types.Booking.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as SetPreCheckinInfoRequest);
+      return Equals(other as CheckInSvcSetPreCheckinInfoRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(SetPreCheckinInfoRequest other) {
+    public bool Equals(CheckInSvcSetPreCheckinInfoRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -735,7 +736,7 @@ namespace HOLMS.Types.Booking.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(SetPreCheckinInfoRequest other) {
+    public void MergeFrom(CheckInSvcSetPreCheckinInfoRequest other) {
       if (other == null) {
         return;
       }

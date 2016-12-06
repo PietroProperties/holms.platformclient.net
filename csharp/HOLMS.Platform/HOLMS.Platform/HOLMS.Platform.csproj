@@ -89,6 +89,7 @@
     <Compile Include="Support\RecurrenceDescriptor.cs" />
     <Compile Include="Support\RecurrenceDescriptorParts.cs" />
     <Compile Include="Support\RestrictionAdjustment.cs" />
+    <Compile Include="Support\Security\AuthenticatedClientClaims.cs" />
     <Compile Include="Support\Security\JWToken.cs" />
     <Compile Include="Support\Security\StubSecurityKeyFactory.cs" />
     <Compile Include="Support\Security\ValidatedJWToken.cs" />
@@ -220,7 +221,6 @@
     <Compile Include="Types\out\AttractionCategorySvc.cs" />
     <Compile Include="Types\out\AttractionCategorySvcGrpc.cs" />
     <Compile Include="Types\out\AttractionIndicator.cs" />
-    <Compile Include="Types\out\AuthenticatedClientClaims.cs" />
     <Compile Include="Types\out\BookGenesisReservationRequest.cs" />
     <Compile Include="Types\out\BookingHeldLodgingPackage.cs" />
     <Compile Include="Types\out\BookingHoldConversionResult.cs" />
@@ -262,7 +262,6 @@
     <Compile Include="Types\out\CashGuaranteeTenderReceived.cs" />
     <Compile Include="Types\out\CharacterCaseType.cs" />
     <Compile Include="Types\out\ChargeCreditType.cs" />
-    <Compile Include="Types\out\CheckGuaranteeTenderAccepted.cs" />
     <Compile Include="Types\out\CheckGuaranteeTenderReceived.cs" />
     <Compile Include="Types\out\CheckInRequestResult.cs" />
     <Compile Include="Types\out\CheckInService.cs" />
@@ -407,7 +406,6 @@
     <Compile Include="Types\out\OpenLodgingReservationSvcGrpc.cs" />
     <Compile Include="Types\out\OpenPriceEstimateRequest.cs" />
     <Compile Include="Types\out\OutOfOrderRecord.cs" />
-    <Compile Include="Types\out\OutOfOrderRecordCrud.cs" />
     <Compile Include="Types\out\OutOfOrderRecordIndicator.cs" />
     <Compile Include="Types\out\OutOfOrderRecordSvc.cs" />
     <Compile Include="Types\out\OutOfOrderRecordSvcGrpc.cs" />

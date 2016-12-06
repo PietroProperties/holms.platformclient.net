@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security;
 using HOLMS.Types.IAM;
 using Microsoft.IdentityModel.Tokens;
+using HOLMS.Platform.Support.Security;
 
 namespace HOLMS.Support.Security {
     public class ValidatedJWToken {
