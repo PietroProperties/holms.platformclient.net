@@ -56,24 +56,24 @@ namespace HOLMS.Types.Reporting.RPC {
         __Marshaller_FrontDeskReportingSvcRequest,
         __Marshaller_FrontDeskReportingSvcReportResponse);
 
-    static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetFolioCreditReport = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
+    static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetFolioBalancesReport = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
         MethodType.Unary,
         __ServiceName,
-        "GetFolioCreditReport",
+        "GetFolioBalancesReport",
         __Marshaller_Empty,
         __Marshaller_FrontDeskReportingSvcReportResponse);
 
-    static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetFolioChargeCreditReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
+    static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetFolioGrossChargesReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
         MethodType.Unary,
         __ServiceName,
-        "GetFolioChargeCreditReport",
+        "GetFolioGrossChargesReport",
         __Marshaller_FrontDeskReportingSvcPropertyTimeRangeRequest,
         __Marshaller_FrontDeskReportingSvcReportResponse);
 
-    static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetFolioPaymentReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
+    static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetFolioPaymentsReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
         MethodType.Unary,
         __ServiceName,
-        "GetFolioPaymentReport",
+        "GetFolioPaymentsReport",
         __Marshaller_FrontDeskReportingSvcPropertyTimeRangeRequest,
         __Marshaller_FrontDeskReportingSvcReportResponse);
 
@@ -146,17 +146,17 @@ namespace HOLMS.Types.Reporting.RPC {
       /// <summary>
       ///  Folio activity
       /// </summary>
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioCreditReport(global::Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioBalancesReport(global::Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioChargeCreditReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioGrossChargesReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioPaymentReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioPaymentsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -317,62 +317,62 @@ namespace HOLMS.Types.Reporting.RPC {
       /// <summary>
       ///  Folio activity
       /// </summary>
-      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioCreditReport(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioBalancesReport(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetFolioCreditReport(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetFolioBalancesReport(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Folio activity
       /// </summary>
-      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioCreditReport(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioBalancesReport(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetFolioCreditReport, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetFolioBalancesReport, null, options, request);
       }
       /// <summary>
       ///  Folio activity
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioCreditReportAsync(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioBalancesReportAsync(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetFolioCreditReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetFolioBalancesReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Folio activity
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioCreditReportAsync(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioBalancesReportAsync(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetFolioCreditReport, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetFolioBalancesReport, null, options, request);
       }
-      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioChargeCreditReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioGrossChargesReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetFolioChargeCreditReport(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetFolioGrossChargesReport(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioChargeCreditReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioGrossChargesReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetFolioChargeCreditReport, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetFolioGrossChargesReport, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioChargeCreditReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioGrossChargesReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetFolioChargeCreditReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetFolioGrossChargesReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioChargeCreditReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioGrossChargesReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetFolioChargeCreditReport, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetFolioGrossChargesReport, null, options, request);
       }
-      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioPaymentReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioPaymentsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetFolioPaymentReport(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetFolioPaymentsReport(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioPaymentReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioPaymentsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetFolioPaymentReport, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetFolioPaymentsReport, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioPaymentReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioPaymentsReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetFolioPaymentReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetFolioPaymentsReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioPaymentReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioPaymentsReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetFolioPaymentReport, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetFolioPaymentsReport, null, options, request);
       }
       /// <summary>
       ///  Ledger summary
@@ -501,9 +501,9 @@ namespace HOLMS.Types.Reporting.RPC {
           .AddMethod(__Method_GetDeparturesReport, serviceImpl.GetDeparturesReport)
           .AddMethod(__Method_GetInHouseGuestsReport, serviceImpl.GetInHouseGuestsReport)
           .AddMethod(__Method_GetNoShowsReport, serviceImpl.GetNoShowsReport)
-          .AddMethod(__Method_GetFolioCreditReport, serviceImpl.GetFolioCreditReport)
-          .AddMethod(__Method_GetFolioChargeCreditReport, serviceImpl.GetFolioChargeCreditReport)
-          .AddMethod(__Method_GetFolioPaymentReport, serviceImpl.GetFolioPaymentReport)
+          .AddMethod(__Method_GetFolioBalancesReport, serviceImpl.GetFolioBalancesReport)
+          .AddMethod(__Method_GetFolioGrossChargesReport, serviceImpl.GetFolioGrossChargesReport)
+          .AddMethod(__Method_GetFolioPaymentsReport, serviceImpl.GetFolioPaymentsReport)
           .AddMethod(__Method_GetLedgerActivitySummary, serviceImpl.GetLedgerActivitySummary)
           .AddMethod(__Method_GetVehiclesReport, serviceImpl.GetVehiclesReport)
           .AddMethod(__Method_GetGeneralAvailabilityReport, serviceImpl.GetGeneralAvailabilityReport)

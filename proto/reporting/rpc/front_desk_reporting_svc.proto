@@ -63,11 +63,11 @@ service FrontDeskReportingSvc {
         returns (FrontDeskReportingSvcReportResponse);
 
     // Folio activity
-    rpc GetFolioCreditReport(google.protobuf.Empty)
+    rpc GetFolioBalancesReport(google.protobuf.Empty)
         returns (FrontDeskReportingSvcReportResponse);
-    rpc GetFolioChargeCreditReport(FrontDeskReportingSvcPropertyTimeRangeRequest)
+    rpc GetFolioGrossChargesReport(FrontDeskReportingSvcPropertyTimeRangeRequest)
         returns (FrontDeskReportingSvcReportResponse);
-    rpc GetFolioPaymentReport(FrontDeskReportingSvcPropertyTimeRangeRequest)
+    rpc GetFolioPaymentsReport(FrontDeskReportingSvcPropertyTimeRangeRequest)
         returns (FrontDeskReportingSvcReportResponse);
 
     // Ledger summary
