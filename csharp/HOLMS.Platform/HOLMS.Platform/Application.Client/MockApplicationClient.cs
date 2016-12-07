@@ -9,7 +9,6 @@ using HOLMS.Types.Primitive;
 using HOLMS.Types.Reporting.RPC;
 using HOLMS.Types.Supply.RPC;
 using HOLMS.Types.TenancyConfig.RPC;
-using Moq;
 using HOLMS.Types.IAM;
 using Microsoft.Extensions.Logging;
 
