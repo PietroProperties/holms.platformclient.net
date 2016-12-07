@@ -26,16 +26,17 @@ namespace HOLMS.Types.Money.Accounting {
             "dG8SHGhvbG1zLnR5cGVzLm1vbmV5LmFjY291bnRpbmcaH2dvb2dsZS9wcm90",
             "b2J1Zi90aW1lc3RhbXAucHJvdG8aMm1vbmV5L2FjY291bnRpbmcvYWNjb3Vu",
             "dGluZ190cmFuc2FjdGlvbl9saW5lLnByb3RvGhRwcmltaXRpdmUvdXVpZC5w",
-            "cm90byLMAQoVQWNjb3VudGluZ1RyYW5zYWN0aW9uEi8KC3Bvc3RlZF90aW1l",
+            "cm90byLqAQoVQWNjb3VudGluZ1RyYW5zYWN0aW9uEi8KC3Bvc3RlZF90aW1l",
             "GAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIRCgluYXJyYXRp",
             "b24YAiABKAkSRgoFbGluZXMYAyADKAsyNy5ob2xtcy50eXBlcy5tb25leS5h",
             "Y2NvdW50aW5nLkFjY291bnRpbmdUcmFuc2FjdGlvbkxpbmUSJwoCSWQYBCAB",
-            "KAsyGy5ob2xtcy50eXBlcy5wcmltaXRpdmUuVXVpZEIxWhBtb25leS9hY2Nv",
-            "dW50aW5nqgIcSE9MTVMuVHlwZXMuTW9uZXkuQWNjb3VudGluZ2IGcHJvdG8z"));
+            "KAsyGy5ob2xtcy50eXBlcy5wcmltaXRpdmUuVXVpZBIcChR3YXNfbWFudWFs",
+            "bHlfZW50ZXJlZBgFIAEoCEIxWhBtb25leS9hY2NvdW50aW5nqgIcSE9MTVMu",
+            "VHlwZXMuTW9uZXkuQWNjb3VudGluZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTransactionLineReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Accounting.AccountingTransaction), global::HOLMS.Types.Money.Accounting.AccountingTransaction.Parser, new[]{ "PostedTime", "Narration", "Lines", "Id" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Accounting.AccountingTransaction), global::HOLMS.Types.Money.Accounting.AccountingTransaction.Parser, new[]{ "PostedTime", "Narration", "Lines", "Id", "WasManuallyEntered" }, null, null, null)
           }));
     }
     #endregion
@@ -70,6 +71,7 @@ namespace HOLMS.Types.Money.Accounting {
       narration_ = other.narration_;
       lines_ = other.lines_.Clone();
       Id = other.id_ != null ? other.Id.Clone() : null;
+      wasManuallyEntered_ = other.wasManuallyEntered_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -120,6 +122,17 @@ namespace HOLMS.Types.Money.Accounting {
       }
     }
 
+    /// <summary>Field number for the "was_manually_entered" field.</summary>
+    public const int WasManuallyEnteredFieldNumber = 5;
+    private bool wasManuallyEntered_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool WasManuallyEntered {
+      get { return wasManuallyEntered_; }
+      set {
+        wasManuallyEntered_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AccountingTransaction);
@@ -137,6 +150,7 @@ namespace HOLMS.Types.Money.Accounting {
       if (Narration != other.Narration) return false;
       if(!lines_.Equals(other.lines_)) return false;
       if (!object.Equals(Id, other.Id)) return false;
+      if (WasManuallyEntered != other.WasManuallyEntered) return false;
       return true;
     }
 
@@ -147,6 +161,7 @@ namespace HOLMS.Types.Money.Accounting {
       if (Narration.Length != 0) hash ^= Narration.GetHashCode();
       hash ^= lines_.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
+      if (WasManuallyEntered != false) hash ^= WasManuallyEntered.GetHashCode();
       return hash;
     }
 
@@ -170,6 +185,10 @@ namespace HOLMS.Types.Money.Accounting {
         output.WriteRawTag(34);
         output.WriteMessage(Id);
       }
+      if (WasManuallyEntered != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(WasManuallyEntered);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -184,6 +203,9 @@ namespace HOLMS.Types.Money.Accounting {
       size += lines_.CalculateSize(_repeated_lines_codec);
       if (id_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
+      }
+      if (WasManuallyEntered != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -208,6 +230,9 @@ namespace HOLMS.Types.Money.Accounting {
           id_ = new global::HOLMS.Types.Primitive.Uuid();
         }
         Id.MergeFrom(other.Id);
+      }
+      if (other.WasManuallyEntered != false) {
+        WasManuallyEntered = other.WasManuallyEntered;
       }
     }
 
@@ -239,6 +264,10 @@ namespace HOLMS.Types.Money.Accounting {
               id_ = new global::HOLMS.Types.Primitive.Uuid();
             }
             input.ReadMessage(id_);
+            break;
+          }
+          case 40: {
+            WasManuallyEntered = input.ReadBool();
             break;
           }
         }
