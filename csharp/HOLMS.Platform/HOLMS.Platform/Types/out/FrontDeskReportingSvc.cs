@@ -33,71 +33,76 @@ namespace HOLMS.Types.Reporting.RPC {
             "bmdTdmNJbkhvdXNlR3Vlc3RzUmVxdWVzdBIoCgRkYXRlGAEgASgLMhouZ29v",
             "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcBJHCglzb3J0X3R5cGUYAiABKA4yNC5o",
             "b2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkluSG91c2VHdWVzdFJlcG9ydFNv",
-            "cnRpbmcirAEKMEZyb250RGVza1JlcG9ydGluZ1N2Y0NhbGVuZGFyRGF0ZUlu",
-            "dGVydmFsUmVxdWVzdBI8ChhyZXBvcnRpbmdfaW50ZXJ2YWxfc3RhcnQYASAB",
-            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjoKFnJlcG9ydGluZ19p",
-            "bnRlcnZhbF9lbmQYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
-            "IncKMUZyb250RGVza1JlcG9ydGluZ1N2Y0NhbmNlbGxlZFJlc2VydmF0aW9u",
-            "c1JlcXVlc3QSQgoKZGF0ZV9yYW5nZRgBIAEoCzIuLmhvbG1zLnR5cGVzLnBy",
-            "aW1pdGl2ZS5QYkluY2x1c2l2ZU9wc2RhdGVSYW5nZSJ7CihGcm9udERlc2tS",
-            "ZXBvcnRpbmdTdmNIb3VzZWtlZXBpbmdSZXF1ZXN0EjwKDXN0YWZmX21lbWJl",
-            "cnMYASADKAsyJS5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXJJbmRpY2F0",
-            "b3ISEQoJYWRkX25vdGVzGAIgASgJIsMBCjFGcm9udERlc2tSZXBvcnRpbmdT",
-            "dmNHZXRHZW5lcmFsQXZhaWxhYmlsaXR5UmVwb3J0EkIKCmRhdGVfcmFuZ2UY",
-            "ASABKAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNk",
-            "YXRlUmFuZ2USSgoIcHJvcGVydHkYAiABKAsyOC5ob2xtcy50eXBlcy50ZW5h",
-            "bmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yIjcKI0Zy",
-            "b250RGVza1JlcG9ydGluZ1N2Y1JlcG9ydFJlc3BvbnNlEhAKCGRvY3VtZW50",
-            "GAEgASgJKkIKGUluSG91c2VHdWVzdFJlcG9ydFNvcnRpbmcSEQoNQllfR1VF",
-            "U1RfTkFNRRAAEhIKDkJZX1JPT01fTlVNQkVSEAEynw0KFUZyb250RGVza1Jl",
-            "cG9ydGluZ1N2YxKMAQoRR2V0QXJyaXZhbHNSZXBvcnQSNy5ob2xtcy50eXBl",
-            "cy5yZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1JlcXVlc3Qa",
-            "Pi5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGlu",
-            "Z1N2Y1JlcG9ydFJlc3BvbnNlEq4BCh5HZXRDYW5jZWxsZWRSZXNlcnZhdGlv",
-            "bnNSZXBvcnQSTC5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVz",
-            "a1JlcG9ydGluZ1N2Y0NhbmNlbGxlZFJlc2VydmF0aW9uc1JlcXVlc3QaPi5o",
-            "b2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2",
-            "Y1JlcG9ydFJlc3BvbnNlEo4BChNHZXREZXBhcnR1cmVzUmVwb3J0EjcuaG9s",
-            "bXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNS",
-            "ZXF1ZXN0Gj4uaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tS",
-            "ZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZRKeAQoWR2V0SW5Ib3VzZUd1ZXN0",
-            "c1JlcG9ydBJELmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNr",
-            "UmVwb3J0aW5nU3ZjSW5Ib3VzZUd1ZXN0c1JlcXVlc3QaPi5ob2xtcy50eXBl",
-            "cy5yZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1JlcG9ydFJl",
-            "c3BvbnNlEosBChBHZXROb1Nob3dzUmVwb3J0EjcuaG9sbXMudHlwZXMucmVw",
-            "b3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNSZXF1ZXN0Gj4uaG9s",
-            "bXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNS",
-            "ZXBvcnRSZXNwb25zZRKlAQoWR2V0Rm9saW9BY3Rpdml0eVJlcG9ydBJLLmhv",
+            "cnRpbmcidwoxRnJvbnREZXNrUmVwb3J0aW5nU3ZjQ2FuY2VsbGVkUmVzZXJ2",
+            "YXRpb25zUmVxdWVzdBJCCgpkYXRlX3JhbmdlGAEgASgLMi4uaG9sbXMudHlw",
+            "ZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlInsKKEZyb250",
+            "RGVza1JlcG9ydGluZ1N2Y0hvdXNla2VlcGluZ1JlcXVlc3QSPAoNc3RhZmZf",
+            "bWVtYmVycxgBIAMoCzIlLmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1lbWJlcklu",
+            "ZGljYXRvchIRCglhZGRfbm90ZXMYAiABKAki9QEKLUZyb250RGVza1JlcG9y",
+            "dGluZ1N2Y1Byb3BlcnR5VGltZVJhbmdlUmVxdWVzdBI8ChhyZXBvcnRpbmdf",
+            "aW50ZXJ2YWxfc3RhcnQYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
+            "YW1wEjoKFnJlcG9ydGluZ19pbnRlcnZhbF9lbmQYAiABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wEkoKCHByb3BlcnR5GAMgASgLMjguaG9sbXMu",
+            "dHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGlj",
+            "YXRvciK/AQotRnJvbnREZXNrUmVwb3J0aW5nU3ZjUHJvcGVydHlEYXRlUmFu",
+            "Z2VSZXF1ZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5ob2xtcy50eXBlcy5w",
+            "cmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2USSgoIcHJvcGVydHkY",
+            "AiABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3Jz",
+            "LlByb3BlcnR5SW5kaWNhdG9yIjcKI0Zyb250RGVza1JlcG9ydGluZ1N2Y1Jl",
+            "cG9ydFJlc3BvbnNlEhAKCGRvY3VtZW50GAEgASgJKkIKGUluSG91c2VHdWVz",
+            "dFJlcG9ydFNvcnRpbmcSEQoNQllfR1VFU1RfTkFNRRAAEhIKDkJZX1JPT01f",
+            "TlVNQkVSEAEyvQ4KFUZyb250RGVza1JlcG9ydGluZ1N2YxKMAQoRR2V0QXJy",
+            "aXZhbHNSZXBvcnQSNy5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250",
+            "RGVza1JlcG9ydGluZ1N2Y1JlcXVlc3QaPi5ob2xtcy50eXBlcy5yZXBvcnRp",
+            "bmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1JlcG9ydFJlc3BvbnNlEq4B",
+            "Ch5HZXRDYW5jZWxsZWRSZXNlcnZhdGlvbnNSZXBvcnQSTC5ob2xtcy50eXBl",
+            "cy5yZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y0NhbmNlbGxl",
+            "ZFJlc2VydmF0aW9uc1JlcXVlc3QaPi5ob2xtcy50eXBlcy5yZXBvcnRpbmcu",
+            "cnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1JlcG9ydFJlc3BvbnNlEo4BChNH",
+            "ZXREZXBhcnR1cmVzUmVwb3J0EjcuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJw",
+            "Yy5Gcm9udERlc2tSZXBvcnRpbmdTdmNSZXF1ZXN0Gj4uaG9sbXMudHlwZXMu",
+            "cmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNSZXBvcnRSZXNw",
+            "b25zZRKeAQoWR2V0SW5Ib3VzZUd1ZXN0c1JlcG9ydBJELmhvbG1zLnR5cGVz",
+            "LnJlcG9ydGluZy5ycGMuRnJvbnREZXNrUmVwb3J0aW5nU3ZjSW5Ib3VzZUd1",
+            "ZXN0c1JlcXVlc3QaPi5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250",
+            "RGVza1JlcG9ydGluZ1N2Y1JlcG9ydFJlc3BvbnNlEosBChBHZXROb1Nob3dz",
+            "UmVwb3J0EjcuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tS",
+            "ZXBvcnRpbmdTdmNSZXF1ZXN0Gj4uaG9sbXMudHlwZXMucmVwb3J0aW5nLnJw",
+            "Yy5Gcm9udERlc2tSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZRJuChRHZXRG",
+            "b2xpb0NyZWRpdFJlcG9ydBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRo+Lmhv",
             "bG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNrUmVwb3J0aW5nU3Zj",
-            "Q2FsZW5kYXJEYXRlSW50ZXJ2YWxSZXF1ZXN0Gj4uaG9sbXMudHlwZXMucmVw",
-            "b3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25z",
-            "ZRJuChRHZXRGb2xpb0NyZWRpdFJlcG9ydBIWLmdvb2dsZS5wcm90b2J1Zi5F",
-            "bXB0eRo+LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNrUmVw",
-            "b3J0aW5nU3ZjUmVwb3J0UmVzcG9uc2USpwEKGEdldExlZGdlckFjdGl2aXR5",
-            "U3VtbWFyeRJLLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNr",
-            "UmVwb3J0aW5nU3ZjQ2FsZW5kYXJEYXRlSW50ZXJ2YWxSZXF1ZXN0Gj4uaG9s",
-            "bXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNS",
-            "ZXBvcnRSZXNwb25zZRJrChFHZXRWZWhpY2xlc1JlcG9ydBIWLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbXB0eRo+LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJv",
-            "bnREZXNrUmVwb3J0aW5nU3ZjUmVwb3J0UmVzcG9uc2USrAEKHEdldEdlbmVy",
-            "YWxBdmFpbGFiaWxpdHlSZXBvcnQSTC5ob2xtcy50eXBlcy5yZXBvcnRpbmcu",
-            "cnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y0dldEdlbmVyYWxBdmFpbGFiaWxp",
-            "dHlSZXBvcnQaPi5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVz",
-            "a1JlcG9ydGluZ1N2Y1JlcG9ydFJlc3BvbnNlEqcBCiBHZXRIb3VzZWtlZXBp",
-            "bmdBc3NpZ25tZW50c1JlcG9ydBJDLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5y",
-            "cGMuRnJvbnREZXNrUmVwb3J0aW5nU3ZjSG91c2VrZWVwaW5nUmVxdWVzdBo+",
-            "LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNrUmVwb3J0aW5n",
-            "U3ZjUmVwb3J0UmVzcG9uc2VCLFoOb3BlcmF0aW9ucy9ycGOqAhlIT0xNUy5U",
-            "eXBlcy5SZXBvcnRpbmcuUlBDYgZwcm90bzM="));
+            "UmVwb3J0UmVzcG9uc2USpgEKGkdldEZvbGlvQ2hhcmdlQ3JlZGl0UmVwb3J0",
+            "EkguaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRp",
+            "bmdTdmNQcm9wZXJ0eVRpbWVSYW5nZVJlcXVlc3QaPi5ob2xtcy50eXBlcy5y",
+            "ZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1JlcG9ydFJlc3Bv",
+            "bnNlEqEBChVHZXRGb2xpb1BheW1lbnRSZXBvcnQSSC5ob2xtcy50eXBlcy5y",
+            "ZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1Byb3BlcnR5VGlt",
+            "ZVJhbmdlUmVxdWVzdBo+LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJv",
+            "bnREZXNrUmVwb3J0aW5nU3ZjUmVwb3J0UmVzcG9uc2USpAEKGEdldExlZGdl",
+            "ckFjdGl2aXR5U3VtbWFyeRJILmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMu",
+            "RnJvbnREZXNrUmVwb3J0aW5nU3ZjUHJvcGVydHlUaW1lUmFuZ2VSZXF1ZXN0",
+            "Gj4uaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRp",
+            "bmdTdmNSZXBvcnRSZXNwb25zZRJrChFHZXRWZWhpY2xlc1JlcG9ydBIWLmdv",
+            "b2dsZS5wcm90b2J1Zi5FbXB0eRo+LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5y",
+            "cGMuRnJvbnREZXNrUmVwb3J0aW5nU3ZjUmVwb3J0UmVzcG9uc2USqAEKHEdl",
+            "dEdlbmVyYWxBdmFpbGFiaWxpdHlSZXBvcnQSSC5ob2xtcy50eXBlcy5yZXBv",
+            "cnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1Byb3BlcnR5RGF0ZVJh",
+            "bmdlUmVxdWVzdBo+LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnRE",
+            "ZXNrUmVwb3J0aW5nU3ZjUmVwb3J0UmVzcG9uc2USpwEKIEdldEhvdXNla2Vl",
+            "cGluZ0Fzc2lnbm1lbnRzUmVwb3J0EkMuaG9sbXMudHlwZXMucmVwb3J0aW5n",
+            "LnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNIb3VzZWtlZXBpbmdSZXF1ZXN0",
+            "Gj4uaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRp",
+            "bmdTdmNSZXBvcnRSZXNwb25zZUIsWg5vcGVyYXRpb25zL3JwY6oCGUhPTE1T",
+            "LlR5cGVzLlJlcG9ydGluZy5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.RPC.InHouseGuestReportSorting), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest.Parser, new[]{ "Date" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest.Parser, new[]{ "Date", "SortType" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcCalendarDateIntervalRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcCalendarDateIntervalRequest.Parser, new[]{ "ReportingIntervalStart", "ReportingIntervalEnd" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcCancelledReservationsRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcCancelledReservationsRequest.Parser, new[]{ "DateRange" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser, new[]{ "StaffMembers", "AddNotes" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcGetGeneralAvailabilityReport), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcGetGeneralAvailabilityReport.Parser, new[]{ "DateRange", "Property" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest.Parser, new[]{ "ReportingIntervalStart", "ReportingIntervalEnd", "Property" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest.Parser, new[]{ "DateRange", "Property" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse.Parser, new[]{ "Document" }, null, null, null)
           }));
     }
@@ -387,163 +392,6 @@ namespace HOLMS.Types.Reporting.RPC {
 
   }
 
-  public sealed partial class FrontDeskReportingSvcCalendarDateIntervalRequest : pb::IMessage<FrontDeskReportingSvcCalendarDateIntervalRequest> {
-    private static readonly pb::MessageParser<FrontDeskReportingSvcCalendarDateIntervalRequest> _parser = new pb::MessageParser<FrontDeskReportingSvcCalendarDateIntervalRequest>(() => new FrontDeskReportingSvcCalendarDateIntervalRequest());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<FrontDeskReportingSvcCalendarDateIntervalRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public FrontDeskReportingSvcCalendarDateIntervalRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public FrontDeskReportingSvcCalendarDateIntervalRequest(FrontDeskReportingSvcCalendarDateIntervalRequest other) : this() {
-      ReportingIntervalStart = other.reportingIntervalStart_ != null ? other.ReportingIntervalStart.Clone() : null;
-      ReportingIntervalEnd = other.reportingIntervalEnd_ != null ? other.ReportingIntervalEnd.Clone() : null;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public FrontDeskReportingSvcCalendarDateIntervalRequest Clone() {
-      return new FrontDeskReportingSvcCalendarDateIntervalRequest(this);
-    }
-
-    /// <summary>Field number for the "reporting_interval_start" field.</summary>
-    public const int ReportingIntervalStartFieldNumber = 1;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp reportingIntervalStart_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp ReportingIntervalStart {
-      get { return reportingIntervalStart_; }
-      set {
-        reportingIntervalStart_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "reporting_interval_end" field.</summary>
-    public const int ReportingIntervalEndFieldNumber = 2;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp reportingIntervalEnd_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp ReportingIntervalEnd {
-      get { return reportingIntervalEnd_; }
-      set {
-        reportingIntervalEnd_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as FrontDeskReportingSvcCalendarDateIntervalRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(FrontDeskReportingSvcCalendarDateIntervalRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(ReportingIntervalStart, other.ReportingIntervalStart)) return false;
-      if (!object.Equals(ReportingIntervalEnd, other.ReportingIntervalEnd)) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (reportingIntervalStart_ != null) hash ^= ReportingIntervalStart.GetHashCode();
-      if (reportingIntervalEnd_ != null) hash ^= ReportingIntervalEnd.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (reportingIntervalStart_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ReportingIntervalStart);
-      }
-      if (reportingIntervalEnd_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ReportingIntervalEnd);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (reportingIntervalStart_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReportingIntervalStart);
-      }
-      if (reportingIntervalEnd_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReportingIntervalEnd);
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(FrontDeskReportingSvcCalendarDateIntervalRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.reportingIntervalStart_ != null) {
-        if (reportingIntervalStart_ == null) {
-          reportingIntervalStart_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        ReportingIntervalStart.MergeFrom(other.ReportingIntervalStart);
-      }
-      if (other.reportingIntervalEnd_ != null) {
-        if (reportingIntervalEnd_ == null) {
-          reportingIntervalEnd_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        ReportingIntervalEnd.MergeFrom(other.ReportingIntervalEnd);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 10: {
-            if (reportingIntervalStart_ == null) {
-              reportingIntervalStart_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(reportingIntervalStart_);
-            break;
-          }
-          case 18: {
-            if (reportingIntervalEnd_ == null) {
-              reportingIntervalEnd_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(reportingIntervalEnd_);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
   public sealed partial class FrontDeskReportingSvcCancelledReservationsRequest : pb::IMessage<FrontDeskReportingSvcCancelledReservationsRequest> {
     private static readonly pb::MessageParser<FrontDeskReportingSvcCancelledReservationsRequest> _parser = new pb::MessageParser<FrontDeskReportingSvcCancelledReservationsRequest>(() => new FrontDeskReportingSvcCancelledReservationsRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -551,7 +399,7 @@ namespace HOLMS.Types.Reporting.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[3]; }
+      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -674,7 +522,7 @@ namespace HOLMS.Types.Reporting.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[4]; }
+      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -804,10 +652,201 @@ namespace HOLMS.Types.Reporting.RPC {
 
   }
 
-  public sealed partial class FrontDeskReportingSvcGetGeneralAvailabilityReport : pb::IMessage<FrontDeskReportingSvcGetGeneralAvailabilityReport> {
-    private static readonly pb::MessageParser<FrontDeskReportingSvcGetGeneralAvailabilityReport> _parser = new pb::MessageParser<FrontDeskReportingSvcGetGeneralAvailabilityReport>(() => new FrontDeskReportingSvcGetGeneralAvailabilityReport());
+  public sealed partial class FrontDeskReportingSvcPropertyTimeRangeRequest : pb::IMessage<FrontDeskReportingSvcPropertyTimeRangeRequest> {
+    private static readonly pb::MessageParser<FrontDeskReportingSvcPropertyTimeRangeRequest> _parser = new pb::MessageParser<FrontDeskReportingSvcPropertyTimeRangeRequest>(() => new FrontDeskReportingSvcPropertyTimeRangeRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<FrontDeskReportingSvcGetGeneralAvailabilityReport> Parser { get { return _parser; } }
+    public static pb::MessageParser<FrontDeskReportingSvcPropertyTimeRangeRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FrontDeskReportingSvcPropertyTimeRangeRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FrontDeskReportingSvcPropertyTimeRangeRequest(FrontDeskReportingSvcPropertyTimeRangeRequest other) : this() {
+      ReportingIntervalStart = other.reportingIntervalStart_ != null ? other.ReportingIntervalStart.Clone() : null;
+      ReportingIntervalEnd = other.reportingIntervalEnd_ != null ? other.ReportingIntervalEnd.Clone() : null;
+      Property = other.property_ != null ? other.Property.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FrontDeskReportingSvcPropertyTimeRangeRequest Clone() {
+      return new FrontDeskReportingSvcPropertyTimeRangeRequest(this);
+    }
+
+    /// <summary>Field number for the "reporting_interval_start" field.</summary>
+    public const int ReportingIntervalStartFieldNumber = 1;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp reportingIntervalStart_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ReportingIntervalStart {
+      get { return reportingIntervalStart_; }
+      set {
+        reportingIntervalStart_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "reporting_interval_end" field.</summary>
+    public const int ReportingIntervalEndFieldNumber = 2;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp reportingIntervalEnd_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ReportingIntervalEnd {
+      get { return reportingIntervalEnd_; }
+      set {
+        reportingIntervalEnd_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "property" field.</summary>
+    public const int PropertyFieldNumber = 3;
+    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
+      get { return property_; }
+      set {
+        property_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FrontDeskReportingSvcPropertyTimeRangeRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FrontDeskReportingSvcPropertyTimeRangeRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ReportingIntervalStart, other.ReportingIntervalStart)) return false;
+      if (!object.Equals(ReportingIntervalEnd, other.ReportingIntervalEnd)) return false;
+      if (!object.Equals(Property, other.Property)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (reportingIntervalStart_ != null) hash ^= ReportingIntervalStart.GetHashCode();
+      if (reportingIntervalEnd_ != null) hash ^= ReportingIntervalEnd.GetHashCode();
+      if (property_ != null) hash ^= Property.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (reportingIntervalStart_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ReportingIntervalStart);
+      }
+      if (reportingIntervalEnd_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ReportingIntervalEnd);
+      }
+      if (property_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Property);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (reportingIntervalStart_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReportingIntervalStart);
+      }
+      if (reportingIntervalEnd_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReportingIntervalEnd);
+      }
+      if (property_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FrontDeskReportingSvcPropertyTimeRangeRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.reportingIntervalStart_ != null) {
+        if (reportingIntervalStart_ == null) {
+          reportingIntervalStart_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ReportingIntervalStart.MergeFrom(other.ReportingIntervalStart);
+      }
+      if (other.reportingIntervalEnd_ != null) {
+        if (reportingIntervalEnd_ == null) {
+          reportingIntervalEnd_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ReportingIntervalEnd.MergeFrom(other.ReportingIntervalEnd);
+      }
+      if (other.property_ != null) {
+        if (property_ == null) {
+          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+        }
+        Property.MergeFrom(other.Property);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (reportingIntervalStart_ == null) {
+              reportingIntervalStart_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(reportingIntervalStart_);
+            break;
+          }
+          case 18: {
+            if (reportingIntervalEnd_ == null) {
+              reportingIntervalEnd_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(reportingIntervalEnd_);
+            break;
+          }
+          case 26: {
+            if (property_ == null) {
+              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+            }
+            input.ReadMessage(property_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class FrontDeskReportingSvcPropertyDateRangeRequest : pb::IMessage<FrontDeskReportingSvcPropertyDateRangeRequest> {
+    private static readonly pb::MessageParser<FrontDeskReportingSvcPropertyDateRangeRequest> _parser = new pb::MessageParser<FrontDeskReportingSvcPropertyDateRangeRequest>(() => new FrontDeskReportingSvcPropertyDateRangeRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FrontDeskReportingSvcPropertyDateRangeRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -820,21 +859,21 @@ namespace HOLMS.Types.Reporting.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public FrontDeskReportingSvcGetGeneralAvailabilityReport() {
+    public FrontDeskReportingSvcPropertyDateRangeRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public FrontDeskReportingSvcGetGeneralAvailabilityReport(FrontDeskReportingSvcGetGeneralAvailabilityReport other) : this() {
+    public FrontDeskReportingSvcPropertyDateRangeRequest(FrontDeskReportingSvcPropertyDateRangeRequest other) : this() {
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
       Property = other.property_ != null ? other.Property.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public FrontDeskReportingSvcGetGeneralAvailabilityReport Clone() {
-      return new FrontDeskReportingSvcGetGeneralAvailabilityReport(this);
+    public FrontDeskReportingSvcPropertyDateRangeRequest Clone() {
+      return new FrontDeskReportingSvcPropertyDateRangeRequest(this);
     }
 
     /// <summary>Field number for the "date_range" field.</summary>
@@ -861,11 +900,11 @@ namespace HOLMS.Types.Reporting.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as FrontDeskReportingSvcGetGeneralAvailabilityReport);
+      return Equals(other as FrontDeskReportingSvcPropertyDateRangeRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(FrontDeskReportingSvcGetGeneralAvailabilityReport other) {
+    public bool Equals(FrontDeskReportingSvcPropertyDateRangeRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -915,7 +954,7 @@ namespace HOLMS.Types.Reporting.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(FrontDeskReportingSvcGetGeneralAvailabilityReport other) {
+    public void MergeFrom(FrontDeskReportingSvcPropertyDateRangeRequest other) {
       if (other == null) {
         return;
       }
