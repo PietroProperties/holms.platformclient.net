@@ -5,6 +5,7 @@ option csharp_namespace = "HOLMS.Types.Money.Accounting";
 option go_package = "money/accounting";
 
 import "google/protobuf/timestamp.proto";
+import "iam/staff_member_indicator.proto";
 import "money/accounting/accounting_transaction_line.proto";
 import "primitive/uuid.proto";
 
@@ -14,4 +15,5 @@ message AccountingTransaction {
 	repeated holms.types.money.accounting.AccountingTransactionLine lines = 3;
 	holms.types.primitive.Uuid Id = 4;
 	bool was_manually_entered = 5;
+	holms.types.iam.StaffMemberIndicator entered_by = 6;
 }
