@@ -24,19 +24,21 @@ namespace HOLMS.Types.Money.Accounting {
           string.Concat(
             "Ci1tb25leS9hY2NvdW50aW5nL2FjY291bnRpbmdfdHJhbnNhY3Rpb24ucHJv",
             "dG8SHGhvbG1zLnR5cGVzLm1vbmV5LmFjY291bnRpbmcaH2dvb2dsZS9wcm90",
-            "b2J1Zi90aW1lc3RhbXAucHJvdG8aMm1vbmV5L2FjY291bnRpbmcvYWNjb3Vu",
-            "dGluZ190cmFuc2FjdGlvbl9saW5lLnByb3RvGhRwcmltaXRpdmUvdXVpZC5w",
-            "cm90byLqAQoVQWNjb3VudGluZ1RyYW5zYWN0aW9uEi8KC3Bvc3RlZF90aW1l",
-            "GAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIRCgluYXJyYXRp",
-            "b24YAiABKAkSRgoFbGluZXMYAyADKAsyNy5ob2xtcy50eXBlcy5tb25leS5h",
-            "Y2NvdW50aW5nLkFjY291bnRpbmdUcmFuc2FjdGlvbkxpbmUSJwoCSWQYBCAB",
-            "KAsyGy5ob2xtcy50eXBlcy5wcmltaXRpdmUuVXVpZBIcChR3YXNfbWFudWFs",
-            "bHlfZW50ZXJlZBgFIAEoCEIxWhBtb25leS9hY2NvdW50aW5nqgIcSE9MTVMu",
-            "VHlwZXMuTW9uZXkuQWNjb3VudGluZ2IGcHJvdG8z"));
+            "b2J1Zi90aW1lc3RhbXAucHJvdG8aIGlhbS9zdGFmZl9tZW1iZXJfaW5kaWNh",
+            "dG9yLnByb3RvGjJtb25leS9hY2NvdW50aW5nL2FjY291bnRpbmdfdHJhbnNh",
+            "Y3Rpb25fbGluZS5wcm90bxoUcHJpbWl0aXZlL3V1aWQucHJvdG8ipQIKFUFj",
+            "Y291bnRpbmdUcmFuc2FjdGlvbhIvCgtwb3N0ZWRfdGltZRgBIAEoCzIaLmdv",
+            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASEQoJbmFycmF0aW9uGAIgASgJEkYK",
+            "BWxpbmVzGAMgAygLMjcuaG9sbXMudHlwZXMubW9uZXkuYWNjb3VudGluZy5B",
+            "Y2NvdW50aW5nVHJhbnNhY3Rpb25MaW5lEicKAklkGAQgASgLMhsuaG9sbXMu",
+            "dHlwZXMucHJpbWl0aXZlLlV1aWQSHAoUd2FzX21hbnVhbGx5X2VudGVyZWQY",
+            "BSABKAgSOQoKZW50ZXJlZF9ieRgGIAEoCzIlLmhvbG1zLnR5cGVzLmlhbS5T",
+            "dGFmZk1lbWJlckluZGljYXRvckIxWhBtb25leS9hY2NvdW50aW5nqgIcSE9M",
+            "TVMuVHlwZXMuTW9uZXkuQWNjb3VudGluZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTransactionLineReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTransactionLineReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Accounting.AccountingTransaction), global::HOLMS.Types.Money.Accounting.AccountingTransaction.Parser, new[]{ "PostedTime", "Narration", "Lines", "Id", "WasManuallyEntered" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Accounting.AccountingTransaction), global::HOLMS.Types.Money.Accounting.AccountingTransaction.Parser, new[]{ "PostedTime", "Narration", "Lines", "Id", "WasManuallyEntered", "EnteredBy" }, null, null, null)
           }));
     }
     #endregion
@@ -72,6 +74,7 @@ namespace HOLMS.Types.Money.Accounting {
       lines_ = other.lines_.Clone();
       Id = other.id_ != null ? other.Id.Clone() : null;
       wasManuallyEntered_ = other.wasManuallyEntered_;
+      EnteredBy = other.enteredBy_ != null ? other.EnteredBy.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -133,6 +136,17 @@ namespace HOLMS.Types.Money.Accounting {
       }
     }
 
+    /// <summary>Field number for the "entered_by" field.</summary>
+    public const int EnteredByFieldNumber = 6;
+    private global::HOLMS.Types.IAM.StaffMemberIndicator enteredBy_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.IAM.StaffMemberIndicator EnteredBy {
+      get { return enteredBy_; }
+      set {
+        enteredBy_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AccountingTransaction);
@@ -151,6 +165,7 @@ namespace HOLMS.Types.Money.Accounting {
       if(!lines_.Equals(other.lines_)) return false;
       if (!object.Equals(Id, other.Id)) return false;
       if (WasManuallyEntered != other.WasManuallyEntered) return false;
+      if (!object.Equals(EnteredBy, other.EnteredBy)) return false;
       return true;
     }
 
@@ -162,6 +177,7 @@ namespace HOLMS.Types.Money.Accounting {
       hash ^= lines_.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
       if (WasManuallyEntered != false) hash ^= WasManuallyEntered.GetHashCode();
+      if (enteredBy_ != null) hash ^= EnteredBy.GetHashCode();
       return hash;
     }
 
@@ -189,6 +205,10 @@ namespace HOLMS.Types.Money.Accounting {
         output.WriteRawTag(40);
         output.WriteBool(WasManuallyEntered);
       }
+      if (enteredBy_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(EnteredBy);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -206,6 +226,9 @@ namespace HOLMS.Types.Money.Accounting {
       }
       if (WasManuallyEntered != false) {
         size += 1 + 1;
+      }
+      if (enteredBy_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EnteredBy);
       }
       return size;
     }
@@ -233,6 +256,12 @@ namespace HOLMS.Types.Money.Accounting {
       }
       if (other.WasManuallyEntered != false) {
         WasManuallyEntered = other.WasManuallyEntered;
+      }
+      if (other.enteredBy_ != null) {
+        if (enteredBy_ == null) {
+          enteredBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
+        }
+        EnteredBy.MergeFrom(other.EnteredBy);
       }
     }
 
@@ -268,6 +297,13 @@ namespace HOLMS.Types.Money.Accounting {
           }
           case 40: {
             WasManuallyEntered = input.ReadBool();
+            break;
+          }
+          case 50: {
+            if (enteredBy_ == null) {
+              enteredBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
+            }
+            input.ReadMessage(enteredBy_);
             break;
           }
         }
