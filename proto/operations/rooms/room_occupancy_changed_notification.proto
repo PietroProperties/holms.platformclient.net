@@ -10,4 +10,5 @@ message RoomOccupancyChangedNotification {
 	string j_w_token = 1;
 	holms.types.operations.rooms.RoomIndicator room = 2;
 	holms.types.booking.indicators.ReservationIndicator reservation = 3;
+	bool occupancy_prematerialized_on_reservation = 4;
 }
