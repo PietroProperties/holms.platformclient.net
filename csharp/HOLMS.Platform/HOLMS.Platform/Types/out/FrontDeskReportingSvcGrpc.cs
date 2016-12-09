@@ -77,6 +77,13 @@ namespace HOLMS.Types.Reporting.RPC {
         __Marshaller_FrontDeskReportingSvcPropertyTimeRangeRequest,
         __Marshaller_FrontDeskReportingSvcReportResponse);
 
+    static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetFolioAdjustmentsReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetFolioAdjustmentsReport",
+        __Marshaller_FrontDeskReportingSvcPropertyTimeRangeRequest,
+        __Marshaller_FrontDeskReportingSvcReportResponse);
+
     static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> __Method_GetLedgerActivitySummary = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest, global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse>(
         MethodType.Unary,
         __ServiceName,
@@ -157,6 +164,11 @@ namespace HOLMS.Types.Reporting.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioPaymentsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioAdjustmentsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -374,6 +386,22 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetFolioPaymentsReport, null, options, request);
       }
+      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioAdjustmentsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetFolioAdjustmentsReport(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse GetFolioAdjustmentsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetFolioAdjustmentsReport, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioAdjustmentsReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetFolioAdjustmentsReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReportResponse> GetFolioAdjustmentsReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyTimeRangeRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetFolioAdjustmentsReport, null, options, request);
+      }
       /// <summary>
       ///  Ledger summary
       /// </summary>
@@ -504,6 +532,7 @@ namespace HOLMS.Types.Reporting.RPC {
           .AddMethod(__Method_GetFolioBalancesReport, serviceImpl.GetFolioBalancesReport)
           .AddMethod(__Method_GetFolioGrossChargesReport, serviceImpl.GetFolioGrossChargesReport)
           .AddMethod(__Method_GetFolioPaymentsReport, serviceImpl.GetFolioPaymentsReport)
+          .AddMethod(__Method_GetFolioAdjustmentsReport, serviceImpl.GetFolioAdjustmentsReport)
           .AddMethod(__Method_GetLedgerActivitySummary, serviceImpl.GetLedgerActivitySummary)
           .AddMethod(__Method_GetVehiclesReport, serviceImpl.GetVehiclesReport)
           .AddMethod(__Method_GetGeneralAvailabilityReport, serviceImpl.GetGeneralAvailabilityReport)

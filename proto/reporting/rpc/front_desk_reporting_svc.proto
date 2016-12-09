@@ -69,6 +69,8 @@ service FrontDeskReportingSvc {
         returns (FrontDeskReportingSvcReportResponse);
     rpc GetFolioPaymentsReport(FrontDeskReportingSvcPropertyTimeRangeRequest)
         returns (FrontDeskReportingSvcReportResponse);
+    rpc GetFolioAdjustmentsReport(FrontDeskReportingSvcPropertyTimeRangeRequest)
+        returns (FrontDeskReportingSvcReportResponse);
 
     // Ledger summary
     rpc GetLedgerActivitySummary(FrontDeskReportingSvcPropertyTimeRangeRequest)
