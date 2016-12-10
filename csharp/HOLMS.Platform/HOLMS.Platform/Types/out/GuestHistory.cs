@@ -25,20 +25,20 @@ namespace HOLMS.Types.CRM.Guests {
             "Ch5jcm0vZ3Vlc3RzL2d1ZXN0X2hpc3RvcnkucHJvdG8SFmhvbG1zLnR5cGVz",
             "LmNybS5ndWVzdHMaIGNybS9ndWVzdHMvZ3Vlc3RfaW5kaWNhdG9yLnByb3Rv",
             "Gixjcm0vZ3Vlc3RzL2d1ZXN0X2NhbmNlbGxlZF9yZXNlcnZhdGlvbi5wcm90",
-            "bxolY3JtL2d1ZXN0cy9ndWVzdF9jb21wbGV0ZWRfc3RheS5wcm90bxofcHJp",
-            "bWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90byKtAgoMR3Vlc3RIaXN0b3J5",
-            "EjgKCGd1ZXN0X2lkGAEgASgLMiYuaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5H",
-            "dWVzdEluZGljYXRvchJICg1jYW5jZWxsYXRpb25zGAIgAygLMjEuaG9sbXMu",
-            "dHlwZXMuY3JtLmd1ZXN0cy5HdWVzdENhbmNlbGxlZFJlc2VydmF0aW9uEj0K",
-            "CWxhc3Rfc3RheRgDIAEoCzIqLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vl",
-            "c3RDb21wbGV0ZWRTdGF5EhsKE3RvdGFsX25pZ2h0c19zdGF5ZWQYBCABKAUS",
-            "PQoOdG90YWxfaW52b2ljZWQYBSABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRp",
-            "dmUuTW9uZXRhcnlBbW91bnRCJVoKY3JtL2d1ZXN0c6oCFkhPTE1TLlR5cGVz",
-            "LkNSTS5HdWVzdHNiBnByb3RvMw=="));
+            "bxoeY3JtL2d1ZXN0cy9ndWVzdF9jaGVja2luLnByb3RvGh9wcmltaXRpdmUv",
+            "bW9uZXRhcnlfYW1vdW50LnByb3RvIqoCCgxHdWVzdEhpc3RvcnkSOAoIZ3Vl",
+            "c3RfaWQYASABKAsyJi5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0SW5k",
+            "aWNhdG9yEkgKDWNhbmNlbGxhdGlvbnMYAiADKAsyMS5ob2xtcy50eXBlcy5j",
+            "cm0uZ3Vlc3RzLkd1ZXN0Q2FuY2VsbGVkUmVzZXJ2YXRpb24SOgoMbGFzdF9j",
+            "aGVja2luGAMgASgLMiQuaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdENo",
+            "ZWNraW4SGwoTdG90YWxfbmlnaHRzX3N0YXllZBgEIAEoBRI9Cg50b3RhbF9p",
+            "bnZvaWNlZBgFIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFy",
+            "eUFtb3VudEIlWgpjcm0vZ3Vlc3RzqgIWSE9MTVMuVHlwZXMuQ1JNLkd1ZXN0",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestCancelledReservationReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestCompletedStayReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestCancelledReservationReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestCheckinReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.Guests.GuestHistory), global::HOLMS.Types.CRM.Guests.GuestHistory.Parser, new[]{ "GuestId", "Cancellations", "LastStay", "TotalNightsStayed", "TotalInvoiced" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.Guests.GuestHistory), global::HOLMS.Types.CRM.Guests.GuestHistory.Parser, new[]{ "GuestId", "Cancellations", "LastCheckin", "TotalNightsStayed", "TotalInvoiced" }, null, null, null)
           }));
     }
     #endregion
@@ -71,7 +71,7 @@ namespace HOLMS.Types.CRM.Guests {
     public GuestHistory(GuestHistory other) : this() {
       GuestId = other.guestId_ != null ? other.GuestId.Clone() : null;
       cancellations_ = other.cancellations_.Clone();
-      LastStay = other.lastStay_ != null ? other.LastStay.Clone() : null;
+      LastCheckin = other.lastCheckin_ != null ? other.LastCheckin.Clone() : null;
       totalNightsStayed_ = other.totalNightsStayed_;
       TotalInvoiced = other.totalInvoiced_ != null ? other.TotalInvoiced.Clone() : null;
     }
@@ -102,14 +102,14 @@ namespace HOLMS.Types.CRM.Guests {
       get { return cancellations_; }
     }
 
-    /// <summary>Field number for the "last_stay" field.</summary>
-    public const int LastStayFieldNumber = 3;
-    private global::HOLMS.Types.CRM.Guests.GuestCompletedStay lastStay_;
+    /// <summary>Field number for the "last_checkin" field.</summary>
+    public const int LastCheckinFieldNumber = 3;
+    private global::HOLMS.Types.CRM.Guests.GuestCheckin lastCheckin_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.CRM.Guests.GuestCompletedStay LastStay {
-      get { return lastStay_; }
+    public global::HOLMS.Types.CRM.Guests.GuestCheckin LastCheckin {
+      get { return lastCheckin_; }
       set {
-        lastStay_ = value;
+        lastCheckin_ = value;
       }
     }
 
@@ -150,7 +150,7 @@ namespace HOLMS.Types.CRM.Guests {
       }
       if (!object.Equals(GuestId, other.GuestId)) return false;
       if(!cancellations_.Equals(other.cancellations_)) return false;
-      if (!object.Equals(LastStay, other.LastStay)) return false;
+      if (!object.Equals(LastCheckin, other.LastCheckin)) return false;
       if (TotalNightsStayed != other.TotalNightsStayed) return false;
       if (!object.Equals(TotalInvoiced, other.TotalInvoiced)) return false;
       return true;
@@ -161,7 +161,7 @@ namespace HOLMS.Types.CRM.Guests {
       int hash = 1;
       if (guestId_ != null) hash ^= GuestId.GetHashCode();
       hash ^= cancellations_.GetHashCode();
-      if (lastStay_ != null) hash ^= LastStay.GetHashCode();
+      if (lastCheckin_ != null) hash ^= LastCheckin.GetHashCode();
       if (TotalNightsStayed != 0) hash ^= TotalNightsStayed.GetHashCode();
       if (totalInvoiced_ != null) hash ^= TotalInvoiced.GetHashCode();
       return hash;
@@ -179,9 +179,9 @@ namespace HOLMS.Types.CRM.Guests {
         output.WriteMessage(GuestId);
       }
       cancellations_.WriteTo(output, _repeated_cancellations_codec);
-      if (lastStay_ != null) {
+      if (lastCheckin_ != null) {
         output.WriteRawTag(26);
-        output.WriteMessage(LastStay);
+        output.WriteMessage(LastCheckin);
       }
       if (TotalNightsStayed != 0) {
         output.WriteRawTag(32);
@@ -200,8 +200,8 @@ namespace HOLMS.Types.CRM.Guests {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GuestId);
       }
       size += cancellations_.CalculateSize(_repeated_cancellations_codec);
-      if (lastStay_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LastStay);
+      if (lastCheckin_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LastCheckin);
       }
       if (TotalNightsStayed != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalNightsStayed);
@@ -224,11 +224,11 @@ namespace HOLMS.Types.CRM.Guests {
         GuestId.MergeFrom(other.GuestId);
       }
       cancellations_.Add(other.cancellations_);
-      if (other.lastStay_ != null) {
-        if (lastStay_ == null) {
-          lastStay_ = new global::HOLMS.Types.CRM.Guests.GuestCompletedStay();
+      if (other.lastCheckin_ != null) {
+        if (lastCheckin_ == null) {
+          lastCheckin_ = new global::HOLMS.Types.CRM.Guests.GuestCheckin();
         }
-        LastStay.MergeFrom(other.LastStay);
+        LastCheckin.MergeFrom(other.LastCheckin);
       }
       if (other.TotalNightsStayed != 0) {
         TotalNightsStayed = other.TotalNightsStayed;
@@ -261,10 +261,10 @@ namespace HOLMS.Types.CRM.Guests {
             break;
           }
           case 26: {
-            if (lastStay_ == null) {
-              lastStay_ = new global::HOLMS.Types.CRM.Guests.GuestCompletedStay();
+            if (lastCheckin_ == null) {
+              lastCheckin_ = new global::HOLMS.Types.CRM.Guests.GuestCheckin();
             }
-            input.ReadMessage(lastStay_);
+            input.ReadMessage(lastCheckin_);
             break;
           }
           case 32: {

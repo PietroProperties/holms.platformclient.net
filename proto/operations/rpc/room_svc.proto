@@ -70,6 +70,9 @@ service RoomSvc {
 	rpc Delete (.holms.types.operations.rooms.Room) 
 		returns (.holms.types.primitive.ServerActionConfirmation);
 
+	rpc GetById (.holms.types.operations.rooms.RoomIndicator)
+		returns (holms.types.operations.rooms.Room);
+
 	rpc GetByOccupyingReservation(.holms.types.booking.indicators.ReservationIndicator)
 		returns (RoomSvcGetByOccupyingReservationResponse);
 

@@ -325,7 +325,7 @@
     <Compile Include="Types\out\GuaranteeType.cs" />
     <Compile Include="Types\out\Guest.cs" />
     <Compile Include="Types\out\GuestCancelledReservation.cs" />
-    <Compile Include="Types\out\GuestCompletedStay.cs" />
+    <Compile Include="Types\out\GuestCheckin.cs" />
     <Compile Include="Types\out\GuestFolioTemplate.cs" />
     <Compile Include="Types\out\GuestFolioTemplateSvc.cs" />
     <Compile Include="Types\out\GuestFolioTemplateSvcGrpc.cs" />
