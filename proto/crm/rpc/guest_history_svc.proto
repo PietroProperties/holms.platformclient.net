@@ -5,8 +5,8 @@ option csharp_namespace = "HOLMS.Types.CRM.RPC";
 option go_package = "crm/rpc";
 
 import "crm/guests/guest_indicator.proto";
-import "crm/guests/guest_history.proto";
+import "crm/guests/guest_history_summary.proto";
 
 service GuestHistorySvc {
-	rpc GetGuestHistory (.holms.types.crm.guests.GuestIndicator) returns (.holms.types.crm.guests.GuestHistory);
+	rpc GetGuestHistory (.holms.types.crm.guests.GuestIndicator) returns (.holms.types.crm.guests.GuestHistorySummary);
 }

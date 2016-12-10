@@ -23,14 +23,14 @@ namespace HOLMS.Types.CRM.RPC {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch9jcm0vcnBjL2d1ZXN0X2hpc3Rvcnlfc3ZjLnByb3RvEhNob2xtcy50eXBl",
-            "cy5jcm0ucnBjGiBjcm0vZ3Vlc3RzL2d1ZXN0X2luZGljYXRvci5wcm90bxoe",
-            "Y3JtL2d1ZXN0cy9ndWVzdF9oaXN0b3J5LnByb3RvMnIKD0d1ZXN0SGlzdG9y",
-            "eVN2YxJfCg9HZXRHdWVzdEhpc3RvcnkSJi5ob2xtcy50eXBlcy5jcm0uZ3Vl",
-            "c3RzLkd1ZXN0SW5kaWNhdG9yGiQuaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5H",
-            "dWVzdEhpc3RvcnlCH1oHY3JtL3JwY6oCE0hPTE1TLlR5cGVzLkNSTS5SUENi",
-            "BnByb3RvMw=="));
+            "cy5jcm0ucnBjGiBjcm0vZ3Vlc3RzL2d1ZXN0X2luZGljYXRvci5wcm90bxom",
+            "Y3JtL2d1ZXN0cy9ndWVzdF9oaXN0b3J5X3N1bW1hcnkucHJvdG8yeQoPR3Vl",
+            "c3RIaXN0b3J5U3ZjEmYKD0dldEd1ZXN0SGlzdG9yeRImLmhvbG1zLnR5cGVz",
+            "LmNybS5ndWVzdHMuR3Vlc3RJbmRpY2F0b3IaKy5ob2xtcy50eXBlcy5jcm0u",
+            "Z3Vlc3RzLkd1ZXN0SGlzdG9yeVN1bW1hcnlCH1oHY3JtL3JwY6oCE0hPTE1T",
+            "LlR5cGVzLkNSTS5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestHistoryReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestHistorySummaryReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null));
     }
     #endregion

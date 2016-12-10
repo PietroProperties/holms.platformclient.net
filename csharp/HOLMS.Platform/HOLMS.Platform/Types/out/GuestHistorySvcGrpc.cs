@@ -13,14 +13,14 @@ namespace HOLMS.Types.CRM.RPC {
     static readonly string __ServiceName = "holms.types.crm.rpc.GuestHistorySvc";
 
     static readonly Marshaller<global::HOLMS.Types.CRM.Guests.GuestIndicator> __Marshaller_GuestIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Guests.GuestIndicator.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.CRM.Guests.GuestHistory> __Marshaller_GuestHistory = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Guests.GuestHistory.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.CRM.Guests.GuestHistorySummary> __Marshaller_GuestHistorySummary = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Guests.GuestHistorySummary.Parser.ParseFrom);
 
-    static readonly Method<global::HOLMS.Types.CRM.Guests.GuestIndicator, global::HOLMS.Types.CRM.Guests.GuestHistory> __Method_GetGuestHistory = new Method<global::HOLMS.Types.CRM.Guests.GuestIndicator, global::HOLMS.Types.CRM.Guests.GuestHistory>(
+    static readonly Method<global::HOLMS.Types.CRM.Guests.GuestIndicator, global::HOLMS.Types.CRM.Guests.GuestHistorySummary> __Method_GetGuestHistory = new Method<global::HOLMS.Types.CRM.Guests.GuestIndicator, global::HOLMS.Types.CRM.Guests.GuestHistorySummary>(
         MethodType.Unary,
         __ServiceName,
         "GetGuestHistory",
         __Marshaller_GuestIndicator,
-        __Marshaller_GuestHistory);
+        __Marshaller_GuestHistorySummary);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -31,7 +31,7 @@ namespace HOLMS.Types.CRM.RPC {
     /// <summary>Base class for server-side implementations of GuestHistorySvc</summary>
     public abstract class GuestHistorySvcBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.Guests.GuestHistory> GetGuestHistory(global::HOLMS.Types.CRM.Guests.GuestIndicator request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.Guests.GuestHistorySummary> GetGuestHistory(global::HOLMS.Types.CRM.Guests.GuestIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -61,19 +61,19 @@ namespace HOLMS.Types.CRM.RPC {
       {
       }
 
-      public virtual global::HOLMS.Types.CRM.Guests.GuestHistory GetGuestHistory(global::HOLMS.Types.CRM.Guests.GuestIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.CRM.Guests.GuestHistorySummary GetGuestHistory(global::HOLMS.Types.CRM.Guests.GuestIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetGuestHistory(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.CRM.Guests.GuestHistory GetGuestHistory(global::HOLMS.Types.CRM.Guests.GuestIndicator request, CallOptions options)
+      public virtual global::HOLMS.Types.CRM.Guests.GuestHistorySummary GetGuestHistory(global::HOLMS.Types.CRM.Guests.GuestIndicator request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetGuestHistory, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.Guests.GuestHistory> GetGuestHistoryAsync(global::HOLMS.Types.CRM.Guests.GuestIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.Guests.GuestHistorySummary> GetGuestHistoryAsync(global::HOLMS.Types.CRM.Guests.GuestIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetGuestHistoryAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.Guests.GuestHistory> GetGuestHistoryAsync(global::HOLMS.Types.CRM.Guests.GuestIndicator request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.Guests.GuestHistorySummary> GetGuestHistoryAsync(global::HOLMS.Types.CRM.Guests.GuestIndicator request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetGuestHistory, null, options, request);
       }
