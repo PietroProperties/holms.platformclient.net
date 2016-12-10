@@ -238,6 +238,10 @@ namespace HOLMS.Application.Client {
             }
         }
 
+        public ManagementReportingSvc.ManagementReportingSvcClient ManagementReportingSvc {
+            get { throw new NotImplementedException(); }
+        }
+
         public NoteRequestSvc.NoteRequestSvcClient NoteRequestSvc {
             get {
                 throw new NotImplementedException();

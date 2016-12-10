@@ -17,7 +17,7 @@ namespace HOLMS.Types.Reporting.RPC {
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcCancelledReservationsRequest> __Marshaller_FrontDeskReportingSvcCancelledReservationsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcCancelledReservationsRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest> __Marshaller_FrontDeskReportingSvcInHouseGuestsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange> __Marshaller_PropertyClockTimeRange = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest> __Marshaller_FrontDeskReportingSvcPropertyDateRangeRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest> __Marshaller_FrontDeskReportingSvcHousekeepingRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetArrivalsReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
@@ -62,11 +62,11 @@ namespace HOLMS.Types.Reporting.RPC {
         __Marshaller_Empty,
         __Marshaller_HtmlReportResponse);
 
-    static readonly Method<global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetGeneralAvailabilityReport = new Method<global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+    static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetGeneralAvailabilityReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         MethodType.Unary,
         __ServiceName,
         "GetGeneralAvailabilityReport",
-        __Marshaller_PropertyClockTimeRange,
+        __Marshaller_FrontDeskReportingSvcPropertyDateRangeRequest,
         __Marshaller_HtmlReportResponse);
 
     static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetHousekeepingAssignmentsReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
@@ -125,7 +125,7 @@ namespace HOLMS.Types.Reporting.RPC {
       /// <summary>
       ///  Distribution
       /// </summary>
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetGeneralAvailabilityReport(global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetGeneralAvailabilityReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -290,28 +290,28 @@ namespace HOLMS.Types.Reporting.RPC {
       /// <summary>
       ///  Distribution
       /// </summary>
-      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetGeneralAvailabilityReport(global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetGeneralAvailabilityReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetGeneralAvailabilityReport(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Distribution
       /// </summary>
-      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetGeneralAvailabilityReport(global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange request, CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetGeneralAvailabilityReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetGeneralAvailabilityReport, null, options, request);
       }
       /// <summary>
       ///  Distribution
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetGeneralAvailabilityReportAsync(global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetGeneralAvailabilityReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetGeneralAvailabilityReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Distribution
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetGeneralAvailabilityReportAsync(global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetGeneralAvailabilityReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetGeneralAvailabilityReport, null, options, request);
       }

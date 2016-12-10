@@ -9,7 +9,6 @@ import "google/protobuf/empty.proto";
 import "iam/staff_member_indicator.proto";
 import "primitive/pb_inclusive_opsdate_range.proto";
 import "tenancy_config/indicators/property_indicator.proto";
-import "reporting/input_params/property_clocktime_range.proto";
 import "reporting/outputs/html_report_response.proto";
 
 enum InHouseGuestReportSorting {
@@ -59,7 +58,7 @@ service FrontDeskReportingSvc {
         returns (holms.types.reporting.outputs.HtmlReportResponse);
 
     // Distribution
-    rpc GetGeneralAvailabilityReport(holms.types.reporting.input_params.PropertyClockTimeRange)
+    rpc GetGeneralAvailabilityReport(FrontDeskReportingSvcPropertyDateRangeRequest)
     	returns (holms.types.reporting.outputs.HtmlReportResponse);
 
     // Not sure where this goes?

@@ -45,6 +45,7 @@ namespace HOLMS.Application.Client {
         InventoryItemSvc.InventoryItemSvcClient InventoryItemSvc { get; }
         LodgingBookingSvc.LodgingBookingSvcClient LodgingBookingSvc { get; }
         ILogger Logger { get; }
+        ManagementReportingSvc.ManagementReportingSvcClient ManagementReportingSvc { get; }
         NoteRequestSvc.NoteRequestSvcClient NoteRequestSvc { get; }
         OpenLodgingReservationSvc.OpenLodgingReservationSvcClient OpenLodgingReservationSvc { get; }
         OutOfOrderRecordSvc.OutOfOrderRecordSvcClient OutOfOrderRecordSvc { get; }
