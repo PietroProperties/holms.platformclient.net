@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package holms.types.reporting.input_params;
+option csharp_namespace = "HOLMS.Types.Reporting.ReportParams";
+option go_package = "reporting/input_params";
+
+import "google/protobuf/timestamp.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+message PropertyClockTimeRange {
+    google.protobuf.Timestamp reporting_interval_start = 1;
+    google.protobuf.Timestamp reporting_interval_end = 2;
+    holms.types.tenancy_config.indicators.PropertyIndicator property = 3;
+}
+

@@ -2,13 +2,15 @@ syntax = "proto3";
 
 package holms.types.reporting.rpc;
 option csharp_namespace = "HOLMS.Types.Reporting.RPC";
-option go_package = "operations/rpc";
+option go_package = "reporting/rpc";
 
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 import "iam/staff_member_indicator.proto";
 import "primitive/pb_inclusive_opsdate_range.proto";
 import "tenancy_config/indicators/property_indicator.proto";
+import "reporting/input_params/property_clocktime_range.proto";
+import "reporting/outputs/html_report_response.proto";
 
 enum InHouseGuestReportSorting {
 	BY_GUEST_NAME = 0;
@@ -33,58 +35,34 @@ message FrontDeskReportingSvcHousekeepingRequest {
 	string add_notes = 2;
 }
 
-message FrontDeskReportingSvcPropertyTimeRangeRequest {
-	google.protobuf.Timestamp reporting_interval_start = 1;
-	google.protobuf.Timestamp reporting_interval_end = 2;
-	holms.types.tenancy_config.indicators.PropertyIndicator property = 3;
-}
-
 message FrontDeskReportingSvcPropertyDateRangeRequest {
 	holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
 	holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
-}
-
-message FrontDeskReportingSvcReportResponse {
-	string document = 1;
 }
 
 service FrontDeskReportingSvc {
     // Daily reports -- these should get consolidated into a single call
     // with all reports selected as booleans like include_XXX
     rpc GetArrivalsReport(FrontDeskReportingSvcRequest)
-        returns (FrontDeskReportingSvcReportResponse);
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
     rpc GetCancelledReservationsReport(FrontDeskReportingSvcCancelledReservationsRequest)
-        returns (FrontDeskReportingSvcReportResponse);
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
     rpc GetDeparturesReport(FrontDeskReportingSvcRequest)
-        returns (FrontDeskReportingSvcReportResponse);
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
     rpc GetInHouseGuestsReport(FrontDeskReportingSvcInHouseGuestsRequest)
-        returns (FrontDeskReportingSvcReportResponse);
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
     rpc GetNoShowsReport(FrontDeskReportingSvcRequest)
-        returns (FrontDeskReportingSvcReportResponse);
-
-    // Folio activity
-    rpc GetFolioBalancesReport(google.protobuf.Empty)
-        returns (FrontDeskReportingSvcReportResponse);
-    rpc GetFolioGrossChargesReport(FrontDeskReportingSvcPropertyTimeRangeRequest)
-        returns (FrontDeskReportingSvcReportResponse);
-    rpc GetFolioPaymentsReport(FrontDeskReportingSvcPropertyTimeRangeRequest)
-        returns (FrontDeskReportingSvcReportResponse);
-    rpc GetFolioAdjustmentsReport(FrontDeskReportingSvcPropertyTimeRangeRequest)
-        returns (FrontDeskReportingSvcReportResponse);
-
-    // Ledger summary
-    rpc GetLedgerActivitySummary(FrontDeskReportingSvcPropertyTimeRangeRequest)
-        returns (FrontDeskReportingSvcReportResponse);
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
 
     // Vehicle report
     rpc GetVehiclesReport(google.protobuf.Empty)
-        returns (FrontDeskReportingSvcReportResponse);
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
 
     // Distribution
-    rpc GetGeneralAvailabilityReport(FrontDeskReportingSvcPropertyDateRangeRequest)
-    	returns (FrontDeskReportingSvcReportResponse);
+    rpc GetGeneralAvailabilityReport(holms.types.reporting.input_params.PropertyClockTimeRange)
+    	returns (holms.types.reporting.outputs.HtmlReportResponse);
 
     // Not sure where this goes?
     rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
-        returns (FrontDeskReportingSvcReportResponse);
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
 }

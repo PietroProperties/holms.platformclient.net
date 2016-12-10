@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package holms.types.reporting.rpc;
+option csharp_namespace = "HOLMS.Types.Reporting.RPC";
+option go_package = "reporting/rpc";
+
+import "google/protobuf/empty.proto";
+import "reporting/input_params/property_clocktime_range.proto";
+import "reporting/outputs/html_report_response.proto";
+
+service ManagementReportingSvc {
+    rpc GetFolioBalancesReport(google.protobuf.Empty)
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
+    rpc GetFolioGrossChargesReport(holms.types.reporting.input_params.PropertyClockTimeRange)
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
+    rpc GetFolioPaymentsReport(holms.types.reporting.input_params.PropertyClockTimeRange)
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
+    rpc GetFolioAdjustmentsReport(holms.types.reporting.input_params.PropertyClockTimeRange)
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
+
+    rpc GetCallAccountingReport(holms.types.reporting.input_params.PropertyClockTimeRange)
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
+
+    rpc GetLedgerActivitySummary(holms.types.reporting.input_params.PropertyClockTimeRange)
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
+}

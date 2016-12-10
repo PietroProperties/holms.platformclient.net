@@ -353,6 +353,7 @@
     <Compile Include="Types\out\HousekeepingTimeIndicator.cs" />
     <Compile Include="Types\out\HousekeepingTimeSvc.cs" />
     <Compile Include="Types\out\HousekeepingTimeSvcGrpc.cs" />
+    <Compile Include="Types\out\HtmlReportResponse.cs" />
     <Compile Include="Types\out\IifExportConfiguration.cs" />
     <Compile Include="Types\out\IncidentalItem.cs" />
     <Compile Include="Types\out\IncidentalItemAvailabilityQuery.cs" />
@@ -386,6 +387,8 @@
     <Compile Include="Types\out\MailboxEntry.cs" />
     <Compile Include="Types\out\MailboxEntryIndicator.cs" />
     <Compile Include="Types\out\MaintenanceHoldIndicator.cs" />
+    <Compile Include="Types\out\ManagementReportingSvc.cs" />
+    <Compile Include="Types\out\ManagementReportingSvcGrpc.cs" />
     <Compile Include="Types\out\MerchantAuthorization.cs" />
     <Compile Include="Types\out\MerchantAuthorizationIndicator.cs" />
     <Compile Include="Types\out\MerchantAuthorizationResponseIndicator.cs" />
@@ -446,6 +449,7 @@
     <Compile Include="Types\out\Property.cs" />
     <Compile Include="Types\out\PropertyArrivalLetterText.cs" />
     <Compile Include="Types\out\PropertyCancellationLetterText.cs" />
+    <Compile Include="Types\out\PropertyClocktimeRange.cs" />
     <Compile Include="Types\out\PropertyConfirmationLetterText.cs" />
     <Compile Include="Types\out\PropertyEmailSenderConfig.cs" />
     <Compile Include="Types\out\PropertyIndicator.cs" />

@@ -56,6 +56,9 @@ for %%P in (..\proto\pbx_connector\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR%
 
 for %%P in (..\proto\primitive\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 
+for %%P in (..\proto\reporting\input_params\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
+for %%P in (..\proto\reporting\outputs\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
+
 for %%P in (..\proto\supply\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\supply\incidental_items\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\supply\packages\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
