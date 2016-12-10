@@ -6,17 +6,22 @@ option go_package = "primitive";
 
 import "iam/staff_member_indicator.proto";
 
-enum Capability {
-    //UNKNOWN added to prevent issues with version changes, see:
-    //http://androiddevblog.com/protocol-buffers-pitfall-adding-enum-values/
-    UNKNOWN = 0;
-    CREDIT_CARD_SETUP = 1;
-    GROUP_MANAGEMENT = 2;
-    HOUSEKEEPING_MANAGEMENT = 3;
-    STAFF_MANAGEMENT = 4;
-    SYSTEM_SETTINGS = 5;
-    YIELD_MANAGEMENT = 6;
-    RATE_OVERRIDE = 7;
+enum SecurityAction {
+	GET_SUPPLY_SNAPSHOT = 0;
+	GET_ROOM_TYPES = 1;
+	CHANGE_SYSTEM_SETTINGS = 2;
+	PERFORM_BACKGROUND_JOB = 3;
+	MANAGE_PRICING = 4;
+	READ_USERS = 5;
+	MANAGE_USERS = 6;
+	MANAGE_SUPPLY = 7;
+	MANAGE_RESERVATION = 8;
+	MANAGE_INCIDENTAL_RESERVATION = 9;
+	ADJUST_FOLIO = 10;
+	MANAGE_MONEY = 11;
+	MANAGE_GROUPS = 12;
+	MANAGE_HOUSEKEEPING = 13;
+	MANAGE_GUESTS = 14;
 }
 
 message SessionContext {
@@ -25,6 +30,6 @@ message SessionContext {
 	string tenancy_name = 3;
 	string user_name = 4;
 	.holms.types.iam.StaffMemberIndicator user = 5;
-	repeated Capability capabilities = 6;
+	repeated SecurityAction security_actions = 6;
 	uint64 expires_in = 7;
 }

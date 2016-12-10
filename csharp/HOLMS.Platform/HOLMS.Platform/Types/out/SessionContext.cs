@@ -24,40 +24,47 @@ namespace HOLMS.Types.Primitive {
           string.Concat(
             "Ch9wcmltaXRpdmUvc2Vzc2lvbl9jb250ZXh0LnByb3RvEhVob2xtcy50eXBl",
             "cy5wcmltaXRpdmUaIGlhbS9zdGFmZl9tZW1iZXJfaW5kaWNhdG9yLnByb3Rv",
-            "IugBCg5TZXNzaW9uQ29udGV4dBIUCgxhY2Nlc3NfdG9rZW4YASABKAkSFQoN",
+            "IvABCg5TZXNzaW9uQ29udGV4dBIUCgxhY2Nlc3NfdG9rZW4YASABKAkSFQoN",
             "cmVmcmVzaF90b2tlbhgCIAEoCRIUCgx0ZW5hbmN5X25hbWUYAyABKAkSEQoJ",
             "dXNlcl9uYW1lGAQgASgJEjMKBHVzZXIYBSABKAsyJS5ob2xtcy50eXBlcy5p",
-            "YW0uU3RhZmZNZW1iZXJJbmRpY2F0b3ISNwoMY2FwYWJpbGl0aWVzGAYgAygO",
-            "MiEuaG9sbXMudHlwZXMucHJpbWl0aXZlLkNhcGFiaWxpdHkSEgoKZXhwaXJl",
-            "c19pbhgHIAEoBCq3AQoKQ2FwYWJpbGl0eRILCgdVTktOT1dOEAASFQoRQ1JF",
-            "RElUX0NBUkRfU0VUVVAQARIUChBHUk9VUF9NQU5BR0VNRU5UEAISGwoXSE9V",
-            "U0VLRUVQSU5HX01BTkFHRU1FTlQQAxIUChBTVEFGRl9NQU5BR0VNRU5UEAQS",
-            "EwoPU1lTVEVNX1NFVFRJTkdTEAUSFAoQWUlFTERfTUFOQUdFTUVOVBAGEhEK",
-            "DVJBVEVfT1ZFUlJJREUQB0IjWglwcmltaXRpdmWqAhVIT0xNUy5UeXBlcy5Q",
-            "cmltaXRpdmViBnByb3RvMw=="));
+            "YW0uU3RhZmZNZW1iZXJJbmRpY2F0b3ISPwoQc2VjdXJpdHlfYWN0aW9ucxgG",
+            "IAMoDjIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5TZWN1cml0eUFjdGlvbhIS",
+            "CgpleHBpcmVzX2luGAcgASgEKtwCCg5TZWN1cml0eUFjdGlvbhIXChNHRVRf",
+            "U1VQUExZX1NOQVBTSE9UEAASEgoOR0VUX1JPT01fVFlQRVMQARIaChZDSEFO",
+            "R0VfU1lTVEVNX1NFVFRJTkdTEAISGgoWUEVSRk9STV9CQUNLR1JPVU5EX0pP",
+            "QhADEhIKDk1BTkFHRV9QUklDSU5HEAQSDgoKUkVBRF9VU0VSUxAFEhAKDE1B",
+            "TkFHRV9VU0VSUxAGEhEKDU1BTkFHRV9TVVBQTFkQBxIWChJNQU5BR0VfUkVT",
+            "RVJWQVRJT04QCBIhCh1NQU5BR0VfSU5DSURFTlRBTF9SRVNFUlZBVElPThAJ",
+            "EhAKDEFESlVTVF9GT0xJTxAKEhAKDE1BTkFHRV9NT05FWRALEhEKDU1BTkFH",
+            "RV9HUk9VUFMQDBIXChNNQU5BR0VfSE9VU0VLRUVQSU5HEA0SEQoNTUFOQUdF",
+            "X0dVRVNUUxAOQiNaCXByaW1pdGl2ZaoCFUhPTE1TLlR5cGVzLlByaW1pdGl2",
+            "ZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Primitive.Capability), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Primitive.SessionContext), global::HOLMS.Types.Primitive.SessionContext.Parser, new[]{ "AccessToken", "RefreshToken", "TenancyName", "UserName", "User", "Capabilities", "ExpiresIn" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Primitive.SecurityAction), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Primitive.SessionContext), global::HOLMS.Types.Primitive.SessionContext.Parser, new[]{ "AccessToken", "RefreshToken", "TenancyName", "UserName", "User", "SecurityActions", "ExpiresIn" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Enums
-  public enum Capability {
-    /// <summary>
-    /// UNKNOWN added to prevent issues with version changes, see:
-    /// http://androiddevblog.com/protocol-buffers-pitfall-adding-enum-values/
-    /// </summary>
-    [pbr::OriginalName("UNKNOWN")] Unknown = 0,
-    [pbr::OriginalName("CREDIT_CARD_SETUP")] CreditCardSetup = 1,
-    [pbr::OriginalName("GROUP_MANAGEMENT")] GroupManagement = 2,
-    [pbr::OriginalName("HOUSEKEEPING_MANAGEMENT")] HousekeepingManagement = 3,
-    [pbr::OriginalName("STAFF_MANAGEMENT")] StaffManagement = 4,
-    [pbr::OriginalName("SYSTEM_SETTINGS")] SystemSettings = 5,
-    [pbr::OriginalName("YIELD_MANAGEMENT")] YieldManagement = 6,
-    [pbr::OriginalName("RATE_OVERRIDE")] RateOverride = 7,
+  public enum SecurityAction {
+    [pbr::OriginalName("GET_SUPPLY_SNAPSHOT")] GetSupplySnapshot = 0,
+    [pbr::OriginalName("GET_ROOM_TYPES")] GetRoomTypes = 1,
+    [pbr::OriginalName("CHANGE_SYSTEM_SETTINGS")] ChangeSystemSettings = 2,
+    [pbr::OriginalName("PERFORM_BACKGROUND_JOB")] PerformBackgroundJob = 3,
+    [pbr::OriginalName("MANAGE_PRICING")] ManagePricing = 4,
+    [pbr::OriginalName("READ_USERS")] ReadUsers = 5,
+    [pbr::OriginalName("MANAGE_USERS")] ManageUsers = 6,
+    [pbr::OriginalName("MANAGE_SUPPLY")] ManageSupply = 7,
+    [pbr::OriginalName("MANAGE_RESERVATION")] ManageReservation = 8,
+    [pbr::OriginalName("MANAGE_INCIDENTAL_RESERVATION")] ManageIncidentalReservation = 9,
+    [pbr::OriginalName("ADJUST_FOLIO")] AdjustFolio = 10,
+    [pbr::OriginalName("MANAGE_MONEY")] ManageMoney = 11,
+    [pbr::OriginalName("MANAGE_GROUPS")] ManageGroups = 12,
+    [pbr::OriginalName("MANAGE_HOUSEKEEPING")] ManageHousekeeping = 13,
+    [pbr::OriginalName("MANAGE_GUESTS")] ManageGuests = 14,
   }
 
   #endregion
@@ -92,7 +99,7 @@ namespace HOLMS.Types.Primitive {
       tenancyName_ = other.tenancyName_;
       userName_ = other.userName_;
       User = other.user_ != null ? other.User.Clone() : null;
-      capabilities_ = other.capabilities_.Clone();
+      securityActions_ = other.securityActions_.Clone();
       expiresIn_ = other.expiresIn_;
     }
 
@@ -156,14 +163,14 @@ namespace HOLMS.Types.Primitive {
       }
     }
 
-    /// <summary>Field number for the "capabilities" field.</summary>
-    public const int CapabilitiesFieldNumber = 6;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Primitive.Capability> _repeated_capabilities_codec
-        = pb::FieldCodec.ForEnum(50, x => (int) x, x => (global::HOLMS.Types.Primitive.Capability) x);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Primitive.Capability> capabilities_ = new pbc::RepeatedField<global::HOLMS.Types.Primitive.Capability>();
+    /// <summary>Field number for the "security_actions" field.</summary>
+    public const int SecurityActionsFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Primitive.SecurityAction> _repeated_securityActions_codec
+        = pb::FieldCodec.ForEnum(50, x => (int) x, x => (global::HOLMS.Types.Primitive.SecurityAction) x);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Primitive.SecurityAction> securityActions_ = new pbc::RepeatedField<global::HOLMS.Types.Primitive.SecurityAction>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Primitive.Capability> Capabilities {
-      get { return capabilities_; }
+    public pbc::RepeatedField<global::HOLMS.Types.Primitive.SecurityAction> SecurityActions {
+      get { return securityActions_; }
     }
 
     /// <summary>Field number for the "expires_in" field.</summary>
@@ -195,7 +202,7 @@ namespace HOLMS.Types.Primitive {
       if (TenancyName != other.TenancyName) return false;
       if (UserName != other.UserName) return false;
       if (!object.Equals(User, other.User)) return false;
-      if(!capabilities_.Equals(other.capabilities_)) return false;
+      if(!securityActions_.Equals(other.securityActions_)) return false;
       if (ExpiresIn != other.ExpiresIn) return false;
       return true;
     }
@@ -208,7 +215,7 @@ namespace HOLMS.Types.Primitive {
       if (TenancyName.Length != 0) hash ^= TenancyName.GetHashCode();
       if (UserName.Length != 0) hash ^= UserName.GetHashCode();
       if (user_ != null) hash ^= User.GetHashCode();
-      hash ^= capabilities_.GetHashCode();
+      hash ^= securityActions_.GetHashCode();
       if (ExpiresIn != 0UL) hash ^= ExpiresIn.GetHashCode();
       return hash;
     }
@@ -240,7 +247,7 @@ namespace HOLMS.Types.Primitive {
         output.WriteRawTag(42);
         output.WriteMessage(User);
       }
-      capabilities_.WriteTo(output, _repeated_capabilities_codec);
+      securityActions_.WriteTo(output, _repeated_securityActions_codec);
       if (ExpiresIn != 0UL) {
         output.WriteRawTag(56);
         output.WriteUInt64(ExpiresIn);
@@ -265,7 +272,7 @@ namespace HOLMS.Types.Primitive {
       if (user_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(User);
       }
-      size += capabilities_.CalculateSize(_repeated_capabilities_codec);
+      size += securityActions_.CalculateSize(_repeated_securityActions_codec);
       if (ExpiresIn != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ExpiresIn);
       }
@@ -295,7 +302,7 @@ namespace HOLMS.Types.Primitive {
         }
         User.MergeFrom(other.User);
       }
-      capabilities_.Add(other.capabilities_);
+      securityActions_.Add(other.securityActions_);
       if (other.ExpiresIn != 0UL) {
         ExpiresIn = other.ExpiresIn;
       }
@@ -334,7 +341,7 @@ namespace HOLMS.Types.Primitive {
           }
           case 50:
           case 48: {
-            capabilities_.AddEntriesFrom(input, _repeated_capabilities_codec);
+            securityActions_.AddEntriesFrom(input, _repeated_securityActions_codec);
             break;
           }
           case 56: {

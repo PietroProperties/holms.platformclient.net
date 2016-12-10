@@ -4,6 +4,10 @@ using System.Linq;
 using System.Security;
 using HOLMS.Types.IAM;
 using Microsoft.IdentityModel.Tokens;
+using HOLMS.Platform.Support.Security;
+using Newtonsoft.Json;
+using HOLMS.Types.Primitive;
+using System.Collections.Generic;
 
 namespace HOLMS.Support.Security {
     public class ValidatedJWToken {
@@ -16,14 +20,17 @@ namespace HOLMS.Support.Security {
             RawTokenData = t.RawData;
             var claims = t.Claims.ToDictionary(x => x.Type);
             if (!claims.ContainsKey(JWToken.ClientIdKey) || !claims.ContainsKey(JWToken.TenancyIdKey) ||
-                !claims.ContainsKey(JWToken.UserIdKey)) {
+                !claims.ContainsKey(JWToken.UserIdKey)   || !claims.ContainsKey(JWToken.GrantsDocumentKey)) {
                 throw new Exception("Missing keys in token");
             }
+
+            var securityActions = JsonConvert.DeserializeObject<IEnumerable<SecurityAction>>(claims[JWToken.GrantsDocumentKey].Value);
 
             ACC = new AuthenticatedClientClaims {
                 Client = new ClientInstanceIndicator(Guid.Parse(claims[JWToken.ClientIdKey].Value)),
                 Tenancy = new TenancyIndicator(Guid.Parse(claims[JWToken.TenancyIdKey].Value)),
-                User = new StaffMemberIndicator(Guid.Parse(claims[JWToken.UserIdKey].Value)),
+                User = new StaffMemberIndicator(Guid.Parse(claims[JWToken.UserIdKey].Value)), 
+                SecurityActions = new HashSet<SecurityAction>(securityActions),
             };
         }
 
