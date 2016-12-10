@@ -26,24 +26,22 @@ namespace HOLMS.Types.Booking {
             "b3RvEhNob2xtcy50eXBlcy5ib29raW5nGh9wcmltaXRpdmUvbW9uZXRhcnlf",
             "YW1vdW50LnByb3RvGh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90bxou",
             "Ym9va2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90",
-            "bxogY3JtL2d1ZXN0cy9ndWVzdF9pbmRpY2F0b3IucHJvdG8aJW9wZXJhdGlv",
-            "bnMvcm9vbXMvcm9vbV9pbmRpY2F0b3IucHJvdG8aK3N1cHBseS9yb29tX3R5",
-            "cGVzL3Jvb21fdHlwZV9pbmRpY2F0b3IucHJvdG8iuwMKHUZvbGlvQ2hhcmdl",
-            "UG9zdGVkTm90aWZpY2F0aW9uEhEKCWpfd190b2tlbhgBIAEoCRIzCgdvcHNk",
-            "YXRlGAIgASgLMiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRl",
-            "EkQKFXByZXRheF9sb2RnaW5nX2NoYXJnZRgDIAEoCzIlLmhvbG1zLnR5cGVz",
-            "LnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI8Cgdyb29tX2lkGAQgASgLMisu",
-            "aG9sbXMudHlwZXMub3BlcmF0aW9ucy5yb29tcy5Sb29tSW5kaWNhdG9yEkYK",
-            "DHJvb21fdHlwZV9pZBgFIAEoCzIwLmhvbG1zLnR5cGVzLnN1cHBseS5yb29t",
-            "X3R5cGVzLlJvb21UeXBlSW5kaWNhdG9yEjgKCGd1ZXN0X2lkGAYgASgLMiYu",
-            "aG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdEluZGljYXRvchJMCg5yZXNl",
-            "cnZhdGlvbl9pZBgHIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNh",
-            "dG9ycy5SZXNlcnZhdGlvbkluZGljYXRvckIfWgdib29raW5nqgITSE9MTVMu",
-            "VHlwZXMuQm9va2luZ2IGcHJvdG8z"));
+            "bxogY3JtL2d1ZXN0cy9ndWVzdF9pbmRpY2F0b3IucHJvdG8aK3N1cHBseS9y",
+            "b29tX3R5cGVzL3Jvb21fdHlwZV9pbmRpY2F0b3IucHJvdG8i/QIKHUZvbGlv",
+            "Q2hhcmdlUG9zdGVkTm90aWZpY2F0aW9uEhEKCWpfd190b2tlbhgBIAEoCRIz",
+            "CgdvcHNkYXRlGAIgASgLMiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9j",
+            "YWxEYXRlEkQKFXByZXRheF9sb2RnaW5nX2NoYXJnZRgDIAEoCzIlLmhvbG1z",
+            "LnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJGCgxyb29tX3R5cGVf",
+            "aWQYBCABKAsyMC5ob2xtcy50eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29t",
+            "VHlwZUluZGljYXRvchI4CghndWVzdF9pZBgFIAEoCzImLmhvbG1zLnR5cGVz",
+            "LmNybS5ndWVzdHMuR3Vlc3RJbmRpY2F0b3ISTAoOcmVzZXJ2YXRpb25faWQY",
+            "BiABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2",
+            "YXRpb25JbmRpY2F0b3JCH1oHYm9va2luZ6oCE0hPTE1TLlR5cGVzLkJvb2tp",
+            "bmdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.FolioChargePostedNotification), global::HOLMS.Types.Booking.FolioChargePostedNotification.Parser, new[]{ "JWToken", "Opsdate", "PretaxLodgingCharge", "RoomId", "RoomTypeId", "GuestId", "ReservationId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.FolioChargePostedNotification), global::HOLMS.Types.Booking.FolioChargePostedNotification.Parser, new[]{ "JWToken", "Opsdate", "PretaxLodgingCharge", "RoomTypeId", "GuestId", "ReservationId" }, null, null, null)
           }));
     }
     #endregion
@@ -77,7 +75,6 @@ namespace HOLMS.Types.Booking {
       jWToken_ = other.jWToken_;
       Opsdate = other.opsdate_ != null ? other.Opsdate.Clone() : null;
       PretaxLodgingCharge = other.pretaxLodgingCharge_ != null ? other.PretaxLodgingCharge.Clone() : null;
-      RoomId = other.roomId_ != null ? other.RoomId.Clone() : null;
       RoomTypeId = other.roomTypeId_ != null ? other.RoomTypeId.Clone() : null;
       GuestId = other.guestId_ != null ? other.GuestId.Clone() : null;
       ReservationId = other.reservationId_ != null ? other.ReservationId.Clone() : null;
@@ -121,19 +118,8 @@ namespace HOLMS.Types.Booking {
       }
     }
 
-    /// <summary>Field number for the "room_id" field.</summary>
-    public const int RoomIdFieldNumber = 4;
-    private global::HOLMS.Types.Operations.Rooms.RoomIndicator roomId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Operations.Rooms.RoomIndicator RoomId {
-      get { return roomId_; }
-      set {
-        roomId_ = value;
-      }
-    }
-
     /// <summary>Field number for the "room_type_id" field.</summary>
-    public const int RoomTypeIdFieldNumber = 5;
+    public const int RoomTypeIdFieldNumber = 4;
     private global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator roomTypeId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator RoomTypeId {
@@ -144,7 +130,7 @@ namespace HOLMS.Types.Booking {
     }
 
     /// <summary>Field number for the "guest_id" field.</summary>
-    public const int GuestIdFieldNumber = 6;
+    public const int GuestIdFieldNumber = 5;
     private global::HOLMS.Types.CRM.Guests.GuestIndicator guestId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.CRM.Guests.GuestIndicator GuestId {
@@ -155,7 +141,7 @@ namespace HOLMS.Types.Booking {
     }
 
     /// <summary>Field number for the "reservation_id" field.</summary>
-    public const int ReservationIdFieldNumber = 7;
+    public const int ReservationIdFieldNumber = 6;
     private global::HOLMS.Types.Booking.Indicators.ReservationIndicator reservationId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Booking.Indicators.ReservationIndicator ReservationId {
@@ -181,7 +167,6 @@ namespace HOLMS.Types.Booking {
       if (JWToken != other.JWToken) return false;
       if (!object.Equals(Opsdate, other.Opsdate)) return false;
       if (!object.Equals(PretaxLodgingCharge, other.PretaxLodgingCharge)) return false;
-      if (!object.Equals(RoomId, other.RoomId)) return false;
       if (!object.Equals(RoomTypeId, other.RoomTypeId)) return false;
       if (!object.Equals(GuestId, other.GuestId)) return false;
       if (!object.Equals(ReservationId, other.ReservationId)) return false;
@@ -194,7 +179,6 @@ namespace HOLMS.Types.Booking {
       if (JWToken.Length != 0) hash ^= JWToken.GetHashCode();
       if (opsdate_ != null) hash ^= Opsdate.GetHashCode();
       if (pretaxLodgingCharge_ != null) hash ^= PretaxLodgingCharge.GetHashCode();
-      if (roomId_ != null) hash ^= RoomId.GetHashCode();
       if (roomTypeId_ != null) hash ^= RoomTypeId.GetHashCode();
       if (guestId_ != null) hash ^= GuestId.GetHashCode();
       if (reservationId_ != null) hash ^= ReservationId.GetHashCode();
@@ -220,20 +204,16 @@ namespace HOLMS.Types.Booking {
         output.WriteRawTag(26);
         output.WriteMessage(PretaxLodgingCharge);
       }
-      if (roomId_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(RoomId);
-      }
       if (roomTypeId_ != null) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(34);
         output.WriteMessage(RoomTypeId);
       }
       if (guestId_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(42);
         output.WriteMessage(GuestId);
       }
       if (reservationId_ != null) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(50);
         output.WriteMessage(ReservationId);
       }
     }
@@ -249,9 +229,6 @@ namespace HOLMS.Types.Booking {
       }
       if (pretaxLodgingCharge_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PretaxLodgingCharge);
-      }
-      if (roomId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomId);
       }
       if (roomTypeId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomTypeId);
@@ -284,12 +261,6 @@ namespace HOLMS.Types.Booking {
           pretaxLodgingCharge_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
         PretaxLodgingCharge.MergeFrom(other.PretaxLodgingCharge);
-      }
-      if (other.roomId_ != null) {
-        if (roomId_ == null) {
-          roomId_ = new global::HOLMS.Types.Operations.Rooms.RoomIndicator();
-        }
-        RoomId.MergeFrom(other.RoomId);
       }
       if (other.roomTypeId_ != null) {
         if (roomTypeId_ == null) {
@@ -338,27 +309,20 @@ namespace HOLMS.Types.Booking {
             break;
           }
           case 34: {
-            if (roomId_ == null) {
-              roomId_ = new global::HOLMS.Types.Operations.Rooms.RoomIndicator();
-            }
-            input.ReadMessage(roomId_);
-            break;
-          }
-          case 42: {
             if (roomTypeId_ == null) {
               roomTypeId_ = new global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator();
             }
             input.ReadMessage(roomTypeId_);
             break;
           }
-          case 50: {
+          case 42: {
             if (guestId_ == null) {
               guestId_ = new global::HOLMS.Types.CRM.Guests.GuestIndicator();
             }
             input.ReadMessage(guestId_);
             break;
           }
-          case 58: {
+          case 50: {
             if (reservationId_ == null) {
               reservationId_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
             }

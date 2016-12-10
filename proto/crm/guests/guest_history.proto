@@ -6,13 +6,13 @@ option go_package = "crm/guests";
 
 import "crm/guests/guest_indicator.proto";
 import "crm/guests/guest_cancelled_reservation.proto";
-import "crm/guests/guest_completed_stay.proto";
+import "crm/guests/guest_checked_in.proto";
 import "primitive/monetary_amount.proto";
 
 message GuestHistory {
 	holms.types.crm.guests.GuestIndicator guest_id = 1;
 	repeated holms.types.crm.guests.GuestCancelledReservation cancellations = 2;
-	holms.types.crm.guests.GuestCompletedStay last_stay = 3;
+	holms.types.crm.guests.GuestCheckedIn last_check_in = 3;
 	int32 total_nights_stayed = 4;
 	holms.types.primitive.MonetaryAmount total_invoiced = 5;
 }
