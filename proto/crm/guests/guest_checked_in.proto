@@ -9,7 +9,7 @@ import "primitive/pb_local_date.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "crm/guests/guest_indicator.proto";
 
-message GuestCompletedStay {
+message GuestCheckedIn {
 	holms.types.primitive.PbLocalDate check_in_date = 1;
 	holms.types.primitive.MonetaryAmount average_rate = 2;
 	string reservation_booking_number = 3;
