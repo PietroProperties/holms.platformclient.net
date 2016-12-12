@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.pbx_events;
+option csharp_namespace = "HOLMS.Types.Operations.PBXEvents";
+option go_package = "operations/pbx_events";
+
+import "primitive/uuid.proto";
+
+message PbxEventIndicator {
+	holms.types.primitive.Uuid id = 1;
+}

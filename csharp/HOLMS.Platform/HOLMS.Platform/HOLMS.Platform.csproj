@@ -162,6 +162,7 @@
     <Compile Include="Types\Extensions\Operations\NoteRequests\NoteRequest.cs" />
     <Compile Include="Types\Extensions\Operations\NoteRequests\NoteRequestIndicator.cs" />
     <Compile Include="Types\Extensions\Operations\OutOfOrder\OutOfOrderRecordIndicator.cs" />
+    <Compile Include="Types\Extensions\Operations\PBX\PbxEventIndicator.cs" />
     <Compile Include="Types\Extensions\Operations\RoomClaims\ContinuousRoomClaim.cs" />
     <Compile Include="Types\Extensions\Operations\RoomClaims\RoomClaim.cs" />
     <Compile Include="Types\Extensions\Operations\RoomClaims\RoomClaimIndicator.cs" />
@@ -424,6 +425,7 @@
     <Compile Include="Types\out\PbInclusiveOpsdateRange.cs" />
     <Compile Include="Types\out\PbLocalDate.cs" />
     <Compile Include="Types\out\PbxEvent.cs" />
+    <Compile Include="Types\out\PbxEventIndicator.cs" />
     <Compile Include="Types\out\PbxSvc.cs" />
     <Compile Include="Types\out\PbxSvcGrpc.cs" />
     <Compile Include="Types\out\PhoneCallEnded.cs" />
