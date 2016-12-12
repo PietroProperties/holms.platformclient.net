@@ -83,6 +83,7 @@
     <Compile Include="Support\DTOExtensions\Money\NonAuthoritativeTaxFeeCalculator.cs" />
     <Compile Include="Support\DTOExtensions\Primitive\ContactInfoExtensions.cs" />
     <Compile Include="Support\DTOExtensions\Supply\Packages\LodgingPackageExtensions.cs" />
+    <Compile Include="Support\DTOExtensions\TenancyConfig\PropertyExtensions.cs" />
     <Compile Include="Support\DTOExtensions\TransactionLineExtensions.cs" />
     <Compile Include="Support\IIFExportFrequency.cs" />
     <Compile Include="Support\PingTracker.cs" />
@@ -589,7 +590,6 @@
     <Compile Include="Types\Topics\PBXConnectorTopics.cs" />
     <Compile Include="Types\Topics\SupplyContextTopics.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
