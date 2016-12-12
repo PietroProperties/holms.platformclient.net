@@ -24,13 +24,20 @@ namespace HOLMS.Support.Security {
                 throw new Exception("Missing keys in token");
             }
 
-            var securityActions = JsonConvert.DeserializeObject<IEnumerable<SecurityAction>>(claims[JWToken.GrantsDocumentKey].Value);
+            var securityActionStrings = JsonConvert.DeserializeObject<IEnumerable<string>>(claims[JWToken.GrantsDocumentKey].Value);
+            var securityActionEnums = new HashSet<SecurityAction>();
+            foreach (var s in securityActionStrings) {
+                SecurityAction action;
+                if (Enum.TryParse(s, true, out action)) {
+                    securityActionEnums.Add(action);
+                }
+            }
 
             ACC = new AuthenticatedClientClaims {
                 Client = new ClientInstanceIndicator(Guid.Parse(claims[JWToken.ClientIdKey].Value)),
                 Tenancy = new TenancyIndicator(Guid.Parse(claims[JWToken.TenancyIdKey].Value)),
                 User = new StaffMemberIndicator(Guid.Parse(claims[JWToken.UserIdKey].Value)), 
-                SecurityActions = new HashSet<SecurityAction>(securityActions),
+                SecurityActions = securityActionEnums,
             };
         }
 

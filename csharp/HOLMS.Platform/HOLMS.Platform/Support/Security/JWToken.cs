@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 
 namespace HOLMS.Support.Security {
@@ -33,7 +34,7 @@ namespace HOLMS.Support.Security {
                 new Claim(UserIdKey, user.GuidID.ToString()),
                 new Claim(TenancyIdKey, tenancy.GuidID.ToString()),
                 new Claim(ClientIdKey, client.GuidID.ToString()),
-                new Claim(GrantsDocumentKey, JsonConvert.SerializeObject(securityActions)),
+                new Claim(GrantsDocumentKey, JsonConvert.SerializeObject(securityActions.Select(x => x.ToString()).ToList())),
             };
 
             var expiry = hasExpiration
