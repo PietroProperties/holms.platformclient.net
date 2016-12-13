@@ -24,15 +24,17 @@ namespace HOLMS.Types.Booking.Reservations {
           string.Concat(
             "CjFib29raW5nL3Jlc2VydmF0aW9ucy9mcnBfYW1lbmRtZW50X3Jlc3BvbnNl",
             "LnByb3RvEiBob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucxouYm9v",
-            "a2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90byKW",
+            "a2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90byLi",
             "AgoURlJQQW1lbmRtZW50UmVzcG9uc2USSwoNcmVzX2luZGljYXRvchgBIAEo",
             "CzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlv",
             "bkluZGljYXRvchJWCgZyZXN1bHQYAiABKA4yRi5ob2xtcy50eXBlcy5ib29r",
             "aW5nLnJlc2VydmF0aW9ucy5GUlBBbWVuZG1lbnRSZXNwb25zZS5BbWVuZG1l",
-            "bnRSZXN1bHQiWQoPQW1lbmRtZW50UmVzdWx0Eg4KClNVQ0NFU1NGVUwQABIP",
-            "CgtVTkFWQUlMQUJMRRABEg8KC1VOUFJJQ0VBQkxFEAISFAoQUE9MSUNZX1ZJ",
-            "T0xBVElPThADQjlaFGJvb2tpbmcvcmVzZXJ2YXRpb25zqgIgSE9MTVMuVHlw",
-            "ZXMuQm9va2luZy5SZXNlcnZhdGlvbnNiBnByb3RvMw=="));
+            "bnRSZXN1bHQipAEKD0FtZW5kbWVudFJlc3VsdBIOCgpTVUNDRVNTRlVMEAAS",
+            "DwoLVU5BVkFJTEFCTEUQARIPCgtVTlBSSUNFQUJMRRACEhQKEFBPTElDWV9W",
+            "SU9MQVRJT04QAxImCiJNSU5JTVVNX0xFTkdUSF9PRl9TVEFZX1JFU1RSSUNU",
+            "SU9OEAUSIQodQ0xPU0VEX1RPX0FSUklWQUxfUkVTVFJJQ1RJT04QBkI5WhRi",
+            "b29raW5nL3Jlc2VydmF0aW9uc6oCIEhPTE1TLlR5cGVzLkJvb2tpbmcuUmVz",
+            "ZXJ2YXRpb25zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -201,6 +203,8 @@ namespace HOLMS.Types.Booking.Reservations {
         [pbr::OriginalName("UNAVAILABLE")] Unavailable = 1,
         [pbr::OriginalName("UNPRICEABLE")] Unpriceable = 2,
         [pbr::OriginalName("POLICY_VIOLATION")] PolicyViolation = 3,
+        [pbr::OriginalName("MINIMUM_LENGTH_OF_STAY_RESTRICTION")] MinimumLengthOfStayRestriction = 5,
+        [pbr::OriginalName("CLOSED_TO_ARRIVAL_RESTRICTION")] ClosedToArrivalRestriction = 6,
       }
 
     }

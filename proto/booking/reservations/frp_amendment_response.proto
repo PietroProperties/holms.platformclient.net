@@ -13,6 +13,8 @@ message FRPAmendmentResponse {
 		UNAVAILABLE = 1;
 		UNPRICEABLE = 2;
 		POLICY_VIOLATION = 3;
+		MINIMUM_LENGTH_OF_STAY_RESTRICTION = 5;
+		CLOSED_TO_ARRIVAL_RESTRICTION = 6;
 	}
 	AmendmentResult result = 2;
 }

@@ -17,4 +17,6 @@ message ReservationPriceEstimate {
 
 	bool is_priceable = 7;
 	bool is_available = 8;
+	bool violates_mlos = 9;
+	bool violates_cta = 10;
 }
