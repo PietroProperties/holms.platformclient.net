@@ -45,7 +45,6 @@ namespace HOLMS.Application.Client {
         public TravelAgentSvc.TravelAgentSvcClient TravelAgentSvc { get; protected set; }
         public TurnAwayReasonSvc.TurnAwayReasonSvcClient TurnAwayReasonSvc { get; protected set; }
         public OpenLodgingReservationSvc.OpenLodgingReservationSvcClient OpenLodgingReservationSvc { get; protected set; }
-
         public GuaranteeAuthorizerService.GuaranteeAuthorizerServiceClient GuaranteeAuthorizerService { get; protected set; }
         #endregion
 

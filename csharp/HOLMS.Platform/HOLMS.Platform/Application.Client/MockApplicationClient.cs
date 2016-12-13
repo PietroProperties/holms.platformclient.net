@@ -44,6 +44,8 @@ namespace HOLMS.Application.Client {
             }
         }
 
+        public TenancySvc.TenancySvcClient TenancySvc { get; }
+
         public AccountingTxnSvc.AccountingTxnSvcClient AccountingTxnSvc {
             get {
                 throw new NotImplementedException();
@@ -164,11 +166,15 @@ namespace HOLMS.Application.Client {
             }
         }
 
+        public CorrespondenceSvc.CorrespondenceSvcClient CorrespondenceSvc { get; }
+
         public GroupSvc.GroupSvcClient GroupSvc {
             get {
                 throw new NotImplementedException();
             }
         }
+
+        public GuestHistorySvc.GuestHistorySvcClient GuestHistorySvc { get; }
 
         public GuaranteeAuthorizerService.GuaranteeAuthorizerServiceClient GuaranteeAuthorizerService {
             get {
@@ -205,6 +211,8 @@ namespace HOLMS.Application.Client {
                 throw new NotImplementedException();
             }
         }
+
+        public IncidentalSupplySvc.IncidentalSupplySvcClient IncidentalSupplySvc { get; }
 
         public HousekeepingManagementSvc.HousekeepingManagementSvcClient HousekeepingManagementSvc {
             get {

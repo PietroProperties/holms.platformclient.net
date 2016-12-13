@@ -13,76 +13,106 @@ using Microsoft.Extensions.Logging;
 
 namespace HOLMS.Application.Client {
     public interface IApplicationClient {
-        AccountAssignmentsSvc.AccountAssignmentsSvcClient AccountAssignmentSvc { get; }
-        AccountingTxnSvc.AccountingTxnSvcClient AccountingTxnSvc { get; }
-        AccountSvc.AccountSvcClient AccountSvc { get; }
-        AttractionCategorySvc.AttractionCategorySvcClient AttractionCategorySvc { get; }
-        StaffMemberIndicator AuthenticatedUser { get; }
+        ILogger Logger { get; }
+
+        #region Booking
         BookingPricingSvc.BookingPricingSvcClient BkPricingSvc { get; }
-        CalendarMsgSvc.CalendarMsgSvcClient CalendarMsgSvc { get; }
         CancellationPolicySvc.CancellationPolicySvcClient CancellationPolicySvc { get; }
         CancellationReasonSvc.CancellationReasonSvcClient CancellationReasonSvc { get; }
-        CardCaptureReportingSvc.CardCaptureReportingSvcClient CardCaptureReportingSvc { get; }
+        CheckInService.CheckInServiceClient CheckInSvc { get; }
+        CheckoutSvc.CheckoutSvcClient CheckOutSvc { get; }
+        GroupBookingSvc.GroupBookingSvcClient GroupBookingSvc { get; }
+        GuaranteeAuthorizerService.GuaranteeAuthorizerServiceClient GuaranteeAuthorizerService { get; }
+        IncidentalItemReservationSvc.IncidentalItemReservationSvcClient IncidentalResSvc { get; }
+        LodgingBookingSvc.LodgingBookingSvcClient LodgingBookingSvc { get; }
+        OpenLodgingReservationSvc.OpenLodgingReservationSvcClient OpenLodgingReservationSvc { get; }
+        ReservationCancellationSvc.ReservationCancellationSvcClient ResCancellationSvc { get; }
+        ReservationNoteSvc.ReservationNoteSvcClient ReservationNoteSvc { get; }
+        ReservationGuaranteeSvc.ReservationGuaranteeSvcClient ResGuaranteeSvc { get; }
+        RestrictionSvc.RestrictionSvcClient RestrictionSvc { get; }
+        TravelAgentSvc.TravelAgentSvcClient TravelAgentSvc { get; }
+        TurnAwayReasonSvc.TurnAwayReasonSvcClient TurnAwayReasonSvc { get; }
+        #endregion
+
+        #region CRM
+        CorrespondenceSvc.CorrespondenceSvcClient CorrespondenceSvc { get; }
+        GroupSvc.GroupSvcClient GroupSvc { get; }
+        GuestHistorySvc.GuestHistorySvcClient GuestHistorySvc { get; }
+        GuestSvc.GuestSvcClient GuestSvc { get; }
+        #endregion
+
+        #region IAM
+        ClientInstanceSvc.ClientInstanceSvcClient ClientInstancesSvc { get; }
+        DepartmentSvc.DepartmentSvcClient DepartmentsSvc { get; }
+        StaffSvc.StaffSvcClient StaffSvc { get; }
+        TenancySvc.TenancySvcClient TenancySvc { get; }
+        #endregion
+
+        #region Money
+        AccountingTxnSvc.AccountingTxnSvcClient AccountingTxnSvc { get; }
+        AccountSvc.AccountSvcClient AccountSvc { get; }
         CardMerchantSvc.CardMerchantSvcClient CardMerchantSvc { get; }
         CardProcessingSvc.CardProcessingSvcClient CardProcessingSvc { get; }
         CardTerminalSvc.CardTerminalSvcClient CardTerminalSvc { get; }
-        CheckInService.CheckInServiceClient CheckInSvc { get; }
-        CheckoutSvc.CheckoutSvcClient CheckOutSvc { get; }
-        ClientInstanceSvc.ClientInstanceSvcClient ClientInstancesSvc { get; }
-        DepartmentSvc.DepartmentSvcClient DepartmentsSvc { get; }
-        FrontDeskReportingSvc.FrontDeskReportingSvcClient FrontDeskReportingSvc { get; }
-        GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc { get; }
-        GroupBookingSvc.GroupBookingSvcClient GroupBookingSvc { get; }
-        GroupSvc.GroupSvcClient GroupSvc { get; }
-        GuaranteeAuthorizerService.GuaranteeAuthorizerServiceClient GuaranteeAuthorizerService { get; }
-        GuestSvc.GuestSvcClient GuestSvc { get; }
+        ReservationFolioSvc.ReservationFolioSvcClient ReservationFolioSvc { get; }
+        TaxFeeSvc.TaxFeeSvcClient TaxFeeSvc { get; }
+        #endregion
+
+        #region Operations
+        AttractionCategorySvc.AttractionCategorySvcClient AttractionCategorySvc { get; }
+        CalendarMsgSvc.CalendarMsgSvcClient CalendarMsgSvc { get; }
+        GuestFolioTemplateSvc.GuestFolioTemplateSvcClient GuestFolioTmplSvc { get; }
         HKDirtyTrackingSvc.HKDirtyTrackingSvcClient HKDirtyTrackingSvc { get; }
-        HkPhoneCodeSvc.HkPhoneCodeSvcClient HkPhoneCodeSvc { get; }
-        HoldsSvc.HoldsSvcClient HoldsSvc { get; }
         HousekeepingManagementSvc.HousekeepingManagementSvcClient HousekeepingManagementSvc { get; }
         HousekeepingTimeSvc.HousekeepingTimeSvcClient HousekeepingTimeSvc { get; }
-        IncidentalItemReservationSvc.IncidentalItemReservationSvcClient IncidentalResSvc { get; }
-        InventoryItemSvc.InventoryItemSvcClient InventoryItemSvc { get; }
-        LodgingBookingSvc.LodgingBookingSvcClient LodgingBookingSvc { get; }
-        ILogger Logger { get; }
-        ManagementReportingSvc.ManagementReportingSvcClient ManagementReportingSvc { get; }
         NoteRequestSvc.NoteRequestSvcClient NoteRequestSvc { get; }
-        OpenLodgingReservationSvc.OpenLodgingReservationSvcClient OpenLodgingReservationSvc { get; }
         OutOfOrderRecordSvc.OutOfOrderRecordSvcClient OutOfOrderRecordSvc { get; }
         PBXSvc.PBXSvcClient PBXSvc { get; }
-        PhoneCodeSvc.PhoneCodeSvcClient PhoneCodeSvc { get; }
+        RoomClaimsSvc.RoomClaimsSvcClient RoomClaimsSvc { get; }
+        RoomSvc.RoomSvcClient RoomSvc { get; }
+        RoomUseStatusCalculatorSvc.RoomUseStatusCalculatorSvcClient RoomUseStatusCalculatorSvc { get; }
+        StaffMsgSvc.StaffMsgSvcClient StaffMsgSvc { get; }
+        #endregion
+
+        #region Supply
+        HoldsSvc.HoldsSvcClient HoldsSvc { get; }
+        IncidentalSupplySvc.IncidentalSupplySvcClient IncidentalSupplySvc { get; }
+        InventoryItemSvc.InventoryItemSvcClient InventoryItemSvc { get; }
         PricingSvc.PricingSvcClient PricingSvc { get; }
-        PropertySvc.PropertySvcClient PropertySvc { get; }
         QualificationSvc.QualificationSvcClient QualificationSvc { get; }
         RateScheduleSvc.RateScheduleSvcClient RateScheduleSvc { get; }
-        ReservationCancellationSvc.ReservationCancellationSvcClient ResCancellationSvc { get; }
+        RoomTypeSvc.RoomTypeSvcClient RoomTypeSvc { get; }
+        SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc { get; }
+        #endregion
+
+        #region TenancyConfig
+        AccountAssignmentsSvc.AccountAssignmentsSvcClient AccountAssignmentSvc { get; }
+        GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc { get; }
+        ZipCodeSvc.ZipCodeSvcClient ZipCodesService { get; }
+        HkPhoneCodeSvc.HkPhoneCodeSvcClient HkPhoneCodeSvc { get; }
+        PhoneCodeSvc.PhoneCodeSvcClient PhoneCodeSvc { get; }
+        PropertySvc.PropertySvcClient PropertySvc { get; }
         ReservationDefaultsSvc.ReservationDefaultsSvcClient ReservationDefaultsSvc { get; }
-        ReservationFolioSvc.ReservationFolioSvcClient ReservationFolioSvc { get; }
-        ReservationNoteSvc.ReservationNoteSvcClient ReservationNoteSvc { get; }
         ReservationSourceSvc.ReservationSourceSvcClient ReservationSourceSvc { get; }
         ReservationStatusColorsSvc.ReservationStatusColorsSvcClient ReservationStatusColorsSvc { get; }
-        ReservationGuaranteeSvc.ReservationGuaranteeSvcClient ResGuaranteeSvc { get; }
-        RestrictionSvc.RestrictionSvcClient RestrictionSvc { get; }
         RoomCallBillingRatesSvc.RoomCallBillingRatesSvcClient RoomCallBillingRatesSvc { get; }
-        RoomClaimsSvc.RoomClaimsSvcClient RoomClaimsSvc { get; }
         RoomStatusColorsSvc.RoomStatusColorsSvcClient RoomStatusColorsSvc { get; }
         RoomStatusSettingsSvc.RoomStatusSettingsSvcClient RoomStatusSettingsSvc { get; }
-        RoomSvc.RoomSvcClient RoomSvc { get; }
-        RoomTypeSvc.RoomTypeSvcClient RoomTypeSvc { get; }
-        RoomUseStatusCalculatorSvc.RoomUseStatusCalculatorSvcClient RoomUseStatusCalculatorSvc { get; }
+        #endregion
+
+        #region Reporting
+        CardCaptureReportingSvc.CardCaptureReportingSvcClient CardCaptureReportingSvc { get; }
+        FrontDeskReportingSvc.FrontDeskReportingSvcClient FrontDeskReportingSvc { get; }
+        ManagementReportingSvc.ManagementReportingSvcClient ManagementReportingSvc { get; }
+        #endregion
+
+        StaffMemberIndicator AuthenticatedUser { get; }
         SessionContext SC { get; }
         string ServerName { get; }
         SessionService SS { get; }
-        StaffMsgSvc.StaffMsgSvcClient StaffMsgSvc { get; }
-        StaffSvc.StaffSvcClient StaffSvc { get; }
-        SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc { get; }
-        TaxFeeSvc.TaxFeeSvcClient TaxFeeSvc { get; }
         string TenancyName { get; }
-        TravelAgentSvc.TravelAgentSvcClient TravelAgentSvc { get; }
-        TurnAwayReasonSvc.TurnAwayReasonSvcClient TurnAwayReasonSvc { get; }
         string UserName { get; }
-        ZipCodeSvc.ZipCodeSvcClient ZipCodesService { get; }
-
+        
         Task<SessionSvcStartSessionResult> StartSession(string candidateUsername, string candidatePassword);
     }
 }
