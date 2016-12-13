@@ -464,6 +464,7 @@
     <Compile Include="Types\out\RateScheduleSvc.cs" />
     <Compile Include="Types\out\RateScheduleSvcGrpc.cs" />
     <Compile Include="Types\out\RecommendedCheckinCardAuthorizationAmounts.cs" />
+    <Compile Include="Types\out\RecordedPhoneCall.cs" />
     <Compile Include="Types\out\RemoveGuestFromReservationRequest.cs" />
     <Compile Include="Types\out\RequestedChargeCreditPosting.cs" />
     <Compile Include="Types\out\ReservationAmendmentHoldIndicator.cs" />
