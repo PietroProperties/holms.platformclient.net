@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.operations.pbx_events;
+option csharp_namespace = "HOLMS.Types.Operations.PBXEvents";
+option go_package = "operations/pbxevents";
+
+import "google/protobuf/duration.proto";
+import "google/protobuf/timestamp.proto";
+import "operations/pbx_events/pbx_event_indicator.proto";
+import "primitive/monetary_amount.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+message RecordedPhoneCall {
+	.holms.types.operations.pbx_events.PbxEventIndicator id = 1;
+	google.protobuf.Duration length = 2;
+	string originating_trunk = 3;
+	string number_dialed = 4;
+	.holms.types.primitive.MonetaryAmount charged = 5;
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 6;
+	google.protobuf.Timestamp recorded_at = 7;
+}
