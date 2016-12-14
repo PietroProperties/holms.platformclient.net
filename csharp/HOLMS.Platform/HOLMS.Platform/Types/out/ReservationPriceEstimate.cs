@@ -25,7 +25,7 @@ namespace HOLMS.Types.Booking.Pricing {
             "CjBib29raW5nL3ByaWNpbmcvcmVzZXJ2YXRpb25fcHJpY2VfZXN0aW1hdGUu",
             "cHJvdG8SG2hvbG1zLnR5cGVzLmJvb2tpbmcucHJpY2luZxofcHJpbWl0aXZl",
             "L21vbmV0YXJ5X2Ftb3VudC5wcm90bxohYm9va2luZy9wcmljaW5nL3ByaWNl",
-            "X25pZ2h0LnByb3RvIsADChhSZXNlcnZhdGlvblByaWNlRXN0aW1hdGUSNwoG",
+            "X25pZ2h0LnByb3RvIu0DChhSZXNlcnZhdGlvblByaWNlRXN0aW1hdGUSNwoG",
             "cHJpY2VzGAEgAygLMicuaG9sbXMudHlwZXMuYm9va2luZy5wcmljaW5nLlBy",
             "aWNlTmlnaHQSPwoQbG9kZ2luZ19zdWJ0b3RhbBgCIAEoCzIlLmhvbG1zLnR5",
             "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJBChJpbnZlbnRvcnlfc3Vi",
@@ -35,12 +35,13 @@ namespace HOLMS.Types.Booking.Pricing {
             "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI+Cg9l",
             "c3RpbWF0ZWRfdG90YWwYBiABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
             "TW9uZXRhcnlBbW91bnQSFAoMaXNfcHJpY2VhYmxlGAcgASgIEhQKDGlzX2F2",
-            "YWlsYWJsZRgIIAEoCEIvWg9ib29raW5nL3ByaWNpbmeqAhtIT0xNUy5UeXBl",
+            "YWlsYWJsZRgIIAEoCBIVCg12aW9sYXRlc19tbG9zGAkgASgIEhQKDHZpb2xh",
+            "dGVzX2N0YRgKIAEoCEIvWg9ib29raW5nL3ByaWNpbmeqAhtIT0xNUy5UeXBl",
             "cy5Cb29raW5nLlByaWNpbmdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Pricing.PriceNightReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate), global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate.Parser, new[]{ "Prices", "LodgingSubtotal", "InventorySubtotal", "TaxesSubtotal", "FeesSubtotal", "EstimatedTotal", "IsPriceable", "IsAvailable" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate), global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate.Parser, new[]{ "Prices", "LodgingSubtotal", "InventorySubtotal", "TaxesSubtotal", "FeesSubtotal", "EstimatedTotal", "IsPriceable", "IsAvailable", "ViolatesMlos", "ViolatesCta" }, null, null, null)
           }));
     }
     #endregion
@@ -79,6 +80,8 @@ namespace HOLMS.Types.Booking.Pricing {
       EstimatedTotal = other.estimatedTotal_ != null ? other.EstimatedTotal.Clone() : null;
       isPriceable_ = other.isPriceable_;
       isAvailable_ = other.isAvailable_;
+      violatesMlos_ = other.violatesMlos_;
+      violatesCta_ = other.violatesCta_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -173,6 +176,28 @@ namespace HOLMS.Types.Booking.Pricing {
       }
     }
 
+    /// <summary>Field number for the "violates_mlos" field.</summary>
+    public const int ViolatesMlosFieldNumber = 9;
+    private bool violatesMlos_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool ViolatesMlos {
+      get { return violatesMlos_; }
+      set {
+        violatesMlos_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "violates_cta" field.</summary>
+    public const int ViolatesCtaFieldNumber = 10;
+    private bool violatesCta_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool ViolatesCta {
+      get { return violatesCta_; }
+      set {
+        violatesCta_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationPriceEstimate);
@@ -194,6 +219,8 @@ namespace HOLMS.Types.Booking.Pricing {
       if (!object.Equals(EstimatedTotal, other.EstimatedTotal)) return false;
       if (IsPriceable != other.IsPriceable) return false;
       if (IsAvailable != other.IsAvailable) return false;
+      if (ViolatesMlos != other.ViolatesMlos) return false;
+      if (ViolatesCta != other.ViolatesCta) return false;
       return true;
     }
 
@@ -208,6 +235,8 @@ namespace HOLMS.Types.Booking.Pricing {
       if (estimatedTotal_ != null) hash ^= EstimatedTotal.GetHashCode();
       if (IsPriceable != false) hash ^= IsPriceable.GetHashCode();
       if (IsAvailable != false) hash ^= IsAvailable.GetHashCode();
+      if (ViolatesMlos != false) hash ^= ViolatesMlos.GetHashCode();
+      if (ViolatesCta != false) hash ^= ViolatesCta.GetHashCode();
       return hash;
     }
 
@@ -247,6 +276,14 @@ namespace HOLMS.Types.Booking.Pricing {
         output.WriteRawTag(64);
         output.WriteBool(IsAvailable);
       }
+      if (ViolatesMlos != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(ViolatesMlos);
+      }
+      if (ViolatesCta != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(ViolatesCta);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -272,6 +309,12 @@ namespace HOLMS.Types.Booking.Pricing {
         size += 1 + 1;
       }
       if (IsAvailable != false) {
+        size += 1 + 1;
+      }
+      if (ViolatesMlos != false) {
+        size += 1 + 1;
+      }
+      if (ViolatesCta != false) {
         size += 1 + 1;
       }
       return size;
@@ -318,6 +361,12 @@ namespace HOLMS.Types.Booking.Pricing {
       }
       if (other.IsAvailable != false) {
         IsAvailable = other.IsAvailable;
+      }
+      if (other.ViolatesMlos != false) {
+        ViolatesMlos = other.ViolatesMlos;
+      }
+      if (other.ViolatesCta != false) {
+        ViolatesCta = other.ViolatesCta;
       }
     }
 
@@ -374,6 +423,14 @@ namespace HOLMS.Types.Booking.Pricing {
           }
           case 64: {
             IsAvailable = input.ReadBool();
+            break;
+          }
+          case 72: {
+            ViolatesMlos = input.ReadBool();
+            break;
+          }
+          case 80: {
+            ViolatesCta = input.ReadBool();
             break;
           }
         }
