@@ -23,4 +23,7 @@ service ManagementReportingSvc {
 
     rpc GetLedgerActivitySummary(holms.types.reporting.input_params.PropertyClockTimeRange)
         returns (holms.types.reporting.outputs.HtmlReportResponse);
+    rpc GetLedgerJournalEntries(holms.types.reporting.input_params.PropertyClockTimeRange)
+        returns (holms.types.reporting.outputs.HtmlReportResponse);
 }
+

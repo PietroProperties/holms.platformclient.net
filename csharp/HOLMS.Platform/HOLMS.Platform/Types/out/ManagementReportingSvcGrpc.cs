@@ -58,6 +58,13 @@ namespace HOLMS.Types.Reporting.RPC {
         __Marshaller_PropertyClockTimeRange,
         __Marshaller_HtmlReportResponse);
 
+    static readonly Method<global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetLedgerJournalEntries = new Method<global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetLedgerJournalEntries",
+        __Marshaller_PropertyClockTimeRange,
+        __Marshaller_HtmlReportResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -93,6 +100,11 @@ namespace HOLMS.Types.Reporting.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetLedgerActivitySummary(global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetLedgerJournalEntries(global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -218,6 +230,22 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetLedgerActivitySummary, null, options, request);
       }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetLedgerJournalEntries(global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetLedgerJournalEntries(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetLedgerJournalEntries(global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetLedgerJournalEntries, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetLedgerJournalEntriesAsync(global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetLedgerJournalEntriesAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetLedgerJournalEntriesAsync(global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetLedgerJournalEntries, null, options, request);
+      }
       protected override ManagementReportingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new ManagementReportingSvcClient(configuration);
@@ -233,7 +261,8 @@ namespace HOLMS.Types.Reporting.RPC {
           .AddMethod(__Method_GetFolioPaymentsReport, serviceImpl.GetFolioPaymentsReport)
           .AddMethod(__Method_GetFolioAdjustmentsReport, serviceImpl.GetFolioAdjustmentsReport)
           .AddMethod(__Method_GetCallAccountingReport, serviceImpl.GetCallAccountingReport)
-          .AddMethod(__Method_GetLedgerActivitySummary, serviceImpl.GetLedgerActivitySummary).Build();
+          .AddMethod(__Method_GetLedgerActivitySummary, serviceImpl.GetLedgerActivitySummary)
+          .AddMethod(__Method_GetLedgerJournalEntries, serviceImpl.GetLedgerJournalEntries).Build();
     }
 
   }
