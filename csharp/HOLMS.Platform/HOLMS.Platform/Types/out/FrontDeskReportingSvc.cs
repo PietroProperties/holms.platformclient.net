@@ -26,60 +26,69 @@ namespace HOLMS.Types.Reporting.RPC {
             "bxIZaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYxofZ29vZ2xlL3Byb3RvYnVm",
             "L3RpbWVzdGFtcC5wcm90bxobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3Rv",
             "GiBpYW0vc3RhZmZfbWVtYmVyX2luZGljYXRvci5wcm90bxoqcHJpbWl0aXZl",
-            "L3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnByb3RvGjJ0ZW5hbmN5X2Nv",
-            "bmZpZy9pbmRpY2F0b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90bxoscmVw",
-            "b3J0aW5nL291dHB1dHMvaHRtbF9yZXBvcnRfcmVzcG9uc2UucHJvdG8iSAoc",
-            "RnJvbnREZXNrUmVwb3J0aW5nU3ZjUmVxdWVzdBIoCgRkYXRlGAEgASgLMhou",
-            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCKeAQopRnJvbnREZXNrUmVwb3J0",
-            "aW5nU3ZjSW5Ib3VzZUd1ZXN0c1JlcXVlc3QSKAoEZGF0ZRgBIAEoCzIaLmdv",
-            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASRwoJc29ydF90eXBlGAIgASgOMjQu",
-            "aG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5JbkhvdXNlR3Vlc3RSZXBvcnRT",
-            "b3J0aW5nIncKMUZyb250RGVza1JlcG9ydGluZ1N2Y0NhbmNlbGxlZFJlc2Vy",
-            "dmF0aW9uc1JlcXVlc3QSQgoKZGF0ZV9yYW5nZRgBIAEoCzIuLmhvbG1zLnR5",
-            "cGVzLnByaW1pdGl2ZS5QYkluY2x1c2l2ZU9wc2RhdGVSYW5nZSJ7CihGcm9u",
-            "dERlc2tSZXBvcnRpbmdTdmNIb3VzZWtlZXBpbmdSZXF1ZXN0EjwKDXN0YWZm",
-            "X21lbWJlcnMYASADKAsyJS5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXJJ",
-            "bmRpY2F0b3ISEQoJYWRkX25vdGVzGAIgASgJIr8BCi1Gcm9udERlc2tSZXBv",
-            "cnRpbmdTdmNQcm9wZXJ0eURhdGVSYW5nZVJlcXVlc3QSQgoKZGF0ZV9yYW5n",
-            "ZRgBIAEoCzIuLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkluY2x1c2l2ZU9w",
-            "c2RhdGVSYW5nZRJKCghwcm9wZXJ0eRgCIAEoCzI4LmhvbG1zLnR5cGVzLnRl",
-            "bmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3IqQgoZ",
-            "SW5Ib3VzZUd1ZXN0UmVwb3J0U29ydGluZxIRCg1CWV9HVUVTVF9OQU1FEAAS",
-            "EgoOQllfUk9PTV9OVU1CRVIQATLvCAoVRnJvbnREZXNrUmVwb3J0aW5nU3Zj",
-            "En8KEUdldEFycml2YWxzUmVwb3J0EjcuaG9sbXMudHlwZXMucmVwb3J0aW5n",
-            "LnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNSZXF1ZXN0GjEuaG9sbXMudHlw",
-            "ZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEqEBCh5H",
-            "ZXRDYW5jZWxsZWRSZXNlcnZhdGlvbnNSZXBvcnQSTC5ob2xtcy50eXBlcy5y",
-            "ZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y0NhbmNlbGxlZFJl",
-            "c2VydmF0aW9uc1JlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0",
-            "cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USgQEKE0dldERlcGFydHVyZXNSZXBv",
-            "cnQSNy5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9y",
-            "dGluZ1N2Y1JlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0",
-            "cy5IdG1sUmVwb3J0UmVzcG9uc2USkQEKFkdldEluSG91c2VHdWVzdHNSZXBv",
-            "cnQSRC5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9y",
-            "dGluZ1N2Y0luSG91c2VHdWVzdHNSZXF1ZXN0GjEuaG9sbXMudHlwZXMucmVw",
-            "b3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEn4KEEdldE5vU2hv",
-            "d3NSZXBvcnQSNy5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVz",
-            "a1JlcG9ydGluZ1N2Y1JlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcu",
-            "b3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USXgoRR2V0VmVoaWNsZXNSZXBv",
-            "cnQSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaMS5ob2xtcy50eXBlcy5yZXBv",
-            "cnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USmwEKHEdldEdlbmVy",
-            "YWxBdmFpbGFiaWxpdHlSZXBvcnQSSC5ob2xtcy50eXBlcy5yZXBvcnRpbmcu",
-            "cnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1Byb3BlcnR5RGF0ZVJhbmdlUmVx",
-            "dWVzdBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBv",
-            "cnRSZXNwb25zZRKaAQogR2V0SG91c2VrZWVwaW5nQXNzaWdubWVudHNSZXBv",
-            "cnQSQy5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9y",
-            "dGluZ1N2Y0hvdXNla2VlcGluZ1JlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBv",
-            "cnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2VCK1oNcmVwb3J0aW5n",
-            "L3JwY6oCGUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENiBnByb3RvMw=="));
+            "L3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnByb3RvGh1wcmltaXRpdmUv",
+            "cGJfbG9jYWxfZGF0ZS5wcm90bxoydGVuYW5jeV9jb25maWcvaW5kaWNhdG9y",
+            "cy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8aLHJlcG9ydGluZy9vdXRwdXRz",
+            "L2h0bWxfcmVwb3J0X3Jlc3BvbnNlLnByb3RvIkgKHEZyb250RGVza1JlcG9y",
+            "dGluZ1N2Y1JlcXVlc3QSKAoEZGF0ZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5UaW1lc3RhbXAingEKKUZyb250RGVza1JlcG9ydGluZ1N2Y0luSG91c2VH",
+            "dWVzdHNSZXF1ZXN0EigKBGRhdGUYASABKAsyGi5nb29nbGUucHJvdG9idWYu",
+            "VGltZXN0YW1wEkcKCXNvcnRfdHlwZRgCIAEoDjI0LmhvbG1zLnR5cGVzLnJl",
+            "cG9ydGluZy5ycGMuSW5Ib3VzZUd1ZXN0UmVwb3J0U29ydGluZyJ3CjFGcm9u",
+            "dERlc2tSZXBvcnRpbmdTdmNDYW5jZWxsZWRSZXNlcnZhdGlvbnNSZXF1ZXN0",
+            "EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
+            "UGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2UiewooRnJvbnREZXNrUmVwb3J0aW5n",
+            "U3ZjSG91c2VrZWVwaW5nUmVxdWVzdBI8Cg1zdGFmZl9tZW1iZXJzGAEgAygL",
+            "MiUuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNhdG9yEhEKCWFk",
+            "ZF9ub3RlcxgCIAEoCSK/AQotRnJvbnREZXNrUmVwb3J0aW5nU3ZjUHJvcGVy",
+            "dHlEYXRlUmFuZ2VSZXF1ZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5ob2xt",
+            "cy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2USSgoI",
+            "cHJvcGVydHkYAiABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5p",
+            "bmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yIqsBCitGcm9udERlc2tSZXBv",
+            "cnRpbmdTdmNQcm9wZXJ0eU9wc2RhdGVSZXF1ZXN0EjAKBGRhdGUYASABKAsy",
+            "Ii5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGUSSgoIcHJvcGVy",
+            "dHkYAiABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0",
+            "b3JzLlByb3BlcnR5SW5kaWNhdG9yKkIKGUluSG91c2VHdWVzdFJlcG9ydFNv",
+            "cnRpbmcSEQoNQllfR1VFU1RfTkFNRRAAEhIKDkJZX1JPT01fTlVNQkVSEAEy",
+            "hwoKFUZyb250RGVza1JlcG9ydGluZ1N2YxJ/ChFHZXRBcnJpdmFsc1JlcG9y",
+            "dBI3LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNrUmVwb3J0",
+            "aW5nU3ZjUmVxdWVzdBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRz",
+            "Lkh0bWxSZXBvcnRSZXNwb25zZRKhAQoeR2V0Q2FuY2VsbGVkUmVzZXJ2YXRp",
+            "b25zUmVwb3J0EkwuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERl",
+            "c2tSZXBvcnRpbmdTdmNDYW5jZWxsZWRSZXNlcnZhdGlvbnNSZXF1ZXN0GjEu",
+            "aG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3Bv",
+            "bnNlEoEBChNHZXREZXBhcnR1cmVzUmVwb3J0EjcuaG9sbXMudHlwZXMucmVw",
+            "b3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNSZXF1ZXN0GjEuaG9s",
+            "bXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNl",
+            "EpEBChZHZXRJbkhvdXNlR3Vlc3RzUmVwb3J0EkQuaG9sbXMudHlwZXMucmVw",
+            "b3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNJbkhvdXNlR3Vlc3Rz",
+            "UmVxdWVzdBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxS",
+            "ZXBvcnRSZXNwb25zZRJ+ChBHZXROb1Nob3dzUmVwb3J0EjcuaG9sbXMudHlw",
+            "ZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNSZXF1ZXN0",
+            "GjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJl",
+            "c3BvbnNlEl4KEUdldFZlaGljbGVzUmVwb3J0EhYuZ29vZ2xlLnByb3RvYnVm",
+            "LkVtcHR5GjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJl",
+            "cG9ydFJlc3BvbnNlEpsBChxHZXRHZW5lcmFsQXZhaWxhYmlsaXR5UmVwb3J0",
+            "EkguaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRp",
+            "bmdTdmNQcm9wZXJ0eURhdGVSYW5nZVJlcXVlc3QaMS5ob2xtcy50eXBlcy5y",
+            "ZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USmgEKIEdldEhv",
+            "dXNla2VlcGluZ0Fzc2lnbm1lbnRzUmVwb3J0EkMuaG9sbXMudHlwZXMucmVw",
+            "b3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNIb3VzZWtlZXBpbmdS",
+            "ZXF1ZXN0GjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJl",
+            "cG9ydFJlc3BvbnNlEpUBChhHZXRVbm9jY3VwaWVkUm9vbXNSZXBvcnQSRi5o",
+            "b2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2",
+            "Y1Byb3BlcnR5T3BzZGF0ZVJlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRp",
+            "bmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2VCK1oNcmVwb3J0aW5nL3Jw",
+            "Y6oCGUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.RPC.InHouseGuestReportSorting), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest.Parser, new[]{ "Date" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcInHouseGuestsRequest.Parser, new[]{ "Date", "SortType" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcCancelledReservationsRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcCancelledReservationsRequest.Parser, new[]{ "DateRange" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser, new[]{ "StaffMembers", "AddNotes" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest.Parser, new[]{ "DateRange", "Property" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest.Parser, new[]{ "DateRange", "Property" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyOpsdateRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyOpsdateRequest.Parser, new[]{ "Date", "Property" }, null, null, null)
           }));
     }
     #endregion
@@ -770,6 +779,163 @@ namespace HOLMS.Types.Reporting.RPC {
               dateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
             }
             input.ReadMessage(dateRange_);
+            break;
+          }
+          case 18: {
+            if (property_ == null) {
+              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+            }
+            input.ReadMessage(property_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class FrontDeskReportingSvcPropertyOpsdateRequest : pb::IMessage<FrontDeskReportingSvcPropertyOpsdateRequest> {
+    private static readonly pb::MessageParser<FrontDeskReportingSvcPropertyOpsdateRequest> _parser = new pb::MessageParser<FrontDeskReportingSvcPropertyOpsdateRequest>(() => new FrontDeskReportingSvcPropertyOpsdateRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FrontDeskReportingSvcPropertyOpsdateRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FrontDeskReportingSvcPropertyOpsdateRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FrontDeskReportingSvcPropertyOpsdateRequest(FrontDeskReportingSvcPropertyOpsdateRequest other) : this() {
+      Date = other.date_ != null ? other.Date.Clone() : null;
+      Property = other.property_ != null ? other.Property.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FrontDeskReportingSvcPropertyOpsdateRequest Clone() {
+      return new FrontDeskReportingSvcPropertyOpsdateRequest(this);
+    }
+
+    /// <summary>Field number for the "date" field.</summary>
+    public const int DateFieldNumber = 1;
+    private global::HOLMS.Types.Primitive.PbLocalDate date_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate Date {
+      get { return date_; }
+      set {
+        date_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "property" field.</summary>
+    public const int PropertyFieldNumber = 2;
+    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
+      get { return property_; }
+      set {
+        property_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FrontDeskReportingSvcPropertyOpsdateRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FrontDeskReportingSvcPropertyOpsdateRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Date, other.Date)) return false;
+      if (!object.Equals(Property, other.Property)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (date_ != null) hash ^= Date.GetHashCode();
+      if (property_ != null) hash ^= Property.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (date_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Date);
+      }
+      if (property_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Property);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (date_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Date);
+      }
+      if (property_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FrontDeskReportingSvcPropertyOpsdateRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.date_ != null) {
+        if (date_ == null) {
+          date_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        Date.MergeFrom(other.Date);
+      }
+      if (other.property_ != null) {
+        if (property_ == null) {
+          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+        }
+        Property.MergeFrom(other.Property);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (date_ == null) {
+              date_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(date_);
             break;
           }
           case 18: {

@@ -8,6 +8,7 @@ import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 import "iam/staff_member_indicator.proto";
 import "primitive/pb_inclusive_opsdate_range.proto";
+import "primitive/pb_local_date.proto";
 import "tenancy_config/indicators/property_indicator.proto";
 import "reporting/outputs/html_report_response.proto";
 
@@ -39,6 +40,11 @@ message FrontDeskReportingSvcPropertyDateRangeRequest {
 	holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
 }
 
+message FrontDeskReportingSvcPropertyOpsdateRequest {
+	holms.types.primitive.PbLocalDate date = 1;
+	holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
+}
+
 service FrontDeskReportingSvc {
     // Daily reports -- these should get consolidated into a single call
     // with all reports selected as booleans like include_XXX
@@ -64,4 +70,7 @@ service FrontDeskReportingSvc {
     // Not sure where this goes?
     rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
         returns (holms.types.reporting.outputs.HtmlReportResponse);
+
+	rpc GetUnoccupiedRoomsReport(FrontDeskReportingSvcPropertyOpsdateRequest)
+		returns(holms.types.reporting.outputs.HtmlReportResponse);
 }
