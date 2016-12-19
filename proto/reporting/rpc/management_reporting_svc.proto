@@ -7,7 +7,7 @@ option go_package = "reporting/rpc";
 import "google/protobuf/empty.proto";
 import "reporting/input_params/property_clocktime_range.proto";
 import "reporting/outputs/html_report_response.proto";
-import "primitive/pb_inclusive_opsdate_range.proto";
+import "reporting/input_params/property_opsdate_range.proto";
 
 service ManagementReportingSvc {
     rpc GetFolioBalancesReport(google.protobuf.Empty)
@@ -26,9 +26,9 @@ service ManagementReportingSvc {
         returns (holms.types.reporting.outputs.HtmlReportResponse);
     rpc GetLedgerJournalEntries(holms.types.reporting.input_params.PropertyClockTimeRange)
         returns (holms.types.reporting.outputs.HtmlReportResponse);
-	rpc GetRoomUsageReportDetailed(holms.types.primitive.PbInclusiveOpsdateRange)
+	rpc GetRoomUsageReportDetailed(holms.types.reporting.input_params.PropertyOpsdateRange)
 		returns (holms.types.reporting.outputs.HtmlReportResponse);
-	rpc GetRoomUsageReportSummary(holms.types.primitive.PbInclusiveOpsdateRange)
+	rpc GetRoomUsageReportSummary(holms.types.reporting.input_params.PropertyOpsdateRange)
 		returns (holms.types.reporting.outputs.HtmlReportResponse);
 }
 

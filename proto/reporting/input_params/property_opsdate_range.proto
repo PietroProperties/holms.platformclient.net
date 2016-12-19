@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package holms.types.reporting.input_params;
+option csharp_namespace = "HOLMS.Types.Reporting.ReportParams";
+option go_package = "reporting/input_params";
+
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+message PropertyOpsdateRange {
+	holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
+	holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
+}

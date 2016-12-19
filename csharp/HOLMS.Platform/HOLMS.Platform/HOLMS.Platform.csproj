@@ -453,6 +453,7 @@
     <Compile Include="Types\out\PropertyConfirmationLetterText.cs" />
     <Compile Include="Types\out\PropertyEmailSenderConfig.cs" />
     <Compile Include="Types\out\PropertyIndicator.cs" />
+    <Compile Include="Types\out\PropertyOpsdateRange.cs" />
     <Compile Include="Types\out\PropertySvc.cs" />
     <Compile Include="Types\out\PropertySvcGrpc.cs" />
     <Compile Include="Types\out\Qualification.cs" />
@@ -527,6 +528,7 @@
     <Compile Include="Types\out\RoomClaimType.cs" />
     <Compile Include="Types\out\RoomCrud.cs" />
     <Compile Include="Types\out\RoomIndicator.cs" />
+    <Compile Include="Types\out\RoomLodgingTransactionEvent.cs" />
     <Compile Include="Types\out\RoomMaintenanceStatus.cs" />
     <Compile Include="Types\out\RoomOccupancyChangedNotification.cs" />
     <Compile Include="Types\out\RoomStatusColors.cs" />
