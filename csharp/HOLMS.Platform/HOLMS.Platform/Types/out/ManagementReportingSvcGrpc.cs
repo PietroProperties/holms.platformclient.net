@@ -15,6 +15,7 @@ namespace HOLMS.Types.Reporting.RPC {
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Marshaller_HtmlReportResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange> __Marshaller_PropertyClockTimeRange = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange> __Marshaller_PropertyOpsdateRange = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetFolioBalancesReport = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         MethodType.Unary,
@@ -65,6 +66,20 @@ namespace HOLMS.Types.Reporting.RPC {
         __Marshaller_PropertyClockTimeRange,
         __Marshaller_HtmlReportResponse);
 
+    static readonly Method<global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetRoomUsageReportDetailed = new Method<global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetRoomUsageReportDetailed",
+        __Marshaller_PropertyOpsdateRange,
+        __Marshaller_HtmlReportResponse);
+
+    static readonly Method<global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetRoomUsageReportSummary = new Method<global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetRoomUsageReportSummary",
+        __Marshaller_PropertyOpsdateRange,
+        __Marshaller_HtmlReportResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -105,6 +120,16 @@ namespace HOLMS.Types.Reporting.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetLedgerJournalEntries(global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetRoomUsageReportDetailed(global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetRoomUsageReportSummary(global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -246,6 +271,38 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetLedgerJournalEntries, null, options, request);
       }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetRoomUsageReportDetailed(global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetRoomUsageReportDetailed(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetRoomUsageReportDetailed(global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetRoomUsageReportDetailed, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetRoomUsageReportDetailedAsync(global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetRoomUsageReportDetailedAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetRoomUsageReportDetailedAsync(global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetRoomUsageReportDetailed, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetRoomUsageReportSummary(global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetRoomUsageReportSummary(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetRoomUsageReportSummary(global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetRoomUsageReportSummary, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetRoomUsageReportSummaryAsync(global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetRoomUsageReportSummaryAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetRoomUsageReportSummaryAsync(global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetRoomUsageReportSummary, null, options, request);
+      }
       protected override ManagementReportingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new ManagementReportingSvcClient(configuration);
@@ -262,7 +319,9 @@ namespace HOLMS.Types.Reporting.RPC {
           .AddMethod(__Method_GetFolioAdjustmentsReport, serviceImpl.GetFolioAdjustmentsReport)
           .AddMethod(__Method_GetCallAccountingReport, serviceImpl.GetCallAccountingReport)
           .AddMethod(__Method_GetLedgerActivitySummary, serviceImpl.GetLedgerActivitySummary)
-          .AddMethod(__Method_GetLedgerJournalEntries, serviceImpl.GetLedgerJournalEntries).Build();
+          .AddMethod(__Method_GetLedgerJournalEntries, serviceImpl.GetLedgerJournalEntries)
+          .AddMethod(__Method_GetRoomUsageReportDetailed, serviceImpl.GetRoomUsageReportDetailed)
+          .AddMethod(__Method_GetRoomUsageReportSummary, serviceImpl.GetRoomUsageReportSummary).Build();
     }
 
   }
