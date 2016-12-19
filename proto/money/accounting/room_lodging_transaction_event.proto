@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package holms.types.money.accounting;
+option csharp_namespace = "HOLMS.Types.Money.Accounting";
+
+import "google/protobuf/timestamp.proto";
+import "money/accounting/accounting_transaction.proto";
+import "operations/rooms/room_indicator.proto";
+
+message RoomLodgingTransactionEvent {
+	holms.types.operations.rooms.RoomIndicator room = 1;
+	holms.types.money.accounting.AccountingTransaction transaction = 2;
+	google.protobuf.Timestamp posted_at = 3;
+}
