@@ -1,45 +1,29 @@
 ﻿namespace HOLMS.Types.IAM {
     public partial class Department {
-        public Department(DepartmentIndicator id, string name, bool isHousekeeper, bool capStaffMgmt, bool capGroupMgmt,
-            bool capHousekeepingMgmt, bool capAccountingReports, bool capManagementReports,
-            bool capWorkstationParameters, bool capSaveDisplaySettings, bool capLodgeicReset,
-            bool capEventsWaitlistSetup, bool capSystemSettings, bool capYieldManagement,
-            bool capHoldMgmt, bool capGuestBlacklistAddRemove, bool capOverbookRooms,
-            bool capOverrideRates, bool capCallAccountingAdvancedSetup, bool capGiftShopsalesSetup,
-            bool capCreditCardSetup, bool capCreditCardWorksheet, bool capCreditCardCaptureSettle,
-            bool capCreditCardReporting, bool capExpediaQCMgmt, bool capWebSetup) {
+        public Department(DepartmentIndicator id, string name, bool isHousekeeper, bool capGetSupplySnapshot, bool capGetRoomTypes,
+            bool capChangeSystemSettings, bool capPerformBackgroundJob, bool capManagePricing,
+            bool capReadUsers, bool capManageUsers, bool capManageSupply,
+            bool capManageReservation, bool capManageIncidentalReservation, bool capAdjustFolio,
+            bool capManageMoney, bool capManageGroups, bool capManageHousekeeping, bool capManageGuests) {
             EntityId = id;
             Name = name;
             IsHousekeeper = isHousekeeper;
 
-            CapStaffMgmt = capStaffMgmt;
-            CapGroupMgmt = capGroupMgmt;
-            CapHousekeepingMgmt = capHousekeepingMgmt;
-
-            CapAccountingReports = capAccountingReports;
-            CapManagementReports = capManagementReports;
-            CapWorkstationParameters = capWorkstationParameters;
-            CapSaveDisplaySettings = capSaveDisplaySettings;
-            CapLodgeicReset = capLodgeicReset;
-
-            CapEventsWaitlistSetup = capEventsWaitlistSetup;
-            CapSystemSettings = capSystemSettings;
-            CapYieldMgmt = capYieldManagement;
-            CapHoldMgmt = capHoldMgmt;
-            CapGuestBlacklistAddRemove = capGuestBlacklistAddRemove;
-            CapOverbookRooms = capOverbookRooms;
-            CapOverrideRates = capOverrideRates;
-            CapCallAccountingAdvancedSetup = capCallAccountingAdvancedSetup;
-
-            CapGiftShopSalesSetup = capGiftShopsalesSetup;
-
-            CapCreditCardSetup = capCreditCardSetup;
-            CapCreditCardWorksheet = capCreditCardWorksheet;
-            CapCreditCardCaptureSettle = capCreditCardCaptureSettle;
-            CapCreditCardReporting = capCreditCardReporting;
-
-            CapExpediaQcMgmt = capExpediaQCMgmt;
-            CapWebSetup = capWebSetup;
+            CapGetSupplySnapshot = capGetSupplySnapshot;
+            CapGetRoomTypes = capGetRoomTypes;
+            CapChangeSystemSettings = capChangeSystemSettings;
+            CapPerformBackgroundJob = capPerformBackgroundJob;
+            CapManagePricing = capManagePricing;
+            CapReadUsers = capReadUsers;
+            CapManageUsers = capManageUsers;
+            CapManageSupply = capManageSupply;
+            CapManageReservation = capManageReservation;
+            CapManageIncidentalReservation = capManageIncidentalReservation;
+            CapAdjustFolio = capAdjustFolio;
+            CapManageMoney = capManageMoney;
+            CapManageGroups = capManageGroups;
+            CapManageHousekeeping = capManageHousekeeping;
+            CapManageGuests = capManageGuests;
         }
     }
 }

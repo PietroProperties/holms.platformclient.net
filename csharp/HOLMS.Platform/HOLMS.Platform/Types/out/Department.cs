@@ -23,30 +23,24 @@ namespace HOLMS.Types.IAM {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChRpYW0vZGVwYXJ0bWVudC5wcm90bxIPaG9sbXMudHlwZXMuaWFtGh5pYW0v",
-            "ZGVwYXJ0bWVudF9pbmRpY2F0b3IucHJvdG8iuwYKCkRlcGFydG1lbnQSNwoJ",
+            "ZGVwYXJ0bWVudF9pbmRpY2F0b3IucHJvdG8irwQKCkRlcGFydG1lbnQSNwoJ",
             "ZW50aXR5X2lkGAEgASgLMiQuaG9sbXMudHlwZXMuaWFtLkRlcGFydG1lbnRJ",
             "bmRpY2F0b3ISDAoEbmFtZRgCIAEoCRIWCg5pc19ob3VzZWtlZXBlchgDIAEo",
-            "CBIWCg5jYXBfc3RhZmZfbWdtdBgEIAEoCBIWCg5jYXBfZ3JvdXBfbWdtdBgF",
-            "IAEoCBIdChVjYXBfaG91c2VrZWVwaW5nX21nbXQYBiABKAgSHgoWY2FwX2Fj",
-            "Y291bnRpbmdfcmVwb3J0cxgHIAEoCBIeChZjYXBfbWFuYWdlbWVudF9yZXBv",
-            "cnRzGAggASgIEiIKGmNhcF93b3Jrc3RhdGlvbl9wYXJhbWV0ZXJzGAkgASgI",
-            "EiEKGWNhcF9zYXZlX2Rpc3BsYXlfc2V0dGluZ3MYCiABKAgSGQoRY2FwX2xv",
-            "ZGdlaWNfcmVzZXQYCyABKAgSIQoZY2FwX2V2ZW50c193YWl0bGlzdF9zZXR1",
-            "cBgMIAEoCBIbChNjYXBfc3lzdGVtX3NldHRpbmdzGA0gASgIEhYKDmNhcF95",
-            "aWVsZF9tZ210GA4gASgIEhUKDWNhcF9ob2xkX21nbXQYDyABKAgSJgoeY2Fw",
-            "X2d1ZXN0X2JsYWNrbGlzdF9hZGRfcmVtb3ZlGBAgASgIEhoKEmNhcF9vdmVy",
-            "Ym9va19yb29tcxgRIAEoCBIaChJjYXBfb3ZlcnJpZGVfcmF0ZXMYEiABKAgS",
-            "KgoiY2FwX2NhbGxfYWNjb3VudGluZ19hZHZhbmNlZF9zZXR1cBgTIAEoCBIh",
-            "ChljYXBfZ2lmdF9zaG9wX3NhbGVzX3NldHVwGBQgASgIEh0KFWNhcF9jcmVk",
-            "aXRfY2FyZF9zZXR1cBgVIAEoCBIhChljYXBfY3JlZGl0X2NhcmRfd29ya3No",
-            "ZWV0GBYgASgIEiYKHmNhcF9jcmVkaXRfY2FyZF9jYXB0dXJlX3NldHRsZRgX",
-            "IAEoCBIhChljYXBfY3JlZGl0X2NhcmRfcmVwb3J0aW5nGBggASgIEhsKE2Nh",
-            "cF9leHBlZGlhX3FjX21nbXQYGSABKAgSFQoNY2FwX3dlYl9zZXR1cBgaIAEo",
-            "CEIXWgNpYW2qAg9IT0xNUy5UeXBlcy5JQU1iBnByb3RvMw=="));
+            "CBIfChdjYXBfZ2V0X3N1cHBseV9zbmFwc2hvdBgEIAEoCBIaChJjYXBfZ2V0",
+            "X3Jvb21fdHlwZXMYBSABKAgSIgoaY2FwX2NoYW5nZV9zeXN0ZW1fc2V0dGlu",
+            "Z3MYBiABKAgSIgoaY2FwX3BlcmZvcm1fYmFja2dyb3VuZF9qb2IYByABKAgS",
+            "GgoSY2FwX21hbmFnZV9wcmljaW5nGAggASgIEhYKDmNhcF9yZWFkX3VzZXJz",
+            "GAkgASgIEhgKEGNhcF9tYW5hZ2VfdXNlcnMYCiABKAgSGQoRY2FwX21hbmFn",
+            "ZV9zdXBwbHkYCyABKAgSHgoWY2FwX21hbmFnZV9yZXNlcnZhdGlvbhgMIAEo",
+            "CBIpCiFjYXBfbWFuYWdlX2luY2lkZW50YWxfcmVzZXJ2YXRpb24YDSABKAgS",
+            "GAoQY2FwX2FkanVzdF9mb2xpbxgOIAEoCBIYChBjYXBfbWFuYWdlX21vbmV5",
+            "GA8gASgIEhkKEWNhcF9tYW5hZ2VfZ3JvdXBzGBAgASgIEh8KF2NhcF9tYW5h",
+            "Z2VfaG91c2VrZWVwaW5nGBEgASgIEhkKEWNhcF9tYW5hZ2VfZ3Vlc3RzGBIg",
+            "ASgIQhdaA2lhbaoCD0hPTE1TLlR5cGVzLklBTWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.DepartmentIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Department), global::HOLMS.Types.IAM.Department.Parser, new[]{ "EntityId", "Name", "IsHousekeeper", "CapStaffMgmt", "CapGroupMgmt", "CapHousekeepingMgmt", "CapAccountingReports", "CapManagementReports", "CapWorkstationParameters", "CapSaveDisplaySettings", "CapLodgeicReset", "CapEventsWaitlistSetup", "CapSystemSettings", "CapYieldMgmt", "CapHoldMgmt", "CapGuestBlacklistAddRemove", "CapOverbookRooms", "CapOverrideRates", "CapCallAccountingAdvancedSetup", "CapGiftShopSalesSetup", "CapCreditCardSetup", "CapCreditCardWorksheet", "CapCreditCardCaptureSettle", "CapCreditCardReporting", "CapExpediaQcMgmt", "CapWebSetup" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Department), global::HOLMS.Types.IAM.Department.Parser, new[]{ "EntityId", "Name", "IsHousekeeper", "CapGetSupplySnapshot", "CapGetRoomTypes", "CapChangeSystemSettings", "CapPerformBackgroundJob", "CapManagePricing", "CapReadUsers", "CapManageUsers", "CapManageSupply", "CapManageReservation", "CapManageIncidentalReservation", "CapAdjustFolio", "CapManageMoney", "CapManageGroups", "CapManageHousekeeping", "CapManageGuests" }, null, null, null)
           }));
     }
     #endregion
@@ -80,29 +74,21 @@ namespace HOLMS.Types.IAM {
       EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
       name_ = other.name_;
       isHousekeeper_ = other.isHousekeeper_;
-      capStaffMgmt_ = other.capStaffMgmt_;
-      capGroupMgmt_ = other.capGroupMgmt_;
-      capHousekeepingMgmt_ = other.capHousekeepingMgmt_;
-      capAccountingReports_ = other.capAccountingReports_;
-      capManagementReports_ = other.capManagementReports_;
-      capWorkstationParameters_ = other.capWorkstationParameters_;
-      capSaveDisplaySettings_ = other.capSaveDisplaySettings_;
-      capLodgeicReset_ = other.capLodgeicReset_;
-      capEventsWaitlistSetup_ = other.capEventsWaitlistSetup_;
-      capSystemSettings_ = other.capSystemSettings_;
-      capYieldMgmt_ = other.capYieldMgmt_;
-      capHoldMgmt_ = other.capHoldMgmt_;
-      capGuestBlacklistAddRemove_ = other.capGuestBlacklistAddRemove_;
-      capOverbookRooms_ = other.capOverbookRooms_;
-      capOverrideRates_ = other.capOverrideRates_;
-      capCallAccountingAdvancedSetup_ = other.capCallAccountingAdvancedSetup_;
-      capGiftShopSalesSetup_ = other.capGiftShopSalesSetup_;
-      capCreditCardSetup_ = other.capCreditCardSetup_;
-      capCreditCardWorksheet_ = other.capCreditCardWorksheet_;
-      capCreditCardCaptureSettle_ = other.capCreditCardCaptureSettle_;
-      capCreditCardReporting_ = other.capCreditCardReporting_;
-      capExpediaQcMgmt_ = other.capExpediaQcMgmt_;
-      capWebSetup_ = other.capWebSetup_;
+      capGetSupplySnapshot_ = other.capGetSupplySnapshot_;
+      capGetRoomTypes_ = other.capGetRoomTypes_;
+      capChangeSystemSettings_ = other.capChangeSystemSettings_;
+      capPerformBackgroundJob_ = other.capPerformBackgroundJob_;
+      capManagePricing_ = other.capManagePricing_;
+      capReadUsers_ = other.capReadUsers_;
+      capManageUsers_ = other.capManageUsers_;
+      capManageSupply_ = other.capManageSupply_;
+      capManageReservation_ = other.capManageReservation_;
+      capManageIncidentalReservation_ = other.capManageIncidentalReservation_;
+      capAdjustFolio_ = other.capAdjustFolio_;
+      capManageMoney_ = other.capManageMoney_;
+      capManageGroups_ = other.capManageGroups_;
+      capManageHousekeeping_ = other.capManageHousekeeping_;
+      capManageGuests_ = other.capManageGuests_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -143,256 +129,168 @@ namespace HOLMS.Types.IAM {
       }
     }
 
-    /// <summary>Field number for the "cap_staff_mgmt" field.</summary>
-    public const int CapStaffMgmtFieldNumber = 4;
-    private bool capStaffMgmt_;
+    /// <summary>Field number for the "cap_get_supply_snapshot" field.</summary>
+    public const int CapGetSupplySnapshotFieldNumber = 4;
+    private bool capGetSupplySnapshot_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapStaffMgmt {
-      get { return capStaffMgmt_; }
+    public bool CapGetSupplySnapshot {
+      get { return capGetSupplySnapshot_; }
       set {
-        capStaffMgmt_ = value;
+        capGetSupplySnapshot_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_group_mgmt" field.</summary>
-    public const int CapGroupMgmtFieldNumber = 5;
-    private bool capGroupMgmt_;
+    /// <summary>Field number for the "cap_get_room_types" field.</summary>
+    public const int CapGetRoomTypesFieldNumber = 5;
+    private bool capGetRoomTypes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapGroupMgmt {
-      get { return capGroupMgmt_; }
+    public bool CapGetRoomTypes {
+      get { return capGetRoomTypes_; }
       set {
-        capGroupMgmt_ = value;
+        capGetRoomTypes_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_housekeeping_mgmt" field.</summary>
-    public const int CapHousekeepingMgmtFieldNumber = 6;
-    private bool capHousekeepingMgmt_;
+    /// <summary>Field number for the "cap_change_system_settings" field.</summary>
+    public const int CapChangeSystemSettingsFieldNumber = 6;
+    private bool capChangeSystemSettings_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapHousekeepingMgmt {
-      get { return capHousekeepingMgmt_; }
+    public bool CapChangeSystemSettings {
+      get { return capChangeSystemSettings_; }
       set {
-        capHousekeepingMgmt_ = value;
+        capChangeSystemSettings_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_accounting_reports" field.</summary>
-    public const int CapAccountingReportsFieldNumber = 7;
-    private bool capAccountingReports_;
+    /// <summary>Field number for the "cap_perform_background_job" field.</summary>
+    public const int CapPerformBackgroundJobFieldNumber = 7;
+    private bool capPerformBackgroundJob_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapAccountingReports {
-      get { return capAccountingReports_; }
+    public bool CapPerformBackgroundJob {
+      get { return capPerformBackgroundJob_; }
       set {
-        capAccountingReports_ = value;
+        capPerformBackgroundJob_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_management_reports" field.</summary>
-    public const int CapManagementReportsFieldNumber = 8;
-    private bool capManagementReports_;
+    /// <summary>Field number for the "cap_manage_pricing" field.</summary>
+    public const int CapManagePricingFieldNumber = 8;
+    private bool capManagePricing_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapManagementReports {
-      get { return capManagementReports_; }
+    public bool CapManagePricing {
+      get { return capManagePricing_; }
       set {
-        capManagementReports_ = value;
+        capManagePricing_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_workstation_parameters" field.</summary>
-    public const int CapWorkstationParametersFieldNumber = 9;
-    private bool capWorkstationParameters_;
+    /// <summary>Field number for the "cap_read_users" field.</summary>
+    public const int CapReadUsersFieldNumber = 9;
+    private bool capReadUsers_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapWorkstationParameters {
-      get { return capWorkstationParameters_; }
+    public bool CapReadUsers {
+      get { return capReadUsers_; }
       set {
-        capWorkstationParameters_ = value;
+        capReadUsers_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_save_display_settings" field.</summary>
-    public const int CapSaveDisplaySettingsFieldNumber = 10;
-    private bool capSaveDisplaySettings_;
+    /// <summary>Field number for the "cap_manage_users" field.</summary>
+    public const int CapManageUsersFieldNumber = 10;
+    private bool capManageUsers_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapSaveDisplaySettings {
-      get { return capSaveDisplaySettings_; }
+    public bool CapManageUsers {
+      get { return capManageUsers_; }
       set {
-        capSaveDisplaySettings_ = value;
+        capManageUsers_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_lodgeic_reset" field.</summary>
-    public const int CapLodgeicResetFieldNumber = 11;
-    private bool capLodgeicReset_;
+    /// <summary>Field number for the "cap_manage_supply" field.</summary>
+    public const int CapManageSupplyFieldNumber = 11;
+    private bool capManageSupply_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapLodgeicReset {
-      get { return capLodgeicReset_; }
+    public bool CapManageSupply {
+      get { return capManageSupply_; }
       set {
-        capLodgeicReset_ = value;
+        capManageSupply_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_events_waitlist_setup" field.</summary>
-    public const int CapEventsWaitlistSetupFieldNumber = 12;
-    private bool capEventsWaitlistSetup_;
+    /// <summary>Field number for the "cap_manage_reservation" field.</summary>
+    public const int CapManageReservationFieldNumber = 12;
+    private bool capManageReservation_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapEventsWaitlistSetup {
-      get { return capEventsWaitlistSetup_; }
+    public bool CapManageReservation {
+      get { return capManageReservation_; }
       set {
-        capEventsWaitlistSetup_ = value;
+        capManageReservation_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_system_settings" field.</summary>
-    public const int CapSystemSettingsFieldNumber = 13;
-    private bool capSystemSettings_;
+    /// <summary>Field number for the "cap_manage_incidental_reservation" field.</summary>
+    public const int CapManageIncidentalReservationFieldNumber = 13;
+    private bool capManageIncidentalReservation_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapSystemSettings {
-      get { return capSystemSettings_; }
+    public bool CapManageIncidentalReservation {
+      get { return capManageIncidentalReservation_; }
       set {
-        capSystemSettings_ = value;
+        capManageIncidentalReservation_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_yield_mgmt" field.</summary>
-    public const int CapYieldMgmtFieldNumber = 14;
-    private bool capYieldMgmt_;
+    /// <summary>Field number for the "cap_adjust_folio" field.</summary>
+    public const int CapAdjustFolioFieldNumber = 14;
+    private bool capAdjustFolio_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapYieldMgmt {
-      get { return capYieldMgmt_; }
+    public bool CapAdjustFolio {
+      get { return capAdjustFolio_; }
       set {
-        capYieldMgmt_ = value;
+        capAdjustFolio_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_hold_mgmt" field.</summary>
-    public const int CapHoldMgmtFieldNumber = 15;
-    private bool capHoldMgmt_;
+    /// <summary>Field number for the "cap_manage_money" field.</summary>
+    public const int CapManageMoneyFieldNumber = 15;
+    private bool capManageMoney_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapHoldMgmt {
-      get { return capHoldMgmt_; }
+    public bool CapManageMoney {
+      get { return capManageMoney_; }
       set {
-        capHoldMgmt_ = value;
+        capManageMoney_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_guest_blacklist_add_remove" field.</summary>
-    public const int CapGuestBlacklistAddRemoveFieldNumber = 16;
-    private bool capGuestBlacklistAddRemove_;
+    /// <summary>Field number for the "cap_manage_groups" field.</summary>
+    public const int CapManageGroupsFieldNumber = 16;
+    private bool capManageGroups_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapGuestBlacklistAddRemove {
-      get { return capGuestBlacklistAddRemove_; }
+    public bool CapManageGroups {
+      get { return capManageGroups_; }
       set {
-        capGuestBlacklistAddRemove_ = value;
+        capManageGroups_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_overbook_rooms" field.</summary>
-    public const int CapOverbookRoomsFieldNumber = 17;
-    private bool capOverbookRooms_;
+    /// <summary>Field number for the "cap_manage_housekeeping" field.</summary>
+    public const int CapManageHousekeepingFieldNumber = 17;
+    private bool capManageHousekeeping_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapOverbookRooms {
-      get { return capOverbookRooms_; }
+    public bool CapManageHousekeeping {
+      get { return capManageHousekeeping_; }
       set {
-        capOverbookRooms_ = value;
+        capManageHousekeeping_ = value;
       }
     }
 
-    /// <summary>Field number for the "cap_override_rates" field.</summary>
-    public const int CapOverrideRatesFieldNumber = 18;
-    private bool capOverrideRates_;
+    /// <summary>Field number for the "cap_manage_guests" field.</summary>
+    public const int CapManageGuestsFieldNumber = 18;
+    private bool capManageGuests_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapOverrideRates {
-      get { return capOverrideRates_; }
+    public bool CapManageGuests {
+      get { return capManageGuests_; }
       set {
-        capOverrideRates_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_call_accounting_advanced_setup" field.</summary>
-    public const int CapCallAccountingAdvancedSetupFieldNumber = 19;
-    private bool capCallAccountingAdvancedSetup_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapCallAccountingAdvancedSetup {
-      get { return capCallAccountingAdvancedSetup_; }
-      set {
-        capCallAccountingAdvancedSetup_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_gift_shop_sales_setup" field.</summary>
-    public const int CapGiftShopSalesSetupFieldNumber = 20;
-    private bool capGiftShopSalesSetup_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapGiftShopSalesSetup {
-      get { return capGiftShopSalesSetup_; }
-      set {
-        capGiftShopSalesSetup_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_credit_card_setup" field.</summary>
-    public const int CapCreditCardSetupFieldNumber = 21;
-    private bool capCreditCardSetup_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapCreditCardSetup {
-      get { return capCreditCardSetup_; }
-      set {
-        capCreditCardSetup_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_credit_card_worksheet" field.</summary>
-    public const int CapCreditCardWorksheetFieldNumber = 22;
-    private bool capCreditCardWorksheet_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapCreditCardWorksheet {
-      get { return capCreditCardWorksheet_; }
-      set {
-        capCreditCardWorksheet_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_credit_card_capture_settle" field.</summary>
-    public const int CapCreditCardCaptureSettleFieldNumber = 23;
-    private bool capCreditCardCaptureSettle_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapCreditCardCaptureSettle {
-      get { return capCreditCardCaptureSettle_; }
-      set {
-        capCreditCardCaptureSettle_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_credit_card_reporting" field.</summary>
-    public const int CapCreditCardReportingFieldNumber = 24;
-    private bool capCreditCardReporting_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapCreditCardReporting {
-      get { return capCreditCardReporting_; }
-      set {
-        capCreditCardReporting_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_expedia_qc_mgmt" field.</summary>
-    public const int CapExpediaQcMgmtFieldNumber = 25;
-    private bool capExpediaQcMgmt_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapExpediaQcMgmt {
-      get { return capExpediaQcMgmt_; }
-      set {
-        capExpediaQcMgmt_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_web_setup" field.</summary>
-    public const int CapWebSetupFieldNumber = 26;
-    private bool capWebSetup_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapWebSetup {
-      get { return capWebSetup_; }
-      set {
-        capWebSetup_ = value;
+        capManageGuests_ = value;
       }
     }
 
@@ -412,29 +310,21 @@ namespace HOLMS.Types.IAM {
       if (!object.Equals(EntityId, other.EntityId)) return false;
       if (Name != other.Name) return false;
       if (IsHousekeeper != other.IsHousekeeper) return false;
-      if (CapStaffMgmt != other.CapStaffMgmt) return false;
-      if (CapGroupMgmt != other.CapGroupMgmt) return false;
-      if (CapHousekeepingMgmt != other.CapHousekeepingMgmt) return false;
-      if (CapAccountingReports != other.CapAccountingReports) return false;
-      if (CapManagementReports != other.CapManagementReports) return false;
-      if (CapWorkstationParameters != other.CapWorkstationParameters) return false;
-      if (CapSaveDisplaySettings != other.CapSaveDisplaySettings) return false;
-      if (CapLodgeicReset != other.CapLodgeicReset) return false;
-      if (CapEventsWaitlistSetup != other.CapEventsWaitlistSetup) return false;
-      if (CapSystemSettings != other.CapSystemSettings) return false;
-      if (CapYieldMgmt != other.CapYieldMgmt) return false;
-      if (CapHoldMgmt != other.CapHoldMgmt) return false;
-      if (CapGuestBlacklistAddRemove != other.CapGuestBlacklistAddRemove) return false;
-      if (CapOverbookRooms != other.CapOverbookRooms) return false;
-      if (CapOverrideRates != other.CapOverrideRates) return false;
-      if (CapCallAccountingAdvancedSetup != other.CapCallAccountingAdvancedSetup) return false;
-      if (CapGiftShopSalesSetup != other.CapGiftShopSalesSetup) return false;
-      if (CapCreditCardSetup != other.CapCreditCardSetup) return false;
-      if (CapCreditCardWorksheet != other.CapCreditCardWorksheet) return false;
-      if (CapCreditCardCaptureSettle != other.CapCreditCardCaptureSettle) return false;
-      if (CapCreditCardReporting != other.CapCreditCardReporting) return false;
-      if (CapExpediaQcMgmt != other.CapExpediaQcMgmt) return false;
-      if (CapWebSetup != other.CapWebSetup) return false;
+      if (CapGetSupplySnapshot != other.CapGetSupplySnapshot) return false;
+      if (CapGetRoomTypes != other.CapGetRoomTypes) return false;
+      if (CapChangeSystemSettings != other.CapChangeSystemSettings) return false;
+      if (CapPerformBackgroundJob != other.CapPerformBackgroundJob) return false;
+      if (CapManagePricing != other.CapManagePricing) return false;
+      if (CapReadUsers != other.CapReadUsers) return false;
+      if (CapManageUsers != other.CapManageUsers) return false;
+      if (CapManageSupply != other.CapManageSupply) return false;
+      if (CapManageReservation != other.CapManageReservation) return false;
+      if (CapManageIncidentalReservation != other.CapManageIncidentalReservation) return false;
+      if (CapAdjustFolio != other.CapAdjustFolio) return false;
+      if (CapManageMoney != other.CapManageMoney) return false;
+      if (CapManageGroups != other.CapManageGroups) return false;
+      if (CapManageHousekeeping != other.CapManageHousekeeping) return false;
+      if (CapManageGuests != other.CapManageGuests) return false;
       return true;
     }
 
@@ -444,29 +334,21 @@ namespace HOLMS.Types.IAM {
       if (entityId_ != null) hash ^= EntityId.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (IsHousekeeper != false) hash ^= IsHousekeeper.GetHashCode();
-      if (CapStaffMgmt != false) hash ^= CapStaffMgmt.GetHashCode();
-      if (CapGroupMgmt != false) hash ^= CapGroupMgmt.GetHashCode();
-      if (CapHousekeepingMgmt != false) hash ^= CapHousekeepingMgmt.GetHashCode();
-      if (CapAccountingReports != false) hash ^= CapAccountingReports.GetHashCode();
-      if (CapManagementReports != false) hash ^= CapManagementReports.GetHashCode();
-      if (CapWorkstationParameters != false) hash ^= CapWorkstationParameters.GetHashCode();
-      if (CapSaveDisplaySettings != false) hash ^= CapSaveDisplaySettings.GetHashCode();
-      if (CapLodgeicReset != false) hash ^= CapLodgeicReset.GetHashCode();
-      if (CapEventsWaitlistSetup != false) hash ^= CapEventsWaitlistSetup.GetHashCode();
-      if (CapSystemSettings != false) hash ^= CapSystemSettings.GetHashCode();
-      if (CapYieldMgmt != false) hash ^= CapYieldMgmt.GetHashCode();
-      if (CapHoldMgmt != false) hash ^= CapHoldMgmt.GetHashCode();
-      if (CapGuestBlacklistAddRemove != false) hash ^= CapGuestBlacklistAddRemove.GetHashCode();
-      if (CapOverbookRooms != false) hash ^= CapOverbookRooms.GetHashCode();
-      if (CapOverrideRates != false) hash ^= CapOverrideRates.GetHashCode();
-      if (CapCallAccountingAdvancedSetup != false) hash ^= CapCallAccountingAdvancedSetup.GetHashCode();
-      if (CapGiftShopSalesSetup != false) hash ^= CapGiftShopSalesSetup.GetHashCode();
-      if (CapCreditCardSetup != false) hash ^= CapCreditCardSetup.GetHashCode();
-      if (CapCreditCardWorksheet != false) hash ^= CapCreditCardWorksheet.GetHashCode();
-      if (CapCreditCardCaptureSettle != false) hash ^= CapCreditCardCaptureSettle.GetHashCode();
-      if (CapCreditCardReporting != false) hash ^= CapCreditCardReporting.GetHashCode();
-      if (CapExpediaQcMgmt != false) hash ^= CapExpediaQcMgmt.GetHashCode();
-      if (CapWebSetup != false) hash ^= CapWebSetup.GetHashCode();
+      if (CapGetSupplySnapshot != false) hash ^= CapGetSupplySnapshot.GetHashCode();
+      if (CapGetRoomTypes != false) hash ^= CapGetRoomTypes.GetHashCode();
+      if (CapChangeSystemSettings != false) hash ^= CapChangeSystemSettings.GetHashCode();
+      if (CapPerformBackgroundJob != false) hash ^= CapPerformBackgroundJob.GetHashCode();
+      if (CapManagePricing != false) hash ^= CapManagePricing.GetHashCode();
+      if (CapReadUsers != false) hash ^= CapReadUsers.GetHashCode();
+      if (CapManageUsers != false) hash ^= CapManageUsers.GetHashCode();
+      if (CapManageSupply != false) hash ^= CapManageSupply.GetHashCode();
+      if (CapManageReservation != false) hash ^= CapManageReservation.GetHashCode();
+      if (CapManageIncidentalReservation != false) hash ^= CapManageIncidentalReservation.GetHashCode();
+      if (CapAdjustFolio != false) hash ^= CapAdjustFolio.GetHashCode();
+      if (CapManageMoney != false) hash ^= CapManageMoney.GetHashCode();
+      if (CapManageGroups != false) hash ^= CapManageGroups.GetHashCode();
+      if (CapManageHousekeeping != false) hash ^= CapManageHousekeeping.GetHashCode();
+      if (CapManageGuests != false) hash ^= CapManageGuests.GetHashCode();
       return hash;
     }
 
@@ -489,97 +371,65 @@ namespace HOLMS.Types.IAM {
         output.WriteRawTag(24);
         output.WriteBool(IsHousekeeper);
       }
-      if (CapStaffMgmt != false) {
+      if (CapGetSupplySnapshot != false) {
         output.WriteRawTag(32);
-        output.WriteBool(CapStaffMgmt);
+        output.WriteBool(CapGetSupplySnapshot);
       }
-      if (CapGroupMgmt != false) {
+      if (CapGetRoomTypes != false) {
         output.WriteRawTag(40);
-        output.WriteBool(CapGroupMgmt);
+        output.WriteBool(CapGetRoomTypes);
       }
-      if (CapHousekeepingMgmt != false) {
+      if (CapChangeSystemSettings != false) {
         output.WriteRawTag(48);
-        output.WriteBool(CapHousekeepingMgmt);
+        output.WriteBool(CapChangeSystemSettings);
       }
-      if (CapAccountingReports != false) {
+      if (CapPerformBackgroundJob != false) {
         output.WriteRawTag(56);
-        output.WriteBool(CapAccountingReports);
+        output.WriteBool(CapPerformBackgroundJob);
       }
-      if (CapManagementReports != false) {
+      if (CapManagePricing != false) {
         output.WriteRawTag(64);
-        output.WriteBool(CapManagementReports);
+        output.WriteBool(CapManagePricing);
       }
-      if (CapWorkstationParameters != false) {
+      if (CapReadUsers != false) {
         output.WriteRawTag(72);
-        output.WriteBool(CapWorkstationParameters);
+        output.WriteBool(CapReadUsers);
       }
-      if (CapSaveDisplaySettings != false) {
+      if (CapManageUsers != false) {
         output.WriteRawTag(80);
-        output.WriteBool(CapSaveDisplaySettings);
+        output.WriteBool(CapManageUsers);
       }
-      if (CapLodgeicReset != false) {
+      if (CapManageSupply != false) {
         output.WriteRawTag(88);
-        output.WriteBool(CapLodgeicReset);
+        output.WriteBool(CapManageSupply);
       }
-      if (CapEventsWaitlistSetup != false) {
+      if (CapManageReservation != false) {
         output.WriteRawTag(96);
-        output.WriteBool(CapEventsWaitlistSetup);
+        output.WriteBool(CapManageReservation);
       }
-      if (CapSystemSettings != false) {
+      if (CapManageIncidentalReservation != false) {
         output.WriteRawTag(104);
-        output.WriteBool(CapSystemSettings);
+        output.WriteBool(CapManageIncidentalReservation);
       }
-      if (CapYieldMgmt != false) {
+      if (CapAdjustFolio != false) {
         output.WriteRawTag(112);
-        output.WriteBool(CapYieldMgmt);
+        output.WriteBool(CapAdjustFolio);
       }
-      if (CapHoldMgmt != false) {
+      if (CapManageMoney != false) {
         output.WriteRawTag(120);
-        output.WriteBool(CapHoldMgmt);
+        output.WriteBool(CapManageMoney);
       }
-      if (CapGuestBlacklistAddRemove != false) {
+      if (CapManageGroups != false) {
         output.WriteRawTag(128, 1);
-        output.WriteBool(CapGuestBlacklistAddRemove);
+        output.WriteBool(CapManageGroups);
       }
-      if (CapOverbookRooms != false) {
+      if (CapManageHousekeeping != false) {
         output.WriteRawTag(136, 1);
-        output.WriteBool(CapOverbookRooms);
+        output.WriteBool(CapManageHousekeeping);
       }
-      if (CapOverrideRates != false) {
+      if (CapManageGuests != false) {
         output.WriteRawTag(144, 1);
-        output.WriteBool(CapOverrideRates);
-      }
-      if (CapCallAccountingAdvancedSetup != false) {
-        output.WriteRawTag(152, 1);
-        output.WriteBool(CapCallAccountingAdvancedSetup);
-      }
-      if (CapGiftShopSalesSetup != false) {
-        output.WriteRawTag(160, 1);
-        output.WriteBool(CapGiftShopSalesSetup);
-      }
-      if (CapCreditCardSetup != false) {
-        output.WriteRawTag(168, 1);
-        output.WriteBool(CapCreditCardSetup);
-      }
-      if (CapCreditCardWorksheet != false) {
-        output.WriteRawTag(176, 1);
-        output.WriteBool(CapCreditCardWorksheet);
-      }
-      if (CapCreditCardCaptureSettle != false) {
-        output.WriteRawTag(184, 1);
-        output.WriteBool(CapCreditCardCaptureSettle);
-      }
-      if (CapCreditCardReporting != false) {
-        output.WriteRawTag(192, 1);
-        output.WriteBool(CapCreditCardReporting);
-      }
-      if (CapExpediaQcMgmt != false) {
-        output.WriteRawTag(200, 1);
-        output.WriteBool(CapExpediaQcMgmt);
-      }
-      if (CapWebSetup != false) {
-        output.WriteRawTag(208, 1);
-        output.WriteBool(CapWebSetup);
+        output.WriteBool(CapManageGuests);
       }
     }
 
@@ -595,73 +445,49 @@ namespace HOLMS.Types.IAM {
       if (IsHousekeeper != false) {
         size += 1 + 1;
       }
-      if (CapStaffMgmt != false) {
+      if (CapGetSupplySnapshot != false) {
         size += 1 + 1;
       }
-      if (CapGroupMgmt != false) {
+      if (CapGetRoomTypes != false) {
         size += 1 + 1;
       }
-      if (CapHousekeepingMgmt != false) {
+      if (CapChangeSystemSettings != false) {
         size += 1 + 1;
       }
-      if (CapAccountingReports != false) {
+      if (CapPerformBackgroundJob != false) {
         size += 1 + 1;
       }
-      if (CapManagementReports != false) {
+      if (CapManagePricing != false) {
         size += 1 + 1;
       }
-      if (CapWorkstationParameters != false) {
+      if (CapReadUsers != false) {
         size += 1 + 1;
       }
-      if (CapSaveDisplaySettings != false) {
+      if (CapManageUsers != false) {
         size += 1 + 1;
       }
-      if (CapLodgeicReset != false) {
+      if (CapManageSupply != false) {
         size += 1 + 1;
       }
-      if (CapEventsWaitlistSetup != false) {
+      if (CapManageReservation != false) {
         size += 1 + 1;
       }
-      if (CapSystemSettings != false) {
+      if (CapManageIncidentalReservation != false) {
         size += 1 + 1;
       }
-      if (CapYieldMgmt != false) {
+      if (CapAdjustFolio != false) {
         size += 1 + 1;
       }
-      if (CapHoldMgmt != false) {
+      if (CapManageMoney != false) {
         size += 1 + 1;
       }
-      if (CapGuestBlacklistAddRemove != false) {
+      if (CapManageGroups != false) {
         size += 2 + 1;
       }
-      if (CapOverbookRooms != false) {
+      if (CapManageHousekeeping != false) {
         size += 2 + 1;
       }
-      if (CapOverrideRates != false) {
-        size += 2 + 1;
-      }
-      if (CapCallAccountingAdvancedSetup != false) {
-        size += 2 + 1;
-      }
-      if (CapGiftShopSalesSetup != false) {
-        size += 2 + 1;
-      }
-      if (CapCreditCardSetup != false) {
-        size += 2 + 1;
-      }
-      if (CapCreditCardWorksheet != false) {
-        size += 2 + 1;
-      }
-      if (CapCreditCardCaptureSettle != false) {
-        size += 2 + 1;
-      }
-      if (CapCreditCardReporting != false) {
-        size += 2 + 1;
-      }
-      if (CapExpediaQcMgmt != false) {
-        size += 2 + 1;
-      }
-      if (CapWebSetup != false) {
+      if (CapManageGuests != false) {
         size += 2 + 1;
       }
       return size;
@@ -684,74 +510,50 @@ namespace HOLMS.Types.IAM {
       if (other.IsHousekeeper != false) {
         IsHousekeeper = other.IsHousekeeper;
       }
-      if (other.CapStaffMgmt != false) {
-        CapStaffMgmt = other.CapStaffMgmt;
+      if (other.CapGetSupplySnapshot != false) {
+        CapGetSupplySnapshot = other.CapGetSupplySnapshot;
       }
-      if (other.CapGroupMgmt != false) {
-        CapGroupMgmt = other.CapGroupMgmt;
+      if (other.CapGetRoomTypes != false) {
+        CapGetRoomTypes = other.CapGetRoomTypes;
       }
-      if (other.CapHousekeepingMgmt != false) {
-        CapHousekeepingMgmt = other.CapHousekeepingMgmt;
+      if (other.CapChangeSystemSettings != false) {
+        CapChangeSystemSettings = other.CapChangeSystemSettings;
       }
-      if (other.CapAccountingReports != false) {
-        CapAccountingReports = other.CapAccountingReports;
+      if (other.CapPerformBackgroundJob != false) {
+        CapPerformBackgroundJob = other.CapPerformBackgroundJob;
       }
-      if (other.CapManagementReports != false) {
-        CapManagementReports = other.CapManagementReports;
+      if (other.CapManagePricing != false) {
+        CapManagePricing = other.CapManagePricing;
       }
-      if (other.CapWorkstationParameters != false) {
-        CapWorkstationParameters = other.CapWorkstationParameters;
+      if (other.CapReadUsers != false) {
+        CapReadUsers = other.CapReadUsers;
       }
-      if (other.CapSaveDisplaySettings != false) {
-        CapSaveDisplaySettings = other.CapSaveDisplaySettings;
+      if (other.CapManageUsers != false) {
+        CapManageUsers = other.CapManageUsers;
       }
-      if (other.CapLodgeicReset != false) {
-        CapLodgeicReset = other.CapLodgeicReset;
+      if (other.CapManageSupply != false) {
+        CapManageSupply = other.CapManageSupply;
       }
-      if (other.CapEventsWaitlistSetup != false) {
-        CapEventsWaitlistSetup = other.CapEventsWaitlistSetup;
+      if (other.CapManageReservation != false) {
+        CapManageReservation = other.CapManageReservation;
       }
-      if (other.CapSystemSettings != false) {
-        CapSystemSettings = other.CapSystemSettings;
+      if (other.CapManageIncidentalReservation != false) {
+        CapManageIncidentalReservation = other.CapManageIncidentalReservation;
       }
-      if (other.CapYieldMgmt != false) {
-        CapYieldMgmt = other.CapYieldMgmt;
+      if (other.CapAdjustFolio != false) {
+        CapAdjustFolio = other.CapAdjustFolio;
       }
-      if (other.CapHoldMgmt != false) {
-        CapHoldMgmt = other.CapHoldMgmt;
+      if (other.CapManageMoney != false) {
+        CapManageMoney = other.CapManageMoney;
       }
-      if (other.CapGuestBlacklistAddRemove != false) {
-        CapGuestBlacklistAddRemove = other.CapGuestBlacklistAddRemove;
+      if (other.CapManageGroups != false) {
+        CapManageGroups = other.CapManageGroups;
       }
-      if (other.CapOverbookRooms != false) {
-        CapOverbookRooms = other.CapOverbookRooms;
+      if (other.CapManageHousekeeping != false) {
+        CapManageHousekeeping = other.CapManageHousekeeping;
       }
-      if (other.CapOverrideRates != false) {
-        CapOverrideRates = other.CapOverrideRates;
-      }
-      if (other.CapCallAccountingAdvancedSetup != false) {
-        CapCallAccountingAdvancedSetup = other.CapCallAccountingAdvancedSetup;
-      }
-      if (other.CapGiftShopSalesSetup != false) {
-        CapGiftShopSalesSetup = other.CapGiftShopSalesSetup;
-      }
-      if (other.CapCreditCardSetup != false) {
-        CapCreditCardSetup = other.CapCreditCardSetup;
-      }
-      if (other.CapCreditCardWorksheet != false) {
-        CapCreditCardWorksheet = other.CapCreditCardWorksheet;
-      }
-      if (other.CapCreditCardCaptureSettle != false) {
-        CapCreditCardCaptureSettle = other.CapCreditCardCaptureSettle;
-      }
-      if (other.CapCreditCardReporting != false) {
-        CapCreditCardReporting = other.CapCreditCardReporting;
-      }
-      if (other.CapExpediaQcMgmt != false) {
-        CapExpediaQcMgmt = other.CapExpediaQcMgmt;
-      }
-      if (other.CapWebSetup != false) {
-        CapWebSetup = other.CapWebSetup;
+      if (other.CapManageGuests != false) {
+        CapManageGuests = other.CapManageGuests;
       }
     }
 
@@ -779,95 +581,63 @@ namespace HOLMS.Types.IAM {
             break;
           }
           case 32: {
-            CapStaffMgmt = input.ReadBool();
+            CapGetSupplySnapshot = input.ReadBool();
             break;
           }
           case 40: {
-            CapGroupMgmt = input.ReadBool();
+            CapGetRoomTypes = input.ReadBool();
             break;
           }
           case 48: {
-            CapHousekeepingMgmt = input.ReadBool();
+            CapChangeSystemSettings = input.ReadBool();
             break;
           }
           case 56: {
-            CapAccountingReports = input.ReadBool();
+            CapPerformBackgroundJob = input.ReadBool();
             break;
           }
           case 64: {
-            CapManagementReports = input.ReadBool();
+            CapManagePricing = input.ReadBool();
             break;
           }
           case 72: {
-            CapWorkstationParameters = input.ReadBool();
+            CapReadUsers = input.ReadBool();
             break;
           }
           case 80: {
-            CapSaveDisplaySettings = input.ReadBool();
+            CapManageUsers = input.ReadBool();
             break;
           }
           case 88: {
-            CapLodgeicReset = input.ReadBool();
+            CapManageSupply = input.ReadBool();
             break;
           }
           case 96: {
-            CapEventsWaitlistSetup = input.ReadBool();
+            CapManageReservation = input.ReadBool();
             break;
           }
           case 104: {
-            CapSystemSettings = input.ReadBool();
+            CapManageIncidentalReservation = input.ReadBool();
             break;
           }
           case 112: {
-            CapYieldMgmt = input.ReadBool();
+            CapAdjustFolio = input.ReadBool();
             break;
           }
           case 120: {
-            CapHoldMgmt = input.ReadBool();
+            CapManageMoney = input.ReadBool();
             break;
           }
           case 128: {
-            CapGuestBlacklistAddRemove = input.ReadBool();
+            CapManageGroups = input.ReadBool();
             break;
           }
           case 136: {
-            CapOverbookRooms = input.ReadBool();
+            CapManageHousekeeping = input.ReadBool();
             break;
           }
           case 144: {
-            CapOverrideRates = input.ReadBool();
-            break;
-          }
-          case 152: {
-            CapCallAccountingAdvancedSetup = input.ReadBool();
-            break;
-          }
-          case 160: {
-            CapGiftShopSalesSetup = input.ReadBool();
-            break;
-          }
-          case 168: {
-            CapCreditCardSetup = input.ReadBool();
-            break;
-          }
-          case 176: {
-            CapCreditCardWorksheet = input.ReadBool();
-            break;
-          }
-          case 184: {
-            CapCreditCardCaptureSettle = input.ReadBool();
-            break;
-          }
-          case 192: {
-            CapCreditCardReporting = input.ReadBool();
-            break;
-          }
-          case 200: {
-            CapExpediaQcMgmt = input.ReadBool();
-            break;
-          }
-          case 208: {
-            CapWebSetup = input.ReadBool();
+            CapManageGuests = input.ReadBool();
             break;
           }
         }

@@ -36,10 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <None Include="HOLMS.Application.Client.nuspec" />
     <None Include="project.json" />
-    <None Include="HOLMS.Support.nuspec" />
-    <None Include="HOLMS.Types.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.Client\AccessToken.cs" />
