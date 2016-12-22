@@ -35,36 +35,49 @@ namespace HOLMS.Types.Supply.RPC {
             "cy5Qcm9wZXJ0eUluZGljYXRvchJCCgpkYXRlX3JhbmdlGAIgASgLMi4uaG9s",
             "bXMudHlwZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlEkEK",
             "DXF1YWxpZmljYXRpb24YAyABKAsyKi5ob2xtcy50eXBlcy5zdXBwbHkuUXVh",
-            "bGlmaWNhdGlvbkluZGljYXRvciL6AQomU3VwcGx5U25hcHNob3RTdmNQdWJs",
-            "aWNXaXRoU2NoZWR1bGVSZXESSgoIcHJvcGVydHkYASABKAsyOC5ob2xtcy50",
-            "eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNh",
-            "dG9yEkIKCmRhdGVfcmFuZ2UYAiABKAsyLi5ob2xtcy50eXBlcy5wcmltaXRp",
-            "dmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2USQAoNcmF0ZV9zY2hlZHVsZRgD",
-            "IAEoCzIpLmhvbG1zLnR5cGVzLnN1cHBseS5SYXRlU2NoZWR1bGVJbmRpY2F0",
-            "b3IiqwEKGUluY2lkZW50YWxTbmFwc2hvdFJlcXVlc3QSSgoIcHJvcGVydHkY",
-            "ASABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3Jz",
-            "LlByb3BlcnR5SW5kaWNhdG9yEkIKCmRhdGVfcmFuZ2UYAiABKAsyLi5ob2xt",
-            "cy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2UyogUK",
-            "EVN1cHBseVNuYXBzaG90U3ZjEqMBCiZMb2RnaW5nU25hcHNob3RGcm9tUXVh",
-            "bGlmaWNhdGlvblN0cmljdBI8LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuU3Vw",
-            "cGx5U25hcHNob3RTdmNTbmFwc2hvdFdpdGhRdWFsUmVxGjsuaG9sbXMudHlw",
-            "ZXMuc3VwcGx5LnNuYXBzaG90LkxvZGdpbmdTbmFwc2hvdFJlcXVlc3RSZXNw",
-            "b25zZRKjAQomTG9kZ2luZ1NuYXBzaG90RnJvbVF1YWxpZmljYXRpb25NZXJn",
-            "ZWQSPC5ob2xtcy50eXBlcy5zdXBwbHkucnBjLlN1cHBseVNuYXBzaG90U3Zj",
+            "bGlmaWNhdGlvbkluZGljYXRvciLQAQokU3VwcGx5U25hcHNob3RTdmNTbmFw",
+            "c2hvdFdpdGhUYWdzUmVxEkoKCHByb3BlcnR5GAEgASgLMjguaG9sbXMudHlw",
+            "ZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRv",
+            "chJCCgpkYXRlX3JhbmdlGAIgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0aXZl",
+            "LlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlEhgKEHJlc2VydmF0aW9uX3RhZ3MY",
+            "AyADKAki+gEKJlN1cHBseVNuYXBzaG90U3ZjUHVibGljV2l0aFNjaGVkdWxl",
+            "UmVxEkoKCHByb3BlcnR5GAEgASgLMjguaG9sbXMudHlwZXMudGVuYW5jeV9j",
+            "b25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRvchJCCgpkYXRlX3Jh",
+            "bmdlGAIgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZl",
+            "T3BzZGF0ZVJhbmdlEkAKDXJhdGVfc2NoZWR1bGUYAyABKAsyKS5ob2xtcy50",
+            "eXBlcy5zdXBwbHkuUmF0ZVNjaGVkdWxlSW5kaWNhdG9yIqsBChlJbmNpZGVu",
+            "dGFsU25hcHNob3RSZXF1ZXN0EkoKCHByb3BlcnR5GAEgASgLMjguaG9sbXMu",
+            "dHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGlj",
+            "YXRvchJCCgpkYXRlX3JhbmdlGAIgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0",
+            "aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlMtwHChFTdXBwbHlTbmFwc2hv",
+            "dFN2YxKjAQomTG9kZ2luZ1NuYXBzaG90RnJvbVF1YWxpZmljYXRpb25TdHJp",
+            "Y3QSPC5ob2xtcy50eXBlcy5zdXBwbHkucnBjLlN1cHBseVNuYXBzaG90U3Zj",
             "U25hcHNob3RXaXRoUXVhbFJlcRo7LmhvbG1zLnR5cGVzLnN1cHBseS5zbmFw",
-            "c2hvdC5Mb2RnaW5nU25hcHNob3RSZXF1ZXN0UmVzcG9uc2UStQEKNkxvZGdp",
-            "bmdTbmFwc2hvdEZyb21SYXRlU2NoZWR1bGVXaXRoT25seVB1YmxpY0ludmVu",
-            "dG9yeRI+LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuU3VwcGx5U25hcHNob3RT",
-            "dmNQdWJsaWNXaXRoU2NoZWR1bGVSZXEaOy5ob2xtcy50eXBlcy5zdXBwbHku",
-            "c25hcHNob3QuTG9kZ2luZ1NuYXBzaG90UmVxdWVzdFJlc3BvbnNlEogBChJJ",
-            "bmNpZGVudGFsU25hcHNob3QSMS5ob2xtcy50eXBlcy5zdXBwbHkucnBjLklu",
-            "Y2lkZW50YWxTbmFwc2hvdFJlcXVlc3QaPy5ob2xtcy50eXBlcy5zdXBwbHku",
-            "c25hcHNob3QuSW5jaWRlbnRhbHNTbmFwc2hvdFJlcXVlc3RSZXNwb25zZUIl",
-            "WgpzdXBwbHkvcnBjqgIWSE9MTVMuVHlwZXMuU3VwcGx5LlJQQ2IGcHJvdG8z"));
+            "c2hvdC5Mb2RnaW5nU25hcHNob3RSZXF1ZXN0UmVzcG9uc2USmgEKHUxvZGdp",
+            "bmdTbmFwc2hvdEZyb21UYWdzU3RyaWN0EjwuaG9sbXMudHlwZXMuc3VwcGx5",
+            "LnJwYy5TdXBwbHlTbmFwc2hvdFN2Y1NuYXBzaG90V2l0aFRhZ3NSZXEaOy5o",
+            "b2xtcy50eXBlcy5zdXBwbHkuc25hcHNob3QuTG9kZ2luZ1NuYXBzaG90UmVx",
+            "dWVzdFJlc3BvbnNlEqMBCiZMb2RnaW5nU25hcHNob3RGcm9tUXVhbGlmaWNh",
+            "dGlvbk1lcmdlZBI8LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuU3VwcGx5U25h",
+            "cHNob3RTdmNTbmFwc2hvdFdpdGhRdWFsUmVxGjsuaG9sbXMudHlwZXMuc3Vw",
+            "cGx5LnNuYXBzaG90LkxvZGdpbmdTbmFwc2hvdFJlcXVlc3RSZXNwb25zZRKa",
+            "AQodTG9kZ2luZ1NuYXBzaG90RnJvbVRhZ3NNZXJnZWQSPC5ob2xtcy50eXBl",
+            "cy5zdXBwbHkucnBjLlN1cHBseVNuYXBzaG90U3ZjU25hcHNob3RXaXRoVGFn",
+            "c1JlcRo7LmhvbG1zLnR5cGVzLnN1cHBseS5zbmFwc2hvdC5Mb2RnaW5nU25h",
+            "cHNob3RSZXF1ZXN0UmVzcG9uc2UStQEKNkxvZGdpbmdTbmFwc2hvdEZyb21S",
+            "YXRlU2NoZWR1bGVXaXRoT25seVB1YmxpY0ludmVudG9yeRI+LmhvbG1zLnR5",
+            "cGVzLnN1cHBseS5ycGMuU3VwcGx5U25hcHNob3RTdmNQdWJsaWNXaXRoU2No",
+            "ZWR1bGVSZXEaOy5ob2xtcy50eXBlcy5zdXBwbHkuc25hcHNob3QuTG9kZ2lu",
+            "Z1NuYXBzaG90UmVxdWVzdFJlc3BvbnNlEogBChJJbmNpZGVudGFsU25hcHNo",
+            "b3QSMS5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkluY2lkZW50YWxTbmFwc2hv",
+            "dFJlcXVlc3QaPy5ob2xtcy50eXBlcy5zdXBwbHkuc25hcHNob3QuSW5jaWRl",
+            "bnRhbHNTbmFwc2hvdFJlcXVlc3RSZXNwb25zZUIlWgpzdXBwbHkvcnBjqgIW",
+            "SE9MTVMuVHlwZXMuU3VwcGx5LlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.QualificationIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponseReflection.Descriptor, global::HOLMS.Types.Supply.Snapshot.IncidentalsSnapshotRequestResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithQualReq), global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithQualReq.Parser, new[]{ "Property", "DateRange", "Qualification" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithTagsReq), global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithTagsReq.Parser, new[]{ "Property", "DateRange", "ReservationTags" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcPublicWithScheduleReq), global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcPublicWithScheduleReq.Parser, new[]{ "Property", "DateRange", "RateSchedule" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.IncidentalSnapshotRequest), global::HOLMS.Types.Supply.RPC.IncidentalSnapshotRequest.Parser, new[]{ "Property", "DateRange" }, null, null, null)
           }));
@@ -264,6 +277,183 @@ namespace HOLMS.Types.Supply.RPC {
 
   }
 
+  public sealed partial class SupplySnapshotSvcSnapshotWithTagsReq : pb::IMessage<SupplySnapshotSvcSnapshotWithTagsReq> {
+    private static readonly pb::MessageParser<SupplySnapshotSvcSnapshotWithTagsReq> _parser = new pb::MessageParser<SupplySnapshotSvcSnapshotWithTagsReq>(() => new SupplySnapshotSvcSnapshotWithTagsReq());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SupplySnapshotSvcSnapshotWithTagsReq> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SupplySnapshotSvcSnapshotWithTagsReq() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SupplySnapshotSvcSnapshotWithTagsReq(SupplySnapshotSvcSnapshotWithTagsReq other) : this() {
+      Property = other.property_ != null ? other.Property.Clone() : null;
+      DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
+      reservationTags_ = other.reservationTags_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SupplySnapshotSvcSnapshotWithTagsReq Clone() {
+      return new SupplySnapshotSvcSnapshotWithTagsReq(this);
+    }
+
+    /// <summary>Field number for the "property" field.</summary>
+    public const int PropertyFieldNumber = 1;
+    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
+      get { return property_; }
+      set {
+        property_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "date_range" field.</summary>
+    public const int DateRangeFieldNumber = 2;
+    private global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange dateRange_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange DateRange {
+      get { return dateRange_; }
+      set {
+        dateRange_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "reservation_tags" field.</summary>
+    public const int ReservationTagsFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _repeated_reservationTags_codec
+        = pb::FieldCodec.ForString(26);
+    private readonly pbc::RepeatedField<string> reservationTags_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> ReservationTags {
+      get { return reservationTags_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SupplySnapshotSvcSnapshotWithTagsReq);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SupplySnapshotSvcSnapshotWithTagsReq other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Property, other.Property)) return false;
+      if (!object.Equals(DateRange, other.DateRange)) return false;
+      if(!reservationTags_.Equals(other.reservationTags_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (property_ != null) hash ^= Property.GetHashCode();
+      if (dateRange_ != null) hash ^= DateRange.GetHashCode();
+      hash ^= reservationTags_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (property_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Property);
+      }
+      if (dateRange_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(DateRange);
+      }
+      reservationTags_.WriteTo(output, _repeated_reservationTags_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (property_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
+      }
+      if (dateRange_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DateRange);
+      }
+      size += reservationTags_.CalculateSize(_repeated_reservationTags_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SupplySnapshotSvcSnapshotWithTagsReq other) {
+      if (other == null) {
+        return;
+      }
+      if (other.property_ != null) {
+        if (property_ == null) {
+          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+        }
+        Property.MergeFrom(other.Property);
+      }
+      if (other.dateRange_ != null) {
+        if (dateRange_ == null) {
+          dateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
+        }
+        DateRange.MergeFrom(other.DateRange);
+      }
+      reservationTags_.Add(other.reservationTags_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (property_ == null) {
+              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+            }
+            input.ReadMessage(property_);
+            break;
+          }
+          case 18: {
+            if (dateRange_ == null) {
+              dateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
+            }
+            input.ReadMessage(dateRange_);
+            break;
+          }
+          case 26: {
+            reservationTags_.AddEntriesFrom(input, _repeated_reservationTags_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class SupplySnapshotSvcPublicWithScheduleReq : pb::IMessage<SupplySnapshotSvcPublicWithScheduleReq> {
     private static readonly pb::MessageParser<SupplySnapshotSvcPublicWithScheduleReq> _parser = new pb::MessageParser<SupplySnapshotSvcPublicWithScheduleReq>(() => new SupplySnapshotSvcPublicWithScheduleReq());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -271,7 +461,7 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcReflection.Descriptor.MessageTypes[1]; }
+      get { return global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -462,7 +652,7 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcReflection.Descriptor.MessageTypes[2]; }
+      get { return global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -17,6 +17,12 @@ message SupplySnapshotSvcSnapshotWithQualReq {
 	.holms.types.supply.QualificationIndicator qualification = 3;
 }
 
+message SupplySnapshotSvcSnapshotWithTagsReq {
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
+	repeated string reservation_tags = 3;
+}
+
 message SupplySnapshotSvcPublicWithScheduleReq {
 	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
 	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
@@ -32,7 +38,13 @@ service SupplySnapshotSvc {
 	rpc LodgingSnapshotFromQualificationStrict (SupplySnapshotSvcSnapshotWithQualReq)
 		returns (.holms.types.supply.snapshot.LodgingSnapshotRequestResponse);
 
+	rpc LodgingSnapshotFromTagsStrict (SupplySnapshotSvcSnapshotWithTagsReq)
+		returns (.holms.types.supply.snapshot.LodgingSnapshotRequestResponse);
+
 	rpc LodgingSnapshotFromQualificationMerged (SupplySnapshotSvcSnapshotWithQualReq)
+		returns (.holms.types.supply.snapshot.LodgingSnapshotRequestResponse);
+
+	rpc LodgingSnapshotFromTagsMerged (SupplySnapshotSvcSnapshotWithTagsReq)
 		returns (.holms.types.supply.snapshot.LodgingSnapshotRequestResponse);
 
 	rpc LodgingSnapshotFromRateScheduleWithOnlyPublicInventory(SupplySnapshotSvcPublicWithScheduleReq)
