@@ -513,6 +513,8 @@
     <Compile Include="Types\out\ReservationStatusColorsSvc.cs" />
     <Compile Include="Types\out\ReservationStatusColorsSvcGrpc.cs" />
     <Compile Include="Types\out\ReservationSummary.cs" />
+    <Compile Include="Types\out\ReservationTagsSvc.cs" />
+    <Compile Include="Types\out\ReservationTagsSvcGrpc.cs" />
     <Compile Include="Types\out\RestrictionSvc.cs" />
     <Compile Include="Types\out\RestrictionSvcGrpc.cs" />
     <Compile Include="Types\out\Room.cs" />
