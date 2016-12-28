@@ -5,25 +5,11 @@ option csharp_namespace = "HOLMS.Types.IAM";
 option go_package = "iam";
 
 import "iam/department_indicator.proto";
+import "primitive/session_context.proto";
 
 message Department {
 	DepartmentIndicator entity_id = 1;
 	string name = 2;
 	bool is_housekeeper = 3;
-
-	bool cap_get_supply_snapshot = 4;
-	bool cap_get_room_types = 5;
-	bool cap_change_system_settings = 6;
-	bool cap_perform_background_job = 7;
-	bool cap_manage_pricing = 8;
-    bool cap_read_users = 9;
-	bool cap_manage_users = 10;
-	bool cap_manage_supply = 11;
-	bool cap_manage_reservation = 12;
-	bool cap_manage_incidental_reservation = 13;
-	bool cap_adjust_folio = 14;
-	bool cap_manage_money = 15;
-	bool cap_manage_groups = 16;
-	bool cap_manage_housekeeping = 17;
-	bool cap_manage_guests = 18;
+	repeated .holms.types.primitive.SecurityAction actions = 4;
 }

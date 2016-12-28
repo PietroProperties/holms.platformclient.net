@@ -23,24 +23,16 @@ namespace HOLMS.Types.IAM {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChRpYW0vZGVwYXJ0bWVudC5wcm90bxIPaG9sbXMudHlwZXMuaWFtGh5pYW0v",
-            "ZGVwYXJ0bWVudF9pbmRpY2F0b3IucHJvdG8irwQKCkRlcGFydG1lbnQSNwoJ",
-            "ZW50aXR5X2lkGAEgASgLMiQuaG9sbXMudHlwZXMuaWFtLkRlcGFydG1lbnRJ",
-            "bmRpY2F0b3ISDAoEbmFtZRgCIAEoCRIWCg5pc19ob3VzZWtlZXBlchgDIAEo",
-            "CBIfChdjYXBfZ2V0X3N1cHBseV9zbmFwc2hvdBgEIAEoCBIaChJjYXBfZ2V0",
-            "X3Jvb21fdHlwZXMYBSABKAgSIgoaY2FwX2NoYW5nZV9zeXN0ZW1fc2V0dGlu",
-            "Z3MYBiABKAgSIgoaY2FwX3BlcmZvcm1fYmFja2dyb3VuZF9qb2IYByABKAgS",
-            "GgoSY2FwX21hbmFnZV9wcmljaW5nGAggASgIEhYKDmNhcF9yZWFkX3VzZXJz",
-            "GAkgASgIEhgKEGNhcF9tYW5hZ2VfdXNlcnMYCiABKAgSGQoRY2FwX21hbmFn",
-            "ZV9zdXBwbHkYCyABKAgSHgoWY2FwX21hbmFnZV9yZXNlcnZhdGlvbhgMIAEo",
-            "CBIpCiFjYXBfbWFuYWdlX2luY2lkZW50YWxfcmVzZXJ2YXRpb24YDSABKAgS",
-            "GAoQY2FwX2FkanVzdF9mb2xpbxgOIAEoCBIYChBjYXBfbWFuYWdlX21vbmV5",
-            "GA8gASgIEhkKEWNhcF9tYW5hZ2VfZ3JvdXBzGBAgASgIEh8KF2NhcF9tYW5h",
-            "Z2VfaG91c2VrZWVwaW5nGBEgASgIEhkKEWNhcF9tYW5hZ2VfZ3Vlc3RzGBIg",
-            "ASgIQhdaA2lhbaoCD0hPTE1TLlR5cGVzLklBTWIGcHJvdG8z"));
+            "ZGVwYXJ0bWVudF9pbmRpY2F0b3IucHJvdG8aH3ByaW1pdGl2ZS9zZXNzaW9u",
+            "X2NvbnRleHQucHJvdG8iowEKCkRlcGFydG1lbnQSNwoJZW50aXR5X2lkGAEg",
+            "ASgLMiQuaG9sbXMudHlwZXMuaWFtLkRlcGFydG1lbnRJbmRpY2F0b3ISDAoE",
+            "bmFtZRgCIAEoCRIWCg5pc19ob3VzZWtlZXBlchgDIAEoCBI2CgdhY3Rpb25z",
+            "GAQgAygOMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLlNlY3VyaXR5QWN0aW9u",
+            "QhdaA2lhbaoCD0hPTE1TLlR5cGVzLklBTWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.DepartmentIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.DepartmentIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.SessionContextReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Department), global::HOLMS.Types.IAM.Department.Parser, new[]{ "EntityId", "Name", "IsHousekeeper", "CapGetSupplySnapshot", "CapGetRoomTypes", "CapChangeSystemSettings", "CapPerformBackgroundJob", "CapManagePricing", "CapReadUsers", "CapManageUsers", "CapManageSupply", "CapManageReservation", "CapManageIncidentalReservation", "CapAdjustFolio", "CapManageMoney", "CapManageGroups", "CapManageHousekeeping", "CapManageGuests" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Department), global::HOLMS.Types.IAM.Department.Parser, new[]{ "EntityId", "Name", "IsHousekeeper", "Actions" }, null, null, null)
           }));
     }
     #endregion
@@ -74,21 +66,7 @@ namespace HOLMS.Types.IAM {
       EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
       name_ = other.name_;
       isHousekeeper_ = other.isHousekeeper_;
-      capGetSupplySnapshot_ = other.capGetSupplySnapshot_;
-      capGetRoomTypes_ = other.capGetRoomTypes_;
-      capChangeSystemSettings_ = other.capChangeSystemSettings_;
-      capPerformBackgroundJob_ = other.capPerformBackgroundJob_;
-      capManagePricing_ = other.capManagePricing_;
-      capReadUsers_ = other.capReadUsers_;
-      capManageUsers_ = other.capManageUsers_;
-      capManageSupply_ = other.capManageSupply_;
-      capManageReservation_ = other.capManageReservation_;
-      capManageIncidentalReservation_ = other.capManageIncidentalReservation_;
-      capAdjustFolio_ = other.capAdjustFolio_;
-      capManageMoney_ = other.capManageMoney_;
-      capManageGroups_ = other.capManageGroups_;
-      capManageHousekeeping_ = other.capManageHousekeeping_;
-      capManageGuests_ = other.capManageGuests_;
+      actions_ = other.actions_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -129,169 +107,14 @@ namespace HOLMS.Types.IAM {
       }
     }
 
-    /// <summary>Field number for the "cap_get_supply_snapshot" field.</summary>
-    public const int CapGetSupplySnapshotFieldNumber = 4;
-    private bool capGetSupplySnapshot_;
+    /// <summary>Field number for the "actions" field.</summary>
+    public const int ActionsFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Primitive.SecurityAction> _repeated_actions_codec
+        = pb::FieldCodec.ForEnum(34, x => (int) x, x => (global::HOLMS.Types.Primitive.SecurityAction) x);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Primitive.SecurityAction> actions_ = new pbc::RepeatedField<global::HOLMS.Types.Primitive.SecurityAction>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapGetSupplySnapshot {
-      get { return capGetSupplySnapshot_; }
-      set {
-        capGetSupplySnapshot_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_get_room_types" field.</summary>
-    public const int CapGetRoomTypesFieldNumber = 5;
-    private bool capGetRoomTypes_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapGetRoomTypes {
-      get { return capGetRoomTypes_; }
-      set {
-        capGetRoomTypes_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_change_system_settings" field.</summary>
-    public const int CapChangeSystemSettingsFieldNumber = 6;
-    private bool capChangeSystemSettings_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapChangeSystemSettings {
-      get { return capChangeSystemSettings_; }
-      set {
-        capChangeSystemSettings_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_perform_background_job" field.</summary>
-    public const int CapPerformBackgroundJobFieldNumber = 7;
-    private bool capPerformBackgroundJob_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapPerformBackgroundJob {
-      get { return capPerformBackgroundJob_; }
-      set {
-        capPerformBackgroundJob_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_manage_pricing" field.</summary>
-    public const int CapManagePricingFieldNumber = 8;
-    private bool capManagePricing_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapManagePricing {
-      get { return capManagePricing_; }
-      set {
-        capManagePricing_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_read_users" field.</summary>
-    public const int CapReadUsersFieldNumber = 9;
-    private bool capReadUsers_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapReadUsers {
-      get { return capReadUsers_; }
-      set {
-        capReadUsers_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_manage_users" field.</summary>
-    public const int CapManageUsersFieldNumber = 10;
-    private bool capManageUsers_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapManageUsers {
-      get { return capManageUsers_; }
-      set {
-        capManageUsers_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_manage_supply" field.</summary>
-    public const int CapManageSupplyFieldNumber = 11;
-    private bool capManageSupply_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapManageSupply {
-      get { return capManageSupply_; }
-      set {
-        capManageSupply_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_manage_reservation" field.</summary>
-    public const int CapManageReservationFieldNumber = 12;
-    private bool capManageReservation_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapManageReservation {
-      get { return capManageReservation_; }
-      set {
-        capManageReservation_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_manage_incidental_reservation" field.</summary>
-    public const int CapManageIncidentalReservationFieldNumber = 13;
-    private bool capManageIncidentalReservation_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapManageIncidentalReservation {
-      get { return capManageIncidentalReservation_; }
-      set {
-        capManageIncidentalReservation_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_adjust_folio" field.</summary>
-    public const int CapAdjustFolioFieldNumber = 14;
-    private bool capAdjustFolio_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapAdjustFolio {
-      get { return capAdjustFolio_; }
-      set {
-        capAdjustFolio_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_manage_money" field.</summary>
-    public const int CapManageMoneyFieldNumber = 15;
-    private bool capManageMoney_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapManageMoney {
-      get { return capManageMoney_; }
-      set {
-        capManageMoney_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_manage_groups" field.</summary>
-    public const int CapManageGroupsFieldNumber = 16;
-    private bool capManageGroups_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapManageGroups {
-      get { return capManageGroups_; }
-      set {
-        capManageGroups_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_manage_housekeeping" field.</summary>
-    public const int CapManageHousekeepingFieldNumber = 17;
-    private bool capManageHousekeeping_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapManageHousekeeping {
-      get { return capManageHousekeeping_; }
-      set {
-        capManageHousekeeping_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cap_manage_guests" field.</summary>
-    public const int CapManageGuestsFieldNumber = 18;
-    private bool capManageGuests_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CapManageGuests {
-      get { return capManageGuests_; }
-      set {
-        capManageGuests_ = value;
-      }
+    public pbc::RepeatedField<global::HOLMS.Types.Primitive.SecurityAction> Actions {
+      get { return actions_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -310,21 +133,7 @@ namespace HOLMS.Types.IAM {
       if (!object.Equals(EntityId, other.EntityId)) return false;
       if (Name != other.Name) return false;
       if (IsHousekeeper != other.IsHousekeeper) return false;
-      if (CapGetSupplySnapshot != other.CapGetSupplySnapshot) return false;
-      if (CapGetRoomTypes != other.CapGetRoomTypes) return false;
-      if (CapChangeSystemSettings != other.CapChangeSystemSettings) return false;
-      if (CapPerformBackgroundJob != other.CapPerformBackgroundJob) return false;
-      if (CapManagePricing != other.CapManagePricing) return false;
-      if (CapReadUsers != other.CapReadUsers) return false;
-      if (CapManageUsers != other.CapManageUsers) return false;
-      if (CapManageSupply != other.CapManageSupply) return false;
-      if (CapManageReservation != other.CapManageReservation) return false;
-      if (CapManageIncidentalReservation != other.CapManageIncidentalReservation) return false;
-      if (CapAdjustFolio != other.CapAdjustFolio) return false;
-      if (CapManageMoney != other.CapManageMoney) return false;
-      if (CapManageGroups != other.CapManageGroups) return false;
-      if (CapManageHousekeeping != other.CapManageHousekeeping) return false;
-      if (CapManageGuests != other.CapManageGuests) return false;
+      if(!actions_.Equals(other.actions_)) return false;
       return true;
     }
 
@@ -334,21 +143,7 @@ namespace HOLMS.Types.IAM {
       if (entityId_ != null) hash ^= EntityId.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (IsHousekeeper != false) hash ^= IsHousekeeper.GetHashCode();
-      if (CapGetSupplySnapshot != false) hash ^= CapGetSupplySnapshot.GetHashCode();
-      if (CapGetRoomTypes != false) hash ^= CapGetRoomTypes.GetHashCode();
-      if (CapChangeSystemSettings != false) hash ^= CapChangeSystemSettings.GetHashCode();
-      if (CapPerformBackgroundJob != false) hash ^= CapPerformBackgroundJob.GetHashCode();
-      if (CapManagePricing != false) hash ^= CapManagePricing.GetHashCode();
-      if (CapReadUsers != false) hash ^= CapReadUsers.GetHashCode();
-      if (CapManageUsers != false) hash ^= CapManageUsers.GetHashCode();
-      if (CapManageSupply != false) hash ^= CapManageSupply.GetHashCode();
-      if (CapManageReservation != false) hash ^= CapManageReservation.GetHashCode();
-      if (CapManageIncidentalReservation != false) hash ^= CapManageIncidentalReservation.GetHashCode();
-      if (CapAdjustFolio != false) hash ^= CapAdjustFolio.GetHashCode();
-      if (CapManageMoney != false) hash ^= CapManageMoney.GetHashCode();
-      if (CapManageGroups != false) hash ^= CapManageGroups.GetHashCode();
-      if (CapManageHousekeeping != false) hash ^= CapManageHousekeeping.GetHashCode();
-      if (CapManageGuests != false) hash ^= CapManageGuests.GetHashCode();
+      hash ^= actions_.GetHashCode();
       return hash;
     }
 
@@ -371,66 +166,7 @@ namespace HOLMS.Types.IAM {
         output.WriteRawTag(24);
         output.WriteBool(IsHousekeeper);
       }
-      if (CapGetSupplySnapshot != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(CapGetSupplySnapshot);
-      }
-      if (CapGetRoomTypes != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(CapGetRoomTypes);
-      }
-      if (CapChangeSystemSettings != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(CapChangeSystemSettings);
-      }
-      if (CapPerformBackgroundJob != false) {
-        output.WriteRawTag(56);
-        output.WriteBool(CapPerformBackgroundJob);
-      }
-      if (CapManagePricing != false) {
-        output.WriteRawTag(64);
-        output.WriteBool(CapManagePricing);
-      }
-      if (CapReadUsers != false) {
-        output.WriteRawTag(72);
-        output.WriteBool(CapReadUsers);
-      }
-      if (CapManageUsers != false) {
-        output.WriteRawTag(80);
-        output.WriteBool(CapManageUsers);
-      }
-      if (CapManageSupply != false) {
-        output.WriteRawTag(88);
-        output.WriteBool(CapManageSupply);
-      }
-      if (CapManageReservation != false) {
-        output.WriteRawTag(96);
-        output.WriteBool(CapManageReservation);
-      }
-      if (CapManageIncidentalReservation != false) {
-        output.WriteRawTag(104);
-        output.WriteBool(CapManageIncidentalReservation);
-      }
-      if (CapAdjustFolio != false) {
-        output.WriteRawTag(112);
-        output.WriteBool(CapAdjustFolio);
-      }
-      if (CapManageMoney != false) {
-        output.WriteRawTag(120);
-        output.WriteBool(CapManageMoney);
-      }
-      if (CapManageGroups != false) {
-        output.WriteRawTag(128, 1);
-        output.WriteBool(CapManageGroups);
-      }
-      if (CapManageHousekeeping != false) {
-        output.WriteRawTag(136, 1);
-        output.WriteBool(CapManageHousekeeping);
-      }
-      if (CapManageGuests != false) {
-        output.WriteRawTag(144, 1);
-        output.WriteBool(CapManageGuests);
-      }
+      actions_.WriteTo(output, _repeated_actions_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -445,51 +181,7 @@ namespace HOLMS.Types.IAM {
       if (IsHousekeeper != false) {
         size += 1 + 1;
       }
-      if (CapGetSupplySnapshot != false) {
-        size += 1 + 1;
-      }
-      if (CapGetRoomTypes != false) {
-        size += 1 + 1;
-      }
-      if (CapChangeSystemSettings != false) {
-        size += 1 + 1;
-      }
-      if (CapPerformBackgroundJob != false) {
-        size += 1 + 1;
-      }
-      if (CapManagePricing != false) {
-        size += 1 + 1;
-      }
-      if (CapReadUsers != false) {
-        size += 1 + 1;
-      }
-      if (CapManageUsers != false) {
-        size += 1 + 1;
-      }
-      if (CapManageSupply != false) {
-        size += 1 + 1;
-      }
-      if (CapManageReservation != false) {
-        size += 1 + 1;
-      }
-      if (CapManageIncidentalReservation != false) {
-        size += 1 + 1;
-      }
-      if (CapAdjustFolio != false) {
-        size += 1 + 1;
-      }
-      if (CapManageMoney != false) {
-        size += 1 + 1;
-      }
-      if (CapManageGroups != false) {
-        size += 2 + 1;
-      }
-      if (CapManageHousekeeping != false) {
-        size += 2 + 1;
-      }
-      if (CapManageGuests != false) {
-        size += 2 + 1;
-      }
+      size += actions_.CalculateSize(_repeated_actions_codec);
       return size;
     }
 
@@ -510,51 +202,7 @@ namespace HOLMS.Types.IAM {
       if (other.IsHousekeeper != false) {
         IsHousekeeper = other.IsHousekeeper;
       }
-      if (other.CapGetSupplySnapshot != false) {
-        CapGetSupplySnapshot = other.CapGetSupplySnapshot;
-      }
-      if (other.CapGetRoomTypes != false) {
-        CapGetRoomTypes = other.CapGetRoomTypes;
-      }
-      if (other.CapChangeSystemSettings != false) {
-        CapChangeSystemSettings = other.CapChangeSystemSettings;
-      }
-      if (other.CapPerformBackgroundJob != false) {
-        CapPerformBackgroundJob = other.CapPerformBackgroundJob;
-      }
-      if (other.CapManagePricing != false) {
-        CapManagePricing = other.CapManagePricing;
-      }
-      if (other.CapReadUsers != false) {
-        CapReadUsers = other.CapReadUsers;
-      }
-      if (other.CapManageUsers != false) {
-        CapManageUsers = other.CapManageUsers;
-      }
-      if (other.CapManageSupply != false) {
-        CapManageSupply = other.CapManageSupply;
-      }
-      if (other.CapManageReservation != false) {
-        CapManageReservation = other.CapManageReservation;
-      }
-      if (other.CapManageIncidentalReservation != false) {
-        CapManageIncidentalReservation = other.CapManageIncidentalReservation;
-      }
-      if (other.CapAdjustFolio != false) {
-        CapAdjustFolio = other.CapAdjustFolio;
-      }
-      if (other.CapManageMoney != false) {
-        CapManageMoney = other.CapManageMoney;
-      }
-      if (other.CapManageGroups != false) {
-        CapManageGroups = other.CapManageGroups;
-      }
-      if (other.CapManageHousekeeping != false) {
-        CapManageHousekeeping = other.CapManageHousekeeping;
-      }
-      if (other.CapManageGuests != false) {
-        CapManageGuests = other.CapManageGuests;
-      }
+      actions_.Add(other.actions_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -580,64 +228,9 @@ namespace HOLMS.Types.IAM {
             IsHousekeeper = input.ReadBool();
             break;
           }
+          case 34:
           case 32: {
-            CapGetSupplySnapshot = input.ReadBool();
-            break;
-          }
-          case 40: {
-            CapGetRoomTypes = input.ReadBool();
-            break;
-          }
-          case 48: {
-            CapChangeSystemSettings = input.ReadBool();
-            break;
-          }
-          case 56: {
-            CapPerformBackgroundJob = input.ReadBool();
-            break;
-          }
-          case 64: {
-            CapManagePricing = input.ReadBool();
-            break;
-          }
-          case 72: {
-            CapReadUsers = input.ReadBool();
-            break;
-          }
-          case 80: {
-            CapManageUsers = input.ReadBool();
-            break;
-          }
-          case 88: {
-            CapManageSupply = input.ReadBool();
-            break;
-          }
-          case 96: {
-            CapManageReservation = input.ReadBool();
-            break;
-          }
-          case 104: {
-            CapManageIncidentalReservation = input.ReadBool();
-            break;
-          }
-          case 112: {
-            CapAdjustFolio = input.ReadBool();
-            break;
-          }
-          case 120: {
-            CapManageMoney = input.ReadBool();
-            break;
-          }
-          case 128: {
-            CapManageGroups = input.ReadBool();
-            break;
-          }
-          case 136: {
-            CapManageHousekeeping = input.ReadBool();
-            break;
-          }
-          case 144: {
-            CapManageGuests = input.ReadBool();
+            actions_.AddEntriesFrom(input, _repeated_actions_codec);
             break;
           }
         }
