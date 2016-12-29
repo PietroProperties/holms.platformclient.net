@@ -20,6 +20,7 @@ namespace HOLMS.Types.Reporting.RPC {
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest> __Marshaller_FrontDeskReportingSvcPropertyDateRangeRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest> __Marshaller_FrontDeskReportingSvcHousekeepingRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyOpsdateRequest> __Marshaller_FrontDeskReportingSvcPropertyOpsdateRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyOpsdateRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest> __Marshaller_FrontDeskBatchReportingSvcRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetArrivalsReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         MethodType.Unary,
@@ -84,6 +85,13 @@ namespace HOLMS.Types.Reporting.RPC {
         __Marshaller_FrontDeskReportingSvcPropertyOpsdateRequest,
         __Marshaller_HtmlReportResponse);
 
+    static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetFrontDeskReports = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetFrontDeskReports",
+        __Marshaller_FrontDeskBatchReportingSvcRequest,
+        __Marshaller_HtmlReportResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -94,6 +102,7 @@ namespace HOLMS.Types.Reporting.RPC {
     public abstract class FrontDeskReportingSvcBase
     {
       /// <summary>
+      ///  OBSOLETE
       ///  Daily reports -- these should get consolidated into a single call
       ///  with all reports selected as booleans like include_XXX
       /// </summary>
@@ -151,6 +160,14 @@ namespace HOLMS.Types.Reporting.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      ///  NEW REPORTING ENDPOINT
+      /// </summary>
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetFrontDeskReports(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Client for FrontDeskReportingSvc</summary>
@@ -177,6 +194,7 @@ namespace HOLMS.Types.Reporting.RPC {
       }
 
       /// <summary>
+      ///  OBSOLETE
       ///  Daily reports -- these should get consolidated into a single call
       ///  with all reports selected as booleans like include_XXX
       /// </summary>
@@ -185,6 +203,7 @@ namespace HOLMS.Types.Reporting.RPC {
         return GetArrivalsReport(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
+      ///  OBSOLETE
       ///  Daily reports -- these should get consolidated into a single call
       ///  with all reports selected as booleans like include_XXX
       /// </summary>
@@ -193,6 +212,7 @@ namespace HOLMS.Types.Reporting.RPC {
         return CallInvoker.BlockingUnaryCall(__Method_GetArrivalsReport, null, options, request);
       }
       /// <summary>
+      ///  OBSOLETE
       ///  Daily reports -- these should get consolidated into a single call
       ///  with all reports selected as booleans like include_XXX
       /// </summary>
@@ -201,6 +221,7 @@ namespace HOLMS.Types.Reporting.RPC {
         return GetArrivalsReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
+      ///  OBSOLETE
       ///  Daily reports -- these should get consolidated into a single call
       ///  with all reports selected as booleans like include_XXX
       /// </summary>
@@ -372,6 +393,34 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetUnoccupiedRoomsReport, null, options, request);
       }
+      /// <summary>
+      ///  NEW REPORTING ENDPOINT
+      /// </summary>
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetFrontDeskReports(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetFrontDeskReports(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///  NEW REPORTING ENDPOINT
+      /// </summary>
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetFrontDeskReports(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetFrontDeskReports, null, options, request);
+      }
+      /// <summary>
+      ///  NEW REPORTING ENDPOINT
+      /// </summary>
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetFrontDeskReportsAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetFrontDeskReportsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///  NEW REPORTING ENDPOINT
+      /// </summary>
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetFrontDeskReportsAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetFrontDeskReports, null, options, request);
+      }
       protected override FrontDeskReportingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new FrontDeskReportingSvcClient(configuration);
@@ -390,7 +439,8 @@ namespace HOLMS.Types.Reporting.RPC {
           .AddMethod(__Method_GetVehiclesReport, serviceImpl.GetVehiclesReport)
           .AddMethod(__Method_GetGeneralAvailabilityReport, serviceImpl.GetGeneralAvailabilityReport)
           .AddMethod(__Method_GetHousekeepingAssignmentsReport, serviceImpl.GetHousekeepingAssignmentsReport)
-          .AddMethod(__Method_GetUnoccupiedRoomsReport, serviceImpl.GetUnoccupiedRoomsReport).Build();
+          .AddMethod(__Method_GetUnoccupiedRoomsReport, serviceImpl.GetUnoccupiedRoomsReport)
+          .AddMethod(__Method_GetFrontDeskReports, serviceImpl.GetFrontDeskReports).Build();
     }
 
   }

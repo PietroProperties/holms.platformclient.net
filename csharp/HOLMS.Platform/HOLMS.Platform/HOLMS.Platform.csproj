@@ -296,6 +296,7 @@
     <Compile Include="Types\out\FolioState.cs" />
     <Compile Include="Types\out\FrontDeskReportingSvc.cs" />
     <Compile Include="Types\out\FrontDeskReportingSvcGrpc.cs" />
+    <Compile Include="Types\out\FrontDeskReportManifests.cs" />
     <Compile Include="Types\out\FrpAmendmentResponse.cs" />
     <Compile Include="Types\out\FullProperty.cs" />
     <Compile Include="Types\out\FullRoomType.cs" />
@@ -389,6 +390,7 @@
     <Compile Include="Types\out\MaintenanceHoldIndicator.cs" />
     <Compile Include="Types\out\ManagementReportingSvc.cs" />
     <Compile Include="Types\out\ManagementReportingSvcGrpc.cs" />
+    <Compile Include="Types\out\ManagementReportManifests.cs" />
     <Compile Include="Types\out\MerchantAuthorization.cs" />
     <Compile Include="Types\out\MerchantAuthorizationIndicator.cs" />
     <Compile Include="Types\out\MerchantAuthorizationResponseIndicator.cs" />

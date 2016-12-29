@@ -16,6 +16,7 @@ namespace HOLMS.Types.Reporting.RPC {
     static readonly Marshaller<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Marshaller_HtmlReportResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange> __Marshaller_PropertyClockTimeRange = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.ReportParams.PropertyClockTimeRange.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange> __Marshaller_PropertyOpsdateRange = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRange.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest> __Marshaller_ManagmentReportingSvcBatchReportRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetFolioBalancesReport = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         MethodType.Unary,
@@ -80,6 +81,13 @@ namespace HOLMS.Types.Reporting.RPC {
         __Marshaller_PropertyOpsdateRange,
         __Marshaller_HtmlReportResponse);
 
+    static readonly Method<global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetManagementReportBatch = new Method<global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetManagementReportBatch",
+        __Marshaller_ManagmentReportingSvcBatchReportRequest,
+        __Marshaller_HtmlReportResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -89,6 +97,9 @@ namespace HOLMS.Types.Reporting.RPC {
     /// <summary>Base class for server-side implementations of ManagementReportingSvc</summary>
     public abstract class ManagementReportingSvcBase
     {
+      /// <summary>
+      ///  Obsolete
+      /// </summary>
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetFolioBalancesReport(global::Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
@@ -134,6 +145,14 @@ namespace HOLMS.Types.Reporting.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      ///  New batch endpoint
+      /// </summary>
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetManagementReportBatch(global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Client for ManagementReportingSvc</summary>
@@ -159,18 +178,30 @@ namespace HOLMS.Types.Reporting.RPC {
       {
       }
 
+      /// <summary>
+      ///  Obsolete
+      /// </summary>
       public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetFolioBalancesReport(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetFolioBalancesReport(request, new CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///  Obsolete
+      /// </summary>
       public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetFolioBalancesReport(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetFolioBalancesReport, null, options, request);
       }
+      /// <summary>
+      ///  Obsolete
+      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetFolioBalancesReportAsync(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetFolioBalancesReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///  Obsolete
+      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetFolioBalancesReportAsync(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetFolioBalancesReport, null, options, request);
@@ -303,6 +334,34 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetRoomUsageReportSummary, null, options, request);
       }
+      /// <summary>
+      ///  New batch endpoint
+      /// </summary>
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetManagementReportBatch(global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetManagementReportBatch(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///  New batch endpoint
+      /// </summary>
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetManagementReportBatch(global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetManagementReportBatch, null, options, request);
+      }
+      /// <summary>
+      ///  New batch endpoint
+      /// </summary>
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetManagementReportBatchAsync(global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetManagementReportBatchAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///  New batch endpoint
+      /// </summary>
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetManagementReportBatchAsync(global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetManagementReportBatch, null, options, request);
+      }
       protected override ManagementReportingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new ManagementReportingSvcClient(configuration);
@@ -321,7 +380,8 @@ namespace HOLMS.Types.Reporting.RPC {
           .AddMethod(__Method_GetLedgerActivitySummary, serviceImpl.GetLedgerActivitySummary)
           .AddMethod(__Method_GetLedgerJournalEntries, serviceImpl.GetLedgerJournalEntries)
           .AddMethod(__Method_GetRoomUsageReportDetailed, serviceImpl.GetRoomUsageReportDetailed)
-          .AddMethod(__Method_GetRoomUsageReportSummary, serviceImpl.GetRoomUsageReportSummary).Build();
+          .AddMethod(__Method_GetRoomUsageReportSummary, serviceImpl.GetRoomUsageReportSummary)
+          .AddMethod(__Method_GetManagementReportBatch, serviceImpl.GetManagementReportBatch).Build();
     }
 
   }
