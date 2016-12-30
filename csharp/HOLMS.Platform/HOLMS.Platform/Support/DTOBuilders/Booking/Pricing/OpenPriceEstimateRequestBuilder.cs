@@ -1,13 +1,15 @@
-﻿using HOLMS.Support.Time;
+﻿using System.Collections.Generic;
+using System.Linq;
+using HOLMS.Platform.Support.ReservationTags;
+using HOLMS.Support.Time;
 using HOLMS.Types.Booking.Indicators;
 using HOLMS.Types.Booking.Pricing;
-using HOLMS.Types.Supply;
 using HOLMS.Types.Supply.RoomTypes;
 
-namespace HOLMS.Support.DTOBuilders.Booking.Pricing {
+namespace HOLMS.Platform.Support.DTOBuilders.Booking.Pricing {
     public class OpenPriceEstimateRequestBuilder {
         public ReservationIndicator Reservation;
-        public QualificationIndicator Qualification;
+        public List<ReservationTagBase> Tags;
         public RoomTypeIndicator RoomType;
         public InclusiveOpsdateRange DateRange;
         public int NumberAdults;
@@ -21,8 +23,9 @@ namespace HOLMS.Support.DTOBuilders.Booking.Pricing {
                 AdultGuestCount = NumberAdults,
                 RoomType = RoomType
             };
-            if(Qualification != null) {
-                request.Q = Qualification;
+
+            if (Tags != null) {
+                request.ReservationTags.Add(Tags.Select(x => x.ToString()));
             }
 
             return request;

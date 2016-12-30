@@ -1,6 +1,7 @@
 ﻿using System;
+using HOLMS.Support;
 
-namespace HOLMS.Support {
+namespace HOLMS.Platform.Support {
     /// <summary>
     /// Cron-style job scheduler.
     /// </summary>

@@ -25,22 +25,21 @@ namespace HOLMS.Types.Booking.Pricing {
             "CjFib29raW5nL3ByaWNpbmcvb3Blbl9wcmljZV9lc3RpbWF0ZV9yZXF1ZXN0",
             "LnByb3RvEhtob2xtcy50eXBlcy5ib29raW5nLnByaWNpbmcaKnByaW1pdGl2",
             "ZS9wYl9pbmNsdXNpdmVfb3BzZGF0ZV9yYW5nZS5wcm90bxouYm9va2luZy9p",
-            "bmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90bxokc3VwcGx5",
-            "L3F1YWxpZmljYXRpb25faW5kaWNhdG9yLnByb3RvGitzdXBwbHkvcm9vbV90",
-            "eXBlcy9yb29tX3R5cGVfaW5kaWNhdG9yLnByb3RvItQCChhPcGVuUHJpY2VF",
-            "c3RpbWF0ZVJlcXVlc3QSQgoKZGF0ZV9yYW5nZRgBIAEoCzIuLmhvbG1zLnR5",
-            "cGVzLnByaW1pdGl2ZS5QYkluY2x1c2l2ZU9wc2RhdGVSYW5nZRJJCgtyZXNl",
-            "cnZhdGlvbhgCIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9y",
-            "cy5SZXNlcnZhdGlvbkluZGljYXRvchJDCglyb29tX3R5cGUYAyABKAsyMC5o",
-            "b2xtcy50eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZUluZGljYXRv",
-            "chI1CgFxGAQgASgLMiouaG9sbXMudHlwZXMuc3VwcGx5LlF1YWxpZmljYXRp",
-            "b25JbmRpY2F0b3ISEgoKdGF4X2V4ZW1wdBgFIAEoCBIZChFhZHVsdF9ndWVz",
-            "dF9jb3VudBgGIAEoBUIvWg9ib29raW5nL3ByaWNpbmeqAhtIT0xNUy5UeXBl",
-            "cy5Cb29raW5nLlByaWNpbmdiBnByb3RvMw=="));
+            "bmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90bxorc3VwcGx5",
+            "L3Jvb21fdHlwZXMvcm9vbV90eXBlX2luZGljYXRvci5wcm90byK3AgoYT3Bl",
+            "blByaWNlRXN0aW1hdGVSZXF1ZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5o",
+            "b2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2US",
+            "SQoLcmVzZXJ2YXRpb24YAiABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmlu",
+            "ZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISQwoJcm9vbV90eXBlGAMg",
+            "ASgLMjAuaG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9vbVR5cGVJ",
+            "bmRpY2F0b3ISEgoKdGF4X2V4ZW1wdBgFIAEoCBIZChFhZHVsdF9ndWVzdF9j",
+            "b3VudBgGIAEoBRIYChByZXNlcnZhdGlvbl90YWdzGAcgAygJQi9aD2Jvb2tp",
+            "bmcvcHJpY2luZ6oCG0hPTE1TLlR5cGVzLkJvb2tpbmcuUHJpY2luZ2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.QualificationIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.OpenPriceEstimateRequest), global::HOLMS.Types.Booking.Pricing.OpenPriceEstimateRequest.Parser, new[]{ "DateRange", "Reservation", "RoomType", "Q", "TaxExempt", "AdultGuestCount" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.OpenPriceEstimateRequest), global::HOLMS.Types.Booking.Pricing.OpenPriceEstimateRequest.Parser, new[]{ "DateRange", "Reservation", "RoomType", "TaxExempt", "AdultGuestCount", "ReservationTags" }, null, null, null)
           }));
     }
     #endregion
@@ -74,9 +73,9 @@ namespace HOLMS.Types.Booking.Pricing {
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
       RoomType = other.roomType_ != null ? other.RoomType.Clone() : null;
-      Q = other.q_ != null ? other.Q.Clone() : null;
       taxExempt_ = other.taxExempt_;
       adultGuestCount_ = other.adultGuestCount_;
+      reservationTags_ = other.reservationTags_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -117,20 +116,12 @@ namespace HOLMS.Types.Booking.Pricing {
       }
     }
 
-    /// <summary>Field number for the "q" field.</summary>
-    public const int QFieldNumber = 4;
-    private global::HOLMS.Types.Supply.QualificationIndicator q_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Supply.QualificationIndicator Q {
-      get { return q_; }
-      set {
-        q_ = value;
-      }
-    }
-
     /// <summary>Field number for the "tax_exempt" field.</summary>
     public const int TaxExemptFieldNumber = 5;
     private bool taxExempt_;
+    /// <summary>
+    ///  NOTE(DA) qual tombstone = 4;
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool TaxExempt {
       get { return taxExempt_; }
@@ -150,6 +141,16 @@ namespace HOLMS.Types.Booking.Pricing {
       }
     }
 
+    /// <summary>Field number for the "reservation_tags" field.</summary>
+    public const int ReservationTagsFieldNumber = 7;
+    private static readonly pb::FieldCodec<string> _repeated_reservationTags_codec
+        = pb::FieldCodec.ForString(58);
+    private readonly pbc::RepeatedField<string> reservationTags_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> ReservationTags {
+      get { return reservationTags_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as OpenPriceEstimateRequest);
@@ -166,9 +167,9 @@ namespace HOLMS.Types.Booking.Pricing {
       if (!object.Equals(DateRange, other.DateRange)) return false;
       if (!object.Equals(Reservation, other.Reservation)) return false;
       if (!object.Equals(RoomType, other.RoomType)) return false;
-      if (!object.Equals(Q, other.Q)) return false;
       if (TaxExempt != other.TaxExempt) return false;
       if (AdultGuestCount != other.AdultGuestCount) return false;
+      if(!reservationTags_.Equals(other.reservationTags_)) return false;
       return true;
     }
 
@@ -178,9 +179,9 @@ namespace HOLMS.Types.Booking.Pricing {
       if (dateRange_ != null) hash ^= DateRange.GetHashCode();
       if (reservation_ != null) hash ^= Reservation.GetHashCode();
       if (roomType_ != null) hash ^= RoomType.GetHashCode();
-      if (q_ != null) hash ^= Q.GetHashCode();
       if (TaxExempt != false) hash ^= TaxExempt.GetHashCode();
       if (AdultGuestCount != 0) hash ^= AdultGuestCount.GetHashCode();
+      hash ^= reservationTags_.GetHashCode();
       return hash;
     }
 
@@ -203,10 +204,6 @@ namespace HOLMS.Types.Booking.Pricing {
         output.WriteRawTag(26);
         output.WriteMessage(RoomType);
       }
-      if (q_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Q);
-      }
       if (TaxExempt != false) {
         output.WriteRawTag(40);
         output.WriteBool(TaxExempt);
@@ -215,6 +212,7 @@ namespace HOLMS.Types.Booking.Pricing {
         output.WriteRawTag(48);
         output.WriteInt32(AdultGuestCount);
       }
+      reservationTags_.WriteTo(output, _repeated_reservationTags_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -229,15 +227,13 @@ namespace HOLMS.Types.Booking.Pricing {
       if (roomType_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomType);
       }
-      if (q_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Q);
-      }
       if (TaxExempt != false) {
         size += 1 + 1;
       }
       if (AdultGuestCount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(AdultGuestCount);
       }
+      size += reservationTags_.CalculateSize(_repeated_reservationTags_codec);
       return size;
     }
 
@@ -264,18 +260,13 @@ namespace HOLMS.Types.Booking.Pricing {
         }
         RoomType.MergeFrom(other.RoomType);
       }
-      if (other.q_ != null) {
-        if (q_ == null) {
-          q_ = new global::HOLMS.Types.Supply.QualificationIndicator();
-        }
-        Q.MergeFrom(other.Q);
-      }
       if (other.TaxExempt != false) {
         TaxExempt = other.TaxExempt;
       }
       if (other.AdultGuestCount != 0) {
         AdultGuestCount = other.AdultGuestCount;
       }
+      reservationTags_.Add(other.reservationTags_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -307,19 +298,16 @@ namespace HOLMS.Types.Booking.Pricing {
             input.ReadMessage(roomType_);
             break;
           }
-          case 34: {
-            if (q_ == null) {
-              q_ = new global::HOLMS.Types.Supply.QualificationIndicator();
-            }
-            input.ReadMessage(q_);
-            break;
-          }
           case 40: {
             TaxExempt = input.ReadBool();
             break;
           }
           case 48: {
             AdultGuestCount = input.ReadInt32();
+            break;
+          }
+          case 58: {
+            reservationTags_.AddEntriesFrom(input, _repeated_reservationTags_codec);
             break;
           }
         }

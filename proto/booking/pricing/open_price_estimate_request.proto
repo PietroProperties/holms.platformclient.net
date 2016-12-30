@@ -6,14 +6,14 @@ option go_package = "booking/pricing";
 
 import "primitive/pb_inclusive_opsdate_range.proto";
 import "booking/indicators/reservation_indicator.proto";
-import "supply/qualification_indicator.proto";
 import "supply/room_types/room_type_indicator.proto";
 
 message OpenPriceEstimateRequest {
 	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
 	.holms.types.booking.indicators.ReservationIndicator reservation = 2;
 	holms.types.supply.room_types.RoomTypeIndicator room_type = 3;
-	.holms.types.supply.QualificationIndicator q = 4;
+	// NOTE(DA) qual tombstone = 4;
 	bool tax_exempt = 5;
 	int32 adult_guest_count = 6;
+	repeated string reservation_tags = 7;
 }

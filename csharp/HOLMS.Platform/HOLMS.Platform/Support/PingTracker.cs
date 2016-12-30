@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HOLMS.Support {
+namespace HOLMS.Platform.Support {
     public class PingTracker {
         private readonly Dictionary<Guid, int> _pings;
 
