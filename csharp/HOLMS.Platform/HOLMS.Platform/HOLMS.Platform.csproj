@@ -70,7 +70,6 @@
     <Compile Include="Support\DTOBuilders\Booking\IncidentalReservations\NewIncidentalReservationRequestBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Booking\Pricing\GenesisPriceEstimateRequestDTOBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Booking\Pricing\OpenPriceEstimateRequestBuilder.cs" />
-    <Compile Include="Support\DTOBuilders\Booking\Pricing\ReservationPriceEstimateRequestBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Booking\Reservations\FRPAmendmentRequestBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Booking\Reservations\ReservationNoteBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Operations\IncidentalItemBuilder.cs" />
@@ -89,6 +88,10 @@
     <Compile Include="Support\PingTracker.cs" />
     <Compile Include="Support\RecurrenceDescriptor.cs" />
     <Compile Include="Support\RecurrenceDescriptorParts.cs" />
+    <Compile Include="Support\ReservationTags\CompStayTag.cs" />
+    <Compile Include="Support\ReservationTags\GroupBookingTag.cs" />
+    <Compile Include="Support\ReservationTags\ReservationTagBase.cs" />
+    <Compile Include="Support\ReservationTags\ReservationTagBaseTests.cs" />
     <Compile Include="Support\RestrictionAdjustment.cs" />
     <Compile Include="Support\Security\AuthenticatedClientClaims.cs" />
     <Compile Include="Support\Security\JWToken.cs" />
@@ -499,7 +502,6 @@
     <Compile Include="Types\out\ReservationNoteSvc.cs" />
     <Compile Include="Types\out\ReservationNoteSvcGrpc.cs" />
     <Compile Include="Types\out\ReservationPriceEstimate.cs" />
-    <Compile Include="Types\out\ReservationPriceEstimateRequest.cs" />
     <Compile Include="Types\out\ReservationQueryFilter.cs" />
     <Compile Include="Types\out\ReservationRawGuaranteeStatus.cs" />
     <Compile Include="Types\out\ReservationRoomAssignmentResult.cs" />
@@ -597,6 +599,7 @@
     <Compile Include="Types\Topics\PBXConnectorTopics.cs" />
     <Compile Include="Types\Topics\SupplyContextTopics.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

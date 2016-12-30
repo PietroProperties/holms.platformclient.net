@@ -108,8 +108,7 @@ namespace HOLMS.Types.Booking.Reservations {
     public const int GuestFieldNumber = 4;
     private global::HOLMS.Types.CRM.Guests.GuestIndicator guest_;
     /// <summary>
-    ///  TODO(DA) Remove this once nothing is using it
-    /// holms.types.supply.QualificationIndicator qualification = 3;
+    ///  NOTE(DA) qual tombstone = 3;
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.CRM.Guests.GuestIndicator Guest {

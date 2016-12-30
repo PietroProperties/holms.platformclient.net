@@ -6,11 +6,11 @@ option go_package = "booking/pricing";
 
 import "primitive/pb_inclusive_opsdate_range.proto";
 import "supply/room_types/room_type_indicator.proto";
-import "supply/qualification_indicator.proto";
 
 message GenesisPriceEstimateRequestDTO {
     holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
     holms.types.supply.room_types.RoomTypeIndicator room_type = 2;
-    holms.types.supply.QualificationIndicator qualification = 3;
+    // NOTE(DA) qual tombstone = 3
     int32 number_adult_guests = 4;
+    repeated string reservation_tags = 5;
 }
