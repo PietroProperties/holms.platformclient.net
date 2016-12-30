@@ -27,43 +27,275 @@ namespace HOLMS.Types.Reporting.RPC {
             "L2VtcHR5LnByb3RvGjVyZXBvcnRpbmcvaW5wdXRfcGFyYW1zL3Byb3BlcnR5",
             "X2Nsb2NrdGltZV9yYW5nZS5wcm90bxoscmVwb3J0aW5nL291dHB1dHMvaHRt",
             "bF9yZXBvcnRfcmVzcG9uc2UucHJvdG8aM3JlcG9ydGluZy9pbnB1dF9wYXJh",
-            "bXMvcHJvcGVydHlfb3BzZGF0ZV9yYW5nZS5wcm90bzLbCQoWTWFuYWdlbWVu",
-            "dFJlcG9ydGluZ1N2YxJjChZHZXRGb2xpb0JhbGFuY2VzUmVwb3J0EhYuZ29v",
-            "Z2xlLnByb3RvYnVmLkVtcHR5GjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91",
-            "dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEosBChpHZXRGb2xpb0dyb3NzQ2hh",
-            "cmdlc1JlcG9ydBI6LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5pbnB1dF9wYXJh",
-            "bXMuUHJvcGVydHlDbG9ja1RpbWVSYW5nZRoxLmhvbG1zLnR5cGVzLnJlcG9y",
-            "dGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZRKHAQoWR2V0Rm9saW9Q",
-            "YXltZW50c1JlcG9ydBI6LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5pbnB1dF9w",
-            "YXJhbXMuUHJvcGVydHlDbG9ja1RpbWVSYW5nZRoxLmhvbG1zLnR5cGVzLnJl",
-            "cG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZRKKAQoZR2V0Rm9s",
-            "aW9BZGp1c3RtZW50c1JlcG9ydBI6LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5p",
-            "bnB1dF9wYXJhbXMuUHJvcGVydHlDbG9ja1RpbWVSYW5nZRoxLmhvbG1zLnR5",
-            "cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZRKIAQoX",
-            "R2V0Q2FsbEFjY291bnRpbmdSZXBvcnQSOi5ob2xtcy50eXBlcy5yZXBvcnRp",
+            "bXMvcHJvcGVydHlfb3BzZGF0ZV9yYW5nZS5wcm90bxo4cmVwb3J0aW5nL2lu",
+            "cHV0X3BhcmFtcy9tYW5hZ2VtZW50X3JlcG9ydF9tYW5pZmVzdHMucHJvdG8a",
+            "MnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMvcHJvcGVydHlfaW5kaWNhdG9y",
+            "LnByb3RvIrgDCidNYW5hZ21lbnRSZXBvcnRpbmdTdmNCYXRjaFJlcG9ydFJl",
+            "cXVlc3QSTAoKcHJvcGVydGllcxgBIAMoCzI4LmhvbG1zLnR5cGVzLnRlbmFu",
+            "Y3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3ISZgoVY3Vy",
+            "cmVudF90aW1lX21hbmlmZXN0GAIgASgLMkcuaG9sbXMudHlwZXMucmVwb3J0",
+            "aW5nLmlucHV0X3BhcmFtcy5NYW5hZ2VtZW50Q3VycmVudFRpbWVSZXBvcnRN",
+            "YW5pZmVzdBJtChljbG9ja190aW1lX3JhbmdlX21hbmlmZXN0GAMgASgLMkou",
+            "aG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3BhcmFtcy5NYW5hZ2VtZW50",
+            "Q2xvY2tUaW1lUmFuZ2VSZXBvcnRNYW5pZmVzdBJoChZvcHNkYXRlX3Jhbmdl",
+            "X21hbmlmZXN0GAQgASgLMkguaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0",
+            "X3BhcmFtcy5NYW5hZ2VtZW50T3BzZGF0ZVJhbmdlUmVwb3J0TWFuaWZlc3Qy",
+            "7woKFk1hbmFnZW1lbnRSZXBvcnRpbmdTdmMSYwoWR2V0Rm9saW9CYWxhbmNl",
+            "c1JlcG9ydBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoxLmhvbG1zLnR5cGVz",
+            "LnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZRKLAQoaR2V0",
+            "Rm9saW9Hcm9zc0NoYXJnZXNSZXBvcnQSOi5ob2xtcy50eXBlcy5yZXBvcnRp",
             "bmcuaW5wdXRfcGFyYW1zLlByb3BlcnR5Q2xvY2tUaW1lUmFuZ2UaMS5ob2xt",
             "cy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2US",
-            "iQEKGEdldExlZGdlckFjdGl2aXR5U3VtbWFyeRI6LmhvbG1zLnR5cGVzLnJl",
-            "cG9ydGluZy5pbnB1dF9wYXJhbXMuUHJvcGVydHlDbG9ja1RpbWVSYW5nZRox",
-            "LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNw",
-            "b25zZRKIAQoXR2V0TGVkZ2VySm91cm5hbEVudHJpZXMSOi5ob2xtcy50eXBl",
+            "hwEKFkdldEZvbGlvUGF5bWVudHNSZXBvcnQSOi5ob2xtcy50eXBlcy5yZXBv",
+            "cnRpbmcuaW5wdXRfcGFyYW1zLlByb3BlcnR5Q2xvY2tUaW1lUmFuZ2UaMS5o",
+            "b2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9u",
+            "c2USigEKGUdldEZvbGlvQWRqdXN0bWVudHNSZXBvcnQSOi5ob2xtcy50eXBl",
             "cy5yZXBvcnRpbmcuaW5wdXRfcGFyYW1zLlByb3BlcnR5Q2xvY2tUaW1lUmFu",
             "Z2UaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0",
-            "UmVzcG9uc2USiQEKGkdldFJvb21Vc2FnZVJlcG9ydERldGFpbGVkEjguaG9s",
-            "bXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3BhcmFtcy5Qcm9wZXJ0eU9wc2Rh",
-            "dGVSYW5nZRoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxS",
-            "ZXBvcnRSZXNwb25zZRKIAQoZR2V0Um9vbVVzYWdlUmVwb3J0U3VtbWFyeRI4",
-            "LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5pbnB1dF9wYXJhbXMuUHJvcGVydHlP",
-            "cHNkYXRlUmFuZ2UaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5I",
-            "dG1sUmVwb3J0UmVzcG9uc2VCK1oNcmVwb3J0aW5nL3JwY6oCGUhPTE1TLlR5",
-            "cGVzLlJlcG9ydGluZy5SUENiBnByb3RvMw=="));
+            "UmVzcG9uc2USiAEKF0dldENhbGxBY2NvdW50aW5nUmVwb3J0EjouaG9sbXMu",
+            "dHlwZXMucmVwb3J0aW5nLmlucHV0X3BhcmFtcy5Qcm9wZXJ0eUNsb2NrVGlt",
+            "ZVJhbmdlGjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJl",
+            "cG9ydFJlc3BvbnNlEokBChhHZXRMZWRnZXJBY3Rpdml0eVN1bW1hcnkSOi5o",
+            "b2xtcy50eXBlcy5yZXBvcnRpbmcuaW5wdXRfcGFyYW1zLlByb3BlcnR5Q2xv",
+            "Y2tUaW1lUmFuZ2UaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5I",
+            "dG1sUmVwb3J0UmVzcG9uc2USiAEKF0dldExlZGdlckpvdXJuYWxFbnRyaWVz",
+            "EjouaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3BhcmFtcy5Qcm9wZXJ0",
+            "eUNsb2NrVGltZVJhbmdlGjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1",
+            "dHMuSHRtbFJlcG9ydFJlc3BvbnNlEokBChpHZXRSb29tVXNhZ2VSZXBvcnRE",
+            "ZXRhaWxlZBI4LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5pbnB1dF9wYXJhbXMu",
+            "UHJvcGVydHlPcHNkYXRlUmFuZ2UaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcu",
+            "b3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USiAEKGUdldFJvb21Vc2FnZVJl",
+            "cG9ydFN1bW1hcnkSOC5ob2xtcy50eXBlcy5yZXBvcnRpbmcuaW5wdXRfcGFy",
+            "YW1zLlByb3BlcnR5T3BzZGF0ZVJhbmdlGjEuaG9sbXMudHlwZXMucmVwb3J0",
+            "aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEpEBChhHZXRNYW5hZ2Vt",
+            "ZW50UmVwb3J0QmF0Y2gSQi5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLk1h",
+            "bmFnbWVudFJlcG9ydGluZ1N2Y0JhdGNoUmVwb3J0UmVxdWVzdBoxLmhvbG1z",
+            "LnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZUIr",
+            "Wg1yZXBvcnRpbmcvcnBjqgIZSE9MTVMuVHlwZXMuUmVwb3J0aW5nLlJQQ2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Reporting.ReportParams.PropertyClocktimeRangeReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRangeReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null));
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Reporting.ReportParams.PropertyClocktimeRangeReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.Reporting.ReportParams.PropertyOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Reporting.ReportParams.ManagementReportManifestsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest), global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest.Parser, new[]{ "Properties", "CurrentTimeManifest", "ClockTimeRangeManifest", "OpsdateRangeManifest" }, null, null, null)
+          }));
     }
     #endregion
 
   }
+  #region Messages
+  public sealed partial class ManagmentReportingSvcBatchReportRequest : pb::IMessage<ManagmentReportingSvcBatchReportRequest> {
+    private static readonly pb::MessageParser<ManagmentReportingSvcBatchReportRequest> _parser = new pb::MessageParser<ManagmentReportingSvcBatchReportRequest>(() => new ManagmentReportingSvcBatchReportRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ManagmentReportingSvcBatchReportRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ManagmentReportingSvcBatchReportRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ManagmentReportingSvcBatchReportRequest(ManagmentReportingSvcBatchReportRequest other) : this() {
+      properties_ = other.properties_.Clone();
+      CurrentTimeManifest = other.currentTimeManifest_ != null ? other.CurrentTimeManifest.Clone() : null;
+      ClockTimeRangeManifest = other.clockTimeRangeManifest_ != null ? other.ClockTimeRangeManifest.Clone() : null;
+      OpsdateRangeManifest = other.opsdateRangeManifest_ != null ? other.OpsdateRangeManifest.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ManagmentReportingSvcBatchReportRequest Clone() {
+      return new ManagmentReportingSvcBatchReportRequest(this);
+    }
+
+    /// <summary>Field number for the "properties" field.</summary>
+    public const int PropertiesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator> _repeated_properties_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator> properties_ = new pbc::RepeatedField<global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator> Properties {
+      get { return properties_; }
+    }
+
+    /// <summary>Field number for the "current_time_manifest" field.</summary>
+    public const int CurrentTimeManifestFieldNumber = 2;
+    private global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest currentTimeManifest_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest CurrentTimeManifest {
+      get { return currentTimeManifest_; }
+      set {
+        currentTimeManifest_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "clock_time_range_manifest" field.</summary>
+    public const int ClockTimeRangeManifestFieldNumber = 3;
+    private global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest clockTimeRangeManifest_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest ClockTimeRangeManifest {
+      get { return clockTimeRangeManifest_; }
+      set {
+        clockTimeRangeManifest_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "opsdate_range_manifest" field.</summary>
+    public const int OpsdateRangeManifestFieldNumber = 4;
+    private global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest opsdateRangeManifest_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest OpsdateRangeManifest {
+      get { return opsdateRangeManifest_; }
+      set {
+        opsdateRangeManifest_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ManagmentReportingSvcBatchReportRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ManagmentReportingSvcBatchReportRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!properties_.Equals(other.properties_)) return false;
+      if (!object.Equals(CurrentTimeManifest, other.CurrentTimeManifest)) return false;
+      if (!object.Equals(ClockTimeRangeManifest, other.ClockTimeRangeManifest)) return false;
+      if (!object.Equals(OpsdateRangeManifest, other.OpsdateRangeManifest)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= properties_.GetHashCode();
+      if (currentTimeManifest_ != null) hash ^= CurrentTimeManifest.GetHashCode();
+      if (clockTimeRangeManifest_ != null) hash ^= ClockTimeRangeManifest.GetHashCode();
+      if (opsdateRangeManifest_ != null) hash ^= OpsdateRangeManifest.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      properties_.WriteTo(output, _repeated_properties_codec);
+      if (currentTimeManifest_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(CurrentTimeManifest);
+      }
+      if (clockTimeRangeManifest_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ClockTimeRangeManifest);
+      }
+      if (opsdateRangeManifest_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(OpsdateRangeManifest);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += properties_.CalculateSize(_repeated_properties_codec);
+      if (currentTimeManifest_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CurrentTimeManifest);
+      }
+      if (clockTimeRangeManifest_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClockTimeRangeManifest);
+      }
+      if (opsdateRangeManifest_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OpsdateRangeManifest);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ManagmentReportingSvcBatchReportRequest other) {
+      if (other == null) {
+        return;
+      }
+      properties_.Add(other.properties_);
+      if (other.currentTimeManifest_ != null) {
+        if (currentTimeManifest_ == null) {
+          currentTimeManifest_ = new global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest();
+        }
+        CurrentTimeManifest.MergeFrom(other.CurrentTimeManifest);
+      }
+      if (other.clockTimeRangeManifest_ != null) {
+        if (clockTimeRangeManifest_ == null) {
+          clockTimeRangeManifest_ = new global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest();
+        }
+        ClockTimeRangeManifest.MergeFrom(other.ClockTimeRangeManifest);
+      }
+      if (other.opsdateRangeManifest_ != null) {
+        if (opsdateRangeManifest_ == null) {
+          opsdateRangeManifest_ = new global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest();
+        }
+        OpsdateRangeManifest.MergeFrom(other.OpsdateRangeManifest);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            properties_.AddEntriesFrom(input, _repeated_properties_codec);
+            break;
+          }
+          case 18: {
+            if (currentTimeManifest_ == null) {
+              currentTimeManifest_ = new global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest();
+            }
+            input.ReadMessage(currentTimeManifest_);
+            break;
+          }
+          case 26: {
+            if (clockTimeRangeManifest_ == null) {
+              clockTimeRangeManifest_ = new global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest();
+            }
+            input.ReadMessage(clockTimeRangeManifest_);
+            break;
+          }
+          case 34: {
+            if (opsdateRangeManifest_ == null) {
+              opsdateRangeManifest_ = new global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest();
+            }
+            input.ReadMessage(opsdateRangeManifest_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  #endregion
+
 }
 
 #endregion Designer generated code
