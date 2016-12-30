@@ -48,9 +48,8 @@ message FrontDeskReportingSvcPropertyOpsdateRequest {
 
 message FrontDeskBatchReportingSvcRequest {
 	repeated holms.types.tenancy_config.indicators.PropertyIndicator properties = 1;
-	holms.types.reporting.input_params.FrontDeskCalendarDateReportManifest calendar_date_reports_manifest = 2;
+	holms.types.reporting.input_params.FrontDeskCurrentDateReportManifest calendar_date_reports_manifest = 2;
 	holms.types.reporting.input_params.FrontDeskOpsdateRangeReportManifest opsdate_range_reports_manifest = 3;
-	holms.types.reporting.input_params.FrontDeskOpsdateReportManifest opsdate_reports_manifest = 4;
 }
 
 service FrontDeskReportingSvc {

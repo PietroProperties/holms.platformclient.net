@@ -24,32 +24,26 @@ namespace HOLMS.Types.Reporting.ReportParams {
           string.Concat(
             "CjhyZXBvcnRpbmcvaW5wdXRfcGFyYW1zL2Zyb250X2Rlc2tfcmVwb3J0X21h",
             "bmlmZXN0cy5wcm90bxIiaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3Bh",
-            "cmFtcxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxoqcHJpbWl0",
-            "aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnByb3RvGh1wcmltaXRp",
-            "dmUvcGJfbG9jYWxfZGF0ZS5wcm90byKyAgojRnJvbnREZXNrQ2FsZW5kYXJE",
-            "YXRlUmVwb3J0TWFuaWZlc3QSKAoEZGF0ZRgBIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5UaW1lc3RhbXASFwoPYXJyaXZhbHNfcmVwb3J0GAIgASgIEhkKEWRl",
-            "cGFydHVyZXNfcmVwb3J0GAMgASgIEh4KFmluX2hvdXNlX2d1ZXN0c19yZXBv",
-            "cnQYBCABKAgSWwoUZ3Vlc3RfcmVwb3J0X3NvcnRpbmcYBSABKA4yPS5ob2xt",
-            "cy50eXBlcy5yZXBvcnRpbmcuaW5wdXRfcGFyYW1zLkluSG91c2VHdWVzdFJl",
-            "cG9ydFNvcnRpbmcSFwoPdmVoaWNsZXNfcmVwb3J0GAYgASgIEhcKD25vX3No",
-            "b3dzX3JlcG9ydBgHIAEoCCK1AQojRnJvbnREZXNrT3BzZGF0ZVJhbmdlUmVw",
-            "b3J0TWFuaWZlc3QSQgoKZGF0ZV9yYW5nZRgBIAEoCzIuLmhvbG1zLnR5cGVz",
-            "LnByaW1pdGl2ZS5QYkluY2x1c2l2ZU9wc2RhdGVSYW5nZRIjChtnZW5lcmFs",
-            "X2F2YWlsYWJpbGl0eV9yZXBvcnQYAiABKAgSJQodY2FuY2VsbGVkX3Jlc2Vy",
-            "dmF0aW9uc19yZXBvcnQYAyABKAgicwoeRnJvbnREZXNrT3BzZGF0ZVJlcG9y",
-            "dE1hbmlmZXN0EjAKBGRhdGUYASABKAsyIi5ob2xtcy50eXBlcy5wcmltaXRp",
-            "dmUuUGJMb2NhbERhdGUSHwoXdW5vY2N1cGllZF9yb29tc19yZXBvcnQYAiAB",
-            "KAgqQgoZSW5Ib3VzZUd1ZXN0UmVwb3J0U29ydGluZxIRCg1CWV9HVUVTVF9O",
-            "QU1FEAASEgoOQllfUk9PTV9OVU1CRVIQAUI9WhZyZXBvcnRpbmcvaW5wdXRf",
-            "cGFyYW1zqgIiSE9MTVMuVHlwZXMuUmVwb3J0aW5nLlJlcG9ydFBhcmFtc2IG",
-            "cHJvdG8z"));
+            "cmFtcxoqcHJpbWl0aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnBy",
+            "b3RvIqgCCiJGcm9udERlc2tDdXJyZW50RGF0ZVJlcG9ydE1hbmlmZXN0EhcK",
+            "D2Fycml2YWxzX3JlcG9ydBgCIAEoCBIZChFkZXBhcnR1cmVzX3JlcG9ydBgD",
+            "IAEoCBIeChZpbl9ob3VzZV9ndWVzdHNfcmVwb3J0GAQgASgIElsKFGd1ZXN0",
+            "X3JlcG9ydF9zb3J0aW5nGAUgASgOMj0uaG9sbXMudHlwZXMucmVwb3J0aW5n",
+            "LmlucHV0X3BhcmFtcy5JbkhvdXNlR3Vlc3RSZXBvcnRTb3J0aW5nEhcKD3Zl",
+            "aGljbGVzX3JlcG9ydBgGIAEoCBIXCg9ub19zaG93c19yZXBvcnQYByABKAgS",
+            "HwoXdW5vY2N1cGllZF9yb29tc19yZXBvcnQYCCABKAgitQEKI0Zyb250RGVz",
+            "a09wc2RhdGVSYW5nZVJlcG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASAB",
+            "KAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRl",
+            "UmFuZ2USIwobZ2VuZXJhbF9hdmFpbGFiaWxpdHlfcmVwb3J0GAIgASgIEiUK",
+            "HWNhbmNlbGxlZF9yZXNlcnZhdGlvbnNfcmVwb3J0GAMgASgIKkIKGUluSG91",
+            "c2VHdWVzdFJlcG9ydFNvcnRpbmcSEQoNQllfR1VFU1RfTkFNRRAAEhIKDkJZ",
+            "X1JPT01fTlVNQkVSEAFCPVoWcmVwb3J0aW5nL2lucHV0X3BhcmFtc6oCIkhP",
+            "TE1TLlR5cGVzLlJlcG9ydGluZy5SZXBvcnRQYXJhbXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.ReportParams.InHouseGuestReportSorting), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskCalendarDateReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskCalendarDateReportManifest.Parser, new[]{ "Date", "ArrivalsReport", "DeparturesReport", "InHouseGuestsReport", "GuestReportSorting", "VehiclesReport", "NoShowsReport" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "GeneralAvailabilityReport", "CancelledReservationsReport" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateReportManifest.Parser, new[]{ "Date", "UnoccupiedRoomsReport" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest.Parser, new[]{ "ArrivalsReport", "DeparturesReport", "InHouseGuestsReport", "GuestReportSorting", "VehiclesReport", "NoShowsReport", "UnoccupiedRoomsReport" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "GeneralAvailabilityReport", "CancelledReservationsReport" }, null, null, null)
           }));
     }
     #endregion
@@ -64,10 +58,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
   #endregion
 
   #region Messages
-  public sealed partial class FrontDeskCalendarDateReportManifest : pb::IMessage<FrontDeskCalendarDateReportManifest> {
-    private static readonly pb::MessageParser<FrontDeskCalendarDateReportManifest> _parser = new pb::MessageParser<FrontDeskCalendarDateReportManifest>(() => new FrontDeskCalendarDateReportManifest());
+  public sealed partial class FrontDeskCurrentDateReportManifest : pb::IMessage<FrontDeskCurrentDateReportManifest> {
+    private static readonly pb::MessageParser<FrontDeskCurrentDateReportManifest> _parser = new pb::MessageParser<FrontDeskCurrentDateReportManifest>(() => new FrontDeskCurrentDateReportManifest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<FrontDeskCalendarDateReportManifest> Parser { get { return _parser; } }
+    public static pb::MessageParser<FrontDeskCurrentDateReportManifest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -80,37 +74,26 @@ namespace HOLMS.Types.Reporting.ReportParams {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public FrontDeskCalendarDateReportManifest() {
+    public FrontDeskCurrentDateReportManifest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public FrontDeskCalendarDateReportManifest(FrontDeskCalendarDateReportManifest other) : this() {
-      Date = other.date_ != null ? other.Date.Clone() : null;
+    public FrontDeskCurrentDateReportManifest(FrontDeskCurrentDateReportManifest other) : this() {
       arrivalsReport_ = other.arrivalsReport_;
       departuresReport_ = other.departuresReport_;
       inHouseGuestsReport_ = other.inHouseGuestsReport_;
       guestReportSorting_ = other.guestReportSorting_;
       vehiclesReport_ = other.vehiclesReport_;
       noShowsReport_ = other.noShowsReport_;
+      unoccupiedRoomsReport_ = other.unoccupiedRoomsReport_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public FrontDeskCalendarDateReportManifest Clone() {
-      return new FrontDeskCalendarDateReportManifest(this);
-    }
-
-    /// <summary>Field number for the "date" field.</summary>
-    public const int DateFieldNumber = 1;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp date_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp Date {
-      get { return date_; }
-      set {
-        date_ = value;
-      }
+    public FrontDeskCurrentDateReportManifest Clone() {
+      return new FrontDeskCurrentDateReportManifest(this);
     }
 
     /// <summary>Field number for the "arrivals_report" field.</summary>
@@ -179,39 +162,50 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
+    /// <summary>Field number for the "unoccupied_rooms_report" field.</summary>
+    public const int UnoccupiedRoomsReportFieldNumber = 8;
+    private bool unoccupiedRoomsReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as FrontDeskCalendarDateReportManifest);
+    public bool UnoccupiedRoomsReport {
+      get { return unoccupiedRoomsReport_; }
+      set {
+        unoccupiedRoomsReport_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(FrontDeskCalendarDateReportManifest other) {
+    public override bool Equals(object other) {
+      return Equals(other as FrontDeskCurrentDateReportManifest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FrontDeskCurrentDateReportManifest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Date, other.Date)) return false;
       if (ArrivalsReport != other.ArrivalsReport) return false;
       if (DeparturesReport != other.DeparturesReport) return false;
       if (InHouseGuestsReport != other.InHouseGuestsReport) return false;
       if (GuestReportSorting != other.GuestReportSorting) return false;
       if (VehiclesReport != other.VehiclesReport) return false;
       if (NoShowsReport != other.NoShowsReport) return false;
+      if (UnoccupiedRoomsReport != other.UnoccupiedRoomsReport) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (date_ != null) hash ^= Date.GetHashCode();
       if (ArrivalsReport != false) hash ^= ArrivalsReport.GetHashCode();
       if (DeparturesReport != false) hash ^= DeparturesReport.GetHashCode();
       if (InHouseGuestsReport != false) hash ^= InHouseGuestsReport.GetHashCode();
       if (GuestReportSorting != 0) hash ^= GuestReportSorting.GetHashCode();
       if (VehiclesReport != false) hash ^= VehiclesReport.GetHashCode();
       if (NoShowsReport != false) hash ^= NoShowsReport.GetHashCode();
+      if (UnoccupiedRoomsReport != false) hash ^= UnoccupiedRoomsReport.GetHashCode();
       return hash;
     }
 
@@ -222,10 +216,6 @@ namespace HOLMS.Types.Reporting.ReportParams {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (date_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Date);
-      }
       if (ArrivalsReport != false) {
         output.WriteRawTag(16);
         output.WriteBool(ArrivalsReport);
@@ -250,14 +240,15 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(56);
         output.WriteBool(NoShowsReport);
       }
+      if (UnoccupiedRoomsReport != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(UnoccupiedRoomsReport);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (date_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Date);
-      }
       if (ArrivalsReport != false) {
         size += 1 + 1;
       }
@@ -276,19 +267,16 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (NoShowsReport != false) {
         size += 1 + 1;
       }
+      if (UnoccupiedRoomsReport != false) {
+        size += 1 + 1;
+      }
       return size;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(FrontDeskCalendarDateReportManifest other) {
+    public void MergeFrom(FrontDeskCurrentDateReportManifest other) {
       if (other == null) {
         return;
-      }
-      if (other.date_ != null) {
-        if (date_ == null) {
-          date_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        Date.MergeFrom(other.Date);
       }
       if (other.ArrivalsReport != false) {
         ArrivalsReport = other.ArrivalsReport;
@@ -308,6 +296,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (other.NoShowsReport != false) {
         NoShowsReport = other.NoShowsReport;
       }
+      if (other.UnoccupiedRoomsReport != false) {
+        UnoccupiedRoomsReport = other.UnoccupiedRoomsReport;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -318,13 +309,6 @@ namespace HOLMS.Types.Reporting.ReportParams {
           default:
             input.SkipLastField();
             break;
-          case 10: {
-            if (date_ == null) {
-              date_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(date_);
-            break;
-          }
           case 16: {
             ArrivalsReport = input.ReadBool();
             break;
@@ -347,6 +331,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 56: {
             NoShowsReport = input.ReadBool();
+            break;
+          }
+          case 64: {
+            UnoccupiedRoomsReport = input.ReadBool();
             break;
           }
         }
@@ -526,157 +514,6 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 24: {
             CancelledReservationsReport = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class FrontDeskOpsdateReportManifest : pb::IMessage<FrontDeskOpsdateReportManifest> {
-    private static readonly pb::MessageParser<FrontDeskOpsdateReportManifest> _parser = new pb::MessageParser<FrontDeskOpsdateReportManifest>(() => new FrontDeskOpsdateReportManifest());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<FrontDeskOpsdateReportManifest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportManifestsReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public FrontDeskOpsdateReportManifest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public FrontDeskOpsdateReportManifest(FrontDeskOpsdateReportManifest other) : this() {
-      Date = other.date_ != null ? other.Date.Clone() : null;
-      unoccupiedRoomsReport_ = other.unoccupiedRoomsReport_;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public FrontDeskOpsdateReportManifest Clone() {
-      return new FrontDeskOpsdateReportManifest(this);
-    }
-
-    /// <summary>Field number for the "date" field.</summary>
-    public const int DateFieldNumber = 1;
-    private global::HOLMS.Types.Primitive.PbLocalDate date_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.PbLocalDate Date {
-      get { return date_; }
-      set {
-        date_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "unoccupied_rooms_report" field.</summary>
-    public const int UnoccupiedRoomsReportFieldNumber = 2;
-    private bool unoccupiedRoomsReport_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool UnoccupiedRoomsReport {
-      get { return unoccupiedRoomsReport_; }
-      set {
-        unoccupiedRoomsReport_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as FrontDeskOpsdateReportManifest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(FrontDeskOpsdateReportManifest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Date, other.Date)) return false;
-      if (UnoccupiedRoomsReport != other.UnoccupiedRoomsReport) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (date_ != null) hash ^= Date.GetHashCode();
-      if (UnoccupiedRoomsReport != false) hash ^= UnoccupiedRoomsReport.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (date_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Date);
-      }
-      if (UnoccupiedRoomsReport != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(UnoccupiedRoomsReport);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (date_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Date);
-      }
-      if (UnoccupiedRoomsReport != false) {
-        size += 1 + 1;
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(FrontDeskOpsdateReportManifest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.date_ != null) {
-        if (date_ == null) {
-          date_ = new global::HOLMS.Types.Primitive.PbLocalDate();
-        }
-        Date.MergeFrom(other.Date);
-      }
-      if (other.UnoccupiedRoomsReport != false) {
-        UnoccupiedRoomsReport = other.UnoccupiedRoomsReport;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 10: {
-            if (date_ == null) {
-              date_ = new global::HOLMS.Types.Primitive.PbLocalDate();
-            }
-            input.ReadMessage(date_);
-            break;
-          }
-          case 16: {
-            UnoccupiedRoomsReport = input.ReadBool();
             break;
           }
         }

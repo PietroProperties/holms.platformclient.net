@@ -49,52 +49,49 @@ namespace HOLMS.Types.Reporting.RPC {
             "RnJvbnREZXNrUmVwb3J0aW5nU3ZjUHJvcGVydHlPcHNkYXRlUmVxdWVzdBIw",
             "CgRkYXRlGAEgASgLMiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxE",
             "YXRlEkoKCHByb3BlcnR5GAIgASgLMjguaG9sbXMudHlwZXMudGVuYW5jeV9j",
-            "b25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRvciK5AwohRnJvbnRE",
+            "b25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRvciLSAgohRnJvbnRE",
             "ZXNrQmF0Y2hSZXBvcnRpbmdTdmNSZXF1ZXN0EkwKCnByb3BlcnRpZXMYASAD",
             "KAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlBy",
-            "b3BlcnR5SW5kaWNhdG9yEm8KHmNhbGVuZGFyX2RhdGVfcmVwb3J0c19tYW5p",
-            "ZmVzdBgCIAEoCzJHLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5pbnB1dF9wYXJh",
-            "bXMuRnJvbnREZXNrQ2FsZW5kYXJEYXRlUmVwb3J0TWFuaWZlc3QSbwoeb3Bz",
-            "ZGF0ZV9yYW5nZV9yZXBvcnRzX21hbmlmZXN0GAMgASgLMkcuaG9sbXMudHlw",
-            "ZXMucmVwb3J0aW5nLmlucHV0X3BhcmFtcy5Gcm9udERlc2tPcHNkYXRlUmFu",
-            "Z2VSZXBvcnRNYW5pZmVzdBJkChhvcHNkYXRlX3JlcG9ydHNfbWFuaWZlc3QY",
-            "BCABKAsyQi5ob2xtcy50eXBlcy5yZXBvcnRpbmcuaW5wdXRfcGFyYW1zLkZy",
-            "b250RGVza09wc2RhdGVSZXBvcnRNYW5pZmVzdCpCChlJbkhvdXNlR3Vlc3RS",
-            "ZXBvcnRTb3J0aW5nEhEKDUJZX0dVRVNUX05BTUUQABISCg5CWV9ST09NX05V",
-            "TUJFUhABMpALChVGcm9udERlc2tSZXBvcnRpbmdTdmMSfwoRR2V0QXJyaXZh",
-            "bHNSZXBvcnQSNy5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVz",
-            "a1JlcG9ydGluZ1N2Y1JlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcu",
-            "b3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USoQEKHkdldENhbmNlbGxlZFJl",
-            "c2VydmF0aW9uc1JlcG9ydBJMLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMu",
-            "RnJvbnREZXNrUmVwb3J0aW5nU3ZjQ2FuY2VsbGVkUmVzZXJ2YXRpb25zUmVx",
-            "dWVzdBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBv",
-            "cnRSZXNwb25zZRKBAQoTR2V0RGVwYXJ0dXJlc1JlcG9ydBI3LmhvbG1zLnR5",
-            "cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNrUmVwb3J0aW5nU3ZjUmVxdWVz",
-            "dBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRS",
-            "ZXNwb25zZRKRAQoWR2V0SW5Ib3VzZUd1ZXN0c1JlcG9ydBJELmhvbG1zLnR5",
-            "cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNrUmVwb3J0aW5nU3ZjSW5Ib3Vz",
-            "ZUd1ZXN0c1JlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0",
-            "cy5IdG1sUmVwb3J0UmVzcG9uc2USfgoQR2V0Tm9TaG93c1JlcG9ydBI3Lmhv",
+            "b3BlcnR5SW5kaWNhdG9yEm4KHmNhbGVuZGFyX2RhdGVfcmVwb3J0c19tYW5p",
+            "ZmVzdBgCIAEoCzJGLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5pbnB1dF9wYXJh",
+            "bXMuRnJvbnREZXNrQ3VycmVudERhdGVSZXBvcnRNYW5pZmVzdBJvCh5vcHNk",
+            "YXRlX3JhbmdlX3JlcG9ydHNfbWFuaWZlc3QYAyABKAsyRy5ob2xtcy50eXBl",
+            "cy5yZXBvcnRpbmcuaW5wdXRfcGFyYW1zLkZyb250RGVza09wc2RhdGVSYW5n",
+            "ZVJlcG9ydE1hbmlmZXN0KkIKGUluSG91c2VHdWVzdFJlcG9ydFNvcnRpbmcS",
+            "EQoNQllfR1VFU1RfTkFNRRAAEhIKDkJZX1JPT01fTlVNQkVSEAEykAsKFUZy",
+            "b250RGVza1JlcG9ydGluZ1N2YxJ/ChFHZXRBcnJpdmFsc1JlcG9ydBI3Lmhv",
             "bG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNrUmVwb3J0aW5nU3Zj",
             "UmVxdWVzdBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxS",
-            "ZXBvcnRSZXNwb25zZRJeChFHZXRWZWhpY2xlc1JlcG9ydBIWLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbXB0eRoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRz",
-            "Lkh0bWxSZXBvcnRSZXNwb25zZRKbAQocR2V0R2VuZXJhbEF2YWlsYWJpbGl0",
-            "eVJlcG9ydBJILmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNr",
-            "UmVwb3J0aW5nU3ZjUHJvcGVydHlEYXRlUmFuZ2VSZXF1ZXN0GjEuaG9sbXMu",
-            "dHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEpoB",
-            "CiBHZXRIb3VzZWtlZXBpbmdBc3NpZ25tZW50c1JlcG9ydBJDLmhvbG1zLnR5",
-            "cGVzLnJlcG9ydGluZy5ycGMuRnJvbnREZXNrUmVwb3J0aW5nU3ZjSG91c2Vr",
-            "ZWVwaW5nUmVxdWVzdBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRz",
-            "Lkh0bWxSZXBvcnRSZXNwb25zZRKVAQoYR2V0VW5vY2N1cGllZFJvb21zUmVw",
-            "b3J0EkYuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBv",
-            "cnRpbmdTdmNQcm9wZXJ0eU9wc2RhdGVSZXF1ZXN0GjEuaG9sbXMudHlwZXMu",
-            "cmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEoYBChNHZXRG",
-            "cm9udERlc2tSZXBvcnRzEjwuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5G",
-            "cm9udERlc2tCYXRjaFJlcG9ydGluZ1N2Y1JlcXVlc3QaMS5ob2xtcy50eXBl",
-            "cy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2VCK1oNcmVw",
-            "b3J0aW5nL3JwY6oCGUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENiBnByb3Rv",
-            "Mw=="));
+            "ZXBvcnRSZXNwb25zZRKhAQoeR2V0Q2FuY2VsbGVkUmVzZXJ2YXRpb25zUmVw",
+            "b3J0EkwuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBv",
+            "cnRpbmdTdmNDYW5jZWxsZWRSZXNlcnZhdGlvbnNSZXF1ZXN0GjEuaG9sbXMu",
+            "dHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEoEB",
+            "ChNHZXREZXBhcnR1cmVzUmVwb3J0EjcuaG9sbXMudHlwZXMucmVwb3J0aW5n",
+            "LnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNSZXF1ZXN0GjEuaG9sbXMudHlw",
+            "ZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEpEBChZH",
+            "ZXRJbkhvdXNlR3Vlc3RzUmVwb3J0EkQuaG9sbXMudHlwZXMucmVwb3J0aW5n",
+            "LnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNJbkhvdXNlR3Vlc3RzUmVxdWVz",
+            "dBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRS",
+            "ZXNwb25zZRJ+ChBHZXROb1Nob3dzUmVwb3J0EjcuaG9sbXMudHlwZXMucmVw",
+            "b3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNSZXF1ZXN0GjEuaG9s",
+            "bXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNl",
+            "El4KEUdldFZlaGljbGVzUmVwb3J0EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5",
+            "GjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJl",
+            "c3BvbnNlEpsBChxHZXRHZW5lcmFsQXZhaWxhYmlsaXR5UmVwb3J0EkguaG9s",
+            "bXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNQ",
+            "cm9wZXJ0eURhdGVSYW5nZVJlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRp",
+            "bmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USmgEKIEdldEhvdXNla2Vl",
+            "cGluZ0Fzc2lnbm1lbnRzUmVwb3J0EkMuaG9sbXMudHlwZXMucmVwb3J0aW5n",
+            "LnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNIb3VzZWtlZXBpbmdSZXF1ZXN0",
+            "GjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJl",
+            "c3BvbnNlEpUBChhHZXRVbm9jY3VwaWVkUm9vbXNSZXBvcnQSRi5ob2xtcy50",
+            "eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y1Byb3Bl",
+            "cnR5T3BzZGF0ZVJlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0",
+            "cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2UShgEKE0dldEZyb250RGVza1JlcG9y",
+            "dHMSPC5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVza0JhdGNo",
+            "UmVwb3J0aW5nU3ZjUmVxdWVzdBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5v",
+            "dXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZUIrWg1yZXBvcnRpbmcvcnBjqgIZ",
+            "SE9MTVMuVHlwZXMuUmVwb3J0aW5nLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportManifestsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.RPC.InHouseGuestReportSorting), }, new pbr::GeneratedClrTypeInfo[] {
@@ -104,7 +101,7 @@ namespace HOLMS.Types.Reporting.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser, new[]{ "StaffMembers", "AddNotes" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyDateRangeRequest.Parser, new[]{ "DateRange", "Property" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyOpsdateRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcPropertyOpsdateRequest.Parser, new[]{ "Date", "Property" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest.Parser, new[]{ "Properties", "CalendarDateReportsManifest", "OpsdateRangeReportsManifest", "OpsdateReportsManifest" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest.Parser, new[]{ "Properties", "CalendarDateReportsManifest", "OpsdateRangeReportsManifest" }, null, null, null)
           }));
     }
     #endregion
@@ -994,7 +991,6 @@ namespace HOLMS.Types.Reporting.RPC {
       properties_ = other.properties_.Clone();
       CalendarDateReportsManifest = other.calendarDateReportsManifest_ != null ? other.CalendarDateReportsManifest.Clone() : null;
       OpsdateRangeReportsManifest = other.opsdateRangeReportsManifest_ != null ? other.OpsdateRangeReportsManifest.Clone() : null;
-      OpsdateReportsManifest = other.opsdateReportsManifest_ != null ? other.OpsdateReportsManifest.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1014,9 +1010,9 @@ namespace HOLMS.Types.Reporting.RPC {
 
     /// <summary>Field number for the "calendar_date_reports_manifest" field.</summary>
     public const int CalendarDateReportsManifestFieldNumber = 2;
-    private global::HOLMS.Types.Reporting.ReportParams.FrontDeskCalendarDateReportManifest calendarDateReportsManifest_;
+    private global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest calendarDateReportsManifest_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Reporting.ReportParams.FrontDeskCalendarDateReportManifest CalendarDateReportsManifest {
+    public global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest CalendarDateReportsManifest {
       get { return calendarDateReportsManifest_; }
       set {
         calendarDateReportsManifest_ = value;
@@ -1031,17 +1027,6 @@ namespace HOLMS.Types.Reporting.RPC {
       get { return opsdateRangeReportsManifest_; }
       set {
         opsdateRangeReportsManifest_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "opsdate_reports_manifest" field.</summary>
-    public const int OpsdateReportsManifestFieldNumber = 4;
-    private global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateReportManifest opsdateReportsManifest_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateReportManifest OpsdateReportsManifest {
-      get { return opsdateReportsManifest_; }
-      set {
-        opsdateReportsManifest_ = value;
       }
     }
 
@@ -1061,7 +1046,6 @@ namespace HOLMS.Types.Reporting.RPC {
       if(!properties_.Equals(other.properties_)) return false;
       if (!object.Equals(CalendarDateReportsManifest, other.CalendarDateReportsManifest)) return false;
       if (!object.Equals(OpsdateRangeReportsManifest, other.OpsdateRangeReportsManifest)) return false;
-      if (!object.Equals(OpsdateReportsManifest, other.OpsdateReportsManifest)) return false;
       return true;
     }
 
@@ -1071,7 +1055,6 @@ namespace HOLMS.Types.Reporting.RPC {
       hash ^= properties_.GetHashCode();
       if (calendarDateReportsManifest_ != null) hash ^= CalendarDateReportsManifest.GetHashCode();
       if (opsdateRangeReportsManifest_ != null) hash ^= OpsdateRangeReportsManifest.GetHashCode();
-      if (opsdateReportsManifest_ != null) hash ^= OpsdateReportsManifest.GetHashCode();
       return hash;
     }
 
@@ -1091,10 +1074,6 @@ namespace HOLMS.Types.Reporting.RPC {
         output.WriteRawTag(26);
         output.WriteMessage(OpsdateRangeReportsManifest);
       }
-      if (opsdateReportsManifest_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(OpsdateReportsManifest);
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1107,9 +1086,6 @@ namespace HOLMS.Types.Reporting.RPC {
       if (opsdateRangeReportsManifest_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(OpsdateRangeReportsManifest);
       }
-      if (opsdateReportsManifest_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OpsdateReportsManifest);
-      }
       return size;
     }
 
@@ -1121,7 +1097,7 @@ namespace HOLMS.Types.Reporting.RPC {
       properties_.Add(other.properties_);
       if (other.calendarDateReportsManifest_ != null) {
         if (calendarDateReportsManifest_ == null) {
-          calendarDateReportsManifest_ = new global::HOLMS.Types.Reporting.ReportParams.FrontDeskCalendarDateReportManifest();
+          calendarDateReportsManifest_ = new global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest();
         }
         CalendarDateReportsManifest.MergeFrom(other.CalendarDateReportsManifest);
       }
@@ -1130,12 +1106,6 @@ namespace HOLMS.Types.Reporting.RPC {
           opsdateRangeReportsManifest_ = new global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest();
         }
         OpsdateRangeReportsManifest.MergeFrom(other.OpsdateRangeReportsManifest);
-      }
-      if (other.opsdateReportsManifest_ != null) {
-        if (opsdateReportsManifest_ == null) {
-          opsdateReportsManifest_ = new global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateReportManifest();
-        }
-        OpsdateReportsManifest.MergeFrom(other.OpsdateReportsManifest);
       }
     }
 
@@ -1153,7 +1123,7 @@ namespace HOLMS.Types.Reporting.RPC {
           }
           case 18: {
             if (calendarDateReportsManifest_ == null) {
-              calendarDateReportsManifest_ = new global::HOLMS.Types.Reporting.ReportParams.FrontDeskCalendarDateReportManifest();
+              calendarDateReportsManifest_ = new global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest();
             }
             input.ReadMessage(calendarDateReportsManifest_);
             break;
@@ -1163,13 +1133,6 @@ namespace HOLMS.Types.Reporting.RPC {
               opsdateRangeReportsManifest_ = new global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest();
             }
             input.ReadMessage(opsdateRangeReportsManifest_);
-            break;
-          }
-          case 34: {
-            if (opsdateReportsManifest_ == null) {
-              opsdateReportsManifest_ = new global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateReportManifest();
-            }
-            input.ReadMessage(opsdateReportsManifest_);
             break;
           }
         }
