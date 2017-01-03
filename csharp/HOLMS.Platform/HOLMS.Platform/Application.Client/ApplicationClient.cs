@@ -123,7 +123,7 @@ namespace HOLMS.Application.Client {
         #endregion
 
         public SessionService SS { get; protected set; }
-        public SessionContext SC => SS.SessionContext;
+        public SessionContext SC => SS?.SessionContext;
         public string TenancyName => SC.TenancyName;
         public string UserName => SC.UserName;
         public StaffMemberIndicator AuthenticatedUser => SC.User;
