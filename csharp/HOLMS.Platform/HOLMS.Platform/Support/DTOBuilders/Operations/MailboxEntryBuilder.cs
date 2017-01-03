@@ -27,20 +27,19 @@ namespace HOLMS.Support.DTOBuilders.Operations {
         }
 
         public MailboxEntry Build() {
-            if (_sender == null) {
-                throw new ArgumentNullException("Sender cannot be null");
-            }
-
             var mbe = new MailboxEntry {
                 EntityId = _ind,
                 Body = _body ?? string.Empty,
                 CreatedAt = _createdAt.ToTS(),
-                Sender = _sender,
                 Subject = _subject ?? string.Empty,
             };
 
             if (_viewedAt.HasValue) {
                 mbe.ViewedAt = _viewedAt.Value.ToTS();
+            }
+
+            if (_sender != null) {
+                mbe.Sender = _sender;
             }
 
             if (_recipients != null) {
