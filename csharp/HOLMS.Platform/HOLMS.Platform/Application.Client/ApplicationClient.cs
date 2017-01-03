@@ -324,7 +324,10 @@ namespace HOLMS.Application.Client {
         }
 
         public void Dispose() {
-            Logout();
+            if (SC?.RefreshToken != null) {
+                InvalidateRefreshToken();
+            }
+            
             _refreshTimer?.Dispose();
             _refreshTimer = null;
             _authenticatedChannel?.ShutdownAsync().Wait();
@@ -333,7 +336,7 @@ namespace HOLMS.Application.Client {
             _authenticatedChannel = null;
         }
 
-        private void Logout() {
+        private void InvalidateRefreshToken() {
             var refreshChannel = new Channel($"{_sp.AppSvcHostname}:{_sp.AppSvcPort}",
                 AccessToken.NullToken.ToChannelCredentials());
             var ss = new SessionSvc.SessionSvcClient(refreshChannel);
