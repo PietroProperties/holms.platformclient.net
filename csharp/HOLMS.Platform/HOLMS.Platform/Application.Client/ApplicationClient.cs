@@ -41,6 +41,7 @@ namespace HOLMS.Application.Client {
         public ReservationCancellationSvc.ReservationCancellationSvcClient ResCancellationSvc { get; protected set; }
         public ReservationGuaranteeSvc.ReservationGuaranteeSvcClient ResGuaranteeSvc { get; protected set; }
         public ReservationNoteSvc.ReservationNoteSvcClient ReservationNoteSvc { get; protected set; }
+        public ReservationTagsSvc.ReservationTagsSvcClient ReservationTagsSvc { get; protected set; }
         public RestrictionSvc.RestrictionSvcClient RestrictionSvc { get; protected set; }
         public TravelAgentSvc.TravelAgentSvcClient TravelAgentSvc { get; protected set; }
         public TurnAwayReasonSvc.TurnAwayReasonSvcClient TurnAwayReasonSvc { get; protected set; }
@@ -220,6 +221,7 @@ namespace HOLMS.Application.Client {
             ResCancellationSvc = new ReservationCancellationSvc.ReservationCancellationSvcClient(_authenticatedChannel);
             ResGuaranteeSvc = new ReservationGuaranteeSvc.ReservationGuaranteeSvcClient(_authenticatedChannel);
             ReservationNoteSvc = new ReservationNoteSvc.ReservationNoteSvcClient(_authenticatedChannel);
+            ReservationTagsSvc = new ReservationTagsSvc.ReservationTagsSvcClient(_authenticatedChannel);
             RestrictionSvc = new RestrictionSvc.RestrictionSvcClient(_authenticatedChannel);
             TravelAgentSvc = new TravelAgentSvc.TravelAgentSvcClient(_authenticatedChannel);
             TurnAwayReasonSvc = new TurnAwayReasonSvc.TurnAwayReasonSvcClient(_authenticatedChannel);
