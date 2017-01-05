@@ -36,4 +36,5 @@ message CompleteOpenReservation {
 	holms.types.operations.rooms.RoomIndicator current_occupied_room = 18;
 	string terminal_occupied_room_number = 19;
 	holms.types.operations.rooms.RoomIndicator terminal_occupied_room = 20;
+	repeated string active_tags = 21;
 }
