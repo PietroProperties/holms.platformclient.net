@@ -17,6 +17,7 @@ message ReservationAmendmentSummary {
 	holms.types.supply.room_types.RoomType room_type_prior = 4;
 	uint32 number_adults_prior = 5;
 	uint32 number_children_prior = 6;
+	// TODO(DA) RESTAGS remove this once not used
 	holms.types.supply.Qualification qualification_prior = 7;
 	holms.types.booking.pricing.ReservationPriceEstimate price_estimate_prior = 8;
 
@@ -24,6 +25,10 @@ message ReservationAmendmentSummary {
 	holms.types.supply.room_types.RoomType room_type_latter = 10;
 	uint32 number_adults_latter = 11;
 	uint32 number_children_latter = 12;
+	// TODO(DA) RESTAGS remove this once not used
 	holms.types.supply.Qualification qualification_latter = 13;
 	holms.types.booking.pricing.ReservationPriceEstimate price_estimate_latter = 14;
+
+	repeated string tags_prior = 15;
+	repeated string tags_latter = 16;
 }

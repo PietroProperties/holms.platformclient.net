@@ -16,6 +16,8 @@ message ReservationCreationSummary {
 	holms.types.supply.room_types.RoomType room_type = 4;
 	uint32 number_adults = 5;
 	uint32 number_children = 6;
+	// TODO(DA) RESTAGS remove this once it's no longer used
 	holms.types.supply.Qualification qualification = 7;
 	holms.types.booking.pricing.ReservationPriceEstimate price_estimate = 8;
+	repeated string tags = 9;
 }

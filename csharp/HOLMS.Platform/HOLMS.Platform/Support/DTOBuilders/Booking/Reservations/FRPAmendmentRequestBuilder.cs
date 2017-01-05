@@ -1,22 +1,22 @@
-﻿using HOLMS.Support.Time;
+﻿using HOLMS.Platform.Support.ReservationTags;
+using HOLMS.Support.Time;
 using HOLMS.Types.Booking.Indicators;
 using HOLMS.Types.Booking.Reservations;
-using HOLMS.Types.Supply;
 using HOLMS.Types.Supply.RoomTypes;
 
-namespace HOLMS.Support.DTOBuilders.Booking.Reservations {
+namespace HOLMS.Platform.Support.DTOBuilders.Booking.Reservations {
     public class ReservationFRPAmendmentRequestBuilder {
         public ReservationFRPAmendmentRequestBuilder(
                 InclusiveOpsdateRange dr,
                 RoomTypeIndicator rt,
-                QualificationIndicator qual,
+                ImmutableTagSet tags,
                 ReservationIndicator ri,
                 int adults,
                 int children,
                 bool taxExempt) {
             DateRange = dr;
             RoomType = rt;
-            Qualification = qual;
+            Tags = tags;
             Reservation = ri;
             NumberAdults = adults;
             NumberChildren = children;
@@ -25,7 +25,7 @@ namespace HOLMS.Support.DTOBuilders.Booking.Reservations {
 
         public InclusiveOpsdateRange DateRange;
         public RoomTypeIndicator RoomType;
-        public QualificationIndicator Qualification;
+        public ImmutableTagSet Tags;
         public ReservationIndicator Reservation;
         public int NumberAdults;
         public int NumberChildren;
@@ -38,11 +38,11 @@ namespace HOLMS.Support.DTOBuilders.Booking.Reservations {
                 DateRange = DateRange.ToPB,
                 AdultGuestCount = NumberAdults,
                 ChildGuestCount = NumberChildren,
-                TaxExempt = TaxExempt
+                TaxExempt = TaxExempt,
             };
-            if (Qualification != null) {
-                request.Q = Qualification;
-            }
+
+            request.Tags.Add(Tags.GetDescriptors());
+            
             return request;
         }
     }
