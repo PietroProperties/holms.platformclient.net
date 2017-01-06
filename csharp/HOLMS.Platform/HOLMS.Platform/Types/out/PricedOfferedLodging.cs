@@ -27,20 +27,19 @@ namespace HOLMS.Types.Supply {
             "aWNhdG9yLnByb3RvGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3Rv",
             "Gh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90bxokc3VwcGx5L3F1YWxp",
             "ZmljYXRpb25faW5kaWNhdG9yLnByb3RvGiRzdXBwbHkvcmF0ZV9zY2hlZHVs",
-            "ZV9pbmRpY2F0b3IucHJvdG8i4wIKFFByaWNlZE9mZmVyZWRMb2RnaW5nEkMK",
+            "ZV9pbmRpY2F0b3IucHJvdG8itwIKFFByaWNlZE9mZmVyZWRMb2RnaW5nEkMK",
             "CXJvb21fdHlwZRgBIAEoCzIwLmhvbG1zLnR5cGVzLnN1cHBseS5yb29tX3R5",
             "cGVzLlJvb21UeXBlSW5kaWNhdG9yEjAKBGRhdGUYAiABKAsyIi5ob2xtcy50",
             "eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGUSEQoJYXZhaWxhYmxlGAMgASgF",
             "EkAKDXJhdGVfc2NoZWR1bGUYBCABKAsyKS5ob2xtcy50eXBlcy5zdXBwbHku",
             "UmF0ZVNjaGVkdWxlSW5kaWNhdG9yEjwKDW5pZ2h0bHlfcHJpY2UYBSABKAsy",
-            "JS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSQQoNcXVh",
-            "bGlmaWNhdGlvbhgGIAEoCzIqLmhvbG1zLnR5cGVzLnN1cHBseS5RdWFsaWZp",
-            "Y2F0aW9uSW5kaWNhdG9yQh1aBnN1cHBseaoCEkhPTE1TLlR5cGVzLlN1cHBs",
-            "eWIGcHJvdG8z"));
+            "JS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSFQoNcmVx",
+            "dWlyZWRfdGFncxgGIAMoCUIdWgZzdXBwbHmqAhJIT0xNUy5UeXBlcy5TdXBw",
+            "bHliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.QualificationIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.PricedOfferedLodging), global::HOLMS.Types.Supply.PricedOfferedLodging.Parser, new[]{ "RoomType", "Date", "Available", "RateSchedule", "NightlyPrice", "Qualification" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.PricedOfferedLodging), global::HOLMS.Types.Supply.PricedOfferedLodging.Parser, new[]{ "RoomType", "Date", "Available", "RateSchedule", "NightlyPrice", "RequiredTags" }, null, null, null)
           }));
     }
     #endregion
@@ -76,7 +75,7 @@ namespace HOLMS.Types.Supply {
       available_ = other.available_;
       RateSchedule = other.rateSchedule_ != null ? other.RateSchedule.Clone() : null;
       NightlyPrice = other.nightlyPrice_ != null ? other.NightlyPrice.Clone() : null;
-      Qualification = other.qualification_ != null ? other.Qualification.Clone() : null;
+      requiredTags_ = other.requiredTags_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -139,15 +138,14 @@ namespace HOLMS.Types.Supply {
       }
     }
 
-    /// <summary>Field number for the "qualification" field.</summary>
-    public const int QualificationFieldNumber = 6;
-    private global::HOLMS.Types.Supply.QualificationIndicator qualification_;
+    /// <summary>Field number for the "required_tags" field.</summary>
+    public const int RequiredTagsFieldNumber = 6;
+    private static readonly pb::FieldCodec<string> _repeated_requiredTags_codec
+        = pb::FieldCodec.ForString(50);
+    private readonly pbc::RepeatedField<string> requiredTags_ = new pbc::RepeatedField<string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Supply.QualificationIndicator Qualification {
-      get { return qualification_; }
-      set {
-        qualification_ = value;
-      }
+    public pbc::RepeatedField<string> RequiredTags {
+      get { return requiredTags_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -168,7 +166,7 @@ namespace HOLMS.Types.Supply {
       if (Available != other.Available) return false;
       if (!object.Equals(RateSchedule, other.RateSchedule)) return false;
       if (!object.Equals(NightlyPrice, other.NightlyPrice)) return false;
-      if (!object.Equals(Qualification, other.Qualification)) return false;
+      if(!requiredTags_.Equals(other.requiredTags_)) return false;
       return true;
     }
 
@@ -180,7 +178,7 @@ namespace HOLMS.Types.Supply {
       if (Available != 0) hash ^= Available.GetHashCode();
       if (rateSchedule_ != null) hash ^= RateSchedule.GetHashCode();
       if (nightlyPrice_ != null) hash ^= NightlyPrice.GetHashCode();
-      if (qualification_ != null) hash ^= Qualification.GetHashCode();
+      hash ^= requiredTags_.GetHashCode();
       return hash;
     }
 
@@ -211,10 +209,7 @@ namespace HOLMS.Types.Supply {
         output.WriteRawTag(42);
         output.WriteMessage(NightlyPrice);
       }
-      if (qualification_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(Qualification);
-      }
+      requiredTags_.WriteTo(output, _repeated_requiredTags_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -235,9 +230,7 @@ namespace HOLMS.Types.Supply {
       if (nightlyPrice_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(NightlyPrice);
       }
-      if (qualification_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Qualification);
-      }
+      size += requiredTags_.CalculateSize(_repeated_requiredTags_codec);
       return size;
     }
 
@@ -273,12 +266,7 @@ namespace HOLMS.Types.Supply {
         }
         NightlyPrice.MergeFrom(other.NightlyPrice);
       }
-      if (other.qualification_ != null) {
-        if (qualification_ == null) {
-          qualification_ = new global::HOLMS.Types.Supply.QualificationIndicator();
-        }
-        Qualification.MergeFrom(other.Qualification);
-      }
+      requiredTags_.Add(other.requiredTags_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -322,10 +310,7 @@ namespace HOLMS.Types.Supply {
             break;
           }
           case 50: {
-            if (qualification_ == null) {
-              qualification_ = new global::HOLMS.Types.Supply.QualificationIndicator();
-            }
-            input.ReadMessage(qualification_);
+            requiredTags_.AddEntriesFrom(input, _repeated_requiredTags_codec);
             break;
           }
         }

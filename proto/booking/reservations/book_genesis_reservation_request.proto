@@ -11,7 +11,6 @@ import "crm/guests/guest_indicator.proto";
 message BookGenesisReservationRequest {
 	holms.types.supply.room_types.RoomTypeIndicator room_type = 1;
 	holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
-	// NOTE(DA) qual tombstone = 3;
 	holms.types.crm.guests.GuestIndicator guest = 4;
 	int32 number_adults = 5;
 	int32 number_children = 6;

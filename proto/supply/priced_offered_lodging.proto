@@ -17,5 +17,6 @@ message PricedOfferedLodging {
 	int32 available = 3;
 	RateScheduleIndicator rate_schedule = 4;
 	holms.types.primitive.MonetaryAmount nightly_price = 5;
-	QualificationIndicator qualification = 6;
+	repeated string required_tags = 6;
 }
+

@@ -107,9 +107,6 @@ namespace HOLMS.Types.Booking.Reservations {
     /// <summary>Field number for the "guest" field.</summary>
     public const int GuestFieldNumber = 4;
     private global::HOLMS.Types.CRM.Guests.GuestIndicator guest_;
-    /// <summary>
-    ///  NOTE(DA) qual tombstone = 3;
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.CRM.Guests.GuestIndicator Guest {
       get { return guest_; }
