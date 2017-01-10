@@ -10,6 +10,7 @@ import "primitive/pb_inclusive_opsdate_range.proto";
 message ManagementCurrentTimeReportManifest {
 	bool unoccupied_rooms_report = 1;
 	bool folio_balance_report = 2;
+	bool lodging_verification_report = 3;
 }
 
 message ManagementClockTimeRangeReportManifest {
