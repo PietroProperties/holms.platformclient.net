@@ -25,19 +25,18 @@ namespace HOLMS.Types.Supply {
             "CiNzdXBwbHkvcHJpY2VkX29mZmVyZWRfbG9kZ2luZy5wcm90bxISaG9sbXMu",
             "dHlwZXMuc3VwcGx5GitzdXBwbHkvcm9vbV90eXBlcy9yb29tX3R5cGVfaW5k",
             "aWNhdG9yLnByb3RvGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3Rv",
-            "Gh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90bxokc3VwcGx5L3F1YWxp",
-            "ZmljYXRpb25faW5kaWNhdG9yLnByb3RvGiRzdXBwbHkvcmF0ZV9zY2hlZHVs",
-            "ZV9pbmRpY2F0b3IucHJvdG8itwIKFFByaWNlZE9mZmVyZWRMb2RnaW5nEkMK",
-            "CXJvb21fdHlwZRgBIAEoCzIwLmhvbG1zLnR5cGVzLnN1cHBseS5yb29tX3R5",
-            "cGVzLlJvb21UeXBlSW5kaWNhdG9yEjAKBGRhdGUYAiABKAsyIi5ob2xtcy50",
-            "eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGUSEQoJYXZhaWxhYmxlGAMgASgF",
-            "EkAKDXJhdGVfc2NoZWR1bGUYBCABKAsyKS5ob2xtcy50eXBlcy5zdXBwbHku",
-            "UmF0ZVNjaGVkdWxlSW5kaWNhdG9yEjwKDW5pZ2h0bHlfcHJpY2UYBSABKAsy",
-            "JS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSFQoNcmVx",
-            "dWlyZWRfdGFncxgGIAMoCUIdWgZzdXBwbHmqAhJIT0xNUy5UeXBlcy5TdXBw",
-            "bHliBnByb3RvMw=="));
+            "Gh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90bxokc3VwcGx5L3JhdGVf",
+            "c2NoZWR1bGVfaW5kaWNhdG9yLnByb3RvIrcCChRQcmljZWRPZmZlcmVkTG9k",
+            "Z2luZxJDCglyb29tX3R5cGUYASABKAsyMC5ob2xtcy50eXBlcy5zdXBwbHku",
+            "cm9vbV90eXBlcy5Sb29tVHlwZUluZGljYXRvchIwCgRkYXRlGAIgASgLMiIu",
+            "aG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlEhEKCWF2YWlsYWJs",
+            "ZRgDIAEoBRJACg1yYXRlX3NjaGVkdWxlGAQgASgLMikuaG9sbXMudHlwZXMu",
+            "c3VwcGx5LlJhdGVTY2hlZHVsZUluZGljYXRvchI8Cg1uaWdodGx5X3ByaWNl",
+            "GAUgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
+            "EhUKDXJlcXVpcmVkX3RhZ3MYBiADKAlCHVoGc3VwcGx5qgISSE9MTVMuVHlw",
+            "ZXMuU3VwcGx5YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.QualificationIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.PricedOfferedLodging), global::HOLMS.Types.Supply.PricedOfferedLodging.Parser, new[]{ "RoomType", "Date", "Available", "RateSchedule", "NightlyPrice", "RequiredTags" }, null, null, null)
           }));

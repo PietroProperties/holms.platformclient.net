@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.packages;
+option csharp_namespace = "HOLMS.Types.Supply.Packages";
+option go_package = "supply/packages";
+
+import "primitive/uuid.proto";
+
+message LodgingPackageIndicator {
+	holms.types.primitive.Uuid id = 1;
+}

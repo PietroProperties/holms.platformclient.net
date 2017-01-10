@@ -14,6 +14,6 @@ namespace HOLMS.Platform.Support.ReservationTags {
         }
 
         protected override string[] GetDescriptorPartsAfterCategory() =>
-            new[] { Booking.GuidID.ToString() };
+            new[] {Booking.GuidID.ToString()};
     }
 }
