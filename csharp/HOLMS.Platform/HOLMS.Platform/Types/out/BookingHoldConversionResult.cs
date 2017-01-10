@@ -24,15 +24,15 @@ namespace HOLMS.Types.Supply {
           string.Concat(
             "CitzdXBwbHkvYm9va2luZ19ob2xkX2NvbnZlcnNpb25fcmVzdWx0LnByb3Rv",
             "EhJob2xtcy50eXBlcy5zdXBwbHkaJ3N1cHBseS9yZXNlcnZhdGlvbl9ob2xk",
-            "X2luZGljYXRvci5wcm90byKCAQobQm9va2luZ0hvbGRDb252ZXJzaW9uUmVz",
-            "dWx0EkQKDmhvbGRfaW5kaWNhdG9yGAEgASgLMiwuaG9sbXMudHlwZXMuc3Vw",
-            "cGx5LlJlc2VydmF0aW9uSG9sZEluZGljYXRvchIdChVjb252ZXJzaW9uX3N1",
-            "Y2Nlc3NmdWwYAiABKAhCHVoGc3VwcGx5qgISSE9MTVMuVHlwZXMuU3VwcGx5",
-            "YgZwcm90bzM="));
+            "X2luZGljYXRvci5wcm90byKDAQobQm9va2luZ0hvbGRDb252ZXJzaW9uUmVz",
+            "dWx0EkUKD2hvbGRfaW5kaWNhdG9ycxgBIAMoCzIsLmhvbG1zLnR5cGVzLnN1",
+            "cHBseS5SZXNlcnZhdGlvbkhvbGRJbmRpY2F0b3ISHQoVY29udmVyc2lvbl9z",
+            "dWNjZXNzZnVsGAIgASgIQh1aBnN1cHBseaoCEkhPTE1TLlR5cGVzLlN1cHBs",
+            "eWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.ReservationHoldIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.BookingHoldConversionResult), global::HOLMS.Types.Supply.BookingHoldConversionResult.Parser, new[]{ "HoldIndicator", "ConversionSuccessful" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.BookingHoldConversionResult), global::HOLMS.Types.Supply.BookingHoldConversionResult.Parser, new[]{ "HoldIndicators", "ConversionSuccessful" }, null, null, null)
           }));
     }
     #endregion
@@ -63,7 +63,7 @@ namespace HOLMS.Types.Supply {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BookingHoldConversionResult(BookingHoldConversionResult other) : this() {
-      HoldIndicator = other.holdIndicator_ != null ? other.HoldIndicator.Clone() : null;
+      holdIndicators_ = other.holdIndicators_.Clone();
       conversionSuccessful_ = other.conversionSuccessful_;
     }
 
@@ -72,15 +72,14 @@ namespace HOLMS.Types.Supply {
       return new BookingHoldConversionResult(this);
     }
 
-    /// <summary>Field number for the "hold_indicator" field.</summary>
-    public const int HoldIndicatorFieldNumber = 1;
-    private global::HOLMS.Types.Supply.ReservationHoldIndicator holdIndicator_;
+    /// <summary>Field number for the "hold_indicators" field.</summary>
+    public const int HoldIndicatorsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Supply.ReservationHoldIndicator> _repeated_holdIndicators_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Supply.ReservationHoldIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Supply.ReservationHoldIndicator> holdIndicators_ = new pbc::RepeatedField<global::HOLMS.Types.Supply.ReservationHoldIndicator>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Supply.ReservationHoldIndicator HoldIndicator {
-      get { return holdIndicator_; }
-      set {
-        holdIndicator_ = value;
-      }
+    public pbc::RepeatedField<global::HOLMS.Types.Supply.ReservationHoldIndicator> HoldIndicators {
+      get { return holdIndicators_; }
     }
 
     /// <summary>Field number for the "conversion_successful" field.</summary>
@@ -107,7 +106,7 @@ namespace HOLMS.Types.Supply {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(HoldIndicator, other.HoldIndicator)) return false;
+      if(!holdIndicators_.Equals(other.holdIndicators_)) return false;
       if (ConversionSuccessful != other.ConversionSuccessful) return false;
       return true;
     }
@@ -115,7 +114,7 @@ namespace HOLMS.Types.Supply {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (holdIndicator_ != null) hash ^= HoldIndicator.GetHashCode();
+      hash ^= holdIndicators_.GetHashCode();
       if (ConversionSuccessful != false) hash ^= ConversionSuccessful.GetHashCode();
       return hash;
     }
@@ -127,10 +126,7 @@ namespace HOLMS.Types.Supply {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (holdIndicator_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(HoldIndicator);
-      }
+      holdIndicators_.WriteTo(output, _repeated_holdIndicators_codec);
       if (ConversionSuccessful != false) {
         output.WriteRawTag(16);
         output.WriteBool(ConversionSuccessful);
@@ -140,9 +136,7 @@ namespace HOLMS.Types.Supply {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (holdIndicator_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HoldIndicator);
-      }
+      size += holdIndicators_.CalculateSize(_repeated_holdIndicators_codec);
       if (ConversionSuccessful != false) {
         size += 1 + 1;
       }
@@ -154,12 +148,7 @@ namespace HOLMS.Types.Supply {
       if (other == null) {
         return;
       }
-      if (other.holdIndicator_ != null) {
-        if (holdIndicator_ == null) {
-          holdIndicator_ = new global::HOLMS.Types.Supply.ReservationHoldIndicator();
-        }
-        HoldIndicator.MergeFrom(other.HoldIndicator);
-      }
+      holdIndicators_.Add(other.holdIndicators_);
       if (other.ConversionSuccessful != false) {
         ConversionSuccessful = other.ConversionSuccessful;
       }
@@ -174,10 +163,7 @@ namespace HOLMS.Types.Supply {
             input.SkipLastField();
             break;
           case 10: {
-            if (holdIndicator_ == null) {
-              holdIndicator_ = new global::HOLMS.Types.Supply.ReservationHoldIndicator();
-            }
-            input.ReadMessage(holdIndicator_);
+            holdIndicators_.AddEntriesFrom(input, _repeated_holdIndicators_codec);
             break;
           }
           case 16: {

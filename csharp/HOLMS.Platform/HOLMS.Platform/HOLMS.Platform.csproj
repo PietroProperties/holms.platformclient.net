@@ -179,6 +179,7 @@
     <Compile Include="Types\Extensions\Supply\IncidentalItems\IncidentalItem.cs" />
     <Compile Include="Types\Extensions\Supply\IncidentalItems\IncidentalItemIndicator.cs" />
     <Compile Include="Types\Extensions\Supply\MaintenanceHoldIndicator.cs" />
+    <Compile Include="Types\Extensions\Supply\Packages\LodgingPackageIndicator.cs" />
     <Compile Include="Types\Extensions\Supply\Qualification.cs" />
     <Compile Include="Types\Extensions\Supply\QualificationIndicator.cs" />
     <Compile Include="Types\Extensions\Supply\RateSchedule.cs" />
@@ -225,7 +226,6 @@
     <Compile Include="Types\out\AttractionCategorySvcGrpc.cs" />
     <Compile Include="Types\out\AttractionIndicator.cs" />
     <Compile Include="Types\out\BookGenesisReservationRequest.cs" />
-    <Compile Include="Types\out\BookingHeldLodgingPackage.cs" />
     <Compile Include="Types\out\BookingHoldConversionResult.cs" />
     <Compile Include="Types\out\BookingPricingSvc.cs" />
     <Compile Include="Types\out\BookingPricingSvcGrpc.cs" />
@@ -383,6 +383,7 @@
     <Compile Include="Types\out\LodgingBookingSvc.cs" />
     <Compile Include="Types\out\LodgingBookingSvcGrpc.cs" />
     <Compile Include="Types\out\LodgingPackage.cs" />
+    <Compile Include="Types\out\LodgingPackageIndicator.cs" />
     <Compile Include="Types\out\LodgingSnapshotQuantity.cs" />
     <Compile Include="Types\out\LodgingSnapshotRequestResponse.cs" />
     <Compile Include="Types\out\LodgingSnapshotResponseRecord.cs" />

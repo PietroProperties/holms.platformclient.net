@@ -4,9 +4,9 @@ package holms.types.supply;
 option csharp_namespace = "HOLMS.Types.Supply";
 option go_package = "supply";
 
-import "supply/reservation_amendment_hold_indicator.proto";
+import "supply/reservation_hold_indicator.proto";
 
 message AmendmentHoldConversionResult {
-	ReservationAmendmentHoldIndicator hold_indicator = 1;
+	repeated ReservationHoldIndicator hold_indicators = 1;
 	bool conversion_successful = 2;
 }

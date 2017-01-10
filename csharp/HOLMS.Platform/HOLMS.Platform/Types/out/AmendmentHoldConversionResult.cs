@@ -23,16 +23,16 @@ namespace HOLMS.Types.Supply {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci1zdXBwbHkvYW1lbmRtZW50X2hvbGRfY29udmVyc2lvbl9yZXN1bHQucHJv",
-            "dG8SEmhvbG1zLnR5cGVzLnN1cHBseRoxc3VwcGx5L3Jlc2VydmF0aW9uX2Ft",
-            "ZW5kbWVudF9ob2xkX2luZGljYXRvci5wcm90byKNAQodQW1lbmRtZW50SG9s",
-            "ZENvbnZlcnNpb25SZXN1bHQSTQoOaG9sZF9pbmRpY2F0b3IYASABKAsyNS5o",
-            "b2xtcy50eXBlcy5zdXBwbHkuUmVzZXJ2YXRpb25BbWVuZG1lbnRIb2xkSW5k",
-            "aWNhdG9yEh0KFWNvbnZlcnNpb25fc3VjY2Vzc2Z1bBgCIAEoCEIdWgZzdXBw",
-            "bHmqAhJIT0xNUy5UeXBlcy5TdXBwbHliBnByb3RvMw=="));
+            "dG8SEmhvbG1zLnR5cGVzLnN1cHBseRonc3VwcGx5L3Jlc2VydmF0aW9uX2hv",
+            "bGRfaW5kaWNhdG9yLnByb3RvIoUBCh1BbWVuZG1lbnRIb2xkQ29udmVyc2lv",
+            "blJlc3VsdBJFCg9ob2xkX2luZGljYXRvcnMYASADKAsyLC5ob2xtcy50eXBl",
+            "cy5zdXBwbHkuUmVzZXJ2YXRpb25Ib2xkSW5kaWNhdG9yEh0KFWNvbnZlcnNp",
+            "b25fc3VjY2Vzc2Z1bBgCIAEoCEIdWgZzdXBwbHmqAhJIT0xNUy5UeXBlcy5T",
+            "dXBwbHliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.ReservationAmendmentHoldIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.ReservationHoldIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.AmendmentHoldConversionResult), global::HOLMS.Types.Supply.AmendmentHoldConversionResult.Parser, new[]{ "HoldIndicator", "ConversionSuccessful" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.AmendmentHoldConversionResult), global::HOLMS.Types.Supply.AmendmentHoldConversionResult.Parser, new[]{ "HoldIndicators", "ConversionSuccessful" }, null, null, null)
           }));
     }
     #endregion
@@ -63,7 +63,7 @@ namespace HOLMS.Types.Supply {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AmendmentHoldConversionResult(AmendmentHoldConversionResult other) : this() {
-      HoldIndicator = other.holdIndicator_ != null ? other.HoldIndicator.Clone() : null;
+      holdIndicators_ = other.holdIndicators_.Clone();
       conversionSuccessful_ = other.conversionSuccessful_;
     }
 
@@ -72,15 +72,14 @@ namespace HOLMS.Types.Supply {
       return new AmendmentHoldConversionResult(this);
     }
 
-    /// <summary>Field number for the "hold_indicator" field.</summary>
-    public const int HoldIndicatorFieldNumber = 1;
-    private global::HOLMS.Types.Supply.ReservationAmendmentHoldIndicator holdIndicator_;
+    /// <summary>Field number for the "hold_indicators" field.</summary>
+    public const int HoldIndicatorsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Supply.ReservationHoldIndicator> _repeated_holdIndicators_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Supply.ReservationHoldIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Supply.ReservationHoldIndicator> holdIndicators_ = new pbc::RepeatedField<global::HOLMS.Types.Supply.ReservationHoldIndicator>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Supply.ReservationAmendmentHoldIndicator HoldIndicator {
-      get { return holdIndicator_; }
-      set {
-        holdIndicator_ = value;
-      }
+    public pbc::RepeatedField<global::HOLMS.Types.Supply.ReservationHoldIndicator> HoldIndicators {
+      get { return holdIndicators_; }
     }
 
     /// <summary>Field number for the "conversion_successful" field.</summary>
@@ -107,7 +106,7 @@ namespace HOLMS.Types.Supply {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(HoldIndicator, other.HoldIndicator)) return false;
+      if(!holdIndicators_.Equals(other.holdIndicators_)) return false;
       if (ConversionSuccessful != other.ConversionSuccessful) return false;
       return true;
     }
@@ -115,7 +114,7 @@ namespace HOLMS.Types.Supply {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (holdIndicator_ != null) hash ^= HoldIndicator.GetHashCode();
+      hash ^= holdIndicators_.GetHashCode();
       if (ConversionSuccessful != false) hash ^= ConversionSuccessful.GetHashCode();
       return hash;
     }
@@ -127,10 +126,7 @@ namespace HOLMS.Types.Supply {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (holdIndicator_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(HoldIndicator);
-      }
+      holdIndicators_.WriteTo(output, _repeated_holdIndicators_codec);
       if (ConversionSuccessful != false) {
         output.WriteRawTag(16);
         output.WriteBool(ConversionSuccessful);
@@ -140,9 +136,7 @@ namespace HOLMS.Types.Supply {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (holdIndicator_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HoldIndicator);
-      }
+      size += holdIndicators_.CalculateSize(_repeated_holdIndicators_codec);
       if (ConversionSuccessful != false) {
         size += 1 + 1;
       }
@@ -154,12 +148,7 @@ namespace HOLMS.Types.Supply {
       if (other == null) {
         return;
       }
-      if (other.holdIndicator_ != null) {
-        if (holdIndicator_ == null) {
-          holdIndicator_ = new global::HOLMS.Types.Supply.ReservationAmendmentHoldIndicator();
-        }
-        HoldIndicator.MergeFrom(other.HoldIndicator);
-      }
+      holdIndicators_.Add(other.holdIndicators_);
       if (other.ConversionSuccessful != false) {
         ConversionSuccessful = other.ConversionSuccessful;
       }
@@ -174,10 +163,7 @@ namespace HOLMS.Types.Supply {
             input.SkipLastField();
             break;
           case 10: {
-            if (holdIndicator_ == null) {
-              holdIndicator_ = new global::HOLMS.Types.Supply.ReservationAmendmentHoldIndicator();
-            }
-            input.ReadMessage(holdIndicator_);
+            holdIndicators_.AddEntriesFrom(input, _repeated_holdIndicators_codec);
             break;
           }
           case 16: {

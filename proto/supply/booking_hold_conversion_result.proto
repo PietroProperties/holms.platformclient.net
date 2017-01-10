@@ -7,6 +7,6 @@ option go_package = "supply";
 import "supply/reservation_hold_indicator.proto";
 
 message BookingHoldConversionResult {
-	ReservationHoldIndicator hold_indicator = 1;
+	repeated ReservationHoldIndicator hold_indicators = 1;
 	bool conversion_successful = 2;
 }

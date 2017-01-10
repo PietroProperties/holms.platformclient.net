@@ -7,7 +7,6 @@ option go_package = "supply";
 import "supply/room_types/room_type_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "primitive/pb_local_date.proto";
-import "supply/qualification_indicator.proto";
 import "supply/rate_schedule_indicator.proto";
 
 message PricedOfferedLodging {

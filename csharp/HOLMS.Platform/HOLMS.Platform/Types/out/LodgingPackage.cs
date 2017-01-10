@@ -23,15 +23,20 @@ namespace HOLMS.Types.Supply.Packages {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiVzdXBwbHkvcGFja2FnZXMvbG9kZ2luZ19wYWNrYWdlLnByb3RvEhtob2xt",
-            "cy50eXBlcy5zdXBwbHkucGFja2FnZXMaI3N1cHBseS9wcmljZWRfb2ZmZXJl",
-            "ZF9sb2RnaW5nLnByb3RvIlwKDkxvZGdpbmdQYWNrYWdlEhAKCGJvb2thYmxl",
-            "GAEgASgIEjgKBm9mZmVycxgCIAMoCzIoLmhvbG1zLnR5cGVzLnN1cHBseS5Q",
-            "cmljZWRPZmZlcmVkTG9kZ2luZ0IvWg9zdXBwbHkvcGFja2FnZXOqAhtIT0xN",
-            "Uy5UeXBlcy5TdXBwbHkuUGFja2FnZXNiBnByb3RvMw=="));
+            "cy50eXBlcy5zdXBwbHkucGFja2FnZXMaH2dvb2dsZS9wcm90b2J1Zi90aW1l",
+            "c3RhbXAucHJvdG8aI3N1cHBseS9wcmljZWRfb2ZmZXJlZF9sb2RnaW5nLnBy",
+            "b3RvGi9zdXBwbHkvcGFja2FnZXMvbG9kZ2luZ19wYWNrYWdlX2luZGljYXRv",
+            "ci5wcm90byLWAQoOTG9kZ2luZ1BhY2thZ2USEAoIYm9va2FibGUYASABKAgS",
+            "OAoGb2ZmZXJzGAIgAygLMiguaG9sbXMudHlwZXMuc3VwcGx5LlByaWNlZE9m",
+            "ZmVyZWRMb2RnaW5nEkgKCnBhY2thZ2VfaWQYAyABKAsyNC5ob2xtcy50eXBl",
+            "cy5zdXBwbHkucGFja2FnZXMuTG9kZ2luZ1BhY2thZ2VJbmRpY2F0b3ISLgoK",
+            "ZXhwaXJlc19hdBgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBC",
+            "L1oPc3VwcGx5L3BhY2thZ2VzqgIbSE9MTVMuVHlwZXMuU3VwcGx5LlBhY2th",
+            "Z2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.PricedOfferedLodgingReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Supply.PricedOfferedLodgingReflection.Descriptor, global::HOLMS.Types.Supply.Packages.LodgingPackageIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.Packages.LodgingPackage), global::HOLMS.Types.Supply.Packages.LodgingPackage.Parser, new[]{ "Bookable", "Offers" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.Packages.LodgingPackage), global::HOLMS.Types.Supply.Packages.LodgingPackage.Parser, new[]{ "Bookable", "Offers", "PackageId", "ExpiresAt" }, null, null, null)
           }));
     }
     #endregion
@@ -64,6 +69,8 @@ namespace HOLMS.Types.Supply.Packages {
     public LodgingPackage(LodgingPackage other) : this() {
       bookable_ = other.bookable_;
       offers_ = other.offers_.Clone();
+      PackageId = other.packageId_ != null ? other.PackageId.Clone() : null;
+      ExpiresAt = other.expiresAt_ != null ? other.ExpiresAt.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -92,6 +99,28 @@ namespace HOLMS.Types.Supply.Packages {
       get { return offers_; }
     }
 
+    /// <summary>Field number for the "package_id" field.</summary>
+    public const int PackageIdFieldNumber = 3;
+    private global::HOLMS.Types.Supply.Packages.LodgingPackageIndicator packageId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Supply.Packages.LodgingPackageIndicator PackageId {
+      get { return packageId_; }
+      set {
+        packageId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "expires_at" field.</summary>
+    public const int ExpiresAtFieldNumber = 4;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp expiresAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ExpiresAt {
+      get { return expiresAt_; }
+      set {
+        expiresAt_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LodgingPackage);
@@ -107,6 +136,8 @@ namespace HOLMS.Types.Supply.Packages {
       }
       if (Bookable != other.Bookable) return false;
       if(!offers_.Equals(other.offers_)) return false;
+      if (!object.Equals(PackageId, other.PackageId)) return false;
+      if (!object.Equals(ExpiresAt, other.ExpiresAt)) return false;
       return true;
     }
 
@@ -115,6 +146,8 @@ namespace HOLMS.Types.Supply.Packages {
       int hash = 1;
       if (Bookable != false) hash ^= Bookable.GetHashCode();
       hash ^= offers_.GetHashCode();
+      if (packageId_ != null) hash ^= PackageId.GetHashCode();
+      if (expiresAt_ != null) hash ^= ExpiresAt.GetHashCode();
       return hash;
     }
 
@@ -130,6 +163,14 @@ namespace HOLMS.Types.Supply.Packages {
         output.WriteBool(Bookable);
       }
       offers_.WriteTo(output, _repeated_offers_codec);
+      if (packageId_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(PackageId);
+      }
+      if (expiresAt_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ExpiresAt);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -139,6 +180,12 @@ namespace HOLMS.Types.Supply.Packages {
         size += 1 + 1;
       }
       size += offers_.CalculateSize(_repeated_offers_codec);
+      if (packageId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PackageId);
+      }
+      if (expiresAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExpiresAt);
+      }
       return size;
     }
 
@@ -151,6 +198,18 @@ namespace HOLMS.Types.Supply.Packages {
         Bookable = other.Bookable;
       }
       offers_.Add(other.offers_);
+      if (other.packageId_ != null) {
+        if (packageId_ == null) {
+          packageId_ = new global::HOLMS.Types.Supply.Packages.LodgingPackageIndicator();
+        }
+        PackageId.MergeFrom(other.PackageId);
+      }
+      if (other.expiresAt_ != null) {
+        if (expiresAt_ == null) {
+          expiresAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ExpiresAt.MergeFrom(other.ExpiresAt);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -167,6 +226,20 @@ namespace HOLMS.Types.Supply.Packages {
           }
           case 18: {
             offers_.AddEntriesFrom(input, _repeated_offers_codec);
+            break;
+          }
+          case 26: {
+            if (packageId_ == null) {
+              packageId_ = new global::HOLMS.Types.Supply.Packages.LodgingPackageIndicator();
+            }
+            input.ReadMessage(packageId_);
+            break;
+          }
+          case 34: {
+            if (expiresAt_ == null) {
+              expiresAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(expiresAt_);
             break;
           }
         }
