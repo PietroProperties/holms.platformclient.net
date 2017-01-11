@@ -25,16 +25,16 @@ namespace HOLMS.Types.Supply {
             "Ch9zdXBwbHkvZ3JvdXBfYm9va2luZ19ob2xkLnByb3RvEhJob2xtcy50eXBl",
             "cy5zdXBwbHkaMGJvb2tpbmcvaW5kaWNhdG9ycy9ncm91cF9ib29raW5nX2lu",
             "ZGljYXRvci5wcm90bxorc3VwcGx5L3Jvb21fdHlwZXMvcm9vbV90eXBlX2lu",
-            "ZGljYXRvci5wcm90byLOAQoQR3JvdXBCb29raW5nSG9sZBJGCgdib29raW5n",
+            "ZGljYXRvci5wcm90byLRAQoQR3JvdXBCb29raW5nSG9sZBJGCgdib29raW5n",
             "GAEgASgLMjUuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3Vw",
             "Qm9va2luZ0luZGljYXRvchJDCglyb29tX3R5cGUYAiABKAsyMC5ob2xtcy50",
-            "eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZUluZGljYXRvchIWCg50",
-            "b3RhbF9xdWFudGl0eRgDIAEoDRIVCg11c2VkX3F1YW50aXR5GAQgASgNQh1a",
-            "BnN1cHBseaoCEkhPTE1TLlR5cGVzLlN1cHBseWIGcHJvdG8z"));
+            "eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZUluZGljYXRvchIVCg1o",
+            "ZWxkX3F1YW50aXR5GAMgASgNEhkKEW9wZW5fcmVzZXJ2YXRpb25zGAQgASgN",
+            "Qh1aBnN1cHBseaoCEkhPTE1TLlR5cGVzLlN1cHBseWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.GroupBookingHold), global::HOLMS.Types.Supply.GroupBookingHold.Parser, new[]{ "Booking", "RoomType", "TotalQuantity", "UsedQuantity" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.GroupBookingHold), global::HOLMS.Types.Supply.GroupBookingHold.Parser, new[]{ "Booking", "RoomType", "HeldQuantity", "OpenReservations" }, null, null, null)
           }));
     }
     #endregion
@@ -67,8 +67,8 @@ namespace HOLMS.Types.Supply {
     public GroupBookingHold(GroupBookingHold other) : this() {
       Booking = other.booking_ != null ? other.Booking.Clone() : null;
       RoomType = other.roomType_ != null ? other.RoomType.Clone() : null;
-      totalQuantity_ = other.totalQuantity_;
-      usedQuantity_ = other.usedQuantity_;
+      heldQuantity_ = other.heldQuantity_;
+      openReservations_ = other.openReservations_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -98,25 +98,25 @@ namespace HOLMS.Types.Supply {
       }
     }
 
-    /// <summary>Field number for the "total_quantity" field.</summary>
-    public const int TotalQuantityFieldNumber = 3;
-    private uint totalQuantity_;
+    /// <summary>Field number for the "held_quantity" field.</summary>
+    public const int HeldQuantityFieldNumber = 3;
+    private uint heldQuantity_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint TotalQuantity {
-      get { return totalQuantity_; }
+    public uint HeldQuantity {
+      get { return heldQuantity_; }
       set {
-        totalQuantity_ = value;
+        heldQuantity_ = value;
       }
     }
 
-    /// <summary>Field number for the "used_quantity" field.</summary>
-    public const int UsedQuantityFieldNumber = 4;
-    private uint usedQuantity_;
+    /// <summary>Field number for the "open_reservations" field.</summary>
+    public const int OpenReservationsFieldNumber = 4;
+    private uint openReservations_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint UsedQuantity {
-      get { return usedQuantity_; }
+    public uint OpenReservations {
+      get { return openReservations_; }
       set {
-        usedQuantity_ = value;
+        openReservations_ = value;
       }
     }
 
@@ -135,8 +135,8 @@ namespace HOLMS.Types.Supply {
       }
       if (!object.Equals(Booking, other.Booking)) return false;
       if (!object.Equals(RoomType, other.RoomType)) return false;
-      if (TotalQuantity != other.TotalQuantity) return false;
-      if (UsedQuantity != other.UsedQuantity) return false;
+      if (HeldQuantity != other.HeldQuantity) return false;
+      if (OpenReservations != other.OpenReservations) return false;
       return true;
     }
 
@@ -145,8 +145,8 @@ namespace HOLMS.Types.Supply {
       int hash = 1;
       if (booking_ != null) hash ^= Booking.GetHashCode();
       if (roomType_ != null) hash ^= RoomType.GetHashCode();
-      if (TotalQuantity != 0) hash ^= TotalQuantity.GetHashCode();
-      if (UsedQuantity != 0) hash ^= UsedQuantity.GetHashCode();
+      if (HeldQuantity != 0) hash ^= HeldQuantity.GetHashCode();
+      if (OpenReservations != 0) hash ^= OpenReservations.GetHashCode();
       return hash;
     }
 
@@ -165,13 +165,13 @@ namespace HOLMS.Types.Supply {
         output.WriteRawTag(18);
         output.WriteMessage(RoomType);
       }
-      if (TotalQuantity != 0) {
+      if (HeldQuantity != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(TotalQuantity);
+        output.WriteUInt32(HeldQuantity);
       }
-      if (UsedQuantity != 0) {
+      if (OpenReservations != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(UsedQuantity);
+        output.WriteUInt32(OpenReservations);
       }
     }
 
@@ -184,11 +184,11 @@ namespace HOLMS.Types.Supply {
       if (roomType_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomType);
       }
-      if (TotalQuantity != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TotalQuantity);
+      if (HeldQuantity != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(HeldQuantity);
       }
-      if (UsedQuantity != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(UsedQuantity);
+      if (OpenReservations != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OpenReservations);
       }
       return size;
     }
@@ -210,11 +210,11 @@ namespace HOLMS.Types.Supply {
         }
         RoomType.MergeFrom(other.RoomType);
       }
-      if (other.TotalQuantity != 0) {
-        TotalQuantity = other.TotalQuantity;
+      if (other.HeldQuantity != 0) {
+        HeldQuantity = other.HeldQuantity;
       }
-      if (other.UsedQuantity != 0) {
-        UsedQuantity = other.UsedQuantity;
+      if (other.OpenReservations != 0) {
+        OpenReservations = other.OpenReservations;
       }
     }
 
@@ -241,11 +241,11 @@ namespace HOLMS.Types.Supply {
             break;
           }
           case 24: {
-            TotalQuantity = input.ReadUInt32();
+            HeldQuantity = input.ReadUInt32();
             break;
           }
           case 32: {
-            UsedQuantity = input.ReadUInt32();
+            OpenReservations = input.ReadUInt32();
             break;
           }
         }
