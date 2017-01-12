@@ -12,9 +12,9 @@ message CardMerchant {
 	string name = 2;
 	CardProcessorIndicator card_processor = 3;
 	string card_agreement = 4;
-	string license_id = 5;
-	string site_id = 6;
-	string device_id = 7;
+	int32 license_id = 5;
+	int32 site_id = 6;
+	int32 device_id = 7;
 	string username = 8;
 	string password = 9;
 	string service_u_r_i = 10;
