@@ -29,8 +29,8 @@ namespace HOLMS.Types.Money.Cards {
             "CzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRNZXJjaGFudEluZGlj",
             "YXRvchIMCgRuYW1lGAIgASgJEkcKDmNhcmRfcHJvY2Vzc29yGAMgASgOMi8u",
             "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZFByb2Nlc3NvckluZGljYXRv",
-            "chIWCg5jYXJkX2FncmVlbWVudBgEIAEoCRISCgpsaWNlbnNlX2lkGAUgASgJ",
-            "Eg8KB3NpdGVfaWQYBiABKAkSEQoJZGV2aWNlX2lkGAcgASgJEhAKCHVzZXJu",
+            "chIWCg5jYXJkX2FncmVlbWVudBgEIAEoCRISCgpsaWNlbnNlX2lkGAUgASgF",
+            "Eg8KB3NpdGVfaWQYBiABKAUSEQoJZGV2aWNlX2lkGAcgASgFEhAKCHVzZXJu",
             "YW1lGAggASgJEhAKCHBhc3N3b3JkGAkgASgJEhUKDXNlcnZpY2VfdV9yX2kY",
             "CiABKAlCJ1oLbW9uZXkvY2FyZHOqAhdIT0xNUy5UeXBlcy5Nb25leS5DYXJk",
             "c2IGcHJvdG8z"));
@@ -131,34 +131,34 @@ namespace HOLMS.Types.Money.Cards {
 
     /// <summary>Field number for the "license_id" field.</summary>
     public const int LicenseIdFieldNumber = 5;
-    private string licenseId_ = "";
+    private int licenseId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string LicenseId {
+    public int LicenseId {
       get { return licenseId_; }
       set {
-        licenseId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        licenseId_ = value;
       }
     }
 
     /// <summary>Field number for the "site_id" field.</summary>
     public const int SiteIdFieldNumber = 6;
-    private string siteId_ = "";
+    private int siteId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string SiteId {
+    public int SiteId {
       get { return siteId_; }
       set {
-        siteId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        siteId_ = value;
       }
     }
 
     /// <summary>Field number for the "device_id" field.</summary>
     public const int DeviceIdFieldNumber = 7;
-    private string deviceId_ = "";
+    private int deviceId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string DeviceId {
+    public int DeviceId {
       get { return deviceId_; }
       set {
-        deviceId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        deviceId_ = value;
       }
     }
 
@@ -228,9 +228,9 @@ namespace HOLMS.Types.Money.Cards {
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (CardProcessor != 0) hash ^= CardProcessor.GetHashCode();
       if (CardAgreement.Length != 0) hash ^= CardAgreement.GetHashCode();
-      if (LicenseId.Length != 0) hash ^= LicenseId.GetHashCode();
-      if (SiteId.Length != 0) hash ^= SiteId.GetHashCode();
-      if (DeviceId.Length != 0) hash ^= DeviceId.GetHashCode();
+      if (LicenseId != 0) hash ^= LicenseId.GetHashCode();
+      if (SiteId != 0) hash ^= SiteId.GetHashCode();
+      if (DeviceId != 0) hash ^= DeviceId.GetHashCode();
       if (Username.Length != 0) hash ^= Username.GetHashCode();
       if (Password.Length != 0) hash ^= Password.GetHashCode();
       if (ServiceURI.Length != 0) hash ^= ServiceURI.GetHashCode();
@@ -260,17 +260,17 @@ namespace HOLMS.Types.Money.Cards {
         output.WriteRawTag(34);
         output.WriteString(CardAgreement);
       }
-      if (LicenseId.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(LicenseId);
+      if (LicenseId != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(LicenseId);
       }
-      if (SiteId.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(SiteId);
+      if (SiteId != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(SiteId);
       }
-      if (DeviceId.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(DeviceId);
+      if (DeviceId != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(DeviceId);
       }
       if (Username.Length != 0) {
         output.WriteRawTag(66);
@@ -301,14 +301,14 @@ namespace HOLMS.Types.Money.Cards {
       if (CardAgreement.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CardAgreement);
       }
-      if (LicenseId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(LicenseId);
+      if (LicenseId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LicenseId);
       }
-      if (SiteId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(SiteId);
+      if (SiteId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SiteId);
       }
-      if (DeviceId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(DeviceId);
+      if (DeviceId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DeviceId);
       }
       if (Username.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Username);
@@ -342,13 +342,13 @@ namespace HOLMS.Types.Money.Cards {
       if (other.CardAgreement.Length != 0) {
         CardAgreement = other.CardAgreement;
       }
-      if (other.LicenseId.Length != 0) {
+      if (other.LicenseId != 0) {
         LicenseId = other.LicenseId;
       }
-      if (other.SiteId.Length != 0) {
+      if (other.SiteId != 0) {
         SiteId = other.SiteId;
       }
-      if (other.DeviceId.Length != 0) {
+      if (other.DeviceId != 0) {
         DeviceId = other.DeviceId;
       }
       if (other.Username.Length != 0) {
@@ -389,16 +389,16 @@ namespace HOLMS.Types.Money.Cards {
             CardAgreement = input.ReadString();
             break;
           }
-          case 42: {
-            LicenseId = input.ReadString();
+          case 40: {
+            LicenseId = input.ReadInt32();
             break;
           }
-          case 50: {
-            SiteId = input.ReadString();
+          case 48: {
+            SiteId = input.ReadInt32();
             break;
           }
-          case 58: {
-            DeviceId = input.ReadString();
+          case 56: {
+            DeviceId = input.ReadInt32();
             break;
           }
           case 66: {
