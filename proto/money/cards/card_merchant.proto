@@ -10,7 +10,12 @@ import "money/cards/card_processor_indicator.proto";
 message CardMerchant {
 	CardMerchantIndicator entity_id = 1;
 	string name = 2;
-	string portico_secret_key = 3;
-	CardProcessorIndicator card_processor = 4;
-	string card_agreement = 5;
+	CardProcessorIndicator card_processor = 3;
+	string card_agreement = 4;
+	string license_id = 5;
+	string site_id = 6;
+	string device_id = 7;
+	string username = 8;
+	string password = 9;
+	string service_u_r_i = 10;
 }
