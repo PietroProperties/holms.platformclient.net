@@ -25,17 +25,19 @@ namespace HOLMS.Types.Money.Cards {
             "Ch9tb25leS9jYXJkcy9jYXJkX21lcmNoYW50LnByb3RvEhdob2xtcy50eXBl",
             "cy5tb25leS5jYXJkcxopbW9uZXkvY2FyZHMvY2FyZF9tZXJjaGFudF9pbmRp",
             "Y2F0b3IucHJvdG8aKm1vbmV5L2NhcmRzL2NhcmRfcHJvY2Vzc29yX2luZGlj",
-            "YXRvci5wcm90byLcAQoMQ2FyZE1lcmNoYW50EkEKCWVudGl0eV9pZBgBIAEo",
+            "YXRvci5wcm90byKzAgoMQ2FyZE1lcmNoYW50EkEKCWVudGl0eV9pZBgBIAEo",
             "CzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRNZXJjaGFudEluZGlj",
-            "YXRvchIMCgRuYW1lGAIgASgJEhoKEnBvcnRpY29fc2VjcmV0X2tleRgDIAEo",
-            "CRJHCg5jYXJkX3Byb2Nlc3NvchgEIAEoDjIvLmhvbG1zLnR5cGVzLm1vbmV5",
-            "LmNhcmRzLkNhcmRQcm9jZXNzb3JJbmRpY2F0b3ISFgoOY2FyZF9hZ3JlZW1l",
-            "bnQYBSABKAlCJ1oLbW9uZXkvY2FyZHOqAhdIT0xNUy5UeXBlcy5Nb25leS5D",
-            "YXJkc2IGcHJvdG8z"));
+            "YXRvchIMCgRuYW1lGAIgASgJEkcKDmNhcmRfcHJvY2Vzc29yGAMgASgOMi8u",
+            "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZFByb2Nlc3NvckluZGljYXRv",
+            "chIWCg5jYXJkX2FncmVlbWVudBgEIAEoCRISCgpsaWNlbnNlX2lkGAUgASgJ",
+            "Eg8KB3NpdGVfaWQYBiABKAkSEQoJZGV2aWNlX2lkGAcgASgJEhAKCHVzZXJu",
+            "YW1lGAggASgJEhAKCHBhc3N3b3JkGAkgASgJEhUKDXNlcnZpY2VfdV9yX2kY",
+            "CiABKAlCJ1oLbW9uZXkvY2FyZHOqAhdIT0xNUy5UeXBlcy5Nb25leS5DYXJk",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardProcessorIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.CardMerchant), global::HOLMS.Types.Money.Cards.CardMerchant.Parser, new[]{ "EntityId", "Name", "PorticoSecretKey", "CardProcessor", "CardAgreement" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.CardMerchant), global::HOLMS.Types.Money.Cards.CardMerchant.Parser, new[]{ "EntityId", "Name", "CardProcessor", "CardAgreement", "LicenseId", "SiteId", "DeviceId", "Username", "Password", "ServiceURI" }, null, null, null)
           }));
     }
     #endregion
@@ -68,9 +70,14 @@ namespace HOLMS.Types.Money.Cards {
     public CardMerchant(CardMerchant other) : this() {
       EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
       name_ = other.name_;
-      porticoSecretKey_ = other.porticoSecretKey_;
       cardProcessor_ = other.cardProcessor_;
       cardAgreement_ = other.cardAgreement_;
+      licenseId_ = other.licenseId_;
+      siteId_ = other.siteId_;
+      deviceId_ = other.deviceId_;
+      username_ = other.username_;
+      password_ = other.password_;
+      serviceURI_ = other.serviceURI_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -100,19 +107,8 @@ namespace HOLMS.Types.Money.Cards {
       }
     }
 
-    /// <summary>Field number for the "portico_secret_key" field.</summary>
-    public const int PorticoSecretKeyFieldNumber = 3;
-    private string porticoSecretKey_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string PorticoSecretKey {
-      get { return porticoSecretKey_; }
-      set {
-        porticoSecretKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     /// <summary>Field number for the "card_processor" field.</summary>
-    public const int CardProcessorFieldNumber = 4;
+    public const int CardProcessorFieldNumber = 3;
     private global::HOLMS.Types.Money.Cards.CardProcessorIndicator cardProcessor_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Money.Cards.CardProcessorIndicator CardProcessor {
@@ -123,13 +119,79 @@ namespace HOLMS.Types.Money.Cards {
     }
 
     /// <summary>Field number for the "card_agreement" field.</summary>
-    public const int CardAgreementFieldNumber = 5;
+    public const int CardAgreementFieldNumber = 4;
     private string cardAgreement_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string CardAgreement {
       get { return cardAgreement_; }
       set {
         cardAgreement_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "license_id" field.</summary>
+    public const int LicenseIdFieldNumber = 5;
+    private string licenseId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string LicenseId {
+      get { return licenseId_; }
+      set {
+        licenseId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "site_id" field.</summary>
+    public const int SiteIdFieldNumber = 6;
+    private string siteId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SiteId {
+      get { return siteId_; }
+      set {
+        siteId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "device_id" field.</summary>
+    public const int DeviceIdFieldNumber = 7;
+    private string deviceId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string DeviceId {
+      get { return deviceId_; }
+      set {
+        deviceId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "username" field.</summary>
+    public const int UsernameFieldNumber = 8;
+    private string username_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Username {
+      get { return username_; }
+      set {
+        username_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "password" field.</summary>
+    public const int PasswordFieldNumber = 9;
+    private string password_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Password {
+      get { return password_; }
+      set {
+        password_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "service_u_r_i" field.</summary>
+    public const int ServiceURIFieldNumber = 10;
+    private string serviceURI_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ServiceURI {
+      get { return serviceURI_; }
+      set {
+        serviceURI_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -148,9 +210,14 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (!object.Equals(EntityId, other.EntityId)) return false;
       if (Name != other.Name) return false;
-      if (PorticoSecretKey != other.PorticoSecretKey) return false;
       if (CardProcessor != other.CardProcessor) return false;
       if (CardAgreement != other.CardAgreement) return false;
+      if (LicenseId != other.LicenseId) return false;
+      if (SiteId != other.SiteId) return false;
+      if (DeviceId != other.DeviceId) return false;
+      if (Username != other.Username) return false;
+      if (Password != other.Password) return false;
+      if (ServiceURI != other.ServiceURI) return false;
       return true;
     }
 
@@ -159,9 +226,14 @@ namespace HOLMS.Types.Money.Cards {
       int hash = 1;
       if (entityId_ != null) hash ^= EntityId.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (PorticoSecretKey.Length != 0) hash ^= PorticoSecretKey.GetHashCode();
       if (CardProcessor != 0) hash ^= CardProcessor.GetHashCode();
       if (CardAgreement.Length != 0) hash ^= CardAgreement.GetHashCode();
+      if (LicenseId.Length != 0) hash ^= LicenseId.GetHashCode();
+      if (SiteId.Length != 0) hash ^= SiteId.GetHashCode();
+      if (DeviceId.Length != 0) hash ^= DeviceId.GetHashCode();
+      if (Username.Length != 0) hash ^= Username.GetHashCode();
+      if (Password.Length != 0) hash ^= Password.GetHashCode();
+      if (ServiceURI.Length != 0) hash ^= ServiceURI.GetHashCode();
       return hash;
     }
 
@@ -180,17 +252,37 @@ namespace HOLMS.Types.Money.Cards {
         output.WriteRawTag(18);
         output.WriteString(Name);
       }
-      if (PorticoSecretKey.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(PorticoSecretKey);
-      }
       if (CardProcessor != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(24);
         output.WriteEnum((int) CardProcessor);
       }
       if (CardAgreement.Length != 0) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(34);
         output.WriteString(CardAgreement);
+      }
+      if (LicenseId.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(LicenseId);
+      }
+      if (SiteId.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(SiteId);
+      }
+      if (DeviceId.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(DeviceId);
+      }
+      if (Username.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(Username);
+      }
+      if (Password.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(Password);
+      }
+      if (ServiceURI.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(ServiceURI);
       }
     }
 
@@ -203,14 +295,29 @@ namespace HOLMS.Types.Money.Cards {
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
-      if (PorticoSecretKey.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PorticoSecretKey);
-      }
       if (CardProcessor != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CardProcessor);
       }
       if (CardAgreement.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CardAgreement);
+      }
+      if (LicenseId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(LicenseId);
+      }
+      if (SiteId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SiteId);
+      }
+      if (DeviceId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DeviceId);
+      }
+      if (Username.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Username);
+      }
+      if (Password.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
+      }
+      if (ServiceURI.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServiceURI);
       }
       return size;
     }
@@ -229,14 +336,29 @@ namespace HOLMS.Types.Money.Cards {
       if (other.Name.Length != 0) {
         Name = other.Name;
       }
-      if (other.PorticoSecretKey.Length != 0) {
-        PorticoSecretKey = other.PorticoSecretKey;
-      }
       if (other.CardProcessor != 0) {
         CardProcessor = other.CardProcessor;
       }
       if (other.CardAgreement.Length != 0) {
         CardAgreement = other.CardAgreement;
+      }
+      if (other.LicenseId.Length != 0) {
+        LicenseId = other.LicenseId;
+      }
+      if (other.SiteId.Length != 0) {
+        SiteId = other.SiteId;
+      }
+      if (other.DeviceId.Length != 0) {
+        DeviceId = other.DeviceId;
+      }
+      if (other.Username.Length != 0) {
+        Username = other.Username;
+      }
+      if (other.Password.Length != 0) {
+        Password = other.Password;
+      }
+      if (other.ServiceURI.Length != 0) {
+        ServiceURI = other.ServiceURI;
       }
     }
 
@@ -259,16 +381,36 @@ namespace HOLMS.Types.Money.Cards {
             Name = input.ReadString();
             break;
           }
-          case 26: {
-            PorticoSecretKey = input.ReadString();
-            break;
-          }
-          case 32: {
+          case 24: {
             cardProcessor_ = (global::HOLMS.Types.Money.Cards.CardProcessorIndicator) input.ReadEnum();
             break;
           }
-          case 42: {
+          case 34: {
             CardAgreement = input.ReadString();
+            break;
+          }
+          case 42: {
+            LicenseId = input.ReadString();
+            break;
+          }
+          case 50: {
+            SiteId = input.ReadString();
+            break;
+          }
+          case 58: {
+            DeviceId = input.ReadString();
+            break;
+          }
+          case 66: {
+            Username = input.ReadString();
+            break;
+          }
+          case 74: {
+            Password = input.ReadString();
+            break;
+          }
+          case 82: {
+            ServiceURI = input.ReadString();
             break;
           }
         }
