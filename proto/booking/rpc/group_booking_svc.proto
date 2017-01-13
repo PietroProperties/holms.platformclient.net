@@ -11,6 +11,7 @@ import "booking/indicators/group_booking_indicator.proto";
 import "booking/groups/group_booking_room_type_quantity.proto";
 import "crm/groups/group_indicator.proto";
 import "supply/price_update_request.proto";
+import "booking/reservations/reservation_summary.proto";
 
 message GroupBookingSvcAllBookings {
 	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
@@ -24,6 +25,10 @@ message GroupBookingSvcPriceUpdateRequest {
 message GroupBookingSvcQuantityUpdateRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
 	repeated .holms.types.booking.groups.GroupBookingRoomTypeQuantity quantities = 2;
+}
+
+message GroupBookingSvcGetReservationsWithTagResponse {
+	repeated .holms.types.booking.reservations.ReservationSummary reservations = 1;
 }
 
 service GroupBookingSvc {
@@ -41,4 +46,7 @@ service GroupBookingSvc {
 
 	rpc UpdateQuantities (GroupBookingSvcQuantityUpdateRequest)
 		returns (google.protobuf.Empty);
+
+	rpc GetReservationSummariesWithGBTag (.holms.types.booking.indicators.GroupBookingIndicator)
+		returns (GroupBookingSvcGetReservationsWithTagResponse);
 }

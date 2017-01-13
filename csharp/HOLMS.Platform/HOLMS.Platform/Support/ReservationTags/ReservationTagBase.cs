@@ -24,6 +24,10 @@ namespace HOLMS.Platform.Support.ReservationTags {
             }
         }
 
+        public string[] ToDescriptorArray() {
+            return ToString().Split(':');
+        }
+
         public static ReservationTagBase CreateFromDescriptor(string descriptor) {
             // NOTE(DA) Was going to do some complicated reflection thing here
             // but decided against it for now.

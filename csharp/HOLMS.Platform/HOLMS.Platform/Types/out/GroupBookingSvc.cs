@@ -29,36 +29,44 @@ namespace HOLMS.Types.Booking.RPC {
             "aWNhdG9ycy9ncm91cF9ib29raW5nX2luZGljYXRvci5wcm90bxo1Ym9va2lu",
             "Zy9ncm91cHMvZ3JvdXBfYm9va2luZ19yb29tX3R5cGVfcXVhbnRpdHkucHJv",
             "dG8aIGNybS9ncm91cHMvZ3JvdXBfaW5kaWNhdG9yLnByb3RvGiFzdXBwbHkv",
-            "cHJpY2VfdXBkYXRlX3JlcXVlc3QucHJvdG8iWwoaR3JvdXBCb29raW5nU3Zj",
-            "QWxsQm9va2luZ3MSPQoIYm9va2luZ3MYASADKAsyKy5ob2xtcy50eXBlcy5i",
-            "b29raW5nLmdyb3Vwcy5Hcm91cEJvb2tpbmdFeHQiowEKIUdyb3VwQm9va2lu",
-            "Z1N2Y1ByaWNlVXBkYXRlUmVxdWVzdBJGCgdib29raW5nGAEgASgLMjUuaG9s",
-            "bXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGlj",
-            "YXRvchI2CgZwcmljZXMYAiADKAsyJi5ob2xtcy50eXBlcy5zdXBwbHkuUHJp",
-            "Y2VVcGRhdGVSZXF1ZXN0IrwBCiRHcm91cEJvb2tpbmdTdmNRdWFudGl0eVVw",
-            "ZGF0ZVJlcXVlc3QSRgoHYm9va2luZxgBIAEoCzI1LmhvbG1zLnR5cGVzLmJv",
-            "b2tpbmcuaW5kaWNhdG9ycy5Hcm91cEJvb2tpbmdJbmRpY2F0b3ISTAoKcXVh",
-            "bnRpdGllcxgCIAMoCzI4LmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdy",
-            "b3VwQm9va2luZ1Jvb21UeXBlUXVhbnRpdHkygAQKD0dyb3VwQm9va2luZ1N2",
-            "YxJSCgNBbGwSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaMy5ob2xtcy50eXBl",
-            "cy5ib29raW5nLnJwYy5Hcm91cEJvb2tpbmdTdmNBbGxCb29raW5ncxJdCgZD",
-            "cmVhdGUSJi5ob2xtcy50eXBlcy5jcm0uZ3JvdXBzLkdyb3VwSW5kaWNhdG9y",
+            "cHJpY2VfdXBkYXRlX3JlcXVlc3QucHJvdG8aLmJvb2tpbmcvcmVzZXJ2YXRp",
+            "b25zL3Jlc2VydmF0aW9uX3N1bW1hcnkucHJvdG8iWwoaR3JvdXBCb29raW5n",
+            "U3ZjQWxsQm9va2luZ3MSPQoIYm9va2luZ3MYASADKAsyKy5ob2xtcy50eXBl",
+            "cy5ib29raW5nLmdyb3Vwcy5Hcm91cEJvb2tpbmdFeHQiowEKIUdyb3VwQm9v",
+            "a2luZ1N2Y1ByaWNlVXBkYXRlUmVxdWVzdBJGCgdib29raW5nGAEgASgLMjUu",
+            "aG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0lu",
+            "ZGljYXRvchI2CgZwcmljZXMYAiADKAsyJi5ob2xtcy50eXBlcy5zdXBwbHku",
+            "UHJpY2VVcGRhdGVSZXF1ZXN0IrwBCiRHcm91cEJvb2tpbmdTdmNRdWFudGl0",
+            "eVVwZGF0ZVJlcXVlc3QSRgoHYm9va2luZxgBIAEoCzI1LmhvbG1zLnR5cGVz",
+            "LmJvb2tpbmcuaW5kaWNhdG9ycy5Hcm91cEJvb2tpbmdJbmRpY2F0b3ISTAoK",
+            "cXVhbnRpdGllcxgCIAMoCzI4LmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBz",
+            "Lkdyb3VwQm9va2luZ1Jvb21UeXBlUXVhbnRpdHkiewotR3JvdXBCb29raW5n",
+            "U3ZjR2V0UmVzZXJ2YXRpb25zV2l0aFRhZ1Jlc3BvbnNlEkoKDHJlc2VydmF0",
+            "aW9ucxgBIAMoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcucmVzZXJ2YXRpb25z",
+            "LlJlc2VydmF0aW9uU3VtbWFyeTKkBQoPR3JvdXBCb29raW5nU3ZjElIKA0Fs",
+            "bBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRozLmhvbG1zLnR5cGVzLmJvb2tp",
+            "bmcucnBjLkdyb3VwQm9va2luZ1N2Y0FsbEJvb2tpbmdzEl0KBkNyZWF0ZRIm",
+            "LmhvbG1zLnR5cGVzLmNybS5ncm91cHMuR3JvdXBJbmRpY2F0b3IaKy5ob2xt",
+            "cy50eXBlcy5ib29raW5nLmdyb3Vwcy5Hcm91cEJvb2tpbmdFeHQSXwoGVXBk",
+            "YXRlEiguaG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMuR3JvdXBCb29raW5n",
             "GisuaG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMuR3JvdXBCb29raW5nRXh0",
-            "El8KBlVwZGF0ZRIoLmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdyb3Vw",
-            "Qm9va2luZxorLmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdyb3VwQm9v",
-            "a2luZ0V4dBJuChhVcGRhdGVHcm91cEJvb2tpbmdQcmljZXMSOi5ob2xtcy50",
-            "eXBlcy5ib29raW5nLnJwYy5Hcm91cEJvb2tpbmdTdmNQcmljZVVwZGF0ZVJl",
-            "cXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSaQoQVXBkYXRlUXVhbnRp",
-            "dGllcxI9LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3VwQm9va2luZ1N2",
-            "Y1F1YW50aXR5VXBkYXRlUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
-            "eUInWgtib29raW5nL3JwY6oCF0hPTE1TLlR5cGVzLkJvb2tpbmcuUlBDYgZw",
-            "cm90bzM="));
+            "Em4KGFVwZGF0ZUdyb3VwQm9va2luZ1ByaWNlcxI6LmhvbG1zLnR5cGVzLmJv",
+            "b2tpbmcucnBjLkdyb3VwQm9va2luZ1N2Y1ByaWNlVXBkYXRlUmVxdWVzdBoW",
+            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJpChBVcGRhdGVRdWFudGl0aWVzEj0u",
+            "aG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBCb29raW5nU3ZjUXVhbnRp",
+            "dHlVcGRhdGVSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EqEBCiBH",
+            "ZXRSZXNlcnZhdGlvblN1bW1hcmllc1dpdGhHQlRhZxI1LmhvbG1zLnR5cGVz",
+            "LmJvb2tpbmcuaW5kaWNhdG9ycy5Hcm91cEJvb2tpbmdJbmRpY2F0b3IaRi5o",
+            "b2xtcy50eXBlcy5ib29raW5nLnJwYy5Hcm91cEJvb2tpbmdTdmNHZXRSZXNl",
+            "cnZhdGlvbnNXaXRoVGFnUmVzcG9uc2VCJ1oLYm9va2luZy9ycGOqAhdIT0xN",
+            "Uy5UeXBlcy5Cb29raW5nLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingExtReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantityReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.PriceUpdateRequestReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingExtReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantityReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.PriceUpdateRequestReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationSummaryReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings), global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings.Parser, new[]{ "Bookings" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GroupBookingSvcPriceUpdateRequest), global::HOLMS.Types.Booking.RPC.GroupBookingSvcPriceUpdateRequest.Parser, new[]{ "Booking", "Prices" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GroupBookingSvcQuantityUpdateRequest), global::HOLMS.Types.Booking.RPC.GroupBookingSvcQuantityUpdateRequest.Parser, new[]{ "Booking", "Quantities" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GroupBookingSvcQuantityUpdateRequest), global::HOLMS.Types.Booking.RPC.GroupBookingSvcQuantityUpdateRequest.Parser, new[]{ "Booking", "Quantities" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse.Parser, new[]{ "Reservations" }, null, null, null)
           }));
     }
     #endregion
@@ -452,6 +460,115 @@ namespace HOLMS.Types.Booking.RPC {
           }
           case 18: {
             quantities_.AddEntriesFrom(input, _repeated_quantities_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GroupBookingSvcGetReservationsWithTagResponse : pb::IMessage<GroupBookingSvcGetReservationsWithTagResponse> {
+    private static readonly pb::MessageParser<GroupBookingSvcGetReservationsWithTagResponse> _parser = new pb::MessageParser<GroupBookingSvcGetReservationsWithTagResponse>(() => new GroupBookingSvcGetReservationsWithTagResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GroupBookingSvcGetReservationsWithTagResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Booking.RPC.GroupBookingSvcReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GroupBookingSvcGetReservationsWithTagResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GroupBookingSvcGetReservationsWithTagResponse(GroupBookingSvcGetReservationsWithTagResponse other) : this() {
+      reservations_ = other.reservations_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GroupBookingSvcGetReservationsWithTagResponse Clone() {
+      return new GroupBookingSvcGetReservationsWithTagResponse(this);
+    }
+
+    /// <summary>Field number for the "reservations" field.</summary>
+    public const int ReservationsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Reservations.ReservationSummary> _repeated_reservations_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Booking.Reservations.ReservationSummary.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Reservations.ReservationSummary> reservations_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Reservations.ReservationSummary>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Booking.Reservations.ReservationSummary> Reservations {
+      get { return reservations_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GroupBookingSvcGetReservationsWithTagResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GroupBookingSvcGetReservationsWithTagResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!reservations_.Equals(other.reservations_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= reservations_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      reservations_.WriteTo(output, _repeated_reservations_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += reservations_.CalculateSize(_repeated_reservations_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GroupBookingSvcGetReservationsWithTagResponse other) {
+      if (other == null) {
+        return;
+      }
+      reservations_.Add(other.reservations_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            reservations_.AddEntriesFrom(input, _repeated_reservations_codec);
             break;
           }
         }
