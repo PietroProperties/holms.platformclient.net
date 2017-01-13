@@ -25,7 +25,7 @@ namespace HOLMS.Types.Supply.RoomTypes {
             "CiFzdXBwbHkvcm9vbV90eXBlcy9yb29tX3R5cGUucHJvdG8SHWhvbG1zLnR5",
             "cGVzLnN1cHBseS5yb29tX3R5cGVzGitzdXBwbHkvcm9vbV90eXBlcy9yb29t",
             "X3R5cGVfaW5kaWNhdG9yLnByb3RvGjJ0ZW5hbmN5X2NvbmZpZy9pbmRpY2F0",
-            "b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byLEAwoIUm9vbVR5cGUSQwoJ",
+            "b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byLSAwoIUm9vbVR5cGUSQwoJ",
             "ZW50aXR5X2lkGAEgASgLMjAuaG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlw",
             "ZXMuUm9vbVR5cGVJbmRpY2F0b3ISEwoLZGVzY3JpcHRpb24YAiABKAkSGAoQ",
             "bm9ybWFsX29jY3VwYW5jeRgEIAEoBRIVCg1tYXhfb2NjdXBhbmN5GAUgASgF",
@@ -33,15 +33,15 @@ namespace HOLMS.Types.Supply.RoomTypes {
             "bmluZ190aW1lX3N0YXlvdmVyX21pbnMYByABKAUSHwoXY2xlYW5pbmdfdGlt",
             "ZV9kdXN0X21pbnMYCCABKAUSHwoXY2xlYW5pbmdfdGltZV9kZWVwX21pbnMY",
             "CSABKAUSHQoVYmFzZV9tYW5hZ2VtZW50X2hvbGRzGAogASgFEhwKFGFkZGl0",
-            "aW9uYWxfd2ViX2hvbGRzGAsgASgFEk0KC3Byb3BlcnR5X2lkGA0gASgLMjgu",
-            "aG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0",
-            "eUluZGljYXRvchIVCg1wcm9wZXJ0eV9uYW1lGA4gASgJQjFaEHN1cHBseS9y",
-            "b29tdHlwZXOqAhxIT0xNUy5UeXBlcy5TdXBwbHkuUm9vbVR5cGVzYgZwcm90",
-            "bzM="));
+            "aW9uYWxfd2ViX2hvbGRzGAsgASgFEgwKBG5hbWUYDCABKAkSTQoLcHJvcGVy",
+            "dHlfaWQYDSABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRp",
+            "Y2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEhUKDXByb3BlcnR5X25hbWUYDiAB",
+            "KAlCMVoQc3VwcGx5L3Jvb210eXBlc6oCHEhPTE1TLlR5cGVzLlN1cHBseS5S",
+            "b29tVHlwZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RoomTypes.RoomType), global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser, new[]{ "EntityId", "Description", "NormalOccupancy", "MaxOccupancy", "CleaningTimeCheckoutMins", "CleaningTimeStayoverMins", "CleaningTimeDustMins", "CleaningTimeDeepMins", "BaseManagementHolds", "AdditionalWebHolds", "PropertyId", "PropertyName" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RoomTypes.RoomType), global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser, new[]{ "EntityId", "Description", "NormalOccupancy", "MaxOccupancy", "CleaningTimeCheckoutMins", "CleaningTimeStayoverMins", "CleaningTimeDustMins", "CleaningTimeDeepMins", "BaseManagementHolds", "AdditionalWebHolds", "Name", "PropertyId", "PropertyName" }, null, null, null)
           }));
     }
     #endregion
@@ -82,6 +82,7 @@ namespace HOLMS.Types.Supply.RoomTypes {
       cleaningTimeDeepMins_ = other.cleaningTimeDeepMins_;
       baseManagementHolds_ = other.baseManagementHolds_;
       additionalWebHolds_ = other.additionalWebHolds_;
+      name_ = other.name_;
       PropertyId = other.propertyId_ != null ? other.PropertyId.Clone() : null;
       propertyName_ = other.propertyName_;
     }
@@ -201,6 +202,17 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
     }
 
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 12;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "property_id" field.</summary>
     public const int PropertyIdFieldNumber = 13;
     private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator propertyId_;
@@ -246,6 +258,7 @@ namespace HOLMS.Types.Supply.RoomTypes {
       if (CleaningTimeDeepMins != other.CleaningTimeDeepMins) return false;
       if (BaseManagementHolds != other.BaseManagementHolds) return false;
       if (AdditionalWebHolds != other.AdditionalWebHolds) return false;
+      if (Name != other.Name) return false;
       if (!object.Equals(PropertyId, other.PropertyId)) return false;
       if (PropertyName != other.PropertyName) return false;
       return true;
@@ -264,6 +277,7 @@ namespace HOLMS.Types.Supply.RoomTypes {
       if (CleaningTimeDeepMins != 0) hash ^= CleaningTimeDeepMins.GetHashCode();
       if (BaseManagementHolds != 0) hash ^= BaseManagementHolds.GetHashCode();
       if (AdditionalWebHolds != 0) hash ^= AdditionalWebHolds.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (propertyId_ != null) hash ^= PropertyId.GetHashCode();
       if (PropertyName.Length != 0) hash ^= PropertyName.GetHashCode();
       return hash;
@@ -316,6 +330,10 @@ namespace HOLMS.Types.Supply.RoomTypes {
         output.WriteRawTag(88);
         output.WriteInt32(AdditionalWebHolds);
       }
+      if (Name.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(Name);
+      }
       if (propertyId_ != null) {
         output.WriteRawTag(106);
         output.WriteMessage(PropertyId);
@@ -358,6 +376,9 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
       if (AdditionalWebHolds != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(AdditionalWebHolds);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (propertyId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PropertyId);
@@ -405,6 +426,9 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
       if (other.AdditionalWebHolds != 0) {
         AdditionalWebHolds = other.AdditionalWebHolds;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
       }
       if (other.propertyId_ != null) {
         if (propertyId_ == null) {
@@ -466,6 +490,10 @@ namespace HOLMS.Types.Supply.RoomTypes {
           }
           case 88: {
             AdditionalWebHolds = input.ReadInt32();
+            break;
+          }
+          case 98: {
+            Name = input.ReadString();
             break;
           }
           case 106: {
