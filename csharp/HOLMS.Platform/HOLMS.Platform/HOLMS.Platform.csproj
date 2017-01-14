@@ -472,6 +472,7 @@
     <Compile Include="Types\out\RecordedPhoneCall.cs" />
     <Compile Include="Types\out\RemoveGuestFromReservationRequest.cs" />
     <Compile Include="Types\out\RequestedChargeCreditPosting.cs" />
+    <Compile Include="Types\out\RequestedReservationPosting.cs" />
     <Compile Include="Types\out\ReservationAmendmentHoldIndicator.cs" />
     <Compile Include="Types\out\ReservationAmendmentSummary.cs" />
     <Compile Include="Types\out\ReservationAssociatedParties.cs" />

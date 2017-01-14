@@ -24,21 +24,23 @@ namespace HOLMS.Types.Money.Folio {
           string.Concat(
             "CjFtb25leS9mb2xpby9yZXF1ZXN0ZWRfY2hhcmdlX2NyZWRpdF9wb3N0aW5n",
             "LnByb3RvEhdob2xtcy50eXBlcy5tb25leS5mb2xpbxofcHJpbWl0aXZlL21v",
-            "bmV0YXJ5X2Ftb3VudC5wcm90bxokbW9uZXkvZm9saW8vY2hhcmdlX2NyZWRp",
-            "dF90eXBlLnByb3RvGjdzdXBwbHkvaW5jaWRlbnRhbF9pdGVtcy9pbmNpZGVu",
-            "dGFsX2l0ZW1faW5kaWNhdG9yLnByb3RvIqQCChxSZXF1ZXN0ZWRDaGFyZ2VD",
-            "cmVkaXRQb3N0aW5nEhMKC2Rlc2NyaXB0aW9uGAEgASgJEkUKEmNoYXJnZV9j",
-            "cmVkaXRfdHlwZRgCIAEoDjIpLmhvbG1zLnR5cGVzLm1vbmV5LmZvbGlvLkNo",
-            "YXJnZUNyZWRpdFR5cGUSPQoOdW50YXhlZF9hbW91bnQYAyABKAsyJS5ob2xt",
-            "cy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSEgoKdGF4X2V4ZW1w",
-            "dBgEIAEoCBJVCg9pbmNpZGVudGFsX2l0ZW0YBSABKAsyPC5ob2xtcy50eXBl",
-            "cy5zdXBwbHkuaW5jaWRlbnRhbF9pdGVtcy5JbmNpZGVudGFsSXRlbUluZGlj",
-            "YXRvckInWgttb25leS9mb2xpb6oCF0hPTE1TLlR5cGVzLk1vbmV5LkZvbGlv",
-            "YgZwcm90bzM="));
+            "bmV0YXJ5X2Ftb3VudC5wcm90bxodcHJpbWl0aXZlL3BiX2xvY2FsX2RhdGUu",
+            "cHJvdG8aJG1vbmV5L2ZvbGlvL2NoYXJnZV9jcmVkaXRfdHlwZS5wcm90bxo3",
+            "c3VwcGx5L2luY2lkZW50YWxfaXRlbXMvaW5jaWRlbnRhbF9pdGVtX2luZGlj",
+            "YXRvci5wcm90byLgAgocUmVxdWVzdGVkQ2hhcmdlQ3JlZGl0UG9zdGluZxIT",
+            "CgtkZXNjcmlwdGlvbhgBIAEoCRJFChJjaGFyZ2VfY3JlZGl0X3R5cGUYAiAB",
+            "KA4yKS5ob2xtcy50eXBlcy5tb25leS5mb2xpby5DaGFyZ2VDcmVkaXRUeXBl",
+            "Ej0KDnVudGF4ZWRfYW1vdW50GAMgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0",
+            "aXZlLk1vbmV0YXJ5QW1vdW50EhIKCnRheF9leGVtcHQYBCABKAgSVQoPaW5j",
+            "aWRlbnRhbF9pdGVtGAUgASgLMjwuaG9sbXMudHlwZXMuc3VwcGx5LmluY2lk",
+            "ZW50YWxfaXRlbXMuSW5jaWRlbnRhbEl0ZW1JbmRpY2F0b3ISOgoOY2hhcmdl",
+            "X29wc2RhdGUYBiABKAsyIi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJMb2Nh",
+            "bERhdGVCJ1oLbW9uZXkvZm9saW+qAhdIT0xNUy5UeXBlcy5Nb25leS5Gb2xp",
+            "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Folio.ChargeCreditTypeReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Money.Folio.ChargeCreditTypeReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.RequestedChargeCreditPosting), global::HOLMS.Types.Money.Folio.RequestedChargeCreditPosting.Parser, new[]{ "Description", "ChargeCreditType", "UntaxedAmount", "TaxExempt", "IncidentalItem" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.RequestedChargeCreditPosting), global::HOLMS.Types.Money.Folio.RequestedChargeCreditPosting.Parser, new[]{ "Description", "ChargeCreditType", "UntaxedAmount", "TaxExempt", "IncidentalItem", "ChargeOpsdate" }, null, null, null)
           }));
     }
     #endregion
@@ -74,6 +76,7 @@ namespace HOLMS.Types.Money.Folio {
       UntaxedAmount = other.untaxedAmount_ != null ? other.UntaxedAmount.Clone() : null;
       taxExempt_ = other.taxExempt_;
       IncidentalItem = other.incidentalItem_ != null ? other.IncidentalItem.Clone() : null;
+      ChargeOpsdate = other.chargeOpsdate_ != null ? other.ChargeOpsdate.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -139,6 +142,17 @@ namespace HOLMS.Types.Money.Folio {
       }
     }
 
+    /// <summary>Field number for the "charge_opsdate" field.</summary>
+    public const int ChargeOpsdateFieldNumber = 6;
+    private global::HOLMS.Types.Primitive.PbLocalDate chargeOpsdate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate ChargeOpsdate {
+      get { return chargeOpsdate_; }
+      set {
+        chargeOpsdate_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RequestedChargeCreditPosting);
@@ -157,6 +171,7 @@ namespace HOLMS.Types.Money.Folio {
       if (!object.Equals(UntaxedAmount, other.UntaxedAmount)) return false;
       if (TaxExempt != other.TaxExempt) return false;
       if (!object.Equals(IncidentalItem, other.IncidentalItem)) return false;
+      if (!object.Equals(ChargeOpsdate, other.ChargeOpsdate)) return false;
       return true;
     }
 
@@ -168,6 +183,7 @@ namespace HOLMS.Types.Money.Folio {
       if (untaxedAmount_ != null) hash ^= UntaxedAmount.GetHashCode();
       if (TaxExempt != false) hash ^= TaxExempt.GetHashCode();
       if (incidentalItem_ != null) hash ^= IncidentalItem.GetHashCode();
+      if (chargeOpsdate_ != null) hash ^= ChargeOpsdate.GetHashCode();
       return hash;
     }
 
@@ -198,6 +214,10 @@ namespace HOLMS.Types.Money.Folio {
         output.WriteRawTag(42);
         output.WriteMessage(IncidentalItem);
       }
+      if (chargeOpsdate_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(ChargeOpsdate);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -217,6 +237,9 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (incidentalItem_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(IncidentalItem);
+      }
+      if (chargeOpsdate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ChargeOpsdate);
       }
       return size;
     }
@@ -246,6 +269,12 @@ namespace HOLMS.Types.Money.Folio {
           incidentalItem_ = new global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicator();
         }
         IncidentalItem.MergeFrom(other.IncidentalItem);
+      }
+      if (other.chargeOpsdate_ != null) {
+        if (chargeOpsdate_ == null) {
+          chargeOpsdate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        ChargeOpsdate.MergeFrom(other.ChargeOpsdate);
       }
     }
 
@@ -281,6 +310,13 @@ namespace HOLMS.Types.Money.Folio {
               incidentalItem_ = new global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicator();
             }
             input.ReadMessage(incidentalItem_);
+            break;
+          }
+          case 50: {
+            if (chargeOpsdate_ == null) {
+              chargeOpsdate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(chargeOpsdate_);
             break;
           }
         }
