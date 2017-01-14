@@ -5,6 +5,7 @@ option csharp_namespace = "HOLMS.Types.Money.Folio";
 option go_package = "money/folio";
 
 import "primitive/monetary_amount.proto";
+import "primitive/pb_local_date.proto";
 import "money/folio/charge_credit_type.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
 
@@ -15,4 +16,5 @@ message RequestedChargeCreditPosting {
 	bool tax_exempt = 4;
 	// Only used when charge type == incidental item
 	.holms.types.supply.incidental_items.IncidentalItemIndicator incidental_item = 5;
+	.holms.types.primitive.PbLocalDate charge_opsdate = 6;
 }
