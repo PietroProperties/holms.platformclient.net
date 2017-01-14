@@ -18,6 +18,7 @@ message RoomType {
 	int32 cleaning_time_deep_mins = 9;
 	int32 base_management_holds = 10;
 	int32 additional_web_holds = 11;
+    string name = 12;
 	
 	holms.types.tenancy_config.indicators.PropertyIndicator property_id = 13;
 	string property_name = 14;
