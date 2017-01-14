@@ -16,4 +16,5 @@ message GuestCheckedIn {
 	holms.types.booking.indicators.ReservationIndicator reservation_id = 4;
 	string room_number = 5;
 	holms.types.crm.guests.GuestIndicator guest_id = 6;
+	string room_type = 7;
 }

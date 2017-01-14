@@ -4,6 +4,7 @@ using HOLMS.Types.TenancyConfig.Indicators;
 namespace HOLMS.Support.DTOBuilders.Premises {
     public class RoomTypeBuilder {
         public RoomTypeIndicator Id;
+        public string Name;
         public string Description;
         public string WebDescription;
         public int NormalOccupancy;
@@ -21,6 +22,7 @@ namespace HOLMS.Support.DTOBuilders.Premises {
         public RoomType Build() {
             var rt = new RoomType {
                 EntityId = Id,
+                Name = Name,
                 Description = Description,
                 NormalOccupancy = NormalOccupancy,
                 MaxOccupancy = MaxOccupancy,

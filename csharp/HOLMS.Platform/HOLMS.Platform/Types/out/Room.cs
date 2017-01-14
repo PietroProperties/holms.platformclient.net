@@ -27,7 +27,7 @@ namespace HOLMS.Types.Operations.Rooms {
             "bl9pbmRpY2F0b3IucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAu",
             "cHJvdG8aKG9wZXJhdGlvbnMvcm9vbV9tYWludGVuYW5jZV9zdGF0dXMucHJv",
             "dG8aJW9wZXJhdGlvbnMvcm9vbXMvcm9vbV9pbmRpY2F0b3IucHJvdG8aK3N1",
-            "cHBseS9yb29tX3R5cGVzL3Jvb21fdHlwZV9pbmRpY2F0b3IucHJvdG8iwgQK",
+            "cHBseS9yb29tX3R5cGVzL3Jvb21fdHlwZV9pbmRpY2F0b3IucHJvdG8iuwQK",
             "BFJvb20SPgoJZW50aXR5X2lkGAEgASgLMisuaG9sbXMudHlwZXMub3BlcmF0",
             "aW9ucy5yb29tcy5Sb29tSW5kaWNhdG9yEhMKC3Jvb21fbnVtYmVyGAIgASgJ",
             "EhMKC2Rlc2NyaXB0aW9uGAMgASgJEh4KFmFkZGl0aW9uYWxfZGVzY3JpcHRp",
@@ -36,17 +36,16 @@ namespace HOLMS.Types.Operations.Rooms {
             "dGFtcBJHChFtYWludGVuYW5jZV9zdGF0ZRgHIAEoDjIsLmhvbG1zLnR5cGVz",
             "Lm9wZXJhdGlvbnMuUm9vbU1haW50ZW5hbmNlU3RhdGUSRgoMcm9vbV90eXBl",
             "X2lkGAggASgLMjAuaG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9v",
-            "bVR5cGVJbmRpY2F0b3ISHQoVcm9vbV90eXBlX2Rlc2NyaXB0aW9uGAkgASgJ",
-            "EkMKDmNvbm5lY3RlZF9yb29tGAogASgLMisuaG9sbXMudHlwZXMub3BlcmF0",
-            "aW9ucy5yb29tcy5Sb29tSW5kaWNhdG9yEhAKCHRydW5rX2lkGAsgASgJElMK",
-            "FW9jY3VweWluZ19yZXNlcnZhdGlvbhgMIAEoCzI0LmhvbG1zLnR5cGVzLmJv",
-            "b2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvckIxWhBvcGVy",
-            "YXRpb25zL3Jvb21zqgIcSE9MTVMuVHlwZXMuT3BlcmF0aW9ucy5Sb29tc2IG",
-            "cHJvdG8z"));
+            "bVR5cGVJbmRpY2F0b3ISFgoOcm9vbV90eXBlX25hbWUYCSABKAkSQwoOY29u",
+            "bmVjdGVkX3Jvb20YCiABKAsyKy5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJv",
+            "b21zLlJvb21JbmRpY2F0b3ISEAoIdHJ1bmtfaWQYCyABKAkSUwoVb2NjdXB5",
+            "aW5nX3Jlc2VydmF0aW9uGAwgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5p",
+            "bmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yQjFaEG9wZXJhdGlvbnMv",
+            "cm9vbXOqAhxIT0xNUy5UeXBlcy5PcGVyYXRpb25zLlJvb21zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Operations.RoomMaintenanceStatusReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.Rooms.Room), global::HOLMS.Types.Operations.Rooms.Room.Parser, new[]{ "EntityId", "RoomNumber", "Description", "AdditionalDescription", "NightsOccupiedCounter", "LastCleanedAt", "MaintenanceState", "RoomTypeId", "RoomTypeDescription", "ConnectedRoom", "TrunkId", "OccupyingReservation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.Rooms.Room), global::HOLMS.Types.Operations.Rooms.Room.Parser, new[]{ "EntityId", "RoomNumber", "Description", "AdditionalDescription", "NightsOccupiedCounter", "LastCleanedAt", "MaintenanceState", "RoomTypeId", "RoomTypeName", "ConnectedRoom", "TrunkId", "OccupyingReservation" }, null, null, null)
           }));
     }
     #endregion
@@ -85,7 +84,7 @@ namespace HOLMS.Types.Operations.Rooms {
       LastCleanedAt = other.lastCleanedAt_ != null ? other.LastCleanedAt.Clone() : null;
       maintenanceState_ = other.maintenanceState_;
       RoomTypeId = other.roomTypeId_ != null ? other.RoomTypeId.Clone() : null;
-      roomTypeDescription_ = other.roomTypeDescription_;
+      roomTypeName_ = other.roomTypeName_;
       ConnectedRoom = other.connectedRoom_ != null ? other.ConnectedRoom.Clone() : null;
       trunkId_ = other.trunkId_;
       OccupyingReservation = other.occupyingReservation_ != null ? other.OccupyingReservation.Clone() : null;
@@ -184,14 +183,14 @@ namespace HOLMS.Types.Operations.Rooms {
       }
     }
 
-    /// <summary>Field number for the "room_type_description" field.</summary>
-    public const int RoomTypeDescriptionFieldNumber = 9;
-    private string roomTypeDescription_ = "";
+    /// <summary>Field number for the "room_type_name" field.</summary>
+    public const int RoomTypeNameFieldNumber = 9;
+    private string roomTypeName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string RoomTypeDescription {
-      get { return roomTypeDescription_; }
+    public string RoomTypeName {
+      get { return roomTypeName_; }
       set {
-        roomTypeDescription_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        roomTypeName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -249,7 +248,7 @@ namespace HOLMS.Types.Operations.Rooms {
       if (!object.Equals(LastCleanedAt, other.LastCleanedAt)) return false;
       if (MaintenanceState != other.MaintenanceState) return false;
       if (!object.Equals(RoomTypeId, other.RoomTypeId)) return false;
-      if (RoomTypeDescription != other.RoomTypeDescription) return false;
+      if (RoomTypeName != other.RoomTypeName) return false;
       if (!object.Equals(ConnectedRoom, other.ConnectedRoom)) return false;
       if (TrunkId != other.TrunkId) return false;
       if (!object.Equals(OccupyingReservation, other.OccupyingReservation)) return false;
@@ -267,7 +266,7 @@ namespace HOLMS.Types.Operations.Rooms {
       if (lastCleanedAt_ != null) hash ^= LastCleanedAt.GetHashCode();
       if (MaintenanceState != 0) hash ^= MaintenanceState.GetHashCode();
       if (roomTypeId_ != null) hash ^= RoomTypeId.GetHashCode();
-      if (RoomTypeDescription.Length != 0) hash ^= RoomTypeDescription.GetHashCode();
+      if (RoomTypeName.Length != 0) hash ^= RoomTypeName.GetHashCode();
       if (connectedRoom_ != null) hash ^= ConnectedRoom.GetHashCode();
       if (TrunkId.Length != 0) hash ^= TrunkId.GetHashCode();
       if (occupyingReservation_ != null) hash ^= OccupyingReservation.GetHashCode();
@@ -313,9 +312,9 @@ namespace HOLMS.Types.Operations.Rooms {
         output.WriteRawTag(66);
         output.WriteMessage(RoomTypeId);
       }
-      if (RoomTypeDescription.Length != 0) {
+      if (RoomTypeName.Length != 0) {
         output.WriteRawTag(74);
-        output.WriteString(RoomTypeDescription);
+        output.WriteString(RoomTypeName);
       }
       if (connectedRoom_ != null) {
         output.WriteRawTag(82);
@@ -358,8 +357,8 @@ namespace HOLMS.Types.Operations.Rooms {
       if (roomTypeId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomTypeId);
       }
-      if (RoomTypeDescription.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(RoomTypeDescription);
+      if (RoomTypeName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RoomTypeName);
       }
       if (connectedRoom_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ConnectedRoom);
@@ -411,8 +410,8 @@ namespace HOLMS.Types.Operations.Rooms {
         }
         RoomTypeId.MergeFrom(other.RoomTypeId);
       }
-      if (other.RoomTypeDescription.Length != 0) {
-        RoomTypeDescription = other.RoomTypeDescription;
+      if (other.RoomTypeName.Length != 0) {
+        RoomTypeName = other.RoomTypeName;
       }
       if (other.connectedRoom_ != null) {
         if (connectedRoom_ == null) {
@@ -481,7 +480,7 @@ namespace HOLMS.Types.Operations.Rooms {
             break;
           }
           case 74: {
-            RoomTypeDescription = input.ReadString();
+            RoomTypeName = input.ReadString();
             break;
           }
           case 82: {

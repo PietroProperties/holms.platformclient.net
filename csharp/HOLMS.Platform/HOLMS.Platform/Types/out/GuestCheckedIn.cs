@@ -26,19 +26,20 @@ namespace HOLMS.Types.CRM.Guests {
             "cGVzLmNybS5ndWVzdHMaH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJv",
             "dG8aHXByaW1pdGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvGi5ib29raW5nL2lu",
             "ZGljYXRvcnMvcmVzZXJ2YXRpb25faW5kaWNhdG9yLnByb3RvGiBjcm0vZ3Vl",
-            "c3RzL2d1ZXN0X2luZGljYXRvci5wcm90byLJAgoOR3Vlc3RDaGVja2VkSW4S",
+            "c3RzL2d1ZXN0X2luZGljYXRvci5wcm90byLcAgoOR3Vlc3RDaGVja2VkSW4S",
             "OQoNY2hlY2tfaW5fZGF0ZRgBIAEoCzIiLmhvbG1zLnR5cGVzLnByaW1pdGl2",
             "ZS5QYkxvY2FsRGF0ZRI7CgxhdmVyYWdlX3JhdGUYAiABKAsyJS5ob2xtcy50",
             "eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSIgoacmVzZXJ2YXRpb25f",
             "Ym9va2luZ19udW1iZXIYAyABKAkSTAoOcmVzZXJ2YXRpb25faWQYBCABKAsy",
             "NC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25J",
             "bmRpY2F0b3ISEwoLcm9vbV9udW1iZXIYBSABKAkSOAoIZ3Vlc3RfaWQYBiAB",
-            "KAsyJi5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0SW5kaWNhdG9yQiVa",
-            "CmNybS9ndWVzdHOqAhZIT0xNUy5UeXBlcy5DUk0uR3Vlc3RzYgZwcm90bzM="));
+            "KAsyJi5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0SW5kaWNhdG9yEhEK",
+            "CXJvb21fdHlwZRgHIAEoCUIlWgpjcm0vZ3Vlc3RzqgIWSE9MTVMuVHlwZXMu",
+            "Q1JNLkd1ZXN0c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.Guests.GuestCheckedIn), global::HOLMS.Types.CRM.Guests.GuestCheckedIn.Parser, new[]{ "CheckInDate", "AverageRate", "ReservationBookingNumber", "ReservationId", "RoomNumber", "GuestId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.Guests.GuestCheckedIn), global::HOLMS.Types.CRM.Guests.GuestCheckedIn.Parser, new[]{ "CheckInDate", "AverageRate", "ReservationBookingNumber", "ReservationId", "RoomNumber", "GuestId", "RoomType" }, null, null, null)
           }));
     }
     #endregion
@@ -75,6 +76,7 @@ namespace HOLMS.Types.CRM.Guests {
       ReservationId = other.reservationId_ != null ? other.ReservationId.Clone() : null;
       roomNumber_ = other.roomNumber_;
       GuestId = other.guestId_ != null ? other.GuestId.Clone() : null;
+      roomType_ = other.roomType_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -148,6 +150,17 @@ namespace HOLMS.Types.CRM.Guests {
       }
     }
 
+    /// <summary>Field number for the "room_type" field.</summary>
+    public const int RoomTypeFieldNumber = 7;
+    private string roomType_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RoomType {
+      get { return roomType_; }
+      set {
+        roomType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GuestCheckedIn);
@@ -167,6 +180,7 @@ namespace HOLMS.Types.CRM.Guests {
       if (!object.Equals(ReservationId, other.ReservationId)) return false;
       if (RoomNumber != other.RoomNumber) return false;
       if (!object.Equals(GuestId, other.GuestId)) return false;
+      if (RoomType != other.RoomType) return false;
       return true;
     }
 
@@ -179,6 +193,7 @@ namespace HOLMS.Types.CRM.Guests {
       if (reservationId_ != null) hash ^= ReservationId.GetHashCode();
       if (RoomNumber.Length != 0) hash ^= RoomNumber.GetHashCode();
       if (guestId_ != null) hash ^= GuestId.GetHashCode();
+      if (RoomType.Length != 0) hash ^= RoomType.GetHashCode();
       return hash;
     }
 
@@ -213,6 +228,10 @@ namespace HOLMS.Types.CRM.Guests {
         output.WriteRawTag(50);
         output.WriteMessage(GuestId);
       }
+      if (RoomType.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(RoomType);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -235,6 +254,9 @@ namespace HOLMS.Types.CRM.Guests {
       }
       if (guestId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GuestId);
+      }
+      if (RoomType.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RoomType);
       }
       return size;
     }
@@ -273,6 +295,9 @@ namespace HOLMS.Types.CRM.Guests {
           guestId_ = new global::HOLMS.Types.CRM.Guests.GuestIndicator();
         }
         GuestId.MergeFrom(other.GuestId);
+      }
+      if (other.RoomType.Length != 0) {
+        RoomType = other.RoomType;
       }
     }
 
@@ -318,6 +343,10 @@ namespace HOLMS.Types.CRM.Guests {
               guestId_ = new global::HOLMS.Types.CRM.Guests.GuestIndicator();
             }
             input.ReadMessage(guestId_);
+            break;
+          }
+          case 58: {
+            RoomType = input.ReadString();
             break;
           }
         }
