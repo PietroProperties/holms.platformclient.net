@@ -14,7 +14,7 @@ namespace HOLMS.Support.DTOBuilders.Premises {
         public DateTime LastCleanedAt;
         public RoomMaintenanceState MaintenanceState;
         public Guid RoomTypeId;
-        public string RoomTypeDescription;
+        public string RoomTypeName;
         public RoomIndicator ConnectedRoomInd;
         public string PhoneTrunkID;
 
@@ -28,7 +28,7 @@ namespace HOLMS.Support.DTOBuilders.Premises {
                 LastCleanedAt = LastCleanedAt.ToTS(),
                 MaintenanceState = MaintenanceState,
                 RoomTypeId = new RoomTypeIndicator(RoomTypeId),
-                RoomTypeDescription = RoomTypeDescription,
+                RoomTypeName = RoomTypeName,
                 TrunkId = PhoneTrunkID ?? string.Empty
             };
 

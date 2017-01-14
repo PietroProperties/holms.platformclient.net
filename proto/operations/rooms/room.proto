@@ -19,7 +19,7 @@ message Room {
 	google.protobuf.Timestamp last_cleaned_at = 6;
 	holms.types.operations.RoomMaintenanceState maintenance_state = 7;
 	holms.types.supply.room_types.RoomTypeIndicator room_type_id = 8;
-	string room_type_description = 9;
+	string room_type_name = 9;
 	holms.types.operations.rooms.RoomIndicator connected_room = 10;
 	string trunk_id = 11;
 	holms.types.booking.indicators.ReservationIndicator occupying_reservation = 12;
