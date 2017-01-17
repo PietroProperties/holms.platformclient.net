@@ -124,6 +124,21 @@ message ReservationFolioSvcPostInventoryChargeCorrectionRequest {
 	bool adjustment_taken_from_guest = 5;
 }
 
+message ReservationFolioSvcVoidAuthorizationRequest {
+	holms.types.money.cards.MerchantAuthorizationIndicator authorization = 1;
+	holms.types.booking.indicators.ReservationIndicator reservation = 2;
+}
+
+enum ReservationFolioSvcVoidAuthorizationResult {
+	RESERVATION_FOLIO_SVC_VOID_AUTHORIZATION_SUCCESS = 0;
+	RESERVATION_FOLIO_SVC_VOID_AUTHORIZATION_NOT_FOUND = 1;
+	RESERVATION_FOLIO_SVC_VOID_AUTHORIZATION_UNKNOWN_FAILURE = 2;
+}
+
+message ReservationFolioSvcVoidAuthorizationResponse {
+	ReservationFolioSvcVoidAuthorizationResult result = 1;
+}
+
 service ReservationFolioSvc {
 	rpc GetFolioState(.holms.types.booking.indicators.ReservationIndicator)
 		returns(ReservationFolioSvcGetFolioStateResponse);
@@ -138,6 +153,8 @@ service ReservationFolioSvc {
 		returns (.holms.types.money.cards.CardAuthorizationResponse);
 	rpc GetOnFileCards(holms.types.booking.indicators.ReservationIndicator) 
 		returns(ReservationFolioSvcGetOnFileCardsResponse);
+	rpc VoidAuthorization(ReservationFolioSvcVoidAuthorizationRequest)
+		returns(ReservationFolioSvcVoidAuthorizationResponse);
 	
 	// Payments
 
