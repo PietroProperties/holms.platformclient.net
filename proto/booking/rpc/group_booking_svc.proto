@@ -12,9 +12,14 @@ import "booking/groups/group_booking_room_type_quantity.proto";
 import "crm/groups/group_indicator.proto";
 import "supply/price_update_request.proto";
 import "booking/reservations/reservation_summary.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
 
 message GroupBookingSvcAllBookings {
 	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
+}
+
+message GroupBookingSvcGetByDateRangeBookings {
+	repeated .holms.types.booking.groups.GroupBooking bookings = 1;
 }
 
 message GroupBookingSvcPriceUpdateRequest {
@@ -49,4 +54,7 @@ service GroupBookingSvc {
 
 	rpc GetReservationSummariesWithGBTag (.holms.types.booking.indicators.GroupBookingIndicator)
 		returns (GroupBookingSvcGetReservationsWithTagResponse);
+
+	rpc GetByDateRange(primitive.PbInclusiveOpsdateRange)
+		returns(GroupBookingSvcGetByDateRangeBookings);
 }
