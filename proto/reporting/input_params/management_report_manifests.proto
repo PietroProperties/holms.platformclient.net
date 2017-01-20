@@ -22,6 +22,7 @@ message ManagementClockTimeRangeReportManifest {
 	bool call_accounting_report = 6;
 	bool ledger_activity_summary_report = 7;
 	bool ledger_journal_entries_report = 8;
+	bool bookings_by_period_report = 9;
 }
 
 message ManagementOpsdateRangeReportManifest {

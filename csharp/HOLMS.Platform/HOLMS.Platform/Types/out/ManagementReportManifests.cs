@@ -28,7 +28,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnByb3RvIokBCiNNYW5h",
             "Z2VtZW50Q3VycmVudFRpbWVSZXBvcnRNYW5pZmVzdBIfChd1bm9jY3VwaWVk",
             "X3Jvb21zX3JlcG9ydBgBIAEoCBIcChRmb2xpb19iYWxhbmNlX3JlcG9ydBgC",
-            "IAEoCBIjChtsb2RnaW5nX3ZlcmlmaWNhdGlvbl9yZXBvcnQYAyABKAgi9gIK",
+            "IAEoCBIjChtsb2RnaW5nX3ZlcmlmaWNhdGlvbl9yZXBvcnQYAyABKAgimQMK",
             "Jk1hbmFnZW1lbnRDbG9ja1RpbWVSYW5nZVJlcG9ydE1hbmlmZXN0EjwKGHJl",
             "cG9ydGluZ19pbnRlcnZhbF9zdGFydBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1",
             "Zi5UaW1lc3RhbXASOgoWcmVwb3J0aW5nX2ludGVydmFsX2VuZBgCIAEoCzIa",
@@ -37,17 +37,18 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "ASgIEiAKGGZvbGlvX2FkanVzdG1lbnRzX3JlcG9ydBgFIAEoCBIeChZjYWxs",
             "X2FjY291bnRpbmdfcmVwb3J0GAYgASgIEiYKHmxlZGdlcl9hY3Rpdml0eV9z",
             "dW1tYXJ5X3JlcG9ydBgHIAEoCBIlCh1sZWRnZXJfam91cm5hbF9lbnRyaWVz",
-            "X3JlcG9ydBgIIAEoCCKxAQokTWFuYWdlbWVudE9wc2RhdGVSYW5nZVJlcG9y",
-            "dE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5ob2xtcy50eXBlcy5w",
-            "cmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2USIgoacm9vbV91c2Fn",
-            "ZV9kZXRhaWxlZF9yZXBvcnQYAiABKAgSIQoZcm9vbV91c2FnZV9zdW1tYXJ5",
-            "X3JlcG9ydBgDIAEoCEI9WhZyZXBvcnRpbmcvaW5wdXRfcGFyYW1zqgIiSE9M",
-            "TVMuVHlwZXMuUmVwb3J0aW5nLlJlcG9ydFBhcmFtc2IGcHJvdG8z"));
+            "X3JlcG9ydBgIIAEoCBIhChlib29raW5nc19ieV9wZXJpb2RfcmVwb3J0GAkg",
+            "ASgIIrEBCiRNYW5hZ2VtZW50T3BzZGF0ZVJhbmdlUmVwb3J0TWFuaWZlc3QS",
+            "QgoKZGF0ZV9yYW5nZRgBIAEoCzIuLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Q",
+            "YkluY2x1c2l2ZU9wc2RhdGVSYW5nZRIiChpyb29tX3VzYWdlX2RldGFpbGVk",
+            "X3JlcG9ydBgCIAEoCBIhChlyb29tX3VzYWdlX3N1bW1hcnlfcmVwb3J0GAMg",
+            "ASgIQj1aFnJlcG9ydGluZy9pbnB1dF9wYXJhbXOqAiJIT0xNUy5UeXBlcy5S",
+            "ZXBvcnRpbmcuUmVwb3J0UGFyYW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest.Parser, new[]{ "ReportingIntervalStart", "ReportingIntervalEnd", "FolioGrossChargesReport", "FolioPaymentsReport", "FolioAdjustmentsReport", "CallAccountingReport", "LedgerActivitySummaryReport", "LedgerJournalEntriesReport" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest.Parser, new[]{ "ReportingIntervalStart", "ReportingIntervalEnd", "FolioGrossChargesReport", "FolioPaymentsReport", "FolioAdjustmentsReport", "CallAccountingReport", "LedgerActivitySummaryReport", "LedgerJournalEntriesReport", "BookingsByPeriodReport" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport" }, null, null, null)
           }));
     }
@@ -260,6 +261,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       callAccountingReport_ = other.callAccountingReport_;
       ledgerActivitySummaryReport_ = other.ledgerActivitySummaryReport_;
       ledgerJournalEntriesReport_ = other.ledgerJournalEntriesReport_;
+      bookingsByPeriodReport_ = other.bookingsByPeriodReport_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -355,6 +357,17 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
+    /// <summary>Field number for the "bookings_by_period_report" field.</summary>
+    public const int BookingsByPeriodReportFieldNumber = 9;
+    private bool bookingsByPeriodReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool BookingsByPeriodReport {
+      get { return bookingsByPeriodReport_; }
+      set {
+        bookingsByPeriodReport_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ManagementClockTimeRangeReportManifest);
@@ -376,6 +389,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (CallAccountingReport != other.CallAccountingReport) return false;
       if (LedgerActivitySummaryReport != other.LedgerActivitySummaryReport) return false;
       if (LedgerJournalEntriesReport != other.LedgerJournalEntriesReport) return false;
+      if (BookingsByPeriodReport != other.BookingsByPeriodReport) return false;
       return true;
     }
 
@@ -390,6 +404,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (CallAccountingReport != false) hash ^= CallAccountingReport.GetHashCode();
       if (LedgerActivitySummaryReport != false) hash ^= LedgerActivitySummaryReport.GetHashCode();
       if (LedgerJournalEntriesReport != false) hash ^= LedgerJournalEntriesReport.GetHashCode();
+      if (BookingsByPeriodReport != false) hash ^= BookingsByPeriodReport.GetHashCode();
       return hash;
     }
 
@@ -432,6 +447,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(64);
         output.WriteBool(LedgerJournalEntriesReport);
       }
+      if (BookingsByPeriodReport != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(BookingsByPeriodReport);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -459,6 +478,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
         size += 1 + 1;
       }
       if (LedgerJournalEntriesReport != false) {
+        size += 1 + 1;
+      }
+      if (BookingsByPeriodReport != false) {
         size += 1 + 1;
       }
       return size;
@@ -498,6 +520,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
       if (other.LedgerJournalEntriesReport != false) {
         LedgerJournalEntriesReport = other.LedgerJournalEntriesReport;
+      }
+      if (other.BookingsByPeriodReport != false) {
+        BookingsByPeriodReport = other.BookingsByPeriodReport;
       }
     }
 
@@ -545,6 +570,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 64: {
             LedgerJournalEntriesReport = input.ReadBool();
+            break;
+          }
+          case 72: {
+            BookingsByPeriodReport = input.ReadBool();
             break;
           }
         }
