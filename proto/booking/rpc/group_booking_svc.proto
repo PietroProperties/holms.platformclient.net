@@ -31,6 +31,14 @@ message GroupBookingSvcGetReservationsWithTagResponse {
 	repeated .holms.types.booking.reservations.ReservationSummary reservations = 1;
 }
 
+message GroupBookingSvcGetByIdsRequest {
+	repeated .holms.types.booking.indicators.GroupBookingIndicator bookings = 1;
+}
+
+message GroupBookingSvcGetByIdsResponse {
+	repeated .holms.types.booking.groups.GroupBooking booking = 1;
+}
+
 service GroupBookingSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (GroupBookingSvcAllBookings);
@@ -49,4 +57,10 @@ service GroupBookingSvc {
 
 	rpc GetReservationSummariesWithGBTag (.holms.types.booking.indicators.GroupBookingIndicator)
 		returns (GroupBookingSvcGetReservationsWithTagResponse);
+
+	rpc GetById(.holms.types.booking.indicators.GroupBookingIndicator)
+		returns( .holms.types.booking.groups.GroupBooking);
+
+	rpc GetByIds(GroupBookingSvcGetByIdsRequest)
+		returns(GroupBookingSvcGetByIdsResponse);
 }
