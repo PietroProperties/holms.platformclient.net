@@ -33,7 +33,7 @@ namespace HOLMS.Types.Booking.Groups {
             "dG8aKG1vbmV5L2FjY291bnRpbmcvYWNjb3VudF9pbmRpY2F0b3IucHJvdG8a",
             "JHN1cHBseS9yYXRlX3NjaGVkdWxlX2luZGljYXRvci5wcm90bxo+dGVuYW5j",
             "eV9jb25maWcvaW5kaWNhdG9ycy9ncm91cF9ib29raW5nX21ldGhvZF9pbmRp",
-            "Y2F0b3IucHJvdG8i6gcKDEdyb3VwQm9va2luZxJICgllbnRpdHlfaWQYASAB",
+            "Y2F0b3IucHJvdG8i/gcKDEdyb3VwQm9va2luZxJICgllbnRpdHlfaWQYASAB",
             "KAsyNS5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29r",
             "aW5nSW5kaWNhdG9yEj4KBnN0YXR1cxgCIAEoDjIuLmhvbG1zLnR5cGVzLmJv",
             "b2tpbmcuZ3JvdXBzLkdyb3VwQm9va2luZ1N0YXR1cxISCgp0YXhfZXhlbXB0",
@@ -55,12 +55,13 @@ namespace HOLMS.Types.Booking.Groups {
             "cmF2ZWxfYWdlbnQYESABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGlj",
             "YXRvcnMuVHJhdmVsQWdlbnRJbmRpY2F0b3ISWAoTY2FuY2VsbGF0aW9uX3Bv",
             "bGljeRgSIAEoCzI7LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5D",
-            "YW5jZWxsYXRpb25Qb2xpY3lJbmRpY2F0b3JCLVoOYm9va2luZy9ncm91cHOq",
-            "AhpIT0xNUy5UeXBlcy5Cb29raW5nLkdyb3Vwc2IGcHJvdG8z"));
+            "YW5jZWxsYXRpb25Qb2xpY3lJbmRpY2F0b3ISEgoKZ3JvdXBfbmFtZRgTIAEo",
+            "CUItWg5ib29raW5nL2dyb3Vwc6oCGkhPTE1TLlR5cGVzLkJvb2tpbmcuR3Jv",
+            "dXBzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.TravelAgentIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingStatusReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.GroupBookingMethodIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBooking), global::HOLMS.Types.Booking.Groups.GroupBooking.Parser, new[]{ "EntityId", "Status", "TaxExempt", "TaxId", "GroupPaysLodging", "GroupPaysIncidentals", "AdditionalNotes", "CustomerBookingId", "DateRange", "HouseAccount", "RateSchedule", "Group", "ConfirmationTemplateId", "BookingMethod", "ArrivalTemplateId", "ReservationSourceId", "TravelAgent", "CancellationPolicy" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBooking), global::HOLMS.Types.Booking.Groups.GroupBooking.Parser, new[]{ "EntityId", "Status", "TaxExempt", "TaxId", "GroupPaysLodging", "GroupPaysIncidentals", "AdditionalNotes", "CustomerBookingId", "DateRange", "HouseAccount", "RateSchedule", "Group", "ConfirmationTemplateId", "BookingMethod", "ArrivalTemplateId", "ReservationSourceId", "TravelAgent", "CancellationPolicy", "GroupName" }, null, null, null)
           }));
     }
     #endregion
@@ -109,6 +110,7 @@ namespace HOLMS.Types.Booking.Groups {
       ReservationSourceId = other.reservationSourceId_ != null ? other.ReservationSourceId.Clone() : null;
       TravelAgent = other.travelAgent_ != null ? other.TravelAgent.Clone() : null;
       CancellationPolicy = other.cancellationPolicy_ != null ? other.CancellationPolicy.Clone() : null;
+      groupName_ = other.groupName_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -314,6 +316,17 @@ namespace HOLMS.Types.Booking.Groups {
       }
     }
 
+    /// <summary>Field number for the "group_name" field.</summary>
+    public const int GroupNameFieldNumber = 19;
+    private string groupName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string GroupName {
+      get { return groupName_; }
+      set {
+        groupName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GroupBooking);
@@ -345,6 +358,7 @@ namespace HOLMS.Types.Booking.Groups {
       if (!object.Equals(ReservationSourceId, other.ReservationSourceId)) return false;
       if (!object.Equals(TravelAgent, other.TravelAgent)) return false;
       if (!object.Equals(CancellationPolicy, other.CancellationPolicy)) return false;
+      if (GroupName != other.GroupName) return false;
       return true;
     }
 
@@ -369,6 +383,7 @@ namespace HOLMS.Types.Booking.Groups {
       if (reservationSourceId_ != null) hash ^= ReservationSourceId.GetHashCode();
       if (travelAgent_ != null) hash ^= TravelAgent.GetHashCode();
       if (cancellationPolicy_ != null) hash ^= CancellationPolicy.GetHashCode();
+      if (GroupName.Length != 0) hash ^= GroupName.GetHashCode();
       return hash;
     }
 
@@ -451,6 +466,10 @@ namespace HOLMS.Types.Booking.Groups {
         output.WriteRawTag(146, 1);
         output.WriteMessage(CancellationPolicy);
       }
+      if (GroupName.Length != 0) {
+        output.WriteRawTag(154, 1);
+        output.WriteString(GroupName);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -509,6 +528,9 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (cancellationPolicy_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(CancellationPolicy);
+      }
+      if (GroupName.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(GroupName);
       }
       return size;
     }
@@ -604,6 +626,9 @@ namespace HOLMS.Types.Booking.Groups {
           cancellationPolicy_ = new global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicator();
         }
         CancellationPolicy.MergeFrom(other.CancellationPolicy);
+      }
+      if (other.GroupName.Length != 0) {
+        GroupName = other.GroupName;
       }
     }
 
@@ -718,6 +743,10 @@ namespace HOLMS.Types.Booking.Groups {
               cancellationPolicy_ = new global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicator();
             }
             input.ReadMessage(cancellationPolicy_);
+            break;
+          }
+          case 154: {
+            GroupName = input.ReadString();
             break;
           }
         }

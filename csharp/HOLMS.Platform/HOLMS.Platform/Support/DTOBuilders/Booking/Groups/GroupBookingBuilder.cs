@@ -36,7 +36,8 @@ namespace HOLMS.Support.DTOBuilders.Booking.Groups {
             AccountIndicator houseAccount, RateScheduleIndicator rs, GroupIndicator g,
             Guid? groupBookingMethodId,
             Guid? reservationSourceId, Guid? travelAgentId,
-            Guid? cancellationPolicy) {
+            Guid? cancellationPolicy,
+            string groupName) {
             _gbi = id;
             _gbs = status;
             _taxExempt = taxExempt;
