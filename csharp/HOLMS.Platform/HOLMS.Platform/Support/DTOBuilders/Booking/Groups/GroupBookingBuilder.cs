@@ -22,6 +22,7 @@ namespace HOLMS.Support.DTOBuilders.Booking.Groups {
         private readonly AccountIndicator _houseAccount;
         private readonly RateScheduleIndicator _rateSchedule;
         private readonly GroupIndicator _group;
+        private string _groupName;
 
         // Everything below here is nullable
         private readonly InclusiveOpsdateRange _bookingDates;
@@ -56,6 +57,7 @@ namespace HOLMS.Support.DTOBuilders.Booking.Groups {
             _reservationSourceId = reservationSourceId;
             _travelAgent = travelAgentId;
             _cancellationPolicy = cancellationPolicy;
+            _groupName = groupName;
         }
 
         public GroupBooking Build() {
@@ -70,7 +72,8 @@ namespace HOLMS.Support.DTOBuilders.Booking.Groups {
                 CustomerBookingId = _customerBookingId ?? string.Empty,
                 HouseAccount = _houseAccount,
                 RateSchedule = _rateSchedule,
-                Group = _group
+                Group = _group,
+                GroupName = _groupName
             };
 
             if (_bookingDates != null) {
