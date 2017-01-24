@@ -21,6 +21,8 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcQuantityUpdateRequest> __Marshaller_GroupBookingSvcQuantityUpdateRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcQuantityUpdateRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> __Marshaller_GroupBookingIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse> __Marshaller_GroupBookingSvcGetReservationsWithTagResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsRequest> __Marshaller_GroupBookingSvcGetByIdsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse> __Marshaller_GroupBookingSvcGetByIdsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings> __Method_All = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings>(
         MethodType.Unary,
@@ -64,6 +66,20 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_GroupBookingIndicator,
         __Marshaller_GroupBookingSvcGetReservationsWithTagResponse);
 
+    static readonly Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Booking.Groups.GroupBooking> __Method_GetById = new Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Booking.Groups.GroupBooking>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetById",
+        __Marshaller_GroupBookingIndicator,
+        __Marshaller_GroupBooking);
+
+    static readonly Method<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsRequest, global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse> __Method_GetByIds = new Method<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsRequest, global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetByIds",
+        __Marshaller_GroupBookingSvcGetByIdsRequest,
+        __Marshaller_GroupBookingSvcGetByIdsResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -99,6 +115,16 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse> GetReservationSummariesWithGBTag(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Groups.GroupBooking> GetById(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse> GetByIds(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -224,6 +250,38 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationSummariesWithGBTag, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.Groups.GroupBooking GetById(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetById(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.Groups.GroupBooking GetById(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetById, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.Groups.GroupBooking> GetByIdAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetByIdAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.Groups.GroupBooking> GetByIdAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetById, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse GetByIds(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetByIds(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse GetByIds(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetByIds, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse> GetByIdsAsync(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetByIdsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse> GetByIdsAsync(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetByIds, null, options, request);
+      }
       protected override GroupBookingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new GroupBookingSvcClient(configuration);
@@ -239,7 +297,9 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_Update, serviceImpl.Update)
           .AddMethod(__Method_UpdateGroupBookingPrices, serviceImpl.UpdateGroupBookingPrices)
           .AddMethod(__Method_UpdateQuantities, serviceImpl.UpdateQuantities)
-          .AddMethod(__Method_GetReservationSummariesWithGBTag, serviceImpl.GetReservationSummariesWithGBTag).Build();
+          .AddMethod(__Method_GetReservationSummariesWithGBTag, serviceImpl.GetReservationSummariesWithGBTag)
+          .AddMethod(__Method_GetById, serviceImpl.GetById)
+          .AddMethod(__Method_GetByIds, serviceImpl.GetByIds).Build();
     }
 
   }
