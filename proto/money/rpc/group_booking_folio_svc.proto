@@ -1,0 +1,124 @@
+﻿syntax = "proto3";
+
+package holms.types.money.rpc;
+option csharp_namespace = "HOLMS.Types.Money.RPC";
+option go_package = "money/rpc";
+
+import "booking/indicators/group_booking_indicator.proto";
+import "money/cards/card_authorization_purpose.proto";
+import "money/cards/card_authorization_response.proto";
+import "money/cards/merchant_authorization_indicator.proto";
+import "money/cards/not_present_payment_card.proto";
+import "money/cards/payment_card_indicator.proto";
+import "money/folio/folio_state.proto";
+import "primitive/monetary_amount.proto";
+
+enum GroupBookingFolioSvcPostChargesResult {
+	GROUP_BOOKING_FOLIO_SVC_POST_CHARGES_RESULT_OK = 0;
+	GROUP_BOOKING_FOLIO_SVC_POST_CHARGES_RESULT_MISSING_HOUSE_ACCOUNT = 1;
+	GROUP_BOOKING_FOLIO_SVC_POST_CHARGES_RESULT_MISSING_RESERVATION = 2;
+}
+
+message GroupBookingFolioSvcPostChargesResponse {
+	GroupBookingFolioSvcPostChargesResult result = 1;
+}
+
+enum GroupBookingFolioSvcGetFolioStateResult {
+	GROUP_BOOKING_FOLIO_SVC_GET_FOLIO_STATE_OK = 0;
+	GROUP_BOOKING_FOLIO_SVC_GET_FOLIO_STATE_MISSING_HOUSE_ACCOUNT = 1;
+
+}
+
+message GroupBookingFolioSvcGetFolioStateResponse {
+	GroupBookingFolioSvcGetFolioStateResult result = 1;
+	.holms.types.money.folio.FolioState folio_state = 2;
+}
+
+enum GroupBookingFolioSvcPostCashPaymentResult {
+	GROUP_BOOKING_FOLIO_SVC_POST_CASH_PAYMENT_OK = 0;
+	GROUP_BOOKING_FOLIO_SVC_POST_CASH_PAYMENT_MISSING_HOUSE_ACCOUNT = 1;
+	GROUP_BOOKING_FOLIO_SVC_POST_CASH_PAYMENT_INVALID_AMOUNT = 2;
+}
+
+message GroupBookingFolioSvcPostCashPaymentResponse {
+	GroupBookingFolioSvcPostCashPaymentResult result = 1;
+}
+
+enum GroupBookingFolioSvcPostCheckPaymentResult {
+	GROUP_BOOKING_FOLIO_SVC_POST_CHECK_PAYMENT_OK = 0;
+	GROUP_BOOKING_FOLIO_SVC_POST_CHECK_PAYMENT_MISSING_HOUSE_ACCOUNT = 1;
+	GROUP_BOOKING_FOLIO_SVC_POST_CHECK_PAYMENT_INVALID_AMOUNT = 2;
+}
+
+message GroupBookingFolioSvcPostCheckPaymentResponse {
+	GroupBookingFolioSvcPostCheckPaymentResult result = 1;
+}
+
+message GroupBookingFolioSvcPostCheckPaymentRequest {
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	.holms.types.primitive.MonetaryAmount amount = 2;
+}
+
+message GroupBookingFolioSvcCardAuthorizationFromTokenRequest {
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	.holms.types.money.cards.PaymentCardIndicator card = 2;
+	holms.types.primitive.MonetaryAmount amount = 3;
+	holms.types.money.cards.CardAuthorizationPurpose purpose = 4;
+}
+
+message GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest {
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	holms.types.primitive.MonetaryAmount amount = 2;
+	holms.types.money.cards.CardAuthorizationPurpose purpose = 3;
+}
+
+message GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest {
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	.holms.types.money.cards.NotPresentPaymentCard card = 2;
+	holms.types.primitive.MonetaryAmount amount = 3;
+	holms.types.money.cards.CardAuthorizationPurpose purpose = 4;
+}
+
+enum GroupBookingFolioSvcPostCardPaymentResult {
+	GROUP_BOOKING_FOLIO_SVC_POST_CARD_PAYMENT_OK = 0;
+	GROUP_BOOKING_FOLIO_SVC_POST_CARD_PAYMENT_MISSING_HOUSE_ACCOUNT = 1;
+	GROUP_BOOKING_FOLIO_SVC_POST_CARD_PAYMENT_MISSING_ASSET_ACCOUNT = 2;
+	GROUP_BOOKING_FOLIO_SVC_POST_CARD_PAYMENT_INVALID_AMOUNT = 3;
+	GROUP_BOOKING_FOLIO_SVC_POST_CARD_PAYMENT_AUTHORIZATION_UNAVAILABLE = 4;
+}
+
+message GroupBookingFolioSvcPostCardPaymentResponse {
+	GroupBookingFolioSvcPostCardPaymentResult result = 1;
+}
+
+message GroupBookingFolioSvcPostCardPaymentRequest {
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	holms.types.money.cards.MerchantAuthorizationIndicator authorization = 2;
+	holms.types.primitive.MonetaryAmount amount = 3;
+}
+
+message GroupBookingFolioSvcPostCashPaymentRequest {
+	holms.types.primitive.MonetaryAmount amount_paid = 1;
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 2;
+}
+
+service GroupBookingFolioSvc {
+	rpc GetFolioState(.holms.types.booking.indicators.GroupBookingIndicator)
+		returns(GroupBookingFolioSvcGetFolioStateResponse);
+
+	// Cards
+	rpc AddCardAuthorizationFromToken(GroupBookingFolioSvcCardAuthorizationFromTokenRequest)
+		returns (.holms.types.money.cards.CardAuthorizationResponse);
+	rpc AddCardAuthorizationFromPresentedCard(GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest)
+		returns (.holms.types.money.cards.CardAuthorizationResponse);
+	rpc AddCardAuthorizationFromNotPresentCard(GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest)
+		returns (.holms.types.money.cards.CardAuthorizationResponse);
+	
+	// Payments
+	rpc PostCardPayment(GroupBookingFolioSvcPostCardPaymentRequest)
+		returns (GroupBookingFolioSvcPostCardPaymentResponse);
+	rpc PostCheckPayment(GroupBookingFolioSvcPostCheckPaymentRequest)
+		returns (GroupBookingFolioSvcPostCheckPaymentResponse);
+	rpc PostCashPayment(GroupBookingFolioSvcPostCashPaymentRequest)
+		returns (GroupBookingFolioSvcPostCashPaymentResponse);
+}

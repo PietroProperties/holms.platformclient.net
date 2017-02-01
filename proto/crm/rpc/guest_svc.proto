@@ -26,11 +26,24 @@ message GuestSvcSearchByEmailRequest {
 }
 
 service GuestSvc {
-	rpc All(google.protobuf.Empty) returns (GuestSvcManyGuestsResponse);
-	rpc GetById (.holms.types.crm.guests.GuestIndicator) returns (.holms.types.crm.guests.Guest);
-	rpc GetSeveralById (GuestSvcGetManyRequest) returns (GuestSvcManyGuestsResponse);
-	rpc SearchByNamePrefix (GuestSvcPrefixSearchRequest) returns (GuestSvcManyGuestsResponse);
-	rpc SearchByEmailAddress (GuestSvcSearchByEmailRequest) returns (GuestSvcManyGuestsResponse);
-	rpc Create (.holms.types.crm.guests.Guest) returns (.holms.types.crm.guests.Guest);
-	rpc Update (.holms.types.crm.guests.Guest) returns (.holms.types.crm.guests.Guest);
+	rpc All(google.protobuf.Empty) 
+		returns (GuestSvcManyGuestsResponse);
+		
+	rpc GetById (.holms.types.crm.guests.GuestIndicator) 
+		returns (.holms.types.crm.guests.Guest);
+		
+	rpc GetSeveralById (GuestSvcGetManyRequest) 
+		returns (GuestSvcManyGuestsResponse);
+		
+	rpc SearchByNamePrefix (GuestSvcPrefixSearchRequest) 
+		returns (GuestSvcManyGuestsResponse);
+		
+	rpc SearchByEmailAddress (GuestSvcSearchByEmailRequest) 
+		returns (GuestSvcManyGuestsResponse);
+		
+	rpc Create (.holms.types.crm.guests.Guest) 
+		returns (.holms.types.crm.guests.Guest);
+		
+	rpc Update (.holms.types.crm.guests.Guest) 
+		returns (.holms.types.crm.guests.Guest);
 }

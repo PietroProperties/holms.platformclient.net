@@ -144,7 +144,6 @@ service ReservationFolioSvc {
 		returns(ReservationFolioSvcGetFolioStateResponse);
 
 	// Cards
-
 	rpc AddCardAuthorizationFromToken(CardAuthorizationFromTokenRequest)
 		returns (.holms.types.money.cards.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromPresentedCard(CardAuthorizationFromPresentCardRequest)
@@ -157,7 +156,6 @@ service ReservationFolioSvc {
 		returns(ReservationFolioSvcVoidAuthorizationResponse);
 	
 	// Payments
-
 	rpc PostCardPayment(ReservationFolioSvcPostCardPaymentRequest)
 		returns (ReservationFolioSvcPostCardPaymentResponse);
 	rpc PostCheckPayment(ReservationFolioSvcPostCheckPaymentRequest)

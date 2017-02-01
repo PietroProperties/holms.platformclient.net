@@ -24,16 +24,19 @@ namespace HOLMS.Types.CRM.RPC {
           string.Concat(
             "Chdjcm0vcnBjL2dyb3VwX3N2Yy5wcm90bxITaG9sbXMudHlwZXMuY3JtLnJw",
             "YxobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3RvGhZjcm0vZ3JvdXBzL2dy",
-            "b3VwLnByb3RvIkQKE0dyb3VwU3ZjQWxsUmVzcG9uc2USLQoGZ3JvdXBzGAEg",
-            "AygLMh0uaG9sbXMudHlwZXMuY3JtLmdyb3Vwcy5Hcm91cDLcAQoIR3JvdXBT",
-            "dmMSRwoDQWxsEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GiguaG9sbXMudHlw",
-            "ZXMuY3JtLnJwYy5Hcm91cFN2Y0FsbFJlc3BvbnNlEj8KBkNyZWF0ZRIWLmdv",
-            "b2dsZS5wcm90b2J1Zi5FbXB0eRodLmhvbG1zLnR5cGVzLmNybS5ncm91cHMu",
-            "R3JvdXASRgoGVXBkYXRlEh0uaG9sbXMudHlwZXMuY3JtLmdyb3Vwcy5Hcm91",
-            "cBodLmhvbG1zLnR5cGVzLmNybS5ncm91cHMuR3JvdXBCH1oHY3JtL3JwY6oC",
-            "E0hPTE1TLlR5cGVzLkNSTS5SUENiBnByb3RvMw=="));
+            "b3VwLnByb3RvGiBjcm0vZ3JvdXBzL2dyb3VwX2luZGljYXRvci5wcm90byJE",
+            "ChNHcm91cFN2Y0FsbFJlc3BvbnNlEi0KBmdyb3VwcxgBIAMoCzIdLmhvbG1z",
+            "LnR5cGVzLmNybS5ncm91cHMuR3JvdXAyrgIKCEdyb3VwU3ZjEkcKA0FsbBIW",
+            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eRooLmhvbG1zLnR5cGVzLmNybS5ycGMu",
+            "R3JvdXBTdmNBbGxSZXNwb25zZRI/CgZDcmVhdGUSFi5nb29nbGUucHJvdG9i",
+            "dWYuRW1wdHkaHS5ob2xtcy50eXBlcy5jcm0uZ3JvdXBzLkdyb3VwEkYKBlVw",
+            "ZGF0ZRIdLmhvbG1zLnR5cGVzLmNybS5ncm91cHMuR3JvdXAaHS5ob2xtcy50",
+            "eXBlcy5jcm0uZ3JvdXBzLkdyb3VwElAKB0dldEJ5SWQSJi5ob2xtcy50eXBl",
+            "cy5jcm0uZ3JvdXBzLkdyb3VwSW5kaWNhdG9yGh0uaG9sbXMudHlwZXMuY3Jt",
+            "Lmdyb3Vwcy5Hcm91cEIfWgdjcm0vcnBjqgITSE9MTVMuVHlwZXMuQ1JNLlJQ",
+            "Q2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GroupSvcAllResponse), global::HOLMS.Types.CRM.RPC.GroupSvcAllResponse.Parser, new[]{ "Groups" }, null, null, null)
           }));

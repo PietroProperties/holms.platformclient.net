@@ -15,6 +15,7 @@ namespace HOLMS.Types.CRM.RPC {
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.CRM.RPC.GroupSvcAllResponse> __Marshaller_GroupSvcAllResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GroupSvcAllResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.CRM.Groups.Group> __Marshaller_Group = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Groups.Group.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.CRM.Groups.GroupIndicator> __Marshaller_GroupIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Groups.GroupIndicator.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GroupSvcAllResponse> __Method_All = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GroupSvcAllResponse>(
         MethodType.Unary,
@@ -37,6 +38,13 @@ namespace HOLMS.Types.CRM.RPC {
         __Marshaller_Group,
         __Marshaller_Group);
 
+    static readonly Method<global::HOLMS.Types.CRM.Groups.GroupIndicator, global::HOLMS.Types.CRM.Groups.Group> __Method_GetById = new Method<global::HOLMS.Types.CRM.Groups.GroupIndicator, global::HOLMS.Types.CRM.Groups.Group>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetById",
+        __Marshaller_GroupIndicator,
+        __Marshaller_Group);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -57,6 +65,11 @@ namespace HOLMS.Types.CRM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.Groups.Group> Update(global::HOLMS.Types.CRM.Groups.Group request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.Groups.Group> GetById(global::HOLMS.Types.CRM.Groups.GroupIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -134,6 +147,22 @@ namespace HOLMS.Types.CRM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }
+      public virtual global::HOLMS.Types.CRM.Groups.Group GetById(global::HOLMS.Types.CRM.Groups.GroupIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetById(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.CRM.Groups.Group GetById(global::HOLMS.Types.CRM.Groups.GroupIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetById, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.Groups.Group> GetByIdAsync(global::HOLMS.Types.CRM.Groups.GroupIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetByIdAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.Groups.Group> GetByIdAsync(global::HOLMS.Types.CRM.Groups.GroupIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetById, null, options, request);
+      }
       protected override GroupSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new GroupSvcClient(configuration);
@@ -146,7 +175,8 @@ namespace HOLMS.Types.CRM.RPC {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_All, serviceImpl.All)
           .AddMethod(__Method_Create, serviceImpl.Create)
-          .AddMethod(__Method_Update, serviceImpl.Update).Build();
+          .AddMethod(__Method_Update, serviceImpl.Update)
+          .AddMethod(__Method_GetById, serviceImpl.GetById).Build();
     }
 
   }
