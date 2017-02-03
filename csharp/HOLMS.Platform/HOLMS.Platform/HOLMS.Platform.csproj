@@ -306,6 +306,8 @@
     <Compile Include="Types\out\Group.cs" />
     <Compile Include="Types\out\GroupBooking.cs" />
     <Compile Include="Types\out\GroupBookingExt.cs" />
+    <Compile Include="Types\out\GroupBookingFolioSvc.cs" />
+    <Compile Include="Types\out\GroupBookingFolioSvcGrpc.cs" />
     <Compile Include="Types\out\GroupBookingHold.cs" />
     <Compile Include="Types\out\GroupBookingIndicator.cs" />
     <Compile Include="Types\out\GroupBookingMethod.cs" />

@@ -122,6 +122,9 @@ namespace HOLMS.Types.Money.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      ///  Cards
+      /// </summary>
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> AddCardAuthorizationFromToken(global::HOLMS.Types.Money.RPC.CardAuthorizationFromTokenRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
@@ -147,6 +150,9 @@ namespace HOLMS.Types.Money.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      ///  Payments
+      /// </summary>
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentResponse> PostCardPayment(global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
@@ -216,18 +222,30 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetFolioState, null, options, request);
       }
+      /// <summary>
+      ///  Cards
+      /// </summary>
       public virtual global::HOLMS.Types.Money.Cards.CardAuthorizationResponse AddCardAuthorizationFromToken(global::HOLMS.Types.Money.RPC.CardAuthorizationFromTokenRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AddCardAuthorizationFromToken(request, new CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///  Cards
+      /// </summary>
       public virtual global::HOLMS.Types.Money.Cards.CardAuthorizationResponse AddCardAuthorizationFromToken(global::HOLMS.Types.Money.RPC.CardAuthorizationFromTokenRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AddCardAuthorizationFromToken, null, options, request);
       }
+      /// <summary>
+      ///  Cards
+      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> AddCardAuthorizationFromTokenAsync(global::HOLMS.Types.Money.RPC.CardAuthorizationFromTokenRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AddCardAuthorizationFromTokenAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///  Cards
+      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> AddCardAuthorizationFromTokenAsync(global::HOLMS.Types.Money.RPC.CardAuthorizationFromTokenRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AddCardAuthorizationFromToken, null, options, request);
@@ -296,18 +314,30 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_VoidAuthorization, null, options, request);
       }
+      /// <summary>
+      ///  Payments
+      /// </summary>
       public virtual global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentResponse PostCardPayment(global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PostCardPayment(request, new CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///  Payments
+      /// </summary>
       public virtual global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentResponse PostCardPayment(global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PostCardPayment, null, options, request);
       }
+      /// <summary>
+      ///  Payments
+      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentResponse> PostCardPaymentAsync(global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PostCardPaymentAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///  Payments
+      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentResponse> PostCardPaymentAsync(global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostCardPayment, null, options, request);
