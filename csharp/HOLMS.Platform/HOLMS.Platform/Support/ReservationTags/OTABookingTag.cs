@@ -49,5 +49,9 @@ namespace HOLMS.Platform.Support.ReservationTags {
                 StayNightIndex
             };
         }
+
+        protected override string GetCategoryDescriptor() {
+            return OTABookingCategory;
+        }
     }
 }

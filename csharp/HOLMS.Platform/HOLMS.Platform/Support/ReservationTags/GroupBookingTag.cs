@@ -21,5 +21,9 @@ namespace HOLMS.Platform.Support.ReservationTags {
 
         protected override string[] GetDescriptorPartsAfterCategory() =>
             new[] {Booking.GuidID.ToString()};
+
+        protected override string GetCategoryDescriptor() {
+            return GroupBookingCategory;
+        }
     }
 }
