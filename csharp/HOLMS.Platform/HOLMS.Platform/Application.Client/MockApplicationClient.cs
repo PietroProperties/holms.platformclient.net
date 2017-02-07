@@ -473,5 +473,11 @@ namespace HOLMS.Application.Client {
                 throw new NotImplementedException();
             }
         }
+
+        public OTASyncSvc.OTASyncSvcClient OTASyncSvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

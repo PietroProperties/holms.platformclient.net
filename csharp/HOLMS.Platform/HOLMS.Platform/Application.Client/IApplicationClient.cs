@@ -32,6 +32,7 @@ namespace HOLMS.Application.Client {
         RestrictionSvc.RestrictionSvcClient RestrictionSvc { get; }
         TravelAgentSvc.TravelAgentSvcClient TravelAgentSvc { get; }
         TurnAwayReasonSvc.TurnAwayReasonSvcClient TurnAwayReasonSvc { get; }
+        OTASyncSvc.OTASyncSvcClient OTASyncSvc { get; }
         #endregion
 
         #region CRM

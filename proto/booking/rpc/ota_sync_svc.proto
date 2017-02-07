@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+
+import "google/protobuf/empty.proto";
+
+service OTASyncSvc {
+	rpc SyncReservations(google.protobuf.Empty)
+		returns (google.protobuf.Empty);
+}	

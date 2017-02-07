@@ -87,6 +87,7 @@
     <Compile Include="Support\RecurrenceDescriptorParts.cs" />
     <Compile Include="Support\ReservationTags\CompStayTag.cs" />
     <Compile Include="Support\ReservationTags\GroupBookingTag.cs" />
+    <Compile Include="Support\ReservationTags\OTABookingTag.cs" />
     <Compile Include="Support\ReservationTags\ReservationTagBase.cs" />
     <Compile Include="Support\ReservationTags\ReservationTagBaseTests.cs" />
     <Compile Include="Support\ReservationTags\ImmutableTagSet.cs" />
@@ -416,6 +417,8 @@
     <Compile Include="Types\out\OpenLodgingReservationSvc.cs" />
     <Compile Include="Types\out\OpenLodgingReservationSvcGrpc.cs" />
     <Compile Include="Types\out\OpenPriceEstimateRequest.cs" />
+    <Compile Include="Types\out\OtaSyncSvc.cs" />
+    <Compile Include="Types\out\OtaSyncSvcGrpc.cs" />
     <Compile Include="Types\out\OutOfOrderRecord.cs" />
     <Compile Include="Types\out\OutOfOrderRecordIndicator.cs" />
     <Compile Include="Types\out\OutOfOrderRecordSvc.cs" />

@@ -7,21 +7,21 @@ namespace HOLMS.Platform.Support.ReservationTags {
         // NOTE(DA) These feel like they belong on the children, but I couldn't find
         // a good way to put them there without splitting responsibility for the
         // string<->type mapping.
-        private const string CompStayCategory = "comp";
-        private const string GroupBookingCategory = "gb";
+        protected const string CompStayCategory = "comp";
+        protected const string GroupBookingCategory = "gb";
+        protected const string OTABookingCategory = "ob";
 
         protected abstract string[] GetDescriptorPartsAfterCategory();
+        protected abstract string GetCategoryDescriptor();
+
+        /// <summary>
+        /// Permanent tags are not allowed to be added/removed by amendment.
+        /// </summary>
+        public abstract bool IsPermanent { get; }
 
         public override string ToString() {
             var dp = GetDescriptorPartsAfterCategory();
-
-            if (this is CompStayTag) {
-                return string.Join(":", new List<string> { CompStayCategory }.Concat(dp));
-            } else if (this is GroupBookingTag) {
-                return string.Join(":", new List<string> { GroupBookingCategory }.Concat(dp));
-            } else {
-                throw new NotImplementedException();
-            }
+            return string.Join(":", new List<string> { GetCategoryDescriptor() }.Concat(dp));
         }
 
         public string[] ToDescriptorArray() {
@@ -38,6 +38,8 @@ namespace HOLMS.Platform.Support.ReservationTags {
                     return new CompStayTag(descriptorTokens);
                 case GroupBookingCategory:
                     return new GroupBookingTag(descriptorTokens);
+                case OTABookingCategory:
+                    return new OTABookingTag(descriptorTokens);
                 default:
                     throw new NotImplementedException();
             }

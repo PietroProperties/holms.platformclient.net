@@ -35,4 +35,6 @@ message ReservationSummary {
 	int32 number_adults = 16;
 	int32 number_children = 17;
 	repeated string active_tags = 18;
+	string channel_manager_id = 19;
+	string source_channel_id = 20;
 }
