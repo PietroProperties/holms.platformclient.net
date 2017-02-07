@@ -5,6 +5,12 @@ namespace HOLMS.Platform.Support.ReservationTags {
     public class GroupBookingTag : ReservationTagBase {
         public GroupBookingIndicator Booking { get; protected set; }
 
+        public override bool IsPermanent {
+            get {
+                return false;
+            }
+        }
+
         public GroupBookingTag(string[] tokens) {
             Booking = new GroupBookingIndicator(Guid.Parse(tokens[1]));
         }

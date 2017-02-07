@@ -9,6 +9,7 @@ namespace HOLMS.Platform.Support.ReservationTags {
         // string<->type mapping.
         private const string CompStayCategory = "comp";
         private const string GroupBookingCategory = "gb";
+        private const string OTABookingCategory = "ob";
 
         protected abstract string[] GetDescriptorPartsAfterCategory();
 
@@ -19,6 +20,8 @@ namespace HOLMS.Platform.Support.ReservationTags {
                 return string.Join(":", new List<string> { CompStayCategory }.Concat(dp));
             } else if (this is GroupBookingTag) {
                 return string.Join(":", new List<string> { GroupBookingCategory }.Concat(dp));
+            } else if (this is OTABookingTag) {
+                return string.Join(":", new List<string> { OTABookingCategory }.Concat(dp));
             } else {
                 throw new NotImplementedException();
             }
@@ -27,6 +30,11 @@ namespace HOLMS.Platform.Support.ReservationTags {
         public string[] ToDescriptorArray() {
             return ToString().Split(':');
         }
+
+        /// <summary>
+        /// Permanent tags are not allowed to be added/removed by amendment.
+        /// </summary>
+        public abstract bool IsPermanent { get; }
 
         public static ReservationTagBase CreateFromDescriptor(string descriptor) {
             // NOTE(DA) Was going to do some complicated reflection thing here
@@ -38,6 +46,8 @@ namespace HOLMS.Platform.Support.ReservationTags {
                     return new CompStayTag(descriptorTokens);
                 case GroupBookingCategory:
                     return new GroupBookingTag(descriptorTokens);
+                case OTABookingCategory:
+                    return new OTABookingTag(descriptorTokens);
                 default:
                     throw new NotImplementedException();
             }

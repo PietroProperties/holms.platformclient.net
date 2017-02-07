@@ -47,6 +47,7 @@ namespace HOLMS.Application.Client {
         public TurnAwayReasonSvc.TurnAwayReasonSvcClient TurnAwayReasonSvc { get; protected set; }
         public OpenLodgingReservationSvc.OpenLodgingReservationSvcClient OpenLodgingReservationSvc { get; protected set; }
         public GuaranteeAuthorizerService.GuaranteeAuthorizerServiceClient GuaranteeAuthorizerService { get; protected set; }
+        public OTASyncSvc.OTASyncSvcClient OTASyncSvc { get; protected set; }
         #endregion
 
         #region CRM
@@ -226,6 +227,7 @@ namespace HOLMS.Application.Client {
             TravelAgentSvc = new TravelAgentSvc.TravelAgentSvcClient(_authenticatedChannel);
             TurnAwayReasonSvc = new TurnAwayReasonSvc.TurnAwayReasonSvcClient(_authenticatedChannel);
             GuaranteeAuthorizerService = new GuaranteeAuthorizerService.GuaranteeAuthorizerServiceClient(_authenticatedChannel);
+            OTASyncSvc = new OTASyncSvc.OTASyncSvcClient(_authenticatedChannel);
             #endregion
 
             #region CRM
