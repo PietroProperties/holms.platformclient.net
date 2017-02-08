@@ -15,6 +15,13 @@ namespace HOLMS.Platform.Support.ReservationTags {
             StayNightIndex = descriptorTokens[4];
         }
 
+        public OTABookingTag(string otaSourceName, string channelManagerBookingID, string sourceBookingID, string stayNightIndex) {
+            OTASourceName = otaSourceName;
+            ChannelManagerBookingID = channelManagerBookingID;
+            SourceBookingID = sourceBookingID;
+            StayNightIndex = stayNightIndex;
+        }
+
         /// <summary>
         /// Name of the OTA channel that is the source of the reservation
         /// </summary>
