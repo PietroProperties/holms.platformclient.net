@@ -4,6 +4,6 @@
     <NuGetPackageRoot>$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
   </PropertyGroup>
   <ImportGroup>
-    <Import Project="$(NuGetPackageRoot)nodatime\2.0.0-alpha20160729\build\NodaTime.targets" Condition="Exists('$(NuGetPackageRoot)nodatime\2.0.0-alpha20160729\build\NodaTime.targets')" />
+    <Import Project="$(NuGetPackageRoot)\NodaTime\2.0.0-alpha20160729\build\NodaTime.targets" Condition="Exists('$(NuGetPackageRoot)\NodaTime\2.0.0-alpha20160729\build\NodaTime.targets')" />
   </ImportGroup>
 </Project>

@@ -27,10 +27,11 @@ namespace HOLMS.Types.IAM {
             "cnMvcHJvcGVydHlfaW5kaWNhdG9yLnByb3RvGil0ZW5hbmN5X2NvbmZpZy9y",
             "ZXNlcnZhdGlvbl9kZWZhdWx0cy5wcm90bxofdGVuYW5jeV9jb25maWcvcGhv",
             "bmVfY29kZS5wcm90bxojdGVuYW5jeV9jb25maWcvaGtfcGhvbmVfY29kZXMu",
+            "cHJvdG8aK3RlbmFuY3lfY29uZmlnL2NoYW5uZWxfbWFuYWdlcl9jb25maWcu",
             "cHJvdG8aLnRlbmFuY3lfY29uZmlnL3Jlc2VydmF0aW9uX3N0YXR1c19jb2xv",
             "cnMucHJvdG8aLHRlbmFuY3lfY29uZmlnL3Jvb21fY2FsbF9iaWxsaW5nX3Jh",
             "dGVzLnByb3RvGid0ZW5hbmN5X2NvbmZpZy9yb29tX3N0YXR1c19jb2xvcnMu",
-            "cHJvdG8i6wUKB1RlbmFuY3kSNAoJZW50aXR5X2lkGAEgASgLMiEuaG9sbXMu",
+            "cHJvdG8ivQYKB1RlbmFuY3kSNAoJZW50aXR5X2lkGAEgASgLMiEuaG9sbXMu",
             "dHlwZXMuaWFtLlRlbmFuY3lJbmRpY2F0b3ISFAoMdGVuYW5jeV9uYW1lGAIg",
             "ASgJEh0KFWR1c3RfY2xlYW5fYWZ0ZXJfZGF5cxgDIAEoBRIuCiZtYW5kYXRv",
             "cnlfY2xlYW5pbmdfYWZ0ZXJfaW5faG91c2VfZGF5cxgEIAEoBRI0CixtYW5k",
@@ -46,12 +47,14 @@ namespace HOLMS.Types.IAM {
             "ZmlnLlJvb21TdGF0dXNDb2xvcnMSQQoPaF9rX3Bob25lX2NvZGVzGAsgASgL",
             "MiguaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuSEtQaG9uZUNvZGVzElEK",
             "F3Jvb21fY2FsbF9iaWxsaW5nX3JhdGVzGAwgASgLMjAuaG9sbXMudHlwZXMu",
-            "dGVuYW5jeV9jb25maWcuUm9vbUNhbGxCaWxsaW5nUmF0ZXNCF1oDaWFtqgIP",
-            "SE9MTVMuVHlwZXMuSUFNYgZwcm90bzM="));
+            "dGVuYW5jeV9jb25maWcuUm9vbUNhbGxCaWxsaW5nUmF0ZXMSUAoWY2hhbm5l",
+            "bF9tYW5hZ2VyX2NvbmZpZxgNIAEoCzIwLmhvbG1zLnR5cGVzLnRlbmFuY3lf",
+            "Y29uZmlnLkNoYW5uZWxNYW5hZ2VyQ29uZmlnQhdaA2lhbaoCD0hPTE1TLlR5",
+            "cGVzLklBTWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ReservationDefaultsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PhoneCodeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.HkPhoneCodesReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ReservationStatusColorsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RoomCallBillingRatesReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RoomStatusColorsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ReservationDefaultsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PhoneCodeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.HkPhoneCodesReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ChannelManagerConfigReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ReservationStatusColorsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RoomCallBillingRatesReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RoomStatusColorsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Tenancy), global::HOLMS.Types.IAM.Tenancy.Parser, new[]{ "EntityId", "TenancyName", "DustCleanAfterDays", "MandatoryCleaningAfterInHouseDays", "MandatorySheetCleaningAfterInHouseDays", "Properties", "PhoneCodes", "ReservationDefaults", "ReservationStatusColors", "RoomStatusColors", "HKPhoneCodes", "RoomCallBillingRates" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Tenancy), global::HOLMS.Types.IAM.Tenancy.Parser, new[]{ "EntityId", "TenancyName", "DustCleanAfterDays", "MandatoryCleaningAfterInHouseDays", "MandatorySheetCleaningAfterInHouseDays", "Properties", "PhoneCodes", "ReservationDefaults", "ReservationStatusColors", "RoomStatusColors", "HKPhoneCodes", "RoomCallBillingRates", "ChannelManagerConfig" }, null, null, null)
           }));
     }
     #endregion
@@ -94,6 +97,7 @@ namespace HOLMS.Types.IAM {
       RoomStatusColors = other.roomStatusColors_ != null ? other.RoomStatusColors.Clone() : null;
       HKPhoneCodes = other.hKPhoneCodes_ != null ? other.HKPhoneCodes.Clone() : null;
       RoomCallBillingRates = other.roomCallBillingRates_ != null ? other.RoomCallBillingRates.Clone() : null;
+      ChannelManagerConfig = other.channelManagerConfig_ != null ? other.ChannelManagerConfig.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -231,6 +235,17 @@ namespace HOLMS.Types.IAM {
       }
     }
 
+    /// <summary>Field number for the "channel_manager_config" field.</summary>
+    public const int ChannelManagerConfigFieldNumber = 13;
+    private global::HOLMS.Types.TenancyConfig.ChannelManagerConfig channelManagerConfig_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.TenancyConfig.ChannelManagerConfig ChannelManagerConfig {
+      get { return channelManagerConfig_; }
+      set {
+        channelManagerConfig_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Tenancy);
@@ -256,6 +271,7 @@ namespace HOLMS.Types.IAM {
       if (!object.Equals(RoomStatusColors, other.RoomStatusColors)) return false;
       if (!object.Equals(HKPhoneCodes, other.HKPhoneCodes)) return false;
       if (!object.Equals(RoomCallBillingRates, other.RoomCallBillingRates)) return false;
+      if (!object.Equals(ChannelManagerConfig, other.ChannelManagerConfig)) return false;
       return true;
     }
 
@@ -274,6 +290,7 @@ namespace HOLMS.Types.IAM {
       if (roomStatusColors_ != null) hash ^= RoomStatusColors.GetHashCode();
       if (hKPhoneCodes_ != null) hash ^= HKPhoneCodes.GetHashCode();
       if (roomCallBillingRates_ != null) hash ^= RoomCallBillingRates.GetHashCode();
+      if (channelManagerConfig_ != null) hash ^= ChannelManagerConfig.GetHashCode();
       return hash;
     }
 
@@ -326,6 +343,10 @@ namespace HOLMS.Types.IAM {
         output.WriteRawTag(98);
         output.WriteMessage(RoomCallBillingRates);
       }
+      if (channelManagerConfig_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(ChannelManagerConfig);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -362,6 +383,9 @@ namespace HOLMS.Types.IAM {
       }
       if (roomCallBillingRates_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomCallBillingRates);
+      }
+      if (channelManagerConfig_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ChannelManagerConfig);
       }
       return size;
     }
@@ -420,6 +444,12 @@ namespace HOLMS.Types.IAM {
           roomCallBillingRates_ = new global::HOLMS.Types.TenancyConfig.RoomCallBillingRates();
         }
         RoomCallBillingRates.MergeFrom(other.RoomCallBillingRates);
+      }
+      if (other.channelManagerConfig_ != null) {
+        if (channelManagerConfig_ == null) {
+          channelManagerConfig_ = new global::HOLMS.Types.TenancyConfig.ChannelManagerConfig();
+        }
+        ChannelManagerConfig.MergeFrom(other.ChannelManagerConfig);
       }
     }
 
@@ -495,6 +525,13 @@ namespace HOLMS.Types.IAM {
               roomCallBillingRates_ = new global::HOLMS.Types.TenancyConfig.RoomCallBillingRates();
             }
             input.ReadMessage(roomCallBillingRates_);
+            break;
+          }
+          case 106: {
+            if (channelManagerConfig_ == null) {
+              channelManagerConfig_ = new global::HOLMS.Types.TenancyConfig.ChannelManagerConfig();
+            }
+            input.ReadMessage(channelManagerConfig_);
             break;
           }
         }

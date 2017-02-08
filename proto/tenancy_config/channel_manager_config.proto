@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+message ChannelManagerConfig {
+	string provider_i_d = 1;
+	string provider_user_name = 2;
+	string provider_password = 3;
+	string hotel_i_d = 4;
+}
