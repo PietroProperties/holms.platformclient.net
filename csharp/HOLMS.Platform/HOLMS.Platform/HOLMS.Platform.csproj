@@ -264,6 +264,7 @@
     <Compile Include="Types\out\CardTerminalSvc.cs" />
     <Compile Include="Types\out\CardTerminalSvcGrpc.cs" />
     <Compile Include="Types\out\CashGuaranteeTenderReceived.cs" />
+    <Compile Include="Types\out\ChannelManagerConfig.cs" />
     <Compile Include="Types\out\CharacterCaseType.cs" />
     <Compile Include="Types\out\ChargeCreditType.cs" />
     <Compile Include="Types\out\CheckGuaranteeTenderReceived.cs" />
@@ -417,7 +418,6 @@
     <Compile Include="Types\out\OpenLodgingReservationSvc.cs" />
     <Compile Include="Types\out\OpenLodgingReservationSvcGrpc.cs" />
     <Compile Include="Types\out\OpenPriceEstimateRequest.cs" />
-    <Compile Include="Types\out\OtaConfig.cs" />
     <Compile Include="Types\out\OtaSyncSvc.cs" />
     <Compile Include="Types\out\OtaSyncSvcGrpc.cs" />
     <Compile Include="Types\out\OutOfOrderRecord.cs" />

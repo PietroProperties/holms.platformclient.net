@@ -27,33 +27,34 @@ namespace HOLMS.Types.IAM {
             "cnMvcHJvcGVydHlfaW5kaWNhdG9yLnByb3RvGil0ZW5hbmN5X2NvbmZpZy9y",
             "ZXNlcnZhdGlvbl9kZWZhdWx0cy5wcm90bxofdGVuYW5jeV9jb25maWcvcGhv",
             "bmVfY29kZS5wcm90bxojdGVuYW5jeV9jb25maWcvaGtfcGhvbmVfY29kZXMu",
-            "cHJvdG8aH3RlbmFuY3lfY29uZmlnL290YV9jb25maWcucHJvdG8aLnRlbmFu",
-            "Y3lfY29uZmlnL3Jlc2VydmF0aW9uX3N0YXR1c19jb2xvcnMucHJvdG8aLHRl",
-            "bmFuY3lfY29uZmlnL3Jvb21fY2FsbF9iaWxsaW5nX3JhdGVzLnByb3RvGid0",
-            "ZW5hbmN5X2NvbmZpZy9yb29tX3N0YXR1c19jb2xvcnMucHJvdG8ipgYKB1Rl",
-            "bmFuY3kSNAoJZW50aXR5X2lkGAEgASgLMiEuaG9sbXMudHlwZXMuaWFtLlRl",
-            "bmFuY3lJbmRpY2F0b3ISFAoMdGVuYW5jeV9uYW1lGAIgASgJEh0KFWR1c3Rf",
-            "Y2xlYW5fYWZ0ZXJfZGF5cxgDIAEoBRIuCiZtYW5kYXRvcnlfY2xlYW5pbmdf",
-            "YWZ0ZXJfaW5faG91c2VfZGF5cxgEIAEoBRI0CixtYW5kYXRvcnlfc2hlZXRf",
-            "Y2xlYW5pbmdfYWZ0ZXJfaW5faG91c2VfZGF5cxgFIAEoBRJMCgpwcm9wZXJ0",
-            "aWVzGAYgAygLMjguaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNh",
-            "dG9ycy5Qcm9wZXJ0eUluZGljYXRvchI6CgtwaG9uZV9jb2RlcxgHIAMoCzIl",
-            "LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLlBob25lQ29kZRJNChRyZXNl",
-            "cnZhdGlvbl9kZWZhdWx0cxgIIAEoCzIvLmhvbG1zLnR5cGVzLnRlbmFuY3lf",
-            "Y29uZmlnLlJlc2VydmF0aW9uRGVmYXVsdHMSVgoZcmVzZXJ2YXRpb25fc3Rh",
-            "dHVzX2NvbG9ycxgJIAEoCzIzLmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmln",
-            "LlJlc2VydmF0aW9uU3RhdHVzQ29sb3JzEkgKEnJvb21fc3RhdHVzX2NvbG9y",
-            "cxgKIAEoCzIsLmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLlJvb21TdGF0",
-            "dXNDb2xvcnMSQQoPaF9rX3Bob25lX2NvZGVzGAsgASgLMiguaG9sbXMudHlw",
-            "ZXMudGVuYW5jeV9jb25maWcuSEtQaG9uZUNvZGVzElEKF3Jvb21fY2FsbF9i",
-            "aWxsaW5nX3JhdGVzGAwgASgLMjAuaG9sbXMudHlwZXMudGVuYW5jeV9jb25m",
-            "aWcuUm9vbUNhbGxCaWxsaW5nUmF0ZXMSOQoKb3RhX2NvbmZpZxgNIAEoCzIl",
-            "LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLk9UQUNvbmZpZ0IXWgNpYW2q",
-            "Ag9IT0xNUy5UeXBlcy5JQU1iBnByb3RvMw=="));
+            "cHJvdG8aK3RlbmFuY3lfY29uZmlnL2NoYW5uZWxfbWFuYWdlcl9jb25maWcu",
+            "cHJvdG8aLnRlbmFuY3lfY29uZmlnL3Jlc2VydmF0aW9uX3N0YXR1c19jb2xv",
+            "cnMucHJvdG8aLHRlbmFuY3lfY29uZmlnL3Jvb21fY2FsbF9iaWxsaW5nX3Jh",
+            "dGVzLnByb3RvGid0ZW5hbmN5X2NvbmZpZy9yb29tX3N0YXR1c19jb2xvcnMu",
+            "cHJvdG8ivQYKB1RlbmFuY3kSNAoJZW50aXR5X2lkGAEgASgLMiEuaG9sbXMu",
+            "dHlwZXMuaWFtLlRlbmFuY3lJbmRpY2F0b3ISFAoMdGVuYW5jeV9uYW1lGAIg",
+            "ASgJEh0KFWR1c3RfY2xlYW5fYWZ0ZXJfZGF5cxgDIAEoBRIuCiZtYW5kYXRv",
+            "cnlfY2xlYW5pbmdfYWZ0ZXJfaW5faG91c2VfZGF5cxgEIAEoBRI0CixtYW5k",
+            "YXRvcnlfc2hlZXRfY2xlYW5pbmdfYWZ0ZXJfaW5faG91c2VfZGF5cxgFIAEo",
+            "BRJMCgpwcm9wZXJ0aWVzGAYgAygLMjguaG9sbXMudHlwZXMudGVuYW5jeV9j",
+            "b25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRvchI6CgtwaG9uZV9j",
+            "b2RlcxgHIAMoCzIlLmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLlBob25l",
+            "Q29kZRJNChRyZXNlcnZhdGlvbl9kZWZhdWx0cxgIIAEoCzIvLmhvbG1zLnR5",
+            "cGVzLnRlbmFuY3lfY29uZmlnLlJlc2VydmF0aW9uRGVmYXVsdHMSVgoZcmVz",
+            "ZXJ2YXRpb25fc3RhdHVzX2NvbG9ycxgJIAEoCzIzLmhvbG1zLnR5cGVzLnRl",
+            "bmFuY3lfY29uZmlnLlJlc2VydmF0aW9uU3RhdHVzQ29sb3JzEkgKEnJvb21f",
+            "c3RhdHVzX2NvbG9ycxgKIAEoCzIsLmhvbG1zLnR5cGVzLnRlbmFuY3lfY29u",
+            "ZmlnLlJvb21TdGF0dXNDb2xvcnMSQQoPaF9rX3Bob25lX2NvZGVzGAsgASgL",
+            "MiguaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuSEtQaG9uZUNvZGVzElEK",
+            "F3Jvb21fY2FsbF9iaWxsaW5nX3JhdGVzGAwgASgLMjAuaG9sbXMudHlwZXMu",
+            "dGVuYW5jeV9jb25maWcuUm9vbUNhbGxCaWxsaW5nUmF0ZXMSUAoWY2hhbm5l",
+            "bF9tYW5hZ2VyX2NvbmZpZxgNIAEoCzIwLmhvbG1zLnR5cGVzLnRlbmFuY3lf",
+            "Y29uZmlnLkNoYW5uZWxNYW5hZ2VyQ29uZmlnQhdaA2lhbaoCD0hPTE1TLlR5",
+            "cGVzLklBTWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ReservationDefaultsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PhoneCodeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.HkPhoneCodesReflection.Descriptor, global::HOLMS.Types.TenancyConfig.OtaConfigReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ReservationStatusColorsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RoomCallBillingRatesReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RoomStatusColorsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ReservationDefaultsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PhoneCodeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.HkPhoneCodesReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ChannelManagerConfigReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ReservationStatusColorsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RoomCallBillingRatesReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RoomStatusColorsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Tenancy), global::HOLMS.Types.IAM.Tenancy.Parser, new[]{ "EntityId", "TenancyName", "DustCleanAfterDays", "MandatoryCleaningAfterInHouseDays", "MandatorySheetCleaningAfterInHouseDays", "Properties", "PhoneCodes", "ReservationDefaults", "ReservationStatusColors", "RoomStatusColors", "HKPhoneCodes", "RoomCallBillingRates", "OtaConfig" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Tenancy), global::HOLMS.Types.IAM.Tenancy.Parser, new[]{ "EntityId", "TenancyName", "DustCleanAfterDays", "MandatoryCleaningAfterInHouseDays", "MandatorySheetCleaningAfterInHouseDays", "Properties", "PhoneCodes", "ReservationDefaults", "ReservationStatusColors", "RoomStatusColors", "HKPhoneCodes", "RoomCallBillingRates", "ChannelManagerConfig" }, null, null, null)
           }));
     }
     #endregion
@@ -96,7 +97,7 @@ namespace HOLMS.Types.IAM {
       RoomStatusColors = other.roomStatusColors_ != null ? other.RoomStatusColors.Clone() : null;
       HKPhoneCodes = other.hKPhoneCodes_ != null ? other.HKPhoneCodes.Clone() : null;
       RoomCallBillingRates = other.roomCallBillingRates_ != null ? other.RoomCallBillingRates.Clone() : null;
-      OtaConfig = other.otaConfig_ != null ? other.OtaConfig.Clone() : null;
+      ChannelManagerConfig = other.channelManagerConfig_ != null ? other.ChannelManagerConfig.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -234,14 +235,14 @@ namespace HOLMS.Types.IAM {
       }
     }
 
-    /// <summary>Field number for the "ota_config" field.</summary>
-    public const int OtaConfigFieldNumber = 13;
-    private global::HOLMS.Types.TenancyConfig.OTAConfig otaConfig_;
+    /// <summary>Field number for the "channel_manager_config" field.</summary>
+    public const int ChannelManagerConfigFieldNumber = 13;
+    private global::HOLMS.Types.TenancyConfig.ChannelManagerConfig channelManagerConfig_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.TenancyConfig.OTAConfig OtaConfig {
-      get { return otaConfig_; }
+    public global::HOLMS.Types.TenancyConfig.ChannelManagerConfig ChannelManagerConfig {
+      get { return channelManagerConfig_; }
       set {
-        otaConfig_ = value;
+        channelManagerConfig_ = value;
       }
     }
 
@@ -270,7 +271,7 @@ namespace HOLMS.Types.IAM {
       if (!object.Equals(RoomStatusColors, other.RoomStatusColors)) return false;
       if (!object.Equals(HKPhoneCodes, other.HKPhoneCodes)) return false;
       if (!object.Equals(RoomCallBillingRates, other.RoomCallBillingRates)) return false;
-      if (!object.Equals(OtaConfig, other.OtaConfig)) return false;
+      if (!object.Equals(ChannelManagerConfig, other.ChannelManagerConfig)) return false;
       return true;
     }
 
@@ -289,7 +290,7 @@ namespace HOLMS.Types.IAM {
       if (roomStatusColors_ != null) hash ^= RoomStatusColors.GetHashCode();
       if (hKPhoneCodes_ != null) hash ^= HKPhoneCodes.GetHashCode();
       if (roomCallBillingRates_ != null) hash ^= RoomCallBillingRates.GetHashCode();
-      if (otaConfig_ != null) hash ^= OtaConfig.GetHashCode();
+      if (channelManagerConfig_ != null) hash ^= ChannelManagerConfig.GetHashCode();
       return hash;
     }
 
@@ -342,9 +343,9 @@ namespace HOLMS.Types.IAM {
         output.WriteRawTag(98);
         output.WriteMessage(RoomCallBillingRates);
       }
-      if (otaConfig_ != null) {
+      if (channelManagerConfig_ != null) {
         output.WriteRawTag(106);
-        output.WriteMessage(OtaConfig);
+        output.WriteMessage(ChannelManagerConfig);
       }
     }
 
@@ -383,8 +384,8 @@ namespace HOLMS.Types.IAM {
       if (roomCallBillingRates_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomCallBillingRates);
       }
-      if (otaConfig_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OtaConfig);
+      if (channelManagerConfig_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ChannelManagerConfig);
       }
       return size;
     }
@@ -444,11 +445,11 @@ namespace HOLMS.Types.IAM {
         }
         RoomCallBillingRates.MergeFrom(other.RoomCallBillingRates);
       }
-      if (other.otaConfig_ != null) {
-        if (otaConfig_ == null) {
-          otaConfig_ = new global::HOLMS.Types.TenancyConfig.OTAConfig();
+      if (other.channelManagerConfig_ != null) {
+        if (channelManagerConfig_ == null) {
+          channelManagerConfig_ = new global::HOLMS.Types.TenancyConfig.ChannelManagerConfig();
         }
-        OtaConfig.MergeFrom(other.OtaConfig);
+        ChannelManagerConfig.MergeFrom(other.ChannelManagerConfig);
       }
     }
 
@@ -527,10 +528,10 @@ namespace HOLMS.Types.IAM {
             break;
           }
           case 106: {
-            if (otaConfig_ == null) {
-              otaConfig_ = new global::HOLMS.Types.TenancyConfig.OTAConfig();
+            if (channelManagerConfig_ == null) {
+              channelManagerConfig_ = new global::HOLMS.Types.TenancyConfig.ChannelManagerConfig();
             }
-            input.ReadMessage(otaConfig_);
+            input.ReadMessage(channelManagerConfig_);
             break;
           }
         }

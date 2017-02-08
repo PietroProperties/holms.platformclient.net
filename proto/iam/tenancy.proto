@@ -9,7 +9,7 @@ import "tenancy_config/indicators/property_indicator.proto";
 import "tenancy_config/reservation_defaults.proto";
 import "tenancy_config/phone_code.proto";
 import "tenancy_config/hk_phone_codes.proto";
-import "tenancy_config/ota_config.proto";
+import "tenancy_config/channel_manager_config.proto";
 import "tenancy_config/reservation_status_colors.proto";
 import "tenancy_config/room_call_billing_rates.proto";
 import "tenancy_config/room_status_colors.proto";
@@ -27,5 +27,5 @@ message Tenancy {
 	holms.types.tenancy_config.RoomStatusColors room_status_colors = 10;
 	holms.types.tenancy_config.HKPhoneCodes h_k_phone_codes = 11;
 	holms.types.tenancy_config.RoomCallBillingRates room_call_billing_rates = 12;;
-	holms.types.tenancy_config.OTAConfig ota_config = 13;
+	holms.types.tenancy_config.ChannelManagerConfig channel_manager_config = 13;
 }
