@@ -265,6 +265,8 @@
     <Compile Include="Types\out\CardTerminalSvcGrpc.cs" />
     <Compile Include="Types\out\CashGuaranteeTenderReceived.cs" />
     <Compile Include="Types\out\ChannelManagerConfig.cs" />
+    <Compile Include="Types\out\ChannelManagerConfigurationSvc.cs" />
+    <Compile Include="Types\out\ChannelManagerConfigurationSvcGrpc.cs" />
     <Compile Include="Types\out\CharacterCaseType.cs" />
     <Compile Include="Types\out\ChargeCreditType.cs" />
     <Compile Include="Types\out\CheckGuaranteeTenderReceived.cs" />
