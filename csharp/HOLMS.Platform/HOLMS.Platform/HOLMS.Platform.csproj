@@ -417,6 +417,7 @@
     <Compile Include="Types\out\OpenLodgingReservationSvc.cs" />
     <Compile Include="Types\out\OpenLodgingReservationSvcGrpc.cs" />
     <Compile Include="Types\out\OpenPriceEstimateRequest.cs" />
+    <Compile Include="Types\out\OtaConfig.cs" />
     <Compile Include="Types\out\OtaSyncSvc.cs" />
     <Compile Include="Types\out\OtaSyncSvcGrpc.cs" />
     <Compile Include="Types\out\OutOfOrderRecord.cs" />
