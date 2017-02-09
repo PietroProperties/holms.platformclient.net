@@ -103,6 +103,7 @@ namespace HOLMS.Application.Client {
 
         #region Tenancy Config
         public AccountAssignmentsSvc.AccountAssignmentsSvcClient AccountAssignmentSvc { get; protected set; }
+        public ChannelManagerConfigurationSvc.ChannelManagerConfigurationSvcClient ChannelManagerConfigurationSvc { get; protected set; }
         public GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc { get; protected set; }
         public HkPhoneCodeSvc.HkPhoneCodeSvcClient HkPhoneCodeSvc { get; protected set; }
         public PhoneCodeSvc.PhoneCodeSvcClient PhoneCodeSvc { get; protected set; }
@@ -282,6 +283,7 @@ namespace HOLMS.Application.Client {
 
             #region Tenancy Config
             AccountAssignmentSvc = new AccountAssignmentsSvc.AccountAssignmentsSvcClient(_authenticatedChannel);
+            ChannelManagerConfigurationSvc = new ChannelManagerConfigurationSvc.ChannelManagerConfigurationSvcClient(_authenticatedChannel);
             GroupBookingMethodSvc = new GroupBookingMethodSvc.GroupBookingMethodSvcClient(_authenticatedChannel);
             HkPhoneCodeSvc = new HkPhoneCodeSvc.HkPhoneCodeSvcClient(_authenticatedChannel);
             PhoneCodeSvc = new PhoneCodeSvc.PhoneCodeSvcClient(_authenticatedChannel);
