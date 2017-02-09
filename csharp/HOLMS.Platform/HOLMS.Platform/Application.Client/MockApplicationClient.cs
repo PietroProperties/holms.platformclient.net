@@ -479,5 +479,11 @@ namespace HOLMS.Application.Client {
                 throw new NotImplementedException();
             }
         }
+
+        public ChannelManagerConfigurationSvc.ChannelManagerConfigurationSvcClient ChannelManagerConfigurationSvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
     }
 }
