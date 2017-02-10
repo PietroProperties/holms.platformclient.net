@@ -36,4 +36,5 @@ message Property {
 	string website = 22;
 	string reservation_email = 23;
 	string fax_number = 30;
+	string booking_prefix = 31;
 }

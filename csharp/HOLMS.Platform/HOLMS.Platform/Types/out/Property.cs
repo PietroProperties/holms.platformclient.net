@@ -28,7 +28,7 @@ namespace HOLMS.Types.TenancyConfig {
             "ZHMvY2FyZF9tZXJjaGFudF9pbmRpY2F0b3IucHJvdG8aH3ByaW1pdGl2ZS9t",
             "b25ldGFyeV9hbW91bnQucHJvdG8aNmJvb2tpbmcvaW5kaWNhdG9ycy9jYW5j",
             "ZWxsYXRpb25fcG9saWN5X2luZGljYXRvci5wcm90bxoydGVuYW5jeV9jb25m",
-            "aWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8i4AcKCFBy",
+            "aWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8i+AcKCFBy",
             "b3BlcnR5EksKCWVudGl0eV9pZBgBIAEoCzI4LmhvbG1zLnR5cGVzLnRlbmFu",
             "Y3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3ISEwoLZGVz",
             "Y3JpcHRpb24YAiABKAkSNgoTY2hlY2tpbl90aW1lX29mX2RheRgDIAEoCzIZ",
@@ -50,13 +50,13 @@ namespace HOLMS.Types.TenancyConfig {
             "bmRpY2F0b3ISSwocbWF4aW11bV9hdXRob3JpemF0aW9uX2Ftb3VudBgUIAEo",
             "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIbChNk",
             "ZWZhdWx0X3N0YXlfbGVuZ3RoGBUgASgFEg8KB3dlYnNpdGUYFiABKAkSGQoR",
-            "cmVzZXJ2YXRpb25fZW1haWwYFyABKAkSEgoKZmF4X251bWJlchgeIAEoCUIr",
-            "Wg10ZW5hbmN5Y29uZmlnqgIZSE9MTVMuVHlwZXMuVGVuYW5jeUNvbmZpZ2IG",
-            "cHJvdG8z"));
+            "cmVzZXJ2YXRpb25fZW1haWwYFyABKAkSEgoKZmF4X251bWJlchgeIAEoCRIW",
+            "Cg5ib29raW5nX3ByZWZpeBgfIAEoCUIrWg10ZW5hbmN5Y29uZmlnqgIZSE9M",
+            "TVMuVHlwZXMuVGVuYW5jeUNvbmZpZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.Property), global::HOLMS.Types.TenancyConfig.Property.Parser, new[]{ "EntityId", "Description", "CheckinTimeOfDay", "CheckOutTimeOfDay", "RolloverTimeOfDay", "AllowedEarlyCheckinHours", "IifDocnumPrefix", "IifCustomerName", "CheckinDeposit", "LastRevenueAccrualStart", "LastDateHkRolloverRan", "Address1", "Address2", "City", "State", "Zip", "PhoneNumber", "CardMerchant", "CancellationPolicy", "MaximumAuthorizationAmount", "DefaultStayLength", "Website", "ReservationEmail", "FaxNumber" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.Property), global::HOLMS.Types.TenancyConfig.Property.Parser, new[]{ "EntityId", "Description", "CheckinTimeOfDay", "CheckOutTimeOfDay", "RolloverTimeOfDay", "AllowedEarlyCheckinHours", "IifDocnumPrefix", "IifCustomerName", "CheckinDeposit", "LastRevenueAccrualStart", "LastDateHkRolloverRan", "Address1", "Address2", "City", "State", "Zip", "PhoneNumber", "CardMerchant", "CancellationPolicy", "MaximumAuthorizationAmount", "DefaultStayLength", "Website", "ReservationEmail", "FaxNumber", "BookingPrefix" }, null, null, null)
           }));
     }
     #endregion
@@ -111,6 +111,7 @@ namespace HOLMS.Types.TenancyConfig {
       website_ = other.website_;
       reservationEmail_ = other.reservationEmail_;
       faxNumber_ = other.faxNumber_;
+      bookingPrefix_ = other.bookingPrefix_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -382,6 +383,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "booking_prefix" field.</summary>
+    public const int BookingPrefixFieldNumber = 31;
+    private string bookingPrefix_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string BookingPrefix {
+      get { return bookingPrefix_; }
+      set {
+        bookingPrefix_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Property);
@@ -419,6 +431,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (Website != other.Website) return false;
       if (ReservationEmail != other.ReservationEmail) return false;
       if (FaxNumber != other.FaxNumber) return false;
+      if (BookingPrefix != other.BookingPrefix) return false;
       return true;
     }
 
@@ -449,6 +462,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (Website.Length != 0) hash ^= Website.GetHashCode();
       if (ReservationEmail.Length != 0) hash ^= ReservationEmail.GetHashCode();
       if (FaxNumber.Length != 0) hash ^= FaxNumber.GetHashCode();
+      if (BookingPrefix.Length != 0) hash ^= BookingPrefix.GetHashCode();
       return hash;
     }
 
@@ -555,6 +569,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(242, 1);
         output.WriteString(FaxNumber);
       }
+      if (BookingPrefix.Length != 0) {
+        output.WriteRawTag(250, 1);
+        output.WriteString(BookingPrefix);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -631,6 +649,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (FaxNumber.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(FaxNumber);
+      }
+      if (BookingPrefix.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(BookingPrefix);
       }
       return size;
     }
@@ -741,6 +762,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.FaxNumber.Length != 0) {
         FaxNumber = other.FaxNumber;
+      }
+      if (other.BookingPrefix.Length != 0) {
+        BookingPrefix = other.BookingPrefix;
       }
     }
 
@@ -876,6 +900,10 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 242: {
             FaxNumber = input.ReadString();
+            break;
+          }
+          case 250: {
+            BookingPrefix = input.ReadString();
             break;
           }
         }
