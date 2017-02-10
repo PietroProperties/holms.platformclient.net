@@ -4,7 +4,6 @@ using HOLMS.Support.Time;
 using HOLMS.Types.Booking.Groups;
 using HOLMS.Types.Booking.Indicators;
 using HOLMS.Types.CRM.Groups;
-using HOLMS.Types.Money.Accounting;
 using HOLMS.Types.Supply;
 using HOLMS.Types.TenancyConfig.Indicators;
 
@@ -19,7 +18,6 @@ namespace HOLMS.Support.DTOBuilders.Booking.Groups {
         private readonly bool _groupPaysIncidentals;
         private readonly string _additionalNotes;
         private readonly string _customerBookingId;
-        private readonly AccountIndicator _houseAccount;
         private readonly RateScheduleIndicator _rateSchedule;
         private readonly GroupIndicator _group;
         private string _groupName;
@@ -34,10 +32,8 @@ namespace HOLMS.Support.DTOBuilders.Booking.Groups {
         public GroupBookingBuilder(GroupBookingIndicator id, GroupBookingStatus status,
             bool taxExempt, string taxId, bool groupPaysLodging, bool groupPaysIncidentals,
             string additionalNotes, string customerBookingId, InclusiveOpsdateRange bookingDates,
-            AccountIndicator houseAccount, RateScheduleIndicator rs, GroupIndicator g,
-            Guid? groupBookingMethodId,
-            Guid? reservationSourceId, Guid? travelAgentId,
-            Guid? cancellationPolicy,
+            RateScheduleIndicator rs, GroupIndicator g, Guid? groupBookingMethodId,
+            Guid? reservationSourceId, Guid? travelAgentId, Guid? cancellationPolicy,
             string groupName) {
             _gbi = id;
             _gbs = status;
@@ -47,7 +43,6 @@ namespace HOLMS.Support.DTOBuilders.Booking.Groups {
             _groupPaysIncidentals = groupPaysIncidentals;
             _additionalNotes = additionalNotes;
             _customerBookingId = customerBookingId;
-            _houseAccount = houseAccount;
             _rateSchedule = rs;
             _group = g;
 
@@ -70,7 +65,6 @@ namespace HOLMS.Support.DTOBuilders.Booking.Groups {
                 GroupPaysIncidentals = _groupPaysIncidentals,
                 AdditionalNotes = _additionalNotes ?? string.Empty,
                 CustomerBookingId = _customerBookingId ?? string.Empty,
-                HouseAccount = _houseAccount,
                 RateSchedule = _rateSchedule,
                 Group = _group,
                 GroupName = _groupName

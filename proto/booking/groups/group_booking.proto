@@ -11,7 +11,6 @@ import "booking/indicators/travel_agent_indicator.proto";
 import "booking/indicators/group_booking_indicator.proto";
 import "booking/groups/group_booking_status.proto";
 import "crm/groups/group_indicator.proto";
-import "money/accounting/account_indicator.proto";
 import "supply/rate_schedule_indicator.proto";
 import "tenancy_config/indicators/group_booking_method_indicator.proto";
 
@@ -25,7 +24,6 @@ message GroupBooking {
     string additional_notes = 7;
     string customer_booking_id = 8;
     .holms.types.primitive.PbInclusiveOpsdateRange date_range = 9;
-    .holms.types.money.accounting.AccountIndicator house_account = 10;
 
     .holms.types.supply.RateScheduleIndicator rate_schedule = 11;
     .holms.types.crm.groups.GroupIndicator group = 12;
