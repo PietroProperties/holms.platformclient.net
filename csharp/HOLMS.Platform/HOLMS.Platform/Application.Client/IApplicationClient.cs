@@ -55,6 +55,7 @@ namespace HOLMS.Application.Client {
         CardMerchantSvc.CardMerchantSvcClient CardMerchantSvc { get; }
         CardProcessingSvc.CardProcessingSvcClient CardProcessingSvc { get; }
         CardTerminalSvc.CardTerminalSvcClient CardTerminalSvc { get; }
+        GroupBookingFolioSvc.GroupBookingFolioSvcClient GroupBookingFolioSvc { get; }
         ReservationFolioSvc.ReservationFolioSvcClient ReservationFolioSvc { get; }
         TaxFeeSvc.TaxFeeSvcClient TaxFeeSvc { get; }
         #endregion
