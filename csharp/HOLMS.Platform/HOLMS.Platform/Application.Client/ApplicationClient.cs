@@ -71,6 +71,7 @@ namespace HOLMS.Application.Client {
         public CardProcessingSvc.CardProcessingSvcClient CardProcessingSvc { get; protected set; }
         public CardTerminalSvc.CardTerminalSvcClient CardTerminalSvc { get; protected set; }
         public TaxFeeSvc.TaxFeeSvcClient TaxFeeSvc { get; protected set; }
+        public GroupBookingFolioSvc.GroupBookingFolioSvcClient GroupBookingFolioSvc { get; protected set; }
         public ReservationFolioSvc.ReservationFolioSvcClient ReservationFolioSvc { get; protected set; }
         #endregion
 
@@ -251,6 +252,7 @@ namespace HOLMS.Application.Client {
             CardProcessingSvc = new CardProcessingSvc.CardProcessingSvcClient(_authenticatedChannel);
             CardTerminalSvc = new CardTerminalSvc.CardTerminalSvcClient(_authenticatedChannel);
             TaxFeeSvc = new TaxFeeSvc.TaxFeeSvcClient(_authenticatedChannel);
+            GroupBookingFolioSvc = new GroupBookingFolioSvc.GroupBookingFolioSvcClient(_authenticatedChannel);
             ReservationFolioSvc = new ReservationFolioSvc.ReservationFolioSvcClient(_authenticatedChannel);
             #endregion
 
