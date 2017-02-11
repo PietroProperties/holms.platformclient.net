@@ -31,4 +31,5 @@ message CancelledReservation {
 	.holms.types.booking.CancellationPolicy cancellation_policy = 14;
 	string requesting_party = 15;
 	holms.types.primitive.PbLocalDate cancellation_date = 16;
+	int64 cancellation_number = 17;
 }
