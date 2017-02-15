@@ -1,5 +1,5 @@
 ﻿namespace HOLMS.Platform.Support.ReservationTags {
-    class MigratedReservationTag : ReservationTagBase {
+    public class MigratedReservationTag : ReservationTagBase {
         protected override string[] GetDescriptorPartsAfterCategory() =>
             new string[] { };
 
