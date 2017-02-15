@@ -87,6 +87,7 @@
     <Compile Include="Support\RecurrenceDescriptorParts.cs" />
     <Compile Include="Support\ReservationTags\CompStayTag.cs" />
     <Compile Include="Support\ReservationTags\GroupBookingTag.cs" />
+    <Compile Include="Support\ReservationTags\MigratedReservationTag.cs" />
     <Compile Include="Support\ReservationTags\OTABookingTag.cs" />
     <Compile Include="Support\ReservationTags\ReservationTagBase.cs" />
     <Compile Include="Support\ReservationTags\ReservationTagBaseTests.cs" />
