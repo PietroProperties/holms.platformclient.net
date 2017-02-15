@@ -2,19 +2,9 @@
 
 namespace HOLMS.Platform.Support.ReservationTags {
     public class CompStayTag : ReservationTagBase {
-        public CompStayTag() { }
+        public override bool IsPermanent => false;
 
-        public CompStayTag(string[] tokens) { }
-
-        public override bool IsPermanent {
-            get {
-                return false;
-            }
-        }
-
-        protected override string GetCategoryDescriptor() {
-            return CompStayCategory;
-        }
+        protected override string GetCategoryDescriptor() => CompStayCategory;
 
         protected override string[] GetDescriptorPartsAfterCategory() {
             return new string[] { };

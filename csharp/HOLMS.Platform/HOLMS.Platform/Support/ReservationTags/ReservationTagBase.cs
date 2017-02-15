@@ -9,6 +9,7 @@ namespace HOLMS.Platform.Support.ReservationTags {
         // string<->type mapping.
         protected const string CompStayCategory = "comp";
         protected const string GroupBookingCategory = "gb";
+        protected const string MigratedBookingCategory = "migrated";
         protected const string OTABookingCategory = "ob";
 
         protected abstract string[] GetDescriptorPartsAfterCategory();
@@ -35,9 +36,11 @@ namespace HOLMS.Platform.Support.ReservationTags {
 
             switch (descriptorTokens.First()) {
                 case CompStayCategory:
-                    return new CompStayTag(descriptorTokens);
+                    return new CompStayTag();
                 case GroupBookingCategory:
                     return new GroupBookingTag(descriptorTokens);
+                case MigratedBookingCategory:
+                    return new MigratedReservationTag();
                 case OTABookingCategory:
                     return new OTABookingTag(descriptorTokens);
                 default:
