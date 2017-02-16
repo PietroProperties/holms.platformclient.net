@@ -4,7 +4,7 @@ using HOLMS.Types.Operations;
 using HOLMS.Types.Operations.Rooms;
 using HOLMS.Types.Supply.RoomTypes;
 
-namespace HOLMS.Support.DTOBuilders.Premises {
+namespace HOLMS.Platform.Support.DTOBuilders.Operations {
     public class RoomBuilder {
         public RoomIndicator Ind;
         public string Description;

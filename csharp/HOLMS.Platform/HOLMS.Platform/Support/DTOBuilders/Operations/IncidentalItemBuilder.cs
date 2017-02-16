@@ -2,7 +2,7 @@
 using HOLMS.Types.Money.Accounting;
 using HOLMS.Types.Supply.IncidentalItems;
 
-namespace HOLMS.Support.DTOBuilders.Operations {
+namespace HOLMS.Platform.Support.DTOBuilders.Operations {
     public class IncidentalItemBuilder {
         private readonly IncidentalItemIndicator _entityId;
         private readonly string _itemName;

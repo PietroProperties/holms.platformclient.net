@@ -4,7 +4,7 @@ using HOLMS.Types.Supply;
 using HOLMS.Types.Supply.RPC;
 using HOLMS.Types.TenancyConfig.Indicators;
 
-namespace HOLMS.Support.DTOBuilders.Supply {
+namespace HOLMS.Platform.Support.DTOBuilders.Supply {
     public class SnapshotReqWithQualBuilder {
         private readonly PbInclusiveOpsdateRange _dr;
         private readonly PropertyIndicator _p;
