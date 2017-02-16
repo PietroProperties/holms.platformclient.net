@@ -18,6 +18,10 @@ message RoomTypeSvcAllWithRoomsResponse {
 	repeated .holms.types.supply.room_types.FullRoomType room_types = 1;
 }
 
+message RoomTypeSvcGetByChannelManagerRequest {
+	string channel_manager_id = 1;
+}
+
 service RoomTypeSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (RoomTypeSvcAllResponse);
@@ -26,6 +30,9 @@ service RoomTypeSvc {
 		returns (RoomTypeSvcAllWithRoomsResponse);
 
 	rpc GetById (.holms.types.supply.room_types.RoomTypeIndicator)
+		returns (.holms.types.supply.room_types.RoomType);
+
+	rpc GetByChannelManagerId (RoomTypeSvcGetByChannelManagerRequest)
 		returns (.holms.types.supply.room_types.RoomType);
 
 	rpc Create (.holms.types.supply.room_types.RoomType)

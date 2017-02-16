@@ -17,6 +17,7 @@ namespace HOLMS.Types.Supply.RPC {
     static readonly Marshaller<global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllWithRoomsResponse> __Marshaller_RoomTypeSvcAllWithRoomsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllWithRoomsResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator> __Marshaller_RoomTypeIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Supply.RoomTypes.RoomType> __Marshaller_RoomType = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest> __Marshaller_RoomTypeSvcGetByChannelManagerRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Primitive.ServerActionConfirmation> __Marshaller_ServerActionConfirmation = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.ServerActionConfirmation.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllResponse> __Method_All = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllResponse>(
@@ -38,6 +39,13 @@ namespace HOLMS.Types.Supply.RPC {
         __ServiceName,
         "GetById",
         __Marshaller_RoomTypeIndicator,
+        __Marshaller_RoomType);
+
+    static readonly Method<global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest, global::HOLMS.Types.Supply.RoomTypes.RoomType> __Method_GetByChannelManagerId = new Method<global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest, global::HOLMS.Types.Supply.RoomTypes.RoomType>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetByChannelManagerId",
+        __Marshaller_RoomTypeSvcGetByChannelManagerRequest,
         __Marshaller_RoomType);
 
     static readonly Method<global::HOLMS.Types.Supply.RoomTypes.RoomType, global::HOLMS.Types.Supply.RoomTypes.RoomType> __Method_Create = new Method<global::HOLMS.Types.Supply.RoomTypes.RoomType, global::HOLMS.Types.Supply.RoomTypes.RoomType>(
@@ -81,6 +89,11 @@ namespace HOLMS.Types.Supply.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RoomTypes.RoomType> GetById(global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RoomTypes.RoomType> GetByChannelManagerId(global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -173,6 +186,22 @@ namespace HOLMS.Types.Supply.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetById, null, options, request);
       }
+      public virtual global::HOLMS.Types.Supply.RoomTypes.RoomType GetByChannelManagerId(global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetByChannelManagerId(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Supply.RoomTypes.RoomType GetByChannelManagerId(global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetByChannelManagerId, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Supply.RoomTypes.RoomType> GetByChannelManagerIdAsync(global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetByChannelManagerIdAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Supply.RoomTypes.RoomType> GetByChannelManagerIdAsync(global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetByChannelManagerId, null, options, request);
+      }
       public virtual global::HOLMS.Types.Supply.RoomTypes.RoomType Create(global::HOLMS.Types.Supply.RoomTypes.RoomType request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Create(request, new CallOptions(headers, deadline, cancellationToken));
@@ -234,6 +263,7 @@ namespace HOLMS.Types.Supply.RPC {
           .AddMethod(__Method_All, serviceImpl.All)
           .AddMethod(__Method_AllWithRooms, serviceImpl.AllWithRooms)
           .AddMethod(__Method_GetById, serviceImpl.GetById)
+          .AddMethod(__Method_GetByChannelManagerId, serviceImpl.GetByChannelManagerId)
           .AddMethod(__Method_Create, serviceImpl.Create)
           .AddMethod(__Method_Update, serviceImpl.Update)
           .AddMethod(__Method_Delete, serviceImpl.Delete).Build();
