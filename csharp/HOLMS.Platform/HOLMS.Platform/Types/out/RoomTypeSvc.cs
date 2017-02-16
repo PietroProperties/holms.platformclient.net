@@ -31,26 +31,31 @@ namespace HOLMS.Types.Supply.RPC {
             "cG9uc2USOwoKcm9vbV90eXBlcxgBIAMoCzInLmhvbG1zLnR5cGVzLnN1cHBs",
             "eS5yb29tX3R5cGVzLlJvb21UeXBlImIKH1Jvb21UeXBlU3ZjQWxsV2l0aFJv",
             "b21zUmVzcG9uc2USPwoKcm9vbV90eXBlcxgBIAMoCzIrLmhvbG1zLnR5cGVz",
-            "LnN1cHBseS5yb29tX3R5cGVzLkZ1bGxSb29tVHlwZTK/BAoLUm9vbVR5cGVT",
-            "dmMSTQoDQWxsEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gi4uaG9sbXMudHlw",
-            "ZXMuc3VwcGx5LnJwYy5Sb29tVHlwZVN2Y0FsbFJlc3BvbnNlEl8KDEFsbFdp",
-            "dGhSb29tcxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRo3LmhvbG1zLnR5cGVz",
-            "LnN1cHBseS5ycGMuUm9vbVR5cGVTdmNBbGxXaXRoUm9vbXNSZXNwb25zZRJk",
-            "CgdHZXRCeUlkEjAuaG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9v",
-            "bVR5cGVJbmRpY2F0b3IaJy5ob2xtcy50eXBlcy5zdXBwbHkucm9vbV90eXBl",
-            "cy5Sb29tVHlwZRJaCgZDcmVhdGUSJy5ob2xtcy50eXBlcy5zdXBwbHkucm9v",
-            "bV90eXBlcy5Sb29tVHlwZRonLmhvbG1zLnR5cGVzLnN1cHBseS5yb29tX3R5",
-            "cGVzLlJvb21UeXBlEloKBlVwZGF0ZRInLmhvbG1zLnR5cGVzLnN1cHBseS5y",
-            "b29tX3R5cGVzLlJvb21UeXBlGicuaG9sbXMudHlwZXMuc3VwcGx5LnJvb21f",
-            "dHlwZXMuUm9vbVR5cGUSYgoGRGVsZXRlEicuaG9sbXMudHlwZXMuc3VwcGx5",
-            "LnJvb21fdHlwZXMuUm9vbVR5cGUaLy5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
-            "U2VydmVyQWN0aW9uQ29uZmlybWF0aW9uQiVaCnN1cHBseS9ycGOqAhZIT0xN",
-            "Uy5UeXBlcy5TdXBwbHkuUlBDYgZwcm90bzM="));
+            "LnN1cHBseS5yb29tX3R5cGVzLkZ1bGxSb29tVHlwZSJDCiVSb29tVHlwZVN2",
+            "Y0dldEJ5Q2hhbm5lbE1hbmFnZXJSZXF1ZXN0EhoKEmNoYW5uZWxfbWFuYWdl",
+            "cl9pZBgBIAEoCTLABQoLUm9vbVR5cGVTdmMSTQoDQWxsEhYuZ29vZ2xlLnBy",
+            "b3RvYnVmLkVtcHR5Gi4uaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5Sb29tVHlw",
+            "ZVN2Y0FsbFJlc3BvbnNlEl8KDEFsbFdpdGhSb29tcxIWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eRo3LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuUm9vbVR5cGVT",
+            "dmNBbGxXaXRoUm9vbXNSZXNwb25zZRJkCgdHZXRCeUlkEjAuaG9sbXMudHlw",
+            "ZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9vbVR5cGVJbmRpY2F0b3IaJy5ob2xt",
+            "cy50eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZRJ/ChVHZXRCeUNo",
+            "YW5uZWxNYW5hZ2VySWQSPS5ob2xtcy50eXBlcy5zdXBwbHkucnBjLlJvb21U",
+            "eXBlU3ZjR2V0QnlDaGFubmVsTWFuYWdlclJlcXVlc3QaJy5ob2xtcy50eXBl",
+            "cy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZRJaCgZDcmVhdGUSJy5ob2xt",
+            "cy50eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZRonLmhvbG1zLnR5",
+            "cGVzLnN1cHBseS5yb29tX3R5cGVzLlJvb21UeXBlEloKBlVwZGF0ZRInLmhv",
+            "bG1zLnR5cGVzLnN1cHBseS5yb29tX3R5cGVzLlJvb21UeXBlGicuaG9sbXMu",
+            "dHlwZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9vbVR5cGUSYgoGRGVsZXRlEicu",
+            "aG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9vbVR5cGUaLy5ob2xt",
+            "cy50eXBlcy5wcmltaXRpdmUuU2VydmVyQWN0aW9uQ29uZmlybWF0aW9uQiVa",
+            "CnN1cHBseS9ycGOqAhZIT0xNUy5UeXBlcy5TdXBwbHkuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.ServerActionConfirmationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.FullRoomTypeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllResponse), global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllResponse.Parser, new[]{ "RoomTypes" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllWithRoomsResponse), global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllWithRoomsResponse.Parser, new[]{ "RoomTypes" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllWithRoomsResponse), global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllWithRoomsResponse.Parser, new[]{ "RoomTypes" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest), global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest.Parser, new[]{ "ChannelManagerId" }, null, null, null)
           }));
     }
     #endregion
@@ -267,6 +272,123 @@ namespace HOLMS.Types.Supply.RPC {
             break;
           case 10: {
             roomTypes_.AddEntriesFrom(input, _repeated_roomTypes_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class RoomTypeSvcGetByChannelManagerRequest : pb::IMessage<RoomTypeSvcGetByChannelManagerRequest> {
+    private static readonly pb::MessageParser<RoomTypeSvcGetByChannelManagerRequest> _parser = new pb::MessageParser<RoomTypeSvcGetByChannelManagerRequest>(() => new RoomTypeSvcGetByChannelManagerRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RoomTypeSvcGetByChannelManagerRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Supply.RPC.RoomTypeSvcReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RoomTypeSvcGetByChannelManagerRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RoomTypeSvcGetByChannelManagerRequest(RoomTypeSvcGetByChannelManagerRequest other) : this() {
+      channelManagerId_ = other.channelManagerId_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RoomTypeSvcGetByChannelManagerRequest Clone() {
+      return new RoomTypeSvcGetByChannelManagerRequest(this);
+    }
+
+    /// <summary>Field number for the "channel_manager_id" field.</summary>
+    public const int ChannelManagerIdFieldNumber = 1;
+    private string channelManagerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ChannelManagerId {
+      get { return channelManagerId_; }
+      set {
+        channelManagerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RoomTypeSvcGetByChannelManagerRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RoomTypeSvcGetByChannelManagerRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ChannelManagerId != other.ChannelManagerId) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ChannelManagerId.Length != 0) hash ^= ChannelManagerId.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ChannelManagerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ChannelManagerId);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ChannelManagerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ChannelManagerId);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RoomTypeSvcGetByChannelManagerRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ChannelManagerId.Length != 0) {
+        ChannelManagerId = other.ChannelManagerId;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            ChannelManagerId = input.ReadString();
             break;
           }
         }

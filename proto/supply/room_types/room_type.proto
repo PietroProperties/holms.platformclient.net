@@ -22,4 +22,5 @@ message RoomType {
 	
 	holms.types.tenancy_config.indicators.PropertyIndicator property_id = 13;
 	string property_name = 14;
+	string channel_manager_id = 15;
 }
