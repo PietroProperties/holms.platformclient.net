@@ -5,7 +5,7 @@ using HOLMS.Types.IAM;
 using HOLMS.Types.Operations.OutOfOrder;
 using HOLMS.Types.Operations.Rooms;
 
-namespace HOLMS.Support.DTOBuilders.Operations {
+namespace HOLMS.Platform.Support.DTOBuilders.Operations {
     public class OutOfOrderRecordBuilder {
         private readonly OutOfOrderRecordIndicator _id;
         private readonly string _reason;

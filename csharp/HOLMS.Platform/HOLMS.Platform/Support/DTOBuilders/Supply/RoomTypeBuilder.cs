@@ -1,7 +1,7 @@
 ﻿using HOLMS.Types.Supply.RoomTypes;
 using HOLMS.Types.TenancyConfig.Indicators;
 
-namespace HOLMS.Support.DTOBuilders.Premises {
+namespace HOLMS.Platform.Support.DTOBuilders.Supply {
     public class RoomTypeBuilder {
         public RoomTypeIndicator Id;
         public string Name;
@@ -18,6 +18,7 @@ namespace HOLMS.Support.DTOBuilders.Premises {
         public bool AvailableOnWebsite;
         public PropertyIndicator PropertyId;
         public string PropertyName;
+        public string ChannelId;
 
         public RoomType Build() {
             var rt = new RoomType {
@@ -40,6 +41,10 @@ namespace HOLMS.Support.DTOBuilders.Premises {
 
             if (PropertyName != null) {
                 rt.PropertyName = PropertyName;
+            }
+
+            if (ChannelId != null) {
+                rt.ChannelManagerId = ChannelId;
             }
 
             return rt;

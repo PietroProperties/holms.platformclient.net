@@ -4,7 +4,7 @@ using HOLMS.Support.Conversions;
 using HOLMS.Types.IAM;
 using HOLMS.Types.Operations.Messaging;
 
-namespace HOLMS.Support.DTOBuilders.Operations {
+namespace HOLMS.Platform.Support.DTOBuilders.Operations {
     public class MailboxEntryBuilder {
         private readonly MailboxEntryIndicator _ind;
         private readonly string _subject;

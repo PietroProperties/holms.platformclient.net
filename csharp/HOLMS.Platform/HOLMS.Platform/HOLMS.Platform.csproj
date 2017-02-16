@@ -72,8 +72,8 @@
     <Compile Include="Support\DTOBuilders\Operations\IncidentalItemBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Operations\MailboxEntryBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Operations\OutOfOrderRecordBuilder.cs" />
-    <Compile Include="Support\DTOBuilders\Premises\RoomBuilder.cs" />
-    <Compile Include="Support\DTOBuilders\Premises\RoomTypeBuilder.cs" />
+    <Compile Include="Support\DTOBuilders\Operations\RoomBuilder.cs" />
+    <Compile Include="Support\DTOBuilders\Supply\RoomTypeBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Supply\SnapshotReqWithQualBuilder.cs" />
     <Compile Include="Support\DTOExtensions\Money\FolioExtensions.cs" />
     <Compile Include="Support\DTOExtensions\Money\NonAuthoritativeTaxFeeCalculator.cs" />
