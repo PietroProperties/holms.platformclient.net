@@ -9,4 +9,6 @@ message ChannelManagerConfig {
 	string provider_user_name = 2;
 	string provider_password = 3;
 	string hotel_i_d = 4;
+	bool dev_disable_booking_confirmation = 5;
+	bool disable_channel_synchronization = 6;
 }
