@@ -27,7 +27,7 @@ namespace HOLMS.Types.Money.Cards {
             "X3RyYW5zYWN0aW9uX3Jlc3VsdC5wcm90bxopbW9uZXkvY2FyZHMvY2FyZF9t",
             "ZXJjaGFudF9pbmRpY2F0b3IucHJvdG8aMm1vbmV5L2NhcmRzL21lcmNoYW50",
             "X2F1dGhvcml6YXRpb25faW5kaWNhdG9yLnByb3RvGh9wcmltaXRpdmUvbW9u",
-            "ZXRhcnlfYW1vdW50LnByb3RvIvECChVNZXJjaGFudEF1dGhvcml6YXRpb24S",
+            "ZXRhcnlfYW1vdW50LnByb3RvItkDChVNZXJjaGFudEF1dGhvcml6YXRpb24S",
             "SgoJZW50aXR5X2lkGAEgASgLMjcuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMu",
             "TWVyY2hhbnRBdXRob3JpemF0aW9uSW5kaWNhdG9yEkMKC21lcmNoYW50X2lk",
             "GAIgASgLMi4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZE1lcmNoYW50",
@@ -35,17 +35,31 @@ namespace HOLMS.Types.Money.Cards {
             "GAQgASgJEhIKCm1hc2tlZF9wYW4YBSABKAkSNQoGYW1vdW50GAYgASgLMiUu",
             "aG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkMKBnJlc3Vs",
             "dBgHIAEoDjIzLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLlByb2Nlc3NvclRy",
-            "YW5zYWN0aW9uUmVzdWx0Eg0KBWJyYW5kGAggASgJQidaC21vbmV5L2NhcmRz",
-            "qgIXSE9MTVMuVHlwZXMuTW9uZXkuQ2FyZHNiBnByb3RvMw=="));
+            "YW5zYWN0aW9uUmVzdWx0Eg0KBWJyYW5kGAggASgJEh0KFWhvc3RfcmVmZXJl",
+            "bmNlX251bWJlchgJIAEoCRJHCgxlbnRyeV9tZXRob2QYCiABKA4yMS5ob2xt",
+            "cy50eXBlcy5tb25leS5jYXJkcy5BdXRob3JpemF0aW9uRW50cnlNZXRob2Qq",
+            "XwoYQXV0aG9yaXphdGlvbkVudHJ5TWV0aG9kEhYKEkNBUkRfUFJFU0VOVF9T",
+            "V0lQRRAAEhUKEUNBUkRfUFJFU0VOVF9DSElQEAESFAoQQ0FSRF9OT1RfUFJF",
+            "U0VOVBACQidaC21vbmV5L2NhcmRzqgIXSE9MTVMuVHlwZXMuTW9uZXkuQ2Fy",
+            "ZHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.MerchantAuthorizationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.MerchantAuthorization), global::HOLMS.Types.Money.Cards.MerchantAuthorization.Parser, new[]{ "EntityId", "MerchantId", "CardMemberName", "TxnId", "MaskedPan", "Amount", "Result", "Brand" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.AuthorizationEntryMethod), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.MerchantAuthorization), global::HOLMS.Types.Money.Cards.MerchantAuthorization.Parser, new[]{ "EntityId", "MerchantId", "CardMemberName", "TxnId", "MaskedPan", "Amount", "Result", "Brand", "HostReferenceNumber", "EntryMethod" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum AuthorizationEntryMethod {
+    [pbr::OriginalName("CARD_PRESENT_SWIPE")] CardPresentSwipe = 0,
+    [pbr::OriginalName("CARD_PRESENT_CHIP")] CardPresentChip = 1,
+    [pbr::OriginalName("CARD_NOT_PRESENT")] CardNotPresent = 2,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class MerchantAuthorization : pb::IMessage<MerchantAuthorization> {
     private static readonly pb::MessageParser<MerchantAuthorization> _parser = new pb::MessageParser<MerchantAuthorization>(() => new MerchantAuthorization());
@@ -79,6 +93,8 @@ namespace HOLMS.Types.Money.Cards {
       Amount = other.amount_ != null ? other.Amount.Clone() : null;
       result_ = other.result_;
       brand_ = other.brand_;
+      hostReferenceNumber_ = other.hostReferenceNumber_;
+      entryMethod_ = other.entryMethod_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -174,6 +190,28 @@ namespace HOLMS.Types.Money.Cards {
       }
     }
 
+    /// <summary>Field number for the "host_reference_number" field.</summary>
+    public const int HostReferenceNumberFieldNumber = 9;
+    private string hostReferenceNumber_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HostReferenceNumber {
+      get { return hostReferenceNumber_; }
+      set {
+        hostReferenceNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "entry_method" field.</summary>
+    public const int EntryMethodFieldNumber = 10;
+    private global::HOLMS.Types.Money.Cards.AuthorizationEntryMethod entryMethod_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Cards.AuthorizationEntryMethod EntryMethod {
+      get { return entryMethod_; }
+      set {
+        entryMethod_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MerchantAuthorization);
@@ -195,6 +233,8 @@ namespace HOLMS.Types.Money.Cards {
       if (!object.Equals(Amount, other.Amount)) return false;
       if (Result != other.Result) return false;
       if (Brand != other.Brand) return false;
+      if (HostReferenceNumber != other.HostReferenceNumber) return false;
+      if (EntryMethod != other.EntryMethod) return false;
       return true;
     }
 
@@ -209,6 +249,8 @@ namespace HOLMS.Types.Money.Cards {
       if (amount_ != null) hash ^= Amount.GetHashCode();
       if (Result != 0) hash ^= Result.GetHashCode();
       if (Brand.Length != 0) hash ^= Brand.GetHashCode();
+      if (HostReferenceNumber.Length != 0) hash ^= HostReferenceNumber.GetHashCode();
+      if (EntryMethod != 0) hash ^= EntryMethod.GetHashCode();
       return hash;
     }
 
@@ -251,6 +293,14 @@ namespace HOLMS.Types.Money.Cards {
         output.WriteRawTag(66);
         output.WriteString(Brand);
       }
+      if (HostReferenceNumber.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(HostReferenceNumber);
+      }
+      if (EntryMethod != 0) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) EntryMethod);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -279,6 +329,12 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (Brand.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Brand);
+      }
+      if (HostReferenceNumber.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(HostReferenceNumber);
+      }
+      if (EntryMethod != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EntryMethod);
       }
       return size;
     }
@@ -320,6 +376,12 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (other.Brand.Length != 0) {
         Brand = other.Brand;
+      }
+      if (other.HostReferenceNumber.Length != 0) {
+        HostReferenceNumber = other.HostReferenceNumber;
+      }
+      if (other.EntryMethod != 0) {
+        EntryMethod = other.EntryMethod;
       }
     }
 
@@ -370,6 +432,14 @@ namespace HOLMS.Types.Money.Cards {
           }
           case 66: {
             Brand = input.ReadString();
+            break;
+          }
+          case 74: {
+            HostReferenceNumber = input.ReadString();
+            break;
+          }
+          case 80: {
+            entryMethod_ = (global::HOLMS.Types.Money.Cards.AuthorizationEntryMethod) input.ReadEnum();
             break;
           }
         }
