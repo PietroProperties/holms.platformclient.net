@@ -38,10 +38,12 @@ namespace HOLMS.Types.Money.Cards {
             "YW5zYWN0aW9uUmVzdWx0Eg0KBWJyYW5kGAggASgJEh0KFWhvc3RfcmVmZXJl",
             "bmNlX251bWJlchgJIAEoCRJHCgxlbnRyeV9tZXRob2QYCiABKA4yMS5ob2xt",
             "cy50eXBlcy5tb25leS5jYXJkcy5BdXRob3JpemF0aW9uRW50cnlNZXRob2Qq",
-            "XwoYQXV0aG9yaXphdGlvbkVudHJ5TWV0aG9kEhYKEkNBUkRfUFJFU0VOVF9T",
-            "V0lQRRAAEhUKEUNBUkRfUFJFU0VOVF9DSElQEAESFAoQQ0FSRF9OT1RfUFJF",
-            "U0VOVBACQidaC21vbmV5L2NhcmRzqgIXSE9MTVMuVHlwZXMuTW9uZXkuQ2Fy",
-            "ZHNiBnByb3RvMw=="));
+            "1wEKGEF1dGhvcml6YXRpb25FbnRyeU1ldGhvZBIXChNDQVJEX1BSRVNFTlRf",
+            "TUFOVUFMEAASFgoSQ0FSRF9QUkVTRU5UX1NXSVBFEAESHAoYQ0FSRF9QUkVT",
+            "RU5UX0NPTlRBQ1RMRVNTEAISGAoUQ0FSRF9QUkVTRU5UX1NDQU5ORVIQAxIV",
+            "ChFDQVJEX1BSRVNFTlRfQ0hJUBAEEiUKIUNBUkRfUFJFU0VOVF9DSElQX0ZB",
+            "TExfQkFDS19TV0lQRRAFEhQKEENBUkRfTk9UX1BSRVNFTlQQBkInWgttb25l",
+            "eS9jYXJkc6oCF0hPTE1TLlR5cGVzLk1vbmV5LkNhcmRzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.MerchantAuthorizationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.AuthorizationEntryMethod), }, new pbr::GeneratedClrTypeInfo[] {
@@ -53,9 +55,13 @@ namespace HOLMS.Types.Money.Cards {
   }
   #region Enums
   public enum AuthorizationEntryMethod {
-    [pbr::OriginalName("CARD_PRESENT_SWIPE")] CardPresentSwipe = 0,
-    [pbr::OriginalName("CARD_PRESENT_CHIP")] CardPresentChip = 1,
-    [pbr::OriginalName("CARD_NOT_PRESENT")] CardNotPresent = 2,
+    [pbr::OriginalName("CARD_PRESENT_MANUAL")] CardPresentManual = 0,
+    [pbr::OriginalName("CARD_PRESENT_SWIPE")] CardPresentSwipe = 1,
+    [pbr::OriginalName("CARD_PRESENT_CONTACTLESS")] CardPresentContactless = 2,
+    [pbr::OriginalName("CARD_PRESENT_SCANNER")] CardPresentScanner = 3,
+    [pbr::OriginalName("CARD_PRESENT_CHIP")] CardPresentChip = 4,
+    [pbr::OriginalName("CARD_PRESENT_CHIP_FALL_BACK_SWIPE")] CardPresentChipFallBackSwipe = 5,
+    [pbr::OriginalName("CARD_NOT_PRESENT")] CardNotPresent = 6,
   }
 
   #endregion
