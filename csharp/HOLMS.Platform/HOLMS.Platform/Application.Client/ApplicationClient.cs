@@ -226,6 +226,7 @@ namespace HOLMS.Application.Client {
             ResGuaranteeSvc = new ReservationGuaranteeSvc.ReservationGuaranteeSvcClient(_authenticatedChannel);
             ReservationNoteSvc = new ReservationNoteSvc.ReservationNoteSvcClient(_authenticatedChannel);
             ReservationTagsSvc = new ReservationTagsSvc.ReservationTagsSvcClient(_authenticatedChannel);
+            ReservationSearchSvc = new ReservationSearchSvc.ReservationSearchSvcClient(_authenticatedChannel);
             RestrictionSvc = new RestrictionSvc.RestrictionSvcClient(_authenticatedChannel);
             TravelAgentSvc = new TravelAgentSvc.TravelAgentSvcClient(_authenticatedChannel);
             TurnAwayReasonSvc = new TurnAwayReasonSvc.TurnAwayReasonSvcClient(_authenticatedChannel);
