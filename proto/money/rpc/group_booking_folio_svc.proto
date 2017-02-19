@@ -115,7 +115,7 @@ message GroupBookingFolioSvcPostInventoryChargeCorrectionRequest {
 	.holms.types.supply.incidental_items.IncidentalItemIndicator inventory_item = 2;
 	string description = 3;
 	.holms.types.primitive.MonetaryAmount adjustment_subtotal = 4;
-	bool adjustment_taken_from_guest = 5;
+	bool adjustment_charged_against_group = 5;
 }
 
 service GroupBookingFolioSvc {
