@@ -29,6 +29,8 @@ namespace HOLMS.Application.Client {
         ReservationCancellationSvc.ReservationCancellationSvcClient ResCancellationSvc { get; }
         ReservationNoteSvc.ReservationNoteSvcClient ReservationNoteSvc { get; }
         ReservationGuaranteeSvc.ReservationGuaranteeSvcClient ResGuaranteeSvc { get; }
+        ReservationSearchSvc.ReservationSearchSvcClient ReservationSearchSvc { get; }
+        ReservationTagsSvc.ReservationTagsSvcClient ReservationTagsSvc { get; }
         RestrictionSvc.RestrictionSvcClient RestrictionSvc { get; }
         TravelAgentSvc.TravelAgentSvcClient TravelAgentSvc { get; }
         TurnAwayReasonSvc.TurnAwayReasonSvcClient TurnAwayReasonSvc { get; }

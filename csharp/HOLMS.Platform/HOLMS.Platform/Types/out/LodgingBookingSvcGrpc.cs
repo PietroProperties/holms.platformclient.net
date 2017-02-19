@@ -12,8 +12,6 @@ namespace HOLMS.Types.Booking.RPC {
   {
     static readonly string __ServiceName = "holms.types.booking.rpc.LodgingBookingSvc";
 
-    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListRequest> __Marshaller_LodgingBookingSvcGetFilteredReservationListRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> __Marshaller_LodgingBookingSvcGetFilteredReservationListResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest> __Marshaller_BookGenesisReservationRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.Reservations.GenesisBookingResult> __Marshaller_GenesisBookingResult = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.GenesisBookingResult.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> __Marshaller_ReservationIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser.ParseFrom);
@@ -23,16 +21,6 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly Marshaller<global::HOLMS.Types.Booking.Reservations.RemoveGuestFromReservationRequest> __Marshaller_RemoveGuestFromReservationRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.RemoveGuestFromReservationRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest> __Marshaller_ReservationFRPAmendmentRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse> __Marshaller_FRPAmendmentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetReservationSummaryResponse> __Marshaller_LodgingBookingSvcGetReservationSummaryResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetReservationSummaryResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest> __Marshaller_GetReservationSummariesRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Timestamp> __Marshaller_Timestamp = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Timestamp.Parser.ParseFrom);
-
-    static readonly Method<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListRequest, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> __Method_GetFilteredReservationList = new Method<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListRequest, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse>(
-        MethodType.Unary,
-        __ServiceName,
-        "GetFilteredReservationList",
-        __Marshaller_LodgingBookingSvcGetFilteredReservationListRequest,
-        __Marshaller_LodgingBookingSvcGetFilteredReservationListResponse);
 
     static readonly Method<global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest, global::HOLMS.Types.Booking.Reservations.GenesisBookingResult> __Method_BookGenesisReservation = new Method<global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest, global::HOLMS.Types.Booking.Reservations.GenesisBookingResult>(
         MethodType.Unary,
@@ -69,48 +57,6 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_ReservationFRPAmendmentRequest,
         __Marshaller_FRPAmendmentResponse);
 
-    static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetReservationSummaryResponse> __Method_GetReservationSummary = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetReservationSummaryResponse>(
-        MethodType.Unary,
-        __ServiceName,
-        "GetReservationSummary",
-        __Marshaller_ReservationIndicator,
-        __Marshaller_LodgingBookingSvcGetReservationSummaryResponse);
-
-    static readonly Method<global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> __Method_GetReservationSummaries = new Method<global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse>(
-        MethodType.Unary,
-        __ServiceName,
-        "GetReservationSummaries",
-        __Marshaller_GetReservationSummariesRequest,
-        __Marshaller_LodgingBookingSvcGetFilteredReservationListResponse);
-
-    static readonly Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> __Method_GetArrivalsByDate = new Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse>(
-        MethodType.Unary,
-        __ServiceName,
-        "GetArrivalsByDate",
-        __Marshaller_Timestamp,
-        __Marshaller_LodgingBookingSvcGetFilteredReservationListResponse);
-
-    static readonly Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> __Method_GetDeparturesByDate = new Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse>(
-        MethodType.Unary,
-        __ServiceName,
-        "GetDeparturesByDate",
-        __Marshaller_Timestamp,
-        __Marshaller_LodgingBookingSvcGetFilteredReservationListResponse);
-
-    static readonly Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> __Method_GetNoShowsByDate = new Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse>(
-        MethodType.Unary,
-        __ServiceName,
-        "GetNoShowsByDate",
-        __Marshaller_Timestamp,
-        __Marshaller_LodgingBookingSvcGetFilteredReservationListResponse);
-
-    static readonly Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> __Method_GetStayOversByDate = new Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse>(
-        MethodType.Unary,
-        __ServiceName,
-        "GetStayOversByDate",
-        __Marshaller_Timestamp,
-        __Marshaller_LodgingBookingSvcGetFilteredReservationListResponse);
-
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -120,11 +66,6 @@ namespace HOLMS.Types.Booking.RPC {
     /// <summary>Base class for server-side implementations of LodgingBookingSvc</summary>
     public abstract class LodgingBookingSvcBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetFilteredReservationList(global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListRequest request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Reservations.GenesisBookingResult> BookGenesisReservation(global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
@@ -146,36 +87,6 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse> AmendOpenReservationParameters(global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetReservationSummaryResponse> GetReservationSummary(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetReservationSummaries(global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetArrivalsByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetDeparturesByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetNoShowsByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetStayOversByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -205,22 +116,6 @@ namespace HOLMS.Types.Booking.RPC {
       {
       }
 
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse GetFilteredReservationList(global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetFilteredReservationList(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse GetFilteredReservationList(global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListRequest request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetFilteredReservationList, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetFilteredReservationListAsync(global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetFilteredReservationListAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetFilteredReservationListAsync(global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListRequest request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetFilteredReservationList, null, options, request);
-      }
       public virtual global::HOLMS.Types.Booking.Reservations.GenesisBookingResult BookGenesisReservation(global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return BookGenesisReservation(request, new CallOptions(headers, deadline, cancellationToken));
@@ -301,102 +196,6 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_AmendOpenReservationParameters, null, options, request);
       }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetReservationSummaryResponse GetReservationSummary(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetReservationSummary(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetReservationSummaryResponse GetReservationSummary(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetReservationSummary, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetReservationSummaryResponse> GetReservationSummaryAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetReservationSummaryAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetReservationSummaryResponse> GetReservationSummaryAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetReservationSummary, null, options, request);
-      }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse GetReservationSummaries(global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetReservationSummaries(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse GetReservationSummaries(global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetReservationSummaries, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetReservationSummariesAsync(global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetReservationSummariesAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetReservationSummariesAsync(global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetReservationSummaries, null, options, request);
-      }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse GetArrivalsByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetArrivalsByDate(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse GetArrivalsByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetArrivalsByDate, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetArrivalsByDateAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetArrivalsByDateAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetArrivalsByDateAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetArrivalsByDate, null, options, request);
-      }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse GetDeparturesByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetDeparturesByDate(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse GetDeparturesByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetDeparturesByDate, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetDeparturesByDateAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetDeparturesByDateAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetDeparturesByDateAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetDeparturesByDate, null, options, request);
-      }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse GetNoShowsByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetNoShowsByDate(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse GetNoShowsByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetNoShowsByDate, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetNoShowsByDateAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetNoShowsByDateAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetNoShowsByDateAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetNoShowsByDate, null, options, request);
-      }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse GetStayOversByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetStayOversByDate(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse GetStayOversByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetStayOversByDate, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetStayOversByDateAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetStayOversByDateAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.LodgingBookingSvcGetFilteredReservationListResponse> GetStayOversByDateAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetStayOversByDate, null, options, request);
-      }
       protected override LodgingBookingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new LodgingBookingSvcClient(configuration);
@@ -407,18 +206,11 @@ namespace HOLMS.Types.Booking.RPC {
     public static ServerServiceDefinition BindService(LodgingBookingSvcBase serviceImpl)
     {
       return ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetFilteredReservationList, serviceImpl.GetFilteredReservationList)
           .AddMethod(__Method_BookGenesisReservation, serviceImpl.BookGenesisReservation)
           .AddMethod(__Method_GetOpenReservation, serviceImpl.GetOpenReservation)
           .AddMethod(__Method_RequestAddGuestToReservation, serviceImpl.RequestAddGuestToReservation)
           .AddMethod(__Method_RequestRemoveGuestFromReservation, serviceImpl.RequestRemoveGuestFromReservation)
-          .AddMethod(__Method_AmendOpenReservationParameters, serviceImpl.AmendOpenReservationParameters)
-          .AddMethod(__Method_GetReservationSummary, serviceImpl.GetReservationSummary)
-          .AddMethod(__Method_GetReservationSummaries, serviceImpl.GetReservationSummaries)
-          .AddMethod(__Method_GetArrivalsByDate, serviceImpl.GetArrivalsByDate)
-          .AddMethod(__Method_GetDeparturesByDate, serviceImpl.GetDeparturesByDate)
-          .AddMethod(__Method_GetNoShowsByDate, serviceImpl.GetNoShowsByDate)
-          .AddMethod(__Method_GetStayOversByDate, serviceImpl.GetStayOversByDate).Build();
+          .AddMethod(__Method_AmendOpenReservationParameters, serviceImpl.AmendOpenReservationParameters).Build();
     }
 
   }

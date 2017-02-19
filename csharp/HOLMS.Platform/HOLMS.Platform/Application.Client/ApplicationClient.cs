@@ -42,6 +42,7 @@ namespace HOLMS.Application.Client {
         public ReservationGuaranteeSvc.ReservationGuaranteeSvcClient ResGuaranteeSvc { get; protected set; }
         public ReservationNoteSvc.ReservationNoteSvcClient ReservationNoteSvc { get; protected set; }
         public ReservationTagsSvc.ReservationTagsSvcClient ReservationTagsSvc { get; protected set; }
+        public ReservationSearchSvc.ReservationSearchSvcClient ReservationSearchSvc { get; protected set; }
         public RestrictionSvc.RestrictionSvcClient RestrictionSvc { get; protected set; }
         public TravelAgentSvc.TravelAgentSvcClient TravelAgentSvc { get; protected set; }
         public TurnAwayReasonSvc.TurnAwayReasonSvcClient TurnAwayReasonSvc { get; protected set; }

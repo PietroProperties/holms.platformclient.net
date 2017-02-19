@@ -491,5 +491,17 @@ namespace HOLMS.Application.Client {
                 throw new NotImplementedException();
             }
         }
+
+        public ReservationSearchSvc.ReservationSearchSvcClient ReservationSearchSvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
+
+        public ReservationTagsSvc.ReservationTagsSvcClient ReservationTagsSvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
     }
 }
