@@ -518,6 +518,8 @@
     <Compile Include="Types\out\ReservationRawGuaranteeStatus.cs" />
     <Compile Include="Types\out\ReservationRoomAssignmentResult.cs" />
     <Compile Include="Types\out\ReservationRoomAssignmentSchedule.cs" />
+    <Compile Include="Types\out\ReservationSearchSvc.cs" />
+    <Compile Include="Types\out\ReservationSearchSvcGrpc.cs" />
     <Compile Include="Types\out\ReservationSource.cs" />
     <Compile Include="Types\out\ReservationSourceIndicator.cs" />
     <Compile Include="Types\out\ReservationSourceSvc.cs" />

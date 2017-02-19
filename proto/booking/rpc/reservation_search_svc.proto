@@ -1,0 +1,62 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "google/protobuf/timestamp.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "booking/reservations/reservation_query_filter.proto";
+import "booking/reservations/reservation_summary.proto";
+
+message ReservationSearchSvcGetFilteredReservationListRequest {
+	.holms.types.booking.reservations.ReservationQueryFilter filter = 1;
+}
+
+message ReservationSearchSvcGetFilteredReservationListResponse {
+	repeated .holms.types.booking.reservations.ReservationSummary reservations = 1;
+}
+
+enum ReservationSearchSvcGetReservationSummaryResult {
+	RESERVATION_SEARCH_SVC_GET_RESERVATION_SUMMARY_RESULT_OK = 0;
+	RESERVATION_SEARCH_SVC_GET_RESERVATION_SUMMARY_RESULT_NOT_FOUND = 1;
+}
+
+message ReservationSearchSvcSearchReservationsByBookingId {
+	string booking_i_d = 1;
+}
+
+message ReservationSearchSvcGetReservationSummaryResponse {
+	ReservationSearchSvcGetReservationSummaryResult result = 1;
+	.holms.types.booking.reservations.ReservationSummary reservation_summary = 2;
+}
+
+message GetReservationSummariesRequest {
+	repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
+}
+
+service ReservationSearchSvc {
+	rpc GetFilteredReservationList (ReservationSearchSvcGetFilteredReservationListRequest)
+		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+	
+	rpc GetReservationSummary(.holms.types.booking.indicators.ReservationIndicator) 
+		returns (ReservationSearchSvcGetReservationSummaryResponse);
+
+	rpc GetReservationSummaries(GetReservationSummariesRequest)
+		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+
+	rpc GetArrivalsByDate(google.protobuf.Timestamp)
+		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+
+	rpc GetDeparturesByDate(google.protobuf.Timestamp)
+		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+
+	rpc GetNoShowsByDate(google.protobuf.Timestamp)
+		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+
+	rpc GetStayOversByDate(google.protobuf.Timestamp)
+		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+		
+	rpc SearchReservationsByBookingId(ReservationSearchSvcSearchReservationsByBookingId)
+		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+}

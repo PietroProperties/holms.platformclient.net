@@ -5,7 +5,6 @@ option csharp_namespace = "HOLMS.Types.Booking.RPC";
 option go_package = "booking/rpc";
 
 import "google/protobuf/empty.proto";
-import "google/protobuf/timestamp.proto";
 import "booking/reservations/book_genesis_reservation_request.proto";
 import "booking/reservations/genesis_booking_result.proto";
 import "booking/indicators/reservation_indicator.proto";
@@ -14,35 +13,8 @@ import "booking/reservations/add_guest_to_reservation_request.proto";
 import "booking/reservations/remove_guest_from_reservation_request.proto";
 import "booking/reservations/reservation_frp_amendment_request.proto";
 import "booking/reservations/frp_amendment_response.proto";
-import "booking/reservations/reservation_query_filter.proto";
-import "booking/reservations/reservation_summary.proto";
-
-message LodgingBookingSvcGetFilteredReservationListRequest {
-	.holms.types.booking.reservations.ReservationQueryFilter filter = 1;
-}
-
-message LodgingBookingSvcGetFilteredReservationListResponse {
-	repeated .holms.types.booking.reservations.ReservationSummary reservations = 1;
-}
-
-enum LodgingBookingSvcGetReservationSummaryResult {
-	LODGING_BOOKING_SVC_GET_RESERVATION_SUMMARY_RESULT_OK = 0;
-	LODGING_BOOKING_SVC_GET_RESERVATION_SUMMARY_RESULT_NOT_FOUND = 1;
-}
-
-message LodgingBookingSvcGetReservationSummaryResponse {
-	LodgingBookingSvcGetReservationSummaryResult result = 1;
-	.holms.types.booking.reservations.ReservationSummary reservation_summary = 2;
-}
-
-message GetReservationSummariesRequest {
-	repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
-}
 
 service LodgingBookingSvc {
-	rpc GetFilteredReservationList (LodgingBookingSvcGetFilteredReservationListRequest)
-		returns (LodgingBookingSvcGetFilteredReservationListResponse);
-
 	rpc BookGenesisReservation(.holms.types.booking.reservations.BookGenesisReservationRequest)
 		returns (.holms.types.booking.reservations.GenesisBookingResult);
 	
@@ -57,22 +29,4 @@ service LodgingBookingSvc {
 
 	rpc AmendOpenReservationParameters (.holms.types.booking.reservations.ReservationFRPAmendmentRequest)
 		returns (.holms.types.booking.reservations.FRPAmendmentResponse);
-	
-	rpc GetReservationSummary(.holms.types.booking.indicators.ReservationIndicator) 
-		returns (LodgingBookingSvcGetReservationSummaryResponse);
-
-	rpc GetReservationSummaries(GetReservationSummariesRequest)
-		returns (LodgingBookingSvcGetFilteredReservationListResponse);
-
-	rpc GetArrivalsByDate(google.protobuf.Timestamp)
-		returns (LodgingBookingSvcGetFilteredReservationListResponse);
-
-	rpc GetDeparturesByDate(google.protobuf.Timestamp)
-		returns (LodgingBookingSvcGetFilteredReservationListResponse);
-
-	rpc GetNoShowsByDate(google.protobuf.Timestamp)
-		returns (LodgingBookingSvcGetFilteredReservationListResponse);
-
-	rpc GetStayOversByDate(google.protobuf.Timestamp)
-		returns (LodgingBookingSvcGetFilteredReservationListResponse);
 }
