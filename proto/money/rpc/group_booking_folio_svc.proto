@@ -5,6 +5,7 @@ option csharp_namespace = "HOLMS.Types.Money.RPC";
 option go_package = "money/rpc";
 
 import "booking/indicators/group_booking_indicator.proto";
+import "google/protobuf/empty.proto";
 import "money/cards/card_authorization_purpose.proto";
 import "money/cards/card_authorization_response.proto";
 import "money/cards/merchant_authorization_indicator.proto";
@@ -12,6 +13,7 @@ import "money/cards/not_present_payment_card.proto";
 import "money/cards/payment_card_indicator.proto";
 import "money/folio/folio_state.proto";
 import "primitive/monetary_amount.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
 
 enum GroupBookingFolioSvcPostChargesResult {
 	GROUP_BOOKING_FOLIO_SVC_POST_CHARGES_RESULT_OK = 0;
@@ -26,7 +28,6 @@ message GroupBookingFolioSvcPostChargesResponse {
 enum GroupBookingFolioSvcGetFolioStateResult {
 	GROUP_BOOKING_FOLIO_SVC_GET_FOLIO_STATE_OK = 0;
 	GROUP_BOOKING_FOLIO_SVC_GET_FOLIO_STATE_MISSING_HOUSE_ACCOUNT = 1;
-
 }
 
 message GroupBookingFolioSvcGetFolioStateResponse {
@@ -102,6 +103,21 @@ message GroupBookingFolioSvcPostCashPaymentRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 2;
 }
 
+message GroupBookingFolioSvcPostLodgingChargeCorrectionRequest {
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	string description = 2;
+	.holms.types.primitive.MonetaryAmount adjustment_subtotal = 3;
+	bool adjustment_taken_from_guest = 4;
+}
+
+message GroupBookingFolioSvcPostInventoryChargeCorrectionRequest {
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	.holms.types.supply.incidental_items.IncidentalItemIndicator inventory_item = 2;
+	string description = 3;
+	.holms.types.primitive.MonetaryAmount adjustment_subtotal = 4;
+	bool adjustment_charged_against_group = 5;
+}
+
 service GroupBookingFolioSvc {
 	rpc GetFolioState(.holms.types.booking.indicators.GroupBookingIndicator)
 		returns(GroupBookingFolioSvcGetFolioStateResponse);
@@ -121,4 +137,10 @@ service GroupBookingFolioSvc {
 		returns (GroupBookingFolioSvcPostCheckPaymentResponse);
 	rpc PostCashPayment(GroupBookingFolioSvcPostCashPaymentRequest)
 		returns (GroupBookingFolioSvcPostCashPaymentResponse);
+
+	// Charge corrections
+	rpc PostLodgingChargeCorrection (GroupBookingFolioSvcPostLodgingChargeCorrectionRequest)
+		returns (google.protobuf.Empty);
+	rpc PostInventoryChargeCorrection (GroupBookingFolioSvcPostInventoryChargeCorrectionRequest)
+		returns (google.protobuf.Empty);
 }

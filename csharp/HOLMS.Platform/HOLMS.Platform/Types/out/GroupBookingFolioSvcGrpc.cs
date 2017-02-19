@@ -24,6 +24,9 @@ namespace HOLMS.Types.Money.RPC {
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCheckPaymentResponse> __Marshaller_GroupBookingFolioSvcPostCheckPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCheckPaymentResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCashPaymentRequest> __Marshaller_GroupBookingFolioSvcPostCashPaymentRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCashPaymentRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCashPaymentResponse> __Marshaller_GroupBookingFolioSvcPostCashPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCashPaymentResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest> __Marshaller_GroupBookingFolioSvcPostLodgingChargeCorrectionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostInventoryChargeCorrectionRequest> __Marshaller_GroupBookingFolioSvcPostInventoryChargeCorrectionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostInventoryChargeCorrectionRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcGetFolioStateResponse> __Method_GetFolioState = new Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcGetFolioStateResponse>(
         MethodType.Unary,
@@ -74,6 +77,20 @@ namespace HOLMS.Types.Money.RPC {
         __Marshaller_GroupBookingFolioSvcPostCashPaymentRequest,
         __Marshaller_GroupBookingFolioSvcPostCashPaymentResponse);
 
+    static readonly Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_PostLodgingChargeCorrection = new Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "PostLodgingChargeCorrection",
+        __Marshaller_GroupBookingFolioSvcPostLodgingChargeCorrectionRequest,
+        __Marshaller_Empty);
+
+    static readonly Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostInventoryChargeCorrectionRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_PostInventoryChargeCorrection = new Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostInventoryChargeCorrectionRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "PostInventoryChargeCorrection",
+        __Marshaller_GroupBookingFolioSvcPostInventoryChargeCorrectionRequest,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -120,6 +137,19 @@ namespace HOLMS.Types.Money.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCashPaymentResponse> PostCashPayment(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCashPaymentRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      ///  Charge corrections
+      /// </summary>
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> PostLodgingChargeCorrection(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> PostInventoryChargeCorrection(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostInventoryChargeCorrectionRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -285,6 +315,50 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostCashPayment, null, options, request);
       }
+      /// <summary>
+      ///  Charge corrections
+      /// </summary>
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty PostLodgingChargeCorrection(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return PostLodgingChargeCorrection(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///  Charge corrections
+      /// </summary>
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty PostLodgingChargeCorrection(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostLodgingChargeCorrection, null, options, request);
+      }
+      /// <summary>
+      ///  Charge corrections
+      /// </summary>
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> PostLodgingChargeCorrectionAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return PostLodgingChargeCorrectionAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///  Charge corrections
+      /// </summary>
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> PostLodgingChargeCorrectionAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostLodgingChargeCorrection, null, options, request);
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty PostInventoryChargeCorrection(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostInventoryChargeCorrectionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return PostInventoryChargeCorrection(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty PostInventoryChargeCorrection(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostInventoryChargeCorrectionRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostInventoryChargeCorrection, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> PostInventoryChargeCorrectionAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostInventoryChargeCorrectionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return PostInventoryChargeCorrectionAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> PostInventoryChargeCorrectionAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostInventoryChargeCorrectionRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostInventoryChargeCorrection, null, options, request);
+      }
       protected override GroupBookingFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new GroupBookingFolioSvcClient(configuration);
@@ -301,7 +375,9 @@ namespace HOLMS.Types.Money.RPC {
           .AddMethod(__Method_AddCardAuthorizationFromNotPresentCard, serviceImpl.AddCardAuthorizationFromNotPresentCard)
           .AddMethod(__Method_PostCardPayment, serviceImpl.PostCardPayment)
           .AddMethod(__Method_PostCheckPayment, serviceImpl.PostCheckPayment)
-          .AddMethod(__Method_PostCashPayment, serviceImpl.PostCashPayment).Build();
+          .AddMethod(__Method_PostCashPayment, serviceImpl.PostCashPayment)
+          .AddMethod(__Method_PostLodgingChargeCorrection, serviceImpl.PostLodgingChargeCorrection)
+          .AddMethod(__Method_PostInventoryChargeCorrection, serviceImpl.PostInventoryChargeCorrection).Build();
     }
 
   }
