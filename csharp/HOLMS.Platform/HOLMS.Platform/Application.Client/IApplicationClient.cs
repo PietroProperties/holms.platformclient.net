@@ -83,7 +83,6 @@ namespace HOLMS.Application.Client {
         IncidentalSupplySvc.IncidentalSupplySvcClient IncidentalSupplySvc { get; }
         InventoryItemSvc.InventoryItemSvcClient InventoryItemSvc { get; }
         PricingSvc.PricingSvcClient PricingSvc { get; }
-        QualificationSvc.QualificationSvcClient QualificationSvc { get; }
         RateScheduleSvc.RateScheduleSvcClient RateScheduleSvc { get; }
         RoomTypeSvc.RoomTypeSvcClient RoomTypeSvc { get; }
         SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc { get; }

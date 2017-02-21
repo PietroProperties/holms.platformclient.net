@@ -10,10 +10,17 @@ import "supply/room_types/room_type_indicator.proto";
 import "supply/price_update_request.proto";
 import "supply/rate_schedule_indicator.proto";
 import "supply/scheduled_price.proto";
+import "tenancy_config/indicators/property_indicator.proto";
 
-message PricingSvcQueryRequest {
+message PricingSvcRoomTypeQueryRequest {
 	.holms.types.supply.RateScheduleIndicator rate_schedule = 1;
 	repeated .holms.types.supply.room_types.RoomTypeIndicator room_types = 2;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 3;
+}
+
+message PricingSvcPropertyQueryRequest {
+	.holms.types.supply.RateScheduleIndicator rate_schedule = 1;
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
 	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 3;
 }
 
@@ -27,9 +34,7 @@ message PricingSvcUpdateRequest {
 }
 
 service PricingSvc {
-	rpc Query (PricingSvcQueryRequest) 
-		returns (PricingSvcQueryResponse);
-
-	rpc Update (PricingSvcUpdateRequest) 
-		returns (google.protobuf.Empty);
+	rpc QueryByRoomType (PricingSvcRoomTypeQueryRequest) returns (PricingSvcQueryResponse);
+	rpc QueryByProperty (PricingSvcPropertyQueryRequest) returns (PricingSvcQueryResponse);
+	rpc Update (PricingSvcUpdateRequest) returns (google.protobuf.Empty);
 }

@@ -285,12 +285,6 @@ namespace HOLMS.Application.Client {
                 throw new NotImplementedException();
             }
         }
-        
-        public QualificationSvc.QualificationSvcClient QualificationSvc {
-            get {
-                throw new NotImplementedException();
-            }
-        }
 
         public RateScheduleSvc.RateScheduleSvcClient RateScheduleSvc {
             get {

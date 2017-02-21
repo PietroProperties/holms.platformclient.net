@@ -24,61 +24,40 @@ namespace HOLMS.Types.Supply.RPC {
           string.Concat(
             "CiRzdXBwbHkvcnBjL3N1cHBseV9zbmFwc2hvdF9zdmMucHJvdG8SFmhvbG1z",
             "LnR5cGVzLnN1cHBseS5ycGMaKnByaW1pdGl2ZS9wYl9pbmNsdXNpdmVfb3Bz",
-            "ZGF0ZV9yYW5nZS5wcm90bxokc3VwcGx5L3F1YWxpZmljYXRpb25faW5kaWNh",
-            "dG9yLnByb3RvGiRzdXBwbHkvcmF0ZV9zY2hlZHVsZV9pbmRpY2F0b3IucHJv",
-            "dG8aN3N1cHBseS9zbmFwc2hvdC9sb2RnaW5nX3NuYXBzaG90X3JlcXVlc3Rf",
-            "cmVzcG9uc2UucHJvdG8aO3N1cHBseS9zbmFwc2hvdC9pbmNpZGVudGFsc19z",
-            "bmFwc2hvdF9yZXF1ZXN0X3Jlc3BvbnNlLnByb3RvGjJ0ZW5hbmN5X2NvbmZp",
-            "Zy9pbmRpY2F0b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byL5AQokU3Vw",
-            "cGx5U25hcHNob3RTdmNTbmFwc2hvdFdpdGhRdWFsUmVxEkoKCHByb3BlcnR5",
-            "GAEgASgLMjguaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9y",
-            "cy5Qcm9wZXJ0eUluZGljYXRvchJCCgpkYXRlX3JhbmdlGAIgASgLMi4uaG9s",
-            "bXMudHlwZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlEkEK",
-            "DXF1YWxpZmljYXRpb24YAyABKAsyKi5ob2xtcy50eXBlcy5zdXBwbHkuUXVh",
-            "bGlmaWNhdGlvbkluZGljYXRvciLQAQokU3VwcGx5U25hcHNob3RTdmNTbmFw",
-            "c2hvdFdpdGhUYWdzUmVxEkoKCHByb3BlcnR5GAEgASgLMjguaG9sbXMudHlw",
-            "ZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRv",
-            "chJCCgpkYXRlX3JhbmdlGAIgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0aXZl",
-            "LlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlEhgKEHJlc2VydmF0aW9uX3RhZ3MY",
-            "AyADKAki+gEKJlN1cHBseVNuYXBzaG90U3ZjUHVibGljV2l0aFNjaGVkdWxl",
-            "UmVxEkoKCHByb3BlcnR5GAEgASgLMjguaG9sbXMudHlwZXMudGVuYW5jeV9j",
-            "b25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRvchJCCgpkYXRlX3Jh",
-            "bmdlGAIgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZl",
-            "T3BzZGF0ZVJhbmdlEkAKDXJhdGVfc2NoZWR1bGUYAyABKAsyKS5ob2xtcy50",
-            "eXBlcy5zdXBwbHkuUmF0ZVNjaGVkdWxlSW5kaWNhdG9yIqsBChlJbmNpZGVu",
-            "dGFsU25hcHNob3RSZXF1ZXN0EkoKCHByb3BlcnR5GAEgASgLMjguaG9sbXMu",
-            "dHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGlj",
-            "YXRvchJCCgpkYXRlX3JhbmdlGAIgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0",
-            "aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlMtwHChFTdXBwbHlTbmFwc2hv",
-            "dFN2YxKjAQomTG9kZ2luZ1NuYXBzaG90RnJvbVF1YWxpZmljYXRpb25TdHJp",
-            "Y3QSPC5ob2xtcy50eXBlcy5zdXBwbHkucnBjLlN1cHBseVNuYXBzaG90U3Zj",
-            "U25hcHNob3RXaXRoUXVhbFJlcRo7LmhvbG1zLnR5cGVzLnN1cHBseS5zbmFw",
-            "c2hvdC5Mb2RnaW5nU25hcHNob3RSZXF1ZXN0UmVzcG9uc2USmgEKHUxvZGdp",
-            "bmdTbmFwc2hvdEZyb21UYWdzU3RyaWN0EjwuaG9sbXMudHlwZXMuc3VwcGx5",
-            "LnJwYy5TdXBwbHlTbmFwc2hvdFN2Y1NuYXBzaG90V2l0aFRhZ3NSZXEaOy5o",
-            "b2xtcy50eXBlcy5zdXBwbHkuc25hcHNob3QuTG9kZ2luZ1NuYXBzaG90UmVx",
-            "dWVzdFJlc3BvbnNlEqMBCiZMb2RnaW5nU25hcHNob3RGcm9tUXVhbGlmaWNh",
-            "dGlvbk1lcmdlZBI8LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuU3VwcGx5U25h",
-            "cHNob3RTdmNTbmFwc2hvdFdpdGhRdWFsUmVxGjsuaG9sbXMudHlwZXMuc3Vw",
-            "cGx5LnNuYXBzaG90LkxvZGdpbmdTbmFwc2hvdFJlcXVlc3RSZXNwb25zZRKa",
-            "AQodTG9kZ2luZ1NuYXBzaG90RnJvbVRhZ3NNZXJnZWQSPC5ob2xtcy50eXBl",
-            "cy5zdXBwbHkucnBjLlN1cHBseVNuYXBzaG90U3ZjU25hcHNob3RXaXRoVGFn",
-            "c1JlcRo7LmhvbG1zLnR5cGVzLnN1cHBseS5zbmFwc2hvdC5Mb2RnaW5nU25h",
-            "cHNob3RSZXF1ZXN0UmVzcG9uc2UStQEKNkxvZGdpbmdTbmFwc2hvdEZyb21S",
-            "YXRlU2NoZWR1bGVXaXRoT25seVB1YmxpY0ludmVudG9yeRI+LmhvbG1zLnR5",
-            "cGVzLnN1cHBseS5ycGMuU3VwcGx5U25hcHNob3RTdmNQdWJsaWNXaXRoU2No",
-            "ZWR1bGVSZXEaOy5ob2xtcy50eXBlcy5zdXBwbHkuc25hcHNob3QuTG9kZ2lu",
-            "Z1NuYXBzaG90UmVxdWVzdFJlc3BvbnNlEogBChJJbmNpZGVudGFsU25hcHNo",
-            "b3QSMS5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkluY2lkZW50YWxTbmFwc2hv",
-            "dFJlcXVlc3QaPy5ob2xtcy50eXBlcy5zdXBwbHkuc25hcHNob3QuSW5jaWRl",
-            "bnRhbHNTbmFwc2hvdFJlcXVlc3RSZXNwb25zZUIlWgpzdXBwbHkvcnBjqgIW",
-            "SE9MTVMuVHlwZXMuU3VwcGx5LlJQQ2IGcHJvdG8z"));
+            "ZGF0ZV9yYW5nZS5wcm90bxo7c3VwcGx5L3NuYXBzaG90L2luY2lkZW50YWxz",
+            "X3NuYXBzaG90X3JlcXVlc3RfcmVzcG9uc2UucHJvdG8aN3N1cHBseS9zbmFw",
+            "c2hvdC9sb2RnaW5nX3NuYXBzaG90X3JlcXVlc3RfcmVzcG9uc2UucHJvdG8a",
+            "QHN1cHBseS9zbmFwc2hvdC9sb2RnaW5nX3F1YW50aXR5X3NuYXBzaG90X3Jl",
+            "cXVlc3RfcmVzcG9uc2UucHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRv",
+            "cnMvcHJvcGVydHlfaW5kaWNhdG9yLnByb3RvItABCiRTdXBwbHlTbmFwc2hv",
+            "dFN2Y1NuYXBzaG90V2l0aFRhZ3NSZXESSgoIcHJvcGVydHkYASABKAsyOC5o",
+            "b2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5",
+            "SW5kaWNhdG9yEkIKCmRhdGVfcmFuZ2UYAiABKAsyLi5ob2xtcy50eXBlcy5w",
+            "cmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2USGAoQcmVzZXJ2YXRp",
+            "b25fdGFncxgDIAMoCSKrAQoZSW5jaWRlbnRhbFNuYXBzaG90UmVxdWVzdBJK",
+            "Cghwcm9wZXJ0eRgBIAEoCzI4LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmln",
+            "LmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3ISQgoKZGF0ZV9yYW5nZRgC",
+            "IAEoCzIuLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkluY2x1c2l2ZU9wc2Rh",
+            "dGVSYW5nZTKFBQoRU3VwcGx5U25hcHNob3RTdmMSmgEKHUxvZGdpbmdTbmFw",
+            "c2hvdEZyb21UYWdzU3RyaWN0EjwuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5T",
+            "dXBwbHlTbmFwc2hvdFN2Y1NuYXBzaG90V2l0aFRhZ3NSZXEaOy5ob2xtcy50",
+            "eXBlcy5zdXBwbHkuc25hcHNob3QuTG9kZ2luZ1NuYXBzaG90UmVxdWVzdFJl",
+            "c3BvbnNlEpoBCh1Mb2RnaW5nU25hcHNob3RGcm9tVGFnc01lcmdlZBI8Lmhv",
+            "bG1zLnR5cGVzLnN1cHBseS5ycGMuU3VwcGx5U25hcHNob3RTdmNTbmFwc2hv",
+            "dFdpdGhUYWdzUmVxGjsuaG9sbXMudHlwZXMuc3VwcGx5LnNuYXBzaG90Lkxv",
+            "ZGdpbmdTbmFwc2hvdFJlcXVlc3RSZXNwb25zZRKqAQolTG9kZ2luZ1F1YW50",
+            "aXR5U25hcHNob3RGcm9tVGFnc1N0cmljdBI8LmhvbG1zLnR5cGVzLnN1cHBs",
+            "eS5ycGMuU3VwcGx5U25hcHNob3RTdmNTbmFwc2hvdFdpdGhUYWdzUmVxGkMu",
+            "aG9sbXMudHlwZXMuc3VwcGx5LnNuYXBzaG90LkxvZGdpbmdRdWFudGl0eVNu",
+            "YXBzaG90UmVxdWVzdFJlc3BvbnNlEogBChJJbmNpZGVudGFsU25hcHNob3QS",
+            "MS5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkluY2lkZW50YWxTbmFwc2hvdFJl",
+            "cXVlc3QaPy5ob2xtcy50eXBlcy5zdXBwbHkuc25hcHNob3QuSW5jaWRlbnRh",
+            "bHNTbmFwc2hvdFJlcXVlc3RSZXNwb25zZUIlWgpzdXBwbHkvcnBjqgIWSE9M",
+            "TVMuVHlwZXMuU3VwcGx5LlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.QualificationIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponseReflection.Descriptor, global::HOLMS.Types.Supply.Snapshot.IncidentalsSnapshotRequestResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.Snapshot.IncidentalsSnapshotRequestResponseReflection.Descriptor, global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponseReflection.Descriptor, global::HOLMS.Types.Supply.Snapshot.LodgingQuantitySnapshotRequestResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithQualReq), global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithQualReq.Parser, new[]{ "Property", "DateRange", "Qualification" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithTagsReq), global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithTagsReq.Parser, new[]{ "Property", "DateRange", "ReservationTags" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcPublicWithScheduleReq), global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcPublicWithScheduleReq.Parser, new[]{ "Property", "DateRange", "RateSchedule" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.IncidentalSnapshotRequest), global::HOLMS.Types.Supply.RPC.IncidentalSnapshotRequest.Parser, new[]{ "Property", "DateRange" }, null, null, null)
           }));
     }
@@ -86,197 +65,6 @@ namespace HOLMS.Types.Supply.RPC {
 
   }
   #region Messages
-  public sealed partial class SupplySnapshotSvcSnapshotWithQualReq : pb::IMessage<SupplySnapshotSvcSnapshotWithQualReq> {
-    private static readonly pb::MessageParser<SupplySnapshotSvcSnapshotWithQualReq> _parser = new pb::MessageParser<SupplySnapshotSvcSnapshotWithQualReq>(() => new SupplySnapshotSvcSnapshotWithQualReq());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<SupplySnapshotSvcSnapshotWithQualReq> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcReflection.Descriptor.MessageTypes[0]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SupplySnapshotSvcSnapshotWithQualReq() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SupplySnapshotSvcSnapshotWithQualReq(SupplySnapshotSvcSnapshotWithQualReq other) : this() {
-      Property = other.property_ != null ? other.Property.Clone() : null;
-      DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
-      Qualification = other.qualification_ != null ? other.Qualification.Clone() : null;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SupplySnapshotSvcSnapshotWithQualReq Clone() {
-      return new SupplySnapshotSvcSnapshotWithQualReq(this);
-    }
-
-    /// <summary>Field number for the "property" field.</summary>
-    public const int PropertyFieldNumber = 1;
-    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
-      get { return property_; }
-      set {
-        property_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "date_range" field.</summary>
-    public const int DateRangeFieldNumber = 2;
-    private global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange dateRange_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange DateRange {
-      get { return dateRange_; }
-      set {
-        dateRange_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "qualification" field.</summary>
-    public const int QualificationFieldNumber = 3;
-    private global::HOLMS.Types.Supply.QualificationIndicator qualification_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Supply.QualificationIndicator Qualification {
-      get { return qualification_; }
-      set {
-        qualification_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as SupplySnapshotSvcSnapshotWithQualReq);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(SupplySnapshotSvcSnapshotWithQualReq other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Property, other.Property)) return false;
-      if (!object.Equals(DateRange, other.DateRange)) return false;
-      if (!object.Equals(Qualification, other.Qualification)) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (property_ != null) hash ^= Property.GetHashCode();
-      if (dateRange_ != null) hash ^= DateRange.GetHashCode();
-      if (qualification_ != null) hash ^= Qualification.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (property_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Property);
-      }
-      if (dateRange_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(DateRange);
-      }
-      if (qualification_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(Qualification);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (property_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
-      }
-      if (dateRange_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DateRange);
-      }
-      if (qualification_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Qualification);
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(SupplySnapshotSvcSnapshotWithQualReq other) {
-      if (other == null) {
-        return;
-      }
-      if (other.property_ != null) {
-        if (property_ == null) {
-          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
-        }
-        Property.MergeFrom(other.Property);
-      }
-      if (other.dateRange_ != null) {
-        if (dateRange_ == null) {
-          dateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
-        }
-        DateRange.MergeFrom(other.DateRange);
-      }
-      if (other.qualification_ != null) {
-        if (qualification_ == null) {
-          qualification_ = new global::HOLMS.Types.Supply.QualificationIndicator();
-        }
-        Qualification.MergeFrom(other.Qualification);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 10: {
-            if (property_ == null) {
-              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
-            }
-            input.ReadMessage(property_);
-            break;
-          }
-          case 18: {
-            if (dateRange_ == null) {
-              dateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
-            }
-            input.ReadMessage(dateRange_);
-            break;
-          }
-          case 26: {
-            if (qualification_ == null) {
-              qualification_ = new global::HOLMS.Types.Supply.QualificationIndicator();
-            }
-            input.ReadMessage(qualification_);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
   public sealed partial class SupplySnapshotSvcSnapshotWithTagsReq : pb::IMessage<SupplySnapshotSvcSnapshotWithTagsReq> {
     private static readonly pb::MessageParser<SupplySnapshotSvcSnapshotWithTagsReq> _parser = new pb::MessageParser<SupplySnapshotSvcSnapshotWithTagsReq>(() => new SupplySnapshotSvcSnapshotWithTagsReq());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -284,7 +72,7 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcReflection.Descriptor.MessageTypes[1]; }
+      get { return global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -454,197 +242,6 @@ namespace HOLMS.Types.Supply.RPC {
 
   }
 
-  public sealed partial class SupplySnapshotSvcPublicWithScheduleReq : pb::IMessage<SupplySnapshotSvcPublicWithScheduleReq> {
-    private static readonly pb::MessageParser<SupplySnapshotSvcPublicWithScheduleReq> _parser = new pb::MessageParser<SupplySnapshotSvcPublicWithScheduleReq>(() => new SupplySnapshotSvcPublicWithScheduleReq());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<SupplySnapshotSvcPublicWithScheduleReq> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SupplySnapshotSvcPublicWithScheduleReq() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SupplySnapshotSvcPublicWithScheduleReq(SupplySnapshotSvcPublicWithScheduleReq other) : this() {
-      Property = other.property_ != null ? other.Property.Clone() : null;
-      DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
-      RateSchedule = other.rateSchedule_ != null ? other.RateSchedule.Clone() : null;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SupplySnapshotSvcPublicWithScheduleReq Clone() {
-      return new SupplySnapshotSvcPublicWithScheduleReq(this);
-    }
-
-    /// <summary>Field number for the "property" field.</summary>
-    public const int PropertyFieldNumber = 1;
-    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
-      get { return property_; }
-      set {
-        property_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "date_range" field.</summary>
-    public const int DateRangeFieldNumber = 2;
-    private global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange dateRange_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange DateRange {
-      get { return dateRange_; }
-      set {
-        dateRange_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "rate_schedule" field.</summary>
-    public const int RateScheduleFieldNumber = 3;
-    private global::HOLMS.Types.Supply.RateScheduleIndicator rateSchedule_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Supply.RateScheduleIndicator RateSchedule {
-      get { return rateSchedule_; }
-      set {
-        rateSchedule_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as SupplySnapshotSvcPublicWithScheduleReq);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(SupplySnapshotSvcPublicWithScheduleReq other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Property, other.Property)) return false;
-      if (!object.Equals(DateRange, other.DateRange)) return false;
-      if (!object.Equals(RateSchedule, other.RateSchedule)) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (property_ != null) hash ^= Property.GetHashCode();
-      if (dateRange_ != null) hash ^= DateRange.GetHashCode();
-      if (rateSchedule_ != null) hash ^= RateSchedule.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (property_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Property);
-      }
-      if (dateRange_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(DateRange);
-      }
-      if (rateSchedule_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(RateSchedule);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (property_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
-      }
-      if (dateRange_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DateRange);
-      }
-      if (rateSchedule_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RateSchedule);
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(SupplySnapshotSvcPublicWithScheduleReq other) {
-      if (other == null) {
-        return;
-      }
-      if (other.property_ != null) {
-        if (property_ == null) {
-          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
-        }
-        Property.MergeFrom(other.Property);
-      }
-      if (other.dateRange_ != null) {
-        if (dateRange_ == null) {
-          dateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
-        }
-        DateRange.MergeFrom(other.DateRange);
-      }
-      if (other.rateSchedule_ != null) {
-        if (rateSchedule_ == null) {
-          rateSchedule_ = new global::HOLMS.Types.Supply.RateScheduleIndicator();
-        }
-        RateSchedule.MergeFrom(other.RateSchedule);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 10: {
-            if (property_ == null) {
-              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
-            }
-            input.ReadMessage(property_);
-            break;
-          }
-          case 18: {
-            if (dateRange_ == null) {
-              dateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
-            }
-            input.ReadMessage(dateRange_);
-            break;
-          }
-          case 26: {
-            if (rateSchedule_ == null) {
-              rateSchedule_ = new global::HOLMS.Types.Supply.RateScheduleIndicator();
-            }
-            input.ReadMessage(rateSchedule_);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
   public sealed partial class IncidentalSnapshotRequest : pb::IMessage<IncidentalSnapshotRequest> {
     private static readonly pb::MessageParser<IncidentalSnapshotRequest> _parser = new pb::MessageParser<IncidentalSnapshotRequest>(() => new IncidentalSnapshotRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -652,7 +249,7 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcReflection.Descriptor.MessageTypes[3]; }
+      get { return global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -74,7 +74,6 @@
     <Compile Include="Support\DTOBuilders\Operations\OutOfOrderRecordBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Operations\RoomBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Supply\RoomTypeBuilder.cs" />
-    <Compile Include="Support\DTOBuilders\Supply\SnapshotReqWithQualBuilder.cs" />
     <Compile Include="Support\DTOExtensions\Money\FolioExtensions.cs" />
     <Compile Include="Support\DTOExtensions\Money\NonAuthoritativeTaxFeeCalculator.cs" />
     <Compile Include="Support\DTOExtensions\Primitive\ContactInfoExtensions.cs" />
@@ -391,6 +390,8 @@
     <Compile Include="Types\out\LodgingBookingSvcGrpc.cs" />
     <Compile Include="Types\out\LodgingPackage.cs" />
     <Compile Include="Types\out\LodgingPackageIndicator.cs" />
+    <Compile Include="Types\out\LodgingQuantitySnapshotRequestResponse.cs" />
+    <Compile Include="Types\out\LodgingQuantitySnapshotResponseRecord.cs" />
     <Compile Include="Types\out\LodgingSnapshotQuantity.cs" />
     <Compile Include="Types\out\LodgingSnapshotRequestResponse.cs" />
     <Compile Include="Types\out\LodgingSnapshotResponseRecord.cs" />
@@ -471,8 +472,6 @@
     <Compile Include="Types\out\PropertySvcGrpc.cs" />
     <Compile Include="Types\out\Qualification.cs" />
     <Compile Include="Types\out\QualificationIndicator.cs" />
-    <Compile Include="Types\out\QualificationSvc.cs" />
-    <Compile Include="Types\out\QualificationSvcGrpc.cs" />
     <Compile Include="Types\out\RateSchedule.cs" />
     <Compile Include="Types\out\RateScheduleIndicator.cs" />
     <Compile Include="Types\out\RateScheduleSvc.cs" />

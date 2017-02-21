@@ -28,27 +28,37 @@ namespace HOLMS.Types.Supply.RPC {
             "L3Jvb21fdHlwZXMvcm9vbV90eXBlX2luZGljYXRvci5wcm90bxohc3VwcGx5",
             "L3ByaWNlX3VwZGF0ZV9yZXF1ZXN0LnByb3RvGiRzdXBwbHkvcmF0ZV9zY2hl",
             "ZHVsZV9pbmRpY2F0b3IucHJvdG8aHHN1cHBseS9zY2hlZHVsZWRfcHJpY2Uu",
-            "cHJvdG8i5AEKFlByaWNpbmdTdmNRdWVyeVJlcXVlc3QSQAoNcmF0ZV9zY2hl",
-            "ZHVsZRgBIAEoCzIpLmhvbG1zLnR5cGVzLnN1cHBseS5SYXRlU2NoZWR1bGVJ",
-            "bmRpY2F0b3ISRAoKcm9vbV90eXBlcxgCIAMoCzIwLmhvbG1zLnR5cGVzLnN1",
-            "cHBseS5yb29tX3R5cGVzLlJvb21UeXBlSW5kaWNhdG9yEkIKCmRhdGVfcmFu",
-            "Z2UYAyABKAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVP",
-            "cHNkYXRlUmFuZ2UiTQoXUHJpY2luZ1N2Y1F1ZXJ5UmVzcG9uc2USMgoGcHJp",
-            "Y2VzGAEgAygLMiIuaG9sbXMudHlwZXMuc3VwcGx5LlNjaGVkdWxlZFByaWNl",
-            "IpoBChdQcmljaW5nU3ZjVXBkYXRlUmVxdWVzdBJACg1yYXRlX3NjaGVkdWxl",
-            "GAEgASgLMikuaG9sbXMudHlwZXMuc3VwcGx5LlJhdGVTY2hlZHVsZUluZGlj",
-            "YXRvchI9Cg1wcmljZV91cGRhdGVzGAIgAygLMiYuaG9sbXMudHlwZXMuc3Vw",
-            "cGx5LlByaWNlVXBkYXRlUmVxdWVzdDLJAQoKUHJpY2luZ1N2YxJoCgVRdWVy",
-            "eRIuLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuUHJpY2luZ1N2Y1F1ZXJ5UmVx",
-            "dWVzdBovLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuUHJpY2luZ1N2Y1F1ZXJ5",
-            "UmVzcG9uc2USUQoGVXBkYXRlEi8uaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5Q",
-            "cmljaW5nU3ZjVXBkYXRlUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
-            "eUIlWgpzdXBwbHkvcnBjqgIWSE9MTVMuVHlwZXMuU3VwcGx5LlJQQ2IGcHJv",
-            "dG8z"));
+            "cHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMvcHJvcGVydHlfaW5k",
+            "aWNhdG9yLnByb3RvIuwBCh5QcmljaW5nU3ZjUm9vbVR5cGVRdWVyeVJlcXVl",
+            "c3QSQAoNcmF0ZV9zY2hlZHVsZRgBIAEoCzIpLmhvbG1zLnR5cGVzLnN1cHBs",
+            "eS5SYXRlU2NoZWR1bGVJbmRpY2F0b3ISRAoKcm9vbV90eXBlcxgCIAMoCzIw",
+            "LmhvbG1zLnR5cGVzLnN1cHBseS5yb29tX3R5cGVzLlJvb21UeXBlSW5kaWNh",
+            "dG9yEkIKCmRhdGVfcmFuZ2UYAyABKAsyLi5ob2xtcy50eXBlcy5wcmltaXRp",
+            "dmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2Ui8gEKHlByaWNpbmdTdmNQcm9w",
+            "ZXJ0eVF1ZXJ5UmVxdWVzdBJACg1yYXRlX3NjaGVkdWxlGAEgASgLMikuaG9s",
+            "bXMudHlwZXMuc3VwcGx5LlJhdGVTY2hlZHVsZUluZGljYXRvchJKCghwcm9w",
+            "ZXJ0eRgCIAEoCzI4LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGlj",
+            "YXRvcnMuUHJvcGVydHlJbmRpY2F0b3ISQgoKZGF0ZV9yYW5nZRgDIAEoCzIu",
+            "LmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkluY2x1c2l2ZU9wc2RhdGVSYW5n",
+            "ZSJNChdQcmljaW5nU3ZjUXVlcnlSZXNwb25zZRIyCgZwcmljZXMYASADKAsy",
+            "Ii5ob2xtcy50eXBlcy5zdXBwbHkuU2NoZWR1bGVkUHJpY2UimgEKF1ByaWNp",
+            "bmdTdmNVcGRhdGVSZXF1ZXN0EkAKDXJhdGVfc2NoZWR1bGUYASABKAsyKS5o",
+            "b2xtcy50eXBlcy5zdXBwbHkuUmF0ZVNjaGVkdWxlSW5kaWNhdG9yEj0KDXBy",
+            "aWNlX3VwZGF0ZXMYAiADKAsyJi5ob2xtcy50eXBlcy5zdXBwbHkuUHJpY2VV",
+            "cGRhdGVSZXF1ZXN0MtcCCgpQcmljaW5nU3ZjEnoKD1F1ZXJ5QnlSb29tVHlw",
+            "ZRI2LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuUHJpY2luZ1N2Y1Jvb21UeXBl",
+            "UXVlcnlSZXF1ZXN0Gi8uaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5QcmljaW5n",
+            "U3ZjUXVlcnlSZXNwb25zZRJ6Cg9RdWVyeUJ5UHJvcGVydHkSNi5ob2xtcy50",
+            "eXBlcy5zdXBwbHkucnBjLlByaWNpbmdTdmNQcm9wZXJ0eVF1ZXJ5UmVxdWVz",
+            "dBovLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuUHJpY2luZ1N2Y1F1ZXJ5UmVz",
+            "cG9uc2USUQoGVXBkYXRlEi8uaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5Qcmlj",
+            "aW5nU3ZjVXBkYXRlUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eUIl",
+            "WgpzdXBwbHkvcnBjqgIWSE9MTVMuVHlwZXMuU3VwcGx5LlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.PriceUpdateRequestReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.ScheduledPriceReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.PriceUpdateRequestReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.ScheduledPriceReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.PricingSvcQueryRequest), global::HOLMS.Types.Supply.RPC.PricingSvcQueryRequest.Parser, new[]{ "RateSchedule", "RoomTypes", "DateRange" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest), global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest.Parser, new[]{ "RateSchedule", "RoomTypes", "DateRange" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest), global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest.Parser, new[]{ "RateSchedule", "Property", "DateRange" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse), global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse.Parser, new[]{ "Prices" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest), global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest.Parser, new[]{ "RateSchedule", "PriceUpdates" }, null, null, null)
           }));
@@ -57,10 +67,10 @@ namespace HOLMS.Types.Supply.RPC {
 
   }
   #region Messages
-  public sealed partial class PricingSvcQueryRequest : pb::IMessage<PricingSvcQueryRequest> {
-    private static readonly pb::MessageParser<PricingSvcQueryRequest> _parser = new pb::MessageParser<PricingSvcQueryRequest>(() => new PricingSvcQueryRequest());
+  public sealed partial class PricingSvcRoomTypeQueryRequest : pb::IMessage<PricingSvcRoomTypeQueryRequest> {
+    private static readonly pb::MessageParser<PricingSvcRoomTypeQueryRequest> _parser = new pb::MessageParser<PricingSvcRoomTypeQueryRequest>(() => new PricingSvcRoomTypeQueryRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<PricingSvcQueryRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<PricingSvcRoomTypeQueryRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -73,22 +83,22 @@ namespace HOLMS.Types.Supply.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public PricingSvcQueryRequest() {
+    public PricingSvcRoomTypeQueryRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public PricingSvcQueryRequest(PricingSvcQueryRequest other) : this() {
+    public PricingSvcRoomTypeQueryRequest(PricingSvcRoomTypeQueryRequest other) : this() {
       RateSchedule = other.rateSchedule_ != null ? other.RateSchedule.Clone() : null;
       roomTypes_ = other.roomTypes_.Clone();
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public PricingSvcQueryRequest Clone() {
-      return new PricingSvcQueryRequest(this);
+    public PricingSvcRoomTypeQueryRequest Clone() {
+      return new PricingSvcRoomTypeQueryRequest(this);
     }
 
     /// <summary>Field number for the "rate_schedule" field.</summary>
@@ -125,11 +135,11 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as PricingSvcQueryRequest);
+      return Equals(other as PricingSvcRoomTypeQueryRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(PricingSvcQueryRequest other) {
+    public bool Equals(PricingSvcRoomTypeQueryRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -183,7 +193,7 @@ namespace HOLMS.Types.Supply.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(PricingSvcQueryRequest other) {
+    public void MergeFrom(PricingSvcRoomTypeQueryRequest other) {
       if (other == null) {
         return;
       }
@@ -234,6 +244,197 @@ namespace HOLMS.Types.Supply.RPC {
 
   }
 
+  public sealed partial class PricingSvcPropertyQueryRequest : pb::IMessage<PricingSvcPropertyQueryRequest> {
+    private static readonly pb::MessageParser<PricingSvcPropertyQueryRequest> _parser = new pb::MessageParser<PricingSvcPropertyQueryRequest>(() => new PricingSvcPropertyQueryRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PricingSvcPropertyQueryRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Supply.RPC.PricingSvcReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PricingSvcPropertyQueryRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PricingSvcPropertyQueryRequest(PricingSvcPropertyQueryRequest other) : this() {
+      RateSchedule = other.rateSchedule_ != null ? other.RateSchedule.Clone() : null;
+      Property = other.property_ != null ? other.Property.Clone() : null;
+      DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PricingSvcPropertyQueryRequest Clone() {
+      return new PricingSvcPropertyQueryRequest(this);
+    }
+
+    /// <summary>Field number for the "rate_schedule" field.</summary>
+    public const int RateScheduleFieldNumber = 1;
+    private global::HOLMS.Types.Supply.RateScheduleIndicator rateSchedule_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Supply.RateScheduleIndicator RateSchedule {
+      get { return rateSchedule_; }
+      set {
+        rateSchedule_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "property" field.</summary>
+    public const int PropertyFieldNumber = 2;
+    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
+      get { return property_; }
+      set {
+        property_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "date_range" field.</summary>
+    public const int DateRangeFieldNumber = 3;
+    private global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange dateRange_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange DateRange {
+      get { return dateRange_; }
+      set {
+        dateRange_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PricingSvcPropertyQueryRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PricingSvcPropertyQueryRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(RateSchedule, other.RateSchedule)) return false;
+      if (!object.Equals(Property, other.Property)) return false;
+      if (!object.Equals(DateRange, other.DateRange)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (rateSchedule_ != null) hash ^= RateSchedule.GetHashCode();
+      if (property_ != null) hash ^= Property.GetHashCode();
+      if (dateRange_ != null) hash ^= DateRange.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (rateSchedule_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(RateSchedule);
+      }
+      if (property_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Property);
+      }
+      if (dateRange_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(DateRange);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (rateSchedule_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RateSchedule);
+      }
+      if (property_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
+      }
+      if (dateRange_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DateRange);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PricingSvcPropertyQueryRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.rateSchedule_ != null) {
+        if (rateSchedule_ == null) {
+          rateSchedule_ = new global::HOLMS.Types.Supply.RateScheduleIndicator();
+        }
+        RateSchedule.MergeFrom(other.RateSchedule);
+      }
+      if (other.property_ != null) {
+        if (property_ == null) {
+          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+        }
+        Property.MergeFrom(other.Property);
+      }
+      if (other.dateRange_ != null) {
+        if (dateRange_ == null) {
+          dateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
+        }
+        DateRange.MergeFrom(other.DateRange);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (rateSchedule_ == null) {
+              rateSchedule_ = new global::HOLMS.Types.Supply.RateScheduleIndicator();
+            }
+            input.ReadMessage(rateSchedule_);
+            break;
+          }
+          case 18: {
+            if (property_ == null) {
+              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+            }
+            input.ReadMessage(property_);
+            break;
+          }
+          case 26: {
+            if (dateRange_ == null) {
+              dateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
+            }
+            input.ReadMessage(dateRange_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class PricingSvcQueryResponse : pb::IMessage<PricingSvcQueryResponse> {
     private static readonly pb::MessageParser<PricingSvcQueryResponse> _parser = new pb::MessageParser<PricingSvcQueryResponse>(() => new PricingSvcQueryResponse());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -241,7 +442,7 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Supply.RPC.PricingSvcReflection.Descriptor.MessageTypes[1]; }
+      get { return global::HOLMS.Types.Supply.RPC.PricingSvcReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -350,7 +551,7 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Supply.RPC.PricingSvcReflection.Descriptor.MessageTypes[2]; }
+      get { return global::HOLMS.Types.Supply.RPC.PricingSvcReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -97,7 +97,6 @@ namespace HOLMS.Application.Client {
         public InventoryItemSvc.InventoryItemSvcClient InventoryItemSvc { get; protected set; }
         public IncidentalSupplySvc.IncidentalSupplySvcClient IncidentalSupplySvc { get; protected set; }
         public PricingSvc.PricingSvcClient PricingSvc { get; protected set; }
-        public QualificationSvc.QualificationSvcClient QualificationSvc { get; protected set; }
         public RateScheduleSvc.RateScheduleSvcClient RateScheduleSvc { get; protected set; }
         public RoomTypeSvc.RoomTypeSvcClient RoomTypeSvc { get; protected set; }
         public SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc { get; protected set; }
@@ -279,7 +278,6 @@ namespace HOLMS.Application.Client {
             IncidentalSupplySvc = new IncidentalSupplySvc.IncidentalSupplySvcClient(_authenticatedChannel);
             InventoryItemSvc = new InventoryItemSvc.InventoryItemSvcClient(_authenticatedChannel);
             PricingSvc = new PricingSvc.PricingSvcClient(_authenticatedChannel);
-            QualificationSvc = new QualificationSvc.QualificationSvcClient(_authenticatedChannel);
             RateScheduleSvc = new RateScheduleSvc.RateScheduleSvcClient(_authenticatedChannel);
             RoomTypeSvc = new RoomTypeSvc.RoomTypeSvcClient(_authenticatedChannel);
             SupplySnapshotSvc = new SupplySnapshotSvc.SupplySnapshotSvcClient(_authenticatedChannel);
