@@ -12,16 +12,24 @@ namespace HOLMS.Types.Supply.RPC {
   {
     static readonly string __ServiceName = "holms.types.supply.rpc.PricingSvc";
 
-    static readonly Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcQueryRequest> __Marshaller_PricingSvcQueryRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcQueryRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest> __Marshaller_PricingSvcRoomTypeQueryRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> __Marshaller_PricingSvcQueryResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest> __Marshaller_PricingSvcPropertyQueryRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest> __Marshaller_PricingSvcUpdateRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
 
-    static readonly Method<global::HOLMS.Types.Supply.RPC.PricingSvcQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> __Method_Query = new Method<global::HOLMS.Types.Supply.RPC.PricingSvcQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse>(
+    static readonly Method<global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> __Method_QueryByRoomType = new Method<global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse>(
         MethodType.Unary,
         __ServiceName,
-        "Query",
-        __Marshaller_PricingSvcQueryRequest,
+        "QueryByRoomType",
+        __Marshaller_PricingSvcRoomTypeQueryRequest,
+        __Marshaller_PricingSvcQueryResponse);
+
+    static readonly Method<global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> __Method_QueryByProperty = new Method<global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "QueryByProperty",
+        __Marshaller_PricingSvcPropertyQueryRequest,
         __Marshaller_PricingSvcQueryResponse);
 
     static readonly Method<global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_Update = new Method<global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -40,7 +48,12 @@ namespace HOLMS.Types.Supply.RPC {
     /// <summary>Base class for server-side implementations of PricingSvc</summary>
     public abstract class PricingSvcBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> Query(global::HOLMS.Types.Supply.RPC.PricingSvcQueryRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> QueryByRoomType(global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> QueryByProperty(global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -75,21 +88,37 @@ namespace HOLMS.Types.Supply.RPC {
       {
       }
 
-      public virtual global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse Query(global::HOLMS.Types.Supply.RPC.PricingSvcQueryRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse QueryByRoomType(global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return Query(request, new CallOptions(headers, deadline, cancellationToken));
+        return QueryByRoomType(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse Query(global::HOLMS.Types.Supply.RPC.PricingSvcQueryRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse QueryByRoomType(global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest request, CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_Query, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_QueryByRoomType, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> QueryAsync(global::HOLMS.Types.Supply.RPC.PricingSvcQueryRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> QueryByRoomTypeAsync(global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return QueryAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return QueryByRoomTypeAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> QueryAsync(global::HOLMS.Types.Supply.RPC.PricingSvcQueryRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> QueryByRoomTypeAsync(global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest request, CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_Query, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_QueryByRoomType, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse QueryByProperty(global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return QueryByProperty(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse QueryByProperty(global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_QueryByProperty, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> QueryByPropertyAsync(global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return QueryByPropertyAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> QueryByPropertyAsync(global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_QueryByProperty, null, options, request);
       }
       public virtual global::Google.Protobuf.WellKnownTypes.Empty Update(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
@@ -117,7 +146,8 @@ namespace HOLMS.Types.Supply.RPC {
     public static ServerServiceDefinition BindService(PricingSvcBase serviceImpl)
     {
       return ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_Query, serviceImpl.Query)
+          .AddMethod(__Method_QueryByRoomType, serviceImpl.QueryByRoomType)
+          .AddMethod(__Method_QueryByProperty, serviceImpl.QueryByProperty)
           .AddMethod(__Method_Update, serviceImpl.Update).Build();
     }
 
