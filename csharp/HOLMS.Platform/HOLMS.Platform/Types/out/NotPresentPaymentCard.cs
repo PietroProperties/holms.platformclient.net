@@ -23,16 +23,22 @@ namespace HOLMS.Types.Money.Cards {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ciptb25leS9jYXJkcy9ub3RfcHJlc2VudF9wYXltZW50X2NhcmQucHJvdG8S",
-            "F2hvbG1zLnR5cGVzLm1vbmV5LmNhcmRzIpkBChVOb3RQcmVzZW50UGF5bWVu",
-            "dENhcmQSEwoLY2FyZF9udW1iZXIYASABKAkSCwoDY3ZjGAIgASgJEhQKDGV4",
-            "cGlyeV9tb250aBgDIAEoBRIeChZmb3VyX2RpZ2l0X2V4cGlyeV95ZWFyGAQg",
-            "ASgFEg8KB3ppcGNvZGUYBSABKAkSFwoPY2FyZGhvbGRlcl9uYW1lGAYgASgJ",
-            "QidaC21vbmV5L2NhcmRzqgIXSE9MTVMuVHlwZXMuTW9uZXkuQ2FyZHNiBnBy",
-            "b3RvMw=="));
+            "F2hvbG1zLnR5cGVzLm1vbmV5LmNhcmRzGh1wcmltaXRpdmUvcGJfbG9jYWxf",
+            "ZGF0ZS5wcm90bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90byKB",
+            "AwoVTm90UHJlc2VudFBheW1lbnRDYXJkEhMKC2NhcmRfbnVtYmVyGAEgASgJ",
+            "EgsKA2N2YxgCIAEoCRIUCgxleHBpcnlfbW9udGgYAyABKAUSHgoWZm91cl9k",
+            "aWdpdF9leHBpcnlfeWVhchgEIAEoBRIPCgd6aXBjb2RlGAUgASgJEhcKD2Nh",
+            "cmRob2xkZXJfbmFtZRgGIAEoCRIXCg9pc192aXJ0dWFsX2NhcmQYByABKAgS",
+            "QQoSdmlydHVhbF9jYXJkX2xpbWl0GAggASgLMiUuaG9sbXMudHlwZXMucHJp",
+            "bWl0aXZlLk1vbmV0YXJ5QW1vdW50EkUKGXZpcnR1YWxfY2FyZF9hdmFpbGFi",
+            "bGVfb24YCSABKAsyIi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJMb2NhbERh",
+            "dGUSQwoXdmlydHVhbF9jYXJkX2V4cGlyZXNfb24YCiABKAsyIi5ob2xtcy50",
+            "eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGVCJ1oLbW9uZXkvY2FyZHOqAhdI",
+            "T0xNUy5UeXBlcy5Nb25leS5DYXJkc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.NotPresentPaymentCard), global::HOLMS.Types.Money.Cards.NotPresentPaymentCard.Parser, new[]{ "CardNumber", "Cvc", "ExpiryMonth", "FourDigitExpiryYear", "Zipcode", "CardholderName" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.NotPresentPaymentCard), global::HOLMS.Types.Money.Cards.NotPresentPaymentCard.Parser, new[]{ "CardNumber", "Cvc", "ExpiryMonth", "FourDigitExpiryYear", "Zipcode", "CardholderName", "IsVirtualCard", "VirtualCardLimit", "VirtualCardAvailableOn", "VirtualCardExpiresOn" }, null, null, null)
           }));
     }
     #endregion
@@ -69,6 +75,10 @@ namespace HOLMS.Types.Money.Cards {
       fourDigitExpiryYear_ = other.fourDigitExpiryYear_;
       zipcode_ = other.zipcode_;
       cardholderName_ = other.cardholderName_;
+      isVirtualCard_ = other.isVirtualCard_;
+      VirtualCardLimit = other.virtualCardLimit_ != null ? other.VirtualCardLimit.Clone() : null;
+      VirtualCardAvailableOn = other.virtualCardAvailableOn_ != null ? other.VirtualCardAvailableOn.Clone() : null;
+      VirtualCardExpiresOn = other.virtualCardExpiresOn_ != null ? other.VirtualCardExpiresOn.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -142,6 +152,50 @@ namespace HOLMS.Types.Money.Cards {
       }
     }
 
+    /// <summary>Field number for the "is_virtual_card" field.</summary>
+    public const int IsVirtualCardFieldNumber = 7;
+    private bool isVirtualCard_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsVirtualCard {
+      get { return isVirtualCard_; }
+      set {
+        isVirtualCard_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "virtual_card_limit" field.</summary>
+    public const int VirtualCardLimitFieldNumber = 8;
+    private global::HOLMS.Types.Primitive.MonetaryAmount virtualCardLimit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount VirtualCardLimit {
+      get { return virtualCardLimit_; }
+      set {
+        virtualCardLimit_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "virtual_card_available_on" field.</summary>
+    public const int VirtualCardAvailableOnFieldNumber = 9;
+    private global::HOLMS.Types.Primitive.PbLocalDate virtualCardAvailableOn_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate VirtualCardAvailableOn {
+      get { return virtualCardAvailableOn_; }
+      set {
+        virtualCardAvailableOn_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "virtual_card_expires_on" field.</summary>
+    public const int VirtualCardExpiresOnFieldNumber = 10;
+    private global::HOLMS.Types.Primitive.PbLocalDate virtualCardExpiresOn_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate VirtualCardExpiresOn {
+      get { return virtualCardExpiresOn_; }
+      set {
+        virtualCardExpiresOn_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as NotPresentPaymentCard);
@@ -161,6 +215,10 @@ namespace HOLMS.Types.Money.Cards {
       if (FourDigitExpiryYear != other.FourDigitExpiryYear) return false;
       if (Zipcode != other.Zipcode) return false;
       if (CardholderName != other.CardholderName) return false;
+      if (IsVirtualCard != other.IsVirtualCard) return false;
+      if (!object.Equals(VirtualCardLimit, other.VirtualCardLimit)) return false;
+      if (!object.Equals(VirtualCardAvailableOn, other.VirtualCardAvailableOn)) return false;
+      if (!object.Equals(VirtualCardExpiresOn, other.VirtualCardExpiresOn)) return false;
       return true;
     }
 
@@ -173,6 +231,10 @@ namespace HOLMS.Types.Money.Cards {
       if (FourDigitExpiryYear != 0) hash ^= FourDigitExpiryYear.GetHashCode();
       if (Zipcode.Length != 0) hash ^= Zipcode.GetHashCode();
       if (CardholderName.Length != 0) hash ^= CardholderName.GetHashCode();
+      if (IsVirtualCard != false) hash ^= IsVirtualCard.GetHashCode();
+      if (virtualCardLimit_ != null) hash ^= VirtualCardLimit.GetHashCode();
+      if (virtualCardAvailableOn_ != null) hash ^= VirtualCardAvailableOn.GetHashCode();
+      if (virtualCardExpiresOn_ != null) hash ^= VirtualCardExpiresOn.GetHashCode();
       return hash;
     }
 
@@ -207,6 +269,22 @@ namespace HOLMS.Types.Money.Cards {
         output.WriteRawTag(50);
         output.WriteString(CardholderName);
       }
+      if (IsVirtualCard != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(IsVirtualCard);
+      }
+      if (virtualCardLimit_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(VirtualCardLimit);
+      }
+      if (virtualCardAvailableOn_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(VirtualCardAvailableOn);
+      }
+      if (virtualCardExpiresOn_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(VirtualCardExpiresOn);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -229,6 +307,18 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (CardholderName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CardholderName);
+      }
+      if (IsVirtualCard != false) {
+        size += 1 + 1;
+      }
+      if (virtualCardLimit_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VirtualCardLimit);
+      }
+      if (virtualCardAvailableOn_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VirtualCardAvailableOn);
+      }
+      if (virtualCardExpiresOn_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VirtualCardExpiresOn);
       }
       return size;
     }
@@ -255,6 +345,27 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (other.CardholderName.Length != 0) {
         CardholderName = other.CardholderName;
+      }
+      if (other.IsVirtualCard != false) {
+        IsVirtualCard = other.IsVirtualCard;
+      }
+      if (other.virtualCardLimit_ != null) {
+        if (virtualCardLimit_ == null) {
+          virtualCardLimit_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        VirtualCardLimit.MergeFrom(other.VirtualCardLimit);
+      }
+      if (other.virtualCardAvailableOn_ != null) {
+        if (virtualCardAvailableOn_ == null) {
+          virtualCardAvailableOn_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        VirtualCardAvailableOn.MergeFrom(other.VirtualCardAvailableOn);
+      }
+      if (other.virtualCardExpiresOn_ != null) {
+        if (virtualCardExpiresOn_ == null) {
+          virtualCardExpiresOn_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        VirtualCardExpiresOn.MergeFrom(other.VirtualCardExpiresOn);
       }
     }
 
@@ -288,6 +399,31 @@ namespace HOLMS.Types.Money.Cards {
           }
           case 50: {
             CardholderName = input.ReadString();
+            break;
+          }
+          case 56: {
+            IsVirtualCard = input.ReadBool();
+            break;
+          }
+          case 66: {
+            if (virtualCardLimit_ == null) {
+              virtualCardLimit_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(virtualCardLimit_);
+            break;
+          }
+          case 74: {
+            if (virtualCardAvailableOn_ == null) {
+              virtualCardAvailableOn_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(virtualCardAvailableOn_);
+            break;
+          }
+          case 82: {
+            if (virtualCardExpiresOn_ == null) {
+              virtualCardExpiresOn_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(virtualCardExpiresOn_);
             break;
           }
         }

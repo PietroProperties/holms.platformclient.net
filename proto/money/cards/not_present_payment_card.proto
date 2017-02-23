@@ -4,6 +4,9 @@ package holms.types.money.cards;
 option csharp_namespace = "HOLMS.Types.Money.Cards";
 option go_package = "money/cards";
 
+import "primitive/pb_local_date.proto";
+import "primitive/monetary_amount.proto";
+
 message NotPresentPaymentCard {
 	string card_number = 1;
 	string cvc = 2;
@@ -11,4 +14,8 @@ message NotPresentPaymentCard {
 	int32 four_digit_expiry_year = 4;
 	string zipcode = 5;
 	string cardholder_name = 6;
+	bool is_virtual_card = 7;
+	holms.types.primitive.MonetaryAmount virtual_card_limit = 8;
+	holms.types.primitive.PbLocalDate virtual_card_available_on = 9;
+	holms.types.primitive.PbLocalDate virtual_card_expires_on = 10;
 }
