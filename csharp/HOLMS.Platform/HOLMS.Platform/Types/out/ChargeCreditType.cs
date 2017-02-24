@@ -23,11 +23,11 @@ namespace HOLMS.Types.Money.Folio {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiRtb25leS9mb2xpby9jaGFyZ2VfY3JlZGl0X3R5cGUucHJvdG8SF2hvbG1z",
-            "LnR5cGVzLm1vbmV5LmZvbGlvKnQKEENoYXJnZUNyZWRpdFR5cGUSHQoZRk9M",
-            "SU9fQ0hBUkdFX1RZUEVfTE9ER0lORxAAEiAKHEZPTElPX0NIQVJHRV9UWVBF",
-            "X0lOQ0lERU5UQUwQARIfChtGT0xJT19DSEFSR0VfVFlQRV9ST09NX0NBTEwQ",
-            "AkInWgttb25leS9mb2xpb6oCF0hPTE1TLlR5cGVzLk1vbmV5LkZvbGlvYgZw",
-            "cm90bzM="));
+            "LnR5cGVzLm1vbmV5LmZvbGlvKpABChBDaGFyZ2VDcmVkaXRUeXBlEh0KGUZP",
+            "TElPX0NIQVJHRV9UWVBFX0xPREdJTkcQABIgChxGT0xJT19DSEFSR0VfVFlQ",
+            "RV9JTkNJREVOVEFMEAESHwobRk9MSU9fQ0hBUkdFX1RZUEVfUk9PTV9DQUxM",
+            "EAISGgoWRk9MSU9fQ0hBUkdFX1RZUEVfTUlTQxADQidaC21vbmV5L2ZvbGlv",
+            "qgIXSE9MTVMuVHlwZXMuTW9uZXkuRm9saW9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Folio.ChargeCreditType), }, null));
@@ -40,6 +40,7 @@ namespace HOLMS.Types.Money.Folio {
     [pbr::OriginalName("FOLIO_CHARGE_TYPE_LODGING")] FolioChargeTypeLodging = 0,
     [pbr::OriginalName("FOLIO_CHARGE_TYPE_INCIDENTAL")] FolioChargeTypeIncidental = 1,
     [pbr::OriginalName("FOLIO_CHARGE_TYPE_ROOM_CALL")] FolioChargeTypeRoomCall = 2,
+    [pbr::OriginalName("FOLIO_CHARGE_TYPE_MISC")] FolioChargeTypeMisc = 3,
   }
 
   #endregion
