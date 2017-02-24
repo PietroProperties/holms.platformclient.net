@@ -16,7 +16,7 @@ message TokenizedPaymentCard {
 	string card_holder_name = 4;
 	holms.types.money.cards.PaymentCardBrand brand = 5;
 	bool is_virtual_card = 6;
-	holms.types.primitive.MonetaryAmount virtual_card_available_balance = 7;
+	holms.types.primitive.MonetaryAmount virtual_card_unused_balance = 7;
 	holms.types.primitive.PbLocalDate virtual_card_available_on = 8;
 	holms.types.primitive.PbLocalDate virtual_card_expires_on = 9;
 }

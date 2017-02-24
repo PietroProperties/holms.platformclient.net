@@ -28,17 +28,14 @@ namespace HOLMS.Types.Money.Cards {
             "dGhvcml6YXRpb25SZXNwb25zZRJICghyZXNwb25zZRgBIAEoDjI2LmhvbG1z",
             "LnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRBdXRob3JpemF0aW9uUmVzcG9uc2VD",
             "b2RlEk4KDWF1dGhvcml6YXRpb24YAiABKAsyNy5ob2xtcy50eXBlcy5tb25l",
-            "eS5jYXJkcy5NZXJjaGFudEF1dGhvcml6YXRpb25JbmRpY2F0b3Iq7QIKHUNh",
+            "eS5jYXJkcy5NZXJjaGFudEF1dGhvcml6YXRpb25JbmRpY2F0b3Iq5AEKHUNh",
             "cmRBdXRob3JpemF0aW9uUmVzcG9uc2VDb2RlEhkKFUFVVEhPUklaQVRJT05f",
             "U1VDQ0VTUxAAEh8KG0FVVEhPUklaQVRJT05fQ0FSRF9ERUNMSU5FRBABEi0K",
             "KUFVVEhPUklaQVRJT05fVFJBTlNJRU5UX09QRVJBVElPTkFMX0VSUk9SEAIS",
             "LQopQVVUSE9SSVpBVElPTl9QRVJNQU5FTlRfT1BFUkFUSU9OQUxfRVJST1IQ",
-            "AxIpCiVBVVRIT1JJWkFUSU9OX05PX1RFUk1JTkFMU19DT05GSUdVUkVEEAQS",
-            "LQopQVVUSE9SSVpBVElPTl9WSVJUVUFMX0NBUkRfTElNSVRfRVhDRUVERUQQ",
-            "BRIwCixBVVRIT1JJWkFUSU9OX1ZJUlRVQUxfQ0FSRF9OT1RfWUVUX0FWQUlM",
-            "QUJMRRAGEiYKIkFVVEhPUklaQVRJT05fVklSVFVBTF9DQVJEX0VYUElSRUQQ",
-            "B0InWgttb25leS9jYXJkc6oCF0hPTE1TLlR5cGVzLk1vbmV5LkNhcmRzYgZw",
-            "cm90bzM="));
+            "AxIpCiVBVVRIT1JJWkFUSU9OX05PX1RFUk1JTkFMU19DT05GSUdVUkVEEARC",
+            "J1oLbW9uZXkvY2FyZHOqAhdIT0xNUy5UeXBlcy5Nb25leS5DYXJkc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.MerchantAuthorizationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.CardAuthorizationResponseCode), }, new pbr::GeneratedClrTypeInfo[] {
@@ -55,9 +52,6 @@ namespace HOLMS.Types.Money.Cards {
     [pbr::OriginalName("AUTHORIZATION_TRANSIENT_OPERATIONAL_ERROR")] AuthorizationTransientOperationalError = 2,
     [pbr::OriginalName("AUTHORIZATION_PERMANENT_OPERATIONAL_ERROR")] AuthorizationPermanentOperationalError = 3,
     [pbr::OriginalName("AUTHORIZATION_NO_TERMINALS_CONFIGURED")] AuthorizationNoTerminalsConfigured = 4,
-    [pbr::OriginalName("AUTHORIZATION_VIRTUAL_CARD_LIMIT_EXCEEDED")] AuthorizationVirtualCardLimitExceeded = 5,
-    [pbr::OriginalName("AUTHORIZATION_VIRTUAL_CARD_NOT_YET_AVAILABLE")] AuthorizationVirtualCardNotYetAvailable = 6,
-    [pbr::OriginalName("AUTHORIZATION_VIRTUAL_CARD_EXPIRED")] AuthorizationVirtualCardExpired = 7,
   }
 
   #endregion
