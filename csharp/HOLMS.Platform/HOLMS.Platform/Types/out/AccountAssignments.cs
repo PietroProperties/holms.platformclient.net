@@ -24,7 +24,7 @@ namespace HOLMS.Types.TenancyConfig {
           string.Concat(
             "Cih0ZW5hbmN5X2NvbmZpZy9hY2NvdW50X2Fzc2lnbm1lbnRzLnByb3RvEhpo",
             "b2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZxoobW9uZXkvYWNjb3VudGluZy9h",
-            "Y2NvdW50X2luZGljYXRvci5wcm90byKlBwoSQWNjb3VudEFzc2lnbm1lbnRz",
+            "Y2NvdW50X2luZGljYXRvci5wcm90byL8BwoSQWNjb3VudEFzc2lnbm1lbnRz",
             "EkoKEmNhc2hfYXNzZXRfYWNjb3VudBgBIAEoCzIuLmhvbG1zLnR5cGVzLm1v",
             "bmV5LmFjY291bnRpbmcuQWNjb3VudEluZGljYXRvchJLChNjaGVja19hc3Nl",
             "dF9hY2NvdW50GAIgASgLMi4uaG9sbXMudHlwZXMubW9uZXkuYWNjb3VudGlu",
@@ -45,12 +45,14 @@ namespace HOLMS.Types.TenancyConfig {
             "bnVlX2FjY291bnQYCiABKAsyLi5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50",
             "aW5nLkFjY291bnRJbmRpY2F0b3ISUQoZcm9vbV9jYWxsX3JldmVudWVfYWNj",
             "b3VudBgLIAEoCzIuLmhvbG1zLnR5cGVzLm1vbmV5LmFjY291bnRpbmcuQWNj",
-            "b3VudEluZGljYXRvckIrWg10ZW5hbmN5Y29uZmlnqgIZSE9MTVMuVHlwZXMu",
-            "VGVuYW5jeUNvbmZpZ2IGcHJvdG8z"));
+            "b3VudEluZGljYXRvchJVCh1taXNjZWxsYW5lb3VzX3JldmVudWVfYWNjb3Vu",
+            "dBgMIAEoCzIuLmhvbG1zLnR5cGVzLm1vbmV5LmFjY291bnRpbmcuQWNjb3Vu",
+            "dEluZGljYXRvckIrWg10ZW5hbmN5Y29uZmlnqgIZSE9MTVMuVHlwZXMuVGVu",
+            "YW5jeUNvbmZpZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Accounting.AccountIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.AccountAssignments), global::HOLMS.Types.TenancyConfig.AccountAssignments.Parser, new[]{ "CashAssetAccount", "CheckAssetAccount", "TravelersCheckAssetAccount", "AmexReceivableAccount", "DiscoverReceivableAccount", "VisaReceivableAccount", "MastercardReceivableAccount", "DinersClubReceivableAccount", "GroupLodgingRevenueAccount", "LodgingRevenueAccount", "RoomCallRevenueAccount" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.AccountAssignments), global::HOLMS.Types.TenancyConfig.AccountAssignments.Parser, new[]{ "CashAssetAccount", "CheckAssetAccount", "TravelersCheckAssetAccount", "AmexReceivableAccount", "DiscoverReceivableAccount", "VisaReceivableAccount", "MastercardReceivableAccount", "DinersClubReceivableAccount", "GroupLodgingRevenueAccount", "LodgingRevenueAccount", "RoomCallRevenueAccount", "MiscellaneousRevenueAccount" }, null, null, null)
           }));
     }
     #endregion
@@ -92,6 +94,7 @@ namespace HOLMS.Types.TenancyConfig {
       GroupLodgingRevenueAccount = other.groupLodgingRevenueAccount_ != null ? other.GroupLodgingRevenueAccount.Clone() : null;
       LodgingRevenueAccount = other.lodgingRevenueAccount_ != null ? other.LodgingRevenueAccount.Clone() : null;
       RoomCallRevenueAccount = other.roomCallRevenueAccount_ != null ? other.RoomCallRevenueAccount.Clone() : null;
+      MiscellaneousRevenueAccount = other.miscellaneousRevenueAccount_ != null ? other.MiscellaneousRevenueAccount.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -220,6 +223,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "miscellaneous_revenue_account" field.</summary>
+    public const int MiscellaneousRevenueAccountFieldNumber = 12;
+    private global::HOLMS.Types.Money.Accounting.AccountIndicator miscellaneousRevenueAccount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Accounting.AccountIndicator MiscellaneousRevenueAccount {
+      get { return miscellaneousRevenueAccount_; }
+      set {
+        miscellaneousRevenueAccount_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AccountAssignments);
@@ -244,6 +258,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (!object.Equals(GroupLodgingRevenueAccount, other.GroupLodgingRevenueAccount)) return false;
       if (!object.Equals(LodgingRevenueAccount, other.LodgingRevenueAccount)) return false;
       if (!object.Equals(RoomCallRevenueAccount, other.RoomCallRevenueAccount)) return false;
+      if (!object.Equals(MiscellaneousRevenueAccount, other.MiscellaneousRevenueAccount)) return false;
       return true;
     }
 
@@ -261,6 +276,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (groupLodgingRevenueAccount_ != null) hash ^= GroupLodgingRevenueAccount.GetHashCode();
       if (lodgingRevenueAccount_ != null) hash ^= LodgingRevenueAccount.GetHashCode();
       if (roomCallRevenueAccount_ != null) hash ^= RoomCallRevenueAccount.GetHashCode();
+      if (miscellaneousRevenueAccount_ != null) hash ^= MiscellaneousRevenueAccount.GetHashCode();
       return hash;
     }
 
@@ -315,6 +331,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(90);
         output.WriteMessage(RoomCallRevenueAccount);
       }
+      if (miscellaneousRevenueAccount_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(MiscellaneousRevenueAccount);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -352,6 +372,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (roomCallRevenueAccount_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomCallRevenueAccount);
+      }
+      if (miscellaneousRevenueAccount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MiscellaneousRevenueAccount);
       }
       return size;
     }
@@ -426,6 +449,12 @@ namespace HOLMS.Types.TenancyConfig {
           roomCallRevenueAccount_ = new global::HOLMS.Types.Money.Accounting.AccountIndicator();
         }
         RoomCallRevenueAccount.MergeFrom(other.RoomCallRevenueAccount);
+      }
+      if (other.miscellaneousRevenueAccount_ != null) {
+        if (miscellaneousRevenueAccount_ == null) {
+          miscellaneousRevenueAccount_ = new global::HOLMS.Types.Money.Accounting.AccountIndicator();
+        }
+        MiscellaneousRevenueAccount.MergeFrom(other.MiscellaneousRevenueAccount);
       }
     }
 
@@ -512,6 +541,13 @@ namespace HOLMS.Types.TenancyConfig {
               roomCallRevenueAccount_ = new global::HOLMS.Types.Money.Accounting.AccountIndicator();
             }
             input.ReadMessage(roomCallRevenueAccount_);
+            break;
+          }
+          case 98: {
+            if (miscellaneousRevenueAccount_ == null) {
+              miscellaneousRevenueAccount_ = new global::HOLMS.Types.Money.Accounting.AccountIndicator();
+            }
+            input.ReadMessage(miscellaneousRevenueAccount_);
             break;
           }
         }
