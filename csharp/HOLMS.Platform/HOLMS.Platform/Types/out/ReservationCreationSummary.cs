@@ -25,25 +25,23 @@ namespace HOLMS.Types.Booking.History {
             "CjJib29raW5nL2hpc3RvcnkvcmVzZXJ2YXRpb25fY3JlYXRpb25fc3VtbWFy",
             "eS5wcm90bxIbaG9sbXMudHlwZXMuYm9va2luZy5oaXN0b3J5GiFzdXBwbHkv",
             "cm9vbV90eXBlcy9yb29tX3R5cGUucHJvdG8aKnByaW1pdGl2ZS9wYl9pbmNs",
-            "dXNpdmVfb3BzZGF0ZV9yYW5nZS5wcm90bxoac3VwcGx5L3F1YWxpZmljYXRp",
-            "b24ucHJvdG8aLmJvb2tpbmcvaW5kaWNhdG9ycy9yZXNlcnZhdGlvbl9pbmRp",
-            "Y2F0b3IucHJvdG8aMGJvb2tpbmcvcHJpY2luZy9yZXNlcnZhdGlvbl9wcmlj",
-            "ZV9lc3RpbWF0ZS5wcm90byLCAwoaUmVzZXJ2YXRpb25DcmVhdGlvblN1bW1h",
-            "cnkSSQoLcmVzZXJ2YXRpb24YASABKAsyNC5ob2xtcy50eXBlcy5ib29raW5n",
-            "LmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISEgoKYm9va2luZ19p",
-            "ZBgCIAEoCRJCCgpkYXRlX3JhbmdlGAMgASgLMi4uaG9sbXMudHlwZXMucHJp",
-            "bWl0aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlEjoKCXJvb21fdHlwZRgE",
-            "IAEoCzInLmhvbG1zLnR5cGVzLnN1cHBseS5yb29tX3R5cGVzLlJvb21UeXBl",
-            "EhUKDW51bWJlcl9hZHVsdHMYBSABKA0SFwoPbnVtYmVyX2NoaWxkcmVuGAYg",
-            "ASgNEjgKDXF1YWxpZmljYXRpb24YByABKAsyIS5ob2xtcy50eXBlcy5zdXBw",
-            "bHkuUXVhbGlmaWNhdGlvbhJNCg5wcmljZV9lc3RpbWF0ZRgIIAEoCzI1Lmhv",
-            "bG1zLnR5cGVzLmJvb2tpbmcucHJpY2luZy5SZXNlcnZhdGlvblByaWNlRXN0",
-            "aW1hdGUSDAoEdGFncxgJIAMoCUIeqgIbSE9MTVMuVHlwZXMuQm9va2luZy5I",
-            "aXN0b3J5YgZwcm90bzM="));
+            "dXNpdmVfb3BzZGF0ZV9yYW5nZS5wcm90bxouYm9va2luZy9pbmRpY2F0b3Jz",
+            "L3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90bxowYm9va2luZy9wcmljaW5n",
+            "L3Jlc2VydmF0aW9uX3ByaWNlX2VzdGltYXRlLnByb3RvIogDChpSZXNlcnZh",
+            "dGlvbkNyZWF0aW9uU3VtbWFyeRJJCgtyZXNlcnZhdGlvbhgBIAEoCzI0Lmhv",
+            "bG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGlj",
+            "YXRvchISCgpib29raW5nX2lkGAIgASgJEkIKCmRhdGVfcmFuZ2UYAyABKAsy",
+            "Li5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFu",
+            "Z2USOgoJcm9vbV90eXBlGAQgASgLMicuaG9sbXMudHlwZXMuc3VwcGx5LnJv",
+            "b21fdHlwZXMuUm9vbVR5cGUSFQoNbnVtYmVyX2FkdWx0cxgFIAEoDRIXCg9u",
+            "dW1iZXJfY2hpbGRyZW4YBiABKA0STQoOcHJpY2VfZXN0aW1hdGUYCCABKAsy",
+            "NS5ob2xtcy50eXBlcy5ib29raW5nLnByaWNpbmcuUmVzZXJ2YXRpb25Qcmlj",
+            "ZUVzdGltYXRlEgwKBHRhZ3MYCSADKAlCHqoCG0hPTE1TLlR5cGVzLkJvb2tp",
+            "bmcuSGlzdG9yeWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.QualificationReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.History.ReservationCreationSummary), global::HOLMS.Types.Booking.History.ReservationCreationSummary.Parser, new[]{ "Reservation", "BookingId", "DateRange", "RoomType", "NumberAdults", "NumberChildren", "Qualification", "PriceEstimate", "Tags" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.History.ReservationCreationSummary), global::HOLMS.Types.Booking.History.ReservationCreationSummary.Parser, new[]{ "Reservation", "BookingId", "DateRange", "RoomType", "NumberAdults", "NumberChildren", "PriceEstimate", "Tags" }, null, null, null)
           }));
     }
     #endregion
@@ -80,7 +78,6 @@ namespace HOLMS.Types.Booking.History {
       RoomType = other.roomType_ != null ? other.RoomType.Clone() : null;
       numberAdults_ = other.numberAdults_;
       numberChildren_ = other.numberChildren_;
-      Qualification = other.qualification_ != null ? other.Qualification.Clone() : null;
       PriceEstimate = other.priceEstimate_ != null ? other.PriceEstimate.Clone() : null;
       tags_ = other.tags_.Clone();
     }
@@ -156,20 +153,6 @@ namespace HOLMS.Types.Booking.History {
       }
     }
 
-    /// <summary>Field number for the "qualification" field.</summary>
-    public const int QualificationFieldNumber = 7;
-    private global::HOLMS.Types.Supply.Qualification qualification_;
-    /// <summary>
-    ///  TODO(DA) RESTAGS remove this once it's no longer used
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Supply.Qualification Qualification {
-      get { return qualification_; }
-      set {
-        qualification_ = value;
-      }
-    }
-
     /// <summary>Field number for the "price_estimate" field.</summary>
     public const int PriceEstimateFieldNumber = 8;
     private global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate priceEstimate_;
@@ -210,7 +193,6 @@ namespace HOLMS.Types.Booking.History {
       if (!object.Equals(RoomType, other.RoomType)) return false;
       if (NumberAdults != other.NumberAdults) return false;
       if (NumberChildren != other.NumberChildren) return false;
-      if (!object.Equals(Qualification, other.Qualification)) return false;
       if (!object.Equals(PriceEstimate, other.PriceEstimate)) return false;
       if(!tags_.Equals(other.tags_)) return false;
       return true;
@@ -225,7 +207,6 @@ namespace HOLMS.Types.Booking.History {
       if (roomType_ != null) hash ^= RoomType.GetHashCode();
       if (NumberAdults != 0) hash ^= NumberAdults.GetHashCode();
       if (NumberChildren != 0) hash ^= NumberChildren.GetHashCode();
-      if (qualification_ != null) hash ^= Qualification.GetHashCode();
       if (priceEstimate_ != null) hash ^= PriceEstimate.GetHashCode();
       hash ^= tags_.GetHashCode();
       return hash;
@@ -262,10 +243,6 @@ namespace HOLMS.Types.Booking.History {
         output.WriteRawTag(48);
         output.WriteUInt32(NumberChildren);
       }
-      if (qualification_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(Qualification);
-      }
       if (priceEstimate_ != null) {
         output.WriteRawTag(66);
         output.WriteMessage(PriceEstimate);
@@ -293,9 +270,6 @@ namespace HOLMS.Types.Booking.History {
       }
       if (NumberChildren != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NumberChildren);
-      }
-      if (qualification_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Qualification);
       }
       if (priceEstimate_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PriceEstimate);
@@ -335,12 +309,6 @@ namespace HOLMS.Types.Booking.History {
       }
       if (other.NumberChildren != 0) {
         NumberChildren = other.NumberChildren;
-      }
-      if (other.qualification_ != null) {
-        if (qualification_ == null) {
-          qualification_ = new global::HOLMS.Types.Supply.Qualification();
-        }
-        Qualification.MergeFrom(other.Qualification);
       }
       if (other.priceEstimate_ != null) {
         if (priceEstimate_ == null) {
@@ -390,13 +358,6 @@ namespace HOLMS.Types.Booking.History {
           }
           case 48: {
             NumberChildren = input.ReadUInt32();
-            break;
-          }
-          case 58: {
-            if (qualification_ == null) {
-              qualification_ = new global::HOLMS.Types.Supply.Qualification();
-            }
-            input.ReadMessage(qualification_);
             break;
           }
           case 66: {

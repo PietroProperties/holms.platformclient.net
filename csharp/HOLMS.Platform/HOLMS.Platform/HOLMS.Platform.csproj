@@ -181,8 +181,6 @@
     <Compile Include="Types\Extensions\Supply\IncidentalItems\IncidentalItemIndicator.cs" />
     <Compile Include="Types\Extensions\Supply\MaintenanceHoldIndicator.cs" />
     <Compile Include="Types\Extensions\Supply\Packages\LodgingPackageIndicator.cs" />
-    <Compile Include="Types\Extensions\Supply\Qualification.cs" />
-    <Compile Include="Types\Extensions\Supply\QualificationIndicator.cs" />
     <Compile Include="Types\Extensions\Supply\RateSchedule.cs" />
     <Compile Include="Types\Extensions\Supply\RateScheduleIndicator.cs" />
     <Compile Include="Types\Extensions\Supply\ReservationBookingHoldIndicator.cs" />
@@ -470,8 +468,6 @@
     <Compile Include="Types\out\PropertyOpsdateRange.cs" />
     <Compile Include="Types\out\PropertySvc.cs" />
     <Compile Include="Types\out\PropertySvcGrpc.cs" />
-    <Compile Include="Types\out\Qualification.cs" />
-    <Compile Include="Types\out\QualificationIndicator.cs" />
     <Compile Include="Types\out\RateSchedule.cs" />
     <Compile Include="Types\out\RateScheduleIndicator.cs" />
     <Compile Include="Types\out\RateScheduleSvc.cs" />
