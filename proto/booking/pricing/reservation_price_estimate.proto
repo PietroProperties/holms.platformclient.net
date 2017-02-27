@@ -19,4 +19,7 @@ message ReservationPriceEstimate {
 	bool is_available = 8;
 	bool violates_mlos = 9;
 	bool violates_cta = 10;
+
+	// Raw lodging subtotals before comp stay or taxes
+	repeated holms.types.booking.pricing.PriceNight supplied_subtotals = 11;
 }
