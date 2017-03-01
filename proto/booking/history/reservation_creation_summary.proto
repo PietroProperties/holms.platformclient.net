@@ -5,7 +5,6 @@ option csharp_namespace = "HOLMS.Types.Booking.History";
 
 import "supply/room_types/room_type.proto";
 import "primitive/pb_inclusive_opsdate_range.proto";
-import "supply/qualification.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "booking/pricing/reservation_price_estimate.proto";
 
@@ -16,8 +15,6 @@ message ReservationCreationSummary {
 	holms.types.supply.room_types.RoomType room_type = 4;
 	uint32 number_adults = 5;
 	uint32 number_children = 6;
-	// TODO(DA) RESTAGS remove this once it's no longer used
-	holms.types.supply.Qualification qualification = 7;
 	holms.types.booking.pricing.ReservationPriceEstimate price_estimate = 8;
 	repeated string tags = 9;
 }

@@ -1,9 +1,0 @@
-﻿syntax = "proto3";
-
-package holms.types.supply;
-option csharp_namespace = "HOLMS.Types.Supply";
-option go_package = "supply";
-
-message QualificationIndicator {
-	string id = 1;
-}
