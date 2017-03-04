@@ -7,6 +7,7 @@ import "google/protobuf/empty.proto";
 import "crm/guests/guest_indicator.proto";
 import "booking/reservations/reservation_contact_person.proto";
 import "booking/indicators/reservation_indicator.proto";
+import "booking/indicators/group_booking_indicator.proto";
 import "tenancy_config/property_confirmation_letter_text.proto";
 import "tenancy_config/property_cancellation_letter_text.proto";
 import "tenancy_config/property_arrival_letter_text.proto";
@@ -14,6 +15,12 @@ import "primitive/pb_local_date.proto";
 
 message CorrespondenceRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	repeated holms.types.crm.guests.GuestIndicator guests = 2;
+	repeated holms.types.booking.reservations.ReservationContactPerson contacts = 3;
+}
+
+message GroupCorrespondenceRequest {
+	holms.types.booking.indicators.GroupBookingIndicator group_booking = 1;
 	repeated holms.types.crm.guests.GuestIndicator guests = 2;
 	repeated holms.types.booking.reservations.ReservationContactPerson contacts = 3;
 }
@@ -27,6 +34,7 @@ service CorrespondenceSvc {
 	rpc SendConfirmationLetter(CorrespondenceRequest) returns(google.protobuf.Empty);
 	rpc SendCancellationEmail(CorrespondenceRequest) returns(google.protobuf.Empty);
 	rpc SendGuestFolio(CorrespondenceRequest) returns (google.protobuf.Empty);
+	rpc SendGroupFolio(GroupCorrespondenceRequest) returns (google.protobuf.Empty);
 
 	// Print (get HTML)
 	rpc PreviewArrivalLetter(.holms.types.tenancy_config.PropertyArrivalLetterText)
@@ -42,6 +50,8 @@ service CorrespondenceSvc {
 		returns(CorrespondenceServiceDocumentResponse);
 	rpc GetReservationFolioPrintDoc(.holms.types.booking.indicators.ReservationIndicator)
 		returns(CorrespondenceServiceDocumentResponse); 
+	rpc GetGroupBookingFolioPrintDoc(holms.types.booking.indicators.GroupBookingIndicator)
+		returns(CorrespondenceServiceDocumentResponse); 	
 	rpc GetReservationConfirmationPrintDoc(holms.types.booking.indicators.ReservationIndicator)
 		returns(CorrespondenceServiceDocumentResponse);
 }

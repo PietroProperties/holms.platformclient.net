@@ -14,12 +14,14 @@ namespace HOLMS.Types.CRM.RPC {
 
     static readonly Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest> __Marshaller_CorrespondenceRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceRequest.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest> __Marshaller_GroupCorrespondenceRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText> __Marshaller_PropertyArrivalLetterText = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Marshaller_CorrespondenceServiceDocumentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Primitive.PbLocalDate> __Marshaller_PbLocalDate = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.PbLocalDate.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> __Marshaller_ReservationIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText> __Marshaller_PropertyConfirmationLetterText = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText> __Marshaller_PropertyCancellationLetterText = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> __Marshaller_GroupBookingIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SendConfirmationLetter = new Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         MethodType.Unary,
@@ -40,6 +42,13 @@ namespace HOLMS.Types.CRM.RPC {
         __ServiceName,
         "SendGuestFolio",
         __Marshaller_CorrespondenceRequest,
+        __Marshaller_Empty);
+
+    static readonly Method<global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SendGroupFolio = new Method<global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "SendGroupFolio",
+        __Marshaller_GroupCorrespondenceRequest,
         __Marshaller_Empty);
 
     static readonly Method<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_PreviewArrivalLetter = new Method<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
@@ -84,6 +93,13 @@ namespace HOLMS.Types.CRM.RPC {
         __Marshaller_ReservationIndicator,
         __Marshaller_CorrespondenceServiceDocumentResponse);
 
+    static readonly Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_GetGroupBookingFolioPrintDoc = new Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetGroupBookingFolioPrintDoc",
+        __Marshaller_GroupBookingIndicator,
+        __Marshaller_CorrespondenceServiceDocumentResponse);
+
     static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_GetReservationConfirmationPrintDoc = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
         MethodType.Unary,
         __ServiceName,
@@ -118,6 +134,11 @@ namespace HOLMS.Types.CRM.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SendGroupFolio(global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
       /// <summary>
       ///  Print (get HTML)
       /// </summary>
@@ -147,6 +168,11 @@ namespace HOLMS.Types.CRM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetReservationFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetGroupBookingFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -240,6 +266,22 @@ namespace HOLMS.Types.CRM.RPC {
       public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendGuestFolioAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SendGuestFolio, null, options, request);
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendGroupFolio(global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SendGroupFolio(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendGroupFolio(global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SendGroupFolio, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendGroupFolioAsync(global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SendGroupFolioAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendGroupFolioAsync(global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SendGroupFolio, null, options, request);
       }
       /// <summary>
       ///  Print (get HTML)
@@ -349,6 +391,22 @@ namespace HOLMS.Types.CRM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationFolioPrintDoc, null, options, request);
       }
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetGroupBookingFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetGroupBookingFolioPrintDoc(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetGroupBookingFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetGroupBookingFolioPrintDoc, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetGroupBookingFolioPrintDocAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetGroupBookingFolioPrintDocAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetGroupBookingFolioPrintDocAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetGroupBookingFolioPrintDoc, null, options, request);
+      }
       public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetReservationConfirmationPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetReservationConfirmationPrintDoc(request, new CallOptions(headers, deadline, cancellationToken));
@@ -378,12 +436,14 @@ namespace HOLMS.Types.CRM.RPC {
           .AddMethod(__Method_SendConfirmationLetter, serviceImpl.SendConfirmationLetter)
           .AddMethod(__Method_SendCancellationEmail, serviceImpl.SendCancellationEmail)
           .AddMethod(__Method_SendGuestFolio, serviceImpl.SendGuestFolio)
+          .AddMethod(__Method_SendGroupFolio, serviceImpl.SendGroupFolio)
           .AddMethod(__Method_PreviewArrivalLetter, serviceImpl.PreviewArrivalLetter)
           .AddMethod(__Method_GetArrivalLetterDocumentsArrivingOn, serviceImpl.GetArrivalLetterDocumentsArrivingOn)
           .AddMethod(__Method_GetArrivalLetterDocument, serviceImpl.GetArrivalLetterDocument)
           .AddMethod(__Method_PreviewConfirmationLetter, serviceImpl.PreviewConfirmationLetter)
           .AddMethod(__Method_PreviewCancellationEmail, serviceImpl.PreviewCancellationEmail)
           .AddMethod(__Method_GetReservationFolioPrintDoc, serviceImpl.GetReservationFolioPrintDoc)
+          .AddMethod(__Method_GetGroupBookingFolioPrintDoc, serviceImpl.GetGroupBookingFolioPrintDoc)
           .AddMethod(__Method_GetReservationConfirmationPrintDoc, serviceImpl.GetReservationConfirmationPrintDoc).Build();
     }
 
