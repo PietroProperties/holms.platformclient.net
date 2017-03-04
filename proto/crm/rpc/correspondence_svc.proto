@@ -19,12 +19,6 @@ message CorrespondenceRequest {
 	repeated holms.types.booking.reservations.ReservationContactPerson contacts = 3;
 }
 
-message GroupCorrespondenceRequest {
-	holms.types.booking.indicators.GroupBookingIndicator group_booking = 1;
-	repeated holms.types.crm.guests.GuestIndicator guests = 2;
-	repeated holms.types.booking.reservations.ReservationContactPerson contacts = 3;
-}
-
 message CorrespondenceServiceDocumentResponse {
 	string document = 1;
 }
@@ -34,7 +28,6 @@ service CorrespondenceSvc {
 	rpc SendConfirmationLetter(CorrespondenceRequest) returns(google.protobuf.Empty);
 	rpc SendCancellationEmail(CorrespondenceRequest) returns(google.protobuf.Empty);
 	rpc SendGuestFolio(CorrespondenceRequest) returns (google.protobuf.Empty);
-	rpc SendGroupFolio(GroupCorrespondenceRequest) returns (google.protobuf.Empty);
 
 	// Print (get HTML)
 	rpc PreviewArrivalLetter(.holms.types.tenancy_config.PropertyArrivalLetterText)

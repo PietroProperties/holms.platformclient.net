@@ -14,7 +14,6 @@ namespace HOLMS.Types.CRM.RPC {
 
     static readonly Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest> __Marshaller_CorrespondenceRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceRequest.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest> __Marshaller_GroupCorrespondenceRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText> __Marshaller_PropertyArrivalLetterText = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Marshaller_CorrespondenceServiceDocumentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Primitive.PbLocalDate> __Marshaller_PbLocalDate = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.PbLocalDate.Parser.ParseFrom);
@@ -42,13 +41,6 @@ namespace HOLMS.Types.CRM.RPC {
         __ServiceName,
         "SendGuestFolio",
         __Marshaller_CorrespondenceRequest,
-        __Marshaller_Empty);
-
-    static readonly Method<global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SendGroupFolio = new Method<global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
-        MethodType.Unary,
-        __ServiceName,
-        "SendGroupFolio",
-        __Marshaller_GroupCorrespondenceRequest,
         __Marshaller_Empty);
 
     static readonly Method<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_PreviewArrivalLetter = new Method<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
@@ -130,11 +122,6 @@ namespace HOLMS.Types.CRM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SendGuestFolio(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SendGroupFolio(global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -266,22 +253,6 @@ namespace HOLMS.Types.CRM.RPC {
       public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendGuestFolioAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SendGuestFolio, null, options, request);
-      }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendGroupFolio(global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return SendGroupFolio(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendGroupFolio(global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_SendGroupFolio, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendGroupFolioAsync(global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return SendGroupFolioAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendGroupFolioAsync(global::HOLMS.Types.CRM.RPC.GroupCorrespondenceRequest request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_SendGroupFolio, null, options, request);
       }
       /// <summary>
       ///  Print (get HTML)
@@ -436,7 +407,6 @@ namespace HOLMS.Types.CRM.RPC {
           .AddMethod(__Method_SendConfirmationLetter, serviceImpl.SendConfirmationLetter)
           .AddMethod(__Method_SendCancellationEmail, serviceImpl.SendCancellationEmail)
           .AddMethod(__Method_SendGuestFolio, serviceImpl.SendGuestFolio)
-          .AddMethod(__Method_SendGroupFolio, serviceImpl.SendGroupFolio)
           .AddMethod(__Method_PreviewArrivalLetter, serviceImpl.PreviewArrivalLetter)
           .AddMethod(__Method_GetArrivalLetterDocumentsArrivingOn, serviceImpl.GetArrivalLetterDocumentsArrivingOn)
           .AddMethod(__Method_GetArrivalLetterDocument, serviceImpl.GetArrivalLetterDocument)
