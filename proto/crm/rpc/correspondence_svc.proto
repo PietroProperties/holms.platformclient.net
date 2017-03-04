@@ -7,6 +7,7 @@ import "google/protobuf/empty.proto";
 import "crm/guests/guest_indicator.proto";
 import "booking/reservations/reservation_contact_person.proto";
 import "booking/indicators/reservation_indicator.proto";
+import "booking/indicators/group_booking_indicator.proto";
 import "tenancy_config/property_confirmation_letter_text.proto";
 import "tenancy_config/property_cancellation_letter_text.proto";
 import "tenancy_config/property_arrival_letter_text.proto";
@@ -42,6 +43,8 @@ service CorrespondenceSvc {
 		returns(CorrespondenceServiceDocumentResponse);
 	rpc GetReservationFolioPrintDoc(.holms.types.booking.indicators.ReservationIndicator)
 		returns(CorrespondenceServiceDocumentResponse); 
+	rpc GetGroupBookingFolioPrintDoc(holms.types.booking.indicators.GroupBookingIndicator)
+		returns(CorrespondenceServiceDocumentResponse); 	
 	rpc GetReservationConfirmationPrintDoc(holms.types.booking.indicators.ReservationIndicator)
 		returns(CorrespondenceServiceDocumentResponse);
 }

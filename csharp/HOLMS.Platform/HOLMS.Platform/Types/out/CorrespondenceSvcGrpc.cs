@@ -20,6 +20,7 @@ namespace HOLMS.Types.CRM.RPC {
     static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> __Marshaller_ReservationIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText> __Marshaller_PropertyConfirmationLetterText = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText> __Marshaller_PropertyCancellationLetterText = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> __Marshaller_GroupBookingIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SendConfirmationLetter = new Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         MethodType.Unary,
@@ -82,6 +83,13 @@ namespace HOLMS.Types.CRM.RPC {
         __ServiceName,
         "GetReservationFolioPrintDoc",
         __Marshaller_ReservationIndicator,
+        __Marshaller_CorrespondenceServiceDocumentResponse);
+
+    static readonly Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_GetGroupBookingFolioPrintDoc = new Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetGroupBookingFolioPrintDoc",
+        __Marshaller_GroupBookingIndicator,
         __Marshaller_CorrespondenceServiceDocumentResponse);
 
     static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_GetReservationConfirmationPrintDoc = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
@@ -147,6 +155,11 @@ namespace HOLMS.Types.CRM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetReservationFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetGroupBookingFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -349,6 +362,22 @@ namespace HOLMS.Types.CRM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationFolioPrintDoc, null, options, request);
       }
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetGroupBookingFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetGroupBookingFolioPrintDoc(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetGroupBookingFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetGroupBookingFolioPrintDoc, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetGroupBookingFolioPrintDocAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetGroupBookingFolioPrintDocAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetGroupBookingFolioPrintDocAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetGroupBookingFolioPrintDoc, null, options, request);
+      }
       public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetReservationConfirmationPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetReservationConfirmationPrintDoc(request, new CallOptions(headers, deadline, cancellationToken));
@@ -384,6 +413,7 @@ namespace HOLMS.Types.CRM.RPC {
           .AddMethod(__Method_PreviewConfirmationLetter, serviceImpl.PreviewConfirmationLetter)
           .AddMethod(__Method_PreviewCancellationEmail, serviceImpl.PreviewCancellationEmail)
           .AddMethod(__Method_GetReservationFolioPrintDoc, serviceImpl.GetReservationFolioPrintDoc)
+          .AddMethod(__Method_GetGroupBookingFolioPrintDoc, serviceImpl.GetGroupBookingFolioPrintDoc)
           .AddMethod(__Method_GetReservationConfirmationPrintDoc, serviceImpl.GetReservationConfirmationPrintDoc).Build();
     }
 
