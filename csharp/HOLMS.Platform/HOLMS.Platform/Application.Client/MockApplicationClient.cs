@@ -228,7 +228,7 @@ namespace HOLMS.Application.Client {
 
         public IncidentalItemReservationSvc.IncidentalItemReservationSvcClient IncidentalResSvc { get; }
 
-        public InventoryItemSvc.InventoryItemSvcClient InventoryItemSvc {
+        public IncidentalItemSvc.IncidentalItemSvcClient IncidentalItemSvc {
             get {
                 throw new NotImplementedException();
             }

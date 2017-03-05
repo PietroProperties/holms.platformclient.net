@@ -369,13 +369,13 @@
     <Compile Include="Types\out\IncidentalItemReservationIndicator.cs" />
     <Compile Include="Types\out\IncidentalItemReservationSvc.cs" />
     <Compile Include="Types\out\IncidentalItemReservationSvcGrpc.cs" />
+    <Compile Include="Types\out\IncidentalItemSvc.cs" />
+    <Compile Include="Types\out\IncidentalItemSvcGrpc.cs" />
     <Compile Include="Types\out\IncidentalReservationResult.cs" />
     <Compile Include="Types\out\IncidentalsSnapshotRequestResponse.cs" />
     <Compile Include="Types\out\IncidentalsSnapshotResponseRecord.cs" />
     <Compile Include="Types\out\IncidentalSupplySvc.cs" />
     <Compile Include="Types\out\IncidentalSupplySvcGrpc.cs" />
-    <Compile Include="Types\out\InventoryItemSvc.cs" />
-    <Compile Include="Types\out\InventoryItemSvcGrpc.cs" />
     <Compile Include="Types\out\ItemChargeFrequency.cs" />
     <Compile Include="Types\out\ItemHoldCreationRequest.cs" />
     <Compile Include="Types\out\ItemHoldCreationResponse.cs" />

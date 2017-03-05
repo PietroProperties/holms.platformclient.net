@@ -39,10 +39,10 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_IncidentalItemReservationRemoveItemRequest,
         __Marshaller_IncidentalReservationResult);
 
-    static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse> __Method_GetReservedInventoryForReservation = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse>(
+    static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse> __Method_GetReservedIncidentalsForReservation = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse>(
         MethodType.Unary,
         __ServiceName,
-        "GetReservedInventoryForReservation",
+        "GetReservedIncidentalsForReservation",
         __Marshaller_ReservationIndicator,
         __Marshaller_IncidentalItemReservationGetForReservationResponse);
 
@@ -70,7 +70,7 @@ namespace HOLMS.Types.Booking.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse> GetReservedInventoryForReservation(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse> GetReservedIncidentalsForReservation(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -148,21 +148,21 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DropReservation, null, options, request);
       }
-      public virtual global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse GetReservedInventoryForReservation(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse GetReservedIncidentalsForReservation(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetReservedInventoryForReservation(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetReservedIncidentalsForReservation(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse GetReservedInventoryForReservation(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
+      public virtual global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse GetReservedIncidentalsForReservation(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetReservedInventoryForReservation, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetReservedIncidentalsForReservation, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse> GetReservedInventoryForReservationAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse> GetReservedIncidentalsForReservationAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetReservedInventoryForReservationAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetReservedIncidentalsForReservationAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse> GetReservedInventoryForReservationAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.IncidentalItemReservationGetForReservationResponse> GetReservedIncidentalsForReservationAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetReservedInventoryForReservation, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetReservedIncidentalsForReservation, null, options, request);
       }
       protected override IncidentalItemReservationSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -177,7 +177,7 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_CreateReservation, serviceImpl.CreateReservation)
           .AddMethod(__Method_UpdateReservation, serviceImpl.UpdateReservation)
           .AddMethod(__Method_DropReservation, serviceImpl.DropReservation)
-          .AddMethod(__Method_GetReservedInventoryForReservation, serviceImpl.GetReservedInventoryForReservation).Build();
+          .AddMethod(__Method_GetReservedIncidentalsForReservation, serviceImpl.GetReservedIncidentalsForReservation).Build();
     }
 
   }

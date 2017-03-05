@@ -29,7 +29,7 @@ namespace HOLMS.Types.Booking.IncidentalReservations {
             "b2tpbmcvaW5kaWNhdG9ycy9yZXNlcnZhdGlvbl9pbmRpY2F0b3IucHJvdG8a",
             "KnByaW1pdGl2ZS9wYl9pbmNsdXNpdmVfb3BzZGF0ZV9yYW5nZS5wcm90bxof",
             "cHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90bxo3c3VwcGx5L2luY2lk",
-            "ZW50YWxfaXRlbXMvaW5jaWRlbnRhbF9pdGVtX2luZGljYXRvci5wcm90byLH",
+            "ZW50YWxfaXRlbXMvaW5jaWRlbnRhbF9pdGVtX2luZGljYXRvci5wcm90byLI",
             "AwoZSW5jaWRlbnRhbEl0ZW1SZXNlcnZhdGlvbhJVCgllbnRpdHlfaWQYASAB",
             "KAsyQi5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuSW5jaWRlbnRh",
             "bEl0ZW1SZXNlcnZhdGlvbkluZGljYXRvchJJCgtyZXNlcnZhdGlvbhgCIAEo",
@@ -39,14 +39,14 @@ namespace HOLMS.Types.Booking.IncidentalReservations {
             "X2l0ZW0YBCABKAsyPC5ob2xtcy50eXBlcy5zdXBwbHkuaW5jaWRlbnRhbF9p",
             "dGVtcy5JbmNpZGVudGFsSXRlbUluZGljYXRvchIXCg9hbW91bnRfcmVzZXJ2",
             "ZWQYBSABKA0SOQoKdG90YWxfY29zdBgGIAEoCzIlLmhvbG1zLnR5cGVzLnBy",
-            "aW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIbChNpbnZlbnRvcnlfaXRlbV9uYW1l",
-            "GAcgASgJQk1aHmJvb2tpbmcvaW5jaWRlbnRhbHJlc2VydmF0aW9uc6oCKkhP",
-            "TE1TLlR5cGVzLkJvb2tpbmcuSW5jaWRlbnRhbFJlc2VydmF0aW9uc2IGcHJv",
-            "dG8z"));
+            "aW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIcChRpbmNpZGVudGFsX2l0ZW1fbmFt",
+            "ZRgHIAEoCUJNWh5ib29raW5nL2luY2lkZW50YWxyZXNlcnZhdGlvbnOqAipI",
+            "T0xNUy5UeXBlcy5Cb29raW5nLkluY2lkZW50YWxSZXNlcnZhdGlvbnNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.IncidentalItemReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.IncidentalReservations.IncidentalItemReservation), global::HOLMS.Types.Booking.IncidentalReservations.IncidentalItemReservation.Parser, new[]{ "EntityId", "Reservation", "DateRange", "ReservedItem", "AmountReserved", "TotalCost", "InventoryItemName" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.IncidentalReservations.IncidentalItemReservation), global::HOLMS.Types.Booking.IncidentalReservations.IncidentalItemReservation.Parser, new[]{ "EntityId", "Reservation", "DateRange", "ReservedItem", "AmountReserved", "TotalCost", "IncidentalItemName" }, null, null, null)
           }));
     }
     #endregion
@@ -83,7 +83,7 @@ namespace HOLMS.Types.Booking.IncidentalReservations {
       ReservedItem = other.reservedItem_ != null ? other.ReservedItem.Clone() : null;
       amountReserved_ = other.amountReserved_;
       TotalCost = other.totalCost_ != null ? other.TotalCost.Clone() : null;
-      inventoryItemName_ = other.inventoryItemName_;
+      incidentalItemName_ = other.incidentalItemName_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -160,14 +160,14 @@ namespace HOLMS.Types.Booking.IncidentalReservations {
       }
     }
 
-    /// <summary>Field number for the "inventory_item_name" field.</summary>
-    public const int InventoryItemNameFieldNumber = 7;
-    private string inventoryItemName_ = "";
+    /// <summary>Field number for the "incidental_item_name" field.</summary>
+    public const int IncidentalItemNameFieldNumber = 7;
+    private string incidentalItemName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string InventoryItemName {
-      get { return inventoryItemName_; }
+    public string IncidentalItemName {
+      get { return incidentalItemName_; }
       set {
-        inventoryItemName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        incidentalItemName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -190,7 +190,7 @@ namespace HOLMS.Types.Booking.IncidentalReservations {
       if (!object.Equals(ReservedItem, other.ReservedItem)) return false;
       if (AmountReserved != other.AmountReserved) return false;
       if (!object.Equals(TotalCost, other.TotalCost)) return false;
-      if (InventoryItemName != other.InventoryItemName) return false;
+      if (IncidentalItemName != other.IncidentalItemName) return false;
       return true;
     }
 
@@ -203,7 +203,7 @@ namespace HOLMS.Types.Booking.IncidentalReservations {
       if (reservedItem_ != null) hash ^= ReservedItem.GetHashCode();
       if (AmountReserved != 0) hash ^= AmountReserved.GetHashCode();
       if (totalCost_ != null) hash ^= TotalCost.GetHashCode();
-      if (InventoryItemName.Length != 0) hash ^= InventoryItemName.GetHashCode();
+      if (IncidentalItemName.Length != 0) hash ^= IncidentalItemName.GetHashCode();
       return hash;
     }
 
@@ -238,9 +238,9 @@ namespace HOLMS.Types.Booking.IncidentalReservations {
         output.WriteRawTag(50);
         output.WriteMessage(TotalCost);
       }
-      if (InventoryItemName.Length != 0) {
+      if (IncidentalItemName.Length != 0) {
         output.WriteRawTag(58);
-        output.WriteString(InventoryItemName);
+        output.WriteString(IncidentalItemName);
       }
     }
 
@@ -265,8 +265,8 @@ namespace HOLMS.Types.Booking.IncidentalReservations {
       if (totalCost_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(TotalCost);
       }
-      if (InventoryItemName.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(InventoryItemName);
+      if (IncidentalItemName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(IncidentalItemName);
       }
       return size;
     }
@@ -309,8 +309,8 @@ namespace HOLMS.Types.Booking.IncidentalReservations {
         }
         TotalCost.MergeFrom(other.TotalCost);
       }
-      if (other.InventoryItemName.Length != 0) {
-        InventoryItemName = other.InventoryItemName;
+      if (other.IncidentalItemName.Length != 0) {
+        IncidentalItemName = other.IncidentalItemName;
       }
     }
 
@@ -362,7 +362,7 @@ namespace HOLMS.Types.Booking.IncidentalReservations {
             break;
           }
           case 58: {
-            InventoryItemName = input.ReadString();
+            IncidentalItemName = input.ReadString();
             break;
           }
         }

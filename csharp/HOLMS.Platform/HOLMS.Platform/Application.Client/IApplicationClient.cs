@@ -81,7 +81,7 @@ namespace HOLMS.Application.Client {
         #region Supply
         HoldsSvc.HoldsSvcClient HoldsSvc { get; }
         IncidentalSupplySvc.IncidentalSupplySvcClient IncidentalSupplySvc { get; }
-        InventoryItemSvc.InventoryItemSvcClient InventoryItemSvc { get; }
+        IncidentalItemSvc.IncidentalItemSvcClient IncidentalItemSvc { get; }
         PricingSvc.PricingSvcClient PricingSvc { get; }
         RateScheduleSvc.RateScheduleSvcClient RateScheduleSvc { get; }
         RoomTypeSvc.RoomTypeSvcClient RoomTypeSvc { get; }

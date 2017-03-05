@@ -116,9 +116,9 @@ message ReservationFolioSvcPostLodgingChargeCorrectionRequest {
 	bool adjustment_taken_from_guest = 4;
 }
 
-message ReservationFolioSvcPostInventoryChargeCorrectionRequest {
+message ReservationFolioSvcPostIncidentalChargeCorrectionRequest {
 	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
-	.holms.types.supply.incidental_items.IncidentalItemIndicator inventory_item = 2;
+	.holms.types.supply.incidental_items.IncidentalItemIndicator incidental_item = 2;
 	string description = 3;
 	.holms.types.primitive.MonetaryAmount adjustment_subtotal = 4;
 	bool adjustment_taken_from_guest = 5;
@@ -166,6 +166,6 @@ service ReservationFolioSvc {
 	// Charge corrections
 	rpc PostLodgingChargeCorrection (ReservationFolioSvcPostLodgingChargeCorrectionRequest)
 		returns (google.protobuf.Empty);
-	rpc PostInventoryChargeCorrection (ReservationFolioSvcPostInventoryChargeCorrectionRequest)
+	rpc PostIncidentalChargeCorrection (ReservationFolioSvcPostIncidentalChargeCorrectionRequest)
 		returns (google.protobuf.Empty);
 }

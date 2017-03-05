@@ -10,7 +10,7 @@ import "booking/pricing/price_night.proto";
 message ReservationPriceEstimate { 
 	repeated holms.types.booking.pricing.PriceNight prices = 1;
 	primitive.MonetaryAmount lodging_subtotal = 2;
-	primitive.MonetaryAmount inventory_subtotal = 3;
+	primitive.MonetaryAmount incidental_subtotal = 3;
 	primitive.MonetaryAmount taxes_subtotal = 4;
 	primitive.MonetaryAmount fees_subtotal = 5;
 	primitive.MonetaryAmount estimated_total = 6;
