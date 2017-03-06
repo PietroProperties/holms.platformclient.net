@@ -11,6 +11,7 @@ namespace HOLMS.Platform.Support.ReservationTags {
         protected const string GroupBookingCategory = "gb";
         protected const string MigratedBookingCategory = "migrated";
         protected const string OTABookingCategory = "ob";
+        protected const string TaxExemptCategory = "te";
 
         protected abstract string[] GetDescriptorPartsAfterCategory();
         protected abstract string GetCategoryDescriptor();
@@ -43,6 +44,8 @@ namespace HOLMS.Platform.Support.ReservationTags {
                     return new MigratedReservationTag();
                 case OTABookingCategory:
                     return new OTABookingTag(descriptorTokens);
+                case TaxExemptCategory:
+                    return new TaxExemptTag();
                 default:
                     throw new NotImplementedException();
             }

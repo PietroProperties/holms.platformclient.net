@@ -91,6 +91,7 @@
     <Compile Include="Support\ReservationTags\ReservationTagBase.cs" />
     <Compile Include="Support\ReservationTags\ReservationTagBaseTests.cs" />
     <Compile Include="Support\ReservationTags\ImmutableTagSet.cs" />
+    <Compile Include="Support\ReservationTags\TaxExemptTag.cs" />
     <Compile Include="Support\RestrictionAdjustment.cs" />
     <Compile Include="Support\Security\AuthenticatedClientClaims.cs" />
     <Compile Include="Support\Security\JWToken.cs" />
