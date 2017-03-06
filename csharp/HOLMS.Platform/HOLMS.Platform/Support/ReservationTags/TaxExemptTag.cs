@@ -17,7 +17,7 @@ namespace HOLMS.Platform.Support.ReservationTags {
         }
 
         protected override string[] GetDescriptorPartsAfterCategory() {
-            return new string[]
+            return new string[] { };
         }
     }
 }
