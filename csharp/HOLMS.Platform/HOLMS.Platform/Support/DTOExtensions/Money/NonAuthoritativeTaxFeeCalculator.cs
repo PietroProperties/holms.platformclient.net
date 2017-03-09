@@ -1,10 +1,7 @@
 ﻿using HOLMS.Support.Conversions;
 using HOLMS.Types.Money.Accounting;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HOLMS.Support.DTOExtensions.Money {
     public class NonAuthoritativeTaxFeeCalculator {
