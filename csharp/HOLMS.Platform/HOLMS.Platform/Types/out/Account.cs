@@ -25,19 +25,19 @@ namespace HOLMS.Types.Money.Accounting {
             "Ch5tb25leS9hY2NvdW50aW5nL2FjY291bnQucHJvdG8SHGhvbG1zLnR5cGVz",
             "Lm1vbmV5LmFjY291bnRpbmcaKG1vbmV5L2FjY291bnRpbmcvYWNjb3VudF9p",
             "bmRpY2F0b3IucHJvdG8aLm1vbmV5L2FjY291bnRpbmcvbGVkZ2VyX2FjY291",
-            "bnRfY2F0ZWdvcnkucHJvdG8itwIKB0FjY291bnQSQQoJZW50aXR5X2lkGAEg",
+            "bnRfY2F0ZWdvcnkucHJvdG8iuAIKB0FjY291bnQSQQoJZW50aXR5X2lkGAEg",
             "ASgLMi4uaG9sbXMudHlwZXMubW9uZXkuYWNjb3VudGluZy5BY2NvdW50SW5k",
             "aWNhdG9yEhYKDmFjY291bnRfbnVtYmVyGAIgASgJEhMKC2Rlc2NyaXB0aW9u",
             "GAMgASgJEk0KEGFjY291bnRfY2F0ZWdvcnkYBCABKA4yMy5ob2xtcy50eXBl",
             "cy5tb25leS5hY2NvdW50aW5nLkxlZGdlckFjY291bnRDYXRlZ29yeRIlCh1p",
             "c19wcm9ncmFtbWF0aWNhbGx5X2dlbmVyYXRlZBgFIAEoCBIdChVxdWlja2Jv",
-            "b2tzX2lkZW50aWZpZXIYBiABKAkSJwofcXVpY2tib29rc19pbnZlbnRvcnlf",
-            "aWRlbnRpZmllchgHIAEoCUIxWhBtb25leS9hY2NvdW50aW5nqgIcSE9MTVMu",
-            "VHlwZXMuTW9uZXkuQWNjb3VudGluZ2IGcHJvdG8z"));
+            "b2tzX2lkZW50aWZpZXIYBiABKAkSKAogcXVpY2tib29rc19pbmNpZGVudGFs",
+            "X2lkZW50aWZpZXIYByABKAlCMVoQbW9uZXkvYWNjb3VudGluZ6oCHEhPTE1T",
+            "LlR5cGVzLk1vbmV5LkFjY291bnRpbmdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Accounting.AccountIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.LedgerAccountCategoryReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Accounting.Account), global::HOLMS.Types.Money.Accounting.Account.Parser, new[]{ "EntityId", "AccountNumber", "Description", "AccountCategory", "IsProgrammaticallyGenerated", "QuickbooksIdentifier", "QuickbooksInventoryIdentifier" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Accounting.Account), global::HOLMS.Types.Money.Accounting.Account.Parser, new[]{ "EntityId", "AccountNumber", "Description", "AccountCategory", "IsProgrammaticallyGenerated", "QuickbooksIdentifier", "QuickbooksIncidentalIdentifier" }, null, null, null)
           }));
     }
     #endregion
@@ -74,7 +74,7 @@ namespace HOLMS.Types.Money.Accounting {
       accountCategory_ = other.accountCategory_;
       isProgrammaticallyGenerated_ = other.isProgrammaticallyGenerated_;
       quickbooksIdentifier_ = other.quickbooksIdentifier_;
-      quickbooksInventoryIdentifier_ = other.quickbooksInventoryIdentifier_;
+      quickbooksIncidentalIdentifier_ = other.quickbooksIncidentalIdentifier_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -148,14 +148,14 @@ namespace HOLMS.Types.Money.Accounting {
       }
     }
 
-    /// <summary>Field number for the "quickbooks_inventory_identifier" field.</summary>
-    public const int QuickbooksInventoryIdentifierFieldNumber = 7;
-    private string quickbooksInventoryIdentifier_ = "";
+    /// <summary>Field number for the "quickbooks_incidental_identifier" field.</summary>
+    public const int QuickbooksIncidentalIdentifierFieldNumber = 7;
+    private string quickbooksIncidentalIdentifier_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string QuickbooksInventoryIdentifier {
-      get { return quickbooksInventoryIdentifier_; }
+    public string QuickbooksIncidentalIdentifier {
+      get { return quickbooksIncidentalIdentifier_; }
       set {
-        quickbooksInventoryIdentifier_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        quickbooksIncidentalIdentifier_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -178,7 +178,7 @@ namespace HOLMS.Types.Money.Accounting {
       if (AccountCategory != other.AccountCategory) return false;
       if (IsProgrammaticallyGenerated != other.IsProgrammaticallyGenerated) return false;
       if (QuickbooksIdentifier != other.QuickbooksIdentifier) return false;
-      if (QuickbooksInventoryIdentifier != other.QuickbooksInventoryIdentifier) return false;
+      if (QuickbooksIncidentalIdentifier != other.QuickbooksIncidentalIdentifier) return false;
       return true;
     }
 
@@ -191,7 +191,7 @@ namespace HOLMS.Types.Money.Accounting {
       if (AccountCategory != 0) hash ^= AccountCategory.GetHashCode();
       if (IsProgrammaticallyGenerated != false) hash ^= IsProgrammaticallyGenerated.GetHashCode();
       if (QuickbooksIdentifier.Length != 0) hash ^= QuickbooksIdentifier.GetHashCode();
-      if (QuickbooksInventoryIdentifier.Length != 0) hash ^= QuickbooksInventoryIdentifier.GetHashCode();
+      if (QuickbooksIncidentalIdentifier.Length != 0) hash ^= QuickbooksIncidentalIdentifier.GetHashCode();
       return hash;
     }
 
@@ -226,9 +226,9 @@ namespace HOLMS.Types.Money.Accounting {
         output.WriteRawTag(50);
         output.WriteString(QuickbooksIdentifier);
       }
-      if (QuickbooksInventoryIdentifier.Length != 0) {
+      if (QuickbooksIncidentalIdentifier.Length != 0) {
         output.WriteRawTag(58);
-        output.WriteString(QuickbooksInventoryIdentifier);
+        output.WriteString(QuickbooksIncidentalIdentifier);
       }
     }
 
@@ -253,8 +253,8 @@ namespace HOLMS.Types.Money.Accounting {
       if (QuickbooksIdentifier.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(QuickbooksIdentifier);
       }
-      if (QuickbooksInventoryIdentifier.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(QuickbooksInventoryIdentifier);
+      if (QuickbooksIncidentalIdentifier.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(QuickbooksIncidentalIdentifier);
       }
       return size;
     }
@@ -285,8 +285,8 @@ namespace HOLMS.Types.Money.Accounting {
       if (other.QuickbooksIdentifier.Length != 0) {
         QuickbooksIdentifier = other.QuickbooksIdentifier;
       }
-      if (other.QuickbooksInventoryIdentifier.Length != 0) {
-        QuickbooksInventoryIdentifier = other.QuickbooksInventoryIdentifier;
+      if (other.QuickbooksIncidentalIdentifier.Length != 0) {
+        QuickbooksIncidentalIdentifier = other.QuickbooksIncidentalIdentifier;
       }
     }
 
@@ -326,7 +326,7 @@ namespace HOLMS.Types.Money.Accounting {
             break;
           }
           case 58: {
-            QuickbooksInventoryIdentifier = input.ReadString();
+            QuickbooksIncidentalIdentifier = input.ReadString();
             break;
           }
         }

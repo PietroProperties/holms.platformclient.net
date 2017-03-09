@@ -234,12 +234,6 @@ namespace HOLMS.Application.Client {
             }
         }
 
-        public IncidentalItemReservationSvc.IncidentalItemReservationSvcClient InventoryResSvc {
-            get {
-                throw new NotImplementedException();
-            }
-        }
-
         public LodgingBookingSvc.LodgingBookingSvcClient LodgingBookingSvc {
             get {
                 throw new NotImplementedException();

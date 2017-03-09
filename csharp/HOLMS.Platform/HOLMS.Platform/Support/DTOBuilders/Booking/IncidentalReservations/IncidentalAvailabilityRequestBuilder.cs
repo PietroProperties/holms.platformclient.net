@@ -4,24 +4,24 @@ using HOLMS.Types.Supply.IncidentalItems;
 
 namespace HOLMS.Support.DTOBuilders.Booking.IncidentalReservations {
     public class IncidentalAvailabilityRequestBuilder {
-        public IncidentalItemIndicator InventoryItem;
+        public IncidentalItemIndicator IncidentalItem;
         public bool IsForAmendment;
-        public IncidentalItemReservationIndicator InvResBeingAmended;
+        public IncidentalItemReservationIndicator IncidentalResBeingAmended;
         public InclusiveOpsdateRange DateRange;
 
         public IncidentalItemAvailabilityQuery Build() {
             if (IsForAmendment) {
                 return new IncidentalItemAvailabilityQuery() {
                     DateRange = DateRange.ToPB,
-                    EntityId = InvResBeingAmended,
+                    EntityId = IncidentalResBeingAmended,
                     IsForExistingIiReservation = true,
-                    ReservedItem = InventoryItem
+                    ReservedItem = IncidentalItem,
                 };
             } else {
                 return new IncidentalItemAvailabilityQuery() {
                     DateRange = DateRange.ToPB,
                     IsForExistingIiReservation = false,
-                    ReservedItem = InventoryItem
+                    ReservedItem = IncidentalItem,
                 };
             }
         }
