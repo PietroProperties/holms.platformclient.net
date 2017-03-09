@@ -19,5 +19,5 @@ message IncidentalItemReservation {
 
 	// Compted/extended properties
 	holms.types.primitive.MonetaryAmount total_cost = 6;
-	string inventory_item_name = 7;
+	string incidental_item_name = 7;
 }

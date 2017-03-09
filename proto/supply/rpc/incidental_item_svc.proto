@@ -9,13 +9,13 @@ import "google/protobuf/empty.proto";
 import "supply/incidental_items/incidental_item.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
 
-message InventoryItemSvcAllResponse {
+message IncidentalItemSvcAllResponse {
 	repeated .holms.types.supply.incidental_items.IncidentalItem items = 1;
 }
 
-service InventoryItemSvc {
+service IncidentalItemSvc {
 	rpc All(.google.protobuf.Empty) 
-		returns (InventoryItemSvcAllResponse);
+		returns (IncidentalItemSvcAllResponse);
 
 	rpc GetById(.holms.types.supply.incidental_items.IncidentalItemIndicator)
         returns (.holms.types.supply.incidental_items.IncidentalItem);

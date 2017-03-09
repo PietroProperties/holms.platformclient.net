@@ -10,7 +10,7 @@ import "booking/incidental_reservations/incidental_reservation_result.proto";
 import "booking/indicators/reservation_indicator.proto";
 
 message IncidentalItemReservationGetForReservationResponse {
-	repeated .holms.types.booking.incidental_reservations.IncidentalItemReservation inventory_reservations = 1;
+	repeated .holms.types.booking.incidental_reservations.IncidentalItemReservation incidental_reservations = 1;
 }
 
 message IncidentalItemReservationRemoveItemRequest {
@@ -28,6 +28,6 @@ service IncidentalItemReservationSvc {
 	rpc DropReservation (IncidentalItemReservationRemoveItemRequest)
 		returns (.holms.types.booking.incidental_reservations.IncidentalReservationResult);
 
-	rpc GetReservedInventoryForReservation (.holms.types.booking.indicators.ReservationIndicator)
+	rpc GetReservedIncidentalsForReservation (.holms.types.booking.indicators.ReservationIndicator)
 		returns (IncidentalItemReservationGetForReservationResponse);
 }
