@@ -497,5 +497,11 @@ namespace HOLMS.Application.Client {
                 throw new NotImplementedException();
             }
         }
+
+        public OTAChannelProviderSvc.OTAChannelProviderSvcClient OTAChannelProviderSvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
     }
 }
