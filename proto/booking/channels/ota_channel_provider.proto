@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package holms.types.booking.channels;
+option csharp_namespace = "HOLMS.Types.Booking.Channels";
+option go_package = "booking/channels";
+
+import "booking/indicators/cancellation_policy_indicator.proto";
+import "booking/channels/ota_channel_provider_indicator.proto";
+
+message OTAChannelProvider {
+	holms.types.booking.channels.OTAChannelProviderIndicator entity_id = 1;
+	string provider_name = 2;
+	string provider_code = 3;
+	bool disable_guest_correspondence = 4;
+	bool disable_correspondence_rate_table = 5;
+	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 6;
+}

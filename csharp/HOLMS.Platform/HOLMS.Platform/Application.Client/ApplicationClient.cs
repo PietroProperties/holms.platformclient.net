@@ -38,6 +38,7 @@ namespace HOLMS.Application.Client {
         public GroupBookingSvc.GroupBookingSvcClient GroupBookingSvc { get; protected set; }
         public IncidentalItemReservationSvc.IncidentalItemReservationSvcClient IncidentalResSvc { get; protected set; }
         public LodgingBookingSvc.LodgingBookingSvcClient LodgingBookingSvc { get; protected set; }
+        public OTAChannelProviderSvc.OTAChannelProviderSvcClient OTAChannelProviderSvc { get; protected set; }
         public ReservationCancellationSvc.ReservationCancellationSvcClient ResCancellationSvc { get; protected set; }
         public ReservationGuaranteeSvc.ReservationGuaranteeSvcClient ResGuaranteeSvc { get; protected set; }
         public ReservationNoteSvc.ReservationNoteSvcClient ReservationNoteSvc { get; protected set; }
@@ -220,6 +221,7 @@ namespace HOLMS.Application.Client {
             GroupBookingSvc = new GroupBookingSvc.GroupBookingSvcClient(_authenticatedChannel);
             IncidentalResSvc = new IncidentalItemReservationSvc.IncidentalItemReservationSvcClient(_authenticatedChannel);
             LodgingBookingSvc = new LodgingBookingSvc.LodgingBookingSvcClient(_authenticatedChannel);
+            OTAChannelProviderSvc = new OTAChannelProviderSvc.OTAChannelProviderSvcClient(_authenticatedChannel);
             OpenLodgingReservationSvc = new OpenLodgingReservationSvc.OpenLodgingReservationSvcClient(_authenticatedChannel);
             ResCancellationSvc = new ReservationCancellationSvc.ReservationCancellationSvcClient(_authenticatedChannel);
             ResGuaranteeSvc = new ReservationGuaranteeSvc.ReservationGuaranteeSvcClient(_authenticatedChannel);

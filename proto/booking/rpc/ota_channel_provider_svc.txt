@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+message OTAChannelProviderSvcQuery {
+	string provider_code = 1;
+}
+
+message OTAChannelProviderAllResponse {
+	repeated holms.types.booking.channels.OTAChannelProvider result = 1;
+}
+
+service OTAChannelProviderSvc {
+	rpc All(.google.protobuf.Empty) 
+		returns (CancellationPolicySvcEnumResponse);
+
+	rpc GetByProviderCode(OTAChannelProviderSvcQuery)
+		returns (.holms.types.booking.channels.OTAChannelProvider);
+
+	rpc GetById(.holms.types.booking.channels.OTAChannelProviderIndicator)
+		returns (.holms.types.booking.channels.OTAChannelProvider);
+
+	rpc Create(.holms.types.booking.OTAChannelProvider) 
+		returns (.holms.types.booking.channels.OTAChannelProvider);
+
+	rpc Update(.holms.types.booking.OTAChannelProvider) 
+		returns (.holms.types.booking.channels.OTAChannelProvider);
+
+	rpc Delete(.holms.types.booking.OTAChannelProvider) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}

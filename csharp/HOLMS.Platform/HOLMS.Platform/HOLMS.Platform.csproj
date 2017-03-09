@@ -105,6 +105,8 @@
     <Compile Include="Support\Time\OpsDateConversions.cs" />
     <Compile Include="Types\Extensions\Booking\CancellationPolicy.cs" />
     <Compile Include="Types\Extensions\Booking\CancellationReason.cs" />
+    <Compile Include="Types\Extensions\Booking\Channels\OTAChannelProvider.cs" />
+    <Compile Include="Types\Extensions\Booking\Channels\OTAChannelProviderIndicator.cs" />
     <Compile Include="Types\Extensions\Booking\Channels\TravelAgent.cs" />
     <Compile Include="Types\Extensions\Booking\History\HistoryEvent.cs" />
     <Compile Include="Types\Extensions\Booking\IncidentalReservations\IncidentalItemReservation.cs" />
@@ -421,6 +423,10 @@
     <Compile Include="Types\out\OpenLodgingReservationSvc.cs" />
     <Compile Include="Types\out\OpenLodgingReservationSvcGrpc.cs" />
     <Compile Include="Types\out\OpenPriceEstimateRequest.cs" />
+    <Compile Include="Types\out\OtaChannelProvider.cs" />
+    <Compile Include="Types\out\OtaChannelProviderIndicator.cs" />
+    <Compile Include="Types\out\OtaChannelProviderSvc.cs" />
+    <Compile Include="Types\out\OtaChannelProviderSvcGrpc.cs" />
     <Compile Include="Types\out\OtaSyncSvc.cs" />
     <Compile Include="Types\out\OtaSyncSvcGrpc.cs" />
     <Compile Include="Types\out\OutOfOrderRecord.cs" />

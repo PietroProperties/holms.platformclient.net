@@ -26,6 +26,7 @@ namespace HOLMS.Application.Client {
         IncidentalItemReservationSvc.IncidentalItemReservationSvcClient IncidentalResSvc { get; }
         LodgingBookingSvc.LodgingBookingSvcClient LodgingBookingSvc { get; }
         OpenLodgingReservationSvc.OpenLodgingReservationSvcClient OpenLodgingReservationSvc { get; }
+        OTAChannelProviderSvc.OTAChannelProviderSvcClient OTAChannelProviderSvc { get; }
         ReservationCancellationSvc.ReservationCancellationSvcClient ResCancellationSvc { get; }
         ReservationNoteSvc.ReservationNoteSvcClient ReservationNoteSvc { get; }
         ReservationGuaranteeSvc.ReservationGuaranteeSvcClient ResGuaranteeSvc { get; }
