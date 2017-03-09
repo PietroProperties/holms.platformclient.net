@@ -14,5 +14,5 @@ message Account {
 	LedgerAccountCategory account_category = 4;
 	bool is_programmatically_generated = 5;
 	string quickbooks_identifier = 6;
-	string quickbooks_inventory_identifier = 7;
+	string quickbooks_incidental_identifier = 7;
 }
