@@ -146,6 +146,21 @@ message ReservationFolioSvcVoidAuthorizationResponse {
 	ReservationFolioSvcVoidAuthorizationResult result = 1;
 }
 
+message ReservationFolioSvcPaymentCardRefundRequest {
+	holms.types.primitive.MonetaryAmount amount = 1;
+	holms.types.money.cards.PaymentCardIndicator card = 2;
+}
+
+enum ReservationFolioSvcRefundResult {
+	RESERVATION_FOLIO_SVC_REFUND_SUCCESS = 0;
+	RESERVATION_FOLIO_SVC_REFUND_EXCEEDS_LIMIT = 1;
+	RESERVATION_FOLIO_SVC_REFUND_UNKNOWN_FAILURE = 2;
+}
+
+message ReservationFolioSvcRefundResponse {
+	ReservationFolioSvcRefundResult result = 1;
+}
+
 service ReservationFolioSvc {
 	rpc GetFolioState(.holms.types.booking.indicators.ReservationIndicator)
 		returns(ReservationFolioSvcGetFolioStateResponse);
@@ -177,4 +192,7 @@ service ReservationFolioSvc {
 		returns (google.protobuf.Empty);
 	rpc PostMiscChargeCorrection (ReservationFolioSvcPostMiscChargeCorrectionRequest)
 		returns (google.protobuf.Empty);
+
+	rpc RefundTokenizedCard(ReservationFolioSvcPaymentCardRefundRequest)
+		returns (ReservationFolioSvcRefundResponse);
 }

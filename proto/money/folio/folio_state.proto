@@ -8,14 +8,17 @@ import "primitive/monetary_amount.proto";
 import "money/folio/posted_card_authorization.proto";
 import "money/folio/posted_charge_credit.proto";
 import "money/folio/posted_payment.proto";
+import "money/folio/posted_refund.proto";
 
 message FolioState {
 	repeated PostedChargeCredit charge_credits = 1;
 	repeated PostedCardAuthorization card_authorizations = 2;
 	repeated PostedPayment payments = 3;
+	repeated PostedRefund refunds = 4;
 
-	.holms.types.primitive.MonetaryAmount gross_payments = 4;
-	.holms.types.primitive.MonetaryAmount available_payment_authorization_balance = 5;
-	.holms.types.primitive.MonetaryAmount available_guarantee_authorization_balance = 6;
+	.holms.types.primitive.MonetaryAmount gross_payments = 5;
+	.holms.types.primitive.MonetaryAmount gross_refunds = 6;
+	.holms.types.primitive.MonetaryAmount available_payment_authorization_balance = 7;
+	.holms.types.primitive.MonetaryAmount available_guarantee_authorization_balance = 8;
 }
 
