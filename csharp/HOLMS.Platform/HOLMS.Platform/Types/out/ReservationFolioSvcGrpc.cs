@@ -31,6 +31,8 @@ namespace HOLMS.Types.Money.RPC {
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostIncidentalChargeCorrectionRequest> __Marshaller_ReservationFolioSvcPostIncidentalChargeCorrectionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostIncidentalChargeCorrectionRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest> __Marshaller_ReservationFolioSvcPostMiscChargeCorrectionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPaymentCardRefundRequest> __Marshaller_ReservationFolioSvcPaymentCardRefundRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.ReservationFolioSvcPaymentCardRefundRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.ReservationFolioSvcRefundResponse> __Marshaller_ReservationFolioSvcRefundResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.ReservationFolioSvcRefundResponse.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Money.RPC.ReservationFolioSvcGetFolioStateResponse> __Method_GetFolioState = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Money.RPC.ReservationFolioSvcGetFolioStateResponse>(
         MethodType.Unary,
@@ -116,6 +118,13 @@ namespace HOLMS.Types.Money.RPC {
         __Marshaller_ReservationFolioSvcPostMiscChargeCorrectionRequest,
         __Marshaller_Empty);
 
+    static readonly Method<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPaymentCardRefundRequest, global::HOLMS.Types.Money.RPC.ReservationFolioSvcRefundResponse> __Method_RefundTokenizedCard = new Method<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPaymentCardRefundRequest, global::HOLMS.Types.Money.RPC.ReservationFolioSvcRefundResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "RefundTokenizedCard",
+        __Marshaller_ReservationFolioSvcPaymentCardRefundRequest,
+        __Marshaller_ReservationFolioSvcRefundResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -190,6 +199,11 @@ namespace HOLMS.Types.Money.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> PostMiscChargeCorrection(global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.ReservationFolioSvcRefundResponse> RefundTokenizedCard(global::HOLMS.Types.Money.RPC.ReservationFolioSvcPaymentCardRefundRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -447,6 +461,22 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostMiscChargeCorrection, null, options, request);
       }
+      public virtual global::HOLMS.Types.Money.RPC.ReservationFolioSvcRefundResponse RefundTokenizedCard(global::HOLMS.Types.Money.RPC.ReservationFolioSvcPaymentCardRefundRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return RefundTokenizedCard(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Money.RPC.ReservationFolioSvcRefundResponse RefundTokenizedCard(global::HOLMS.Types.Money.RPC.ReservationFolioSvcPaymentCardRefundRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RefundTokenizedCard, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.ReservationFolioSvcRefundResponse> RefundTokenizedCardAsync(global::HOLMS.Types.Money.RPC.ReservationFolioSvcPaymentCardRefundRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return RefundTokenizedCardAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.ReservationFolioSvcRefundResponse> RefundTokenizedCardAsync(global::HOLMS.Types.Money.RPC.ReservationFolioSvcPaymentCardRefundRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RefundTokenizedCard, null, options, request);
+      }
       protected override ReservationFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new ReservationFolioSvcClient(configuration);
@@ -468,7 +498,8 @@ namespace HOLMS.Types.Money.RPC {
           .AddMethod(__Method_PostCashPayment, serviceImpl.PostCashPayment)
           .AddMethod(__Method_PostLodgingChargeCorrection, serviceImpl.PostLodgingChargeCorrection)
           .AddMethod(__Method_PostIncidentalChargeCorrection, serviceImpl.PostIncidentalChargeCorrection)
-          .AddMethod(__Method_PostMiscChargeCorrection, serviceImpl.PostMiscChargeCorrection).Build();
+          .AddMethod(__Method_PostMiscChargeCorrection, serviceImpl.PostMiscChargeCorrection)
+          .AddMethod(__Method_RefundTokenizedCard, serviceImpl.RefundTokenizedCard).Build();
     }
 
   }

@@ -26,22 +26,26 @@ namespace HOLMS.Types.Money.Folio {
             "bW9uZXkuZm9saW8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8a",
             "K21vbmV5L2ZvbGlvL3Bvc3RlZF9jYXJkX2F1dGhvcml6YXRpb24ucHJvdG8a",
             "Jm1vbmV5L2ZvbGlvL3Bvc3RlZF9jaGFyZ2VfY3JlZGl0LnByb3RvGiBtb25l",
-            "eS9mb2xpby9wb3N0ZWRfcGF5bWVudC5wcm90byLLAwoKRm9saW9TdGF0ZRJD",
-            "Cg5jaGFyZ2VfY3JlZGl0cxgBIAMoCzIrLmhvbG1zLnR5cGVzLm1vbmV5LmZv",
-            "bGlvLlBvc3RlZENoYXJnZUNyZWRpdBJNChNjYXJkX2F1dGhvcml6YXRpb25z",
-            "GAIgAygLMjAuaG9sbXMudHlwZXMubW9uZXkuZm9saW8uUG9zdGVkQ2FyZEF1",
-            "dGhvcml6YXRpb24SOAoIcGF5bWVudHMYAyADKAsyJi5ob2xtcy50eXBlcy5t",
-            "b25leS5mb2xpby5Qb3N0ZWRQYXltZW50Ej0KDmdyb3NzX3BheW1lbnRzGAQg",
-            "ASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50ElYK",
-            "J2F2YWlsYWJsZV9wYXltZW50X2F1dGhvcml6YXRpb25fYmFsYW5jZRgFIAEo",
-            "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJYCilh",
-            "dmFpbGFibGVfZ3VhcmFudGVlX2F1dGhvcml6YXRpb25fYmFsYW5jZRgGIAEo",
-            "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudEInWgtt",
-            "b25leS9mb2xpb6oCF0hPTE1TLlR5cGVzLk1vbmV5LkZvbGlvYgZwcm90bzM="));
+            "eS9mb2xpby9wb3N0ZWRfcGF5bWVudC5wcm90bxofbW9uZXkvZm9saW8vcG9z",
+            "dGVkX3JlZnVuZC5wcm90byLBBAoKRm9saW9TdGF0ZRJDCg5jaGFyZ2VfY3Jl",
+            "ZGl0cxgBIAMoCzIrLmhvbG1zLnR5cGVzLm1vbmV5LmZvbGlvLlBvc3RlZENo",
+            "YXJnZUNyZWRpdBJNChNjYXJkX2F1dGhvcml6YXRpb25zGAIgAygLMjAuaG9s",
+            "bXMudHlwZXMubW9uZXkuZm9saW8uUG9zdGVkQ2FyZEF1dGhvcml6YXRpb24S",
+            "OAoIcGF5bWVudHMYAyADKAsyJi5ob2xtcy50eXBlcy5tb25leS5mb2xpby5Q",
+            "b3N0ZWRQYXltZW50EjYKB3JlZnVuZHMYBCADKAsyJS5ob2xtcy50eXBlcy5t",
+            "b25leS5mb2xpby5Qb3N0ZWRSZWZ1bmQSPQoOZ3Jvc3NfcGF5bWVudHMYBSAB",
+            "KAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSPAoN",
+            "Z3Jvc3NfcmVmdW5kcxgGIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5N",
+            "b25ldGFyeUFtb3VudBJWCidhdmFpbGFibGVfcGF5bWVudF9hdXRob3JpemF0",
+            "aW9uX2JhbGFuY2UYByABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9u",
+            "ZXRhcnlBbW91bnQSWAopYXZhaWxhYmxlX2d1YXJhbnRlZV9hdXRob3JpemF0",
+            "aW9uX2JhbGFuY2UYCCABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9u",
+            "ZXRhcnlBbW91bnRCJ1oLbW9uZXkvZm9saW+qAhdIT0xNUy5UeXBlcy5Nb25l",
+            "eS5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedCardAuthorizationReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedPaymentReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedCardAuthorizationReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedPaymentReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedRefundReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.FolioState), global::HOLMS.Types.Money.Folio.FolioState.Parser, new[]{ "ChargeCredits", "CardAuthorizations", "Payments", "GrossPayments", "AvailablePaymentAuthorizationBalance", "AvailableGuaranteeAuthorizationBalance" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.FolioState), global::HOLMS.Types.Money.Folio.FolioState.Parser, new[]{ "ChargeCredits", "CardAuthorizations", "Payments", "Refunds", "GrossPayments", "GrossRefunds", "AvailablePaymentAuthorizationBalance", "AvailableGuaranteeAuthorizationBalance" }, null, null, null)
           }));
     }
     #endregion
@@ -75,7 +79,9 @@ namespace HOLMS.Types.Money.Folio {
       chargeCredits_ = other.chargeCredits_.Clone();
       cardAuthorizations_ = other.cardAuthorizations_.Clone();
       payments_ = other.payments_.Clone();
+      refunds_ = other.refunds_.Clone();
       GrossPayments = other.grossPayments_ != null ? other.GrossPayments.Clone() : null;
+      GrossRefunds = other.grossRefunds_ != null ? other.GrossRefunds.Clone() : null;
       AvailablePaymentAuthorizationBalance = other.availablePaymentAuthorizationBalance_ != null ? other.AvailablePaymentAuthorizationBalance.Clone() : null;
       AvailableGuaranteeAuthorizationBalance = other.availableGuaranteeAuthorizationBalance_ != null ? other.AvailableGuaranteeAuthorizationBalance.Clone() : null;
     }
@@ -115,8 +121,18 @@ namespace HOLMS.Types.Money.Folio {
       get { return payments_; }
     }
 
+    /// <summary>Field number for the "refunds" field.</summary>
+    public const int RefundsFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Folio.PostedRefund> _repeated_refunds_codec
+        = pb::FieldCodec.ForMessage(34, global::HOLMS.Types.Money.Folio.PostedRefund.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Folio.PostedRefund> refunds_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Folio.PostedRefund>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Money.Folio.PostedRefund> Refunds {
+      get { return refunds_; }
+    }
+
     /// <summary>Field number for the "gross_payments" field.</summary>
-    public const int GrossPaymentsFieldNumber = 4;
+    public const int GrossPaymentsFieldNumber = 5;
     private global::HOLMS.Types.Primitive.MonetaryAmount grossPayments_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.MonetaryAmount GrossPayments {
@@ -126,8 +142,19 @@ namespace HOLMS.Types.Money.Folio {
       }
     }
 
+    /// <summary>Field number for the "gross_refunds" field.</summary>
+    public const int GrossRefundsFieldNumber = 6;
+    private global::HOLMS.Types.Primitive.MonetaryAmount grossRefunds_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount GrossRefunds {
+      get { return grossRefunds_; }
+      set {
+        grossRefunds_ = value;
+      }
+    }
+
     /// <summary>Field number for the "available_payment_authorization_balance" field.</summary>
-    public const int AvailablePaymentAuthorizationBalanceFieldNumber = 5;
+    public const int AvailablePaymentAuthorizationBalanceFieldNumber = 7;
     private global::HOLMS.Types.Primitive.MonetaryAmount availablePaymentAuthorizationBalance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.MonetaryAmount AvailablePaymentAuthorizationBalance {
@@ -138,7 +165,7 @@ namespace HOLMS.Types.Money.Folio {
     }
 
     /// <summary>Field number for the "available_guarantee_authorization_balance" field.</summary>
-    public const int AvailableGuaranteeAuthorizationBalanceFieldNumber = 6;
+    public const int AvailableGuaranteeAuthorizationBalanceFieldNumber = 8;
     private global::HOLMS.Types.Primitive.MonetaryAmount availableGuaranteeAuthorizationBalance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.MonetaryAmount AvailableGuaranteeAuthorizationBalance {
@@ -164,7 +191,9 @@ namespace HOLMS.Types.Money.Folio {
       if(!chargeCredits_.Equals(other.chargeCredits_)) return false;
       if(!cardAuthorizations_.Equals(other.cardAuthorizations_)) return false;
       if(!payments_.Equals(other.payments_)) return false;
+      if(!refunds_.Equals(other.refunds_)) return false;
       if (!object.Equals(GrossPayments, other.GrossPayments)) return false;
+      if (!object.Equals(GrossRefunds, other.GrossRefunds)) return false;
       if (!object.Equals(AvailablePaymentAuthorizationBalance, other.AvailablePaymentAuthorizationBalance)) return false;
       if (!object.Equals(AvailableGuaranteeAuthorizationBalance, other.AvailableGuaranteeAuthorizationBalance)) return false;
       return true;
@@ -176,7 +205,9 @@ namespace HOLMS.Types.Money.Folio {
       hash ^= chargeCredits_.GetHashCode();
       hash ^= cardAuthorizations_.GetHashCode();
       hash ^= payments_.GetHashCode();
+      hash ^= refunds_.GetHashCode();
       if (grossPayments_ != null) hash ^= GrossPayments.GetHashCode();
+      if (grossRefunds_ != null) hash ^= GrossRefunds.GetHashCode();
       if (availablePaymentAuthorizationBalance_ != null) hash ^= AvailablePaymentAuthorizationBalance.GetHashCode();
       if (availableGuaranteeAuthorizationBalance_ != null) hash ^= AvailableGuaranteeAuthorizationBalance.GetHashCode();
       return hash;
@@ -192,16 +223,21 @@ namespace HOLMS.Types.Money.Folio {
       chargeCredits_.WriteTo(output, _repeated_chargeCredits_codec);
       cardAuthorizations_.WriteTo(output, _repeated_cardAuthorizations_codec);
       payments_.WriteTo(output, _repeated_payments_codec);
+      refunds_.WriteTo(output, _repeated_refunds_codec);
       if (grossPayments_ != null) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(42);
         output.WriteMessage(GrossPayments);
       }
+      if (grossRefunds_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(GrossRefunds);
+      }
       if (availablePaymentAuthorizationBalance_ != null) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(58);
         output.WriteMessage(AvailablePaymentAuthorizationBalance);
       }
       if (availableGuaranteeAuthorizationBalance_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(66);
         output.WriteMessage(AvailableGuaranteeAuthorizationBalance);
       }
     }
@@ -212,8 +248,12 @@ namespace HOLMS.Types.Money.Folio {
       size += chargeCredits_.CalculateSize(_repeated_chargeCredits_codec);
       size += cardAuthorizations_.CalculateSize(_repeated_cardAuthorizations_codec);
       size += payments_.CalculateSize(_repeated_payments_codec);
+      size += refunds_.CalculateSize(_repeated_refunds_codec);
       if (grossPayments_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GrossPayments);
+      }
+      if (grossRefunds_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GrossRefunds);
       }
       if (availablePaymentAuthorizationBalance_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AvailablePaymentAuthorizationBalance);
@@ -232,11 +272,18 @@ namespace HOLMS.Types.Money.Folio {
       chargeCredits_.Add(other.chargeCredits_);
       cardAuthorizations_.Add(other.cardAuthorizations_);
       payments_.Add(other.payments_);
+      refunds_.Add(other.refunds_);
       if (other.grossPayments_ != null) {
         if (grossPayments_ == null) {
           grossPayments_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
         GrossPayments.MergeFrom(other.GrossPayments);
+      }
+      if (other.grossRefunds_ != null) {
+        if (grossRefunds_ == null) {
+          grossRefunds_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        GrossRefunds.MergeFrom(other.GrossRefunds);
       }
       if (other.availablePaymentAuthorizationBalance_ != null) {
         if (availablePaymentAuthorizationBalance_ == null) {
@@ -273,20 +320,31 @@ namespace HOLMS.Types.Money.Folio {
             break;
           }
           case 34: {
+            refunds_.AddEntriesFrom(input, _repeated_refunds_codec);
+            break;
+          }
+          case 42: {
             if (grossPayments_ == null) {
               grossPayments_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(grossPayments_);
             break;
           }
-          case 42: {
+          case 50: {
+            if (grossRefunds_ == null) {
+              grossRefunds_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(grossRefunds_);
+            break;
+          }
+          case 58: {
             if (availablePaymentAuthorizationBalance_ == null) {
               availablePaymentAuthorizationBalance_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(availablePaymentAuthorizationBalance_);
             break;
           }
-          case 50: {
+          case 66: {
             if (availableGuaranteeAuthorizationBalance_ == null) {
               availableGuaranteeAuthorizationBalance_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
