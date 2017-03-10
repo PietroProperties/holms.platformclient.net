@@ -147,8 +147,9 @@ message ReservationFolioSvcVoidAuthorizationResponse {
 }
 
 message ReservationFolioSvcPaymentCardRefundRequest {
-	holms.types.primitive.MonetaryAmount amount = 1;
-	holms.types.money.cards.PaymentCardIndicator card = 2;
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	holms.types.primitive.MonetaryAmount amount = 2;
+	holms.types.money.cards.PaymentCardIndicator card = 3;
 }
 
 enum ReservationFolioSvcRefundResult {
