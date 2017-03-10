@@ -18,4 +18,5 @@ message CardMerchant {
 	string username = 8;
 	string password = 9;
 	string service_u_r_i = 10;
+	bool debug_logging_enabled = 11;
 }

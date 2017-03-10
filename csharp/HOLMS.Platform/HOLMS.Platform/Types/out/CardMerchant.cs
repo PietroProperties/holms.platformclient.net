@@ -25,19 +25,19 @@ namespace HOLMS.Types.Money.Cards {
             "Ch9tb25leS9jYXJkcy9jYXJkX21lcmNoYW50LnByb3RvEhdob2xtcy50eXBl",
             "cy5tb25leS5jYXJkcxopbW9uZXkvY2FyZHMvY2FyZF9tZXJjaGFudF9pbmRp",
             "Y2F0b3IucHJvdG8aKm1vbmV5L2NhcmRzL2NhcmRfcHJvY2Vzc29yX2luZGlj",
-            "YXRvci5wcm90byKzAgoMQ2FyZE1lcmNoYW50EkEKCWVudGl0eV9pZBgBIAEo",
+            "YXRvci5wcm90byLSAgoMQ2FyZE1lcmNoYW50EkEKCWVudGl0eV9pZBgBIAEo",
             "CzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRNZXJjaGFudEluZGlj",
             "YXRvchIMCgRuYW1lGAIgASgJEkcKDmNhcmRfcHJvY2Vzc29yGAMgASgOMi8u",
             "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZFByb2Nlc3NvckluZGljYXRv",
             "chIWCg5jYXJkX2FncmVlbWVudBgEIAEoCRISCgpsaWNlbnNlX2lkGAUgASgF",
             "Eg8KB3NpdGVfaWQYBiABKAUSEQoJZGV2aWNlX2lkGAcgASgFEhAKCHVzZXJu",
             "YW1lGAggASgJEhAKCHBhc3N3b3JkGAkgASgJEhUKDXNlcnZpY2VfdV9yX2kY",
-            "CiABKAlCJ1oLbW9uZXkvY2FyZHOqAhdIT0xNUy5UeXBlcy5Nb25leS5DYXJk",
-            "c2IGcHJvdG8z"));
+            "CiABKAkSHQoVZGVidWdfbG9nZ2luZ19lbmFibGVkGAsgASgIQidaC21vbmV5",
+            "L2NhcmRzqgIXSE9MTVMuVHlwZXMuTW9uZXkuQ2FyZHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardProcessorIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.CardMerchant), global::HOLMS.Types.Money.Cards.CardMerchant.Parser, new[]{ "EntityId", "Name", "CardProcessor", "CardAgreement", "LicenseId", "SiteId", "DeviceId", "Username", "Password", "ServiceURI" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.CardMerchant), global::HOLMS.Types.Money.Cards.CardMerchant.Parser, new[]{ "EntityId", "Name", "CardProcessor", "CardAgreement", "LicenseId", "SiteId", "DeviceId", "Username", "Password", "ServiceURI", "DebugLoggingEnabled" }, null, null, null)
           }));
     }
     #endregion
@@ -78,6 +78,7 @@ namespace HOLMS.Types.Money.Cards {
       username_ = other.username_;
       password_ = other.password_;
       serviceURI_ = other.serviceURI_;
+      debugLoggingEnabled_ = other.debugLoggingEnabled_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -195,6 +196,17 @@ namespace HOLMS.Types.Money.Cards {
       }
     }
 
+    /// <summary>Field number for the "debug_logging_enabled" field.</summary>
+    public const int DebugLoggingEnabledFieldNumber = 11;
+    private bool debugLoggingEnabled_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool DebugLoggingEnabled {
+      get { return debugLoggingEnabled_; }
+      set {
+        debugLoggingEnabled_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CardMerchant);
@@ -218,6 +230,7 @@ namespace HOLMS.Types.Money.Cards {
       if (Username != other.Username) return false;
       if (Password != other.Password) return false;
       if (ServiceURI != other.ServiceURI) return false;
+      if (DebugLoggingEnabled != other.DebugLoggingEnabled) return false;
       return true;
     }
 
@@ -234,6 +247,7 @@ namespace HOLMS.Types.Money.Cards {
       if (Username.Length != 0) hash ^= Username.GetHashCode();
       if (Password.Length != 0) hash ^= Password.GetHashCode();
       if (ServiceURI.Length != 0) hash ^= ServiceURI.GetHashCode();
+      if (DebugLoggingEnabled != false) hash ^= DebugLoggingEnabled.GetHashCode();
       return hash;
     }
 
@@ -284,6 +298,10 @@ namespace HOLMS.Types.Money.Cards {
         output.WriteRawTag(82);
         output.WriteString(ServiceURI);
       }
+      if (DebugLoggingEnabled != false) {
+        output.WriteRawTag(88);
+        output.WriteBool(DebugLoggingEnabled);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -318,6 +336,9 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (ServiceURI.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ServiceURI);
+      }
+      if (DebugLoggingEnabled != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -359,6 +380,9 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (other.ServiceURI.Length != 0) {
         ServiceURI = other.ServiceURI;
+      }
+      if (other.DebugLoggingEnabled != false) {
+        DebugLoggingEnabled = other.DebugLoggingEnabled;
       }
     }
 
@@ -411,6 +435,10 @@ namespace HOLMS.Types.Money.Cards {
           }
           case 82: {
             ServiceURI = input.ReadString();
+            break;
+          }
+          case 88: {
+            DebugLoggingEnabled = input.ReadBool();
             break;
           }
         }
