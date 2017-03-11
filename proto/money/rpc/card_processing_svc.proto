@@ -11,6 +11,7 @@ import "money/cards/merchant_capture.proto";
 import "money/cards/merchant_capture_indicator.proto";
 import "money/cards/merchant_batch.proto";
 import "money/cards/payment_card_verification_request.proto";
+import "money/cards/payment_card_indicator.proto";
 import "money/cards/processor_transaction_result.proto";
 
 message CardProcessingSvcCaptureEnumResponse {
@@ -34,6 +35,7 @@ enum CardProcessingSvcCancelPendingCaptureResult {
 
 message CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse {
 	.holms.types.money.cards.ProcessorTransactionResult result = 1;
+	.holms.types.money.cards.PaymentCardIndicator tokenized_card = 2;
 }
 
 service CardProcessingSvc {
