@@ -30,34 +30,52 @@ namespace HOLMS.Types.Booking.RPC {
             "b25maXJtYXRpb24ucHJvdG8iMwoaT1RBQ2hhbm5lbFByb3ZpZGVyU3ZjUXVl",
             "cnkSFQoNcHJvdmlkZXJfY29kZRgBIAEoCSJhCh1PVEFDaGFubmVsUHJvdmlk",
             "ZXJBbGxSZXNwb25zZRJACgZyZXN1bHQYASADKAsyMC5ob2xtcy50eXBlcy5i",
-            "b29raW5nLmNoYW5uZWxzLk9UQUNoYW5uZWxQcm92aWRlcjKrBQoVT1RBQ2hh",
-            "bm5lbFByb3ZpZGVyU3ZjElUKA0FsbBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
-            "eRo2LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLk9UQUNoYW5uZWxQcm92aWRl",
-            "ckFsbFJlc3BvbnNlEnoKEUdldEJ5UHJvdmlkZXJDb2RlEjMuaG9sbXMudHlw",
-            "ZXMuYm9va2luZy5ycGMuT1RBQ2hhbm5lbFByb3ZpZGVyU3ZjUXVlcnkaMC5o",
-            "b2xtcy50eXBlcy5ib29raW5nLmNoYW5uZWxzLk9UQUNoYW5uZWxQcm92aWRl",
-            "chJ2CgdHZXRCeUlkEjkuaG9sbXMudHlwZXMuYm9va2luZy5jaGFubmVscy5P",
-            "VEFDaGFubmVsUHJvdmlkZXJJbmRpY2F0b3IaMC5ob2xtcy50eXBlcy5ib29r",
-            "aW5nLmNoYW5uZWxzLk9UQUNoYW5uZWxQcm92aWRlchJsCgZDcmVhdGUSMC5o",
-            "b2xtcy50eXBlcy5ib29raW5nLmNoYW5uZWxzLk9UQUNoYW5uZWxQcm92aWRl",
-            "chowLmhvbG1zLnR5cGVzLmJvb2tpbmcuY2hhbm5lbHMuT1RBQ2hhbm5lbFBy",
-            "b3ZpZGVyEmwKBlVwZGF0ZRIwLmhvbG1zLnR5cGVzLmJvb2tpbmcuY2hhbm5l",
-            "bHMuT1RBQ2hhbm5lbFByb3ZpZGVyGjAuaG9sbXMudHlwZXMuYm9va2luZy5j",
-            "aGFubmVscy5PVEFDaGFubmVsUHJvdmlkZXISawoGRGVsZXRlEjAuaG9sbXMu",
-            "dHlwZXMuYm9va2luZy5jaGFubmVscy5PVEFDaGFubmVsUHJvdmlkZXIaLy5o",
-            "b2xtcy50eXBlcy5wcmltaXRpdmUuU2VydmVyQWN0aW9uQ29uZmlybWF0aW9u",
-            "QidaC2Jvb2tpbmcvcnBjqgIXSE9MTVMuVHlwZXMuQm9va2luZy5SUENiBnBy",
-            "b3RvMw=="));
+            "b29raW5nLmNoYW5uZWxzLk9UQUNoYW5uZWxQcm92aWRlciKtAQodT1RBQ2hh",
+            "bm5lbFByb3ZpZGVyU3ZjUmVzcG9uc2USSAoGcmVzdWx0GAEgASgOMjguaG9s",
+            "bXMudHlwZXMuYm9va2luZy5ycGMuT1RBQ2hhbm5lbFByb3ZpZGVyU3ZjQ1JV",
+            "RFJlc3VsdBJCCghwcm92aWRlchgCIAEoCzIwLmhvbG1zLnR5cGVzLmJvb2tp",
+            "bmcuY2hhbm5lbHMuT1RBQ2hhbm5lbFByb3ZpZGVyKs4BCh9PVEFDaGFubmVs",
+            "UHJvdmlkZXJTdmNDUlVEUmVzdWx0EjAKLE9UQV9DSEFOTkVMX1BST1ZJREVS",
+            "X1NWQ19DUlVEX1JFU1VMVF9TVUNDRVNTEAASQAo8T1RBX0NIQU5ORUxfUFJP",
+            "VklERVJfU1ZDX0NSVURfUkVTVUxUX0RVUExJQ0FURV9QUk9WSURFUl9DT0RF",
+            "EAESNwozT1RBX0NIQU5ORUxfUFJPVklERVJfU1ZDX0NSVURfUkVTVUxUX1VO",
+            "S09XTl9GQUlMVVJFEAIytwUKFU9UQUNoYW5uZWxQcm92aWRlclN2YxJVCgNB",
+            "bGwSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaNi5ob2xtcy50eXBlcy5ib29r",
+            "aW5nLnJwYy5PVEFDaGFubmVsUHJvdmlkZXJBbGxSZXNwb25zZRJ6ChFHZXRC",
+            "eVByb3ZpZGVyQ29kZRIzLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLk9UQUNo",
+            "YW5uZWxQcm92aWRlclN2Y1F1ZXJ5GjAuaG9sbXMudHlwZXMuYm9va2luZy5j",
+            "aGFubmVscy5PVEFDaGFubmVsUHJvdmlkZXISdgoHR2V0QnlJZBI5LmhvbG1z",
+            "LnR5cGVzLmJvb2tpbmcuY2hhbm5lbHMuT1RBQ2hhbm5lbFByb3ZpZGVySW5k",
+            "aWNhdG9yGjAuaG9sbXMudHlwZXMuYm9va2luZy5jaGFubmVscy5PVEFDaGFu",
+            "bmVsUHJvdmlkZXIScgoGQ3JlYXRlEjAuaG9sbXMudHlwZXMuYm9va2luZy5j",
+            "aGFubmVscy5PVEFDaGFubmVsUHJvdmlkZXIaNi5ob2xtcy50eXBlcy5ib29r",
+            "aW5nLnJwYy5PVEFDaGFubmVsUHJvdmlkZXJTdmNSZXNwb25zZRJyCgZVcGRh",
+            "dGUSMC5ob2xtcy50eXBlcy5ib29raW5nLmNoYW5uZWxzLk9UQUNoYW5uZWxQ",
+            "cm92aWRlcho2LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLk9UQUNoYW5uZWxQ",
+            "cm92aWRlclN2Y1Jlc3BvbnNlEmsKBkRlbGV0ZRIwLmhvbG1zLnR5cGVzLmJv",
+            "b2tpbmcuY2hhbm5lbHMuT1RBQ2hhbm5lbFByb3ZpZGVyGi8uaG9sbXMudHlw",
+            "ZXMucHJpbWl0aXZlLlNlcnZlckFjdGlvbkNvbmZpcm1hdGlvbkInWgtib29r",
+            "aW5nL3JwY6oCF0hPTE1TLlR5cGVzLkJvb2tpbmcuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Booking.Channels.OtaChannelProviderIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.OtaChannelProviderReflection.Descriptor, global::HOLMS.Types.Primitive.ServerActionConfirmationReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcCRUDResult), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcQuery), global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcQuery.Parser, new[]{ "ProviderCode" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.OTAChannelProviderAllResponse), global::HOLMS.Types.Booking.RPC.OTAChannelProviderAllResponse.Parser, new[]{ "Result" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.OTAChannelProviderAllResponse), global::HOLMS.Types.Booking.RPC.OTAChannelProviderAllResponse.Parser, new[]{ "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse), global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse.Parser, new[]{ "Result", "Provider" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum OTAChannelProviderSvcCRUDResult {
+    [pbr::OriginalName("OTA_CHANNEL_PROVIDER_SVC_CRUD_RESULT_SUCCESS")] Success = 0,
+    [pbr::OriginalName("OTA_CHANNEL_PROVIDER_SVC_CRUD_RESULT_DUPLICATE_PROVIDER_CODE")] DuplicateProviderCode = 1,
+    [pbr::OriginalName("OTA_CHANNEL_PROVIDER_SVC_CRUD_RESULT_UNKOWN_FAILURE")] UnkownFailure = 2,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class OTAChannelProviderSvcQuery : pb::IMessage<OTAChannelProviderSvcQuery> {
     private static readonly pb::MessageParser<OTAChannelProviderSvcQuery> _parser = new pb::MessageParser<OTAChannelProviderSvcQuery>(() => new OTAChannelProviderSvcQuery());
@@ -277,6 +295,157 @@ namespace HOLMS.Types.Booking.RPC {
             break;
           case 10: {
             result_.AddEntriesFrom(input, _repeated_result_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class OTAChannelProviderSvcResponse : pb::IMessage<OTAChannelProviderSvcResponse> {
+    private static readonly pb::MessageParser<OTAChannelProviderSvcResponse> _parser = new pb::MessageParser<OTAChannelProviderSvcResponse>(() => new OTAChannelProviderSvcResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<OTAChannelProviderSvcResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Booking.RPC.OtaChannelProviderSvcReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OTAChannelProviderSvcResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OTAChannelProviderSvcResponse(OTAChannelProviderSvcResponse other) : this() {
+      result_ = other.result_;
+      Provider = other.provider_ != null ? other.Provider.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OTAChannelProviderSvcResponse Clone() {
+      return new OTAChannelProviderSvcResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcCRUDResult result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcCRUDResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "provider" field.</summary>
+    public const int ProviderFieldNumber = 2;
+    private global::HOLMS.Types.Booking.Channels.OTAChannelProvider provider_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Channels.OTAChannelProvider Provider {
+      get { return provider_; }
+      set {
+        provider_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as OTAChannelProviderSvcResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(OTAChannelProviderSvcResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      if (!object.Equals(Provider, other.Provider)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Result != 0) hash ^= Result.GetHashCode();
+      if (provider_ != null) hash ^= Provider.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
+      if (provider_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Provider);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (provider_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Provider);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(OTAChannelProviderSvcResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      if (other.provider_ != null) {
+        if (provider_ == null) {
+          provider_ = new global::HOLMS.Types.Booking.Channels.OTAChannelProvider();
+        }
+        Provider.MergeFrom(other.Provider);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            result_ = (global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcCRUDResult) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (provider_ == null) {
+              provider_ = new global::HOLMS.Types.Booking.Channels.OTAChannelProvider();
+            }
+            input.ReadMessage(provider_);
             break;
           }
         }
