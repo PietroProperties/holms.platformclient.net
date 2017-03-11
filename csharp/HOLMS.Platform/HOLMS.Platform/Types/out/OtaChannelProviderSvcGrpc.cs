@@ -17,6 +17,7 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcQuery> __Marshaller_OTAChannelProviderSvcQuery = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcQuery.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.Channels.OTAChannelProvider> __Marshaller_OTAChannelProvider = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Channels.OTAChannelProvider.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.Channels.OTAChannelProviderIndicator> __Marshaller_OTAChannelProviderIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Channels.OTAChannelProviderIndicator.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse> __Marshaller_OTAChannelProviderSvcResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Primitive.ServerActionConfirmation> __Marshaller_ServerActionConfirmation = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.ServerActionConfirmation.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.OTAChannelProviderAllResponse> __Method_All = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.OTAChannelProviderAllResponse>(
@@ -40,19 +41,19 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_OTAChannelProviderIndicator,
         __Marshaller_OTAChannelProvider);
 
-    static readonly Method<global::HOLMS.Types.Booking.Channels.OTAChannelProvider, global::HOLMS.Types.Booking.Channels.OTAChannelProvider> __Method_Create = new Method<global::HOLMS.Types.Booking.Channels.OTAChannelProvider, global::HOLMS.Types.Booking.Channels.OTAChannelProvider>(
+    static readonly Method<global::HOLMS.Types.Booking.Channels.OTAChannelProvider, global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse> __Method_Create = new Method<global::HOLMS.Types.Booking.Channels.OTAChannelProvider, global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse>(
         MethodType.Unary,
         __ServiceName,
         "Create",
         __Marshaller_OTAChannelProvider,
-        __Marshaller_OTAChannelProvider);
+        __Marshaller_OTAChannelProviderSvcResponse);
 
-    static readonly Method<global::HOLMS.Types.Booking.Channels.OTAChannelProvider, global::HOLMS.Types.Booking.Channels.OTAChannelProvider> __Method_Update = new Method<global::HOLMS.Types.Booking.Channels.OTAChannelProvider, global::HOLMS.Types.Booking.Channels.OTAChannelProvider>(
+    static readonly Method<global::HOLMS.Types.Booking.Channels.OTAChannelProvider, global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse> __Method_Update = new Method<global::HOLMS.Types.Booking.Channels.OTAChannelProvider, global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse>(
         MethodType.Unary,
         __ServiceName,
         "Update",
         __Marshaller_OTAChannelProvider,
-        __Marshaller_OTAChannelProvider);
+        __Marshaller_OTAChannelProviderSvcResponse);
 
     static readonly Method<global::HOLMS.Types.Booking.Channels.OTAChannelProvider, global::HOLMS.Types.Primitive.ServerActionConfirmation> __Method_Delete = new Method<global::HOLMS.Types.Booking.Channels.OTAChannelProvider, global::HOLMS.Types.Primitive.ServerActionConfirmation>(
         MethodType.Unary,
@@ -85,12 +86,12 @@ namespace HOLMS.Types.Booking.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Channels.OTAChannelProvider> Create(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse> Create(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Channels.OTAChannelProvider> Update(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse> Update(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -173,35 +174,35 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetById, null, options, request);
       }
-      public virtual global::HOLMS.Types.Booking.Channels.OTAChannelProvider Create(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse Create(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Create(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Booking.Channels.OTAChannelProvider Create(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, CallOptions options)
+      public virtual global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse Create(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Create, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.Channels.OTAChannelProvider> CreateAsync(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse> CreateAsync(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return CreateAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.Channels.OTAChannelProvider> CreateAsync(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse> CreateAsync(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Create, null, options, request);
       }
-      public virtual global::HOLMS.Types.Booking.Channels.OTAChannelProvider Update(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse Update(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Update(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Booking.Channels.OTAChannelProvider Update(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, CallOptions options)
+      public virtual global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse Update(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Update, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.Channels.OTAChannelProvider> UpdateAsync(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse> UpdateAsync(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return UpdateAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.Channels.OTAChannelProvider> UpdateAsync(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.OTAChannelProviderSvcResponse> UpdateAsync(global::HOLMS.Types.Booking.Channels.OTAChannelProvider request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }

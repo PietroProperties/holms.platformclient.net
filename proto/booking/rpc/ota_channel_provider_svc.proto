@@ -17,6 +17,17 @@ message OTAChannelProviderAllResponse {
 	repeated holms.types.booking.channels.OTAChannelProvider result = 1;
 }
 
+message OTAChannelProviderSvcResponse {
+	OTAChannelProviderSvcCRUDResult result = 1;
+	.holms.types.booking.channels.OTAChannelProvider  provider = 2;
+}
+
+enum OTAChannelProviderSvcCRUDResult {
+	OTA_CHANNEL_PROVIDER_SVC_CRUD_RESULT_SUCCESS = 0;
+	OTA_CHANNEL_PROVIDER_SVC_CRUD_RESULT_DUPLICATE_PROVIDER_CODE = 1;
+	OTA_CHANNEL_PROVIDER_SVC_CRUD_RESULT_UNKOWN_FAILURE = 2;
+}
+
 service OTAChannelProviderSvc {
 	rpc All(.google.protobuf.Empty) 
 		returns (OTAChannelProviderAllResponse);
@@ -28,10 +39,10 @@ service OTAChannelProviderSvc {
 		returns (.holms.types.booking.channels.OTAChannelProvider);
 
 	rpc Create(.holms.types.booking.channels.OTAChannelProvider) 
-		returns (.holms.types.booking.channels.OTAChannelProvider);
+		returns (OTAChannelProviderSvcResponse);
 
 	rpc Update(.holms.types.booking.channels.OTAChannelProvider) 
-		returns (.holms.types.booking.channels.OTAChannelProvider);
+		returns (OTAChannelProviderSvcResponse);
 
 	rpc Delete(.holms.types.booking.channels.OTAChannelProvider) 
 		returns (.holms.types.primitive.ServerActionConfirmation);
