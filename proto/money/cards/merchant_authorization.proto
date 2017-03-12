@@ -7,6 +7,7 @@ option go_package = "money/cards";
 import "money/cards/processor_transaction_result.proto";
 import "money/cards/card_merchant_indicator.proto";
 import "money/cards/merchant_authorization_indicator.proto";
+import "money/cards/payment_card_brand.proto";
 import "primitive/monetary_amount.proto";
 
 enum AuthorizationEntryMethod {
@@ -27,7 +28,7 @@ message MerchantAuthorization {
 	string masked_pan = 5;
 	holms.types.primitive.MonetaryAmount amount = 6;
 	ProcessorTransactionResult result = 7;
-	string brand = 8;
+	holms.types.money.cards.PaymentCardBrand brand = 8;
 	string host_reference_number = 9;
 	AuthorizationEntryMethod entry_method = 10;
 }
