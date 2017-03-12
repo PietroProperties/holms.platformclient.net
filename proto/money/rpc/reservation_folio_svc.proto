@@ -150,6 +150,7 @@ message ReservationFolioSvcPaymentCardRefundRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
 	holms.types.primitive.MonetaryAmount amount = 2;
 	holms.types.money.cards.PaymentCardIndicator card = 3;
+	string description = 4;
 }
 
 enum ReservationFolioSvcRefundResult {
