@@ -9,7 +9,9 @@ import "primitive/monetary_amount.proto";
 import "money/cards/card_authorization_purpose.proto";
 import "money/cards/card_authorization_state.proto";
 import "money/cards/merchant_authorization_indicator.proto";
+import "money/cards/merchant_authorization.proto";
 import "money/cards/payment_card_indicator.proto";
+import "money/cards/payment_card_brand.proto";
 
 message PostedCardAuthorization {
 	.holms.types.money.cards.MerchantAuthorizationIndicator entity_id = 1;
@@ -20,5 +22,8 @@ message PostedCardAuthorization {
 	string masked_pan = 6;
 	string cardmember_name = 7;
 	holms.types.money.cards.CardAuthorizationPurpose purpose = 8;
+	holms.types.money.cards.PaymentCardBrand brand = 9;
+	string host_reference_number = 10;
+	holms.types.money.cards.AuthorizationEntryMethod entry_method = 11;
 }
 

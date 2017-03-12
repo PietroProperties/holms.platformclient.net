@@ -26,26 +26,28 @@ namespace HOLMS.Types.Money.Cards {
             "b2xtcy50eXBlcy5tb25leS5jYXJkcxoubW9uZXkvY2FyZHMvcHJvY2Vzc29y",
             "X3RyYW5zYWN0aW9uX3Jlc3VsdC5wcm90bxopbW9uZXkvY2FyZHMvY2FyZF9t",
             "ZXJjaGFudF9pbmRpY2F0b3IucHJvdG8aMm1vbmV5L2NhcmRzL21lcmNoYW50",
-            "X2F1dGhvcml6YXRpb25faW5kaWNhdG9yLnByb3RvGh9wcmltaXRpdmUvbW9u",
-            "ZXRhcnlfYW1vdW50LnByb3RvItkDChVNZXJjaGFudEF1dGhvcml6YXRpb24S",
-            "SgoJZW50aXR5X2lkGAEgASgLMjcuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMu",
-            "TWVyY2hhbnRBdXRob3JpemF0aW9uSW5kaWNhdG9yEkMKC21lcmNoYW50X2lk",
-            "GAIgASgLMi4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZE1lcmNoYW50",
-            "SW5kaWNhdG9yEhgKEGNhcmRfbWVtYmVyX25hbWUYAyABKAkSDgoGdHhuX2lk",
-            "GAQgASgJEhIKCm1hc2tlZF9wYW4YBSABKAkSNQoGYW1vdW50GAYgASgLMiUu",
-            "aG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkMKBnJlc3Vs",
-            "dBgHIAEoDjIzLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLlByb2Nlc3NvclRy",
-            "YW5zYWN0aW9uUmVzdWx0Eg0KBWJyYW5kGAggASgJEh0KFWhvc3RfcmVmZXJl",
-            "bmNlX251bWJlchgJIAEoCRJHCgxlbnRyeV9tZXRob2QYCiABKA4yMS5ob2xt",
-            "cy50eXBlcy5tb25leS5jYXJkcy5BdXRob3JpemF0aW9uRW50cnlNZXRob2Qq",
-            "1wEKGEF1dGhvcml6YXRpb25FbnRyeU1ldGhvZBIXChNDQVJEX1BSRVNFTlRf",
-            "TUFOVUFMEAASFgoSQ0FSRF9QUkVTRU5UX1NXSVBFEAESHAoYQ0FSRF9QUkVT",
-            "RU5UX0NPTlRBQ1RMRVNTEAISGAoUQ0FSRF9QUkVTRU5UX1NDQU5ORVIQAxIV",
-            "ChFDQVJEX1BSRVNFTlRfQ0hJUBAEEiUKIUNBUkRfUFJFU0VOVF9DSElQX0ZB",
-            "TExfQkFDS19TV0lQRRAFEhQKEENBUkRfTk9UX1BSRVNFTlQQBkInWgttb25l",
-            "eS9jYXJkc6oCF0hPTE1TLlR5cGVzLk1vbmV5LkNhcmRzYgZwcm90bzM="));
+            "X2F1dGhvcml6YXRpb25faW5kaWNhdG9yLnByb3RvGiRtb25leS9jYXJkcy9w",
+            "YXltZW50X2NhcmRfYnJhbmQucHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9h",
+            "bW91bnQucHJvdG8ihAQKFU1lcmNoYW50QXV0aG9yaXphdGlvbhJKCgllbnRp",
+            "dHlfaWQYASABKAsyNy5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5NZXJjaGFu",
+            "dEF1dGhvcml6YXRpb25JbmRpY2F0b3ISQwoLbWVyY2hhbnRfaWQYAiABKAsy",
+            "Li5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5DYXJkTWVyY2hhbnRJbmRpY2F0",
+            "b3ISGAoQY2FyZF9tZW1iZXJfbmFtZRgDIAEoCRIOCgZ0eG5faWQYBCABKAkS",
+            "EgoKbWFza2VkX3BhbhgFIAEoCRI1CgZhbW91bnQYBiABKAsyJS5ob2xtcy50",
+            "eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSQwoGcmVzdWx0GAcgASgO",
+            "MjMuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuUHJvY2Vzc29yVHJhbnNhY3Rp",
+            "b25SZXN1bHQSOAoFYnJhbmQYCCABKA4yKS5ob2xtcy50eXBlcy5tb25leS5j",
+            "YXJkcy5QYXltZW50Q2FyZEJyYW5kEh0KFWhvc3RfcmVmZXJlbmNlX251bWJl",
+            "chgJIAEoCRJHCgxlbnRyeV9tZXRob2QYCiABKA4yMS5ob2xtcy50eXBlcy5t",
+            "b25leS5jYXJkcy5BdXRob3JpemF0aW9uRW50cnlNZXRob2Qq1wEKGEF1dGhv",
+            "cml6YXRpb25FbnRyeU1ldGhvZBIXChNDQVJEX1BSRVNFTlRfTUFOVUFMEAAS",
+            "FgoSQ0FSRF9QUkVTRU5UX1NXSVBFEAESHAoYQ0FSRF9QUkVTRU5UX0NPTlRB",
+            "Q1RMRVNTEAISGAoUQ0FSRF9QUkVTRU5UX1NDQU5ORVIQAxIVChFDQVJEX1BS",
+            "RVNFTlRfQ0hJUBAEEiUKIUNBUkRfUFJFU0VOVF9DSElQX0ZBTExfQkFDS19T",
+            "V0lQRRAFEhQKEENBUkRfTk9UX1BSRVNFTlQQBkInWgttb25leS9jYXJkc6oC",
+            "F0hPTE1TLlR5cGVzLk1vbmV5LkNhcmRzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.MerchantAuthorizationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.MerchantAuthorizationIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardBrandReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.AuthorizationEntryMethod), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.MerchantAuthorization), global::HOLMS.Types.Money.Cards.MerchantAuthorization.Parser, new[]{ "EntityId", "MerchantId", "CardMemberName", "TxnId", "MaskedPan", "Amount", "Result", "Brand", "HostReferenceNumber", "EntryMethod" }, null, null, null)
           }));
@@ -187,12 +189,12 @@ namespace HOLMS.Types.Money.Cards {
 
     /// <summary>Field number for the "brand" field.</summary>
     public const int BrandFieldNumber = 8;
-    private string brand_ = "";
+    private global::HOLMS.Types.Money.Cards.PaymentCardBrand brand_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Brand {
+    public global::HOLMS.Types.Money.Cards.PaymentCardBrand Brand {
       get { return brand_; }
       set {
-        brand_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        brand_ = value;
       }
     }
 
@@ -254,7 +256,7 @@ namespace HOLMS.Types.Money.Cards {
       if (MaskedPan.Length != 0) hash ^= MaskedPan.GetHashCode();
       if (amount_ != null) hash ^= Amount.GetHashCode();
       if (Result != 0) hash ^= Result.GetHashCode();
-      if (Brand.Length != 0) hash ^= Brand.GetHashCode();
+      if (Brand != 0) hash ^= Brand.GetHashCode();
       if (HostReferenceNumber.Length != 0) hash ^= HostReferenceNumber.GetHashCode();
       if (EntryMethod != 0) hash ^= EntryMethod.GetHashCode();
       return hash;
@@ -295,9 +297,9 @@ namespace HOLMS.Types.Money.Cards {
         output.WriteRawTag(56);
         output.WriteEnum((int) Result);
       }
-      if (Brand.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(Brand);
+      if (Brand != 0) {
+        output.WriteRawTag(64);
+        output.WriteEnum((int) Brand);
       }
       if (HostReferenceNumber.Length != 0) {
         output.WriteRawTag(74);
@@ -333,8 +335,8 @@ namespace HOLMS.Types.Money.Cards {
       if (Result != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
       }
-      if (Brand.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Brand);
+      if (Brand != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Brand);
       }
       if (HostReferenceNumber.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(HostReferenceNumber);
@@ -380,7 +382,7 @@ namespace HOLMS.Types.Money.Cards {
       if (other.Result != 0) {
         Result = other.Result;
       }
-      if (other.Brand.Length != 0) {
+      if (other.Brand != 0) {
         Brand = other.Brand;
       }
       if (other.HostReferenceNumber.Length != 0) {
@@ -436,8 +438,8 @@ namespace HOLMS.Types.Money.Cards {
             result_ = (global::HOLMS.Types.Money.Cards.ProcessorTransactionResult) input.ReadEnum();
             break;
           }
-          case 66: {
-            Brand = input.ReadString();
+          case 64: {
+            brand_ = (global::HOLMS.Types.Money.Cards.PaymentCardBrand) input.ReadEnum();
             break;
           }
           case 74: {

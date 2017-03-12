@@ -28,23 +28,28 @@ namespace HOLMS.Types.Money.Folio {
             "bxosbW9uZXkvY2FyZHMvY2FyZF9hdXRob3JpemF0aW9uX3B1cnBvc2UucHJv",
             "dG8aKm1vbmV5L2NhcmRzL2NhcmRfYXV0aG9yaXphdGlvbl9zdGF0ZS5wcm90",
             "bxoybW9uZXkvY2FyZHMvbWVyY2hhbnRfYXV0aG9yaXphdGlvbl9pbmRpY2F0",
-            "b3IucHJvdG8aKG1vbmV5L2NhcmRzL3BheW1lbnRfY2FyZF9pbmRpY2F0b3Iu",
-            "cHJvdG8iuQMKF1Bvc3RlZENhcmRBdXRob3JpemF0aW9uEkoKCWVudGl0eV9p",
-            "ZBgBIAEoCzI3LmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLk1lcmNoYW50QXV0",
-            "aG9yaXphdGlvbkluZGljYXRvchItCglwb3N0ZWRfYXQYAiABKAsyGi5nb29n",
-            "bGUucHJvdG9idWYuVGltZXN0YW1wEjUKBmFtb3VudBgDIAEoCzIlLmhvbG1z",
-            "LnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI+CgVzdGF0ZRgEIAEo",
-            "DjIvLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRBdXRob3JpemF0aW9u",
-            "U3RhdGUSOwoEY2FyZBgFIAEoCzItLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRz",
-            "LlBheW1lbnRDYXJkSW5kaWNhdG9yEhIKCm1hc2tlZF9wYW4YBiABKAkSFwoP",
-            "Y2FyZG1lbWJlcl9uYW1lGAcgASgJEkIKB3B1cnBvc2UYCCABKA4yMS5ob2xt",
-            "cy50eXBlcy5tb25leS5jYXJkcy5DYXJkQXV0aG9yaXphdGlvblB1cnBvc2VC",
-            "J1oLbW9uZXkvZm9saW+qAhdIT0xNUy5UeXBlcy5Nb25leS5Gb2xpb2IGcHJv",
-            "dG8z"));
+            "b3IucHJvdG8aKG1vbmV5L2NhcmRzL21lcmNoYW50X2F1dGhvcml6YXRpb24u",
+            "cHJvdG8aKG1vbmV5L2NhcmRzL3BheW1lbnRfY2FyZF9pbmRpY2F0b3IucHJv",
+            "dG8aJG1vbmV5L2NhcmRzL3BheW1lbnRfY2FyZF9icmFuZC5wcm90byLbBAoX",
+            "UG9zdGVkQ2FyZEF1dGhvcml6YXRpb24SSgoJZW50aXR5X2lkGAEgASgLMjcu",
+            "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMuTWVyY2hhbnRBdXRob3JpemF0aW9u",
+            "SW5kaWNhdG9yEi0KCXBvc3RlZF9hdBgCIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5UaW1lc3RhbXASNQoGYW1vdW50GAMgASgLMiUuaG9sbXMudHlwZXMucHJp",
+            "bWl0aXZlLk1vbmV0YXJ5QW1vdW50Ej4KBXN0YXRlGAQgASgOMi8uaG9sbXMu",
+            "dHlwZXMubW9uZXkuY2FyZHMuQ2FyZEF1dGhvcml6YXRpb25TdGF0ZRI7CgRj",
+            "YXJkGAUgASgLMi0uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuUGF5bWVudENh",
+            "cmRJbmRpY2F0b3ISEgoKbWFza2VkX3BhbhgGIAEoCRIXCg9jYXJkbWVtYmVy",
+            "X25hbWUYByABKAkSQgoHcHVycG9zZRgIIAEoDjIxLmhvbG1zLnR5cGVzLm1v",
+            "bmV5LmNhcmRzLkNhcmRBdXRob3JpemF0aW9uUHVycG9zZRI4CgVicmFuZBgJ",
+            "IAEoDjIpLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLlBheW1lbnRDYXJkQnJh",
+            "bmQSHQoVaG9zdF9yZWZlcmVuY2VfbnVtYmVyGAogASgJEkcKDGVudHJ5X21l",
+            "dGhvZBgLIAEoDjIxLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkF1dGhvcml6",
+            "YXRpb25FbnRyeU1ldGhvZEInWgttb25leS9mb2xpb6oCF0hPTE1TLlR5cGVz",
+            "Lk1vbmV5LkZvbGlvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardAuthorizationPurposeReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardAuthorizationStateReflection.Descriptor, global::HOLMS.Types.Money.Cards.MerchantAuthorizationIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardAuthorizationPurposeReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardAuthorizationStateReflection.Descriptor, global::HOLMS.Types.Money.Cards.MerchantAuthorizationIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.MerchantAuthorizationReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardBrandReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedCardAuthorization), global::HOLMS.Types.Money.Folio.PostedCardAuthorization.Parser, new[]{ "EntityId", "PostedAt", "Amount", "State", "Card", "MaskedPan", "CardmemberName", "Purpose" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedCardAuthorization), global::HOLMS.Types.Money.Folio.PostedCardAuthorization.Parser, new[]{ "EntityId", "PostedAt", "Amount", "State", "Card", "MaskedPan", "CardmemberName", "Purpose", "Brand", "HostReferenceNumber", "EntryMethod" }, null, null, null)
           }));
     }
     #endregion
@@ -83,6 +88,9 @@ namespace HOLMS.Types.Money.Folio {
       maskedPan_ = other.maskedPan_;
       cardmemberName_ = other.cardmemberName_;
       purpose_ = other.purpose_;
+      brand_ = other.brand_;
+      hostReferenceNumber_ = other.hostReferenceNumber_;
+      entryMethod_ = other.entryMethod_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -178,6 +186,39 @@ namespace HOLMS.Types.Money.Folio {
       }
     }
 
+    /// <summary>Field number for the "brand" field.</summary>
+    public const int BrandFieldNumber = 9;
+    private global::HOLMS.Types.Money.Cards.PaymentCardBrand brand_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Cards.PaymentCardBrand Brand {
+      get { return brand_; }
+      set {
+        brand_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "host_reference_number" field.</summary>
+    public const int HostReferenceNumberFieldNumber = 10;
+    private string hostReferenceNumber_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HostReferenceNumber {
+      get { return hostReferenceNumber_; }
+      set {
+        hostReferenceNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "entry_method" field.</summary>
+    public const int EntryMethodFieldNumber = 11;
+    private global::HOLMS.Types.Money.Cards.AuthorizationEntryMethod entryMethod_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Cards.AuthorizationEntryMethod EntryMethod {
+      get { return entryMethod_; }
+      set {
+        entryMethod_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PostedCardAuthorization);
@@ -199,6 +240,9 @@ namespace HOLMS.Types.Money.Folio {
       if (MaskedPan != other.MaskedPan) return false;
       if (CardmemberName != other.CardmemberName) return false;
       if (Purpose != other.Purpose) return false;
+      if (Brand != other.Brand) return false;
+      if (HostReferenceNumber != other.HostReferenceNumber) return false;
+      if (EntryMethod != other.EntryMethod) return false;
       return true;
     }
 
@@ -213,6 +257,9 @@ namespace HOLMS.Types.Money.Folio {
       if (MaskedPan.Length != 0) hash ^= MaskedPan.GetHashCode();
       if (CardmemberName.Length != 0) hash ^= CardmemberName.GetHashCode();
       if (Purpose != 0) hash ^= Purpose.GetHashCode();
+      if (Brand != 0) hash ^= Brand.GetHashCode();
+      if (HostReferenceNumber.Length != 0) hash ^= HostReferenceNumber.GetHashCode();
+      if (EntryMethod != 0) hash ^= EntryMethod.GetHashCode();
       return hash;
     }
 
@@ -255,6 +302,18 @@ namespace HOLMS.Types.Money.Folio {
         output.WriteRawTag(64);
         output.WriteEnum((int) Purpose);
       }
+      if (Brand != 0) {
+        output.WriteRawTag(72);
+        output.WriteEnum((int) Brand);
+      }
+      if (HostReferenceNumber.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(HostReferenceNumber);
+      }
+      if (EntryMethod != 0) {
+        output.WriteRawTag(88);
+        output.WriteEnum((int) EntryMethod);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -283,6 +342,15 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (Purpose != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Purpose);
+      }
+      if (Brand != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Brand);
+      }
+      if (HostReferenceNumber.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(HostReferenceNumber);
+      }
+      if (EntryMethod != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EntryMethod);
       }
       return size;
     }
@@ -327,6 +395,15 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (other.Purpose != 0) {
         Purpose = other.Purpose;
+      }
+      if (other.Brand != 0) {
+        Brand = other.Brand;
+      }
+      if (other.HostReferenceNumber.Length != 0) {
+        HostReferenceNumber = other.HostReferenceNumber;
+      }
+      if (other.EntryMethod != 0) {
+        EntryMethod = other.EntryMethod;
       }
     }
 
@@ -380,6 +457,18 @@ namespace HOLMS.Types.Money.Folio {
           }
           case 64: {
             purpose_ = (global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose) input.ReadEnum();
+            break;
+          }
+          case 72: {
+            brand_ = (global::HOLMS.Types.Money.Cards.PaymentCardBrand) input.ReadEnum();
+            break;
+          }
+          case 82: {
+            HostReferenceNumber = input.ReadString();
+            break;
+          }
+          case 88: {
+            entryMethod_ = (global::HOLMS.Types.Money.Cards.AuthorizationEntryMethod) input.ReadEnum();
             break;
           }
         }
