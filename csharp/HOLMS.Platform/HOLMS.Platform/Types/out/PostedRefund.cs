@@ -25,17 +25,18 @@ namespace HOLMS.Types.Money.Folio {
             "Ch9tb25leS9mb2xpby9wb3N0ZWRfcmVmdW5kLnByb3RvEhdob2xtcy50eXBl",
             "cy5tb25leS5mb2xpbxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90",
             "bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90bxokbW9uZXkvY2Fy",
-            "ZHMvcGF5bWVudF9jYXJkX2JyYW5kLnByb3RvIuEBCgxQb3N0ZWRSZWZ1bmQS",
+            "ZHMvcGF5bWVudF9jYXJkX2JyYW5kLnByb3RvIvgBCgxQb3N0ZWRSZWZ1bmQS",
             "LQoJcG9zdGVkX2F0GAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
             "cBI1CgZhbW91bnQYAiABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9u",
             "ZXRhcnlBbW91bnQSEQoJbmFycmF0aW9uGAMgASgJEj0KCmNhcmRfYnJhbmQY",
             "BCABKA4yKS5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5QYXltZW50Q2FyZEJy",
-            "YW5kEhkKEWNhcmRfbWFza2VkX3BfYV9uGAUgASgJQidaC21vbmV5L2ZvbGlv",
-            "qgIXSE9MTVMuVHlwZXMuTW9uZXkuRm9saW9iBnByb3RvMw=="));
+            "YW5kEhkKEWNhcmRfbWFza2VkX3BfYV9uGAUgASgJEhUKDWFwcHJvdmFsX2Nv",
+            "ZGUYBiABKAlCJ1oLbW9uZXkvZm9saW+qAhdIT0xNUy5UeXBlcy5Nb25leS5G",
+            "b2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardBrandReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedRefund), global::HOLMS.Types.Money.Folio.PostedRefund.Parser, new[]{ "PostedAt", "Amount", "Narration", "CardBrand", "CardMaskedPAN" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedRefund), global::HOLMS.Types.Money.Folio.PostedRefund.Parser, new[]{ "PostedAt", "Amount", "Narration", "CardBrand", "CardMaskedPAN", "ApprovalCode" }, null, null, null)
           }));
     }
     #endregion
@@ -71,6 +72,7 @@ namespace HOLMS.Types.Money.Folio {
       narration_ = other.narration_;
       cardBrand_ = other.cardBrand_;
       cardMaskedPAN_ = other.cardMaskedPAN_;
+      approvalCode_ = other.approvalCode_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -133,6 +135,17 @@ namespace HOLMS.Types.Money.Folio {
       }
     }
 
+    /// <summary>Field number for the "approval_code" field.</summary>
+    public const int ApprovalCodeFieldNumber = 6;
+    private string approvalCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ApprovalCode {
+      get { return approvalCode_; }
+      set {
+        approvalCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PostedRefund);
@@ -151,6 +164,7 @@ namespace HOLMS.Types.Money.Folio {
       if (Narration != other.Narration) return false;
       if (CardBrand != other.CardBrand) return false;
       if (CardMaskedPAN != other.CardMaskedPAN) return false;
+      if (ApprovalCode != other.ApprovalCode) return false;
       return true;
     }
 
@@ -162,6 +176,7 @@ namespace HOLMS.Types.Money.Folio {
       if (Narration.Length != 0) hash ^= Narration.GetHashCode();
       if (CardBrand != 0) hash ^= CardBrand.GetHashCode();
       if (CardMaskedPAN.Length != 0) hash ^= CardMaskedPAN.GetHashCode();
+      if (ApprovalCode.Length != 0) hash ^= ApprovalCode.GetHashCode();
       return hash;
     }
 
@@ -192,6 +207,10 @@ namespace HOLMS.Types.Money.Folio {
         output.WriteRawTag(42);
         output.WriteString(CardMaskedPAN);
       }
+      if (ApprovalCode.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(ApprovalCode);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -211,6 +230,9 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (CardMaskedPAN.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CardMaskedPAN);
+      }
+      if (ApprovalCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApprovalCode);
       }
       return size;
     }
@@ -240,6 +262,9 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (other.CardMaskedPAN.Length != 0) {
         CardMaskedPAN = other.CardMaskedPAN;
+      }
+      if (other.ApprovalCode.Length != 0) {
+        ApprovalCode = other.ApprovalCode;
       }
     }
 
@@ -275,6 +300,10 @@ namespace HOLMS.Types.Money.Folio {
           }
           case 42: {
             CardMaskedPAN = input.ReadString();
+            break;
+          }
+          case 50: {
+            ApprovalCode = input.ReadString();
             break;
           }
         }
