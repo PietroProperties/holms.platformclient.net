@@ -14,5 +14,6 @@ message PostedRefund {
 	string narration = 3;
 	.holms.types.money.cards.PaymentCardBrand card_brand = 4;
 	string card_masked_p_a_n = 5;
+	string approval_code = 6;
 }
 
