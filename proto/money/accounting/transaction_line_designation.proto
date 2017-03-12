@@ -11,4 +11,5 @@ enum TransactionLineDesignation {
 	CARD_PAYMENT = 3;
 	CHECK_PAYMENT = 4;
 	CASH_PAYMENT = 5;
+	CARD_REFUND = 6;
 }
