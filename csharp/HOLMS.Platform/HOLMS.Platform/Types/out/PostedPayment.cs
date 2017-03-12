@@ -25,20 +25,16 @@ namespace HOLMS.Types.Money.Folio {
             "CiBtb25leS9mb2xpby9wb3N0ZWRfcGF5bWVudC5wcm90bxIXaG9sbXMudHlw",
             "ZXMubW9uZXkuZm9saW8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJv",
             "dG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8aHm1vbmV5L2Zv",
-            "bGlvL3BheW1lbnRfdHlwZS5wcm90bxoobW9uZXkvY2FyZHMvbWVyY2hhbnRf",
-            "YXV0aG9yaXphdGlvbi5wcm90byK6AgoNUG9zdGVkUGF5bWVudBItCglwb3N0",
-            "ZWRfYXQYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjUKBmFt",
-            "b3VudBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFt",
-            "b3VudBIRCgluYXJyYXRpb24YAyABKAkSOgoMcGF5bWVudF90eXBlGAQgASgO",
-            "MiQuaG9sbXMudHlwZXMubW9uZXkuZm9saW8uUGF5bWVudFR5cGUSRwoMZW50",
-            "cnlfbWV0aG9kGAUgASgOMjEuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQXV0",
-            "aG9yaXphdGlvbkVudHJ5TWV0aG9kEhQKDG1hc2tlZF9wX2FfbhgGIAEoCRIV",
-            "Cg1hcHByb3ZhbF9jb2RlGAcgASgJQidaC21vbmV5L2ZvbGlvqgIXSE9MTVMu",
-            "VHlwZXMuTW9uZXkuRm9saW9iBnByb3RvMw=="));
+            "bGlvL3BheW1lbnRfdHlwZS5wcm90byLEAQoNUG9zdGVkUGF5bWVudBItCglw",
+            "b3N0ZWRfYXQYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjUK",
+            "BmFtb3VudBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFy",
+            "eUFtb3VudBIRCgluYXJyYXRpb24YAyABKAkSOgoMcGF5bWVudF90eXBlGAQg",
+            "ASgOMiQuaG9sbXMudHlwZXMubW9uZXkuZm9saW8uUGF5bWVudFR5cGVCJ1oL",
+            "bW9uZXkvZm9saW+qAhdIT0xNUy5UeXBlcy5Nb25leS5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Folio.PaymentTypeReflection.Descriptor, global::HOLMS.Types.Money.Cards.MerchantAuthorizationReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Folio.PaymentTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedPayment), global::HOLMS.Types.Money.Folio.PostedPayment.Parser, new[]{ "PostedAt", "Amount", "Narration", "PaymentType", "EntryMethod", "MaskedPAN", "ApprovalCode" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedPayment), global::HOLMS.Types.Money.Folio.PostedPayment.Parser, new[]{ "PostedAt", "Amount", "Narration", "PaymentType" }, null, null, null)
           }));
     }
     #endregion
@@ -73,9 +69,6 @@ namespace HOLMS.Types.Money.Folio {
       Amount = other.amount_ != null ? other.Amount.Clone() : null;
       narration_ = other.narration_;
       paymentType_ = other.paymentType_;
-      entryMethod_ = other.entryMethod_;
-      maskedPAN_ = other.maskedPAN_;
-      approvalCode_ = other.approvalCode_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -127,39 +120,6 @@ namespace HOLMS.Types.Money.Folio {
       }
     }
 
-    /// <summary>Field number for the "entry_method" field.</summary>
-    public const int EntryMethodFieldNumber = 5;
-    private global::HOLMS.Types.Money.Cards.AuthorizationEntryMethod entryMethod_ = 0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Cards.AuthorizationEntryMethod EntryMethod {
-      get { return entryMethod_; }
-      set {
-        entryMethod_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "masked_p_a_n" field.</summary>
-    public const int MaskedPANFieldNumber = 6;
-    private string maskedPAN_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string MaskedPAN {
-      get { return maskedPAN_; }
-      set {
-        maskedPAN_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "approval_code" field.</summary>
-    public const int ApprovalCodeFieldNumber = 7;
-    private string approvalCode_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ApprovalCode {
-      get { return approvalCode_; }
-      set {
-        approvalCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PostedPayment);
@@ -177,9 +137,6 @@ namespace HOLMS.Types.Money.Folio {
       if (!object.Equals(Amount, other.Amount)) return false;
       if (Narration != other.Narration) return false;
       if (PaymentType != other.PaymentType) return false;
-      if (EntryMethod != other.EntryMethod) return false;
-      if (MaskedPAN != other.MaskedPAN) return false;
-      if (ApprovalCode != other.ApprovalCode) return false;
       return true;
     }
 
@@ -190,9 +147,6 @@ namespace HOLMS.Types.Money.Folio {
       if (amount_ != null) hash ^= Amount.GetHashCode();
       if (Narration.Length != 0) hash ^= Narration.GetHashCode();
       if (PaymentType != 0) hash ^= PaymentType.GetHashCode();
-      if (EntryMethod != 0) hash ^= EntryMethod.GetHashCode();
-      if (MaskedPAN.Length != 0) hash ^= MaskedPAN.GetHashCode();
-      if (ApprovalCode.Length != 0) hash ^= ApprovalCode.GetHashCode();
       return hash;
     }
 
@@ -219,18 +173,6 @@ namespace HOLMS.Types.Money.Folio {
         output.WriteRawTag(32);
         output.WriteEnum((int) PaymentType);
       }
-      if (EntryMethod != 0) {
-        output.WriteRawTag(40);
-        output.WriteEnum((int) EntryMethod);
-      }
-      if (MaskedPAN.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(MaskedPAN);
-      }
-      if (ApprovalCode.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(ApprovalCode);
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -247,15 +189,6 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (PaymentType != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PaymentType);
-      }
-      if (EntryMethod != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EntryMethod);
-      }
-      if (MaskedPAN.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MaskedPAN);
-      }
-      if (ApprovalCode.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApprovalCode);
       }
       return size;
     }
@@ -282,15 +215,6 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (other.PaymentType != 0) {
         PaymentType = other.PaymentType;
-      }
-      if (other.EntryMethod != 0) {
-        EntryMethod = other.EntryMethod;
-      }
-      if (other.MaskedPAN.Length != 0) {
-        MaskedPAN = other.MaskedPAN;
-      }
-      if (other.ApprovalCode.Length != 0) {
-        ApprovalCode = other.ApprovalCode;
       }
     }
 
@@ -322,18 +246,6 @@ namespace HOLMS.Types.Money.Folio {
           }
           case 32: {
             paymentType_ = (global::HOLMS.Types.Money.Folio.PaymentType) input.ReadEnum();
-            break;
-          }
-          case 40: {
-            entryMethod_ = (global::HOLMS.Types.Money.Cards.AuthorizationEntryMethod) input.ReadEnum();
-            break;
-          }
-          case 50: {
-            MaskedPAN = input.ReadString();
-            break;
-          }
-          case 58: {
-            ApprovalCode = input.ReadString();
             break;
           }
         }

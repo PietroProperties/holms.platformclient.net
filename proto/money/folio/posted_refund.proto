@@ -6,14 +6,10 @@ option go_package = "money/folio";
 
 import "google/protobuf/timestamp.proto";
 import "primitive/monetary_amount.proto";
-import "money/cards/payment_card_brand.proto";
 
 message PostedRefund {
 	google.protobuf.Timestamp posted_at = 1;
 	.holms.types.primitive.MonetaryAmount amount = 2;
 	string narration = 3;
-	.holms.types.money.cards.PaymentCardBrand card_brand = 4;
-	string card_masked_p_a_n = 5;
-	string approval_code = 6;
 }
 
