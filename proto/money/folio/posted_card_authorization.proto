@@ -23,7 +23,7 @@ message PostedCardAuthorization {
 	string cardmember_name = 7;
 	holms.types.money.cards.CardAuthorizationPurpose purpose = 8;
 	holms.types.money.cards.PaymentCardBrand brand = 9;
-	string host_reference_number = 10;
+	string txn_id = 10;
 	holms.types.money.cards.AuthorizationEntryMethod entry_method = 11;
 }
 
