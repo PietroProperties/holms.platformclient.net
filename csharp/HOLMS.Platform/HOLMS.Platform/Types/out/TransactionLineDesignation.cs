@@ -23,12 +23,13 @@ namespace HOLMS.Types.Money.Accounting {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNtb25leS9hY2NvdW50aW5nL3RyYW5zYWN0aW9uX2xpbmVfZGVzaWduYXRp",
-            "b24ucHJvdG8SHGhvbG1zLnR5cGVzLm1vbmV5LmFjY291bnRpbmcqnwEKGlRy",
+            "b24ucHJvdG8SHGhvbG1zLnR5cGVzLm1vbmV5LmFjY291bnRpbmcqsAEKGlRy",
             "YW5zYWN0aW9uTGluZURlc2lnbmF0aW9uEhsKF1RBWF9DSEFSR0VEX1RPX0NV",
             "U1RPTUVSEAASGwoXRkVFX0NIQVJHRURfVE9fQ1VTVE9NRVIQARIQCgxVTkRF",
             "U0lHTkFURUQQAhIQCgxDQVJEX1BBWU1FTlQQAxIRCg1DSEVDS19QQVlNRU5U",
-            "EAQSEAoMQ0FTSF9QQVlNRU5UEAVCMVoQbW9uZXkvYWNjb3VudGluZ6oCHEhP",
-            "TE1TLlR5cGVzLk1vbmV5LkFjY291bnRpbmdiBnByb3RvMw=="));
+            "EAQSEAoMQ0FTSF9QQVlNRU5UEAUSDwoLQ0FSRF9SRUZVTkQQBkIxWhBtb25l",
+            "eS9hY2NvdW50aW5nqgIcSE9MTVMuVHlwZXMuTW9uZXkuQWNjb3VudGluZ2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Accounting.TransactionLineDesignation), }, null));
@@ -44,6 +45,7 @@ namespace HOLMS.Types.Money.Accounting {
     [pbr::OriginalName("CARD_PAYMENT")] CardPayment = 3,
     [pbr::OriginalName("CHECK_PAYMENT")] CheckPayment = 4,
     [pbr::OriginalName("CASH_PAYMENT")] CashPayment = 5,
+    [pbr::OriginalName("CARD_REFUND")] CardRefund = 6,
   }
 
   #endregion
