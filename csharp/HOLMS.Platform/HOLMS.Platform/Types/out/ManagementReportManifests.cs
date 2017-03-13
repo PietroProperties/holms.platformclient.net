@@ -25,29 +25,30 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "CjhyZXBvcnRpbmcvaW5wdXRfcGFyYW1zL21hbmFnZW1lbnRfcmVwb3J0X21h",
             "bmlmZXN0cy5wcm90bxIiaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3Bh",
             "cmFtcxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxoqcHJpbWl0",
-            "aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnByb3RvIokBCiNNYW5h",
+            "aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnByb3RvIqMBCiNNYW5h",
             "Z2VtZW50Q3VycmVudFRpbWVSZXBvcnRNYW5pZmVzdBIfChd1bm9jY3VwaWVk",
             "X3Jvb21zX3JlcG9ydBgBIAEoCBIcChRmb2xpb19iYWxhbmNlX3JlcG9ydBgC",
-            "IAEoCBIjChtsb2RnaW5nX3ZlcmlmaWNhdGlvbl9yZXBvcnQYAyABKAgimQMK",
-            "Jk1hbmFnZW1lbnRDbG9ja1RpbWVSYW5nZVJlcG9ydE1hbmlmZXN0EjwKGHJl",
-            "cG9ydGluZ19pbnRlcnZhbF9zdGFydBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1",
-            "Zi5UaW1lc3RhbXASOgoWcmVwb3J0aW5nX2ludGVydmFsX2VuZBgCIAEoCzIa",
-            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASIgoaZm9saW9fZ3Jvc3NfY2hh",
-            "cmdlc19yZXBvcnQYAyABKAgSHQoVZm9saW9fcGF5bWVudHNfcmVwb3J0GAQg",
-            "ASgIEiAKGGZvbGlvX2FkanVzdG1lbnRzX3JlcG9ydBgFIAEoCBIeChZjYWxs",
-            "X2FjY291bnRpbmdfcmVwb3J0GAYgASgIEiYKHmxlZGdlcl9hY3Rpdml0eV9z",
-            "dW1tYXJ5X3JlcG9ydBgHIAEoCBIlCh1sZWRnZXJfam91cm5hbF9lbnRyaWVz",
-            "X3JlcG9ydBgIIAEoCBIhChlib29raW5nc19ieV9wZXJpb2RfcmVwb3J0GAkg",
-            "ASgIIrEBCiRNYW5hZ2VtZW50T3BzZGF0ZVJhbmdlUmVwb3J0TWFuaWZlc3QS",
-            "QgoKZGF0ZV9yYW5nZRgBIAEoCzIuLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Q",
-            "YkluY2x1c2l2ZU9wc2RhdGVSYW5nZRIiChpyb29tX3VzYWdlX2RldGFpbGVk",
-            "X3JlcG9ydBgCIAEoCBIhChlyb29tX3VzYWdlX3N1bW1hcnlfcmVwb3J0GAMg",
-            "ASgIQj1aFnJlcG9ydGluZy9pbnB1dF9wYXJhbXOqAiJIT0xNUy5UeXBlcy5S",
-            "ZXBvcnRpbmcuUmVwb3J0UGFyYW1zYgZwcm90bzM="));
+            "IAEoCBIjChtsb2RnaW5nX3ZlcmlmaWNhdGlvbl9yZXBvcnQYAyABKAgSGAoQ",
+            "Y29tcF9zdGF5X3JlcG9ydBgEIAEoCCKZAwomTWFuYWdlbWVudENsb2NrVGlt",
+            "ZVJhbmdlUmVwb3J0TWFuaWZlc3QSPAoYcmVwb3J0aW5nX2ludGVydmFsX3N0",
+            "YXJ0GAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBI6ChZyZXBv",
+            "cnRpbmdfaW50ZXJ2YWxfZW5kGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
+            "bWVzdGFtcBIiChpmb2xpb19ncm9zc19jaGFyZ2VzX3JlcG9ydBgDIAEoCBId",
+            "ChVmb2xpb19wYXltZW50c19yZXBvcnQYBCABKAgSIAoYZm9saW9fYWRqdXN0",
+            "bWVudHNfcmVwb3J0GAUgASgIEh4KFmNhbGxfYWNjb3VudGluZ19yZXBvcnQY",
+            "BiABKAgSJgoebGVkZ2VyX2FjdGl2aXR5X3N1bW1hcnlfcmVwb3J0GAcgASgI",
+            "EiUKHWxlZGdlcl9qb3VybmFsX2VudHJpZXNfcmVwb3J0GAggASgIEiEKGWJv",
+            "b2tpbmdzX2J5X3BlcmlvZF9yZXBvcnQYCSABKAgisQEKJE1hbmFnZW1lbnRP",
+            "cHNkYXRlUmFuZ2VSZXBvcnRNYW5pZmVzdBJCCgpkYXRlX3JhbmdlGAEgASgL",
+            "Mi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJh",
+            "bmdlEiIKGnJvb21fdXNhZ2VfZGV0YWlsZWRfcmVwb3J0GAIgASgIEiEKGXJv",
+            "b21fdXNhZ2Vfc3VtbWFyeV9yZXBvcnQYAyABKAhCPVoWcmVwb3J0aW5nL2lu",
+            "cHV0X3BhcmFtc6oCIkhPTE1TLlR5cGVzLlJlcG9ydGluZy5SZXBvcnRQYXJh",
+            "bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest.Parser, new[]{ "ReportingIntervalStart", "ReportingIntervalEnd", "FolioGrossChargesReport", "FolioPaymentsReport", "FolioAdjustmentsReport", "CallAccountingReport", "LedgerActivitySummaryReport", "LedgerJournalEntriesReport", "BookingsByPeriodReport" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport" }, null, null, null)
           }));
@@ -83,6 +84,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       unoccupiedRoomsReport_ = other.unoccupiedRoomsReport_;
       folioBalanceReport_ = other.folioBalanceReport_;
       lodgingVerificationReport_ = other.lodgingVerificationReport_;
+      compStayReport_ = other.compStayReport_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -123,6 +125,17 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
+    /// <summary>Field number for the "comp_stay_report" field.</summary>
+    public const int CompStayReportFieldNumber = 4;
+    private bool compStayReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool CompStayReport {
+      get { return compStayReport_; }
+      set {
+        compStayReport_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ManagementCurrentTimeReportManifest);
@@ -139,6 +152,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (UnoccupiedRoomsReport != other.UnoccupiedRoomsReport) return false;
       if (FolioBalanceReport != other.FolioBalanceReport) return false;
       if (LodgingVerificationReport != other.LodgingVerificationReport) return false;
+      if (CompStayReport != other.CompStayReport) return false;
       return true;
     }
 
@@ -148,6 +162,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (UnoccupiedRoomsReport != false) hash ^= UnoccupiedRoomsReport.GetHashCode();
       if (FolioBalanceReport != false) hash ^= FolioBalanceReport.GetHashCode();
       if (LodgingVerificationReport != false) hash ^= LodgingVerificationReport.GetHashCode();
+      if (CompStayReport != false) hash ^= CompStayReport.GetHashCode();
       return hash;
     }
 
@@ -170,6 +185,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(24);
         output.WriteBool(LodgingVerificationReport);
       }
+      if (CompStayReport != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(CompStayReport);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -182,6 +201,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
         size += 1 + 1;
       }
       if (LodgingVerificationReport != false) {
+        size += 1 + 1;
+      }
+      if (CompStayReport != false) {
         size += 1 + 1;
       }
       return size;
@@ -200,6 +222,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
       if (other.LodgingVerificationReport != false) {
         LodgingVerificationReport = other.LodgingVerificationReport;
+      }
+      if (other.CompStayReport != false) {
+        CompStayReport = other.CompStayReport;
       }
     }
 
@@ -221,6 +246,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 24: {
             LodgingVerificationReport = input.ReadBool();
+            break;
+          }
+          case 32: {
+            CompStayReport = input.ReadBool();
             break;
           }
         }
