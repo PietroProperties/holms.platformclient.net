@@ -25,5 +25,8 @@ message PostedCardAuthorization {
 	holms.types.money.cards.PaymentCardBrand brand = 9;
 	string txn_id = 10;
 	holms.types.money.cards.AuthorizationEntryMethod entry_method = 11;
+	string approval_code = 12;
+	string application_name = 13;
+	string a_r_q_c = 14;
 }
 
