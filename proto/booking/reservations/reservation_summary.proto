@@ -12,6 +12,7 @@ import "primitive/pb_inclusive_opsdate_range.proto";
 import "supply/room_types/room_type.proto";
 import "iam/tenancy_indicator.proto";
 import "tenancy_config/indicators/property_indicator.proto";
+import "booking/indicators/cancellation_policy_indicator.proto";
 
 import "operations/rooms/room_indicator.proto";
 
@@ -37,4 +38,5 @@ message ReservationSummary {
 	repeated string active_tags = 18;
 	string channel_manager_id = 19;
 	string source_channel_id = 20;
+	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 21;
 }
