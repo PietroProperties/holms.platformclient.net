@@ -150,4 +150,6 @@ service GroupBookingFolioSvc {
 		returns (google.protobuf.Empty);
 	rpc PostIncidentalChargeCorrection (GroupBookingFolioSvcPostIncidentalChargeCorrectionRequest)
 		returns (google.protobuf.Empty);
+	rpc PostMiscChargeCorrection (GroupBookingFolioSvcPostMiscChargeCorrectionRequest)
+		returns (google.protobuf.Empty);
 }
