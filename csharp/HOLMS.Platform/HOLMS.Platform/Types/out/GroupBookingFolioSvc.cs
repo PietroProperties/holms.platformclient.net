@@ -128,7 +128,7 @@ namespace HOLMS.Types.Money.RPC {
             "TkdfQVNTRVRfQUNDT1VOVBACEjwKOEdST1VQX0JPT0tJTkdfRk9MSU9fU1ZD",
             "X1BPU1RfQ0FSRF9QQVlNRU5UX0lOVkFMSURfQU1PVU5UEAMSRwpDR1JPVVBf",
             "Qk9PS0lOR19GT0xJT19TVkNfUE9TVF9DQVJEX1BBWU1FTlRfQVVUSE9SSVpB",
-            "VElPTl9VTkFWQUlMQUJMRRAEMpULChRHcm91cEJvb2tpbmdGb2xpb1N2YxKI",
+            "VElPTl9VTkFWQUlMQUJMRRAEMpUMChRHcm91cEJvb2tpbmdGb2xpb1N2YxKI",
             "AQoNR2V0Rm9saW9TdGF0ZRI1LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNh",
             "dG9ycy5Hcm91cEJvb2tpbmdJbmRpY2F0b3IaQC5ob2xtcy50eXBlcy5tb25l",
             "eS5ycGMuR3JvdXBCb29raW5nRm9saW9TdmNHZXRGb2xpb1N0YXRlUmVzcG9u",
@@ -160,8 +160,11 @@ namespace HOLMS.Types.Money.RPC {
             "bXB0eRKKAQoeUG9zdEluY2lkZW50YWxDaGFyZ2VDb3JyZWN0aW9uElAuaG9s",
             "bXMudHlwZXMubW9uZXkucnBjLkdyb3VwQm9va2luZ0ZvbGlvU3ZjUG9zdElu",
             "Y2lkZW50YWxDaGFyZ2VDb3JyZWN0aW9uUmVxdWVzdBoWLmdvb2dsZS5wcm90",
-            "b2J1Zi5FbXB0eUIjWgltb25leS9ycGOqAhVIT0xNUy5UeXBlcy5Nb25leS5S",
-            "UENiBnByb3RvMw=="));
+            "b2J1Zi5FbXB0eRJ+ChhQb3N0TWlzY0NoYXJnZUNvcnJlY3Rpb24SSi5ob2xt",
+            "cy50eXBlcy5tb25leS5ycGMuR3JvdXBCb29raW5nRm9saW9TdmNQb3N0TWlz",
+            "Y0NoYXJnZUNvcnJlY3Rpb25SZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5QiNaCW1vbmV5L3JwY6oCFUhPTE1TLlR5cGVzLk1vbmV5LlJQQ2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardAuthorizationPurposeReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardAuthorizationResponseReflection.Descriptor, global::HOLMS.Types.Money.Cards.MerchantAuthorizationIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.NotPresentPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Folio.FolioStateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostChargesResult), typeof(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcGetFolioStateResult), typeof(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCashPaymentResult), typeof(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCheckPaymentResult), typeof(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCardPaymentResult), }, new pbr::GeneratedClrTypeInfo[] {
