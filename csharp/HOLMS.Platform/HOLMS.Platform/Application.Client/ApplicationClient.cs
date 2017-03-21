@@ -141,6 +141,19 @@ namespace HOLMS.Application.Client {
 
         public string ServerName => _sp.AppSvcHostname;
 
+        public virtual void EndSession() {
+            if (SC?.RefreshToken != null) {
+                InvalidateRefreshToken();
+            }
+
+            _refreshTimer?.Dispose();
+            _refreshTimer = null;
+            _authenticatedChannel?.ShutdownAsync().Wait();
+            //Kill everything else we might have missed
+            GrpcEnvironment.ShutdownChannelsAsync().Wait();
+            _authenticatedChannel = null;
+        }
+
         public virtual async Task<SessionSvcStartSessionResult> StartSession(string candidateUsername, string candidatePassword) {
             var startReq = new SessionSvcStartSessionRequest {
                 CandidateUsername = candidateUsername,
@@ -334,16 +347,7 @@ namespace HOLMS.Application.Client {
         }
 
         public void Dispose() {
-            if (SC?.RefreshToken != null) {
-                InvalidateRefreshToken();
-            }
-            
-            _refreshTimer?.Dispose();
-            _refreshTimer = null;
-            _authenticatedChannel?.ShutdownAsync().Wait();
-            //Kill everything else we might have missed
-            GrpcEnvironment.ShutdownChannelsAsync().Wait();
-            _authenticatedChannel = null;
+            EndSession();
         }
 
         private void InvalidateRefreshToken() {
