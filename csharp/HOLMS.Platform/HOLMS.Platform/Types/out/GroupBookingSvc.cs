@@ -47,7 +47,7 @@ namespace HOLMS.Types.Booking.RPC {
             "c1JlcXVlc3QSRwoIYm9va2luZ3MYASADKAsyNS5ob2xtcy50eXBlcy5ib29r",
             "aW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yIlwKH0dyb3Vw",
             "Qm9va2luZ1N2Y0dldEJ5SWRzUmVzcG9uc2USOQoHYm9va2luZxgBIAMoCzIo",
-            "LmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdyb3VwQm9va2luZzKPBwoP",
+            "LmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdyb3VwQm9va2luZzKCCAoP",
             "R3JvdXBCb29raW5nU3ZjElIKA0FsbBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
             "eRozLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3VwQm9va2luZ1N2Y0Fs",
             "bEJvb2tpbmdzEl0KBkNyZWF0ZRImLmhvbG1zLnR5cGVzLmNybS5ncm91cHMu",
@@ -65,11 +65,13 @@ namespace HOLMS.Types.Booking.RPC {
             "cm91cEJvb2tpbmdTdmNHZXRSZXNlcnZhdGlvbnNXaXRoVGFnUmVzcG9uc2US",
             "agoHR2V0QnlJZBI1LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5H",
             "cm91cEJvb2tpbmdJbmRpY2F0b3IaKC5ob2xtcy50eXBlcy5ib29raW5nLmdy",
-            "b3Vwcy5Hcm91cEJvb2tpbmcSfQoIR2V0QnlJZHMSNy5ob2xtcy50eXBlcy5i",
-            "b29raW5nLnJwYy5Hcm91cEJvb2tpbmdTdmNHZXRCeUlkc1JlcXVlc3QaOC5o",
-            "b2xtcy50eXBlcy5ib29raW5nLnJwYy5Hcm91cEJvb2tpbmdTdmNHZXRCeUlk",
-            "c1Jlc3BvbnNlQidaC2Jvb2tpbmcvcnBjqgIXSE9MTVMuVHlwZXMuQm9va2lu",
-            "Zy5SUENiBnByb3RvMw=="));
+            "b3Vwcy5Hcm91cEJvb2tpbmcScQoLR2V0QnlJZEZ1bGwSNS5ob2xtcy50eXBl",
+            "cy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yGisu",
+            "aG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMuR3JvdXBCb29raW5nRXh0En0K",
+            "CEdldEJ5SWRzEjcuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBCb29r",
+            "aW5nU3ZjR2V0QnlJZHNSZXF1ZXN0GjguaG9sbXMudHlwZXMuYm9va2luZy5y",
+            "cGMuR3JvdXBCb29raW5nU3ZjR2V0QnlJZHNSZXNwb25zZUInWgtib29raW5n",
+            "L3JwY6oCF0hPTE1TLlR5cGVzLkJvb2tpbmcuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingExtReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantityReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.PriceUpdateRequestReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationSummaryReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
