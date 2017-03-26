@@ -23,17 +23,18 @@ namespace HOLMS.Types.TenancyConfig {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cit0ZW5hbmN5X2NvbmZpZy9jaGFubmVsX21hbmFnZXJfY29uZmlnLnByb3Rv",
-            "Ehpob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZyLJAQoUQ2hhbm5lbE1hbmFn",
+            "Ehpob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZyKCAgoUQ2hhbm5lbE1hbmFn",
             "ZXJDb25maWcSFAoMcHJvdmlkZXJfaV9kGAEgASgJEhoKEnByb3ZpZGVyX3Vz",
             "ZXJfbmFtZRgCIAEoCRIZChFwcm92aWRlcl9wYXNzd29yZBgDIAEoCRIRCglo",
             "b3RlbF9pX2QYBCABKAkSKAogZGV2X2Rpc2FibGVfYm9va2luZ19jb25maXJt",
             "YXRpb24YBSABKAgSJwofZGlzYWJsZV9jaGFubmVsX3N5bmNocm9uaXphdGlv",
-            "bhgGIAEoCEIrWg10ZW5hbmN5Y29uZmlnqgIZSE9MTVMuVHlwZXMuVGVuYW5j",
-            "eUNvbmZpZ2IGcHJvdG8z"));
+            "bhgGIAEoCBIcChRkaXNhYmxlX2NhbmNlbGxhdGlvbhgHIAEoCBIZChFkaXNh",
+            "YmxlX2FtZW5kbWVudBgIIAEoCEIrWg10ZW5hbmN5Y29uZmlnqgIZSE9MTVMu",
+            "VHlwZXMuVGVuYW5jeUNvbmZpZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ChannelManagerConfig), global::HOLMS.Types.TenancyConfig.ChannelManagerConfig.Parser, new[]{ "ProviderID", "ProviderUserName", "ProviderPassword", "HotelID", "DevDisableBookingConfirmation", "DisableChannelSynchronization" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ChannelManagerConfig), global::HOLMS.Types.TenancyConfig.ChannelManagerConfig.Parser, new[]{ "ProviderID", "ProviderUserName", "ProviderPassword", "HotelID", "DevDisableBookingConfirmation", "DisableChannelSynchronization", "DisableCancellation", "DisableAmendment" }, null, null, null)
           }));
     }
     #endregion
@@ -70,6 +71,8 @@ namespace HOLMS.Types.TenancyConfig {
       hotelID_ = other.hotelID_;
       devDisableBookingConfirmation_ = other.devDisableBookingConfirmation_;
       disableChannelSynchronization_ = other.disableChannelSynchronization_;
+      disableCancellation_ = other.disableCancellation_;
+      disableAmendment_ = other.disableAmendment_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -143,6 +146,28 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "disable_cancellation" field.</summary>
+    public const int DisableCancellationFieldNumber = 7;
+    private bool disableCancellation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool DisableCancellation {
+      get { return disableCancellation_; }
+      set {
+        disableCancellation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "disable_amendment" field.</summary>
+    public const int DisableAmendmentFieldNumber = 8;
+    private bool disableAmendment_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool DisableAmendment {
+      get { return disableAmendment_; }
+      set {
+        disableAmendment_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ChannelManagerConfig);
@@ -162,6 +187,8 @@ namespace HOLMS.Types.TenancyConfig {
       if (HotelID != other.HotelID) return false;
       if (DevDisableBookingConfirmation != other.DevDisableBookingConfirmation) return false;
       if (DisableChannelSynchronization != other.DisableChannelSynchronization) return false;
+      if (DisableCancellation != other.DisableCancellation) return false;
+      if (DisableAmendment != other.DisableAmendment) return false;
       return true;
     }
 
@@ -174,6 +201,8 @@ namespace HOLMS.Types.TenancyConfig {
       if (HotelID.Length != 0) hash ^= HotelID.GetHashCode();
       if (DevDisableBookingConfirmation != false) hash ^= DevDisableBookingConfirmation.GetHashCode();
       if (DisableChannelSynchronization != false) hash ^= DisableChannelSynchronization.GetHashCode();
+      if (DisableCancellation != false) hash ^= DisableCancellation.GetHashCode();
+      if (DisableAmendment != false) hash ^= DisableAmendment.GetHashCode();
       return hash;
     }
 
@@ -208,6 +237,14 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(48);
         output.WriteBool(DisableChannelSynchronization);
       }
+      if (DisableCancellation != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(DisableCancellation);
+      }
+      if (DisableAmendment != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(DisableAmendment);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -229,6 +266,12 @@ namespace HOLMS.Types.TenancyConfig {
         size += 1 + 1;
       }
       if (DisableChannelSynchronization != false) {
+        size += 1 + 1;
+      }
+      if (DisableCancellation != false) {
+        size += 1 + 1;
+      }
+      if (DisableAmendment != false) {
         size += 1 + 1;
       }
       return size;
@@ -256,6 +299,12 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.DisableChannelSynchronization != false) {
         DisableChannelSynchronization = other.DisableChannelSynchronization;
+      }
+      if (other.DisableCancellation != false) {
+        DisableCancellation = other.DisableCancellation;
+      }
+      if (other.DisableAmendment != false) {
+        DisableAmendment = other.DisableAmendment;
       }
     }
 
@@ -289,6 +338,14 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 48: {
             DisableChannelSynchronization = input.ReadBool();
+            break;
+          }
+          case 56: {
+            DisableCancellation = input.ReadBool();
+            break;
+          }
+          case 64: {
+            DisableAmendment = input.ReadBool();
             break;
           }
         }

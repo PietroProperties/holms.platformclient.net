@@ -11,4 +11,6 @@ message ChannelManagerConfig {
 	string hotel_i_d = 4;
 	bool dev_disable_booking_confirmation = 5;
 	bool disable_channel_synchronization = 6;
+	bool disable_cancellation = 7;
+	bool disable_amendment = 8;
 }
