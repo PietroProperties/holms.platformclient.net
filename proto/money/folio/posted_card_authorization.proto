@@ -28,5 +28,6 @@ message PostedCardAuthorization {
 	string approval_code = 12;
 	string application_name = 13;
 	string a_r_q_c = 14;
+	string a_i_d = 15;
 }
 

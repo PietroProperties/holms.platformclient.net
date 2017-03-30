@@ -30,7 +30,7 @@ namespace HOLMS.Types.Money.Folio {
             "bxoybW9uZXkvY2FyZHMvbWVyY2hhbnRfYXV0aG9yaXphdGlvbl9pbmRpY2F0",
             "b3IucHJvdG8aKG1vbmV5L2NhcmRzL21lcmNoYW50X2F1dGhvcml6YXRpb24u",
             "cHJvdG8aKG1vbmV5L2NhcmRzL3BheW1lbnRfY2FyZF9pbmRpY2F0b3IucHJv",
-            "dG8aJG1vbmV5L2NhcmRzL3BheW1lbnRfY2FyZF9icmFuZC5wcm90byKOBQoX",
+            "dG8aJG1vbmV5L2NhcmRzL3BheW1lbnRfY2FyZF9icmFuZC5wcm90byKdBQoX",
             "UG9zdGVkQ2FyZEF1dGhvcml6YXRpb24SSgoJZW50aXR5X2lkGAEgASgLMjcu",
             "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMuTWVyY2hhbnRBdXRob3JpemF0aW9u",
             "SW5kaWNhdG9yEi0KCXBvc3RlZF9hdBgCIAEoCzIaLmdvb2dsZS5wcm90b2J1",
@@ -45,12 +45,12 @@ namespace HOLMS.Types.Money.Folio {
             "bmQSDgoGdHhuX2lkGAogASgJEkcKDGVudHJ5X21ldGhvZBgLIAEoDjIxLmhv",
             "bG1zLnR5cGVzLm1vbmV5LmNhcmRzLkF1dGhvcml6YXRpb25FbnRyeU1ldGhv",
             "ZBIVCg1hcHByb3ZhbF9jb2RlGAwgASgJEhgKEGFwcGxpY2F0aW9uX25hbWUY",
-            "DSABKAkSDwoHYV9yX3FfYxgOIAEoCUInWgttb25leS9mb2xpb6oCF0hPTE1T",
-            "LlR5cGVzLk1vbmV5LkZvbGlvYgZwcm90bzM="));
+            "DSABKAkSDwoHYV9yX3FfYxgOIAEoCRINCgVhX2lfZBgPIAEoCUInWgttb25l",
+            "eS9mb2xpb6oCF0hPTE1TLlR5cGVzLk1vbmV5LkZvbGlvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardAuthorizationPurposeReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardAuthorizationStateReflection.Descriptor, global::HOLMS.Types.Money.Cards.MerchantAuthorizationIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.MerchantAuthorizationReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardBrandReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedCardAuthorization), global::HOLMS.Types.Money.Folio.PostedCardAuthorization.Parser, new[]{ "EntityId", "PostedAt", "Amount", "State", "Card", "MaskedPan", "CardmemberName", "Purpose", "Brand", "TxnId", "EntryMethod", "ApprovalCode", "ApplicationName", "ARQC" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedCardAuthorization), global::HOLMS.Types.Money.Folio.PostedCardAuthorization.Parser, new[]{ "EntityId", "PostedAt", "Amount", "State", "Card", "MaskedPan", "CardmemberName", "Purpose", "Brand", "TxnId", "EntryMethod", "ApprovalCode", "ApplicationName", "ARQC", "AID" }, null, null, null)
           }));
     }
     #endregion
@@ -95,6 +95,7 @@ namespace HOLMS.Types.Money.Folio {
       approvalCode_ = other.approvalCode_;
       applicationName_ = other.applicationName_;
       aRQC_ = other.aRQC_;
+      aID_ = other.aID_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -256,6 +257,17 @@ namespace HOLMS.Types.Money.Folio {
       }
     }
 
+    /// <summary>Field number for the "a_i_d" field.</summary>
+    public const int AIDFieldNumber = 15;
+    private string aID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AID {
+      get { return aID_; }
+      set {
+        aID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PostedCardAuthorization);
@@ -283,6 +295,7 @@ namespace HOLMS.Types.Money.Folio {
       if (ApprovalCode != other.ApprovalCode) return false;
       if (ApplicationName != other.ApplicationName) return false;
       if (ARQC != other.ARQC) return false;
+      if (AID != other.AID) return false;
       return true;
     }
 
@@ -303,6 +316,7 @@ namespace HOLMS.Types.Money.Folio {
       if (ApprovalCode.Length != 0) hash ^= ApprovalCode.GetHashCode();
       if (ApplicationName.Length != 0) hash ^= ApplicationName.GetHashCode();
       if (ARQC.Length != 0) hash ^= ARQC.GetHashCode();
+      if (AID.Length != 0) hash ^= AID.GetHashCode();
       return hash;
     }
 
@@ -369,6 +383,10 @@ namespace HOLMS.Types.Money.Folio {
         output.WriteRawTag(114);
         output.WriteString(ARQC);
       }
+      if (AID.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(AID);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -415,6 +433,9 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (ARQC.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ARQC);
+      }
+      if (AID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AID);
       }
       return size;
     }
@@ -477,6 +498,9 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (other.ARQC.Length != 0) {
         ARQC = other.ARQC;
+      }
+      if (other.AID.Length != 0) {
+        AID = other.AID;
       }
     }
 
@@ -554,6 +578,10 @@ namespace HOLMS.Types.Money.Folio {
           }
           case 114: {
             ARQC = input.ReadString();
+            break;
+          }
+          case 122: {
+            AID = input.ReadString();
             break;
           }
         }
