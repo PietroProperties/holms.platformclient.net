@@ -19,6 +19,7 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest> __Marshaller_GetReservationSummariesRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Timestamp> __Marshaller_Timestamp = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Timestamp.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsByBookingId> __Marshaller_ReservationSearchSvcSearchReservationsByBookingId = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsByBookingId.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest> __Marshaller_ReservationSearchSvcSearchReservationsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListRequest, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> __Method_GetFilteredReservationList = new Method<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListRequest, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse>(
         MethodType.Unary,
@@ -76,6 +77,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_ReservationSearchSvcSearchReservationsByBookingId,
         __Marshaller_ReservationSearchSvcGetFilteredReservationListResponse);
 
+    static readonly Method<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> __Method_SearchReservations = new Method<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "SearchReservations",
+        __Marshaller_ReservationSearchSvcSearchReservationsRequest,
+        __Marshaller_ReservationSearchSvcGetFilteredReservationListResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -120,7 +128,15 @@ namespace HOLMS.Types.Booking.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      ///  NOTE(DA) Deprecated; remove when no longer used
+      /// </summary>
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> SearchReservationsByBookingId(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsByBookingId request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> SearchReservations(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -262,21 +278,49 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetStayOversByDate, null, options, request);
       }
+      /// <summary>
+      ///  NOTE(DA) Deprecated; remove when no longer used
+      /// </summary>
       public virtual global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse SearchReservationsByBookingId(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsByBookingId request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SearchReservationsByBookingId(request, new CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///  NOTE(DA) Deprecated; remove when no longer used
+      /// </summary>
       public virtual global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse SearchReservationsByBookingId(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsByBookingId request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SearchReservationsByBookingId, null, options, request);
       }
+      /// <summary>
+      ///  NOTE(DA) Deprecated; remove when no longer used
+      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> SearchReservationsByBookingIdAsync(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsByBookingId request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SearchReservationsByBookingIdAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///  NOTE(DA) Deprecated; remove when no longer used
+      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> SearchReservationsByBookingIdAsync(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsByBookingId request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SearchReservationsByBookingId, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse SearchReservations(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SearchReservations(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse SearchReservations(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SearchReservations, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> SearchReservationsAsync(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SearchReservationsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> SearchReservationsAsync(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SearchReservations, null, options, request);
       }
       protected override ReservationSearchSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -295,7 +339,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetDeparturesByDate, serviceImpl.GetDeparturesByDate)
           .AddMethod(__Method_GetNoShowsByDate, serviceImpl.GetNoShowsByDate)
           .AddMethod(__Method_GetStayOversByDate, serviceImpl.GetStayOversByDate)
-          .AddMethod(__Method_SearchReservationsByBookingId, serviceImpl.SearchReservationsByBookingId).Build();
+          .AddMethod(__Method_SearchReservationsByBookingId, serviceImpl.SearchReservationsByBookingId)
+          .AddMethod(__Method_SearchReservations, serviceImpl.SearchReservations).Build();
     }
 
   }
