@@ -27,6 +27,10 @@ namespace HOLMS.Platform.Support.ReservationTags {
         }
 
         public ImmutableTagSet(IEnumerable<ReservationTagBase> tags) : this() {
+            if (tags == null) {
+                return;
+            }
+
             foreach (var tag in tags) {
                 _tags.Add(tag);
             }
