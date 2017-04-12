@@ -28,32 +28,33 @@ namespace HOLMS.Types.CRM.RPC {
             "ChpHdWVzdFN2Y01hbnlHdWVzdHNSZXNwb25zZRItCgZndWVzdHMYASADKAsy",
             "HS5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0Ik0KFkd1ZXN0U3ZjR2V0",
             "TWFueVJlcXVlc3QSMwoDaWRzGAEgAygLMiYuaG9sbXMudHlwZXMuY3JtLmd1",
-            "ZXN0cy5HdWVzdEluZGljYXRvciJUChtHdWVzdFN2Y1ByZWZpeFNlYXJjaFJl",
+            "ZXN0cy5HdWVzdEluZGljYXRvciJ9ChtHdWVzdFN2Y1ByZWZpeFNlYXJjaFJl",
             "cXVlc3QSGgoSZmFtaWx5X25hbWVfcHJlZml4GAEgASgJEhkKEWdpdmVuX25h",
-            "bWVfcHJlZml4GAIgASgJIjUKHEd1ZXN0U3ZjU2VhcmNoQnlFbWFpbFJlcXVl",
-            "c3QSFQoNZW1haWxfYWRkcmVzcxgBIAEoCTKhBQoIR3Vlc3RTdmMSTgoDQWxs",
-            "EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gi8uaG9sbXMudHlwZXMuY3JtLnJw",
-            "Yy5HdWVzdFN2Y01hbnlHdWVzdHNSZXNwb25zZRJQCgdHZXRCeUlkEiYuaG9s",
-            "bXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdEluZGljYXRvchodLmhvbG1zLnR5",
-            "cGVzLmNybS5ndWVzdHMuR3Vlc3QSbgoOR2V0U2V2ZXJhbEJ5SWQSKy5ob2xt",
-            "cy50eXBlcy5jcm0ucnBjLkd1ZXN0U3ZjR2V0TWFueVJlcXVlc3QaLy5ob2xt",
-            "cy50eXBlcy5jcm0ucnBjLkd1ZXN0U3ZjTWFueUd1ZXN0c1Jlc3BvbnNlEncK",
-            "ElNlYXJjaEJ5TmFtZVByZWZpeBIwLmhvbG1zLnR5cGVzLmNybS5ycGMuR3Vl",
-            "c3RTdmNQcmVmaXhTZWFyY2hSZXF1ZXN0Gi8uaG9sbXMudHlwZXMuY3JtLnJw",
-            "Yy5HdWVzdFN2Y01hbnlHdWVzdHNSZXNwb25zZRJ6ChRTZWFyY2hCeUVtYWls",
-            "QWRkcmVzcxIxLmhvbG1zLnR5cGVzLmNybS5ycGMuR3Vlc3RTdmNTZWFyY2hC",
-            "eUVtYWlsUmVxdWVzdBovLmhvbG1zLnR5cGVzLmNybS5ycGMuR3Vlc3RTdmNN",
-            "YW55R3Vlc3RzUmVzcG9uc2USRgoGQ3JlYXRlEh0uaG9sbXMudHlwZXMuY3Jt",
-            "Lmd1ZXN0cy5HdWVzdBodLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3QS",
-            "RgoGVXBkYXRlEh0uaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdBodLmhv",
-            "bG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RCH1oHY3JtL3JwY6oCE0hPTE1T",
-            "LlR5cGVzLkNSTS5SUENiBnByb3RvMw=="));
+            "bWVfcHJlZml4GAIgASgJEicKH2luY2x1ZGVfaW5kaXJlY3RfY2hhbm5lbF9n",
+            "dWVzdHMYAyABKAgiNQocR3Vlc3RTdmNTZWFyY2hCeUVtYWlsUmVxdWVzdBIV",
+            "Cg1lbWFpbF9hZGRyZXNzGAEgASgJMqEFCghHdWVzdFN2YxJOCgNBbGwSFi5n",
+            "b29nbGUucHJvdG9idWYuRW1wdHkaLy5ob2xtcy50eXBlcy5jcm0ucnBjLkd1",
+            "ZXN0U3ZjTWFueUd1ZXN0c1Jlc3BvbnNlElAKB0dldEJ5SWQSJi5ob2xtcy50",
+            "eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0SW5kaWNhdG9yGh0uaG9sbXMudHlwZXMu",
+            "Y3JtLmd1ZXN0cy5HdWVzdBJuCg5HZXRTZXZlcmFsQnlJZBIrLmhvbG1zLnR5",
+            "cGVzLmNybS5ycGMuR3Vlc3RTdmNHZXRNYW55UmVxdWVzdBovLmhvbG1zLnR5",
+            "cGVzLmNybS5ycGMuR3Vlc3RTdmNNYW55R3Vlc3RzUmVzcG9uc2USdwoSU2Vh",
+            "cmNoQnlOYW1lUHJlZml4EjAuaG9sbXMudHlwZXMuY3JtLnJwYy5HdWVzdFN2",
+            "Y1ByZWZpeFNlYXJjaFJlcXVlc3QaLy5ob2xtcy50eXBlcy5jcm0ucnBjLkd1",
+            "ZXN0U3ZjTWFueUd1ZXN0c1Jlc3BvbnNlEnoKFFNlYXJjaEJ5RW1haWxBZGRy",
+            "ZXNzEjEuaG9sbXMudHlwZXMuY3JtLnJwYy5HdWVzdFN2Y1NlYXJjaEJ5RW1h",
+            "aWxSZXF1ZXN0Gi8uaG9sbXMudHlwZXMuY3JtLnJwYy5HdWVzdFN2Y01hbnlH",
+            "dWVzdHNSZXNwb25zZRJGCgZDcmVhdGUSHS5ob2xtcy50eXBlcy5jcm0uZ3Vl",
+            "c3RzLkd1ZXN0Gh0uaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdBJGCgZV",
+            "cGRhdGUSHS5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0Gh0uaG9sbXMu",
+            "dHlwZXMuY3JtLmd1ZXN0cy5HdWVzdEIfWgdjcm0vcnBjqgITSE9MTVMuVHlw",
+            "ZXMuQ1JNLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse), global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse.Parser, new[]{ "Guests" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestSvcGetManyRequest), global::HOLMS.Types.CRM.RPC.GuestSvcGetManyRequest.Parser, new[]{ "Ids" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestSvcPrefixSearchRequest), global::HOLMS.Types.CRM.RPC.GuestSvcPrefixSearchRequest.Parser, new[]{ "FamilyNamePrefix", "GivenNamePrefix" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestSvcPrefixSearchRequest), global::HOLMS.Types.CRM.RPC.GuestSvcPrefixSearchRequest.Parser, new[]{ "FamilyNamePrefix", "GivenNamePrefix", "IncludeIndirectChannelGuests" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest), global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest.Parser, new[]{ "EmailAddress" }, null, null, null)
           }));
     }
@@ -305,6 +306,7 @@ namespace HOLMS.Types.CRM.RPC {
     public GuestSvcPrefixSearchRequest(GuestSvcPrefixSearchRequest other) : this() {
       familyNamePrefix_ = other.familyNamePrefix_;
       givenNamePrefix_ = other.givenNamePrefix_;
+      includeIndirectChannelGuests_ = other.includeIndirectChannelGuests_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -334,6 +336,17 @@ namespace HOLMS.Types.CRM.RPC {
       }
     }
 
+    /// <summary>Field number for the "include_indirect_channel_guests" field.</summary>
+    public const int IncludeIndirectChannelGuestsFieldNumber = 3;
+    private bool includeIndirectChannelGuests_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IncludeIndirectChannelGuests {
+      get { return includeIndirectChannelGuests_; }
+      set {
+        includeIndirectChannelGuests_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GuestSvcPrefixSearchRequest);
@@ -349,6 +362,7 @@ namespace HOLMS.Types.CRM.RPC {
       }
       if (FamilyNamePrefix != other.FamilyNamePrefix) return false;
       if (GivenNamePrefix != other.GivenNamePrefix) return false;
+      if (IncludeIndirectChannelGuests != other.IncludeIndirectChannelGuests) return false;
       return true;
     }
 
@@ -357,6 +371,7 @@ namespace HOLMS.Types.CRM.RPC {
       int hash = 1;
       if (FamilyNamePrefix.Length != 0) hash ^= FamilyNamePrefix.GetHashCode();
       if (GivenNamePrefix.Length != 0) hash ^= GivenNamePrefix.GetHashCode();
+      if (IncludeIndirectChannelGuests != false) hash ^= IncludeIndirectChannelGuests.GetHashCode();
       return hash;
     }
 
@@ -375,6 +390,10 @@ namespace HOLMS.Types.CRM.RPC {
         output.WriteRawTag(18);
         output.WriteString(GivenNamePrefix);
       }
+      if (IncludeIndirectChannelGuests != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IncludeIndirectChannelGuests);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -385,6 +404,9 @@ namespace HOLMS.Types.CRM.RPC {
       }
       if (GivenNamePrefix.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(GivenNamePrefix);
+      }
+      if (IncludeIndirectChannelGuests != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -399,6 +421,9 @@ namespace HOLMS.Types.CRM.RPC {
       }
       if (other.GivenNamePrefix.Length != 0) {
         GivenNamePrefix = other.GivenNamePrefix;
+      }
+      if (other.IncludeIndirectChannelGuests != false) {
+        IncludeIndirectChannelGuests = other.IncludeIndirectChannelGuests;
       }
     }
 
@@ -416,6 +441,10 @@ namespace HOLMS.Types.CRM.RPC {
           }
           case 18: {
             GivenNamePrefix = input.ReadString();
+            break;
+          }
+          case 24: {
+            IncludeIndirectChannelGuests = input.ReadBool();
             break;
           }
         }
