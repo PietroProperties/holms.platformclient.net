@@ -19,6 +19,7 @@ message GuestSvcGetManyRequest {
 message GuestSvcPrefixSearchRequest {
 	string family_name_prefix = 1;
 	string given_name_prefix = 2;
+	bool include_indirect_channel_guests = 3;
 }
 
 message GuestSvcSearchByEmailRequest {
