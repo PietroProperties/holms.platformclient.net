@@ -5,8 +5,8 @@ option csharp_namespace = "HOLMS.Types.Money.RPC";
 
 import "google/protobuf/empty.proto";
 import "primitive/pb_inclusive_calendar_date_range.proto";
-import "money/cards/transactions/payment_card_authorization_capture.proto";
-import "money/cards/transactions/payment_card_authorization_capture_indicator.proto";
+import "money/cards/transactions/payment_card_sale_capture.proto";
+import "money/cards/transactions/payment_card_sale_capture_indicator.proto";
 import "money/cards/transactions/processor_transaction_result.proto";
 import "money/cards/transactions/merchant_batch.proto";
 import "money/cards/payment_card_indicator.proto";
@@ -17,7 +17,7 @@ import "tenancy_config/indicators/property_indicator.proto";
 
 
 message CardProcessingSvcCaptureEnumResponse {
-	repeated holms.types.money.cards.transactions.PaymentCardAuthorizationCapture captures = 1;
+	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture captures = 1;
 }
 
 message MerchantBatchEnumResponse {
@@ -59,7 +59,7 @@ service CardProcessingSvc {
 	rpc OpenAndSettleBatchFromPendingCapturesAllMerchants(.google.protobuf.Empty) 
 		returns (MerchantBatchEnumResponse);
 
-	rpc CancelPendingCapture(holms.types.money.cards.transactions.PaymentCardAuthorizationCaptureIndicator)
+	rpc CancelPendingCapture(holms.types.money.cards.transactions.PaymentCardSaleCaptureIndicator)
 		returns (CardProcessingSvcCancelPendingCaptureResponse);
 
 	rpc VerifyAndTokenizeNotPresentCard(PaymentCardVerificationRequest)

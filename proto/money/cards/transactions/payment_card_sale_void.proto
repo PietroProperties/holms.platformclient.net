@@ -7,7 +7,7 @@ option go_package = "money/cards/transactions";
 import "money/cards/transactions/processor_transaction_result.proto";
 import "google/protobuf/timestamp.proto";
 
-message PaymentCardAuthorizationVoid {
+message PaymentCardSaleVoid {
 	string host_reference_number = 1;
 	ProcessorTransactionResult result = 2;
 	google.protobuf.Timestamp posted_at = 3;

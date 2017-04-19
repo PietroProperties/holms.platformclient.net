@@ -18,7 +18,7 @@ namespace HOLMS.Types.Money.RPC {
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse> __Marshaller_MerchantBatchEnumResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Cards.CardMerchantIndicator> __Marshaller_CardMerchantIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.CardMerchantIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> __Marshaller_MerchantBatch = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCaptureIndicator> __Marshaller_PaymentCardAuthorizationCaptureIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCaptureIndicator.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicator> __Marshaller_PaymentCardSaleCaptureIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse> __Marshaller_CardProcessingSvcCancelPendingCaptureResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest> __Marshaller_PaymentCardVerificationRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> __Marshaller_CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse.Parser.ParseFrom);
@@ -51,11 +51,11 @@ namespace HOLMS.Types.Money.RPC {
         __Marshaller_Empty,
         __Marshaller_MerchantBatchEnumResponse);
 
-    static readonly Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCaptureIndicator, global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse> __Method_CancelPendingCapture = new Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCaptureIndicator, global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse>(
+    static readonly Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicator, global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse> __Method_CancelPendingCapture = new Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicator, global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse>(
         MethodType.Unary,
         __ServiceName,
         "CancelPendingCapture",
-        __Marshaller_PaymentCardAuthorizationCaptureIndicator,
+        __Marshaller_PaymentCardSaleCaptureIndicator,
         __Marshaller_CardProcessingSvcCancelPendingCaptureResponse);
 
     static readonly Method<global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> __Method_VerifyAndTokenizeNotPresentCard = new Method<global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse>(
@@ -94,7 +94,7 @@ namespace HOLMS.Types.Money.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse> CancelPendingCapture(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCaptureIndicator request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse> CancelPendingCapture(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -193,19 +193,19 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_OpenAndSettleBatchFromPendingCapturesAllMerchants, null, options, request);
       }
-      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse CancelPendingCapture(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCaptureIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse CancelPendingCapture(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return CancelPendingCapture(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse CancelPendingCapture(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCaptureIndicator request, CallOptions options)
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse CancelPendingCapture(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicator request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CancelPendingCapture, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse> CancelPendingCaptureAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCaptureIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse> CancelPendingCaptureAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return CancelPendingCaptureAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse> CancelPendingCaptureAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCaptureIndicator request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse> CancelPendingCaptureAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicator request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CancelPendingCapture, null, options, request);
       }

@@ -26,24 +26,24 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             "dG8SJGhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucxopbW9u",
             "ZXkvY2FyZHMvY2FyZF9tZXJjaGFudF9pbmRpY2F0b3IucHJvdG8aN21vbmV5",
             "L2NhcmRzL3RyYW5zYWN0aW9ucy9tZXJjaGFudF9iYXRjaF9pbmRpY2F0b3Iu",
-            "cHJvdG8aQW1vbmV5L2NhcmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRf",
-            "YXV0aG9yaXphdGlvbl9jYXB0dXJlLnByb3RvGjttb25leS9jYXJkcy90cmFu",
-            "c2FjdGlvbnMvcHJvY2Vzc29yX3RyYW5zYWN0aW9uX3Jlc3VsdC5wcm90bxof",
-            "cHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90byLmAwoNTWVyY2hhbnRC",
-            "YXRjaBJPCgllbnRpdHlfaWQYASABKAsyPC5ob2xtcy50eXBlcy5tb25leS5j",
-            "YXJkcy50cmFuc2FjdGlvbnMuTWVyY2hhbnRCYXRjaEluZGljYXRvchJDCgtt",
-            "ZXJjaGFudF9pZBgCIAEoCzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNh",
-            "cmRNZXJjaGFudEluZGljYXRvchIVCg1tZXJjaGFudF9uYW1lGAMgASgJElAK",
-            "BnJlc3VsdBgEIAEoDjJALmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5z",
-            "YWN0aW9ucy5Qcm9jZXNzb3JUcmFuc2FjdGlvblJlc3VsdBIXCg9zZXF1ZW5j",
-            "ZV9udW1iZXIYBSABKAUSGQoRdHJhbnNhY3Rpb25fY291bnQYBiABKAUSOwoM",
-            "dG90YWxfYW1vdW50GAcgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1v",
-            "bmV0YXJ5QW1vdW50EgwKBGRhdGUYCCABKAkSVwoIY2FwdHVyZXMYCSADKAsy",
-            "RS5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVu",
-            "dENhcmRBdXRob3JpemF0aW9uQ2FwdHVyZUInqgIkSE9MTVMuVHlwZXMuTW9u",
-            "ZXkuQ2FyZHMuVHJhbnNhY3Rpb25zYgZwcm90bzM="));
+            "cHJvdG8aOG1vbmV5L2NhcmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRf",
+            "c2FsZV9jYXB0dXJlLnByb3RvGjttb25leS9jYXJkcy90cmFuc2FjdGlvbnMv",
+            "cHJvY2Vzc29yX3RyYW5zYWN0aW9uX3Jlc3VsdC5wcm90bxofcHJpbWl0aXZl",
+            "L21vbmV0YXJ5X2Ftb3VudC5wcm90byLdAwoNTWVyY2hhbnRCYXRjaBJPCgll",
+            "bnRpdHlfaWQYASABKAsyPC5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFu",
+            "c2FjdGlvbnMuTWVyY2hhbnRCYXRjaEluZGljYXRvchJDCgttZXJjaGFudF9p",
+            "ZBgCIAEoCzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRNZXJjaGFu",
+            "dEluZGljYXRvchIVCg1tZXJjaGFudF9uYW1lGAMgASgJElAKBnJlc3VsdBgE",
+            "IAEoDjJALmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5Q",
+            "cm9jZXNzb3JUcmFuc2FjdGlvblJlc3VsdBIXCg9zZXF1ZW5jZV9udW1iZXIY",
+            "BSABKAUSGQoRdHJhbnNhY3Rpb25fY291bnQYBiABKAUSOwoMdG90YWxfYW1v",
+            "dW50GAcgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1v",
+            "dW50EgwKBGRhdGUYCCABKAkSTgoIY2FwdHVyZXMYCSADKAsyPC5ob2xtcy50",
+            "eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVudENhcmRTYWxl",
+            "Q2FwdHVyZUInqgIkSE9MTVMuVHlwZXMuTW9uZXkuQ2FyZHMuVHJhbnNhY3Rp",
+            "b25zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatchIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCaptureReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatchIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch), global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch.Parser, new[]{ "EntityId", "MerchantId", "MerchantName", "Result", "SequenceNumber", "TransactionCount", "TotalAmount", "Date", "Captures" }, null, null, null)
           }));
@@ -182,11 +182,11 @@ namespace HOLMS.Types.Money.Cards.Transactions {
 
     /// <summary>Field number for the "captures" field.</summary>
     public const int CapturesFieldNumber = 9;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCapture> _repeated_captures_codec
-        = pb::FieldCodec.ForMessage(74, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCapture.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCapture> captures_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCapture>();
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture> _repeated_captures_codec
+        = pb::FieldCodec.ForMessage(74, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture> captures_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationCapture> Captures {
+    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture> Captures {
       get { return captures_; }
     }
 

@@ -5,7 +5,7 @@ option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 
 import "money/cards/card_merchant_indicator.proto";
 import "money/cards/transactions/merchant_batch_indicator.proto";
-import "money/cards/transactions/payment_card_authorization_capture.proto";
+import "money/cards/transactions/payment_card_sale_capture.proto";
 import "money/cards/transactions/processor_transaction_result.proto";
 import "primitive/monetary_amount.proto";
 
@@ -18,5 +18,5 @@ message MerchantBatch {
 	int32 transaction_count = 6;
 	holms.types.primitive.MonetaryAmount total_amount = 7;
 	string date = 8;
-	repeated holms.types.money.cards.transactions.PaymentCardAuthorizationCapture captures = 9;
+	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture captures = 9;
 }

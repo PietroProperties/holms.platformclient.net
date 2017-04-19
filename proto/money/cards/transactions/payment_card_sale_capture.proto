@@ -4,12 +4,12 @@ package holms.types.money.cards.transactions;
 option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 
 import "money/cards/card_merchant_indicator.proto";
-import "money/cards/transactions/payment_card_authorization_capture_indicator.proto";
+import "money/cards/transactions/payment_card_sale_capture_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "google/protobuf/timestamp.proto";
 
-message PaymentCardAuthorizationCapture {
-	holms.types.money.cards.transactions.PaymentCardAuthorizationCaptureIndicator entity_id = 1;
+message PaymentCardSaleCapture {
+	holms.types.money.cards.transactions.PaymentCardSaleCaptureIndicator entity_id = 1;
 	holms.types.money.cards.CardMerchantIndicator merchant_id = 2;
 	holms.types.primitive.MonetaryAmount captured_amount = 3;
 	CaptureStatus status = 4;

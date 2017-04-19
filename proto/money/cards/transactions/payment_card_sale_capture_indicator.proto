@@ -5,6 +5,6 @@ option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 
 import "primitive/uuid.proto";
 
-message PaymentCardAuthorizationCaptureIndicator {
+message PaymentCardSaleCaptureIndicator {
 	holms.types.primitive.Uuid id = 1;
 }
