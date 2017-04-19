@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards.transactions;
+option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
+option go_package = "money/cards/transactions";
+
+import "money/cards/transactions/processor_transaction_result.proto";
+import "primitive/monetary_amount.proto";
+import "google/protobuf/timestamp.proto";
+
+message PaymentCardAuthorizationReversal {
+	holms.types.primitive.MonetaryAmount reversal_amount = 1;
+	string host_reference_number = 2;
+	ProcessorTransactionResult result = 3;
+	google.protobuf.Timestamp posted_at = 4;
+}

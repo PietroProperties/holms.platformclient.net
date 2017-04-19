@@ -7,8 +7,8 @@ option go_package = "money/rpc";
 import "booking/indicators/group_booking_indicator.proto";
 import "google/protobuf/empty.proto";
 import "money/cards/card_authorization_purpose.proto";
-import "money/cards/card_authorization_response.proto";
-import "money/cards/merchant_authorization_indicator.proto";
+import "money/cards/transactions/card_authorization_response.proto";
+import "money/cards/transactions/payment_card_authorization_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
 import "money/cards/payment_card_indicator.proto";
 import "money/folio/folio_state.proto";
@@ -94,7 +94,7 @@ message GroupBookingFolioSvcPostCardPaymentResponse {
 
 message GroupBookingFolioSvcPostCardPaymentRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
-	holms.types.money.cards.MerchantAuthorizationIndicator authorization = 2;
+	holms.types.money.cards.transactions.PaymentCardAuthorizationIndicator authorization = 2;
 	holms.types.primitive.MonetaryAmount amount = 3;
 }
 
@@ -131,11 +131,11 @@ service GroupBookingFolioSvc {
 
 	// Cards
 	rpc AddCardAuthorizationFromToken(GroupBookingFolioSvcCardAuthorizationFromTokenRequest)
-		returns (.holms.types.money.cards.CardAuthorizationResponse);
+		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromPresentedCard(GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest)
-		returns (.holms.types.money.cards.CardAuthorizationResponse);
+		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromNotPresentCard(GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest)
-		returns (.holms.types.money.cards.CardAuthorizationResponse);
+		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	
 	// Payments
 	rpc PostCardPayment(GroupBookingFolioSvcPostCardPaymentRequest)

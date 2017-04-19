@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package holms.types.money.cards;
 option csharp_namespace = "HOLMS.Types.Money.Cards";
-option go_package = "money/cards";
 
 import "money/cards/payment_card_indicator.proto";
 import "primitive/pb_local_date.proto";

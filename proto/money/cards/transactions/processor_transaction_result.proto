@@ -1,12 +1,8 @@
 ﻿syntax = "proto3";
 
-package holms.types.money.cards;
-option csharp_namespace = "HOLMS.Types.Money.Cards";
-option go_package = "money/cards";
-
-message ProcessorTransactionResponse {
-	ProcessorTransactionResult result = 1;
-}
+package holms.types.money.cards.transactions;
+option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
+option go_package = "money/cards/transactions";
 
 enum ProcessorTransactionResult {
     SUCCESS = 0;

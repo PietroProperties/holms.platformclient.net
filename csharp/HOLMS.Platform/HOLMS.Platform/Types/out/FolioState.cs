@@ -24,28 +24,28 @@ namespace HOLMS.Types.Money.Folio {
           string.Concat(
             "Ch1tb25leS9mb2xpby9mb2xpb19zdGF0ZS5wcm90bxIXaG9sbXMudHlwZXMu",
             "bW9uZXkuZm9saW8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8a",
-            "K21vbmV5L2ZvbGlvL3Bvc3RlZF9jYXJkX2F1dGhvcml6YXRpb24ucHJvdG8a",
-            "Jm1vbmV5L2ZvbGlvL3Bvc3RlZF9jaGFyZ2VfY3JlZGl0LnByb3RvGiBtb25l",
-            "eS9mb2xpby9wb3N0ZWRfcGF5bWVudC5wcm90bxofbW9uZXkvZm9saW8vcG9z",
-            "dGVkX3JlZnVuZC5wcm90byLBBAoKRm9saW9TdGF0ZRJDCg5jaGFyZ2VfY3Jl",
-            "ZGl0cxgBIAMoCzIrLmhvbG1zLnR5cGVzLm1vbmV5LmZvbGlvLlBvc3RlZENo",
-            "YXJnZUNyZWRpdBJNChNjYXJkX2F1dGhvcml6YXRpb25zGAIgAygLMjAuaG9s",
-            "bXMudHlwZXMubW9uZXkuZm9saW8uUG9zdGVkQ2FyZEF1dGhvcml6YXRpb24S",
-            "OAoIcGF5bWVudHMYAyADKAsyJi5ob2xtcy50eXBlcy5tb25leS5mb2xpby5Q",
-            "b3N0ZWRQYXltZW50EjYKB3JlZnVuZHMYBCADKAsyJS5ob2xtcy50eXBlcy5t",
-            "b25leS5mb2xpby5Qb3N0ZWRSZWZ1bmQSPQoOZ3Jvc3NfcGF5bWVudHMYBSAB",
-            "KAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSPAoN",
-            "Z3Jvc3NfcmVmdW5kcxgGIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5N",
-            "b25ldGFyeUFtb3VudBJWCidhdmFpbGFibGVfcGF5bWVudF9hdXRob3JpemF0",
-            "aW9uX2JhbGFuY2UYByABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9u",
-            "ZXRhcnlBbW91bnQSWAopYXZhaWxhYmxlX2d1YXJhbnRlZV9hdXRob3JpemF0",
-            "aW9uX2JhbGFuY2UYCCABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9u",
-            "ZXRhcnlBbW91bnRCJ1oLbW9uZXkvZm9saW+qAhdIT0xNUy5UeXBlcy5Nb25l",
-            "eS5Gb2xpb2IGcHJvdG8z"));
+            "MG1vbmV5L2NhcmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfc2FsZS5w",
+            "cm90bxombW9uZXkvZm9saW8vcG9zdGVkX2NoYXJnZV9jcmVkaXQucHJvdG8a",
+            "IG1vbmV5L2ZvbGlvL3Bvc3RlZF9wYXltZW50LnByb3RvGh9tb25leS9mb2xp",
+            "by9wb3N0ZWRfcmVmdW5kLnByb3RvIr0ECgpGb2xpb1N0YXRlEkMKDmNoYXJn",
+            "ZV9jcmVkaXRzGAEgAygLMisuaG9sbXMudHlwZXMubW9uZXkuZm9saW8uUG9z",
+            "dGVkQ2hhcmdlQ3JlZGl0EkkKCmNhcmRfc2FsZXMYAiADKAsyNS5ob2xtcy50",
+            "eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVudENhcmRTYWxl",
+            "EjgKCHBheW1lbnRzGAMgAygLMiYuaG9sbXMudHlwZXMubW9uZXkuZm9saW8u",
+            "UG9zdGVkUGF5bWVudBI2CgdyZWZ1bmRzGAQgAygLMiUuaG9sbXMudHlwZXMu",
+            "bW9uZXkuZm9saW8uUG9zdGVkUmVmdW5kEj0KDmdyb3NzX3BheW1lbnRzGAUg",
+            "ASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EjwK",
+            "DWdyb3NzX3JlZnVuZHMYBiABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
+            "TW9uZXRhcnlBbW91bnQSVgonYXZhaWxhYmxlX3BheW1lbnRfYXV0aG9yaXph",
+            "dGlvbl9iYWxhbmNlGAcgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1v",
+            "bmV0YXJ5QW1vdW50ElgKKWF2YWlsYWJsZV9ndWFyYW50ZWVfYXV0aG9yaXph",
+            "dGlvbl9iYWxhbmNlGAggASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1v",
+            "bmV0YXJ5QW1vdW50QhqqAhdIT0xNUy5UeXBlcy5Nb25leS5Gb2xpb2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedCardAuthorizationReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedPaymentReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedRefundReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedPaymentReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedRefundReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.FolioState), global::HOLMS.Types.Money.Folio.FolioState.Parser, new[]{ "ChargeCredits", "CardAuthorizations", "Payments", "Refunds", "GrossPayments", "GrossRefunds", "AvailablePaymentAuthorizationBalance", "AvailableGuaranteeAuthorizationBalance" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.FolioState), global::HOLMS.Types.Money.Folio.FolioState.Parser, new[]{ "ChargeCredits", "CardSales", "Payments", "Refunds", "GrossPayments", "GrossRefunds", "AvailablePaymentAuthorizationBalance", "AvailableGuaranteeAuthorizationBalance" }, null, null, null)
           }));
     }
     #endregion
@@ -77,7 +77,7 @@ namespace HOLMS.Types.Money.Folio {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FolioState(FolioState other) : this() {
       chargeCredits_ = other.chargeCredits_.Clone();
-      cardAuthorizations_ = other.cardAuthorizations_.Clone();
+      cardSales_ = other.cardSales_.Clone();
       payments_ = other.payments_.Clone();
       refunds_ = other.refunds_.Clone();
       GrossPayments = other.grossPayments_ != null ? other.GrossPayments.Clone() : null;
@@ -101,14 +101,14 @@ namespace HOLMS.Types.Money.Folio {
       get { return chargeCredits_; }
     }
 
-    /// <summary>Field number for the "card_authorizations" field.</summary>
-    public const int CardAuthorizationsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Folio.PostedCardAuthorization> _repeated_cardAuthorizations_codec
-        = pb::FieldCodec.ForMessage(18, global::HOLMS.Types.Money.Folio.PostedCardAuthorization.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Folio.PostedCardAuthorization> cardAuthorizations_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Folio.PostedCardAuthorization>();
+    /// <summary>Field number for the "card_sales" field.</summary>
+    public const int CardSalesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale> _repeated_cardSales_codec
+        = pb::FieldCodec.ForMessage(18, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale> cardSales_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Money.Folio.PostedCardAuthorization> CardAuthorizations {
-      get { return cardAuthorizations_; }
+    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale> CardSales {
+      get { return cardSales_; }
     }
 
     /// <summary>Field number for the "payments" field.</summary>
@@ -189,7 +189,7 @@ namespace HOLMS.Types.Money.Folio {
         return true;
       }
       if(!chargeCredits_.Equals(other.chargeCredits_)) return false;
-      if(!cardAuthorizations_.Equals(other.cardAuthorizations_)) return false;
+      if(!cardSales_.Equals(other.cardSales_)) return false;
       if(!payments_.Equals(other.payments_)) return false;
       if(!refunds_.Equals(other.refunds_)) return false;
       if (!object.Equals(GrossPayments, other.GrossPayments)) return false;
@@ -203,7 +203,7 @@ namespace HOLMS.Types.Money.Folio {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= chargeCredits_.GetHashCode();
-      hash ^= cardAuthorizations_.GetHashCode();
+      hash ^= cardSales_.GetHashCode();
       hash ^= payments_.GetHashCode();
       hash ^= refunds_.GetHashCode();
       if (grossPayments_ != null) hash ^= GrossPayments.GetHashCode();
@@ -221,7 +221,7 @@ namespace HOLMS.Types.Money.Folio {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       chargeCredits_.WriteTo(output, _repeated_chargeCredits_codec);
-      cardAuthorizations_.WriteTo(output, _repeated_cardAuthorizations_codec);
+      cardSales_.WriteTo(output, _repeated_cardSales_codec);
       payments_.WriteTo(output, _repeated_payments_codec);
       refunds_.WriteTo(output, _repeated_refunds_codec);
       if (grossPayments_ != null) {
@@ -246,7 +246,7 @@ namespace HOLMS.Types.Money.Folio {
     public int CalculateSize() {
       int size = 0;
       size += chargeCredits_.CalculateSize(_repeated_chargeCredits_codec);
-      size += cardAuthorizations_.CalculateSize(_repeated_cardAuthorizations_codec);
+      size += cardSales_.CalculateSize(_repeated_cardSales_codec);
       size += payments_.CalculateSize(_repeated_payments_codec);
       size += refunds_.CalculateSize(_repeated_refunds_codec);
       if (grossPayments_ != null) {
@@ -270,7 +270,7 @@ namespace HOLMS.Types.Money.Folio {
         return;
       }
       chargeCredits_.Add(other.chargeCredits_);
-      cardAuthorizations_.Add(other.cardAuthorizations_);
+      cardSales_.Add(other.cardSales_);
       payments_.Add(other.payments_);
       refunds_.Add(other.refunds_);
       if (other.grossPayments_ != null) {
@@ -312,7 +312,7 @@ namespace HOLMS.Types.Money.Folio {
             break;
           }
           case 18: {
-            cardAuthorizations_.AddEntriesFrom(input, _repeated_cardAuthorizations_codec);
+            cardSales_.AddEntriesFrom(input, _repeated_cardSales_codec);
             break;
           }
           case 26: {

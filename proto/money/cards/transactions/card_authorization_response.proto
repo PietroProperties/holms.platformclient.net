@@ -1,10 +1,10 @@
 ﻿syntax = "proto3";
 
-package holms.types.money.cards;
-option csharp_namespace = "HOLMS.Types.Money.Cards";
-option go_package = "money/cards";
+package holms.types.money.cards.transactions;
+option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
+option go_package = "money/cards/transactions";
 
-import "money/cards/merchant_authorization_indicator.proto";
+import "money/cards/transactions/payment_card_authorization_indicator.proto";
 
 enum CardAuthorizationResponseCode {
 	AUTHORIZATION_SUCCESS = 0;
@@ -16,5 +16,5 @@ enum CardAuthorizationResponseCode {
 
 message CardAuthorizationResponse {
 	CardAuthorizationResponseCode response = 1;
-	MerchantAuthorizationIndicator authorization = 2;
+	PaymentCardAuthorizationIndicator authorization = 2;
 }

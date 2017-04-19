@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards.transactions;
+option csharp_namespace = "HOLMS.Types.Money.Cards.TransactionsA";
+
+import "primitive/uuid.proto";
+
+message PaymentCardSaleIndicator {
+	holms.types.primitive.Uuid id = 1;
+}

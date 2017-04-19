@@ -3,7 +3,7 @@ using System;
 using HOLMS.Types.Extensions.Support;
 using HOLMS.Types.Primitive;
 
-namespace HOLMS.Types.Money.Cards {
+namespace HOLMS.Types.Money.Cards.Transactions {
     public partial class MerchantBatchIndicator : EntityIndicator<MerchantBatchIndicator> {
         public MerchantBatchIndicator(Guid id) {
             Id = id.ToUUID();

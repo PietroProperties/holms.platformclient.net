@@ -37,8 +37,8 @@ namespace HOLMS.Types.Money.Cards {
             "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJFChl2aXJ0dWFsX2NhcmRf",
             "YXZhaWxhYmxlX29uGAggASgLMiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBi",
             "TG9jYWxEYXRlEkMKF3ZpcnR1YWxfY2FyZF9leHBpcmVzX29uGAkgASgLMiIu",
-            "aG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlQidaC21vbmV5L2Nh",
-            "cmRzqgIXSE9MTVMuVHlwZXMuTW9uZXkuQ2FyZHNiBnByb3RvMw=="));
+            "aG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlQhqqAhdIT0xNUy5U",
+            "eXBlcy5Nb25leS5DYXJkc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.PaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardBrandReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
