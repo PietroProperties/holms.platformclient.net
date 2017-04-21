@@ -25,37 +25,32 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             "Cjltb25leS9jYXJkcy90cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJkX2F1dGhv",
             "cml6YXRpb24ucHJvdG8SJGhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5z",
             "YWN0aW9ucxo7bW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL3Byb2Nlc3Nvcl90",
-            "cmFuc2FjdGlvbl9yZXN1bHQucHJvdG8aKW1vbmV5L2NhcmRzL2NhcmRfbWVy",
-            "Y2hhbnRfaW5kaWNhdG9yLnByb3RvGkNtb25leS9jYXJkcy90cmFuc2FjdGlv",
-            "bnMvcGF5bWVudF9jYXJkX2F1dGhvcml6YXRpb25faW5kaWNhdG9yLnByb3Rv",
-            "GiRtb25leS9jYXJkcy9wYXltZW50X2NhcmRfYnJhbmQucHJvdG8aH3ByaW1p",
-            "dGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90",
-            "aW1lc3RhbXAucHJvdG8irwUKGFBheW1lbnRDYXJkQXV0aG9yaXphdGlvbhJa",
-            "CgllbnRpdHlfaWQYASABKAsyRy5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50",
-            "cmFuc2FjdGlvbnMuUGF5bWVudENhcmRBdXRob3JpemF0aW9uSW5kaWNhdG9y",
-            "EkMKC21lcmNoYW50X2lkGAIgASgLMi4uaG9sbXMudHlwZXMubW9uZXkuY2Fy",
-            "ZHMuQ2FyZE1lcmNoYW50SW5kaWNhdG9yEhgKEGNhcmRfbWVtYmVyX25hbWUY",
-            "AyABKAkSEgoKbWFza2VkX3BhbhgFIAEoCRJDChRhdXRob3JpemF0aW9uX2Ft",
-            "b3VudBgGIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFt",
-            "b3VudBJQCgZyZXN1bHQYByABKA4yQC5ob2xtcy50eXBlcy5tb25leS5jYXJk",
-            "cy50cmFuc2FjdGlvbnMuUHJvY2Vzc29yVHJhbnNhY3Rpb25SZXN1bHQSOAoF",
-            "YnJhbmQYCCABKA4yKS5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5QYXltZW50",
-            "Q2FyZEJyYW5kElQKDGVudHJ5X21ldGhvZBgJIAEoDjI+LmhvbG1zLnR5cGVz",
-            "Lm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5BdXRob3JpemF0aW9uRW50cnlN",
-            "ZXRob2QSHQoVaG9zdF9yZWZlcmVuY2VfbnVtYmVyGAogASgJEhUKDWFwcHJv",
-            "dmFsX2NvZGUYDCABKAkSGAoQYXBwbGljYXRpb25fbmFtZRgNIAEoCRIPCgdh",
-            "X3JfcV9jGA4gASgJEg0KBWFfaV9kGA8gASgJEi0KCXBvc3RlZF9hdBgQIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAq1wEKGEF1dGhvcml6YXRp",
-            "b25FbnRyeU1ldGhvZBIXChNDQVJEX1BSRVNFTlRfTUFOVUFMEAASFgoSQ0FS",
-            "RF9QUkVTRU5UX1NXSVBFEAESHAoYQ0FSRF9QUkVTRU5UX0NPTlRBQ1RMRVNT",
-            "EAISGAoUQ0FSRF9QUkVTRU5UX1NDQU5ORVIQAxIVChFDQVJEX1BSRVNFTlRf",
-            "Q0hJUBAEEiUKIUNBUkRfUFJFU0VOVF9DSElQX0ZBTExfQkFDS19TV0lQRRAF",
-            "EhQKEENBUkRfTk9UX1BSRVNFTlQQBkInqgIkSE9MTVMuVHlwZXMuTW9uZXku",
-            "Q2FyZHMuVHJhbnNhY3Rpb25zYgZwcm90bzM="));
+            "cmFuc2FjdGlvbl9yZXN1bHQucHJvdG8aQ21vbmV5L2NhcmRzL3RyYW5zYWN0",
+            "aW9ucy9wYXltZW50X2NhcmRfYXV0aG9yaXphdGlvbl9pbmRpY2F0b3IucHJv",
+            "dG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8aH2dvb2dsZS9w",
+            "cm90b2J1Zi90aW1lc3RhbXAucHJvdG8ijgQKGFBheW1lbnRDYXJkQXV0aG9y",
+            "aXphdGlvbhJaCgllbnRpdHlfaWQYASABKAsyRy5ob2xtcy50eXBlcy5tb25l",
+            "eS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVudENhcmRBdXRob3JpemF0aW9u",
+            "SW5kaWNhdG9yEkMKFGF1dGhvcml6YXRpb25fYW1vdW50GAYgASgLMiUuaG9s",
+            "bXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50ElAKBnJlc3VsdBgH",
+            "IAEoDjJALmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5Q",
+            "cm9jZXNzb3JUcmFuc2FjdGlvblJlc3VsdBJUCgxlbnRyeV9tZXRob2QYCSAB",
+            "KA4yPi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuQXV0",
+            "aG9yaXphdGlvbkVudHJ5TWV0aG9kEh0KFWhvc3RfcmVmZXJlbmNlX251bWJl",
+            "chgKIAEoCRIVCg1hcHByb3ZhbF9jb2RlGAwgASgJEhkKEWFwcGxpY2F0aW9u",
+            "X2xhYmVsGA0gASgJEhoKEmFwcGxpY2F0aW9uX2NyeXB0bxgOIAEoCRINCgVh",
+            "X2lfZBgPIAEoCRItCglwb3N0ZWRfYXQYECABKAsyGi5nb29nbGUucHJvdG9i",
+            "dWYuVGltZXN0YW1wKtcBChhBdXRob3JpemF0aW9uRW50cnlNZXRob2QSFwoT",
+            "Q0FSRF9QUkVTRU5UX01BTlVBTBAAEhYKEkNBUkRfUFJFU0VOVF9TV0lQRRAB",
+            "EhwKGENBUkRfUFJFU0VOVF9DT05UQUNUTEVTUxACEhgKFENBUkRfUFJFU0VO",
+            "VF9TQ0FOTkVSEAMSFQoRQ0FSRF9QUkVTRU5UX0NISVAQBBIlCiFDQVJEX1BS",
+            "RVNFTlRfQ0hJUF9GQUxMX0JBQ0tfU1dJUEUQBRIUChBDQVJEX05PVF9QUkVT",
+            "RU5UEAZCJ6oCJEhPTE1TLlR5cGVzLk1vbmV5LkNhcmRzLlRyYW5zYWN0aW9u",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardBrandReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.Transactions.AuthorizationEntryMethod), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorization), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorization.Parser, new[]{ "EntityId", "MerchantId", "CardMemberName", "MaskedPan", "AuthorizationAmount", "Result", "Brand", "EntryMethod", "HostReferenceNumber", "ApprovalCode", "ApplicationName", "ARQC", "AID", "PostedAt" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorization), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorization.Parser, new[]{ "EntityId", "AuthorizationAmount", "Result", "EntryMethod", "HostReferenceNumber", "ApprovalCode", "ApplicationLabel", "ApplicationCrypto", "AID", "PostedAt" }, null, null, null)
           }));
     }
     #endregion
@@ -100,17 +95,13 @@ namespace HOLMS.Types.Money.Cards.Transactions {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PaymentCardAuthorization(PaymentCardAuthorization other) : this() {
       EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
-      MerchantId = other.merchantId_ != null ? other.MerchantId.Clone() : null;
-      cardMemberName_ = other.cardMemberName_;
-      maskedPan_ = other.maskedPan_;
       AuthorizationAmount = other.authorizationAmount_ != null ? other.AuthorizationAmount.Clone() : null;
       result_ = other.result_;
-      brand_ = other.brand_;
       entryMethod_ = other.entryMethod_;
       hostReferenceNumber_ = other.hostReferenceNumber_;
       approvalCode_ = other.approvalCode_;
-      applicationName_ = other.applicationName_;
-      aRQC_ = other.aRQC_;
+      applicationLabel_ = other.applicationLabel_;
+      applicationCrypto_ = other.applicationCrypto_;
       aID_ = other.aID_;
       PostedAt = other.postedAt_ != null ? other.PostedAt.Clone() : null;
     }
@@ -128,39 +119,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       get { return entityId_; }
       set {
         entityId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "merchant_id" field.</summary>
-    public const int MerchantIdFieldNumber = 2;
-    private global::HOLMS.Types.Money.Cards.CardMerchantIndicator merchantId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Cards.CardMerchantIndicator MerchantId {
-      get { return merchantId_; }
-      set {
-        merchantId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "card_member_name" field.</summary>
-    public const int CardMemberNameFieldNumber = 3;
-    private string cardMemberName_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string CardMemberName {
-      get { return cardMemberName_; }
-      set {
-        cardMemberName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "masked_pan" field.</summary>
-    public const int MaskedPanFieldNumber = 5;
-    private string maskedPan_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string MaskedPan {
-      get { return maskedPan_; }
-      set {
-        maskedPan_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -183,17 +141,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       get { return result_; }
       set {
         result_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "brand" field.</summary>
-    public const int BrandFieldNumber = 8;
-    private global::HOLMS.Types.Money.Cards.PaymentCardBrand brand_ = 0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Cards.PaymentCardBrand Brand {
-      get { return brand_; }
-      set {
-        brand_ = value;
       }
     }
 
@@ -230,25 +177,25 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       }
     }
 
-    /// <summary>Field number for the "application_name" field.</summary>
-    public const int ApplicationNameFieldNumber = 13;
-    private string applicationName_ = "";
+    /// <summary>Field number for the "application_label" field.</summary>
+    public const int ApplicationLabelFieldNumber = 13;
+    private string applicationLabel_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ApplicationName {
-      get { return applicationName_; }
+    public string ApplicationLabel {
+      get { return applicationLabel_; }
       set {
-        applicationName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        applicationLabel_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "a_r_q_c" field.</summary>
-    public const int ARQCFieldNumber = 14;
-    private string aRQC_ = "";
+    /// <summary>Field number for the "application_crypto" field.</summary>
+    public const int ApplicationCryptoFieldNumber = 14;
+    private string applicationCrypto_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ARQC {
-      get { return aRQC_; }
+    public string ApplicationCrypto {
+      get { return applicationCrypto_; }
       set {
-        aRQC_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        applicationCrypto_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -288,17 +235,13 @@ namespace HOLMS.Types.Money.Cards.Transactions {
         return true;
       }
       if (!object.Equals(EntityId, other.EntityId)) return false;
-      if (!object.Equals(MerchantId, other.MerchantId)) return false;
-      if (CardMemberName != other.CardMemberName) return false;
-      if (MaskedPan != other.MaskedPan) return false;
       if (!object.Equals(AuthorizationAmount, other.AuthorizationAmount)) return false;
       if (Result != other.Result) return false;
-      if (Brand != other.Brand) return false;
       if (EntryMethod != other.EntryMethod) return false;
       if (HostReferenceNumber != other.HostReferenceNumber) return false;
       if (ApprovalCode != other.ApprovalCode) return false;
-      if (ApplicationName != other.ApplicationName) return false;
-      if (ARQC != other.ARQC) return false;
+      if (ApplicationLabel != other.ApplicationLabel) return false;
+      if (ApplicationCrypto != other.ApplicationCrypto) return false;
       if (AID != other.AID) return false;
       if (!object.Equals(PostedAt, other.PostedAt)) return false;
       return true;
@@ -308,17 +251,13 @@ namespace HOLMS.Types.Money.Cards.Transactions {
     public override int GetHashCode() {
       int hash = 1;
       if (entityId_ != null) hash ^= EntityId.GetHashCode();
-      if (merchantId_ != null) hash ^= MerchantId.GetHashCode();
-      if (CardMemberName.Length != 0) hash ^= CardMemberName.GetHashCode();
-      if (MaskedPan.Length != 0) hash ^= MaskedPan.GetHashCode();
       if (authorizationAmount_ != null) hash ^= AuthorizationAmount.GetHashCode();
       if (Result != 0) hash ^= Result.GetHashCode();
-      if (Brand != 0) hash ^= Brand.GetHashCode();
       if (EntryMethod != 0) hash ^= EntryMethod.GetHashCode();
       if (HostReferenceNumber.Length != 0) hash ^= HostReferenceNumber.GetHashCode();
       if (ApprovalCode.Length != 0) hash ^= ApprovalCode.GetHashCode();
-      if (ApplicationName.Length != 0) hash ^= ApplicationName.GetHashCode();
-      if (ARQC.Length != 0) hash ^= ARQC.GetHashCode();
+      if (ApplicationLabel.Length != 0) hash ^= ApplicationLabel.GetHashCode();
+      if (ApplicationCrypto.Length != 0) hash ^= ApplicationCrypto.GetHashCode();
       if (AID.Length != 0) hash ^= AID.GetHashCode();
       if (postedAt_ != null) hash ^= PostedAt.GetHashCode();
       return hash;
@@ -335,18 +274,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
         output.WriteRawTag(10);
         output.WriteMessage(EntityId);
       }
-      if (merchantId_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(MerchantId);
-      }
-      if (CardMemberName.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(CardMemberName);
-      }
-      if (MaskedPan.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(MaskedPan);
-      }
       if (authorizationAmount_ != null) {
         output.WriteRawTag(50);
         output.WriteMessage(AuthorizationAmount);
@@ -354,10 +281,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (Result != 0) {
         output.WriteRawTag(56);
         output.WriteEnum((int) Result);
-      }
-      if (Brand != 0) {
-        output.WriteRawTag(64);
-        output.WriteEnum((int) Brand);
       }
       if (EntryMethod != 0) {
         output.WriteRawTag(72);
@@ -371,13 +294,13 @@ namespace HOLMS.Types.Money.Cards.Transactions {
         output.WriteRawTag(98);
         output.WriteString(ApprovalCode);
       }
-      if (ApplicationName.Length != 0) {
+      if (ApplicationLabel.Length != 0) {
         output.WriteRawTag(106);
-        output.WriteString(ApplicationName);
+        output.WriteString(ApplicationLabel);
       }
-      if (ARQC.Length != 0) {
+      if (ApplicationCrypto.Length != 0) {
         output.WriteRawTag(114);
-        output.WriteString(ARQC);
+        output.WriteString(ApplicationCrypto);
       }
       if (AID.Length != 0) {
         output.WriteRawTag(122);
@@ -395,23 +318,11 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (entityId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(EntityId);
       }
-      if (merchantId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MerchantId);
-      }
-      if (CardMemberName.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(CardMemberName);
-      }
-      if (MaskedPan.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MaskedPan);
-      }
       if (authorizationAmount_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AuthorizationAmount);
       }
       if (Result != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
-      }
-      if (Brand != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Brand);
       }
       if (EntryMethod != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EntryMethod);
@@ -422,11 +333,11 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (ApprovalCode.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ApprovalCode);
       }
-      if (ApplicationName.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApplicationName);
+      if (ApplicationLabel.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApplicationLabel);
       }
-      if (ARQC.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ARQC);
+      if (ApplicationCrypto.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApplicationCrypto);
       }
       if (AID.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(AID);
@@ -448,18 +359,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
         }
         EntityId.MergeFrom(other.EntityId);
       }
-      if (other.merchantId_ != null) {
-        if (merchantId_ == null) {
-          merchantId_ = new global::HOLMS.Types.Money.Cards.CardMerchantIndicator();
-        }
-        MerchantId.MergeFrom(other.MerchantId);
-      }
-      if (other.CardMemberName.Length != 0) {
-        CardMemberName = other.CardMemberName;
-      }
-      if (other.MaskedPan.Length != 0) {
-        MaskedPan = other.MaskedPan;
-      }
       if (other.authorizationAmount_ != null) {
         if (authorizationAmount_ == null) {
           authorizationAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
@@ -468,9 +367,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       }
       if (other.Result != 0) {
         Result = other.Result;
-      }
-      if (other.Brand != 0) {
-        Brand = other.Brand;
       }
       if (other.EntryMethod != 0) {
         EntryMethod = other.EntryMethod;
@@ -481,11 +377,11 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (other.ApprovalCode.Length != 0) {
         ApprovalCode = other.ApprovalCode;
       }
-      if (other.ApplicationName.Length != 0) {
-        ApplicationName = other.ApplicationName;
+      if (other.ApplicationLabel.Length != 0) {
+        ApplicationLabel = other.ApplicationLabel;
       }
-      if (other.ARQC.Length != 0) {
-        ARQC = other.ARQC;
+      if (other.ApplicationCrypto.Length != 0) {
+        ApplicationCrypto = other.ApplicationCrypto;
       }
       if (other.AID.Length != 0) {
         AID = other.AID;
@@ -513,21 +409,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             input.ReadMessage(entityId_);
             break;
           }
-          case 18: {
-            if (merchantId_ == null) {
-              merchantId_ = new global::HOLMS.Types.Money.Cards.CardMerchantIndicator();
-            }
-            input.ReadMessage(merchantId_);
-            break;
-          }
-          case 26: {
-            CardMemberName = input.ReadString();
-            break;
-          }
-          case 42: {
-            MaskedPan = input.ReadString();
-            break;
-          }
           case 50: {
             if (authorizationAmount_ == null) {
               authorizationAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
@@ -537,10 +418,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
           }
           case 56: {
             result_ = (global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResult) input.ReadEnum();
-            break;
-          }
-          case 64: {
-            brand_ = (global::HOLMS.Types.Money.Cards.PaymentCardBrand) input.ReadEnum();
             break;
           }
           case 72: {
@@ -556,11 +433,11 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             break;
           }
           case 106: {
-            ApplicationName = input.ReadString();
+            ApplicationLabel = input.ReadString();
             break;
           }
           case 114: {
-            ARQC = input.ReadString();
+            ApplicationCrypto = input.ReadString();
             break;
           }
           case 122: {
