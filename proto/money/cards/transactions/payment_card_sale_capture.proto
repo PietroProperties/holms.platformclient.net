@@ -7,6 +7,7 @@ import "money/cards/card_merchant_indicator.proto";
 import "money/cards/transactions/payment_card_sale_capture_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "google/protobuf/timestamp.proto";
+import "money/cards/tokenized_payment_card.proto";
 
 message PaymentCardSaleCapture {
 	holms.types.money.cards.transactions.PaymentCardSaleCaptureIndicator entity_id = 1;
@@ -15,8 +16,12 @@ message PaymentCardSaleCapture {
 	CaptureStatus status = 4;
 	string host_reference_number = 5;
 	string folio_booking_number = 6;
+	holms.types.money.cards.TokenizedPaymentCard payment_card = 7;
+	string authorization_approval_code = 8;
+	string authorization_host_reference_number = 9;
+	holms.types.primitive.MonetaryAmount authorization_amount = 10;
 	
-	google.protobuf.Timestamp posted_at = 7;
+	google.protobuf.Timestamp posted_at = 11;
 }
 
 enum CaptureStatus {

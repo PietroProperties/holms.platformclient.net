@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace HOLMS.Types.Money.Cards.TransactionsA {
+namespace HOLMS.Types.Money.Cards.Transactions {
 
   /// <summary>Holder for reflection information generated from money/cards/transactions/payment_card_sale_indicator.proto</summary>
   public static partial class PaymentCardSaleIndicatorReflection {
@@ -26,12 +26,12 @@ namespace HOLMS.Types.Money.Cards.TransactionsA {
             "aW5kaWNhdG9yLnByb3RvEiRob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFu",
             "c2FjdGlvbnMaFHByaW1pdGl2ZS91dWlkLnByb3RvIkMKGFBheW1lbnRDYXJk",
             "U2FsZUluZGljYXRvchInCgJpZBgBIAEoCzIbLmhvbG1zLnR5cGVzLnByaW1p",
-            "dGl2ZS5VdWlkQiiqAiVIT0xNUy5UeXBlcy5Nb25leS5DYXJkcy5UcmFuc2Fj",
-            "dGlvbnNBYgZwcm90bzM="));
+            "dGl2ZS5VdWlkQieqAiRIT0xNUy5UeXBlcy5Nb25leS5DYXJkcy5UcmFuc2Fj",
+            "dGlvbnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.TransactionsA.PaymentCardSaleIndicator), global::HOLMS.Types.Money.Cards.TransactionsA.PaymentCardSaleIndicator.Parser, new[]{ "Id" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator.Parser, new[]{ "Id" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace HOLMS.Types.Money.Cards.TransactionsA {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.Cards.TransactionsA.PaymentCardSaleIndicatorReflection.Descriptor.MessageTypes[0]; }
+      get { return global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

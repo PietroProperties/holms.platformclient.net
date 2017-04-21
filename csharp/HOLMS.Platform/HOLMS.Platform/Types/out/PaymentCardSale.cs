@@ -34,33 +34,35 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             "cml6YXRpb25fcmV2ZXJzYWwucHJvdG8aOG1vbmV5L2NhcmRzL3RyYW5zYWN0",
             "aW9ucy9wYXltZW50X2NhcmRfc2FsZV9jYXB0dXJlLnByb3RvGjVtb25leS9j",
             "YXJkcy90cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJkX3NhbGVfdm9pZC5wcm90",
-            "bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90byKMBwoPUGF5bWVu",
-            "dENhcmRTYWxlElEKCWVudGl0eV9pZBgBIAEoCzI+LmhvbG1zLnR5cGVzLm1v",
-            "bmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNhbGVJbmRpY2F0",
-            "b3ISQwoLbWVyY2hhbnRfaWQYAiABKAsyLi5ob2xtcy50eXBlcy5tb25leS5j",
-            "YXJkcy5DYXJkTWVyY2hhbnRJbmRpY2F0b3ISQwoMcGF5bWVudF9jYXJkGAMg",
-            "ASgLMi0uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuVG9rZW5pemVkUGF5bWVu",
-            "dENhcmQSQAoRYXV0aG9yaXplZF9hbW91bnQYBCABKAsyJS5ob2xtcy50eXBl",
-            "cy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSPgoPY2FwdHVyZWRfYW1vdW50",
-            "GAUgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
-            "Eh0KFWhvc3RfcmVmZXJlbmNlX251bWJlchgGIAEoCRJUCgxlbnRyeV9tZXRo",
-            "b2QYByABKA4yPi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlv",
-            "bnMuQXV0aG9yaXphdGlvbkVudHJ5TWV0aG9kElUKDWF1dGhvcml6YXRpb24Y",
-            "CCABKAsyPi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMu",
-            "UGF5bWVudENhcmRBdXRob3JpemF0aW9uElkKCWluY3JlYXNlcxgJIAMoCzJG",
-            "LmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50",
-            "Q2FyZEF1dGhvcml6YXRpb25JbmNyZWFzZRJZCglyZXZlcnNhbHMYCiADKAsy",
-            "Ri5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVu",
-            "dENhcmRBdXRob3JpemF0aW9uUmV2ZXJzYWwSTgoIY2FwdHVyZXMYCyADKAsy",
-            "PC5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVu",
-            "dENhcmRTYWxlQ2FwdHVyZRJICgV2b2lkcxgMIAMoCzI5LmhvbG1zLnR5cGVz",
-            "Lm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNhbGVWb2lk",
-            "QieqAiRIT0xNUy5UeXBlcy5Nb25leS5DYXJkcy5UcmFuc2FjdGlvbnNiBnBy",
-            "b3RvMw=="));
+            "bxoubW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL2NhcmRfc2FsZV9zdGF0ZS5w",
+            "cm90bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90byLQBwoPUGF5",
+            "bWVudENhcmRTYWxlElEKCWVudGl0eV9pZBgBIAEoCzI+LmhvbG1zLnR5cGVz",
+            "Lm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNhbGVJbmRp",
+            "Y2F0b3ISQwoLbWVyY2hhbnRfaWQYAiABKAsyLi5ob2xtcy50eXBlcy5tb25l",
+            "eS5jYXJkcy5DYXJkTWVyY2hhbnRJbmRpY2F0b3ISQwoMcGF5bWVudF9jYXJk",
+            "GAMgASgLMi0uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuVG9rZW5pemVkUGF5",
+            "bWVudENhcmQSQAoRYXV0aG9yaXplZF9hbW91bnQYBCABKAsyJS5ob2xtcy50",
+            "eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSPgoPY2FwdHVyZWRfYW1v",
+            "dW50GAUgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1v",
+            "dW50Eh0KFWhvc3RfcmVmZXJlbmNlX251bWJlchgGIAEoCRJUCgxlbnRyeV9t",
+            "ZXRob2QYByABKA4yPi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2Fj",
+            "dGlvbnMuQXV0aG9yaXphdGlvbkVudHJ5TWV0aG9kElUKDWF1dGhvcml6YXRp",
+            "b24YCCABKAsyPi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlv",
+            "bnMuUGF5bWVudENhcmRBdXRob3JpemF0aW9uEkIKBXN0YXRlGAkgASgOMjMu",
+            "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLkNhcmRTYWxl",
+            "U3RhdGUSWQoJaW5jcmVhc2VzGAogAygLMkYuaG9sbXMudHlwZXMubW9uZXku",
+            "Y2FyZHMudHJhbnNhY3Rpb25zLlBheW1lbnRDYXJkQXV0aG9yaXphdGlvbklu",
+            "Y3JlYXNlElkKCXJldmVyc2FscxgLIAMoCzJGLmhvbG1zLnR5cGVzLm1vbmV5",
+            "LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZEF1dGhvcml6YXRpb25S",
+            "ZXZlcnNhbBJOCghjYXB0dXJlcxgMIAMoCzI8LmhvbG1zLnR5cGVzLm1vbmV5",
+            "LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNhbGVDYXB0dXJlEkgK",
+            "BXZvaWRzGA0gAygLMjkuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNh",
+            "Y3Rpb25zLlBheW1lbnRDYXJkU2FsZVZvaWRCJ6oCJEhPTE1TLlR5cGVzLk1v",
+            "bmV5LkNhcmRzLlRyYW5zYWN0aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.TokenizedPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.TransactionsA.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIncreaseReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReversalReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleVoidReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.TokenizedPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIncreaseReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReversalReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleVoidReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.CardSaleStateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale.Parser, new[]{ "EntityId", "MerchantId", "PaymentCard", "AuthorizedAmount", "CapturedAmount", "HostReferenceNumber", "EntryMethod", "Authorization", "Increases", "Reversals", "Captures", "Voids" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale.Parser, new[]{ "EntityId", "MerchantId", "PaymentCard", "AuthorizedAmount", "CapturedAmount", "HostReferenceNumber", "EntryMethod", "Authorization", "State", "Increases", "Reversals", "Captures", "Voids" }, null, null, null)
           }));
     }
     #endregion
@@ -99,6 +101,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       hostReferenceNumber_ = other.hostReferenceNumber_;
       entryMethod_ = other.entryMethod_;
       Authorization = other.authorization_ != null ? other.Authorization.Clone() : null;
+      state_ = other.state_;
       increases_ = other.increases_.Clone();
       reversals_ = other.reversals_.Clone();
       captures_ = other.captures_.Clone();
@@ -112,9 +115,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::HOLMS.Types.Money.Cards.TransactionsA.PaymentCardSaleIndicator entityId_;
+    private global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator entityId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Cards.TransactionsA.PaymentCardSaleIndicator EntityId {
+    public global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -198,10 +201,21 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       }
     }
 
+    /// <summary>Field number for the "state" field.</summary>
+    public const int StateFieldNumber = 9;
+    private global::HOLMS.Types.Money.Cards.Transactions.CardSaleState state_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Cards.Transactions.CardSaleState State {
+      get { return state_; }
+      set {
+        state_ = value;
+      }
+    }
+
     /// <summary>Field number for the "increases" field.</summary>
-    public const int IncreasesFieldNumber = 9;
+    public const int IncreasesFieldNumber = 10;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIncrease> _repeated_increases_codec
-        = pb::FieldCodec.ForMessage(74, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIncrease.Parser);
+        = pb::FieldCodec.ForMessage(82, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIncrease.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIncrease> increases_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIncrease>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIncrease> Increases {
@@ -209,9 +223,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
     }
 
     /// <summary>Field number for the "reversals" field.</summary>
-    public const int ReversalsFieldNumber = 10;
+    public const int ReversalsFieldNumber = 11;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReversal> _repeated_reversals_codec
-        = pb::FieldCodec.ForMessage(82, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReversal.Parser);
+        = pb::FieldCodec.ForMessage(90, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReversal.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReversal> reversals_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReversal>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReversal> Reversals {
@@ -219,9 +233,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
     }
 
     /// <summary>Field number for the "captures" field.</summary>
-    public const int CapturesFieldNumber = 11;
+    public const int CapturesFieldNumber = 12;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture> _repeated_captures_codec
-        = pb::FieldCodec.ForMessage(90, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture.Parser);
+        = pb::FieldCodec.ForMessage(98, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture> captures_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture> Captures {
@@ -229,9 +243,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
     }
 
     /// <summary>Field number for the "voids" field.</summary>
-    public const int VoidsFieldNumber = 12;
+    public const int VoidsFieldNumber = 13;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleVoid> _repeated_voids_codec
-        = pb::FieldCodec.ForMessage(98, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleVoid.Parser);
+        = pb::FieldCodec.ForMessage(106, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleVoid.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleVoid> voids_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleVoid>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleVoid> Voids {
@@ -259,6 +273,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (HostReferenceNumber != other.HostReferenceNumber) return false;
       if (EntryMethod != other.EntryMethod) return false;
       if (!object.Equals(Authorization, other.Authorization)) return false;
+      if (State != other.State) return false;
       if(!increases_.Equals(other.increases_)) return false;
       if(!reversals_.Equals(other.reversals_)) return false;
       if(!captures_.Equals(other.captures_)) return false;
@@ -277,6 +292,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (HostReferenceNumber.Length != 0) hash ^= HostReferenceNumber.GetHashCode();
       if (EntryMethod != 0) hash ^= EntryMethod.GetHashCode();
       if (authorization_ != null) hash ^= Authorization.GetHashCode();
+      if (State != 0) hash ^= State.GetHashCode();
       hash ^= increases_.GetHashCode();
       hash ^= reversals_.GetHashCode();
       hash ^= captures_.GetHashCode();
@@ -323,6 +339,10 @@ namespace HOLMS.Types.Money.Cards.Transactions {
         output.WriteRawTag(66);
         output.WriteMessage(Authorization);
       }
+      if (State != 0) {
+        output.WriteRawTag(72);
+        output.WriteEnum((int) State);
+      }
       increases_.WriteTo(output, _repeated_increases_codec);
       reversals_.WriteTo(output, _repeated_reversals_codec);
       captures_.WriteTo(output, _repeated_captures_codec);
@@ -356,6 +376,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (authorization_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Authorization);
       }
+      if (State != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) State);
+      }
       size += increases_.CalculateSize(_repeated_increases_codec);
       size += reversals_.CalculateSize(_repeated_reversals_codec);
       size += captures_.CalculateSize(_repeated_captures_codec);
@@ -370,7 +393,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::HOLMS.Types.Money.Cards.TransactionsA.PaymentCardSaleIndicator();
+          entityId_ = new global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -410,6 +433,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
         }
         Authorization.MergeFrom(other.Authorization);
       }
+      if (other.State != 0) {
+        State = other.State;
+      }
       increases_.Add(other.increases_);
       reversals_.Add(other.reversals_);
       captures_.Add(other.captures_);
@@ -426,7 +452,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::HOLMS.Types.Money.Cards.TransactionsA.PaymentCardSaleIndicator();
+              entityId_ = new global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator();
             }
             input.ReadMessage(entityId_);
             break;
@@ -474,19 +500,23 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             input.ReadMessage(authorization_);
             break;
           }
-          case 74: {
-            increases_.AddEntriesFrom(input, _repeated_increases_codec);
+          case 72: {
+            state_ = (global::HOLMS.Types.Money.Cards.Transactions.CardSaleState) input.ReadEnum();
             break;
           }
           case 82: {
-            reversals_.AddEntriesFrom(input, _repeated_reversals_codec);
+            increases_.AddEntriesFrom(input, _repeated_increases_codec);
             break;
           }
           case 90: {
-            captures_.AddEntriesFrom(input, _repeated_captures_codec);
+            reversals_.AddEntriesFrom(input, _repeated_reversals_codec);
             break;
           }
           case 98: {
+            captures_.AddEntriesFrom(input, _repeated_captures_codec);
+            break;
+          }
+          case 106: {
             voids_.AddEntriesFrom(input, _repeated_voids_codec);
             break;
           }

@@ -11,6 +11,7 @@ import "money/cards/transactions/payment_card_authorization_increase.proto";
 import "money/cards/transactions/payment_card_authorization_reversal.proto";
 import "money/cards/transactions/payment_card_sale_capture.proto";
 import "money/cards/transactions/payment_card_sale_void.proto";
+import "money/cards/transactions/card_sale_state.proto";
 import "primitive/monetary_amount.proto";
 
 message PaymentCardSale {
@@ -22,8 +23,9 @@ message PaymentCardSale {
 	string host_reference_number = 6;
 	holms.types.money.cards.transactions.AuthorizationEntryMethod entry_method = 7;
 	holms.types.money.cards.transactions.PaymentCardAuthorization authorization = 8;
-	repeated holms.types.money.cards.transactions.PaymentCardAuthorizationIncrease increases = 9;
-	repeated holms.types.money.cards.transactions.PaymentCardAuthorizationReversal reversals = 10;
-	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture captures = 11;
-	repeated holms.types.money.cards.transactions.PaymentCardSaleVoid voids = 12;
+	holms.types.money.cards.transactions.CardSaleState state = 9; 
+	repeated holms.types.money.cards.transactions.PaymentCardAuthorizationIncrease increases = 10;
+	repeated holms.types.money.cards.transactions.PaymentCardAuthorizationReversal reversals = 11;
+	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture captures = 12;
+	repeated holms.types.money.cards.transactions.PaymentCardSaleVoid voids = 13;
 }

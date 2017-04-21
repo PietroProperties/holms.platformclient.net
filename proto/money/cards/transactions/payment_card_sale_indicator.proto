@@ -1,7 +1,7 @@
 ﻿syntax = "proto3";
 
 package holms.types.money.cards.transactions;
-option csharp_namespace = "HOLMS.Types.Money.Cards.TransactionsA";
+option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 
 import "primitive/uuid.proto";
 

@@ -28,23 +28,29 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             "cm90bxpCbW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL3BheW1lbnRfY2FyZF9z",
             "YWxlX2NhcHR1cmVfaW5kaWNhdG9yLnByb3RvGh9wcmltaXRpdmUvbW9uZXRh",
             "cnlfYW1vdW50LnByb3RvGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnBy",
-            "b3RvIqgDChZQYXltZW50Q2FyZFNhbGVDYXB0dXJlElgKCWVudGl0eV9pZBgB",
-            "IAEoCzJFLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5Q",
-            "YXltZW50Q2FyZFNhbGVDYXB0dXJlSW5kaWNhdG9yEkMKC21lcmNoYW50X2lk",
-            "GAIgASgLMi4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZE1lcmNoYW50",
-            "SW5kaWNhdG9yEj4KD2NhcHR1cmVkX2Ftb3VudBgDIAEoCzIlLmhvbG1zLnR5",
-            "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJDCgZzdGF0dXMYBCABKA4y",
-            "My5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuQ2FwdHVy",
-            "ZVN0YXR1cxIdChVob3N0X3JlZmVyZW5jZV9udW1iZXIYBSABKAkSHAoUZm9s",
-            "aW9fYm9va2luZ19udW1iZXIYBiABKAkSLQoJcG9zdGVkX2F0GAcgASgLMhou",
-            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCpECg1DYXB0dXJlU3RhdHVzEgsK",
-            "B1BFTkRJTkcQABIKCgZWT0lERUQQARINCglDT01QTEVURUQQAhILCgdGQUlM",
-            "VVJFEANCJ6oCJEhPTE1TLlR5cGVzLk1vbmV5LkNhcmRzLlRyYW5zYWN0aW9u",
-            "c2IGcHJvdG8z"));
+            "b3RvGihtb25leS9jYXJkcy90b2tlbml6ZWRfcGF5bWVudF9jYXJkLnByb3Rv",
+            "IoQFChZQYXltZW50Q2FyZFNhbGVDYXB0dXJlElgKCWVudGl0eV9pZBgBIAEo",
+            "CzJFLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXlt",
+            "ZW50Q2FyZFNhbGVDYXB0dXJlSW5kaWNhdG9yEkMKC21lcmNoYW50X2lkGAIg",
+            "ASgLMi4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZE1lcmNoYW50SW5k",
+            "aWNhdG9yEj4KD2NhcHR1cmVkX2Ftb3VudBgDIAEoCzIlLmhvbG1zLnR5cGVz",
+            "LnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJDCgZzdGF0dXMYBCABKA4yMy5o",
+            "b2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuQ2FwdHVyZVN0",
+            "YXR1cxIdChVob3N0X3JlZmVyZW5jZV9udW1iZXIYBSABKAkSHAoUZm9saW9f",
+            "Ym9va2luZ19udW1iZXIYBiABKAkSQwoMcGF5bWVudF9jYXJkGAcgASgLMi0u",
+            "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMuVG9rZW5pemVkUGF5bWVudENhcmQS",
+            "IwobYXV0aG9yaXphdGlvbl9hcHByb3ZhbF9jb2RlGAggASgJEisKI2F1dGhv",
+            "cml6YXRpb25faG9zdF9yZWZlcmVuY2VfbnVtYmVyGAkgASgJEkMKFGF1dGhv",
+            "cml6YXRpb25fYW1vdW50GAogASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZl",
+            "Lk1vbmV0YXJ5QW1vdW50Ei0KCXBvc3RlZF9hdBgLIAEoCzIaLmdvb2dsZS5w",
+            "cm90b2J1Zi5UaW1lc3RhbXAqRAoNQ2FwdHVyZVN0YXR1cxILCgdQRU5ESU5H",
+            "EAASCgoGVk9JREVEEAESDQoJQ09NUExFVEVEEAISCwoHRkFJTFVSRRADQieq",
+            "AiRIT0xNUy5UeXBlcy5Nb25leS5DYXJkcy5UcmFuc2FjdGlvbnNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.TokenizedPaymentCardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.Transactions.CaptureStatus), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture.Parser, new[]{ "EntityId", "MerchantId", "CapturedAmount", "Status", "HostReferenceNumber", "FolioBookingNumber", "PostedAt" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture.Parser, new[]{ "EntityId", "MerchantId", "CapturedAmount", "Status", "HostReferenceNumber", "FolioBookingNumber", "PaymentCard", "AuthorizationApprovalCode", "AuthorizationHostReferenceNumber", "AuthorizationAmount", "PostedAt" }, null, null, null)
           }));
     }
     #endregion
@@ -91,6 +97,10 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       status_ = other.status_;
       hostReferenceNumber_ = other.hostReferenceNumber_;
       folioBookingNumber_ = other.folioBookingNumber_;
+      PaymentCard = other.paymentCard_ != null ? other.PaymentCard.Clone() : null;
+      authorizationApprovalCode_ = other.authorizationApprovalCode_;
+      authorizationHostReferenceNumber_ = other.authorizationHostReferenceNumber_;
+      AuthorizationAmount = other.authorizationAmount_ != null ? other.AuthorizationAmount.Clone() : null;
       PostedAt = other.postedAt_ != null ? other.PostedAt.Clone() : null;
     }
 
@@ -165,8 +175,52 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       }
     }
 
+    /// <summary>Field number for the "payment_card" field.</summary>
+    public const int PaymentCardFieldNumber = 7;
+    private global::HOLMS.Types.Money.Cards.TokenizedPaymentCard paymentCard_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Cards.TokenizedPaymentCard PaymentCard {
+      get { return paymentCard_; }
+      set {
+        paymentCard_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "authorization_approval_code" field.</summary>
+    public const int AuthorizationApprovalCodeFieldNumber = 8;
+    private string authorizationApprovalCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AuthorizationApprovalCode {
+      get { return authorizationApprovalCode_; }
+      set {
+        authorizationApprovalCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "authorization_host_reference_number" field.</summary>
+    public const int AuthorizationHostReferenceNumberFieldNumber = 9;
+    private string authorizationHostReferenceNumber_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AuthorizationHostReferenceNumber {
+      get { return authorizationHostReferenceNumber_; }
+      set {
+        authorizationHostReferenceNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "authorization_amount" field.</summary>
+    public const int AuthorizationAmountFieldNumber = 10;
+    private global::HOLMS.Types.Primitive.MonetaryAmount authorizationAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount AuthorizationAmount {
+      get { return authorizationAmount_; }
+      set {
+        authorizationAmount_ = value;
+      }
+    }
+
     /// <summary>Field number for the "posted_at" field.</summary>
-    public const int PostedAtFieldNumber = 7;
+    public const int PostedAtFieldNumber = 11;
     private global::Google.Protobuf.WellKnownTypes.Timestamp postedAt_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp PostedAt {
@@ -195,6 +249,10 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (Status != other.Status) return false;
       if (HostReferenceNumber != other.HostReferenceNumber) return false;
       if (FolioBookingNumber != other.FolioBookingNumber) return false;
+      if (!object.Equals(PaymentCard, other.PaymentCard)) return false;
+      if (AuthorizationApprovalCode != other.AuthorizationApprovalCode) return false;
+      if (AuthorizationHostReferenceNumber != other.AuthorizationHostReferenceNumber) return false;
+      if (!object.Equals(AuthorizationAmount, other.AuthorizationAmount)) return false;
       if (!object.Equals(PostedAt, other.PostedAt)) return false;
       return true;
     }
@@ -208,6 +266,10 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (Status != 0) hash ^= Status.GetHashCode();
       if (HostReferenceNumber.Length != 0) hash ^= HostReferenceNumber.GetHashCode();
       if (FolioBookingNumber.Length != 0) hash ^= FolioBookingNumber.GetHashCode();
+      if (paymentCard_ != null) hash ^= PaymentCard.GetHashCode();
+      if (AuthorizationApprovalCode.Length != 0) hash ^= AuthorizationApprovalCode.GetHashCode();
+      if (AuthorizationHostReferenceNumber.Length != 0) hash ^= AuthorizationHostReferenceNumber.GetHashCode();
+      if (authorizationAmount_ != null) hash ^= AuthorizationAmount.GetHashCode();
       if (postedAt_ != null) hash ^= PostedAt.GetHashCode();
       return hash;
     }
@@ -243,8 +305,24 @@ namespace HOLMS.Types.Money.Cards.Transactions {
         output.WriteRawTag(50);
         output.WriteString(FolioBookingNumber);
       }
-      if (postedAt_ != null) {
+      if (paymentCard_ != null) {
         output.WriteRawTag(58);
+        output.WriteMessage(PaymentCard);
+      }
+      if (AuthorizationApprovalCode.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(AuthorizationApprovalCode);
+      }
+      if (AuthorizationHostReferenceNumber.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(AuthorizationHostReferenceNumber);
+      }
+      if (authorizationAmount_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(AuthorizationAmount);
+      }
+      if (postedAt_ != null) {
+        output.WriteRawTag(90);
         output.WriteMessage(PostedAt);
       }
     }
@@ -269,6 +347,18 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       }
       if (FolioBookingNumber.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(FolioBookingNumber);
+      }
+      if (paymentCard_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PaymentCard);
+      }
+      if (AuthorizationApprovalCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AuthorizationApprovalCode);
+      }
+      if (AuthorizationHostReferenceNumber.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AuthorizationHostReferenceNumber);
+      }
+      if (authorizationAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AuthorizationAmount);
       }
       if (postedAt_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PostedAt);
@@ -307,6 +397,24 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       }
       if (other.FolioBookingNumber.Length != 0) {
         FolioBookingNumber = other.FolioBookingNumber;
+      }
+      if (other.paymentCard_ != null) {
+        if (paymentCard_ == null) {
+          paymentCard_ = new global::HOLMS.Types.Money.Cards.TokenizedPaymentCard();
+        }
+        PaymentCard.MergeFrom(other.PaymentCard);
+      }
+      if (other.AuthorizationApprovalCode.Length != 0) {
+        AuthorizationApprovalCode = other.AuthorizationApprovalCode;
+      }
+      if (other.AuthorizationHostReferenceNumber.Length != 0) {
+        AuthorizationHostReferenceNumber = other.AuthorizationHostReferenceNumber;
+      }
+      if (other.authorizationAmount_ != null) {
+        if (authorizationAmount_ == null) {
+          authorizationAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        AuthorizationAmount.MergeFrom(other.AuthorizationAmount);
       }
       if (other.postedAt_ != null) {
         if (postedAt_ == null) {
@@ -358,6 +466,28 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             break;
           }
           case 58: {
+            if (paymentCard_ == null) {
+              paymentCard_ = new global::HOLMS.Types.Money.Cards.TokenizedPaymentCard();
+            }
+            input.ReadMessage(paymentCard_);
+            break;
+          }
+          case 66: {
+            AuthorizationApprovalCode = input.ReadString();
+            break;
+          }
+          case 74: {
+            AuthorizationHostReferenceNumber = input.ReadString();
+            break;
+          }
+          case 82: {
+            if (authorizationAmount_ == null) {
+              authorizationAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(authorizationAmount_);
+            break;
+          }
+          case 90: {
             if (postedAt_ == null) {
               postedAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }

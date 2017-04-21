@@ -4,6 +4,7 @@ package holms.types.money.cards.transactions;
 option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 option go_package = "money/cards/transactions";
 
+import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/cards/transactions/payment_card_authorization_indicator.proto";
 
 enum CardAuthorizationResponseCode {
@@ -16,5 +17,6 @@ enum CardAuthorizationResponseCode {
 
 message CardAuthorizationResponse {
 	CardAuthorizationResponseCode response = 1;
-	PaymentCardAuthorizationIndicator authorization = 2;
+	PaymentCardSaleIndicator sale = 2;
+	PaymentCardAuthorizationIndicator authorization = 3;
 }
