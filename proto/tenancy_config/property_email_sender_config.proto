@@ -10,5 +10,5 @@ message PropertyEmailSenderConfig {
 	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
 	string postmark_email_sender_address = 2;
 	string postmark_api_key = 3;
-	bool disable_automated_correspondence = 4;
+	bool disable_all_correspondence = 4;
 }
