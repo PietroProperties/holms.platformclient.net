@@ -2,24 +2,26 @@
 
 package holms.types.money.rpc;
 option csharp_namespace = "HOLMS.Types.Money.RPC";
-option go_package = "money/rpc";
 
 import "google/protobuf/empty.proto";
 import "primitive/pb_inclusive_calendar_date_range.proto";
-import "money/cards/card_merchant_indicator.proto";
-import "money/cards/merchant_capture.proto";
-import "money/cards/merchant_capture_indicator.proto";
-import "money/cards/merchant_batch.proto";
-import "money/cards/payment_card_verification_request.proto";
+import "money/cards/transactions/payment_card_sale_capture.proto";
+import "money/cards/transactions/payment_card_sale_capture_indicator.proto";
+import "money/cards/transactions/processor_transaction_result.proto";
+import "money/cards/transactions/merchant_batch.proto";
 import "money/cards/payment_card_indicator.proto";
-import "money/cards/processor_transaction_result.proto";
+import "money/cards/not_present_payment_card.proto";
+import "money/cards/card_merchant_indicator.proto";
+import "crm/guests/guest_indicator.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
 
 message CardProcessingSvcCaptureEnumResponse {
-	repeated .holms.types.money.cards.MerchantCapture captures = 1;
+	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture captures = 1;
 }
 
 message MerchantBatchEnumResponse {
-	repeated .holms.types.money.cards.MerchantBatch batches = 1;
+	repeated holms.types.money.cards.transactions.MerchantBatch batches = 1;
 }
 
 message CardProcessingSvcCancelPendingCaptureResponse {
@@ -34,8 +36,14 @@ enum CardProcessingSvcCancelPendingCaptureResult {
 }
 
 message CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse {
-	.holms.types.money.cards.ProcessorTransactionResult result = 1;
-	.holms.types.money.cards.PaymentCardIndicator tokenized_card = 2;
+	holms.types.money.cards.transactions.ProcessorTransactionResult result = 1;
+	holms.types.money.cards.PaymentCardIndicator tokenized_card = 2;
+}
+
+message PaymentCardVerificationRequest {
+	holms.types.crm.guests.GuestIndicator guest = 1;
+	holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
+	holms.types.money.cards.NotPresentPaymentCard card = 3;
 }
 
 service CardProcessingSvc {
@@ -46,15 +54,15 @@ service CardProcessingSvc {
 		returns (MerchantBatchEnumResponse);
 
 	rpc OpenAndSettleBatchFromPendingCapturesSpecificMerchant(.holms.types.money.cards.CardMerchantIndicator) 
-		returns (.holms.types.money.cards.MerchantBatch);
+		returns (holms.types.money.cards.transactions.MerchantBatch);
 
 	rpc OpenAndSettleBatchFromPendingCapturesAllMerchants(.google.protobuf.Empty) 
 		returns (MerchantBatchEnumResponse);
 
-	rpc CancelPendingCapture(.holms.types.money.cards.MerchantCaptureIndicator)
+	rpc CancelPendingCapture(holms.types.money.cards.transactions.PaymentCardSaleCaptureIndicator)
 		returns (CardProcessingSvcCancelPendingCaptureResponse);
 
-	rpc VerifyAndTokenizeNotPresentCard(.holms.types.money.cards.PaymentCardVerificationRequest)
+	rpc VerifyAndTokenizeNotPresentCard(PaymentCardVerificationRequest)
 		returns (CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse);
 }
 

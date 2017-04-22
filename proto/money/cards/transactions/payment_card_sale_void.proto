@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards.transactions;
+option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
+option go_package = "money/cards/transactions";
+
+import "money/cards/transactions/processor_transaction_result.proto";
+import "google/protobuf/timestamp.proto";
+
+message PaymentCardSaleVoid {
+	string host_reference_number = 1;
+	ProcessorTransactionResult result = 2;
+	google.protobuf.Timestamp posted_at = 3;
+}

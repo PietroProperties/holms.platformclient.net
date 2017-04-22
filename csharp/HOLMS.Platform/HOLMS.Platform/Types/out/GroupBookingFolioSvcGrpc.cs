@@ -15,7 +15,7 @@ namespace HOLMS.Types.Money.RPC {
     static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> __Marshaller_GroupBookingIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcGetFolioStateResponse> __Marshaller_GroupBookingFolioSvcGetFolioStateResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcGetFolioStateResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest> __Marshaller_GroupBookingFolioSvcCardAuthorizationFromTokenRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> __Marshaller_CardAuthorizationResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.CardAuthorizationResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> __Marshaller_CardAuthorizationResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest> __Marshaller_GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest> __Marshaller_GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCardPaymentRequest> __Marshaller_GroupBookingFolioSvcPostCardPaymentRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcPostCardPaymentRequest.Parser.ParseFrom);
@@ -36,21 +36,21 @@ namespace HOLMS.Types.Money.RPC {
         __Marshaller_GroupBookingIndicator,
         __Marshaller_GroupBookingFolioSvcGetFolioStateResponse);
 
-    static readonly Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest, global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> __Method_AddCardAuthorizationFromToken = new Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest, global::HOLMS.Types.Money.Cards.CardAuthorizationResponse>(
+    static readonly Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> __Method_AddCardAuthorizationFromToken = new Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse>(
         MethodType.Unary,
         __ServiceName,
         "AddCardAuthorizationFromToken",
         __Marshaller_GroupBookingFolioSvcCardAuthorizationFromTokenRequest,
         __Marshaller_CardAuthorizationResponse);
 
-    static readonly Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest, global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> __Method_AddCardAuthorizationFromPresentedCard = new Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest, global::HOLMS.Types.Money.Cards.CardAuthorizationResponse>(
+    static readonly Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> __Method_AddCardAuthorizationFromPresentedCard = new Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse>(
         MethodType.Unary,
         __ServiceName,
         "AddCardAuthorizationFromPresentedCard",
         __Marshaller_GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest,
         __Marshaller_CardAuthorizationResponse);
 
-    static readonly Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest, global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> __Method_AddCardAuthorizationFromNotPresentCard = new Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest, global::HOLMS.Types.Money.Cards.CardAuthorizationResponse>(
+    static readonly Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> __Method_AddCardAuthorizationFromNotPresentCard = new Method<global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse>(
         MethodType.Unary,
         __ServiceName,
         "AddCardAuthorizationFromNotPresentCard",
@@ -116,17 +116,17 @@ namespace HOLMS.Types.Money.RPC {
       /// <summary>
       ///  Cards
       /// </summary>
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> AddCardAuthorizationFromToken(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> AddCardAuthorizationFromToken(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> AddCardAuthorizationFromPresentedCard(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> AddCardAuthorizationFromPresentedCard(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> AddCardAuthorizationFromNotPresentCard(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> AddCardAuthorizationFromNotPresentCard(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -211,60 +211,60 @@ namespace HOLMS.Types.Money.RPC {
       /// <summary>
       ///  Cards
       /// </summary>
-      public virtual global::HOLMS.Types.Money.Cards.CardAuthorizationResponse AddCardAuthorizationFromToken(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse AddCardAuthorizationFromToken(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AddCardAuthorizationFromToken(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Cards
       /// </summary>
-      public virtual global::HOLMS.Types.Money.Cards.CardAuthorizationResponse AddCardAuthorizationFromToken(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse AddCardAuthorizationFromToken(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AddCardAuthorizationFromToken, null, options, request);
       }
       /// <summary>
       ///  Cards
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> AddCardAuthorizationFromTokenAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> AddCardAuthorizationFromTokenAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AddCardAuthorizationFromTokenAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Cards
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> AddCardAuthorizationFromTokenAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> AddCardAuthorizationFromTokenAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AddCardAuthorizationFromToken, null, options, request);
       }
-      public virtual global::HOLMS.Types.Money.Cards.CardAuthorizationResponse AddCardAuthorizationFromPresentedCard(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse AddCardAuthorizationFromPresentedCard(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AddCardAuthorizationFromPresentedCard(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Money.Cards.CardAuthorizationResponse AddCardAuthorizationFromPresentedCard(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse AddCardAuthorizationFromPresentedCard(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AddCardAuthorizationFromPresentedCard, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> AddCardAuthorizationFromPresentedCardAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> AddCardAuthorizationFromPresentedCardAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AddCardAuthorizationFromPresentedCardAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> AddCardAuthorizationFromPresentedCardAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> AddCardAuthorizationFromPresentedCardAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AddCardAuthorizationFromPresentedCard, null, options, request);
       }
-      public virtual global::HOLMS.Types.Money.Cards.CardAuthorizationResponse AddCardAuthorizationFromNotPresentCard(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse AddCardAuthorizationFromNotPresentCard(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AddCardAuthorizationFromNotPresentCard(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Money.Cards.CardAuthorizationResponse AddCardAuthorizationFromNotPresentCard(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse AddCardAuthorizationFromNotPresentCard(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AddCardAuthorizationFromNotPresentCard, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> AddCardAuthorizationFromNotPresentCardAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> AddCardAuthorizationFromNotPresentCardAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AddCardAuthorizationFromNotPresentCardAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.CardAuthorizationResponse> AddCardAuthorizationFromNotPresentCardAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> AddCardAuthorizationFromNotPresentCardAsync(global::HOLMS.Types.Money.RPC.GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AddCardAuthorizationFromNotPresentCard, null, options, request);
       }

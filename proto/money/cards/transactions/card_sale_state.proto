@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards.transactions;
+option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
+option go_package = "money/cards/transactions";
+
+enum CardSaleState {
+	CARD_SALE_STATE_OPEN = 0;
+	CARD_SALE_STATE_DECLINED = 1;
+	CARD_SALE_STATE_CHARGED = 2;
+	CARD_SALE_STATE_VOIDED = 3;
+	CARD_SALE_STATE_CHARGES_PENDING = 4;
+}

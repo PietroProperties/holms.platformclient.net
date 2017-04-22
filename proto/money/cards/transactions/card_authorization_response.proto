@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards.transactions;
+option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
+option go_package = "money/cards/transactions";
+
+import "money/cards/transactions/payment_card_sale_indicator.proto";
+import "money/cards/transactions/payment_card_authorization_indicator.proto";
+
+enum CardAuthorizationResponseCode {
+	AUTHORIZATION_SUCCESS = 0;
+	AUTHORIZATION_CARD_DECLINED = 1;
+	AUTHORIZATION_TRANSIENT_OPERATIONAL_ERROR = 2;
+	AUTHORIZATION_PERMANENT_OPERATIONAL_ERROR = 3;
+	AUTHORIZATION_NO_TERMINALS_CONFIGURED = 4;
+}
+
+message CardAuthorizationResponse {
+	CardAuthorizationResponseCode response = 1;
+	PaymentCardSaleIndicator sale = 2;
+	PaymentCardAuthorizationIndicator authorization = 3;
+}

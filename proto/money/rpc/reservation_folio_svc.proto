@@ -7,8 +7,8 @@ option go_package = "money/rpc";
 import "booking/indicators/reservation_indicator.proto";
 import "google/protobuf/empty.proto";
 import "money/cards/card_authorization_purpose.proto";
-import "money/cards/card_authorization_response.proto";
-import "money/cards/merchant_authorization_indicator.proto";
+import "money/cards/transactions/card_authorization_response.proto";
+import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
 import "money/cards/payment_card_indicator.proto";
 import "money/cards/tokenized_payment_card.proto";
@@ -96,7 +96,7 @@ message ReservationFolioSvcPostCardPaymentResponse {
 
 message ReservationFolioSvcPostCardPaymentRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
-	holms.types.money.cards.MerchantAuthorizationIndicator authorization = 2;
+	holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 2;
 	holms.types.primitive.MonetaryAmount amount = 3;
 }
 
@@ -131,19 +131,19 @@ message ReservationFolioSvcPostMiscChargeCorrectionRequest {
 	bool adjustment_taken_from_guest = 4;
 }
 
-message ReservationFolioSvcVoidAuthorizationRequest {
-	holms.types.money.cards.MerchantAuthorizationIndicator authorization = 1;
+message ReservationFolioSvcVoidSaleRequest {
+	holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 1;
 	holms.types.booking.indicators.ReservationIndicator reservation = 2;
 }
 
-enum ReservationFolioSvcVoidAuthorizationResult {
-	RESERVATION_FOLIO_SVC_VOID_AUTHORIZATION_SUCCESS = 0;
-	RESERVATION_FOLIO_SVC_VOID_AUTHORIZATION_NOT_FOUND = 1;
-	RESERVATION_FOLIO_SVC_VOID_AUTHORIZATION_UNKNOWN_FAILURE = 2;
+enum ReservationFolioSvcVoidSaleResult {
+	RESERVATION_FOLIO_SVC_VOID_SALE_SUCCESS = 0;
+	RESERVATION_FOLIO_SVC_VOID_SALE_NOT_FOUND = 1;
+	RESERVATION_FOLIO_SVC_VOID_SALE_UNKNOWN_FAILURE = 2;
 }
 
-message ReservationFolioSvcVoidAuthorizationResponse {
-	ReservationFolioSvcVoidAuthorizationResult result = 1;
+message ReservationFolioSvcVoidSaleResponse {
+	ReservationFolioSvcVoidSaleResult result = 1;
 }
 
 message ReservationFolioSvcPaymentCardRefundRequest {
@@ -169,15 +169,16 @@ service ReservationFolioSvc {
 
 	// Cards
 	rpc AddCardAuthorizationFromToken(CardAuthorizationFromTokenRequest)
-		returns (.holms.types.money.cards.CardAuthorizationResponse);
+		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromPresentedCard(CardAuthorizationFromPresentCardRequest)
-		returns (.holms.types.money.cards.CardAuthorizationResponse);
+		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromNotPresentCard(CardAuthorizationFromNotPresentCardRequest)
-		returns (.holms.types.money.cards.CardAuthorizationResponse);
+		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
+		
 	rpc GetOnFileCards(holms.types.booking.indicators.ReservationIndicator) 
 		returns(ReservationFolioSvcGetOnFileCardsResponse);
-	rpc VoidAuthorization(ReservationFolioSvcVoidAuthorizationRequest)
-		returns(ReservationFolioSvcVoidAuthorizationResponse);
+	rpc VoidSale(ReservationFolioSvcVoidSaleRequest)
+		returns(ReservationFolioSvcVoidSaleResponse);
 	
 	// Payments
 	rpc PostCardPayment(ReservationFolioSvcPostCardPaymentRequest)

@@ -1,0 +1,34 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards.transactions;
+option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
+
+import "money/cards/transactions/processor_transaction_result.proto";
+import "money/cards/transactions/payment_card_authorization_indicator.proto";
+import "primitive/monetary_amount.proto";
+import "google/protobuf/timestamp.proto";
+
+enum AuthorizationEntryMethod {
+	CARD_PRESENT_MANUAL = 0;
+	CARD_PRESENT_SWIPE = 1;
+	CARD_PRESENT_CONTACTLESS = 2;
+	CARD_PRESENT_SCANNER = 3;
+	CARD_PRESENT_CHIP = 4;
+	CARD_PRESENT_CHIP_FALL_BACK_SWIPE = 5;
+	CARD_NOT_PRESENT = 6;
+}
+
+message PaymentCardAuthorization {
+	PaymentCardAuthorizationIndicator entity_id = 1;
+	holms.types.primitive.MonetaryAmount authorization_amount = 6;
+	ProcessorTransactionResult result = 7;
+	
+	AuthorizationEntryMethod entry_method = 9;
+	string host_reference_number = 10;
+	string approval_code = 12;
+	string application_label = 13;
+	string application_crypto = 14;
+	string a_i_d = 15;
+	
+	google.protobuf.Timestamp posted_at = 16;
+}

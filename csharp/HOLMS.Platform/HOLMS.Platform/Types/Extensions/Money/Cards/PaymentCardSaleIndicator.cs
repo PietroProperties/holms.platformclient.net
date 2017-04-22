@@ -3,9 +3,9 @@ using HOLMS.Types.Extensions;
 using HOLMS.Types.Extensions.Support;
 using HOLMS.Types.Primitive;
 
-namespace HOLMS.Types.Money.Cards {
-    public partial class MerchantAuthorizationIndicator : EntityIndicator<MerchantAuthorizationIndicator> {
-        public MerchantAuthorizationIndicator(Guid id) {
+namespace HOLMS.Types.Money.Cards.Transactions {
+    public partial class PaymentCardSaleIndicator : EntityIndicator<PaymentCardSaleIndicator> {
+        public PaymentCardSaleIndicator(Guid id) {
             Id = id.ToUUID();
         }
 
