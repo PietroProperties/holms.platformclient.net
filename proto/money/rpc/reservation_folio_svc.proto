@@ -194,9 +194,7 @@ service ReservationFolioSvc {
 		returns(ReservationFolioSvcGetOnFileCardsResponse);
 	rpc VoidSale(ReservationFolioSvcVoidSaleRequest)
 		returns(ReservationFolioSvcVoidSaleResponse);
-	rpc IncreaseAuthorizationAmount(ReservationFolioSvcAuthorizationModificationRequest)
-		returns (ReservationFolioSvcAuthorizationModificationResponse);		
-	rpc ReverseAuthorizationAmount(ReservationFolioSvcAuthorizationModificationRequest)
+	rpc ChangeAuthorizationAmount(ReservationFolioSvcAuthorizationModificationRequest)
 		returns (ReservationFolioSvcAuthorizationModificationResponse);
 	
 	// Payments
