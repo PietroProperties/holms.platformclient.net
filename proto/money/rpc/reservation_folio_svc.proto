@@ -163,6 +163,21 @@ message ReservationFolioSvcRefundResponse {
 	ReservationFolioSvcRefundResult result = 1;
 }
 
+enum ReservationFolioSvcAuthorizationModificationResult {
+	RESERVATION_FOLIO_SVC_AUTHORIZATION_MODIFICATION_SUCCESS = 0;
+	RESERVATION_FOLIO_SVC_AUTHORIZATION_MODIFICATION_SALE_NOT_FOUND = 1;
+	RESERVATION_FOLIO_SVC_AUTHORIZATION_MODIFICATION_UNKNOWN_FAILURE = 2;
+}
+
+message ReservationFolioSvcAuthorizationModificationResponse {
+	ReservationFolioSvcAuthorizationModificationResult result = 1;
+}
+
+message ReservationFolioSvcAuthorizationModificationRequest {
+	holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 1;
+	holms.types.primitive.MonetaryAmount amount = 2;
+}
+
 service ReservationFolioSvc {
 	rpc GetFolioState(.holms.types.booking.indicators.ReservationIndicator)
 		returns(ReservationFolioSvcGetFolioStateResponse);
@@ -179,6 +194,8 @@ service ReservationFolioSvc {
 		returns(ReservationFolioSvcGetOnFileCardsResponse);
 	rpc VoidSale(ReservationFolioSvcVoidSaleRequest)
 		returns(ReservationFolioSvcVoidSaleResponse);
+	rpc ChangeAuthorizationAmount(ReservationFolioSvcAuthorizationModificationRequest)
+		returns (ReservationFolioSvcAuthorizationModificationResponse);
 	
 	// Payments
 	rpc PostCardPayment(ReservationFolioSvcPostCardPaymentRequest)

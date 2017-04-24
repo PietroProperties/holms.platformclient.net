@@ -21,6 +21,8 @@ namespace HOLMS.Types.Money.RPC {
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.ReservationFolioSvcGetOnFileCardsResponse> __Marshaller_ReservationFolioSvcGetOnFileCardsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.ReservationFolioSvcGetOnFileCardsResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.ReservationFolioSvcVoidSaleRequest> __Marshaller_ReservationFolioSvcVoidSaleRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.ReservationFolioSvcVoidSaleRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.ReservationFolioSvcVoidSaleResponse> __Marshaller_ReservationFolioSvcVoidSaleResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.ReservationFolioSvcVoidSaleResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationRequest> __Marshaller_ReservationFolioSvcAuthorizationModificationRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationResponse> __Marshaller_ReservationFolioSvcAuthorizationModificationResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentRequest> __Marshaller_ReservationFolioSvcPostCardPaymentRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentResponse> __Marshaller_ReservationFolioSvcPostCardPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCheckPaymentRequest> __Marshaller_ReservationFolioSvcPostCheckPaymentRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCheckPaymentRequest.Parser.ParseFrom);
@@ -75,6 +77,13 @@ namespace HOLMS.Types.Money.RPC {
         "VoidSale",
         __Marshaller_ReservationFolioSvcVoidSaleRequest,
         __Marshaller_ReservationFolioSvcVoidSaleResponse);
+
+    static readonly Method<global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationRequest, global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationResponse> __Method_ChangeAuthorizationAmount = new Method<global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationRequest, global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "ChangeAuthorizationAmount",
+        __Marshaller_ReservationFolioSvcAuthorizationModificationRequest,
+        __Marshaller_ReservationFolioSvcAuthorizationModificationResponse);
 
     static readonly Method<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentRequest, global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentResponse> __Method_PostCardPayment = new Method<global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentRequest, global::HOLMS.Types.Money.RPC.ReservationFolioSvcPostCardPaymentResponse>(
         MethodType.Unary,
@@ -163,6 +172,11 @@ namespace HOLMS.Types.Money.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.ReservationFolioSvcVoidSaleResponse> VoidSale(global::HOLMS.Types.Money.RPC.ReservationFolioSvcVoidSaleRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationResponse> ChangeAuthorizationAmount(global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -341,6 +355,22 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_VoidSale, null, options, request);
       }
+      public virtual global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationResponse ChangeAuthorizationAmount(global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ChangeAuthorizationAmount(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationResponse ChangeAuthorizationAmount(global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ChangeAuthorizationAmount, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationResponse> ChangeAuthorizationAmountAsync(global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ChangeAuthorizationAmountAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationResponse> ChangeAuthorizationAmountAsync(global::HOLMS.Types.Money.RPC.ReservationFolioSvcAuthorizationModificationRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ChangeAuthorizationAmount, null, options, request);
+      }
       /// <summary>
       ///  Payments
       /// </summary>
@@ -493,6 +523,7 @@ namespace HOLMS.Types.Money.RPC {
           .AddMethod(__Method_AddCardAuthorizationFromNotPresentCard, serviceImpl.AddCardAuthorizationFromNotPresentCard)
           .AddMethod(__Method_GetOnFileCards, serviceImpl.GetOnFileCards)
           .AddMethod(__Method_VoidSale, serviceImpl.VoidSale)
+          .AddMethod(__Method_ChangeAuthorizationAmount, serviceImpl.ChangeAuthorizationAmount)
           .AddMethod(__Method_PostCardPayment, serviceImpl.PostCardPayment)
           .AddMethod(__Method_PostCheckPayment, serviceImpl.PostCheckPayment)
           .AddMethod(__Method_PostCashPayment, serviceImpl.PostCashPayment)
