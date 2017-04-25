@@ -27,19 +27,19 @@ namespace HOLMS.Types.Supply.Snapshot {
             "bWl0aXZlL3BiX2xvY2FsX2RhdGUucHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFy",
             "eV9hbW91bnQucHJvdG8aK3N1cHBseS9yb29tX3R5cGVzL3Jvb21fdHlwZV9p",
             "bmRpY2F0b3IucHJvdG8aL3N1cHBseS9zbmFwc2hvdC9sb2RnaW5nX3NuYXBz",
-            "aG90X3F1YW50aXR5LnByb3RvIp4CCh1Mb2RnaW5nU25hcHNob3RSZXNwb25z",
+            "aG90X3F1YW50aXR5LnByb3RvIsECCh1Mb2RnaW5nU25hcHNob3RSZXNwb25z",
             "ZVJlY29yZBJDCglyb29tX3R5cGUYASABKAsyMC5ob2xtcy50eXBlcy5zdXBw",
             "bHkucm9vbV90eXBlcy5Sb29tVHlwZUluZGljYXRvchIwCgRkYXRlGAIgASgL",
             "MiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlEjwKDW9mZmVy",
             "ZWRfcHJpY2UYAyABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRh",
             "cnlBbW91bnQSSAoKcXVhbnRpdGllcxgEIAEoCzI0LmhvbG1zLnR5cGVzLnN1",
-            "cHBseS5zbmFwc2hvdC5Mb2RnaW5nU25hcHNob3RRdWFudGl0eUIvWg9zdXBw",
-            "bHkvc25hcHNob3SqAhtIT0xNUy5UeXBlcy5TdXBwbHkuU25hcHNob3RiBnBy",
-            "b3RvMw=="));
+            "cHBseS5zbmFwc2hvdC5Mb2RnaW5nU25hcHNob3RRdWFudGl0eRIhChlyZXF1",
+            "aXJlZF9yZXNlcnZhdGlvbl90YWdzGAUgAygJQi9aD3N1cHBseS9zbmFwc2hv",
+            "dKoCG0hPTE1TLlR5cGVzLlN1cHBseS5TbmFwc2hvdGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotQuantityReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotResponseRecord), global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotResponseRecord.Parser, new[]{ "RoomType", "Date", "OfferedPrice", "Quantities" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotResponseRecord), global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotResponseRecord.Parser, new[]{ "RoomType", "Date", "OfferedPrice", "Quantities", "RequiredReservationTags" }, null, null, null)
           }));
     }
     #endregion
@@ -74,6 +74,7 @@ namespace HOLMS.Types.Supply.Snapshot {
       Date = other.date_ != null ? other.Date.Clone() : null;
       OfferedPrice = other.offeredPrice_ != null ? other.OfferedPrice.Clone() : null;
       Quantities = other.quantities_ != null ? other.Quantities.Clone() : null;
+      requiredReservationTags_ = other.requiredReservationTags_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -125,6 +126,16 @@ namespace HOLMS.Types.Supply.Snapshot {
       }
     }
 
+    /// <summary>Field number for the "required_reservation_tags" field.</summary>
+    public const int RequiredReservationTagsFieldNumber = 5;
+    private static readonly pb::FieldCodec<string> _repeated_requiredReservationTags_codec
+        = pb::FieldCodec.ForString(42);
+    private readonly pbc::RepeatedField<string> requiredReservationTags_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> RequiredReservationTags {
+      get { return requiredReservationTags_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LodgingSnapshotResponseRecord);
@@ -142,6 +153,7 @@ namespace HOLMS.Types.Supply.Snapshot {
       if (!object.Equals(Date, other.Date)) return false;
       if (!object.Equals(OfferedPrice, other.OfferedPrice)) return false;
       if (!object.Equals(Quantities, other.Quantities)) return false;
+      if(!requiredReservationTags_.Equals(other.requiredReservationTags_)) return false;
       return true;
     }
 
@@ -152,6 +164,7 @@ namespace HOLMS.Types.Supply.Snapshot {
       if (date_ != null) hash ^= Date.GetHashCode();
       if (offeredPrice_ != null) hash ^= OfferedPrice.GetHashCode();
       if (quantities_ != null) hash ^= Quantities.GetHashCode();
+      hash ^= requiredReservationTags_.GetHashCode();
       return hash;
     }
 
@@ -178,6 +191,7 @@ namespace HOLMS.Types.Supply.Snapshot {
         output.WriteRawTag(34);
         output.WriteMessage(Quantities);
       }
+      requiredReservationTags_.WriteTo(output, _repeated_requiredReservationTags_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -195,6 +209,7 @@ namespace HOLMS.Types.Supply.Snapshot {
       if (quantities_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Quantities);
       }
+      size += requiredReservationTags_.CalculateSize(_repeated_requiredReservationTags_codec);
       return size;
     }
 
@@ -227,6 +242,7 @@ namespace HOLMS.Types.Supply.Snapshot {
         }
         Quantities.MergeFrom(other.Quantities);
       }
+      requiredReservationTags_.Add(other.requiredReservationTags_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -263,6 +279,10 @@ namespace HOLMS.Types.Supply.Snapshot {
               quantities_ = new global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotQuantity();
             }
             input.ReadMessage(quantities_);
+            break;
+          }
+          case 42: {
+            requiredReservationTags_.AddEntriesFrom(input, _repeated_requiredReservationTags_codec);
             break;
           }
         }

@@ -15,4 +15,5 @@ message LodgingSnapshotResponseRecord {
 
 	holms.types.primitive.MonetaryAmount offered_price = 3;
 	holms.types.supply.snapshot.LodgingSnapshotQuantity quantities = 4;
+	repeated string required_reservation_tags = 5;
 }
