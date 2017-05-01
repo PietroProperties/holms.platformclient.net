@@ -23,14 +23,15 @@ namespace HOLMS.Types.Money.Accounting {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci9tb25leS9hY2NvdW50aW5nL2lpZl9leHBvcnRfY29uZmlndXJhdGlvbi5w",
-            "cm90bxIcaG9sbXMudHlwZXMubW9uZXkuYWNjb3VudGluZyI3ChZJSUZFeHBv",
+            "cm90bxIcaG9sbXMudHlwZXMubW9uZXkuYWNjb3VudGluZyJdChZJSUZFeHBv",
             "cnRDb25maWd1cmF0aW9uEh0KFXJlY3VycmVuY2VfZGVzY3JpcHRvchgBIAEo",
-            "CUIxWhBtb25leS9hY2NvdW50aW5nqgIcSE9MTVMuVHlwZXMuTW9uZXkuQWNj",
-            "b3VudGluZ2IGcHJvdG8z"));
+            "CRIkChxkaXNhYmxlX2Fzc2V0X2FjY291bnRfZXhwb3J0GAIgASgIQjFaEG1v",
+            "bmV5L2FjY291bnRpbmeqAhxIT0xNUy5UeXBlcy5Nb25leS5BY2NvdW50aW5n",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Accounting.IIFExportConfiguration), global::HOLMS.Types.Money.Accounting.IIFExportConfiguration.Parser, new[]{ "RecurrenceDescriptor" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Accounting.IIFExportConfiguration), global::HOLMS.Types.Money.Accounting.IIFExportConfiguration.Parser, new[]{ "RecurrenceDescriptor", "DisableAssetAccountExport" }, null, null, null)
           }));
     }
     #endregion
@@ -62,6 +63,7 @@ namespace HOLMS.Types.Money.Accounting {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public IIFExportConfiguration(IIFExportConfiguration other) : this() {
       recurrenceDescriptor_ = other.recurrenceDescriptor_;
+      disableAssetAccountExport_ = other.disableAssetAccountExport_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -80,6 +82,17 @@ namespace HOLMS.Types.Money.Accounting {
       }
     }
 
+    /// <summary>Field number for the "disable_asset_account_export" field.</summary>
+    public const int DisableAssetAccountExportFieldNumber = 2;
+    private bool disableAssetAccountExport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool DisableAssetAccountExport {
+      get { return disableAssetAccountExport_; }
+      set {
+        disableAssetAccountExport_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as IIFExportConfiguration);
@@ -94,6 +107,7 @@ namespace HOLMS.Types.Money.Accounting {
         return true;
       }
       if (RecurrenceDescriptor != other.RecurrenceDescriptor) return false;
+      if (DisableAssetAccountExport != other.DisableAssetAccountExport) return false;
       return true;
     }
 
@@ -101,6 +115,7 @@ namespace HOLMS.Types.Money.Accounting {
     public override int GetHashCode() {
       int hash = 1;
       if (RecurrenceDescriptor.Length != 0) hash ^= RecurrenceDescriptor.GetHashCode();
+      if (DisableAssetAccountExport != false) hash ^= DisableAssetAccountExport.GetHashCode();
       return hash;
     }
 
@@ -115,6 +130,10 @@ namespace HOLMS.Types.Money.Accounting {
         output.WriteRawTag(10);
         output.WriteString(RecurrenceDescriptor);
       }
+      if (DisableAssetAccountExport != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(DisableAssetAccountExport);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -122,6 +141,9 @@ namespace HOLMS.Types.Money.Accounting {
       int size = 0;
       if (RecurrenceDescriptor.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(RecurrenceDescriptor);
+      }
+      if (DisableAssetAccountExport != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -133,6 +155,9 @@ namespace HOLMS.Types.Money.Accounting {
       }
       if (other.RecurrenceDescriptor.Length != 0) {
         RecurrenceDescriptor = other.RecurrenceDescriptor;
+      }
+      if (other.DisableAssetAccountExport != false) {
+        DisableAssetAccountExport = other.DisableAssetAccountExport;
       }
     }
 
@@ -146,6 +171,10 @@ namespace HOLMS.Types.Money.Accounting {
             break;
           case 10: {
             RecurrenceDescriptor = input.ReadString();
+            break;
+          }
+          case 16: {
+            DisableAssetAccountExport = input.ReadBool();
             break;
           }
         }
