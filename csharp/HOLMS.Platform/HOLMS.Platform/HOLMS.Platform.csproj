@@ -155,6 +155,7 @@
     <Compile Include="Types\Extensions\Money\Cards\NotPresentPaymentCard.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\TokenizedPaymentCard.cs" />
+    <Compile Include="Types\Extensions\Money\Folio\FolioState.cs" />
     <Compile Include="Types\Extensions\Operations\ArrivalLetterTemplate.cs" />
     <Compile Include="Types\Extensions\Operations\Attractions\Attraction.cs" />
     <Compile Include="Types\Extensions\Operations\Attractions\AttractionCategory.cs" />
@@ -617,7 +618,6 @@
     <Compile Include="Types\Topics\PBXConnectorTopics.cs" />
     <Compile Include="Types\Topics\SupplyContextTopics.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
