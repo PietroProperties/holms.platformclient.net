@@ -176,6 +176,7 @@ message ReservationFolioSvcAuthorizationModificationResponse {
 message ReservationFolioSvcAuthorizationModificationRequest {
 	holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 1;
 	holms.types.primitive.MonetaryAmount amount = 2;
+	holms.types.money.cards.CardAuthorizationPurpose purpose = 3;
 }
 
 service ReservationFolioSvc {

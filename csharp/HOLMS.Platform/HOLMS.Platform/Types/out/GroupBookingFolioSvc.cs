@@ -55,20 +55,20 @@ namespace HOLMS.Types.Money.RPC {
             "a2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGljYXRvchI7CgRjYXJk",
             "GAIgASgLMi0uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuUGF5bWVudENhcmRJ",
             "bmRpY2F0b3ISNQoGYW1vdW50GAMgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0",
-            "aXZlLk1vbmV0YXJ5QW1vdW50EkIKB3B1cnBvc2UYBCABKA4yMS5ob2xtcy50",
+            "aXZlLk1vbmV0YXJ5QW1vdW50EkIKB3B1cnBvc2UYBCABKAsyMS5ob2xtcy50",
             "eXBlcy5tb25leS5jYXJkcy5DYXJkQXV0aG9yaXphdGlvblB1cnBvc2UigAIK",
             "O0dyb3VwQm9va2luZ0ZvbGlvU3ZjQ2FyZEF1dGhvcml6YXRpb25Gcm9tUHJl",
             "c2VudENhcmRSZXF1ZXN0EkYKB2Jvb2tpbmcYASABKAsyNS5ob2xtcy50eXBl",
             "cy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yEjUK",
             "BmFtb3VudBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFy",
-            "eUFtb3VudBJCCgdwdXJwb3NlGAMgASgOMjEuaG9sbXMudHlwZXMubW9uZXku",
+            "eUFtb3VudBJCCgdwdXJwb3NlGAMgASgLMjEuaG9sbXMudHlwZXMubW9uZXku",
             "Y2FyZHMuQ2FyZEF1dGhvcml6YXRpb25QdXJwb3NlIsECCj5Hcm91cEJvb2tp",
             "bmdGb2xpb1N2Y0NhcmRBdXRob3JpemF0aW9uRnJvbU5vdFByZXNlbnRDYXJk",
             "UmVxdWVzdBJGCgdib29raW5nGAEgASgLMjUuaG9sbXMudHlwZXMuYm9va2lu",
             "Zy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGljYXRvchI8CgRjYXJkGAIg",
             "ASgLMi4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuTm90UHJlc2VudFBheW1l",
             "bnRDYXJkEjUKBmFtb3VudBgDIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2",
-            "ZS5Nb25ldGFyeUFtb3VudBJCCgdwdXJwb3NlGAQgASgOMjEuaG9sbXMudHlw",
+            "ZS5Nb25ldGFyeUFtb3VudBJCCgdwdXJwb3NlGAQgASgLMjEuaG9sbXMudHlw",
             "ZXMubW9uZXkuY2FyZHMuQ2FyZEF1dGhvcml6YXRpb25QdXJwb3NlIn8KK0dy",
             "b3VwQm9va2luZ0ZvbGlvU3ZjUG9zdENhcmRQYXltZW50UmVzcG9uc2USUAoG",
             "cmVzdWx0GAEgASgOMkAuaG9sbXMudHlwZXMubW9uZXkucnBjLkdyb3VwQm9v",
@@ -909,7 +909,7 @@ namespace HOLMS.Types.Money.RPC {
       Booking = other.booking_ != null ? other.Booking.Clone() : null;
       Card = other.card_ != null ? other.Card.Clone() : null;
       Amount = other.amount_ != null ? other.Amount.Clone() : null;
-      purpose_ = other.purpose_;
+      Purpose = other.purpose_ != null ? other.Purpose.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -952,7 +952,7 @@ namespace HOLMS.Types.Money.RPC {
 
     /// <summary>Field number for the "purpose" field.</summary>
     public const int PurposeFieldNumber = 4;
-    private global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose purpose_ = 0;
+    private global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose purpose_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose Purpose {
       get { return purpose_; }
@@ -977,7 +977,7 @@ namespace HOLMS.Types.Money.RPC {
       if (!object.Equals(Booking, other.Booking)) return false;
       if (!object.Equals(Card, other.Card)) return false;
       if (!object.Equals(Amount, other.Amount)) return false;
-      if (Purpose != other.Purpose) return false;
+      if (!object.Equals(Purpose, other.Purpose)) return false;
       return true;
     }
 
@@ -987,7 +987,7 @@ namespace HOLMS.Types.Money.RPC {
       if (booking_ != null) hash ^= Booking.GetHashCode();
       if (card_ != null) hash ^= Card.GetHashCode();
       if (amount_ != null) hash ^= Amount.GetHashCode();
-      if (Purpose != 0) hash ^= Purpose.GetHashCode();
+      if (purpose_ != null) hash ^= Purpose.GetHashCode();
       return hash;
     }
 
@@ -1010,9 +1010,9 @@ namespace HOLMS.Types.Money.RPC {
         output.WriteRawTag(26);
         output.WriteMessage(Amount);
       }
-      if (Purpose != 0) {
-        output.WriteRawTag(32);
-        output.WriteEnum((int) Purpose);
+      if (purpose_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Purpose);
       }
     }
 
@@ -1028,8 +1028,8 @@ namespace HOLMS.Types.Money.RPC {
       if (amount_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Amount);
       }
-      if (Purpose != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Purpose);
+      if (purpose_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Purpose);
       }
       return size;
     }
@@ -1057,8 +1057,11 @@ namespace HOLMS.Types.Money.RPC {
         }
         Amount.MergeFrom(other.Amount);
       }
-      if (other.Purpose != 0) {
-        Purpose = other.Purpose;
+      if (other.purpose_ != null) {
+        if (purpose_ == null) {
+          purpose_ = new global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose();
+        }
+        Purpose.MergeFrom(other.Purpose);
       }
     }
 
@@ -1091,8 +1094,11 @@ namespace HOLMS.Types.Money.RPC {
             input.ReadMessage(amount_);
             break;
           }
-          case 32: {
-            purpose_ = (global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose) input.ReadEnum();
+          case 34: {
+            if (purpose_ == null) {
+              purpose_ = new global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose();
+            }
+            input.ReadMessage(purpose_);
             break;
           }
         }
@@ -1127,7 +1133,7 @@ namespace HOLMS.Types.Money.RPC {
     public GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest(GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest other) : this() {
       Booking = other.booking_ != null ? other.Booking.Clone() : null;
       Amount = other.amount_ != null ? other.Amount.Clone() : null;
-      purpose_ = other.purpose_;
+      Purpose = other.purpose_ != null ? other.Purpose.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1159,7 +1165,7 @@ namespace HOLMS.Types.Money.RPC {
 
     /// <summary>Field number for the "purpose" field.</summary>
     public const int PurposeFieldNumber = 3;
-    private global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose purpose_ = 0;
+    private global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose purpose_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose Purpose {
       get { return purpose_; }
@@ -1183,7 +1189,7 @@ namespace HOLMS.Types.Money.RPC {
       }
       if (!object.Equals(Booking, other.Booking)) return false;
       if (!object.Equals(Amount, other.Amount)) return false;
-      if (Purpose != other.Purpose) return false;
+      if (!object.Equals(Purpose, other.Purpose)) return false;
       return true;
     }
 
@@ -1192,7 +1198,7 @@ namespace HOLMS.Types.Money.RPC {
       int hash = 1;
       if (booking_ != null) hash ^= Booking.GetHashCode();
       if (amount_ != null) hash ^= Amount.GetHashCode();
-      if (Purpose != 0) hash ^= Purpose.GetHashCode();
+      if (purpose_ != null) hash ^= Purpose.GetHashCode();
       return hash;
     }
 
@@ -1211,9 +1217,9 @@ namespace HOLMS.Types.Money.RPC {
         output.WriteRawTag(18);
         output.WriteMessage(Amount);
       }
-      if (Purpose != 0) {
-        output.WriteRawTag(24);
-        output.WriteEnum((int) Purpose);
+      if (purpose_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Purpose);
       }
     }
 
@@ -1226,8 +1232,8 @@ namespace HOLMS.Types.Money.RPC {
       if (amount_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Amount);
       }
-      if (Purpose != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Purpose);
+      if (purpose_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Purpose);
       }
       return size;
     }
@@ -1249,8 +1255,11 @@ namespace HOLMS.Types.Money.RPC {
         }
         Amount.MergeFrom(other.Amount);
       }
-      if (other.Purpose != 0) {
-        Purpose = other.Purpose;
+      if (other.purpose_ != null) {
+        if (purpose_ == null) {
+          purpose_ = new global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose();
+        }
+        Purpose.MergeFrom(other.Purpose);
       }
     }
 
@@ -1276,8 +1285,11 @@ namespace HOLMS.Types.Money.RPC {
             input.ReadMessage(amount_);
             break;
           }
-          case 24: {
-            purpose_ = (global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose) input.ReadEnum();
+          case 26: {
+            if (purpose_ == null) {
+              purpose_ = new global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose();
+            }
+            input.ReadMessage(purpose_);
             break;
           }
         }
@@ -1313,7 +1325,7 @@ namespace HOLMS.Types.Money.RPC {
       Booking = other.booking_ != null ? other.Booking.Clone() : null;
       Card = other.card_ != null ? other.Card.Clone() : null;
       Amount = other.amount_ != null ? other.Amount.Clone() : null;
-      purpose_ = other.purpose_;
+      Purpose = other.purpose_ != null ? other.Purpose.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1356,7 +1368,7 @@ namespace HOLMS.Types.Money.RPC {
 
     /// <summary>Field number for the "purpose" field.</summary>
     public const int PurposeFieldNumber = 4;
-    private global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose purpose_ = 0;
+    private global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose purpose_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose Purpose {
       get { return purpose_; }
@@ -1381,7 +1393,7 @@ namespace HOLMS.Types.Money.RPC {
       if (!object.Equals(Booking, other.Booking)) return false;
       if (!object.Equals(Card, other.Card)) return false;
       if (!object.Equals(Amount, other.Amount)) return false;
-      if (Purpose != other.Purpose) return false;
+      if (!object.Equals(Purpose, other.Purpose)) return false;
       return true;
     }
 
@@ -1391,7 +1403,7 @@ namespace HOLMS.Types.Money.RPC {
       if (booking_ != null) hash ^= Booking.GetHashCode();
       if (card_ != null) hash ^= Card.GetHashCode();
       if (amount_ != null) hash ^= Amount.GetHashCode();
-      if (Purpose != 0) hash ^= Purpose.GetHashCode();
+      if (purpose_ != null) hash ^= Purpose.GetHashCode();
       return hash;
     }
 
@@ -1414,9 +1426,9 @@ namespace HOLMS.Types.Money.RPC {
         output.WriteRawTag(26);
         output.WriteMessage(Amount);
       }
-      if (Purpose != 0) {
-        output.WriteRawTag(32);
-        output.WriteEnum((int) Purpose);
+      if (purpose_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Purpose);
       }
     }
 
@@ -1432,8 +1444,8 @@ namespace HOLMS.Types.Money.RPC {
       if (amount_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Amount);
       }
-      if (Purpose != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Purpose);
+      if (purpose_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Purpose);
       }
       return size;
     }
@@ -1461,8 +1473,11 @@ namespace HOLMS.Types.Money.RPC {
         }
         Amount.MergeFrom(other.Amount);
       }
-      if (other.Purpose != 0) {
-        Purpose = other.Purpose;
+      if (other.purpose_ != null) {
+        if (purpose_ == null) {
+          purpose_ = new global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose();
+        }
+        Purpose.MergeFrom(other.Purpose);
       }
     }
 
@@ -1495,8 +1510,11 @@ namespace HOLMS.Types.Money.RPC {
             input.ReadMessage(amount_);
             break;
           }
-          case 32: {
-            purpose_ = (global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose) input.ReadEnum();
+          case 34: {
+            if (purpose_ == null) {
+              purpose_ = new global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose();
+            }
+            input.ReadMessage(purpose_);
             break;
           }
         }

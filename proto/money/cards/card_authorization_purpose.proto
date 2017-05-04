@@ -4,7 +4,14 @@ package holms.types.money.cards;
 option csharp_namespace = "HOLMS.Types.Money.Cards";
 option go_package = "money/cards";
 
-enum CardAuthorizationPurpose {
-	CARD_AUTHORIZATION_PURPOSE_PAYMENT = 0;
-	CARD_AUTHORIZATION_PURPOSE_GUARANTEE = 1;
+message CardAuthorizationPurpose {
+	bool for_guarantee = 1;
+	bool for_payment_other = 2;
+	bool for_payment_lodging = 3;
+	bool for_payment_restaurant = 4;
+	bool for_payment_gift_shop = 5;
+	bool for_payment_minibar = 6;
+	bool for_payment_telephone = 7;
+	bool for_payment_laundry = 8;
 }
+
