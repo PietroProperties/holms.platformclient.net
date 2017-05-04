@@ -497,5 +497,11 @@ namespace HOLMS.Application.Client {
                 throw new NotImplementedException();
             }
         }
+
+        public FolioAuthCleanupSvc.FolioAuthCleanupSvcClient FolioAuthCleanupSvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

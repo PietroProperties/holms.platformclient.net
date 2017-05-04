@@ -61,6 +61,7 @@ namespace HOLMS.Application.Client {
         GroupBookingFolioSvc.GroupBookingFolioSvcClient GroupBookingFolioSvc { get; }
         ReservationFolioSvc.ReservationFolioSvcClient ReservationFolioSvc { get; }
         TaxFeeSvc.TaxFeeSvcClient TaxFeeSvc { get; }
+        FolioAuthCleanupSvc.FolioAuthCleanupSvcClient FolioAuthCleanupSvc { get; }
         #endregion
 
         #region Operations
