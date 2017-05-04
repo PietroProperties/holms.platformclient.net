@@ -300,6 +300,8 @@
     <Compile Include="Types\out\DepartmentSvcGrpc.cs" />
     <Compile Include="Types\out\DepartureDateCheckoutAcceptibility.cs" />
     <Compile Include="Types\out\FixedPointRatio.cs" />
+    <Compile Include="Types\out\FolioAuthCleanupSvc.cs" />
+    <Compile Include="Types\out\FolioAuthCleanupSvcGrpc.cs" />
     <Compile Include="Types\out\FolioChargePostedNotification.cs" />
     <Compile Include="Types\out\FolioState.cs" />
     <Compile Include="Types\out\FrontDeskReportingSvc.cs" />

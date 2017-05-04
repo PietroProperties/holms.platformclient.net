@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package holms.types.money.rpc;
+option csharp_namespace = "HOLMS.Types.Money.RPC";
+
+import "google/protobuf/empty.proto";
+
+service FolioAuthCleanupSvc {
+	rpc VoidAuthorizationsForDepartedReservations(.google.protobuf.Empty)
+		returns(.google.protobuf.Empty);
+		}

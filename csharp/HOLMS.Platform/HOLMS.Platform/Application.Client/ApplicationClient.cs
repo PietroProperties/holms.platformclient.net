@@ -75,6 +75,7 @@ namespace HOLMS.Application.Client {
         public TaxFeeSvc.TaxFeeSvcClient TaxFeeSvc { get; protected set; }
         public GroupBookingFolioSvc.GroupBookingFolioSvcClient GroupBookingFolioSvc { get; protected set; }
         public ReservationFolioSvc.ReservationFolioSvcClient ReservationFolioSvc { get; protected set; }
+        public FolioAuthCleanupSvc.FolioAuthCleanupSvcClient FolioAuthCleanupSvc { get; protected set; }
         #endregion
 
         #region Operations
@@ -270,6 +271,7 @@ namespace HOLMS.Application.Client {
             TaxFeeSvc = new TaxFeeSvc.TaxFeeSvcClient(_authenticatedChannel);
             GroupBookingFolioSvc = new GroupBookingFolioSvc.GroupBookingFolioSvcClient(_authenticatedChannel);
             ReservationFolioSvc = new ReservationFolioSvc.ReservationFolioSvcClient(_authenticatedChannel);
+            FolioAuthCleanupSvc = new FolioAuthCleanupSvc.FolioAuthCleanupSvcClient(_authenticatedChannel);
             #endregion
 
             #region Operations
