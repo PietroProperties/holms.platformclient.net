@@ -4,7 +4,7 @@ package holms.types.money.cards;
 option csharp_namespace = "HOLMS.Types.Money.Cards";
 option go_package = "money/cards";
 
-message CardAuthorizationPurpose {
+message CardSalePurpose {
 	bool for_guarantee = 1;
 	bool for_payment_other = 2;
 	bool for_payment_lodging = 3;
