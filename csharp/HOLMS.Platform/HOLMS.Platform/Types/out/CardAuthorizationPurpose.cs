@@ -23,18 +23,19 @@ namespace HOLMS.Types.Money.Cards {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cixtb25leS9jYXJkcy9jYXJkX2F1dGhvcml6YXRpb25fcHVycG9zZS5wcm90",
-            "bxIXaG9sbXMudHlwZXMubW9uZXkuY2FyZHMigQIKGENhcmRBdXRob3JpemF0",
+            "bxIXaG9sbXMudHlwZXMubW9uZXkuY2FyZHMingIKGENhcmRBdXRob3JpemF0",
             "aW9uUHVycG9zZRIVCg1mb3JfZ3VhcmFudGVlGAEgASgIEhkKEWZvcl9wYXlt",
             "ZW50X290aGVyGAIgASgIEhsKE2Zvcl9wYXltZW50X2xvZGdpbmcYAyABKAgS",
             "HgoWZm9yX3BheW1lbnRfcmVzdGF1cmFudBgEIAEoCBIdChVmb3JfcGF5bWVu",
             "dF9naWZ0X3Nob3AYBSABKAgSGwoTZm9yX3BheW1lbnRfbWluaWJhchgGIAEo",
             "CBIdChVmb3JfcGF5bWVudF90ZWxlcGhvbmUYByABKAgSGwoTZm9yX3BheW1l",
-            "bnRfbGF1bmRyeRgIIAEoCEInWgttb25leS9jYXJkc6oCF0hPTE1TLlR5cGVz",
-            "Lk1vbmV5LkNhcmRzYgZwcm90bzM="));
+            "bnRfbGF1bmRyeRgIIAEoCBIbChNmb3JfcGF5bWVudF9wZW5hbHR5GAkgASgI",
+            "QidaC21vbmV5L2NhcmRzqgIXSE9MTVMuVHlwZXMuTW9uZXkuQ2FyZHNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose), global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose.Parser, new[]{ "ForGuarantee", "ForPaymentOther", "ForPaymentLodging", "ForPaymentRestaurant", "ForPaymentGiftShop", "ForPaymentMinibar", "ForPaymentTelephone", "ForPaymentLaundry" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose), global::HOLMS.Types.Money.Cards.CardAuthorizationPurpose.Parser, new[]{ "ForGuarantee", "ForPaymentOther", "ForPaymentLodging", "ForPaymentRestaurant", "ForPaymentGiftShop", "ForPaymentMinibar", "ForPaymentTelephone", "ForPaymentLaundry", "ForPaymentPenalty" }, null, null, null)
           }));
     }
     #endregion
@@ -73,6 +74,7 @@ namespace HOLMS.Types.Money.Cards {
       forPaymentMinibar_ = other.forPaymentMinibar_;
       forPaymentTelephone_ = other.forPaymentTelephone_;
       forPaymentLaundry_ = other.forPaymentLaundry_;
+      forPaymentPenalty_ = other.forPaymentPenalty_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -168,6 +170,17 @@ namespace HOLMS.Types.Money.Cards {
       }
     }
 
+    /// <summary>Field number for the "for_payment_penalty" field.</summary>
+    public const int ForPaymentPenaltyFieldNumber = 9;
+    private bool forPaymentPenalty_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool ForPaymentPenalty {
+      get { return forPaymentPenalty_; }
+      set {
+        forPaymentPenalty_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CardAuthorizationPurpose);
@@ -189,6 +202,7 @@ namespace HOLMS.Types.Money.Cards {
       if (ForPaymentMinibar != other.ForPaymentMinibar) return false;
       if (ForPaymentTelephone != other.ForPaymentTelephone) return false;
       if (ForPaymentLaundry != other.ForPaymentLaundry) return false;
+      if (ForPaymentPenalty != other.ForPaymentPenalty) return false;
       return true;
     }
 
@@ -203,6 +217,7 @@ namespace HOLMS.Types.Money.Cards {
       if (ForPaymentMinibar != false) hash ^= ForPaymentMinibar.GetHashCode();
       if (ForPaymentTelephone != false) hash ^= ForPaymentTelephone.GetHashCode();
       if (ForPaymentLaundry != false) hash ^= ForPaymentLaundry.GetHashCode();
+      if (ForPaymentPenalty != false) hash ^= ForPaymentPenalty.GetHashCode();
       return hash;
     }
 
@@ -245,6 +260,10 @@ namespace HOLMS.Types.Money.Cards {
         output.WriteRawTag(64);
         output.WriteBool(ForPaymentLaundry);
       }
+      if (ForPaymentPenalty != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(ForPaymentPenalty);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -272,6 +291,9 @@ namespace HOLMS.Types.Money.Cards {
         size += 1 + 1;
       }
       if (ForPaymentLaundry != false) {
+        size += 1 + 1;
+      }
+      if (ForPaymentPenalty != false) {
         size += 1 + 1;
       }
       return size;
@@ -305,6 +327,9 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (other.ForPaymentLaundry != false) {
         ForPaymentLaundry = other.ForPaymentLaundry;
+      }
+      if (other.ForPaymentPenalty != false) {
+        ForPaymentPenalty = other.ForPaymentPenalty;
       }
     }
 
@@ -346,6 +371,10 @@ namespace HOLMS.Types.Money.Cards {
           }
           case 64: {
             ForPaymentLaundry = input.ReadBool();
+            break;
+          }
+          case 72: {
+            ForPaymentPenalty = input.ReadBool();
             break;
           }
         }

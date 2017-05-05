@@ -13,5 +13,6 @@ message CardAuthorizationPurpose {
 	bool for_payment_minibar = 6;
 	bool for_payment_telephone = 7;
 	bool for_payment_laundry = 8;
+	bool for_payment_penalty = 9;
 }
 
