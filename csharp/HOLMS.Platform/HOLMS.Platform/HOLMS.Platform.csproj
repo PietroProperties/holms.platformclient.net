@@ -248,7 +248,6 @@
     <Compile Include="Types\out\CancellationRequest.cs" />
     <Compile Include="Types\out\CancellationResponse.cs" />
     <Compile Include="Types\out\CancelledReservation.cs" />
-    <Compile Include="Types\out\CardAuthorizationPurpose.cs" />
     <Compile Include="Types\out\CardAuthorizationResponse.cs" />
     <Compile Include="Types\out\CardCaptureReportingSvc.cs" />
     <Compile Include="Types\out\CardCaptureReportingSvcGrpc.cs" />
@@ -260,6 +259,7 @@
     <Compile Include="Types\out\CardProcessingSvc.cs" />
     <Compile Include="Types\out\CardProcessingSvcGrpc.cs" />
     <Compile Include="Types\out\CardProcessorIndicator.cs" />
+    <Compile Include="Types\out\CardSalePurpose.cs" />
     <Compile Include="Types\out\CardSaleState.cs" />
     <Compile Include="Types\out\CardTerminal.cs" />
     <Compile Include="Types\out\CardTerminalIndicator.cs" />

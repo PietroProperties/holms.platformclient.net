@@ -6,7 +6,7 @@ option go_package = "money/rpc";
 
 import "booking/indicators/group_booking_indicator.proto";
 import "google/protobuf/empty.proto";
-import "money/cards/card_authorization_purpose.proto";
+import "money/cards/card_sale_purpose.proto";
 import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
@@ -64,20 +64,20 @@ message GroupBookingFolioSvcCardAuthorizationFromTokenRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
 	.holms.types.money.cards.PaymentCardIndicator card = 2;
 	holms.types.primitive.MonetaryAmount amount = 3;
-	holms.types.money.cards.CardAuthorizationPurpose purpose = 4;
+	holms.types.money.cards.CardSalePurpose purpose = 4;
 }
 
 message GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
 	holms.types.primitive.MonetaryAmount amount = 2;
-	holms.types.money.cards.CardAuthorizationPurpose purpose = 3;
+	holms.types.money.cards.CardSalePurpose purpose = 3;
 }
 
 message GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
 	.holms.types.money.cards.NotPresentPaymentCard card = 2;
 	holms.types.primitive.MonetaryAmount amount = 3;
-	holms.types.money.cards.CardAuthorizationPurpose purpose = 4;
+	holms.types.money.cards.CardSalePurpose purpose = 4;
 }
 
 enum GroupBookingFolioSvcPostCardPaymentResult {
