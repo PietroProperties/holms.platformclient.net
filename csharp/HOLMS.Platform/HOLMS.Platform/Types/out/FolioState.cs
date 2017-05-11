@@ -27,8 +27,8 @@ namespace HOLMS.Types.Money.Folio {
             "MG1vbmV5L2NhcmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfc2FsZS5w",
             "cm90bxombW9uZXkvZm9saW8vcG9zdGVkX2NoYXJnZV9jcmVkaXQucHJvdG8a",
             "IG1vbmV5L2ZvbGlvL3Bvc3RlZF9wYXltZW50LnByb3RvGh9tb25leS9mb2xp",
-            "by9wb3N0ZWRfcmVmdW5kLnByb3RvGi5ib29raW5nL3Jlc2VydmF0aW9ucy9y",
-            "ZXNlcnZhdGlvbl9zdW1tYXJ5LnByb3RvIpoGCgpGb2xpb1N0YXRlEkMKDmNo",
+            "by9wb3N0ZWRfcmVmdW5kLnByb3RvGi5ib29raW5nL2luZGljYXRvcnMvcmVz",
+            "ZXJ2YXRpb25faW5kaWNhdG9yLnByb3RvIpoGCgpGb2xpb1N0YXRlEkMKDmNo",
             "YXJnZV9jcmVkaXRzGAEgAygLMisuaG9sbXMudHlwZXMubW9uZXkuZm9saW8u",
             "UG9zdGVkQ2hhcmdlQ3JlZGl0EkkKCmNhcmRfc2FsZXMYAiADKAsyNS5ob2xt",
             "cy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVudENhcmRT",
@@ -42,14 +42,14 @@ namespace HOLMS.Types.Money.Folio {
             "Lk1vbmV0YXJ5QW1vdW50ElgKKWF2YWlsYWJsZV9ndWFyYW50ZWVfYXV0aG9y",
             "aXphdGlvbl9iYWxhbmNlGAggASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZl",
             "Lk1vbmV0YXJ5QW1vdW50EkoKDG1hc3Rlcl9mb2xpbxgJIAEoCzI0LmhvbG1z",
-            "LnR5cGVzLmJvb2tpbmcucmVzZXJ2YXRpb25zLlJlc2VydmF0aW9uU3VtbWFy",
-            "eRJLCg1jbGllbnRfZm9saW9zGAogAygLMjQuaG9sbXMudHlwZXMuYm9va2lu",
-            "Zy5yZXNlcnZhdGlvbnMuUmVzZXJ2YXRpb25TdW1tYXJ5Eh4KFm1hc3Rlcl9h",
+            "LnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRv",
+            "chJLCg1jbGllbnRfZm9saW9zGAogAygLMjQuaG9sbXMudHlwZXMuYm9va2lu",
+            "Zy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yEh4KFm1hc3Rlcl9h",
             "Y2NydWVzX2xvZGdpbmcYCyABKAgSIgoabWFzdGVyX2FjY3J1ZXNfaW5jaWRl",
             "bnRhbHMYDCABKAhCGqoCF0hPTE1TLlR5cGVzLk1vbmV5LkZvbGlvYgZwcm90",
             "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedPaymentReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedRefundReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationSummaryReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedPaymentReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedRefundReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.FolioState), global::HOLMS.Types.Money.Folio.FolioState.Parser, new[]{ "ChargeCredits", "CardSales", "Payments", "Refunds", "GrossPayments", "GrossRefunds", "AvailablePaymentAuthorizationBalance", "AvailableGuaranteeAuthorizationBalance", "MasterFolio", "ClientFolios", "MasterAccruesLodging", "MasterAccruesIncidentals" }, null, null, null)
           }));
@@ -187,9 +187,9 @@ namespace HOLMS.Types.Money.Folio {
 
     /// <summary>Field number for the "master_folio" field.</summary>
     public const int MasterFolioFieldNumber = 9;
-    private global::HOLMS.Types.Booking.Reservations.ReservationSummary masterFolio_;
+    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator masterFolio_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Booking.Reservations.ReservationSummary MasterFolio {
+    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator MasterFolio {
       get { return masterFolio_; }
       set {
         masterFolio_ = value;
@@ -198,11 +198,11 @@ namespace HOLMS.Types.Money.Folio {
 
     /// <summary>Field number for the "client_folios" field.</summary>
     public const int ClientFoliosFieldNumber = 10;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Reservations.ReservationSummary> _repeated_clientFolios_codec
-        = pb::FieldCodec.ForMessage(82, global::HOLMS.Types.Booking.Reservations.ReservationSummary.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Reservations.ReservationSummary> clientFolios_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Reservations.ReservationSummary>();
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> _repeated_clientFolios_codec
+        = pb::FieldCodec.ForMessage(82, global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> clientFolios_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Booking.Reservations.ReservationSummary> ClientFolios {
+    public pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> ClientFolios {
       get { return clientFolios_; }
     }
 
@@ -383,7 +383,7 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (other.masterFolio_ != null) {
         if (masterFolio_ == null) {
-          masterFolio_ = new global::HOLMS.Types.Booking.Reservations.ReservationSummary();
+          masterFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
         }
         MasterFolio.MergeFrom(other.MasterFolio);
       }
@@ -450,7 +450,7 @@ namespace HOLMS.Types.Money.Folio {
           }
           case 74: {
             if (masterFolio_ == null) {
-              masterFolio_ = new global::HOLMS.Types.Booking.Reservations.ReservationSummary();
+              masterFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
             }
             input.ReadMessage(masterFolio_);
             break;
