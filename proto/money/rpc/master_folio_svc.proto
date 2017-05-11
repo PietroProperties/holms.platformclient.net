@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package holms.types.money.rpc;
+option csharp_namespace = "HOLMS.Types.Money.RPC";
+
+import "booking/indicators/reservation_indicator.proto";
+
+message MasterFolioServiceMasterFolioRequest {
+	.holms.types.booking.indicators.ReservationIndicator client_folio = 1;
+	.holms.types.booking.indicators.ReservationIndicator master_folio = 2;
+}
+
+enum ReservationFolioSvcRequestMasterFolioResult {
+	MASTER_FOLIO_SVC_REQUEST_MASTER_FOLIO_OK = 0;
+	MASTER_FOLIO_SVC_REQUEST_MASTER_FOLIO_CLIENT_HAS_MASTER = 1;
+	MASTER_FOLIO_SVC_REQUEST_MASTER_FOLIO_MASTER_HAS_CLIENT = 2;
+	MASTER_FOLIO_SVC_REQUEST_MASTER_FOLIO_DISALLOWED_MASTER = 3;
+	MASTER_FOLIO_SVC_REQUEST_MASTER_FOLIO_DISALLOWED_CLIENT = 4;
+	MASTER_FOLIO_SVC_REQUEST_MASTER_FOLIO_FAILURE = 5;
+}
+
+message MasterFolioServiceRequestMasterFolioResponse {
+	ReservationFolioSvcRequestMasterFolioResult result = 1;
+}
+
+message MasterFolioSvcRemoveMasterFolioRequest {
+	.holms.types.booking.indicators.ReservationIndicator client_folio = 1;
+}
+
+enum ReservationFolioSvcRemoveMasterFolioResult {
+	MASTER_FOLIO_SVC_REMOVE_MASTER_FOLIO_OK = 0;
+	MASTER_FOLIO_SVC_REMOVE_MASTER_FOLIO_NO_MASTER = 1;
+	MASTER_FOLIO_SVC_REMOVE_MASTER_FOLIO_FAILURE = 2;
+}
+
+message MasterFolioServiceRemoveMasterFolioResponse {
+	ReservationFolioSvcRemoveMasterFolioResult result = 1;
+}
+
+service MasterFolioSvc {
+	rpc RequestMasterFolio(MasterFolioServiceMasterFolioRequest)
+		returns(MasterFolioServiceRequestMasterFolioResponse);
+
+	rpc RemoveMasterFolio(MasterFolioSvcRemoveMasterFolioRequest)
+		returns(MasterFolioServiceRemoveMasterFolioResponse);
+}

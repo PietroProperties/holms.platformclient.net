@@ -503,5 +503,11 @@ namespace HOLMS.Application.Client {
                 throw new NotImplementedException();
             }
         }
+
+        public MasterFolioSvc.MasterFolioSvcClient MasterFolioSvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

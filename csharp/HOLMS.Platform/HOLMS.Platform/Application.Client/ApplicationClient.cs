@@ -76,6 +76,7 @@ namespace HOLMS.Application.Client {
         public GroupBookingFolioSvc.GroupBookingFolioSvcClient GroupBookingFolioSvc { get; protected set; }
         public ReservationFolioSvc.ReservationFolioSvcClient ReservationFolioSvc { get; protected set; }
         public FolioAuthCleanupSvc.FolioAuthCleanupSvcClient FolioAuthCleanupSvc { get; protected set; }
+        public MasterFolioSvc.MasterFolioSvcClient MasterFolioSvc { get; protected set; }
         #endregion
 
         #region Operations
@@ -272,6 +273,7 @@ namespace HOLMS.Application.Client {
             GroupBookingFolioSvc = new GroupBookingFolioSvc.GroupBookingFolioSvcClient(_authenticatedChannel);
             ReservationFolioSvc = new ReservationFolioSvc.ReservationFolioSvcClient(_authenticatedChannel);
             FolioAuthCleanupSvc = new FolioAuthCleanupSvc.FolioAuthCleanupSvcClient(_authenticatedChannel);
+            MasterFolioSvc = new Types.Money.RPC.MasterFolioSvc.MasterFolioSvcClient(_authenticatedChannel);
             #endregion
 
             #region Operations
