@@ -346,6 +346,7 @@
     <Compile Include="Types\out\GuestHistorySvc.cs" />
     <Compile Include="Types\out\GuestHistorySvcGrpc.cs" />
     <Compile Include="Types\out\GuestIndicator.cs" />
+    <Compile Include="Types\out\GuestPaymentCard.cs" />
     <Compile Include="Types\out\GuestPaymentCardIndicator.cs" />
     <Compile Include="Types\out\GuestSvc.cs" />
     <Compile Include="Types\out\GuestSvcGrpc.cs" />
