@@ -8,6 +8,7 @@ import "money/cards/transactions/payment_card_sale.proto";
 import "money/folio/posted_charge_credit.proto";
 import "money/folio/posted_payment.proto";
 import "money/folio/posted_refund.proto";
+import "booking/indicators/reservation_indicator.proto";
 
 message FolioState {
 	repeated holms.types.money.folio.PostedChargeCredit charge_credits = 1;
@@ -19,5 +20,10 @@ message FolioState {
 	.holms.types.primitive.MonetaryAmount gross_refunds = 6;
 	.holms.types.primitive.MonetaryAmount available_payment_authorization_balance = 7;
 	.holms.types.primitive.MonetaryAmount available_guarantee_authorization_balance = 8;
+
+	.holms.types.booking.indicators.ReservationIndicator master_folio = 9;
+	repeated .holms.types.booking.indicators.ReservationIndicator client_folios = 10;
+	bool master_accrues_lodging = 11;
+	bool master_accrues_incidentals = 12;
 }
 

@@ -406,6 +406,8 @@
     <Compile Include="Types\out\ManagementReportingSvc.cs" />
     <Compile Include="Types\out\ManagementReportingSvcGrpc.cs" />
     <Compile Include="Types\out\ManagementReportManifests.cs" />
+    <Compile Include="Types\out\MasterFolioSvc.cs" />
+    <Compile Include="Types\out\MasterFolioSvcGrpc.cs" />
     <Compile Include="Types\out\MerchantBatch.cs" />
     <Compile Include="Types\out\MerchantBatchIndicator.cs" />
     <Compile Include="Types\out\MessageBin.cs" />

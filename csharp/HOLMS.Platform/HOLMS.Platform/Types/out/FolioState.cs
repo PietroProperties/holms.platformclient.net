@@ -27,25 +27,31 @@ namespace HOLMS.Types.Money.Folio {
             "MG1vbmV5L2NhcmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfc2FsZS5w",
             "cm90bxombW9uZXkvZm9saW8vcG9zdGVkX2NoYXJnZV9jcmVkaXQucHJvdG8a",
             "IG1vbmV5L2ZvbGlvL3Bvc3RlZF9wYXltZW50LnByb3RvGh9tb25leS9mb2xp",
-            "by9wb3N0ZWRfcmVmdW5kLnByb3RvIr0ECgpGb2xpb1N0YXRlEkMKDmNoYXJn",
-            "ZV9jcmVkaXRzGAEgAygLMisuaG9sbXMudHlwZXMubW9uZXkuZm9saW8uUG9z",
-            "dGVkQ2hhcmdlQ3JlZGl0EkkKCmNhcmRfc2FsZXMYAiADKAsyNS5ob2xtcy50",
-            "eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVudENhcmRTYWxl",
-            "EjgKCHBheW1lbnRzGAMgAygLMiYuaG9sbXMudHlwZXMubW9uZXkuZm9saW8u",
-            "UG9zdGVkUGF5bWVudBI2CgdyZWZ1bmRzGAQgAygLMiUuaG9sbXMudHlwZXMu",
-            "bW9uZXkuZm9saW8uUG9zdGVkUmVmdW5kEj0KDmdyb3NzX3BheW1lbnRzGAUg",
-            "ASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EjwK",
-            "DWdyb3NzX3JlZnVuZHMYBiABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
-            "TW9uZXRhcnlBbW91bnQSVgonYXZhaWxhYmxlX3BheW1lbnRfYXV0aG9yaXph",
-            "dGlvbl9iYWxhbmNlGAcgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1v",
-            "bmV0YXJ5QW1vdW50ElgKKWF2YWlsYWJsZV9ndWFyYW50ZWVfYXV0aG9yaXph",
-            "dGlvbl9iYWxhbmNlGAggASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1v",
-            "bmV0YXJ5QW1vdW50QhqqAhdIT0xNUy5UeXBlcy5Nb25leS5Gb2xpb2IGcHJv",
-            "dG8z"));
+            "by9wb3N0ZWRfcmVmdW5kLnByb3RvGi5ib29raW5nL2luZGljYXRvcnMvcmVz",
+            "ZXJ2YXRpb25faW5kaWNhdG9yLnByb3RvIpoGCgpGb2xpb1N0YXRlEkMKDmNo",
+            "YXJnZV9jcmVkaXRzGAEgAygLMisuaG9sbXMudHlwZXMubW9uZXkuZm9saW8u",
+            "UG9zdGVkQ2hhcmdlQ3JlZGl0EkkKCmNhcmRfc2FsZXMYAiADKAsyNS5ob2xt",
+            "cy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVudENhcmRT",
+            "YWxlEjgKCHBheW1lbnRzGAMgAygLMiYuaG9sbXMudHlwZXMubW9uZXkuZm9s",
+            "aW8uUG9zdGVkUGF5bWVudBI2CgdyZWZ1bmRzGAQgAygLMiUuaG9sbXMudHlw",
+            "ZXMubW9uZXkuZm9saW8uUG9zdGVkUmVmdW5kEj0KDmdyb3NzX3BheW1lbnRz",
+            "GAUgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
+            "EjwKDWdyb3NzX3JlZnVuZHMYBiABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRp",
+            "dmUuTW9uZXRhcnlBbW91bnQSVgonYXZhaWxhYmxlX3BheW1lbnRfYXV0aG9y",
+            "aXphdGlvbl9iYWxhbmNlGAcgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZl",
+            "Lk1vbmV0YXJ5QW1vdW50ElgKKWF2YWlsYWJsZV9ndWFyYW50ZWVfYXV0aG9y",
+            "aXphdGlvbl9iYWxhbmNlGAggASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZl",
+            "Lk1vbmV0YXJ5QW1vdW50EkoKDG1hc3Rlcl9mb2xpbxgJIAEoCzI0LmhvbG1z",
+            "LnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRv",
+            "chJLCg1jbGllbnRfZm9saW9zGAogAygLMjQuaG9sbXMudHlwZXMuYm9va2lu",
+            "Zy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yEh4KFm1hc3Rlcl9h",
+            "Y2NydWVzX2xvZGdpbmcYCyABKAgSIgoabWFzdGVyX2FjY3J1ZXNfaW5jaWRl",
+            "bnRhbHMYDCABKAhCGqoCF0hPTE1TLlR5cGVzLk1vbmV5LkZvbGlvYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedPaymentReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedRefundReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedPaymentReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedRefundReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.FolioState), global::HOLMS.Types.Money.Folio.FolioState.Parser, new[]{ "ChargeCredits", "CardSales", "Payments", "Refunds", "GrossPayments", "GrossRefunds", "AvailablePaymentAuthorizationBalance", "AvailableGuaranteeAuthorizationBalance" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.FolioState), global::HOLMS.Types.Money.Folio.FolioState.Parser, new[]{ "ChargeCredits", "CardSales", "Payments", "Refunds", "GrossPayments", "GrossRefunds", "AvailablePaymentAuthorizationBalance", "AvailableGuaranteeAuthorizationBalance", "MasterFolio", "ClientFolios", "MasterAccruesLodging", "MasterAccruesIncidentals" }, null, null, null)
           }));
     }
     #endregion
@@ -84,6 +90,10 @@ namespace HOLMS.Types.Money.Folio {
       GrossRefunds = other.grossRefunds_ != null ? other.GrossRefunds.Clone() : null;
       AvailablePaymentAuthorizationBalance = other.availablePaymentAuthorizationBalance_ != null ? other.AvailablePaymentAuthorizationBalance.Clone() : null;
       AvailableGuaranteeAuthorizationBalance = other.availableGuaranteeAuthorizationBalance_ != null ? other.AvailableGuaranteeAuthorizationBalance.Clone() : null;
+      MasterFolio = other.masterFolio_ != null ? other.MasterFolio.Clone() : null;
+      clientFolios_ = other.clientFolios_.Clone();
+      masterAccruesLodging_ = other.masterAccruesLodging_;
+      masterAccruesIncidentals_ = other.masterAccruesIncidentals_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -175,6 +185,49 @@ namespace HOLMS.Types.Money.Folio {
       }
     }
 
+    /// <summary>Field number for the "master_folio" field.</summary>
+    public const int MasterFolioFieldNumber = 9;
+    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator masterFolio_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator MasterFolio {
+      get { return masterFolio_; }
+      set {
+        masterFolio_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "client_folios" field.</summary>
+    public const int ClientFoliosFieldNumber = 10;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> _repeated_clientFolios_codec
+        = pb::FieldCodec.ForMessage(82, global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> clientFolios_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> ClientFolios {
+      get { return clientFolios_; }
+    }
+
+    /// <summary>Field number for the "master_accrues_lodging" field.</summary>
+    public const int MasterAccruesLodgingFieldNumber = 11;
+    private bool masterAccruesLodging_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool MasterAccruesLodging {
+      get { return masterAccruesLodging_; }
+      set {
+        masterAccruesLodging_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "master_accrues_incidentals" field.</summary>
+    public const int MasterAccruesIncidentalsFieldNumber = 12;
+    private bool masterAccruesIncidentals_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool MasterAccruesIncidentals {
+      get { return masterAccruesIncidentals_; }
+      set {
+        masterAccruesIncidentals_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioState);
@@ -196,6 +249,10 @@ namespace HOLMS.Types.Money.Folio {
       if (!object.Equals(GrossRefunds, other.GrossRefunds)) return false;
       if (!object.Equals(AvailablePaymentAuthorizationBalance, other.AvailablePaymentAuthorizationBalance)) return false;
       if (!object.Equals(AvailableGuaranteeAuthorizationBalance, other.AvailableGuaranteeAuthorizationBalance)) return false;
+      if (!object.Equals(MasterFolio, other.MasterFolio)) return false;
+      if(!clientFolios_.Equals(other.clientFolios_)) return false;
+      if (MasterAccruesLodging != other.MasterAccruesLodging) return false;
+      if (MasterAccruesIncidentals != other.MasterAccruesIncidentals) return false;
       return true;
     }
 
@@ -210,6 +267,10 @@ namespace HOLMS.Types.Money.Folio {
       if (grossRefunds_ != null) hash ^= GrossRefunds.GetHashCode();
       if (availablePaymentAuthorizationBalance_ != null) hash ^= AvailablePaymentAuthorizationBalance.GetHashCode();
       if (availableGuaranteeAuthorizationBalance_ != null) hash ^= AvailableGuaranteeAuthorizationBalance.GetHashCode();
+      if (masterFolio_ != null) hash ^= MasterFolio.GetHashCode();
+      hash ^= clientFolios_.GetHashCode();
+      if (MasterAccruesLodging != false) hash ^= MasterAccruesLodging.GetHashCode();
+      if (MasterAccruesIncidentals != false) hash ^= MasterAccruesIncidentals.GetHashCode();
       return hash;
     }
 
@@ -240,6 +301,19 @@ namespace HOLMS.Types.Money.Folio {
         output.WriteRawTag(66);
         output.WriteMessage(AvailableGuaranteeAuthorizationBalance);
       }
+      if (masterFolio_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(MasterFolio);
+      }
+      clientFolios_.WriteTo(output, _repeated_clientFolios_codec);
+      if (MasterAccruesLodging != false) {
+        output.WriteRawTag(88);
+        output.WriteBool(MasterAccruesLodging);
+      }
+      if (MasterAccruesIncidentals != false) {
+        output.WriteRawTag(96);
+        output.WriteBool(MasterAccruesIncidentals);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -260,6 +334,16 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (availableGuaranteeAuthorizationBalance_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AvailableGuaranteeAuthorizationBalance);
+      }
+      if (masterFolio_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MasterFolio);
+      }
+      size += clientFolios_.CalculateSize(_repeated_clientFolios_codec);
+      if (MasterAccruesLodging != false) {
+        size += 1 + 1;
+      }
+      if (MasterAccruesIncidentals != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -296,6 +380,19 @@ namespace HOLMS.Types.Money.Folio {
           availableGuaranteeAuthorizationBalance_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
         AvailableGuaranteeAuthorizationBalance.MergeFrom(other.AvailableGuaranteeAuthorizationBalance);
+      }
+      if (other.masterFolio_ != null) {
+        if (masterFolio_ == null) {
+          masterFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+        }
+        MasterFolio.MergeFrom(other.MasterFolio);
+      }
+      clientFolios_.Add(other.clientFolios_);
+      if (other.MasterAccruesLodging != false) {
+        MasterAccruesLodging = other.MasterAccruesLodging;
+      }
+      if (other.MasterAccruesIncidentals != false) {
+        MasterAccruesIncidentals = other.MasterAccruesIncidentals;
       }
     }
 
@@ -349,6 +446,25 @@ namespace HOLMS.Types.Money.Folio {
               availableGuaranteeAuthorizationBalance_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(availableGuaranteeAuthorizationBalance_);
+            break;
+          }
+          case 74: {
+            if (masterFolio_ == null) {
+              masterFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+            }
+            input.ReadMessage(masterFolio_);
+            break;
+          }
+          case 82: {
+            clientFolios_.AddEntriesFrom(input, _repeated_clientFolios_codec);
+            break;
+          }
+          case 88: {
+            MasterAccruesLodging = input.ReadBool();
+            break;
+          }
+          case 96: {
+            MasterAccruesIncidentals = input.ReadBool();
             break;
           }
         }
