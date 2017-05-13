@@ -147,12 +147,13 @@
     <Compile Include="Types\Extensions\Money\Cards\CardMerchant.cs" />
     <Compile Include="Types\Extensions\Money\Cards\CardMerchantIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\CardTerminalIndicator.cs" />
+    <Compile Include="Types\Extensions\Money\Cards\GuestPaymentCardIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardAuthorizationIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\MerchantBatchIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardSaleIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardSaleCaptureIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\NotPresentPaymentCard.cs" />
-    <Compile Include="Types\Extensions\Money\Cards\PaymentCardIndicator.cs" />
+    <Compile Include="Types\Extensions\Money\Cards\RawPaymentCardIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\TokenizedPaymentCard.cs" />
     <Compile Include="Types\Extensions\Money\Folio\FolioState.cs" />
     <Compile Include="Types\Extensions\Operations\ArrivalLetterTemplate.cs" />
@@ -441,7 +442,6 @@
     <Compile Include="Types\out\PaymentCardAuthorizationIndicator.cs" />
     <Compile Include="Types\out\PaymentCardAuthorizationReversal.cs" />
     <Compile Include="Types\out\PaymentCardBrand.cs" />
-    <Compile Include="Types\out\PaymentCardIndicator.cs" />
     <Compile Include="Types\out\PaymentCardSale.cs" />
     <Compile Include="Types\out\PaymentCardSaleCapture.cs" />
     <Compile Include="Types\out\PaymentCardSaleCaptureIndicator.cs" />
@@ -487,6 +487,7 @@
     <Compile Include="Types\out\RateScheduleIndicator.cs" />
     <Compile Include="Types\out\RateScheduleSvc.cs" />
     <Compile Include="Types\out\RateScheduleSvcGrpc.cs" />
+    <Compile Include="Types\out\RawPaymentCardIndicator.cs" />
     <Compile Include="Types\out\RecommendedCheckinCardAuthorizationAmounts.cs" />
     <Compile Include="Types\out\RecordedPhoneCall.cs" />
     <Compile Include="Types\out\RemoveGuestFromReservationRequest.cs" />

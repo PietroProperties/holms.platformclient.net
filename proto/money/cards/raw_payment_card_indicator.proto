@@ -6,6 +6,6 @@ option go_package = "money/cards";
 
 import "primitive/uuid.proto";
 
-message PaymentCardIndicator {
+message RawPaymentCardIndicator {
 	.holms.types.primitive.Uuid id = 1;
 }
