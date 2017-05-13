@@ -8,7 +8,7 @@ import "primitive/monetary_amount.proto";
 import "booking/guarantees/card_guarantee_tender_result.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
-import "money/cards/raw_payment_card_indicator.proto";
+import "money/cards/payment_card_indicator.proto";
 
 message ResGSvcTenderCheckGuaranteeRequest {
 	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
@@ -27,7 +27,7 @@ message ResGSvcTenderNewNotPresentCardGuaranteeRequest {
 
 message ResGSvcTenderStoredNotPresentCardGuaranteeRequest {
 	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
-	.holms.types.money.cards.RawPaymentCardIndicator card = 2;
+	.holms.types.money.cards.PaymentCardIndicator card = 2;
 }
 
 message ResGSvcTenderNotPresentCardGuaranteeResponse {

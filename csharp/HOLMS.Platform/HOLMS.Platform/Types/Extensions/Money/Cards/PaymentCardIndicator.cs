@@ -4,8 +4,8 @@ using HOLMS.Types.Extensions.Support;
 using HOLMS.Types.Primitive;
 
 namespace HOLMS.Types.Money.Cards {
-    public partial class RawPaymentCardIndicator : EntityIndicator<RawPaymentCardIndicator> {
-        public RawPaymentCardIndicator(Guid id) {
+    public partial class PaymentCardIndicator : EntityIndicator<PaymentCardIndicator> {
+        public PaymentCardIndicator(Guid id) {
             Id = id.ToUUID();
         }
 
