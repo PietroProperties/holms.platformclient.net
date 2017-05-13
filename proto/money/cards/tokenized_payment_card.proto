@@ -3,13 +3,13 @@ syntax = "proto3";
 package holms.types.money.cards;
 option csharp_namespace = "HOLMS.Types.Money.Cards";
 
-import "money/cards/raw_payment_card_indicator.proto";
+import "money/cards/payment_card_indicator.proto";
 import "primitive/pb_local_date.proto";
 import "primitive/monetary_amount.proto";
 import "money/cards/payment_card_brand.proto";
 
 message TokenizedPaymentCard {
-	holms.types.money.cards.RawPaymentCardIndicator entity_id = 1;
+	holms.types.money.cards.PaymentCardIndicator entity_id = 1;
 	string masked_pan = 2;
 	holms.types.primitive.PbLocalDate expiration_date = 3;
 	string card_holder_name = 4;

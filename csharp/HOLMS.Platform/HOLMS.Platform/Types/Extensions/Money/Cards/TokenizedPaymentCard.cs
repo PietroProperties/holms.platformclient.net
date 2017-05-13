@@ -6,9 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace HOLMS.Types.Money.Cards {
-    [Obsolete("Convert to guest payment card")]
-    public partial class TokenizedPaymentCard : EntityDTO<RawPaymentCardIndicator> {
-        public override RawPaymentCardIndicator GetIndicator() {
+    public partial class TokenizedPaymentCard : EntityDTO<PaymentCardIndicator> {
+        public override PaymentCardIndicator GetIndicator() {
             return EntityId;
         }
     }

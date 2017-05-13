@@ -10,7 +10,7 @@ import "money/cards/card_sale_purpose.proto";
 import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
-import "money/cards/raw_payment_card_indicator.proto";
+import "money/cards/payment_card_indicator.proto";
 import "money/cards/tokenized_payment_card.proto";
 import "money/folio/folio_state.proto";
 import "primitive/monetary_amount.proto";
@@ -64,7 +64,7 @@ message ReservationFolioSvcPostCheckPaymentRequest {
 
 message CardAuthorizationFromTokenRequest {
 	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
-	.holms.types.money.cards.RawPaymentCardIndicator card = 2;
+	.holms.types.money.cards.PaymentCardIndicator card = 2;
 	holms.types.primitive.MonetaryAmount amount = 3;
 	holms.types.money.cards.CardSalePurpose purpose = 4;
 }
@@ -150,7 +150,7 @@ message ReservationFolioSvcVoidSaleResponse {
 message ReservationFolioSvcPaymentCardRefundRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
 	holms.types.primitive.MonetaryAmount amount = 2;
-	holms.types.money.cards.RawPaymentCardIndicator card = 3;
+	holms.types.money.cards.PaymentCardIndicator card = 3;
 	string description = 4;
 }
 

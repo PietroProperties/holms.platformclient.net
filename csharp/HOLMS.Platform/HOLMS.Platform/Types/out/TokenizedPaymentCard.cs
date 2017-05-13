@@ -23,24 +23,24 @@ namespace HOLMS.Types.Money.Cards {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cihtb25leS9jYXJkcy90b2tlbml6ZWRfcGF5bWVudF9jYXJkLnByb3RvEhdo",
-            "b2xtcy50eXBlcy5tb25leS5jYXJkcxosbW9uZXkvY2FyZHMvcmF3X3BheW1l",
-            "bnRfY2FyZF9pbmRpY2F0b3IucHJvdG8aHXByaW1pdGl2ZS9wYl9sb2NhbF9k",
-            "YXRlLnByb3RvGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3RvGiRt",
-            "b25leS9jYXJkcy9wYXltZW50X2NhcmRfYnJhbmQucHJvdG8i8QMKFFRva2Vu",
-            "aXplZFBheW1lbnRDYXJkEkMKCWVudGl0eV9pZBgBIAEoCzIwLmhvbG1zLnR5",
-            "cGVzLm1vbmV5LmNhcmRzLlJhd1BheW1lbnRDYXJkSW5kaWNhdG9yEhIKCm1h",
-            "c2tlZF9wYW4YAiABKAkSOwoPZXhwaXJhdGlvbl9kYXRlGAMgASgLMiIuaG9s",
-            "bXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlEhgKEGNhcmRfaG9sZGVy",
-            "X25hbWUYBCABKAkSOAoFYnJhbmQYBSABKA4yKS5ob2xtcy50eXBlcy5tb25l",
-            "eS5jYXJkcy5QYXltZW50Q2FyZEJyYW5kEhcKD2lzX3ZpcnR1YWxfY2FyZBgG",
-            "IAEoCBJKCht2aXJ0dWFsX2NhcmRfdW51c2VkX2JhbGFuY2UYByABKAsyJS5o",
-            "b2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSRQoZdmlydHVh",
-            "bF9jYXJkX2F2YWlsYWJsZV9vbhgIIAEoCzIiLmhvbG1zLnR5cGVzLnByaW1p",
-            "dGl2ZS5QYkxvY2FsRGF0ZRJDChd2aXJ0dWFsX2NhcmRfZXhwaXJlc19vbhgJ",
-            "IAEoCzIiLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkxvY2FsRGF0ZUIaqgIX",
-            "SE9MTVMuVHlwZXMuTW9uZXkuQ2FyZHNiBnByb3RvMw=="));
+            "b2xtcy50eXBlcy5tb25leS5jYXJkcxoobW9uZXkvY2FyZHMvcGF5bWVudF9j",
+            "YXJkX2luZGljYXRvci5wcm90bxodcHJpbWl0aXZlL3BiX2xvY2FsX2RhdGUu",
+            "cHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8aJG1vbmV5",
+            "L2NhcmRzL3BheW1lbnRfY2FyZF9icmFuZC5wcm90byLuAwoUVG9rZW5pemVk",
+            "UGF5bWVudENhcmQSQAoJZW50aXR5X2lkGAEgASgLMi0uaG9sbXMudHlwZXMu",
+            "bW9uZXkuY2FyZHMuUGF5bWVudENhcmRJbmRpY2F0b3ISEgoKbWFza2VkX3Bh",
+            "bhgCIAEoCRI7Cg9leHBpcmF0aW9uX2RhdGUYAyABKAsyIi5ob2xtcy50eXBl",
+            "cy5wcmltaXRpdmUuUGJMb2NhbERhdGUSGAoQY2FyZF9ob2xkZXJfbmFtZRgE",
+            "IAEoCRI4CgVicmFuZBgFIAEoDjIpLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRz",
+            "LlBheW1lbnRDYXJkQnJhbmQSFwoPaXNfdmlydHVhbF9jYXJkGAYgASgIEkoK",
+            "G3ZpcnR1YWxfY2FyZF91bnVzZWRfYmFsYW5jZRgHIAEoCzIlLmhvbG1zLnR5",
+            "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJFChl2aXJ0dWFsX2NhcmRf",
+            "YXZhaWxhYmxlX29uGAggASgLMiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBi",
+            "TG9jYWxEYXRlEkMKF3ZpcnR1YWxfY2FyZF9leHBpcmVzX29uGAkgASgLMiIu",
+            "aG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlQhqqAhdIT0xNUy5U",
+            "eXBlcy5Nb25leS5DYXJkc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.RawPaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardBrandReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.PaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardBrandReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.TokenizedPaymentCard), global::HOLMS.Types.Money.Cards.TokenizedPaymentCard.Parser, new[]{ "EntityId", "MaskedPan", "ExpirationDate", "CardHolderName", "Brand", "IsVirtualCard", "VirtualCardUnusedBalance", "VirtualCardAvailableOn", "VirtualCardExpiresOn" }, null, null, null)
           }));
@@ -91,9 +91,9 @@ namespace HOLMS.Types.Money.Cards {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::HOLMS.Types.Money.Cards.RawPaymentCardIndicator entityId_;
+    private global::HOLMS.Types.Money.Cards.PaymentCardIndicator entityId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Cards.RawPaymentCardIndicator EntityId {
+    public global::HOLMS.Types.Money.Cards.PaymentCardIndicator EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -313,7 +313,7 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::HOLMS.Types.Money.Cards.RawPaymentCardIndicator();
+          entityId_ = new global::HOLMS.Types.Money.Cards.PaymentCardIndicator();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -365,7 +365,7 @@ namespace HOLMS.Types.Money.Cards {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::HOLMS.Types.Money.Cards.RawPaymentCardIndicator();
+              entityId_ = new global::HOLMS.Types.Money.Cards.PaymentCardIndicator();
             }
             input.ReadMessage(entityId_);
             break;
