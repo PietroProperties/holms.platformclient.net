@@ -8,6 +8,8 @@ import "booking/indicators/reservation_indicator.proto";
 message MasterFolioServiceMasterFolioRequest {
 	.holms.types.booking.indicators.ReservationIndicator client_folio = 1;
 	.holms.types.booking.indicators.ReservationIndicator master_folio = 2;
+	bool master_accrues_lodging = 3;
+	bool master_accrues_incidentals = 4;
 }
 
 enum ReservationFolioSvcRequestMasterFolioResult {

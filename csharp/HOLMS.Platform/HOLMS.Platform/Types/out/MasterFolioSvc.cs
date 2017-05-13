@@ -24,46 +24,47 @@ namespace HOLMS.Types.Money.RPC {
           string.Concat(
             "CiBtb25leS9ycGMvbWFzdGVyX2ZvbGlvX3N2Yy5wcm90bxIVaG9sbXMudHlw",
             "ZXMubW9uZXkucnBjGi5ib29raW5nL2luZGljYXRvcnMvcmVzZXJ2YXRpb25f",
-            "aW5kaWNhdG9yLnByb3RvIr4BCiRNYXN0ZXJGb2xpb1NlcnZpY2VNYXN0ZXJG",
+            "aW5kaWNhdG9yLnByb3RvIoICCiRNYXN0ZXJGb2xpb1NlcnZpY2VNYXN0ZXJG",
             "b2xpb1JlcXVlc3QSSgoMY2xpZW50X2ZvbGlvGAEgASgLMjQuaG9sbXMudHlw",
             "ZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yEkoK",
             "DG1hc3Rlcl9mb2xpbxgCIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5k",
-            "aWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvciKCAQosTWFzdGVyRm9saW9T",
-            "ZXJ2aWNlUmVxdWVzdE1hc3RlckZvbGlvUmVzcG9uc2USUgoGcmVzdWx0GAEg",
-            "ASgOMkIuaG9sbXMudHlwZXMubW9uZXkucnBjLlJlc2VydmF0aW9uRm9saW9T",
-            "dmNSZXF1ZXN0TWFzdGVyRm9saW9SZXN1bHQidAomTWFzdGVyRm9saW9TdmNS",
-            "ZW1vdmVNYXN0ZXJGb2xpb1JlcXVlc3QSSgoMY2xpZW50X2ZvbGlvGAEgASgL",
-            "MjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9u",
-            "SW5kaWNhdG9yIoABCitNYXN0ZXJGb2xpb1NlcnZpY2VSZW1vdmVNYXN0ZXJG",
-            "b2xpb1Jlc3BvbnNlElEKBnJlc3VsdBgBIAEoDjJBLmhvbG1zLnR5cGVzLm1v",
-            "bmV5LnJwYy5SZXNlcnZhdGlvbkZvbGlvU3ZjUmVtb3ZlTWFzdGVyRm9saW9S",
-            "ZXN1bHQqsgMKK1Jlc2VydmF0aW9uRm9saW9TdmNSZXF1ZXN0TWFzdGVyRm9s",
-            "aW9SZXN1bHQSLAooTUFTVEVSX0ZPTElPX1NWQ19SRVFVRVNUX01BU1RFUl9G",
-            "T0xJT19PSxAAEjsKN01BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJf",
-            "Rk9MSU9fQ0xJRU5UX0hBU19NQVNURVIQARI7CjdNQVNURVJfRk9MSU9fU1ZD",
-            "X1JFUVVFU1RfTUFTVEVSX0ZPTElPX01BU1RFUl9IQVNfTUFTVEVSEAISLgoq",
-            "TUFTVEVSX0ZPTElPX1NWQ19SRVFVRVNUX0NMSUVOVF9IQVNfQ0xJRU5UEAMS",
-            "Owo3TUFTVEVSX0ZPTElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19ESVNB",
-            "TExPV0VEX01BU1RFUhAEEjsKN01BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9N",
-            "QVNURVJfRk9MSU9fRElTQUxMT1dFRF9DTElFTlQQBRIxCi1NQVNURVJfRk9M",
-            "SU9fU1ZDX1JFUVVFU1RfTUFTVEVSX0ZPTElPX0ZBSUxVUkUQBiq/AQoqUmVz",
-            "ZXJ2YXRpb25Gb2xpb1N2Y1JlbW92ZU1hc3RlckZvbGlvUmVzdWx0EisKJ01B",
-            "U1RFUl9GT0xJT19TVkNfUkVNT1ZFX01BU1RFUl9GT0xJT19PSxAAEjIKLk1B",
-            "U1RFUl9GT0xJT19TVkNfUkVNT1ZFX01BU1RFUl9GT0xJT19OT19NQVNURVIQ",
-            "ARIwCixNQVNURVJfRk9MSU9fU1ZDX1JFTU9WRV9NQVNURVJfRk9MSU9fRkFJ",
-            "TFVSRRACMsICCg5NYXN0ZXJGb2xpb1N2YxKWAQoSUmVxdWVzdE1hc3RlckZv",
-            "bGlvEjsuaG9sbXMudHlwZXMubW9uZXkucnBjLk1hc3RlckZvbGlvU2Vydmlj",
-            "ZU1hc3RlckZvbGlvUmVxdWVzdBpDLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5N",
-            "YXN0ZXJGb2xpb1NlcnZpY2VSZXF1ZXN0TWFzdGVyRm9saW9SZXNwb25zZRKW",
-            "AQoRUmVtb3ZlTWFzdGVyRm9saW8SPS5ob2xtcy50eXBlcy5tb25leS5ycGMu",
-            "TWFzdGVyRm9saW9TdmNSZW1vdmVNYXN0ZXJGb2xpb1JlcXVlc3QaQi5ob2xt",
-            "cy50eXBlcy5tb25leS5ycGMuTWFzdGVyRm9saW9TZXJ2aWNlUmVtb3ZlTWFz",
-            "dGVyRm9saW9SZXNwb25zZUIYqgIVSE9MTVMuVHlwZXMuTW9uZXkuUlBDYgZw",
-            "cm90bzM="));
+            "aWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchIeChZtYXN0ZXJfYWNjcnVl",
+            "c19sb2RnaW5nGAMgASgIEiIKGm1hc3Rlcl9hY2NydWVzX2luY2lkZW50YWxz",
+            "GAQgASgIIoIBCixNYXN0ZXJGb2xpb1NlcnZpY2VSZXF1ZXN0TWFzdGVyRm9s",
+            "aW9SZXNwb25zZRJSCgZyZXN1bHQYASABKA4yQi5ob2xtcy50eXBlcy5tb25l",
+            "eS5ycGMuUmVzZXJ2YXRpb25Gb2xpb1N2Y1JlcXVlc3RNYXN0ZXJGb2xpb1Jl",
+            "c3VsdCJ0CiZNYXN0ZXJGb2xpb1N2Y1JlbW92ZU1hc3RlckZvbGlvUmVxdWVz",
+            "dBJKCgxjbGllbnRfZm9saW8YASABKAsyNC5ob2xtcy50eXBlcy5ib29raW5n",
+            "LmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3IigAEKK01hc3RlckZv",
+            "bGlvU2VydmljZVJlbW92ZU1hc3RlckZvbGlvUmVzcG9uc2USUQoGcmVzdWx0",
+            "GAEgASgOMkEuaG9sbXMudHlwZXMubW9uZXkucnBjLlJlc2VydmF0aW9uRm9s",
+            "aW9TdmNSZW1vdmVNYXN0ZXJGb2xpb1Jlc3VsdCqyAworUmVzZXJ2YXRpb25G",
+            "b2xpb1N2Y1JlcXVlc3RNYXN0ZXJGb2xpb1Jlc3VsdBIsCihNQVNURVJfRk9M",
+            "SU9fU1ZDX1JFUVVFU1RfTUFTVEVSX0ZPTElPX09LEAASOwo3TUFTVEVSX0ZP",
+            "TElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19DTElFTlRfSEFTX01BU1RF",
+            "UhABEjsKN01BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJfRk9MSU9f",
+            "TUFTVEVSX0hBU19NQVNURVIQAhIuCipNQVNURVJfRk9MSU9fU1ZDX1JFUVVF",
+            "U1RfQ0xJRU5UX0hBU19DTElFTlQQAxI7CjdNQVNURVJfRk9MSU9fU1ZDX1JF",
+            "UVVFU1RfTUFTVEVSX0ZPTElPX0RJU0FMTE9XRURfTUFTVEVSEAQSOwo3TUFT",
+            "VEVSX0ZPTElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19ESVNBTExPV0VE",
+            "X0NMSUVOVBAFEjEKLU1BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJf",
+            "Rk9MSU9fRkFJTFVSRRAGKr8BCipSZXNlcnZhdGlvbkZvbGlvU3ZjUmVtb3Zl",
+            "TWFzdGVyRm9saW9SZXN1bHQSKwonTUFTVEVSX0ZPTElPX1NWQ19SRU1PVkVf",
+            "TUFTVEVSX0ZPTElPX09LEAASMgouTUFTVEVSX0ZPTElPX1NWQ19SRU1PVkVf",
+            "TUFTVEVSX0ZPTElPX05PX01BU1RFUhABEjAKLE1BU1RFUl9GT0xJT19TVkNf",
+            "UkVNT1ZFX01BU1RFUl9GT0xJT19GQUlMVVJFEAIywgIKDk1hc3RlckZvbGlv",
+            "U3ZjEpYBChJSZXF1ZXN0TWFzdGVyRm9saW8SOy5ob2xtcy50eXBlcy5tb25l",
+            "eS5ycGMuTWFzdGVyRm9saW9TZXJ2aWNlTWFzdGVyRm9saW9SZXF1ZXN0GkMu",
+            "aG9sbXMudHlwZXMubW9uZXkucnBjLk1hc3RlckZvbGlvU2VydmljZVJlcXVl",
+            "c3RNYXN0ZXJGb2xpb1Jlc3BvbnNlEpYBChFSZW1vdmVNYXN0ZXJGb2xpbxI9",
+            "LmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5NYXN0ZXJGb2xpb1N2Y1JlbW92ZU1h",
+            "c3RlckZvbGlvUmVxdWVzdBpCLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5NYXN0",
+            "ZXJGb2xpb1NlcnZpY2VSZW1vdmVNYXN0ZXJGb2xpb1Jlc3BvbnNlQhiqAhVI",
+            "T0xNUy5UeXBlcy5Nb25leS5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.RPC.ReservationFolioSvcRequestMasterFolioResult), typeof(global::HOLMS.Types.Money.RPC.ReservationFolioSvcRemoveMasterFolioResult), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioServiceMasterFolioRequest), global::HOLMS.Types.Money.RPC.MasterFolioServiceMasterFolioRequest.Parser, new[]{ "ClientFolio", "MasterFolio" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioServiceMasterFolioRequest), global::HOLMS.Types.Money.RPC.MasterFolioServiceMasterFolioRequest.Parser, new[]{ "ClientFolio", "MasterFolio", "MasterAccruesLodging", "MasterAccruesIncidentals" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioServiceRequestMasterFolioResponse), global::HOLMS.Types.Money.RPC.MasterFolioServiceRequestMasterFolioResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioSvcRemoveMasterFolioRequest), global::HOLMS.Types.Money.RPC.MasterFolioSvcRemoveMasterFolioRequest.Parser, new[]{ "ClientFolio" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioServiceRemoveMasterFolioResponse), global::HOLMS.Types.Money.RPC.MasterFolioServiceRemoveMasterFolioResponse.Parser, new[]{ "Result" }, null, null, null)
@@ -118,6 +119,8 @@ namespace HOLMS.Types.Money.RPC {
     public MasterFolioServiceMasterFolioRequest(MasterFolioServiceMasterFolioRequest other) : this() {
       ClientFolio = other.clientFolio_ != null ? other.ClientFolio.Clone() : null;
       MasterFolio = other.masterFolio_ != null ? other.MasterFolio.Clone() : null;
+      masterAccruesLodging_ = other.masterAccruesLodging_;
+      masterAccruesIncidentals_ = other.masterAccruesIncidentals_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -147,6 +150,28 @@ namespace HOLMS.Types.Money.RPC {
       }
     }
 
+    /// <summary>Field number for the "master_accrues_lodging" field.</summary>
+    public const int MasterAccruesLodgingFieldNumber = 3;
+    private bool masterAccruesLodging_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool MasterAccruesLodging {
+      get { return masterAccruesLodging_; }
+      set {
+        masterAccruesLodging_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "master_accrues_incidentals" field.</summary>
+    public const int MasterAccruesIncidentalsFieldNumber = 4;
+    private bool masterAccruesIncidentals_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool MasterAccruesIncidentals {
+      get { return masterAccruesIncidentals_; }
+      set {
+        masterAccruesIncidentals_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MasterFolioServiceMasterFolioRequest);
@@ -162,6 +187,8 @@ namespace HOLMS.Types.Money.RPC {
       }
       if (!object.Equals(ClientFolio, other.ClientFolio)) return false;
       if (!object.Equals(MasterFolio, other.MasterFolio)) return false;
+      if (MasterAccruesLodging != other.MasterAccruesLodging) return false;
+      if (MasterAccruesIncidentals != other.MasterAccruesIncidentals) return false;
       return true;
     }
 
@@ -170,6 +197,8 @@ namespace HOLMS.Types.Money.RPC {
       int hash = 1;
       if (clientFolio_ != null) hash ^= ClientFolio.GetHashCode();
       if (masterFolio_ != null) hash ^= MasterFolio.GetHashCode();
+      if (MasterAccruesLodging != false) hash ^= MasterAccruesLodging.GetHashCode();
+      if (MasterAccruesIncidentals != false) hash ^= MasterAccruesIncidentals.GetHashCode();
       return hash;
     }
 
@@ -188,6 +217,14 @@ namespace HOLMS.Types.Money.RPC {
         output.WriteRawTag(18);
         output.WriteMessage(MasterFolio);
       }
+      if (MasterAccruesLodging != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(MasterAccruesLodging);
+      }
+      if (MasterAccruesIncidentals != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(MasterAccruesIncidentals);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -198,6 +235,12 @@ namespace HOLMS.Types.Money.RPC {
       }
       if (masterFolio_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MasterFolio);
+      }
+      if (MasterAccruesLodging != false) {
+        size += 1 + 1;
+      }
+      if (MasterAccruesIncidentals != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -218,6 +261,12 @@ namespace HOLMS.Types.Money.RPC {
           masterFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
         }
         MasterFolio.MergeFrom(other.MasterFolio);
+      }
+      if (other.MasterAccruesLodging != false) {
+        MasterAccruesLodging = other.MasterAccruesLodging;
+      }
+      if (other.MasterAccruesIncidentals != false) {
+        MasterAccruesIncidentals = other.MasterAccruesIncidentals;
       }
     }
 
@@ -241,6 +290,14 @@ namespace HOLMS.Types.Money.RPC {
               masterFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
             }
             input.ReadMessage(masterFolio_);
+            break;
+          }
+          case 24: {
+            MasterAccruesLodging = input.ReadBool();
+            break;
+          }
+          case 32: {
+            MasterAccruesIncidentals = input.ReadBool();
             break;
           }
         }
