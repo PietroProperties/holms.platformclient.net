@@ -9,7 +9,7 @@ import "money/cards/transactions/payment_card_sale_capture.proto";
 import "money/cards/transactions/payment_card_sale_capture_indicator.proto";
 import "money/cards/transactions/processor_transaction_result.proto";
 import "money/cards/transactions/merchant_batch.proto";
-import "money/cards/payment_card_indicator.proto";
+import "money/cards/raw_payment_card_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
 import "money/cards/card_merchant_indicator.proto";
 import "crm/guests/guest_indicator.proto";
@@ -37,7 +37,7 @@ enum CardProcessingSvcCancelPendingCaptureResult {
 
 message CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse {
 	holms.types.money.cards.transactions.ProcessorTransactionResult result = 1;
-	holms.types.money.cards.PaymentCardIndicator tokenized_card = 2;
+	holms.types.money.cards.RawPaymentCardIndicator tokenized_card = 2;
 }
 
 message PaymentCardVerificationRequest {
