@@ -4,6 +4,7 @@ package holms.types.money.rpc;
 option csharp_namespace = "HOLMS.Types.Money.RPC";
 
 import "booking/indicators/reservation_indicator.proto";
+import "money/folio/posted_charge_credit.proto";
 
 message MasterFolioServiceMasterFolioRequest {
 	.holms.types.booking.indicators.ReservationIndicator client_folio = 1;
@@ -40,10 +41,24 @@ message MasterFolioServiceRemoveMasterFolioResponse {
 	ReservationFolioSvcRemoveMasterFolioResult result = 1;
 }
 
+enum MasterFolioSvcFolioSwapResult {
+	MASTER_FOLIO_SVC_FOLIO_SWAP_OK = 0;
+	MASTER_FOLIO_SVC_FOLIO_SWAP_IVALID_NO_MASTER_FOLIO = 1;
+	MASTER_FOLIO_SVC_FOLIO_SWAP_INVALID = 2;
+	MASTER_FOLIO_SVC_FOLIO_SWAP_FAILURE = 3;
+}
+
+message MasterFolioSvcFolioSwapResponse {
+	MasterFolioSvcFolioSwapResult result = 1;
+}
+
 service MasterFolioSvc {
 	rpc RequestMasterFolio(MasterFolioServiceMasterFolioRequest)
 		returns(MasterFolioServiceRequestMasterFolioResponse);
 
 	rpc RemoveMasterFolio(MasterFolioSvcRemoveMasterFolioRequest)
 		returns(MasterFolioServiceRemoveMasterFolioResponse);
+
+	rpc FolioSwap(holms.types.money.folio.PostedChargeCredit)
+		returns(MasterFolioSvcFolioSwapResponse);
 }

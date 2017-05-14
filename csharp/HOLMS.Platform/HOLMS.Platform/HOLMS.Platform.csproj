@@ -143,6 +143,8 @@
     <Compile Include="Types\Extensions\IBoundByDateRangeMarker.cs" />
     <Compile Include="Types\Extensions\Money\Accounting\Account.cs" />
     <Compile Include="Types\Extensions\Money\Accounting\AccountIndicator.cs" />
+    <Compile Include="Types\Extensions\Money\Accounting\AccountingTransactionLine.cs" />
+    <Compile Include="Types\Extensions\Money\Accounting\AccountingTransactionLineIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Accounting\TaxFeeIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\CardMerchant.cs" />
     <Compile Include="Types\Extensions\Money\Cards\CardMerchantIndicator.cs" />
@@ -211,6 +213,7 @@
     <Compile Include="Types\out\AccountingTransaction.cs" />
     <Compile Include="Types\out\AccountingTransactionExportFormat.cs" />
     <Compile Include="Types\out\AccountingTransactionLine.cs" />
+    <Compile Include="Types\out\AccountingTransactionLineIndicator.cs" />
     <Compile Include="Types\out\AccountingTransactionWithGuest.cs" />
     <Compile Include="Types\out\AccountingTxnExportStatus.cs" />
     <Compile Include="Types\out\AccountingTxnSvc.cs" />

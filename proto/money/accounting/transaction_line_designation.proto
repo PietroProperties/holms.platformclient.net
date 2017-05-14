@@ -12,4 +12,5 @@ enum TransactionLineDesignation {
 	CHECK_PAYMENT = 4;
 	CASH_PAYMENT = 5;
 	CARD_REFUND = 6;
+	FOLIO_SWAP = 7;
 }

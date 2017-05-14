@@ -28,24 +28,27 @@ namespace HOLMS.Types.Money.Accounting {
             "b3VudGluZy9sZWRnZXJfYWNjb3VudF9jYXRlZ29yeS5wcm90bxozbW9uZXkv",
             "YWNjb3VudGluZy90cmFuc2FjdGlvbl9saW5lX2Rlc2lnbmF0aW9uLnByb3Rv",
             "GjBtb25leS9hY2NvdW50aW5nL3RyYW5zYWN0aW9uX2xpbmVfdHJhbnNmZXIu",
-            "cHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8i7gMKGUFj",
-            "Y291bnRpbmdUcmFuc2FjdGlvbkxpbmUSOwoMZGViaXRfYW1vdW50GAEgASgL",
-            "MiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EjwKDWNy",
-            "ZWRpdF9hbW91bnQYAiABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9u",
-            "ZXRhcnlBbW91bnQSEQoJbmFycmF0aW9uGAMgASgJEj8KB2FjY291bnQYBCAB",
-            "KAsyLi5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLkFjY291bnRJbmRp",
-            "Y2F0b3ISFAoMYWNjb3VudF9uYW1lGAUgASgJEkkKDGFjY291bnRfdHlwZRgG",
-            "IAEoDjIzLmhvbG1zLnR5cGVzLm1vbmV5LmFjY291bnRpbmcuTGVkZ2VyQWNj",
-            "b3VudENhdGVnb3J5Ek0KC2Rlc2lnbmF0aW9uGAcgASgOMjguaG9sbXMudHlw",
-            "ZXMubW9uZXkuYWNjb3VudGluZy5UcmFuc2FjdGlvbkxpbmVEZXNpZ25hdGlv",
-            "bhJSChN0cmFuc2Zlcl9pbmRpY2F0aW9uGAggASgOMjUuaG9sbXMudHlwZXMu",
-            "bW9uZXkuYWNjb3VudGluZy5UcmFuc2FjdGlvbkxpbmVUcmFuc2ZlckIxWhBt",
-            "b25leS9hY2NvdW50aW5nqgIcSE9MTVMuVHlwZXMuTW9uZXkuQWNjb3VudGlu",
-            "Z2IGcHJvdG8z"));
+            "cHJvdG8aPG1vbmV5L2FjY291bnRpbmcvYWNjb3VudGluZ190cmFuc2FjdGlv",
+            "bl9saW5lX2luZGljYXRvci5wcm90bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ft",
+            "b3VudC5wcm90byLDBAoZQWNjb3VudGluZ1RyYW5zYWN0aW9uTGluZRI7Cgxk",
+            "ZWJpdF9hbW91bnQYASABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9u",
+            "ZXRhcnlBbW91bnQSPAoNY3JlZGl0X2Ftb3VudBgCIAEoCzIlLmhvbG1zLnR5",
+            "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIRCgluYXJyYXRpb24YAyAB",
+            "KAkSPwoHYWNjb3VudBgEIAEoCzIuLmhvbG1zLnR5cGVzLm1vbmV5LmFjY291",
+            "bnRpbmcuQWNjb3VudEluZGljYXRvchIUCgxhY2NvdW50X25hbWUYBSABKAkS",
+            "SQoMYWNjb3VudF90eXBlGAYgASgOMjMuaG9sbXMudHlwZXMubW9uZXkuYWNj",
+            "b3VudGluZy5MZWRnZXJBY2NvdW50Q2F0ZWdvcnkSTQoLZGVzaWduYXRpb24Y",
+            "ByABKA4yOC5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLlRyYW5zYWN0",
+            "aW9uTGluZURlc2lnbmF0aW9uElIKE3RyYW5zZmVyX2luZGljYXRpb24YCCAB",
+            "KA4yNS5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLlRyYW5zYWN0aW9u",
+            "TGluZVRyYW5zZmVyElMKCWVudGl0eV9pZBgJIAEoCzJALmhvbG1zLnR5cGVz",
+            "Lm1vbmV5LmFjY291bnRpbmcuQWNjb3VudGluZ1RyYW5zYWN0aW9uTGluZUlu",
+            "ZGljYXRvckIxWhBtb25leS9hY2NvdW50aW5nqgIcSE9MTVMuVHlwZXMuTW9u",
+            "ZXkuQWNjb3VudGluZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Accounting.AccountIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.LedgerAccountCategoryReflection.Descriptor, global::HOLMS.Types.Money.Accounting.TransactionLineDesignationReflection.Descriptor, global::HOLMS.Types.Money.Accounting.TransactionLineTransferReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Accounting.AccountIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.LedgerAccountCategoryReflection.Descriptor, global::HOLMS.Types.Money.Accounting.TransactionLineDesignationReflection.Descriptor, global::HOLMS.Types.Money.Accounting.TransactionLineTransferReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Accounting.AccountingTransactionLine), global::HOLMS.Types.Money.Accounting.AccountingTransactionLine.Parser, new[]{ "DebitAmount", "CreditAmount", "Narration", "Account", "AccountName", "AccountType", "Designation", "TransferIndication" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Accounting.AccountingTransactionLine), global::HOLMS.Types.Money.Accounting.AccountingTransactionLine.Parser, new[]{ "DebitAmount", "CreditAmount", "Narration", "Account", "AccountName", "AccountType", "Designation", "TransferIndication", "EntityId" }, null, null, null)
           }));
     }
     #endregion
@@ -84,6 +87,7 @@ namespace HOLMS.Types.Money.Accounting {
       accountType_ = other.accountType_;
       designation_ = other.designation_;
       transferIndication_ = other.transferIndication_;
+      EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -179,6 +183,17 @@ namespace HOLMS.Types.Money.Accounting {
       }
     }
 
+    /// <summary>Field number for the "entity_id" field.</summary>
+    public const int EntityIdFieldNumber = 9;
+    private global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicator entityId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicator EntityId {
+      get { return entityId_; }
+      set {
+        entityId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AccountingTransactionLine);
@@ -200,6 +215,7 @@ namespace HOLMS.Types.Money.Accounting {
       if (AccountType != other.AccountType) return false;
       if (Designation != other.Designation) return false;
       if (TransferIndication != other.TransferIndication) return false;
+      if (!object.Equals(EntityId, other.EntityId)) return false;
       return true;
     }
 
@@ -214,6 +230,7 @@ namespace HOLMS.Types.Money.Accounting {
       if (AccountType != 0) hash ^= AccountType.GetHashCode();
       if (Designation != 0) hash ^= Designation.GetHashCode();
       if (TransferIndication != 0) hash ^= TransferIndication.GetHashCode();
+      if (entityId_ != null) hash ^= EntityId.GetHashCode();
       return hash;
     }
 
@@ -256,6 +273,10 @@ namespace HOLMS.Types.Money.Accounting {
         output.WriteRawTag(64);
         output.WriteEnum((int) TransferIndication);
       }
+      if (entityId_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(EntityId);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -284,6 +305,9 @@ namespace HOLMS.Types.Money.Accounting {
       }
       if (TransferIndication != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) TransferIndication);
+      }
+      if (entityId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EntityId);
       }
       return size;
     }
@@ -325,6 +349,12 @@ namespace HOLMS.Types.Money.Accounting {
       }
       if (other.TransferIndication != 0) {
         TransferIndication = other.TransferIndication;
+      }
+      if (other.entityId_ != null) {
+        if (entityId_ == null) {
+          entityId_ = new global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicator();
+        }
+        EntityId.MergeFrom(other.EntityId);
       }
     }
 
@@ -375,6 +405,13 @@ namespace HOLMS.Types.Money.Accounting {
           }
           case 64: {
             transferIndication_ = (global::HOLMS.Types.Money.Accounting.TransactionLineTransfer) input.ReadEnum();
+            break;
+          }
+          case 74: {
+            if (entityId_ == null) {
+              entityId_ = new global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicator();
+            }
+            input.ReadMessage(entityId_);
             break;
           }
         }
