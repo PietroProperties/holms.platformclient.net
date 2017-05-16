@@ -168,6 +168,7 @@ enum ReservationFolioSvcAuthorizationModificationResult {
 	RESERVATION_FOLIO_SVC_AUTHORIZATION_MODIFICATION_SUCCESS = 0;
 	RESERVATION_FOLIO_SVC_AUTHORIZATION_MODIFICATION_SALE_NOT_FOUND = 1;
 	RESERVATION_FOLIO_SVC_AUTHORIZATION_MODIFICATION_UNKNOWN_FAILURE = 2;
+	RESERVATION_FOLIO_SVC_AUTHORIZATION_MODIFICATION_DECLINED = 3;
 }
 
 message ReservationFolioSvcAuthorizationModificationResponse {
@@ -176,7 +177,7 @@ message ReservationFolioSvcAuthorizationModificationResponse {
 
 message ReservationFolioSvcAuthorizationModificationRequest {
 	holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 1;
-	holms.types.primitive.MonetaryAmount amount = 2;
+	holms.types.primitive.MonetaryAmount change_amount = 2;
 	holms.types.money.cards.CardSalePurpose purpose = 3;
 }
 
