@@ -147,6 +147,7 @@
     <Compile Include="Types\Extensions\Money\Cards\CardMerchant.cs" />
     <Compile Include="Types\Extensions\Money\Cards\CardMerchantIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\CardTerminalIndicator.cs" />
+    <Compile Include="Types\Extensions\Money\Cards\GuestPaymentCard.cs" />
     <Compile Include="Types\Extensions\Money\Cards\GuestPaymentCardIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardAuthorizationIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\MerchantBatchIndicator.cs" />
