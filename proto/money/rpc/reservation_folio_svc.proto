@@ -8,10 +8,11 @@ import "booking/indicators/reservation_indicator.proto";
 import "google/protobuf/empty.proto";
 import "money/cards/card_sale_purpose.proto";
 import "money/cards/guest_payment_card.proto";
-import "money/cards/transactions/card_authorization_response.proto";
-import "money/cards/transactions/payment_card_sale_indicator.proto";
+import "money/cards/guest_payment_card_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
 import "money/cards/raw_payment_card_indicator.proto";
+import "money/cards/transactions/card_authorization_response.proto";
+import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/folio/folio_state.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
@@ -62,9 +63,9 @@ message ReservationFolioSvcPostCheckPaymentRequest {
 	.holms.types.primitive.MonetaryAmount amount = 2;
 }
 
-message CardAuthorizationFromTokenRequest {
+message CardAuthorizationFromStoredCardRequest {
 	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
-	.holms.types.money.cards.RawPaymentCardIndicator card = 2;
+	.holms.types.money.cards.GuestPaymentCardIndicator card = 2;
 	holms.types.primitive.MonetaryAmount amount = 3;
 	holms.types.money.cards.CardSalePurpose purpose = 4;
 }
@@ -185,7 +186,7 @@ service ReservationFolioSvc {
 		returns(ReservationFolioSvcGetFolioStateResponse);
 
 	// Cards
-	rpc AddCardAuthorizationFromToken(CardAuthorizationFromTokenRequest)
+	rpc AddCardAuthorizationFromStoredCard(CardAuthorizationFromStoredCardRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromPresentedCard(CardAuthorizationFromPresentCardRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
