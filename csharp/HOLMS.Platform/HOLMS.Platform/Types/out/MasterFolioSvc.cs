@@ -55,22 +55,23 @@ namespace HOLMS.Types.Money.RPC {
             "b1N2Y1JlbW92ZU1hc3RlckZvbGlvUmVzdWx0EisKJ01BU1RFUl9GT0xJT19T",
             "VkNfUkVNT1ZFX01BU1RFUl9GT0xJT19PSxAAEjIKLk1BU1RFUl9GT0xJT19T",
             "VkNfUkVNT1ZFX01BU1RFUl9GT0xJT19OT19NQVNURVIQARIwCixNQVNURVJf",
-            "Rk9MSU9fU1ZDX1JFTU9WRV9NQVNURVJfRk9MSU9fRkFJTFVSRRACKs0BCh1N",
+            "Rk9MSU9fU1ZDX1JFTU9WRV9NQVNURVJfRk9MSU9fRkFJTFVSRRACKt4BCh1N",
             "YXN0ZXJGb2xpb1N2Y0ZvbGlvU3dhcFJlc3VsdBIiCh5NQVNURVJfRk9MSU9f",
-            "U1ZDX0ZPTElPX1NXQVBfT0sQABI2CjJNQVNURVJfRk9MSU9fU1ZDX0ZPTElP",
-            "X1NXQVBfSVZBTElEX05PX01BU1RFUl9GT0xJTxABEicKI01BU1RFUl9GT0xJ",
-            "T19TVkNfRk9MSU9fU1dBUF9JTlZBTElEEAISJwojTUFTVEVSX0ZPTElPX1NW",
-            "Q19GT0xJT19TV0FQX0ZBSUxVUkUQAzK0AwoOTWFzdGVyRm9saW9TdmMSlgEK",
-            "ElJlcXVlc3RNYXN0ZXJGb2xpbxI7LmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5N",
-            "YXN0ZXJGb2xpb1NlcnZpY2VNYXN0ZXJGb2xpb1JlcXVlc3QaQy5ob2xtcy50",
-            "eXBlcy5tb25leS5ycGMuTWFzdGVyRm9saW9TZXJ2aWNlUmVxdWVzdE1hc3Rl",
-            "ckZvbGlvUmVzcG9uc2USlgEKEVJlbW92ZU1hc3RlckZvbGlvEj0uaG9sbXMu",
-            "dHlwZXMubW9uZXkucnBjLk1hc3RlckZvbGlvU3ZjUmVtb3ZlTWFzdGVyRm9s",
-            "aW9SZXF1ZXN0GkIuaG9sbXMudHlwZXMubW9uZXkucnBjLk1hc3RlckZvbGlv",
-            "U2VydmljZVJlbW92ZU1hc3RlckZvbGlvUmVzcG9uc2UScAoJRm9saW9Td2Fw",
-            "EisuaG9sbXMudHlwZXMubW9uZXkuZm9saW8uUG9zdGVkQ2hhcmdlQ3JlZGl0",
-            "GjYuaG9sbXMudHlwZXMubW9uZXkucnBjLk1hc3RlckZvbGlvU3ZjRm9saW9T",
-            "d2FwUmVzcG9uc2VCGKoCFUhPTE1TLlR5cGVzLk1vbmV5LlJQQ2IGcHJvdG8z"));
+            "U1ZDX0ZPTElPX1NXQVBfT0sQABI3CjNNQVNURVJfRk9MSU9fU1ZDX0ZPTElP",
+            "X1NXQVBfSU5WQUxJRF9OT19NQVNURVJfRk9MSU8QARIvCitNQVNURVJfRk9M",
+            "SU9fU1ZDX0ZPTElPX1NXQVBfSU5WQUxJRF9VTktOT1dOEAISLworTUFTVEVS",
+            "X0ZPTElPX1NWQ19GT0xJT19TV0FQX0ZBSUxVUkVfVU5LTk9XThADMrQDCg5N",
+            "YXN0ZXJGb2xpb1N2YxKWAQoSUmVxdWVzdE1hc3RlckZvbGlvEjsuaG9sbXMu",
+            "dHlwZXMubW9uZXkucnBjLk1hc3RlckZvbGlvU2VydmljZU1hc3RlckZvbGlv",
+            "UmVxdWVzdBpDLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5NYXN0ZXJGb2xpb1Nl",
+            "cnZpY2VSZXF1ZXN0TWFzdGVyRm9saW9SZXNwb25zZRKWAQoRUmVtb3ZlTWFz",
+            "dGVyRm9saW8SPS5ob2xtcy50eXBlcy5tb25leS5ycGMuTWFzdGVyRm9saW9T",
+            "dmNSZW1vdmVNYXN0ZXJGb2xpb1JlcXVlc3QaQi5ob2xtcy50eXBlcy5tb25l",
+            "eS5ycGMuTWFzdGVyRm9saW9TZXJ2aWNlUmVtb3ZlTWFzdGVyRm9saW9SZXNw",
+            "b25zZRJwCglGb2xpb1N3YXASKy5ob2xtcy50eXBlcy5tb25leS5mb2xpby5Q",
+            "b3N0ZWRDaGFyZ2VDcmVkaXQaNi5ob2xtcy50eXBlcy5tb25leS5ycGMuTWFz",
+            "dGVyRm9saW9TdmNGb2xpb1N3YXBSZXNwb25zZUIYqgIVSE9MTVMuVHlwZXMu",
+            "TW9uZXkuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.RPC.ReservationFolioSvcRequestMasterFolioResult), typeof(global::HOLMS.Types.Money.RPC.ReservationFolioSvcRemoveMasterFolioResult), typeof(global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResult), }, new pbr::GeneratedClrTypeInfo[] {
@@ -103,9 +104,9 @@ namespace HOLMS.Types.Money.RPC {
 
   public enum MasterFolioSvcFolioSwapResult {
     [pbr::OriginalName("MASTER_FOLIO_SVC_FOLIO_SWAP_OK")] MasterFolioSvcFolioSwapOk = 0,
-    [pbr::OriginalName("MASTER_FOLIO_SVC_FOLIO_SWAP_IVALID_NO_MASTER_FOLIO")] MasterFolioSvcFolioSwapIvalidNoMasterFolio = 1,
-    [pbr::OriginalName("MASTER_FOLIO_SVC_FOLIO_SWAP_INVALID")] MasterFolioSvcFolioSwapInvalid = 2,
-    [pbr::OriginalName("MASTER_FOLIO_SVC_FOLIO_SWAP_FAILURE")] MasterFolioSvcFolioSwapFailure = 3,
+    [pbr::OriginalName("MASTER_FOLIO_SVC_FOLIO_SWAP_INVALID_NO_MASTER_FOLIO")] MasterFolioSvcFolioSwapInvalidNoMasterFolio = 1,
+    [pbr::OriginalName("MASTER_FOLIO_SVC_FOLIO_SWAP_INVALID_UNKNOWN")] MasterFolioSvcFolioSwapInvalidUnknown = 2,
+    [pbr::OriginalName("MASTER_FOLIO_SVC_FOLIO_SWAP_FAILURE_UNKNOWN")] MasterFolioSvcFolioSwapFailureUnknown = 3,
   }
 
   #endregion
