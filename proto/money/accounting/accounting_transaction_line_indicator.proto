@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package holms.types.money.accounting;
+option csharp_namespace = "HOLMS.Types.Money.Accounting";
+
+import "primitive/uuid.proto";
+
+message AccountingTransactionLineIndicator {
+	.holms.types.primitive.Uuid id = 1;
+}

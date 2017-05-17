@@ -7,6 +7,7 @@ option go_package = "money/folio";
 import "primitive/monetary_amount.proto";
 import "money/folio/posted_charge_credit_tax_fee.proto";
 import "google/protobuf/timestamp.proto";
+import "money/accounting/accounting_transaction_line_indicator.proto";
 
 message PostedChargeCredit {
 	string description = 1;
@@ -19,4 +20,5 @@ message PostedChargeCredit {
 	google.protobuf.Timestamp posted_time = 5;
 	repeated PostedChargeCreditTaxFee taxes = 6;
 	repeated PostedChargeCreditTaxFee fees = 7;
+	holms.types.money.accounting.AccountingTransactionLineIndicator parent_line = 8;
 }

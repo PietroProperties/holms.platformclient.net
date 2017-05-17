@@ -25,21 +25,24 @@ namespace HOLMS.Types.Money.Folio {
             "CiZtb25leS9mb2xpby9wb3N0ZWRfY2hhcmdlX2NyZWRpdC5wcm90bxIXaG9s",
             "bXMudHlwZXMubW9uZXkuZm9saW8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91",
             "bnQucHJvdG8aLm1vbmV5L2ZvbGlvL3Bvc3RlZF9jaGFyZ2VfY3JlZGl0X3Rh",
-            "eF9mZWUucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8i",
-            "6QIKElBvc3RlZENoYXJnZUNyZWRpdBITCgtkZXNjcmlwdGlvbhgBIAEoCRJD",
-            "ChRwcmVfdGF4X2ZlZV9zdWJ0b3RhbBgCIAEoCzIlLmhvbG1zLnR5cGVzLnBy",
-            "aW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJFCgp0YXhlc19mZWVzGAQgAygLMjEu",
-            "aG9sbXMudHlwZXMubW9uZXkuZm9saW8uUG9zdGVkQ2hhcmdlQ3JlZGl0VGF4",
-            "RmVlEi8KC3Bvc3RlZF90aW1lGAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
-            "bWVzdGFtcBJACgV0YXhlcxgGIAMoCzIxLmhvbG1zLnR5cGVzLm1vbmV5LmZv",
-            "bGlvLlBvc3RlZENoYXJnZUNyZWRpdFRheEZlZRI/CgRmZWVzGAcgAygLMjEu",
-            "aG9sbXMudHlwZXMubW9uZXkuZm9saW8uUG9zdGVkQ2hhcmdlQ3JlZGl0VGF4",
-            "RmVlQidaC21vbmV5L2ZvbGlvqgIXSE9MTVMuVHlwZXMuTW9uZXkuRm9saW9i",
-            "BnByb3RvMw=="));
+            "eF9mZWUucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8a",
+            "PG1vbmV5L2FjY291bnRpbmcvYWNjb3VudGluZ190cmFuc2FjdGlvbl9saW5l",
+            "X2luZGljYXRvci5wcm90byLAAwoSUG9zdGVkQ2hhcmdlQ3JlZGl0EhMKC2Rl",
+            "c2NyaXB0aW9uGAEgASgJEkMKFHByZV90YXhfZmVlX3N1YnRvdGFsGAIgASgL",
+            "MiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkUKCnRh",
+            "eGVzX2ZlZXMYBCADKAsyMS5ob2xtcy50eXBlcy5tb25leS5mb2xpby5Qb3N0",
+            "ZWRDaGFyZ2VDcmVkaXRUYXhGZWUSLwoLcG9zdGVkX3RpbWUYBSABKAsyGi5n",
+            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wEkAKBXRheGVzGAYgAygLMjEuaG9s",
+            "bXMudHlwZXMubW9uZXkuZm9saW8uUG9zdGVkQ2hhcmdlQ3JlZGl0VGF4RmVl",
+            "Ej8KBGZlZXMYByADKAsyMS5ob2xtcy50eXBlcy5tb25leS5mb2xpby5Qb3N0",
+            "ZWRDaGFyZ2VDcmVkaXRUYXhGZWUSVQoLcGFyZW50X2xpbmUYCCABKAsyQC5o",
+            "b2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLkFjY291bnRpbmdUcmFuc2Fj",
+            "dGlvbkxpbmVJbmRpY2F0b3JCJ1oLbW9uZXkvZm9saW+qAhdIT0xNUy5UeXBl",
+            "cy5Nb25leS5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditTaxFeeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditTaxFeeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedChargeCredit), global::HOLMS.Types.Money.Folio.PostedChargeCredit.Parser, new[]{ "Description", "PreTaxFeeSubtotal", "TaxesFees", "PostedTime", "Taxes", "Fees" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedChargeCredit), global::HOLMS.Types.Money.Folio.PostedChargeCredit.Parser, new[]{ "Description", "PreTaxFeeSubtotal", "TaxesFees", "PostedTime", "Taxes", "Fees", "ParentLine" }, null, null, null)
           }));
     }
     #endregion
@@ -76,6 +79,7 @@ namespace HOLMS.Types.Money.Folio {
       PostedTime = other.postedTime_ != null ? other.PostedTime.Clone() : null;
       taxes_ = other.taxes_.Clone();
       fees_ = other.fees_.Clone();
+      ParentLine = other.parentLine_ != null ? other.ParentLine.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -146,6 +150,17 @@ namespace HOLMS.Types.Money.Folio {
       get { return fees_; }
     }
 
+    /// <summary>Field number for the "parent_line" field.</summary>
+    public const int ParentLineFieldNumber = 8;
+    private global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicator parentLine_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicator ParentLine {
+      get { return parentLine_; }
+      set {
+        parentLine_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PostedChargeCredit);
@@ -165,6 +180,7 @@ namespace HOLMS.Types.Money.Folio {
       if (!object.Equals(PostedTime, other.PostedTime)) return false;
       if(!taxes_.Equals(other.taxes_)) return false;
       if(!fees_.Equals(other.fees_)) return false;
+      if (!object.Equals(ParentLine, other.ParentLine)) return false;
       return true;
     }
 
@@ -177,6 +193,7 @@ namespace HOLMS.Types.Money.Folio {
       if (postedTime_ != null) hash ^= PostedTime.GetHashCode();
       hash ^= taxes_.GetHashCode();
       hash ^= fees_.GetHashCode();
+      if (parentLine_ != null) hash ^= ParentLine.GetHashCode();
       return hash;
     }
 
@@ -202,6 +219,10 @@ namespace HOLMS.Types.Money.Folio {
       }
       taxes_.WriteTo(output, _repeated_taxes_codec);
       fees_.WriteTo(output, _repeated_fees_codec);
+      if (parentLine_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(ParentLine);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -219,6 +240,9 @@ namespace HOLMS.Types.Money.Folio {
       }
       size += taxes_.CalculateSize(_repeated_taxes_codec);
       size += fees_.CalculateSize(_repeated_fees_codec);
+      if (parentLine_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ParentLine);
+      }
       return size;
     }
 
@@ -245,6 +269,12 @@ namespace HOLMS.Types.Money.Folio {
       }
       taxes_.Add(other.taxes_);
       fees_.Add(other.fees_);
+      if (other.parentLine_ != null) {
+        if (parentLine_ == null) {
+          parentLine_ = new global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicator();
+        }
+        ParentLine.MergeFrom(other.ParentLine);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -283,6 +313,13 @@ namespace HOLMS.Types.Money.Folio {
           }
           case 58: {
             fees_.AddEntriesFrom(input, _repeated_fees_codec);
+            break;
+          }
+          case 66: {
+            if (parentLine_ == null) {
+              parentLine_ = new global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicator();
+            }
+            input.ReadMessage(parentLine_);
             break;
           }
         }

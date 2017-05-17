@@ -8,6 +8,7 @@ import "money/accounting/account_indicator.proto";
 import "money/accounting/ledger_account_category.proto";
 import "money/accounting/transaction_line_designation.proto";
 import "money/accounting/transaction_line_transfer.proto";
+import "money/accounting/accounting_transaction_line_indicator.proto";
 import "primitive/monetary_amount.proto";
 
 message AccountingTransactionLine {
@@ -19,5 +20,6 @@ message AccountingTransactionLine {
 	LedgerAccountCategory account_type = 6;
 	TransactionLineDesignation designation = 7;
 	TransactionLineTransfer transfer_indication = 8;
+	AccountingTransactionLineIndicator entity_id = 9;
 }
   
