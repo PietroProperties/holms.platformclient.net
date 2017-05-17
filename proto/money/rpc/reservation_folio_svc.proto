@@ -10,7 +10,6 @@ import "money/cards/card_sale_purpose.proto";
 import "money/cards/guest_payment_card.proto";
 import "money/cards/guest_payment_card_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
-import "money/cards/raw_payment_card_indicator.proto";
 import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/folio/folio_state.proto";
@@ -151,7 +150,7 @@ message ReservationFolioSvcVoidSaleResponse {
 message ReservationFolioSvcPaymentCardRefundRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
 	holms.types.primitive.MonetaryAmount amount = 2;
-	holms.types.money.cards.RawPaymentCardIndicator card = 3;
+	holms.types.money.cards.GuestPaymentCardIndicator card = 3;
 	string description = 4;
 }
 
