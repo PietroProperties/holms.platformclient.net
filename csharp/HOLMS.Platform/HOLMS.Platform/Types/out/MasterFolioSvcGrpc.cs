@@ -16,6 +16,8 @@ namespace HOLMS.Types.Money.RPC {
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.MasterFolioServiceRequestMasterFolioResponse> __Marshaller_MasterFolioServiceRequestMasterFolioResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.MasterFolioServiceRequestMasterFolioResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.MasterFolioSvcRemoveMasterFolioRequest> __Marshaller_MasterFolioSvcRemoveMasterFolioRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.MasterFolioSvcRemoveMasterFolioRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.MasterFolioServiceRemoveMasterFolioResponse> __Marshaller_MasterFolioServiceRemoveMasterFolioResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.MasterFolioServiceRemoveMasterFolioResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.Folio.PostedChargeCredit> __Marshaller_PostedChargeCredit = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Folio.PostedChargeCredit.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse> __Marshaller_MasterFolioSvcFolioSwapResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Money.RPC.MasterFolioServiceMasterFolioRequest, global::HOLMS.Types.Money.RPC.MasterFolioServiceRequestMasterFolioResponse> __Method_RequestMasterFolio = new Method<global::HOLMS.Types.Money.RPC.MasterFolioServiceMasterFolioRequest, global::HOLMS.Types.Money.RPC.MasterFolioServiceRequestMasterFolioResponse>(
         MethodType.Unary,
@@ -30,6 +32,13 @@ namespace HOLMS.Types.Money.RPC {
         "RemoveMasterFolio",
         __Marshaller_MasterFolioSvcRemoveMasterFolioRequest,
         __Marshaller_MasterFolioServiceRemoveMasterFolioResponse);
+
+    static readonly Method<global::HOLMS.Types.Money.Folio.PostedChargeCredit, global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse> __Method_FolioSwap = new Method<global::HOLMS.Types.Money.Folio.PostedChargeCredit, global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "FolioSwap",
+        __Marshaller_PostedChargeCredit,
+        __Marshaller_MasterFolioSvcFolioSwapResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -46,6 +55,11 @@ namespace HOLMS.Types.Money.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.MasterFolioServiceRemoveMasterFolioResponse> RemoveMasterFolio(global::HOLMS.Types.Money.RPC.MasterFolioSvcRemoveMasterFolioRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse> FolioSwap(global::HOLMS.Types.Money.Folio.PostedChargeCredit request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -107,6 +121,22 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_RemoveMasterFolio, null, options, request);
       }
+      public virtual global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse FolioSwap(global::HOLMS.Types.Money.Folio.PostedChargeCredit request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return FolioSwap(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse FolioSwap(global::HOLMS.Types.Money.Folio.PostedChargeCredit request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_FolioSwap, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse> FolioSwapAsync(global::HOLMS.Types.Money.Folio.PostedChargeCredit request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return FolioSwapAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse> FolioSwapAsync(global::HOLMS.Types.Money.Folio.PostedChargeCredit request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_FolioSwap, null, options, request);
+      }
       protected override MasterFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new MasterFolioSvcClient(configuration);
@@ -118,7 +148,8 @@ namespace HOLMS.Types.Money.RPC {
     {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_RequestMasterFolio, serviceImpl.RequestMasterFolio)
-          .AddMethod(__Method_RemoveMasterFolio, serviceImpl.RemoveMasterFolio).Build();
+          .AddMethod(__Method_RemoveMasterFolio, serviceImpl.RemoveMasterFolio)
+          .AddMethod(__Method_FolioSwap, serviceImpl.FolioSwap).Build();
     }
 
   }
