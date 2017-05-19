@@ -70,6 +70,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_Timestamp,
         __Marshaller_ReservationSearchSvcGetFilteredReservationListResponse);
 
+    static readonly Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> __Method_GetAllDuringDate = new Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetAllDuringDate",
+        __Marshaller_Timestamp,
+        __Marshaller_ReservationSearchSvcGetFilteredReservationListResponse);
+
     static readonly Method<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsByBookingId, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> __Method_SearchReservationsByBookingId = new Method<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsByBookingId, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse>(
         MethodType.Unary,
         __ServiceName,
@@ -124,6 +131,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> GetStayOversByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> GetAllDuringDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -278,6 +290,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetStayOversByDate, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse GetAllDuringDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetAllDuringDate(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse GetAllDuringDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetAllDuringDate, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> GetAllDuringDateAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetAllDuringDateAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> GetAllDuringDateAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetAllDuringDate, null, options, request);
+      }
       /// <summary>
       ///  NOTE(DA) Deprecated; remove when no longer used
       /// </summary>
@@ -339,6 +367,7 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetDeparturesByDate, serviceImpl.GetDeparturesByDate)
           .AddMethod(__Method_GetNoShowsByDate, serviceImpl.GetNoShowsByDate)
           .AddMethod(__Method_GetStayOversByDate, serviceImpl.GetStayOversByDate)
+          .AddMethod(__Method_GetAllDuringDate, serviceImpl.GetAllDuringDate)
           .AddMethod(__Method_SearchReservationsByBookingId, serviceImpl.SearchReservationsByBookingId)
           .AddMethod(__Method_SearchReservations, serviceImpl.SearchReservations).Build();
     }

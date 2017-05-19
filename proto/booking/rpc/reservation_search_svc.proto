@@ -61,6 +61,9 @@ service ReservationSearchSvc {
 
 	rpc GetStayOversByDate(google.protobuf.Timestamp)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+
+	rpc GetAllDuringDate(google.protobuf.Timestamp)
+		returns	(ReservationSearchSvcGetFilteredReservationListResponse);
 		
 	// NOTE(DA) Deprecated; remove when no longer used
 	rpc SearchReservationsByBookingId(ReservationSearchSvcSearchReservationsByBookingId)
