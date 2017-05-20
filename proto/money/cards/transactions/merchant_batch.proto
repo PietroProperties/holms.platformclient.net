@@ -3,6 +3,7 @@
 package holms.types.money.cards.transactions;
 option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 
+import "google/protobuf/timestamp.proto";
 import "money/cards/card_merchant_indicator.proto";
 import "money/cards/transactions/merchant_batch_indicator.proto";
 import "money/cards/transactions/payment_card_sale_capture.proto";
@@ -17,6 +18,6 @@ message MerchantBatch {
 	int32 sequence_number = 5;
 	int32 transaction_count = 6;
 	holms.types.primitive.MonetaryAmount total_amount = 7;
-	string date = 8;
+	google.protobuf.Timestamp created_at = 8;
 	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture captures = 9;
 }
