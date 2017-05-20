@@ -23,29 +23,30 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci1tb25leS9jYXJkcy90cmFuc2FjdGlvbnMvbWVyY2hhbnRfYmF0Y2gucHJv",
-            "dG8SJGhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucxopbW9u",
-            "ZXkvY2FyZHMvY2FyZF9tZXJjaGFudF9pbmRpY2F0b3IucHJvdG8aN21vbmV5",
-            "L2NhcmRzL3RyYW5zYWN0aW9ucy9tZXJjaGFudF9iYXRjaF9pbmRpY2F0b3Iu",
-            "cHJvdG8aOG1vbmV5L2NhcmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRf",
-            "c2FsZV9jYXB0dXJlLnByb3RvGjttb25leS9jYXJkcy90cmFuc2FjdGlvbnMv",
-            "cHJvY2Vzc29yX3RyYW5zYWN0aW9uX3Jlc3VsdC5wcm90bxofcHJpbWl0aXZl",
-            "L21vbmV0YXJ5X2Ftb3VudC5wcm90byLdAwoNTWVyY2hhbnRCYXRjaBJPCgll",
-            "bnRpdHlfaWQYASABKAsyPC5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFu",
-            "c2FjdGlvbnMuTWVyY2hhbnRCYXRjaEluZGljYXRvchJDCgttZXJjaGFudF9p",
-            "ZBgCIAEoCzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRNZXJjaGFu",
-            "dEluZGljYXRvchIVCg1tZXJjaGFudF9uYW1lGAMgASgJElAKBnJlc3VsdBgE",
-            "IAEoDjJALmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5Q",
-            "cm9jZXNzb3JUcmFuc2FjdGlvblJlc3VsdBIXCg9zZXF1ZW5jZV9udW1iZXIY",
-            "BSABKAUSGQoRdHJhbnNhY3Rpb25fY291bnQYBiABKAUSOwoMdG90YWxfYW1v",
-            "dW50GAcgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1v",
-            "dW50EgwKBGRhdGUYCCABKAkSTgoIY2FwdHVyZXMYCSADKAsyPC5ob2xtcy50",
-            "eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVudENhcmRTYWxl",
-            "Q2FwdHVyZUInqgIkSE9MTVMuVHlwZXMuTW9uZXkuQ2FyZHMuVHJhbnNhY3Rp",
-            "b25zYgZwcm90bzM="));
+            "dG8SJGhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucxofZ29v",
+            "Z2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxopbW9uZXkvY2FyZHMvY2Fy",
+            "ZF9tZXJjaGFudF9pbmRpY2F0b3IucHJvdG8aN21vbmV5L2NhcmRzL3RyYW5z",
+            "YWN0aW9ucy9tZXJjaGFudF9iYXRjaF9pbmRpY2F0b3IucHJvdG8aOG1vbmV5",
+            "L2NhcmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfc2FsZV9jYXB0dXJl",
+            "LnByb3RvGjttb25leS9jYXJkcy90cmFuc2FjdGlvbnMvcHJvY2Vzc29yX3Ry",
+            "YW5zYWN0aW9uX3Jlc3VsdC5wcm90bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ft",
+            "b3VudC5wcm90byL/AwoNTWVyY2hhbnRCYXRjaBJPCgllbnRpdHlfaWQYASAB",
+            "KAsyPC5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuTWVy",
+            "Y2hhbnRCYXRjaEluZGljYXRvchJDCgttZXJjaGFudF9pZBgCIAEoCzIuLmhv",
+            "bG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRNZXJjaGFudEluZGljYXRvchIV",
+            "Cg1tZXJjaGFudF9uYW1lGAMgASgJElAKBnJlc3VsdBgEIAEoDjJALmhvbG1z",
+            "LnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5Qcm9jZXNzb3JUcmFu",
+            "c2FjdGlvblJlc3VsdBIXCg9zZXF1ZW5jZV9udW1iZXIYBSABKAUSGQoRdHJh",
+            "bnNhY3Rpb25fY291bnQYBiABKAUSOwoMdG90YWxfYW1vdW50GAcgASgLMiUu",
+            "aG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50Ei4KCmNyZWF0",
+            "ZWRfYXQYCCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEk4KCGNh",
+            "cHR1cmVzGAkgAygLMjwuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNh",
+            "Y3Rpb25zLlBheW1lbnRDYXJkU2FsZUNhcHR1cmVCJ6oCJEhPTE1TLlR5cGVz",
+            "Lk1vbmV5LkNhcmRzLlRyYW5zYWN0aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatchIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatchIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch), global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch.Parser, new[]{ "EntityId", "MerchantId", "MerchantName", "Result", "SequenceNumber", "TransactionCount", "TotalAmount", "Date", "Captures" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch), global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch.Parser, new[]{ "EntityId", "MerchantId", "MerchantName", "Result", "SequenceNumber", "TransactionCount", "TotalAmount", "CreatedAt", "Captures" }, null, null, null)
           }));
     }
     #endregion
@@ -83,7 +84,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       sequenceNumber_ = other.sequenceNumber_;
       transactionCount_ = other.transactionCount_;
       TotalAmount = other.totalAmount_ != null ? other.TotalAmount.Clone() : null;
-      date_ = other.date_;
+      CreatedAt = other.createdAt_ != null ? other.CreatedAt.Clone() : null;
       captures_ = other.captures_.Clone();
     }
 
@@ -169,14 +170,14 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       }
     }
 
-    /// <summary>Field number for the "date" field.</summary>
-    public const int DateFieldNumber = 8;
-    private string date_ = "";
+    /// <summary>Field number for the "created_at" field.</summary>
+    public const int CreatedAtFieldNumber = 8;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp createdAt_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Date {
-      get { return date_; }
+    public global::Google.Protobuf.WellKnownTypes.Timestamp CreatedAt {
+      get { return createdAt_; }
       set {
-        date_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        createdAt_ = value;
       }
     }
 
@@ -210,7 +211,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (SequenceNumber != other.SequenceNumber) return false;
       if (TransactionCount != other.TransactionCount) return false;
       if (!object.Equals(TotalAmount, other.TotalAmount)) return false;
-      if (Date != other.Date) return false;
+      if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
       if(!captures_.Equals(other.captures_)) return false;
       return true;
     }
@@ -225,7 +226,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (SequenceNumber != 0) hash ^= SequenceNumber.GetHashCode();
       if (TransactionCount != 0) hash ^= TransactionCount.GetHashCode();
       if (totalAmount_ != null) hash ^= TotalAmount.GetHashCode();
-      if (Date.Length != 0) hash ^= Date.GetHashCode();
+      if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
       hash ^= captures_.GetHashCode();
       return hash;
     }
@@ -265,9 +266,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
         output.WriteRawTag(58);
         output.WriteMessage(TotalAmount);
       }
-      if (Date.Length != 0) {
+      if (createdAt_ != null) {
         output.WriteRawTag(66);
-        output.WriteString(Date);
+        output.WriteMessage(CreatedAt);
       }
       captures_.WriteTo(output, _repeated_captures_codec);
     }
@@ -296,8 +297,8 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (totalAmount_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(TotalAmount);
       }
-      if (Date.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Date);
+      if (createdAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreatedAt);
       }
       size += captures_.CalculateSize(_repeated_captures_codec);
       return size;
@@ -338,8 +339,11 @@ namespace HOLMS.Types.Money.Cards.Transactions {
         }
         TotalAmount.MergeFrom(other.TotalAmount);
       }
-      if (other.Date.Length != 0) {
-        Date = other.Date;
+      if (other.createdAt_ != null) {
+        if (createdAt_ == null) {
+          createdAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        CreatedAt.MergeFrom(other.CreatedAt);
       }
       captures_.Add(other.captures_);
     }
@@ -390,7 +394,10 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             break;
           }
           case 66: {
-            Date = input.ReadString();
+            if (createdAt_ == null) {
+              createdAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(createdAt_);
             break;
           }
           case 74: {
