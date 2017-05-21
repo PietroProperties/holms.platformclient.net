@@ -14,6 +14,7 @@ import "iam/tenancy_indicator.proto";
 import "tenancy_config/indicators/property_indicator.proto";
 import "booking/indicators/cancellation_policy_indicator.proto";
 import "operations/housekeeping/housekeeping_time.proto";
+import "google/protobuf/timestamp.proto";
 
 import "operations/rooms/room_indicator.proto";
 
@@ -41,4 +42,5 @@ message ReservationSummary {
 	string source_channel_id = 20;
 	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 21;
 	holms.types.operations.housekeeping.HousekeepingTime hk_time_preference = 22;
+	google.protobuf.Timestamp timestamp = 23;
 }
