@@ -33,39 +33,40 @@ namespace HOLMS.Types.Booking.Reservations {
             "cHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMvcHJvcGVydHlfaW5k",
             "aWNhdG9yLnByb3RvGjZib29raW5nL2luZGljYXRvcnMvY2FuY2VsbGF0aW9u",
             "X3BvbGljeV9pbmRpY2F0b3IucHJvdG8aL29wZXJhdGlvbnMvaG91c2VrZWVw",
-            "aW5nL2hvdXNla2VlcGluZ190aW1lLnByb3RvGiVvcGVyYXRpb25zL3Jvb21z",
-            "L3Jvb21faW5kaWNhdG9yLnByb3RvIuwIChJSZXNlcnZhdGlvblN1bW1hcnkS",
-            "RwoJZW50aXR5X2lkGAEgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRp",
-            "Y2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yEhIKCmJvb2tpbmdfaWQYAiAB",
-            "KAkSQQoFc3RhdGUYAyABKA4yMi5ob2xtcy50eXBlcy5ib29raW5nLnJlc2Vy",
-            "dmF0aW9ucy5SZXNlcnZhdGlvblN0YXRlEiwKBWd1ZXN0GAQgASgLMh0uaG9s",
-            "bXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdBJCCgpkYXRlX3JhbmdlGAUgASgL",
-            "Mi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJh",
-            "bmdlEjoKCXJvb21fdHlwZRgGIAEoCzInLmhvbG1zLnR5cGVzLnN1cHBseS5y",
-            "b29tX3R5cGVzLlJvb21UeXBlElYKEGd1YXJhbnRlZV9zdGF0dXMYByABKA4y",
-            "PC5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5SZXNlcnZhdGlv",
-            "bkd1YXJhbnRlZVN0YXR1cxIyCgd0ZW5hbmN5GAggASgLMiEuaG9sbXMudHlw",
-            "ZXMuaWFtLlRlbmFuY3lJbmRpY2F0b3ISSgoIcHJvcGVydHkYCSABKAsyOC5o",
-            "b2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5",
-            "SW5kaWNhdG9yEiEKGXZlaGljbGVfcGxhdGVfaW5mb3JtYXRpb24YCyABKAkS",
-            "JAocY3VycmVudF9vY2N1cGllZF9yb29tX251bWJlchgMIAEoCRJKChVjdXJy",
-            "ZW50X29jY3VwaWVkX3Jvb20YDSABKAsyKy5ob2xtcy50eXBlcy5vcGVyYXRp",
-            "b25zLnJvb21zLlJvb21JbmRpY2F0b3ISJQoddGVybWluYWxfb2NjdXBpZWRf",
-            "cm9vbV9udW1iZXIYDiABKAkSSwoWdGVybWluYWxfb2NjdXBpZWRfcm9vbRgP",
-            "IAEoCzIrLmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucm9vbXMuUm9vbUluZGlj",
-            "YXRvchIVCg1udW1iZXJfYWR1bHRzGBAgASgFEhcKD251bWJlcl9jaGlsZHJl",
-            "bhgRIAEoBRITCgthY3RpdmVfdGFncxgSIAMoCRIaChJjaGFubmVsX21hbmFn",
-            "ZXJfaWQYEyABKAkSGQoRc291cmNlX2NoYW5uZWxfaWQYFCABKAkSWAoTY2Fu",
-            "Y2VsbGF0aW9uX3BvbGljeRgVIAEoCzI7LmhvbG1zLnR5cGVzLmJvb2tpbmcu",
-            "aW5kaWNhdG9ycy5DYW5jZWxsYXRpb25Qb2xpY3lJbmRpY2F0b3ISUQoSaGtf",
-            "dGltZV9wcmVmZXJlbmNlGBYgASgLMjUuaG9sbXMudHlwZXMub3BlcmF0aW9u",
-            "cy5ob3VzZWtlZXBpbmcuSG91c2VrZWVwaW5nVGltZUI5WhRib29raW5nL3Jl",
-            "c2VydmF0aW9uc6oCIEhPTE1TLlR5cGVzLkJvb2tpbmcuUmVzZXJ2YXRpb25z",
-            "YgZwcm90bzM="));
+            "aW5nL2hvdXNla2VlcGluZ190aW1lLnByb3RvGh9nb29nbGUvcHJvdG9idWYv",
+            "dGltZXN0YW1wLnByb3RvGiVvcGVyYXRpb25zL3Jvb21zL3Jvb21faW5kaWNh",
+            "dG9yLnByb3RvIpsJChJSZXNlcnZhdGlvblN1bW1hcnkSRwoJZW50aXR5X2lk",
+            "GAEgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2Vy",
+            "dmF0aW9uSW5kaWNhdG9yEhIKCmJvb2tpbmdfaWQYAiABKAkSQQoFc3RhdGUY",
+            "AyABKA4yMi5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5SZXNl",
+            "cnZhdGlvblN0YXRlEiwKBWd1ZXN0GAQgASgLMh0uaG9sbXMudHlwZXMuY3Jt",
+            "Lmd1ZXN0cy5HdWVzdBJCCgpkYXRlX3JhbmdlGAUgASgLMi4uaG9sbXMudHlw",
+            "ZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlEjoKCXJvb21f",
+            "dHlwZRgGIAEoCzInLmhvbG1zLnR5cGVzLnN1cHBseS5yb29tX3R5cGVzLlJv",
+            "b21UeXBlElYKEGd1YXJhbnRlZV9zdGF0dXMYByABKA4yPC5ob2xtcy50eXBl",
+            "cy5ib29raW5nLnJlc2VydmF0aW9ucy5SZXNlcnZhdGlvbkd1YXJhbnRlZVN0",
+            "YXR1cxIyCgd0ZW5hbmN5GAggASgLMiEuaG9sbXMudHlwZXMuaWFtLlRlbmFu",
+            "Y3lJbmRpY2F0b3ISSgoIcHJvcGVydHkYCSABKAsyOC5ob2xtcy50eXBlcy50",
+            "ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEiEK",
+            "GXZlaGljbGVfcGxhdGVfaW5mb3JtYXRpb24YCyABKAkSJAocY3VycmVudF9v",
+            "Y2N1cGllZF9yb29tX251bWJlchgMIAEoCRJKChVjdXJyZW50X29jY3VwaWVk",
+            "X3Jvb20YDSABKAsyKy5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJvb21zLlJv",
+            "b21JbmRpY2F0b3ISJQoddGVybWluYWxfb2NjdXBpZWRfcm9vbV9udW1iZXIY",
+            "DiABKAkSSwoWdGVybWluYWxfb2NjdXBpZWRfcm9vbRgPIAEoCzIrLmhvbG1z",
+            "LnR5cGVzLm9wZXJhdGlvbnMucm9vbXMuUm9vbUluZGljYXRvchIVCg1udW1i",
+            "ZXJfYWR1bHRzGBAgASgFEhcKD251bWJlcl9jaGlsZHJlbhgRIAEoBRITCgth",
+            "Y3RpdmVfdGFncxgSIAMoCRIaChJjaGFubmVsX21hbmFnZXJfaWQYEyABKAkS",
+            "GQoRc291cmNlX2NoYW5uZWxfaWQYFCABKAkSWAoTY2FuY2VsbGF0aW9uX3Bv",
+            "bGljeRgVIAEoCzI7LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5D",
+            "YW5jZWxsYXRpb25Qb2xpY3lJbmRpY2F0b3ISUQoSaGtfdGltZV9wcmVmZXJl",
+            "bmNlGBYgASgLMjUuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ob3VzZWtlZXBp",
+            "bmcuSG91c2VrZWVwaW5nVGltZRItCgl0aW1lc3RhbXAYFyABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wQjlaFGJvb2tpbmcvcmVzZXJ2YXRpb25z",
+            "qgIgSE9MTVMuVHlwZXMuQm9va2luZy5SZXNlcnZhdGlvbnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationStateReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.Housekeeping.HousekeepingTimeReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationStateReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.Housekeeping.HousekeepingTimeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationSummary), global::HOLMS.Types.Booking.Reservations.ReservationSummary.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "RoomType", "GuaranteeStatus", "Tenancy", "Property", "VehiclePlateInformation", "CurrentOccupiedRoomNumber", "CurrentOccupiedRoom", "TerminalOccupiedRoomNumber", "TerminalOccupiedRoom", "NumberAdults", "NumberChildren", "ActiveTags", "ChannelManagerId", "SourceChannelId", "CancellationPolicy", "HkTimePreference" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationSummary), global::HOLMS.Types.Booking.Reservations.ReservationSummary.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "RoomType", "GuaranteeStatus", "Tenancy", "Property", "VehiclePlateInformation", "CurrentOccupiedRoomNumber", "CurrentOccupiedRoom", "TerminalOccupiedRoomNumber", "TerminalOccupiedRoom", "NumberAdults", "NumberChildren", "ActiveTags", "ChannelManagerId", "SourceChannelId", "CancellationPolicy", "HkTimePreference", "Timestamp" }, null, null, null)
           }));
     }
     #endregion
@@ -117,6 +118,7 @@ namespace HOLMS.Types.Booking.Reservations {
       sourceChannelId_ = other.sourceChannelId_;
       CancellationPolicy = other.cancellationPolicy_ != null ? other.CancellationPolicy.Clone() : null;
       HkTimePreference = other.hkTimePreference_ != null ? other.HkTimePreference.Clone() : null;
+      Timestamp = other.timestamp_ != null ? other.Timestamp.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -357,6 +359,17 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
+    /// <summary>Field number for the "timestamp" field.</summary>
+    public const int TimestampFieldNumber = 23;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp timestamp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
+      get { return timestamp_; }
+      set {
+        timestamp_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationSummary);
@@ -391,6 +404,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (SourceChannelId != other.SourceChannelId) return false;
       if (!object.Equals(CancellationPolicy, other.CancellationPolicy)) return false;
       if (!object.Equals(HkTimePreference, other.HkTimePreference)) return false;
+      if (!object.Equals(Timestamp, other.Timestamp)) return false;
       return true;
     }
 
@@ -418,6 +432,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (SourceChannelId.Length != 0) hash ^= SourceChannelId.GetHashCode();
       if (cancellationPolicy_ != null) hash ^= CancellationPolicy.GetHashCode();
       if (hkTimePreference_ != null) hash ^= HkTimePreference.GetHashCode();
+      if (timestamp_ != null) hash ^= Timestamp.GetHashCode();
       return hash;
     }
 
@@ -509,6 +524,10 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(178, 1);
         output.WriteMessage(HkTimePreference);
       }
+      if (timestamp_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(Timestamp);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -574,6 +593,9 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (hkTimePreference_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(HkTimePreference);
+      }
+      if (timestamp_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Timestamp);
       }
       return size;
     }
@@ -673,6 +695,12 @@ namespace HOLMS.Types.Booking.Reservations {
           hkTimePreference_ = new global::HOLMS.Types.Operations.Housekeeping.HousekeepingTime();
         }
         HkTimePreference.MergeFrom(other.HkTimePreference);
+      }
+      if (other.timestamp_ != null) {
+        if (timestamp_ == null) {
+          timestamp_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Timestamp.MergeFrom(other.Timestamp);
       }
     }
 
@@ -796,6 +824,13 @@ namespace HOLMS.Types.Booking.Reservations {
               hkTimePreference_ = new global::HOLMS.Types.Operations.Housekeeping.HousekeepingTime();
             }
             input.ReadMessage(hkTimePreference_);
+            break;
+          }
+          case 186: {
+            if (timestamp_ == null) {
+              timestamp_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(timestamp_);
             break;
           }
         }
