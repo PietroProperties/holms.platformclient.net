@@ -42,5 +42,5 @@ message ReservationSummary {
 	string source_channel_id = 20;
 	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 21;
 	holms.types.operations.housekeeping.HousekeepingTime hk_time_preference = 22;
-	google.protobuf.Timestamp timestamp = 23;
+	google.protobuf.Timestamp created_at = 23;
 }
