@@ -27,22 +27,25 @@ namespace HOLMS.Types.Money.Folio {
             "bnQucHJvdG8aLm1vbmV5L2ZvbGlvL3Bvc3RlZF9jaGFyZ2VfY3JlZGl0X3Rh",
             "eF9mZWUucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8a",
             "PG1vbmV5L2FjY291bnRpbmcvYWNjb3VudGluZ190cmFuc2FjdGlvbl9saW5l",
-            "X2luZGljYXRvci5wcm90byLAAwoSUG9zdGVkQ2hhcmdlQ3JlZGl0EhMKC2Rl",
-            "c2NyaXB0aW9uGAEgASgJEkMKFHByZV90YXhfZmVlX3N1YnRvdGFsGAIgASgL",
-            "MiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkUKCnRh",
-            "eGVzX2ZlZXMYBCADKAsyMS5ob2xtcy50eXBlcy5tb25leS5mb2xpby5Qb3N0",
-            "ZWRDaGFyZ2VDcmVkaXRUYXhGZWUSLwoLcG9zdGVkX3RpbWUYBSABKAsyGi5n",
-            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wEkAKBXRheGVzGAYgAygLMjEuaG9s",
-            "bXMudHlwZXMubW9uZXkuZm9saW8uUG9zdGVkQ2hhcmdlQ3JlZGl0VGF4RmVl",
-            "Ej8KBGZlZXMYByADKAsyMS5ob2xtcy50eXBlcy5tb25leS5mb2xpby5Qb3N0",
-            "ZWRDaGFyZ2VDcmVkaXRUYXhGZWUSVQoLcGFyZW50X2xpbmUYCCABKAsyQC5o",
-            "b2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLkFjY291bnRpbmdUcmFuc2Fj",
-            "dGlvbkxpbmVJbmRpY2F0b3JCJ1oLbW9uZXkvZm9saW+qAhdIT0xNUy5UeXBl",
-            "cy5Nb25leS5Gb2xpb2IGcHJvdG8z"));
+            "X2luZGljYXRvci5wcm90bxoxbW9uZXkvZm9saW8vcG9zdGVkX2NoYXJnZV9j",
+            "cmVkaXRfZm9saW9fc3dhcC5wcm90byKLBAoSUG9zdGVkQ2hhcmdlQ3JlZGl0",
+            "EhMKC2Rlc2NyaXB0aW9uGAEgASgJEkMKFHByZV90YXhfZmVlX3N1YnRvdGFs",
+            "GAIgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
+            "EkUKCnRheGVzX2ZlZXMYBCADKAsyMS5ob2xtcy50eXBlcy5tb25leS5mb2xp",
+            "by5Qb3N0ZWRDaGFyZ2VDcmVkaXRUYXhGZWUSLwoLcG9zdGVkX3RpbWUYBSAB",
+            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEkAKBXRheGVzGAYgAygL",
+            "MjEuaG9sbXMudHlwZXMubW9uZXkuZm9saW8uUG9zdGVkQ2hhcmdlQ3JlZGl0",
+            "VGF4RmVlEj8KBGZlZXMYByADKAsyMS5ob2xtcy50eXBlcy5tb25leS5mb2xp",
+            "by5Qb3N0ZWRDaGFyZ2VDcmVkaXRUYXhGZWUSVQoLcGFyZW50X2xpbmUYCCAB",
+            "KAsyQC5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLkFjY291bnRpbmdU",
+            "cmFuc2FjdGlvbkxpbmVJbmRpY2F0b3ISSQoLZm9saW9fc3dhcHMYCSADKAsy",
+            "NC5ob2xtcy50eXBlcy5tb25leS5mb2xpby5Qb3N0ZWRDaGFyZ2VDcmVkaXRG",
+            "b2xpb1N3YXBCJ1oLbW9uZXkvZm9saW+qAhdIT0xNUy5UeXBlcy5Nb25leS5G",
+            "b2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditTaxFeeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditTaxFeeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditFolioSwapReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedChargeCredit), global::HOLMS.Types.Money.Folio.PostedChargeCredit.Parser, new[]{ "Description", "PreTaxFeeSubtotal", "TaxesFees", "PostedTime", "Taxes", "Fees", "ParentLine" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedChargeCredit), global::HOLMS.Types.Money.Folio.PostedChargeCredit.Parser, new[]{ "Description", "PreTaxFeeSubtotal", "TaxesFees", "PostedTime", "Taxes", "Fees", "ParentLine", "FolioSwaps" }, null, null, null)
           }));
     }
     #endregion
@@ -80,6 +83,7 @@ namespace HOLMS.Types.Money.Folio {
       taxes_ = other.taxes_.Clone();
       fees_ = other.fees_.Clone();
       ParentLine = other.parentLine_ != null ? other.ParentLine.Clone() : null;
+      folioSwaps_ = other.folioSwaps_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -161,6 +165,16 @@ namespace HOLMS.Types.Money.Folio {
       }
     }
 
+    /// <summary>Field number for the "folio_swaps" field.</summary>
+    public const int FolioSwapsFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Folio.PostedChargeCreditFolioSwap> _repeated_folioSwaps_codec
+        = pb::FieldCodec.ForMessage(74, global::HOLMS.Types.Money.Folio.PostedChargeCreditFolioSwap.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Folio.PostedChargeCreditFolioSwap> folioSwaps_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Folio.PostedChargeCreditFolioSwap>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Money.Folio.PostedChargeCreditFolioSwap> FolioSwaps {
+      get { return folioSwaps_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PostedChargeCredit);
@@ -181,6 +195,7 @@ namespace HOLMS.Types.Money.Folio {
       if(!taxes_.Equals(other.taxes_)) return false;
       if(!fees_.Equals(other.fees_)) return false;
       if (!object.Equals(ParentLine, other.ParentLine)) return false;
+      if(!folioSwaps_.Equals(other.folioSwaps_)) return false;
       return true;
     }
 
@@ -194,6 +209,7 @@ namespace HOLMS.Types.Money.Folio {
       hash ^= taxes_.GetHashCode();
       hash ^= fees_.GetHashCode();
       if (parentLine_ != null) hash ^= ParentLine.GetHashCode();
+      hash ^= folioSwaps_.GetHashCode();
       return hash;
     }
 
@@ -223,6 +239,7 @@ namespace HOLMS.Types.Money.Folio {
         output.WriteRawTag(66);
         output.WriteMessage(ParentLine);
       }
+      folioSwaps_.WriteTo(output, _repeated_folioSwaps_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -243,6 +260,7 @@ namespace HOLMS.Types.Money.Folio {
       if (parentLine_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ParentLine);
       }
+      size += folioSwaps_.CalculateSize(_repeated_folioSwaps_codec);
       return size;
     }
 
@@ -275,6 +293,7 @@ namespace HOLMS.Types.Money.Folio {
         }
         ParentLine.MergeFrom(other.ParentLine);
       }
+      folioSwaps_.Add(other.folioSwaps_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -320,6 +339,10 @@ namespace HOLMS.Types.Money.Folio {
               parentLine_ = new global::HOLMS.Types.Money.Accounting.AccountingTransactionLineIndicator();
             }
             input.ReadMessage(parentLine_);
+            break;
+          }
+          case 74: {
+            folioSwaps_.AddEntriesFrom(input, _repeated_folioSwaps_codec);
             break;
           }
         }
