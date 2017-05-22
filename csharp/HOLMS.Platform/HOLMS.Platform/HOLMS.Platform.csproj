@@ -466,6 +466,7 @@
     <Compile Include="Types\out\PingRequest.cs" />
     <Compile Include="Types\out\PingResponse.cs" />
     <Compile Include="Types\out\PostedChargeCredit.cs" />
+    <Compile Include="Types\out\PostedChargeCreditFolioSwap.cs" />
     <Compile Include="Types\out\PostedChargeCreditTaxFee.cs" />
     <Compile Include="Types\out\PostedPayment.cs" />
     <Compile Include="Types\out\PostedRefund.cs" />
