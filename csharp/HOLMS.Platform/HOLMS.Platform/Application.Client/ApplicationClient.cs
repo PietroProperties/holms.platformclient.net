@@ -21,8 +21,8 @@ namespace HOLMS.Application.Client {
         private const int MinutesToSeconds = 60;
         private const int AutoRefreshMinsBeforeExpiry = 5;
 
-        private readonly IApplicationClientConfig _sp;
-        private readonly string _clientId;
+        private IApplicationClientConfig _sp;
+        private string _clientId;
 
         private Channel _authenticatedChannel;
         private Timer _refreshTimer;
@@ -138,6 +138,19 @@ namespace HOLMS.Application.Client {
         public ApplicationClient(IApplicationClientConfig config, ILogger logger, string oauth2ClientId) {
             _sp = config;
             Logger = logger;
+            _clientId = oauth2ClientId;
+        }
+
+        /// <summary>
+        /// Used to update the server connection profile. Disposes existing session.
+        /// </summary>
+        /// <param name="config"></param>
+        /// <param name="oauth2ClientId"></param>
+        public virtual void UpdateConfiguration(IApplicationClientConfig config, string oauth2ClientId) {
+            //Taken as a precautionary measure. This configuration update is intended 
+            //to be done while the session is not active - before logging in, or after logging out
+            EndSession();
+            _sp = config;
             _clientId = oauth2ClientId;
         }
 
