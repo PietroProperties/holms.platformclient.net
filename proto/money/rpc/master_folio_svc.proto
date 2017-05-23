@@ -4,6 +4,7 @@ package holms.types.money.rpc;
 option csharp_namespace = "HOLMS.Types.Money.RPC";
 
 import "booking/indicators/reservation_indicator.proto";
+import "booking/reservations/reservation_query_filter.proto";
 import "money/folio/posted_charge_credit.proto";
 
 message MasterFolioServiceMasterFolioRequest {
@@ -48,8 +49,21 @@ enum MasterFolioSvcFolioSwapResult {
 	MASTER_FOLIO_SVC_FOLIO_SWAP_FAILURE_UNKNOWN = 3;
 }
 
+message MasterFolioSvcReservationMasterFolioAssignmentList {
+	repeated ReservationMasterFolioAssignment assignments = 1;
+}
+
+message ReservationMasterFolioAssignment {
+	.holms.types.booking.indicators.ReservationIndicator client_folio = 1;
+	.holms.types.booking.indicators.ReservationIndicator master_folio = 2;
+}
+
 message MasterFolioSvcFolioSwapResponse {
 	MasterFolioSvcFolioSwapResult result = 1;
+}
+
+message MasterFolioSvcGetMasterFolioAssignmentsRequest {
+	.holms.types.booking.reservations.ReservationQueryFilter filter = 1;
 }
 
 service MasterFolioSvc {
@@ -61,4 +75,7 @@ service MasterFolioSvc {
 
 	rpc FolioSwap(holms.types.money.folio.PostedChargeCredit)
 		returns(MasterFolioSvcFolioSwapResponse);
+
+	rpc GetMasterFolioAssignments(MasterFolioSvcGetMasterFolioAssignmentsRequest) 
+		returns (MasterFolioSvcReservationMasterFolioAssignmentList);
 }

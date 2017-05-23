@@ -24,62 +24,80 @@ namespace HOLMS.Types.Money.RPC {
           string.Concat(
             "CiBtb25leS9ycGMvbWFzdGVyX2ZvbGlvX3N2Yy5wcm90bxIVaG9sbXMudHlw",
             "ZXMubW9uZXkucnBjGi5ib29raW5nL2luZGljYXRvcnMvcmVzZXJ2YXRpb25f",
-            "aW5kaWNhdG9yLnByb3RvGiZtb25leS9mb2xpby9wb3N0ZWRfY2hhcmdlX2Ny",
-            "ZWRpdC5wcm90byKCAgokTWFzdGVyRm9saW9TZXJ2aWNlTWFzdGVyRm9saW9S",
-            "ZXF1ZXN0EkoKDGNsaWVudF9mb2xpbxgBIAEoCzI0LmhvbG1zLnR5cGVzLmJv",
-            "b2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchJKCgxtYXN0",
-            "ZXJfZm9saW8YAiABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRv",
-            "cnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISHgoWbWFzdGVyX2FjY3J1ZXNfbG9k",
-            "Z2luZxgDIAEoCBIiChptYXN0ZXJfYWNjcnVlc19pbmNpZGVudGFscxgEIAEo",
-            "CCKCAQosTWFzdGVyRm9saW9TZXJ2aWNlUmVxdWVzdE1hc3RlckZvbGlvUmVz",
-            "cG9uc2USUgoGcmVzdWx0GAEgASgOMkIuaG9sbXMudHlwZXMubW9uZXkucnBj",
-            "LlJlc2VydmF0aW9uRm9saW9TdmNSZXF1ZXN0TWFzdGVyRm9saW9SZXN1bHQi",
-            "dAomTWFzdGVyRm9saW9TdmNSZW1vdmVNYXN0ZXJGb2xpb1JlcXVlc3QSSgoM",
-            "Y2xpZW50X2ZvbGlvGAEgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRp",
-            "Y2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yIoABCitNYXN0ZXJGb2xpb1Nl",
-            "cnZpY2VSZW1vdmVNYXN0ZXJGb2xpb1Jlc3BvbnNlElEKBnJlc3VsdBgBIAEo",
-            "DjJBLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5SZXNlcnZhdGlvbkZvbGlvU3Zj",
-            "UmVtb3ZlTWFzdGVyRm9saW9SZXN1bHQiZwofTWFzdGVyRm9saW9TdmNGb2xp",
-            "b1N3YXBSZXNwb25zZRJECgZyZXN1bHQYASABKA4yNC5ob2xtcy50eXBlcy5t",
-            "b25leS5ycGMuTWFzdGVyRm9saW9TdmNGb2xpb1N3YXBSZXN1bHQqsgMKK1Jl",
-            "c2VydmF0aW9uRm9saW9TdmNSZXF1ZXN0TWFzdGVyRm9saW9SZXN1bHQSLAoo",
-            "TUFTVEVSX0ZPTElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19PSxAAEjsK",
-            "N01BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJfRk9MSU9fQ0xJRU5U",
-            "X0hBU19NQVNURVIQARI7CjdNQVNURVJfRk9MSU9fU1ZDX1JFUVVFU1RfTUFT",
-            "VEVSX0ZPTElPX01BU1RFUl9IQVNfTUFTVEVSEAISLgoqTUFTVEVSX0ZPTElP",
-            "X1NWQ19SRVFVRVNUX0NMSUVOVF9IQVNfQ0xJRU5UEAMSOwo3TUFTVEVSX0ZP",
-            "TElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19ESVNBTExPV0VEX01BU1RF",
-            "UhAEEjsKN01BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJfRk9MSU9f",
-            "RElTQUxMT1dFRF9DTElFTlQQBRIxCi1NQVNURVJfRk9MSU9fU1ZDX1JFUVVF",
-            "U1RfTUFTVEVSX0ZPTElPX0ZBSUxVUkUQBiq/AQoqUmVzZXJ2YXRpb25Gb2xp",
-            "b1N2Y1JlbW92ZU1hc3RlckZvbGlvUmVzdWx0EisKJ01BU1RFUl9GT0xJT19T",
-            "VkNfUkVNT1ZFX01BU1RFUl9GT0xJT19PSxAAEjIKLk1BU1RFUl9GT0xJT19T",
-            "VkNfUkVNT1ZFX01BU1RFUl9GT0xJT19OT19NQVNURVIQARIwCixNQVNURVJf",
-            "Rk9MSU9fU1ZDX1JFTU9WRV9NQVNURVJfRk9MSU9fRkFJTFVSRRACKt4BCh1N",
-            "YXN0ZXJGb2xpb1N2Y0ZvbGlvU3dhcFJlc3VsdBIiCh5NQVNURVJfRk9MSU9f",
-            "U1ZDX0ZPTElPX1NXQVBfT0sQABI3CjNNQVNURVJfRk9MSU9fU1ZDX0ZPTElP",
-            "X1NXQVBfSU5WQUxJRF9OT19NQVNURVJfRk9MSU8QARIvCitNQVNURVJfRk9M",
-            "SU9fU1ZDX0ZPTElPX1NXQVBfSU5WQUxJRF9VTktOT1dOEAISLworTUFTVEVS",
-            "X0ZPTElPX1NWQ19GT0xJT19TV0FQX0ZBSUxVUkVfVU5LTk9XThADMrQDCg5N",
-            "YXN0ZXJGb2xpb1N2YxKWAQoSUmVxdWVzdE1hc3RlckZvbGlvEjsuaG9sbXMu",
-            "dHlwZXMubW9uZXkucnBjLk1hc3RlckZvbGlvU2VydmljZU1hc3RlckZvbGlv",
-            "UmVxdWVzdBpDLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5NYXN0ZXJGb2xpb1Nl",
-            "cnZpY2VSZXF1ZXN0TWFzdGVyRm9saW9SZXNwb25zZRKWAQoRUmVtb3ZlTWFz",
-            "dGVyRm9saW8SPS5ob2xtcy50eXBlcy5tb25leS5ycGMuTWFzdGVyRm9saW9T",
-            "dmNSZW1vdmVNYXN0ZXJGb2xpb1JlcXVlc3QaQi5ob2xtcy50eXBlcy5tb25l",
-            "eS5ycGMuTWFzdGVyRm9saW9TZXJ2aWNlUmVtb3ZlTWFzdGVyRm9saW9SZXNw",
-            "b25zZRJwCglGb2xpb1N3YXASKy5ob2xtcy50eXBlcy5tb25leS5mb2xpby5Q",
-            "b3N0ZWRDaGFyZ2VDcmVkaXQaNi5ob2xtcy50eXBlcy5tb25leS5ycGMuTWFz",
-            "dGVyRm9saW9TdmNGb2xpb1N3YXBSZXNwb25zZUIYqgIVSE9MTVMuVHlwZXMu",
+            "aW5kaWNhdG9yLnByb3RvGjNib29raW5nL3Jlc2VydmF0aW9ucy9yZXNlcnZh",
+            "dGlvbl9xdWVyeV9maWx0ZXIucHJvdG8aJm1vbmV5L2ZvbGlvL3Bvc3RlZF9j",
+            "aGFyZ2VfY3JlZGl0LnByb3RvIoICCiRNYXN0ZXJGb2xpb1NlcnZpY2VNYXN0",
+            "ZXJGb2xpb1JlcXVlc3QSSgoMY2xpZW50X2ZvbGlvGAEgASgLMjQuaG9sbXMu",
+            "dHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9y",
+            "EkoKDG1hc3Rlcl9mb2xpbxgCIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcu",
+            "aW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchIeChZtYXN0ZXJfYWNj",
+            "cnVlc19sb2RnaW5nGAMgASgIEiIKGm1hc3Rlcl9hY2NydWVzX2luY2lkZW50",
+            "YWxzGAQgASgIIoIBCixNYXN0ZXJGb2xpb1NlcnZpY2VSZXF1ZXN0TWFzdGVy",
+            "Rm9saW9SZXNwb25zZRJSCgZyZXN1bHQYASABKA4yQi5ob2xtcy50eXBlcy5t",
+            "b25leS5ycGMuUmVzZXJ2YXRpb25Gb2xpb1N2Y1JlcXVlc3RNYXN0ZXJGb2xp",
+            "b1Jlc3VsdCJ0CiZNYXN0ZXJGb2xpb1N2Y1JlbW92ZU1hc3RlckZvbGlvUmVx",
+            "dWVzdBJKCgxjbGllbnRfZm9saW8YASABKAsyNC5ob2xtcy50eXBlcy5ib29r",
+            "aW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3IigAEKK01hc3Rl",
+            "ckZvbGlvU2VydmljZVJlbW92ZU1hc3RlckZvbGlvUmVzcG9uc2USUQoGcmVz",
+            "dWx0GAEgASgOMkEuaG9sbXMudHlwZXMubW9uZXkucnBjLlJlc2VydmF0aW9u",
+            "Rm9saW9TdmNSZW1vdmVNYXN0ZXJGb2xpb1Jlc3VsdCKCAQoyTWFzdGVyRm9s",
+            "aW9TdmNSZXNlcnZhdGlvbk1hc3RlckZvbGlvQXNzaWdubWVudExpc3QSTAoL",
+            "YXNzaWdubWVudHMYASADKAsyNy5ob2xtcy50eXBlcy5tb25leS5ycGMuUmVz",
+            "ZXJ2YXRpb25NYXN0ZXJGb2xpb0Fzc2lnbm1lbnQiugEKIFJlc2VydmF0aW9u",
+            "TWFzdGVyRm9saW9Bc3NpZ25tZW50EkoKDGNsaWVudF9mb2xpbxgBIAEoCzI0",
+            "LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbklu",
+            "ZGljYXRvchJKCgxtYXN0ZXJfZm9saW8YAiABKAsyNC5ob2xtcy50eXBlcy5i",
+            "b29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3IiZwofTWFz",
+            "dGVyRm9saW9TdmNGb2xpb1N3YXBSZXNwb25zZRJECgZyZXN1bHQYASABKA4y",
+            "NC5ob2xtcy50eXBlcy5tb25leS5ycGMuTWFzdGVyRm9saW9TdmNGb2xpb1N3",
+            "YXBSZXN1bHQiegouTWFzdGVyRm9saW9TdmNHZXRNYXN0ZXJGb2xpb0Fzc2ln",
+            "bm1lbnRzUmVxdWVzdBJICgZmaWx0ZXIYASABKA4yOC5ob2xtcy50eXBlcy5i",
+            "b29raW5nLnJlc2VydmF0aW9ucy5SZXNlcnZhdGlvblF1ZXJ5RmlsdGVyKrID",
+            "CitSZXNlcnZhdGlvbkZvbGlvU3ZjUmVxdWVzdE1hc3RlckZvbGlvUmVzdWx0",
+            "EiwKKE1BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJfRk9MSU9fT0sQ",
+            "ABI7CjdNQVNURVJfRk9MSU9fU1ZDX1JFUVVFU1RfTUFTVEVSX0ZPTElPX0NM",
+            "SUVOVF9IQVNfTUFTVEVSEAESOwo3TUFTVEVSX0ZPTElPX1NWQ19SRVFVRVNU",
+            "X01BU1RFUl9GT0xJT19NQVNURVJfSEFTX01BU1RFUhACEi4KKk1BU1RFUl9G",
+            "T0xJT19TVkNfUkVRVUVTVF9DTElFTlRfSEFTX0NMSUVOVBADEjsKN01BU1RF",
+            "Ul9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJfRk9MSU9fRElTQUxMT1dFRF9N",
+            "QVNURVIQBBI7CjdNQVNURVJfRk9MSU9fU1ZDX1JFUVVFU1RfTUFTVEVSX0ZP",
+            "TElPX0RJU0FMTE9XRURfQ0xJRU5UEAUSMQotTUFTVEVSX0ZPTElPX1NWQ19S",
+            "RVFVRVNUX01BU1RFUl9GT0xJT19GQUlMVVJFEAYqvwEKKlJlc2VydmF0aW9u",
+            "Rm9saW9TdmNSZW1vdmVNYXN0ZXJGb2xpb1Jlc3VsdBIrCidNQVNURVJfRk9M",
+            "SU9fU1ZDX1JFTU9WRV9NQVNURVJfRk9MSU9fT0sQABIyCi5NQVNURVJfRk9M",
+            "SU9fU1ZDX1JFTU9WRV9NQVNURVJfRk9MSU9fTk9fTUFTVEVSEAESMAosTUFT",
+            "VEVSX0ZPTElPX1NWQ19SRU1PVkVfTUFTVEVSX0ZPTElPX0ZBSUxVUkUQAire",
+            "AQodTWFzdGVyRm9saW9TdmNGb2xpb1N3YXBSZXN1bHQSIgoeTUFTVEVSX0ZP",
+            "TElPX1NWQ19GT0xJT19TV0FQX09LEAASNwozTUFTVEVSX0ZPTElPX1NWQ19G",
+            "T0xJT19TV0FQX0lOVkFMSURfTk9fTUFTVEVSX0ZPTElPEAESLworTUFTVEVS",
+            "X0ZPTElPX1NWQ19GT0xJT19TV0FQX0lOVkFMSURfVU5LTk9XThACEi8KK01B",
+            "U1RFUl9GT0xJT19TVkNfRk9MSU9fU1dBUF9GQUlMVVJFX1VOS05PV04QAzLk",
+            "BAoOTWFzdGVyRm9saW9TdmMSlgEKElJlcXVlc3RNYXN0ZXJGb2xpbxI7Lmhv",
+            "bG1zLnR5cGVzLm1vbmV5LnJwYy5NYXN0ZXJGb2xpb1NlcnZpY2VNYXN0ZXJG",
+            "b2xpb1JlcXVlc3QaQy5ob2xtcy50eXBlcy5tb25leS5ycGMuTWFzdGVyRm9s",
+            "aW9TZXJ2aWNlUmVxdWVzdE1hc3RlckZvbGlvUmVzcG9uc2USlgEKEVJlbW92",
+            "ZU1hc3RlckZvbGlvEj0uaG9sbXMudHlwZXMubW9uZXkucnBjLk1hc3RlckZv",
+            "bGlvU3ZjUmVtb3ZlTWFzdGVyRm9saW9SZXF1ZXN0GkIuaG9sbXMudHlwZXMu",
+            "bW9uZXkucnBjLk1hc3RlckZvbGlvU2VydmljZVJlbW92ZU1hc3RlckZvbGlv",
+            "UmVzcG9uc2UScAoJRm9saW9Td2FwEisuaG9sbXMudHlwZXMubW9uZXkuZm9s",
+            "aW8uUG9zdGVkQ2hhcmdlQ3JlZGl0GjYuaG9sbXMudHlwZXMubW9uZXkucnBj",
+            "Lk1hc3RlckZvbGlvU3ZjRm9saW9Td2FwUmVzcG9uc2USrQEKGUdldE1hc3Rl",
+            "ckZvbGlvQXNzaWdubWVudHMSRS5ob2xtcy50eXBlcy5tb25leS5ycGMuTWFz",
+            "dGVyRm9saW9TdmNHZXRNYXN0ZXJGb2xpb0Fzc2lnbm1lbnRzUmVxdWVzdBpJ",
+            "LmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5NYXN0ZXJGb2xpb1N2Y1Jlc2VydmF0",
+            "aW9uTWFzdGVyRm9saW9Bc3NpZ25tZW50TGlzdEIYqgIVSE9MTVMuVHlwZXMu",
             "TW9uZXkuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationQueryFilterReflection.Descriptor, global::HOLMS.Types.Money.Folio.PostedChargeCreditReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.RPC.ReservationFolioSvcRequestMasterFolioResult), typeof(global::HOLMS.Types.Money.RPC.ReservationFolioSvcRemoveMasterFolioResult), typeof(global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResult), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioServiceMasterFolioRequest), global::HOLMS.Types.Money.RPC.MasterFolioServiceMasterFolioRequest.Parser, new[]{ "ClientFolio", "MasterFolio", "MasterAccruesLodging", "MasterAccruesIncidentals" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioServiceRequestMasterFolioResponse), global::HOLMS.Types.Money.RPC.MasterFolioServiceRequestMasterFolioResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioSvcRemoveMasterFolioRequest), global::HOLMS.Types.Money.RPC.MasterFolioSvcRemoveMasterFolioRequest.Parser, new[]{ "ClientFolio" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioServiceRemoveMasterFolioResponse), global::HOLMS.Types.Money.RPC.MasterFolioServiceRemoveMasterFolioResponse.Parser, new[]{ "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse), global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse.Parser, new[]{ "Result" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioSvcReservationMasterFolioAssignmentList), global::HOLMS.Types.Money.RPC.MasterFolioSvcReservationMasterFolioAssignmentList.Parser, new[]{ "Assignments" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.ReservationMasterFolioAssignment), global::HOLMS.Types.Money.RPC.ReservationMasterFolioAssignment.Parser, new[]{ "ClientFolio", "MasterFolio" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse), global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse.Parser, new[]{ "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MasterFolioSvcGetMasterFolioAssignmentsRequest), global::HOLMS.Types.Money.RPC.MasterFolioSvcGetMasterFolioAssignmentsRequest.Parser, new[]{ "Filter" }, null, null, null)
           }));
     }
     #endregion
@@ -682,6 +700,272 @@ namespace HOLMS.Types.Money.RPC {
 
   }
 
+  public sealed partial class MasterFolioSvcReservationMasterFolioAssignmentList : pb::IMessage<MasterFolioSvcReservationMasterFolioAssignmentList> {
+    private static readonly pb::MessageParser<MasterFolioSvcReservationMasterFolioAssignmentList> _parser = new pb::MessageParser<MasterFolioSvcReservationMasterFolioAssignmentList>(() => new MasterFolioSvcReservationMasterFolioAssignmentList());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MasterFolioSvcReservationMasterFolioAssignmentList> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.MasterFolioSvcReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MasterFolioSvcReservationMasterFolioAssignmentList() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MasterFolioSvcReservationMasterFolioAssignmentList(MasterFolioSvcReservationMasterFolioAssignmentList other) : this() {
+      assignments_ = other.assignments_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MasterFolioSvcReservationMasterFolioAssignmentList Clone() {
+      return new MasterFolioSvcReservationMasterFolioAssignmentList(this);
+    }
+
+    /// <summary>Field number for the "assignments" field.</summary>
+    public const int AssignmentsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.RPC.ReservationMasterFolioAssignment> _repeated_assignments_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Money.RPC.ReservationMasterFolioAssignment.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.RPC.ReservationMasterFolioAssignment> assignments_ = new pbc::RepeatedField<global::HOLMS.Types.Money.RPC.ReservationMasterFolioAssignment>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Money.RPC.ReservationMasterFolioAssignment> Assignments {
+      get { return assignments_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MasterFolioSvcReservationMasterFolioAssignmentList);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MasterFolioSvcReservationMasterFolioAssignmentList other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!assignments_.Equals(other.assignments_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= assignments_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      assignments_.WriteTo(output, _repeated_assignments_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += assignments_.CalculateSize(_repeated_assignments_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MasterFolioSvcReservationMasterFolioAssignmentList other) {
+      if (other == null) {
+        return;
+      }
+      assignments_.Add(other.assignments_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            assignments_.AddEntriesFrom(input, _repeated_assignments_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class ReservationMasterFolioAssignment : pb::IMessage<ReservationMasterFolioAssignment> {
+    private static readonly pb::MessageParser<ReservationMasterFolioAssignment> _parser = new pb::MessageParser<ReservationMasterFolioAssignment>(() => new ReservationMasterFolioAssignment());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ReservationMasterFolioAssignment> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.MasterFolioSvcReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReservationMasterFolioAssignment() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReservationMasterFolioAssignment(ReservationMasterFolioAssignment other) : this() {
+      ClientFolio = other.clientFolio_ != null ? other.ClientFolio.Clone() : null;
+      MasterFolio = other.masterFolio_ != null ? other.MasterFolio.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReservationMasterFolioAssignment Clone() {
+      return new ReservationMasterFolioAssignment(this);
+    }
+
+    /// <summary>Field number for the "client_folio" field.</summary>
+    public const int ClientFolioFieldNumber = 1;
+    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator clientFolio_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator ClientFolio {
+      get { return clientFolio_; }
+      set {
+        clientFolio_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "master_folio" field.</summary>
+    public const int MasterFolioFieldNumber = 2;
+    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator masterFolio_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator MasterFolio {
+      get { return masterFolio_; }
+      set {
+        masterFolio_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ReservationMasterFolioAssignment);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ReservationMasterFolioAssignment other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ClientFolio, other.ClientFolio)) return false;
+      if (!object.Equals(MasterFolio, other.MasterFolio)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (clientFolio_ != null) hash ^= ClientFolio.GetHashCode();
+      if (masterFolio_ != null) hash ^= MasterFolio.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (clientFolio_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ClientFolio);
+      }
+      if (masterFolio_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MasterFolio);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (clientFolio_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClientFolio);
+      }
+      if (masterFolio_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MasterFolio);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ReservationMasterFolioAssignment other) {
+      if (other == null) {
+        return;
+      }
+      if (other.clientFolio_ != null) {
+        if (clientFolio_ == null) {
+          clientFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+        }
+        ClientFolio.MergeFrom(other.ClientFolio);
+      }
+      if (other.masterFolio_ != null) {
+        if (masterFolio_ == null) {
+          masterFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+        }
+        MasterFolio.MergeFrom(other.MasterFolio);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (clientFolio_ == null) {
+              clientFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+            }
+            input.ReadMessage(clientFolio_);
+            break;
+          }
+          case 18: {
+            if (masterFolio_ == null) {
+              masterFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+            }
+            input.ReadMessage(masterFolio_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class MasterFolioSvcFolioSwapResponse : pb::IMessage<MasterFolioSvcFolioSwapResponse> {
     private static readonly pb::MessageParser<MasterFolioSvcFolioSwapResponse> _parser = new pb::MessageParser<MasterFolioSvcFolioSwapResponse>(() => new MasterFolioSvcFolioSwapResponse());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -689,7 +973,7 @@ namespace HOLMS.Types.Money.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.MasterFolioSvcReflection.Descriptor.MessageTypes[4]; }
+      get { return global::HOLMS.Types.Money.RPC.MasterFolioSvcReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -791,6 +1075,123 @@ namespace HOLMS.Types.Money.RPC {
             break;
           case 8: {
             result_ = (global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResult) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class MasterFolioSvcGetMasterFolioAssignmentsRequest : pb::IMessage<MasterFolioSvcGetMasterFolioAssignmentsRequest> {
+    private static readonly pb::MessageParser<MasterFolioSvcGetMasterFolioAssignmentsRequest> _parser = new pb::MessageParser<MasterFolioSvcGetMasterFolioAssignmentsRequest>(() => new MasterFolioSvcGetMasterFolioAssignmentsRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MasterFolioSvcGetMasterFolioAssignmentsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.MasterFolioSvcReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MasterFolioSvcGetMasterFolioAssignmentsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MasterFolioSvcGetMasterFolioAssignmentsRequest(MasterFolioSvcGetMasterFolioAssignmentsRequest other) : this() {
+      filter_ = other.filter_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MasterFolioSvcGetMasterFolioAssignmentsRequest Clone() {
+      return new MasterFolioSvcGetMasterFolioAssignmentsRequest(this);
+    }
+
+    /// <summary>Field number for the "filter" field.</summary>
+    public const int FilterFieldNumber = 1;
+    private global::HOLMS.Types.Booking.Reservations.ReservationQueryFilter filter_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Reservations.ReservationQueryFilter Filter {
+      get { return filter_; }
+      set {
+        filter_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MasterFolioSvcGetMasterFolioAssignmentsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MasterFolioSvcGetMasterFolioAssignmentsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Filter != other.Filter) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Filter != 0) hash ^= Filter.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Filter != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Filter);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Filter != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Filter);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MasterFolioSvcGetMasterFolioAssignmentsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Filter != 0) {
+        Filter = other.Filter;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            filter_ = (global::HOLMS.Types.Booking.Reservations.ReservationQueryFilter) input.ReadEnum();
             break;
           }
         }

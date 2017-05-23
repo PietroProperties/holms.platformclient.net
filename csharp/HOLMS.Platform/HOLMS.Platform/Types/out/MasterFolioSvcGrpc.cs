@@ -18,6 +18,8 @@ namespace HOLMS.Types.Money.RPC {
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.MasterFolioServiceRemoveMasterFolioResponse> __Marshaller_MasterFolioServiceRemoveMasterFolioResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.MasterFolioServiceRemoveMasterFolioResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Folio.PostedChargeCredit> __Marshaller_PostedChargeCredit = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Folio.PostedChargeCredit.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse> __Marshaller_MasterFolioSvcFolioSwapResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.MasterFolioSvcGetMasterFolioAssignmentsRequest> __Marshaller_MasterFolioSvcGetMasterFolioAssignmentsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.MasterFolioSvcGetMasterFolioAssignmentsRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.MasterFolioSvcReservationMasterFolioAssignmentList> __Marshaller_MasterFolioSvcReservationMasterFolioAssignmentList = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.MasterFolioSvcReservationMasterFolioAssignmentList.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Money.RPC.MasterFolioServiceMasterFolioRequest, global::HOLMS.Types.Money.RPC.MasterFolioServiceRequestMasterFolioResponse> __Method_RequestMasterFolio = new Method<global::HOLMS.Types.Money.RPC.MasterFolioServiceMasterFolioRequest, global::HOLMS.Types.Money.RPC.MasterFolioServiceRequestMasterFolioResponse>(
         MethodType.Unary,
@@ -40,6 +42,13 @@ namespace HOLMS.Types.Money.RPC {
         __Marshaller_PostedChargeCredit,
         __Marshaller_MasterFolioSvcFolioSwapResponse);
 
+    static readonly Method<global::HOLMS.Types.Money.RPC.MasterFolioSvcGetMasterFolioAssignmentsRequest, global::HOLMS.Types.Money.RPC.MasterFolioSvcReservationMasterFolioAssignmentList> __Method_GetMasterFolioAssignments = new Method<global::HOLMS.Types.Money.RPC.MasterFolioSvcGetMasterFolioAssignmentsRequest, global::HOLMS.Types.Money.RPC.MasterFolioSvcReservationMasterFolioAssignmentList>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetMasterFolioAssignments",
+        __Marshaller_MasterFolioSvcGetMasterFolioAssignmentsRequest,
+        __Marshaller_MasterFolioSvcReservationMasterFolioAssignmentList);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -60,6 +69,11 @@ namespace HOLMS.Types.Money.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.MasterFolioSvcFolioSwapResponse> FolioSwap(global::HOLMS.Types.Money.Folio.PostedChargeCredit request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.MasterFolioSvcReservationMasterFolioAssignmentList> GetMasterFolioAssignments(global::HOLMS.Types.Money.RPC.MasterFolioSvcGetMasterFolioAssignmentsRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -137,6 +151,22 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_FolioSwap, null, options, request);
       }
+      public virtual global::HOLMS.Types.Money.RPC.MasterFolioSvcReservationMasterFolioAssignmentList GetMasterFolioAssignments(global::HOLMS.Types.Money.RPC.MasterFolioSvcGetMasterFolioAssignmentsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetMasterFolioAssignments(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Money.RPC.MasterFolioSvcReservationMasterFolioAssignmentList GetMasterFolioAssignments(global::HOLMS.Types.Money.RPC.MasterFolioSvcGetMasterFolioAssignmentsRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMasterFolioAssignments, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.MasterFolioSvcReservationMasterFolioAssignmentList> GetMasterFolioAssignmentsAsync(global::HOLMS.Types.Money.RPC.MasterFolioSvcGetMasterFolioAssignmentsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetMasterFolioAssignmentsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.MasterFolioSvcReservationMasterFolioAssignmentList> GetMasterFolioAssignmentsAsync(global::HOLMS.Types.Money.RPC.MasterFolioSvcGetMasterFolioAssignmentsRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMasterFolioAssignments, null, options, request);
+      }
       protected override MasterFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new MasterFolioSvcClient(configuration);
@@ -149,7 +179,8 @@ namespace HOLMS.Types.Money.RPC {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_RequestMasterFolio, serviceImpl.RequestMasterFolio)
           .AddMethod(__Method_RemoveMasterFolio, serviceImpl.RemoveMasterFolio)
-          .AddMethod(__Method_FolioSwap, serviceImpl.FolioSwap).Build();
+          .AddMethod(__Method_FolioSwap, serviceImpl.FolioSwap)
+          .AddMethod(__Method_GetMasterFolioAssignments, serviceImpl.GetMasterFolioAssignments).Build();
     }
 
   }
