@@ -48,8 +48,21 @@ enum MasterFolioSvcFolioSwapResult {
 	MASTER_FOLIO_SVC_FOLIO_SWAP_FAILURE_UNKNOWN = 3;
 }
 
+message MasterFolioSvcReservationMasterFolioAssignmentList {
+	repeated ReservationMasterFolioAssignment assignments = 1;
+}
+
+message ReservationMasterFolioAssignment {
+	.holms.types.booking.indicators.ReservationIndicator master_folio = 1;
+	repeated .holms.types.booking.indicators.ReservationIndicator client_folios = 2;
+}
+
 message MasterFolioSvcFolioSwapResponse {
 	MasterFolioSvcFolioSwapResult result = 1;
+}
+
+message MasterFolioSvcGetMasterFolioAssignmentsRequest {
+	repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
 }
 
 service MasterFolioSvc {
@@ -61,4 +74,7 @@ service MasterFolioSvc {
 
 	rpc FolioSwap(holms.types.money.folio.PostedChargeCredit)
 		returns(MasterFolioSvcFolioSwapResponse);
+
+	rpc GetMasterFolioAssignments(MasterFolioSvcGetMasterFolioAssignmentsRequest) 
+		returns (MasterFolioSvcReservationMasterFolioAssignmentList);
 }
