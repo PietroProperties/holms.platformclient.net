@@ -8,6 +8,7 @@ import "google/protobuf/timestamp.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "booking/reservations/reservation_query_filter.proto";
 import "booking/reservations/reservation_summary.proto";
+import "primitive/pb_local_date.proto";
 
 message ReservationSearchSvcGetFilteredReservationListRequest {
 	.holms.types.booking.reservations.ReservationQueryFilter filter = 1;
@@ -62,7 +63,7 @@ service ReservationSearchSvc {
 	rpc GetStayOversByDate(google.protobuf.Timestamp)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
 
-	rpc GetAllDuringDate(google.protobuf.Timestamp)
+	rpc GetAllDuringDate(holms.types.primitive.PbLocalDate)
 		returns	(ReservationSearchSvcGetFilteredReservationListResponse);
 		
 	// NOTE(DA) Deprecated; remove when no longer used
