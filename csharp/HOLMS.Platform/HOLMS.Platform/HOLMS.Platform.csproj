@@ -332,6 +332,7 @@
     <Compile Include="Types\out\GroupBookingStatus.cs" />
     <Compile Include="Types\out\GroupBookingSvc.cs" />
     <Compile Include="Types\out\GroupBookingSvcGrpc.cs" />
+    <Compile Include="Types\out\GroupBookingUpdated.cs" />
     <Compile Include="Types\out\GroupIndicator.cs" />
     <Compile Include="Types\out\GroupSvc.cs" />
     <Compile Include="Types\out\GroupSvcGrpc.cs" />
