@@ -1,4 +1,4 @@
-﻿namespace HOLMS.Messaging.Topics {
+﻿namespace HOLMS.Platform.Types.Topics {
     public class OperationsContextTopics {
         public const string RoomsCrudTopic = "operations.rooms";
         public const string RoomOccupancyReleasedTopic = "operations.rooms.occupancy.released";
