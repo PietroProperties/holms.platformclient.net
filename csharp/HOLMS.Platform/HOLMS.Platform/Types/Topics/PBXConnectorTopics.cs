@@ -1,4 +1,4 @@
-﻿namespace HOLMS.Messaging.Topics {
+﻿namespace HOLMS.Platform.Types.Topics {
     public class PBXConnectorTopics {
         public const string PbxCallCompletedTopic = "pbxconnector.calls.completed";
         public const string PbxPingRequest = "pbxconnector.ping.requests";
