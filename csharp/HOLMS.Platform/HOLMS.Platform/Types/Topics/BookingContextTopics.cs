@@ -1,6 +1,7 @@
 ﻿namespace HOLMS.Platform.Types.Topics {
     public class BookingContextTopics {
         public const string GroupBookingSaved = "booking.groups.bookings.saved";
+        public const string GroupBookingQuantitiesSaved = "booking.groups.bookings.quantities.saved";
 
         public const string ReservationCancellation = "booking.reservations.cancellations";
         public const string ReservationCheckInTopic = "booking.reservations.checkins";
