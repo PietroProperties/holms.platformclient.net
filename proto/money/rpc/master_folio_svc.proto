@@ -56,6 +56,8 @@ message ReservationMasterFolioAssignment {
 	.holms.types.booking.indicators.ReservationIndicator master_folio = 1;
 	repeated .holms.types.booking.indicators.ReservationIndicator client_folios = 2;
 	.holms.types.booking.indicators.ReservationIndicator queried_folio = 3;
+	bool master_accrues_lodging = 4;
+	bool master_accrues_incidentals = 5;
 }
 
 message MasterFolioSvcFolioSwapResponse {
