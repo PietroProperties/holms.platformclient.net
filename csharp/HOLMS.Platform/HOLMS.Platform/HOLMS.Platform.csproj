@@ -156,8 +156,6 @@
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardSaleIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardSaleCaptureIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\NotPresentPaymentCard.cs" />
-    <Compile Include="Types\Extensions\Money\Cards\RawPaymentCardIndicator.cs" />
-    <Compile Include="Types\Extensions\Money\Cards\TokenizedPaymentCard.cs" />
     <Compile Include="Types\Extensions\Money\Folio\FolioState.cs" />
     <Compile Include="Types\Extensions\Operations\ArrivalLetterTemplate.cs" />
     <Compile Include="Types\Extensions\Operations\Attractions\Attraction.cs" />
@@ -493,7 +491,6 @@
     <Compile Include="Types\out\RateScheduleIndicator.cs" />
     <Compile Include="Types\out\RateScheduleSvc.cs" />
     <Compile Include="Types\out\RateScheduleSvcGrpc.cs" />
-    <Compile Include="Types\out\RawPaymentCardIndicator.cs" />
     <Compile Include="Types\out\RecommendedCheckinCardAuthorizationAmounts.cs" />
     <Compile Include="Types\out\RecordedPhoneCall.cs" />
     <Compile Include="Types\out\RemoveGuestFromReservationRequest.cs" />
@@ -608,7 +605,6 @@
     <Compile Include="Types\out\TenancyIndicator.cs" />
     <Compile Include="Types\out\TenancySvc.cs" />
     <Compile Include="Types\out\TenancySvcGrpc.cs" />
-    <Compile Include="Types\out\TokenizedPaymentCard.cs" />
     <Compile Include="Types\out\TransactionLineDesignation.cs" />
     <Compile Include="Types\out\TransactionLineTransfer.cs" />
     <Compile Include="Types\out\TravelAgent.cs" />
