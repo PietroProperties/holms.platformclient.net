@@ -7,5 +7,5 @@ option go_package = "money/cards";
 enum CardProcessorIndicator {
     FAKE_PROCESSOR = 0;
 	HEARTLAND = 1;
-	HEARTLAND_TOKENIZATION = 2;
+	HEARTLAND_TOKENIZATION_ONLY = 2;
 }

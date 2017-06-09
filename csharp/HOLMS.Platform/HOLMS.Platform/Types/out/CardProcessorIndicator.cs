@@ -23,10 +23,10 @@ namespace HOLMS.Types.Money.Cards {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ciptb25leS9jYXJkcy9jYXJkX3Byb2Nlc3Nvcl9pbmRpY2F0b3IucHJvdG8S",
-            "F2hvbG1zLnR5cGVzLm1vbmV5LmNhcmRzKlcKFkNhcmRQcm9jZXNzb3JJbmRp",
-            "Y2F0b3ISEgoORkFLRV9QUk9DRVNTT1IQABINCglIRUFSVExBTkQQARIaChZI",
-            "RUFSVExBTkRfVE9LRU5JWkFUSU9OEAJCJ1oLbW9uZXkvY2FyZHOqAhdIT0xN",
-            "Uy5UeXBlcy5Nb25leS5DYXJkc2IGcHJvdG8z"));
+            "F2hvbG1zLnR5cGVzLm1vbmV5LmNhcmRzKlwKFkNhcmRQcm9jZXNzb3JJbmRp",
+            "Y2F0b3ISEgoORkFLRV9QUk9DRVNTT1IQABINCglIRUFSVExBTkQQARIfChtI",
+            "RUFSVExBTkRfVE9LRU5JWkFUSU9OX09OTFkQAkInWgttb25leS9jYXJkc6oC",
+            "F0hPTE1TLlR5cGVzLk1vbmV5LkNhcmRzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.CardProcessorIndicator), }, null));
@@ -38,7 +38,7 @@ namespace HOLMS.Types.Money.Cards {
   public enum CardProcessorIndicator {
     [pbr::OriginalName("FAKE_PROCESSOR")] FakeProcessor = 0,
     [pbr::OriginalName("HEARTLAND")] Heartland = 1,
-    [pbr::OriginalName("HEARTLAND_TOKENIZATION")] HeartlandTokenization = 2,
+    [pbr::OriginalName("HEARTLAND_TOKENIZATION_ONLY")] HeartlandTokenizationOnly = 2,
   }
 
   #endregion
