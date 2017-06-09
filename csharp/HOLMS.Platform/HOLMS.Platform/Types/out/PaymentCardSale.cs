@@ -24,43 +24,43 @@ namespace HOLMS.Types.Money.Cards.Transactions {
           string.Concat(
             "CjBtb25leS9jYXJkcy90cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJkX3NhbGUu",
             "cHJvdG8SJGhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucxop",
-            "bW9uZXkvY2FyZHMvY2FyZF9tZXJjaGFudF9pbmRpY2F0b3IucHJvdG8aKG1v",
-            "bmV5L2NhcmRzL3Rva2VuaXplZF9wYXltZW50X2NhcmQucHJvdG8aOm1vbmV5",
-            "L2NhcmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfc2FsZV9pbmRpY2F0",
-            "b3IucHJvdG8aOW1vbmV5L2NhcmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2Nh",
-            "cmRfYXV0aG9yaXphdGlvbi5wcm90bxpCbW9uZXkvY2FyZHMvdHJhbnNhY3Rp",
-            "b25zL3BheW1lbnRfY2FyZF9hdXRob3JpemF0aW9uX2luY3JlYXNlLnByb3Rv",
-            "GkJtb25leS9jYXJkcy90cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJkX2F1dGhv",
-            "cml6YXRpb25fcmV2ZXJzYWwucHJvdG8aOG1vbmV5L2NhcmRzL3RyYW5zYWN0",
-            "aW9ucy9wYXltZW50X2NhcmRfc2FsZV9jYXB0dXJlLnByb3RvGjVtb25leS9j",
-            "YXJkcy90cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJkX3NhbGVfdm9pZC5wcm90",
-            "bxoubW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL2NhcmRfc2FsZV9zdGF0ZS5w",
-            "cm90bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90byLQBwoPUGF5",
-            "bWVudENhcmRTYWxlElEKCWVudGl0eV9pZBgBIAEoCzI+LmhvbG1zLnR5cGVz",
-            "Lm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNhbGVJbmRp",
-            "Y2F0b3ISQwoLbWVyY2hhbnRfaWQYAiABKAsyLi5ob2xtcy50eXBlcy5tb25l",
-            "eS5jYXJkcy5DYXJkTWVyY2hhbnRJbmRpY2F0b3ISQwoMcGF5bWVudF9jYXJk",
-            "GAMgASgLMi0uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuVG9rZW5pemVkUGF5",
-            "bWVudENhcmQSQAoRYXV0aG9yaXplZF9hbW91bnQYBCABKAsyJS5ob2xtcy50",
-            "eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSPgoPY2FwdHVyZWRfYW1v",
-            "dW50GAUgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1v",
-            "dW50Eh0KFWhvc3RfcmVmZXJlbmNlX251bWJlchgGIAEoCRJUCgxlbnRyeV9t",
-            "ZXRob2QYByABKA4yPi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2Fj",
-            "dGlvbnMuQXV0aG9yaXphdGlvbkVudHJ5TWV0aG9kElUKDWF1dGhvcml6YXRp",
-            "b24YCCABKAsyPi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlv",
-            "bnMuUGF5bWVudENhcmRBdXRob3JpemF0aW9uEkIKBXN0YXRlGAkgASgOMjMu",
-            "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLkNhcmRTYWxl",
-            "U3RhdGUSWQoJaW5jcmVhc2VzGAogAygLMkYuaG9sbXMudHlwZXMubW9uZXku",
-            "Y2FyZHMudHJhbnNhY3Rpb25zLlBheW1lbnRDYXJkQXV0aG9yaXphdGlvbklu",
-            "Y3JlYXNlElkKCXJldmVyc2FscxgLIAMoCzJGLmhvbG1zLnR5cGVzLm1vbmV5",
-            "LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZEF1dGhvcml6YXRpb25S",
-            "ZXZlcnNhbBJOCghjYXB0dXJlcxgMIAMoCzI8LmhvbG1zLnR5cGVzLm1vbmV5",
-            "LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNhbGVDYXB0dXJlEkgK",
-            "BXZvaWRzGA0gAygLMjkuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNh",
-            "Y3Rpb25zLlBheW1lbnRDYXJkU2FsZVZvaWRCJ6oCJEhPTE1TLlR5cGVzLk1v",
-            "bmV5LkNhcmRzLlRyYW5zYWN0aW9uc2IGcHJvdG8z"));
+            "bW9uZXkvY2FyZHMvY2FyZF9tZXJjaGFudF9pbmRpY2F0b3IucHJvdG8aJG1v",
+            "bmV5L2NhcmRzL2d1ZXN0X3BheW1lbnRfY2FyZC5wcm90bxo6bW9uZXkvY2Fy",
+            "ZHMvdHJhbnNhY3Rpb25zL3BheW1lbnRfY2FyZF9zYWxlX2luZGljYXRvci5w",
+            "cm90bxo5bW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL3BheW1lbnRfY2FyZF9h",
+            "dXRob3JpemF0aW9uLnByb3RvGkJtb25leS9jYXJkcy90cmFuc2FjdGlvbnMv",
+            "cGF5bWVudF9jYXJkX2F1dGhvcml6YXRpb25faW5jcmVhc2UucHJvdG8aQm1v",
+            "bmV5L2NhcmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfYXV0aG9yaXph",
+            "dGlvbl9yZXZlcnNhbC5wcm90bxo4bW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25z",
+            "L3BheW1lbnRfY2FyZF9zYWxlX2NhcHR1cmUucHJvdG8aNW1vbmV5L2NhcmRz",
+            "L3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfc2FsZV92b2lkLnByb3RvGi5t",
+            "b25leS9jYXJkcy90cmFuc2FjdGlvbnMvY2FyZF9zYWxlX3N0YXRlLnByb3Rv",
+            "Gh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3RvIswHCg9QYXltZW50",
+            "Q2FyZFNhbGUSUQoJZW50aXR5X2lkGAEgASgLMj4uaG9sbXMudHlwZXMubW9u",
+            "ZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBheW1lbnRDYXJkU2FsZUluZGljYXRv",
+            "chJDCgttZXJjaGFudF9pZBgCIAEoCzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNh",
+            "cmRzLkNhcmRNZXJjaGFudEluZGljYXRvchI/CgxwYXltZW50X2NhcmQYAyAB",
+            "KAsyKS5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5HdWVzdFBheW1lbnRDYXJk",
+            "EkAKEWF1dGhvcml6ZWRfYW1vdW50GAQgASgLMiUuaG9sbXMudHlwZXMucHJp",
+            "bWl0aXZlLk1vbmV0YXJ5QW1vdW50Ej4KD2NhcHR1cmVkX2Ftb3VudBgFIAEo",
+            "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIdChVo",
+            "b3N0X3JlZmVyZW5jZV9udW1iZXIYBiABKAkSVAoMZW50cnlfbWV0aG9kGAcg",
+            "ASgOMj4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLkF1",
+            "dGhvcml6YXRpb25FbnRyeU1ldGhvZBJVCg1hdXRob3JpemF0aW9uGAggASgL",
+            "Mj4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBheW1l",
+            "bnRDYXJkQXV0aG9yaXphdGlvbhJCCgVzdGF0ZRgJIAEoDjIzLmhvbG1zLnR5",
+            "cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5DYXJkU2FsZVN0YXRlElkK",
+            "CWluY3JlYXNlcxgKIAMoCzJGLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRy",
+            "YW5zYWN0aW9ucy5QYXltZW50Q2FyZEF1dGhvcml6YXRpb25JbmNyZWFzZRJZ",
+            "CglyZXZlcnNhbHMYCyADKAsyRi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50",
+            "cmFuc2FjdGlvbnMuUGF5bWVudENhcmRBdXRob3JpemF0aW9uUmV2ZXJzYWwS",
+            "TgoIY2FwdHVyZXMYDCADKAsyPC5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50",
+            "cmFuc2FjdGlvbnMuUGF5bWVudENhcmRTYWxlQ2FwdHVyZRJICgV2b2lkcxgN",
+            "IAMoCzI5LmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5Q",
+            "YXltZW50Q2FyZFNhbGVWb2lkQieqAiRIT0xNUy5UeXBlcy5Nb25leS5DYXJk",
+            "cy5UcmFuc2FjdGlvbnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.TokenizedPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIncreaseReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReversalReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleVoidReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.CardSaleStateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.GuestPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIncreaseReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReversalReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleVoidReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.CardSaleStateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale.Parser, new[]{ "EntityId", "MerchantId", "PaymentCard", "AuthorizedAmount", "CapturedAmount", "HostReferenceNumber", "EntryMethod", "Authorization", "State", "Increases", "Reversals", "Captures", "Voids" }, null, null, null)
           }));
@@ -137,9 +137,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
 
     /// <summary>Field number for the "payment_card" field.</summary>
     public const int PaymentCardFieldNumber = 3;
-    private global::HOLMS.Types.Money.Cards.TokenizedPaymentCard paymentCard_;
+    private global::HOLMS.Types.Money.Cards.GuestPaymentCard paymentCard_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Cards.TokenizedPaymentCard PaymentCard {
+    public global::HOLMS.Types.Money.Cards.GuestPaymentCard PaymentCard {
       get { return paymentCard_; }
       set {
         paymentCard_ = value;
@@ -405,7 +405,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       }
       if (other.paymentCard_ != null) {
         if (paymentCard_ == null) {
-          paymentCard_ = new global::HOLMS.Types.Money.Cards.TokenizedPaymentCard();
+          paymentCard_ = new global::HOLMS.Types.Money.Cards.GuestPaymentCard();
         }
         PaymentCard.MergeFrom(other.PaymentCard);
       }
@@ -466,7 +466,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
           }
           case 26: {
             if (paymentCard_ == null) {
-              paymentCard_ = new global::HOLMS.Types.Money.Cards.TokenizedPaymentCard();
+              paymentCard_ = new global::HOLMS.Types.Money.Cards.GuestPaymentCard();
             }
             input.ReadMessage(paymentCard_);
             break;

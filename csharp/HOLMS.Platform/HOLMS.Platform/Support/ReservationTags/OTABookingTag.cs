@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace HOLMS.Platform.Support.ReservationTags {
     public class OTABookingTag : ReservationTagBase {
-        private string[] descriptorTokens;
-
         public OTABookingTag(string[] descriptorTokens) {
             OTASourceName = descriptorTokens[1];
             ChannelManagerBookingID = descriptorTokens[2];
