@@ -38,4 +38,5 @@ message Property {
 	string fax_number = 30;
 	string booking_prefix = 31;
 	uint32 void_authorizations_after_days = 32;
+	uint32 no_show_delay_hours = 33;
 }
