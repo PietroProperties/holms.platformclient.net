@@ -28,7 +28,7 @@ namespace HOLMS.Types.TenancyConfig {
             "ZHMvY2FyZF9tZXJjaGFudF9pbmRpY2F0b3IucHJvdG8aH3ByaW1pdGl2ZS9t",
             "b25ldGFyeV9hbW91bnQucHJvdG8aNmJvb2tpbmcvaW5kaWNhdG9ycy9jYW5j",
             "ZWxsYXRpb25fcG9saWN5X2luZGljYXRvci5wcm90bxoydGVuYW5jeV9jb25m",
-            "aWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8ioAgKCFBy",
+            "aWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8ivQgKCFBy",
             "b3BlcnR5EksKCWVudGl0eV9pZBgBIAEoCzI4LmhvbG1zLnR5cGVzLnRlbmFu",
             "Y3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3ISEwoLZGVz",
             "Y3JpcHRpb24YAiABKAkSNgoTY2hlY2tpbl90aW1lX29mX2RheRgDIAEoCzIZ",
@@ -52,12 +52,13 @@ namespace HOLMS.Types.TenancyConfig {
             "ZWZhdWx0X3N0YXlfbGVuZ3RoGBUgASgFEg8KB3dlYnNpdGUYFiABKAkSGQoR",
             "cmVzZXJ2YXRpb25fZW1haWwYFyABKAkSEgoKZmF4X251bWJlchgeIAEoCRIW",
             "Cg5ib29raW5nX3ByZWZpeBgfIAEoCRImCh52b2lkX2F1dGhvcml6YXRpb25z",
-            "X2FmdGVyX2RheXMYICABKA1CK1oNdGVuYW5jeWNvbmZpZ6oCGUhPTE1TLlR5",
-            "cGVzLlRlbmFuY3lDb25maWdiBnByb3RvMw=="));
+            "X2FmdGVyX2RheXMYICABKA0SGwoTbm9fc2hvd19kZWxheV9ob3VycxghIAEo",
+            "DUIrWg10ZW5hbmN5Y29uZmlnqgIZSE9MTVMuVHlwZXMuVGVuYW5jeUNvbmZp",
+            "Z2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.Property), global::HOLMS.Types.TenancyConfig.Property.Parser, new[]{ "EntityId", "Description", "CheckinTimeOfDay", "CheckOutTimeOfDay", "RolloverTimeOfDay", "AllowedEarlyCheckinHours", "IifDocnumPrefix", "IifCustomerName", "CheckinDeposit", "LastRevenueAccrualStart", "LastDateHkRolloverRan", "Address1", "Address2", "City", "State", "Zip", "PhoneNumber", "CardMerchant", "CancellationPolicy", "MaximumAuthorizationAmount", "DefaultStayLength", "Website", "ReservationEmail", "FaxNumber", "BookingPrefix", "VoidAuthorizationsAfterDays" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.Property), global::HOLMS.Types.TenancyConfig.Property.Parser, new[]{ "EntityId", "Description", "CheckinTimeOfDay", "CheckOutTimeOfDay", "RolloverTimeOfDay", "AllowedEarlyCheckinHours", "IifDocnumPrefix", "IifCustomerName", "CheckinDeposit", "LastRevenueAccrualStart", "LastDateHkRolloverRan", "Address1", "Address2", "City", "State", "Zip", "PhoneNumber", "CardMerchant", "CancellationPolicy", "MaximumAuthorizationAmount", "DefaultStayLength", "Website", "ReservationEmail", "FaxNumber", "BookingPrefix", "VoidAuthorizationsAfterDays", "NoShowDelayHours" }, null, null, null)
           }));
     }
     #endregion
@@ -114,6 +115,7 @@ namespace HOLMS.Types.TenancyConfig {
       faxNumber_ = other.faxNumber_;
       bookingPrefix_ = other.bookingPrefix_;
       voidAuthorizationsAfterDays_ = other.voidAuthorizationsAfterDays_;
+      noShowDelayHours_ = other.noShowDelayHours_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -407,6 +409,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "no_show_delay_hours" field.</summary>
+    public const int NoShowDelayHoursFieldNumber = 33;
+    private uint noShowDelayHours_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint NoShowDelayHours {
+      get { return noShowDelayHours_; }
+      set {
+        noShowDelayHours_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Property);
@@ -446,6 +459,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (FaxNumber != other.FaxNumber) return false;
       if (BookingPrefix != other.BookingPrefix) return false;
       if (VoidAuthorizationsAfterDays != other.VoidAuthorizationsAfterDays) return false;
+      if (NoShowDelayHours != other.NoShowDelayHours) return false;
       return true;
     }
 
@@ -478,6 +492,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (FaxNumber.Length != 0) hash ^= FaxNumber.GetHashCode();
       if (BookingPrefix.Length != 0) hash ^= BookingPrefix.GetHashCode();
       if (VoidAuthorizationsAfterDays != 0) hash ^= VoidAuthorizationsAfterDays.GetHashCode();
+      if (NoShowDelayHours != 0) hash ^= NoShowDelayHours.GetHashCode();
       return hash;
     }
 
@@ -592,6 +607,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(128, 2);
         output.WriteUInt32(VoidAuthorizationsAfterDays);
       }
+      if (NoShowDelayHours != 0) {
+        output.WriteRawTag(136, 2);
+        output.WriteUInt32(NoShowDelayHours);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -674,6 +693,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (VoidAuthorizationsAfterDays != 0) {
         size += 2 + pb::CodedOutputStream.ComputeUInt32Size(VoidAuthorizationsAfterDays);
+      }
+      if (NoShowDelayHours != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(NoShowDelayHours);
       }
       return size;
     }
@@ -790,6 +812,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.VoidAuthorizationsAfterDays != 0) {
         VoidAuthorizationsAfterDays = other.VoidAuthorizationsAfterDays;
+      }
+      if (other.NoShowDelayHours != 0) {
+        NoShowDelayHours = other.NoShowDelayHours;
       }
     }
 
@@ -933,6 +958,10 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 256: {
             VoidAuthorizationsAfterDays = input.ReadUInt32();
+            break;
+          }
+          case 264: {
+            NoShowDelayHours = input.ReadUInt32();
             break;
           }
         }
