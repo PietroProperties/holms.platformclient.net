@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
+using HOLMS.Application.Client;
 using HOLMS.Types.Booking.RPC;
 using HOLMS.Types.CRM.RPC;
+using HOLMS.Types.IAM;
 using HOLMS.Types.IAM.RPC;
 using HOLMS.Types.Money.RPC;
 using HOLMS.Types.Operations.RPC;
@@ -9,16 +11,20 @@ using HOLMS.Types.Primitive;
 using HOLMS.Types.Reporting.RPC;
 using HOLMS.Types.Supply.RPC;
 using HOLMS.Types.TenancyConfig.RPC;
-using HOLMS.Types.IAM;
 using Microsoft.Extensions.Logging;
+using Moq;
 
-namespace HOLMS.Application.Client {
+namespace HOLMS.Platform.Application.Client {
     public class MockApplicationClient : IApplicationClient {
-
         public ILogger Logger { get; }
+        public Mock<IncidentalItemSvc.IncidentalItemSvcClient> IncidentalItemSvcMock { get; }
+        public Mock<LodgingBookingSvc.LodgingBookingSvcClient> LodgingBookingSvcMock { get; }
 
         public MockApplicationClient(ILogger logger) {
             Logger = logger;
+            
+            IncidentalItemSvcMock = new Mock<IncidentalItemSvc.IncidentalItemSvcClient>();
+            LodgingBookingSvcMock = new Mock<LodgingBookingSvc.LodgingBookingSvcClient>();
         }
 
         public async Task<SessionSvcStartSessionResult> StartSession(string candidateUsername, string candidatePassword) {
@@ -228,17 +234,8 @@ namespace HOLMS.Application.Client {
 
         public IncidentalItemReservationSvc.IncidentalItemReservationSvcClient IncidentalResSvc { get; }
 
-        public IncidentalItemSvc.IncidentalItemSvcClient IncidentalItemSvc {
-            get {
-                throw new NotImplementedException();
-            }
-        }
-
-        public LodgingBookingSvc.LodgingBookingSvcClient LodgingBookingSvc {
-            get {
-                throw new NotImplementedException();
-            }
-        }
+        public IncidentalItemSvc.IncidentalItemSvcClient IncidentalItemSvc => IncidentalItemSvcMock.Object;
+        public LodgingBookingSvc.LodgingBookingSvcClient LodgingBookingSvc => LodgingBookingSvcMock.Object;
 
         public ManagementReportingSvc.ManagementReportingSvcClient ManagementReportingSvc {
             get { throw new NotImplementedException(); }
