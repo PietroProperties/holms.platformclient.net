@@ -19,12 +19,14 @@ namespace HOLMS.Platform.Application.Client {
         public ILogger Logger { get; }
         public Mock<IncidentalItemSvc.IncidentalItemSvcClient> IncidentalItemSvcMock { get; }
         public Mock<LodgingBookingSvc.LodgingBookingSvcClient> LodgingBookingSvcMock { get; }
+        public Mock<TaxFeeSvc.TaxFeeSvcClient> TaxFeeSvcMock { get; }
 
         public MockApplicationClient(ILogger logger) {
             Logger = logger;
             
             IncidentalItemSvcMock = new Mock<IncidentalItemSvc.IncidentalItemSvcClient>();
             LodgingBookingSvcMock = new Mock<LodgingBookingSvc.LodgingBookingSvcClient>();
+            TaxFeeSvcMock = new Mock<TaxFeeSvc.TaxFeeSvcClient>();
         }
 
         public async Task<SessionSvcStartSessionResult> StartSession(string candidateUsername, string candidatePassword) {
@@ -236,6 +238,7 @@ namespace HOLMS.Platform.Application.Client {
 
         public IncidentalItemSvc.IncidentalItemSvcClient IncidentalItemSvc => IncidentalItemSvcMock.Object;
         public LodgingBookingSvc.LodgingBookingSvcClient LodgingBookingSvc => LodgingBookingSvcMock.Object;
+        public TaxFeeSvc.TaxFeeSvcClient TaxFeeSvc => TaxFeeSvcMock.Object;
 
         public ManagementReportingSvc.ManagementReportingSvcClient ManagementReportingSvc {
             get { throw new NotImplementedException(); }
@@ -373,8 +376,6 @@ namespace HOLMS.Platform.Application.Client {
             }
         }
 
-
-
         public string ServerName {
             get {
                 throw new NotImplementedException();
@@ -406,12 +407,6 @@ namespace HOLMS.Platform.Application.Client {
         }
 
         public SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc {
-            get {
-                throw new NotImplementedException();
-            }
-        }
-
-        public TaxFeeSvc.TaxFeeSvcClient TaxFeeSvc {
             get {
                 throw new NotImplementedException();
             }
