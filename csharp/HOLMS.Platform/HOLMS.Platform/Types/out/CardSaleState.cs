@@ -23,13 +23,13 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci5tb25leS9jYXJkcy90cmFuc2FjdGlvbnMvY2FyZF9zYWxlX3N0YXRlLnBy",
-            "b3RvEiRob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMqpQEK",
+            "b3RvEiRob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMqnQEK",
             "DUNhcmRTYWxlU3RhdGUSGAoUQ0FSRF9TQUxFX1NUQVRFX09QRU4QABIcChhD",
             "QVJEX1NBTEVfU1RBVEVfREVDTElORUQQARIbChdDQVJEX1NBTEVfU1RBVEVf",
-            "Q0hBUkdFRBACEhoKFkNBUkRfU0FMRV9TVEFURV9WT0lERUQQAxIjCh9DQVJE",
-            "X1NBTEVfU1RBVEVfQ0hBUkdFU19QRU5ESU5HEARCQVoYbW9uZXkvY2FyZHMv",
-            "dHJhbnNhY3Rpb25zqgIkSE9MTVMuVHlwZXMuTW9uZXkuQ2FyZHMuVHJhbnNh",
-            "Y3Rpb25zYgZwcm90bzM="));
+            "Q0hBUkdFRBACEhoKFkNBUkRfU0FMRV9TVEFURV9WT0lERUQQAxIbChdDQVJE",
+            "X1NBTEVfU1RBVEVfU0VUVExFRBAEQkFaGG1vbmV5L2NhcmRzL3RyYW5zYWN0",
+            "aW9uc6oCJEhPTE1TLlR5cGVzLk1vbmV5LkNhcmRzLlRyYW5zYWN0aW9uc2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.Transactions.CardSaleState), }, null));
@@ -43,7 +43,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
     [pbr::OriginalName("CARD_SALE_STATE_DECLINED")] Declined = 1,
     [pbr::OriginalName("CARD_SALE_STATE_CHARGED")] Charged = 2,
     [pbr::OriginalName("CARD_SALE_STATE_VOIDED")] Voided = 3,
-    [pbr::OriginalName("CARD_SALE_STATE_CHARGES_PENDING")] ChargesPending = 4,
+    [pbr::OriginalName("CARD_SALE_STATE_SETTLED")] Settled = 4,
   }
 
   #endregion
