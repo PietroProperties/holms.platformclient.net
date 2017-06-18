@@ -25,30 +25,31 @@ namespace HOLMS.Types.Reporting.RPC {
             "Ci5yZXBvcnRpbmcvcnBjL2NhcmRfY2FwdHVyZV9yZXBvcnRpbmdfc3ZjLnBy",
             "b3RvEhlob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjGiltb25leS9jYXJkcy9j",
             "YXJkX21lcmNoYW50X2luZGljYXRvci5wcm90bxowcHJpbWl0aXZlL3BiX2lu",
-            "Y2x1c2l2ZV9jYWxlbmRhcl9kYXRlX3JhbmdlLnByb3RvInkKMENhcmRDYXB0",
-            "dXJlUmVwb3J0aW5nU3ZjR2V0UGVuZGluZ0NhcHR1cmVzUmVxdWVzdBJFCg1j",
-            "YXJkX21lcmNoYW50GAEgASgLMi4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMu",
-            "Q2FyZE1lcmNoYW50SW5kaWNhdG9yIsMBCjFDYXJkQ2FwdHVyZVJlcG9ydFN2",
-            "Y0dldFRyYW5zbWl0dGVkQ2FwdHVyZXNSZXF1ZXN0EkUKDWNhcmRfbWVyY2hh",
-            "bnQYASABKAsyLi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5DYXJkTWVyY2hh",
-            "bnRJbmRpY2F0b3ISRwoKZGF0ZV9yYW5nZRgCIAEoCzIzLmhvbG1zLnR5cGVz",
-            "LnByaW1pdGl2ZS5QYkluY2x1c2l2ZUNhbGVuZGFyRGF0ZVJhbmdlIjkKJUNh",
-            "cmRDYXB0dXJlUmVwb3J0aW5nU3ZjUmVwb3J0UmVzcG9uc2USEAoIZG9jdW1l",
-            "bnQYASABKAky9gIKF0NhcmRDYXB0dXJlUmVwb3J0aW5nU3ZjEqkBChhHZXRQ",
-            "ZW5kaW5nQ2FwdHVyZXNSZXBvcnQSSy5ob2xtcy50eXBlcy5yZXBvcnRpbmcu",
-            "cnBjLkNhcmRDYXB0dXJlUmVwb3J0aW5nU3ZjR2V0UGVuZGluZ0NhcHR1cmVz",
-            "UmVxdWVzdBpALmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuQ2FyZENhcHR1",
-            "cmVSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZRKuAQocR2V0VHJhbnNtaXR0",
-            "ZWRDYXB0dXJlc1JlcG9ydBJMLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMu",
-            "Q2FyZENhcHR1cmVSZXBvcnRTdmNHZXRUcmFuc21pdHRlZENhcHR1cmVzUmVx",
-            "dWVzdBpALmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuQ2FyZENhcHR1cmVS",
-            "ZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZUIsWg5vcGVyYXRpb25zL3JwY6oC",
-            "GUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENiBnByb3RvMw=="));
+            "Y2x1c2l2ZV9jYWxlbmRhcl9kYXRlX3JhbmdlLnByb3RvIn0KNENhcmRDYXB0",
+            "dXJlUmVwb3J0aW5nU3ZjR2V0UGVuZGluZ1RyYW5zYWN0aW9uc1JlcXVlc3QS",
+            "RQoNY2FyZF9tZXJjaGFudBgBIAEoCzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNh",
+            "cmRzLkNhcmRNZXJjaGFudEluZGljYXRvciLDAQoxQ2FyZENhcHR1cmVSZXBv",
+            "cnRTdmNHZXRTZXR0bGVkVHJhbnNhY3Rpb25zUmVxdWVzdBJFCg1jYXJkX21l",
+            "cmNoYW50GAEgASgLMi4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZE1l",
+            "cmNoYW50SW5kaWNhdG9yEkcKCmRhdGVfcmFuZ2UYAiABKAsyMy5ob2xtcy50",
+            "eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVDYWxlbmRhckRhdGVSYW5nZSI5",
+            "CiVDYXJkQ2FwdHVyZVJlcG9ydGluZ1N2Y1JlcG9ydFJlc3BvbnNlEhAKCGRv",
+            "Y3VtZW50GAEgASgJMv4CChdDYXJkQ2FwdHVyZVJlcG9ydGluZ1N2YxKxAQoc",
+            "R2V0UGVuZGluZ1RyYW5zYWN0aW9uc1JlcG9ydBJPLmhvbG1zLnR5cGVzLnJl",
+            "cG9ydGluZy5ycGMuQ2FyZENhcHR1cmVSZXBvcnRpbmdTdmNHZXRQZW5kaW5n",
+            "VHJhbnNhY3Rpb25zUmVxdWVzdBpALmhvbG1zLnR5cGVzLnJlcG9ydGluZy5y",
+            "cGMuQ2FyZENhcHR1cmVSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZRKuAQoc",
+            "R2V0U2V0dGxlZFRyYW5zYWN0aW9uc1JlcG9ydBJMLmhvbG1zLnR5cGVzLnJl",
+            "cG9ydGluZy5ycGMuQ2FyZENhcHR1cmVSZXBvcnRTdmNHZXRTZXR0bGVkVHJh",
+            "bnNhY3Rpb25zUmVxdWVzdBpALmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMu",
+            "Q2FyZENhcHR1cmVSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZUIsWg5vcGVy",
+            "YXRpb25zL3JwY6oCGUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRangeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingCapturesRequest), global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingCapturesRequest.Parser, new[]{ "CardMerchant" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetTransmittedCapturesRequest), global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetTransmittedCapturesRequest.Parser, new[]{ "CardMerchant", "DateRange" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest), global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest.Parser, new[]{ "CardMerchant" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest), global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest.Parser, new[]{ "CardMerchant", "DateRange" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse), global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse.Parser, new[]{ "Document" }, null, null, null)
           }));
     }
@@ -56,10 +57,10 @@ namespace HOLMS.Types.Reporting.RPC {
 
   }
   #region Messages
-  public sealed partial class CardCaptureReportingSvcGetPendingCapturesRequest : pb::IMessage<CardCaptureReportingSvcGetPendingCapturesRequest> {
-    private static readonly pb::MessageParser<CardCaptureReportingSvcGetPendingCapturesRequest> _parser = new pb::MessageParser<CardCaptureReportingSvcGetPendingCapturesRequest>(() => new CardCaptureReportingSvcGetPendingCapturesRequest());
+  public sealed partial class CardCaptureReportingSvcGetPendingTransactionsRequest : pb::IMessage<CardCaptureReportingSvcGetPendingTransactionsRequest> {
+    private static readonly pb::MessageParser<CardCaptureReportingSvcGetPendingTransactionsRequest> _parser = new pb::MessageParser<CardCaptureReportingSvcGetPendingTransactionsRequest>(() => new CardCaptureReportingSvcGetPendingTransactionsRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CardCaptureReportingSvcGetPendingCapturesRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<CardCaptureReportingSvcGetPendingTransactionsRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -72,20 +73,20 @@ namespace HOLMS.Types.Reporting.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardCaptureReportingSvcGetPendingCapturesRequest() {
+    public CardCaptureReportingSvcGetPendingTransactionsRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardCaptureReportingSvcGetPendingCapturesRequest(CardCaptureReportingSvcGetPendingCapturesRequest other) : this() {
+    public CardCaptureReportingSvcGetPendingTransactionsRequest(CardCaptureReportingSvcGetPendingTransactionsRequest other) : this() {
       CardMerchant = other.cardMerchant_ != null ? other.CardMerchant.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardCaptureReportingSvcGetPendingCapturesRequest Clone() {
-      return new CardCaptureReportingSvcGetPendingCapturesRequest(this);
+    public CardCaptureReportingSvcGetPendingTransactionsRequest Clone() {
+      return new CardCaptureReportingSvcGetPendingTransactionsRequest(this);
     }
 
     /// <summary>Field number for the "card_merchant" field.</summary>
@@ -101,11 +102,11 @@ namespace HOLMS.Types.Reporting.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as CardCaptureReportingSvcGetPendingCapturesRequest);
+      return Equals(other as CardCaptureReportingSvcGetPendingTransactionsRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CardCaptureReportingSvcGetPendingCapturesRequest other) {
+    public bool Equals(CardCaptureReportingSvcGetPendingTransactionsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -146,7 +147,7 @@ namespace HOLMS.Types.Reporting.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CardCaptureReportingSvcGetPendingCapturesRequest other) {
+    public void MergeFrom(CardCaptureReportingSvcGetPendingTransactionsRequest other) {
       if (other == null) {
         return;
       }
@@ -179,10 +180,10 @@ namespace HOLMS.Types.Reporting.RPC {
 
   }
 
-  public sealed partial class CardCaptureReportSvcGetTransmittedCapturesRequest : pb::IMessage<CardCaptureReportSvcGetTransmittedCapturesRequest> {
-    private static readonly pb::MessageParser<CardCaptureReportSvcGetTransmittedCapturesRequest> _parser = new pb::MessageParser<CardCaptureReportSvcGetTransmittedCapturesRequest>(() => new CardCaptureReportSvcGetTransmittedCapturesRequest());
+  public sealed partial class CardCaptureReportSvcGetSettledTransactionsRequest : pb::IMessage<CardCaptureReportSvcGetSettledTransactionsRequest> {
+    private static readonly pb::MessageParser<CardCaptureReportSvcGetSettledTransactionsRequest> _parser = new pb::MessageParser<CardCaptureReportSvcGetSettledTransactionsRequest>(() => new CardCaptureReportSvcGetSettledTransactionsRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CardCaptureReportSvcGetTransmittedCapturesRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<CardCaptureReportSvcGetSettledTransactionsRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -195,21 +196,21 @@ namespace HOLMS.Types.Reporting.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardCaptureReportSvcGetTransmittedCapturesRequest() {
+    public CardCaptureReportSvcGetSettledTransactionsRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardCaptureReportSvcGetTransmittedCapturesRequest(CardCaptureReportSvcGetTransmittedCapturesRequest other) : this() {
+    public CardCaptureReportSvcGetSettledTransactionsRequest(CardCaptureReportSvcGetSettledTransactionsRequest other) : this() {
       CardMerchant = other.cardMerchant_ != null ? other.CardMerchant.Clone() : null;
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardCaptureReportSvcGetTransmittedCapturesRequest Clone() {
-      return new CardCaptureReportSvcGetTransmittedCapturesRequest(this);
+    public CardCaptureReportSvcGetSettledTransactionsRequest Clone() {
+      return new CardCaptureReportSvcGetSettledTransactionsRequest(this);
     }
 
     /// <summary>Field number for the "card_merchant" field.</summary>
@@ -236,11 +237,11 @@ namespace HOLMS.Types.Reporting.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as CardCaptureReportSvcGetTransmittedCapturesRequest);
+      return Equals(other as CardCaptureReportSvcGetSettledTransactionsRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CardCaptureReportSvcGetTransmittedCapturesRequest other) {
+    public bool Equals(CardCaptureReportSvcGetSettledTransactionsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -290,7 +291,7 @@ namespace HOLMS.Types.Reporting.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CardCaptureReportSvcGetTransmittedCapturesRequest other) {
+    public void MergeFrom(CardCaptureReportSvcGetSettledTransactionsRequest other) {
       if (other == null) {
         return;
       }

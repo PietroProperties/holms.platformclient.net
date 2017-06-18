@@ -12,22 +12,22 @@ namespace HOLMS.Types.Reporting.RPC {
   {
     static readonly string __ServiceName = "holms.types.reporting.rpc.CardCaptureReportingSvc";
 
-    static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingCapturesRequest> __Marshaller_CardCaptureReportingSvcGetPendingCapturesRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingCapturesRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest> __Marshaller_CardCaptureReportingSvcGetPendingTransactionsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> __Marshaller_CardCaptureReportingSvcReportResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetTransmittedCapturesRequest> __Marshaller_CardCaptureReportSvcGetTransmittedCapturesRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetTransmittedCapturesRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest> __Marshaller_CardCaptureReportSvcGetSettledTransactionsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest.Parser.ParseFrom);
 
-    static readonly Method<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingCapturesRequest, global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> __Method_GetPendingCapturesReport = new Method<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingCapturesRequest, global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse>(
+    static readonly Method<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest, global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> __Method_GetPendingTransactionsReport = new Method<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest, global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse>(
         MethodType.Unary,
         __ServiceName,
-        "GetPendingCapturesReport",
-        __Marshaller_CardCaptureReportingSvcGetPendingCapturesRequest,
+        "GetPendingTransactionsReport",
+        __Marshaller_CardCaptureReportingSvcGetPendingTransactionsRequest,
         __Marshaller_CardCaptureReportingSvcReportResponse);
 
-    static readonly Method<global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetTransmittedCapturesRequest, global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> __Method_GetTransmittedCapturesReport = new Method<global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetTransmittedCapturesRequest, global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse>(
+    static readonly Method<global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest, global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> __Method_GetSettledTransactionsReport = new Method<global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest, global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse>(
         MethodType.Unary,
         __ServiceName,
-        "GetTransmittedCapturesReport",
-        __Marshaller_CardCaptureReportSvcGetTransmittedCapturesRequest,
+        "GetSettledTransactionsReport",
+        __Marshaller_CardCaptureReportSvcGetSettledTransactionsRequest,
         __Marshaller_CardCaptureReportingSvcReportResponse);
 
     /// <summary>Service descriptor</summary>
@@ -39,12 +39,12 @@ namespace HOLMS.Types.Reporting.RPC {
     /// <summary>Base class for server-side implementations of CardCaptureReportingSvc</summary>
     public abstract class CardCaptureReportingSvcBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetPendingCapturesReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingCapturesRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetPendingTransactionsReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetTransmittedCapturesReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetTransmittedCapturesRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetSettledTransactionsReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -74,37 +74,37 @@ namespace HOLMS.Types.Reporting.RPC {
       {
       }
 
-      public virtual global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse GetPendingCapturesReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingCapturesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse GetPendingTransactionsReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetPendingCapturesReport(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetPendingTransactionsReport(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse GetPendingCapturesReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingCapturesRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse GetPendingTransactionsReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest request, CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetPendingCapturesReport, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetPendingTransactionsReport, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetPendingCapturesReportAsync(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingCapturesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetPendingTransactionsReportAsync(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetPendingCapturesReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetPendingTransactionsReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetPendingCapturesReportAsync(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingCapturesRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetPendingTransactionsReportAsync(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest request, CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetPendingCapturesReport, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetPendingTransactionsReport, null, options, request);
       }
-      public virtual global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse GetTransmittedCapturesReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetTransmittedCapturesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse GetSettledTransactionsReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetTransmittedCapturesReport(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetSettledTransactionsReport(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse GetTransmittedCapturesReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetTransmittedCapturesRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse GetSettledTransactionsReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest request, CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetTransmittedCapturesReport, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetSettledTransactionsReport, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetTransmittedCapturesReportAsync(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetTransmittedCapturesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetSettledTransactionsReportAsync(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetTransmittedCapturesReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetSettledTransactionsReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetTransmittedCapturesReportAsync(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetTransmittedCapturesRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetSettledTransactionsReportAsync(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest request, CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetTransmittedCapturesReport, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetSettledTransactionsReport, null, options, request);
       }
       protected override CardCaptureReportingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -116,8 +116,8 @@ namespace HOLMS.Types.Reporting.RPC {
     public static ServerServiceDefinition BindService(CardCaptureReportingSvcBase serviceImpl)
     {
       return ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetPendingCapturesReport, serviceImpl.GetPendingCapturesReport)
-          .AddMethod(__Method_GetTransmittedCapturesReport, serviceImpl.GetTransmittedCapturesReport).Build();
+          .AddMethod(__Method_GetPendingTransactionsReport, serviceImpl.GetPendingTransactionsReport)
+          .AddMethod(__Method_GetSettledTransactionsReport, serviceImpl.GetSettledTransactionsReport).Build();
     }
 
   }

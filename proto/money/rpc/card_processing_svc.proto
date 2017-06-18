@@ -10,6 +10,7 @@ import "money/cards/guest_payment_card_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
 import "money/cards/transactions/merchant_batch.proto";
 import "money/cards/transactions/payment_card_sale_capture.proto";
+import "money/cards/transactions/payment_card_refund.proto";
 import "money/cards/transactions/payment_card_sale_capture_indicator.proto";
 import "money/cards/transactions/processor_transaction_result.proto";
 import "primitive/pb_inclusive_calendar_date_range.proto";
@@ -18,6 +19,10 @@ import "tenancy_config/indicators/property_indicator.proto";
 
 message CardProcessingSvcCaptureEnumResponse {
 	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture captures = 1;
+}
+
+message CardProcessingSvcRefundEnumResponse {
+	repeated holms.types.money.cards.transactions.PaymentCardRefund refunds= 1;
 }
 
 message MerchantBatchEnumResponse {
@@ -49,6 +54,9 @@ message PaymentCardVerificationRequest {
 service CardProcessingSvc {
 	rpc GetAllPendingCaptures(.google.protobuf.Empty) 
 		returns (CardProcessingSvcCaptureEnumResponse);
+		
+	rpc GetAllPendingRefunds(.google.protobuf.Empty) 
+		returns (CardProcessingSvcRefundEnumResponse);
 
 	rpc GetAllBatches(.holms.types.primitive.PbInclusiveCalendarDateRange) 
 		returns (MerchantBatchEnumResponse);
