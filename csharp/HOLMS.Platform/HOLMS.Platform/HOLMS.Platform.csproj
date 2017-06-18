@@ -153,6 +153,7 @@
     <Compile Include="Types\Extensions\Money\Cards\GuestPaymentCardIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardAuthorizationIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\MerchantBatchIndicator.cs" />
+    <Compile Include="Types\Extensions\Money\Cards\PaymentCardRefundIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardSaleIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardSaleCaptureIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\NotPresentPaymentCard.cs" />
