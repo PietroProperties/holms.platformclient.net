@@ -445,6 +445,8 @@
     <Compile Include="Types\out\PaymentCardAuthorizationIndicator.cs" />
     <Compile Include="Types\out\PaymentCardAuthorizationReversal.cs" />
     <Compile Include="Types\out\PaymentCardBrand.cs" />
+    <Compile Include="Types\out\PaymentCardRefund.cs" />
+    <Compile Include="Types\out\PaymentCardRefundIndicator.cs" />
     <Compile Include="Types\out\PaymentCardSale.cs" />
     <Compile Include="Types\out\PaymentCardSaleCapture.cs" />
     <Compile Include="Types\out\PaymentCardSaleCaptureIndicator.cs" />
