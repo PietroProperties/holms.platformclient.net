@@ -14,6 +14,7 @@ namespace HOLMS.Types.Money.RPC {
 
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcCaptureEnumResponse> __Marshaller_CardProcessingSvcCaptureEnumResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcCaptureEnumResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcRefundEnumResponse> __Marshaller_CardProcessingSvcRefundEnumResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcRefundEnumResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange> __Marshaller_PbInclusiveCalendarDateRange = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse> __Marshaller_MerchantBatchEnumResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Cards.CardMerchantIndicator> __Marshaller_CardMerchantIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.CardMerchantIndicator.Parser.ParseFrom);
@@ -29,6 +30,13 @@ namespace HOLMS.Types.Money.RPC {
         "GetAllPendingCaptures",
         __Marshaller_Empty,
         __Marshaller_CardProcessingSvcCaptureEnumResponse);
+
+    static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Money.RPC.CardProcessingSvcRefundEnumResponse> __Method_GetAllPendingRefunds = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Money.RPC.CardProcessingSvcRefundEnumResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetAllPendingRefunds",
+        __Marshaller_Empty,
+        __Marshaller_CardProcessingSvcRefundEnumResponse);
 
     static readonly Method<global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange, global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse> __Method_GetAllBatches = new Method<global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange, global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse>(
         MethodType.Unary,
@@ -75,6 +83,11 @@ namespace HOLMS.Types.Money.RPC {
     public abstract class CardProcessingSvcBase
     {
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcCaptureEnumResponse> GetAllPendingCaptures(global::Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcRefundEnumResponse> GetAllPendingRefunds(global::Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -144,6 +157,22 @@ namespace HOLMS.Types.Money.RPC {
       public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcCaptureEnumResponse> GetAllPendingCapturesAsync(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAllPendingCaptures, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcRefundEnumResponse GetAllPendingRefunds(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetAllPendingRefunds(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcRefundEnumResponse GetAllPendingRefunds(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetAllPendingRefunds, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcRefundEnumResponse> GetAllPendingRefundsAsync(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetAllPendingRefundsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcRefundEnumResponse> GetAllPendingRefundsAsync(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetAllPendingRefunds, null, options, request);
       }
       public virtual global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse GetAllBatches(global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
@@ -236,6 +265,7 @@ namespace HOLMS.Types.Money.RPC {
     {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetAllPendingCaptures, serviceImpl.GetAllPendingCaptures)
+          .AddMethod(__Method_GetAllPendingRefunds, serviceImpl.GetAllPendingRefunds)
           .AddMethod(__Method_GetAllBatches, serviceImpl.GetAllBatches)
           .AddMethod(__Method_OpenAndSettleBatchFromPendingCapturesSpecificMerchant, serviceImpl.OpenAndSettleBatchFromPendingCapturesSpecificMerchant)
           .AddMethod(__Method_OpenAndSettleBatchFromPendingCapturesAllMerchants, serviceImpl.OpenAndSettleBatchFromPendingCapturesAllMerchants)

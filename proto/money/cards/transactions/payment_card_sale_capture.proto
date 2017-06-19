@@ -13,7 +13,6 @@ message PaymentCardSaleCapture {
 	holms.types.money.cards.transactions.PaymentCardSaleCaptureIndicator entity_id = 1;
 	holms.types.money.cards.CardMerchantIndicator merchant_id = 2;
 	holms.types.primitive.MonetaryAmount captured_amount = 3;
-	CaptureStatus status = 4;
 	string host_reference_number = 5;
 	string folio_booking_number = 6;
 	holms.types.money.cards.GuestPaymentCard payment_card = 7;
@@ -22,11 +21,4 @@ message PaymentCardSaleCapture {
 	holms.types.primitive.MonetaryAmount authorization_amount = 10;
 	
 	google.protobuf.Timestamp posted_at = 11;
-}
-
-enum CaptureStatus {
-	PENDING = 0;
-	VOIDED = 1;
-	COMPLETED = 2;
-	FAILURE = 3;
 }

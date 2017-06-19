@@ -28,43 +28,30 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             "eS9jYXJkcy9jYXJkX21lcmNoYW50X2luZGljYXRvci5wcm90bxokbW9uZXkv",
             "Y2FyZHMvZ3Vlc3RfcGF5bWVudF9jYXJkLnByb3RvGkJtb25leS9jYXJkcy90",
             "cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJkX3NhbGVfY2FwdHVyZV9pbmRpY2F0",
-            "b3IucHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8igAUK",
+            "b3IucHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8iuwQK",
             "FlBheW1lbnRDYXJkU2FsZUNhcHR1cmUSWAoJZW50aXR5X2lkGAEgASgLMkUu",
             "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBheW1lbnRD",
             "YXJkU2FsZUNhcHR1cmVJbmRpY2F0b3ISQwoLbWVyY2hhbnRfaWQYAiABKAsy",
             "Li5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5DYXJkTWVyY2hhbnRJbmRpY2F0",
             "b3ISPgoPY2FwdHVyZWRfYW1vdW50GAMgASgLMiUuaG9sbXMudHlwZXMucHJp",
-            "bWl0aXZlLk1vbmV0YXJ5QW1vdW50EkMKBnN0YXR1cxgEIAEoDjIzLmhvbG1z",
-            "LnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5DYXB0dXJlU3RhdHVz",
-            "Eh0KFWhvc3RfcmVmZXJlbmNlX251bWJlchgFIAEoCRIcChRmb2xpb19ib29r",
-            "aW5nX251bWJlchgGIAEoCRI/CgxwYXltZW50X2NhcmQYByABKAsyKS5ob2xt",
-            "cy50eXBlcy5tb25leS5jYXJkcy5HdWVzdFBheW1lbnRDYXJkEiMKG2F1dGhv",
-            "cml6YXRpb25fYXBwcm92YWxfY29kZRgIIAEoCRIrCiNhdXRob3JpemF0aW9u",
-            "X2hvc3RfcmVmZXJlbmNlX251bWJlchgJIAEoCRJDChRhdXRob3JpemF0aW9u",
-            "X2Ftb3VudBgKIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFy",
-            "eUFtb3VudBItCglwb3N0ZWRfYXQYCyABKAsyGi5nb29nbGUucHJvdG9idWYu",
-            "VGltZXN0YW1wKkQKDUNhcHR1cmVTdGF0dXMSCwoHUEVORElORxAAEgoKBlZP",
-            "SURFRBABEg0KCUNPTVBMRVRFRBACEgsKB0ZBSUxVUkUQA0InqgIkSE9MTVMu",
-            "VHlwZXMuTW9uZXkuQ2FyZHMuVHJhbnNhY3Rpb25zYgZwcm90bzM="));
+            "bWl0aXZlLk1vbmV0YXJ5QW1vdW50Eh0KFWhvc3RfcmVmZXJlbmNlX251bWJl",
+            "chgFIAEoCRIcChRmb2xpb19ib29raW5nX251bWJlchgGIAEoCRI/CgxwYXlt",
+            "ZW50X2NhcmQYByABKAsyKS5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5HdWVz",
+            "dFBheW1lbnRDYXJkEiMKG2F1dGhvcml6YXRpb25fYXBwcm92YWxfY29kZRgI",
+            "IAEoCRIrCiNhdXRob3JpemF0aW9uX2hvc3RfcmVmZXJlbmNlX251bWJlchgJ",
+            "IAEoCRJDChRhdXRob3JpemF0aW9uX2Ftb3VudBgKIAEoCzIlLmhvbG1zLnR5",
+            "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBItCglwb3N0ZWRfYXQYCyAB",
+            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQieqAiRIT0xNUy5UeXBl",
+            "cy5Nb25leS5DYXJkcy5UcmFuc2FjdGlvbnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.GuestPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.Transactions.CaptureStatus), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture.Parser, new[]{ "EntityId", "MerchantId", "CapturedAmount", "Status", "HostReferenceNumber", "FolioBookingNumber", "PaymentCard", "AuthorizationApprovalCode", "AuthorizationHostReferenceNumber", "AuthorizationAmount", "PostedAt" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture.Parser, new[]{ "EntityId", "MerchantId", "CapturedAmount", "HostReferenceNumber", "FolioBookingNumber", "PaymentCard", "AuthorizationApprovalCode", "AuthorizationHostReferenceNumber", "AuthorizationAmount", "PostedAt" }, null, null, null)
           }));
     }
     #endregion
 
   }
-  #region Enums
-  public enum CaptureStatus {
-    [pbr::OriginalName("PENDING")] Pending = 0,
-    [pbr::OriginalName("VOIDED")] Voided = 1,
-    [pbr::OriginalName("COMPLETED")] Completed = 2,
-    [pbr::OriginalName("FAILURE")] Failure = 3,
-  }
-
-  #endregion
-
   #region Messages
   public sealed partial class PaymentCardSaleCapture : pb::IMessage<PaymentCardSaleCapture> {
     private static readonly pb::MessageParser<PaymentCardSaleCapture> _parser = new pb::MessageParser<PaymentCardSaleCapture>(() => new PaymentCardSaleCapture());
@@ -93,7 +80,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
       MerchantId = other.merchantId_ != null ? other.MerchantId.Clone() : null;
       CapturedAmount = other.capturedAmount_ != null ? other.CapturedAmount.Clone() : null;
-      status_ = other.status_;
       hostReferenceNumber_ = other.hostReferenceNumber_;
       folioBookingNumber_ = other.folioBookingNumber_;
       PaymentCard = other.paymentCard_ != null ? other.PaymentCard.Clone() : null;
@@ -138,17 +124,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       get { return capturedAmount_; }
       set {
         capturedAmount_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "status" field.</summary>
-    public const int StatusFieldNumber = 4;
-    private global::HOLMS.Types.Money.Cards.Transactions.CaptureStatus status_ = 0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Cards.Transactions.CaptureStatus Status {
-      get { return status_; }
-      set {
-        status_ = value;
       }
     }
 
@@ -245,7 +220,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (!object.Equals(EntityId, other.EntityId)) return false;
       if (!object.Equals(MerchantId, other.MerchantId)) return false;
       if (!object.Equals(CapturedAmount, other.CapturedAmount)) return false;
-      if (Status != other.Status) return false;
       if (HostReferenceNumber != other.HostReferenceNumber) return false;
       if (FolioBookingNumber != other.FolioBookingNumber) return false;
       if (!object.Equals(PaymentCard, other.PaymentCard)) return false;
@@ -262,7 +236,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (entityId_ != null) hash ^= EntityId.GetHashCode();
       if (merchantId_ != null) hash ^= MerchantId.GetHashCode();
       if (capturedAmount_ != null) hash ^= CapturedAmount.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
       if (HostReferenceNumber.Length != 0) hash ^= HostReferenceNumber.GetHashCode();
       if (FolioBookingNumber.Length != 0) hash ^= FolioBookingNumber.GetHashCode();
       if (paymentCard_ != null) hash ^= PaymentCard.GetHashCode();
@@ -291,10 +264,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (capturedAmount_ != null) {
         output.WriteRawTag(26);
         output.WriteMessage(CapturedAmount);
-      }
-      if (Status != 0) {
-        output.WriteRawTag(32);
-        output.WriteEnum((int) Status);
       }
       if (HostReferenceNumber.Length != 0) {
         output.WriteRawTag(42);
@@ -337,9 +306,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       }
       if (capturedAmount_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CapturedAmount);
-      }
-      if (Status != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (HostReferenceNumber.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(HostReferenceNumber);
@@ -387,9 +353,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
           capturedAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
         CapturedAmount.MergeFrom(other.CapturedAmount);
-      }
-      if (other.Status != 0) {
-        Status = other.Status;
       }
       if (other.HostReferenceNumber.Length != 0) {
         HostReferenceNumber = other.HostReferenceNumber;
@@ -450,10 +413,6 @@ namespace HOLMS.Types.Money.Cards.Transactions {
               capturedAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(capturedAmount_);
-            break;
-          }
-          case 32: {
-            status_ = (global::HOLMS.Types.Money.Cards.Transactions.CaptureStatus) input.ReadEnum();
             break;
           }
           case 42: {

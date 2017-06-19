@@ -7,11 +7,11 @@ option go_package = "operations/rpc";
 import "money/cards/card_merchant_indicator.proto";
 import "primitive/pb_inclusive_calendar_date_range.proto";
 
-message CardCaptureReportingSvcGetPendingCapturesRequest {
+message CardCaptureReportingSvcGetPendingTransactionsRequest {
 	.holms.types.money.cards.CardMerchantIndicator card_merchant = 1;
 }
 
-message CardCaptureReportSvcGetTransmittedCapturesRequest {
+message CardCaptureReportSvcGetSettledTransactionsRequest {
 	.holms.types.money.cards.CardMerchantIndicator card_merchant = 1;
 	.holms.types.primitive.PbInclusiveCalendarDateRange date_range = 2;
 }
@@ -21,8 +21,8 @@ message CardCaptureReportingSvcReportResponse {
 }
 
 service CardCaptureReportingSvc {
-	rpc GetPendingCapturesReport(CardCaptureReportingSvcGetPendingCapturesRequest)
+	rpc GetPendingTransactionsReport(CardCaptureReportingSvcGetPendingTransactionsRequest)
 		returns (CardCaptureReportingSvcReportResponse);
-	rpc GetTransmittedCapturesReport(CardCaptureReportSvcGetTransmittedCapturesRequest)
+	rpc GetSettledTransactionsReport(CardCaptureReportSvcGetSettledTransactionsRequest)
 		returns (CardCaptureReportingSvcReportResponse);
 }

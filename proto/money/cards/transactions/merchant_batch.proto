@@ -7,6 +7,7 @@ import "google/protobuf/timestamp.proto";
 import "money/cards/card_merchant_indicator.proto";
 import "money/cards/transactions/merchant_batch_indicator.proto";
 import "money/cards/transactions/payment_card_sale_capture.proto";
+import "money/cards/transactions/payment_card_refund.proto";
 import "money/cards/transactions/processor_transaction_result.proto";
 import "primitive/monetary_amount.proto";
 
@@ -20,4 +21,5 @@ message MerchantBatch {
 	holms.types.primitive.MonetaryAmount total_amount = 7;
 	google.protobuf.Timestamp created_at = 8;
 	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture captures = 9;
+	repeated holms.types.money.cards.transactions.PaymentCardRefund refunds = 10;
 }
