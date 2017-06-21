@@ -27,20 +27,19 @@ namespace HOLMS.Types.Booking.Reservations {
             "YXRpb25zGipwcmltaXRpdmUvcGJfaW5jbHVzaXZlX29wc2RhdGVfcmFuZ2Uu",
             "cHJvdG8aLmJvb2tpbmcvaW5kaWNhdG9ycy9yZXNlcnZhdGlvbl9pbmRpY2F0",
             "b3IucHJvdG8aK3N1cHBseS9yb29tX3R5cGVzL3Jvb21fdHlwZV9pbmRpY2F0",
-            "b3IucHJvdG8izAIKHlJlc2VydmF0aW9uRlJQQW1lbmRtZW50UmVxdWVzdBJC",
+            "b3IucHJvdG8iuAIKHlJlc2VydmF0aW9uRlJQQW1lbmRtZW50UmVxdWVzdBJC",
             "CgpkYXRlX3JhbmdlGAEgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBi",
             "SW5jbHVzaXZlT3BzZGF0ZVJhbmdlEkkKC3Jlc2VydmF0aW9uGAIgASgLMjQu",
             "aG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5k",
             "aWNhdG9yEkMKCXJvb21fdHlwZRgDIAEoCzIwLmhvbG1zLnR5cGVzLnN1cHBs",
-            "eS5yb29tX3R5cGVzLlJvb21UeXBlSW5kaWNhdG9yEhIKCnRheF9leGVtcHQY",
-            "BSABKAgSGQoRYWR1bHRfZ3Vlc3RfY291bnQYBiABKAUSGQoRY2hpbGRfZ3Vl",
-            "c3RfY291bnQYByABKAUSDAoEdGFncxgIIAMoCUI5WhRib29raW5nL3Jlc2Vy",
-            "dmF0aW9uc6oCIEhPTE1TLlR5cGVzLkJvb2tpbmcuUmVzZXJ2YXRpb25zYgZw",
-            "cm90bzM="));
+            "eS5yb29tX3R5cGVzLlJvb21UeXBlSW5kaWNhdG9yEhkKEWFkdWx0X2d1ZXN0",
+            "X2NvdW50GAYgASgFEhkKEWNoaWxkX2d1ZXN0X2NvdW50GAcgASgFEgwKBHRh",
+            "Z3MYCCADKAlCOVoUYm9va2luZy9yZXNlcnZhdGlvbnOqAiBIT0xNUy5UeXBl",
+            "cy5Cb29raW5nLlJlc2VydmF0aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest), global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest.Parser, new[]{ "DateRange", "Reservation", "RoomType", "TaxExempt", "AdultGuestCount", "ChildGuestCount", "Tags" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest), global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest.Parser, new[]{ "DateRange", "Reservation", "RoomType", "AdultGuestCount", "ChildGuestCount", "Tags" }, null, null, null)
           }));
     }
     #endregion
@@ -74,7 +73,6 @@ namespace HOLMS.Types.Booking.Reservations {
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
       RoomType = other.roomType_ != null ? other.RoomType.Clone() : null;
-      taxExempt_ = other.taxExempt_;
       adultGuestCount_ = other.adultGuestCount_;
       childGuestCount_ = other.childGuestCount_;
       tags_ = other.tags_.Clone();
@@ -118,20 +116,12 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
-    /// <summary>Field number for the "tax_exempt" field.</summary>
-    public const int TaxExemptFieldNumber = 5;
-    private bool taxExempt_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool TaxExempt {
-      get { return taxExempt_; }
-      set {
-        taxExempt_ = value;
-      }
-    }
-
     /// <summary>Field number for the "adult_guest_count" field.</summary>
     public const int AdultGuestCountFieldNumber = 6;
     private int adultGuestCount_;
+    /// <summary>
+    /// bool tax_exempt = 5;
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int AdultGuestCount {
       get { return adultGuestCount_; }
@@ -177,7 +167,6 @@ namespace HOLMS.Types.Booking.Reservations {
       if (!object.Equals(DateRange, other.DateRange)) return false;
       if (!object.Equals(Reservation, other.Reservation)) return false;
       if (!object.Equals(RoomType, other.RoomType)) return false;
-      if (TaxExempt != other.TaxExempt) return false;
       if (AdultGuestCount != other.AdultGuestCount) return false;
       if (ChildGuestCount != other.ChildGuestCount) return false;
       if(!tags_.Equals(other.tags_)) return false;
@@ -190,7 +179,6 @@ namespace HOLMS.Types.Booking.Reservations {
       if (dateRange_ != null) hash ^= DateRange.GetHashCode();
       if (reservation_ != null) hash ^= Reservation.GetHashCode();
       if (roomType_ != null) hash ^= RoomType.GetHashCode();
-      if (TaxExempt != false) hash ^= TaxExempt.GetHashCode();
       if (AdultGuestCount != 0) hash ^= AdultGuestCount.GetHashCode();
       if (ChildGuestCount != 0) hash ^= ChildGuestCount.GetHashCode();
       hash ^= tags_.GetHashCode();
@@ -216,10 +204,6 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(26);
         output.WriteMessage(RoomType);
       }
-      if (TaxExempt != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(TaxExempt);
-      }
       if (AdultGuestCount != 0) {
         output.WriteRawTag(48);
         output.WriteInt32(AdultGuestCount);
@@ -242,9 +226,6 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (roomType_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomType);
-      }
-      if (TaxExempt != false) {
-        size += 1 + 1;
       }
       if (AdultGuestCount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(AdultGuestCount);
@@ -278,9 +259,6 @@ namespace HOLMS.Types.Booking.Reservations {
           roomType_ = new global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator();
         }
         RoomType.MergeFrom(other.RoomType);
-      }
-      if (other.TaxExempt != false) {
-        TaxExempt = other.TaxExempt;
       }
       if (other.AdultGuestCount != 0) {
         AdultGuestCount = other.AdultGuestCount;
@@ -318,10 +296,6 @@ namespace HOLMS.Types.Booking.Reservations {
               roomType_ = new global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator();
             }
             input.ReadMessage(roomType_);
-            break;
-          }
-          case 40: {
-            TaxExempt = input.ReadBool();
             break;
           }
           case 48: {
