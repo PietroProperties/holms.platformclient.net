@@ -74,7 +74,6 @@
     <Compile Include="Support\DTOBuilders\Operations\OutOfOrderRecordBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Operations\RoomBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Supply\RoomTypeBuilder.cs" />
-    <Compile Include="Support\DTOExtensions\Money\NonAuthoritativeTaxFeeCalculator.cs" />
     <Compile Include="Support\DTOExtensions\Primitive\ContactInfoExtensions.cs" />
     <Compile Include="Support\DTOExtensions\Supply\Packages\LodgingPackageExtensions.cs" />
     <Compile Include="Support\DTOExtensions\TenancyConfig\PropertyExtensions.cs" />

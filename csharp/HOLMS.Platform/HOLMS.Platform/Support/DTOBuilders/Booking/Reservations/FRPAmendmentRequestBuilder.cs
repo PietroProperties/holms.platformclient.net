@@ -12,15 +12,13 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Reservations {
                 ImmutableTagSet tags,
                 ReservationIndicator ri,
                 int adults,
-                int children,
-                bool taxExempt) {
+                int children) {
             DateRange = dr;
             RoomType = rt;
             Tags = tags;
             Reservation = ri;
             NumberAdults = adults;
             NumberChildren = children;
-            TaxExempt = taxExempt;
         }
 
         public InclusiveOpsdateRange DateRange;
@@ -29,7 +27,6 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Reservations {
         public ReservationIndicator Reservation;
         public int NumberAdults;
         public int NumberChildren;
-        public bool TaxExempt;
 
         public ReservationFRPAmendmentRequest Build() {
             var request = new ReservationFRPAmendmentRequest() {
@@ -38,7 +35,6 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Reservations {
                 DateRange = DateRange.ToPB,
                 AdultGuestCount = NumberAdults,
                 ChildGuestCount = NumberChildren,
-                TaxExempt = TaxExempt,
             };
 
             request.Tags.Add(Tags.GetDescriptors());

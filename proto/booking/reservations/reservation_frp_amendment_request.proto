@@ -12,7 +12,7 @@ message ReservationFRPAmendmentRequest {
     holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
     holms.types.booking.indicators.ReservationIndicator reservation = 2;
     holms.types.supply.room_types.RoomTypeIndicator room_type = 3;
-    bool tax_exempt = 5;
+    //bool tax_exempt = 5;
     int32 adult_guest_count = 6;
     int32 child_guest_count = 7;
     repeated string tags = 8;
