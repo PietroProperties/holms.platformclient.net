@@ -16,7 +16,7 @@ message MerchantBatch {
 	CardMerchantIndicator merchant_id = 2;
 	string merchant_name = 3;
 	ProcessorTransactionResult result = 4;
-	int32 sequence_number = 5;
+	int32 processor_batch_id = 5;
 	int32 transaction_count = 6;
 	holms.types.primitive.MonetaryAmount total_amount = 7;
 	google.protobuf.Timestamp created_at = 8;
