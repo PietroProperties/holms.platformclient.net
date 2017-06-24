@@ -31,25 +31,25 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             "LnByb3RvGjJtb25leS9jYXJkcy90cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJk",
             "X3JlZnVuZC5wcm90bxo7bW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL3Byb2Nl",
             "c3Nvcl90cmFuc2FjdGlvbl9yZXN1bHQucHJvdG8aH3ByaW1pdGl2ZS9tb25l",
-            "dGFyeV9hbW91bnQucHJvdG8iyQQKDU1lcmNoYW50QmF0Y2gSTwoJZW50aXR5",
+            "dGFyeV9hbW91bnQucHJvdG8izAQKDU1lcmNoYW50QmF0Y2gSTwoJZW50aXR5",
             "X2lkGAEgASgLMjwuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rp",
             "b25zLk1lcmNoYW50QmF0Y2hJbmRpY2F0b3ISQwoLbWVyY2hhbnRfaWQYAiAB",
             "KAsyLi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5DYXJkTWVyY2hhbnRJbmRp",
             "Y2F0b3ISFQoNbWVyY2hhbnRfbmFtZRgDIAEoCRJQCgZyZXN1bHQYBCABKA4y",
             "QC5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUHJvY2Vz",
-            "c29yVHJhbnNhY3Rpb25SZXN1bHQSFwoPc2VxdWVuY2VfbnVtYmVyGAUgASgF",
-            "EhkKEXRyYW5zYWN0aW9uX2NvdW50GAYgASgFEjsKDHRvdGFsX2Ftb3VudBgH",
-            "IAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIu",
-            "CgpjcmVhdGVkX2F0GAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
-            "cBJOCghjYXB0dXJlcxgJIAMoCzI8LmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRz",
-            "LnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNhbGVDYXB0dXJlEkgKB3JlZnVu",
-            "ZHMYCiADKAsyNy5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlv",
-            "bnMuUGF5bWVudENhcmRSZWZ1bmRCJ6oCJEhPTE1TLlR5cGVzLk1vbmV5LkNh",
-            "cmRzLlRyYW5zYWN0aW9uc2IGcHJvdG8z"));
+            "c29yVHJhbnNhY3Rpb25SZXN1bHQSGgoScHJvY2Vzc29yX2JhdGNoX2lkGAUg",
+            "ASgFEhkKEXRyYW5zYWN0aW9uX2NvdW50GAYgASgFEjsKDHRvdGFsX2Ftb3Vu",
+            "dBgHIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3Vu",
+            "dBIuCgpjcmVhdGVkX2F0GAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
+            "dGFtcBJOCghjYXB0dXJlcxgJIAMoCzI8LmhvbG1zLnR5cGVzLm1vbmV5LmNh",
+            "cmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNhbGVDYXB0dXJlEkgKB3Jl",
+            "ZnVuZHMYCiADKAsyNy5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2Fj",
+            "dGlvbnMuUGF5bWVudENhcmRSZWZ1bmRCJ6oCJEhPTE1TLlR5cGVzLk1vbmV5",
+            "LkNhcmRzLlRyYW5zYWN0aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatchIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch), global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch.Parser, new[]{ "EntityId", "MerchantId", "MerchantName", "Result", "SequenceNumber", "TransactionCount", "TotalAmount", "CreatedAt", "Captures", "Refunds" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch), global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch.Parser, new[]{ "EntityId", "MerchantId", "MerchantName", "Result", "ProcessorBatchId", "TransactionCount", "TotalAmount", "CreatedAt", "Captures", "Refunds" }, null, null, null)
           }));
     }
     #endregion
@@ -84,7 +84,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       MerchantId = other.merchantId_ != null ? other.MerchantId.Clone() : null;
       merchantName_ = other.merchantName_;
       result_ = other.result_;
-      sequenceNumber_ = other.sequenceNumber_;
+      processorBatchId_ = other.processorBatchId_;
       transactionCount_ = other.transactionCount_;
       TotalAmount = other.totalAmount_ != null ? other.TotalAmount.Clone() : null;
       CreatedAt = other.createdAt_ != null ? other.CreatedAt.Clone() : null;
@@ -141,14 +141,14 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       }
     }
 
-    /// <summary>Field number for the "sequence_number" field.</summary>
-    public const int SequenceNumberFieldNumber = 5;
-    private int sequenceNumber_;
+    /// <summary>Field number for the "processor_batch_id" field.</summary>
+    public const int ProcessorBatchIdFieldNumber = 5;
+    private int processorBatchId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int SequenceNumber {
-      get { return sequenceNumber_; }
+    public int ProcessorBatchId {
+      get { return processorBatchId_; }
       set {
-        sequenceNumber_ = value;
+        processorBatchId_ = value;
       }
     }
 
@@ -222,7 +222,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (!object.Equals(MerchantId, other.MerchantId)) return false;
       if (MerchantName != other.MerchantName) return false;
       if (Result != other.Result) return false;
-      if (SequenceNumber != other.SequenceNumber) return false;
+      if (ProcessorBatchId != other.ProcessorBatchId) return false;
       if (TransactionCount != other.TransactionCount) return false;
       if (!object.Equals(TotalAmount, other.TotalAmount)) return false;
       if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
@@ -238,7 +238,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (merchantId_ != null) hash ^= MerchantId.GetHashCode();
       if (MerchantName.Length != 0) hash ^= MerchantName.GetHashCode();
       if (Result != 0) hash ^= Result.GetHashCode();
-      if (SequenceNumber != 0) hash ^= SequenceNumber.GetHashCode();
+      if (ProcessorBatchId != 0) hash ^= ProcessorBatchId.GetHashCode();
       if (TransactionCount != 0) hash ^= TransactionCount.GetHashCode();
       if (totalAmount_ != null) hash ^= TotalAmount.GetHashCode();
       if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
@@ -270,9 +270,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
         output.WriteRawTag(32);
         output.WriteEnum((int) Result);
       }
-      if (SequenceNumber != 0) {
+      if (ProcessorBatchId != 0) {
         output.WriteRawTag(40);
-        output.WriteInt32(SequenceNumber);
+        output.WriteInt32(ProcessorBatchId);
       }
       if (TransactionCount != 0) {
         output.WriteRawTag(48);
@@ -305,8 +305,8 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (Result != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
       }
-      if (SequenceNumber != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SequenceNumber);
+      if (ProcessorBatchId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProcessorBatchId);
       }
       if (TransactionCount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TransactionCount);
@@ -345,8 +345,8 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if (other.Result != 0) {
         Result = other.Result;
       }
-      if (other.SequenceNumber != 0) {
-        SequenceNumber = other.SequenceNumber;
+      if (other.ProcessorBatchId != 0) {
+        ProcessorBatchId = other.ProcessorBatchId;
       }
       if (other.TransactionCount != 0) {
         TransactionCount = other.TransactionCount;
@@ -398,7 +398,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             break;
           }
           case 40: {
-            SequenceNumber = input.ReadInt32();
+            ProcessorBatchId = input.ReadInt32();
             break;
           }
           case 48: {
