@@ -52,13 +52,9 @@ message PaymentCardVerificationRequest {
 }
 
 service CardProcessingSvc {
-	rpc GetAllPendingCaptures(.google.protobuf.Empty) 
-		returns (CardProcessingSvcCaptureEnumResponse);
-		
-	rpc GetAllPendingRefunds(.google.protobuf.Empty) 
-		returns (CardProcessingSvcRefundEnumResponse);
+	rpc GetOpenBatches(.google.protobuf.Empty) returns (MerchantBatchEnumResponse); 
 
-	rpc GetAllBatches(.holms.types.primitive.PbInclusiveCalendarDateRange) 
+	rpc GetClosedBatches(.holms.types.primitive.PbInclusiveCalendarDateRange) 
 		returns (MerchantBatchEnumResponse);
 
 	rpc OpenAndSettleBatchFromPendingCapturesSpecificMerchant(.holms.types.money.cards.CardMerchantIndicator) 
