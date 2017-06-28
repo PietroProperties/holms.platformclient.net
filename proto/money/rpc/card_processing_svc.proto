@@ -4,46 +4,16 @@ package holms.types.money.rpc;
 option csharp_namespace = "HOLMS.Types.Money.RPC";
 
 import "crm/guests/guest_indicator.proto";
-import "google/protobuf/empty.proto";
 import "money/cards/card_merchant_indicator.proto";
 import "money/cards/guest_payment_card_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
 import "money/cards/transactions/merchant_batch.proto";
-import "money/cards/transactions/payment_card_sale_capture.proto";
-import "money/cards/transactions/payment_card_refund.proto";
-import "money/cards/transactions/payment_card_sale_capture_indicator.proto";
+import "money/cards/transactions/payment_card_sale_indicator.proto";
+import "money/cards/transactions/payment_card_refund_indicator.proto";
 import "money/cards/transactions/processor_transaction_result.proto";
 import "primitive/pb_inclusive_calendar_date_range.proto";
 import "tenancy_config/indicators/property_indicator.proto";
 
-
-message CardProcessingSvcCaptureEnumResponse {
-	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture captures = 1;
-}
-
-message CardProcessingSvcRefundEnumResponse {
-	repeated holms.types.money.cards.transactions.PaymentCardRefund refunds= 1;
-}
-
-message MerchantBatchEnumResponse {
-	repeated holms.types.money.cards.transactions.MerchantBatch batches = 1;
-}
-
-message CardProcessingSvcCancelPendingCaptureResponse {
-	CardProcessingSvcCancelPendingCaptureResult result = 1;
-}
-
-enum CardProcessingSvcCancelPendingCaptureResult {
-	CARD_PROCESSING_SVC_CANCEL_PENDING_CAPTURE_SUCCESS = 0;
-	CARD_PROCESSING_SVC_CANCEL_PENDING_CAPTURE_NOT_FOUND = 1;
-	CARD_PROCESSING_SVC_CANCEL_PENDING_CAPTURE_NOT_CANCELLABLE = 2;
-	CARD_PROCESSING_SVC_CANCEL_PENDING_CAPTURE_UNKNOWN_ERROR = 3;
-}
-
-message CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse {
-	holms.types.money.cards.transactions.ProcessorTransactionResult result = 1;
-	holms.types.money.cards.GuestPaymentCardIndicator card = 2;
-}
 
 message PaymentCardVerificationRequest {
 	holms.types.crm.guests.GuestIndicator guest = 1;
@@ -51,22 +21,51 @@ message PaymentCardVerificationRequest {
 	holms.types.money.cards.NotPresentPaymentCard card = 3;
 }
 
+message CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse {
+	holms.types.money.cards.transactions.ProcessorTransactionResult result = 1;
+	holms.types.money.cards.GuestPaymentCardIndicator card = 2;
+}
+
+message CardProcessingSvcSearchHistoricalBatchesRequest {
+	holms.types.money.cards.CardMerchantIndicator merchant = 1;
+	holms.types.primitive.PbInclusiveCalendarDateRange batch_closure_date_range = 2;
+}
+
+
+message MerchantBatchEnumResponse {
+	repeated holms.types.money.cards.transactions.MerchantBatch batches = 1;
+}
+
+message CardProcessingSvcVoidTransactionResponse {
+	CardProcessingSvcVoidTransactionResult result = 1;
+}
+
+enum CardProcessingSvcVoidTransactionResult {
+	CARD_PROCESSING_SVC_VOID_TRANSACTION_SUCCESS = 0;
+	CARD_PROCESSING_SVC_VOID_TRANSACTION_NOT_FOUND = 1;
+	CARD_PROCESSING_SVC_VOID_TRANSACTION_NOT_VOIDABLE = 2;
+	CARD_PROCESSING_SVC_VOID_TRANSACTION_UNKNOWN_FAILURE = 3;
+}
+
 service CardProcessingSvc {
-	rpc GetOpenBatches(.google.protobuf.Empty) returns (MerchantBatchEnumResponse); 
-
-	rpc GetClosedBatches(.holms.types.primitive.PbInclusiveCalendarDateRange) 
-		returns (MerchantBatchEnumResponse);
-
-	rpc OpenAndSettleBatchFromPendingCapturesSpecificMerchant(.holms.types.money.cards.CardMerchantIndicator) 
-		returns (holms.types.money.cards.transactions.MerchantBatch);
-
-	rpc OpenAndSettleBatchFromPendingCapturesAllMerchants(.google.protobuf.Empty) 
-		returns (MerchantBatchEnumResponse);
-
-	rpc CancelPendingCapture(holms.types.money.cards.transactions.PaymentCardSaleCaptureIndicator)
-		returns (CardProcessingSvcCancelPendingCaptureResponse);
-
+	// Tokenize a new card
 	rpc VerifyAndTokenizeNotPresentCard(PaymentCardVerificationRequest)
 		returns (CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse);
+
+	// Batches
+	// Get info about batches
+	rpc GetCurrentBatchState(holms.types.money.cards.CardMerchantIndicator)
+		returns (holms.types.money.cards.transactions.MerchantBatch); 
+	rpc SearchHistoricalBatches(CardProcessingSvcSearchHistoricalBatchesRequest) 
+		returns (MerchantBatchEnumResponse);
+	// Request batch closure
+	rpc CloseProcessorBatch(holms.types.money.cards.CardMerchantIndicator) 
+		returns (holms.types.money.cards.transactions.MerchantBatch);
+
+	// Post-creation card transaction management
+	rpc VoidSale(holms.types.money.cards.transactions.PaymentCardSaleIndicator)
+		returns (CardProcessingSvcVoidTransactionResponse);
+	rpc VoidRefund(holms.types.money.cards.transactions.PaymentCardRefundIndicator)
+		returns (CardProcessingSvcVoidTransactionResponse);
 }
 

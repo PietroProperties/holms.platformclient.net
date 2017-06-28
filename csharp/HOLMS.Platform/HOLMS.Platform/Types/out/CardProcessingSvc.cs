@@ -24,685 +24,86 @@ namespace HOLMS.Types.Money.RPC {
           string.Concat(
             "CiNtb25leS9ycGMvY2FyZF9wcm9jZXNzaW5nX3N2Yy5wcm90bxIVaG9sbXMu",
             "dHlwZXMubW9uZXkucnBjGiBjcm0vZ3Vlc3RzL2d1ZXN0X2luZGljYXRvci5w",
-            "cm90bxobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3RvGiltb25leS9jYXJk",
-            "cy9jYXJkX21lcmNoYW50X2luZGljYXRvci5wcm90bxoubW9uZXkvY2FyZHMv",
-            "Z3Vlc3RfcGF5bWVudF9jYXJkX2luZGljYXRvci5wcm90bxoqbW9uZXkvY2Fy",
-            "ZHMvbm90X3ByZXNlbnRfcGF5bWVudF9jYXJkLnByb3RvGi1tb25leS9jYXJk",
-            "cy90cmFuc2FjdGlvbnMvbWVyY2hhbnRfYmF0Y2gucHJvdG8aOG1vbmV5L2Nh",
-            "cmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfc2FsZV9jYXB0dXJlLnBy",
-            "b3RvGjJtb25leS9jYXJkcy90cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJkX3Jl",
-            "ZnVuZC5wcm90bxpCbW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL3BheW1lbnRf",
-            "Y2FyZF9zYWxlX2NhcHR1cmVfaW5kaWNhdG9yLnByb3RvGjttb25leS9jYXJk",
-            "cy90cmFuc2FjdGlvbnMvcHJvY2Vzc29yX3RyYW5zYWN0aW9uX3Jlc3VsdC5w",
-            "cm90bxowcHJpbWl0aXZlL3BiX2luY2x1c2l2ZV9jYWxlbmRhcl9kYXRlX3Jh",
-            "bmdlLnByb3RvGjJ0ZW5hbmN5X2NvbmZpZy9pbmRpY2F0b3JzL3Byb3BlcnR5",
-            "X2luZGljYXRvci5wcm90byJ2CiRDYXJkUHJvY2Vzc2luZ1N2Y0NhcHR1cmVF",
-            "bnVtUmVzcG9uc2USTgoIY2FwdHVyZXMYASADKAsyPC5ob2xtcy50eXBlcy5t",
-            "b25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVudENhcmRTYWxlQ2FwdHVy",
-            "ZSJvCiNDYXJkUHJvY2Vzc2luZ1N2Y1JlZnVuZEVudW1SZXNwb25zZRJICgdy",
-            "ZWZ1bmRzGAEgAygLMjcuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNh",
-            "Y3Rpb25zLlBheW1lbnRDYXJkUmVmdW5kImEKGU1lcmNoYW50QmF0Y2hFbnVt",
-            "UmVzcG9uc2USRAoHYmF0Y2hlcxgBIAMoCzIzLmhvbG1zLnR5cGVzLm1vbmV5",
-            "LmNhcmRzLnRyYW5zYWN0aW9ucy5NZXJjaGFudEJhdGNoIoMBCi1DYXJkUHJv",
-            "Y2Vzc2luZ1N2Y0NhbmNlbFBlbmRpbmdDYXB0dXJlUmVzcG9uc2USUgoGcmVz",
-            "dWx0GAEgASgOMkIuaG9sbXMudHlwZXMubW9uZXkucnBjLkNhcmRQcm9jZXNz",
-            "aW5nU3ZjQ2FuY2VsUGVuZGluZ0NhcHR1cmVSZXN1bHQizgEKOENhcmRQcm9j",
-            "ZXNzaW5nU3ZjVmVyaWZ5QW5kVG9rZW5pemVOb3RQcmVzZW50Q2FyZFJlc3Bv",
-            "bnNlElAKBnJlc3VsdBgBIAEoDjJALmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRz",
-            "LnRyYW5zYWN0aW9ucy5Qcm9jZXNzb3JUcmFuc2FjdGlvblJlc3VsdBJACgRj",
-            "YXJkGAIgASgLMjIuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuR3Vlc3RQYXlt",
-            "ZW50Q2FyZEluZGljYXRvciLhAQoeUGF5bWVudENhcmRWZXJpZmljYXRpb25S",
-            "ZXF1ZXN0EjUKBWd1ZXN0GAEgASgLMiYuaG9sbXMudHlwZXMuY3JtLmd1ZXN0",
-            "cy5HdWVzdEluZGljYXRvchJKCghwcm9wZXJ0eRgCIAEoCzI4LmhvbG1zLnR5",
-            "cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0",
-            "b3ISPAoEY2FyZBgDIAEoCzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLk5v",
-            "dFByZXNlbnRQYXltZW50Q2FyZCqdAgorQ2FyZFByb2Nlc3NpbmdTdmNDYW5j",
-            "ZWxQZW5kaW5nQ2FwdHVyZVJlc3VsdBI2CjJDQVJEX1BST0NFU1NJTkdfU1ZD",
-            "X0NBTkNFTF9QRU5ESU5HX0NBUFRVUkVfU1VDQ0VTUxAAEjgKNENBUkRfUFJP",
-            "Q0VTU0lOR19TVkNfQ0FOQ0VMX1BFTkRJTkdfQ0FQVFVSRV9OT1RfRk9VTkQQ",
-            "ARI+CjpDQVJEX1BST0NFU1NJTkdfU1ZDX0NBTkNFTF9QRU5ESU5HX0NBUFRV",
-            "UkVfTk9UX0NBTkNFTExBQkxFEAISPAo4Q0FSRF9QUk9DRVNTSU5HX1NWQ19D",
-            "QU5DRUxfUEVORElOR19DQVBUVVJFX1VOS05PV05fRVJST1IQAzLaBgoRQ2Fy",
-            "ZFByb2Nlc3NpbmdTdmMSWgoOR2V0T3BlbkJhdGNoZXMSFi5nb29nbGUucHJv",
-            "dG9idWYuRW1wdHkaMC5ob2xtcy50eXBlcy5tb25leS5ycGMuTWVyY2hhbnRC",
-            "YXRjaEVudW1SZXNwb25zZRJ5ChBHZXRDbG9zZWRCYXRjaGVzEjMuaG9sbXMu",
-            "dHlwZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZlQ2FsZW5kYXJEYXRlUmFuZ2Ua",
-            "MC5ob2xtcy50eXBlcy5tb25leS5ycGMuTWVyY2hhbnRCYXRjaEVudW1SZXNw",
-            "b25zZRKcAQo1T3BlbkFuZFNldHRsZUJhdGNoRnJvbVBlbmRpbmdDYXB0dXJl",
-            "c1NwZWNpZmljTWVyY2hhbnQSLi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5D",
-            "YXJkTWVyY2hhbnRJbmRpY2F0b3IaMy5ob2xtcy50eXBlcy5tb25leS5jYXJk",
-            "cy50cmFuc2FjdGlvbnMuTWVyY2hhbnRCYXRjaBJ9CjFPcGVuQW5kU2V0dGxl",
-            "QmF0Y2hGcm9tUGVuZGluZ0NhcHR1cmVzQWxsTWVyY2hhbnRzEhYuZ29vZ2xl",
-            "LnByb3RvYnVmLkVtcHR5GjAuaG9sbXMudHlwZXMubW9uZXkucnBjLk1lcmNo",
-            "YW50QmF0Y2hFbnVtUmVzcG9uc2USowEKFENhbmNlbFBlbmRpbmdDYXB0dXJl",
-            "EkUuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBheW1l",
-            "bnRDYXJkU2FsZUNhcHR1cmVJbmRpY2F0b3IaRC5ob2xtcy50eXBlcy5tb25l",
-            "eS5ycGMuQ2FyZFByb2Nlc3NpbmdTdmNDYW5jZWxQZW5kaW5nQ2FwdHVyZVJl",
-            "c3BvbnNlEqkBCh9WZXJpZnlBbmRUb2tlbml6ZU5vdFByZXNlbnRDYXJkEjUu",
-            "aG9sbXMudHlwZXMubW9uZXkucnBjLlBheW1lbnRDYXJkVmVyaWZpY2F0aW9u",
-            "UmVxdWVzdBpPLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5DYXJkUHJvY2Vzc2lu",
-            "Z1N2Y1ZlcmlmeUFuZFRva2VuaXplTm90UHJlc2VudENhcmRSZXNwb25zZUIY",
-            "qgIVSE9MTVMuVHlwZXMuTW9uZXkuUlBDYgZwcm90bzM="));
+            "cm90bxopbW9uZXkvY2FyZHMvY2FyZF9tZXJjaGFudF9pbmRpY2F0b3IucHJv",
+            "dG8aLm1vbmV5L2NhcmRzL2d1ZXN0X3BheW1lbnRfY2FyZF9pbmRpY2F0b3Iu",
+            "cHJvdG8aKm1vbmV5L2NhcmRzL25vdF9wcmVzZW50X3BheW1lbnRfY2FyZC5w",
+            "cm90bxotbW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL21lcmNoYW50X2JhdGNo",
+            "LnByb3RvGjptb25leS9jYXJkcy90cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJk",
+            "X3NhbGVfaW5kaWNhdG9yLnByb3RvGjxtb25leS9jYXJkcy90cmFuc2FjdGlv",
+            "bnMvcGF5bWVudF9jYXJkX3JlZnVuZF9pbmRpY2F0b3IucHJvdG8aO21vbmV5",
+            "L2NhcmRzL3RyYW5zYWN0aW9ucy9wcm9jZXNzb3JfdHJhbnNhY3Rpb25fcmVz",
+            "dWx0LnByb3RvGjBwcmltaXRpdmUvcGJfaW5jbHVzaXZlX2NhbGVuZGFyX2Rh",
+            "dGVfcmFuZ2UucHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMvcHJv",
+            "cGVydHlfaW5kaWNhdG9yLnByb3RvIuEBCh5QYXltZW50Q2FyZFZlcmlmaWNh",
+            "dGlvblJlcXVlc3QSNQoFZ3Vlc3QYASABKAsyJi5ob2xtcy50eXBlcy5jcm0u",
+            "Z3Vlc3RzLkd1ZXN0SW5kaWNhdG9yEkoKCHByb3BlcnR5GAIgASgLMjguaG9s",
+            "bXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUlu",
+            "ZGljYXRvchI8CgRjYXJkGAMgASgLMi4uaG9sbXMudHlwZXMubW9uZXkuY2Fy",
+            "ZHMuTm90UHJlc2VudFBheW1lbnRDYXJkIs4BCjhDYXJkUHJvY2Vzc2luZ1N2",
+            "Y1ZlcmlmeUFuZFRva2VuaXplTm90UHJlc2VudENhcmRSZXNwb25zZRJQCgZy",
+            "ZXN1bHQYASABKA4yQC5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2Fj",
+            "dGlvbnMuUHJvY2Vzc29yVHJhbnNhY3Rpb25SZXN1bHQSQAoEY2FyZBgCIAEo",
+            "CzIyLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkd1ZXN0UGF5bWVudENhcmRJ",
+            "bmRpY2F0b3IiygEKL0NhcmRQcm9jZXNzaW5nU3ZjU2VhcmNoSGlzdG9yaWNh",
+            "bEJhdGNoZXNSZXF1ZXN0EkAKCG1lcmNoYW50GAEgASgLMi4uaG9sbXMudHlw",
+            "ZXMubW9uZXkuY2FyZHMuQ2FyZE1lcmNoYW50SW5kaWNhdG9yElUKGGJhdGNo",
+            "X2Nsb3N1cmVfZGF0ZV9yYW5nZRgCIAEoCzIzLmhvbG1zLnR5cGVzLnByaW1p",
+            "dGl2ZS5QYkluY2x1c2l2ZUNhbGVuZGFyRGF0ZVJhbmdlImEKGU1lcmNoYW50",
+            "QmF0Y2hFbnVtUmVzcG9uc2USRAoHYmF0Y2hlcxgBIAMoCzIzLmhvbG1zLnR5",
+            "cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5NZXJjaGFudEJhdGNoInkK",
+            "KENhcmRQcm9jZXNzaW5nU3ZjVm9pZFRyYW5zYWN0aW9uUmVzcG9uc2USTQoG",
+            "cmVzdWx0GAEgASgOMj0uaG9sbXMudHlwZXMubW9uZXkucnBjLkNhcmRQcm9j",
+            "ZXNzaW5nU3ZjVm9pZFRyYW5zYWN0aW9uUmVzdWx0Kv8BCiZDYXJkUHJvY2Vz",
+            "c2luZ1N2Y1ZvaWRUcmFuc2FjdGlvblJlc3VsdBIwCixDQVJEX1BST0NFU1NJ",
+            "TkdfU1ZDX1ZPSURfVFJBTlNBQ1RJT05fU1VDQ0VTUxAAEjIKLkNBUkRfUFJP",
+            "Q0VTU0lOR19TVkNfVk9JRF9UUkFOU0FDVElPTl9OT1RfRk9VTkQQARI1CjFD",
+            "QVJEX1BST0NFU1NJTkdfU1ZDX1ZPSURfVFJBTlNBQ1RJT05fTk9UX1ZPSURB",
+            "QkxFEAISOAo0Q0FSRF9QUk9DRVNTSU5HX1NWQ19WT0lEX1RSQU5TQUNUSU9O",
+            "X1VOS05PV05fRkFJTFVSRRADMu4GChFDYXJkUHJvY2Vzc2luZ1N2YxKpAQof",
+            "VmVyaWZ5QW5kVG9rZW5pemVOb3RQcmVzZW50Q2FyZBI1LmhvbG1zLnR5cGVz",
+            "Lm1vbmV5LnJwYy5QYXltZW50Q2FyZFZlcmlmaWNhdGlvblJlcXVlc3QaTy5o",
+            "b2xtcy50eXBlcy5tb25leS5ycGMuQ2FyZFByb2Nlc3NpbmdTdmNWZXJpZnlB",
+            "bmRUb2tlbml6ZU5vdFByZXNlbnRDYXJkUmVzcG9uc2USewoUR2V0Q3VycmVu",
+            "dEJhdGNoU3RhdGUSLi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5DYXJkTWVy",
+            "Y2hhbnRJbmRpY2F0b3IaMy5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFu",
+            "c2FjdGlvbnMuTWVyY2hhbnRCYXRjaBKTAQoXU2VhcmNoSGlzdG9yaWNhbEJh",
+            "dGNoZXMSRi5ob2xtcy50eXBlcy5tb25leS5ycGMuQ2FyZFByb2Nlc3NpbmdT",
+            "dmNTZWFyY2hIaXN0b3JpY2FsQmF0Y2hlc1JlcXVlc3QaMC5ob2xtcy50eXBl",
+            "cy5tb25leS5ycGMuTWVyY2hhbnRCYXRjaEVudW1SZXNwb25zZRJ6ChNDbG9z",
+            "ZVByb2Nlc3NvckJhdGNoEi4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2Fy",
+            "ZE1lcmNoYW50SW5kaWNhdG9yGjMuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMu",
+            "dHJhbnNhY3Rpb25zLk1lcmNoYW50QmF0Y2gSiwEKCFZvaWRTYWxlEj4uaG9s",
+            "bXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBheW1lbnRDYXJk",
+            "U2FsZUluZGljYXRvcho/LmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5DYXJkUHJv",
+            "Y2Vzc2luZ1N2Y1ZvaWRUcmFuc2FjdGlvblJlc3BvbnNlEo8BCgpWb2lkUmVm",
+            "dW5kEkAuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBh",
+            "eW1lbnRDYXJkUmVmdW5kSW5kaWNhdG9yGj8uaG9sbXMudHlwZXMubW9uZXku",
+            "cnBjLkNhcmRQcm9jZXNzaW5nU3ZjVm9pZFRyYW5zYWN0aW9uUmVzcG9uc2VC",
+            "GKoCFUhPTE1TLlR5cGVzLk1vbmV5LlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.NotPresentPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatchReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRangeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResult), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcCaptureEnumResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcCaptureEnumResponse.Parser, new[]{ "Captures" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcRefundEnumResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcRefundEnumResponse.Parser, new[]{ "Refunds" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse), global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse.Parser, new[]{ "Batches" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResponse.Parser, new[]{ "Result" }, null, null, null),
+          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.NotPresentPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatchReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRangeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResult), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest), global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest.Parser, new[]{ "Guest", "Property", "Card" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse.Parser, new[]{ "Result", "Card" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest), global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest.Parser, new[]{ "Guest", "Property", "Card" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest.Parser, new[]{ "Merchant", "BatchClosureDateRange" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse), global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse.Parser, new[]{ "Batches" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResponse.Parser, new[]{ "Result" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Enums
-  public enum CardProcessingSvcCancelPendingCaptureResult {
-    [pbr::OriginalName("CARD_PROCESSING_SVC_CANCEL_PENDING_CAPTURE_SUCCESS")] CardProcessingSvcCancelPendingCaptureSuccess = 0,
-    [pbr::OriginalName("CARD_PROCESSING_SVC_CANCEL_PENDING_CAPTURE_NOT_FOUND")] CardProcessingSvcCancelPendingCaptureNotFound = 1,
-    [pbr::OriginalName("CARD_PROCESSING_SVC_CANCEL_PENDING_CAPTURE_NOT_CANCELLABLE")] CardProcessingSvcCancelPendingCaptureNotCancellable = 2,
-    [pbr::OriginalName("CARD_PROCESSING_SVC_CANCEL_PENDING_CAPTURE_UNKNOWN_ERROR")] CardProcessingSvcCancelPendingCaptureUnknownError = 3,
+  public enum CardProcessingSvcVoidTransactionResult {
+    [pbr::OriginalName("CARD_PROCESSING_SVC_VOID_TRANSACTION_SUCCESS")] CardProcessingSvcVoidTransactionSuccess = 0,
+    [pbr::OriginalName("CARD_PROCESSING_SVC_VOID_TRANSACTION_NOT_FOUND")] CardProcessingSvcVoidTransactionNotFound = 1,
+    [pbr::OriginalName("CARD_PROCESSING_SVC_VOID_TRANSACTION_NOT_VOIDABLE")] CardProcessingSvcVoidTransactionNotVoidable = 2,
+    [pbr::OriginalName("CARD_PROCESSING_SVC_VOID_TRANSACTION_UNKNOWN_FAILURE")] CardProcessingSvcVoidTransactionUnknownFailure = 3,
   }
 
   #endregion
 
   #region Messages
-  public sealed partial class CardProcessingSvcCaptureEnumResponse : pb::IMessage<CardProcessingSvcCaptureEnumResponse> {
-    private static readonly pb::MessageParser<CardProcessingSvcCaptureEnumResponse> _parser = new pb::MessageParser<CardProcessingSvcCaptureEnumResponse>(() => new CardProcessingSvcCaptureEnumResponse());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CardProcessingSvcCaptureEnumResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[0]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardProcessingSvcCaptureEnumResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardProcessingSvcCaptureEnumResponse(CardProcessingSvcCaptureEnumResponse other) : this() {
-      captures_ = other.captures_.Clone();
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardProcessingSvcCaptureEnumResponse Clone() {
-      return new CardProcessingSvcCaptureEnumResponse(this);
-    }
-
-    /// <summary>Field number for the "captures" field.</summary>
-    public const int CapturesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture> _repeated_captures_codec
-        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture> captures_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCapture> Captures {
-      get { return captures_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CardProcessingSvcCaptureEnumResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CardProcessingSvcCaptureEnumResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!captures_.Equals(other.captures_)) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= captures_.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      captures_.WriteTo(output, _repeated_captures_codec);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      size += captures_.CalculateSize(_repeated_captures_codec);
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CardProcessingSvcCaptureEnumResponse other) {
-      if (other == null) {
-        return;
-      }
-      captures_.Add(other.captures_);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 10: {
-            captures_.AddEntriesFrom(input, _repeated_captures_codec);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class CardProcessingSvcRefundEnumResponse : pb::IMessage<CardProcessingSvcRefundEnumResponse> {
-    private static readonly pb::MessageParser<CardProcessingSvcRefundEnumResponse> _parser = new pb::MessageParser<CardProcessingSvcRefundEnumResponse>(() => new CardProcessingSvcRefundEnumResponse());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CardProcessingSvcRefundEnumResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[1]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardProcessingSvcRefundEnumResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardProcessingSvcRefundEnumResponse(CardProcessingSvcRefundEnumResponse other) : this() {
-      refunds_ = other.refunds_.Clone();
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardProcessingSvcRefundEnumResponse Clone() {
-      return new CardProcessingSvcRefundEnumResponse(this);
-    }
-
-    /// <summary>Field number for the "refunds" field.</summary>
-    public const int RefundsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefund> _repeated_refunds_codec
-        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefund.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefund> refunds_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefund>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefund> Refunds {
-      get { return refunds_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CardProcessingSvcRefundEnumResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CardProcessingSvcRefundEnumResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!refunds_.Equals(other.refunds_)) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= refunds_.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      refunds_.WriteTo(output, _repeated_refunds_codec);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      size += refunds_.CalculateSize(_repeated_refunds_codec);
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CardProcessingSvcRefundEnumResponse other) {
-      if (other == null) {
-        return;
-      }
-      refunds_.Add(other.refunds_);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 10: {
-            refunds_.AddEntriesFrom(input, _repeated_refunds_codec);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class MerchantBatchEnumResponse : pb::IMessage<MerchantBatchEnumResponse> {
-    private static readonly pb::MessageParser<MerchantBatchEnumResponse> _parser = new pb::MessageParser<MerchantBatchEnumResponse>(() => new MerchantBatchEnumResponse());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MerchantBatchEnumResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MerchantBatchEnumResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MerchantBatchEnumResponse(MerchantBatchEnumResponse other) : this() {
-      batches_ = other.batches_.Clone();
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MerchantBatchEnumResponse Clone() {
-      return new MerchantBatchEnumResponse(this);
-    }
-
-    /// <summary>Field number for the "batches" field.</summary>
-    public const int BatchesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> _repeated_batches_codec
-        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> batches_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> Batches {
-      get { return batches_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as MerchantBatchEnumResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MerchantBatchEnumResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!batches_.Equals(other.batches_)) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= batches_.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      batches_.WriteTo(output, _repeated_batches_codec);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      size += batches_.CalculateSize(_repeated_batches_codec);
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MerchantBatchEnumResponse other) {
-      if (other == null) {
-        return;
-      }
-      batches_.Add(other.batches_);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 10: {
-            batches_.AddEntriesFrom(input, _repeated_batches_codec);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class CardProcessingSvcCancelPendingCaptureResponse : pb::IMessage<CardProcessingSvcCancelPendingCaptureResponse> {
-    private static readonly pb::MessageParser<CardProcessingSvcCancelPendingCaptureResponse> _parser = new pb::MessageParser<CardProcessingSvcCancelPendingCaptureResponse>(() => new CardProcessingSvcCancelPendingCaptureResponse());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CardProcessingSvcCancelPendingCaptureResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[3]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardProcessingSvcCancelPendingCaptureResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardProcessingSvcCancelPendingCaptureResponse(CardProcessingSvcCancelPendingCaptureResponse other) : this() {
-      result_ = other.result_;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardProcessingSvcCancelPendingCaptureResponse Clone() {
-      return new CardProcessingSvcCancelPendingCaptureResponse(this);
-    }
-
-    /// <summary>Field number for the "result" field.</summary>
-    public const int ResultFieldNumber = 1;
-    private global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResult result_ = 0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResult Result {
-      get { return result_; }
-      set {
-        result_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CardProcessingSvcCancelPendingCaptureResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CardProcessingSvcCancelPendingCaptureResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Result != other.Result) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Result != 0) hash ^= Result.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Result != 0) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) Result);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Result != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CardProcessingSvcCancelPendingCaptureResponse other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Result != 0) {
-        Result = other.Result;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 8: {
-            result_ = (global::HOLMS.Types.Money.RPC.CardProcessingSvcCancelPendingCaptureResult) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse : pb::IMessage<CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> {
-    private static readonly pb::MessageParser<CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> _parser = new pb::MessageParser<CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse>(() => new CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[4]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse(CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse other) : this() {
-      result_ = other.result_;
-      Card = other.card_ != null ? other.Card.Clone() : null;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse Clone() {
-      return new CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse(this);
-    }
-
-    /// <summary>Field number for the "result" field.</summary>
-    public const int ResultFieldNumber = 1;
-    private global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResult result_ = 0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResult Result {
-      get { return result_; }
-      set {
-        result_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "card" field.</summary>
-    public const int CardFieldNumber = 2;
-    private global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator card_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator Card {
-      get { return card_; }
-      set {
-        card_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Result != other.Result) return false;
-      if (!object.Equals(Card, other.Card)) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Result != 0) hash ^= Result.GetHashCode();
-      if (card_ != null) hash ^= Card.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Result != 0) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) Result);
-      }
-      if (card_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Card);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Result != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
-      }
-      if (card_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Card);
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Result != 0) {
-        Result = other.Result;
-      }
-      if (other.card_ != null) {
-        if (card_ == null) {
-          card_ = new global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator();
-        }
-        Card.MergeFrom(other.Card);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 8: {
-            result_ = (global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResult) input.ReadEnum();
-            break;
-          }
-          case 18: {
-            if (card_ == null) {
-              card_ = new global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator();
-            }
-            input.ReadMessage(card_);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
   public sealed partial class PaymentCardVerificationRequest : pb::IMessage<PaymentCardVerificationRequest> {
     private static readonly pb::MessageParser<PaymentCardVerificationRequest> _parser = new pb::MessageParser<PaymentCardVerificationRequest>(() => new PaymentCardVerificationRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -710,7 +111,7 @@ namespace HOLMS.Types.Money.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[5]; }
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -886,6 +287,540 @@ namespace HOLMS.Types.Money.RPC {
               card_ = new global::HOLMS.Types.Money.Cards.NotPresentPaymentCard();
             }
             input.ReadMessage(card_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse : pb::IMessage<CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> {
+    private static readonly pb::MessageParser<CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> _parser = new pb::MessageParser<CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse>(() => new CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse(CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse other) : this() {
+      result_ = other.result_;
+      Card = other.card_ != null ? other.Card.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse Clone() {
+      return new CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResult result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "card" field.</summary>
+    public const int CardFieldNumber = 2;
+    private global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator card_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator Card {
+      get { return card_; }
+      set {
+        card_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      if (!object.Equals(Card, other.Card)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Result != 0) hash ^= Result.GetHashCode();
+      if (card_ != null) hash ^= Card.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
+      if (card_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Card);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (card_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Card);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      if (other.card_ != null) {
+        if (card_ == null) {
+          card_ = new global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator();
+        }
+        Card.MergeFrom(other.Card);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            result_ = (global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResult) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (card_ == null) {
+              card_ = new global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator();
+            }
+            input.ReadMessage(card_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CardProcessingSvcSearchHistoricalBatchesRequest : pb::IMessage<CardProcessingSvcSearchHistoricalBatchesRequest> {
+    private static readonly pb::MessageParser<CardProcessingSvcSearchHistoricalBatchesRequest> _parser = new pb::MessageParser<CardProcessingSvcSearchHistoricalBatchesRequest>(() => new CardProcessingSvcSearchHistoricalBatchesRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcSearchHistoricalBatchesRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcSearchHistoricalBatchesRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcSearchHistoricalBatchesRequest(CardProcessingSvcSearchHistoricalBatchesRequest other) : this() {
+      Merchant = other.merchant_ != null ? other.Merchant.Clone() : null;
+      BatchClosureDateRange = other.batchClosureDateRange_ != null ? other.BatchClosureDateRange.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcSearchHistoricalBatchesRequest Clone() {
+      return new CardProcessingSvcSearchHistoricalBatchesRequest(this);
+    }
+
+    /// <summary>Field number for the "merchant" field.</summary>
+    public const int MerchantFieldNumber = 1;
+    private global::HOLMS.Types.Money.Cards.CardMerchantIndicator merchant_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Cards.CardMerchantIndicator Merchant {
+      get { return merchant_; }
+      set {
+        merchant_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "batch_closure_date_range" field.</summary>
+    public const int BatchClosureDateRangeFieldNumber = 2;
+    private global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange batchClosureDateRange_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange BatchClosureDateRange {
+      get { return batchClosureDateRange_; }
+      set {
+        batchClosureDateRange_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcSearchHistoricalBatchesRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcSearchHistoricalBatchesRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Merchant, other.Merchant)) return false;
+      if (!object.Equals(BatchClosureDateRange, other.BatchClosureDateRange)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (merchant_ != null) hash ^= Merchant.GetHashCode();
+      if (batchClosureDateRange_ != null) hash ^= BatchClosureDateRange.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (merchant_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Merchant);
+      }
+      if (batchClosureDateRange_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(BatchClosureDateRange);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (merchant_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Merchant);
+      }
+      if (batchClosureDateRange_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BatchClosureDateRange);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcSearchHistoricalBatchesRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.merchant_ != null) {
+        if (merchant_ == null) {
+          merchant_ = new global::HOLMS.Types.Money.Cards.CardMerchantIndicator();
+        }
+        Merchant.MergeFrom(other.Merchant);
+      }
+      if (other.batchClosureDateRange_ != null) {
+        if (batchClosureDateRange_ == null) {
+          batchClosureDateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange();
+        }
+        BatchClosureDateRange.MergeFrom(other.BatchClosureDateRange);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (merchant_ == null) {
+              merchant_ = new global::HOLMS.Types.Money.Cards.CardMerchantIndicator();
+            }
+            input.ReadMessage(merchant_);
+            break;
+          }
+          case 18: {
+            if (batchClosureDateRange_ == null) {
+              batchClosureDateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange();
+            }
+            input.ReadMessage(batchClosureDateRange_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class MerchantBatchEnumResponse : pb::IMessage<MerchantBatchEnumResponse> {
+    private static readonly pb::MessageParser<MerchantBatchEnumResponse> _parser = new pb::MessageParser<MerchantBatchEnumResponse>(() => new MerchantBatchEnumResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MerchantBatchEnumResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MerchantBatchEnumResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MerchantBatchEnumResponse(MerchantBatchEnumResponse other) : this() {
+      batches_ = other.batches_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MerchantBatchEnumResponse Clone() {
+      return new MerchantBatchEnumResponse(this);
+    }
+
+    /// <summary>Field number for the "batches" field.</summary>
+    public const int BatchesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> _repeated_batches_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> batches_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> Batches {
+      get { return batches_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MerchantBatchEnumResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MerchantBatchEnumResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!batches_.Equals(other.batches_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= batches_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      batches_.WriteTo(output, _repeated_batches_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += batches_.CalculateSize(_repeated_batches_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MerchantBatchEnumResponse other) {
+      if (other == null) {
+        return;
+      }
+      batches_.Add(other.batches_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            batches_.AddEntriesFrom(input, _repeated_batches_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CardProcessingSvcVoidTransactionResponse : pb::IMessage<CardProcessingSvcVoidTransactionResponse> {
+    private static readonly pb::MessageParser<CardProcessingSvcVoidTransactionResponse> _parser = new pb::MessageParser<CardProcessingSvcVoidTransactionResponse>(() => new CardProcessingSvcVoidTransactionResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcVoidTransactionResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVoidTransactionResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVoidTransactionResponse(CardProcessingSvcVoidTransactionResponse other) : this() {
+      result_ = other.result_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVoidTransactionResponse Clone() {
+      return new CardProcessingSvcVoidTransactionResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResult result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcVoidTransactionResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcVoidTransactionResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Result != 0) hash ^= Result.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcVoidTransactionResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            result_ = (global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResult) input.ReadEnum();
             break;
           }
         }

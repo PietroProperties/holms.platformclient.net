@@ -133,21 +133,6 @@ message ReservationFolioSvcPostMiscChargeCorrectionRequest {
 	bool adjustment_taken_from_guest = 4;
 }
 
-message ReservationFolioSvcVoidSaleRequest {
-	holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 1;
-	holms.types.booking.indicators.ReservationIndicator reservation = 2;
-}
-
-enum ReservationFolioSvcVoidSaleResult {
-	RESERVATION_FOLIO_SVC_VOID_SALE_SUCCESS = 0;
-	RESERVATION_FOLIO_SVC_VOID_SALE_NOT_FOUND = 1;
-	RESERVATION_FOLIO_SVC_VOID_SALE_UNKNOWN_FAILURE = 2;
-}
-
-message ReservationFolioSvcVoidSaleResponse {
-	ReservationFolioSvcVoidSaleResult result = 1;
-}
-
 message ReservationFolioSvcPaymentCardRefundRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
 	holms.types.primitive.MonetaryAmount amount = 2;
@@ -183,25 +168,28 @@ message ReservationFolioSvcAuthorizationModificationRequest {
 }
 
 service ReservationFolioSvc {
+	// Get info about the folio
 	rpc GetFolioState(.holms.types.booking.indicators.ReservationIndicator)
 		returns(ReservationFolioSvcGetFolioStateResponse);
+	rpc GetOnFileCards(holms.types.booking.indicators.ReservationIndicator) 
+		returns(ReservationFolioSvcGetOnFileCardsResponse);
 
-	// Cards
+	// New activity
+	// Attach new sale to this reservation
 	rpc AddCardAuthorizationFromStoredCard(CardAuthorizationFromStoredCardRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromPresentedCard(CardAuthorizationFromPresentCardRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromNotPresentCard(CardAuthorizationFromNotPresentCardRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
+	// Attach new refund to this reservation
+	rpc RefundTokenizedCard(ReservationFolioSvcPaymentCardRefundRequest)
+		returns (ReservationFolioSvcRefundResponse);
 		
-	rpc GetOnFileCards(holms.types.booking.indicators.ReservationIndicator) 
-		returns(ReservationFolioSvcGetOnFileCardsResponse);
-	rpc VoidSale(ReservationFolioSvcVoidSaleRequest)
-		returns(ReservationFolioSvcVoidSaleResponse);
 	rpc ChangeAuthorizationAmount(ReservationFolioSvcAuthorizationModificationRequest)
 		returns (ReservationFolioSvcAuthorizationModificationResponse);
 	
-	// Payments
+	// Make payment to this reservation folio
 	rpc PostCardPayment(ReservationFolioSvcPostCardPaymentRequest)
 		returns (ReservationFolioSvcPostCardPaymentResponse);
 	rpc PostCheckPayment(ReservationFolioSvcPostCheckPaymentRequest)
@@ -209,7 +197,7 @@ service ReservationFolioSvc {
 	rpc PostCashPayment(ReservationFolioSvcPostCashPaymentRequest)
 		returns (ReservationFolioSvcPostCashPaymentResponse);
 
-	// Charge corrections
+	// Post a correction to the reservation folio
 	rpc PostLodgingChargeCorrection (ReservationFolioSvcPostLodgingChargeCorrectionRequest)
 		returns (google.protobuf.Empty);
 	rpc PostIncidentalChargeCorrection (ReservationFolioSvcPostIncidentalChargeCorrectionRequest)
@@ -217,6 +205,4 @@ service ReservationFolioSvc {
 	rpc PostMiscChargeCorrection (ReservationFolioSvcPostMiscChargeCorrectionRequest)
 		returns (google.protobuf.Empty);
 
-	rpc RefundTokenizedCard(ReservationFolioSvcPaymentCardRefundRequest)
-		returns (ReservationFolioSvcRefundResponse);
 }
