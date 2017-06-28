@@ -51,10 +51,10 @@ service ReservationSearchSvc {
 	rpc GetReservationSummaries(GetReservationSummariesRequest)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
 
-	rpc GetArrivalsByDate(google.protobuf.Timestamp)
+	rpc GetArrivalsByCalendarDate(holms.types.primitive.PbLocalDate)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
 
-	rpc GetDeparturesByDate(google.protobuf.Timestamp)
+	rpc GetDeparturesByCalendarDate(holms.types.primitive.PbLocalDate)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
 
 	rpc GetNoShowsByDate(google.protobuf.Timestamp)
