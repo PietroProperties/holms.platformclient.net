@@ -6,7 +6,9 @@ option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 import "google/protobuf/timestamp.proto";
 import "money/cards/card_merchant_indicator.proto";
 import "money/cards/guest_payment_card.proto";
+import "money/cards/transactions/card_sale_state.proto";
 import "money/cards/transactions/payment_card_sale_capture_indicator.proto";
+import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "primitive/monetary_amount.proto";
 
 message PaymentCardSaleCapture {
@@ -21,4 +23,6 @@ message PaymentCardSaleCapture {
 	holms.types.primitive.MonetaryAmount authorization_amount = 10;
 	
 	google.protobuf.Timestamp posted_at = 11;
+	holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 12;
+	holms.types.money.cards.transactions.CardSaleState sale_state = 13;
 }

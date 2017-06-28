@@ -262,6 +262,7 @@
     <Compile Include="Types\out\CardProcessingSvc.cs" />
     <Compile Include="Types\out\CardProcessingSvcGrpc.cs" />
     <Compile Include="Types\out\CardProcessorIndicator.cs" />
+    <Compile Include="Types\out\CardRefundState.cs" />
     <Compile Include="Types\out\CardSalePurpose.cs" />
     <Compile Include="Types\out\CardSaleState.cs" />
     <Compile Include="Types\out\CardTerminal.cs" />

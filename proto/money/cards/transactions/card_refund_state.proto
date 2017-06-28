@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.money.cards.transactions;
+option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
+option go_package = "money/cards/transactions";
+
+enum CardRefundState {
+	CARD_REFUND_STATE_OPEN = 0;
+	CARD_REFUND_STATE_SETTLED = 1;
+	CARD_REFUND_STATE_VOIDED = 2;
+}
