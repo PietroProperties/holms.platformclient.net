@@ -5,8 +5,9 @@ option csharp_namespace = "HOLMS.Types.OpExLogging";
 
 import "iam/staff_member_indicator.proto";
 
-message OperationalExceptionEvent {
+message OperationalExceptionNotification {
 	holms.types.iam.StaffMemberIndicator user = 1;
 	string exception_message = 2;
 	string exception_id = 3;
+	string j_w_token = 4;
 }
