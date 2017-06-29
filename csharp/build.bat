@@ -69,6 +69,8 @@ for %%P in (..\proto\supply\snapshot\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DI
 for %%P in (..\proto\tenancy_config\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\tenancy_config\indicators\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 
+for %%P in (..\proto\opex_logging\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
+
 call :colorEcho 0a "Build Successful" 
 goto :eof
 
