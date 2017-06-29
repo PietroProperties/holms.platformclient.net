@@ -4,10 +4,9 @@ package holms.types.opex_logging;
 option csharp_namespace = "HOLMS.Types.OpExLogging";
 
 import "iam/staff_member_indicator.proto";
-import "primitive/uuid.proto";
 
 message OperationalExceptionEvent {
 	holms.types.iam.StaffMemberIndicator user = 1;
 	string exception_message = 2;
-	holms.types.primitive.Uuid exception_id = 3;
+	string exception_id = 3;
 }

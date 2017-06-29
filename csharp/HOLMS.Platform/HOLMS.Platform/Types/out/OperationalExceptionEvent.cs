@@ -24,14 +24,13 @@ namespace HOLMS.Types.OpExLogging {
           string.Concat(
             "Ci5vcGV4X2xvZ2dpbmcvb3BlcmF0aW9uYWxfZXhjZXB0aW9uX2V2ZW50LnBy",
             "b3RvEhhob2xtcy50eXBlcy5vcGV4X2xvZ2dpbmcaIGlhbS9zdGFmZl9tZW1i",
-            "ZXJfaW5kaWNhdG9yLnByb3RvGhRwcmltaXRpdmUvdXVpZC5wcm90byKeAQoZ",
-            "T3BlcmF0aW9uYWxFeGNlcHRpb25FdmVudBIzCgR1c2VyGAEgASgLMiUuaG9s",
-            "bXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNhdG9yEhkKEWV4Y2VwdGlv",
-            "bl9tZXNzYWdlGAIgASgJEjEKDGV4Y2VwdGlvbl9pZBgDIAEoCzIbLmhvbG1z",
-            "LnR5cGVzLnByaW1pdGl2ZS5VdWlkQhqqAhdIT0xNUy5UeXBlcy5PcEV4TG9n",
-            "Z2luZ2IGcHJvdG8z"));
+            "ZXJfaW5kaWNhdG9yLnByb3RvIoEBChlPcGVyYXRpb25hbEV4Y2VwdGlvbkV2",
+            "ZW50EjMKBHVzZXIYASABKAsyJS5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1i",
+            "ZXJJbmRpY2F0b3ISGQoRZXhjZXB0aW9uX21lc3NhZ2UYAiABKAkSFAoMZXhj",
+            "ZXB0aW9uX2lkGAMgASgJQhqqAhdIT0xNUy5UeXBlcy5PcEV4TG9nZ2luZ2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.OpExLogging.OperationalExceptionEvent), global::HOLMS.Types.OpExLogging.OperationalExceptionEvent.Parser, new[]{ "User", "ExceptionMessage", "ExceptionId" }, null, null, null)
           }));
@@ -66,7 +65,7 @@ namespace HOLMS.Types.OpExLogging {
     public OperationalExceptionEvent(OperationalExceptionEvent other) : this() {
       User = other.user_ != null ? other.User.Clone() : null;
       exceptionMessage_ = other.exceptionMessage_;
-      ExceptionId = other.exceptionId_ != null ? other.ExceptionId.Clone() : null;
+      exceptionId_ = other.exceptionId_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -98,12 +97,12 @@ namespace HOLMS.Types.OpExLogging {
 
     /// <summary>Field number for the "exception_id" field.</summary>
     public const int ExceptionIdFieldNumber = 3;
-    private global::HOLMS.Types.Primitive.Uuid exceptionId_;
+    private string exceptionId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.Uuid ExceptionId {
+    public string ExceptionId {
       get { return exceptionId_; }
       set {
-        exceptionId_ = value;
+        exceptionId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -122,7 +121,7 @@ namespace HOLMS.Types.OpExLogging {
       }
       if (!object.Equals(User, other.User)) return false;
       if (ExceptionMessage != other.ExceptionMessage) return false;
-      if (!object.Equals(ExceptionId, other.ExceptionId)) return false;
+      if (ExceptionId != other.ExceptionId) return false;
       return true;
     }
 
@@ -131,7 +130,7 @@ namespace HOLMS.Types.OpExLogging {
       int hash = 1;
       if (user_ != null) hash ^= User.GetHashCode();
       if (ExceptionMessage.Length != 0) hash ^= ExceptionMessage.GetHashCode();
-      if (exceptionId_ != null) hash ^= ExceptionId.GetHashCode();
+      if (ExceptionId.Length != 0) hash ^= ExceptionId.GetHashCode();
       return hash;
     }
 
@@ -150,9 +149,9 @@ namespace HOLMS.Types.OpExLogging {
         output.WriteRawTag(18);
         output.WriteString(ExceptionMessage);
       }
-      if (exceptionId_ != null) {
+      if (ExceptionId.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteMessage(ExceptionId);
+        output.WriteString(ExceptionId);
       }
     }
 
@@ -165,8 +164,8 @@ namespace HOLMS.Types.OpExLogging {
       if (ExceptionMessage.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ExceptionMessage);
       }
-      if (exceptionId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExceptionId);
+      if (ExceptionId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExceptionId);
       }
       return size;
     }
@@ -185,11 +184,8 @@ namespace HOLMS.Types.OpExLogging {
       if (other.ExceptionMessage.Length != 0) {
         ExceptionMessage = other.ExceptionMessage;
       }
-      if (other.exceptionId_ != null) {
-        if (exceptionId_ == null) {
-          exceptionId_ = new global::HOLMS.Types.Primitive.Uuid();
-        }
-        ExceptionId.MergeFrom(other.ExceptionId);
+      if (other.ExceptionId.Length != 0) {
+        ExceptionId = other.ExceptionId;
       }
     }
 
@@ -213,10 +209,7 @@ namespace HOLMS.Types.OpExLogging {
             break;
           }
           case 26: {
-            if (exceptionId_ == null) {
-              exceptionId_ = new global::HOLMS.Types.Primitive.Uuid();
-            }
-            input.ReadMessage(exceptionId_);
+            ExceptionId = input.ReadString();
             break;
           }
         }
