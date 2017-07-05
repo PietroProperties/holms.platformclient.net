@@ -23,15 +23,16 @@ namespace HOLMS.Types.Money.Accounting {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci9tb25leS9hY2NvdW50aW5nL2lpZl9leHBvcnRfY29uZmlndXJhdGlvbi5w",
-            "cm90bxIcaG9sbXMudHlwZXMubW9uZXkuYWNjb3VudGluZyJ2ChZJSUZFeHBv",
-            "cnRDb25maWd1cmF0aW9uEh0KFXJlY3VycmVuY2VfZGVzY3JpcHRvchgBIAEo",
-            "CRIkChxkaXNhYmxlX2Fzc2V0X2FjY291bnRfZXhwb3J0GAIgASgIEhcKD2Ry",
-            "b3Bib3hfYXBpX2tleRgDIAEoCUIxWhBtb25leS9hY2NvdW50aW5nqgIcSE9M",
-            "TVMuVHlwZXMuTW9uZXkuQWNjb3VudGluZ2IGcHJvdG8z"));
+            "cm90bxIcaG9sbXMudHlwZXMubW9uZXkuYWNjb3VudGluZyKUAQoWSUlGRXhw",
+            "b3J0Q29uZmlndXJhdGlvbhIdChVyZWN1cnJlbmNlX2Rlc2NyaXB0b3IYASAB",
+            "KAkSJAocZGlzYWJsZV9hc3NldF9hY2NvdW50X2V4cG9ydBgCIAEoCBIaChJk",
+            "cm9wYm94X3VzZXJfdG9rZW4YAyABKAkSGQoRZHJvcGJveF9ob2xtc19rZXkY",
+            "BCABKAlCMVoQbW9uZXkvYWNjb3VudGluZ6oCHEhPTE1TLlR5cGVzLk1vbmV5",
+            "LkFjY291bnRpbmdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Accounting.IIFExportConfiguration), global::HOLMS.Types.Money.Accounting.IIFExportConfiguration.Parser, new[]{ "RecurrenceDescriptor", "DisableAssetAccountExport", "DropboxApiKey" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Accounting.IIFExportConfiguration), global::HOLMS.Types.Money.Accounting.IIFExportConfiguration.Parser, new[]{ "RecurrenceDescriptor", "DisableAssetAccountExport", "DropboxUserToken", "DropboxHolmsKey" }, null, null, null)
           }));
     }
     #endregion
@@ -64,7 +65,8 @@ namespace HOLMS.Types.Money.Accounting {
     public IIFExportConfiguration(IIFExportConfiguration other) : this() {
       recurrenceDescriptor_ = other.recurrenceDescriptor_;
       disableAssetAccountExport_ = other.disableAssetAccountExport_;
-      dropboxApiKey_ = other.dropboxApiKey_;
+      dropboxUserToken_ = other.dropboxUserToken_;
+      dropboxHolmsKey_ = other.dropboxHolmsKey_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -94,14 +96,25 @@ namespace HOLMS.Types.Money.Accounting {
       }
     }
 
-    /// <summary>Field number for the "dropbox_api_key" field.</summary>
-    public const int DropboxApiKeyFieldNumber = 3;
-    private string dropboxApiKey_ = "";
+    /// <summary>Field number for the "dropbox_user_token" field.</summary>
+    public const int DropboxUserTokenFieldNumber = 3;
+    private string dropboxUserToken_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string DropboxApiKey {
-      get { return dropboxApiKey_; }
+    public string DropboxUserToken {
+      get { return dropboxUserToken_; }
       set {
-        dropboxApiKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        dropboxUserToken_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "dropbox_holms_key" field.</summary>
+    public const int DropboxHolmsKeyFieldNumber = 4;
+    private string dropboxHolmsKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string DropboxHolmsKey {
+      get { return dropboxHolmsKey_; }
+      set {
+        dropboxHolmsKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -120,7 +133,8 @@ namespace HOLMS.Types.Money.Accounting {
       }
       if (RecurrenceDescriptor != other.RecurrenceDescriptor) return false;
       if (DisableAssetAccountExport != other.DisableAssetAccountExport) return false;
-      if (DropboxApiKey != other.DropboxApiKey) return false;
+      if (DropboxUserToken != other.DropboxUserToken) return false;
+      if (DropboxHolmsKey != other.DropboxHolmsKey) return false;
       return true;
     }
 
@@ -129,7 +143,8 @@ namespace HOLMS.Types.Money.Accounting {
       int hash = 1;
       if (RecurrenceDescriptor.Length != 0) hash ^= RecurrenceDescriptor.GetHashCode();
       if (DisableAssetAccountExport != false) hash ^= DisableAssetAccountExport.GetHashCode();
-      if (DropboxApiKey.Length != 0) hash ^= DropboxApiKey.GetHashCode();
+      if (DropboxUserToken.Length != 0) hash ^= DropboxUserToken.GetHashCode();
+      if (DropboxHolmsKey.Length != 0) hash ^= DropboxHolmsKey.GetHashCode();
       return hash;
     }
 
@@ -148,9 +163,13 @@ namespace HOLMS.Types.Money.Accounting {
         output.WriteRawTag(16);
         output.WriteBool(DisableAssetAccountExport);
       }
-      if (DropboxApiKey.Length != 0) {
+      if (DropboxUserToken.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(DropboxApiKey);
+        output.WriteString(DropboxUserToken);
+      }
+      if (DropboxHolmsKey.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(DropboxHolmsKey);
       }
     }
 
@@ -163,8 +182,11 @@ namespace HOLMS.Types.Money.Accounting {
       if (DisableAssetAccountExport != false) {
         size += 1 + 1;
       }
-      if (DropboxApiKey.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(DropboxApiKey);
+      if (DropboxUserToken.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DropboxUserToken);
+      }
+      if (DropboxHolmsKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DropboxHolmsKey);
       }
       return size;
     }
@@ -180,8 +202,11 @@ namespace HOLMS.Types.Money.Accounting {
       if (other.DisableAssetAccountExport != false) {
         DisableAssetAccountExport = other.DisableAssetAccountExport;
       }
-      if (other.DropboxApiKey.Length != 0) {
-        DropboxApiKey = other.DropboxApiKey;
+      if (other.DropboxUserToken.Length != 0) {
+        DropboxUserToken = other.DropboxUserToken;
+      }
+      if (other.DropboxHolmsKey.Length != 0) {
+        DropboxHolmsKey = other.DropboxHolmsKey;
       }
     }
 
@@ -202,7 +227,11 @@ namespace HOLMS.Types.Money.Accounting {
             break;
           }
           case 26: {
-            DropboxApiKey = input.ReadString();
+            DropboxUserToken = input.ReadString();
+            break;
+          }
+          case 34: {
+            DropboxHolmsKey = input.ReadString();
             break;
           }
         }
