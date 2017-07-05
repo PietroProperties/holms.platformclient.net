@@ -110,6 +110,7 @@ namespace HOLMS.Application.Client {
         public ChannelManagerConfigurationSvc.ChannelManagerConfigurationSvcClient ChannelManagerConfigurationSvc { get; protected set; }
         public GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc { get; protected set; }
         public HkPhoneCodeSvc.HkPhoneCodeSvcClient HkPhoneCodeSvc { get; protected set; }
+        public IIFExportConfigSvc.IIFExportConfigSvcClient IIFExportConfigSvc { get; protected set; }
         public PhoneCodeSvc.PhoneCodeSvcClient PhoneCodeSvc { get; protected set; }
         public PropertySvc.PropertySvcClient PropertySvc { get; protected set; }
         public ReservationDefaultsSvc.ReservationDefaultsSvcClient ReservationDefaultsSvc { get; protected set; }
@@ -307,6 +308,7 @@ namespace HOLMS.Application.Client {
             ChannelManagerConfigurationSvc = new ChannelManagerConfigurationSvc.ChannelManagerConfigurationSvcClient(_authenticatedChannel);
             GroupBookingMethodSvc = new GroupBookingMethodSvc.GroupBookingMethodSvcClient(_authenticatedChannel);
             HkPhoneCodeSvc = new HkPhoneCodeSvc.HkPhoneCodeSvcClient(_authenticatedChannel);
+            IIFExportConfigSvc = new IIFExportConfigSvc.IIFExportConfigSvcClient(_authenticatedChannel);
             PhoneCodeSvc = new PhoneCodeSvc.PhoneCodeSvcClient(_authenticatedChannel);
             PropertySvc = new PropertySvc.PropertySvcClient(_authenticatedChannel);
             ReservationDefaultsSvc = new ReservationDefaultsSvc.ReservationDefaultsSvcClient(_authenticatedChannel);

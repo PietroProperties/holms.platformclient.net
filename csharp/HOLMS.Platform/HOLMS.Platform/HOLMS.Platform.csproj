@@ -302,6 +302,7 @@
     <Compile Include="Types\out\DepartmentSvc.cs" />
     <Compile Include="Types\out\DepartmentSvcGrpc.cs" />
     <Compile Include="Types\out\DepartureDateCheckoutAcceptibility.cs" />
+    <Compile Include="Types\out\DropboxAuthConfig.cs" />
     <Compile Include="Types\out\FixedPointRatio.cs" />
     <Compile Include="Types\out\FolioAuthCleanupSvc.cs" />
     <Compile Include="Types\out\FolioAuthCleanupSvcGrpc.cs" />
@@ -373,6 +374,8 @@
     <Compile Include="Types\out\HousekeepingTimeSvc.cs" />
     <Compile Include="Types\out\HousekeepingTimeSvcGrpc.cs" />
     <Compile Include="Types\out\HtmlReportResponse.cs" />
+    <Compile Include="Types\out\IifExportConfigSvc.cs" />
+    <Compile Include="Types\out\IifExportConfigSvcGrpc.cs" />
     <Compile Include="Types\out\IifExportConfiguration.cs" />
     <Compile Include="Types\out\IncidentalItem.cs" />
     <Compile Include="Types\out\IncidentalItemAvailabilityQuery.cs" />

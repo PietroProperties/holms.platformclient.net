@@ -14,7 +14,6 @@ namespace HOLMS.Types.Money.RPC {
 
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq> __Marshaller_AssignGuestOwnerToTxnReq = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Money.Accounting.IIFExportConfiguration> __Marshaller_IIFExportConfiguration = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Accounting.IIFExportConfiguration.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus> __Marshaller_AccountingTxnExportStatus = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Timestamp> __Marshaller_Timestamp = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Timestamp.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatRequest> __Marshaller_AccountTxnExportSvcGetPropertyTransactionsInFormatRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatRequest.Parser.ParseFrom);
@@ -26,20 +25,6 @@ namespace HOLMS.Types.Money.RPC {
         "AssignGuestOwnerToTransaction",
         __Marshaller_AssignGuestOwnerToTxnReq,
         __Marshaller_Empty);
-
-    static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Money.Accounting.IIFExportConfiguration> __Method_GetTenancyExportConfig = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Money.Accounting.IIFExportConfiguration>(
-        MethodType.Unary,
-        __ServiceName,
-        "GetTenancyExportConfig",
-        __Marshaller_Empty,
-        __Marshaller_IIFExportConfiguration);
-
-    static readonly Method<global::HOLMS.Types.Money.Accounting.IIFExportConfiguration, global::HOLMS.Types.Money.Accounting.IIFExportConfiguration> __Method_SetTenancyExportConfig = new Method<global::HOLMS.Types.Money.Accounting.IIFExportConfiguration, global::HOLMS.Types.Money.Accounting.IIFExportConfiguration>(
-        MethodType.Unary,
-        __ServiceName,
-        "SetTenancyExportConfig",
-        __Marshaller_IIFExportConfiguration,
-        __Marshaller_IIFExportConfiguration);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus> __Method_GetExportJobStatus = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus>(
         MethodType.Unary,
@@ -72,16 +57,6 @@ namespace HOLMS.Types.Money.RPC {
     public abstract class AccountingTxnSvcBase
     {
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> AssignGuestOwnerToTransaction(global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Accounting.IIFExportConfiguration> GetTenancyExportConfig(global::Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Accounting.IIFExportConfiguration> SetTenancyExportConfig(global::HOLMS.Types.Money.Accounting.IIFExportConfiguration request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -142,38 +117,6 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_AssignGuestOwnerToTransaction, null, options, request);
       }
-      public virtual global::HOLMS.Types.Money.Accounting.IIFExportConfiguration GetTenancyExportConfig(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetTenancyExportConfig(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Money.Accounting.IIFExportConfiguration GetTenancyExportConfig(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetTenancyExportConfig, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Accounting.IIFExportConfiguration> GetTenancyExportConfigAsync(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetTenancyExportConfigAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Accounting.IIFExportConfiguration> GetTenancyExportConfigAsync(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetTenancyExportConfig, null, options, request);
-      }
-      public virtual global::HOLMS.Types.Money.Accounting.IIFExportConfiguration SetTenancyExportConfig(global::HOLMS.Types.Money.Accounting.IIFExportConfiguration request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return SetTenancyExportConfig(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Money.Accounting.IIFExportConfiguration SetTenancyExportConfig(global::HOLMS.Types.Money.Accounting.IIFExportConfiguration request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_SetTenancyExportConfig, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Accounting.IIFExportConfiguration> SetTenancyExportConfigAsync(global::HOLMS.Types.Money.Accounting.IIFExportConfiguration request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return SetTenancyExportConfigAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Accounting.IIFExportConfiguration> SetTenancyExportConfigAsync(global::HOLMS.Types.Money.Accounting.IIFExportConfiguration request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_SetTenancyExportConfig, null, options, request);
-      }
       public virtual global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus GetExportJobStatus(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetExportJobStatus(request, new CallOptions(headers, deadline, cancellationToken));
@@ -233,8 +176,6 @@ namespace HOLMS.Types.Money.RPC {
     {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_AssignGuestOwnerToTransaction, serviceImpl.AssignGuestOwnerToTransaction)
-          .AddMethod(__Method_GetTenancyExportConfig, serviceImpl.GetTenancyExportConfig)
-          .AddMethod(__Method_SetTenancyExportConfig, serviceImpl.SetTenancyExportConfig)
           .AddMethod(__Method_GetExportJobStatus, serviceImpl.GetExportJobStatus)
           .AddMethod(__Method_UpdateLastExportRunTime, serviceImpl.UpdateLastExportRunTime)
           .AddMethod(__Method_GetPropertyTransactionsInFormat, serviceImpl.GetPropertyTransactionsInFormat).Build();
