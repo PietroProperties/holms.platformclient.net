@@ -7,4 +7,5 @@ option go_package = "money/accounting";
 message IIFExportConfiguration {
 	string recurrence_descriptor = 1;
 	bool disable_asset_account_export = 2;
+	string dropbox_api_key = 3;
 }
