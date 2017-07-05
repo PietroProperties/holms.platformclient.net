@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+
+message DropboxConfiguration {
+	bool has_access_token = 1;
+	string public_application_key = 2;
+}

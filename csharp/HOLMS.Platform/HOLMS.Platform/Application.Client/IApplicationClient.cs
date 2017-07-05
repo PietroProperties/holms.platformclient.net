@@ -97,6 +97,7 @@ namespace HOLMS.Application.Client {
         GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc { get; }
         ZipCodeSvc.ZipCodeSvcClient ZipCodesService { get; }
         HkPhoneCodeSvc.HkPhoneCodeSvcClient HkPhoneCodeSvc { get; }
+        IIFExportConfigSvc.IIFExportConfigSvcClient IIFExportConfigSvc { get; }
         PhoneCodeSvc.PhoneCodeSvcClient PhoneCodeSvc { get; }
         PropertySvc.PropertySvcClient PropertySvc { get; }
         ReservationDefaultsSvc.ReservationDefaultsSvcClient ReservationDefaultsSvc { get; }

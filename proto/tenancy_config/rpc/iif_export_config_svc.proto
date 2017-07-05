@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+
+import "google/protobuf/empty.proto";
+import "tenancy_config/dropbox_auth_config.proto";
+import "tenancy_config/iif_export_configuration.proto";
+
+message GetIIFExportConfigResponse {
+	holms.types.tenancy_config.IIFExportConfiguration iif_export_config = 1;
+	holms.types.tenancy_config.DropboxConfiguration dropbox_config = 2;
+}
+
+message UpdateDropboxAccessTokenRequest {
+	string new_access_token = 1;
+}
+
+service IIFExportConfigSvc {
+	rpc GetTenancyExportConfig (google.protobuf.Empty) 
+		returns (GetIIFExportConfigResponse);
+
+	rpc SetTenancyExportConfig (.holms.types.tenancy_config.IIFExportConfiguration)
+		returns (.holms.types.tenancy_config.IIFExportConfiguration);
+
+	rpc UpdateDropboxAccessToken (UpdateDropboxAccessTokenRequest)
+		returns (google.protobuf.Empty);
+}

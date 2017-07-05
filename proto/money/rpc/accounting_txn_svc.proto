@@ -11,7 +11,6 @@ import "crm/guests/guest_indicator.proto";
 import "money/accounting/accounting_transaction_export_format.proto";
 import "money/accounting/accounting_txn_export_status.proto";
 import "money/accounting/accounting_transaction_with_guest.proto";
-import "money/accounting/iif_export_configuration.proto";
 import "tenancy_config/indicators/property_indicator.proto";
 
 message AssignGuestOwnerToTxnReq {
@@ -32,12 +31,6 @@ message AccountTxnExportSvcGetPropertyTransactionsInFormatResponse {
 service AccountingTxnSvc {
 	rpc AssignGuestOwnerToTransaction(AssignGuestOwnerToTxnReq) 
 		returns (google.protobuf.Empty);
-	
-	rpc GetTenancyExportConfig (google.protobuf.Empty) 
-		returns (.holms.types.money.accounting.IIFExportConfiguration);
-
-	rpc SetTenancyExportConfig (.holms.types.money.accounting.IIFExportConfiguration)
-		returns (.holms.types.money.accounting.IIFExportConfiguration);
 
 	rpc GetExportJobStatus(google.protobuf.Empty)
 		returns (.holms.types.money.accounting.AccountingTxnExportStatus);

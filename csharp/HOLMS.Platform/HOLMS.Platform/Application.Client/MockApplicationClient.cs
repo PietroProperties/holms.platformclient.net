@@ -501,5 +501,11 @@ namespace HOLMS.Platform.Application.Client {
                 throw new NotImplementedException();
             }
         }
+
+        public IIFExportConfigSvc.IIFExportConfigSvcClient IIFExportConfigSvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
     }
 }
