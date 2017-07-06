@@ -33,27 +33,27 @@ namespace HOLMS.Types.Money.RPC {
             "T3duZXJUb1R4blJlcRJnCiFhY2NvdW50aW5nX3RyYW5zYWN0aW9uX3dpdGhf",
             "Z3Vlc3QYASABKAsyPC5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLkFj",
             "Y291bnRpbmdUcmFuc2FjdGlvbldpdGhHdWVzdBI1CgVndWVzdBgCIAEoCzIm",
-            "LmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJbmRpY2F0b3Ii2AEKPEFj",
+            "LmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJbmRpY2F0b3Ii9gEKPEFj",
             "Y291bnRUeG5FeHBvcnRTdmNVcGxvYWRQcm9wZXJ0eVRyYW5zYWN0aW9uc0lu",
             "Rm9ybWF0UmVxdWVzdBJPCgZmb3JtYXQYASABKA4yPy5ob2xtcy50eXBlcy5t",
             "b25leS5hY2NvdW50aW5nLkFjY291bnRpbmdUcmFuc2FjdGlvbkV4cG9ydEZv",
             "cm1hdBJHCgpkYXRlX3JhbmdlGAMgASgLMjMuaG9sbXMudHlwZXMucHJpbWl0",
-            "aXZlLlBiSW5jbHVzaXZlQ2FsZW5kYXJEYXRlUmFuZ2Uy9wIKEEFjY291bnRp",
-            "bmdUeG5TdmMSaAodQXNzaWduR3Vlc3RPd25lclRvVHJhbnNhY3Rpb24SLy5o",
-            "b2xtcy50eXBlcy5tb25leS5ycGMuQXNzaWduR3Vlc3RPd25lclRvVHhuUmVx",
-            "GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EmUKEkdldEV4cG9ydEpvYlN0YXR1",
-            "cxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRo3LmhvbG1zLnR5cGVzLm1vbmV5",
-            "LmFjY291bnRpbmcuQWNjb3VudGluZ1R4bkV4cG9ydFN0YXR1cxKRAQoiVXBs",
-            "b2FkUHJvcGVydHlUcmFuc2FjdGlvbnNJbkZvcm1hdBJTLmhvbG1zLnR5cGVz",
-            "Lm1vbmV5LnJwYy5BY2NvdW50VHhuRXhwb3J0U3ZjVXBsb2FkUHJvcGVydHlU",
-            "cmFuc2FjdGlvbnNJbkZvcm1hdFJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYu",
-            "RW1wdHlCI1oJbW9uZXkvcnBjqgIVSE9MTVMuVHlwZXMuTW9uZXkuUlBDYgZw",
-            "cm90bzM="));
+            "aXZlLlBiSW5jbHVzaXZlQ2FsZW5kYXJEYXRlUmFuZ2USHAoUdXBkYXRlX2xh",
+            "c3RfcnVuX2RhdGUYBCABKAgy9wIKEEFjY291bnRpbmdUeG5TdmMSaAodQXNz",
+            "aWduR3Vlc3RPd25lclRvVHJhbnNhY3Rpb24SLy5ob2xtcy50eXBlcy5tb25l",
+            "eS5ycGMuQXNzaWduR3Vlc3RPd25lclRvVHhuUmVxGhYuZ29vZ2xlLnByb3Rv",
+            "YnVmLkVtcHR5EmUKEkdldEV4cG9ydEpvYlN0YXR1cxIWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eRo3LmhvbG1zLnR5cGVzLm1vbmV5LmFjY291bnRpbmcuQWNj",
+            "b3VudGluZ1R4bkV4cG9ydFN0YXR1cxKRAQoiVXBsb2FkUHJvcGVydHlUcmFu",
+            "c2FjdGlvbnNJbkZvcm1hdBJTLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5BY2Nv",
+            "dW50VHhuRXhwb3J0U3ZjVXBsb2FkUHJvcGVydHlUcmFuc2FjdGlvbnNJbkZv",
+            "cm1hdFJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHlCI1oJbW9uZXkv",
+            "cnBjqgIVSE9MTVMuVHlwZXMuTW9uZXkuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRangeReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTransactionExportFormatReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatusReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTransactionWithGuestReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq), global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq.Parser, new[]{ "AccountingTransactionWithGuest", "Guest" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest), global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest.Parser, new[]{ "Format", "DateRange" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest), global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest.Parser, new[]{ "Format", "DateRange", "UpdateLastRunDate" }, null, null, null)
           }));
     }
     #endregion
@@ -243,6 +243,7 @@ namespace HOLMS.Types.Money.RPC {
     public AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest(AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest other) : this() {
       format_ = other.format_;
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
+      updateLastRunDate_ = other.updateLastRunDate_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -264,11 +265,25 @@ namespace HOLMS.Types.Money.RPC {
     /// <summary>Field number for the "date_range" field.</summary>
     public const int DateRangeFieldNumber = 3;
     private global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange dateRange_;
+    /// <summary>
+    ///  .holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange DateRange {
       get { return dateRange_; }
       set {
         dateRange_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "update_last_run_date" field.</summary>
+    public const int UpdateLastRunDateFieldNumber = 4;
+    private bool updateLastRunDate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool UpdateLastRunDate {
+      get { return updateLastRunDate_; }
+      set {
+        updateLastRunDate_ = value;
       }
     }
 
@@ -287,6 +302,7 @@ namespace HOLMS.Types.Money.RPC {
       }
       if (Format != other.Format) return false;
       if (!object.Equals(DateRange, other.DateRange)) return false;
+      if (UpdateLastRunDate != other.UpdateLastRunDate) return false;
       return true;
     }
 
@@ -295,6 +311,7 @@ namespace HOLMS.Types.Money.RPC {
       int hash = 1;
       if (Format != 0) hash ^= Format.GetHashCode();
       if (dateRange_ != null) hash ^= DateRange.GetHashCode();
+      if (UpdateLastRunDate != false) hash ^= UpdateLastRunDate.GetHashCode();
       return hash;
     }
 
@@ -313,6 +330,10 @@ namespace HOLMS.Types.Money.RPC {
         output.WriteRawTag(26);
         output.WriteMessage(DateRange);
       }
+      if (UpdateLastRunDate != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(UpdateLastRunDate);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -323,6 +344,9 @@ namespace HOLMS.Types.Money.RPC {
       }
       if (dateRange_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DateRange);
+      }
+      if (UpdateLastRunDate != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -340,6 +364,9 @@ namespace HOLMS.Types.Money.RPC {
           dateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange();
         }
         DateRange.MergeFrom(other.DateRange);
+      }
+      if (other.UpdateLastRunDate != false) {
+        UpdateLastRunDate = other.UpdateLastRunDate;
       }
     }
 
@@ -360,6 +387,10 @@ namespace HOLMS.Types.Money.RPC {
               dateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange();
             }
             input.ReadMessage(dateRange_);
+            break;
+          }
+          case 32: {
+            UpdateLastRunDate = input.ReadBool();
             break;
           }
         }

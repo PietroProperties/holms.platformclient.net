@@ -18,7 +18,9 @@ message AssignGuestOwnerToTxnReq {
 
 message AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest {
 	.holms.types.money.accounting.AccountingTransactionExportFormat format = 1;
+	// .holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
 	.holms.types.primitive.PbInclusiveCalendarDateRange date_range = 3;
+	bool update_last_run_date = 4;
 }
 
 service AccountingTxnSvc {
