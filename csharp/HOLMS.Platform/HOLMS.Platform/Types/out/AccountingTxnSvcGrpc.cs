@@ -15,9 +15,7 @@ namespace HOLMS.Types.Money.RPC {
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq> __Marshaller_AssignGuestOwnerToTxnReq = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus> __Marshaller_AccountingTxnExportStatus = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus.Parser.ParseFrom);
-    static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Timestamp> __Marshaller_Timestamp = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Timestamp.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatRequest> __Marshaller_AccountTxnExportSvcGetPropertyTransactionsInFormatRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatResponse> __Marshaller_AccountTxnExportSvcGetPropertyTransactionsInFormatResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest> __Marshaller_AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq, global::Google.Protobuf.WellKnownTypes.Empty> __Method_AssignGuestOwnerToTransaction = new Method<global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq, global::Google.Protobuf.WellKnownTypes.Empty>(
         MethodType.Unary,
@@ -33,19 +31,12 @@ namespace HOLMS.Types.Money.RPC {
         __Marshaller_Empty,
         __Marshaller_AccountingTxnExportStatus);
 
-    static readonly Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UpdateLastExportRunTime = new Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly Method<global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UploadPropertyTransactionsInFormat = new Method<global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         MethodType.Unary,
         __ServiceName,
-        "UpdateLastExportRunTime",
-        __Marshaller_Timestamp,
+        "UploadPropertyTransactionsInFormat",
+        __Marshaller_AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest,
         __Marshaller_Empty);
-
-    static readonly Method<global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatRequest, global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatResponse> __Method_GetPropertyTransactionsInFormat = new Method<global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatRequest, global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatResponse>(
-        MethodType.Unary,
-        __ServiceName,
-        "GetPropertyTransactionsInFormat",
-        __Marshaller_AccountTxnExportSvcGetPropertyTransactionsInFormatRequest,
-        __Marshaller_AccountTxnExportSvcGetPropertyTransactionsInFormatResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -66,12 +57,7 @@ namespace HOLMS.Types.Money.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> UpdateLastExportRunTime(global::Google.Protobuf.WellKnownTypes.Timestamp request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatResponse> GetPropertyTransactionsInFormat(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> UploadPropertyTransactionsInFormat(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -133,37 +119,21 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetExportJobStatus, null, options, request);
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateLastExportRunTime(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty UploadPropertyTransactionsInFormat(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return UpdateLastExportRunTime(request, new CallOptions(headers, deadline, cancellationToken));
+        return UploadPropertyTransactionsInFormat(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateLastExportRunTime(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty UploadPropertyTransactionsInFormat(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest request, CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_UpdateLastExportRunTime, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_UploadPropertyTransactionsInFormat, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateLastExportRunTimeAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UploadPropertyTransactionsInFormatAsync(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return UpdateLastExportRunTimeAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return UploadPropertyTransactionsInFormatAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateLastExportRunTimeAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UploadPropertyTransactionsInFormatAsync(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest request, CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_UpdateLastExportRunTime, null, options, request);
-      }
-      public virtual global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatResponse GetPropertyTransactionsInFormat(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetPropertyTransactionsInFormat(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatResponse GetPropertyTransactionsInFormat(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatRequest request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetPropertyTransactionsInFormat, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatResponse> GetPropertyTransactionsInFormatAsync(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetPropertyTransactionsInFormatAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatResponse> GetPropertyTransactionsInFormatAsync(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcGetPropertyTransactionsInFormatRequest request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetPropertyTransactionsInFormat, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_UploadPropertyTransactionsInFormat, null, options, request);
       }
       protected override AccountingTxnSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -177,8 +147,7 @@ namespace HOLMS.Types.Money.RPC {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_AssignGuestOwnerToTransaction, serviceImpl.AssignGuestOwnerToTransaction)
           .AddMethod(__Method_GetExportJobStatus, serviceImpl.GetExportJobStatus)
-          .AddMethod(__Method_UpdateLastExportRunTime, serviceImpl.UpdateLastExportRunTime)
-          .AddMethod(__Method_GetPropertyTransactionsInFormat, serviceImpl.GetPropertyTransactionsInFormat).Build();
+          .AddMethod(__Method_UploadPropertyTransactionsInFormat, serviceImpl.UploadPropertyTransactionsInFormat).Build();
     }
 
   }
