@@ -19,4 +19,6 @@ message CardMerchant {
 	string password = 9;
 	string service_u_r_i = 10;
 	bool debug_logging_enabled = 11;
+	string portico_developer_id = 12;
+	string portico_version_number = 13;
 }
