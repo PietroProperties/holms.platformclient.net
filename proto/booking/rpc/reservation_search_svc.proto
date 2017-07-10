@@ -4,7 +4,6 @@ package holms.types.booking.rpc;
 option csharp_namespace = "HOLMS.Types.Booking.RPC";
 option go_package = "booking/rpc";
 
-import "google/protobuf/timestamp.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "booking/reservations/reservation_query_filter.proto";
 import "booking/reservations/reservation_summary.proto";
@@ -57,10 +56,10 @@ service ReservationSearchSvc {
 	rpc GetDeparturesByCalendarDate(holms.types.primitive.PbLocalDate)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
 
-	rpc GetNoShowsByDate(google.protobuf.Timestamp)
+	rpc GetNoShowsByDate(holms.types.primitive.PbLocalDate)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
 
-	rpc GetStayOversByDate(google.protobuf.Timestamp)
+	rpc GetStayOversByDate(holms.types.primitive.PbLocalDate)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
 
 	rpc GetAllDuringDate(holms.types.primitive.PbLocalDate)
