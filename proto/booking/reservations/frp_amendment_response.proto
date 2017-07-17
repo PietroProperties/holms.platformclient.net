@@ -15,6 +15,7 @@ message FRPAmendmentResponse {
 		POLICY_VIOLATION = 3;
 		MINIMUM_LENGTH_OF_STAY_RESTRICTION = 5;
 		CLOSED_TO_ARRIVAL_RESTRICTION = 6;
+		DIFFERENT_PROPERTY = 7;
 	}
 	AmendmentResult result = 2;
 }
