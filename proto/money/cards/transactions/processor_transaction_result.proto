@@ -14,4 +14,5 @@ enum ProcessorTransactionResult {
 	ABORTED = 6;
 	NETWORK_FAILURE = 7;
 	UNKNOWN_FAILURE = 8;
+	INVALID_TARGET_TRANSACTION = 9;
 }

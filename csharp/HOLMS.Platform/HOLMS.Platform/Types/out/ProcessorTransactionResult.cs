@@ -24,13 +24,13 @@ namespace HOLMS.Types.Money.Cards.Transactions {
           string.Concat(
             "Cjttb25leS9jYXJkcy90cmFuc2FjdGlvbnMvcHJvY2Vzc29yX3RyYW5zYWN0",
             "aW9uX3Jlc3VsdC5wcm90bxIkaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJh",
-            "bnNhY3Rpb25zKsEBChpQcm9jZXNzb3JUcmFuc2FjdGlvblJlc3VsdBILCgdT",
+            "bnNhY3Rpb25zKuEBChpQcm9jZXNzb3JUcmFuc2FjdGlvblJlc3VsdBILCgdT",
             "VUNDRVNTEAASDAoIREVDTElORUQQARITCg9JTlZBTElEX1JFUVVFU1QQAhIa",
             "ChZBVVRIRU5USUNBVElPTl9GQUlMVVJFEAMSEwoPR0FURVdBWV9GQUlMVVJF",
             "EAQSCwoHVElNRU9VVBAFEgsKB0FCT1JURUQQBhITCg9ORVRXT1JLX0ZBSUxV",
-            "UkUQBxITCg9VTktOT1dOX0ZBSUxVUkUQCEJBWhhtb25leS9jYXJkcy90cmFu",
-            "c2FjdGlvbnOqAiRIT0xNUy5UeXBlcy5Nb25leS5DYXJkcy5UcmFuc2FjdGlv",
-            "bnNiBnByb3RvMw=="));
+            "UkUQBxITCg9VTktOT1dOX0ZBSUxVUkUQCBIeChpJTlZBTElEX1RBUkdFVF9U",
+            "UkFOU0FDVElPThAJQkFaGG1vbmV5L2NhcmRzL3RyYW5zYWN0aW9uc6oCJEhP",
+            "TE1TLlR5cGVzLk1vbmV5LkNhcmRzLlRyYW5zYWN0aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResult), }, null));
@@ -49,6 +49,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
     [pbr::OriginalName("ABORTED")] Aborted = 6,
     [pbr::OriginalName("NETWORK_FAILURE")] NetworkFailure = 7,
     [pbr::OriginalName("UNKNOWN_FAILURE")] UnknownFailure = 8,
+    [pbr::OriginalName("INVALID_TARGET_TRANSACTION")] InvalidTargetTransaction = 9,
   }
 
   #endregion
