@@ -57,6 +57,8 @@
     <Compile Include="Support\Conversions\MoneyConversions.cs" />
     <Compile Include="Support\Conversions\PbLocalDateConversions.cs" />
     <Compile Include="Support\Conversions\TimespanConversions.cs" />
+    <Compile Include="Support\Currency\DecimalDollars.cs" />
+    <Compile Include="Support\Currency\DollarCents.cs" />
     <Compile Include="Support\DateMap.cs" />
     <Compile Include="Support\DTOBuilders\Booking\BookGenesReservationRequestBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Booking\Channels\TravelAgentBuilder.cs" />
