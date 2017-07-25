@@ -95,6 +95,7 @@ namespace HOLMS.Application.Client {
         AccountAssignmentsSvc.AccountAssignmentsSvcClient AccountAssignmentSvc { get; }
         ChannelManagerConfigurationSvc.ChannelManagerConfigurationSvcClient ChannelManagerConfigurationSvc { get; }
         GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc { get; }
+        KCRConfigSvc.KCRConfigSvcClient KCRConfigSvc { get; }
         ZipCodeSvc.ZipCodeSvcClient ZipCodesService { get; }
         HkPhoneCodeSvc.HkPhoneCodeSvcClient HkPhoneCodeSvc { get; }
         IIFExportConfigSvc.IIFExportConfigSvcClient IIFExportConfigSvc { get; }

@@ -399,6 +399,9 @@
     <Compile Include="Types\out\ItemHoldDropResponse.cs" />
     <Compile Include="Types\out\ItemHoldUpdateRequest.cs" />
     <Compile Include="Types\out\ItemHoldUpdateResponse.cs" />
+    <Compile Include="Types\out\KcrConfig.cs" />
+    <Compile Include="Types\out\KcrConfigSvc.cs" />
+    <Compile Include="Types\out\KcrConfigSvcGrpc.cs" />
     <Compile Include="Types\out\LedgerAccountCategory.cs" />
     <Compile Include="Types\out\LodgingBookingSvc.cs" />
     <Compile Include="Types\out\LodgingBookingSvcGrpc.cs" />
