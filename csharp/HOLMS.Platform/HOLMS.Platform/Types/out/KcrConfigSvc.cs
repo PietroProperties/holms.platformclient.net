@@ -27,16 +27,16 @@ namespace HOLMS.Types.TenancyConfig.RPC {
             "a2NyX2NvbmZpZy5wcm90bxobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3Rv",
             "ImAKFFNldEtDUkNvbmZpZ1Jlc3BvbnNlEkgKBnJlc3VsdBgBIAEoDjI4Lmhv",
             "bG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLnJwYy5LQ1JTdmNTZXRLQ1JDb25m",
-            "aWdSZXN1bHQqqAEKGEtDUlN2Y1NldEtDUkNvbmZpZ1Jlc3VsdBIdChlTRVRf",
-            "S0NSX0NPTkZJR19JTlZBTElEX0lQEAASKQolU0VUX0tDUl9DT05GSUdfSU5W",
-            "QUxJRF9FTkNPREVSX05VTUJFUhABEh4KGlNFVF9LQ1JfQ09ORklHX0lOVkFM",
-            "SURfUFdEEAISIgoeU0VUX0tDUl9DT05GSUdfVU5LTk9XTl9GQUlMVVJFEAMy",
-            "uAEKDEtDUkNvbmZpZ1N2YxJECgNHZXQSFi5nb29nbGUucHJvdG9idWYuRW1w",
-            "dHkaJS5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5LQ1JDb25maWcSYgoD",
-            "U2V0EiUuaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuS0NSQ29uZmlnGjQu",
-            "aG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcucnBjLlNldEtDUkNvbmZpZ1Jl",
-            "c3BvbnNlQjNaEXRlbmFuY3ljb25maWcvcnBjqgIdSE9MTVMuVHlwZXMuVGVu",
-            "YW5jeUNvbmZpZy5SUENiBnByb3RvMw=="));
+            "aWdSZXN1bHQqsAEKGEtDUlN2Y1NldEtDUkNvbmZpZ1Jlc3VsdBIlCiFTRVRf",
+            "S0NSX0NPTkZJR19JTlZBTElEX0lQX0FERFJFU1MQABIpCiVTRVRfS0NSX0NP",
+            "TkZJR19JTlZBTElEX0VOQ09ERVJfTlVNQkVSEAESHgoaU0VUX0tDUl9DT05G",
+            "SUdfSU5WQUxJRF9QV0QQAhIiCh5TRVRfS0NSX0NPTkZJR19VTktOT1dOX0ZB",
+            "SUxVUkUQAzK4AQoMS0NSQ29uZmlnU3ZjEkQKA0dldBIWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eRolLmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLktDUkNv",
+            "bmZpZxJiCgNTZXQSJS5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5LQ1JD",
+            "b25maWcaNC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5ycGMuU2V0S0NS",
+            "Q29uZmlnUmVzcG9uc2VCM1oRdGVuYW5jeWNvbmZpZy9ycGOqAh1IT0xNUy5U",
+            "eXBlcy5UZW5hbmN5Q29uZmlnLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.TenancyConfig.KcrConfigReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.TenancyConfig.RPC.KCRSvcSetKCRConfigResult), }, new pbr::GeneratedClrTypeInfo[] {
@@ -48,7 +48,7 @@ namespace HOLMS.Types.TenancyConfig.RPC {
   }
   #region Enums
   public enum KCRSvcSetKCRConfigResult {
-    [pbr::OriginalName("SET_KCR_CONFIG_INVALID_IP")] SetKcrConfigInvalidIp = 0,
+    [pbr::OriginalName("SET_KCR_CONFIG_INVALID_IP_ADDRESS")] SetKcrConfigInvalidIpAddress = 0,
     [pbr::OriginalName("SET_KCR_CONFIG_INVALID_ENCODER_NUMBER")] SetKcrConfigInvalidEncoderNumber = 1,
     [pbr::OriginalName("SET_KCR_CONFIG_INVALID_PWD")] SetKcrConfigInvalidPwd = 2,
     [pbr::OriginalName("SET_KCR_CONFIG_UNKNOWN_FAILURE")] SetKcrConfigUnknownFailure = 3,

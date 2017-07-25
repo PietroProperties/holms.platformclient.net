@@ -23,16 +23,16 @@ namespace HOLMS.Types.TenancyConfig {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch90ZW5hbmN5X2NvbmZpZy9rY3JfY29uZmlnLnByb3RvEhpob2xtcy50eXBl",
-            "cy50ZW5hbmN5X2NvbmZpZyKoAQoJS0NSQ29uZmlnEiEKGXBvc3RfY2hlY2tv",
-            "dXRfZ3JhY2VfaG91cnMYASABKA0SGQoRc2FmZWxva19zZXJ2ZXJfaXAYAiAB",
-            "KAkSGwoTc2FmZWxva19zZXJ2ZXJfcG9ydBgDIAEoDRIfChdzYWZlbG9rX3Nl",
-            "cnZlcl9wYXNzd29yZBgEIAEoCRIfChdzYWZlbG9rX2VuY29kZXJfc3RhdGlv",
-            "bhgFIAEoDUIrWg10ZW5hbmN5Y29uZmlnqgIZSE9MTVMuVHlwZXMuVGVuYW5j",
-            "eUNvbmZpZ2IGcHJvdG8z"));
+            "cy50ZW5hbmN5X2NvbmZpZyKwAQoJS0NSQ29uZmlnEiEKGXBvc3RfY2hlY2tv",
+            "dXRfZ3JhY2VfaG91cnMYASABKA0SIQoZc2FmZWxva19zZXJ2ZXJfaXBfYWRk",
+            "cmVzcxgCIAEoCRIbChNzYWZlbG9rX3NlcnZlcl9wb3J0GAMgASgNEh8KF3Nh",
+            "ZmVsb2tfc2VydmVyX3Bhc3N3b3JkGAQgASgJEh8KF3NhZmVsb2tfZW5jb2Rl",
+            "cl9zdGF0aW9uGAUgASgNQitaDXRlbmFuY3ljb25maWeqAhlIT0xNUy5UeXBl",
+            "cy5UZW5hbmN5Q29uZmlnYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.KCRConfig), global::HOLMS.Types.TenancyConfig.KCRConfig.Parser, new[]{ "PostCheckoutGraceHours", "SafelokServerIp", "SafelokServerPort", "SafelokServerPassword", "SafelokEncoderStation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.KCRConfig), global::HOLMS.Types.TenancyConfig.KCRConfig.Parser, new[]{ "PostCheckoutGraceHours", "SafelokServerIpAddress", "SafelokServerPort", "SafelokServerPassword", "SafelokEncoderStation" }, null, null, null)
           }));
     }
     #endregion
@@ -64,7 +64,7 @@ namespace HOLMS.Types.TenancyConfig {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public KCRConfig(KCRConfig other) : this() {
       postCheckoutGraceHours_ = other.postCheckoutGraceHours_;
-      safelokServerIp_ = other.safelokServerIp_;
+      safelokServerIpAddress_ = other.safelokServerIpAddress_;
       safelokServerPort_ = other.safelokServerPort_;
       safelokServerPassword_ = other.safelokServerPassword_;
       safelokEncoderStation_ = other.safelokEncoderStation_;
@@ -86,14 +86,14 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
-    /// <summary>Field number for the "safelok_server_ip" field.</summary>
-    public const int SafelokServerIpFieldNumber = 2;
-    private string safelokServerIp_ = "";
+    /// <summary>Field number for the "safelok_server_ip_address" field.</summary>
+    public const int SafelokServerIpAddressFieldNumber = 2;
+    private string safelokServerIpAddress_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string SafelokServerIp {
-      get { return safelokServerIp_; }
+    public string SafelokServerIpAddress {
+      get { return safelokServerIpAddress_; }
       set {
-        safelokServerIp_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        safelokServerIpAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -144,7 +144,7 @@ namespace HOLMS.Types.TenancyConfig {
         return true;
       }
       if (PostCheckoutGraceHours != other.PostCheckoutGraceHours) return false;
-      if (SafelokServerIp != other.SafelokServerIp) return false;
+      if (SafelokServerIpAddress != other.SafelokServerIpAddress) return false;
       if (SafelokServerPort != other.SafelokServerPort) return false;
       if (SafelokServerPassword != other.SafelokServerPassword) return false;
       if (SafelokEncoderStation != other.SafelokEncoderStation) return false;
@@ -155,7 +155,7 @@ namespace HOLMS.Types.TenancyConfig {
     public override int GetHashCode() {
       int hash = 1;
       if (PostCheckoutGraceHours != 0) hash ^= PostCheckoutGraceHours.GetHashCode();
-      if (SafelokServerIp.Length != 0) hash ^= SafelokServerIp.GetHashCode();
+      if (SafelokServerIpAddress.Length != 0) hash ^= SafelokServerIpAddress.GetHashCode();
       if (SafelokServerPort != 0) hash ^= SafelokServerPort.GetHashCode();
       if (SafelokServerPassword.Length != 0) hash ^= SafelokServerPassword.GetHashCode();
       if (SafelokEncoderStation != 0) hash ^= SafelokEncoderStation.GetHashCode();
@@ -173,9 +173,9 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(8);
         output.WriteUInt32(PostCheckoutGraceHours);
       }
-      if (SafelokServerIp.Length != 0) {
+      if (SafelokServerIpAddress.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(SafelokServerIp);
+        output.WriteString(SafelokServerIpAddress);
       }
       if (SafelokServerPort != 0) {
         output.WriteRawTag(24);
@@ -197,8 +197,8 @@ namespace HOLMS.Types.TenancyConfig {
       if (PostCheckoutGraceHours != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PostCheckoutGraceHours);
       }
-      if (SafelokServerIp.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(SafelokServerIp);
+      if (SafelokServerIpAddress.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SafelokServerIpAddress);
       }
       if (SafelokServerPort != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SafelokServerPort);
@@ -220,8 +220,8 @@ namespace HOLMS.Types.TenancyConfig {
       if (other.PostCheckoutGraceHours != 0) {
         PostCheckoutGraceHours = other.PostCheckoutGraceHours;
       }
-      if (other.SafelokServerIp.Length != 0) {
-        SafelokServerIp = other.SafelokServerIp;
+      if (other.SafelokServerIpAddress.Length != 0) {
+        SafelokServerIpAddress = other.SafelokServerIpAddress;
       }
       if (other.SafelokServerPort != 0) {
         SafelokServerPort = other.SafelokServerPort;
@@ -247,7 +247,7 @@ namespace HOLMS.Types.TenancyConfig {
             break;
           }
           case 18: {
-            SafelokServerIp = input.ReadString();
+            SafelokServerIpAddress = input.ReadString();
             break;
           }
           case 24: {

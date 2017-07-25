@@ -6,7 +6,7 @@ option go_package = "tenancyconfig";
 
 message KCRConfig {
 	uint32 post_checkout_grace_hours = 1;
-	string safelok_server_ip = 2;
+	string safelok_server_ip_address = 2;
 	uint32 safelok_server_port = 3;
 	string safelok_server_password = 4;
 	uint32 safelok_encoder_station = 5;
