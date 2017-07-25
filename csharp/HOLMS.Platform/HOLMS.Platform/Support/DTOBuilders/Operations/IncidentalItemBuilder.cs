@@ -1,4 +1,4 @@
-﻿using HOLMS.Support.Conversions;
+﻿using HOLMS.Platform.Support.Currency;
 using HOLMS.Types.Money.Accounting;
 using HOLMS.Types.Supply.IncidentalItems;
 
@@ -7,14 +7,14 @@ namespace HOLMS.Platform.Support.DTOBuilders.Operations {
         private readonly IncidentalItemIndicator _entityId;
         private readonly string _itemName;
         private readonly int _quantityOwned;
-        private readonly decimal _price;
+        private readonly DecimalDollars _price;
         private readonly bool _incursTaxes;
         private readonly bool _incursFees;
         private readonly ItemChargeFrequency _itemChargeFrequency;
         private readonly AccountIndicator _revenueAccount;
 
         public IncidentalItemBuilder(IncidentalItemIndicator ind, string itemName, int quantityOwned,
-            decimal price, bool incursTaxes, bool incursFees, ItemChargeFrequency chargeFrequency,
+            DecimalDollars price, bool incursTaxes, bool incursFees, ItemChargeFrequency chargeFrequency,
             AccountIndicator revenueAccount) {
             _entityId = ind;
             _itemName = itemName;
@@ -31,7 +31,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Operations {
                 EntityId = _entityId,
                 Description = _itemName ?? string.Empty,
                 QuanityOwned = (uint) _quantityOwned,
-                Price = _price.ToMoney(),
+                Price = _price.ToPb,
                 IncursTaxes = _incursTaxes,
                 IncursFees = _incursFees,
                 ChargeFrequency = _itemChargeFrequency

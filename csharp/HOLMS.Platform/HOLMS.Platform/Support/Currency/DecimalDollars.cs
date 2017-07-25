@@ -8,6 +8,7 @@ namespace HOLMS.Platform.Support.Currency {
     /// should use this class.
     /// </summary>
     public struct DecimalDollars : IEquatable<DecimalDollars> {
+        private const uint OneMillion = 1000000;
         // TODO(DA) Make this private. Try not to access it directly
         public readonly decimal Amount;
 
@@ -15,7 +16,7 @@ namespace HOLMS.Platform.Support.Currency {
 
         private decimal NonNegativeAmount => (Amount < 0 ? -1 : 1) * Amount;
         private uint NonNegativeDollars => (uint)NonNegativeAmount;
-        private uint RoundedCents => (uint)Math.Round(((NonNegativeAmount - NonNegativeDollars) * 100),
+        private uint RoundedCents => (uint)Math.Round((NonNegativeAmount - NonNegativeDollars) * 100,
             MidpointRounding.ToEven);
 
         /// <summary>
@@ -26,14 +27,13 @@ namespace HOLMS.Platform.Support.Currency {
             Amount = amt;
         }
 
-        /// <summary>
-        /// Create a high-precision DecimalDollars object from a low-precision
-        /// MonetaryAmount.
-        /// </summary>
-        /// <param name="amt"></param>
         public DecimalDollars(MonetaryAmount amt) {
-            Amount = (amt.IsNegative ? -1 : 1) * (amt.Dollars + amt.Cents / 100m);
+            Amount = amt.Microdollars / (decimal) OneMillion;
         }
+
+        public MonetaryAmount ToPb => new MonetaryAmount {
+            Microdollars = (long) Math.Round(Amount * OneMillion, MidpointRounding.ToEven)
+        };
 
         public static DecimalDollars? FromNullable(decimal? amt) {
             if (!amt.HasValue) {
@@ -46,7 +46,7 @@ namespace HOLMS.Platform.Support.Currency {
         public static DecimalDollars Zero => new DecimalDollars(0m);
 
         public static DecimalDollars FromCents(int totalCents) {
-            return new DecimalDollars(totalCents / 100m);
+            return new DecimalDollars(Math.Round(totalCents / 100m, MidpointRounding.ToEven));
         }
 
         public DollarCents ToDollarCents => new DollarCents(Amount < 0, NonNegativeDollars, RoundedCents);

@@ -3,13 +3,20 @@ using HOLMS.Platform.Support.Currency;
 
 namespace HOLMS.Types.Money.Folio {
     public partial class FolioState {
-        public DollarCents PostedChargeCredits => DollarCents.FromCents(
-            ChargeCredits.Sum(c => c.PreTaxFeeSubtotal.ToDC.TotalCents + 
-                c.TaxesFees.Sum(t => t.Amount.ToDC.TotalCents) + 
-                c.FolioSwaps.Sum(s => s.Amount.ToDC.TotalCents)));
-        public DollarCents PostedPayments => DollarCents.FromCents(Payments.Sum(p => p.Amount.ToDC.TotalCents));
-        public DollarCents RefundsTotal => DollarCents.FromCents(Refunds.Sum(t => t.Amount.ToDC.TotalCents));
+        public DollarCents PostedChargeCredits => PostedChargeCreditsPrecise.ToDollarCents;
+        public DollarCents PostedPayments => PostedPaymentsPrecise.ToDollarCents;
+        public DollarCents RefundsTotal => RefundsTotalPrecise.ToDollarCents;
 
-        public DollarCents Balance => PostedChargeCredits - GrossPayments.ToDC + RefundsTotal;
+        private DecimalDollars PostedChargeCreditsPrecise => new DecimalDollars(
+            ChargeCredits.Sum(c => c.PreTaxFeeSubtotal.ToDD.Amount +
+                                   c.TaxesFees.Sum(t => t.Amount.ToDD.Amount) +
+                                   c.FolioSwaps.Sum(s => s.Amount.ToDD.Amount)));
+        public DecimalDollars PostedPaymentsPrecise => new DecimalDollars(
+            Payments.Sum(p => p.Amount.ToDD.Amount));
+        public DecimalDollars RefundsTotalPrecise => new DecimalDollars(
+            Refunds.Sum(t => t.Amount.ToDD.Amount));
+
+        public DollarCents Balance => (PostedChargeCreditsPrecise - 
+            new DecimalDollars(GrossPayments) + RefundsTotalPrecise).ToDollarCents;
     }
 }

@@ -3,6 +3,7 @@ using HOLMS.Types.Primitive;
 
 namespace HOLMS.Platform.Support.Currency {
     public struct DollarCents : IComparable<DollarCents> {
+        private const uint OneMillion = 1000000;
         public readonly bool IsNegative;
         public readonly uint Dollars;
         public readonly uint Cents;
@@ -13,7 +14,13 @@ namespace HOLMS.Platform.Support.Currency {
             Cents = cents;
         }
 
-        public DollarCents(MonetaryAmount amt) : this(amt.IsNegative, amt.Dollars, amt.Cents) { }
+        public DollarCents(MonetaryAmount amt) {
+            var dc = FromCents((int) Math.Round(amt.Microdollars / (decimal) OneMillion, MidpointRounding.ToEven));
+
+            IsNegative = dc.IsNegative;
+            Dollars = dc.Dollars;
+            Cents = dc.Cents;
+        }
 
         public static DollarCents FromCents(int cents) {
             var isneg = cents < 0;
@@ -31,9 +38,7 @@ namespace HOLMS.Platform.Support.Currency {
         public decimal AsDecimal => TotalCents / 100m;
 
         public MonetaryAmount ToPb => new MonetaryAmount {
-            IsNegative = IsNegative,
-            Dollars = Dollars,
-            Cents = Cents,
+            Microdollars = TotalCents * OneMillion
         };
 
         private static int CompareTo(DollarCents x, DollarCents y) {

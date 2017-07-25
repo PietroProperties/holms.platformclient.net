@@ -5,7 +5,5 @@ option csharp_namespace = "HOLMS.Types.Primitive";
 option go_package = "primitive";
 
 message MonetaryAmount {
-	uint32 dollars = 1;
-	uint32 cents = 2;
-	bool is_negative = 3;
+	sint64 microdollars = 1;
 }

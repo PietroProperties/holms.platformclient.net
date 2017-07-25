@@ -23,13 +23,13 @@ namespace HOLMS.Types.Primitive {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3RvEhVob2xtcy50eXBl",
-            "cy5wcmltaXRpdmUiRQoOTW9uZXRhcnlBbW91bnQSDwoHZG9sbGFycxgBIAEo",
-            "DRINCgVjZW50cxgCIAEoDRITCgtpc19uZWdhdGl2ZRgDIAEoCEIjWglwcmlt",
-            "aXRpdmWqAhVIT0xNUy5UeXBlcy5QcmltaXRpdmViBnByb3RvMw=="));
+            "cy5wcmltaXRpdmUiJgoOTW9uZXRhcnlBbW91bnQSFAoMbWljcm9kb2xsYXJz",
+            "GAEgASgSQiNaCXByaW1pdGl2ZaoCFUhPTE1TLlR5cGVzLlByaW1pdGl2ZWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Primitive.MonetaryAmount), global::HOLMS.Types.Primitive.MonetaryAmount.Parser, new[]{ "Dollars", "Cents", "IsNegative" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Primitive.MonetaryAmount), global::HOLMS.Types.Primitive.MonetaryAmount.Parser, new[]{ "Microdollars" }, null, null, null)
           }));
     }
     #endregion
@@ -60,9 +60,7 @@ namespace HOLMS.Types.Primitive {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MonetaryAmount(MonetaryAmount other) : this() {
-      dollars_ = other.dollars_;
-      cents_ = other.cents_;
-      isNegative_ = other.isNegative_;
+      microdollars_ = other.microdollars_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -70,36 +68,14 @@ namespace HOLMS.Types.Primitive {
       return new MonetaryAmount(this);
     }
 
-    /// <summary>Field number for the "dollars" field.</summary>
-    public const int DollarsFieldNumber = 1;
-    private uint dollars_;
+    /// <summary>Field number for the "microdollars" field.</summary>
+    public const int MicrodollarsFieldNumber = 1;
+    private long microdollars_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Dollars {
-      get { return dollars_; }
+    public long Microdollars {
+      get { return microdollars_; }
       set {
-        dollars_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cents" field.</summary>
-    public const int CentsFieldNumber = 2;
-    private uint cents_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Cents {
-      get { return cents_; }
-      set {
-        cents_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "is_negative" field.</summary>
-    public const int IsNegativeFieldNumber = 3;
-    private bool isNegative_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsNegative {
-      get { return isNegative_; }
-      set {
-        isNegative_ = value;
+        microdollars_ = value;
       }
     }
 
@@ -116,18 +92,14 @@ namespace HOLMS.Types.Primitive {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Dollars != other.Dollars) return false;
-      if (Cents != other.Cents) return false;
-      if (IsNegative != other.IsNegative) return false;
+      if (Microdollars != other.Microdollars) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Dollars != 0) hash ^= Dollars.GetHashCode();
-      if (Cents != 0) hash ^= Cents.GetHashCode();
-      if (IsNegative != false) hash ^= IsNegative.GetHashCode();
+      if (Microdollars != 0L) hash ^= Microdollars.GetHashCode();
       return hash;
     }
 
@@ -138,31 +110,17 @@ namespace HOLMS.Types.Primitive {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Dollars != 0) {
+      if (Microdollars != 0L) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Dollars);
-      }
-      if (Cents != 0) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(Cents);
-      }
-      if (IsNegative != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsNegative);
+        output.WriteSInt64(Microdollars);
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Dollars != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Dollars);
-      }
-      if (Cents != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Cents);
-      }
-      if (IsNegative != false) {
-        size += 1 + 1;
+      if (Microdollars != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeSInt64Size(Microdollars);
       }
       return size;
     }
@@ -172,14 +130,8 @@ namespace HOLMS.Types.Primitive {
       if (other == null) {
         return;
       }
-      if (other.Dollars != 0) {
-        Dollars = other.Dollars;
-      }
-      if (other.Cents != 0) {
-        Cents = other.Cents;
-      }
-      if (other.IsNegative != false) {
-        IsNegative = other.IsNegative;
+      if (other.Microdollars != 0L) {
+        Microdollars = other.Microdollars;
       }
     }
 
@@ -192,15 +144,7 @@ namespace HOLMS.Types.Primitive {
             input.SkipLastField();
             break;
           case 8: {
-            Dollars = input.ReadUInt32();
-            break;
-          }
-          case 16: {
-            Cents = input.ReadUInt32();
-            break;
-          }
-          case 24: {
-            IsNegative = input.ReadBool();
+            Microdollars = input.ReadSInt64();
             break;
           }
         }
