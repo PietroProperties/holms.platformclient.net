@@ -1,17 +1,12 @@
 ﻿using HOLMS.Types.Primitive;
-using System;
+using HOLMS.Platform.Support.Currency;
 
 namespace HOLMS.Support.Conversions {
     public static class MoneyConversions {
-        public static decimal ToDecimal(this MonetaryAmount a) =>
-            (a.Dollars + a.Cents / (decimal)100) * (a.IsNegative ? -1 : 1);
+        public static DecimalDollars ToDecimalDollars(this MonetaryAmount a) =>
+            new DecimalDollars(a.Microdollars / 1000000m);
 
-        public static Int32 ToCents(this decimal dollars) {
-            return decimal.ToInt32(dollars * 100m);
-        }
-
-        public static decimal ToDollars(this Int32 cents) {
-            return cents / 100m;
-        }
+        public static DollarCents ToDollarCents(this MonetaryAmount a) =>
+            a.ToDecimalDollars().ToDollarCents;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using HOLMS.Platform.Support.Currency;
 using HOLMS.Support.Conversions;
 using HOLMS.Types.Booking.Channels;
 using HOLMS.Types.Booking.Indicators;
@@ -63,7 +64,7 @@ namespace HOLMS.Support.DTOBuilders.Booking.Channels {
             };
 
             if (_t == CommissionType.FlatPerBooking) {
-                ta.CommissionAmount = _commAmt.ToMoney();
+                ta.CommissionAmount = new DecimalDollars(_commAmt).ToPb;
             } else if (_t == CommissionType.PercentOfBooking) {
                 ta.CommissionPercentage = _commAmt.ToFPR();
             } else {
