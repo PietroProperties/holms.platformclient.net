@@ -1,4 +1,5 @@
 ﻿using System;
+using Castle.DynamicProxy.Generators.Emitters.SimpleAST;
 using HOLMS.Types.Primitive;
 
 namespace HOLMS.Platform.Support.Currency {
@@ -60,6 +61,9 @@ namespace HOLMS.Platform.Support.Currency {
 
         public bool Equals(DecimalDollars other) => Amount == other.Amount;
 
+        public static DecimalDollars operator- (DecimalDollars a) => 
+            new DecimalDollars(-a.Amount);
+        
         public static DecimalDollars operator +(DecimalDollars a, DecimalDollars b) =>
             new DecimalDollars(a.Amount + b.Amount);
 
