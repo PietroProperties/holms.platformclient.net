@@ -7,14 +7,14 @@ namespace HOLMS.Platform.Support.Currency {
     /// CLR's System.Decimal. Internal calculations and db-backed model objects
     /// should use this class.
     /// </summary>
-    public struct DecimalDollars : IEquatable<DecimalDollars> {
+    public struct DecimalDollars : IComparable<DecimalDollars>, IEquatable<DecimalDollars> {
         private const uint OneMillion = 1000000;
         // TODO(DA) Make this private. Try not to access it directly
         public readonly decimal Amount;
 
         public int TotalCents => (int)Math.Round(Amount * 100, MidpointRounding.ToEven);
 
-        private decimal NonNegativeAmount => (Amount < 0 ? -1 : 1) * Amount;
+        private decimal NonNegativeAmount => Math.Abs(Amount);
         private uint NonNegativeDollars => (uint)NonNegativeAmount;
         private uint RoundedCents => (uint)Math.Round((NonNegativeAmount - NonNegativeDollars) * 100,
             MidpointRounding.ToEven);
@@ -86,5 +86,9 @@ namespace HOLMS.Platform.Support.Currency {
         public static DecimalDollars operator *(DecimalDollars a, decimal b) => new DecimalDollars(a.Amount * b);
 
         public static DecimalDollars operator *(decimal a, DecimalDollars b) => b * a;
+
+        public int CompareTo(DecimalDollars other) {
+            return Amount.CompareTo(other.Amount);
+        }
     }
 }
