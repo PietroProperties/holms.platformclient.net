@@ -17,7 +17,7 @@ namespace HOLMS.Platform.Support.Currency {
 
         private decimal NonNegativeAmount => Math.Abs(Amount);
         private uint NonNegativeDollars => (uint)NonNegativeAmount;
-        private uint RoundedCents => (uint)Math.Round((NonNegativeAmount - NonNegativeDollars) * 100,
+        private uint NonNegativeRoundedCents => (uint)Math.Round((NonNegativeAmount - NonNegativeDollars) * 100,
             MidpointRounding.ToEven);
 
         /// <summary>
@@ -47,10 +47,10 @@ namespace HOLMS.Platform.Support.Currency {
         public static DecimalDollars Zero => new DecimalDollars(0m);
 
         public static DecimalDollars FromCents(int totalCents) {
-            return new DecimalDollars(Math.Round(totalCents / 100m, MidpointRounding.ToEven));
+            return new DecimalDollars(totalCents / 100m);
         }
 
-        public DollarCents ToDollarCents => new DollarCents(Amount < 0, NonNegativeDollars, RoundedCents);
+        public DollarCents ToDollarCents => new DollarCents(Amount < 0, NonNegativeDollars, NonNegativeRoundedCents);
 
         public override bool Equals(object obj) {
             if (ReferenceEquals(null, obj)) return false;
