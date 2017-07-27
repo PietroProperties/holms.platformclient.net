@@ -45,7 +45,7 @@ namespace HOLMS.Platform.Support.Currency {
         private static int CompareTo(DollarCents x, DollarCents y) {
             var isNegativeComparison = x.IsNegative.CompareTo(y.IsNegative);
             if (isNegativeComparison != 0) {
-                return isNegativeComparison;
+                return -isNegativeComparison;
             }
 
             var dollarsComparison = x.Dollars.CompareTo(y.Dollars);
