@@ -23,4 +23,5 @@ message Room {
 	holms.types.operations.rooms.RoomIndicator connected_room = 10;
 	string trunk_id = 11;
 	holms.types.booking.indicators.ReservationIndicator occupying_reservation = 12;
+	string kcr_room_number = 13;
 }
