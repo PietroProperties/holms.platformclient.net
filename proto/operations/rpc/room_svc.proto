@@ -6,6 +6,7 @@ option go_package = "operations/rpc";
 
 import "primitive/server_action_confirmation.proto";
 import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
 import "operations/rooms/room.proto";
 import "operations/rooms/room_indicator.proto";
 import "booking/indicators/reservation_indicator.proto";
@@ -57,6 +58,24 @@ message RoomSvcGetByOccupyingReservationResponse {
 	.holms.types.operations.rooms.Room claimed_room = 2;
 }
 
+message RoomSvcIssueRoomKeyRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	google.protobuf.Timestamp expiry_time = 2;
+	int32 number_of_keys = 3;
+	bool is_new_key = 4;
+}
+
+enum ROOM_SVC_ISSUE_ROOM_KEY_RESULT {
+	SUCCESS = 0;
+	TIMEOUT = 1;
+	INVALID_CONFIG = 2;
+	FAILURE = 3;
+}
+
+message RoomSvcIssueRoomKeyResponse {
+	ROOM_SVC_ISSUE_ROOM_KEY_RESULT result = 1;
+}
+
 service RoomSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (RoomSvcAllResponse);
@@ -81,4 +100,7 @@ service RoomSvc {
 
 	rpc ReleaseRoomOccupancy(RoomSvcOccupancyRequest)
 		returns (RoomSvcReleaseOccupancyResponse);
+
+	rpc IssueRoomKey(RoomSvcIssueRoomKeyRequest)
+		returns (RoomSvcIssueRoomKeyResponse);
 }
