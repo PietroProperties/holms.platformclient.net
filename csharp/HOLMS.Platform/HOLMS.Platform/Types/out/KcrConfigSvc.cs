@@ -27,16 +27,17 @@ namespace HOLMS.Types.TenancyConfig.RPC {
             "a2NyX2NvbmZpZy5wcm90bxobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3Rv",
             "ImAKFFNldEtDUkNvbmZpZ1Jlc3BvbnNlEkgKBnJlc3VsdBgBIAEoDjI4Lmhv",
             "bG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLnJwYy5LQ1JTdmNTZXRLQ1JDb25m",
-            "aWdSZXN1bHQqsAEKGEtDUlN2Y1NldEtDUkNvbmZpZ1Jlc3VsdBIlCiFTRVRf",
+            "aWdSZXN1bHQqzAEKGEtDUlN2Y1NldEtDUkNvbmZpZ1Jlc3VsdBIlCiFTRVRf",
             "S0NSX0NPTkZJR19JTlZBTElEX0lQX0FERFJFU1MQABIpCiVTRVRfS0NSX0NP",
             "TkZJR19JTlZBTElEX0VOQ09ERVJfTlVNQkVSEAESHgoaU0VUX0tDUl9DT05G",
             "SUdfSU5WQUxJRF9QV0QQAhIiCh5TRVRfS0NSX0NPTkZJR19VTktOT1dOX0ZB",
-            "SUxVUkUQAzK4AQoMS0NSQ29uZmlnU3ZjEkQKA0dldBIWLmdvb2dsZS5wcm90",
-            "b2J1Zi5FbXB0eRolLmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLktDUkNv",
-            "bmZpZxJiCgNTZXQSJS5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5LQ1JD",
-            "b25maWcaNC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5ycGMuU2V0S0NS",
-            "Q29uZmlnUmVzcG9uc2VCM1oRdGVuYW5jeWNvbmZpZy9ycGOqAh1IT0xNUy5U",
-            "eXBlcy5UZW5hbmN5Q29uZmlnLlJQQ2IGcHJvdG8z"));
+            "SUxVUkUQAxIaChZTRVRfS0NSX0NPTkZJR19TVUNDRVNTEAQyuAEKDEtDUkNv",
+            "bmZpZ1N2YxJECgNHZXQSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaJS5ob2xt",
+            "cy50eXBlcy50ZW5hbmN5X2NvbmZpZy5LQ1JDb25maWcSYgoDU2V0EiUuaG9s",
+            "bXMudHlwZXMudGVuYW5jeV9jb25maWcuS0NSQ29uZmlnGjQuaG9sbXMudHlw",
+            "ZXMudGVuYW5jeV9jb25maWcucnBjLlNldEtDUkNvbmZpZ1Jlc3BvbnNlQjNa",
+            "EXRlbmFuY3ljb25maWcvcnBjqgIdSE9MTVMuVHlwZXMuVGVuYW5jeUNvbmZp",
+            "Zy5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.TenancyConfig.KcrConfigReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.TenancyConfig.RPC.KCRSvcSetKCRConfigResult), }, new pbr::GeneratedClrTypeInfo[] {
@@ -52,6 +53,7 @@ namespace HOLMS.Types.TenancyConfig.RPC {
     [pbr::OriginalName("SET_KCR_CONFIG_INVALID_ENCODER_NUMBER")] SetKcrConfigInvalidEncoderNumber = 1,
     [pbr::OriginalName("SET_KCR_CONFIG_INVALID_PWD")] SetKcrConfigInvalidPwd = 2,
     [pbr::OriginalName("SET_KCR_CONFIG_UNKNOWN_FAILURE")] SetKcrConfigUnknownFailure = 3,
+    [pbr::OriginalName("SET_KCR_CONFIG_SUCCESS")] SetKcrConfigSuccess = 4,
   }
 
   #endregion
