@@ -6,10 +6,10 @@ option csharp_namespace = "HOLMS.Types.Operations.Rooms";
 import "booking/indicators/reservation_indicator.proto";
 import "operations/rooms/room_indicator.proto";
 
-message RoomOccupancyChangedNotification {
+message RoomKeyIssuedNotification {
 	string j_w_token = 1;
 	holms.types.operations.rooms.RoomIndicator room = 2;
 	holms.types.booking.indicators.ReservationIndicator reservation = 3;
-	bool occupancy_prematerialized_on_reservation = 4;
+	bool is_new_key = 4;
+	uint32 quantity_issued = 5;
 }
-
