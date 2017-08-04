@@ -12,29 +12,30 @@ namespace HOLMS.Types.Money.RPC {
   {
     static readonly string __ServiceName = "holms.types.money.rpc.CardProcessingSvc";
 
-    static readonly Marshaller<global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest> __Marshaller_PaymentCardVerificationRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest> __Marshaller_CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> __Marshaller_CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Cards.CardMerchantIndicator> __Marshaller_CardMerchantIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.CardMerchantIndicator.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> __Marshaller_MerchantBatch = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse> __Marshaller_GetOpenBatchStateResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest> __Marshaller_CardProcessingSvcSearchHistoricalBatchesRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse> __Marshaller_MerchantBatchEnumResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch> __Marshaller_ClosedMerchantBatch = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator> __Marshaller_PaymentCardSaleIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResponse> __Marshaller_CardProcessingSvcVoidTransactionResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator> __Marshaller_PaymentCardRefundIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator.Parser.ParseFrom);
 
-    static readonly Method<global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> __Method_VerifyAndTokenizeNotPresentCard = new Method<global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse>(
+    static readonly Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> __Method_VerifyAndTokenizeNotPresentCard = new Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse>(
         MethodType.Unary,
         __ServiceName,
         "VerifyAndTokenizeNotPresentCard",
-        __Marshaller_PaymentCardVerificationRequest,
+        __Marshaller_CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest,
         __Marshaller_CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse);
 
-    static readonly Method<global::HOLMS.Types.Money.Cards.CardMerchantIndicator, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> __Method_GetCurrentBatchState = new Method<global::HOLMS.Types.Money.Cards.CardMerchantIndicator, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch>(
+    static readonly Method<global::HOLMS.Types.Money.Cards.CardMerchantIndicator, global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse> __Method_GetCurrentBatchState = new Method<global::HOLMS.Types.Money.Cards.CardMerchantIndicator, global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse>(
         MethodType.Unary,
         __ServiceName,
         "GetCurrentBatchState",
         __Marshaller_CardMerchantIndicator,
-        __Marshaller_MerchantBatch);
+        __Marshaller_GetOpenBatchStateResponse);
 
     static readonly Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest, global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse> __Method_SearchHistoricalBatches = new Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest, global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse>(
         MethodType.Unary,
@@ -43,12 +44,12 @@ namespace HOLMS.Types.Money.RPC {
         __Marshaller_CardProcessingSvcSearchHistoricalBatchesRequest,
         __Marshaller_MerchantBatchEnumResponse);
 
-    static readonly Method<global::HOLMS.Types.Money.Cards.CardMerchantIndicator, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> __Method_CloseProcessorBatch = new Method<global::HOLMS.Types.Money.Cards.CardMerchantIndicator, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch>(
+    static readonly Method<global::HOLMS.Types.Money.Cards.CardMerchantIndicator, global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch> __Method_CloseProcessorBatch = new Method<global::HOLMS.Types.Money.Cards.CardMerchantIndicator, global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch>(
         MethodType.Unary,
         __ServiceName,
         "CloseProcessorBatch",
         __Marshaller_CardMerchantIndicator,
-        __Marshaller_MerchantBatch);
+        __Marshaller_ClosedMerchantBatch);
 
     static readonly Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator, global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResponse> __Method_VoidSale = new Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator, global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResponse>(
         MethodType.Unary,
@@ -76,7 +77,7 @@ namespace HOLMS.Types.Money.RPC {
       /// <summary>
       ///  Tokenize a new card
       /// </summary>
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeNotPresentCard(global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeNotPresentCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -85,7 +86,7 @@ namespace HOLMS.Types.Money.RPC {
       ///  Batches
       ///  Get info about batches
       /// </summary>
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> GetCurrentBatchState(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse> GetCurrentBatchState(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -98,7 +99,7 @@ namespace HOLMS.Types.Money.RPC {
       /// <summary>
       ///  Request batch closure
       /// </summary>
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> CloseProcessorBatch(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch> CloseProcessorBatch(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -144,28 +145,28 @@ namespace HOLMS.Types.Money.RPC {
       /// <summary>
       ///  Tokenize a new card
       /// </summary>
-      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse VerifyAndTokenizeNotPresentCard(global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse VerifyAndTokenizeNotPresentCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return VerifyAndTokenizeNotPresentCard(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Tokenize a new card
       /// </summary>
-      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse VerifyAndTokenizeNotPresentCard(global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse VerifyAndTokenizeNotPresentCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_VerifyAndTokenizeNotPresentCard, null, options, request);
       }
       /// <summary>
       ///  Tokenize a new card
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeNotPresentCardAsync(global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeNotPresentCardAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return VerifyAndTokenizeNotPresentCardAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Tokenize a new card
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeNotPresentCardAsync(global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeNotPresentCardAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_VerifyAndTokenizeNotPresentCard, null, options, request);
       }
@@ -173,7 +174,7 @@ namespace HOLMS.Types.Money.RPC {
       ///  Batches
       ///  Get info about batches
       /// </summary>
-      public virtual global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch GetCurrentBatchState(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse GetCurrentBatchState(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetCurrentBatchState(request, new CallOptions(headers, deadline, cancellationToken));
       }
@@ -181,7 +182,7 @@ namespace HOLMS.Types.Money.RPC {
       ///  Batches
       ///  Get info about batches
       /// </summary>
-      public virtual global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch GetCurrentBatchState(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, CallOptions options)
+      public virtual global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse GetCurrentBatchState(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetCurrentBatchState, null, options, request);
       }
@@ -189,7 +190,7 @@ namespace HOLMS.Types.Money.RPC {
       ///  Batches
       ///  Get info about batches
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> GetCurrentBatchStateAsync(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse> GetCurrentBatchStateAsync(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetCurrentBatchStateAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
@@ -197,7 +198,7 @@ namespace HOLMS.Types.Money.RPC {
       ///  Batches
       ///  Get info about batches
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> GetCurrentBatchStateAsync(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse> GetCurrentBatchStateAsync(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetCurrentBatchState, null, options, request);
       }
@@ -220,28 +221,28 @@ namespace HOLMS.Types.Money.RPC {
       /// <summary>
       ///  Request batch closure
       /// </summary>
-      public virtual global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch CloseProcessorBatch(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch CloseProcessorBatch(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return CloseProcessorBatch(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Request batch closure
       /// </summary>
-      public virtual global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch CloseProcessorBatch(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, CallOptions options)
+      public virtual global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch CloseProcessorBatch(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CloseProcessorBatch, null, options, request);
       }
       /// <summary>
       ///  Request batch closure
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> CloseProcessorBatchAsync(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch> CloseProcessorBatchAsync(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return CloseProcessorBatchAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Request batch closure
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> CloseProcessorBatchAsync(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch> CloseProcessorBatchAsync(global::HOLMS.Types.Money.Cards.CardMerchantIndicator request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CloseProcessorBatch, null, options, request);
       }

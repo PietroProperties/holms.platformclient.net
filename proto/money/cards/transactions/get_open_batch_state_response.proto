@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package holms.types.money.cards.transactions;
+option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
+
+import "money/cards/transactions/payment_card_sale_capture.proto";
+import "money/cards/transactions/payment_card_refund.proto";
+
+enum GetCurrentBatchStateResult {
+	CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_UNKNOWN_ERROR = 0;
+	CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_PROCESSOR_COMMUNICATION_ERROR = 1;
+	CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_BATCH_NOT_OPEN = 2;
+	CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_BATCH_OPEN = 3;
+}
+
+
+message GetOpenBatchStateResponse {
+	GetCurrentBatchStateResult result = 1;
+	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture pending_captures = 2;
+	repeated holms.types.money.cards.transactions.PaymentCardRefund pending_refunds = 3;
+}
+

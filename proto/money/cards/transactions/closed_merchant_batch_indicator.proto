@@ -6,6 +6,6 @@ option go_package = "money/cards/transactions";
 
 import "primitive/uuid.proto";
 
-message MerchantBatchIndicator {
+message ClosedMerchantBatchIndicator {
 	holms.types.primitive.Uuid id = 1;
 }

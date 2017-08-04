@@ -153,7 +153,7 @@
     <Compile Include="Types\Extensions\Money\Cards\GuestPaymentCard.cs" />
     <Compile Include="Types\Extensions\Money\Cards\GuestPaymentCardIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardAuthorizationIndicator.cs" />
-    <Compile Include="Types\Extensions\Money\Cards\MerchantBatchIndicator.cs" />
+    <Compile Include="Types\Extensions\Money\Cards\ClosedMerchantBatchIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardRefundIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardSaleIndicator.cs" />
     <Compile Include="Types\Extensions\Money\Cards\PaymentCardSaleCaptureIndicator.cs" />
@@ -288,6 +288,8 @@
     <Compile Include="Types\out\ClientInstanceIndicator.cs" />
     <Compile Include="Types\out\ClientInstanceSvc.cs" />
     <Compile Include="Types\out\ClientInstanceSvcGrpc.cs" />
+    <Compile Include="Types\out\ClosedMerchantBatch.cs" />
+    <Compile Include="Types\out\ClosedMerchantBatchIndicator.cs" />
     <Compile Include="Types\out\CommissionType.cs" />
     <Compile Include="Types\out\CompleteOpenReservation.cs" />
     <Compile Include="Types\out\ContactInformation.cs" />
@@ -318,6 +320,7 @@
     <Compile Include="Types\out\FullRoomType.cs" />
     <Compile Include="Types\out\GenesisBookingResult.cs" />
     <Compile Include="Types\out\GenesisPriceEstimateRequestDto.cs" />
+    <Compile Include="Types\out\GetOpenBatchStateResponse.cs" />
     <Compile Include="Types\out\Group.cs" />
     <Compile Include="Types\out\GroupBooking.cs" />
     <Compile Include="Types\out\GroupBookingExt.cs" />
@@ -422,8 +425,6 @@
     <Compile Include="Types\out\ManagementReportManifests.cs" />
     <Compile Include="Types\out\MasterFolioSvc.cs" />
     <Compile Include="Types\out\MasterFolioSvcGrpc.cs" />
-    <Compile Include="Types\out\MerchantBatch.cs" />
-    <Compile Include="Types\out\MerchantBatchIndicator.cs" />
     <Compile Include="Types\out\MessageBin.cs" />
     <Compile Include="Types\out\MitelCallEnded.cs" />
     <Compile Include="Types\out\MonetaryAmount.cs" />
@@ -639,6 +640,7 @@
     <Compile Include="Types\Topics\PBXConnectorTopics.cs" />
     <Compile Include="Types\Topics\SupplyContextTopics.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

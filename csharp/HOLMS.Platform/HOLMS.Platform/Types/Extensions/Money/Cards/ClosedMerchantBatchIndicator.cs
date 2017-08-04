@@ -4,8 +4,8 @@ using HOLMS.Types.Extensions.Support;
 using HOLMS.Types.Primitive;
 
 namespace HOLMS.Types.Money.Cards.Transactions {
-    public partial class MerchantBatchIndicator : EntityIndicator<MerchantBatchIndicator> {
-        public MerchantBatchIndicator(Guid id) {
+    public partial class ClosedMerchantBatchIndicator : EntityIndicator<ClosedMerchantBatchIndicator> {
+        public ClosedMerchantBatchIndicator(Guid id) {
             Id = id.ToUUID();
         }
 
