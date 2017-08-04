@@ -43,4 +43,5 @@ message ReservationSummary {
 	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 21;
 	holms.types.operations.housekeeping.HousekeepingTime hk_time_preference = 22;
 	google.protobuf.Timestamp created_at = 23;
+	int32 outstanding_issued_room_keys = 24;
 }
