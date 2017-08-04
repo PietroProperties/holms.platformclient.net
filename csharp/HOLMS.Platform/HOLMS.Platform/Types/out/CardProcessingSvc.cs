@@ -27,66 +27,69 @@ namespace HOLMS.Types.Money.RPC {
             "cm90bxopbW9uZXkvY2FyZHMvY2FyZF9tZXJjaGFudF9pbmRpY2F0b3IucHJv",
             "dG8aLm1vbmV5L2NhcmRzL2d1ZXN0X3BheW1lbnRfY2FyZF9pbmRpY2F0b3Iu",
             "cHJvdG8aKm1vbmV5L2NhcmRzL25vdF9wcmVzZW50X3BheW1lbnRfY2FyZC5w",
-            "cm90bxotbW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL21lcmNoYW50X2JhdGNo",
-            "LnByb3RvGjptb25leS9jYXJkcy90cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJk",
-            "X3NhbGVfaW5kaWNhdG9yLnByb3RvGjxtb25leS9jYXJkcy90cmFuc2FjdGlv",
-            "bnMvcGF5bWVudF9jYXJkX3JlZnVuZF9pbmRpY2F0b3IucHJvdG8aO21vbmV5",
-            "L2NhcmRzL3RyYW5zYWN0aW9ucy9wcm9jZXNzb3JfdHJhbnNhY3Rpb25fcmVz",
-            "dWx0LnByb3RvGjBwcmltaXRpdmUvcGJfaW5jbHVzaXZlX2NhbGVuZGFyX2Rh",
-            "dGVfcmFuZ2UucHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMvcHJv",
-            "cGVydHlfaW5kaWNhdG9yLnByb3RvIuEBCh5QYXltZW50Q2FyZFZlcmlmaWNh",
-            "dGlvblJlcXVlc3QSNQoFZ3Vlc3QYASABKAsyJi5ob2xtcy50eXBlcy5jcm0u",
-            "Z3Vlc3RzLkd1ZXN0SW5kaWNhdG9yEkoKCHByb3BlcnR5GAIgASgLMjguaG9s",
-            "bXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUlu",
-            "ZGljYXRvchI8CgRjYXJkGAMgASgLMi4uaG9sbXMudHlwZXMubW9uZXkuY2Fy",
-            "ZHMuTm90UHJlc2VudFBheW1lbnRDYXJkIs4BCjhDYXJkUHJvY2Vzc2luZ1N2",
-            "Y1ZlcmlmeUFuZFRva2VuaXplTm90UHJlc2VudENhcmRSZXNwb25zZRJQCgZy",
-            "ZXN1bHQYASABKA4yQC5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2Fj",
-            "dGlvbnMuUHJvY2Vzc29yVHJhbnNhY3Rpb25SZXN1bHQSQAoEY2FyZBgCIAEo",
-            "CzIyLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkd1ZXN0UGF5bWVudENhcmRJ",
-            "bmRpY2F0b3IiygEKL0NhcmRQcm9jZXNzaW5nU3ZjU2VhcmNoSGlzdG9yaWNh",
-            "bEJhdGNoZXNSZXF1ZXN0EkAKCG1lcmNoYW50GAEgASgLMi4uaG9sbXMudHlw",
-            "ZXMubW9uZXkuY2FyZHMuQ2FyZE1lcmNoYW50SW5kaWNhdG9yElUKGGJhdGNo",
-            "X2Nsb3N1cmVfZGF0ZV9yYW5nZRgCIAEoCzIzLmhvbG1zLnR5cGVzLnByaW1p",
-            "dGl2ZS5QYkluY2x1c2l2ZUNhbGVuZGFyRGF0ZVJhbmdlImEKGU1lcmNoYW50",
-            "QmF0Y2hFbnVtUmVzcG9uc2USRAoHYmF0Y2hlcxgBIAMoCzIzLmhvbG1zLnR5",
-            "cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5NZXJjaGFudEJhdGNoInkK",
-            "KENhcmRQcm9jZXNzaW5nU3ZjVm9pZFRyYW5zYWN0aW9uUmVzcG9uc2USTQoG",
-            "cmVzdWx0GAEgASgOMj0uaG9sbXMudHlwZXMubW9uZXkucnBjLkNhcmRQcm9j",
-            "ZXNzaW5nU3ZjVm9pZFRyYW5zYWN0aW9uUmVzdWx0Kv8BCiZDYXJkUHJvY2Vz",
-            "c2luZ1N2Y1ZvaWRUcmFuc2FjdGlvblJlc3VsdBIwCixDQVJEX1BST0NFU1NJ",
-            "TkdfU1ZDX1ZPSURfVFJBTlNBQ1RJT05fU1VDQ0VTUxAAEjIKLkNBUkRfUFJP",
-            "Q0VTU0lOR19TVkNfVk9JRF9UUkFOU0FDVElPTl9OT1RfRk9VTkQQARI1CjFD",
-            "QVJEX1BST0NFU1NJTkdfU1ZDX1ZPSURfVFJBTlNBQ1RJT05fTk9UX1ZPSURB",
-            "QkxFEAISOAo0Q0FSRF9QUk9DRVNTSU5HX1NWQ19WT0lEX1RSQU5TQUNUSU9O",
-            "X1VOS05PV05fRkFJTFVSRRADMu4GChFDYXJkUHJvY2Vzc2luZ1N2YxKpAQof",
-            "VmVyaWZ5QW5kVG9rZW5pemVOb3RQcmVzZW50Q2FyZBI1LmhvbG1zLnR5cGVz",
-            "Lm1vbmV5LnJwYy5QYXltZW50Q2FyZFZlcmlmaWNhdGlvblJlcXVlc3QaTy5o",
+            "cm90bxo0bW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL2Nsb3NlZF9tZXJjaGFu",
+            "dF9iYXRjaC5wcm90bxo8bW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL2dldF9v",
+            "cGVuX2JhdGNoX3N0YXRlX3Jlc3BvbnNlLnByb3RvGjptb25leS9jYXJkcy90",
+            "cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJkX3NhbGVfaW5kaWNhdG9yLnByb3Rv",
+            "Gjxtb25leS9jYXJkcy90cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJkX3JlZnVu",
+            "ZF9pbmRpY2F0b3IucHJvdG8aO21vbmV5L2NhcmRzL3RyYW5zYWN0aW9ucy9w",
+            "cm9jZXNzb3JfdHJhbnNhY3Rpb25fcmVzdWx0LnByb3RvGjBwcmltaXRpdmUv",
+            "cGJfaW5jbHVzaXZlX2NhbGVuZGFyX2RhdGVfcmFuZ2UucHJvdG8aMnRlbmFu",
+            "Y3lfY29uZmlnL2luZGljYXRvcnMvcHJvcGVydHlfaW5kaWNhdG9yLnByb3Rv",
+            "IvoBCjdDYXJkUHJvY2Vzc2luZ1N2Y1ZlcmlmeUFuZFRva2VuaXplTm90UHJl",
+            "c2VudENhcmRSZXF1ZXN0EjUKBWd1ZXN0GAEgASgLMiYuaG9sbXMudHlwZXMu",
+            "Y3JtLmd1ZXN0cy5HdWVzdEluZGljYXRvchJKCghwcm9wZXJ0eRgCIAEoCzI4",
+            "LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVy",
+            "dHlJbmRpY2F0b3ISPAoEY2FyZBgDIAEoCzIuLmhvbG1zLnR5cGVzLm1vbmV5",
+            "LmNhcmRzLk5vdFByZXNlbnRQYXltZW50Q2FyZCLOAQo4Q2FyZFByb2Nlc3Np",
+            "bmdTdmNWZXJpZnlBbmRUb2tlbml6ZU5vdFByZXNlbnRDYXJkUmVzcG9uc2US",
+            "UAoGcmVzdWx0GAEgASgOMkAuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJh",
+            "bnNhY3Rpb25zLlByb2Nlc3NvclRyYW5zYWN0aW9uUmVzdWx0EkAKBGNhcmQY",
+            "AiABKAsyMi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5HdWVzdFBheW1lbnRD",
+            "YXJkSW5kaWNhdG9yImcKGU1lcmNoYW50QmF0Y2hFbnVtUmVzcG9uc2USSgoH",
+            "YmF0Y2hlcxgBIAMoCzI5LmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5z",
+            "YWN0aW9ucy5DbG9zZWRNZXJjaGFudEJhdGNoIsoBCi9DYXJkUHJvY2Vzc2lu",
+            "Z1N2Y1NlYXJjaEhpc3RvcmljYWxCYXRjaGVzUmVxdWVzdBJACghtZXJjaGFu",
+            "dBgBIAEoCzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRNZXJjaGFu",
+            "dEluZGljYXRvchJVChhiYXRjaF9jbG9zdXJlX2RhdGVfcmFuZ2UYAiABKAsy",
+            "My5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVDYWxlbmRhckRh",
+            "dGVSYW5nZSJ5CihDYXJkUHJvY2Vzc2luZ1N2Y1ZvaWRUcmFuc2FjdGlvblJl",
+            "c3BvbnNlEk0KBnJlc3VsdBgBIAEoDjI9LmhvbG1zLnR5cGVzLm1vbmV5LnJw",
+            "Yy5DYXJkUHJvY2Vzc2luZ1N2Y1ZvaWRUcmFuc2FjdGlvblJlc3VsdCr/AQom",
+            "Q2FyZFByb2Nlc3NpbmdTdmNWb2lkVHJhbnNhY3Rpb25SZXN1bHQSMAosQ0FS",
+            "RF9QUk9DRVNTSU5HX1NWQ19WT0lEX1RSQU5TQUNUSU9OX1NVQ0NFU1MQABIy",
+            "Ci5DQVJEX1BST0NFU1NJTkdfU1ZDX1ZPSURfVFJBTlNBQ1RJT05fTk9UX0ZP",
+            "VU5EEAESNQoxQ0FSRF9QUk9DRVNTSU5HX1NWQ19WT0lEX1RSQU5TQUNUSU9O",
+            "X05PVF9WT0lEQUJMRRACEjgKNENBUkRfUFJPQ0VTU0lOR19TVkNfVk9JRF9U",
+            "UkFOU0FDVElPTl9VTktOT1dOX0ZBSUxVUkUQAzKbBwoRQ2FyZFByb2Nlc3Np",
+            "bmdTdmMSwgEKH1ZlcmlmeUFuZFRva2VuaXplTm90UHJlc2VudENhcmQSTi5o",
             "b2xtcy50eXBlcy5tb25leS5ycGMuQ2FyZFByb2Nlc3NpbmdTdmNWZXJpZnlB",
-            "bmRUb2tlbml6ZU5vdFByZXNlbnRDYXJkUmVzcG9uc2USewoUR2V0Q3VycmVu",
-            "dEJhdGNoU3RhdGUSLi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5DYXJkTWVy",
-            "Y2hhbnRJbmRpY2F0b3IaMy5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFu",
-            "c2FjdGlvbnMuTWVyY2hhbnRCYXRjaBKTAQoXU2VhcmNoSGlzdG9yaWNhbEJh",
-            "dGNoZXMSRi5ob2xtcy50eXBlcy5tb25leS5ycGMuQ2FyZFByb2Nlc3NpbmdT",
-            "dmNTZWFyY2hIaXN0b3JpY2FsQmF0Y2hlc1JlcXVlc3QaMC5ob2xtcy50eXBl",
-            "cy5tb25leS5ycGMuTWVyY2hhbnRCYXRjaEVudW1SZXNwb25zZRJ6ChNDbG9z",
-            "ZVByb2Nlc3NvckJhdGNoEi4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2Fy",
-            "ZE1lcmNoYW50SW5kaWNhdG9yGjMuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMu",
-            "dHJhbnNhY3Rpb25zLk1lcmNoYW50QmF0Y2gSiwEKCFZvaWRTYWxlEj4uaG9s",
-            "bXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBheW1lbnRDYXJk",
-            "U2FsZUluZGljYXRvcho/LmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5DYXJkUHJv",
-            "Y2Vzc2luZ1N2Y1ZvaWRUcmFuc2FjdGlvblJlc3BvbnNlEo8BCgpWb2lkUmVm",
-            "dW5kEkAuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBh",
-            "eW1lbnRDYXJkUmVmdW5kSW5kaWNhdG9yGj8uaG9sbXMudHlwZXMubW9uZXku",
-            "cnBjLkNhcmRQcm9jZXNzaW5nU3ZjVm9pZFRyYW5zYWN0aW9uUmVzcG9uc2VC",
-            "GKoCFUhPTE1TLlR5cGVzLk1vbmV5LlJQQ2IGcHJvdG8z"));
+            "bmRUb2tlbml6ZU5vdFByZXNlbnRDYXJkUmVxdWVzdBpPLmhvbG1zLnR5cGVz",
+            "Lm1vbmV5LnJwYy5DYXJkUHJvY2Vzc2luZ1N2Y1ZlcmlmeUFuZFRva2VuaXpl",
+            "Tm90UHJlc2VudENhcmRSZXNwb25zZRKHAQoUR2V0Q3VycmVudEJhdGNoU3Rh",
+            "dGUSLi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5DYXJkTWVyY2hhbnRJbmRp",
+            "Y2F0b3IaPy5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMu",
+            "R2V0T3BlbkJhdGNoU3RhdGVSZXNwb25zZRKTAQoXU2VhcmNoSGlzdG9yaWNh",
+            "bEJhdGNoZXMSRi5ob2xtcy50eXBlcy5tb25leS5ycGMuQ2FyZFByb2Nlc3Np",
+            "bmdTdmNTZWFyY2hIaXN0b3JpY2FsQmF0Y2hlc1JlcXVlc3QaMC5ob2xtcy50",
+            "eXBlcy5tb25leS5ycGMuTWVyY2hhbnRCYXRjaEVudW1SZXNwb25zZRKAAQoT",
+            "Q2xvc2VQcm9jZXNzb3JCYXRjaBIuLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRz",
+            "LkNhcmRNZXJjaGFudEluZGljYXRvcho5LmhvbG1zLnR5cGVzLm1vbmV5LmNh",
+            "cmRzLnRyYW5zYWN0aW9ucy5DbG9zZWRNZXJjaGFudEJhdGNoEosBCghWb2lk",
+            "U2FsZRI+LmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5Q",
+            "YXltZW50Q2FyZFNhbGVJbmRpY2F0b3IaPy5ob2xtcy50eXBlcy5tb25leS5y",
+            "cGMuQ2FyZFByb2Nlc3NpbmdTdmNWb2lkVHJhbnNhY3Rpb25SZXNwb25zZRKP",
+            "AQoKVm9pZFJlZnVuZBJALmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5z",
+            "YWN0aW9ucy5QYXltZW50Q2FyZFJlZnVuZEluZGljYXRvcho/LmhvbG1zLnR5",
+            "cGVzLm1vbmV5LnJwYy5DYXJkUHJvY2Vzc2luZ1N2Y1ZvaWRUcmFuc2FjdGlv",
+            "blJlc3BvbnNlQhiqAhVIT0xNUy5UeXBlcy5Nb25leS5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.NotPresentPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatchReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRangeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.NotPresentPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatchReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponseReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRangeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResult), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest), global::HOLMS.Types.Money.RPC.PaymentCardVerificationRequest.Parser, new[]{ "Guest", "Property", "Card" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest.Parser, new[]{ "Guest", "Property", "Card" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse.Parser, new[]{ "Result", "Card" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest.Parser, new[]{ "Merchant", "BatchClosureDateRange" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse), global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse.Parser, new[]{ "Batches" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest.Parser, new[]{ "Merchant", "BatchClosureDateRange" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResponse.Parser, new[]{ "Result" }, null, null, null)
           }));
     }
@@ -104,10 +107,10 @@ namespace HOLMS.Types.Money.RPC {
   #endregion
 
   #region Messages
-  public sealed partial class PaymentCardVerificationRequest : pb::IMessage<PaymentCardVerificationRequest> {
-    private static readonly pb::MessageParser<PaymentCardVerificationRequest> _parser = new pb::MessageParser<PaymentCardVerificationRequest>(() => new PaymentCardVerificationRequest());
+  public sealed partial class CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest : pb::IMessage<CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest> {
+    private static readonly pb::MessageParser<CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest> _parser = new pb::MessageParser<CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest>(() => new CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<PaymentCardVerificationRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -120,22 +123,22 @@ namespace HOLMS.Types.Money.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public PaymentCardVerificationRequest() {
+    public CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public PaymentCardVerificationRequest(PaymentCardVerificationRequest other) : this() {
+    public CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest(CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest other) : this() {
       Guest = other.guest_ != null ? other.Guest.Clone() : null;
       Property = other.property_ != null ? other.Property.Clone() : null;
       Card = other.card_ != null ? other.Card.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public PaymentCardVerificationRequest Clone() {
-      return new PaymentCardVerificationRequest(this);
+    public CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest Clone() {
+      return new CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest(this);
     }
 
     /// <summary>Field number for the "guest" field.</summary>
@@ -173,11 +176,11 @@ namespace HOLMS.Types.Money.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as PaymentCardVerificationRequest);
+      return Equals(other as CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(PaymentCardVerificationRequest other) {
+    public bool Equals(CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -236,7 +239,7 @@ namespace HOLMS.Types.Money.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(PaymentCardVerificationRequest other) {
+    public void MergeFrom(CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest other) {
       if (other == null) {
         return;
       }
@@ -446,6 +449,115 @@ namespace HOLMS.Types.Money.RPC {
 
   }
 
+  public sealed partial class MerchantBatchEnumResponse : pb::IMessage<MerchantBatchEnumResponse> {
+    private static readonly pb::MessageParser<MerchantBatchEnumResponse> _parser = new pb::MessageParser<MerchantBatchEnumResponse>(() => new MerchantBatchEnumResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MerchantBatchEnumResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MerchantBatchEnumResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MerchantBatchEnumResponse(MerchantBatchEnumResponse other) : this() {
+      batches_ = other.batches_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MerchantBatchEnumResponse Clone() {
+      return new MerchantBatchEnumResponse(this);
+    }
+
+    /// <summary>Field number for the "batches" field.</summary>
+    public const int BatchesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch> _repeated_batches_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch> batches_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatch> Batches {
+      get { return batches_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MerchantBatchEnumResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MerchantBatchEnumResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!batches_.Equals(other.batches_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= batches_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      batches_.WriteTo(output, _repeated_batches_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += batches_.CalculateSize(_repeated_batches_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MerchantBatchEnumResponse other) {
+      if (other == null) {
+        return;
+      }
+      batches_.Add(other.batches_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            batches_.AddEntriesFrom(input, _repeated_batches_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class CardProcessingSvcSearchHistoricalBatchesRequest : pb::IMessage<CardProcessingSvcSearchHistoricalBatchesRequest> {
     private static readonly pb::MessageParser<CardProcessingSvcSearchHistoricalBatchesRequest> _parser = new pb::MessageParser<CardProcessingSvcSearchHistoricalBatchesRequest>(() => new CardProcessingSvcSearchHistoricalBatchesRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -453,7 +565,7 @@ namespace HOLMS.Types.Money.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[2]; }
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -595,115 +707,6 @@ namespace HOLMS.Types.Money.RPC {
               batchClosureDateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange();
             }
             input.ReadMessage(batchClosureDateRange_);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class MerchantBatchEnumResponse : pb::IMessage<MerchantBatchEnumResponse> {
-    private static readonly pb::MessageParser<MerchantBatchEnumResponse> _parser = new pb::MessageParser<MerchantBatchEnumResponse>(() => new MerchantBatchEnumResponse());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MerchantBatchEnumResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[3]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MerchantBatchEnumResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MerchantBatchEnumResponse(MerchantBatchEnumResponse other) : this() {
-      batches_ = other.batches_.Clone();
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MerchantBatchEnumResponse Clone() {
-      return new MerchantBatchEnumResponse(this);
-    }
-
-    /// <summary>Field number for the "batches" field.</summary>
-    public const int BatchesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> _repeated_batches_codec
-        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> batches_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.MerchantBatch> Batches {
-      get { return batches_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as MerchantBatchEnumResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MerchantBatchEnumResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!batches_.Equals(other.batches_)) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= batches_.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      batches_.WriteTo(output, _repeated_batches_codec);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      size += batches_.CalculateSize(_repeated_batches_codec);
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MerchantBatchEnumResponse other) {
-      if (other == null) {
-        return;
-      }
-      batches_.Add(other.batches_);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 10: {
-            batches_.AddEntriesFrom(input, _repeated_batches_codec);
             break;
           }
         }
