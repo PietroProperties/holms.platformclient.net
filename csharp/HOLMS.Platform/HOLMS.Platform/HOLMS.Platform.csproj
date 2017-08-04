@@ -573,6 +573,7 @@
     <Compile Include="Types\out\RoomClaimType.cs" />
     <Compile Include="Types\out\RoomCrud.cs" />
     <Compile Include="Types\out\RoomIndicator.cs" />
+    <Compile Include="Types\out\RoomKeyIssuedNotification.cs" />
     <Compile Include="Types\out\RoomLodgingTransactionEvent.cs" />
     <Compile Include="Types\out\RoomMaintenanceStatus.cs" />
     <Compile Include="Types\out\RoomOccupancyChangedNotification.cs" />
