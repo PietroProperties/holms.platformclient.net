@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.channels;
+option csharp_namespace = "HOLMS.Types.Booking.Channels";
+
+enum Channel {
+	CHANNEL_LODGEIC = 0;
+	CHANNEL_DIRECT_WEB = 1;
+	CHANNEL_CHANNELRUSH = 2;
+}
+

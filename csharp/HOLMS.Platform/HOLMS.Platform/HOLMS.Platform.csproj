@@ -272,6 +272,7 @@
     <Compile Include="Types\out\CardTerminalSvc.cs" />
     <Compile Include="Types\out\CardTerminalSvcGrpc.cs" />
     <Compile Include="Types\out\CashGuaranteeTenderReceived.cs" />
+    <Compile Include="Types\out\Channel.cs" />
     <Compile Include="Types\out\ChannelManagerConfig.cs" />
     <Compile Include="Types\out\ChannelManagerConfigurationSvc.cs" />
     <Compile Include="Types\out\ChannelManagerConfigurationSvcGrpc.cs" />
