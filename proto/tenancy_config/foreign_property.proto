@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+
+import "primitive/uuid.proto";
+import "tenancy_config/indicators/foreign_property_indicator.proto";
+
+message ForeignProperty {
+	string property_name = 1;
+	holms.types.primitive.Uuid  property_id = 2;
+	string booking_url = 3;
+	holms.types.tenancy_config.indicators.ForeignPropertyIndicator entity_id = 4;
+}

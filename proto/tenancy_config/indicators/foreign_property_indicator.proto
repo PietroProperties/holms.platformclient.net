@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config.indicators;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.Indicators";
+
+import "primitive/uuid.proto";
+
+message ForeignPropertyIndicator {
+	holms.types.primitive.Uuid id = 1;
+}

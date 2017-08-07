@@ -198,6 +198,7 @@
     <Compile Include="Types\Extensions\Support\GuidConversions.cs" />
     <Compile Include="Types\Extensions\Support\ITwoFormatTemplateDTO.cs" />
     <Compile Include="Types\Extensions\TenancyConfig\DefaultTemplates.cs" />
+    <Compile Include="Types\Extensions\TenancyConfig\Indicators\ForeignPropertyIndicator.cs" />
     <Compile Include="Types\Extensions\TenancyConfig\Indicators\GroupBookingMethodIndicator.cs" />
     <Compile Include="Types\Extensions\TenancyConfig\Indicators\PropertyIndicator.cs" />
     <Compile Include="Types\Extensions\TenancyConfig\Indicators\ReservationSourceIndicator.cs" />
@@ -313,6 +314,10 @@
     <Compile Include="Types\out\FolioAuthCleanupSvcGrpc.cs" />
     <Compile Include="Types\out\FolioChargePostedNotification.cs" />
     <Compile Include="Types\out\FolioState.cs" />
+    <Compile Include="Types\out\ForeignProperty.cs" />
+    <Compile Include="Types\out\ForeignPropertyConfigurationSvc.cs" />
+    <Compile Include="Types\out\ForeignPropertyConfigurationSvcGrpc.cs" />
+    <Compile Include="Types\out\ForeignPropertyIndicator.cs" />
     <Compile Include="Types\out\FrontDeskReportingSvc.cs" />
     <Compile Include="Types\out\FrontDeskReportingSvcGrpc.cs" />
     <Compile Include="Types\out\FrontDeskReportManifests.cs" />

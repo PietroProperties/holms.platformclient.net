@@ -94,6 +94,7 @@ namespace HOLMS.Application.Client {
         #region TenancyConfig
         AccountAssignmentsSvc.AccountAssignmentsSvcClient AccountAssignmentSvc { get; }
         ChannelManagerConfigurationSvc.ChannelManagerConfigurationSvcClient ChannelManagerConfigurationSvc { get; }
+        ForeignPropertyConfigurationSvc.ForeignPropertyConfigurationSvcClient ForeignPropertyConfigurationSvc { get; }
         GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc { get; }
         KCRConfigSvc.KCRConfigSvcClient KCRConfigSvc { get; }
         ZipCodeSvc.ZipCodeSvcClient ZipCodesService { get; }
