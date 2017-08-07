@@ -2,12 +2,14 @@
 using System.Linq;
 using HOLMS.Platform.Support.ReservationTags;
 using HOLMS.Support.Time;
+using HOLMS.Types.Booking.Channels;
 using HOLMS.Types.Booking.Reservations;
 using HOLMS.Types.CRM.Guests;
 using HOLMS.Types.Supply.RoomTypes;
 
 namespace HOLMS.Platform.Support.DTOBuilders.Booking {
     public class BookGenesisReservationRequestBuilder {
+        public Channel SourceChannel;
         public RoomTypeIndicator RoomType;
         public List<ReservationTagBase> Tags;
         public InclusiveOpsdateRange DateRange;
@@ -22,6 +24,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking {
                 Guest = Guest,
                 NumberAdults = NumberAdults,
                 NumberChildren = NumberChildren,
+                SourceChannel = SourceChannel,
             };
 
             if (Tags != null) {
