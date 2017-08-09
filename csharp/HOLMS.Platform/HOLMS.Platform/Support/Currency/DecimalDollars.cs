@@ -94,5 +94,11 @@ namespace HOLMS.Platform.Support.Currency {
         public int CompareTo(DecimalDollars other) {
             return Amount.CompareTo(other.Amount);
         }
+
+        public override string ToString() {
+            // Round to 2 decimal places because this is pretty general/rough. If someone
+            // wants more specific behavior, there are many other methods available.
+            return ToDollarCents.ToString();
+        }
     }
 }

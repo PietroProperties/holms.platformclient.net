@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.channels;
+option csharp_namespace = "HOLMS.Types.Booking.Channels";
+
+import "booking/channels/channel.proto";
+
+message ChannelInfo {
+	holms.types.booking.channels.Channel channel = 1;
+	map<string, string> supplemental_info = 2;
+
+}
+
