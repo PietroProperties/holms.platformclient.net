@@ -25,16 +25,16 @@ namespace HOLMS.Types.TenancyConfig {
             "CiV0ZW5hbmN5X2NvbmZpZy9mb3JlaWduX3Byb3BlcnR5LnByb3RvEhpob2xt",
             "cy50eXBlcy50ZW5hbmN5X2NvbmZpZxoUcHJpbWl0aXZlL3V1aWQucHJvdG8a",
             "OnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMvZm9yZWlnbl9wcm9wZXJ0eV9p",
-            "bmRpY2F0b3IucHJvdG8iwwEKD0ZvcmVpZ25Qcm9wZXJ0eRIVCg1wcm9wZXJ0",
-            "eV9uYW1lGAEgASgJEjAKC3Byb3BlcnR5X2lkGAIgASgLMhsuaG9sbXMudHlw",
-            "ZXMucHJpbWl0aXZlLlV1aWQSEwoLYm9va2luZ191cmwYAyABKAkSUgoJZW50",
-            "aXR5X2lkGAQgASgLMj8uaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5k",
-            "aWNhdG9ycy5Gb3JlaWduUHJvcGVydHlJbmRpY2F0b3JCHKoCGUhPTE1TLlR5",
-            "cGVzLlRlbmFuY3lDb25maWdiBnByb3RvMw=="));
+            "bmRpY2F0b3IucHJvdG8i0wEKD0ZvcmVpZ25Qcm9wZXJ0eRIVCg1wcm9wZXJ0",
+            "eV9uYW1lGAEgASgJEkAKG3Byb3BlcnR5X2ZvcmVpZ25fdGVuYW5jeV9pZBgC",
+            "IAEoCzIbLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5VdWlkEhMKC2Jvb2tpbmdf",
+            "dXJsGAMgASgJElIKCWVudGl0eV9pZBgEIAEoCzI/LmhvbG1zLnR5cGVzLnRl",
+            "bmFuY3lfY29uZmlnLmluZGljYXRvcnMuRm9yZWlnblByb3BlcnR5SW5kaWNh",
+            "dG9yQhyqAhlIT0xNUy5UeXBlcy5UZW5hbmN5Q29uZmlnYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.ForeignPropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ForeignProperty), global::HOLMS.Types.TenancyConfig.ForeignProperty.Parser, new[]{ "PropertyName", "PropertyId", "BookingUrl", "EntityId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ForeignProperty), global::HOLMS.Types.TenancyConfig.ForeignProperty.Parser, new[]{ "PropertyName", "PropertyForeignTenancyId", "BookingUrl", "EntityId" }, null, null, null)
           }));
     }
     #endregion
@@ -66,7 +66,7 @@ namespace HOLMS.Types.TenancyConfig {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ForeignProperty(ForeignProperty other) : this() {
       propertyName_ = other.propertyName_;
-      PropertyId = other.propertyId_ != null ? other.PropertyId.Clone() : null;
+      PropertyForeignTenancyId = other.propertyForeignTenancyId_ != null ? other.PropertyForeignTenancyId.Clone() : null;
       bookingUrl_ = other.bookingUrl_;
       EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
     }
@@ -87,14 +87,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
-    /// <summary>Field number for the "property_id" field.</summary>
-    public const int PropertyIdFieldNumber = 2;
-    private global::HOLMS.Types.Primitive.Uuid propertyId_;
+    /// <summary>Field number for the "property_foreign_tenancy_id" field.</summary>
+    public const int PropertyForeignTenancyIdFieldNumber = 2;
+    private global::HOLMS.Types.Primitive.Uuid propertyForeignTenancyId_;
+    /// <summary>
+    ///  UUID is used instead of an indicator for foreign property because the id does not exist in the tenancy
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.Uuid PropertyId {
-      get { return propertyId_; }
+    public global::HOLMS.Types.Primitive.Uuid PropertyForeignTenancyId {
+      get { return propertyForeignTenancyId_; }
       set {
-        propertyId_ = value;
+        propertyForeignTenancyId_ = value;
       }
     }
 
@@ -134,7 +137,7 @@ namespace HOLMS.Types.TenancyConfig {
         return true;
       }
       if (PropertyName != other.PropertyName) return false;
-      if (!object.Equals(PropertyId, other.PropertyId)) return false;
+      if (!object.Equals(PropertyForeignTenancyId, other.PropertyForeignTenancyId)) return false;
       if (BookingUrl != other.BookingUrl) return false;
       if (!object.Equals(EntityId, other.EntityId)) return false;
       return true;
@@ -144,7 +147,7 @@ namespace HOLMS.Types.TenancyConfig {
     public override int GetHashCode() {
       int hash = 1;
       if (PropertyName.Length != 0) hash ^= PropertyName.GetHashCode();
-      if (propertyId_ != null) hash ^= PropertyId.GetHashCode();
+      if (propertyForeignTenancyId_ != null) hash ^= PropertyForeignTenancyId.GetHashCode();
       if (BookingUrl.Length != 0) hash ^= BookingUrl.GetHashCode();
       if (entityId_ != null) hash ^= EntityId.GetHashCode();
       return hash;
@@ -161,9 +164,9 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(10);
         output.WriteString(PropertyName);
       }
-      if (propertyId_ != null) {
+      if (propertyForeignTenancyId_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(PropertyId);
+        output.WriteMessage(PropertyForeignTenancyId);
       }
       if (BookingUrl.Length != 0) {
         output.WriteRawTag(26);
@@ -181,8 +184,8 @@ namespace HOLMS.Types.TenancyConfig {
       if (PropertyName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PropertyName);
       }
-      if (propertyId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PropertyId);
+      if (propertyForeignTenancyId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PropertyForeignTenancyId);
       }
       if (BookingUrl.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(BookingUrl);
@@ -201,11 +204,11 @@ namespace HOLMS.Types.TenancyConfig {
       if (other.PropertyName.Length != 0) {
         PropertyName = other.PropertyName;
       }
-      if (other.propertyId_ != null) {
-        if (propertyId_ == null) {
-          propertyId_ = new global::HOLMS.Types.Primitive.Uuid();
+      if (other.propertyForeignTenancyId_ != null) {
+        if (propertyForeignTenancyId_ == null) {
+          propertyForeignTenancyId_ = new global::HOLMS.Types.Primitive.Uuid();
         }
-        PropertyId.MergeFrom(other.PropertyId);
+        PropertyForeignTenancyId.MergeFrom(other.PropertyForeignTenancyId);
       }
       if (other.BookingUrl.Length != 0) {
         BookingUrl = other.BookingUrl;
@@ -231,10 +234,10 @@ namespace HOLMS.Types.TenancyConfig {
             break;
           }
           case 18: {
-            if (propertyId_ == null) {
-              propertyId_ = new global::HOLMS.Types.Primitive.Uuid();
+            if (propertyForeignTenancyId_ == null) {
+              propertyForeignTenancyId_ = new global::HOLMS.Types.Primitive.Uuid();
             }
-            input.ReadMessage(propertyId_);
+            input.ReadMessage(propertyForeignTenancyId_);
             break;
           }
           case 26: {
