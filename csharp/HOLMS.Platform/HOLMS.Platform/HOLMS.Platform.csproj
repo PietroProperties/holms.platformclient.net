@@ -60,8 +60,10 @@
     <Compile Include="Support\Currency\DecimalDollars.cs" />
     <Compile Include="Support\Currency\DollarCents.cs" />
     <Compile Include="Support\DateMap.cs" />
-    <Compile Include="Support\DTOBuilders\Booking\BookGenesReservationRequestBuilder.cs" />
+    <Compile Include="Support\DTOBuilders\Booking\Genesis\ChannelRushReservationRequestBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Booking\Channels\TravelAgentBuilder.cs" />
+    <Compile Include="Support\DTOBuilders\Booking\Genesis\DirectWebReservationRequestBuilder.cs" />
+    <Compile Include="Support\DTOBuilders\Booking\Genesis\LodgeICReservationRequestBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Booking\Groups\GroupBookingBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Booking\Groups\GroupBookingExtBuilder.cs" />
     <Compile Include="Support\DTOBuilders\Booking\IncidentalReservations\AmendIncidentalReservationRequestBuilder.cs" />
@@ -274,6 +276,7 @@
     <Compile Include="Types\out\CardTerminalSvcGrpc.cs" />
     <Compile Include="Types\out\CashGuaranteeTenderReceived.cs" />
     <Compile Include="Types\out\Channel.cs" />
+    <Compile Include="Types\out\ChannelInfo.cs" />
     <Compile Include="Types\out\ChannelManagerConfig.cs" />
     <Compile Include="Types\out\ChannelManagerConfigurationSvc.cs" />
     <Compile Include="Types\out\ChannelManagerConfigurationSvcGrpc.cs" />

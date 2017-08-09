@@ -26,22 +26,22 @@ namespace HOLMS.Types.Booking.Reservations {
             "b25fcmVxdWVzdC5wcm90bxIgaG9sbXMudHlwZXMuYm9va2luZy5yZXNlcnZh",
             "dGlvbnMaK3N1cHBseS9yb29tX3R5cGVzL3Jvb21fdHlwZV9pbmRpY2F0b3Iu",
             "cHJvdG8aKnByaW1pdGl2ZS9wYl9pbmNsdXNpdmVfb3BzZGF0ZV9yYW5nZS5w",
-            "cm90bxogY3JtL2d1ZXN0cy9ndWVzdF9pbmRpY2F0b3IucHJvdG8aHmJvb2tp",
-            "bmcvY2hhbm5lbHMvY2hhbm5lbC5wcm90byLoAgodQm9va0dlbmVzaXNSZXNl",
-            "cnZhdGlvblJlcXVlc3QSQwoJcm9vbV90eXBlGAEgASgLMjAuaG9sbXMudHlw",
-            "ZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9vbVR5cGVJbmRpY2F0b3ISQgoKZGF0",
-            "ZV9yYW5nZRgCIAEoCzIuLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkluY2x1",
-            "c2l2ZU9wc2RhdGVSYW5nZRI9Cg5zb3VyY2VfY2hhbm5lbBgDIAEoDjIlLmhv",
-            "bG1zLnR5cGVzLmJvb2tpbmcuY2hhbm5lbHMuQ2hhbm5lbBI1CgVndWVzdBgE",
-            "IAEoCzImLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJbmRpY2F0b3IS",
-            "FQoNbnVtYmVyX2FkdWx0cxgFIAEoBRIXCg9udW1iZXJfY2hpbGRyZW4YBiAB",
-            "KAUSGAoQcmVzZXJ2YXRpb25fdGFncxgHIAMoCUI5WhRib29raW5nL3Jlc2Vy",
-            "dmF0aW9uc6oCIEhPTE1TLlR5cGVzLkJvb2tpbmcuUmVzZXJ2YXRpb25zYgZw",
-            "cm90bzM="));
+            "cm90bxogY3JtL2d1ZXN0cy9ndWVzdF9pbmRpY2F0b3IucHJvdG8aI2Jvb2tp",
+            "bmcvY2hhbm5lbHMvY2hhbm5lbF9pbmZvLnByb3RvIvECCh1Cb29rR2VuZXNp",
+            "c1Jlc2VydmF0aW9uUmVxdWVzdBJDCglyb29tX3R5cGUYASABKAsyMC5ob2xt",
+            "cy50eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZUluZGljYXRvchJC",
+            "CgpkYXRlX3JhbmdlGAIgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBi",
+            "SW5jbHVzaXZlT3BzZGF0ZVJhbmdlEkYKE3NvdXJjZV9jaGFubmVsX2luZm8Y",
+            "AyABKAsyKS5ob2xtcy50eXBlcy5ib29raW5nLmNoYW5uZWxzLkNoYW5uZWxJ",
+            "bmZvEjUKBWd1ZXN0GAQgASgLMiYuaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5H",
+            "dWVzdEluZGljYXRvchIVCg1udW1iZXJfYWR1bHRzGAUgASgFEhcKD251bWJl",
+            "cl9jaGlsZHJlbhgGIAEoBRIYChByZXNlcnZhdGlvbl90YWdzGAcgAygJQjla",
+            "FGJvb2tpbmcvcmVzZXJ2YXRpb25zqgIgSE9MTVMuVHlwZXMuQm9va2luZy5S",
+            "ZXNlcnZhdGlvbnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.ChannelReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.ChannelInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest), global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest.Parser, new[]{ "RoomType", "DateRange", "SourceChannel", "Guest", "NumberAdults", "NumberChildren", "ReservationTags" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest), global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest.Parser, new[]{ "RoomType", "DateRange", "SourceChannelInfo", "Guest", "NumberAdults", "NumberChildren", "ReservationTags" }, null, null, null)
           }));
     }
     #endregion
@@ -74,7 +74,7 @@ namespace HOLMS.Types.Booking.Reservations {
     public BookGenesisReservationRequest(BookGenesisReservationRequest other) : this() {
       RoomType = other.roomType_ != null ? other.RoomType.Clone() : null;
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
-      sourceChannel_ = other.sourceChannel_;
+      SourceChannelInfo = other.sourceChannelInfo_ != null ? other.SourceChannelInfo.Clone() : null;
       Guest = other.guest_ != null ? other.Guest.Clone() : null;
       numberAdults_ = other.numberAdults_;
       numberChildren_ = other.numberChildren_;
@@ -108,14 +108,14 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
-    /// <summary>Field number for the "source_channel" field.</summary>
-    public const int SourceChannelFieldNumber = 3;
-    private global::HOLMS.Types.Booking.Channels.Channel sourceChannel_ = 0;
+    /// <summary>Field number for the "source_channel_info" field.</summary>
+    public const int SourceChannelInfoFieldNumber = 3;
+    private global::HOLMS.Types.Booking.Channels.ChannelInfo sourceChannelInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Booking.Channels.Channel SourceChannel {
-      get { return sourceChannel_; }
+    public global::HOLMS.Types.Booking.Channels.ChannelInfo SourceChannelInfo {
+      get { return sourceChannelInfo_; }
       set {
-        sourceChannel_ = value;
+        sourceChannelInfo_ = value;
       }
     }
 
@@ -177,7 +177,7 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (!object.Equals(RoomType, other.RoomType)) return false;
       if (!object.Equals(DateRange, other.DateRange)) return false;
-      if (SourceChannel != other.SourceChannel) return false;
+      if (!object.Equals(SourceChannelInfo, other.SourceChannelInfo)) return false;
       if (!object.Equals(Guest, other.Guest)) return false;
       if (NumberAdults != other.NumberAdults) return false;
       if (NumberChildren != other.NumberChildren) return false;
@@ -190,7 +190,7 @@ namespace HOLMS.Types.Booking.Reservations {
       int hash = 1;
       if (roomType_ != null) hash ^= RoomType.GetHashCode();
       if (dateRange_ != null) hash ^= DateRange.GetHashCode();
-      if (SourceChannel != 0) hash ^= SourceChannel.GetHashCode();
+      if (sourceChannelInfo_ != null) hash ^= SourceChannelInfo.GetHashCode();
       if (guest_ != null) hash ^= Guest.GetHashCode();
       if (NumberAdults != 0) hash ^= NumberAdults.GetHashCode();
       if (NumberChildren != 0) hash ^= NumberChildren.GetHashCode();
@@ -213,9 +213,9 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(18);
         output.WriteMessage(DateRange);
       }
-      if (SourceChannel != 0) {
-        output.WriteRawTag(24);
-        output.WriteEnum((int) SourceChannel);
+      if (sourceChannelInfo_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SourceChannelInfo);
       }
       if (guest_ != null) {
         output.WriteRawTag(34);
@@ -241,8 +241,8 @@ namespace HOLMS.Types.Booking.Reservations {
       if (dateRange_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DateRange);
       }
-      if (SourceChannel != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SourceChannel);
+      if (sourceChannelInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SourceChannelInfo);
       }
       if (guest_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Guest);
@@ -274,8 +274,11 @@ namespace HOLMS.Types.Booking.Reservations {
         }
         DateRange.MergeFrom(other.DateRange);
       }
-      if (other.SourceChannel != 0) {
-        SourceChannel = other.SourceChannel;
+      if (other.sourceChannelInfo_ != null) {
+        if (sourceChannelInfo_ == null) {
+          sourceChannelInfo_ = new global::HOLMS.Types.Booking.Channels.ChannelInfo();
+        }
+        SourceChannelInfo.MergeFrom(other.SourceChannelInfo);
       }
       if (other.guest_ != null) {
         if (guest_ == null) {
@@ -314,8 +317,11 @@ namespace HOLMS.Types.Booking.Reservations {
             input.ReadMessage(dateRange_);
             break;
           }
-          case 24: {
-            sourceChannel_ = (global::HOLMS.Types.Booking.Channels.Channel) input.ReadEnum();
+          case 26: {
+            if (sourceChannelInfo_ == null) {
+              sourceChannelInfo_ = new global::HOLMS.Types.Booking.Channels.ChannelInfo();
+            }
+            input.ReadMessage(sourceChannelInfo_);
             break;
           }
           case 34: {
