@@ -513,5 +513,11 @@ namespace HOLMS.Platform.Application.Client {
                 throw new NotImplementedException();
             }
         }
+
+        public ForeignPropertyConfigurationSvc.ForeignPropertyConfigurationSvcClient ForeignPropertyConfigurationSvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

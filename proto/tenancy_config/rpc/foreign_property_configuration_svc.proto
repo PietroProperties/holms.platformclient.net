@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+
+import "google/protobuf/empty.proto";
+import "tenancy_config/indicators/foreign_property_indicator.proto";
+import "tenancy_config/foreign_property.proto";
+
+message AllForeignProperties {
+	repeated holms.types.tenancy_config.ForeignProperty properties = 1;
+}
+
+service ForeignPropertyConfigurationSvc {
+	rpc Get(google.protobuf.Empty) 
+		returns (AllForeignProperties);
+
+	rpc Create(holms.types.tenancy_config.ForeignProperty)
+		returns (google.protobuf.Empty);
+
+	rpc Update(holms.types.tenancy_config.ForeignProperty)
+		returns (google.protobuf.Empty);
+
+	rpc Remove(holms.types.tenancy_config.indicators.ForeignPropertyIndicator)
+		returns (google.protobuf.Empty);
+}

@@ -45,3 +45,4 @@ message ReservationSummary {
 	google.protobuf.Timestamp created_at = 23;
 	int32 outstanding_issued_room_keys = 24;
 }
+
