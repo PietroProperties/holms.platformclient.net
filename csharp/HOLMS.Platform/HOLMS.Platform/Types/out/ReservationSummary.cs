@@ -35,7 +35,7 @@ namespace HOLMS.Types.Booking.Reservations {
             "NmJvb2tpbmcvaW5kaWNhdG9ycy9jYW5jZWxsYXRpb25fcG9saWN5X2luZGlj",
             "YXRvci5wcm90bxovb3BlcmF0aW9ucy9ob3VzZWtlZXBpbmcvaG91c2VrZWVw",
             "aW5nX3RpbWUucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJv",
-            "dG8aJW9wZXJhdGlvbnMvcm9vbXMvcm9vbV9pbmRpY2F0b3IucHJvdG8imAoK",
+            "dG8aJW9wZXJhdGlvbnMvcm9vbXMvcm9vbV9pbmRpY2F0b3IucHJvdG8i4QkK",
             "ElJlc2VydmF0aW9uU3VtbWFyeRJHCgllbnRpdHlfaWQYASABKAsyNC5ob2xt",
             "cy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0",
             "b3ISEgoKYm9va2luZ19pZBgCIAEoCRJBCgVzdGF0ZRgDIAEoDjIyLmhvbG1z",
@@ -57,20 +57,19 @@ namespace HOLMS.Types.Booking.Reservations {
             "ASgJEksKFnRlcm1pbmFsX29jY3VwaWVkX3Jvb20YDyABKAsyKy5ob2xtcy50",
             "eXBlcy5vcGVyYXRpb25zLnJvb21zLlJvb21JbmRpY2F0b3ISFQoNbnVtYmVy",
             "X2FkdWx0cxgQIAEoBRIXCg9udW1iZXJfY2hpbGRyZW4YESABKAUSEwoLYWN0",
-            "aXZlX3RhZ3MYEiADKAkSGgoSY2hhbm5lbF9tYW5hZ2VyX2lkGBMgASgJEhkK",
-            "EXNvdXJjZV9jaGFubmVsX2lkGBQgASgJElgKE2NhbmNlbGxhdGlvbl9wb2xp",
-            "Y3kYFSABKAsyOy5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuQ2Fu",
-            "Y2VsbGF0aW9uUG9saWN5SW5kaWNhdG9yElEKEmhrX3RpbWVfcHJlZmVyZW5j",
-            "ZRgWIAEoCzI1LmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMuaG91c2VrZWVwaW5n",
-            "LkhvdXNla2VlcGluZ1RpbWUSLgoKY3JlYXRlZF9hdBgXIAEoCzIaLmdvb2ds",
-            "ZS5wcm90b2J1Zi5UaW1lc3RhbXASJAocb3V0c3RhbmRpbmdfaXNzdWVkX3Jv",
-            "b21fa2V5cxgYIAEoBRIcChRvcHRhX3Jvb21fc3RheV9pbmRleBgZIAEoBUI5",
-            "WhRib29raW5nL3Jlc2VydmF0aW9uc6oCIEhPTE1TLlR5cGVzLkJvb2tpbmcu",
-            "UmVzZXJ2YXRpb25zYgZwcm90bzM="));
+            "aXZlX3RhZ3MYEiADKAkSWAoTY2FuY2VsbGF0aW9uX3BvbGljeRgVIAEoCzI7",
+            "LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5DYW5jZWxsYXRpb25Q",
+            "b2xpY3lJbmRpY2F0b3ISUQoSaGtfdGltZV9wcmVmZXJlbmNlGBYgASgLMjUu",
+            "aG9sbXMudHlwZXMub3BlcmF0aW9ucy5ob3VzZWtlZXBpbmcuSG91c2VrZWVw",
+            "aW5nVGltZRIuCgpjcmVhdGVkX2F0GBcgASgLMhouZ29vZ2xlLnByb3RvYnVm",
+            "LlRpbWVzdGFtcBIkChxvdXRzdGFuZGluZ19pc3N1ZWRfcm9vbV9rZXlzGBgg",
+            "ASgFEhwKFG9wdGFfcm9vbV9zdGF5X2luZGV4GBkgASgFQjlaFGJvb2tpbmcv",
+            "cmVzZXJ2YXRpb25zqgIgSE9MTVMuVHlwZXMuQm9va2luZy5SZXNlcnZhdGlv",
+            "bnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Channels.ChannelReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationStateReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.Housekeeping.HousekeepingTimeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationSummary), global::HOLMS.Types.Booking.Reservations.ReservationSummary.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "RoomType", "GuaranteeStatus", "Tenancy", "Property", "Channel", "VehiclePlateInformation", "CurrentOccupiedRoomNumber", "CurrentOccupiedRoom", "TerminalOccupiedRoomNumber", "TerminalOccupiedRoom", "NumberAdults", "NumberChildren", "ActiveTags", "ChannelManagerId", "SourceChannelId", "CancellationPolicy", "HkTimePreference", "CreatedAt", "OutstandingIssuedRoomKeys", "OptaRoomStayIndex" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationSummary), global::HOLMS.Types.Booking.Reservations.ReservationSummary.Parser, new[]{ "EntityId", "BookingId", "State", "Guest", "DateRange", "RoomType", "GuaranteeStatus", "Tenancy", "Property", "Channel", "VehiclePlateInformation", "CurrentOccupiedRoomNumber", "CurrentOccupiedRoom", "TerminalOccupiedRoomNumber", "TerminalOccupiedRoom", "NumberAdults", "NumberChildren", "ActiveTags", "CancellationPolicy", "HkTimePreference", "CreatedAt", "OutstandingIssuedRoomKeys", "OptaRoomStayIndex" }, null, null, null)
           }));
     }
     #endregion
@@ -119,8 +118,6 @@ namespace HOLMS.Types.Booking.Reservations {
       numberAdults_ = other.numberAdults_;
       numberChildren_ = other.numberChildren_;
       activeTags_ = other.activeTags_.Clone();
-      channelManagerId_ = other.channelManagerId_;
-      sourceChannelId_ = other.sourceChannelId_;
       CancellationPolicy = other.cancellationPolicy_ != null ? other.CancellationPolicy.Clone() : null;
       HkTimePreference = other.hkTimePreference_ != null ? other.HkTimePreference.Clone() : null;
       CreatedAt = other.createdAt_ != null ? other.CreatedAt.Clone() : null;
@@ -330,34 +327,6 @@ namespace HOLMS.Types.Booking.Reservations {
       get { return activeTags_; }
     }
 
-    /// <summary>Field number for the "channel_manager_id" field.</summary>
-    public const int ChannelManagerIdFieldNumber = 19;
-    private string channelManagerId_ = "";
-    /// <summary>
-    ///  deprecated
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ChannelManagerId {
-      get { return channelManagerId_; }
-      set {
-        channelManagerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "source_channel_id" field.</summary>
-    public const int SourceChannelIdFieldNumber = 20;
-    private string sourceChannelId_ = "";
-    /// <summary>
-    ///  deprecated
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string SourceChannelId {
-      get { return sourceChannelId_; }
-      set {
-        sourceChannelId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     /// <summary>Field number for the "cancellation_policy" field.</summary>
     public const int CancellationPolicyFieldNumber = 21;
     private global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicator cancellationPolicy_;
@@ -444,8 +413,6 @@ namespace HOLMS.Types.Booking.Reservations {
       if (NumberAdults != other.NumberAdults) return false;
       if (NumberChildren != other.NumberChildren) return false;
       if(!activeTags_.Equals(other.activeTags_)) return false;
-      if (ChannelManagerId != other.ChannelManagerId) return false;
-      if (SourceChannelId != other.SourceChannelId) return false;
       if (!object.Equals(CancellationPolicy, other.CancellationPolicy)) return false;
       if (!object.Equals(HkTimePreference, other.HkTimePreference)) return false;
       if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
@@ -475,8 +442,6 @@ namespace HOLMS.Types.Booking.Reservations {
       if (NumberAdults != 0) hash ^= NumberAdults.GetHashCode();
       if (NumberChildren != 0) hash ^= NumberChildren.GetHashCode();
       hash ^= activeTags_.GetHashCode();
-      if (ChannelManagerId.Length != 0) hash ^= ChannelManagerId.GetHashCode();
-      if (SourceChannelId.Length != 0) hash ^= SourceChannelId.GetHashCode();
       if (cancellationPolicy_ != null) hash ^= CancellationPolicy.GetHashCode();
       if (hkTimePreference_ != null) hash ^= HkTimePreference.GetHashCode();
       if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
@@ -561,14 +526,6 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteInt32(NumberChildren);
       }
       activeTags_.WriteTo(output, _repeated_activeTags_codec);
-      if (ChannelManagerId.Length != 0) {
-        output.WriteRawTag(154, 1);
-        output.WriteString(ChannelManagerId);
-      }
-      if (SourceChannelId.Length != 0) {
-        output.WriteRawTag(162, 1);
-        output.WriteString(SourceChannelId);
-      }
       if (cancellationPolicy_ != null) {
         output.WriteRawTag(170, 1);
         output.WriteMessage(CancellationPolicy);
@@ -646,12 +603,6 @@ namespace HOLMS.Types.Booking.Reservations {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(NumberChildren);
       }
       size += activeTags_.CalculateSize(_repeated_activeTags_codec);
-      if (ChannelManagerId.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(ChannelManagerId);
-      }
-      if (SourceChannelId.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(SourceChannelId);
-      }
       if (cancellationPolicy_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(CancellationPolicy);
       }
@@ -751,12 +702,6 @@ namespace HOLMS.Types.Booking.Reservations {
         NumberChildren = other.NumberChildren;
       }
       activeTags_.Add(other.activeTags_);
-      if (other.ChannelManagerId.Length != 0) {
-        ChannelManagerId = other.ChannelManagerId;
-      }
-      if (other.SourceChannelId.Length != 0) {
-        SourceChannelId = other.SourceChannelId;
-      }
       if (other.cancellationPolicy_ != null) {
         if (cancellationPolicy_ == null) {
           cancellationPolicy_ = new global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicator();
@@ -885,14 +830,6 @@ namespace HOLMS.Types.Booking.Reservations {
           }
           case 146: {
             activeTags_.AddEntriesFrom(input, _repeated_activeTags_codec);
-            break;
-          }
-          case 154: {
-            ChannelManagerId = input.ReadString();
-            break;
-          }
-          case 162: {
-            SourceChannelId = input.ReadString();
             break;
           }
           case 170: {
