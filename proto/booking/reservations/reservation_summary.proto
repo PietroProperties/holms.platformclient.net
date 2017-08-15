@@ -40,11 +40,13 @@ message ReservationSummary {
 	int32 number_children = 17;
 	repeated string active_tags = 18;
 
+
 	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 21;
 	holms.types.operations.housekeeping.HousekeepingTime hk_time_preference = 22;
 	google.protobuf.Timestamp created_at = 23;
 	int32 outstanding_issued_room_keys = 24;
 
 	int32 opta_room_stay_index = 25;
+	string reservation_id_from_channel = 26;
 }
 
