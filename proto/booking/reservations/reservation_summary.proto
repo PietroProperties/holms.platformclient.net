@@ -4,6 +4,7 @@ package holms.types.booking.reservations;
 option csharp_namespace = "HOLMS.Types.Booking.Reservations";
 option go_package = "booking/reservations";
 
+import "booking/channels/channel.proto";
 import "booking/reservations/reservation_guarantee_status.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "booking/reservations/reservation_state.proto";
@@ -28,7 +29,7 @@ message ReservationSummary {
 	holms.types.booking.reservations.ReservationGuaranteeStatus guarantee_status = 7;
 	.holms.types.iam.TenancyIndicator tenancy = 8;
 	.holms.types.tenancy_config.indicators.PropertyIndicator property = 9;
-	//string group_booking_id = 10;
+	.holms.types.booking.channels.Channel channel = 10;
 	string vehicle_plate_information = 11;
 
 	string current_occupied_room_number = 12;
@@ -38,11 +39,12 @@ message ReservationSummary {
 	int32 number_adults = 16;
 	int32 number_children = 17;
 	repeated string active_tags = 18;
-	string channel_manager_id = 19;
-	string source_channel_id = 20;
+
 	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 21;
 	holms.types.operations.housekeeping.HousekeepingTime hk_time_preference = 22;
 	google.protobuf.Timestamp created_at = 23;
 	int32 outstanding_issued_room_keys = 24;
+
+	int32 opta_room_stay_index = 25;
 }
 
