@@ -1,5 +1,6 @@
 ﻿using System;
 using HOLMS.Types.Primitive;
+using Moq.Language;
 
 namespace HOLMS.Platform.Support.Currency {
     public struct DollarCents : IComparable<DollarCents>, IEquatable<DollarCents> {
@@ -11,22 +12,24 @@ namespace HOLMS.Platform.Support.Currency {
 
         public DollarCents(bool isNegative, uint dollars, uint cents) {
             IsNegative = isNegative;
-            Dollars = dollars;
-            Cents = cents;
+
+            if (cents > 100) {
+                throw new ArgumentException("Cents must be between 0 and 100, inclusive");
+            } else if (cents == 100) {
+                Dollars = dollars + 1;
+                Cents = 0;
+            } else {
+                Dollars = dollars;
+                Cents = cents;
+            }
         }
 
         public DollarCents(MonetaryAmount amt) {
             var dc = FromCents((int) Math.Round(amt.Microdollars / (decimal)MicrodollarsPerCent, MidpointRounding.ToEven));
-
+            
             IsNegative = dc.IsNegative;
-
-            if (dc.Cents == 100) {
-                Dollars = dc.Dollars + 1;
-                Cents = 0;
-            } else {
-                Dollars = dc.Dollars;
-                Cents = dc.Cents;
-            }
+            Dollars = dc.Dollars;
+            Cents = dc.Cents;
         }
 
         public static DollarCents FromCents(int cents) {
