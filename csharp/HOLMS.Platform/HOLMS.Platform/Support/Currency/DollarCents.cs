@@ -19,8 +19,14 @@ namespace HOLMS.Platform.Support.Currency {
             var dc = FromCents((int) Math.Round(amt.Microdollars / (decimal)MicrodollarsPerCent, MidpointRounding.ToEven));
 
             IsNegative = dc.IsNegative;
-            Dollars = dc.Dollars;
-            Cents = dc.Cents;
+
+            if (dc.Cents == 100) {
+                Dollars = dc.Dollars + 1;
+                Cents = 0;
+            } else {
+                Dollars = dc.Dollars;
+                Cents = dc.Cents;
+            }
         }
 
         public static DollarCents FromCents(int cents) {
