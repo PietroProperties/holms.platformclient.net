@@ -25,16 +25,17 @@ namespace HOLMS.Types.TenancyConfig {
             "CiV0ZW5hbmN5X2NvbmZpZy9mb3JlaWduX3Byb3BlcnR5LnByb3RvEhpob2xt",
             "cy50eXBlcy50ZW5hbmN5X2NvbmZpZxoUcHJpbWl0aXZlL3V1aWQucHJvdG8a",
             "OnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMvZm9yZWlnbl9wcm9wZXJ0eV9p",
-            "bmRpY2F0b3IucHJvdG8i0wEKD0ZvcmVpZ25Qcm9wZXJ0eRIVCg1wcm9wZXJ0",
+            "bmRpY2F0b3IucHJvdG8i5AEKD0ZvcmVpZ25Qcm9wZXJ0eRIVCg1wcm9wZXJ0",
             "eV9uYW1lGAEgASgJEkAKG3Byb3BlcnR5X2ZvcmVpZ25fdGVuYW5jeV9pZBgC",
-            "IAEoCzIbLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5VdWlkEhMKC2Jvb2tpbmdf",
-            "dXJsGAMgASgJElIKCWVudGl0eV9pZBgEIAEoCzI/LmhvbG1zLnR5cGVzLnRl",
-            "bmFuY3lfY29uZmlnLmluZGljYXRvcnMuRm9yZWlnblByb3BlcnR5SW5kaWNh",
-            "dG9yQhyqAhlIT0xNUy5UeXBlcy5UZW5hbmN5Q29uZmlnYgZwcm90bzM="));
+            "IAEoCzIbLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5VdWlkEg8KB2FwaV91cmwY",
+            "AyABKAkSUgoJZW50aXR5X2lkGAQgASgLMj8uaG9sbXMudHlwZXMudGVuYW5j",
+            "eV9jb25maWcuaW5kaWNhdG9ycy5Gb3JlaWduUHJvcGVydHlJbmRpY2F0b3IS",
+            "EwoLd2Vic2l0ZV91cmwYBSABKAlCHKoCGUhPTE1TLlR5cGVzLlRlbmFuY3lD",
+            "b25maWdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.ForeignPropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ForeignProperty), global::HOLMS.Types.TenancyConfig.ForeignProperty.Parser, new[]{ "PropertyName", "PropertyForeignTenancyId", "BookingUrl", "EntityId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ForeignProperty), global::HOLMS.Types.TenancyConfig.ForeignProperty.Parser, new[]{ "PropertyName", "PropertyForeignTenancyId", "ApiUrl", "EntityId", "WebsiteUrl" }, null, null, null)
           }));
     }
     #endregion
@@ -67,8 +68,9 @@ namespace HOLMS.Types.TenancyConfig {
     public ForeignProperty(ForeignProperty other) : this() {
       propertyName_ = other.propertyName_;
       PropertyForeignTenancyId = other.propertyForeignTenancyId_ != null ? other.PropertyForeignTenancyId.Clone() : null;
-      bookingUrl_ = other.bookingUrl_;
+      apiUrl_ = other.apiUrl_;
       EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
+      websiteUrl_ = other.websiteUrl_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -101,14 +103,14 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
-    /// <summary>Field number for the "booking_url" field.</summary>
-    public const int BookingUrlFieldNumber = 3;
-    private string bookingUrl_ = "";
+    /// <summary>Field number for the "api_url" field.</summary>
+    public const int ApiUrlFieldNumber = 3;
+    private string apiUrl_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string BookingUrl {
-      get { return bookingUrl_; }
+    public string ApiUrl {
+      get { return apiUrl_; }
       set {
-        bookingUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        apiUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -120,6 +122,17 @@ namespace HOLMS.Types.TenancyConfig {
       get { return entityId_; }
       set {
         entityId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "website_url" field.</summary>
+    public const int WebsiteUrlFieldNumber = 5;
+    private string websiteUrl_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string WebsiteUrl {
+      get { return websiteUrl_; }
+      set {
+        websiteUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -138,8 +151,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (PropertyName != other.PropertyName) return false;
       if (!object.Equals(PropertyForeignTenancyId, other.PropertyForeignTenancyId)) return false;
-      if (BookingUrl != other.BookingUrl) return false;
+      if (ApiUrl != other.ApiUrl) return false;
       if (!object.Equals(EntityId, other.EntityId)) return false;
+      if (WebsiteUrl != other.WebsiteUrl) return false;
       return true;
     }
 
@@ -148,8 +162,9 @@ namespace HOLMS.Types.TenancyConfig {
       int hash = 1;
       if (PropertyName.Length != 0) hash ^= PropertyName.GetHashCode();
       if (propertyForeignTenancyId_ != null) hash ^= PropertyForeignTenancyId.GetHashCode();
-      if (BookingUrl.Length != 0) hash ^= BookingUrl.GetHashCode();
+      if (ApiUrl.Length != 0) hash ^= ApiUrl.GetHashCode();
       if (entityId_ != null) hash ^= EntityId.GetHashCode();
+      if (WebsiteUrl.Length != 0) hash ^= WebsiteUrl.GetHashCode();
       return hash;
     }
 
@@ -168,13 +183,17 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(18);
         output.WriteMessage(PropertyForeignTenancyId);
       }
-      if (BookingUrl.Length != 0) {
+      if (ApiUrl.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(BookingUrl);
+        output.WriteString(ApiUrl);
       }
       if (entityId_ != null) {
         output.WriteRawTag(34);
         output.WriteMessage(EntityId);
+      }
+      if (WebsiteUrl.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(WebsiteUrl);
       }
     }
 
@@ -187,11 +206,14 @@ namespace HOLMS.Types.TenancyConfig {
       if (propertyForeignTenancyId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PropertyForeignTenancyId);
       }
-      if (BookingUrl.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(BookingUrl);
+      if (ApiUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApiUrl);
       }
       if (entityId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(EntityId);
+      }
+      if (WebsiteUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(WebsiteUrl);
       }
       return size;
     }
@@ -210,14 +232,17 @@ namespace HOLMS.Types.TenancyConfig {
         }
         PropertyForeignTenancyId.MergeFrom(other.PropertyForeignTenancyId);
       }
-      if (other.BookingUrl.Length != 0) {
-        BookingUrl = other.BookingUrl;
+      if (other.ApiUrl.Length != 0) {
+        ApiUrl = other.ApiUrl;
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
           entityId_ = new global::HOLMS.Types.TenancyConfig.Indicators.ForeignPropertyIndicator();
         }
         EntityId.MergeFrom(other.EntityId);
+      }
+      if (other.WebsiteUrl.Length != 0) {
+        WebsiteUrl = other.WebsiteUrl;
       }
     }
 
@@ -241,7 +266,7 @@ namespace HOLMS.Types.TenancyConfig {
             break;
           }
           case 26: {
-            BookingUrl = input.ReadString();
+            ApiUrl = input.ReadString();
             break;
           }
           case 34: {
@@ -249,6 +274,10 @@ namespace HOLMS.Types.TenancyConfig {
               entityId_ = new global::HOLMS.Types.TenancyConfig.Indicators.ForeignPropertyIndicator();
             }
             input.ReadMessage(entityId_);
+            break;
+          }
+          case 42: {
+            WebsiteUrl = input.ReadString();
             break;
           }
         }
