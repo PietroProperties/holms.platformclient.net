@@ -13,7 +13,6 @@ import "booking/reservations/reservation_contact_person.proto";
 import "booking/indicators/reservation_contact_person_indicator.proto";	
 import "booking/history/history_event.proto";
 import "operations/housekeeping/housekeeping_time_indicator.proto";
-import "booking/reservations/recommended_checkin_card_authorization_amounts.proto";
 import "booking/reservation_associated_parties.proto";
 import "booking/history/reservation_creation_summary.proto";
 import "booking/history/reservation_amendment_summary.proto";
@@ -77,10 +76,6 @@ service OpenLodgingReservationSvc {
 
 	rpc SetHousekeepingTimePreference(HousekeepingTimePreferenceRequest)
 		returns (google.protobuf.Empty);
-
-// Obsolete, use endpoint on check-in service instead
-	rpc GetRecommendedCheckinAuthorizationAmounts(holms.types.booking.indicators.ReservationIndicator)
-		returns (holms.types.booking.reservations.RecommendedCheckinAuthorizationAmounts);
 
 	rpc GetReservationAssociatedParties(holms.types.booking.indicators.ReservationIndicator)
 		returns(holms.types.booking.ReservationAssociatedParties);

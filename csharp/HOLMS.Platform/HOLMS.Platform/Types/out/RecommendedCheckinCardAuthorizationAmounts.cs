@@ -25,19 +25,20 @@ namespace HOLMS.Types.Booking.Reservations {
             "Cklib29raW5nL3Jlc2VydmF0aW9ucy9yZWNvbW1lbmRlZF9jaGVja2luX2Nh",
             "cmRfYXV0aG9yaXphdGlvbl9hbW91bnRzLnByb3RvEiBob2xtcy50eXBlcy5i",
             "b29raW5nLnJlc2VydmF0aW9ucxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3Vu",
-            "dC5wcm90byKgAgomUmVjb21tZW5kZWRDaGVja2luQXV0aG9yaXphdGlvbkFt",
-            "b3VudHMSMgoDbWluGAEgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1v",
-            "bmV0YXJ5QW1vdW50EjIKA21heBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1p",
-            "dGl2ZS5Nb25ldGFyeUFtb3VudBJGChdtaW5faW5jbHVkaW5nX2d1YXJhbnRl",
-            "ZRgDIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3Vu",
-            "dBJGChdtYXhfaW5jbHVkaW5nX2d1YXJhbnRlZRgEIAEoCzIlLmhvbG1zLnR5",
-            "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudEI5WhRib29raW5nL3Jlc2Vy",
-            "dmF0aW9uc6oCIEhPTE1TLlR5cGVzLkJvb2tpbmcuUmVzZXJ2YXRpb25zYgZw",
-            "cm90bzM="));
+            "dC5wcm90byLUAgomUmVjb21tZW5kZWRDaGVja2luQXV0aG9yaXphdGlvbkFt",
+            "b3VudHMSRwoYbWluaW11bV9ndWFyYW50ZWVfdm9pZGVkGAEgASgLMiUuaG9s",
+            "bXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkoKG3dob2xlX3N0",
+            "YXlfZ3VhcmFudGVlX3ZvaWRlZBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1p",
+            "dGl2ZS5Nb25ldGFyeUFtb3VudBJIChltaW5pbXVtX2d1YXJhbnRlZV9jaGFy",
+            "Z2VkGAMgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1v",
+            "dW50EksKHHdob2xlX3N0YXlfZ3VhcmFudGVlX2NoYXJnZWQYBCABKAsyJS5o",
+            "b2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnRCOVoUYm9va2lu",
+            "Zy9yZXNlcnZhdGlvbnOqAiBIT0xNUy5UeXBlcy5Cb29raW5nLlJlc2VydmF0",
+            "aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts), global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts.Parser, new[]{ "Min", "Max", "MinIncludingGuarantee", "MaxIncludingGuarantee" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts), global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts.Parser, new[]{ "MinimumGuaranteeVoided", "WholeStayGuaranteeVoided", "MinimumGuaranteeCharged", "WholeStayGuaranteeCharged" }, null, null, null)
           }));
     }
     #endregion
@@ -68,10 +69,10 @@ namespace HOLMS.Types.Booking.Reservations {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RecommendedCheckinAuthorizationAmounts(RecommendedCheckinAuthorizationAmounts other) : this() {
-      Min = other.min_ != null ? other.Min.Clone() : null;
-      Max = other.max_ != null ? other.Max.Clone() : null;
-      MinIncludingGuarantee = other.minIncludingGuarantee_ != null ? other.MinIncludingGuarantee.Clone() : null;
-      MaxIncludingGuarantee = other.maxIncludingGuarantee_ != null ? other.MaxIncludingGuarantee.Clone() : null;
+      MinimumGuaranteeVoided = other.minimumGuaranteeVoided_ != null ? other.MinimumGuaranteeVoided.Clone() : null;
+      WholeStayGuaranteeVoided = other.wholeStayGuaranteeVoided_ != null ? other.WholeStayGuaranteeVoided.Clone() : null;
+      MinimumGuaranteeCharged = other.minimumGuaranteeCharged_ != null ? other.MinimumGuaranteeCharged.Clone() : null;
+      WholeStayGuaranteeCharged = other.wholeStayGuaranteeCharged_ != null ? other.WholeStayGuaranteeCharged.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -79,47 +80,47 @@ namespace HOLMS.Types.Booking.Reservations {
       return new RecommendedCheckinAuthorizationAmounts(this);
     }
 
-    /// <summary>Field number for the "min" field.</summary>
-    public const int MinFieldNumber = 1;
-    private global::HOLMS.Types.Primitive.MonetaryAmount min_;
+    /// <summary>Field number for the "minimum_guarantee_voided" field.</summary>
+    public const int MinimumGuaranteeVoidedFieldNumber = 1;
+    private global::HOLMS.Types.Primitive.MonetaryAmount minimumGuaranteeVoided_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.MonetaryAmount Min {
-      get { return min_; }
+    public global::HOLMS.Types.Primitive.MonetaryAmount MinimumGuaranteeVoided {
+      get { return minimumGuaranteeVoided_; }
       set {
-        min_ = value;
+        minimumGuaranteeVoided_ = value;
       }
     }
 
-    /// <summary>Field number for the "max" field.</summary>
-    public const int MaxFieldNumber = 2;
-    private global::HOLMS.Types.Primitive.MonetaryAmount max_;
+    /// <summary>Field number for the "whole_stay_guarantee_voided" field.</summary>
+    public const int WholeStayGuaranteeVoidedFieldNumber = 2;
+    private global::HOLMS.Types.Primitive.MonetaryAmount wholeStayGuaranteeVoided_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.MonetaryAmount Max {
-      get { return max_; }
+    public global::HOLMS.Types.Primitive.MonetaryAmount WholeStayGuaranteeVoided {
+      get { return wholeStayGuaranteeVoided_; }
       set {
-        max_ = value;
+        wholeStayGuaranteeVoided_ = value;
       }
     }
 
-    /// <summary>Field number for the "min_including_guarantee" field.</summary>
-    public const int MinIncludingGuaranteeFieldNumber = 3;
-    private global::HOLMS.Types.Primitive.MonetaryAmount minIncludingGuarantee_;
+    /// <summary>Field number for the "minimum_guarantee_charged" field.</summary>
+    public const int MinimumGuaranteeChargedFieldNumber = 3;
+    private global::HOLMS.Types.Primitive.MonetaryAmount minimumGuaranteeCharged_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.MonetaryAmount MinIncludingGuarantee {
-      get { return minIncludingGuarantee_; }
+    public global::HOLMS.Types.Primitive.MonetaryAmount MinimumGuaranteeCharged {
+      get { return minimumGuaranteeCharged_; }
       set {
-        minIncludingGuarantee_ = value;
+        minimumGuaranteeCharged_ = value;
       }
     }
 
-    /// <summary>Field number for the "max_including_guarantee" field.</summary>
-    public const int MaxIncludingGuaranteeFieldNumber = 4;
-    private global::HOLMS.Types.Primitive.MonetaryAmount maxIncludingGuarantee_;
+    /// <summary>Field number for the "whole_stay_guarantee_charged" field.</summary>
+    public const int WholeStayGuaranteeChargedFieldNumber = 4;
+    private global::HOLMS.Types.Primitive.MonetaryAmount wholeStayGuaranteeCharged_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.MonetaryAmount MaxIncludingGuarantee {
-      get { return maxIncludingGuarantee_; }
+    public global::HOLMS.Types.Primitive.MonetaryAmount WholeStayGuaranteeCharged {
+      get { return wholeStayGuaranteeCharged_; }
       set {
-        maxIncludingGuarantee_ = value;
+        wholeStayGuaranteeCharged_ = value;
       }
     }
 
@@ -136,20 +137,20 @@ namespace HOLMS.Types.Booking.Reservations {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Min, other.Min)) return false;
-      if (!object.Equals(Max, other.Max)) return false;
-      if (!object.Equals(MinIncludingGuarantee, other.MinIncludingGuarantee)) return false;
-      if (!object.Equals(MaxIncludingGuarantee, other.MaxIncludingGuarantee)) return false;
+      if (!object.Equals(MinimumGuaranteeVoided, other.MinimumGuaranteeVoided)) return false;
+      if (!object.Equals(WholeStayGuaranteeVoided, other.WholeStayGuaranteeVoided)) return false;
+      if (!object.Equals(MinimumGuaranteeCharged, other.MinimumGuaranteeCharged)) return false;
+      if (!object.Equals(WholeStayGuaranteeCharged, other.WholeStayGuaranteeCharged)) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (min_ != null) hash ^= Min.GetHashCode();
-      if (max_ != null) hash ^= Max.GetHashCode();
-      if (minIncludingGuarantee_ != null) hash ^= MinIncludingGuarantee.GetHashCode();
-      if (maxIncludingGuarantee_ != null) hash ^= MaxIncludingGuarantee.GetHashCode();
+      if (minimumGuaranteeVoided_ != null) hash ^= MinimumGuaranteeVoided.GetHashCode();
+      if (wholeStayGuaranteeVoided_ != null) hash ^= WholeStayGuaranteeVoided.GetHashCode();
+      if (minimumGuaranteeCharged_ != null) hash ^= MinimumGuaranteeCharged.GetHashCode();
+      if (wholeStayGuaranteeCharged_ != null) hash ^= WholeStayGuaranteeCharged.GetHashCode();
       return hash;
     }
 
@@ -160,38 +161,38 @@ namespace HOLMS.Types.Booking.Reservations {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (min_ != null) {
+      if (minimumGuaranteeVoided_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(Min);
+        output.WriteMessage(MinimumGuaranteeVoided);
       }
-      if (max_ != null) {
+      if (wholeStayGuaranteeVoided_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(Max);
+        output.WriteMessage(WholeStayGuaranteeVoided);
       }
-      if (minIncludingGuarantee_ != null) {
+      if (minimumGuaranteeCharged_ != null) {
         output.WriteRawTag(26);
-        output.WriteMessage(MinIncludingGuarantee);
+        output.WriteMessage(MinimumGuaranteeCharged);
       }
-      if (maxIncludingGuarantee_ != null) {
+      if (wholeStayGuaranteeCharged_ != null) {
         output.WriteRawTag(34);
-        output.WriteMessage(MaxIncludingGuarantee);
+        output.WriteMessage(WholeStayGuaranteeCharged);
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (min_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Min);
+      if (minimumGuaranteeVoided_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MinimumGuaranteeVoided);
       }
-      if (max_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Max);
+      if (wholeStayGuaranteeVoided_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(WholeStayGuaranteeVoided);
       }
-      if (minIncludingGuarantee_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MinIncludingGuarantee);
+      if (minimumGuaranteeCharged_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MinimumGuaranteeCharged);
       }
-      if (maxIncludingGuarantee_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MaxIncludingGuarantee);
+      if (wholeStayGuaranteeCharged_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(WholeStayGuaranteeCharged);
       }
       return size;
     }
@@ -201,29 +202,29 @@ namespace HOLMS.Types.Booking.Reservations {
       if (other == null) {
         return;
       }
-      if (other.min_ != null) {
-        if (min_ == null) {
-          min_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+      if (other.minimumGuaranteeVoided_ != null) {
+        if (minimumGuaranteeVoided_ == null) {
+          minimumGuaranteeVoided_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
-        Min.MergeFrom(other.Min);
+        MinimumGuaranteeVoided.MergeFrom(other.MinimumGuaranteeVoided);
       }
-      if (other.max_ != null) {
-        if (max_ == null) {
-          max_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+      if (other.wholeStayGuaranteeVoided_ != null) {
+        if (wholeStayGuaranteeVoided_ == null) {
+          wholeStayGuaranteeVoided_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
-        Max.MergeFrom(other.Max);
+        WholeStayGuaranteeVoided.MergeFrom(other.WholeStayGuaranteeVoided);
       }
-      if (other.minIncludingGuarantee_ != null) {
-        if (minIncludingGuarantee_ == null) {
-          minIncludingGuarantee_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+      if (other.minimumGuaranteeCharged_ != null) {
+        if (minimumGuaranteeCharged_ == null) {
+          minimumGuaranteeCharged_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
-        MinIncludingGuarantee.MergeFrom(other.MinIncludingGuarantee);
+        MinimumGuaranteeCharged.MergeFrom(other.MinimumGuaranteeCharged);
       }
-      if (other.maxIncludingGuarantee_ != null) {
-        if (maxIncludingGuarantee_ == null) {
-          maxIncludingGuarantee_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+      if (other.wholeStayGuaranteeCharged_ != null) {
+        if (wholeStayGuaranteeCharged_ == null) {
+          wholeStayGuaranteeCharged_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
-        MaxIncludingGuarantee.MergeFrom(other.MaxIncludingGuarantee);
+        WholeStayGuaranteeCharged.MergeFrom(other.WholeStayGuaranteeCharged);
       }
     }
 
@@ -236,31 +237,31 @@ namespace HOLMS.Types.Booking.Reservations {
             input.SkipLastField();
             break;
           case 10: {
-            if (min_ == null) {
-              min_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            if (minimumGuaranteeVoided_ == null) {
+              minimumGuaranteeVoided_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
-            input.ReadMessage(min_);
+            input.ReadMessage(minimumGuaranteeVoided_);
             break;
           }
           case 18: {
-            if (max_ == null) {
-              max_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            if (wholeStayGuaranteeVoided_ == null) {
+              wholeStayGuaranteeVoided_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
-            input.ReadMessage(max_);
+            input.ReadMessage(wholeStayGuaranteeVoided_);
             break;
           }
           case 26: {
-            if (minIncludingGuarantee_ == null) {
-              minIncludingGuarantee_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            if (minimumGuaranteeCharged_ == null) {
+              minimumGuaranteeCharged_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
-            input.ReadMessage(minIncludingGuarantee_);
+            input.ReadMessage(minimumGuaranteeCharged_);
             break;
           }
           case 34: {
-            if (maxIncludingGuarantee_ == null) {
-              maxIncludingGuarantee_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            if (wholeStayGuaranteeCharged_ == null) {
+              wholeStayGuaranteeCharged_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
-            input.ReadMessage(maxIncludingGuarantee_);
+            input.ReadMessage(wholeStayGuaranteeCharged_);
             break;
           }
         }

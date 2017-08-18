@@ -22,7 +22,6 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.AddReservationContactRequest> __Marshaller_AddReservationContactRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.AddReservationContactRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.HousekeepingTimePreferenceRequest> __Marshaller_HousekeepingTimePreferenceRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.HousekeepingTimePreferenceRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts> __Marshaller_RecommendedCheckinAuthorizationAmounts = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.ReservationAssociatedParties> __Marshaller_ReservationAssociatedParties = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.ReservationAssociatedParties.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.History.ReservationCreationSummary> __Marshaller_ReservationCreationSummary = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.History.ReservationCreationSummary.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.History.ReservationAmendmentSummary> __Marshaller_ReservationAmendmentSummary = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.History.ReservationAmendmentSummary.Parser.ParseFrom);
@@ -76,13 +75,6 @@ namespace HOLMS.Types.Booking.RPC {
         "SetHousekeepingTimePreference",
         __Marshaller_HousekeepingTimePreferenceRequest,
         __Marshaller_Empty);
-
-    static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts> __Method_GetRecommendedCheckinAuthorizationAmounts = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts>(
-        MethodType.Unary,
-        __ServiceName,
-        "GetRecommendedCheckinAuthorizationAmounts",
-        __Marshaller_ReservationIndicator,
-        __Marshaller_RecommendedCheckinAuthorizationAmounts);
 
     static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.ReservationAssociatedParties> __Method_GetReservationAssociatedParties = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.ReservationAssociatedParties>(
         MethodType.Unary,
@@ -152,14 +144,6 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetHousekeepingTimePreference(global::HOLMS.Types.Booking.RPC.HousekeepingTimePreferenceRequest request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      ///  Obsolete, use endpoint on check-in service instead
-      /// </summary>
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts> GetRecommendedCheckinAuthorizationAmounts(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -321,34 +305,6 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetHousekeepingTimePreference, null, options, request);
       }
-      /// <summary>
-      ///  Obsolete, use endpoint on check-in service instead
-      /// </summary>
-      public virtual global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts GetRecommendedCheckinAuthorizationAmounts(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetRecommendedCheckinAuthorizationAmounts(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///  Obsolete, use endpoint on check-in service instead
-      /// </summary>
-      public virtual global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts GetRecommendedCheckinAuthorizationAmounts(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetRecommendedCheckinAuthorizationAmounts, null, options, request);
-      }
-      /// <summary>
-      ///  Obsolete, use endpoint on check-in service instead
-      /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts> GetRecommendedCheckinAuthorizationAmountsAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetRecommendedCheckinAuthorizationAmountsAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///  Obsolete, use endpoint on check-in service instead
-      /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.Reservations.RecommendedCheckinAuthorizationAmounts> GetRecommendedCheckinAuthorizationAmountsAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetRecommendedCheckinAuthorizationAmounts, null, options, request);
-      }
       public virtual global::HOLMS.Types.Booking.ReservationAssociatedParties GetReservationAssociatedParties(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetReservationAssociatedParties(request, new CallOptions(headers, deadline, cancellationToken));
@@ -430,7 +386,6 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_RemoveReservationContact, serviceImpl.RemoveReservationContact)
           .AddMethod(__Method_AddContactPerson, serviceImpl.AddContactPerson)
           .AddMethod(__Method_SetHousekeepingTimePreference, serviceImpl.SetHousekeepingTimePreference)
-          .AddMethod(__Method_GetRecommendedCheckinAuthorizationAmounts, serviceImpl.GetRecommendedCheckinAuthorizationAmounts)
           .AddMethod(__Method_GetReservationAssociatedParties, serviceImpl.GetReservationAssociatedParties)
           .AddMethod(__Method_GetReservationCreationSummary, serviceImpl.GetReservationCreationSummary)
           .AddMethod(__Method_GetReservationAmendmentSummary, serviceImpl.GetReservationAmendmentSummary)

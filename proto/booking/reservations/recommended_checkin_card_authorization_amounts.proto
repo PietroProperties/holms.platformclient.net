@@ -7,8 +7,9 @@ option go_package = "booking/reservations";
 import "primitive/monetary_amount.proto";
 
 message RecommendedCheckinAuthorizationAmounts {
-	primitive.MonetaryAmount min = 1;
-	primitive.MonetaryAmount max = 2;
-	primitive.MonetaryAmount min_including_guarantee = 3;
-	primitive.MonetaryAmount max_including_guarantee = 4;
+	primitive.MonetaryAmount minimum_guarantee_voided = 1;
+	primitive.MonetaryAmount whole_stay_guarantee_voided = 2;
+	primitive.MonetaryAmount minimum_guarantee_charged = 3;
+	primitive.MonetaryAmount whole_stay_guarantee_charged = 4;
 }
+
