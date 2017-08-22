@@ -27,32 +27,32 @@ namespace HOLMS.Types.IAM.RPC {
             "Ghtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aFmlhbS9zdGFmZl9tZW1i",
             "ZXIucHJvdG8aIGlhbS9zdGFmZl9tZW1iZXJfaW5kaWNhdG9yLnByb3RvIk0K",
             "FlN0YWZmU3ZjR2V0QWxsUmVzcG9uc2USMwoNc3RhZmZfbWVtYmVycxgBIAMo",
-            "CzIcLmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1lbWJlciKUAQocU3RhZmZTdmND",
+            "CzIcLmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1lbWJlciKTAQocU3RhZmZTdmND",
             "cmVhdGVVcGRhdGVSZXNwb25zZRI/CgZyZXN1bHQYASABKA4yLy5ob2xtcy50",
-            "eXBlcy5pYW0ucnBjLlN0YWZmU3ZjQ3JlYXRlVXBkYXRlUmVzdWx0EjMKDXN0",
-            "YWZmX21lbWJlcnMYAiABKAsyHC5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1i",
-            "ZXIqsAEKGlN0YWZmU3ZjQ3JlYXRlVXBkYXRlUmVzdWx0EioKJlNUQUZGX1NW",
-            "Q19DUkVBVEVfVVBEQVRFX1JFU1VMVF9TVUNDRVNTEAASMAosU1RBRkZfU1ZD",
-            "X0NSRUFURV9VUERBVEVfUkVTVUxUX1VOS05PV05fRVJST1IQARI0CjBTVEFG",
-            "Rl9TVkNfQ1JFQVRFX1VQREFURV9SRVNVTFRfVVNFUk5BTUVfQ09ORkxJQ1QQ",
-            "AjKNBAoIU3RhZmZTdmMSSgoDQWxsEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5",
-            "GisuaG9sbXMudHlwZXMuaWFtLnJwYy5TdGFmZlN2Y0dldEFsbFJlc3BvbnNl",
-            "ElYKD0dldEhvdXNla2VlcGVycxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRor",
-            "LmhvbG1zLnR5cGVzLmlhbS5ycGMuU3RhZmZTdmNHZXRBbGxSZXNwb25zZRJO",
-            "CgdHZXRCeUlkEiUuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNh",
-            "dG9yGhwuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVyElkKBkNyZWF0ZRIc",
+            "eXBlcy5pYW0ucnBjLlN0YWZmU3ZjQ3JlYXRlVXBkYXRlUmVzdWx0EjIKDHN0",
+            "YWZmX21lbWJlchgCIAEoCzIcLmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1lbWJl",
+            "ciqwAQoaU3RhZmZTdmNDcmVhdGVVcGRhdGVSZXN1bHQSKgomU1RBRkZfU1ZD",
+            "X0NSRUFURV9VUERBVEVfUkVTVUxUX1NVQ0NFU1MQABIwCixTVEFGRl9TVkNf",
+            "Q1JFQVRFX1VQREFURV9SRVNVTFRfVU5LTk9XTl9FUlJPUhABEjQKMFNUQUZG",
+            "X1NWQ19DUkVBVEVfVVBEQVRFX1JFU1VMVF9VU0VSTkFNRV9DT05GTElDVBAC",
+            "Mo0ECghTdGFmZlN2YxJKCgNBbGwSFi5nb29nbGUucHJvdG9idWYuRW1wdHka",
+            "Ky5ob2xtcy50eXBlcy5pYW0ucnBjLlN0YWZmU3ZjR2V0QWxsUmVzcG9uc2US",
+            "VgoPR2V0SG91c2VrZWVwZXJzEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gisu",
+            "aG9sbXMudHlwZXMuaWFtLnJwYy5TdGFmZlN2Y0dldEFsbFJlc3BvbnNlEk4K",
+            "B0dldEJ5SWQSJS5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXJJbmRpY2F0",
+            "b3IaHC5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXISWQoGQ3JlYXRlEhwu",
+            "aG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVyGjEuaG9sbXMudHlwZXMuaWFt",
+            "LnJwYy5TdGFmZlN2Y0NyZWF0ZVVwZGF0ZVJlc3BvbnNlElkKBlVwZGF0ZRIc",
             "LmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1lbWJlchoxLmhvbG1zLnR5cGVzLmlh",
-            "bS5ycGMuU3RhZmZTdmNDcmVhdGVVcGRhdGVSZXNwb25zZRJZCgZVcGRhdGUS",
-            "HC5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXIaMS5ob2xtcy50eXBlcy5p",
-            "YW0ucnBjLlN0YWZmU3ZjQ3JlYXRlVXBkYXRlUmVzcG9uc2USVwoGRGVsZXRl",
-            "EhwuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVyGi8uaG9sbXMudHlwZXMu",
-            "cHJpbWl0aXZlLlNlcnZlckFjdGlvbkNvbmZpcm1hdGlvbkIfWgdpYW0vcnBj",
-            "qgITSE9MTVMuVHlwZXMuSUFNLlJQQ2IGcHJvdG8z"));
+            "bS5ycGMuU3RhZmZTdmNDcmVhdGVVcGRhdGVSZXNwb25zZRJXCgZEZWxldGUS",
+            "HC5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXIaLy5ob2xtcy50eXBlcy5w",
+            "cmltaXRpdmUuU2VydmVyQWN0aW9uQ29uZmlybWF0aW9uQh9aB2lhbS9ycGOq",
+            "AhNIT0xNUy5UeXBlcy5JQU0uUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.ServerActionConfirmationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResult), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.StaffSvcGetAllResponse), global::HOLMS.Types.IAM.RPC.StaffSvcGetAllResponse.Parser, new[]{ "StaffMembers" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse), global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse.Parser, new[]{ "Result", "StaffMembers" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse), global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse.Parser, new[]{ "Result", "StaffMember" }, null, null, null)
           }));
     }
     #endregion
@@ -202,7 +202,7 @@ namespace HOLMS.Types.IAM.RPC {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StaffSvcCreateUpdateResponse(StaffSvcCreateUpdateResponse other) : this() {
       result_ = other.result_;
-      StaffMembers = other.staffMembers_ != null ? other.StaffMembers.Clone() : null;
+      StaffMember = other.staffMember_ != null ? other.StaffMember.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -221,14 +221,14 @@ namespace HOLMS.Types.IAM.RPC {
       }
     }
 
-    /// <summary>Field number for the "staff_members" field.</summary>
-    public const int StaffMembersFieldNumber = 2;
-    private global::HOLMS.Types.IAM.StaffMember staffMembers_;
+    /// <summary>Field number for the "staff_member" field.</summary>
+    public const int StaffMemberFieldNumber = 2;
+    private global::HOLMS.Types.IAM.StaffMember staffMember_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.IAM.StaffMember StaffMembers {
-      get { return staffMembers_; }
+    public global::HOLMS.Types.IAM.StaffMember StaffMember {
+      get { return staffMember_; }
       set {
-        staffMembers_ = value;
+        staffMember_ = value;
       }
     }
 
@@ -246,7 +246,7 @@ namespace HOLMS.Types.IAM.RPC {
         return true;
       }
       if (Result != other.Result) return false;
-      if (!object.Equals(StaffMembers, other.StaffMembers)) return false;
+      if (!object.Equals(StaffMember, other.StaffMember)) return false;
       return true;
     }
 
@@ -254,7 +254,7 @@ namespace HOLMS.Types.IAM.RPC {
     public override int GetHashCode() {
       int hash = 1;
       if (Result != 0) hash ^= Result.GetHashCode();
-      if (staffMembers_ != null) hash ^= StaffMembers.GetHashCode();
+      if (staffMember_ != null) hash ^= StaffMember.GetHashCode();
       return hash;
     }
 
@@ -269,9 +269,9 @@ namespace HOLMS.Types.IAM.RPC {
         output.WriteRawTag(8);
         output.WriteEnum((int) Result);
       }
-      if (staffMembers_ != null) {
+      if (staffMember_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(StaffMembers);
+        output.WriteMessage(StaffMember);
       }
     }
 
@@ -281,8 +281,8 @@ namespace HOLMS.Types.IAM.RPC {
       if (Result != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
       }
-      if (staffMembers_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StaffMembers);
+      if (staffMember_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StaffMember);
       }
       return size;
     }
@@ -295,11 +295,11 @@ namespace HOLMS.Types.IAM.RPC {
       if (other.Result != 0) {
         Result = other.Result;
       }
-      if (other.staffMembers_ != null) {
-        if (staffMembers_ == null) {
-          staffMembers_ = new global::HOLMS.Types.IAM.StaffMember();
+      if (other.staffMember_ != null) {
+        if (staffMember_ == null) {
+          staffMember_ = new global::HOLMS.Types.IAM.StaffMember();
         }
-        StaffMembers.MergeFrom(other.StaffMembers);
+        StaffMember.MergeFrom(other.StaffMember);
       }
     }
 
@@ -316,10 +316,10 @@ namespace HOLMS.Types.IAM.RPC {
             break;
           }
           case 18: {
-            if (staffMembers_ == null) {
-              staffMembers_ = new global::HOLMS.Types.IAM.StaffMember();
+            if (staffMember_ == null) {
+              staffMember_ = new global::HOLMS.Types.IAM.StaffMember();
             }
-            input.ReadMessage(staffMembers_);
+            input.ReadMessage(staffMember_);
             break;
           }
         }

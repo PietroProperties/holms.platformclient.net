@@ -21,7 +21,7 @@ enum StaffSvcCreateUpdateResult {
 
 message StaffSvcCreateUpdateResponse {
     StaffSvcCreateUpdateResult result = 1;
-    .holms.types.iam.StaffMember staff_members = 2;
+    .holms.types.iam.StaffMember staff_member = 2;
 }
 
 service StaffSvc {
