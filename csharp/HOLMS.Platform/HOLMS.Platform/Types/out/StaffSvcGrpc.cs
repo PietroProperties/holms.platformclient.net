@@ -16,6 +16,7 @@ namespace HOLMS.Types.IAM.RPC {
     static readonly Marshaller<global::HOLMS.Types.IAM.RPC.StaffSvcGetAllResponse> __Marshaller_StaffSvcGetAllResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.RPC.StaffSvcGetAllResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.IAM.StaffMemberIndicator> __Marshaller_StaffMemberIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.StaffMemberIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.IAM.StaffMember> __Marshaller_StaffMember = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.StaffMember.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse> __Marshaller_StaffSvcCreateUpdateResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Primitive.ServerActionConfirmation> __Marshaller_ServerActionConfirmation = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.ServerActionConfirmation.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.IAM.RPC.StaffSvcGetAllResponse> __Method_All = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.IAM.RPC.StaffSvcGetAllResponse>(
@@ -39,19 +40,19 @@ namespace HOLMS.Types.IAM.RPC {
         __Marshaller_StaffMemberIndicator,
         __Marshaller_StaffMember);
 
-    static readonly Method<global::HOLMS.Types.IAM.StaffMember, global::HOLMS.Types.IAM.StaffMember> __Method_Create = new Method<global::HOLMS.Types.IAM.StaffMember, global::HOLMS.Types.IAM.StaffMember>(
+    static readonly Method<global::HOLMS.Types.IAM.StaffMember, global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse> __Method_Create = new Method<global::HOLMS.Types.IAM.StaffMember, global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse>(
         MethodType.Unary,
         __ServiceName,
         "Create",
         __Marshaller_StaffMember,
-        __Marshaller_StaffMember);
+        __Marshaller_StaffSvcCreateUpdateResponse);
 
-    static readonly Method<global::HOLMS.Types.IAM.StaffMember, global::HOLMS.Types.IAM.StaffMember> __Method_Update = new Method<global::HOLMS.Types.IAM.StaffMember, global::HOLMS.Types.IAM.StaffMember>(
+    static readonly Method<global::HOLMS.Types.IAM.StaffMember, global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse> __Method_Update = new Method<global::HOLMS.Types.IAM.StaffMember, global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse>(
         MethodType.Unary,
         __ServiceName,
         "Update",
         __Marshaller_StaffMember,
-        __Marshaller_StaffMember);
+        __Marshaller_StaffSvcCreateUpdateResponse);
 
     static readonly Method<global::HOLMS.Types.IAM.StaffMember, global::HOLMS.Types.Primitive.ServerActionConfirmation> __Method_Delete = new Method<global::HOLMS.Types.IAM.StaffMember, global::HOLMS.Types.Primitive.ServerActionConfirmation>(
         MethodType.Unary,
@@ -84,12 +85,12 @@ namespace HOLMS.Types.IAM.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.IAM.StaffMember> Create(global::HOLMS.Types.IAM.StaffMember request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse> Create(global::HOLMS.Types.IAM.StaffMember request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.IAM.StaffMember> Update(global::HOLMS.Types.IAM.StaffMember request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse> Update(global::HOLMS.Types.IAM.StaffMember request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -172,35 +173,35 @@ namespace HOLMS.Types.IAM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetById, null, options, request);
       }
-      public virtual global::HOLMS.Types.IAM.StaffMember Create(global::HOLMS.Types.IAM.StaffMember request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse Create(global::HOLMS.Types.IAM.StaffMember request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Create(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.IAM.StaffMember Create(global::HOLMS.Types.IAM.StaffMember request, CallOptions options)
+      public virtual global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse Create(global::HOLMS.Types.IAM.StaffMember request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Create, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.IAM.StaffMember> CreateAsync(global::HOLMS.Types.IAM.StaffMember request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse> CreateAsync(global::HOLMS.Types.IAM.StaffMember request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return CreateAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.IAM.StaffMember> CreateAsync(global::HOLMS.Types.IAM.StaffMember request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse> CreateAsync(global::HOLMS.Types.IAM.StaffMember request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Create, null, options, request);
       }
-      public virtual global::HOLMS.Types.IAM.StaffMember Update(global::HOLMS.Types.IAM.StaffMember request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse Update(global::HOLMS.Types.IAM.StaffMember request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Update(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.IAM.StaffMember Update(global::HOLMS.Types.IAM.StaffMember request, CallOptions options)
+      public virtual global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse Update(global::HOLMS.Types.IAM.StaffMember request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Update, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.IAM.StaffMember> UpdateAsync(global::HOLMS.Types.IAM.StaffMember request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse> UpdateAsync(global::HOLMS.Types.IAM.StaffMember request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return UpdateAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.IAM.StaffMember> UpdateAsync(global::HOLMS.Types.IAM.StaffMember request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse> UpdateAsync(global::HOLMS.Types.IAM.StaffMember request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }

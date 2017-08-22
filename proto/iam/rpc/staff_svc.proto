@@ -13,6 +13,17 @@ message StaffSvcGetAllResponse {
 	repeated .holms.types.iam.StaffMember staff_members = 1;
 }
 
+enum StaffSvcCreateUpdateResult {
+	SUCCESS = 0;
+	UNKNOWN_ERROR = 1;
+	USERNAME_EXISTS = 2;
+}
+
+message StaffSvcCreateUpdateResponse {
+    StaffSvcCreateUpdateResult result = 1;
+    .holms.types.iam.StaffMember staff_members = 2;
+}
+
 service StaffSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (StaffSvcGetAllResponse);
@@ -24,10 +35,10 @@ service StaffSvc {
 		returns (.holms.types.iam.StaffMember);
 
 	rpc Create (.holms.types.iam.StaffMember) 
-		returns (.holms.types.iam.StaffMember);
+		returns (StaffSvcCreateUpdateResponse);
 
 	rpc Update (.holms.types.iam.StaffMember) 
-		returns (.holms.types.iam.StaffMember);
+		returns (StaffSvcCreateUpdateResponse);
 
 	rpc Delete (.holms.types.iam.StaffMember) 
 		returns (.holms.types.primitive.ServerActionConfirmation);

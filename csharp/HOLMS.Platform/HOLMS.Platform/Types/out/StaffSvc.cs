@@ -27,28 +27,44 @@ namespace HOLMS.Types.IAM.RPC {
             "Ghtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aFmlhbS9zdGFmZl9tZW1i",
             "ZXIucHJvdG8aIGlhbS9zdGFmZl9tZW1iZXJfaW5kaWNhdG9yLnByb3RvIk0K",
             "FlN0YWZmU3ZjR2V0QWxsUmVzcG9uc2USMwoNc3RhZmZfbWVtYmVycxgBIAMo",
-            "CzIcLmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1lbWJlcjLjAwoIU3RhZmZTdmMS",
-            "SgoDQWxsEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GisuaG9sbXMudHlwZXMu",
-            "aWFtLnJwYy5TdGFmZlN2Y0dldEFsbFJlc3BvbnNlElYKD0dldEhvdXNla2Vl",
-            "cGVycxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRorLmhvbG1zLnR5cGVzLmlh",
-            "bS5ycGMuU3RhZmZTdmNHZXRBbGxSZXNwb25zZRJOCgdHZXRCeUlkEiUuaG9s",
-            "bXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNhdG9yGhwuaG9sbXMudHlw",
-            "ZXMuaWFtLlN0YWZmTWVtYmVyEkQKBkNyZWF0ZRIcLmhvbG1zLnR5cGVzLmlh",
-            "bS5TdGFmZk1lbWJlchocLmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1lbWJlchJE",
-            "CgZVcGRhdGUSHC5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXIaHC5ob2xt",
-            "cy50eXBlcy5pYW0uU3RhZmZNZW1iZXISVwoGRGVsZXRlEhwuaG9sbXMudHlw",
-            "ZXMuaWFtLlN0YWZmTWVtYmVyGi8uaG9sbXMudHlwZXMucHJpbWl0aXZlLlNl",
-            "cnZlckFjdGlvbkNvbmZpcm1hdGlvbkIfWgdpYW0vcnBjqgITSE9MTVMuVHlw",
-            "ZXMuSUFNLlJQQ2IGcHJvdG8z"));
+            "CzIcLmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1lbWJlciKUAQocU3RhZmZTdmND",
+            "cmVhdGVVcGRhdGVSZXNwb25zZRI/CgZyZXN1bHQYASABKA4yLy5ob2xtcy50",
+            "eXBlcy5pYW0ucnBjLlN0YWZmU3ZjQ3JlYXRlVXBkYXRlUmVzdWx0EjMKDXN0",
+            "YWZmX21lbWJlcnMYAiABKAsyHC5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1i",
+            "ZXIqUQoaU3RhZmZTdmNDcmVhdGVVcGRhdGVSZXN1bHQSCwoHU1VDQ0VTUxAA",
+            "EhEKDVVOS05PV05fRVJST1IQARITCg9VU0VSTkFNRV9FWElTVFMQAjKNBAoI",
+            "U3RhZmZTdmMSSgoDQWxsEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GisuaG9s",
+            "bXMudHlwZXMuaWFtLnJwYy5TdGFmZlN2Y0dldEFsbFJlc3BvbnNlElYKD0dl",
+            "dEhvdXNla2VlcGVycxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRorLmhvbG1z",
+            "LnR5cGVzLmlhbS5ycGMuU3RhZmZTdmNHZXRBbGxSZXNwb25zZRJOCgdHZXRC",
+            "eUlkEiUuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNhdG9yGhwu",
+            "aG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVyElkKBkNyZWF0ZRIcLmhvbG1z",
+            "LnR5cGVzLmlhbS5TdGFmZk1lbWJlchoxLmhvbG1zLnR5cGVzLmlhbS5ycGMu",
+            "U3RhZmZTdmNDcmVhdGVVcGRhdGVSZXNwb25zZRJZCgZVcGRhdGUSHC5ob2xt",
+            "cy50eXBlcy5pYW0uU3RhZmZNZW1iZXIaMS5ob2xtcy50eXBlcy5pYW0ucnBj",
+            "LlN0YWZmU3ZjQ3JlYXRlVXBkYXRlUmVzcG9uc2USVwoGRGVsZXRlEhwuaG9s",
+            "bXMudHlwZXMuaWFtLlN0YWZmTWVtYmVyGi8uaG9sbXMudHlwZXMucHJpbWl0",
+            "aXZlLlNlcnZlckFjdGlvbkNvbmZpcm1hdGlvbkIfWgdpYW0vcnBjqgITSE9M",
+            "TVMuVHlwZXMuSUFNLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.ServerActionConfirmationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.StaffSvcGetAllResponse), global::HOLMS.Types.IAM.RPC.StaffSvcGetAllResponse.Parser, new[]{ "StaffMembers" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResult), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.StaffSvcGetAllResponse), global::HOLMS.Types.IAM.RPC.StaffSvcGetAllResponse.Parser, new[]{ "StaffMembers" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse), global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResponse.Parser, new[]{ "Result", "StaffMembers" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum StaffSvcCreateUpdateResult {
+    [pbr::OriginalName("SUCCESS")] Success = 0,
+    [pbr::OriginalName("UNKNOWN_ERROR")] UnknownError = 1,
+    [pbr::OriginalName("USERNAME_EXISTS")] UsernameExists = 2,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class StaffSvcGetAllResponse : pb::IMessage<StaffSvcGetAllResponse> {
     private static readonly pb::MessageParser<StaffSvcGetAllResponse> _parser = new pb::MessageParser<StaffSvcGetAllResponse>(() => new StaffSvcGetAllResponse());
@@ -151,6 +167,157 @@ namespace HOLMS.Types.IAM.RPC {
             break;
           case 10: {
             staffMembers_.AddEntriesFrom(input, _repeated_staffMembers_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class StaffSvcCreateUpdateResponse : pb::IMessage<StaffSvcCreateUpdateResponse> {
+    private static readonly pb::MessageParser<StaffSvcCreateUpdateResponse> _parser = new pb::MessageParser<StaffSvcCreateUpdateResponse>(() => new StaffSvcCreateUpdateResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<StaffSvcCreateUpdateResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.IAM.RPC.StaffSvcReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StaffSvcCreateUpdateResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StaffSvcCreateUpdateResponse(StaffSvcCreateUpdateResponse other) : this() {
+      result_ = other.result_;
+      StaffMembers = other.staffMembers_ != null ? other.StaffMembers.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StaffSvcCreateUpdateResponse Clone() {
+      return new StaffSvcCreateUpdateResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResult result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "staff_members" field.</summary>
+    public const int StaffMembersFieldNumber = 2;
+    private global::HOLMS.Types.IAM.StaffMember staffMembers_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.IAM.StaffMember StaffMembers {
+      get { return staffMembers_; }
+      set {
+        staffMembers_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as StaffSvcCreateUpdateResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(StaffSvcCreateUpdateResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      if (!object.Equals(StaffMembers, other.StaffMembers)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Result != 0) hash ^= Result.GetHashCode();
+      if (staffMembers_ != null) hash ^= StaffMembers.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
+      if (staffMembers_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(StaffMembers);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (staffMembers_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StaffMembers);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(StaffSvcCreateUpdateResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      if (other.staffMembers_ != null) {
+        if (staffMembers_ == null) {
+          staffMembers_ = new global::HOLMS.Types.IAM.StaffMember();
+        }
+        StaffMembers.MergeFrom(other.StaffMembers);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            result_ = (global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResult) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (staffMembers_ == null) {
+              staffMembers_ = new global::HOLMS.Types.IAM.StaffMember();
+            }
+            input.ReadMessage(staffMembers_);
             break;
           }
         }
