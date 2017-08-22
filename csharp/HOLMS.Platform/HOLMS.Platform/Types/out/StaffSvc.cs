@@ -31,21 +31,23 @@ namespace HOLMS.Types.IAM.RPC {
             "cmVhdGVVcGRhdGVSZXNwb25zZRI/CgZyZXN1bHQYASABKA4yLy5ob2xtcy50",
             "eXBlcy5pYW0ucnBjLlN0YWZmU3ZjQ3JlYXRlVXBkYXRlUmVzdWx0EjMKDXN0",
             "YWZmX21lbWJlcnMYAiABKAsyHC5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1i",
-            "ZXIqUQoaU3RhZmZTdmNDcmVhdGVVcGRhdGVSZXN1bHQSCwoHU1VDQ0VTUxAA",
-            "EhEKDVVOS05PV05fRVJST1IQARITCg9VU0VSTkFNRV9FWElTVFMQAjKNBAoI",
-            "U3RhZmZTdmMSSgoDQWxsEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GisuaG9s",
-            "bXMudHlwZXMuaWFtLnJwYy5TdGFmZlN2Y0dldEFsbFJlc3BvbnNlElYKD0dl",
-            "dEhvdXNla2VlcGVycxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRorLmhvbG1z",
-            "LnR5cGVzLmlhbS5ycGMuU3RhZmZTdmNHZXRBbGxSZXNwb25zZRJOCgdHZXRC",
-            "eUlkEiUuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNhdG9yGhwu",
-            "aG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVyElkKBkNyZWF0ZRIcLmhvbG1z",
-            "LnR5cGVzLmlhbS5TdGFmZk1lbWJlchoxLmhvbG1zLnR5cGVzLmlhbS5ycGMu",
-            "U3RhZmZTdmNDcmVhdGVVcGRhdGVSZXNwb25zZRJZCgZVcGRhdGUSHC5ob2xt",
-            "cy50eXBlcy5pYW0uU3RhZmZNZW1iZXIaMS5ob2xtcy50eXBlcy5pYW0ucnBj",
-            "LlN0YWZmU3ZjQ3JlYXRlVXBkYXRlUmVzcG9uc2USVwoGRGVsZXRlEhwuaG9s",
-            "bXMudHlwZXMuaWFtLlN0YWZmTWVtYmVyGi8uaG9sbXMudHlwZXMucHJpbWl0",
-            "aXZlLlNlcnZlckFjdGlvbkNvbmZpcm1hdGlvbkIfWgdpYW0vcnBjqgITSE9M",
-            "TVMuVHlwZXMuSUFNLlJQQ2IGcHJvdG8z"));
+            "ZXIqsAEKGlN0YWZmU3ZjQ3JlYXRlVXBkYXRlUmVzdWx0EioKJlNUQUZGX1NW",
+            "Q19DUkVBVEVfVVBEQVRFX1JFU1VMVF9TVUNDRVNTEAASMAosU1RBRkZfU1ZD",
+            "X0NSRUFURV9VUERBVEVfUkVTVUxUX1VOS05PV05fRVJST1IQARI0CjBTVEFG",
+            "Rl9TVkNfQ1JFQVRFX1VQREFURV9SRVNVTFRfVVNFUk5BTUVfQ09ORkxJQ1QQ",
+            "AjKNBAoIU3RhZmZTdmMSSgoDQWxsEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5",
+            "GisuaG9sbXMudHlwZXMuaWFtLnJwYy5TdGFmZlN2Y0dldEFsbFJlc3BvbnNl",
+            "ElYKD0dldEhvdXNla2VlcGVycxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRor",
+            "LmhvbG1zLnR5cGVzLmlhbS5ycGMuU3RhZmZTdmNHZXRBbGxSZXNwb25zZRJO",
+            "CgdHZXRCeUlkEiUuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNh",
+            "dG9yGhwuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVyElkKBkNyZWF0ZRIc",
+            "LmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1lbWJlchoxLmhvbG1zLnR5cGVzLmlh",
+            "bS5ycGMuU3RhZmZTdmNDcmVhdGVVcGRhdGVSZXNwb25zZRJZCgZVcGRhdGUS",
+            "HC5ob2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXIaMS5ob2xtcy50eXBlcy5p",
+            "YW0ucnBjLlN0YWZmU3ZjQ3JlYXRlVXBkYXRlUmVzcG9uc2USVwoGRGVsZXRl",
+            "EhwuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVyGi8uaG9sbXMudHlwZXMu",
+            "cHJpbWl0aXZlLlNlcnZlckFjdGlvbkNvbmZpcm1hdGlvbkIfWgdpYW0vcnBj",
+            "qgITSE9MTVMuVHlwZXMuSUFNLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.ServerActionConfirmationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.IAM.RPC.StaffSvcCreateUpdateResult), }, new pbr::GeneratedClrTypeInfo[] {
@@ -58,9 +60,9 @@ namespace HOLMS.Types.IAM.RPC {
   }
   #region Enums
   public enum StaffSvcCreateUpdateResult {
-    [pbr::OriginalName("SUCCESS")] Success = 0,
-    [pbr::OriginalName("UNKNOWN_ERROR")] UnknownError = 1,
-    [pbr::OriginalName("USERNAME_EXISTS")] UsernameExists = 2,
+    [pbr::OriginalName("STAFF_SVC_CREATE_UPDATE_RESULT_SUCCESS")] Success = 0,
+    [pbr::OriginalName("STAFF_SVC_CREATE_UPDATE_RESULT_UNKNOWN_ERROR")] UnknownError = 1,
+    [pbr::OriginalName("STAFF_SVC_CREATE_UPDATE_RESULT_USERNAME_CONFLICT")] UsernameConflict = 2,
   }
 
   #endregion

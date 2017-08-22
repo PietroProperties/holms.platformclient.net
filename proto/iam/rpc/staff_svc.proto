@@ -14,9 +14,9 @@ message StaffSvcGetAllResponse {
 }
 
 enum StaffSvcCreateUpdateResult {
-	SUCCESS = 0;
-	UNKNOWN_ERROR = 1;
-	USERNAME_EXISTS = 2;
+	STAFF_SVC_CREATE_UPDATE_RESULT_SUCCESS = 0;
+	STAFF_SVC_CREATE_UPDATE_RESULT_UNKNOWN_ERROR = 1;
+	STAFF_SVC_CREATE_UPDATE_RESULT_USERNAME_CONFLICT = 2;
 }
 
 message StaffSvcCreateUpdateResponse {
