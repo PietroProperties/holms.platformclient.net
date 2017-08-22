@@ -33,14 +33,15 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             "LmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50",
             "Q2FyZFNhbGVJbmRpY2F0b3ISXgoNYXV0aG9yaXphdGlvbhgDIAEoCzJHLmhv",
             "bG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2Fy",
-            "ZEF1dGhvcml6YXRpb25JbmRpY2F0b3Iq5AEKHUNhcmRBdXRob3JpemF0aW9u",
+            "ZEF1dGhvcml6YXRpb25JbmRpY2F0b3IqigIKHUNhcmRBdXRob3JpemF0aW9u",
             "UmVzcG9uc2VDb2RlEhkKFUFVVEhPUklaQVRJT05fU1VDQ0VTUxAAEh8KG0FV",
             "VEhPUklaQVRJT05fQ0FSRF9ERUNMSU5FRBABEi0KKUFVVEhPUklaQVRJT05f",
             "VFJBTlNJRU5UX09QRVJBVElPTkFMX0VSUk9SEAISLQopQVVUSE9SSVpBVElP",
             "Tl9QRVJNQU5FTlRfT1BFUkFUSU9OQUxfRVJST1IQAxIpCiVBVVRIT1JJWkFU",
-            "SU9OX05PX1RFUk1JTkFMU19DT05GSUdVUkVEEARCQVoYbW9uZXkvY2FyZHMv",
-            "dHJhbnNhY3Rpb25zqgIkSE9MTVMuVHlwZXMuTW9uZXkuQ2FyZHMuVHJhbnNh",
-            "Y3Rpb25zYgZwcm90bzM="));
+            "SU9OX05PX1RFUk1JTkFMU19DT05GSUdVUkVEEAQSJAogQVVUSE9SSVpBVElP",
+            "Tl9BTU9VTlRfTk9UX0FMTE9XRUQQBUJBWhhtb25leS9jYXJkcy90cmFuc2Fj",
+            "dGlvbnOqAiRIT0xNUy5UeXBlcy5Nb25leS5DYXJkcy5UcmFuc2FjdGlvbnNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponseCode), }, new pbr::GeneratedClrTypeInfo[] {
@@ -57,6 +58,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
     [pbr::OriginalName("AUTHORIZATION_TRANSIENT_OPERATIONAL_ERROR")] AuthorizationTransientOperationalError = 2,
     [pbr::OriginalName("AUTHORIZATION_PERMANENT_OPERATIONAL_ERROR")] AuthorizationPermanentOperationalError = 3,
     [pbr::OriginalName("AUTHORIZATION_NO_TERMINALS_CONFIGURED")] AuthorizationNoTerminalsConfigured = 4,
+    [pbr::OriginalName("AUTHORIZATION_AMOUNT_NOT_ALLOWED")] AuthorizationAmountNotAllowed = 5,
   }
 
   #endregion
