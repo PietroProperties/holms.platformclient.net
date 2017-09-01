@@ -614,6 +614,10 @@
     <Compile Include="Types\out\StatusColor.cs" />
     <Compile Include="Types\out\SupplySnapshotSvc.cs" />
     <Compile Include="Types\out\SupplySnapshotSvcGrpc.cs" />
+    <Compile Include="Types\out\TaxExemptCategory.cs" />
+    <Compile Include="Types\out\TaxExemptCategoryIndicator.cs" />
+    <Compile Include="Types\out\TaxExemptCategorySvc.cs" />
+    <Compile Include="Types\out\TaxExemptCategorySvcGrpc.cs" />
     <Compile Include="Types\out\TaxFee.cs" />
     <Compile Include="Types\out\TaxFeeCategory.cs" />
     <Compile Include="Types\out\TaxFeeIndicator.cs" />

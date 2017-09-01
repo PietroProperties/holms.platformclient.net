@@ -42,7 +42,7 @@ namespace HOLMS.Platform.Support.ReservationTags {
                 case MigratedBookingCategory:
                     return new MigratedReservationTag();
                 case TaxExemptCategory:
-                    return new TaxExemptTag();
+                    return new TaxExemptTag(descriptorTokens);
                 default:
                     throw new NotImplementedException();
             }
