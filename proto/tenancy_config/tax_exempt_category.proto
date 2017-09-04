@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "tenancy_config/indicators/tax_exempt_category_indicator.proto";
+
+message TaxExemptCategory {
+	holms.types.tenancy_config.indicators.TaxExemptCategoryIndicator entity_id = 1;
+	string description = 2;
+}

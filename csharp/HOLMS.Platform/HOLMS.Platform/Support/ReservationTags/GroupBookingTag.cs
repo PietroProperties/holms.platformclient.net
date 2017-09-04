@@ -5,7 +5,7 @@ namespace HOLMS.Platform.Support.ReservationTags {
     public class GroupBookingTag : ReservationTagBase {
         public GroupBookingIndicator Booking { get; protected set; }
 
-        public override bool IsPermanent {
+        public override bool IsPermanent { 
             get {
                 return false;
             }

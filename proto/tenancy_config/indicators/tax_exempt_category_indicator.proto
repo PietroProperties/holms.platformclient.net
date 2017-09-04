@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config.indicators;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.Indicators";
+option go_package = "tenancyconfig/indicators";
+
+import "primitive/uuid.proto";
+
+message TaxExemptCategoryIndicator {
+	holms.types.primitive.Uuid id = 1;
+}

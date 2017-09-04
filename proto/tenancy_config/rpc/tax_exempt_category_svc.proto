@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+option go_package = "tenancyconfig/rpc";
+
+import "primitive/server_action_confirmation.proto";
+import "google/protobuf/empty.proto";
+import "tenancy_config/tax_exempt_category.proto";
+import "tenancy_config/indicators/tax_exempt_category_indicator.proto";
+
+message TaxExemptCategorySvcAllResponse {
+	repeated .holms.types.tenancy_config.TaxExemptCategory tax_exempt_categories = 1;
+}
+
+service TaxExemptCategorySvc {
+	rpc All (google.protobuf.Empty) 
+		returns (TaxExemptCategorySvcAllResponse);
+
+	rpc GetById (.holms.types.tenancy_config.indicators.TaxExemptCategoryIndicator)
+		returns (.holms.types.tenancy_config.TaxExemptCategory);
+
+	rpc Create (.holms.types.tenancy_config.TaxExemptCategory)
+		returns (.holms.types.tenancy_config.TaxExemptCategory);
+
+	rpc Update (.holms.types.tenancy_config.TaxExemptCategory)
+		returns (.holms.types.tenancy_config.TaxExemptCategory);
+
+	rpc Delete (.holms.types.tenancy_config.TaxExemptCategory)
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}
