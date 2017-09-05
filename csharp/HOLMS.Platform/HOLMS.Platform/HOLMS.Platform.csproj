@@ -203,10 +203,12 @@
     <Compile Include="Types\Extensions\TenancyConfig\Indicators\GroupBookingMethodIndicator.cs" />
     <Compile Include="Types\Extensions\TenancyConfig\Indicators\PropertyIndicator.cs" />
     <Compile Include="Types\Extensions\TenancyConfig\Indicators\ReservationSourceIndicator.cs" />
+    <Compile Include="Types\Extensions\TenancyConfig\Indicators\TaxExemptCategoryIndicator.cs" />
     <Compile Include="Types\Extensions\TenancyConfig\Property.cs" />
     <Compile Include="Types\Extensions\TenancyConfig\ReservationDefaults.cs" />
     <Compile Include="Types\Extensions\TenancyConfig\ReservationStatusColors.cs" />
     <Compile Include="Types\Extensions\TenancyConfig\RoomStatusColors.cs" />
+    <Compile Include="Types\Extensions\TenancyConfig\TaxExemptCategory.cs" />
     <Compile Include="Types\out\Account.cs" />
     <Compile Include="Types\out\AccountActivityLedger.cs" />
     <Compile Include="Types\out\AccountAssignments.cs" />
