@@ -519,5 +519,11 @@ namespace HOLMS.Platform.Application.Client {
                 throw new NotImplementedException();
             }
         }
+
+        public TaxExemptCategorySvc.TaxExemptCategorySvcClient TaxExemptCategorySvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

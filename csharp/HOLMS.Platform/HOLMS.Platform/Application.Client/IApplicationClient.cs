@@ -108,6 +108,7 @@ namespace HOLMS.Application.Client {
         RoomCallBillingRatesSvc.RoomCallBillingRatesSvcClient RoomCallBillingRatesSvc { get; }
         RoomStatusColorsSvc.RoomStatusColorsSvcClient RoomStatusColorsSvc { get; }
         RoomStatusSettingsSvc.RoomStatusSettingsSvcClient RoomStatusSettingsSvc { get; }
+        TaxExemptCategorySvc.TaxExemptCategorySvcClient TaxExemptCategorySvc { get; }
         #endregion
 
         #region Reporting
