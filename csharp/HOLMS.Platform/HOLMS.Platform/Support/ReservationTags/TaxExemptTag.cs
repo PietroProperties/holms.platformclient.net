@@ -10,7 +10,7 @@ namespace HOLMS.Platform.Support.ReservationTags {
         private string _taxExemptID;
 
         public TaxExemptTag(string [] tokens) {
-            if(tokens.Count() > 1) {
+            if(tokens.Count() == 3) {
                 _taxExemptCategory = tokens[1];
                 _taxExemptID = tokens[2];
             }
@@ -21,7 +21,7 @@ namespace HOLMS.Platform.Support.ReservationTags {
             _taxExemptCategory = taxExemptCategory.Replace(":", string.Empty);
             _taxExemptID = taxExemptID.Replace(":", string.Empty);
         }
-
+        
         public override bool IsPermanent {
             get {
                 return false;
