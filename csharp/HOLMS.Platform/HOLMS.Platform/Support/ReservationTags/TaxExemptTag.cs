@@ -10,7 +10,10 @@ namespace HOLMS.Platform.Support.ReservationTags {
         private string _taxExemptID;
 
         public TaxExemptTag(string [] tokens) {
-            if(tokens.Count() == 3) {
+            // Token 0 is the primary descriptor tokens 1, 2 are optional tax exempt category
+            // and tax exempt ID. These fields are optional to be compatible with legacy tax exempt tags
+            // that are described by "te:"
+            if(tokens.Length == 3) {
                 _taxExemptCategory = tokens[1];
                 _taxExemptID = tokens[2];
             }
