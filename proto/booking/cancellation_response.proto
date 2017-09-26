@@ -8,5 +8,5 @@ enum CancellationResponse {
     SUCCESSFUL = 0;
     MISMATCHED_ESTIMATE = 1;
     ALREADY_CANCELLED = 2;
-	INVALID_STATE = 3;
+	INVALID_RESERVATION_STATE = 3;
 }

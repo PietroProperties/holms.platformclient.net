@@ -23,10 +23,10 @@ namespace HOLMS.Types.Booking {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNib29raW5nL2NhbmNlbGxhdGlvbl9yZXNwb25zZS5wcm90bxITaG9sbXMu",
-            "dHlwZXMuYm9va2luZyppChRDYW5jZWxsYXRpb25SZXNwb25zZRIOCgpTVUND",
+            "dHlwZXMuYm9va2luZyp1ChRDYW5jZWxsYXRpb25SZXNwb25zZRIOCgpTVUND",
             "RVNTRlVMEAASFwoTTUlTTUFUQ0hFRF9FU1RJTUFURRABEhUKEUFMUkVBRFlf",
-            "Q0FOQ0VMTEVEEAISEQoNSU5WQUxJRF9TVEFURRADQh9aB2Jvb2tpbmeqAhNI",
-            "T0xNUy5UeXBlcy5Cb29raW5nYgZwcm90bzM="));
+            "Q0FOQ0VMTEVEEAISHQoZSU5WQUxJRF9SRVNFUlZBVElPTl9TVEFURRADQh9a",
+            "B2Jvb2tpbmeqAhNIT0xNUy5UeXBlcy5Cb29raW5nYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Booking.CancellationResponse), }, null));
@@ -39,7 +39,7 @@ namespace HOLMS.Types.Booking {
     [pbr::OriginalName("SUCCESSFUL")] Successful = 0,
     [pbr::OriginalName("MISMATCHED_ESTIMATE")] MismatchedEstimate = 1,
     [pbr::OriginalName("ALREADY_CANCELLED")] AlreadyCancelled = 2,
-    [pbr::OriginalName("INVALID_STATE")] InvalidState = 3,
+    [pbr::OriginalName("INVALID_RESERVATION_STATE")] InvalidReservationState = 3,
   }
 
   #endregion
