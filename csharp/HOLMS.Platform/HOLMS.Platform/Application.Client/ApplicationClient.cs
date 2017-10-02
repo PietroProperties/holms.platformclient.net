@@ -122,7 +122,6 @@ namespace HOLMS.Application.Client {
         public RoomStatusColorsSvc.RoomStatusColorsSvcClient RoomStatusColorsSvc { get; protected set; }
         public RoomStatusSettingsSvc.RoomStatusSettingsSvcClient RoomStatusSettingsSvc { get; protected set; }
         public TaxExemptCategorySvc.TaxExemptCategorySvcClient TaxExemptCategorySvc { get; protected set; }
-        public ZipCodeSvc.ZipCodeSvcClient ZipCodesService { get; protected set; }
         #endregion
 
         #region Reporting
@@ -323,7 +322,6 @@ namespace HOLMS.Application.Client {
             RoomStatusColorsSvc = new RoomStatusColorsSvc.RoomStatusColorsSvcClient(_authenticatedChannel);
             RoomStatusSettingsSvc = new RoomStatusSettingsSvc.RoomStatusSettingsSvcClient(_authenticatedChannel);
             TaxExemptCategorySvc = new Types.TenancyConfig.RPC.TaxExemptCategorySvc.TaxExemptCategorySvcClient(_authenticatedChannel);
-            ZipCodesService = new ZipCodeSvc.ZipCodeSvcClient(_authenticatedChannel);
             #endregion
 
             #region Reporting

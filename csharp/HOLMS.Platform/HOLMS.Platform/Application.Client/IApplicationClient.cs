@@ -97,7 +97,6 @@ namespace HOLMS.Application.Client {
         ForeignPropertyConfigurationSvc.ForeignPropertyConfigurationSvcClient ForeignPropertyConfigurationSvc { get; }
         GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc { get; }
         KCRConfigSvc.KCRConfigSvcClient KCRConfigSvc { get; }
-        ZipCodeSvc.ZipCodeSvcClient ZipCodesService { get; }
         HkPhoneCodeSvc.HkPhoneCodeSvcClient HkPhoneCodeSvc { get; }
         IIFExportConfigSvc.IIFExportConfigSvcClient IIFExportConfigSvc { get; }
         PhoneCodeSvc.PhoneCodeSvcClient PhoneCodeSvc { get; }
