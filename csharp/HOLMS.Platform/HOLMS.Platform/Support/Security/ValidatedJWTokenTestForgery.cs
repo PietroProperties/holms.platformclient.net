@@ -6,7 +6,8 @@ using System.Collections.Generic;
 
 namespace HOLMS.Support.Security {
     public class ValidatedJWTokenTestForgery : ValidatedJWToken {
-        public ValidatedJWTokenTestForgery(StaffMemberIndicator user, IEnumerable<SecurityAction> securityActions, TenancyIndicator tenancy, ClientInstanceIndicator clientInstance, bool hasExpiration) {
+        public ValidatedJWTokenTestForgery(StaffMemberIndicator user, IEnumerable<SecurityAction> securityActions, 
+                TenancyIndicator tenancy, ClientInstanceIndicator clientInstance, DateTime requestTime, bool hasExpiration) {
             var sskf = new StubSecurityKeyFactory("SecretKeySecretKeySecretKeySecretKeySecretKeySecretKeySecretKeySecretKey");
             ACC = new AuthenticatedClientClaims {
                 Tenancy = tenancy,
@@ -15,7 +16,7 @@ namespace HOLMS.Support.Security {
             };
             ACC.SecurityActions.UnionWith(securityActions);
 
-            RawTokenData = new JWToken(clientInstance, user, securityActions, tenancy, DateTime.Now, hasExpiration,
+            RawTokenData = new JWToken(clientInstance, user, securityActions, tenancy, requestTime, hasExpiration,
                 sskf.SigningCredentials).SignedToken;
         }
     }

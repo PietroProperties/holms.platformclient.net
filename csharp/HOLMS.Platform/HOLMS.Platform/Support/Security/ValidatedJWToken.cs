@@ -57,8 +57,8 @@ namespace HOLMS.Support.Security {
 
             var expirationClaim = tok.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Exp);
             if (expirationClaim != null) {
-                if (tok.ValidTo < DateTime.Now) {
-                    throw new SecurityException("Presented token is expired");
+                if (tok.ValidTo < DateTime.UtcNow) {
+                    throw new SecurityTokenExpiredException("Presented token is expired");
                 }
             }
 
