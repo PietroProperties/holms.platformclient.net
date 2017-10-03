@@ -3,6 +3,6 @@ csharp/HOLMS.Platform/HOLMS.Platform/obj/
 csharp/HOLMS.Platform/HOLMS.Platform.Tests/bin/
 csharp/HOLMS.Platform/HOLMS.Platform.Tests/obj/
 *.DotSettings.user
-csharp/HOLMS.Platform/HOLMS.Platform.Tests/packages
+csharp/HOLMS.Platform/packages
 
 
