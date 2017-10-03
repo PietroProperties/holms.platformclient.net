@@ -1,16 +1,14 @@
 ﻿using HOLMS.Platform.Tests.Support;
 using HOLMS.Support.Security;
 using HOLMS.Types.IAM;
+using Microsoft.IdentityModel.Tokens;
 using NUnit.Framework;
 using System;
-using Microsoft.IdentityModel.Tokens;
-using System.Security;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
+using System.Security;
 
 namespace HOLMS.Platform.Tests {
-    public class JWTokenTests
-    {
+    internal class JWTokenTests {
         private ClientInstanceIndicator _cii;
         private SecurityKey _secKey;
         private StaffMemberIndicator _sm;
@@ -34,7 +32,7 @@ namespace HOLMS.Platform.Tests {
                 DateTime.UtcNow.AddMinutes((JWToken.AccessTokenExpirationMinutes + 1) * -1), 
                 true);
             var rawData = oldToken.RawTokenData;
-            Assert.Throws<SecurityException>(() => ValidatedJWToken.CreateWithValidation(rawData, _secKey));
+            Assert.Throws<SecurityTokenExpiredException>(() => ValidatedJWToken.CreateWithValidation(rawData, _secKey));
         }
 
         [Test]
