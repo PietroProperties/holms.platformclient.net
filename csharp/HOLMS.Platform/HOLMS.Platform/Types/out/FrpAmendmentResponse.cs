@@ -24,16 +24,17 @@ namespace HOLMS.Types.Booking.Reservations {
           string.Concat(
             "CjFib29raW5nL3Jlc2VydmF0aW9ucy9mcnBfYW1lbmRtZW50X3Jlc3BvbnNl",
             "LnByb3RvEiBob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucxouYm9v",
-            "a2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90byL6",
-            "AgoURlJQQW1lbmRtZW50UmVzcG9uc2USSwoNcmVzX2luZGljYXRvchgBIAEo",
+            "a2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90byKn",
+            "AwoURlJQQW1lbmRtZW50UmVzcG9uc2USSwoNcmVzX2luZGljYXRvchgBIAEo",
             "CzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlv",
             "bkluZGljYXRvchJWCgZyZXN1bHQYAiABKA4yRi5ob2xtcy50eXBlcy5ib29r",
             "aW5nLnJlc2VydmF0aW9ucy5GUlBBbWVuZG1lbnRSZXNwb25zZS5BbWVuZG1l",
-            "bnRSZXN1bHQivAEKD0FtZW5kbWVudFJlc3VsdBIOCgpTVUNDRVNTRlVMEAAS",
+            "bnRSZXN1bHQi6QEKD0FtZW5kbWVudFJlc3VsdBIOCgpTVUNDRVNTRlVMEAAS",
             "DwoLVU5BVkFJTEFCTEUQARIPCgtVTlBSSUNFQUJMRRACEhQKEFBPTElDWV9W",
             "SU9MQVRJT04QAxImCiJNSU5JTVVNX0xFTkdUSF9PRl9TVEFZX1JFU1RSSUNU",
             "SU9OEAUSIQodQ0xPU0VEX1RPX0FSUklWQUxfUkVTVFJJQ1RJT04QBhIWChJE",
-            "SUZGRVJFTlRfUFJPUEVSVFkQB0I5WhRib29raW5nL3Jlc2VydmF0aW9uc6oC",
+            "SUZGRVJFTlRfUFJPUEVSVFkQBxIrCidJTExFR0FMX0FSUklWQUxfQU1FTkRN",
+            "RU5UX0FGVEVSX0NIRUNLSU4QCEI5WhRib29raW5nL3Jlc2VydmF0aW9uc6oC",
             "IEhPTE1TLlR5cGVzLkJvb2tpbmcuUmVzZXJ2YXRpb25zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
@@ -206,6 +207,7 @@ namespace HOLMS.Types.Booking.Reservations {
         [pbr::OriginalName("MINIMUM_LENGTH_OF_STAY_RESTRICTION")] MinimumLengthOfStayRestriction = 5,
         [pbr::OriginalName("CLOSED_TO_ARRIVAL_RESTRICTION")] ClosedToArrivalRestriction = 6,
         [pbr::OriginalName("DIFFERENT_PROPERTY")] DifferentProperty = 7,
+        [pbr::OriginalName("ILLEGAL_ARRIVAL_AMENDMENT_AFTER_CHECKIN")] IllegalArrivalAmendmentAfterCheckin = 8,
       }
 
     }
