@@ -23,53 +23,59 @@ namespace HOLMS.Types.Money.RPC {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chttb25leS9ycGMvYWNjb3VudF9zdmMucHJvdG8SFWhvbG1zLnR5cGVzLm1v",
-            "bmV5LnJwYxoqcHJpbWl0aXZlL3NlcnZlcl9hY3Rpb25fY29uZmlybWF0aW9u",
-            "LnByb3RvGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aHm1vbmV5L2Fj",
-            "Y291bnRpbmcvYWNjb3VudC5wcm90bxoubW9uZXkvYWNjb3VudGluZy9hY2Nv",
-            "dW50X2FjdGl2aXR5X2xlZGdlci5wcm90bxoobW9uZXkvYWNjb3VudGluZy9h",
-            "Y2NvdW50X2luZGljYXRvci5wcm90bxoubW9uZXkvYWNjb3VudGluZy9sZWRn",
-            "ZXJfYWNjb3VudF9jYXRlZ29yeS5wcm90byJRChZBY2NvdW50U3ZjRW51bVJl",
-            "c3BvbnNlEjcKCGFjY291bnRzGAEgAygLMiUuaG9sbXMudHlwZXMubW9uZXku",
-            "YWNjb3VudGluZy5BY2NvdW50ImUKGkFjY291bnRTdmNBbGxCeUNhdGVnb3J5",
-            "UmVxEkcKCmNhdGVnb3JpZXMYASADKA4yMy5ob2xtcy50eXBlcy5tb25leS5h",
-            "Y2NvdW50aW5nLkxlZGdlckFjY291bnRDYXRlZ29yeSKRAQoYQWNjb3VudFN2",
-            "Y0NyZWF0ZVJlc3BvbnNlEj0KBnN0YXR1cxgBIAEoDjItLmhvbG1zLnR5cGVz",
-            "Lm1vbmV5LnJwYy5BY2NvdW50U3ZjQ3JlYXRlU3RhdHVzEjYKB2FjY291bnQY",
-            "AiABKAsyJS5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLkFjY291bnQi",
-            "kQEKGEFjY291bnRTdmNVcGRhdGVSZXNwb25zZRI9CgZzdGF0dXMYASABKA4y",
-            "LS5ob2xtcy50eXBlcy5tb25leS5ycGMuQWNjb3VudFN2Y1VwZGF0ZVN0YXR1",
-            "cxI2CgdhY2NvdW50GAIgASgLMiUuaG9sbXMudHlwZXMubW9uZXkuYWNjb3Vu",
-            "dGluZy5BY2NvdW50Ko0BChZBY2NvdW50U3ZjQ3JlYXRlU3RhdHVzEh4KGkFD",
-            "Q09VTlRfU1ZDX0NSRUFURV9TVUNDRVNTEAASJgoiQUNDT1VOVF9TVkNfQ1JF",
-            "QVRFX1VOS05PV05fRkFJTFVSRRABEisKJ0FDQ09VTlRfU1ZDX0NSRUFURV9O",
-            "T05VTklRVUVfQUNDX05VTUJFUhACKo0BChZBY2NvdW50U3ZjVXBkYXRlU3Rh",
-            "dHVzEh4KGkFDQ09VTlRfU1ZDX1VQREFURV9TVUNDRVNTEAASJgoiQUNDT1VO",
-            "VF9TVkNfVVBEQVRFX1VOS05PV05fRkFJTFVSRRABEisKJ0FDQ09VTlRfU1ZD",
-            "X1VQREFURV9OT05VTklRVUVfQUNDX05VTUJFUhACMtEFCgpBY2NvdW50U3Zj",
-            "EkwKA0FsbBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRotLmhvbG1zLnR5cGVz",
-            "Lm1vbmV5LnJwYy5BY2NvdW50U3ZjRW51bVJlc3BvbnNlEmAKB0dldEJ5SWQS",
-            "Li5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLkFjY291bnRJbmRpY2F0",
-            "b3IaJS5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLkFjY291bnQSYAoG",
-            "Q3JlYXRlEiUuaG9sbXMudHlwZXMubW9uZXkuYWNjb3VudGluZy5BY2NvdW50",
-            "Gi8uaG9sbXMudHlwZXMubW9uZXkucnBjLkFjY291bnRTdmNDcmVhdGVSZXNw",
-            "b25zZRJgCgZVcGRhdGUSJS5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5n",
-            "LkFjY291bnQaLy5ob2xtcy50eXBlcy5tb25leS5ycGMuQWNjb3VudFN2Y1Vw",
-            "ZGF0ZVJlc3BvbnNlEmAKBkRlbGV0ZRIlLmhvbG1zLnR5cGVzLm1vbmV5LmFj",
-            "Y291bnRpbmcuQWNjb3VudBovLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5TZXJ2",
-            "ZXJBY3Rpb25Db25maXJtYXRpb24ScQoNQWxsQnlDYXRlZ29yeRIxLmhvbG1z",
-            "LnR5cGVzLm1vbmV5LnJwYy5BY2NvdW50U3ZjQWxsQnlDYXRlZ29yeVJlcRot",
-            "LmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5BY2NvdW50U3ZjRW51bVJlc3BvbnNl",
-            "EnoKE0dldExlZGdlckZvckFjY291bnQSLi5ob2xtcy50eXBlcy5tb25leS5h",
-            "Y2NvdW50aW5nLkFjY291bnRJbmRpY2F0b3IaMy5ob2xtcy50eXBlcy5tb25l",
-            "eS5hY2NvdW50aW5nLkFjY291bnRBY3Rpdml0eUxlZGdlckIjWgltb25leS9y",
-            "cGOqAhVIT0xNUy5UeXBlcy5Nb25leS5SUENiBnByb3RvMw=="));
+            "bmV5LnJwYxobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3RvGh5tb25leS9h",
+            "Y2NvdW50aW5nL2FjY291bnQucHJvdG8aLm1vbmV5L2FjY291bnRpbmcvYWNj",
+            "b3VudF9hY3Rpdml0eV9sZWRnZXIucHJvdG8aKG1vbmV5L2FjY291bnRpbmcv",
+            "YWNjb3VudF9pbmRpY2F0b3IucHJvdG8aLm1vbmV5L2FjY291bnRpbmcvbGVk",
+            "Z2VyX2FjY291bnRfY2F0ZWdvcnkucHJvdG8iUQoWQWNjb3VudFN2Y0VudW1S",
+            "ZXNwb25zZRI3CghhY2NvdW50cxgBIAMoCzIlLmhvbG1zLnR5cGVzLm1vbmV5",
+            "LmFjY291bnRpbmcuQWNjb3VudCJlChpBY2NvdW50U3ZjQWxsQnlDYXRlZ29y",
+            "eVJlcRJHCgpjYXRlZ29yaWVzGAEgAygOMjMuaG9sbXMudHlwZXMubW9uZXku",
+            "YWNjb3VudGluZy5MZWRnZXJBY2NvdW50Q2F0ZWdvcnkikQEKGEFjY291bnRT",
+            "dmNDcmVhdGVSZXNwb25zZRI9CgZzdGF0dXMYASABKA4yLS5ob2xtcy50eXBl",
+            "cy5tb25leS5ycGMuQWNjb3VudFN2Y0NyZWF0ZVN0YXR1cxI2CgdhY2NvdW50",
+            "GAIgASgLMiUuaG9sbXMudHlwZXMubW9uZXkuYWNjb3VudGluZy5BY2NvdW50",
+            "IpEBChhBY2NvdW50U3ZjVXBkYXRlUmVzcG9uc2USPQoGc3RhdHVzGAEgASgO",
+            "Mi0uaG9sbXMudHlwZXMubW9uZXkucnBjLkFjY291bnRTdmNVcGRhdGVTdGF0",
+            "dXMSNgoHYWNjb3VudBgCIAEoCzIlLmhvbG1zLnR5cGVzLm1vbmV5LmFjY291",
+            "bnRpbmcuQWNjb3VudCJZChhBY2NvdW50U3ZjRGVsZXRlUmVzcG9uc2USPQoG",
+            "c3RhdHVzGAEgASgOMi0uaG9sbXMudHlwZXMubW9uZXkucnBjLkFjY291bnRT",
+            "dmNEZWxldGVTdGF0dXMqjQEKFkFjY291bnRTdmNDcmVhdGVTdGF0dXMSHgoa",
+            "QUNDT1VOVF9TVkNfQ1JFQVRFX1NVQ0NFU1MQABImCiJBQ0NPVU5UX1NWQ19D",
+            "UkVBVEVfVU5LTk9XTl9GQUlMVVJFEAESKwonQUNDT1VOVF9TVkNfQ1JFQVRF",
+            "X05PTlVOSVFVRV9BQ0NfTlVNQkVSEAIqjQEKFkFjY291bnRTdmNVcGRhdGVT",
+            "dGF0dXMSHgoaQUNDT1VOVF9TVkNfVVBEQVRFX1NVQ0NFU1MQABImCiJBQ0NP",
+            "VU5UX1NWQ19VUERBVEVfVU5LTk9XTl9GQUlMVVJFEAESKwonQUNDT1VOVF9T",
+            "VkNfVVBEQVRFX05PTlVOSVFVRV9BQ0NfTlVNQkVSEAIqkQEKFkFjY291bnRT",
+            "dmNEZWxldGVTdGF0dXMSHgoaQUNDT1VOVF9TVkNfREVMRVRFX1NVQ0NFU1MQ",
+            "ABImCiJBQ0NPVU5UX1NWQ19ERUxFVEVfVU5LTk9XTl9GQUlMVVJFEAESLwor",
+            "QUNDT1VOVF9TVkNfREVMRVRFX0lOQ0lERU5UQUxTX1NUSUxMX0xJTktFRBAC",
+            "MtEFCgpBY2NvdW50U3ZjEkwKA0FsbBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
+            "eRotLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5BY2NvdW50U3ZjRW51bVJlc3Bv",
+            "bnNlEmAKB0dldEJ5SWQSLi5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5n",
+            "LkFjY291bnRJbmRpY2F0b3IaJS5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50",
+            "aW5nLkFjY291bnQSYAoGQ3JlYXRlEiUuaG9sbXMudHlwZXMubW9uZXkuYWNj",
+            "b3VudGluZy5BY2NvdW50Gi8uaG9sbXMudHlwZXMubW9uZXkucnBjLkFjY291",
+            "bnRTdmNDcmVhdGVSZXNwb25zZRJgCgZVcGRhdGUSJS5ob2xtcy50eXBlcy5t",
+            "b25leS5hY2NvdW50aW5nLkFjY291bnQaLy5ob2xtcy50eXBlcy5tb25leS5y",
+            "cGMuQWNjb3VudFN2Y1VwZGF0ZVJlc3BvbnNlEmAKBkRlbGV0ZRIlLmhvbG1z",
+            "LnR5cGVzLm1vbmV5LmFjY291bnRpbmcuQWNjb3VudBovLmhvbG1zLnR5cGVz",
+            "Lm1vbmV5LnJwYy5BY2NvdW50U3ZjRGVsZXRlUmVzcG9uc2UScQoNQWxsQnlD",
+            "YXRlZ29yeRIxLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5BY2NvdW50U3ZjQWxs",
+            "QnlDYXRlZ29yeVJlcRotLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5BY2NvdW50",
+            "U3ZjRW51bVJlc3BvbnNlEnoKE0dldExlZGdlckZvckFjY291bnQSLi5ob2xt",
+            "cy50eXBlcy5tb25leS5hY2NvdW50aW5nLkFjY291bnRJbmRpY2F0b3IaMy5o",
+            "b2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLkFjY291bnRBY3Rpdml0eUxl",
+            "ZGdlckIjWgltb25leS9ycGOqAhVIT0xNUy5UeXBlcy5Nb25leS5SUENiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.ServerActionConfirmationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountActivityLedgerReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.LedgerAccountCategoryReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.RPC.AccountSvcCreateStatus), typeof(global::HOLMS.Types.Money.RPC.AccountSvcUpdateStatus), }, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountActivityLedgerReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.LedgerAccountCategoryReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.RPC.AccountSvcCreateStatus), typeof(global::HOLMS.Types.Money.RPC.AccountSvcUpdateStatus), typeof(global::HOLMS.Types.Money.RPC.AccountSvcDeleteStatus), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.AccountSvcEnumResponse), global::HOLMS.Types.Money.RPC.AccountSvcEnumResponse.Parser, new[]{ "Accounts" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.AccountSvcAllByCategoryReq), global::HOLMS.Types.Money.RPC.AccountSvcAllByCategoryReq.Parser, new[]{ "Categories" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.AccountSvcCreateResponse), global::HOLMS.Types.Money.RPC.AccountSvcCreateResponse.Parser, new[]{ "Status", "Account" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.AccountSvcUpdateResponse), global::HOLMS.Types.Money.RPC.AccountSvcUpdateResponse.Parser, new[]{ "Status", "Account" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.AccountSvcUpdateResponse), global::HOLMS.Types.Money.RPC.AccountSvcUpdateResponse.Parser, new[]{ "Status", "Account" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse), global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse.Parser, new[]{ "Status" }, null, null, null)
           }));
     }
     #endregion
@@ -86,6 +92,12 @@ namespace HOLMS.Types.Money.RPC {
     [pbr::OriginalName("ACCOUNT_SVC_UPDATE_SUCCESS")] AccountSvcUpdateSuccess = 0,
     [pbr::OriginalName("ACCOUNT_SVC_UPDATE_UNKNOWN_FAILURE")] AccountSvcUpdateUnknownFailure = 1,
     [pbr::OriginalName("ACCOUNT_SVC_UPDATE_NONUNIQUE_ACC_NUMBER")] AccountSvcUpdateNonuniqueAccNumber = 2,
+  }
+
+  public enum AccountSvcDeleteStatus {
+    [pbr::OriginalName("ACCOUNT_SVC_DELETE_SUCCESS")] AccountSvcDeleteSuccess = 0,
+    [pbr::OriginalName("ACCOUNT_SVC_DELETE_UNKNOWN_FAILURE")] AccountSvcDeleteUnknownFailure = 1,
+    [pbr::OriginalName("ACCOUNT_SVC_DELETE_INCIDENTALS_STILL_LINKED")] AccountSvcDeleteIncidentalsStillLinked = 2,
   }
 
   #endregion
@@ -604,6 +616,123 @@ namespace HOLMS.Types.Money.RPC {
               account_ = new global::HOLMS.Types.Money.Accounting.Account();
             }
             input.ReadMessage(account_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class AccountSvcDeleteResponse : pb::IMessage<AccountSvcDeleteResponse> {
+    private static readonly pb::MessageParser<AccountSvcDeleteResponse> _parser = new pb::MessageParser<AccountSvcDeleteResponse>(() => new AccountSvcDeleteResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AccountSvcDeleteResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.AccountSvcReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AccountSvcDeleteResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AccountSvcDeleteResponse(AccountSvcDeleteResponse other) : this() {
+      status_ = other.status_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AccountSvcDeleteResponse Clone() {
+      return new AccountSvcDeleteResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::HOLMS.Types.Money.RPC.AccountSvcDeleteStatus status_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.RPC.AccountSvcDeleteStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AccountSvcDeleteResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AccountSvcDeleteResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Status != other.Status) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Status != 0) hash ^= Status.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Status != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Status);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AccountSvcDeleteResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Status != 0) {
+        Status = other.Status;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            status_ = (global::HOLMS.Types.Money.RPC.AccountSvcDeleteStatus) input.ReadEnum();
             break;
           }
         }
