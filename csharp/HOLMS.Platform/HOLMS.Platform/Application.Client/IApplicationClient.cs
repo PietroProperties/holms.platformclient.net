@@ -22,6 +22,7 @@ namespace HOLMS.Application.Client {
         CheckInService.CheckInServiceClient CheckInSvc { get; }
         CheckoutSvc.CheckoutSvcClient CheckOutSvc { get; }
         GroupBookingSvc.GroupBookingSvcClient GroupBookingSvc { get; }
+        GroupBookingSearchSvc.GroupBookingSearchSvcClient GroupBookingSearchSvc { get; }
         GuaranteeAuthorizerService.GuaranteeAuthorizerServiceClient GuaranteeAuthorizerService { get; }
         IncidentalItemReservationSvc.IncidentalItemReservationSvcClient IncidentalResSvc { get; }
         LodgingBookingSvc.LodgingBookingSvcClient LodgingBookingSvc { get; }

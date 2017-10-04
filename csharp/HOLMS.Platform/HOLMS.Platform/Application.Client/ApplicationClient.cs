@@ -36,6 +36,7 @@ namespace HOLMS.Application.Client {
         public CheckInService.CheckInServiceClient CheckInSvc { get; protected set; }
         public CheckoutSvc.CheckoutSvcClient CheckOutSvc { get; protected set; }
         public GroupBookingSvc.GroupBookingSvcClient GroupBookingSvc { get; protected set; }
+        public GroupBookingSearchSvc.GroupBookingSearchSvcClient GroupBookingSearchSvc { get; protected set; }
         public IncidentalItemReservationSvc.IncidentalItemReservationSvcClient IncidentalResSvc { get; protected set; }
         public LodgingBookingSvc.LodgingBookingSvcClient LodgingBookingSvc { get; protected set; }
         public OTAChannelProviderSvc.OTAChannelProviderSvcClient OTAChannelProviderSvc { get; protected set; }
@@ -237,6 +238,7 @@ namespace HOLMS.Application.Client {
             CheckInSvc = new CheckInService.CheckInServiceClient(_authenticatedChannel);
             CheckOutSvc = new CheckoutSvc.CheckoutSvcClient(_authenticatedChannel);
             GroupBookingSvc = new GroupBookingSvc.GroupBookingSvcClient(_authenticatedChannel);
+            GroupBookingSearchSvc = new GroupBookingSearchSvc.GroupBookingSearchSvcClient(_authenticatedChannel);
             IncidentalResSvc = new IncidentalItemReservationSvc.IncidentalItemReservationSvcClient(_authenticatedChannel);
             LodgingBookingSvc = new LodgingBookingSvc.LodgingBookingSvcClient(_authenticatedChannel);
             OTAChannelProviderSvc = new OTAChannelProviderSvc.OTAChannelProviderSvcClient(_authenticatedChannel);
