@@ -436,12 +436,6 @@ namespace HOLMS.Platform.Application.Client {
             }
         }
 
-        public ZipCodeSvc.ZipCodeSvcClient ZipCodesService {
-            get {
-                throw new NotImplementedException();
-            }
-        }
-
         public PropertySvc.PropertySvcClient PropertySvc {
             get {
                 throw new NotImplementedException();

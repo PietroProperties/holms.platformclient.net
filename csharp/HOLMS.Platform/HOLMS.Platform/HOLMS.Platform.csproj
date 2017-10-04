@@ -644,9 +644,6 @@
     <Compile Include="Types\out\TurnAwayReasonSvcGrpc.cs" />
     <Compile Include="Types\out\UpdateRoomAssignmentResult.cs" />
     <Compile Include="Types\out\Uuid.cs" />
-    <Compile Include="Types\out\ZipCode.cs" />
-    <Compile Include="Types\out\ZipCodeSvc.cs" />
-    <Compile Include="Types\out\ZipCodeSvcGrpc.cs" />
     <Compile Include="Types\Topics\BookingContextTopics.cs" />
     <Compile Include="Types\Topics\MoneyContextTopics.cs" />
     <Compile Include="Types\Topics\OperationsContextTopics.cs" />
