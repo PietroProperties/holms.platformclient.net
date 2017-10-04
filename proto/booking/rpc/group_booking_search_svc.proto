@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.rpc;
+option csharp_namespace = "HOLMS.Types.Booking.RPC";
+option go_package = "booking/rpc";
+
+import "booking/groups/group_booking_ext.proto";
+import "booking/query_filter.proto";
+import "primitive/pb_local_date.proto";
+
+message GroupBookingSvcGetFilteredBookingsListRequest {
+	.holms.types.booking.QueryFilter filter = 1;
+}
+
+message GroupBookingSvcGetFilteredBookingsListResponse {
+	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
+}
+
+service GroupBookingSearchSvc {
+	rpc GetFilteredBookingsList (GroupBookingSvcGetFilteredBookingsListRequest)
+		returns (GroupBookingSvcGetFilteredBookingsListResponse);
+
+	rpc GetArrivalsByCalendarDate(holms.types.primitive.PbLocalDate)
+		returns (GroupBookingSvcGetFilteredBookingsListResponse);
+
+	rpc GetDeparturesByCalendarDate(holms.types.primitive.PbLocalDate)
+		returns (GroupBookingSvcGetFilteredBookingsListResponse);
+
+	rpc GetAllDuringDate(holms.types.primitive.PbLocalDate)
+		returns	(GroupBookingSvcGetFilteredBookingsListResponse);
+}
