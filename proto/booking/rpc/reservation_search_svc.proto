@@ -5,12 +5,12 @@ option csharp_namespace = "HOLMS.Types.Booking.RPC";
 option go_package = "booking/rpc";
 
 import "booking/indicators/reservation_indicator.proto";
-import "booking/reservations/reservation_query_filter.proto";
+import "booking/query_filter.proto";
 import "booking/reservations/reservation_summary.proto";
 import "primitive/pb_local_date.proto";
 
 message ReservationSearchSvcGetFilteredReservationListRequest {
-	.holms.types.booking.reservations.ReservationQueryFilter filter = 1;
+	.holms.types.booking.QueryFilter filter = 1;
 }
 
 message ReservationSearchSvcGetFilteredReservationListResponse {
