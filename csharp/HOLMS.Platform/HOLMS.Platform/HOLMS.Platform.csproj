@@ -344,6 +344,8 @@
     <Compile Include="Types\out\GroupBookingMethodSvcGrpc.cs" />
     <Compile Include="Types\out\GroupBookingRoomTypeQuantity.cs" />
     <Compile Include="Types\out\GroupBookingRoomTypeQuantityUpdated.cs" />
+    <Compile Include="Types\out\GroupBookingSearchSvc.cs" />
+    <Compile Include="Types\out\GroupBookingSearchSvcGrpc.cs" />
     <Compile Include="Types\out\GroupBookingStatus.cs" />
     <Compile Include="Types\out\GroupBookingSvc.cs" />
     <Compile Include="Types\out\GroupBookingSvcGrpc.cs" />
@@ -510,6 +512,7 @@
     <Compile Include="Types\out\PropertyOpsdateRange.cs" />
     <Compile Include="Types\out\PropertySvc.cs" />
     <Compile Include="Types\out\PropertySvcGrpc.cs" />
+    <Compile Include="Types\out\QueryFilter.cs" />
     <Compile Include="Types\out\RateSchedule.cs" />
     <Compile Include="Types\out\RateScheduleIndicator.cs" />
     <Compile Include="Types\out\RateScheduleSvc.cs" />
@@ -550,7 +553,6 @@
     <Compile Include="Types\out\ReservationNoteSvc.cs" />
     <Compile Include="Types\out\ReservationNoteSvcGrpc.cs" />
     <Compile Include="Types\out\ReservationPriceEstimate.cs" />
-    <Compile Include="Types\out\ReservationQueryFilter.cs" />
     <Compile Include="Types\out\ReservationRawGuaranteeStatus.cs" />
     <Compile Include="Types\out\ReservationRoomAssignmentResult.cs" />
     <Compile Include="Types\out\ReservationRoomAssignmentSchedule.cs" />
