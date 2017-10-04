@@ -519,5 +519,11 @@ namespace HOLMS.Platform.Application.Client {
                 throw new NotImplementedException();
             }
         }
+
+        public GroupBookingSearchSvc.GroupBookingSearchSvcClient GroupBookingSearchSvc {
+            get {
+                throw new NotImplementedException();
+            }
+        }
     }
 }
