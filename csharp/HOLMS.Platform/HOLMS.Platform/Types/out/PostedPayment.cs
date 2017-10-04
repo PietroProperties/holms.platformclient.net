@@ -25,16 +25,17 @@ namespace HOLMS.Types.Money.Folio {
             "CiBtb25leS9mb2xpby9wb3N0ZWRfcGF5bWVudC5wcm90bxIXaG9sbXMudHlw",
             "ZXMubW9uZXkuZm9saW8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJv",
             "dG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8aHm1vbmV5L2Zv",
-            "bGlvL3BheW1lbnRfdHlwZS5wcm90byLEAQoNUG9zdGVkUGF5bWVudBItCglw",
+            "bGlvL3BheW1lbnRfdHlwZS5wcm90byLcAQoNUG9zdGVkUGF5bWVudBItCglw",
             "b3N0ZWRfYXQYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjUK",
             "BmFtb3VudBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFy",
             "eUFtb3VudBIRCgluYXJyYXRpb24YAyABKAkSOgoMcGF5bWVudF90eXBlGAQg",
-            "ASgOMiQuaG9sbXMudHlwZXMubW9uZXkuZm9saW8uUGF5bWVudFR5cGVCJ1oL",
-            "bW9uZXkvZm9saW+qAhdIT0xNUy5UeXBlcy5Nb25leS5Gb2xpb2IGcHJvdG8z"));
+            "ASgOMiQuaG9sbXMudHlwZXMubW9uZXkuZm9saW8uUGF5bWVudFR5cGUSFgoO",
+            "aXNfY2FuY2VsbGFibGUYBSABKAhCJ1oLbW9uZXkvZm9saW+qAhdIT0xNUy5U",
+            "eXBlcy5Nb25leS5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Folio.PaymentTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedPayment), global::HOLMS.Types.Money.Folio.PostedPayment.Parser, new[]{ "PostedAt", "Amount", "Narration", "PaymentType" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Folio.PostedPayment), global::HOLMS.Types.Money.Folio.PostedPayment.Parser, new[]{ "PostedAt", "Amount", "Narration", "PaymentType", "IsCancellable" }, null, null, null)
           }));
     }
     #endregion
@@ -69,6 +70,7 @@ namespace HOLMS.Types.Money.Folio {
       Amount = other.amount_ != null ? other.Amount.Clone() : null;
       narration_ = other.narration_;
       paymentType_ = other.paymentType_;
+      isCancellable_ = other.isCancellable_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -120,6 +122,17 @@ namespace HOLMS.Types.Money.Folio {
       }
     }
 
+    /// <summary>Field number for the "is_cancellable" field.</summary>
+    public const int IsCancellableFieldNumber = 5;
+    private bool isCancellable_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsCancellable {
+      get { return isCancellable_; }
+      set {
+        isCancellable_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PostedPayment);
@@ -137,6 +150,7 @@ namespace HOLMS.Types.Money.Folio {
       if (!object.Equals(Amount, other.Amount)) return false;
       if (Narration != other.Narration) return false;
       if (PaymentType != other.PaymentType) return false;
+      if (IsCancellable != other.IsCancellable) return false;
       return true;
     }
 
@@ -147,6 +161,7 @@ namespace HOLMS.Types.Money.Folio {
       if (amount_ != null) hash ^= Amount.GetHashCode();
       if (Narration.Length != 0) hash ^= Narration.GetHashCode();
       if (PaymentType != 0) hash ^= PaymentType.GetHashCode();
+      if (IsCancellable != false) hash ^= IsCancellable.GetHashCode();
       return hash;
     }
 
@@ -173,6 +188,10 @@ namespace HOLMS.Types.Money.Folio {
         output.WriteRawTag(32);
         output.WriteEnum((int) PaymentType);
       }
+      if (IsCancellable != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(IsCancellable);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -189,6 +208,9 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (PaymentType != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PaymentType);
+      }
+      if (IsCancellable != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -215,6 +237,9 @@ namespace HOLMS.Types.Money.Folio {
       }
       if (other.PaymentType != 0) {
         PaymentType = other.PaymentType;
+      }
+      if (other.IsCancellable != false) {
+        IsCancellable = other.IsCancellable;
       }
     }
 
@@ -246,6 +271,10 @@ namespace HOLMS.Types.Money.Folio {
           }
           case 32: {
             paymentType_ = (global::HOLMS.Types.Money.Folio.PaymentType) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            IsCancellable = input.ReadBool();
             break;
           }
         }
