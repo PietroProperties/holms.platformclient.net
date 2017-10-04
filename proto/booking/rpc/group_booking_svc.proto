@@ -9,6 +9,7 @@ import "booking/groups/group_booking.proto";
 import "booking/groups/group_booking_ext.proto";
 import "booking/indicators/group_booking_indicator.proto";
 import "booking/groups/group_booking_room_type_quantity.proto";
+import "booking/reservations/reservation_query_filter.proto";
 import "crm/groups/group_indicator.proto";
 import "supply/price_update_request.proto";
 import "booking/reservations/reservation_summary.proto";
@@ -39,6 +40,14 @@ message GroupBookingSvcGetByIdsResponse {
 	repeated .holms.types.booking.groups.GroupBooking booking = 1;
 }
 
+message GroupBookingSvcGetFilteredBookingsListRequest {
+	.holms.types.booking.reservations.ReservationQueryFilter filter = 1;
+}
+
+message GroupBookingSvcGetFilteredBookingsListResponse {
+	repeated .holms.types.booking.groups.GroupBooking bookings = 1;
+}
+
 service GroupBookingSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (GroupBookingSvcAllBookings);
@@ -66,4 +75,7 @@ service GroupBookingSvc {
 
 	rpc GetByIds(GroupBookingSvcGetByIdsRequest)
 		returns(GroupBookingSvcGetByIdsResponse);
+		
+	rpc GetFilteredBookingsList (GroupBookingSvcGetFilteredBookingsListRequest)
+		returns (GroupBookingSvcGetFilteredBookingsListResponse);
 }

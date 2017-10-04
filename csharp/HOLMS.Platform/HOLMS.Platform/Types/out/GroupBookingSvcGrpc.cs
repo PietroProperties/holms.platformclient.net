@@ -23,6 +23,8 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse> __Marshaller_GroupBookingSvcGetReservationsWithTagResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsRequest> __Marshaller_GroupBookingSvcGetByIdsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse> __Marshaller_GroupBookingSvcGetByIdsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest> __Marshaller_GroupBookingSvcGetFilteredBookingsListRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse> __Marshaller_GroupBookingSvcGetFilteredBookingsListResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings> __Method_All = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings>(
         MethodType.Unary,
@@ -87,6 +89,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_GroupBookingSvcGetByIdsRequest,
         __Marshaller_GroupBookingSvcGetByIdsResponse);
 
+    static readonly Method<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest, global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse> __Method_GetFilteredBookingsList = new Method<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest, global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetFilteredBookingsList",
+        __Marshaller_GroupBookingSvcGetFilteredBookingsListRequest,
+        __Marshaller_GroupBookingSvcGetFilteredBookingsListResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -137,6 +146,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse> GetByIds(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse> GetFilteredBookingsList(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -310,6 +324,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetByIds, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse GetFilteredBookingsList(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetFilteredBookingsList(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse GetFilteredBookingsList(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetFilteredBookingsList, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse> GetFilteredBookingsListAsync(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetFilteredBookingsListAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse> GetFilteredBookingsListAsync(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetFilteredBookingsList, null, options, request);
+      }
       protected override GroupBookingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new GroupBookingSvcClient(configuration);
@@ -328,7 +358,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetReservationSummariesWithGBTag, serviceImpl.GetReservationSummariesWithGBTag)
           .AddMethod(__Method_GetById, serviceImpl.GetById)
           .AddMethod(__Method_GetByIdFull, serviceImpl.GetByIdFull)
-          .AddMethod(__Method_GetByIds, serviceImpl.GetByIds).Build();
+          .AddMethod(__Method_GetByIds, serviceImpl.GetByIds)
+          .AddMethod(__Method_GetFilteredBookingsList, serviceImpl.GetFilteredBookingsList).Build();
     }
 
   }
