@@ -45,7 +45,7 @@ message GroupBookingSvcGetFilteredBookingsListRequest {
 }
 
 message GroupBookingSvcGetFilteredBookingsListResponse {
-	repeated .holms.types.booking.groups.GroupBooking bookings = 1;
+	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
 }
 
 service GroupBookingSvc {
