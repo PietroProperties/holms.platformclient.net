@@ -13,5 +13,6 @@ message PostedPayment {
 	.holms.types.primitive.MonetaryAmount amount = 2;
 	string narration = 3;
 	PaymentType payment_type = 4;
+	bool is_cancellable = 5;
 }
 
