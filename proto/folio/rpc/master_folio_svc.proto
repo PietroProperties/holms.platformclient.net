@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-package holms.types.money.rpc;
-option csharp_namespace = "HOLMS.Types.Money.RPC";
+package holms.types.folio.rpc;
+option csharp_namespace = "HOLMS.Types.Folio.RPC";
+option go_package = "folio/rpc";
 
 import "booking/indicators/reservation_indicator.proto";
-import "money/folio/posted_charge_credit.proto";
+import "folio/posted_charge_credit.proto";
 
 message MasterFolioServiceMasterFolioRequest {
 	.holms.types.booking.indicators.ReservationIndicator client_folio = 1;
@@ -75,7 +76,7 @@ service MasterFolioSvc {
 	rpc RemoveMasterFolio(MasterFolioSvcRemoveMasterFolioRequest)
 		returns(MasterFolioServiceRemoveMasterFolioResponse);
 
-	rpc FolioSwap(holms.types.money.folio.PostedChargeCredit)
+	rpc FolioSwap(HOLMS.Types.Folio.PostedChargeCredit)
 		returns(MasterFolioSvcFolioSwapResponse);
 
 	rpc GetMasterFolioAssignments(MasterFolioSvcGetMasterFolioAssignmentsRequest) 

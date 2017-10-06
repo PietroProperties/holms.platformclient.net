@@ -1,12 +1,12 @@
 ﻿syntax = "proto3";
 
-package holms.types.money.folio;
-option csharp_namespace = "HOLMS.Types.Money.Folio";
-option go_package = "money/folio";
+package HOLMS.Types.Folio;
+option csharp_namespace = "HOLMS.Types.Folio";
+option go_package = "folio";
 
 import "primitive/monetary_amount.proto";
 import "primitive/pb_local_date.proto";
-import "money/folio/charge_credit_type.proto";
+import "folio/charge_credit_type.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
 
 message RequestedChargeCreditPosting {

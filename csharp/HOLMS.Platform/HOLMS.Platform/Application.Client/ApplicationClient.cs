@@ -14,6 +14,7 @@ using HOLMS.Types.TenancyConfig.RPC;
 using HOLMS.Types.Reporting.RPC;
 using System.Threading;
 using Microsoft.Extensions.Logging;
+using HOLMS.Types.Folio.RPC;
 
 namespace HOLMS.Application.Client {
     public class ApplicationClient : IDisposable, IApplicationClient {
@@ -74,6 +75,9 @@ namespace HOLMS.Application.Client {
         public CardProcessingSvc.CardProcessingSvcClient CardProcessingSvc { get; protected set; }
         public CardTerminalSvc.CardTerminalSvcClient CardTerminalSvc { get; protected set; }
         public TaxFeeSvc.TaxFeeSvcClient TaxFeeSvc { get; protected set; }
+        #endregion
+
+        #region
         public GroupBookingFolioSvc.GroupBookingFolioSvcClient GroupBookingFolioSvc { get; protected set; }
         public ReservationFolioSvc.ReservationFolioSvcClient ReservationFolioSvc { get; protected set; }
         public FolioAuthCleanupSvc.FolioAuthCleanupSvcClient FolioAuthCleanupSvc { get; protected set; }
@@ -275,10 +279,13 @@ namespace HOLMS.Application.Client {
             CardProcessingSvc = new CardProcessingSvc.CardProcessingSvcClient(_authenticatedChannel);
             CardTerminalSvc = new CardTerminalSvc.CardTerminalSvcClient(_authenticatedChannel);
             TaxFeeSvc = new TaxFeeSvc.TaxFeeSvcClient(_authenticatedChannel);
+            #endregion
+
+            #region Folio
             GroupBookingFolioSvc = new GroupBookingFolioSvc.GroupBookingFolioSvcClient(_authenticatedChannel);
             ReservationFolioSvc = new ReservationFolioSvc.ReservationFolioSvcClient(_authenticatedChannel);
             FolioAuthCleanupSvc = new FolioAuthCleanupSvc.FolioAuthCleanupSvcClient(_authenticatedChannel);
-            MasterFolioSvc = new Types.Money.RPC.MasterFolioSvc.MasterFolioSvcClient(_authenticatedChannel);
+            MasterFolioSvc = new MasterFolioSvc.MasterFolioSvcClient(_authenticatedChannel);
             #endregion
 
             #region Operations

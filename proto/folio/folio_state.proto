@@ -1,20 +1,20 @@
 ﻿syntax = "proto3";
 
-package holms.types.money.folio;
-option csharp_namespace = "HOLMS.Types.Money.Folio";
+package HOLMS.Types.Folio;
+option csharp_namespace = "HOLMS.Types.Folio";
 
 import "primitive/monetary_amount.proto";
 import "money/cards/transactions/payment_card_sale.proto";
-import "money/folio/posted_charge_credit.proto";
-import "money/folio/posted_payment.proto";
-import "money/folio/posted_refund.proto";
+import "folio/posted_charge_credit.proto";
+import "folio/posted_payment.proto";
+import "folio/posted_refund.proto";
 import "booking/indicators/reservation_indicator.proto";
 
 message FolioState {
-	repeated holms.types.money.folio.PostedChargeCredit charge_credits = 1;
+	repeated HOLMS.Types.Folio.PostedChargeCredit charge_credits = 1;
 	repeated holms.types.money.cards.transactions.PaymentCardSale card_sales = 2;
-	repeated holms.types.money.folio.PostedPayment payments = 3;
-	repeated holms.types.money.folio.PostedRefund refunds = 4;
+	repeated HOLMS.Types.Folio.PostedPayment payments = 3;
+	repeated HOLMS.Types.Folio.PostedRefund refunds = 4;
 
 	.holms.types.primitive.MonetaryAmount gross_payments = 5;
 	.holms.types.primitive.MonetaryAmount gross_refunds = 6;

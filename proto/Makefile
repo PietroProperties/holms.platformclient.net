@@ -10,6 +10,7 @@ PROTOC_CMD="protoc -I${PROTO_PATH} -I${GOPATH}/src -I${GO_GOOGLE_APIS_PATH} -Igo
 $PROTOC_CMD ./booking/rpc/*.proto
 $PROTOC_CMD ./crm/rpc/*.proto
 $PROTOC_CMD ./iam/rpc/*.proto
+$PROTOC_CMD ./folio/rpc/*.proto
 $PROTOC_CMD ./money/rpc/*.proto
 $PROTOC_CMD ./operations/rpc/*.proto
 $PROTOC_CMD ./supply/rpc/*.proto
@@ -34,7 +35,8 @@ $PROTOC_CMD iam/*.proto
 
 $PROTOC_CMD money/accounting/*.proto
 $PROTOC_CMD money/cards/*.proto
-$PROTOC_CMD money/folio/*.proto
+
+$PROTOC_CMD folio/*.proto
 
 $PROTOC_CMD operations/*.proto
 $PROTOC_CMD operations/attractions/*.proto

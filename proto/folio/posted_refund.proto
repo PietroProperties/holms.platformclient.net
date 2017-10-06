@@ -1,8 +1,8 @@
 ﻿syntax = "proto3";
 
-package holms.types.money.folio;
-option csharp_namespace = "HOLMS.Types.Money.Folio";
-option go_package = "money/folio";
+package HOLMS.Types.Folio;
+option csharp_namespace = "HOLMS.Types.Folio";
+option go_package = "folio";
 
 import "google/protobuf/timestamp.proto";
 import "primitive/monetary_amount.proto";

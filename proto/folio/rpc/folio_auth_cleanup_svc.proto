@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-package holms.types.money.rpc;
-option csharp_namespace = "HOLMS.Types.Money.RPC";
+package holms.types.folio.rpc;
+option csharp_namespace = "HOLMS.Types.Folio.RPC";
+option go_package = "folio/rpc";
 
 import "google/protobuf/empty.proto";
 
