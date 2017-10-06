@@ -10,6 +10,7 @@ using HOLMS.Types.Supply.RPC;
 using HOLMS.Types.TenancyConfig.RPC;
 using HOLMS.Types.IAM;
 using Microsoft.Extensions.Logging;
+using HOLMS.Types.Folio.RPC;
 
 namespace HOLMS.Application.Client {
     public interface IApplicationClient {
@@ -59,9 +60,12 @@ namespace HOLMS.Application.Client {
         CardMerchantSvc.CardMerchantSvcClient CardMerchantSvc { get; }
         CardProcessingSvc.CardProcessingSvcClient CardProcessingSvc { get; }
         CardTerminalSvc.CardTerminalSvcClient CardTerminalSvc { get; }
+        TaxFeeSvc.TaxFeeSvcClient TaxFeeSvc { get; }
+        #endregion
+
+        #region Folio
         GroupBookingFolioSvc.GroupBookingFolioSvcClient GroupBookingFolioSvc { get; }
         ReservationFolioSvc.ReservationFolioSvcClient ReservationFolioSvc { get; }
-        TaxFeeSvc.TaxFeeSvcClient TaxFeeSvc { get; }
         FolioAuthCleanupSvc.FolioAuthCleanupSvcClient FolioAuthCleanupSvc { get; }
         MasterFolioSvc.MasterFolioSvcClient MasterFolioSvc { get; }
         #endregion

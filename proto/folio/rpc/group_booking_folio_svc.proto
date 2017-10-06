@@ -1,8 +1,8 @@
 ﻿syntax = "proto3";
 
-package holms.types.money.rpc;
-option csharp_namespace = "HOLMS.Types.Money.RPC";
-option go_package = "money/rpc";
+package holms.types.folio.rpc;
+option csharp_namespace = "HOLMS.Types.Folio.RPC";
+option go_package = "folio/rpc";
 
 import "booking/indicators/group_booking_indicator.proto";
 import "google/protobuf/empty.proto";
@@ -11,7 +11,7 @@ import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
 import "money/cards/guest_payment_card_indicator.proto";
-import "money/folio/folio_state.proto";
+import "folio/folio_state.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
 
@@ -32,7 +32,7 @@ enum GroupBookingFolioSvcGetFolioStateResult {
 
 message GroupBookingFolioSvcGetFolioStateResponse {
 	GroupBookingFolioSvcGetFolioStateResult result = 1;
-	.holms.types.money.folio.FolioState folio_state = 2;
+	.HOLMS.Types.Folio.FolioState folio_state = 2;
 }
 
 enum GroupBookingFolioSvcPostCashPaymentResult {

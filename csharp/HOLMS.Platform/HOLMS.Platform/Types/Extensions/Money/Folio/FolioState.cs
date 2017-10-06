@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using HOLMS.Platform.Support.Currency;
 
-namespace HOLMS.Types.Money.Folio {
+namespace HOLMS.Types.Folio {
     public partial class FolioState {
         public DollarCents PostedChargeCredits => PostedChargeCreditsPrecise.ToDollarCents;
         public DollarCents PostedPayments => PostedPaymentsPrecise.ToDollarCents;

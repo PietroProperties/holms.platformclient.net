@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package HOLMS.Types.Folio;
+option csharp_namespace = "HOLMS.Types.Folio";
+option go_package = "folio";
+
+enum PaymentType {
+	PAYMENT_TYPE_CASH = 0;
+	PAYMENT_TYPE_CHECK = 1;
+	PAYMENT_TYPE_CARD = 2;
+}
+

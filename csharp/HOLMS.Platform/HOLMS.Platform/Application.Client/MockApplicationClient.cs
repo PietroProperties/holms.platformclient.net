@@ -13,6 +13,7 @@ using HOLMS.Types.Supply.RPC;
 using HOLMS.Types.TenancyConfig.RPC;
 using Microsoft.Extensions.Logging;
 using Moq;
+using HOLMS.Types.Folio.RPC;
 
 namespace HOLMS.Platform.Application.Client {
     public class MockApplicationClient : IApplicationClient {

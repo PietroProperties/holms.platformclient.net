@@ -14,6 +14,7 @@ for %%P in (..\proto\booking\rpc\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% -
 for %%P in (..\proto\crm\rpc\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% --grpc_out=%OUT_DIR% %%P --plugin=protoc-gen-grpc=%GRPCC% || exit /b 255
 for %%P in (..\proto\iam\rpc\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% --grpc_out=%OUT_DIR% %%P --plugin=protoc-gen-grpc=%GRPCC% || exit /b 255
 for %%P in (..\proto\money\rpc\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% --grpc_out=%OUT_DIR% %%P --plugin=protoc-gen-grpc=%GRPCC% || exit /b 255
+for %%P in (..\proto\folio\rpc\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% --grpc_out=%OUT_DIR% %%P --plugin=protoc-gen-grpc=%GRPCC% || exit /b 255
 for %%P in (..\proto\operations\rpc\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% --grpc_out=%OUT_DIR% %%P --plugin=protoc-gen-grpc=%GRPCC% || exit /b 255
 for %%P in (..\proto\supply\rpc\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% --grpc_out=%OUT_DIR% %%P --plugin=protoc-gen-grpc=%GRPCC% || exit /b 255
 for %%P in (..\proto\tenancy_config\rpc\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% --grpc_out=%OUT_DIR% %%P --plugin=protoc-gen-grpc=%GRPCC% || exit /b 255
@@ -40,7 +41,8 @@ for %%P in (..\proto\iam\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_
 for %%P in (..\proto\money\accounting\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\money\cards\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\money\cards\transactions\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
-for %%P in (..\proto\money\folio\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
+
+for %%P in (..\proto\folio\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 
 for %%P in (..\proto\operations\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\operations\attractions\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
