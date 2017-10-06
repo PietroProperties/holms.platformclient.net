@@ -18,7 +18,7 @@ namespace HOLMS.Types.Money.RPC {
     static readonly Marshaller<global::HOLMS.Types.Money.Accounting.Account> __Marshaller_Account = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Accounting.Account.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.AccountSvcCreateResponse> __Marshaller_AccountSvcCreateResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AccountSvcCreateResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.AccountSvcUpdateResponse> __Marshaller_AccountSvcUpdateResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AccountSvcUpdateResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Primitive.ServerActionConfirmation> __Marshaller_ServerActionConfirmation = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.ServerActionConfirmation.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse> __Marshaller_AccountSvcDeleteResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.AccountSvcAllByCategoryReq> __Marshaller_AccountSvcAllByCategoryReq = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AccountSvcAllByCategoryReq.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Accounting.AccountActivityLedger> __Marshaller_AccountActivityLedger = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Accounting.AccountActivityLedger.Parser.ParseFrom);
 
@@ -50,12 +50,12 @@ namespace HOLMS.Types.Money.RPC {
         __Marshaller_Account,
         __Marshaller_AccountSvcUpdateResponse);
 
-    static readonly Method<global::HOLMS.Types.Money.Accounting.Account, global::HOLMS.Types.Primitive.ServerActionConfirmation> __Method_Delete = new Method<global::HOLMS.Types.Money.Accounting.Account, global::HOLMS.Types.Primitive.ServerActionConfirmation>(
+    static readonly Method<global::HOLMS.Types.Money.Accounting.Account, global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse> __Method_Delete = new Method<global::HOLMS.Types.Money.Accounting.Account, global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse>(
         MethodType.Unary,
         __ServiceName,
         "Delete",
         __Marshaller_Account,
-        __Marshaller_ServerActionConfirmation);
+        __Marshaller_AccountSvcDeleteResponse);
 
     static readonly Method<global::HOLMS.Types.Money.RPC.AccountSvcAllByCategoryReq, global::HOLMS.Types.Money.RPC.AccountSvcEnumResponse> __Method_AllByCategory = new Method<global::HOLMS.Types.Money.RPC.AccountSvcAllByCategoryReq, global::HOLMS.Types.Money.RPC.AccountSvcEnumResponse>(
         MethodType.Unary,
@@ -100,7 +100,7 @@ namespace HOLMS.Types.Money.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Primitive.ServerActionConfirmation> Delete(global::HOLMS.Types.Money.Accounting.Account request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse> Delete(global::HOLMS.Types.Money.Accounting.Account request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -204,19 +204,19 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }
-      public virtual global::HOLMS.Types.Primitive.ServerActionConfirmation Delete(global::HOLMS.Types.Money.Accounting.Account request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse Delete(global::HOLMS.Types.Money.Accounting.Account request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Delete(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Primitive.ServerActionConfirmation Delete(global::HOLMS.Types.Money.Accounting.Account request, CallOptions options)
+      public virtual global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse Delete(global::HOLMS.Types.Money.Accounting.Account request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Delete, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Primitive.ServerActionConfirmation> DeleteAsync(global::HOLMS.Types.Money.Accounting.Account request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse> DeleteAsync(global::HOLMS.Types.Money.Accounting.Account request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return DeleteAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Primitive.ServerActionConfirmation> DeleteAsync(global::HOLMS.Types.Money.Accounting.Account request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse> DeleteAsync(global::HOLMS.Types.Money.Accounting.Account request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Delete, null, options, request);
       }

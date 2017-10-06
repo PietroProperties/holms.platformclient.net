@@ -4,7 +4,6 @@ package holms.types.money.rpc;
 option csharp_namespace = "HOLMS.Types.Money.RPC";
 option go_package = "money/rpc";
 
-import "primitive/server_action_confirmation.proto";
 import "google/protobuf/empty.proto";
 import "money/accounting/account.proto";
 import "money/accounting/account_activity_ledger.proto";
@@ -31,6 +30,12 @@ enum AccountSvcUpdateStatus {
 	ACCOUNT_SVC_UPDATE_NONUNIQUE_ACC_NUMBER = 2;
 }
 
+enum AccountSvcDeleteStatus {
+	ACCOUNT_SVC_DELETE_SUCCESS = 0;
+	ACCOUNT_SVC_DELETE_UNKNOWN_FAILURE = 1;
+	ACCOUNT_SVC_DELETE_INCIDENTALS_STILL_LINKED = 2;
+}
+
 message AccountSvcCreateResponse {
 	AccountSvcCreateStatus status = 1;
 	.holms.types.money.accounting.Account account = 2;
@@ -39,6 +44,10 @@ message AccountSvcCreateResponse {
 message AccountSvcUpdateResponse {
 	AccountSvcUpdateStatus status = 1;
 	.holms.types.money.accounting.Account account = 2;
+}
+
+message AccountSvcDeleteResponse {
+	AccountSvcDeleteStatus status = 1;
 }
 
 service AccountSvc {
@@ -55,7 +64,7 @@ service AccountSvc {
 		returns (AccountSvcUpdateResponse);
 
 	rpc Delete(.holms.types.money.accounting.Account) 
-		returns (.holms.types.primitive.ServerActionConfirmation);
+		returns (AccountSvcDeleteResponse);
 	
 	rpc AllByCategory(AccountSvcAllByCategoryReq) 
 		returns (AccountSvcEnumResponse);
