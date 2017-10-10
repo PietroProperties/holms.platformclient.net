@@ -167,6 +167,17 @@ message ReservationFolioSvcAuthorizationModificationRequest {
 	holms.types.money.cards.CardSalePurpose purpose = 3;
 }
 
+enum ReservationFolioSvcCancelPaymentResponseResult {
+	RESERVATION_FOLIO_SVC_CANCEL_PAYMENT_SUCCESS = 0;
+	RESERVATION_FOLIO_SVC_CANCEL_PAYMENT_UNKNOWN_FAILURE = 1;
+	RESERVATION_FOLIO_SVC_CANCEL_PAYMENT_SALE_NOT_FOUND = 2;
+	RESERVATION_FOLIO_SVC_CANCEL_PAYMENT_ALREADY_SETTLED = 3;
+}
+
+message ReservationFolioSvcCancelPaymentResponse {
+	ReservationFolioSvcCancelPaymentResponseResult result = 1;
+}
+
 service ReservationFolioSvc {
 	// Get info about the folio
 	rpc GetFolioState(.holms.types.booking.indicators.ReservationIndicator)
@@ -204,5 +215,7 @@ service ReservationFolioSvc {
 		returns (google.protobuf.Empty);
 	rpc PostMiscChargeCorrection (ReservationFolioSvcPostMiscChargeCorrectionRequest)
 		returns (google.protobuf.Empty);
+	rpc CancelPayment(holms.types.money.cards.transactions.PaymentCardSaleIndicator)
+		returns (ReservationFolioSvcCancelPaymentResponse);
 
 }
