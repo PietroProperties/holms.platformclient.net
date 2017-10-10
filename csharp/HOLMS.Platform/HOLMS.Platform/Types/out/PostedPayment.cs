@@ -23,18 +23,21 @@ namespace HOLMS.Types.Folio {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chpmb2xpby9wb3N0ZWRfcGF5bWVudC5wcm90bxIRSE9MTVMuVHlwZXMuRm9s",
-            "aW8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aH3ByaW1pdGl2",
-            "ZS9tb25ldGFyeV9hbW91bnQucHJvdG8aGGZvbGlvL3BheW1lbnRfdHlwZS5w",
-            "cm90byLWAQoNUG9zdGVkUGF5bWVudBItCglwb3N0ZWRfYXQYASABKAsyGi5n",
-            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wEjUKBmFtb3VudBgCIAEoCzIlLmhv",
-            "bG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIRCgluYXJyYXRp",
-            "b24YAyABKAkSNAoMcGF5bWVudF90eXBlGAQgASgOMh4uSE9MTVMuVHlwZXMu",
-            "Rm9saW8uUGF5bWVudFR5cGUSFgoOaXNfY2FuY2VsbGFibGUYBSABKAhCG1oF",
-            "Zm9saW+qAhFIT0xNUy5UeXBlcy5Gb2xpb2IGcHJvdG8z"));
+            "aW8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aOm1vbmV5L2Nh",
+            "cmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfc2FsZV9pbmRpY2F0b3Iu",
+            "cHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8aGGZvbGlv",
+            "L3BheW1lbnRfdHlwZS5wcm90byKkAgoNUG9zdGVkUGF5bWVudBItCglwb3N0",
+            "ZWRfYXQYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjUKBmFt",
+            "b3VudBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFt",
+            "b3VudBIRCgluYXJyYXRpb24YAyABKAkSNAoMcGF5bWVudF90eXBlGAQgASgO",
+            "Mh4uSE9MTVMuVHlwZXMuRm9saW8uUGF5bWVudFR5cGUSFgoOaXNfY2FuY2Vs",
+            "bGFibGUYBSABKAgSTAoEc2FsZRgGIAEoCzI+LmhvbG1zLnR5cGVzLm1vbmV5",
+            "LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNhbGVJbmRpY2F0b3JC",
+            "G1oFZm9saW+qAhFIT0xNUy5UeXBlcy5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.PaymentTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.PaymentTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.PostedPayment), global::HOLMS.Types.Folio.PostedPayment.Parser, new[]{ "PostedAt", "Amount", "Narration", "PaymentType", "IsCancellable" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.PostedPayment), global::HOLMS.Types.Folio.PostedPayment.Parser, new[]{ "PostedAt", "Amount", "Narration", "PaymentType", "IsCancellable", "Sale" }, null, null, null)
           }));
     }
     #endregion
@@ -70,6 +73,7 @@ namespace HOLMS.Types.Folio {
       narration_ = other.narration_;
       paymentType_ = other.paymentType_;
       isCancellable_ = other.isCancellable_;
+      Sale = other.sale_ != null ? other.Sale.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -132,6 +136,17 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "sale" field.</summary>
+    public const int SaleFieldNumber = 6;
+    private global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator sale_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator Sale {
+      get { return sale_; }
+      set {
+        sale_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PostedPayment);
@@ -150,6 +165,7 @@ namespace HOLMS.Types.Folio {
       if (Narration != other.Narration) return false;
       if (PaymentType != other.PaymentType) return false;
       if (IsCancellable != other.IsCancellable) return false;
+      if (!object.Equals(Sale, other.Sale)) return false;
       return true;
     }
 
@@ -161,6 +177,7 @@ namespace HOLMS.Types.Folio {
       if (Narration.Length != 0) hash ^= Narration.GetHashCode();
       if (PaymentType != 0) hash ^= PaymentType.GetHashCode();
       if (IsCancellable != false) hash ^= IsCancellable.GetHashCode();
+      if (sale_ != null) hash ^= Sale.GetHashCode();
       return hash;
     }
 
@@ -191,6 +208,10 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(40);
         output.WriteBool(IsCancellable);
       }
+      if (sale_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(Sale);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -210,6 +231,9 @@ namespace HOLMS.Types.Folio {
       }
       if (IsCancellable != false) {
         size += 1 + 1;
+      }
+      if (sale_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Sale);
       }
       return size;
     }
@@ -239,6 +263,12 @@ namespace HOLMS.Types.Folio {
       }
       if (other.IsCancellable != false) {
         IsCancellable = other.IsCancellable;
+      }
+      if (other.sale_ != null) {
+        if (sale_ == null) {
+          sale_ = new global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator();
+        }
+        Sale.MergeFrom(other.Sale);
       }
     }
 
@@ -274,6 +304,13 @@ namespace HOLMS.Types.Folio {
           }
           case 40: {
             IsCancellable = input.ReadBool();
+            break;
+          }
+          case 50: {
+            if (sale_ == null) {
+              sale_ = new global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator();
+            }
+            input.ReadMessage(sale_);
             break;
           }
         }

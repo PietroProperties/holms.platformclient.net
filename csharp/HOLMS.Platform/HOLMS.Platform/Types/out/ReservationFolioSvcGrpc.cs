@@ -33,6 +33,8 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostIncidentalChargeCorrectionRequest> __Marshaller_ReservationFolioSvcPostIncidentalChargeCorrectionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostIncidentalChargeCorrectionRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest> __Marshaller_ReservationFolioSvcPostMiscChargeCorrectionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator> __Marshaller_PaymentCardSaleIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> __Marshaller_ReservationFolioSvcCancelPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponse> __Method_GetFolioState = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponse>(
         MethodType.Unary,
@@ -125,6 +127,13 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_ReservationFolioSvcPostMiscChargeCorrectionRequest,
         __Marshaller_Empty);
 
+    static readonly Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> __Method_CancelPayment = new Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "CancelPayment",
+        __Marshaller_PaymentCardSaleIndicator,
+        __Marshaller_ReservationFolioSvcCancelPaymentResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -211,6 +220,11 @@ namespace HOLMS.Types.Folio.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> PostMiscChargeCorrection(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> CancelPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -512,6 +526,22 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostMiscChargeCorrection, null, options, request);
       }
+      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse CancelPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return CancelPayment(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse CancelPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CancelPayment, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> CancelPaymentAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return CancelPaymentAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> CancelPaymentAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CancelPayment, null, options, request);
+      }
       protected override ReservationFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new ReservationFolioSvcClient(configuration);
@@ -534,7 +564,8 @@ namespace HOLMS.Types.Folio.RPC {
           .AddMethod(__Method_PostCashPayment, serviceImpl.PostCashPayment)
           .AddMethod(__Method_PostLodgingChargeCorrection, serviceImpl.PostLodgingChargeCorrection)
           .AddMethod(__Method_PostIncidentalChargeCorrection, serviceImpl.PostIncidentalChargeCorrection)
-          .AddMethod(__Method_PostMiscChargeCorrection, serviceImpl.PostMiscChargeCorrection).Build();
+          .AddMethod(__Method_PostMiscChargeCorrection, serviceImpl.PostMiscChargeCorrection)
+          .AddMethod(__Method_CancelPayment, serviceImpl.CancelPayment).Build();
     }
 
   }
