@@ -23,20 +23,143 @@ namespace HOLMS.Types.Reporting.RPC {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CixyZXBvcnRpbmcvcnBjL29wZXJhdGlvbnNfcmVwb3J0aW5nX3N2Yy5wcm90",
-            "bxIZaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYxobZ29vZ2xlL3Byb3RvYnVm",
-            "L2VtcHR5LnByb3RvGixyZXBvcnRpbmcvb3V0cHV0cy9odG1sX3JlcG9ydF9y",
-            "ZXNwb25zZS5wcm90bzJ+ChZPcGVyYXRpb25zUmVwb3J0aW5nU3ZjEmQKF0dl",
-            "dE9wRXhSZXBvcnRGb3JMYXN0RGF5EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5",
-            "GjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJl",
-            "c3BvbnNlQitaDXJlcG9ydGluZy9ycGOqAhlIT0xNUy5UeXBlcy5SZXBvcnRp",
-            "bmcuUlBDYgZwcm90bzM="));
+            "bxIZaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYxoscmVwb3J0aW5nL291dHB1",
+            "dHMvaHRtbF9yZXBvcnRfcmVzcG9uc2UucHJvdG8iMwoiT3BlcmF0aW9uc1Jl",
+            "cG9ydGluZ1N2Y0VtYWlsUmVxdWVzdBINCgVlbWFpbBgBIAEoCTKsAQoWT3Bl",
+            "cmF0aW9uc1JlcG9ydGluZ1N2YxKRAQodU2VuZE9wRXhSZXBvcnRFbWFpbEZv",
+            "ckxhc3REYXkSPS5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLk9wZXJhdGlv",
+            "bnNSZXBvcnRpbmdTdmNFbWFpbFJlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBv",
+            "cnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2VCK1oNcmVwb3J0aW5n",
+            "L3JwY6oCGUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null));
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest), global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest.Parser, new[]{ "Email" }, null, null, null)
+          }));
     }
     #endregion
 
   }
+  #region Messages
+  public sealed partial class OperationsReportingSvcEmailRequest : pb::IMessage<OperationsReportingSvcEmailRequest> {
+    private static readonly pb::MessageParser<OperationsReportingSvcEmailRequest> _parser = new pb::MessageParser<OperationsReportingSvcEmailRequest>(() => new OperationsReportingSvcEmailRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<OperationsReportingSvcEmailRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OperationsReportingSvcEmailRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OperationsReportingSvcEmailRequest(OperationsReportingSvcEmailRequest other) : this() {
+      email_ = other.email_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OperationsReportingSvcEmailRequest Clone() {
+      return new OperationsReportingSvcEmailRequest(this);
+    }
+
+    /// <summary>Field number for the "email" field.</summary>
+    public const int EmailFieldNumber = 1;
+    private string email_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Email {
+      get { return email_; }
+      set {
+        email_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as OperationsReportingSvcEmailRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(OperationsReportingSvcEmailRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Email != other.Email) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Email.Length != 0) hash ^= Email.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Email.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Email);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Email.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Email);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(OperationsReportingSvcEmailRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Email.Length != 0) {
+        Email = other.Email;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            Email = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  #endregion
+
 }
 
 #endregion Designer generated code

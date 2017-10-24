@@ -12,14 +12,14 @@ namespace HOLMS.Types.Reporting.RPC {
   {
     static readonly string __ServiceName = "holms.types.reporting.rpc.OperationsReportingSvc";
 
-    static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest> __Marshaller_OperationsReportingSvcEmailRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Marshaller_HtmlReportResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse.Parser.ParseFrom);
 
-    static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetOpExReportForLastDay = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+    static readonly Method<global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_SendOpExReportEmailForLastDay = new Method<global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         MethodType.Unary,
         __ServiceName,
-        "GetOpExReportForLastDay",
-        __Marshaller_Empty,
+        "SendOpExReportEmailForLastDay",
+        __Marshaller_OperationsReportingSvcEmailRequest,
         __Marshaller_HtmlReportResponse);
 
     /// <summary>Service descriptor</summary>
@@ -31,7 +31,7 @@ namespace HOLMS.Types.Reporting.RPC {
     /// <summary>Base class for server-side implementations of OperationsReportingSvc</summary>
     public abstract class OperationsReportingSvcBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetOpExReportForLastDay(global::Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> SendOpExReportEmailForLastDay(global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -61,21 +61,21 @@ namespace HOLMS.Types.Reporting.RPC {
       {
       }
 
-      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetOpExReportForLastDay(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse SendOpExReportEmailForLastDay(global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetOpExReportForLastDay(request, new CallOptions(headers, deadline, cancellationToken));
+        return SendOpExReportEmailForLastDay(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetOpExReportForLastDay(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse SendOpExReportEmailForLastDay(global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest request, CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetOpExReportForLastDay, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_SendOpExReportEmailForLastDay, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetOpExReportForLastDayAsync(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> SendOpExReportEmailForLastDayAsync(global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetOpExReportForLastDayAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SendOpExReportEmailForLastDayAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetOpExReportForLastDayAsync(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> SendOpExReportEmailForLastDayAsync(global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest request, CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetOpExReportForLastDay, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_SendOpExReportEmailForLastDay, null, options, request);
       }
       protected override OperationsReportingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -87,7 +87,7 @@ namespace HOLMS.Types.Reporting.RPC {
     public static ServerServiceDefinition BindService(OperationsReportingSvcBase serviceImpl)
     {
       return ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetOpExReportForLastDay, serviceImpl.GetOpExReportForLastDay).Build();
+          .AddMethod(__Method_SendOpExReportEmailForLastDay, serviceImpl.SendOpExReportEmailForLastDay).Build();
     }
 
   }
