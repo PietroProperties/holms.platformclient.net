@@ -3,7 +3,11 @@ syntax = "proto3";
 package holms.types.opex_logging;
 option csharp_namespace = "HOLMS.Types.OpExLogging";
 
+import "google/protobuf/timestamp.proto";
+
 message OperationalException {
 	string exception_message = 1;
 	string exception_id = 2;
+	google.protobuf.Timestamp timestamp = 3;
+	
 }

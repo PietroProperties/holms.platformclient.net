@@ -23,13 +23,15 @@ namespace HOLMS.Types.OpExLogging {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CihvcGV4X2xvZ2dpbmcvb3BlcmF0aW9uYWxfZXhjZXB0aW9uLnByb3RvEhho",
-            "b2xtcy50eXBlcy5vcGV4X2xvZ2dpbmciRwoUT3BlcmF0aW9uYWxFeGNlcHRp",
-            "b24SGQoRZXhjZXB0aW9uX21lc3NhZ2UYASABKAkSFAoMZXhjZXB0aW9uX2lk",
-            "GAIgASgJQhqqAhdIT0xNUy5UeXBlcy5PcEV4TG9nZ2luZ2IGcHJvdG8z"));
+            "b2xtcy50eXBlcy5vcGV4X2xvZ2dpbmcaH2dvb2dsZS9wcm90b2J1Zi90aW1l",
+            "c3RhbXAucHJvdG8idgoUT3BlcmF0aW9uYWxFeGNlcHRpb24SGQoRZXhjZXB0",
+            "aW9uX21lc3NhZ2UYASABKAkSFAoMZXhjZXB0aW9uX2lkGAIgASgJEi0KCXRp",
+            "bWVzdGFtcBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCGqoC",
+            "F0hPTE1TLlR5cGVzLk9wRXhMb2dnaW5nYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.OpExLogging.OperationalException), global::HOLMS.Types.OpExLogging.OperationalException.Parser, new[]{ "ExceptionMessage", "ExceptionId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.OpExLogging.OperationalException), global::HOLMS.Types.OpExLogging.OperationalException.Parser, new[]{ "ExceptionMessage", "ExceptionId", "Timestamp" }, null, null, null)
           }));
     }
     #endregion
@@ -62,6 +64,7 @@ namespace HOLMS.Types.OpExLogging {
     public OperationalException(OperationalException other) : this() {
       exceptionMessage_ = other.exceptionMessage_;
       exceptionId_ = other.exceptionId_;
+      Timestamp = other.timestamp_ != null ? other.Timestamp.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -91,6 +94,17 @@ namespace HOLMS.Types.OpExLogging {
       }
     }
 
+    /// <summary>Field number for the "timestamp" field.</summary>
+    public const int TimestampFieldNumber = 3;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp timestamp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
+      get { return timestamp_; }
+      set {
+        timestamp_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as OperationalException);
@@ -106,6 +120,7 @@ namespace HOLMS.Types.OpExLogging {
       }
       if (ExceptionMessage != other.ExceptionMessage) return false;
       if (ExceptionId != other.ExceptionId) return false;
+      if (!object.Equals(Timestamp, other.Timestamp)) return false;
       return true;
     }
 
@@ -114,6 +129,7 @@ namespace HOLMS.Types.OpExLogging {
       int hash = 1;
       if (ExceptionMessage.Length != 0) hash ^= ExceptionMessage.GetHashCode();
       if (ExceptionId.Length != 0) hash ^= ExceptionId.GetHashCode();
+      if (timestamp_ != null) hash ^= Timestamp.GetHashCode();
       return hash;
     }
 
@@ -132,6 +148,10 @@ namespace HOLMS.Types.OpExLogging {
         output.WriteRawTag(18);
         output.WriteString(ExceptionId);
       }
+      if (timestamp_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Timestamp);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -142,6 +162,9 @@ namespace HOLMS.Types.OpExLogging {
       }
       if (ExceptionId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ExceptionId);
+      }
+      if (timestamp_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Timestamp);
       }
       return size;
     }
@@ -156,6 +179,12 @@ namespace HOLMS.Types.OpExLogging {
       }
       if (other.ExceptionId.Length != 0) {
         ExceptionId = other.ExceptionId;
+      }
+      if (other.timestamp_ != null) {
+        if (timestamp_ == null) {
+          timestamp_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Timestamp.MergeFrom(other.Timestamp);
       }
     }
 
@@ -173,6 +202,13 @@ namespace HOLMS.Types.OpExLogging {
           }
           case 18: {
             ExceptionId = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (timestamp_ == null) {
+              timestamp_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(timestamp_);
             break;
           }
         }
