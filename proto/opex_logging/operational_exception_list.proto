@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package holms.types.opex_logging;
+option csharp_namespace = "HOLMS.Types.OpExLogging";
+
+import "opex_logging/operational_exception.proto";
+
+message OperationalExceptionList {
+	repeated OperationalException exceptions = 1;
+}

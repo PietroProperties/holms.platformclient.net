@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package holms.types.reporting.rpc;
+option csharp_namespace = "HOLMS.Types.Reporting.RPC";
+option go_package = "reporting/rpc";
+
+import "google/protobuf/empty.proto";
+import "reporting/outputs/html_report_response.proto";
+
+service OperationsReportingSvc {
+	rpc GetOpExReportForLastDay(google.protobuf.Empty)
+		returns (holms.types.reporting.outputs.HtmlReportResponse);
+}
+
