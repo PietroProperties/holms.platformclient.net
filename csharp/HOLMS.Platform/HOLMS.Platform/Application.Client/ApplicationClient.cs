@@ -134,6 +134,7 @@ namespace HOLMS.Application.Client {
         public CardCaptureReportingSvc.CardCaptureReportingSvcClient CardCaptureReportingSvc { get; protected set; }
         public FrontDeskReportingSvc.FrontDeskReportingSvcClient FrontDeskReportingSvc { get; protected set; }
         public ManagementReportingSvc.ManagementReportingSvcClient ManagementReportingSvc { get; protected set; }
+        public OperationsReportingSvc.OperationsReportingSvcClient OperationsReportingSvc { get; protected set; }
 
         #endregion
 
@@ -338,6 +339,7 @@ namespace HOLMS.Application.Client {
             CardCaptureReportingSvc = new CardCaptureReportingSvc.CardCaptureReportingSvcClient(_authenticatedChannel);
             FrontDeskReportingSvc = new FrontDeskReportingSvc.FrontDeskReportingSvcClient(_authenticatedChannel);
             ManagementReportingSvc = new ManagementReportingSvc.ManagementReportingSvcClient(_authenticatedChannel);
+            OperationsReportingSvc = new OperationsReportingSvc.OperationsReportingSvcClient(_authenticatedChannel);
 
             #endregion
         }

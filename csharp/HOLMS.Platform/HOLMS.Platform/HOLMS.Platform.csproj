@@ -450,7 +450,11 @@
     <Compile Include="Types\out\OpenLodgingReservationSvc.cs" />
     <Compile Include="Types\out\OpenLodgingReservationSvcGrpc.cs" />
     <Compile Include="Types\out\OpenPriceEstimateRequest.cs" />
+    <Compile Include="Types\out\OperationalException.cs" />
+    <Compile Include="Types\out\OperationalExceptionList.cs" />
     <Compile Include="Types\out\OperationalExceptionNotification.cs" />
+    <Compile Include="Types\out\OperationsReportingSvc.cs" />
+    <Compile Include="Types\out\OperationsReportingSvcGrpc.cs" />
     <Compile Include="Types\out\OtaChannelProvider.cs" />
     <Compile Include="Types\out\OtaChannelProviderIndicator.cs" />
     <Compile Include="Types\out\OtaChannelProviderSvc.cs" />
