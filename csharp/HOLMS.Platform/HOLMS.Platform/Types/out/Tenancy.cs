@@ -31,7 +31,7 @@ namespace HOLMS.Types.IAM {
             "cHJvdG8aLnRlbmFuY3lfY29uZmlnL3Jlc2VydmF0aW9uX3N0YXR1c19jb2xv",
             "cnMucHJvdG8aLHRlbmFuY3lfY29uZmlnL3Jvb21fY2FsbF9iaWxsaW5nX3Jh",
             "dGVzLnByb3RvGid0ZW5hbmN5X2NvbmZpZy9yb29tX3N0YXR1c19jb2xvcnMu",
-            "cHJvdG8ivQYKB1RlbmFuY3kSNAoJZW50aXR5X2lkGAEgASgLMiEuaG9sbXMu",
+            "cHJvdG8i2gYKB1RlbmFuY3kSNAoJZW50aXR5X2lkGAEgASgLMiEuaG9sbXMu",
             "dHlwZXMuaWFtLlRlbmFuY3lJbmRpY2F0b3ISFAoMdGVuYW5jeV9uYW1lGAIg",
             "ASgJEh0KFWR1c3RfY2xlYW5fYWZ0ZXJfZGF5cxgDIAEoBRIuCiZtYW5kYXRv",
             "cnlfY2xlYW5pbmdfYWZ0ZXJfaW5faG91c2VfZGF5cxgEIAEoBRI0CixtYW5k",
@@ -49,12 +49,12 @@ namespace HOLMS.Types.IAM {
             "F3Jvb21fY2FsbF9iaWxsaW5nX3JhdGVzGAwgASgLMjAuaG9sbXMudHlwZXMu",
             "dGVuYW5jeV9jb25maWcuUm9vbUNhbGxCaWxsaW5nUmF0ZXMSUAoWY2hhbm5l",
             "bF9tYW5hZ2VyX2NvbmZpZxgNIAEoCzIwLmhvbG1zLnR5cGVzLnRlbmFuY3lf",
-            "Y29uZmlnLkNoYW5uZWxNYW5hZ2VyQ29uZmlnQhdaA2lhbaoCD0hPTE1TLlR5",
-            "cGVzLklBTWIGcHJvdG8z"));
+            "Y29uZmlnLkNoYW5uZWxNYW5hZ2VyQ29uZmlnEhsKE2RlZmF1bHRfYWRtaW5f",
+            "ZW1haWwYDiABKAlCF1oDaWFtqgIPSE9MTVMuVHlwZXMuSUFNYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ReservationDefaultsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PhoneCodeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.HkPhoneCodesReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ChannelManagerConfigReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ReservationStatusColorsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RoomCallBillingRatesReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RoomStatusColorsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Tenancy), global::HOLMS.Types.IAM.Tenancy.Parser, new[]{ "EntityId", "TenancyName", "DustCleanAfterDays", "MandatoryCleaningAfterInHouseDays", "MandatorySheetCleaningAfterInHouseDays", "Properties", "PhoneCodes", "ReservationDefaults", "ReservationStatusColors", "RoomStatusColors", "HKPhoneCodes", "RoomCallBillingRates", "ChannelManagerConfig" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Tenancy), global::HOLMS.Types.IAM.Tenancy.Parser, new[]{ "EntityId", "TenancyName", "DustCleanAfterDays", "MandatoryCleaningAfterInHouseDays", "MandatorySheetCleaningAfterInHouseDays", "Properties", "PhoneCodes", "ReservationDefaults", "ReservationStatusColors", "RoomStatusColors", "HKPhoneCodes", "RoomCallBillingRates", "ChannelManagerConfig", "DefaultAdminEmail" }, null, null, null)
           }));
     }
     #endregion
@@ -98,6 +98,7 @@ namespace HOLMS.Types.IAM {
       HKPhoneCodes = other.hKPhoneCodes_ != null ? other.HKPhoneCodes.Clone() : null;
       RoomCallBillingRates = other.roomCallBillingRates_ != null ? other.RoomCallBillingRates.Clone() : null;
       ChannelManagerConfig = other.channelManagerConfig_ != null ? other.ChannelManagerConfig.Clone() : null;
+      defaultAdminEmail_ = other.defaultAdminEmail_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -246,6 +247,17 @@ namespace HOLMS.Types.IAM {
       }
     }
 
+    /// <summary>Field number for the "default_admin_email" field.</summary>
+    public const int DefaultAdminEmailFieldNumber = 14;
+    private string defaultAdminEmail_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string DefaultAdminEmail {
+      get { return defaultAdminEmail_; }
+      set {
+        defaultAdminEmail_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Tenancy);
@@ -272,6 +284,7 @@ namespace HOLMS.Types.IAM {
       if (!object.Equals(HKPhoneCodes, other.HKPhoneCodes)) return false;
       if (!object.Equals(RoomCallBillingRates, other.RoomCallBillingRates)) return false;
       if (!object.Equals(ChannelManagerConfig, other.ChannelManagerConfig)) return false;
+      if (DefaultAdminEmail != other.DefaultAdminEmail) return false;
       return true;
     }
 
@@ -291,6 +304,7 @@ namespace HOLMS.Types.IAM {
       if (hKPhoneCodes_ != null) hash ^= HKPhoneCodes.GetHashCode();
       if (roomCallBillingRates_ != null) hash ^= RoomCallBillingRates.GetHashCode();
       if (channelManagerConfig_ != null) hash ^= ChannelManagerConfig.GetHashCode();
+      if (DefaultAdminEmail.Length != 0) hash ^= DefaultAdminEmail.GetHashCode();
       return hash;
     }
 
@@ -347,6 +361,10 @@ namespace HOLMS.Types.IAM {
         output.WriteRawTag(106);
         output.WriteMessage(ChannelManagerConfig);
       }
+      if (DefaultAdminEmail.Length != 0) {
+        output.WriteRawTag(114);
+        output.WriteString(DefaultAdminEmail);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -386,6 +404,9 @@ namespace HOLMS.Types.IAM {
       }
       if (channelManagerConfig_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ChannelManagerConfig);
+      }
+      if (DefaultAdminEmail.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DefaultAdminEmail);
       }
       return size;
     }
@@ -450,6 +471,9 @@ namespace HOLMS.Types.IAM {
           channelManagerConfig_ = new global::HOLMS.Types.TenancyConfig.ChannelManagerConfig();
         }
         ChannelManagerConfig.MergeFrom(other.ChannelManagerConfig);
+      }
+      if (other.DefaultAdminEmail.Length != 0) {
+        DefaultAdminEmail = other.DefaultAdminEmail;
       }
     }
 
@@ -532,6 +556,10 @@ namespace HOLMS.Types.IAM {
               channelManagerConfig_ = new global::HOLMS.Types.TenancyConfig.ChannelManagerConfig();
             }
             input.ReadMessage(channelManagerConfig_);
+            break;
+          }
+          case 114: {
+            DefaultAdminEmail = input.ReadString();
             break;
           }
         }

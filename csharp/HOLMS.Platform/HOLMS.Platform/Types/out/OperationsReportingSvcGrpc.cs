@@ -12,15 +12,14 @@ namespace HOLMS.Types.Reporting.RPC {
   {
     static readonly string __ServiceName = "holms.types.reporting.rpc.OperationsReportingSvc";
 
-    static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest> __Marshaller_OperationsReportingSvcEmailRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Marshaller_HtmlReportResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
 
-    static readonly Method<global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_SendOpExReportEmailForLastDay = new Method<global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+    static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SendOpExReportEmailForLastDay = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty>(
         MethodType.Unary,
         __ServiceName,
         "SendOpExReportEmailForLastDay",
-        __Marshaller_OperationsReportingSvcEmailRequest,
-        __Marshaller_HtmlReportResponse);
+        __Marshaller_Empty,
+        __Marshaller_Empty);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -31,7 +30,7 @@ namespace HOLMS.Types.Reporting.RPC {
     /// <summary>Base class for server-side implementations of OperationsReportingSvc</summary>
     public abstract class OperationsReportingSvcBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> SendOpExReportEmailForLastDay(global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SendOpExReportEmailForLastDay(global::Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -61,19 +60,19 @@ namespace HOLMS.Types.Reporting.RPC {
       {
       }
 
-      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse SendOpExReportEmailForLastDay(global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendOpExReportEmailForLastDay(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SendOpExReportEmailForLastDay(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse SendOpExReportEmailForLastDay(global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest request, CallOptions options)
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendOpExReportEmailForLastDay(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SendOpExReportEmailForLastDay, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> SendOpExReportEmailForLastDayAsync(global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendOpExReportEmailForLastDayAsync(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SendOpExReportEmailForLastDayAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> SendOpExReportEmailForLastDayAsync(global::HOLMS.Types.Reporting.RPC.OperationsReportingSvcEmailRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendOpExReportEmailForLastDayAsync(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SendOpExReportEmailForLastDay, null, options, request);
       }

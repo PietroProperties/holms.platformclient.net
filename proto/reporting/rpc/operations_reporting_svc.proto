@@ -4,14 +4,10 @@ package holms.types.reporting.rpc;
 option csharp_namespace = "HOLMS.Types.Reporting.RPC";
 option go_package = "reporting/rpc";
 
-import "reporting/outputs/html_report_response.proto";
-
-message OperationsReportingSvcEmailRequest {
-	string email = 1;
-}
+import "google/protobuf/empty.proto";
 
 service OperationsReportingSvc {
-	rpc SendOpExReportEmailForLastDay(OperationsReportingSvcEmailRequest)
-		returns (holms.types.reporting.outputs.HtmlReportResponse);
+	rpc SendOpExReportEmailForLastDay(google.protobuf.Empty)
+		returns (google.protobuf.Empty);
 }
 
