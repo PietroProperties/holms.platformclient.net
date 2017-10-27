@@ -29,4 +29,6 @@ message Tenancy {
 	holms.types.tenancy_config.RoomCallBillingRates room_call_billing_rates = 12;
 	holms.types.tenancy_config.ChannelManagerConfig channel_manager_config = 13;
 	string default_admin_email = 14;
+	string postmark_email_sender_address = 15;
+	string postmark_api_key = 16;
 }

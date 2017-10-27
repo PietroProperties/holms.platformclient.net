@@ -31,7 +31,7 @@ namespace HOLMS.Types.IAM {
             "cHJvdG8aLnRlbmFuY3lfY29uZmlnL3Jlc2VydmF0aW9uX3N0YXR1c19jb2xv",
             "cnMucHJvdG8aLHRlbmFuY3lfY29uZmlnL3Jvb21fY2FsbF9iaWxsaW5nX3Jh",
             "dGVzLnByb3RvGid0ZW5hbmN5X2NvbmZpZy9yb29tX3N0YXR1c19jb2xvcnMu",
-            "cHJvdG8i2gYKB1RlbmFuY3kSNAoJZW50aXR5X2lkGAEgASgLMiEuaG9sbXMu",
+            "cHJvdG8imwcKB1RlbmFuY3kSNAoJZW50aXR5X2lkGAEgASgLMiEuaG9sbXMu",
             "dHlwZXMuaWFtLlRlbmFuY3lJbmRpY2F0b3ISFAoMdGVuYW5jeV9uYW1lGAIg",
             "ASgJEh0KFWR1c3RfY2xlYW5fYWZ0ZXJfZGF5cxgDIAEoBRIuCiZtYW5kYXRv",
             "cnlfY2xlYW5pbmdfYWZ0ZXJfaW5faG91c2VfZGF5cxgEIAEoBRI0CixtYW5k",
@@ -50,11 +50,13 @@ namespace HOLMS.Types.IAM {
             "dGVuYW5jeV9jb25maWcuUm9vbUNhbGxCaWxsaW5nUmF0ZXMSUAoWY2hhbm5l",
             "bF9tYW5hZ2VyX2NvbmZpZxgNIAEoCzIwLmhvbG1zLnR5cGVzLnRlbmFuY3lf",
             "Y29uZmlnLkNoYW5uZWxNYW5hZ2VyQ29uZmlnEhsKE2RlZmF1bHRfYWRtaW5f",
-            "ZW1haWwYDiABKAlCF1oDaWFtqgIPSE9MTVMuVHlwZXMuSUFNYgZwcm90bzM="));
+            "ZW1haWwYDiABKAkSJQodcG9zdG1hcmtfZW1haWxfc2VuZGVyX2FkZHJlc3MY",
+            "DyABKAkSGAoQcG9zdG1hcmtfYXBpX2tleRgQIAEoCUIXWgNpYW2qAg9IT0xN",
+            "Uy5UeXBlcy5JQU1iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.TenancyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ReservationDefaultsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PhoneCodeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.HkPhoneCodesReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ChannelManagerConfigReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ReservationStatusColorsReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RoomCallBillingRatesReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RoomStatusColorsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Tenancy), global::HOLMS.Types.IAM.Tenancy.Parser, new[]{ "EntityId", "TenancyName", "DustCleanAfterDays", "MandatoryCleaningAfterInHouseDays", "MandatorySheetCleaningAfterInHouseDays", "Properties", "PhoneCodes", "ReservationDefaults", "ReservationStatusColors", "RoomStatusColors", "HKPhoneCodes", "RoomCallBillingRates", "ChannelManagerConfig", "DefaultAdminEmail" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Tenancy), global::HOLMS.Types.IAM.Tenancy.Parser, new[]{ "EntityId", "TenancyName", "DustCleanAfterDays", "MandatoryCleaningAfterInHouseDays", "MandatorySheetCleaningAfterInHouseDays", "Properties", "PhoneCodes", "ReservationDefaults", "ReservationStatusColors", "RoomStatusColors", "HKPhoneCodes", "RoomCallBillingRates", "ChannelManagerConfig", "DefaultAdminEmail", "PostmarkEmailSenderAddress", "PostmarkApiKey" }, null, null, null)
           }));
     }
     #endregion
@@ -99,6 +101,8 @@ namespace HOLMS.Types.IAM {
       RoomCallBillingRates = other.roomCallBillingRates_ != null ? other.RoomCallBillingRates.Clone() : null;
       ChannelManagerConfig = other.channelManagerConfig_ != null ? other.ChannelManagerConfig.Clone() : null;
       defaultAdminEmail_ = other.defaultAdminEmail_;
+      postmarkEmailSenderAddress_ = other.postmarkEmailSenderAddress_;
+      postmarkApiKey_ = other.postmarkApiKey_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -258,6 +262,28 @@ namespace HOLMS.Types.IAM {
       }
     }
 
+    /// <summary>Field number for the "postmark_email_sender_address" field.</summary>
+    public const int PostmarkEmailSenderAddressFieldNumber = 15;
+    private string postmarkEmailSenderAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PostmarkEmailSenderAddress {
+      get { return postmarkEmailSenderAddress_; }
+      set {
+        postmarkEmailSenderAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "postmark_api_key" field.</summary>
+    public const int PostmarkApiKeyFieldNumber = 16;
+    private string postmarkApiKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PostmarkApiKey {
+      get { return postmarkApiKey_; }
+      set {
+        postmarkApiKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Tenancy);
@@ -285,6 +311,8 @@ namespace HOLMS.Types.IAM {
       if (!object.Equals(RoomCallBillingRates, other.RoomCallBillingRates)) return false;
       if (!object.Equals(ChannelManagerConfig, other.ChannelManagerConfig)) return false;
       if (DefaultAdminEmail != other.DefaultAdminEmail) return false;
+      if (PostmarkEmailSenderAddress != other.PostmarkEmailSenderAddress) return false;
+      if (PostmarkApiKey != other.PostmarkApiKey) return false;
       return true;
     }
 
@@ -305,6 +333,8 @@ namespace HOLMS.Types.IAM {
       if (roomCallBillingRates_ != null) hash ^= RoomCallBillingRates.GetHashCode();
       if (channelManagerConfig_ != null) hash ^= ChannelManagerConfig.GetHashCode();
       if (DefaultAdminEmail.Length != 0) hash ^= DefaultAdminEmail.GetHashCode();
+      if (PostmarkEmailSenderAddress.Length != 0) hash ^= PostmarkEmailSenderAddress.GetHashCode();
+      if (PostmarkApiKey.Length != 0) hash ^= PostmarkApiKey.GetHashCode();
       return hash;
     }
 
@@ -365,6 +395,14 @@ namespace HOLMS.Types.IAM {
         output.WriteRawTag(114);
         output.WriteString(DefaultAdminEmail);
       }
+      if (PostmarkEmailSenderAddress.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(PostmarkEmailSenderAddress);
+      }
+      if (PostmarkApiKey.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(PostmarkApiKey);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -407,6 +445,12 @@ namespace HOLMS.Types.IAM {
       }
       if (DefaultAdminEmail.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(DefaultAdminEmail);
+      }
+      if (PostmarkEmailSenderAddress.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PostmarkEmailSenderAddress);
+      }
+      if (PostmarkApiKey.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PostmarkApiKey);
       }
       return size;
     }
@@ -474,6 +518,12 @@ namespace HOLMS.Types.IAM {
       }
       if (other.DefaultAdminEmail.Length != 0) {
         DefaultAdminEmail = other.DefaultAdminEmail;
+      }
+      if (other.PostmarkEmailSenderAddress.Length != 0) {
+        PostmarkEmailSenderAddress = other.PostmarkEmailSenderAddress;
+      }
+      if (other.PostmarkApiKey.Length != 0) {
+        PostmarkApiKey = other.PostmarkApiKey;
       }
     }
 
@@ -560,6 +610,14 @@ namespace HOLMS.Types.IAM {
           }
           case 114: {
             DefaultAdminEmail = input.ReadString();
+            break;
+          }
+          case 122: {
+            PostmarkEmailSenderAddress = input.ReadString();
+            break;
+          }
+          case 130: {
+            PostmarkApiKey = input.ReadString();
             break;
           }
         }
