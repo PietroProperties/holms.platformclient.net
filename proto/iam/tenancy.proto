@@ -26,6 +26,7 @@ message Tenancy {
 	holms.types.tenancy_config.ReservationStatusColors reservation_status_colors = 9;
 	holms.types.tenancy_config.RoomStatusColors room_status_colors = 10;
 	holms.types.tenancy_config.HKPhoneCodes h_k_phone_codes = 11;
-	holms.types.tenancy_config.RoomCallBillingRates room_call_billing_rates = 12;;
+	holms.types.tenancy_config.RoomCallBillingRates room_call_billing_rates = 12;
 	holms.types.tenancy_config.ChannelManagerConfig channel_manager_config = 13;
+	string default_admin_email = 14;
 }

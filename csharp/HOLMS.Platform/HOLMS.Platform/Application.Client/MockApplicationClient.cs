@@ -37,7 +37,7 @@ namespace HOLMS.Platform.Application.Client {
 
         public SessionContext SC {
             get {
-                return new SessionContext() {
+                return new SessionContext {
                     AccessToken = string.Empty,
                     RefreshToken = string.Empty,
                     TenancyName = string.Empty,
