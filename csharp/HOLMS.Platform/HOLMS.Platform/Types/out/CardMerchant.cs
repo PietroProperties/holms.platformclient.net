@@ -25,7 +25,7 @@ namespace HOLMS.Types.Money.Cards {
             "Ch9tb25leS9jYXJkcy9jYXJkX21lcmNoYW50LnByb3RvEhdob2xtcy50eXBl",
             "cy5tb25leS5jYXJkcxopbW9uZXkvY2FyZHMvY2FyZF9tZXJjaGFudF9pbmRp",
             "Y2F0b3IucHJvdG8aKm1vbmV5L2NhcmRzL2NhcmRfcHJvY2Vzc29yX2luZGlj",
-            "YXRvci5wcm90byKQAwoMQ2FyZE1lcmNoYW50EkEKCWVudGl0eV9pZBgBIAEo",
+            "YXRvci5wcm90byK6AwoMQ2FyZE1lcmNoYW50EkEKCWVudGl0eV9pZBgBIAEo",
             "CzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRNZXJjaGFudEluZGlj",
             "YXRvchIMCgRuYW1lGAIgASgJEkcKDmNhcmRfcHJvY2Vzc29yGAMgASgOMi8u",
             "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZFByb2Nlc3NvckluZGljYXRv",
@@ -34,12 +34,13 @@ namespace HOLMS.Types.Money.Cards {
             "YW1lGAggASgJEhAKCHBhc3N3b3JkGAkgASgJEhUKDXNlcnZpY2VfdV9yX2kY",
             "CiABKAkSHQoVZGVidWdfbG9nZ2luZ19lbmFibGVkGAsgASgIEhwKFHBvcnRp",
             "Y29fZGV2ZWxvcGVyX2lkGAwgASgJEh4KFnBvcnRpY29fdmVyc2lvbl9udW1i",
-            "ZXIYDSABKAlCJ1oLbW9uZXkvY2FyZHOqAhdIT0xNUy5UeXBlcy5Nb25leS5D",
-            "YXJkc2IGcHJvdG8z"));
+            "ZXIYDSABKAkSKAogc3VwcHJlc3NfYXV0aG9yaXphdGlvbnNfaW5fZm9saW8Y",
+            "DiABKAhCJ1oLbW9uZXkvY2FyZHOqAhdIT0xNUy5UeXBlcy5Nb25leS5DYXJk",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardProcessorIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.CardMerchant), global::HOLMS.Types.Money.Cards.CardMerchant.Parser, new[]{ "EntityId", "Name", "CardProcessor", "CardAgreement", "LicenseId", "SiteId", "DeviceId", "Username", "Password", "ServiceURI", "DebugLoggingEnabled", "PorticoDeveloperId", "PorticoVersionNumber" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.CardMerchant), global::HOLMS.Types.Money.Cards.CardMerchant.Parser, new[]{ "EntityId", "Name", "CardProcessor", "CardAgreement", "LicenseId", "SiteId", "DeviceId", "Username", "Password", "ServiceURI", "DebugLoggingEnabled", "PorticoDeveloperId", "PorticoVersionNumber", "SuppressAuthorizationsInFolio" }, null, null, null)
           }));
     }
     #endregion
@@ -83,6 +84,7 @@ namespace HOLMS.Types.Money.Cards {
       debugLoggingEnabled_ = other.debugLoggingEnabled_;
       porticoDeveloperId_ = other.porticoDeveloperId_;
       porticoVersionNumber_ = other.porticoVersionNumber_;
+      suppressAuthorizationsInFolio_ = other.suppressAuthorizationsInFolio_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -233,6 +235,17 @@ namespace HOLMS.Types.Money.Cards {
       }
     }
 
+    /// <summary>Field number for the "suppress_authorizations_in_folio" field.</summary>
+    public const int SuppressAuthorizationsInFolioFieldNumber = 14;
+    private bool suppressAuthorizationsInFolio_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SuppressAuthorizationsInFolio {
+      get { return suppressAuthorizationsInFolio_; }
+      set {
+        suppressAuthorizationsInFolio_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CardMerchant);
@@ -259,6 +272,7 @@ namespace HOLMS.Types.Money.Cards {
       if (DebugLoggingEnabled != other.DebugLoggingEnabled) return false;
       if (PorticoDeveloperId != other.PorticoDeveloperId) return false;
       if (PorticoVersionNumber != other.PorticoVersionNumber) return false;
+      if (SuppressAuthorizationsInFolio != other.SuppressAuthorizationsInFolio) return false;
       return true;
     }
 
@@ -278,6 +292,7 @@ namespace HOLMS.Types.Money.Cards {
       if (DebugLoggingEnabled != false) hash ^= DebugLoggingEnabled.GetHashCode();
       if (PorticoDeveloperId.Length != 0) hash ^= PorticoDeveloperId.GetHashCode();
       if (PorticoVersionNumber.Length != 0) hash ^= PorticoVersionNumber.GetHashCode();
+      if (SuppressAuthorizationsInFolio != false) hash ^= SuppressAuthorizationsInFolio.GetHashCode();
       return hash;
     }
 
@@ -340,6 +355,10 @@ namespace HOLMS.Types.Money.Cards {
         output.WriteRawTag(106);
         output.WriteString(PorticoVersionNumber);
       }
+      if (SuppressAuthorizationsInFolio != false) {
+        output.WriteRawTag(112);
+        output.WriteBool(SuppressAuthorizationsInFolio);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -383,6 +402,9 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (PorticoVersionNumber.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PorticoVersionNumber);
+      }
+      if (SuppressAuthorizationsInFolio != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -433,6 +455,9 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (other.PorticoVersionNumber.Length != 0) {
         PorticoVersionNumber = other.PorticoVersionNumber;
+      }
+      if (other.SuppressAuthorizationsInFolio != false) {
+        SuppressAuthorizationsInFolio = other.SuppressAuthorizationsInFolio;
       }
     }
 
@@ -497,6 +522,10 @@ namespace HOLMS.Types.Money.Cards {
           }
           case 106: {
             PorticoVersionNumber = input.ReadString();
+            break;
+          }
+          case 112: {
+            SuppressAuthorizationsInFolio = input.ReadBool();
             break;
           }
         }
