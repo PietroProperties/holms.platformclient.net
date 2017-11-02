@@ -14,8 +14,6 @@ import "booking/indicators/reservation_contact_person_indicator.proto";
 import "booking/history/history_event.proto";
 import "operations/housekeeping/housekeeping_time_indicator.proto";
 import "booking/reservation_associated_parties.proto";
-import "booking/history/reservation_creation_summary.proto";
-import "booking/history/reservation_amendment_summary.proto";
 
 message UpdateRoomAssignmentsRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
@@ -79,12 +77,6 @@ service OpenLodgingReservationSvc {
 
 	rpc GetReservationAssociatedParties(holms.types.booking.indicators.ReservationIndicator)
 		returns(holms.types.booking.ReservationAssociatedParties);
-
-	rpc GetReservationCreationSummary(holms.types.booking.indicators.ReservationIndicator)
-		returns(holms.types.booking.history.ReservationCreationSummary);
-
-	rpc GetReservationAmendmentSummary(holms.types.booking.indicators.ReservationIndicator)
-		returns(holms.types.booking.history.ReservationAmendmentSummary);
 
 	rpc UpdateVehiclePlateInformation(VehiclePlateInformationUpdateRequest)
 		returns(google.protobuf.Empty);
