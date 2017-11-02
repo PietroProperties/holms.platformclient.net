@@ -21,4 +21,5 @@ message CardMerchant {
 	bool debug_logging_enabled = 11;
 	string portico_developer_id = 12;
 	string portico_version_number = 13;
+	bool suppress_authorizations_in_folio = 14;
 }
