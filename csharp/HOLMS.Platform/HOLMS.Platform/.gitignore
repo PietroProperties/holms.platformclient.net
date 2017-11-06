@@ -1,3 +1,4 @@
 *.csproj.user
 project.lock.json
 *.nuget.targets
+backup
