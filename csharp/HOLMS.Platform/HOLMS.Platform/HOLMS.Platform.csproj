@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>HOLMS.Platform</AssemblyName>
@@ -15,6 +16,7 @@
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
   </PropertyGroup>
 
+
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.4.1" />
     <PackageReference Include="Grpc.Auth" Version="1.7.0" />
@@ -22,6 +24,7 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.0" />
     <PackageReference Include="Microsoft.NETCore.Portable.Compatibility" Version="1.0.1" />
     <PackageReference Include="Moq" Version="4.7.142" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="NodaTime" Version="2.2.2" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.1.4" />
     <PackageReference Include="System.Runtime" Version="4.3.0" />
