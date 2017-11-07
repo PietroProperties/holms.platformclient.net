@@ -1,5 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
     <TargetFramework>net471</TargetFramework>
     <AssemblyName>HOLMS.Platform.Tests</AssemblyName>
     <PackageId>HOLMS.Platform.Tests</PackageId>
