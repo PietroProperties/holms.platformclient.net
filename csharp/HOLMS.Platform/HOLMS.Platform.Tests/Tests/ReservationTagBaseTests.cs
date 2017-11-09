@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using HOLMS.Platform.Support.ReservationTags;
+using NUnit.Framework;
 
-namespace HOLMS.Platform.Support.ReservationTags {
-    /*
-     * This came over from core where we have NUnit.
-     * Re-enable this once we have NUnit in platform.
-     * 
+namespace HOLMS.Platform.Tests.Tests {
     class ReservationTagBaseTests {
         private const string GroupBookingId = "891a0b70-ae6c-435d-99e0-6834a5a6b3f6";
         [Test]
@@ -36,9 +30,8 @@ namespace HOLMS.Platform.Support.ReservationTags {
 
         [Test]
         public void CompBookingTagWritesCorrectDescriptor() {
-            var tag = new CompStayTag(new[] { "comp" });
+            var tag = new CompStayTag();
             Assert.AreEqual("comp", tag.ToString());
         }
     }
-    */
 }
