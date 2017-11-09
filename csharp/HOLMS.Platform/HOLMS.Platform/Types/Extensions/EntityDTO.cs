@@ -17,10 +17,10 @@ namespace HOLMS.Types.Extensions {
         }
 
         public static bool operator ==(EntityDTO<T> x, EntityDTO<T> y) {
-            if (ReferenceEquals(x, null)) {
-                return ReferenceEquals(y, null);
+            if (ReferenceEquals(x, null) ^ ReferenceEquals(y, null)) {
+                return false;
             }
-            return x.Equals(y);
+            return ReferenceEquals(x, null) ? true : x.Equals(y);
         }
 
         public static bool operator !=(EntityDTO<T> x, EntityDTO<T> y) {
