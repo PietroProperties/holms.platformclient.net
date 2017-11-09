@@ -21,8 +21,8 @@ namespace HOLMS.Support.Time {
 
         public static bool IsWeekendNight(LocalDate d) {
             // NOTE(DA) So much for this program working in Israel
-            return d.IsoDayOfWeek == IsoDayOfWeek.Friday ||
-                   d.IsoDayOfWeek == IsoDayOfWeek.Saturday;
+            return d.DayOfWeek == IsoDayOfWeek.Friday ||
+                   d.DayOfWeek == IsoDayOfWeek.Saturday;
         }
 
         public static bool IsWeekDayNight(LocalDate d) {

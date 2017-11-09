@@ -1,13 +1,12 @@
 ﻿using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
-using System.Security;
 using HOLMS.Types.IAM;
 using Microsoft.IdentityModel.Tokens;
 using HOLMS.Platform.Support.Security;
-using Newtonsoft.Json;
 using HOLMS.Types.Primitive;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace HOLMS.Support.Security {
     public class ValidatedJWToken {
