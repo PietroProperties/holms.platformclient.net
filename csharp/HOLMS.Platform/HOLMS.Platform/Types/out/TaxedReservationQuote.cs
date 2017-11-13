@@ -24,25 +24,26 @@ namespace HOLMS.Types.Folio {
           string.Concat(
             "CiNmb2xpby90YXhlZF9yZXNlcnZhdGlvbl9xdW90ZS5wcm90bxIRaG9sbXMu",
             "dHlwZXMuZm9saW8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8a",
-            "GWZvbGlvL3RheF9mZWVfcXVvdGUucHJvdG8aK2ZvbGlvL3RheGVkX3Jlc2Vy",
-            "dmF0aW9uX25pZ2h0bHlfcXVvdGUucHJvdG8aNmZvbGlvL3RheGVkX2luY2lk",
-            "ZW50YWxfcmVzZXJ2YXRpb25fbmlnaHRseV9xdW90ZS5wcm90bxouYm9va2lu",
-            "Zy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90byLKAwoV",
-            "VGF4ZWRSZXNlcnZhdGlvblF1b3RlEkcKDmxvZGdpbmdfcXVvdGVzGAEgAygL",
-            "Mi8uaG9sbXMudHlwZXMuZm9saW8uVGF4ZWRSZXNlcnZhdGlvbk5pZ2h0bHlR",
-            "dW90ZRJUChFpbmNpZGVudGFsX3F1b3RlcxgCIAMoCzI5LmhvbG1zLnR5cGVz",
-            "LmZvbGlvLlRheGVkSW5jaWRlbnRhbFJlc2VydmF0aW9uTmlnaHRseVF1b3Rl",
-            "EkUKFmxvZGdpbmdfcHJpY2Vfc3VidG90YWwYAyABKAsyJS5ob2xtcy50eXBl",
-            "cy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSSAoZaW5jaWRlbnRhbF9wcmlj",
-            "ZV9zdWJ0b3RhbBgEIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25l",
-            "dGFyeUFtb3VudBI2Cg50YXhfZmVlX3RvdGFscxgFIAMoCzIeLmhvbG1zLnR5",
-            "cGVzLmZvbGlvLlRheEZlZVF1b3RlEkkKC3Jlc2VydmF0aW9uGAYgASgLMjQu",
-            "aG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5k",
-            "aWNhdG9yQhtaBWZvbGlvqgIRSE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
+            "HmZvbGlvL3RheF9mZWVfYXNzZXNzbWVudC5wcm90bxorZm9saW8vdGF4ZWRf",
+            "cmVzZXJ2YXRpb25fbmlnaHRseV9xdW90ZS5wcm90bxo2Zm9saW8vdGF4ZWRf",
+            "aW5jaWRlbnRhbF9yZXNlcnZhdGlvbl9uaWdodGx5X3F1b3RlLnByb3RvGi5i",
+            "b29raW5nL2luZGljYXRvcnMvcmVzZXJ2YXRpb25faW5kaWNhdG9yLnByb3Rv",
+            "IuIDChVUYXhlZFJlc2VydmF0aW9uUXVvdGUSRwoObG9kZ2luZ19xdW90ZXMY",
+            "ASADKAsyLy5ob2xtcy50eXBlcy5mb2xpby5UYXhlZFJlc2VydmF0aW9uTmln",
+            "aHRseVF1b3RlElQKEWluY2lkZW50YWxfcXVvdGVzGAIgAygLMjkuaG9sbXMu",
+            "dHlwZXMuZm9saW8uVGF4ZWRJbmNpZGVudGFsUmVzZXJ2YXRpb25OaWdodGx5",
+            "UXVvdGUSTAodcHJldGF4X2xvZGdpbmdfcHJpY2Vfc3VidG90YWwYAyABKAsy",
+            "JS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSTwogcHJl",
+            "dGF4X2luY2lkZW50YWxfcHJpY2Vfc3VidG90YWwYBCABKAsyJS5ob2xtcy50",
+            "eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSQAoTdGF4X2ZlZV9hc3Nl",
+            "c3NtZW50cxgFIAMoCzIjLmhvbG1zLnR5cGVzLmZvbGlvLlRheEZlZUFzc2Vz",
+            "c21lbnQSSQoLcmVzZXJ2YXRpb24YBiABKAsyNC5ob2xtcy50eXBlcy5ib29r",
+            "aW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3JCG1oFZm9saW+q",
+            "AhFIT0xNUy5UeXBlcy5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.TaxFeeQuoteReflection.Descriptor, global::HOLMS.Types.Folio.TaxedReservationNightlyQuoteReflection.Descriptor, global::HOLMS.Types.Folio.TaxedIncidentalReservationNightlyQuoteReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.TaxFeeAssessmentReflection.Descriptor, global::HOLMS.Types.Folio.TaxedReservationNightlyQuoteReflection.Descriptor, global::HOLMS.Types.Folio.TaxedIncidentalReservationNightlyQuoteReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxedReservationQuote), global::HOLMS.Types.Folio.TaxedReservationQuote.Parser, new[]{ "LodgingQuotes", "IncidentalQuotes", "LodgingPriceSubtotal", "IncidentalPriceSubtotal", "TaxFeeTotals", "Reservation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxedReservationQuote), global::HOLMS.Types.Folio.TaxedReservationQuote.Parser, new[]{ "LodgingQuotes", "IncidentalQuotes", "PretaxLodgingPriceSubtotal", "PretaxIncidentalPriceSubtotal", "TaxFeeAssessments", "Reservation" }, null, null, null)
           }));
     }
     #endregion
@@ -75,9 +76,9 @@ namespace HOLMS.Types.Folio {
     public TaxedReservationQuote(TaxedReservationQuote other) : this() {
       lodgingQuotes_ = other.lodgingQuotes_.Clone();
       incidentalQuotes_ = other.incidentalQuotes_.Clone();
-      LodgingPriceSubtotal = other.lodgingPriceSubtotal_ != null ? other.LodgingPriceSubtotal.Clone() : null;
-      IncidentalPriceSubtotal = other.incidentalPriceSubtotal_ != null ? other.IncidentalPriceSubtotal.Clone() : null;
-      taxFeeTotals_ = other.taxFeeTotals_.Clone();
+      PretaxLodgingPriceSubtotal = other.pretaxLodgingPriceSubtotal_ != null ? other.PretaxLodgingPriceSubtotal.Clone() : null;
+      PretaxIncidentalPriceSubtotal = other.pretaxIncidentalPriceSubtotal_ != null ? other.PretaxIncidentalPriceSubtotal.Clone() : null;
+      taxFeeAssessments_ = other.taxFeeAssessments_.Clone();
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
     }
 
@@ -106,36 +107,36 @@ namespace HOLMS.Types.Folio {
       get { return incidentalQuotes_; }
     }
 
-    /// <summary>Field number for the "lodging_price_subtotal" field.</summary>
-    public const int LodgingPriceSubtotalFieldNumber = 3;
-    private global::HOLMS.Types.Primitive.MonetaryAmount lodgingPriceSubtotal_;
+    /// <summary>Field number for the "pretax_lodging_price_subtotal" field.</summary>
+    public const int PretaxLodgingPriceSubtotalFieldNumber = 3;
+    private global::HOLMS.Types.Primitive.MonetaryAmount pretaxLodgingPriceSubtotal_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.MonetaryAmount LodgingPriceSubtotal {
-      get { return lodgingPriceSubtotal_; }
+    public global::HOLMS.Types.Primitive.MonetaryAmount PretaxLodgingPriceSubtotal {
+      get { return pretaxLodgingPriceSubtotal_; }
       set {
-        lodgingPriceSubtotal_ = value;
+        pretaxLodgingPriceSubtotal_ = value;
       }
     }
 
-    /// <summary>Field number for the "incidental_price_subtotal" field.</summary>
-    public const int IncidentalPriceSubtotalFieldNumber = 4;
-    private global::HOLMS.Types.Primitive.MonetaryAmount incidentalPriceSubtotal_;
+    /// <summary>Field number for the "pretax_incidental_price_subtotal" field.</summary>
+    public const int PretaxIncidentalPriceSubtotalFieldNumber = 4;
+    private global::HOLMS.Types.Primitive.MonetaryAmount pretaxIncidentalPriceSubtotal_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.MonetaryAmount IncidentalPriceSubtotal {
-      get { return incidentalPriceSubtotal_; }
+    public global::HOLMS.Types.Primitive.MonetaryAmount PretaxIncidentalPriceSubtotal {
+      get { return pretaxIncidentalPriceSubtotal_; }
       set {
-        incidentalPriceSubtotal_ = value;
+        pretaxIncidentalPriceSubtotal_ = value;
       }
     }
 
-    /// <summary>Field number for the "tax_fee_totals" field.</summary>
-    public const int TaxFeeTotalsFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.TaxFeeQuote> _repeated_taxFeeTotals_codec
-        = pb::FieldCodec.ForMessage(42, global::HOLMS.Types.Folio.TaxFeeQuote.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.TaxFeeQuote> taxFeeTotals_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.TaxFeeQuote>();
+    /// <summary>Field number for the "tax_fee_assessments" field.</summary>
+    public const int TaxFeeAssessmentsFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.TaxFeeAssessment> _repeated_taxFeeAssessments_codec
+        = pb::FieldCodec.ForMessage(42, global::HOLMS.Types.Folio.TaxFeeAssessment.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.TaxFeeAssessment> taxFeeAssessments_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.TaxFeeAssessment>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Folio.TaxFeeQuote> TaxFeeTotals {
-      get { return taxFeeTotals_; }
+    public pbc::RepeatedField<global::HOLMS.Types.Folio.TaxFeeAssessment> TaxFeeAssessments {
+      get { return taxFeeAssessments_; }
     }
 
     /// <summary>Field number for the "reservation" field.</summary>
@@ -164,9 +165,9 @@ namespace HOLMS.Types.Folio {
       }
       if(!lodgingQuotes_.Equals(other.lodgingQuotes_)) return false;
       if(!incidentalQuotes_.Equals(other.incidentalQuotes_)) return false;
-      if (!object.Equals(LodgingPriceSubtotal, other.LodgingPriceSubtotal)) return false;
-      if (!object.Equals(IncidentalPriceSubtotal, other.IncidentalPriceSubtotal)) return false;
-      if(!taxFeeTotals_.Equals(other.taxFeeTotals_)) return false;
+      if (!object.Equals(PretaxLodgingPriceSubtotal, other.PretaxLodgingPriceSubtotal)) return false;
+      if (!object.Equals(PretaxIncidentalPriceSubtotal, other.PretaxIncidentalPriceSubtotal)) return false;
+      if(!taxFeeAssessments_.Equals(other.taxFeeAssessments_)) return false;
       if (!object.Equals(Reservation, other.Reservation)) return false;
       return true;
     }
@@ -176,9 +177,9 @@ namespace HOLMS.Types.Folio {
       int hash = 1;
       hash ^= lodgingQuotes_.GetHashCode();
       hash ^= incidentalQuotes_.GetHashCode();
-      if (lodgingPriceSubtotal_ != null) hash ^= LodgingPriceSubtotal.GetHashCode();
-      if (incidentalPriceSubtotal_ != null) hash ^= IncidentalPriceSubtotal.GetHashCode();
-      hash ^= taxFeeTotals_.GetHashCode();
+      if (pretaxLodgingPriceSubtotal_ != null) hash ^= PretaxLodgingPriceSubtotal.GetHashCode();
+      if (pretaxIncidentalPriceSubtotal_ != null) hash ^= PretaxIncidentalPriceSubtotal.GetHashCode();
+      hash ^= taxFeeAssessments_.GetHashCode();
       if (reservation_ != null) hash ^= Reservation.GetHashCode();
       return hash;
     }
@@ -192,15 +193,15 @@ namespace HOLMS.Types.Folio {
     public void WriteTo(pb::CodedOutputStream output) {
       lodgingQuotes_.WriteTo(output, _repeated_lodgingQuotes_codec);
       incidentalQuotes_.WriteTo(output, _repeated_incidentalQuotes_codec);
-      if (lodgingPriceSubtotal_ != null) {
+      if (pretaxLodgingPriceSubtotal_ != null) {
         output.WriteRawTag(26);
-        output.WriteMessage(LodgingPriceSubtotal);
+        output.WriteMessage(PretaxLodgingPriceSubtotal);
       }
-      if (incidentalPriceSubtotal_ != null) {
+      if (pretaxIncidentalPriceSubtotal_ != null) {
         output.WriteRawTag(34);
-        output.WriteMessage(IncidentalPriceSubtotal);
+        output.WriteMessage(PretaxIncidentalPriceSubtotal);
       }
-      taxFeeTotals_.WriteTo(output, _repeated_taxFeeTotals_codec);
+      taxFeeAssessments_.WriteTo(output, _repeated_taxFeeAssessments_codec);
       if (reservation_ != null) {
         output.WriteRawTag(50);
         output.WriteMessage(Reservation);
@@ -212,13 +213,13 @@ namespace HOLMS.Types.Folio {
       int size = 0;
       size += lodgingQuotes_.CalculateSize(_repeated_lodgingQuotes_codec);
       size += incidentalQuotes_.CalculateSize(_repeated_incidentalQuotes_codec);
-      if (lodgingPriceSubtotal_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LodgingPriceSubtotal);
+      if (pretaxLodgingPriceSubtotal_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PretaxLodgingPriceSubtotal);
       }
-      if (incidentalPriceSubtotal_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(IncidentalPriceSubtotal);
+      if (pretaxIncidentalPriceSubtotal_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PretaxIncidentalPriceSubtotal);
       }
-      size += taxFeeTotals_.CalculateSize(_repeated_taxFeeTotals_codec);
+      size += taxFeeAssessments_.CalculateSize(_repeated_taxFeeAssessments_codec);
       if (reservation_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Reservation);
       }
@@ -232,19 +233,19 @@ namespace HOLMS.Types.Folio {
       }
       lodgingQuotes_.Add(other.lodgingQuotes_);
       incidentalQuotes_.Add(other.incidentalQuotes_);
-      if (other.lodgingPriceSubtotal_ != null) {
-        if (lodgingPriceSubtotal_ == null) {
-          lodgingPriceSubtotal_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+      if (other.pretaxLodgingPriceSubtotal_ != null) {
+        if (pretaxLodgingPriceSubtotal_ == null) {
+          pretaxLodgingPriceSubtotal_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
-        LodgingPriceSubtotal.MergeFrom(other.LodgingPriceSubtotal);
+        PretaxLodgingPriceSubtotal.MergeFrom(other.PretaxLodgingPriceSubtotal);
       }
-      if (other.incidentalPriceSubtotal_ != null) {
-        if (incidentalPriceSubtotal_ == null) {
-          incidentalPriceSubtotal_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+      if (other.pretaxIncidentalPriceSubtotal_ != null) {
+        if (pretaxIncidentalPriceSubtotal_ == null) {
+          pretaxIncidentalPriceSubtotal_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
-        IncidentalPriceSubtotal.MergeFrom(other.IncidentalPriceSubtotal);
+        PretaxIncidentalPriceSubtotal.MergeFrom(other.PretaxIncidentalPriceSubtotal);
       }
-      taxFeeTotals_.Add(other.taxFeeTotals_);
+      taxFeeAssessments_.Add(other.taxFeeAssessments_);
       if (other.reservation_ != null) {
         if (reservation_ == null) {
           reservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
@@ -270,21 +271,21 @@ namespace HOLMS.Types.Folio {
             break;
           }
           case 26: {
-            if (lodgingPriceSubtotal_ == null) {
-              lodgingPriceSubtotal_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            if (pretaxLodgingPriceSubtotal_ == null) {
+              pretaxLodgingPriceSubtotal_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
-            input.ReadMessage(lodgingPriceSubtotal_);
+            input.ReadMessage(pretaxLodgingPriceSubtotal_);
             break;
           }
           case 34: {
-            if (incidentalPriceSubtotal_ == null) {
-              incidentalPriceSubtotal_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            if (pretaxIncidentalPriceSubtotal_ == null) {
+              pretaxIncidentalPriceSubtotal_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
-            input.ReadMessage(incidentalPriceSubtotal_);
+            input.ReadMessage(pretaxIncidentalPriceSubtotal_);
             break;
           }
           case 42: {
-            taxFeeTotals_.AddEntriesFrom(input, _repeated_taxFeeTotals_codec);
+            taxFeeAssessments_.AddEntriesFrom(input, _repeated_taxFeeAssessments_codec);
             break;
           }
           case 50: {

@@ -5,11 +5,11 @@ option csharp_namespace = "HOLMS.Types.Folio";
 option go_package = "folio";
 
 import "primitive/monetary_amount.proto";
-import "folio/tax_fee_quote.proto";
+import "folio/tax_fee_assessment.proto";
 import "primitive/pb_local_date.proto";
 
 message TaxedReservationNightlyQuote {
 	holms.types.primitive.PbLocalDate opsdate = 1;
-	holms.types.primitive.MonetaryAmount gross_lodging_charge = 2;
-	repeated holms.types.folio.TaxFeeQuote tax_fees = 3;
+	holms.types.primitive.MonetaryAmount pretax_lodging_charge = 2;
+	repeated holms.types.folio.TaxFeeAssessment tax_fee_assessments = 3;
 }
