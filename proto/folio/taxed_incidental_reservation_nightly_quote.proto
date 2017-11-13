@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package holms.types.folio;
+option csharp_namespace = "HOLMS.Types.Folio";
+option go_package = "folio";
+
+import "primitive/monetary_amount.proto";
+import "folio/tax_fee_quote.proto";
+import "primitive/pb_local_date.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
+
+message TaxedIncidentalReservationNightlyQuote {
+	holms.types.primitive.PbLocalDate opsdate = 1;
+	holms.types.primitive.MonetaryAmount gross_incidental_charge = 2;
+	repeated holms.types.folio.TaxFeeQuote tax_fees = 3;
+	holms.types.supply.incidental_items.IncidentalItemIndicator incidental_item = 4;
+}
+
