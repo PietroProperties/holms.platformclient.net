@@ -9,7 +9,7 @@ import "booking/pricing/pretax_incidental_reservation_nightly_quote.proto";
 import "booking/indicators/reservation_indicator.proto";
 
 message PretaxReservationQuote {
-	bool tax_exemption_requested = 1;
+	repeated string reservation_tags = 1;
 	repeated holms.types.booking.pricing.PretaxLodgingNightlyQuote nightly_quotes = 2;
 	repeated holms.types.booking.pricing.PretaxIncidentalReservationNightlyQuote incidental_quotes = 3;
 	holms.types.booking.indicators.ReservationIndicator reservation = 4;

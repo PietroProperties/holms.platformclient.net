@@ -27,19 +27,19 @@ namespace HOLMS.Types.Booking.Pricing {
             "Y2luZy9wcmV0YXhfbG9kZ2luZ19uaWdodGx5X3F1b3RlLnByb3RvGkFib29r",
             "aW5nL3ByaWNpbmcvcHJldGF4X2luY2lkZW50YWxfcmVzZXJ2YXRpb25fbmln",
             "aHRseV9xdW90ZS5wcm90bxouYm9va2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0",
-            "aW9uX2luZGljYXRvci5wcm90byK1AgoWUHJldGF4UmVzZXJ2YXRpb25RdW90",
-            "ZRIfChd0YXhfZXhlbXB0aW9uX3JlcXVlc3RlZBgBIAEoCBJOCg5uaWdodGx5",
-            "X3F1b3RlcxgCIAMoCzI2LmhvbG1zLnR5cGVzLmJvb2tpbmcucHJpY2luZy5Q",
-            "cmV0YXhMb2RnaW5nTmlnaHRseVF1b3RlEl8KEWluY2lkZW50YWxfcXVvdGVz",
-            "GAMgAygLMkQuaG9sbXMudHlwZXMuYm9va2luZy5wcmljaW5nLlByZXRheElu",
-            "Y2lkZW50YWxSZXNlcnZhdGlvbk5pZ2h0bHlRdW90ZRJJCgtyZXNlcnZhdGlv",
-            "bhgEIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNl",
-            "cnZhdGlvbkluZGljYXRvckIvWg9ib29raW5nL3ByaWNpbmeqAhtIT0xNUy5U",
-            "eXBlcy5Cb29raW5nLlByaWNpbmdiBnByb3RvMw=="));
+            "aW9uX2luZGljYXRvci5wcm90byKuAgoWUHJldGF4UmVzZXJ2YXRpb25RdW90",
+            "ZRIYChByZXNlcnZhdGlvbl90YWdzGAEgAygJEk4KDm5pZ2h0bHlfcXVvdGVz",
+            "GAIgAygLMjYuaG9sbXMudHlwZXMuYm9va2luZy5wcmljaW5nLlByZXRheExv",
+            "ZGdpbmdOaWdodGx5UXVvdGUSXwoRaW5jaWRlbnRhbF9xdW90ZXMYAyADKAsy",
+            "RC5ob2xtcy50eXBlcy5ib29raW5nLnByaWNpbmcuUHJldGF4SW5jaWRlbnRh",
+            "bFJlc2VydmF0aW9uTmlnaHRseVF1b3RlEkkKC3Jlc2VydmF0aW9uGAQgASgL",
+            "MjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9u",
+            "SW5kaWNhdG9yQi9aD2Jvb2tpbmcvcHJpY2luZ6oCG0hPTE1TLlR5cGVzLkJv",
+            "b2tpbmcuUHJpY2luZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Pricing.PretaxLodgingNightlyQuoteReflection.Descriptor, global::HOLMS.Types.Booking.Pricing.PretaxIncidentalReservationNightlyQuoteReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.PretaxReservationQuote), global::HOLMS.Types.Booking.Pricing.PretaxReservationQuote.Parser, new[]{ "TaxExemptionRequested", "NightlyQuotes", "IncidentalQuotes", "Reservation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.PretaxReservationQuote), global::HOLMS.Types.Booking.Pricing.PretaxReservationQuote.Parser, new[]{ "ReservationTags", "NightlyQuotes", "IncidentalQuotes", "Reservation" }, null, null, null)
           }));
     }
     #endregion
@@ -70,7 +70,7 @@ namespace HOLMS.Types.Booking.Pricing {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PretaxReservationQuote(PretaxReservationQuote other) : this() {
-      taxExemptionRequested_ = other.taxExemptionRequested_;
+      reservationTags_ = other.reservationTags_.Clone();
       nightlyQuotes_ = other.nightlyQuotes_.Clone();
       incidentalQuotes_ = other.incidentalQuotes_.Clone();
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
@@ -81,15 +81,14 @@ namespace HOLMS.Types.Booking.Pricing {
       return new PretaxReservationQuote(this);
     }
 
-    /// <summary>Field number for the "tax_exemption_requested" field.</summary>
-    public const int TaxExemptionRequestedFieldNumber = 1;
-    private bool taxExemptionRequested_;
+    /// <summary>Field number for the "reservation_tags" field.</summary>
+    public const int ReservationTagsFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_reservationTags_codec
+        = pb::FieldCodec.ForString(10);
+    private readonly pbc::RepeatedField<string> reservationTags_ = new pbc::RepeatedField<string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool TaxExemptionRequested {
-      get { return taxExemptionRequested_; }
-      set {
-        taxExemptionRequested_ = value;
-      }
+    public pbc::RepeatedField<string> ReservationTags {
+      get { return reservationTags_; }
     }
 
     /// <summary>Field number for the "nightly_quotes" field.</summary>
@@ -136,7 +135,7 @@ namespace HOLMS.Types.Booking.Pricing {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (TaxExemptionRequested != other.TaxExemptionRequested) return false;
+      if(!reservationTags_.Equals(other.reservationTags_)) return false;
       if(!nightlyQuotes_.Equals(other.nightlyQuotes_)) return false;
       if(!incidentalQuotes_.Equals(other.incidentalQuotes_)) return false;
       if (!object.Equals(Reservation, other.Reservation)) return false;
@@ -146,7 +145,7 @@ namespace HOLMS.Types.Booking.Pricing {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (TaxExemptionRequested != false) hash ^= TaxExemptionRequested.GetHashCode();
+      hash ^= reservationTags_.GetHashCode();
       hash ^= nightlyQuotes_.GetHashCode();
       hash ^= incidentalQuotes_.GetHashCode();
       if (reservation_ != null) hash ^= Reservation.GetHashCode();
@@ -160,10 +159,7 @@ namespace HOLMS.Types.Booking.Pricing {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (TaxExemptionRequested != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(TaxExemptionRequested);
-      }
+      reservationTags_.WriteTo(output, _repeated_reservationTags_codec);
       nightlyQuotes_.WriteTo(output, _repeated_nightlyQuotes_codec);
       incidentalQuotes_.WriteTo(output, _repeated_incidentalQuotes_codec);
       if (reservation_ != null) {
@@ -175,9 +171,7 @@ namespace HOLMS.Types.Booking.Pricing {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (TaxExemptionRequested != false) {
-        size += 1 + 1;
-      }
+      size += reservationTags_.CalculateSize(_repeated_reservationTags_codec);
       size += nightlyQuotes_.CalculateSize(_repeated_nightlyQuotes_codec);
       size += incidentalQuotes_.CalculateSize(_repeated_incidentalQuotes_codec);
       if (reservation_ != null) {
@@ -191,9 +185,7 @@ namespace HOLMS.Types.Booking.Pricing {
       if (other == null) {
         return;
       }
-      if (other.TaxExemptionRequested != false) {
-        TaxExemptionRequested = other.TaxExemptionRequested;
-      }
+      reservationTags_.Add(other.reservationTags_);
       nightlyQuotes_.Add(other.nightlyQuotes_);
       incidentalQuotes_.Add(other.incidentalQuotes_);
       if (other.reservation_ != null) {
@@ -212,8 +204,8 @@ namespace HOLMS.Types.Booking.Pricing {
           default:
             input.SkipLastField();
             break;
-          case 8: {
-            TaxExemptionRequested = input.ReadBool();
+          case 10: {
+            reservationTags_.AddEntriesFrom(input, _repeated_reservationTags_codec);
             break;
           }
           case 18: {

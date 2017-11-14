@@ -27,7 +27,7 @@ namespace HOLMS.Types.Folio {
             "GmZvbGlvL3RheF9hc3Nlc3NtZW50LnByb3RvGitmb2xpby90YXhlZF9yZXNl",
             "cnZhdGlvbl9uaWdodGx5X3F1b3RlLnByb3RvGjZmb2xpby90YXhlZF9pbmNp",
             "ZGVudGFsX3Jlc2VydmF0aW9uX25pZ2h0bHlfcXVvdGUucHJvdG8aLmJvb2tp",
-            "bmcvaW5kaWNhdG9ycy9yZXNlcnZhdGlvbl9pbmRpY2F0b3IucHJvdG8i2wMK",
+            "bmcvaW5kaWNhdG9ycy9yZXNlcnZhdGlvbl9pbmRpY2F0b3IucHJvdG8i9QMK",
             "FVRheGVkUmVzZXJ2YXRpb25RdW90ZRJHCg5sb2RnaW5nX3F1b3RlcxgBIAMo",
             "CzIvLmhvbG1zLnR5cGVzLmZvbGlvLlRheGVkUmVzZXJ2YXRpb25OaWdodGx5",
             "UXVvdGUSVAoRaW5jaWRlbnRhbF9xdW90ZXMYAiADKAsyOS5ob2xtcy50eXBl",
@@ -38,12 +38,12 @@ namespace HOLMS.Types.Folio {
             "LnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI5Cg90YXhfYXNzZXNzbWVudHMY",
             "BSADKAsyIC5ob2xtcy50eXBlcy5mb2xpby5UYXhBc3Nlc3NtZW50EkkKC3Jl",
             "c2VydmF0aW9uGAYgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0",
-            "b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yQhtaBWZvbGlvqgIRSE9MTVMuVHlw",
-            "ZXMuRm9saW9iBnByb3RvMw=="));
+            "b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yEhgKEHJlc2VydmF0aW9uX3RhZ3MY",
+            "ByADKAlCG1oFZm9saW+qAhFIT0xNUy5UeXBlcy5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.TaxAssessmentReflection.Descriptor, global::HOLMS.Types.Folio.TaxedReservationNightlyQuoteReflection.Descriptor, global::HOLMS.Types.Folio.TaxedIncidentalReservationNightlyQuoteReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxedReservationQuote), global::HOLMS.Types.Folio.TaxedReservationQuote.Parser, new[]{ "LodgingQuotes", "IncidentalQuotes", "PretaxLodgingPriceSubtotal", "PretaxIncidentalPriceSubtotal", "TaxAssessments", "Reservation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxedReservationQuote), global::HOLMS.Types.Folio.TaxedReservationQuote.Parser, new[]{ "LodgingQuotes", "IncidentalQuotes", "PretaxLodgingPriceSubtotal", "PretaxIncidentalPriceSubtotal", "TaxAssessments", "Reservation", "ReservationTags" }, null, null, null)
           }));
     }
     #endregion
@@ -80,6 +80,7 @@ namespace HOLMS.Types.Folio {
       PretaxIncidentalPriceSubtotal = other.pretaxIncidentalPriceSubtotal_ != null ? other.PretaxIncidentalPriceSubtotal.Clone() : null;
       taxAssessments_ = other.taxAssessments_.Clone();
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
+      reservationTags_ = other.reservationTags_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -150,6 +151,16 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "reservation_tags" field.</summary>
+    public const int ReservationTagsFieldNumber = 7;
+    private static readonly pb::FieldCodec<string> _repeated_reservationTags_codec
+        = pb::FieldCodec.ForString(58);
+    private readonly pbc::RepeatedField<string> reservationTags_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> ReservationTags {
+      get { return reservationTags_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as TaxedReservationQuote);
@@ -169,6 +180,7 @@ namespace HOLMS.Types.Folio {
       if (!object.Equals(PretaxIncidentalPriceSubtotal, other.PretaxIncidentalPriceSubtotal)) return false;
       if(!taxAssessments_.Equals(other.taxAssessments_)) return false;
       if (!object.Equals(Reservation, other.Reservation)) return false;
+      if(!reservationTags_.Equals(other.reservationTags_)) return false;
       return true;
     }
 
@@ -181,6 +193,7 @@ namespace HOLMS.Types.Folio {
       if (pretaxIncidentalPriceSubtotal_ != null) hash ^= PretaxIncidentalPriceSubtotal.GetHashCode();
       hash ^= taxAssessments_.GetHashCode();
       if (reservation_ != null) hash ^= Reservation.GetHashCode();
+      hash ^= reservationTags_.GetHashCode();
       return hash;
     }
 
@@ -206,6 +219,7 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(50);
         output.WriteMessage(Reservation);
       }
+      reservationTags_.WriteTo(output, _repeated_reservationTags_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -223,6 +237,7 @@ namespace HOLMS.Types.Folio {
       if (reservation_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Reservation);
       }
+      size += reservationTags_.CalculateSize(_repeated_reservationTags_codec);
       return size;
     }
 
@@ -252,6 +267,7 @@ namespace HOLMS.Types.Folio {
         }
         Reservation.MergeFrom(other.Reservation);
       }
+      reservationTags_.Add(other.reservationTags_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -293,6 +309,10 @@ namespace HOLMS.Types.Folio {
               reservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
             }
             input.ReadMessage(reservation_);
+            break;
+          }
+          case 58: {
+            reservationTags_.AddEntriesFrom(input, _repeated_reservationTags_codec);
             break;
           }
         }

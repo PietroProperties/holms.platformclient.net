@@ -17,4 +17,5 @@ message TaxedReservationQuote {
 	holms.types.primitive.MonetaryAmount pretax_incidental_price_subtotal = 4;
 	repeated holms.types.folio.TaxAssessment tax_assessments = 5;
 	holms.types.booking.indicators.ReservationIndicator reservation = 6;
+	repeated string reservation_tags = 7;
 }
