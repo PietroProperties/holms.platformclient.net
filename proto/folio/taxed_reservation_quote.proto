@@ -5,7 +5,7 @@ option csharp_namespace = "HOLMS.Types.Folio";
 option go_package = "folio";
 
 import "primitive/monetary_amount.proto";
-import "folio/tax_fee_assessment.proto";
+import "folio/tax_assessment.proto";
 import "folio/taxed_reservation_nightly_quote.proto";
 import "folio/taxed_incidental_reservation_nightly_quote.proto";
 import "booking/indicators/reservation_indicator.proto";
@@ -15,6 +15,6 @@ message TaxedReservationQuote {
 	repeated holms.types.folio.TaxedIncidentalReservationNightlyQuote incidental_quotes = 2;
 	holms.types.primitive.MonetaryAmount pretax_lodging_price_subtotal = 3;
 	holms.types.primitive.MonetaryAmount pretax_incidental_price_subtotal = 4;
-	repeated holms.types.folio.TaxFeeAssessment tax_fee_assessments = 5;
+	repeated holms.types.folio.TaxAssessment tax_assessments = 5;
 	holms.types.booking.indicators.ReservationIndicator reservation = 6;
 }

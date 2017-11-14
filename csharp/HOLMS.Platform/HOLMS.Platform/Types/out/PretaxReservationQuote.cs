@@ -23,21 +23,21 @@ namespace HOLMS.Types.Booking.Pricing {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci5ib29raW5nL3ByaWNpbmcvcHJldGF4X3Jlc2VydmF0aW9uX3F1b3RlLnBy",
-            "b3RvEhtob2xtcy50eXBlcy5ib29raW5nLnByaWNpbmcaNmJvb2tpbmcvcHJp",
-            "Y2luZy9wcmV0YXhfcmVzZXJ2YXRpb25fbmlnaHRseV9xdW90ZS5wcm90bxpB",
-            "Ym9va2luZy9wcmljaW5nL3ByZXRheF9pbmNpZGVudGFsX3Jlc2VydmF0aW9u",
-            "X25pZ2h0bHlfcXVvdGUucHJvdG8aLmJvb2tpbmcvaW5kaWNhdG9ycy9yZXNl",
-            "cnZhdGlvbl9pbmRpY2F0b3IucHJvdG8iuQIKFlByZXRheFJlc2VydmF0aW9u",
-            "UXVvdGUSHwoXdGF4X2V4ZW1wdGlvbl9yZXF1ZXN0ZWQYASABKAgSUgoObmln",
-            "aHRseV9xdW90ZXMYAiADKAsyOi5ob2xtcy50eXBlcy5ib29raW5nLnByaWNp",
-            "bmcuUHJldGF4UmVzZXJ2YXRpb25OaWdodGx5UXVvdGUSXwoRaW5jaWRlbnRh",
-            "bF9xdW90ZXMYAyADKAsyRC5ob2xtcy50eXBlcy5ib29raW5nLnByaWNpbmcu",
-            "UHJldGF4SW5jaWRlbnRhbFJlc2VydmF0aW9uTmlnaHRseVF1b3RlEkkKC3Jl",
-            "c2VydmF0aW9uGAQgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0",
-            "b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yQi9aD2Jvb2tpbmcvcHJpY2luZ6oC",
-            "G0hPTE1TLlR5cGVzLkJvb2tpbmcuUHJpY2luZ2IGcHJvdG8z"));
+            "b3RvEhtob2xtcy50eXBlcy5ib29raW5nLnByaWNpbmcaMmJvb2tpbmcvcHJp",
+            "Y2luZy9wcmV0YXhfbG9kZ2luZ19uaWdodGx5X3F1b3RlLnByb3RvGkFib29r",
+            "aW5nL3ByaWNpbmcvcHJldGF4X2luY2lkZW50YWxfcmVzZXJ2YXRpb25fbmln",
+            "aHRseV9xdW90ZS5wcm90bxouYm9va2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0",
+            "aW9uX2luZGljYXRvci5wcm90byK1AgoWUHJldGF4UmVzZXJ2YXRpb25RdW90",
+            "ZRIfChd0YXhfZXhlbXB0aW9uX3JlcXVlc3RlZBgBIAEoCBJOCg5uaWdodGx5",
+            "X3F1b3RlcxgCIAMoCzI2LmhvbG1zLnR5cGVzLmJvb2tpbmcucHJpY2luZy5Q",
+            "cmV0YXhMb2RnaW5nTmlnaHRseVF1b3RlEl8KEWluY2lkZW50YWxfcXVvdGVz",
+            "GAMgAygLMkQuaG9sbXMudHlwZXMuYm9va2luZy5wcmljaW5nLlByZXRheElu",
+            "Y2lkZW50YWxSZXNlcnZhdGlvbk5pZ2h0bHlRdW90ZRJJCgtyZXNlcnZhdGlv",
+            "bhgEIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNl",
+            "cnZhdGlvbkluZGljYXRvckIvWg9ib29raW5nL3ByaWNpbmeqAhtIT0xNUy5U",
+            "eXBlcy5Cb29raW5nLlByaWNpbmdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Pricing.PretaxReservationNightlyQuoteReflection.Descriptor, global::HOLMS.Types.Booking.Pricing.PretaxIncidentalReservationNightlyQuoteReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Pricing.PretaxLodgingNightlyQuoteReflection.Descriptor, global::HOLMS.Types.Booking.Pricing.PretaxIncidentalReservationNightlyQuoteReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.PretaxReservationQuote), global::HOLMS.Types.Booking.Pricing.PretaxReservationQuote.Parser, new[]{ "TaxExemptionRequested", "NightlyQuotes", "IncidentalQuotes", "Reservation" }, null, null, null)
           }));
@@ -94,11 +94,11 @@ namespace HOLMS.Types.Booking.Pricing {
 
     /// <summary>Field number for the "nightly_quotes" field.</summary>
     public const int NightlyQuotesFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Pricing.PretaxReservationNightlyQuote> _repeated_nightlyQuotes_codec
-        = pb::FieldCodec.ForMessage(18, global::HOLMS.Types.Booking.Pricing.PretaxReservationNightlyQuote.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Pricing.PretaxReservationNightlyQuote> nightlyQuotes_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Pricing.PretaxReservationNightlyQuote>();
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Pricing.PretaxLodgingNightlyQuote> _repeated_nightlyQuotes_codec
+        = pb::FieldCodec.ForMessage(18, global::HOLMS.Types.Booking.Pricing.PretaxLodgingNightlyQuote.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Pricing.PretaxLodgingNightlyQuote> nightlyQuotes_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Pricing.PretaxLodgingNightlyQuote>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Booking.Pricing.PretaxReservationNightlyQuote> NightlyQuotes {
+    public pbc::RepeatedField<global::HOLMS.Types.Booking.Pricing.PretaxLodgingNightlyQuote> NightlyQuotes {
       get { return nightlyQuotes_; }
     }
 

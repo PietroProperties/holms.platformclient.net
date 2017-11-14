@@ -7,7 +7,7 @@ option go_package = "folio";
 import "money/accounting/tax_fee.proto";
 import "primitive/monetary_amount.proto";
 
-message TaxFeeAssessment {
-	holms.types.money.accounting.TaxFee tax_or_fee = 1;
-	holms.types.primitive.MonetaryAmount quoted_tax_fee_amount = 2;
+message TaxAssessment {
+	holms.types.money.accounting.TaxFee tax = 1;
+	holms.types.primitive.MonetaryAmount assessed_tax_amount = 2;
 }

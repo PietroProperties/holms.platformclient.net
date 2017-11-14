@@ -8,7 +8,7 @@ namespace HOLMS.Types.Folio {
         public Primitive.MonetaryAmount NetPrice {
             get {
                 var total = PretaxLodgingPriceSubtotal.ToDD + PretaxIncidentalPriceSubtotal.ToDD
-                    + TaxFeeAssessments.Sum(t => t.QuotedTaxFeeAmount.ToDD.Amount);
+                    + TaxAssessments.Sum(t => t.AssessedTaxAmount.ToDD.Amount);
                 return total.ToPb;
             }
         }

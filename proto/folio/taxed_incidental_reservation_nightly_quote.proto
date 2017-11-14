@@ -5,14 +5,14 @@ option csharp_namespace = "HOLMS.Types.Folio";
 option go_package = "folio";
 
 import "primitive/monetary_amount.proto";
-import "folio/tax_fee_assessment.proto";
+import "folio/tax_assessment_estimate.proto";
 import "primitive/pb_local_date.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
 
 message TaxedIncidentalReservationNightlyQuote {
 	holms.types.primitive.PbLocalDate opsdate = 1;
 	holms.types.primitive.MonetaryAmount pretax_incidental_price = 2;
-	repeated holms.types.folio.TaxFeeAssessment tax_fee_assements = 3;
+	repeated holms.types.folio.TaxAssessmentEstimate tax_estimates = 3;
 	holms.types.supply.incidental_items.IncidentalItemIndicator incidental_item = 4;
 }
 

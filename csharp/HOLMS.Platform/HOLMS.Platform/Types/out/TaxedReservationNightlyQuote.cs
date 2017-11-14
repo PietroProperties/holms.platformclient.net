@@ -24,18 +24,18 @@ namespace HOLMS.Types.Folio {
           string.Concat(
             "Citmb2xpby90YXhlZF9yZXNlcnZhdGlvbl9uaWdodGx5X3F1b3RlLnByb3Rv",
             "EhFob2xtcy50eXBlcy5mb2xpbxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3Vu",
-            "dC5wcm90bxoeZm9saW8vdGF4X2ZlZV9hc3Nlc3NtZW50LnByb3RvGh1wcmlt",
-            "aXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90byLbAQocVGF4ZWRSZXNlcnZhdGlv",
-            "bk5pZ2h0bHlRdW90ZRIzCgdvcHNkYXRlGAEgASgLMiIuaG9sbXMudHlwZXMu",
-            "cHJpbWl0aXZlLlBiTG9jYWxEYXRlEkQKFXByZXRheF9sb2RnaW5nX2NoYXJn",
-            "ZRgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3Vu",
-            "dBJAChN0YXhfZmVlX2Fzc2Vzc21lbnRzGAMgAygLMiMuaG9sbXMudHlwZXMu",
-            "Zm9saW8uVGF4RmVlQXNzZXNzbWVudEIbWgVmb2xpb6oCEUhPTE1TLlR5cGVz",
-            "LkZvbGlvYgZwcm90bzM="));
+            "dC5wcm90bxojZm9saW8vdGF4X2Fzc2Vzc21lbnRfZXN0aW1hdGUucHJvdG8a",
+            "HXByaW1pdGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvItoBChxUYXhlZFJlc2Vy",
+            "dmF0aW9uTmlnaHRseVF1b3RlEjMKB29wc2RhdGUYASABKAsyIi5ob2xtcy50",
+            "eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGUSRAoVcHJldGF4X2xvZGdpbmdf",
+            "Y2hhcmdlGAIgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5",
+            "QW1vdW50Ej8KDXRheF9lc3RpbWF0ZXMYAyADKAsyKC5ob2xtcy50eXBlcy5m",
+            "b2xpby5UYXhBc3Nlc3NtZW50RXN0aW1hdGVCG1oFZm9saW+qAhFIT0xNUy5U",
+            "eXBlcy5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.TaxFeeAssessmentReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.TaxAssessmentEstimateReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxedReservationNightlyQuote), global::HOLMS.Types.Folio.TaxedReservationNightlyQuote.Parser, new[]{ "Opsdate", "PretaxLodgingCharge", "TaxFeeAssessments" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxedReservationNightlyQuote), global::HOLMS.Types.Folio.TaxedReservationNightlyQuote.Parser, new[]{ "Opsdate", "PretaxLodgingCharge", "TaxEstimates" }, null, null, null)
           }));
     }
     #endregion
@@ -68,7 +68,7 @@ namespace HOLMS.Types.Folio {
     public TaxedReservationNightlyQuote(TaxedReservationNightlyQuote other) : this() {
       Opsdate = other.opsdate_ != null ? other.Opsdate.Clone() : null;
       PretaxLodgingCharge = other.pretaxLodgingCharge_ != null ? other.PretaxLodgingCharge.Clone() : null;
-      taxFeeAssessments_ = other.taxFeeAssessments_.Clone();
+      taxEstimates_ = other.taxEstimates_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -98,14 +98,14 @@ namespace HOLMS.Types.Folio {
       }
     }
 
-    /// <summary>Field number for the "tax_fee_assessments" field.</summary>
-    public const int TaxFeeAssessmentsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.TaxFeeAssessment> _repeated_taxFeeAssessments_codec
-        = pb::FieldCodec.ForMessage(26, global::HOLMS.Types.Folio.TaxFeeAssessment.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.TaxFeeAssessment> taxFeeAssessments_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.TaxFeeAssessment>();
+    /// <summary>Field number for the "tax_estimates" field.</summary>
+    public const int TaxEstimatesFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.TaxAssessmentEstimate> _repeated_taxEstimates_codec
+        = pb::FieldCodec.ForMessage(26, global::HOLMS.Types.Folio.TaxAssessmentEstimate.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessmentEstimate> taxEstimates_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessmentEstimate>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Folio.TaxFeeAssessment> TaxFeeAssessments {
-      get { return taxFeeAssessments_; }
+    public pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessmentEstimate> TaxEstimates {
+      get { return taxEstimates_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -123,7 +123,7 @@ namespace HOLMS.Types.Folio {
       }
       if (!object.Equals(Opsdate, other.Opsdate)) return false;
       if (!object.Equals(PretaxLodgingCharge, other.PretaxLodgingCharge)) return false;
-      if(!taxFeeAssessments_.Equals(other.taxFeeAssessments_)) return false;
+      if(!taxEstimates_.Equals(other.taxEstimates_)) return false;
       return true;
     }
 
@@ -132,7 +132,7 @@ namespace HOLMS.Types.Folio {
       int hash = 1;
       if (opsdate_ != null) hash ^= Opsdate.GetHashCode();
       if (pretaxLodgingCharge_ != null) hash ^= PretaxLodgingCharge.GetHashCode();
-      hash ^= taxFeeAssessments_.GetHashCode();
+      hash ^= taxEstimates_.GetHashCode();
       return hash;
     }
 
@@ -151,7 +151,7 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(18);
         output.WriteMessage(PretaxLodgingCharge);
       }
-      taxFeeAssessments_.WriteTo(output, _repeated_taxFeeAssessments_codec);
+      taxEstimates_.WriteTo(output, _repeated_taxEstimates_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -163,7 +163,7 @@ namespace HOLMS.Types.Folio {
       if (pretaxLodgingCharge_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PretaxLodgingCharge);
       }
-      size += taxFeeAssessments_.CalculateSize(_repeated_taxFeeAssessments_codec);
+      size += taxEstimates_.CalculateSize(_repeated_taxEstimates_codec);
       return size;
     }
 
@@ -184,7 +184,7 @@ namespace HOLMS.Types.Folio {
         }
         PretaxLodgingCharge.MergeFrom(other.PretaxLodgingCharge);
       }
-      taxFeeAssessments_.Add(other.taxFeeAssessments_);
+      taxEstimates_.Add(other.taxEstimates_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -210,7 +210,7 @@ namespace HOLMS.Types.Folio {
             break;
           }
           case 26: {
-            taxFeeAssessments_.AddEntriesFrom(input, _repeated_taxFeeAssessments_codec);
+            taxEstimates_.AddEntriesFrom(input, _repeated_taxEstimates_codec);
             break;
           }
         }

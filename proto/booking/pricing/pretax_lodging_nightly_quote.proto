@@ -7,7 +7,7 @@ option go_package = "booking/pricing";
 import "primitive/pb_local_date.proto";
 import "primitive/monetary_amount.proto";
 
-message PretaxReservationNightlyQuote {
+message PretaxLodgingNightlyQuote {
 	holms.types.primitive.PbLocalDate opsdate = 1;
 	holms.types.primitive.MonetaryAmount lodging_price = 2;
 }
