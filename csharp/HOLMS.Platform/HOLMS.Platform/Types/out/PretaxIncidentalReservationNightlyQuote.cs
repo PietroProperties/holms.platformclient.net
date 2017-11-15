@@ -26,16 +26,18 @@ namespace HOLMS.Types.Booking.Pricing {
             "b25fbmlnaHRseV9xdW90ZS5wcm90bxIbaG9sbXMudHlwZXMuYm9va2luZy5w",
             "cmljaW5nGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3RvGjdzdXBw",
             "bHkvaW5jaWRlbnRhbF9pdGVtcy9pbmNpZGVudGFsX2l0ZW1faW5kaWNhdG9y",
-            "LnByb3RvIsEBCidQcmV0YXhJbmNpZGVudGFsUmVzZXJ2YXRpb25OaWdodGx5",
-            "UXVvdGUSPwoQaW5jaWRlbnRhbF9wcmljZRgBIAEoCzIlLmhvbG1zLnR5cGVz",
-            "LnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJVCg9pbmNpZGVudGFsX2l0ZW0Y",
-            "AiABKAsyPC5ob2xtcy50eXBlcy5zdXBwbHkuaW5jaWRlbnRhbF9pdGVtcy5J",
-            "bmNpZGVudGFsSXRlbUluZGljYXRvckIvWg9ib29raW5nL3ByaWNpbmeqAhtI",
-            "T0xNUy5UeXBlcy5Cb29raW5nLlByaWNpbmdiBnByb3RvMw=="));
+            "LnByb3RvGh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90byL2AQonUHJl",
+            "dGF4SW5jaWRlbnRhbFJlc2VydmF0aW9uTmlnaHRseVF1b3RlEj8KEGluY2lk",
+            "ZW50YWxfcHJpY2UYASABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9u",
+            "ZXRhcnlBbW91bnQSVQoPaW5jaWRlbnRhbF9pdGVtGAIgASgLMjwuaG9sbXMu",
+            "dHlwZXMuc3VwcGx5LmluY2lkZW50YWxfaXRlbXMuSW5jaWRlbnRhbEl0ZW1J",
+            "bmRpY2F0b3ISMwoHb3BzZGF0ZRgDIAEoCzIiLmhvbG1zLnR5cGVzLnByaW1p",
+            "dGl2ZS5QYkxvY2FsRGF0ZUIvWg9ib29raW5nL3ByaWNpbmeqAhtIT0xNUy5U",
+            "eXBlcy5Cb29raW5nLlByaWNpbmdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.PretaxIncidentalReservationNightlyQuote), global::HOLMS.Types.Booking.Pricing.PretaxIncidentalReservationNightlyQuote.Parser, new[]{ "IncidentalPrice", "IncidentalItem" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.PretaxIncidentalReservationNightlyQuote), global::HOLMS.Types.Booking.Pricing.PretaxIncidentalReservationNightlyQuote.Parser, new[]{ "IncidentalPrice", "IncidentalItem", "Opsdate" }, null, null, null)
           }));
     }
     #endregion
@@ -68,6 +70,7 @@ namespace HOLMS.Types.Booking.Pricing {
     public PretaxIncidentalReservationNightlyQuote(PretaxIncidentalReservationNightlyQuote other) : this() {
       IncidentalPrice = other.incidentalPrice_ != null ? other.IncidentalPrice.Clone() : null;
       IncidentalItem = other.incidentalItem_ != null ? other.IncidentalItem.Clone() : null;
+      Opsdate = other.opsdate_ != null ? other.Opsdate.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -97,6 +100,17 @@ namespace HOLMS.Types.Booking.Pricing {
       }
     }
 
+    /// <summary>Field number for the "opsdate" field.</summary>
+    public const int OpsdateFieldNumber = 3;
+    private global::HOLMS.Types.Primitive.PbLocalDate opsdate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate Opsdate {
+      get { return opsdate_; }
+      set {
+        opsdate_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PretaxIncidentalReservationNightlyQuote);
@@ -112,6 +126,7 @@ namespace HOLMS.Types.Booking.Pricing {
       }
       if (!object.Equals(IncidentalPrice, other.IncidentalPrice)) return false;
       if (!object.Equals(IncidentalItem, other.IncidentalItem)) return false;
+      if (!object.Equals(Opsdate, other.Opsdate)) return false;
       return true;
     }
 
@@ -120,6 +135,7 @@ namespace HOLMS.Types.Booking.Pricing {
       int hash = 1;
       if (incidentalPrice_ != null) hash ^= IncidentalPrice.GetHashCode();
       if (incidentalItem_ != null) hash ^= IncidentalItem.GetHashCode();
+      if (opsdate_ != null) hash ^= Opsdate.GetHashCode();
       return hash;
     }
 
@@ -138,6 +154,10 @@ namespace HOLMS.Types.Booking.Pricing {
         output.WriteRawTag(18);
         output.WriteMessage(IncidentalItem);
       }
+      if (opsdate_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Opsdate);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -148,6 +168,9 @@ namespace HOLMS.Types.Booking.Pricing {
       }
       if (incidentalItem_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(IncidentalItem);
+      }
+      if (opsdate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Opsdate);
       }
       return size;
     }
@@ -168,6 +191,12 @@ namespace HOLMS.Types.Booking.Pricing {
           incidentalItem_ = new global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicator();
         }
         IncidentalItem.MergeFrom(other.IncidentalItem);
+      }
+      if (other.opsdate_ != null) {
+        if (opsdate_ == null) {
+          opsdate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        Opsdate.MergeFrom(other.Opsdate);
       }
     }
 
@@ -191,6 +220,13 @@ namespace HOLMS.Types.Booking.Pricing {
               incidentalItem_ = new global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicator();
             }
             input.ReadMessage(incidentalItem_);
+            break;
+          }
+          case 26: {
+            if (opsdate_ == null) {
+              opsdate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(opsdate_);
             break;
           }
         }

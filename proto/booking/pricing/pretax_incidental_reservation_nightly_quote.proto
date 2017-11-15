@@ -6,8 +6,10 @@ option go_package = "booking/pricing";
 
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
+import "primitive/pb_local_date.proto";
 
 message PretaxIncidentalReservationNightlyQuote {
 	holms.types.primitive.MonetaryAmount incidental_price = 1;
 	holms.types.supply.incidental_items.IncidentalItemIndicator incidental_item = 2;
+	holms.types.primitive.PbLocalDate opsdate = 3;
 }
