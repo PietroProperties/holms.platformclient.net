@@ -25,16 +25,19 @@ namespace HOLMS.Types.Booking.Reservations {
             "CkFib29raW5nL3Jlc2VydmF0aW9ucy9yZXNlcnZhdGlvbl9mcnBfYW1lbmRt",
             "ZW50X25vdGlmaWNhdGlvbi5wcm90bxIgaG9sbXMudHlwZXMuYm9va2luZy5y",
             "ZXNlcnZhdGlvbnMaLmJvb2tpbmcvaW5kaWNhdG9ycy9yZXNlcnZhdGlvbl9p",
-            "bmRpY2F0b3IucHJvdG8irQEKI1Jlc2VydmF0aW9uRlJQQW1lbmRtZW50Tm90",
-            "aWZpY2F0aW9uEhEKCWpfd190b2tlbhgBIAEoCRJJCgtyZXNlcnZhdGlvbhgC",
-            "IAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZh",
-            "dGlvbkluZGljYXRvchIoCiByZXNlcnZhdGlvbl9oYWRfZ3VhcmFudGVlX3Rl",
-            "bmRlchgDIAEoCEI5WhRib29raW5nL3Jlc2VydmF0aW9uc6oCIEhPTE1TLlR5",
-            "cGVzLkJvb2tpbmcuUmVzZXJ2YXRpb25zYgZwcm90bzM="));
+            "bmRpY2F0b3IucHJvdG8aLmJvb2tpbmcvcmVzZXJ2YXRpb25zL3Jlc2VydmF0",
+            "aW9uX3N1bW1hcnkucHJvdG8igAIKI1Jlc2VydmF0aW9uRlJQQW1lbmRtZW50",
+            "Tm90aWZpY2F0aW9uEhEKCWpfd190b2tlbhgBIAEoCRJJCgtyZXNlcnZhdGlv",
+            "bhgCIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNl",
+            "cnZhdGlvbkluZGljYXRvchIoCiByZXNlcnZhdGlvbl9oYWRfZ3VhcmFudGVl",
+            "X3RlbmRlchgDIAEoCBJRChNyZXNlcnZhdGlvbl9zdW1tYXJ5GAQgASgLMjQu",
+            "aG9sbXMudHlwZXMuYm9va2luZy5yZXNlcnZhdGlvbnMuUmVzZXJ2YXRpb25T",
+            "dW1tYXJ5QjlaFGJvb2tpbmcvcmVzZXJ2YXRpb25zqgIgSE9MTVMuVHlwZXMu",
+            "Qm9va2luZy5SZXNlcnZhdGlvbnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationSummaryReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentNotification), global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentNotification.Parser, new[]{ "JWToken", "Reservation", "ReservationHadGuaranteeTender" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentNotification), global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentNotification.Parser, new[]{ "JWToken", "Reservation", "ReservationHadGuaranteeTender", "ReservationSummary" }, null, null, null)
           }));
     }
     #endregion
@@ -68,6 +71,7 @@ namespace HOLMS.Types.Booking.Reservations {
       jWToken_ = other.jWToken_;
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
       reservationHadGuaranteeTender_ = other.reservationHadGuaranteeTender_;
+      ReservationSummary = other.reservationSummary_ != null ? other.ReservationSummary.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -108,6 +112,17 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
+    /// <summary>Field number for the "reservation_summary" field.</summary>
+    public const int ReservationSummaryFieldNumber = 4;
+    private global::HOLMS.Types.Booking.Reservations.ReservationSummary reservationSummary_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Reservations.ReservationSummary ReservationSummary {
+      get { return reservationSummary_; }
+      set {
+        reservationSummary_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationFRPAmendmentNotification);
@@ -124,6 +139,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (JWToken != other.JWToken) return false;
       if (!object.Equals(Reservation, other.Reservation)) return false;
       if (ReservationHadGuaranteeTender != other.ReservationHadGuaranteeTender) return false;
+      if (!object.Equals(ReservationSummary, other.ReservationSummary)) return false;
       return true;
     }
 
@@ -133,6 +149,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (JWToken.Length != 0) hash ^= JWToken.GetHashCode();
       if (reservation_ != null) hash ^= Reservation.GetHashCode();
       if (ReservationHadGuaranteeTender != false) hash ^= ReservationHadGuaranteeTender.GetHashCode();
+      if (reservationSummary_ != null) hash ^= ReservationSummary.GetHashCode();
       return hash;
     }
 
@@ -155,6 +172,10 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(24);
         output.WriteBool(ReservationHadGuaranteeTender);
       }
+      if (reservationSummary_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ReservationSummary);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -168,6 +189,9 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (ReservationHadGuaranteeTender != false) {
         size += 1 + 1;
+      }
+      if (reservationSummary_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReservationSummary);
       }
       return size;
     }
@@ -188,6 +212,12 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (other.ReservationHadGuaranteeTender != false) {
         ReservationHadGuaranteeTender = other.ReservationHadGuaranteeTender;
+      }
+      if (other.reservationSummary_ != null) {
+        if (reservationSummary_ == null) {
+          reservationSummary_ = new global::HOLMS.Types.Booking.Reservations.ReservationSummary();
+        }
+        ReservationSummary.MergeFrom(other.ReservationSummary);
       }
     }
 
@@ -212,6 +242,13 @@ namespace HOLMS.Types.Booking.Reservations {
           }
           case 24: {
             ReservationHadGuaranteeTender = input.ReadBool();
+            break;
+          }
+          case 34: {
+            if (reservationSummary_ == null) {
+              reservationSummary_ = new global::HOLMS.Types.Booking.Reservations.ReservationSummary();
+            }
+            input.ReadMessage(reservationSummary_);
             break;
           }
         }
