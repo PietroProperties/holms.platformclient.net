@@ -9,5 +9,6 @@
         public const string ReservationFRPAmendment = "booking.reservations.frp_amendment";
         public const string ReservationBooked = "booking.reservations.reservation_booked";
         public const string ReservationGuaranteeOccurred = "booking.reservations.guarantees.any";
+        public const string IncidentalReservationUpserted = "booking.reservations.incidentals.reservation_upserted";
     }
 }
