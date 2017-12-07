@@ -10,5 +10,6 @@
         public const string ReservationBooked = "booking.reservations.reservation_booked";
         public const string ReservationGuaranteeOccurred = "booking.reservations.guarantees.any";
         public const string IncidentalReservationUpserted = "booking.reservations.incidentals.reservation_upserted";
+        public const string ReservationPricesOverridden = "booking.reservations.price_override";
     }
 }
