@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package holms.types.booking.pricing;
+option csharp_namespace = "HOLMS.Types.Booking.Pricing";
+option go_package = "booking/reservations";
+
+import "booking/reservations/reservation_summary.proto";
+
+message ReservationPriceOverrideNotification {
+	string j_w_token = 1;
+	.holms.types.booking.reservations.ReservationSummary reservation_summary = 2;
+}
