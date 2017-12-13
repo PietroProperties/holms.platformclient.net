@@ -59,7 +59,7 @@ enum MasterFolioSvcFolioSwapDirection {
 message MasterFolioServiceFolioSwapRequest {
 	.holms.types.primitive.PbLocalDate swap_opsdate = 1;
 	MasterFolioSvcFolioSwapDirection swap_direction = 2;
-	bool swapIsForIncidentalsCharge = 3;
+	bool swap_is_for_incidentals_charge = 3;
 	.holms.types.supply.incidental_items.IncidentalItemIndicator swapped_incidentals_charge = 4;
 }
 
