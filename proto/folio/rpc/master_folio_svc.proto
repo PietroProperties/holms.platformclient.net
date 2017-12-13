@@ -6,6 +6,8 @@ option go_package = "folio/rpc";
 
 import "booking/indicators/reservation_indicator.proto";
 import "folio/posted_charge_credit.proto";
+import "primitive/pb_local_date.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
 
 message MasterFolioServiceMasterFolioRequest {
 	.holms.types.booking.indicators.ReservationIndicator client_folio = 1;
@@ -49,6 +51,18 @@ enum MasterFolioSvcFolioSwapResult {
 	MASTER_FOLIO_SVC_FOLIO_SWAP_FAILURE_UNKNOWN = 3;
 }
 
+enum MasterFolioSvcFolioSwapDirection {
+	MASTER_FOLIO_SVC_FOLIO_SWAP_CLIENT_TO_MASTER = 0;
+	MASTER_FOLIO_SVC_FOLIO_SWAP_MASTER_TO_CLIENT = 1;
+}
+
+message MasterFolioServiceFolioSwapRequest {
+	.holms.types.primitive.PbLocalDate swap_opsdate = 1;
+	MasterFolioSvcFolioSwapDirection swap_direction = 2;
+	bool swapIsForIncidentalsCharge = 3;
+	.holms.types.supply.incidental_items.IncidentalItemIndicator swapped_incidentals_charge = 4;
+}
+
 message MasterFolioSvcReservationMasterFolioAssignmentList {
 	repeated ReservationMasterFolioAssignment assignments = 1;
 }
@@ -81,4 +95,7 @@ service MasterFolioSvc {
 
 	rpc GetMasterFolioAssignments(MasterFolioSvcGetMasterFolioAssignmentsRequest) 
 		returns (MasterFolioSvcReservationMasterFolioAssignmentList);
+
+	rpc AtomicFolioChargeSwap(MasterFolioServiceFolioSwapRequest)
+		returns(MasterFolioSvcFolioSwapResponse);
 }
