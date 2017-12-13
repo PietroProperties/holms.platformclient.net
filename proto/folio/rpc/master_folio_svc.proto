@@ -61,6 +61,7 @@ message MasterFolioServiceFolioSwapRequest {
 	MasterFolioSvcFolioSwapDirection swap_direction = 2;
 	bool swap_is_for_incidentals_charge = 3;
 	.holms.types.supply.incidental_items.IncidentalItemIndicator swapped_incidentals_charge = 4;
+	.holms.types.booking.indicators.ReservationIndicator client_folio = 5;
 }
 
 message MasterFolioSvcReservationMasterFolioAssignmentList {
