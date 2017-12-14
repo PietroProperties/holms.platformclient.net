@@ -6,10 +6,12 @@ option go_package = "booking/reservations";
 
 import "booking/indicators/reservation_indicator.proto";
 import "booking/reservations/reservation_summary.proto";
+import "booking/pricing/pretax_reservation_quote.proto";
 
 message ReservationFRPAmendmentNotification {
 	string j_w_token = 1;
 	.holms.types.booking.indicators.ReservationIndicator reservation = 2;
 	bool reservation_had_guarantee_tender = 3;
 	.holms.types.booking.reservations.ReservationSummary reservation_summary = 4;
+	holms.types.booking.pricing.PretaxReservationQuote price_quote = 5;
 }
