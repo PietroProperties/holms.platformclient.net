@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.indicators;
+option csharp_namespace = "HOLMS.Types.Folio";
+
+import "primitive/uuid.proto";
+
+message FolioPaymentIndicator {
+	holms.types.primitive.Uuid id = 1;
+}
+
