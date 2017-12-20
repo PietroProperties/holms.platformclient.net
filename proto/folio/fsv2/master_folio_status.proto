@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.folio.fsv2;
+option csharp_namespace = "HOLMS.Types.Folio.FSv2";
+
+enum MasterFolioStatus {
+	MASTER_FOLIO_STATUS_IS_MASTER = 0;
+	MASTER_FOLIO_STATUS_IS_CLIENT = 1;
+	MASTER_FOLIO_STATUS_IS_NEITHER = 2;
+}
+

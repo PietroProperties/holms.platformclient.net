@@ -23,14 +23,14 @@ namespace HOLMS.Types.Folio {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Citmb2xpby9wb3N0ZWRfY2hhcmdlX2NyZWRpdF9mb2xpb19zd2FwLnByb3Rv",
-            "EhFIT0xNUy5UeXBlcy5Gb2xpbxouYm9va2luZy9pbmRpY2F0b3JzL3Jlc2Vy",
+            "EhFob2xtcy50eXBlcy5mb2xpbxouYm9va2luZy9pbmRpY2F0b3JzL3Jlc2Vy",
             "dmF0aW9uX2luZGljYXRvci5wcm90bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ft",
             "b3VudC5wcm90byK6AQobUG9zdGVkQ2hhcmdlQ3JlZGl0Rm9saW9Td2FwEhMK",
             "C2Rlc2NyaXB0aW9uGAEgASgJEjUKBmFtb3VudBgCIAEoCzIlLmhvbG1zLnR5",
             "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJPChFvcmlnaW5hdGluZ19m",
             "b2xpbxgDIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5S",
-            "ZXNlcnZhdGlvbkluZGljYXRvckIbWgVmb2xpb6oCEUhPTE1TLlR5cGVzLkZv",
-            "bGlvYgZwcm90bzM="));
+            "ZXNlcnZhdGlvbkluZGljYXRvckIUqgIRSE9MTVMuVHlwZXMuRm9saW9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

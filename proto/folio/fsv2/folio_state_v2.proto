@@ -1,0 +1,38 @@
+﻿syntax = "proto3";
+
+package holms.types.folio.fsv2;
+option csharp_namespace = "HOLMS.Types.Folio.FSv2";
+
+import "folio/fsv2/folio_atomic_charge.proto";
+import "folio/fsv2/folio_adjustment.proto";
+import "folio/fsv2/folio_card_refund.proto";
+import "folio/fsv2/folio_card_sale.proto";
+import "folio/fsv2/folio_check_cash_payment.proto";
+import "folio/fsv2/folio_tax_assessment.proto";
+import "folio/fsv2/master_folio_status.proto";
+import "primitive/monetary_amount.proto";
+
+
+message FolioStatev2 {
+	repeated .holms.types.folio.fsv2.FolioAtomicCharge effective_charges = 1;
+	repeated .holms.types.folio.fsv2.FolioAdjustment adjustments = 2;
+	repeated .holms.types.folio.fsv2.FolioCardRefund card_refunds = 3;
+	repeated .holms.types.folio.fsv2.FolioCardSale card_sales = 4;
+	repeated .holms.types.folio.fsv2.FolioCheckCashPayment check_cash_payments = 5;
+
+	repeated .holms.types.folio.fsv2.FolioTaxAssessment current_tax_assessments = 6;
+	repeated .holms.types.folio.fsv2.FolioTaxAssessment anticipated_ending_tax_assessment = 7;
+
+	.holms.types.folio.fsv2.MasterFolioStatus master_folio_status = 8;
+	repeated .holms.types.folio.fsv2.FolioAtomicCharge native_charges = 9;
+	repeated .holms.types.folio.fsv2.FolioAtomicCharge exported_to_other_folio_charges = 10;
+	repeated .holms.types.folio.fsv2.FolioAtomicCharge imported_from_other_folio_charges = 11;
+
+	.holms.types.primitive.MonetaryAmount current_net_charges = 12;
+	.holms.types.primitive.MonetaryAmount anticipated_net_charges = 13;
+	.holms.types.primitive.MonetaryAmount posted_payments = 14;
+	.holms.types.primitive.MonetaryAmount posted_refunds = 15;
+	.holms.types.primitive.MonetaryAmount unused_payment_authorizations = 16;
+	.holms.types.primitive.MonetaryAmount unused_guarantee_authorizations = 17;
+}
+

@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+package holms.types.folio.fsv2;
+option csharp_namespace = "HOLMS.Types.Folio.FSv2";
+
+import "folio/fsv2/folio_card_sale_purpose.proto";
+import "folio/fsv2/folio_guest_payment_card.proto";
+import "money/cards/transactions/authorization_entry_method.proto";
+import "money/cards/transactions/card_sale_state.proto";
+import "money/cards/transactions/payment_card_sale_indicator.proto";
+import "primitive/monetary_amount.proto";
+
+message FolioCardSale {
+	.holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 1;
+	.holms.types.folio.fsv2.FolioGuestPaymentCard card = 2;
+	.holms.types.folio.fsv2.FolioCardSalePurpose purpose = 3;
+	.holms.types.money.cards.transactions.CardSaleState sale_state = 4;
+	.holms.types.primitive.MonetaryAmount open_authorized = 5;
+	.holms.types.primitive.MonetaryAmount captured = 6;
+	.holms.types.money.cards.transactions.AuthorizationEntryMethod entry_method = 7;
+}
+

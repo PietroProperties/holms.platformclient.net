@@ -91,7 +91,7 @@ service MasterFolioSvc {
 	rpc RemoveMasterFolio(MasterFolioSvcRemoveMasterFolioRequest)
 		returns(MasterFolioServiceRemoveMasterFolioResponse);
 
-	rpc FolioSwap(HOLMS.Types.Folio.PostedChargeCredit)
+	rpc FolioSwap(holms.types.folio.PostedChargeCredit)
 		returns(MasterFolioSvcFolioSwapResponse);
 
 	rpc GetMasterFolioAssignments(MasterFolioSvcGetMasterFolioAssignmentsRequest) 

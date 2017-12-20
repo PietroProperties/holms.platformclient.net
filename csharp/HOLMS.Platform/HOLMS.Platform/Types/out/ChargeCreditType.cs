@@ -22,8 +22,8 @@ namespace HOLMS.Types.Folio {
     static ChargeCreditTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5mb2xpby9jaGFyZ2VfY3JlZGl0X3R5cGUucHJvdG8SEUhPTE1TLlR5cGVz",
-            "LkZvbGlvKpABChBDaGFyZ2VDcmVkaXRUeXBlEh0KGUZPTElPX0NIQVJHRV9U",
+            "Ch5mb2xpby9jaGFyZ2VfY3JlZGl0X3R5cGUucHJvdG8SEWhvbG1zLnR5cGVz",
+            "LmZvbGlvKpABChBDaGFyZ2VDcmVkaXRUeXBlEh0KGUZPTElPX0NIQVJHRV9U",
             "WVBFX0xPREdJTkcQABIgChxGT0xJT19DSEFSR0VfVFlQRV9JTkNJREVOVEFM",
             "EAESHwobRk9MSU9fQ0hBUkdFX1RZUEVfUk9PTV9DQUxMEAISGgoWRk9MSU9f",
             "Q0hBUkdFX1RZUEVfTUlTQxADQhtaBWZvbGlvqgIRSE9MTVMuVHlwZXMuRm9s",

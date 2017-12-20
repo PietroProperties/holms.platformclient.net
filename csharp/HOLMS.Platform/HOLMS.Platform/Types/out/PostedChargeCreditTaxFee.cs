@@ -22,8 +22,8 @@ namespace HOLMS.Types.Folio {
     static PostedChargeCreditTaxFeeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cihmb2xpby9wb3N0ZWRfY2hhcmdlX2NyZWRpdF90YXhfZmVlLnByb3RvEhFI",
-            "T0xNUy5UeXBlcy5Gb2xpbxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5w",
+            "Cihmb2xpby9wb3N0ZWRfY2hhcmdlX2NyZWRpdF90YXhfZmVlLnByb3RvEhFo",
+            "b2xtcy50eXBlcy5mb2xpbxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5w",
             "cm90byJmChhQb3N0ZWRDaGFyZ2VDcmVkaXRUYXhGZWUSEwoLZGVzY3JpcHRp",
             "b24YASABKAkSNQoGYW1vdW50GAIgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0",
             "aXZlLk1vbmV0YXJ5QW1vdW50QhtaBWZvbGlvqgIRSE9MTVMuVHlwZXMuRm9s",

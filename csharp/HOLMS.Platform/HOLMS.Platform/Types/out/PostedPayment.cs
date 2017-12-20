@@ -22,7 +22,7 @@ namespace HOLMS.Types.Folio {
     static PostedPaymentReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Chpmb2xpby9wb3N0ZWRfcGF5bWVudC5wcm90bxIRSE9MTVMuVHlwZXMuRm9s",
+            "Chpmb2xpby9wb3N0ZWRfcGF5bWVudC5wcm90bxIRaG9sbXMudHlwZXMuZm9s",
             "aW8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aOm1vbmV5L2Nh",
             "cmRzL3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfc2FsZV9pbmRpY2F0b3Iu",
             "cHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8aGGZvbGlv",
@@ -30,7 +30,7 @@ namespace HOLMS.Types.Folio {
             "ZWRfYXQYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjUKBmFt",
             "b3VudBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFt",
             "b3VudBIRCgluYXJyYXRpb24YAyABKAkSNAoMcGF5bWVudF90eXBlGAQgASgO",
-            "Mh4uSE9MTVMuVHlwZXMuRm9saW8uUGF5bWVudFR5cGUSFgoOaXNfY2FuY2Vs",
+            "Mh4uaG9sbXMudHlwZXMuZm9saW8uUGF5bWVudFR5cGUSFgoOaXNfY2FuY2Vs",
             "bGFibGUYBSABKAgSTAoEc2FsZRgGIAEoCzI+LmhvbG1zLnR5cGVzLm1vbmV5",
             "LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNhbGVJbmRpY2F0b3JC",
             "G1oFZm9saW+qAhFIT0xNUy5UeXBlcy5Gb2xpb2IGcHJvdG8z"));

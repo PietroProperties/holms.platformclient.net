@@ -22,7 +22,7 @@ namespace HOLMS.Types.Folio {
     static PaymentTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Chhmb2xpby9wYXltZW50X3R5cGUucHJvdG8SEUhPTE1TLlR5cGVzLkZvbGlv",
+            "Chhmb2xpby9wYXltZW50X3R5cGUucHJvdG8SEWhvbG1zLnR5cGVzLmZvbGlv",
             "KlMKC1BheW1lbnRUeXBlEhUKEVBBWU1FTlRfVFlQRV9DQVNIEAASFgoSUEFZ",
             "TUVOVF9UWVBFX0NIRUNLEAESFQoRUEFZTUVOVF9UWVBFX0NBUkQQAkIbWgVm",
             "b2xpb6oCEUhPTE1TLlR5cGVzLkZvbGlvYgZwcm90bzM="));

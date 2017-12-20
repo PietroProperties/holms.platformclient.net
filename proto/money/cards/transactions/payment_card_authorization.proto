@@ -3,20 +3,11 @@
 package holms.types.money.cards.transactions;
 option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 
+import "money/cards/transactions/authorization_entry_method.proto";
 import "money/cards/transactions/processor_transaction_result.proto";
 import "money/cards/transactions/payment_card_authorization_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "google/protobuf/timestamp.proto";
-
-enum AuthorizationEntryMethod {
-	CARD_PRESENT_MANUAL = 0;
-	CARD_PRESENT_SWIPE = 1;
-	CARD_PRESENT_CONTACTLESS = 2;
-	CARD_PRESENT_SCANNER = 3;
-	CARD_PRESENT_CHIP = 4;
-	CARD_PRESENT_CHIP_FALL_BACK_SWIPE = 5;
-	CARD_NOT_PRESENT = 6;
-}
 
 message PaymentCardAuthorization {
 	PaymentCardAuthorizationIndicator entity_id = 1;

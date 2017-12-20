@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+package holms.types.folio.fsv2;
+option csharp_namespace = "HOLMS.Types.Folio.FSv2";
+
+enum FolioCardSalePurpose {
+	FOLIO_CARD_SALE_PURPOSE_PAYMENT = 0;
+	FOLIO_CARD_SALE_PURPOSE_GUARANTEE = 1;
+}
+
