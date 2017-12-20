@@ -5,6 +5,8 @@ option csharp_namespace = "HOLMS.Types.Folio.RPC";
 option go_package = "folio/rpc";
 
 import "booking/indicators/reservation_indicator.proto";
+import "folio/folio_state.proto";
+import "folio/fsv2/folio_state_v2.proto";
 import "google/protobuf/empty.proto";
 import "money/cards/card_sale_purpose.proto";
 import "money/cards/guest_payment_card.proto";
@@ -12,7 +14,6 @@ import "money/cards/guest_payment_card_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
 import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
-import "folio/folio_state.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
 
@@ -35,6 +36,11 @@ enum ReservationFolioSvcGetFolioStateResult {
 message ReservationFolioSvcGetFolioStateResponse {
 	ReservationFolioSvcGetFolioStateResult result = 1;
 	.holms.types.folio.FolioState folio_state = 2;
+}
+
+message ReservationFolioSvcGetFolioStateResponsev2 {
+	ReservationFolioSvcGetFolioStateResult result = 1;
+	.holms.types.folio.fsv2.FolioStatev2 folio_state = 2;
 }
 
 enum ReservationFolioSvcPostCashPaymentResult {
@@ -183,6 +189,8 @@ service ReservationFolioSvc {
 	// Get info about the folio
 	rpc GetFolioState(.holms.types.booking.indicators.ReservationIndicator)
 		returns(ReservationFolioSvcGetFolioStateResponse);
+	rpc GetFolioStatev2(.holms.types.booking.indicators.ReservationIndicator)
+		returns(ReservationFolioSvcGetFolioStateResponsev2);
 	rpc GetOnFileCards(holms.types.booking.indicators.ReservationIndicator) 
 		returns(ReservationFolioSvcGetOnFileCardsResponse);
 
