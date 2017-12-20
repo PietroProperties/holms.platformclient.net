@@ -22,7 +22,7 @@ namespace HOLMS.Types.Folio {
     static PostedRefundReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Chlmb2xpby9wb3N0ZWRfcmVmdW5kLnByb3RvEhFIT0xNUy5UeXBlcy5Gb2xp",
+            "Chlmb2xpby9wb3N0ZWRfcmVmdW5kLnByb3RvEhFob2xtcy50eXBlcy5mb2xp",
             "bxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxofcHJpbWl0aXZl",
             "L21vbmV0YXJ5X2Ftb3VudC5wcm90byKHAQoMUG9zdGVkUmVmdW5kEi0KCXBv",
             "c3RlZF9hdBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASNQoG",

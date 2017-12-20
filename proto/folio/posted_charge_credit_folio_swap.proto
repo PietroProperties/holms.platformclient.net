@@ -1,8 +1,7 @@
 syntax = "proto3";
 
-package HOLMS.Types.Folio;
+package holms.types.folio;
 option csharp_namespace = "HOLMS.Types.Folio";
-option go_package = "folio";
 import "booking/indicators/reservation_indicator.proto";
 
 import "primitive/monetary_amount.proto";

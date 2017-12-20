@@ -5,6 +5,7 @@ option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 
 import "money/cards/card_merchant_indicator.proto";
 import "money/cards/guest_payment_card.proto";
+import "money/cards/transactions/authorization_entry_method.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/cards/transactions/payment_card_authorization.proto";
 import "money/cards/transactions/payment_card_authorization_increase.proto";

@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package holms.types.folio.fsv2;
+option csharp_namespace = "HOLMS.Types.Folio.FSv2";
+
+import "money/cards/guest_payment_card_indicator.proto";
+import "money/cards/payment_card_brand.proto";
+
+message FolioGuestPaymentCard {
+	.holms.types.money.cards.PaymentCardBrand brand = 1;
+	string masked_pan = 2;
+	.holms.types.money.cards.GuestPaymentCardIndicator card = 3;
+}
+

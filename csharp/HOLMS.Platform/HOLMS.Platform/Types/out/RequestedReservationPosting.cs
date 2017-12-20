@@ -23,12 +23,12 @@ namespace HOLMS.Types.Folio {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cilmb2xpby9yZXF1ZXN0ZWRfcmVzZXJ2YXRpb25fcG9zdGluZy5wcm90bxIR",
-            "SE9MTVMuVHlwZXMuRm9saW8aLmJvb2tpbmcvaW5kaWNhdG9ycy9yZXNlcnZh",
+            "aG9sbXMudHlwZXMuZm9saW8aLmJvb2tpbmcvaW5kaWNhdG9ycy9yZXNlcnZh",
             "dGlvbl9pbmRpY2F0b3IucHJvdG8aK2ZvbGlvL3JlcXVlc3RlZF9jaGFyZ2Vf",
             "Y3JlZGl0X3Bvc3RpbmcucHJvdG8iqAEKG1JlcXVlc3RlZFJlc2VydmF0aW9u",
             "UG9zdGluZxJJCgtyZXNlcnZhdGlvbhgBIAEoCzI0LmhvbG1zLnR5cGVzLmJv",
             "b2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchI+CgVsaW5l",
-            "cxgCIAMoCzIvLkhPTE1TLlR5cGVzLkZvbGlvLlJlcXVlc3RlZENoYXJnZUNy",
+            "cxgCIAMoCzIvLmhvbG1zLnR5cGVzLmZvbGlvLlJlcXVlc3RlZENoYXJnZUNy",
             "ZWRpdFBvc3RpbmdCG1oFZm9saW+qAhFIT0xNUy5UeXBlcy5Gb2xpb2IGcHJv",
             "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,

@@ -32,7 +32,7 @@ enum GroupBookingFolioSvcGetFolioStateResult {
 
 message GroupBookingFolioSvcGetFolioStateResponse {
 	GroupBookingFolioSvcGetFolioStateResult result = 1;
-	.HOLMS.Types.Folio.FolioState folio_state = 2;
+	.holms.types.folio.FolioState folio_state = 2;
 }
 
 enum GroupBookingFolioSvcPostCashPaymentResult {

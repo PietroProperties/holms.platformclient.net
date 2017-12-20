@@ -34,7 +34,7 @@ enum ReservationFolioSvcGetFolioStateResult {
 
 message ReservationFolioSvcGetFolioStateResponse {
 	ReservationFolioSvcGetFolioStateResult result = 1;
-	.HOLMS.Types.Folio.FolioState folio_state = 2;
+	.holms.types.folio.FolioState folio_state = 2;
 }
 
 enum ReservationFolioSvcPostCashPaymentResult {

@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+package holms.types.folio.fsv2;
+option csharp_namespace = "HOLMS.Types.Folio.FSv2";
+
+import "folio/fsv2/folio_guest_payment_card.proto";
+import "google/protobuf/timestamp.proto";
+import "money/cards/transactions/card_refund_state.proto";
+import "primitive/monetary_amount.proto";
+
+message FolioCardRefund {
+	.holms.types.folio.fsv2.FolioGuestPaymentCard card = 1;
+	.holms.types.money.cards.transactions.CardRefundState state = 2;
+	.holms.types.primitive.MonetaryAmount amount = 3;
+	google.protobuf.Timestamp posted_at = 4;
+}
+

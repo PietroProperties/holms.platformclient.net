@@ -1,0 +1,23 @@
+﻿syntax = "proto3";
+
+package holms.types.folio.fsv2;
+option csharp_namespace = "HOLMS.Types.Folio.FSv2";
+
+import "booking/indicators/reservation_indicator.proto";
+import "folio/charge_credit_type.proto";
+import "google/protobuf/timestamp.proto";
+import "primitive/monetary_amount.proto";
+import "primitive/pb_local_date.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
+
+message FolioAtomicCharge {
+	.holms.types.primitive.MonetaryAmount amount = 1;
+	string narration = 2;
+	.holms.types.folio.ChargeCreditType charge_credit_type = 3;
+	.holms.types.primitive.PbLocalDate effective_for_opsdate = 4;
+	google.protobuf.Timestamp effective_at_clock = 5;
+
+	.holms.types.supply.incidental_items.IncidentalItemIndicator incidental_item = 6;
+	.holms.types.booking.indicators.ReservationIndicator incurred_by = 7;
+}
+

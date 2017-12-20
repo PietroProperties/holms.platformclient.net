@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package HOLMS.Types.Folio;
+package holms.types.folio;
 option csharp_namespace = "HOLMS.Types.Folio";
 option go_package = "folio";
 
@@ -9,6 +9,6 @@ import "folio/requested_charge_credit_posting.proto";
 
 message RequestedReservationPosting {
 	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
-	repeated .HOLMS.Types.Folio.RequestedChargeCreditPosting lines = 2;
+	repeated .holms.types.folio.RequestedChargeCreditPosting lines = 2;
 }
 
