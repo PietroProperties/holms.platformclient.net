@@ -25,15 +25,16 @@ namespace HOLMS.Types.Folio.FSv2 {
             "Cilmb2xpby9mc3YyL2ZvbGlvX2d1ZXN0X3BheW1lbnRfY2FyZC5wcm90bxIW",
             "aG9sbXMudHlwZXMuZm9saW8uZnN2MhoubW9uZXkvY2FyZHMvZ3Vlc3RfcGF5",
             "bWVudF9jYXJkX2luZGljYXRvci5wcm90bxokbW9uZXkvY2FyZHMvcGF5bWVu",
-            "dF9jYXJkX2JyYW5kLnByb3RvIqcBChVGb2xpb0d1ZXN0UGF5bWVudENhcmQS",
+            "dF9jYXJkX2JyYW5kLnByb3RvIsABChVGb2xpb0d1ZXN0UGF5bWVudENhcmQS",
             "OAoFYnJhbmQYASABKA4yKS5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5QYXlt",
             "ZW50Q2FyZEJyYW5kEhIKCm1hc2tlZF9wYW4YAiABKAkSQAoEY2FyZBgDIAEo",
             "CzIyLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkd1ZXN0UGF5bWVudENhcmRJ",
-            "bmRpY2F0b3JCGaoCFkhPTE1TLlR5cGVzLkZvbGlvLkZTdjJiBnByb3RvMw=="));
+            "bmRpY2F0b3ISFwoPY2FyZG1lbWJlcl9uYW1lGAQgASgJQhmqAhZIT0xNUy5U",
+            "eXBlcy5Gb2xpby5GU3YyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardBrandReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioGuestPaymentCard), global::HOLMS.Types.Folio.FSv2.FolioGuestPaymentCard.Parser, new[]{ "Brand", "MaskedPan", "Card" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioGuestPaymentCard), global::HOLMS.Types.Folio.FSv2.FolioGuestPaymentCard.Parser, new[]{ "Brand", "MaskedPan", "Card", "CardmemberName" }, null, null, null)
           }));
     }
     #endregion
@@ -67,6 +68,7 @@ namespace HOLMS.Types.Folio.FSv2 {
       brand_ = other.brand_;
       maskedPan_ = other.maskedPan_;
       Card = other.card_ != null ? other.Card.Clone() : null;
+      cardmemberName_ = other.cardmemberName_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -107,6 +109,17 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
     }
 
+    /// <summary>Field number for the "cardmember_name" field.</summary>
+    public const int CardmemberNameFieldNumber = 4;
+    private string cardmemberName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CardmemberName {
+      get { return cardmemberName_; }
+      set {
+        cardmemberName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioGuestPaymentCard);
@@ -123,6 +136,7 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (Brand != other.Brand) return false;
       if (MaskedPan != other.MaskedPan) return false;
       if (!object.Equals(Card, other.Card)) return false;
+      if (CardmemberName != other.CardmemberName) return false;
       return true;
     }
 
@@ -132,6 +146,7 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (Brand != 0) hash ^= Brand.GetHashCode();
       if (MaskedPan.Length != 0) hash ^= MaskedPan.GetHashCode();
       if (card_ != null) hash ^= Card.GetHashCode();
+      if (CardmemberName.Length != 0) hash ^= CardmemberName.GetHashCode();
       return hash;
     }
 
@@ -154,6 +169,10 @@ namespace HOLMS.Types.Folio.FSv2 {
         output.WriteRawTag(26);
         output.WriteMessage(Card);
       }
+      if (CardmemberName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(CardmemberName);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -167,6 +186,9 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
       if (card_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Card);
+      }
+      if (CardmemberName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CardmemberName);
       }
       return size;
     }
@@ -187,6 +209,9 @@ namespace HOLMS.Types.Folio.FSv2 {
           card_ = new global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator();
         }
         Card.MergeFrom(other.Card);
+      }
+      if (other.CardmemberName.Length != 0) {
+        CardmemberName = other.CardmemberName;
       }
     }
 
@@ -211,6 +236,10 @@ namespace HOLMS.Types.Folio.FSv2 {
               card_ = new global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator();
             }
             input.ReadMessage(card_);
+            break;
+          }
+          case 34: {
+            CardmemberName = input.ReadString();
             break;
           }
         }

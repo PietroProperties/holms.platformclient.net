@@ -10,5 +10,6 @@ message FolioGuestPaymentCard {
 	.holms.types.money.cards.PaymentCardBrand brand = 1;
 	string masked_pan = 2;
 	.holms.types.money.cards.GuestPaymentCardIndicator card = 3;
+	string cardmember_name = 4;
 }
 

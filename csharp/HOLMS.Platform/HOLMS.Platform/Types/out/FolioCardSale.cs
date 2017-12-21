@@ -25,27 +25,31 @@ namespace HOLMS.Types.Folio.FSv2 {
             "CiBmb2xpby9mc3YyL2ZvbGlvX2NhcmRfc2FsZS5wcm90bxIWaG9sbXMudHlw",
             "ZXMuZm9saW8uZnN2MhooZm9saW8vZnN2Mi9mb2xpb19jYXJkX3NhbGVfcHVy",
             "cG9zZS5wcm90bxopZm9saW8vZnN2Mi9mb2xpb19ndWVzdF9wYXltZW50X2Nh",
-            "cmQucHJvdG8aOW1vbmV5L2NhcmRzL3RyYW5zYWN0aW9ucy9hdXRob3JpemF0",
-            "aW9uX2VudHJ5X21ldGhvZC5wcm90bxoubW9uZXkvY2FyZHMvdHJhbnNhY3Rp",
-            "b25zL2NhcmRfc2FsZV9zdGF0ZS5wcm90bxo6bW9uZXkvY2FyZHMvdHJhbnNh",
-            "Y3Rpb25zL3BheW1lbnRfY2FyZF9zYWxlX2luZGljYXRvci5wcm90bxofcHJp",
-            "bWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90byLxAwoNRm9saW9DYXJkU2Fs",
-            "ZRJMCgRzYWxlGAEgASgLMj4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJh",
-            "bnNhY3Rpb25zLlBheW1lbnRDYXJkU2FsZUluZGljYXRvchI7CgRjYXJkGAIg",
-            "ASgLMi0uaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5Gb2xpb0d1ZXN0UGF5bWVu",
-            "dENhcmQSPQoHcHVycG9zZRgDIAEoDjIsLmhvbG1zLnR5cGVzLmZvbGlvLmZz",
-            "djIuRm9saW9DYXJkU2FsZVB1cnBvc2USRwoKc2FsZV9zdGF0ZRgEIAEoDjIz",
-            "LmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5DYXJkU2Fs",
-            "ZVN0YXRlEj4KD29wZW5fYXV0aG9yaXplZBgFIAEoCzIlLmhvbG1zLnR5cGVz",
-            "LnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI3CghjYXB0dXJlZBgGIAEoCzIl",
-            "LmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJUCgxlbnRy",
-            "eV9tZXRob2QYByABKA4yPi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFu",
-            "c2FjdGlvbnMuQXV0aG9yaXphdGlvbkVudHJ5TWV0aG9kQhmqAhZIT0xNUy5U",
-            "eXBlcy5Gb2xpby5GU3YyYgZwcm90bzM="));
+            "cmQucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aOW1v",
+            "bmV5L2NhcmRzL3RyYW5zYWN0aW9ucy9hdXRob3JpemF0aW9uX2VudHJ5X21l",
+            "dGhvZC5wcm90bxoubW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL2NhcmRfc2Fs",
+            "ZV9zdGF0ZS5wcm90bxo6bW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL3BheW1l",
+            "bnRfY2FyZF9zYWxlX2luZGljYXRvci5wcm90bxofcHJpbWl0aXZlL21vbmV0",
+            "YXJ5X2Ftb3VudC5wcm90byL9BAoNRm9saW9DYXJkU2FsZRJMCgRzYWxlGAEg",
+            "ASgLMj4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBh",
+            "eW1lbnRDYXJkU2FsZUluZGljYXRvchI7CgRjYXJkGAIgASgLMi0uaG9sbXMu",
+            "dHlwZXMuZm9saW8uZnN2Mi5Gb2xpb0d1ZXN0UGF5bWVudENhcmQSPQoHcHVy",
+            "cG9zZRgDIAEoDjIsLmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIuRm9saW9DYXJk",
+            "U2FsZVB1cnBvc2USRwoKc2FsZV9zdGF0ZRgEIAEoDjIzLmhvbG1zLnR5cGVz",
+            "Lm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5DYXJkU2FsZVN0YXRlEj4KD29w",
+            "ZW5fYXV0aG9yaXplZBgFIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5N",
+            "b25ldGFyeUFtb3VudBI3CghjYXB0dXJlZBgGIAEoCzIlLmhvbG1zLnR5cGVz",
+            "LnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJUCgxlbnRyeV9tZXRob2QYByAB",
+            "KA4yPi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuQXV0",
+            "aG9yaXphdGlvbkVudHJ5TWV0aG9kEi0KCW9wZW5lZF9hdBgIIAEoCzIaLmdv",
+            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASGQoRYXBwbGljYXRpb25fbGFiZWwY",
+            "CSABKAkSDQoFYV9pX2QYCiABKAkSGgoSYXBwbGljYXRpb25fY3J5cHRvGAsg",
+            "ASgJEhUKDWFwcHJvdmFsX2NvZGUYDCABKAlCGaoCFkhPTE1TLlR5cGVzLkZv",
+            "bGlvLkZTdjJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FSv2.FolioCardSalePurposeReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioGuestPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.AuthorizationEntryMethodReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.CardSaleStateReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FSv2.FolioCardSalePurposeReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioGuestPaymentCardReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.AuthorizationEntryMethodReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.CardSaleStateReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioCardSale), global::HOLMS.Types.Folio.FSv2.FolioCardSale.Parser, new[]{ "Sale", "Card", "Purpose", "SaleState", "OpenAuthorized", "Captured", "EntryMethod" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioCardSale), global::HOLMS.Types.Folio.FSv2.FolioCardSale.Parser, new[]{ "Sale", "Card", "Purpose", "SaleState", "OpenAuthorized", "Captured", "EntryMethod", "OpenedAt", "ApplicationLabel", "AID", "ApplicationCrypto", "ApprovalCode" }, null, null, null)
           }));
     }
     #endregion
@@ -83,6 +87,11 @@ namespace HOLMS.Types.Folio.FSv2 {
       OpenAuthorized = other.openAuthorized_ != null ? other.OpenAuthorized.Clone() : null;
       Captured = other.captured_ != null ? other.Captured.Clone() : null;
       entryMethod_ = other.entryMethod_;
+      OpenedAt = other.openedAt_ != null ? other.OpenedAt.Clone() : null;
+      applicationLabel_ = other.applicationLabel_;
+      aID_ = other.aID_;
+      applicationCrypto_ = other.applicationCrypto_;
+      approvalCode_ = other.approvalCode_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -167,6 +176,64 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
     }
 
+    /// <summary>Field number for the "opened_at" field.</summary>
+    public const int OpenedAtFieldNumber = 8;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp openedAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp OpenedAt {
+      get { return openedAt_; }
+      set {
+        openedAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "application_label" field.</summary>
+    public const int ApplicationLabelFieldNumber = 9;
+    private string applicationLabel_ = "";
+    /// <summary>
+    ///  Card network stuff
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ApplicationLabel {
+      get { return applicationLabel_; }
+      set {
+        applicationLabel_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "a_i_d" field.</summary>
+    public const int AIDFieldNumber = 10;
+    private string aID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AID {
+      get { return aID_; }
+      set {
+        aID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "application_crypto" field.</summary>
+    public const int ApplicationCryptoFieldNumber = 11;
+    private string applicationCrypto_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ApplicationCrypto {
+      get { return applicationCrypto_; }
+      set {
+        applicationCrypto_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "approval_code" field.</summary>
+    public const int ApprovalCodeFieldNumber = 12;
+    private string approvalCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ApprovalCode {
+      get { return approvalCode_; }
+      set {
+        approvalCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioCardSale);
@@ -187,6 +254,11 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (!object.Equals(OpenAuthorized, other.OpenAuthorized)) return false;
       if (!object.Equals(Captured, other.Captured)) return false;
       if (EntryMethod != other.EntryMethod) return false;
+      if (!object.Equals(OpenedAt, other.OpenedAt)) return false;
+      if (ApplicationLabel != other.ApplicationLabel) return false;
+      if (AID != other.AID) return false;
+      if (ApplicationCrypto != other.ApplicationCrypto) return false;
+      if (ApprovalCode != other.ApprovalCode) return false;
       return true;
     }
 
@@ -200,6 +272,11 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (openAuthorized_ != null) hash ^= OpenAuthorized.GetHashCode();
       if (captured_ != null) hash ^= Captured.GetHashCode();
       if (EntryMethod != 0) hash ^= EntryMethod.GetHashCode();
+      if (openedAt_ != null) hash ^= OpenedAt.GetHashCode();
+      if (ApplicationLabel.Length != 0) hash ^= ApplicationLabel.GetHashCode();
+      if (AID.Length != 0) hash ^= AID.GetHashCode();
+      if (ApplicationCrypto.Length != 0) hash ^= ApplicationCrypto.GetHashCode();
+      if (ApprovalCode.Length != 0) hash ^= ApprovalCode.GetHashCode();
       return hash;
     }
 
@@ -238,6 +315,26 @@ namespace HOLMS.Types.Folio.FSv2 {
         output.WriteRawTag(56);
         output.WriteEnum((int) EntryMethod);
       }
+      if (openedAt_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(OpenedAt);
+      }
+      if (ApplicationLabel.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(ApplicationLabel);
+      }
+      if (AID.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(AID);
+      }
+      if (ApplicationCrypto.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(ApplicationCrypto);
+      }
+      if (ApprovalCode.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(ApprovalCode);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -263,6 +360,21 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
       if (EntryMethod != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EntryMethod);
+      }
+      if (openedAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OpenedAt);
+      }
+      if (ApplicationLabel.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApplicationLabel);
+      }
+      if (AID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AID);
+      }
+      if (ApplicationCrypto.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApplicationCrypto);
+      }
+      if (ApprovalCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApprovalCode);
       }
       return size;
     }
@@ -304,6 +416,24 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
       if (other.EntryMethod != 0) {
         EntryMethod = other.EntryMethod;
+      }
+      if (other.openedAt_ != null) {
+        if (openedAt_ == null) {
+          openedAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        OpenedAt.MergeFrom(other.OpenedAt);
+      }
+      if (other.ApplicationLabel.Length != 0) {
+        ApplicationLabel = other.ApplicationLabel;
+      }
+      if (other.AID.Length != 0) {
+        AID = other.AID;
+      }
+      if (other.ApplicationCrypto.Length != 0) {
+        ApplicationCrypto = other.ApplicationCrypto;
+      }
+      if (other.ApprovalCode.Length != 0) {
+        ApprovalCode = other.ApprovalCode;
       }
     }
 
@@ -353,6 +483,29 @@ namespace HOLMS.Types.Folio.FSv2 {
           }
           case 56: {
             entryMethod_ = (global::HOLMS.Types.Money.Cards.Transactions.AuthorizationEntryMethod) input.ReadEnum();
+            break;
+          }
+          case 66: {
+            if (openedAt_ == null) {
+              openedAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(openedAt_);
+            break;
+          }
+          case 74: {
+            ApplicationLabel = input.ReadString();
+            break;
+          }
+          case 82: {
+            AID = input.ReadString();
+            break;
+          }
+          case 90: {
+            ApplicationCrypto = input.ReadString();
+            break;
+          }
+          case 98: {
+            ApprovalCode = input.ReadString();
             break;
           }
         }

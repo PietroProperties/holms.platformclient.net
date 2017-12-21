@@ -5,6 +5,7 @@ option csharp_namespace = "HOLMS.Types.Folio.FSv2";
 
 import "folio/fsv2/folio_card_sale_purpose.proto";
 import "folio/fsv2/folio_guest_payment_card.proto";
+import "google/protobuf/timestamp.proto";
 import "money/cards/transactions/authorization_entry_method.proto";
 import "money/cards/transactions/card_sale_state.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
@@ -18,5 +19,12 @@ message FolioCardSale {
 	.holms.types.primitive.MonetaryAmount open_authorized = 5;
 	.holms.types.primitive.MonetaryAmount captured = 6;
 	.holms.types.money.cards.transactions.AuthorizationEntryMethod entry_method = 7;
+	google.protobuf.Timestamp opened_at = 8;
+
+	// Card network stuff
+	string application_label = 9;
+	string a_i_d = 10;
+	string application_crypto = 11;
+	string approval_code = 12;
 }
 
