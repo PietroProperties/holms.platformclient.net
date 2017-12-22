@@ -24,12 +24,12 @@ namespace HOLMS.Types.Money.RPC {
           string.Concat(
             "Cidtb25leS9ycGMvYWNjb3VudF9hc3NpZ25tZW50c19zdmMucHJvdG8SFWhv",
             "bG1zLnR5cGVzLm1vbmV5LnJwYxobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnBy",
-            "b3RvGh9tb25leS9hY2NvdW50X2Fzc2lnbm1lbnRzLnByb3RvMrIBChVBY2Nv",
-            "dW50QXNzaWdubWVudHNTdmMSRAoDR2V0EhYuZ29vZ2xlLnByb3RvYnVmLkVt",
-            "cHR5GiUuaG9sbXMudHlwZXMubW9uZXkuQWNjb3VudEFzc2lnbm1lbnRzElMK",
-            "A1NldBIlLmhvbG1zLnR5cGVzLm1vbmV5LkFjY291bnRBc3NpZ25tZW50cxol",
-            "LmhvbG1zLnR5cGVzLm1vbmV5LkFjY291bnRBc3NpZ25tZW50c0IYqgIVSE9M",
-            "TVMuVHlwZXMuTW9uZXkuUlBDYgZwcm90bzM="));
+            "b3RvGiptb25leS9hY2NvdW50aW5nL2FjY291bnRfYXNzaWdubWVudHMucHJv",
+            "dG8ysgEKFUFjY291bnRBc3NpZ25tZW50c1N2YxJECgNHZXQSFi5nb29nbGUu",
+            "cHJvdG9idWYuRW1wdHkaJS5ob2xtcy50eXBlcy5tb25leS5BY2NvdW50QXNz",
+            "aWdubWVudHMSUwoDU2V0EiUuaG9sbXMudHlwZXMubW9uZXkuQWNjb3VudEFz",
+            "c2lnbm1lbnRzGiUuaG9sbXMudHlwZXMubW9uZXkuQWNjb3VudEFzc2lnbm1l",
+            "bnRzQhiqAhVIT0xNUy5UeXBlcy5Nb25leS5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Money.AccountAssignmentsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null));
