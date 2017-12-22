@@ -1,6 +1,5 @@
-﻿using System;
-using Castle.DynamicProxy.Generators.Emitters.SimpleAST;
-using HOLMS.Types.Primitive;
+﻿using HOLMS.Types.Primitive;
+using System;
 
 namespace HOLMS.Platform.Support.Currency {
     /// <summary>
