@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace HOLMS.Platform.Support.Currency {
     public static class Extensions {

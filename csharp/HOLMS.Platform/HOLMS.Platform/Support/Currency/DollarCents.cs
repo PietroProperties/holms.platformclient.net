@@ -1,8 +1,5 @@
-﻿using System;
-using HOLMS.Types.Primitive;
-using Moq.Language;
-using System.Collections.Generic;
-using System.Linq;
+﻿using HOLMS.Types.Primitive;
+using System;
 
 namespace HOLMS.Platform.Support.Currency {
     public struct DollarCents : IComparable<DollarCents>, IEquatable<DollarCents> {
