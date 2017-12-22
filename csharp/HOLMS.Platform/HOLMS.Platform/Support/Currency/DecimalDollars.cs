@@ -1,6 +1,8 @@
 ﻿using System;
 using Castle.DynamicProxy.Generators.Emitters.SimpleAST;
 using HOLMS.Types.Primitive;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace HOLMS.Platform.Support.Currency {
     /// <summary>
@@ -93,6 +95,14 @@ namespace HOLMS.Platform.Support.Currency {
 
         public int CompareTo(DecimalDollars other) {
             return Amount.CompareTo(other.Amount);
+        }
+
+        public static DecimalDollars SumDD(this IEnumerable<DecimalDollars> l) {
+            return l.Aggregate(Zero, (a, b) => a + b);
+        }
+
+        public static DecimalDollars SumDC<T>(this IEnumerable<T> l, Func<T, DecimalDollars> f) {
+            return l.Aggregate(Zero, (a, b) => a + f.Invoke(b));
         }
 
         public override string ToString() {
