@@ -83,14 +83,6 @@ namespace HOLMS.Platform.Support.Currency {
         public static DollarCents operator +(DollarCents a, DollarCents b) => FromCents(a.TotalCents + b.TotalCents);
         public static DollarCents operator -(DollarCents a, DollarCents b) => FromCents(a.TotalCents - b.TotalCents);
 
-        public static DollarCents SumDC(this IEnumerable<DollarCents> l) {
-            return l.Aggregate(Zero, (a, b) => a + b);
-        }
-
-        public static DollarCents SumDC<T>(this IEnumerable<T> l, Func<T, DollarCents> f) {
-            return l.Aggregate(Zero, (a, b) => a + f.Invoke(b));
-        }
-
         public override bool Equals(object obj) {
             return (obj is DollarCents) && (CompareTo(this, (DollarCents)obj) == 0);
         }

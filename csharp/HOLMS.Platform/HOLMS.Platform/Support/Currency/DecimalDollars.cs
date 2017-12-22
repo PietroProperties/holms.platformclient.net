@@ -97,14 +97,6 @@ namespace HOLMS.Platform.Support.Currency {
             return Amount.CompareTo(other.Amount);
         }
 
-        public static DecimalDollars SumDD(this IEnumerable<DecimalDollars> l) {
-            return l.Aggregate(Zero, (a, b) => a + b);
-        }
-
-        public static DecimalDollars SumDC<T>(this IEnumerable<T> l, Func<T, DecimalDollars> f) {
-            return l.Aggregate(Zero, (a, b) => a + f.Invoke(b));
-        }
-
         public override string ToString() {
             // Round to 2 decimal places because this is pretty general/rough. If someone
             // wants more specific behavior, there are many other methods available.
