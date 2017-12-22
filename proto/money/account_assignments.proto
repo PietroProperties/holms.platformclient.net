@@ -1,8 +1,7 @@
 ﻿syntax = "proto3";
 
-package holms.types.tenancy_config;
-option csharp_namespace = "HOLMS.Types.TenancyConfig";
-option go_package = "tenancyconfig";
+package holms.types.money;
+option csharp_namespace = "HOLMS.Types.Money";
 
 import "money/accounting/account_indicator.proto";
 
@@ -17,8 +16,11 @@ message AccountAssignments {
 	.holms.types.money.accounting.AccountIndicator mastercard_receivable_account = 7;
 	.holms.types.money.accounting.AccountIndicator diners_club_receivable_account = 8;
 
+	.holms.types.money.accounting.AccountIndicator prepaid_revenue_account = 13;
+
 	.holms.types.money.accounting.AccountIndicator group_lodging_revenue_account = 9;
 	.holms.types.money.accounting.AccountIndicator lodging_revenue_account = 10;
 	.holms.types.money.accounting.AccountIndicator room_call_revenue_account = 11;
 	.holms.types.money.accounting.AccountIndicator miscellaneous_revenue_account = 12;
 }
+
