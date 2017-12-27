@@ -24,45 +24,43 @@ namespace HOLMS.Types.Folio.FSv2 {
           string.Concat(
             "Ch9mb2xpby9mc3YyL2ZvbGlvX3N0YXRlX3YyLnByb3RvEhZob2xtcy50eXBl",
             "cy5mb2xpby5mc3YyGiRmb2xpby9mc3YyL2ZvbGlvX2F0b21pY19jaGFyZ2Uu",
-            "cHJvdG8aIWZvbGlvL2ZzdjIvZm9saW9fYWRqdXN0bWVudC5wcm90bxoiZm9s",
-            "aW8vZnN2Mi9mb2xpb19jYXJkX3JlZnVuZC5wcm90bxogZm9saW8vZnN2Mi9m",
-            "b2xpb19jYXJkX3NhbGUucHJvdG8aKWZvbGlvL2ZzdjIvZm9saW9fY2hlY2tf",
-            "Y2FzaF9wYXltZW50LnByb3RvGiVmb2xpby9mc3YyL2ZvbGlvX3RheF9hc3Nl",
-            "c3NtZW50LnByb3RvGiRmb2xpby9mc3YyL21hc3Rlcl9mb2xpb19zdGF0dXMu",
-            "cHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8i2gkKDEZv",
-            "bGlvU3RhdGV2MhJEChFlZmZlY3RpdmVfY2hhcmdlcxgBIAMoCzIpLmhvbG1z",
-            "LnR5cGVzLmZvbGlvLmZzdjIuRm9saW9BdG9taWNDaGFyZ2USPAoLYWRqdXN0",
-            "bWVudHMYAiADKAsyJy5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQWRq",
-            "dXN0bWVudBI9CgxjYXJkX3JlZnVuZHMYAyADKAsyJy5ob2xtcy50eXBlcy5m",
-            "b2xpby5mc3YyLkZvbGlvQ2FyZFJlZnVuZBI5CgpjYXJkX3NhbGVzGAQgAygL",
-            "MiUuaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5Gb2xpb0NhcmRTYWxlEkoKE2No",
-            "ZWNrX2Nhc2hfcGF5bWVudHMYBSADKAsyLS5ob2xtcy50eXBlcy5mb2xpby5m",
-            "c3YyLkZvbGlvQ2hlY2tDYXNoUGF5bWVudBJLChdjdXJyZW50X3RheF9hc3Nl",
-            "c3NtZW50cxgGIAMoCzIqLmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIuRm9saW9U",
-            "YXhBc3Nlc3NtZW50ElUKIWFudGljaXBhdGVkX2VuZGluZ190YXhfYXNzZXNz",
-            "bWVudBgHIAMoCzIqLmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIuRm9saW9UYXhB",
-            "c3Nlc3NtZW50EkYKE21hc3Rlcl9mb2xpb19zdGF0dXMYCCABKA4yKS5ob2xt",
-            "cy50eXBlcy5mb2xpby5mc3YyLk1hc3RlckZvbGlvU3RhdHVzEkEKDm5hdGl2",
-            "ZV9jaGFyZ2VzGAkgAygLMikuaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5Gb2xp",
-            "b0F0b21pY0NoYXJnZRJSCh9leHBvcnRlZF90b19vdGhlcl9mb2xpb19jaGFy",
-            "Z2VzGAogAygLMikuaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5Gb2xpb0F0b21p",
-            "Y0NoYXJnZRJUCiFpbXBvcnRlZF9mcm9tX290aGVyX2ZvbGlvX2NoYXJnZXMY",
-            "CyADKAsyKS5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQXRvbWljQ2hh",
-            "cmdlEkIKE2N1cnJlbnRfbmV0X2NoYXJnZXMYDCABKAsyJS5ob2xtcy50eXBl",
-            "cy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSRgoXYW50aWNpcGF0ZWRfbmV0",
-            "X2NoYXJnZXMYDSABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRh",
-            "cnlBbW91bnQSPgoPcG9zdGVkX3BheW1lbnRzGA4gASgLMiUuaG9sbXMudHlw",
-            "ZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50Ej0KDnBvc3RlZF9yZWZ1bmRz",
-            "GA8gASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
-            "EkwKHXVudXNlZF9wYXltZW50X2F1dGhvcml6YXRpb25zGBAgASgLMiUuaG9s",
-            "bXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50Ek4KH3VudXNlZF9n",
-            "dWFyYW50ZWVfYXV0aG9yaXphdGlvbnMYESABKAsyJS5ob2xtcy50eXBlcy5w",
-            "cmltaXRpdmUuTW9uZXRhcnlBbW91bnRCGaoCFkhPTE1TLlR5cGVzLkZvbGlv",
-            "LkZTdjJiBnByb3RvMw=="));
+            "cHJvdG8aImZvbGlvL2ZzdjIvZm9saW9fY2FyZF9yZWZ1bmQucHJvdG8aIGZv",
+            "bGlvL2ZzdjIvZm9saW9fY2FyZF9zYWxlLnByb3RvGilmb2xpby9mc3YyL2Zv",
+            "bGlvX2NoZWNrX2Nhc2hfcGF5bWVudC5wcm90bxolZm9saW8vZnN2Mi9mb2xp",
+            "b190YXhfYXNzZXNzbWVudC5wcm90bxokZm9saW8vZnN2Mi9tYXN0ZXJfZm9s",
+            "aW9fc3RhdHVzLnByb3RvGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnBy",
+            "b3RvIpwJCgxGb2xpb1N0YXRldjISRAoRZWZmZWN0aXZlX2NoYXJnZXMYASAD",
+            "KAsyKS5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQXRvbWljQ2hhcmdl",
+            "Ej0KDGNhcmRfcmVmdW5kcxgDIAMoCzInLmhvbG1zLnR5cGVzLmZvbGlvLmZz",
+            "djIuRm9saW9DYXJkUmVmdW5kEjkKCmNhcmRfc2FsZXMYBCADKAsyJS5ob2xt",
+            "cy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQ2FyZFNhbGUSSgoTY2hlY2tfY2Fz",
+            "aF9wYXltZW50cxgFIAMoCzItLmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIuRm9s",
+            "aW9DaGVja0Nhc2hQYXltZW50EksKF2N1cnJlbnRfdGF4X2Fzc2Vzc21lbnRz",
+            "GAYgAygLMiouaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5Gb2xpb1RheEFzc2Vz",
+            "c21lbnQSVQohYW50aWNpcGF0ZWRfZW5kaW5nX3RheF9hc3Nlc3NtZW50GAcg",
+            "AygLMiouaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5Gb2xpb1RheEFzc2Vzc21l",
+            "bnQSRgoTbWFzdGVyX2ZvbGlvX3N0YXR1cxgIIAEoDjIpLmhvbG1zLnR5cGVz",
+            "LmZvbGlvLmZzdjIuTWFzdGVyRm9saW9TdGF0dXMSQQoObmF0aXZlX2NoYXJn",
+            "ZXMYCSADKAsyKS5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQXRvbWlj",
+            "Q2hhcmdlElIKH2V4cG9ydGVkX3RvX290aGVyX2ZvbGlvX2NoYXJnZXMYCiAD",
+            "KAsyKS5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQXRvbWljQ2hhcmdl",
+            "ElQKIWltcG9ydGVkX2Zyb21fb3RoZXJfZm9saW9fY2hhcmdlcxgLIAMoCzIp",
+            "LmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIuRm9saW9BdG9taWNDaGFyZ2USQgoT",
+            "Y3VycmVudF9uZXRfY2hhcmdlcxgMIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1p",
+            "dGl2ZS5Nb25ldGFyeUFtb3VudBJGChdhbnRpY2lwYXRlZF9uZXRfY2hhcmdl",
+            "cxgNIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3Vu",
+            "dBI+Cg9wb3N0ZWRfcGF5bWVudHMYDiABKAsyJS5ob2xtcy50eXBlcy5wcmlt",
+            "aXRpdmUuTW9uZXRhcnlBbW91bnQSPQoOcG9zdGVkX3JlZnVuZHMYDyABKAsy",
+            "JS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSTAoddW51",
+            "c2VkX3BheW1lbnRfYXV0aG9yaXphdGlvbnMYECABKAsyJS5ob2xtcy50eXBl",
+            "cy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSTgofdW51c2VkX2d1YXJhbnRl",
+            "ZV9hdXRob3JpemF0aW9ucxgRIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2",
+            "ZS5Nb25ldGFyeUFtb3VudEIZqgIWSE9MTVMuVHlwZXMuRm9saW8uRlN2MmIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioAdjustmentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioTaxAssessmentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioTaxAssessmentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioStatev2), global::HOLMS.Types.Folio.FSv2.FolioStatev2.Parser, new[]{ "EffectiveCharges", "Adjustments", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "MasterFolioStatus", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioStatev2), global::HOLMS.Types.Folio.FSv2.FolioStatev2.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "MasterFolioStatus", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations" }, null, null, null)
           }));
     }
     #endregion
@@ -94,7 +92,6 @@ namespace HOLMS.Types.Folio.FSv2 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FolioStatev2(FolioStatev2 other) : this() {
       effectiveCharges_ = other.effectiveCharges_.Clone();
-      adjustments_ = other.adjustments_.Clone();
       cardRefunds_ = other.cardRefunds_.Clone();
       cardSales_ = other.cardSales_.Clone();
       checkCashPayments_ = other.checkCashPayments_.Clone();
@@ -127,21 +124,14 @@ namespace HOLMS.Types.Folio.FSv2 {
       get { return effectiveCharges_; }
     }
 
-    /// <summary>Field number for the "adjustments" field.</summary>
-    public const int AdjustmentsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FSv2.FolioAdjustment> _repeated_adjustments_codec
-        = pb::FieldCodec.ForMessage(18, global::HOLMS.Types.Folio.FSv2.FolioAdjustment.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FSv2.FolioAdjustment> adjustments_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FSv2.FolioAdjustment>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Folio.FSv2.FolioAdjustment> Adjustments {
-      get { return adjustments_; }
-    }
-
     /// <summary>Field number for the "card_refunds" field.</summary>
     public const int CardRefundsFieldNumber = 3;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FSv2.FolioCardRefund> _repeated_cardRefunds_codec
         = pb::FieldCodec.ForMessage(26, global::HOLMS.Types.Folio.FSv2.FolioCardRefund.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FSv2.FolioCardRefund> cardRefunds_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FSv2.FolioCardRefund>();
+    /// <summary>
+    ///  deprecated adjustments
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Folio.FSv2.FolioCardRefund> CardRefunds {
       get { return cardRefunds_; }
@@ -308,7 +298,6 @@ namespace HOLMS.Types.Folio.FSv2 {
         return true;
       }
       if(!effectiveCharges_.Equals(other.effectiveCharges_)) return false;
-      if(!adjustments_.Equals(other.adjustments_)) return false;
       if(!cardRefunds_.Equals(other.cardRefunds_)) return false;
       if(!cardSales_.Equals(other.cardSales_)) return false;
       if(!checkCashPayments_.Equals(other.checkCashPayments_)) return false;
@@ -331,7 +320,6 @@ namespace HOLMS.Types.Folio.FSv2 {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= effectiveCharges_.GetHashCode();
-      hash ^= adjustments_.GetHashCode();
       hash ^= cardRefunds_.GetHashCode();
       hash ^= cardSales_.GetHashCode();
       hash ^= checkCashPayments_.GetHashCode();
@@ -358,7 +346,6 @@ namespace HOLMS.Types.Folio.FSv2 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       effectiveCharges_.WriteTo(output, _repeated_effectiveCharges_codec);
-      adjustments_.WriteTo(output, _repeated_adjustments_codec);
       cardRefunds_.WriteTo(output, _repeated_cardRefunds_codec);
       cardSales_.WriteTo(output, _repeated_cardSales_codec);
       checkCashPayments_.WriteTo(output, _repeated_checkCashPayments_codec);
@@ -401,7 +388,6 @@ namespace HOLMS.Types.Folio.FSv2 {
     public int CalculateSize() {
       int size = 0;
       size += effectiveCharges_.CalculateSize(_repeated_effectiveCharges_codec);
-      size += adjustments_.CalculateSize(_repeated_adjustments_codec);
       size += cardRefunds_.CalculateSize(_repeated_cardRefunds_codec);
       size += cardSales_.CalculateSize(_repeated_cardSales_codec);
       size += checkCashPayments_.CalculateSize(_repeated_checkCashPayments_codec);
@@ -440,7 +426,6 @@ namespace HOLMS.Types.Folio.FSv2 {
         return;
       }
       effectiveCharges_.Add(other.effectiveCharges_);
-      adjustments_.Add(other.adjustments_);
       cardRefunds_.Add(other.cardRefunds_);
       cardSales_.Add(other.cardSales_);
       checkCashPayments_.Add(other.checkCashPayments_);
@@ -500,10 +485,6 @@ namespace HOLMS.Types.Folio.FSv2 {
             break;
           case 10: {
             effectiveCharges_.AddEntriesFrom(input, _repeated_effectiveCharges_codec);
-            break;
-          }
-          case 18: {
-            adjustments_.AddEntriesFrom(input, _repeated_adjustments_codec);
             break;
           }
           case 26: {

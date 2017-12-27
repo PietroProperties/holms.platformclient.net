@@ -10,6 +10,11 @@ import "primitive/monetary_amount.proto";
 import "primitive/pb_local_date.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
 
+enum FolioAtomicChargeIssuanceSchedule {
+	IMPLEMENTATION_SCHEDULE_IMMEDIATE = 0;
+	IMPLEMENTATION_SCHEDULE_PLANNED = 1;
+}
+
 message FolioAtomicCharge {
 	.holms.types.primitive.MonetaryAmount amount = 1;
 	string narration = 2;
@@ -19,5 +24,6 @@ message FolioAtomicCharge {
 
 	.holms.types.supply.incidental_items.IncidentalItemIndicator incidental_item = 6;
 	.holms.types.booking.indicators.ReservationIndicator incurred_by = 7;
+	FolioAtomicChargeIssuanceSchedule issuance_schedule = 8;
 }
 

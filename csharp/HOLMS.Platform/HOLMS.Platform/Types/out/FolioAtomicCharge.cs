@@ -28,7 +28,7 @@ namespace HOLMS.Types.Folio.FSv2 {
             "ZS5wcm90bxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxofcHJp",
             "bWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90bxodcHJpbWl0aXZlL3BiX2xv",
             "Y2FsX2RhdGUucHJvdG8aN3N1cHBseS9pbmNpZGVudGFsX2l0ZW1zL2luY2lk",
-            "ZW50YWxfaXRlbV9pbmRpY2F0b3IucHJvdG8iuwMKEUZvbGlvQXRvbWljQ2hh",
+            "ZW50YWxfaXRlbV9pbmRpY2F0b3IucHJvdG8ikQQKEUZvbGlvQXRvbWljQ2hh",
             "cmdlEjUKBmFtb3VudBgBIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5N",
             "b25ldGFyeUFtb3VudBIRCgluYXJyYXRpb24YAiABKAkSPwoSY2hhcmdlX2Ny",
             "ZWRpdF90eXBlGAMgASgOMiMuaG9sbXMudHlwZXMuZm9saW8uQ2hhcmdlQ3Jl",
@@ -38,17 +38,29 @@ namespace HOLMS.Types.Folio.FSv2 {
             "bmNpZGVudGFsX2l0ZW0YBiABKAsyPC5ob2xtcy50eXBlcy5zdXBwbHkuaW5j",
             "aWRlbnRhbF9pdGVtcy5JbmNpZGVudGFsSXRlbUluZGljYXRvchJJCgtpbmN1",
             "cnJlZF9ieRgHIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9y",
-            "cy5SZXNlcnZhdGlvbkluZGljYXRvckIZqgIWSE9MTVMuVHlwZXMuRm9saW8u",
-            "RlN2MmIGcHJvdG8z"));
+            "cy5SZXNlcnZhdGlvbkluZGljYXRvchJUChFpc3N1YW5jZV9zY2hlZHVsZRgI",
+            "IAEoDjI5LmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIuRm9saW9BdG9taWNDaGFy",
+            "Z2VJc3N1YW5jZVNjaGVkdWxlKm8KIUZvbGlvQXRvbWljQ2hhcmdlSXNzdWFu",
+            "Y2VTY2hlZHVsZRIlCiFJTVBMRU1FTlRBVElPTl9TQ0hFRFVMRV9JTU1FRElB",
+            "VEUQABIjCh9JTVBMRU1FTlRBVElPTl9TQ0hFRFVMRV9QTEFOTkVEEAFCGaoC",
+            "FkhPTE1TLlR5cGVzLkZvbGlvLkZTdjJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.ChargeCreditTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioAtomicCharge), global::HOLMS.Types.Folio.FSv2.FolioAtomicCharge.Parser, new[]{ "Amount", "Narration", "ChargeCreditType", "EffectiveForOpsdate", "EffectiveAtClock", "IncidentalItem", "IncurredBy" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeIssuanceSchedule), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioAtomicCharge), global::HOLMS.Types.Folio.FSv2.FolioAtomicCharge.Parser, new[]{ "Amount", "Narration", "ChargeCreditType", "EffectiveForOpsdate", "EffectiveAtClock", "IncidentalItem", "IncurredBy", "IssuanceSchedule" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum FolioAtomicChargeIssuanceSchedule {
+    [pbr::OriginalName("IMPLEMENTATION_SCHEDULE_IMMEDIATE")] ImplementationScheduleImmediate = 0,
+    [pbr::OriginalName("IMPLEMENTATION_SCHEDULE_PLANNED")] ImplementationSchedulePlanned = 1,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class FolioAtomicCharge : pb::IMessage<FolioAtomicCharge> {
     private static readonly pb::MessageParser<FolioAtomicCharge> _parser = new pb::MessageParser<FolioAtomicCharge>(() => new FolioAtomicCharge());
@@ -81,6 +93,7 @@ namespace HOLMS.Types.Folio.FSv2 {
       EffectiveAtClock = other.effectiveAtClock_ != null ? other.EffectiveAtClock.Clone() : null;
       IncidentalItem = other.incidentalItem_ != null ? other.IncidentalItem.Clone() : null;
       IncurredBy = other.incurredBy_ != null ? other.IncurredBy.Clone() : null;
+      issuanceSchedule_ = other.issuanceSchedule_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -165,6 +178,17 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
     }
 
+    /// <summary>Field number for the "issuance_schedule" field.</summary>
+    public const int IssuanceScheduleFieldNumber = 8;
+    private global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeIssuanceSchedule issuanceSchedule_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeIssuanceSchedule IssuanceSchedule {
+      get { return issuanceSchedule_; }
+      set {
+        issuanceSchedule_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioAtomicCharge);
@@ -185,6 +209,7 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (!object.Equals(EffectiveAtClock, other.EffectiveAtClock)) return false;
       if (!object.Equals(IncidentalItem, other.IncidentalItem)) return false;
       if (!object.Equals(IncurredBy, other.IncurredBy)) return false;
+      if (IssuanceSchedule != other.IssuanceSchedule) return false;
       return true;
     }
 
@@ -198,6 +223,7 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (effectiveAtClock_ != null) hash ^= EffectiveAtClock.GetHashCode();
       if (incidentalItem_ != null) hash ^= IncidentalItem.GetHashCode();
       if (incurredBy_ != null) hash ^= IncurredBy.GetHashCode();
+      if (IssuanceSchedule != 0) hash ^= IssuanceSchedule.GetHashCode();
       return hash;
     }
 
@@ -236,6 +262,10 @@ namespace HOLMS.Types.Folio.FSv2 {
         output.WriteRawTag(58);
         output.WriteMessage(IncurredBy);
       }
+      if (IssuanceSchedule != 0) {
+        output.WriteRawTag(64);
+        output.WriteEnum((int) IssuanceSchedule);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -261,6 +291,9 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
       if (incurredBy_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(IncurredBy);
+      }
+      if (IssuanceSchedule != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) IssuanceSchedule);
       }
       return size;
     }
@@ -305,6 +338,9 @@ namespace HOLMS.Types.Folio.FSv2 {
           incurredBy_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
         }
         IncurredBy.MergeFrom(other.IncurredBy);
+      }
+      if (other.IssuanceSchedule != 0) {
+        IssuanceSchedule = other.IssuanceSchedule;
       }
     }
 
@@ -357,6 +393,10 @@ namespace HOLMS.Types.Folio.FSv2 {
               incurredBy_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
             }
             input.ReadMessage(incurredBy_);
+            break;
+          }
+          case 64: {
+            issuanceSchedule_ = (global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeIssuanceSchedule) input.ReadEnum();
             break;
           }
         }
