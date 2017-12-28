@@ -20,18 +20,3 @@ namespace HOLMS.Types.Folio {
             new DecimalDollars(GrossPayments) + RefundsTotalPrecise).ToDollarCents;
     }
 }
-
-namespace HOLMS.Types.Folio.FSv2 {
-    public partial class FolioStatev2 {
-        public DollarCents CurrentBalance => new DecimalDollars(
-            CurrentNetCharges.ToDD.Amount       // includes gross charges, adjustments, taxes
-            - PostedPayments.ToDD.Amount
-            + PostedRefunds.ToDD.Amount).ToDollarCents;
-
-        public DollarCents AnticipatedCheckoutBalance => new DecimalDollars(
-            AnticipatedNetCharges.ToDD.Amount
-            - PostedPayments.ToDD.Amount
-            - UnusedPaymentAuthorizations.ToDD.Amount
-            + PostedRefunds.ToDD.Amount).ToDollarCents;
-    }
-}
