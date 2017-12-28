@@ -28,39 +28,41 @@ namespace HOLMS.Types.Folio.FSv2 {
             "bGlvL2ZzdjIvZm9saW9fY2FyZF9zYWxlLnByb3RvGilmb2xpby9mc3YyL2Zv",
             "bGlvX2NoZWNrX2Nhc2hfcGF5bWVudC5wcm90bxolZm9saW8vZnN2Mi9mb2xp",
             "b190YXhfYXNzZXNzbWVudC5wcm90bxokZm9saW8vZnN2Mi9tYXN0ZXJfZm9s",
-            "aW9fc3RhdHVzLnByb3RvGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnBy",
-            "b3RvIpwJCgxGb2xpb1N0YXRldjISRAoRZWZmZWN0aXZlX2NoYXJnZXMYASAD",
-            "KAsyKS5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQXRvbWljQ2hhcmdl",
-            "Ej0KDGNhcmRfcmVmdW5kcxgDIAMoCzInLmhvbG1zLnR5cGVzLmZvbGlvLmZz",
-            "djIuRm9saW9DYXJkUmVmdW5kEjkKCmNhcmRfc2FsZXMYBCADKAsyJS5ob2xt",
-            "cy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQ2FyZFNhbGUSSgoTY2hlY2tfY2Fz",
-            "aF9wYXltZW50cxgFIAMoCzItLmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIuRm9s",
-            "aW9DaGVja0Nhc2hQYXltZW50EksKF2N1cnJlbnRfdGF4X2Fzc2Vzc21lbnRz",
-            "GAYgAygLMiouaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5Gb2xpb1RheEFzc2Vz",
-            "c21lbnQSVQohYW50aWNpcGF0ZWRfZW5kaW5nX3RheF9hc3Nlc3NtZW50GAcg",
-            "AygLMiouaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5Gb2xpb1RheEFzc2Vzc21l",
-            "bnQSRgoTbWFzdGVyX2ZvbGlvX3N0YXR1cxgIIAEoDjIpLmhvbG1zLnR5cGVz",
-            "LmZvbGlvLmZzdjIuTWFzdGVyRm9saW9TdGF0dXMSQQoObmF0aXZlX2NoYXJn",
-            "ZXMYCSADKAsyKS5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQXRvbWlj",
-            "Q2hhcmdlElIKH2V4cG9ydGVkX3RvX290aGVyX2ZvbGlvX2NoYXJnZXMYCiAD",
-            "KAsyKS5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQXRvbWljQ2hhcmdl",
-            "ElQKIWltcG9ydGVkX2Zyb21fb3RoZXJfZm9saW9fY2hhcmdlcxgLIAMoCzIp",
-            "LmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIuRm9saW9BdG9taWNDaGFyZ2USQgoT",
-            "Y3VycmVudF9uZXRfY2hhcmdlcxgMIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1p",
-            "dGl2ZS5Nb25ldGFyeUFtb3VudBJGChdhbnRpY2lwYXRlZF9uZXRfY2hhcmdl",
-            "cxgNIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3Vu",
-            "dBI+Cg9wb3N0ZWRfcGF5bWVudHMYDiABKAsyJS5ob2xtcy50eXBlcy5wcmlt",
-            "aXRpdmUuTW9uZXRhcnlBbW91bnQSPQoOcG9zdGVkX3JlZnVuZHMYDyABKAsy",
-            "JS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSTAoddW51",
-            "c2VkX3BheW1lbnRfYXV0aG9yaXphdGlvbnMYECABKAsyJS5ob2xtcy50eXBl",
-            "cy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSTgofdW51c2VkX2d1YXJhbnRl",
-            "ZV9hdXRob3JpemF0aW9ucxgRIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2",
-            "ZS5Nb25ldGFyeUFtb3VudEIZqgIWSE9MTVMuVHlwZXMuRm9saW8uRlN2MmIG",
-            "cHJvdG8z"));
+            "aW9fc3RhdHVzLnByb3RvGh5mb2xpby9mc3YyL2ZvbGlvX3N1bW1hcnkucHJv",
+            "dG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8i0wkKDEZvbGlv",
+            "U3RhdGV2MhJEChFlZmZlY3RpdmVfY2hhcmdlcxgBIAMoCzIpLmhvbG1zLnR5",
+            "cGVzLmZvbGlvLmZzdjIuRm9saW9BdG9taWNDaGFyZ2USPQoMY2FyZF9yZWZ1",
+            "bmRzGAMgAygLMicuaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5Gb2xpb0NhcmRS",
+            "ZWZ1bmQSOQoKY2FyZF9zYWxlcxgEIAMoCzIlLmhvbG1zLnR5cGVzLmZvbGlv",
+            "LmZzdjIuRm9saW9DYXJkU2FsZRJKChNjaGVja19jYXNoX3BheW1lbnRzGAUg",
+            "AygLMi0uaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5Gb2xpb0NoZWNrQ2FzaFBh",
+            "eW1lbnQSSwoXY3VycmVudF90YXhfYXNzZXNzbWVudHMYBiADKAsyKi5ob2xt",
+            "cy50eXBlcy5mb2xpby5mc3YyLkZvbGlvVGF4QXNzZXNzbWVudBJVCiFhbnRp",
+            "Y2lwYXRlZF9lbmRpbmdfdGF4X2Fzc2Vzc21lbnQYByADKAsyKi5ob2xtcy50",
+            "eXBlcy5mb2xpby5mc3YyLkZvbGlvVGF4QXNzZXNzbWVudBJGChNtYXN0ZXJf",
+            "Zm9saW9fc3RhdHVzGAggASgOMikuaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5N",
+            "YXN0ZXJGb2xpb1N0YXR1cxJBCg5uYXRpdmVfY2hhcmdlcxgJIAMoCzIpLmhv",
+            "bG1zLnR5cGVzLmZvbGlvLmZzdjIuRm9saW9BdG9taWNDaGFyZ2USUgofZXhw",
+            "b3J0ZWRfdG9fb3RoZXJfZm9saW9fY2hhcmdlcxgKIAMoCzIpLmhvbG1zLnR5",
+            "cGVzLmZvbGlvLmZzdjIuRm9saW9BdG9taWNDaGFyZ2USVAohaW1wb3J0ZWRf",
+            "ZnJvbV9vdGhlcl9mb2xpb19jaGFyZ2VzGAsgAygLMikuaG9sbXMudHlwZXMu",
+            "Zm9saW8uZnN2Mi5Gb2xpb0F0b21pY0NoYXJnZRJCChNjdXJyZW50X25ldF9j",
+            "aGFyZ2VzGAwgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5",
+            "QW1vdW50EkYKF2FudGljaXBhdGVkX25ldF9jaGFyZ2VzGA0gASgLMiUuaG9s",
+            "bXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50Ej4KD3Bvc3RlZF9w",
+            "YXltZW50cxgOIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFy",
+            "eUFtb3VudBI9Cg5wb3N0ZWRfcmVmdW5kcxgPIAEoCzIlLmhvbG1zLnR5cGVz",
+            "LnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJMCh11bnVzZWRfcGF5bWVudF9h",
+            "dXRob3JpemF0aW9ucxgQIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5N",
+            "b25ldGFyeUFtb3VudBJOCh91bnVzZWRfZ3VhcmFudGVlX2F1dGhvcml6YXRp",
+            "b25zGBEgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1v",
+            "dW50EjUKB3N1bW1hcnkYEiABKAsyJC5ob2xtcy50eXBlcy5mb2xpby5mc3Yy",
+            "LkZvbGlvU3VtbWFyeUIZqgIWSE9MTVMuVHlwZXMuRm9saW8uRlN2MmIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioTaxAssessmentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioTaxAssessmentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioSummaryReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioStatev2), global::HOLMS.Types.Folio.FSv2.FolioStatev2.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "MasterFolioStatus", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioStatev2), global::HOLMS.Types.Folio.FSv2.FolioStatev2.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "MasterFolioStatus", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "Summary" }, null, null, null)
           }));
     }
     #endregion
@@ -107,6 +109,7 @@ namespace HOLMS.Types.Folio.FSv2 {
       PostedRefunds = other.postedRefunds_ != null ? other.PostedRefunds.Clone() : null;
       UnusedPaymentAuthorizations = other.unusedPaymentAuthorizations_ != null ? other.UnusedPaymentAuthorizations.Clone() : null;
       UnusedGuaranteeAuthorizations = other.unusedGuaranteeAuthorizations_ != null ? other.UnusedGuaranteeAuthorizations.Clone() : null;
+      Summary = other.summary_ != null ? other.Summary.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -284,6 +287,17 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
     }
 
+    /// <summary>Field number for the "summary" field.</summary>
+    public const int SummaryFieldNumber = 18;
+    private global::HOLMS.Types.Folio.FSv2.FolioSummary summary_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Folio.FSv2.FolioSummary Summary {
+      get { return summary_; }
+      set {
+        summary_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioStatev2);
@@ -313,6 +327,7 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (!object.Equals(PostedRefunds, other.PostedRefunds)) return false;
       if (!object.Equals(UnusedPaymentAuthorizations, other.UnusedPaymentAuthorizations)) return false;
       if (!object.Equals(UnusedGuaranteeAuthorizations, other.UnusedGuaranteeAuthorizations)) return false;
+      if (!object.Equals(Summary, other.Summary)) return false;
       return true;
     }
 
@@ -335,6 +350,7 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (postedRefunds_ != null) hash ^= PostedRefunds.GetHashCode();
       if (unusedPaymentAuthorizations_ != null) hash ^= UnusedPaymentAuthorizations.GetHashCode();
       if (unusedGuaranteeAuthorizations_ != null) hash ^= UnusedGuaranteeAuthorizations.GetHashCode();
+      if (summary_ != null) hash ^= Summary.GetHashCode();
       return hash;
     }
 
@@ -382,6 +398,10 @@ namespace HOLMS.Types.Folio.FSv2 {
         output.WriteRawTag(138, 1);
         output.WriteMessage(UnusedGuaranteeAuthorizations);
       }
+      if (summary_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(Summary);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -416,6 +436,9 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
       if (unusedGuaranteeAuthorizations_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(UnusedGuaranteeAuthorizations);
+      }
+      if (summary_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Summary);
       }
       return size;
     }
@@ -472,6 +495,12 @@ namespace HOLMS.Types.Folio.FSv2 {
           unusedGuaranteeAuthorizations_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
         UnusedGuaranteeAuthorizations.MergeFrom(other.UnusedGuaranteeAuthorizations);
+      }
+      if (other.summary_ != null) {
+        if (summary_ == null) {
+          summary_ = new global::HOLMS.Types.Folio.FSv2.FolioSummary();
+        }
+        Summary.MergeFrom(other.Summary);
       }
     }
 
@@ -563,6 +592,13 @@ namespace HOLMS.Types.Folio.FSv2 {
               unusedGuaranteeAuthorizations_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(unusedGuaranteeAuthorizations_);
+            break;
+          }
+          case 146: {
+            if (summary_ == null) {
+              summary_ = new global::HOLMS.Types.Folio.FSv2.FolioSummary();
+            }
+            input.ReadMessage(summary_);
             break;
           }
         }

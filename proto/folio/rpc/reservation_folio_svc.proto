@@ -16,6 +16,15 @@ import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
+import "folio/fsv2/folio_summary.proto";
+
+message ReservationFolioSvcGetSummariesRequest {
+	repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
+}
+
+message ReservationFolioSvcGetSummariesResponse {
+	repeated .holms.types.folio.fsv2.FolioSummary summaries = 1;
+}
 
 enum ReservationFolioSvcPostChargesResult {
 	RESERVATION_FOLIO_SVC_POST_CHARGES_RESULT_OK = 0;
@@ -193,6 +202,8 @@ service ReservationFolioSvc {
 		returns(ReservationFolioSvcGetFolioStateResponsev2);
 	rpc GetOnFileCards(holms.types.booking.indicators.ReservationIndicator) 
 		returns(ReservationFolioSvcGetOnFileCardsResponse);
+	rpc GetFolioSummaries(ReservationFolioSvcGetSummariesRequest)
+		returns(ReservationFolioSvcGetSummariesResponse);
 
 	// New activity
 	// Attach new sale to this reservation

@@ -9,6 +9,7 @@ import "folio/fsv2/folio_card_sale.proto";
 import "folio/fsv2/folio_check_cash_payment.proto";
 import "folio/fsv2/folio_tax_assessment.proto";
 import "folio/fsv2/master_folio_status.proto";
+import "folio/fsv2/folio_summary.proto";
 import "primitive/monetary_amount.proto";
 
 
@@ -33,5 +34,9 @@ message FolioStatev2 {
 	.holms.types.primitive.MonetaryAmount posted_refunds = 15;
 	.holms.types.primitive.MonetaryAmount unused_payment_authorizations = 16;
 	.holms.types.primitive.MonetaryAmount unused_guarantee_authorizations = 17;
+
+	.holms.types.folio.fsv2.FolioSummary summary = 18;
 }
+
+
 
