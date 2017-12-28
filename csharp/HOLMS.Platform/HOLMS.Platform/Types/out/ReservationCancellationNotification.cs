@@ -26,18 +26,20 @@ namespace HOLMS.Types.Booking.Reservations {
             "b25fbm90aWZpY2F0aW9uLnByb3RvEiBob2xtcy50eXBlcy5ib29raW5nLnJl",
             "c2VydmF0aW9ucxouYm9va2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2lu",
             "ZGljYXRvci5wcm90bxogY3JtL2d1ZXN0cy9ndWVzdF9pbmRpY2F0b3IucHJv",
-            "dG8ilwIKI1Jlc2VydmF0aW9uQ2FuY2VsbGF0aW9uTm90aWZpY2F0aW9uEhEK",
-            "CWpfd190b2tlbhgBIAEoCRJJCgtyZXNlcnZhdGlvbhgCIAEoCzI0LmhvbG1z",
-            "LnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRv",
-            "chI4CghndWVzdF9pZBgDIAEoCzImLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMu",
-            "R3Vlc3RJbmRpY2F0b3ISFwoPcGVuYWx0eV9hcHBsaWVkGAQgASgIEiUKHWRh",
-            "eXNfYmVmb3JlX3Jlc2VydmF0aW9uX3N0YXJ0GAUgASgFEhgKEHJlcXVlc3Rp",
-            "bmdfcGFydHkYBiABKAlCOVoUYm9va2luZy9yZXNlcnZhdGlvbnOqAiBIT0xN",
-            "Uy5UeXBlcy5Cb29raW5nLlJlc2VydmF0aW9uc2IGcHJvdG8z"));
+            "dG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8itgIKI1Jlc2Vy",
+            "dmF0aW9uQ2FuY2VsbGF0aW9uTm90aWZpY2F0aW9uEhEKCWpfd190b2tlbhgB",
+            "IAEoCRJJCgtyZXNlcnZhdGlvbhgCIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tp",
+            "bmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchI4CghndWVzdF9p",
+            "ZBgDIAEoCzImLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJbmRpY2F0",
+            "b3ISNgoHcGVuYWx0eRgEIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5N",
+            "b25ldGFyeUFtb3VudBIlCh1kYXlzX2JlZm9yZV9yZXNlcnZhdGlvbl9zdGFy",
+            "dBgFIAEoBRIYChByZXF1ZXN0aW5nX3BhcnR5GAYgASgJQjlaFGJvb2tpbmcv",
+            "cmVzZXJ2YXRpb25zqgIgSE9MTVMuVHlwZXMuQm9va2luZy5SZXNlcnZhdGlv",
+            "bnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationCancellationNotification), global::HOLMS.Types.Booking.Reservations.ReservationCancellationNotification.Parser, new[]{ "JWToken", "Reservation", "GuestId", "PenaltyApplied", "DaysBeforeReservationStart", "RequestingParty" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationCancellationNotification), global::HOLMS.Types.Booking.Reservations.ReservationCancellationNotification.Parser, new[]{ "JWToken", "Reservation", "GuestId", "Penalty", "DaysBeforeReservationStart", "RequestingParty" }, null, null, null)
           }));
     }
     #endregion
@@ -71,7 +73,7 @@ namespace HOLMS.Types.Booking.Reservations {
       jWToken_ = other.jWToken_;
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
       GuestId = other.guestId_ != null ? other.GuestId.Clone() : null;
-      penaltyApplied_ = other.penaltyApplied_;
+      Penalty = other.penalty_ != null ? other.Penalty.Clone() : null;
       daysBeforeReservationStart_ = other.daysBeforeReservationStart_;
       requestingParty_ = other.requestingParty_;
     }
@@ -114,14 +116,14 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
-    /// <summary>Field number for the "penalty_applied" field.</summary>
-    public const int PenaltyAppliedFieldNumber = 4;
-    private bool penaltyApplied_;
+    /// <summary>Field number for the "penalty" field.</summary>
+    public const int PenaltyFieldNumber = 4;
+    private global::HOLMS.Types.Primitive.MonetaryAmount penalty_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool PenaltyApplied {
-      get { return penaltyApplied_; }
+    public global::HOLMS.Types.Primitive.MonetaryAmount Penalty {
+      get { return penalty_; }
       set {
-        penaltyApplied_ = value;
+        penalty_ = value;
       }
     }
 
@@ -163,7 +165,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (JWToken != other.JWToken) return false;
       if (!object.Equals(Reservation, other.Reservation)) return false;
       if (!object.Equals(GuestId, other.GuestId)) return false;
-      if (PenaltyApplied != other.PenaltyApplied) return false;
+      if (!object.Equals(Penalty, other.Penalty)) return false;
       if (DaysBeforeReservationStart != other.DaysBeforeReservationStart) return false;
       if (RequestingParty != other.RequestingParty) return false;
       return true;
@@ -175,7 +177,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (JWToken.Length != 0) hash ^= JWToken.GetHashCode();
       if (reservation_ != null) hash ^= Reservation.GetHashCode();
       if (guestId_ != null) hash ^= GuestId.GetHashCode();
-      if (PenaltyApplied != false) hash ^= PenaltyApplied.GetHashCode();
+      if (penalty_ != null) hash ^= Penalty.GetHashCode();
       if (DaysBeforeReservationStart != 0) hash ^= DaysBeforeReservationStart.GetHashCode();
       if (RequestingParty.Length != 0) hash ^= RequestingParty.GetHashCode();
       return hash;
@@ -200,9 +202,9 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(26);
         output.WriteMessage(GuestId);
       }
-      if (PenaltyApplied != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(PenaltyApplied);
+      if (penalty_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Penalty);
       }
       if (DaysBeforeReservationStart != 0) {
         output.WriteRawTag(40);
@@ -226,8 +228,8 @@ namespace HOLMS.Types.Booking.Reservations {
       if (guestId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GuestId);
       }
-      if (PenaltyApplied != false) {
-        size += 1 + 1;
+      if (penalty_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Penalty);
       }
       if (DaysBeforeReservationStart != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(DaysBeforeReservationStart);
@@ -258,8 +260,11 @@ namespace HOLMS.Types.Booking.Reservations {
         }
         GuestId.MergeFrom(other.GuestId);
       }
-      if (other.PenaltyApplied != false) {
-        PenaltyApplied = other.PenaltyApplied;
+      if (other.penalty_ != null) {
+        if (penalty_ == null) {
+          penalty_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        Penalty.MergeFrom(other.Penalty);
       }
       if (other.DaysBeforeReservationStart != 0) {
         DaysBeforeReservationStart = other.DaysBeforeReservationStart;
@@ -295,8 +300,11 @@ namespace HOLMS.Types.Booking.Reservations {
             input.ReadMessage(guestId_);
             break;
           }
-          case 32: {
-            PenaltyApplied = input.ReadBool();
+          case 34: {
+            if (penalty_ == null) {
+              penalty_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(penalty_);
             break;
           }
           case 40: {
