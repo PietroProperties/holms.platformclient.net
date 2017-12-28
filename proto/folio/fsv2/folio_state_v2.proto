@@ -36,8 +36,6 @@ message FolioStatev2 {
 
 	.holms.types.primitive.MonetaryAmount current_due_from_guest = 18;
 	.holms.types.primitive.MonetaryAmount anticipated_checkout_due_from_guest = 19;
-	// NOTE(DA) Expand this over time as we figure out what "closure" means
 	bool graceful_closure_possible = 20;
-	bool forced_closure_possible = 21;
 }
 

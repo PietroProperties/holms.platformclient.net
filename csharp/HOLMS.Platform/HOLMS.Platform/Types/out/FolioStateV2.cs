@@ -29,7 +29,7 @@ namespace HOLMS.Types.Folio.FSv2 {
             "bGlvX2NoZWNrX2Nhc2hfcGF5bWVudC5wcm90bxolZm9saW8vZnN2Mi9mb2xp",
             "b190YXhfYXNzZXNzbWVudC5wcm90bxokZm9saW8vZnN2Mi9tYXN0ZXJfZm9s",
             "aW9fc3RhdHVzLnByb3RvGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnBy",
-            "b3RvIvsKCgxGb2xpb1N0YXRldjISRAoRZWZmZWN0aXZlX2NoYXJnZXMYASAD",
+            "b3RvItoKCgxGb2xpb1N0YXRldjISRAoRZWZmZWN0aXZlX2NoYXJnZXMYASAD",
             "KAsyKS5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQXRvbWljQ2hhcmdl",
             "Ej0KDGNhcmRfcmVmdW5kcxgDIAMoCzInLmhvbG1zLnR5cGVzLmZvbGlvLmZz",
             "djIuRm9saW9DYXJkUmVmdW5kEjkKCmNhcmRfc2FsZXMYBCADKAsyJS5ob2xt",
@@ -59,13 +59,12 @@ namespace HOLMS.Types.Folio.FSv2 {
             "ASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50ElIK",
             "I2FudGljaXBhdGVkX2NoZWNrb3V0X2R1ZV9mcm9tX2d1ZXN0GBMgASgLMiUu",
             "aG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EiEKGWdyYWNl",
-            "ZnVsX2Nsb3N1cmVfcG9zc2libGUYFCABKAgSHwoXZm9yY2VkX2Nsb3N1cmVf",
-            "cG9zc2libGUYFSABKAhCGaoCFkhPTE1TLlR5cGVzLkZvbGlvLkZTdjJiBnBy",
-            "b3RvMw=="));
+            "ZnVsX2Nsb3N1cmVfcG9zc2libGUYFCABKAhCGaoCFkhPTE1TLlR5cGVzLkZv",
+            "bGlvLkZTdjJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioTaxAssessmentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioStatev2), global::HOLMS.Types.Folio.FSv2.FolioStatev2.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "MasterFolioStatus", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "ForcedClosurePossible" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioStatev2), global::HOLMS.Types.Folio.FSv2.FolioStatev2.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "MasterFolioStatus", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible" }, null, null, null)
           }));
     }
     #endregion
@@ -115,7 +114,6 @@ namespace HOLMS.Types.Folio.FSv2 {
       CurrentDueFromGuest = other.currentDueFromGuest_ != null ? other.CurrentDueFromGuest.Clone() : null;
       AnticipatedCheckoutDueFromGuest = other.anticipatedCheckoutDueFromGuest_ != null ? other.AnticipatedCheckoutDueFromGuest.Clone() : null;
       gracefulClosurePossible_ = other.gracefulClosurePossible_;
-      forcedClosurePossible_ = other.forcedClosurePossible_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -318,25 +316,11 @@ namespace HOLMS.Types.Folio.FSv2 {
     /// <summary>Field number for the "graceful_closure_possible" field.</summary>
     public const int GracefulClosurePossibleFieldNumber = 20;
     private bool gracefulClosurePossible_;
-    /// <summary>
-    ///  NOTE(DA) Expand this over time as we figure out what "closure" means
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool GracefulClosurePossible {
       get { return gracefulClosurePossible_; }
       set {
         gracefulClosurePossible_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "forced_closure_possible" field.</summary>
-    public const int ForcedClosurePossibleFieldNumber = 21;
-    private bool forcedClosurePossible_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool ForcedClosurePossible {
-      get { return forcedClosurePossible_; }
-      set {
-        forcedClosurePossible_ = value;
       }
     }
 
@@ -372,7 +356,6 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (!object.Equals(CurrentDueFromGuest, other.CurrentDueFromGuest)) return false;
       if (!object.Equals(AnticipatedCheckoutDueFromGuest, other.AnticipatedCheckoutDueFromGuest)) return false;
       if (GracefulClosurePossible != other.GracefulClosurePossible) return false;
-      if (ForcedClosurePossible != other.ForcedClosurePossible) return false;
       return true;
     }
 
@@ -398,7 +381,6 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (currentDueFromGuest_ != null) hash ^= CurrentDueFromGuest.GetHashCode();
       if (anticipatedCheckoutDueFromGuest_ != null) hash ^= AnticipatedCheckoutDueFromGuest.GetHashCode();
       if (GracefulClosurePossible != false) hash ^= GracefulClosurePossible.GetHashCode();
-      if (ForcedClosurePossible != false) hash ^= ForcedClosurePossible.GetHashCode();
       return hash;
     }
 
@@ -458,10 +440,6 @@ namespace HOLMS.Types.Folio.FSv2 {
         output.WriteRawTag(160, 1);
         output.WriteBool(GracefulClosurePossible);
       }
-      if (ForcedClosurePossible != false) {
-        output.WriteRawTag(168, 1);
-        output.WriteBool(ForcedClosurePossible);
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -504,9 +482,6 @@ namespace HOLMS.Types.Folio.FSv2 {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(AnticipatedCheckoutDueFromGuest);
       }
       if (GracefulClosurePossible != false) {
-        size += 2 + 1;
-      }
-      if (ForcedClosurePossible != false) {
         size += 2 + 1;
       }
       return size;
@@ -579,9 +554,6 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
       if (other.GracefulClosurePossible != false) {
         GracefulClosurePossible = other.GracefulClosurePossible;
-      }
-      if (other.ForcedClosurePossible != false) {
-        ForcedClosurePossible = other.ForcedClosurePossible;
       }
     }
 
@@ -691,10 +663,6 @@ namespace HOLMS.Types.Folio.FSv2 {
           }
           case 160: {
             GracefulClosurePossible = input.ReadBool();
-            break;
-          }
-          case 168: {
-            ForcedClosurePossible = input.ReadBool();
             break;
           }
         }
