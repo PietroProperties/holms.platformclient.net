@@ -16,6 +16,8 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponse> __Marshaller_ReservationFolioSvcGetFolioStateResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2> __Marshaller_ReservationFolioSvcGetFolioStateResponsev2 = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetOnFileCardsResponse> __Marshaller_ReservationFolioSvcGetOnFileCardsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetOnFileCardsResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesRequest> __Marshaller_ReservationFolioSvcGetSummariesRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesResponse> __Marshaller_ReservationFolioSvcGetSummariesResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.CardAuthorizationFromStoredCardRequest> __Marshaller_CardAuthorizationFromStoredCardRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.CardAuthorizationFromStoredCardRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> __Marshaller_CardAuthorizationResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.CardAuthorizationFromPresentCardRequest> __Marshaller_CardAuthorizationFromPresentCardRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.CardAuthorizationFromPresentCardRequest.Parser.ParseFrom);
@@ -57,6 +59,13 @@ namespace HOLMS.Types.Folio.RPC {
         "GetOnFileCards",
         __Marshaller_ReservationIndicator,
         __Marshaller_ReservationFolioSvcGetOnFileCardsResponse);
+
+    static readonly Method<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesRequest, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesResponse> __Method_GetFolioSummaries = new Method<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesRequest, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetFolioSummaries",
+        __Marshaller_ReservationFolioSvcGetSummariesRequest,
+        __Marshaller_ReservationFolioSvcGetSummariesResponse);
 
     static readonly Method<global::HOLMS.Types.Folio.RPC.CardAuthorizationFromStoredCardRequest, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> __Method_AddCardAuthorizationFromStoredCard = new Method<global::HOLMS.Types.Folio.RPC.CardAuthorizationFromStoredCardRequest, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse>(
         MethodType.Unary,
@@ -165,6 +174,11 @@ namespace HOLMS.Types.Folio.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetOnFileCardsResponse> GetOnFileCards(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesResponse> GetFolioSummaries(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -326,6 +340,22 @@ namespace HOLMS.Types.Folio.RPC {
       public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetOnFileCardsResponse> GetOnFileCardsAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetOnFileCards, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesResponse GetFolioSummaries(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetFolioSummaries(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesResponse GetFolioSummaries(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetFolioSummaries, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesResponse> GetFolioSummariesAsync(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetFolioSummariesAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesResponse> GetFolioSummariesAsync(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetFolioSummaries, null, options, request);
       }
       /// <summary>
       ///  New activity
@@ -584,6 +614,7 @@ namespace HOLMS.Types.Folio.RPC {
           .AddMethod(__Method_GetFolioState, serviceImpl.GetFolioState)
           .AddMethod(__Method_GetFolioStatev2, serviceImpl.GetFolioStatev2)
           .AddMethod(__Method_GetOnFileCards, serviceImpl.GetOnFileCards)
+          .AddMethod(__Method_GetFolioSummaries, serviceImpl.GetFolioSummaries)
           .AddMethod(__Method_AddCardAuthorizationFromStoredCard, serviceImpl.AddCardAuthorizationFromStoredCard)
           .AddMethod(__Method_AddCardAuthorizationFromPresentedCard, serviceImpl.AddCardAuthorizationFromPresentedCard)
           .AddMethod(__Method_AddCardAuthorizationFromNotPresentCard, serviceImpl.AddCardAuthorizationFromNotPresentCard)

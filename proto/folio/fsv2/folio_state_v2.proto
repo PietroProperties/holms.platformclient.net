@@ -8,13 +8,13 @@ import "folio/fsv2/folio_card_refund.proto";
 import "folio/fsv2/folio_card_sale.proto";
 import "folio/fsv2/folio_check_cash_payment.proto";
 import "folio/fsv2/folio_tax_assessment.proto";
-import "folio/fsv2/master_folio_status.proto";
+import "folio/fsv2/folio_summary.proto";
 import "primitive/monetary_amount.proto";
 
 
 message FolioStatev2 {
 	repeated .holms.types.folio.fsv2.FolioAtomicCharge effective_charges = 1;
-	// deprecated adjustments
+	// deprecated adjustments = 2
 	repeated .holms.types.folio.fsv2.FolioCardRefund card_refunds = 3;
 	repeated .holms.types.folio.fsv2.FolioCardSale card_sales = 4;
 	repeated .holms.types.folio.fsv2.FolioCheckCashPayment check_cash_payments = 5;
@@ -22,7 +22,7 @@ message FolioStatev2 {
 	repeated .holms.types.folio.fsv2.FolioTaxAssessment current_tax_assessments = 6;
 	repeated .holms.types.folio.fsv2.FolioTaxAssessment anticipated_ending_tax_assessment = 7;
 
-	.holms.types.folio.fsv2.MasterFolioStatus master_folio_status = 8;
+	// deprecated master folio status = 8
 	repeated .holms.types.folio.fsv2.FolioAtomicCharge native_charges = 9;
 	repeated .holms.types.folio.fsv2.FolioAtomicCharge exported_to_other_folio_charges = 10;
 	repeated .holms.types.folio.fsv2.FolioAtomicCharge imported_from_other_folio_charges = 11;
@@ -37,5 +37,9 @@ message FolioStatev2 {
 	.holms.types.primitive.MonetaryAmount current_due_from_guest = 18;
 	.holms.types.primitive.MonetaryAmount anticipated_checkout_due_from_guest = 19;
 	bool graceful_closure_possible = 20;
+
+	.holms.types.folio.fsv2.FolioSummary summary = 21;
 }
+
+
 
