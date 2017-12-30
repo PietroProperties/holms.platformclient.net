@@ -39,6 +39,8 @@ message FolioStatev2 {
 	bool graceful_closure_possible = 20;
 
 	.holms.types.folio.fsv2.FolioSummary summary = 21;
+	bool master_folio_accrues_lodging_charges = 22;
+	bool master_folio_accrues_incidental_charges = 23;
 }
 
 

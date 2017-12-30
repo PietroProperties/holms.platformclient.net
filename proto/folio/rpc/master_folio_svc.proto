@@ -5,7 +5,6 @@ option csharp_namespace = "HOLMS.Types.Folio.RPC";
 option go_package = "folio/rpc";
 
 import "booking/indicators/reservation_indicator.proto";
-import "folio/posted_charge_credit.proto";
 import "primitive/pb_local_date.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
 
@@ -64,10 +63,6 @@ message MasterFolioServiceFolioSwapRequest {
 	.holms.types.booking.indicators.ReservationIndicator client_folio = 5;
 }
 
-message MasterFolioSvcReservationMasterFolioAssignmentList {
-	repeated ReservationMasterFolioAssignment assignments = 1;
-}
-
 message ReservationMasterFolioAssignment {
 	.holms.types.booking.indicators.ReservationIndicator master_folio = 1;
 	repeated .holms.types.booking.indicators.ReservationIndicator client_folios = 2;
@@ -80,22 +75,12 @@ message MasterFolioSvcFolioSwapResponse {
 	MasterFolioSvcFolioSwapResult result = 1;
 }
 
-message MasterFolioSvcGetMasterFolioAssignmentsRequest {
-	repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
-}
-
 service MasterFolioSvc {
 	rpc RequestMasterFolio(MasterFolioServiceMasterFolioRequest)
 		returns(MasterFolioServiceRequestMasterFolioResponse);
 
 	rpc RemoveMasterFolio(MasterFolioSvcRemoveMasterFolioRequest)
 		returns(MasterFolioServiceRemoveMasterFolioResponse);
-
-	rpc FolioSwap(holms.types.folio.PostedChargeCredit)
-		returns(MasterFolioSvcFolioSwapResponse);
-
-	rpc GetMasterFolioAssignments(MasterFolioSvcGetMasterFolioAssignmentsRequest) 
-		returns (MasterFolioSvcReservationMasterFolioAssignmentList);
 
 	rpc AtomicFolioChargeSwap(MasterFolioServiceFolioSwapRequest)
 		returns(MasterFolioSvcFolioSwapResponse);

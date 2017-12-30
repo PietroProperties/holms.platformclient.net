@@ -28,7 +28,7 @@ namespace HOLMS.Types.Folio.FSv2 {
             "bGlvL2ZzdjIvZm9saW9fY2FyZF9zYWxlLnByb3RvGilmb2xpby9mc3YyL2Zv",
             "bGlvX2NoZWNrX2Nhc2hfcGF5bWVudC5wcm90bxolZm9saW8vZnN2Mi9mb2xp",
             "b190YXhfYXNzZXNzbWVudC5wcm90bxoeZm9saW8vZnN2Mi9mb2xpb19zdW1t",
-            "YXJ5LnByb3RvGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3RvIskK",
+            "YXJ5LnByb3RvGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3RvIqgL",
             "CgxGb2xpb1N0YXRldjISRAoRZWZmZWN0aXZlX2NoYXJnZXMYASADKAsyKS5o",
             "b2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQXRvbWljQ2hhcmdlEj0KDGNh",
             "cmRfcmVmdW5kcxgDIAMoCzInLmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIuRm9s",
@@ -59,11 +59,13 @@ namespace HOLMS.Types.Folio.FSv2 {
             "ZXN0GBMgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1v",
             "dW50EiEKGWdyYWNlZnVsX2Nsb3N1cmVfcG9zc2libGUYFCABKAgSNQoHc3Vt",
             "bWFyeRgVIAEoCzIkLmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIuRm9saW9TdW1t",
-            "YXJ5QhmqAhZIT0xNUy5UeXBlcy5Gb2xpby5GU3YyYgZwcm90bzM="));
+            "YXJ5EiwKJG1hc3Rlcl9mb2xpb19hY2NydWVzX2xvZGdpbmdfY2hhcmdlcxgW",
+            "IAEoCBIvCidtYXN0ZXJfZm9saW9fYWNjcnVlc19pbmNpZGVudGFsX2NoYXJn",
+            "ZXMYFyABKAhCGaoCFkhPTE1TLlR5cGVzLkZvbGlvLkZTdjJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioTaxAssessmentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioSummaryReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioStatev2), global::HOLMS.Types.Folio.FSv2.FolioStatev2.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioStatev2), global::HOLMS.Types.Folio.FSv2.FolioStatev2.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges" }, null, null, null)
           }));
     }
     #endregion
@@ -113,6 +115,8 @@ namespace HOLMS.Types.Folio.FSv2 {
       AnticipatedCheckoutDueFromGuest = other.anticipatedCheckoutDueFromGuest_ != null ? other.AnticipatedCheckoutDueFromGuest.Clone() : null;
       gracefulClosurePossible_ = other.gracefulClosurePossible_;
       Summary = other.summary_ != null ? other.Summary.Clone() : null;
+      masterFolioAccruesLodgingCharges_ = other.masterFolioAccruesLodgingCharges_;
+      masterFolioAccruesIncidentalCharges_ = other.masterFolioAccruesIncidentalCharges_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -326,6 +330,28 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
     }
 
+    /// <summary>Field number for the "master_folio_accrues_lodging_charges" field.</summary>
+    public const int MasterFolioAccruesLodgingChargesFieldNumber = 22;
+    private bool masterFolioAccruesLodgingCharges_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool MasterFolioAccruesLodgingCharges {
+      get { return masterFolioAccruesLodgingCharges_; }
+      set {
+        masterFolioAccruesLodgingCharges_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "master_folio_accrues_incidental_charges" field.</summary>
+    public const int MasterFolioAccruesIncidentalChargesFieldNumber = 23;
+    private bool masterFolioAccruesIncidentalCharges_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool MasterFolioAccruesIncidentalCharges {
+      get { return masterFolioAccruesIncidentalCharges_; }
+      set {
+        masterFolioAccruesIncidentalCharges_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioStatev2);
@@ -358,6 +384,8 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (!object.Equals(AnticipatedCheckoutDueFromGuest, other.AnticipatedCheckoutDueFromGuest)) return false;
       if (GracefulClosurePossible != other.GracefulClosurePossible) return false;
       if (!object.Equals(Summary, other.Summary)) return false;
+      if (MasterFolioAccruesLodgingCharges != other.MasterFolioAccruesLodgingCharges) return false;
+      if (MasterFolioAccruesIncidentalCharges != other.MasterFolioAccruesIncidentalCharges) return false;
       return true;
     }
 
@@ -383,6 +411,8 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (anticipatedCheckoutDueFromGuest_ != null) hash ^= AnticipatedCheckoutDueFromGuest.GetHashCode();
       if (GracefulClosurePossible != false) hash ^= GracefulClosurePossible.GetHashCode();
       if (summary_ != null) hash ^= Summary.GetHashCode();
+      if (MasterFolioAccruesLodgingCharges != false) hash ^= MasterFolioAccruesLodgingCharges.GetHashCode();
+      if (MasterFolioAccruesIncidentalCharges != false) hash ^= MasterFolioAccruesIncidentalCharges.GetHashCode();
       return hash;
     }
 
@@ -442,6 +472,14 @@ namespace HOLMS.Types.Folio.FSv2 {
         output.WriteRawTag(170, 1);
         output.WriteMessage(Summary);
       }
+      if (MasterFolioAccruesLodgingCharges != false) {
+        output.WriteRawTag(176, 1);
+        output.WriteBool(MasterFolioAccruesLodgingCharges);
+      }
+      if (MasterFolioAccruesIncidentalCharges != false) {
+        output.WriteRawTag(184, 1);
+        output.WriteBool(MasterFolioAccruesIncidentalCharges);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -485,6 +523,12 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
       if (summary_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Summary);
+      }
+      if (MasterFolioAccruesLodgingCharges != false) {
+        size += 2 + 1;
+      }
+      if (MasterFolioAccruesIncidentalCharges != false) {
+        size += 2 + 1;
       }
       return size;
     }
@@ -559,6 +603,12 @@ namespace HOLMS.Types.Folio.FSv2 {
           summary_ = new global::HOLMS.Types.Folio.FSv2.FolioSummary();
         }
         Summary.MergeFrom(other.Summary);
+      }
+      if (other.MasterFolioAccruesLodgingCharges != false) {
+        MasterFolioAccruesLodgingCharges = other.MasterFolioAccruesLodgingCharges;
+      }
+      if (other.MasterFolioAccruesIncidentalCharges != false) {
+        MasterFolioAccruesIncidentalCharges = other.MasterFolioAccruesIncidentalCharges;
       }
     }
 
@@ -671,6 +721,14 @@ namespace HOLMS.Types.Folio.FSv2 {
               summary_ = new global::HOLMS.Types.Folio.FSv2.FolioSummary();
             }
             input.ReadMessage(summary_);
+            break;
+          }
+          case 176: {
+            MasterFolioAccruesLodgingCharges = input.ReadBool();
+            break;
+          }
+          case 184: {
+            MasterFolioAccruesIncidentalCharges = input.ReadBool();
             break;
           }
         }
