@@ -16,14 +16,14 @@ import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
-import "folio/fsv2/folio_summary.proto";
+import "folio/fsv2/reservation_folio_summary.proto";
 
 message ReservationFolioSvcGetSummariesRequest {
 	repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
 }
 
 message ReservationFolioSvcGetSummariesResponse {
-	repeated .holms.types.folio.fsv2.FolioSummary summaries = 1;
+	repeated .holms.types.folio.fsv2.ReservationFolioSummary summaries = 1;
 }
 
 enum ReservationFolioSvcPostChargesResult {
