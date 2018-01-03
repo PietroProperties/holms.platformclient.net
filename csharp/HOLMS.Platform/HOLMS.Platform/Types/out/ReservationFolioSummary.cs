@@ -26,28 +26,28 @@ namespace HOLMS.Types.Folio.FSv2 {
             "FmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIaMGJvb2tpbmcvaW5kaWNhdG9ycy9n",
             "cm91cF9ib29raW5nX2luZGljYXRvci5wcm90bxouYm9va2luZy9pbmRpY2F0",
             "b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90bxo3Ym9va2luZy9yZXNl",
-            "cnZhdGlvbnMvcmVzZXJ2YXRpb25fZ3VhcmFudGVlX3N0YXR1cy5wcm90bxok",
-            "Zm9saW8vZnN2Mi9tYXN0ZXJfZm9saW9fc3RhdHVzLnByb3RvGjJ0ZW5hbmN5",
-            "X2NvbmZpZy9pbmRpY2F0b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90bxod",
-            "cHJpbWl0aXZlL3BiX2xvY2FsX2RhdGUucHJvdG8inAUKF1Jlc2VydmF0aW9u",
-            "Rm9saW9TdW1tYXJ5EkwKDnJlc2VydmF0aW9uX2lkGAEgASgLMjQuaG9sbXMu",
-            "dHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9y",
-            "EkYKE21hc3Rlcl9mb2xpb19zdGF0dXMYAiABKA4yKS5ob2xtcy50eXBlcy5m",
-            "b2xpby5mc3YyLk1hc3RlckZvbGlvU3RhdHVzElkKG21hc3Rlcl9mb2xpb19y",
-            "ZXNlcnZhdGlvbl9pZBgDIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5k",
-            "aWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchJcCh1tYXN0ZXJfZm9saW9f",
-            "Z3JvdXBfYm9va2luZ19pZBgEIAEoCzI1LmhvbG1zLnR5cGVzLmJvb2tpbmcu",
-            "aW5kaWNhdG9ycy5Hcm91cEJvb2tpbmdJbmRpY2F0b3ISSwoNY2xpZW50X2Zv",
-            "bGlvcxgFIAMoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5S",
-            "ZXNlcnZhdGlvbkluZGljYXRvchJWChBndWFyYW50ZWVfc3RhdHVzGAYgASgO",
-            "MjwuaG9sbXMudHlwZXMuYm9va2luZy5yZXNlcnZhdGlvbnMuUmVzZXJ2YXRp",
-            "b25HdWFyYW50ZWVTdGF0dXMSPAoQZ3VhcmFudGVlX2R1ZV9vbhgHIAEoCzIi",
-            "LmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkxvY2FsRGF0ZRJPCg1ob3N0X3By",
-            "b3BlcnR5GAggASgLMjguaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5k",
-            "aWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRvckIZqgIWSE9MTVMuVHlwZXMuRm9s",
-            "aW8uRlN2MmIGcHJvdG8z"));
+            "cnZhdGlvbnMvcmVzZXJ2YXRpb25fZ3VhcmFudGVlX3N0YXR1cy5wcm90bxog",
+            "Zm9saW8vZnN2Mi9mb2xpb19pbmRpY2F0b3IucHJvdG8aJGZvbGlvL2ZzdjIv",
+            "bWFzdGVyX2ZvbGlvX3N0YXR1cy5wcm90bxoydGVuYW5jeV9jb25maWcvaW5k",
+            "aWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8aHXByaW1pdGl2ZS9w",
+            "Yl9sb2NhbF9kYXRlLnByb3RvIo4FChdSZXNlcnZhdGlvbkZvbGlvU3VtbWFy",
+            "eRJMCg5yZXNlcnZhdGlvbl9pZBgBIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tp",
+            "bmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchJGChNtYXN0ZXJf",
+            "Zm9saW9fc3RhdHVzGAIgASgOMikuaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5N",
+            "YXN0ZXJGb2xpb1N0YXR1cxJZChttYXN0ZXJfZm9saW9fcmVzZXJ2YXRpb25f",
+            "aWQYAyABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVz",
+            "ZXJ2YXRpb25JbmRpY2F0b3ISXAodbWFzdGVyX2ZvbGlvX2dyb3VwX2Jvb2tp",
+            "bmdfaWQYBCABKAsyNS5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMu",
+            "R3JvdXBCb29raW5nSW5kaWNhdG9yEj0KDWNsaWVudF9mb2xpb3MYBSADKAsy",
+            "Ji5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvSW5kaWNhdG9yElYKEGd1",
+            "YXJhbnRlZV9zdGF0dXMYBiABKA4yPC5ob2xtcy50eXBlcy5ib29raW5nLnJl",
+            "c2VydmF0aW9ucy5SZXNlcnZhdGlvbkd1YXJhbnRlZVN0YXR1cxI8ChBndWFy",
+            "YW50ZWVfZHVlX29uGAcgASgLMiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBi",
+            "TG9jYWxEYXRlEk8KDWhvc3RfcHJvcGVydHkYCCABKAsyOC5ob2xtcy50eXBl",
+            "cy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9y",
+            "QhmqAhZIT0xNUy5UeXBlcy5Gb2xpby5GU3YyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.ReservationFolioSummary), global::HOLMS.Types.Folio.FSv2.ReservationFolioSummary.Parser, new[]{ "ReservationId", "MasterFolioStatus", "MasterFolioReservationId", "MasterFolioGroupBookingId", "ClientFolios", "GuaranteeStatus", "GuaranteeDueOn", "HostProperty" }, null, null, null)
           }));
@@ -141,11 +141,11 @@ namespace HOLMS.Types.Folio.FSv2 {
 
     /// <summary>Field number for the "client_folios" field.</summary>
     public const int ClientFoliosFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> _repeated_clientFolios_codec
-        = pb::FieldCodec.ForMessage(42, global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> clientFolios_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator>();
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FSv2.FolioIndicator> _repeated_clientFolios_codec
+        = pb::FieldCodec.ForMessage(42, global::HOLMS.Types.Folio.FSv2.FolioIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FSv2.FolioIndicator> clientFolios_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FSv2.FolioIndicator>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> ClientFolios {
+    public pbc::RepeatedField<global::HOLMS.Types.Folio.FSv2.FolioIndicator> ClientFolios {
       get { return clientFolios_; }
     }
 

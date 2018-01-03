@@ -23,29 +23,29 @@ namespace HOLMS.Types.Folio.FSv2 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiRmb2xpby9mc3YyL2ZvbGlvX2F0b21pY19jaGFyZ2UucHJvdG8SFmhvbG1z",
-            "LnR5cGVzLmZvbGlvLmZzdjIaLmJvb2tpbmcvaW5kaWNhdG9ycy9yZXNlcnZh",
-            "dGlvbl9pbmRpY2F0b3IucHJvdG8aHmZvbGlvL2NoYXJnZV9jcmVkaXRfdHlw",
-            "ZS5wcm90bxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxofcHJp",
-            "bWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90bxodcHJpbWl0aXZlL3BiX2xv",
-            "Y2FsX2RhdGUucHJvdG8aN3N1cHBseS9pbmNpZGVudGFsX2l0ZW1zL2luY2lk",
-            "ZW50YWxfaXRlbV9pbmRpY2F0b3IucHJvdG8ikQQKEUZvbGlvQXRvbWljQ2hh",
-            "cmdlEjUKBmFtb3VudBgBIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5N",
-            "b25ldGFyeUFtb3VudBIRCgluYXJyYXRpb24YAiABKAkSPwoSY2hhcmdlX2Ny",
-            "ZWRpdF90eXBlGAMgASgOMiMuaG9sbXMudHlwZXMuZm9saW8uQ2hhcmdlQ3Jl",
-            "ZGl0VHlwZRJBChVlZmZlY3RpdmVfZm9yX29wc2RhdGUYBCABKAsyIi5ob2xt",
-            "cy50eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGUSNgoSZWZmZWN0aXZlX2F0",
-            "X2Nsb2NrGAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBJVCg9p",
-            "bmNpZGVudGFsX2l0ZW0YBiABKAsyPC5ob2xtcy50eXBlcy5zdXBwbHkuaW5j",
-            "aWRlbnRhbF9pdGVtcy5JbmNpZGVudGFsSXRlbUluZGljYXRvchJJCgtpbmN1",
-            "cnJlZF9ieRgHIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9y",
-            "cy5SZXNlcnZhdGlvbkluZGljYXRvchJUChFpc3N1YW5jZV9zY2hlZHVsZRgI",
-            "IAEoDjI5LmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIuRm9saW9BdG9taWNDaGFy",
-            "Z2VJc3N1YW5jZVNjaGVkdWxlKm8KIUZvbGlvQXRvbWljQ2hhcmdlSXNzdWFu",
-            "Y2VTY2hlZHVsZRIlCiFJTVBMRU1FTlRBVElPTl9TQ0hFRFVMRV9JTU1FRElB",
-            "VEUQABIjCh9JTVBMRU1FTlRBVElPTl9TQ0hFRFVMRV9QTEFOTkVEEAFCGaoC",
-            "FkhPTE1TLlR5cGVzLkZvbGlvLkZTdjJiBnByb3RvMw=="));
+            "LnR5cGVzLmZvbGlvLmZzdjIaHmZvbGlvL2NoYXJnZV9jcmVkaXRfdHlwZS5w",
+            "cm90bxogZm9saW8vZnN2Mi9mb2xpb19pbmRpY2F0b3IucHJvdG8aH2dvb2ds",
+            "ZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFy",
+            "eV9hbW91bnQucHJvdG8aHXByaW1pdGl2ZS9wYl9sb2NhbF9kYXRlLnByb3Rv",
+            "GjdzdXBwbHkvaW5jaWRlbnRhbF9pdGVtcy9pbmNpZGVudGFsX2l0ZW1faW5k",
+            "aWNhdG9yLnByb3RvIoMEChFGb2xpb0F0b21pY0NoYXJnZRI1CgZhbW91bnQY",
+            "ASABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQS",
+            "EQoJbmFycmF0aW9uGAIgASgJEj8KEmNoYXJnZV9jcmVkaXRfdHlwZRgDIAEo",
+            "DjIjLmhvbG1zLnR5cGVzLmZvbGlvLkNoYXJnZUNyZWRpdFR5cGUSQQoVZWZm",
+            "ZWN0aXZlX2Zvcl9vcHNkYXRlGAQgASgLMiIuaG9sbXMudHlwZXMucHJpbWl0",
+            "aXZlLlBiTG9jYWxEYXRlEjYKEmVmZmVjdGl2ZV9hdF9jbG9jaxgFIAEoCzIa",
+            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASVQoPaW5jaWRlbnRhbF9pdGVt",
+            "GAYgASgLMjwuaG9sbXMudHlwZXMuc3VwcGx5LmluY2lkZW50YWxfaXRlbXMu",
+            "SW5jaWRlbnRhbEl0ZW1JbmRpY2F0b3ISOwoLaW5jdXJyZWRfYnkYByABKAsy",
+            "Ji5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvSW5kaWNhdG9yElQKEWlz",
+            "c3VhbmNlX3NjaGVkdWxlGAggASgOMjkuaG9sbXMudHlwZXMuZm9saW8uZnN2",
+            "Mi5Gb2xpb0F0b21pY0NoYXJnZUlzc3VhbmNlU2NoZWR1bGUqbwohRm9saW9B",
+            "dG9taWNDaGFyZ2VJc3N1YW5jZVNjaGVkdWxlEiUKIUlNUExFTUVOVEFUSU9O",
+            "X1NDSEVEVUxFX0lNTUVESUFURRAAEiMKH0lNUExFTUVOVEFUSU9OX1NDSEVE",
+            "VUxFX1BMQU5ORUQQAUIZqgIWSE9MTVMuVHlwZXMuRm9saW8uRlN2MmIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.ChargeCreditTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.ChargeCreditTypeReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeIssuanceSchedule), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioAtomicCharge), global::HOLMS.Types.Folio.FSv2.FolioAtomicCharge.Parser, new[]{ "Amount", "Narration", "ChargeCreditType", "EffectiveForOpsdate", "EffectiveAtClock", "IncidentalItem", "IncurredBy", "IssuanceSchedule" }, null, null, null)
           }));
@@ -169,9 +169,9 @@ namespace HOLMS.Types.Folio.FSv2 {
 
     /// <summary>Field number for the "incurred_by" field.</summary>
     public const int IncurredByFieldNumber = 7;
-    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator incurredBy_;
+    private global::HOLMS.Types.Folio.FSv2.FolioIndicator incurredBy_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator IncurredBy {
+    public global::HOLMS.Types.Folio.FSv2.FolioIndicator IncurredBy {
       get { return incurredBy_; }
       set {
         incurredBy_ = value;
@@ -335,7 +335,7 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
       if (other.incurredBy_ != null) {
         if (incurredBy_ == null) {
-          incurredBy_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+          incurredBy_ = new global::HOLMS.Types.Folio.FSv2.FolioIndicator();
         }
         IncurredBy.MergeFrom(other.IncurredBy);
       }
@@ -390,7 +390,7 @@ namespace HOLMS.Types.Folio.FSv2 {
           }
           case 58: {
             if (incurredBy_ == null) {
-              incurredBy_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+              incurredBy_ = new global::HOLMS.Types.Folio.FSv2.FolioIndicator();
             }
             input.ReadMessage(incurredBy_);
             break;
