@@ -23,33 +23,29 @@ namespace HOLMS.Types.Folio.FSv2 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cipmb2xpby9mc3YyL3Jlc2VydmF0aW9uX2ZvbGlvX3N1bW1hcnkucHJvdG8S",
-            "FmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIaMGJvb2tpbmcvaW5kaWNhdG9ycy9n",
-            "cm91cF9ib29raW5nX2luZGljYXRvci5wcm90bxouYm9va2luZy9pbmRpY2F0",
-            "b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90bxo3Ym9va2luZy9yZXNl",
-            "cnZhdGlvbnMvcmVzZXJ2YXRpb25fZ3VhcmFudGVlX3N0YXR1cy5wcm90bxog",
-            "Zm9saW8vZnN2Mi9mb2xpb19pbmRpY2F0b3IucHJvdG8aJGZvbGlvL2ZzdjIv",
-            "bWFzdGVyX2ZvbGlvX3N0YXR1cy5wcm90bxoydGVuYW5jeV9jb25maWcvaW5k",
-            "aWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8aHXByaW1pdGl2ZS9w",
-            "Yl9sb2NhbF9kYXRlLnByb3RvIo4FChdSZXNlcnZhdGlvbkZvbGlvU3VtbWFy",
-            "eRJMCg5yZXNlcnZhdGlvbl9pZBgBIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tp",
-            "bmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchJGChNtYXN0ZXJf",
-            "Zm9saW9fc3RhdHVzGAIgASgOMikuaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5N",
-            "YXN0ZXJGb2xpb1N0YXR1cxJZChttYXN0ZXJfZm9saW9fcmVzZXJ2YXRpb25f",
-            "aWQYAyABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVz",
-            "ZXJ2YXRpb25JbmRpY2F0b3ISXAodbWFzdGVyX2ZvbGlvX2dyb3VwX2Jvb2tp",
-            "bmdfaWQYBCABKAsyNS5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMu",
-            "R3JvdXBCb29raW5nSW5kaWNhdG9yEj0KDWNsaWVudF9mb2xpb3MYBSADKAsy",
-            "Ji5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvSW5kaWNhdG9yElYKEGd1",
-            "YXJhbnRlZV9zdGF0dXMYBiABKA4yPC5ob2xtcy50eXBlcy5ib29raW5nLnJl",
-            "c2VydmF0aW9ucy5SZXNlcnZhdGlvbkd1YXJhbnRlZVN0YXR1cxI8ChBndWFy",
-            "YW50ZWVfZHVlX29uGAcgASgLMiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBi",
-            "TG9jYWxEYXRlEk8KDWhvc3RfcHJvcGVydHkYCCABKAsyOC5ob2xtcy50eXBl",
-            "cy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9y",
-            "QhmqAhZIT0xNUy5UeXBlcy5Gb2xpby5GU3YyYgZwcm90bzM="));
+            "FmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIaLmJvb2tpbmcvaW5kaWNhdG9ycy9y",
+            "ZXNlcnZhdGlvbl9pbmRpY2F0b3IucHJvdG8aN2Jvb2tpbmcvcmVzZXJ2YXRp",
+            "b25zL3Jlc2VydmF0aW9uX2d1YXJhbnRlZV9zdGF0dXMucHJvdG8aIGZvbGlv",
+            "L2ZzdjIvZm9saW9faW5kaWNhdG9yLnByb3RvGiRmb2xpby9mc3YyL21hc3Rl",
+            "cl9mb2xpb19zdGF0dXMucHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRv",
+            "cnMvcHJvcGVydHlfaW5kaWNhdG9yLnByb3RvGh1wcmltaXRpdmUvcGJfbG9j",
+            "YWxfZGF0ZS5wcm90byKTBAoXUmVzZXJ2YXRpb25Gb2xpb1N1bW1hcnkSTAoO",
+            "cmVzZXJ2YXRpb25faWQYASABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmlu",
+            "ZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISRgoTbWFzdGVyX2ZvbGlv",
+            "X3N0YXR1cxgCIAEoDjIpLmhvbG1zLnR5cGVzLmZvbGlvLmZzdjIuTWFzdGVy",
+            "Rm9saW9TdGF0dXMSPAoMbWFzdGVyX2ZvbGlvGAMgASgLMiYuaG9sbXMudHlw",
+            "ZXMuZm9saW8uZnN2Mi5Gb2xpb0luZGljYXRvchI9Cg1jbGllbnRfZm9saW9z",
+            "GAUgAygLMiYuaG9sbXMudHlwZXMuZm9saW8uZnN2Mi5Gb2xpb0luZGljYXRv",
+            "chJWChBndWFyYW50ZWVfc3RhdHVzGAYgASgOMjwuaG9sbXMudHlwZXMuYm9v",
+            "a2luZy5yZXNlcnZhdGlvbnMuUmVzZXJ2YXRpb25HdWFyYW50ZWVTdGF0dXMS",
+            "PAoQZ3VhcmFudGVlX2R1ZV9vbhgHIAEoCzIiLmhvbG1zLnR5cGVzLnByaW1p",
+            "dGl2ZS5QYkxvY2FsRGF0ZRJPCg1ob3N0X3Byb3BlcnR5GAggASgLMjguaG9s",
+            "bXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUlu",
+            "ZGljYXRvckIZqgIWSE9MTVMuVHlwZXMuRm9saW8uRlN2MmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.ReservationFolioSummary), global::HOLMS.Types.Folio.FSv2.ReservationFolioSummary.Parser, new[]{ "ReservationId", "MasterFolioStatus", "MasterFolioReservationId", "MasterFolioGroupBookingId", "ClientFolios", "GuaranteeStatus", "GuaranteeDueOn", "HostProperty" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.ReservationFolioSummary), global::HOLMS.Types.Folio.FSv2.ReservationFolioSummary.Parser, new[]{ "ReservationId", "MasterFolioStatus", "MasterFolio", "ClientFolios", "GuaranteeStatus", "GuaranteeDueOn", "HostProperty" }, null, null, null)
           }));
     }
     #endregion
@@ -82,8 +78,7 @@ namespace HOLMS.Types.Folio.FSv2 {
     public ReservationFolioSummary(ReservationFolioSummary other) : this() {
       ReservationId = other.reservationId_ != null ? other.ReservationId.Clone() : null;
       masterFolioStatus_ = other.masterFolioStatus_;
-      MasterFolioReservationId = other.masterFolioReservationId_ != null ? other.MasterFolioReservationId.Clone() : null;
-      MasterFolioGroupBookingId = other.masterFolioGroupBookingId_ != null ? other.MasterFolioGroupBookingId.Clone() : null;
+      MasterFolio = other.masterFolio_ != null ? other.MasterFolio.Clone() : null;
       clientFolios_ = other.clientFolios_.Clone();
       guaranteeStatus_ = other.guaranteeStatus_;
       GuaranteeDueOn = other.guaranteeDueOn_ != null ? other.GuaranteeDueOn.Clone() : null;
@@ -117,25 +112,14 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
     }
 
-    /// <summary>Field number for the "master_folio_reservation_id" field.</summary>
-    public const int MasterFolioReservationIdFieldNumber = 3;
-    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator masterFolioReservationId_;
+    /// <summary>Field number for the "master_folio" field.</summary>
+    public const int MasterFolioFieldNumber = 3;
+    private global::HOLMS.Types.Folio.FSv2.FolioIndicator masterFolio_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator MasterFolioReservationId {
-      get { return masterFolioReservationId_; }
+    public global::HOLMS.Types.Folio.FSv2.FolioIndicator MasterFolio {
+      get { return masterFolio_; }
       set {
-        masterFolioReservationId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "master_folio_group_booking_id" field.</summary>
-    public const int MasterFolioGroupBookingIdFieldNumber = 4;
-    private global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator masterFolioGroupBookingId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator MasterFolioGroupBookingId {
-      get { return masterFolioGroupBookingId_; }
-      set {
-        masterFolioGroupBookingId_ = value;
+        masterFolio_ = value;
       }
     }
 
@@ -197,8 +181,7 @@ namespace HOLMS.Types.Folio.FSv2 {
       }
       if (!object.Equals(ReservationId, other.ReservationId)) return false;
       if (MasterFolioStatus != other.MasterFolioStatus) return false;
-      if (!object.Equals(MasterFolioReservationId, other.MasterFolioReservationId)) return false;
-      if (!object.Equals(MasterFolioGroupBookingId, other.MasterFolioGroupBookingId)) return false;
+      if (!object.Equals(MasterFolio, other.MasterFolio)) return false;
       if(!clientFolios_.Equals(other.clientFolios_)) return false;
       if (GuaranteeStatus != other.GuaranteeStatus) return false;
       if (!object.Equals(GuaranteeDueOn, other.GuaranteeDueOn)) return false;
@@ -211,8 +194,7 @@ namespace HOLMS.Types.Folio.FSv2 {
       int hash = 1;
       if (reservationId_ != null) hash ^= ReservationId.GetHashCode();
       if (MasterFolioStatus != 0) hash ^= MasterFolioStatus.GetHashCode();
-      if (masterFolioReservationId_ != null) hash ^= MasterFolioReservationId.GetHashCode();
-      if (masterFolioGroupBookingId_ != null) hash ^= MasterFolioGroupBookingId.GetHashCode();
+      if (masterFolio_ != null) hash ^= MasterFolio.GetHashCode();
       hash ^= clientFolios_.GetHashCode();
       if (GuaranteeStatus != 0) hash ^= GuaranteeStatus.GetHashCode();
       if (guaranteeDueOn_ != null) hash ^= GuaranteeDueOn.GetHashCode();
@@ -235,13 +217,9 @@ namespace HOLMS.Types.Folio.FSv2 {
         output.WriteRawTag(16);
         output.WriteEnum((int) MasterFolioStatus);
       }
-      if (masterFolioReservationId_ != null) {
+      if (masterFolio_ != null) {
         output.WriteRawTag(26);
-        output.WriteMessage(MasterFolioReservationId);
-      }
-      if (masterFolioGroupBookingId_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(MasterFolioGroupBookingId);
+        output.WriteMessage(MasterFolio);
       }
       clientFolios_.WriteTo(output, _repeated_clientFolios_codec);
       if (GuaranteeStatus != 0) {
@@ -267,11 +245,8 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (MasterFolioStatus != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MasterFolioStatus);
       }
-      if (masterFolioReservationId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MasterFolioReservationId);
-      }
-      if (masterFolioGroupBookingId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MasterFolioGroupBookingId);
+      if (masterFolio_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MasterFolio);
       }
       size += clientFolios_.CalculateSize(_repeated_clientFolios_codec);
       if (GuaranteeStatus != 0) {
@@ -300,17 +275,11 @@ namespace HOLMS.Types.Folio.FSv2 {
       if (other.MasterFolioStatus != 0) {
         MasterFolioStatus = other.MasterFolioStatus;
       }
-      if (other.masterFolioReservationId_ != null) {
-        if (masterFolioReservationId_ == null) {
-          masterFolioReservationId_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+      if (other.masterFolio_ != null) {
+        if (masterFolio_ == null) {
+          masterFolio_ = new global::HOLMS.Types.Folio.FSv2.FolioIndicator();
         }
-        MasterFolioReservationId.MergeFrom(other.MasterFolioReservationId);
-      }
-      if (other.masterFolioGroupBookingId_ != null) {
-        if (masterFolioGroupBookingId_ == null) {
-          masterFolioGroupBookingId_ = new global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator();
-        }
-        MasterFolioGroupBookingId.MergeFrom(other.MasterFolioGroupBookingId);
+        MasterFolio.MergeFrom(other.MasterFolio);
       }
       clientFolios_.Add(other.clientFolios_);
       if (other.GuaranteeStatus != 0) {
@@ -350,17 +319,10 @@ namespace HOLMS.Types.Folio.FSv2 {
             break;
           }
           case 26: {
-            if (masterFolioReservationId_ == null) {
-              masterFolioReservationId_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+            if (masterFolio_ == null) {
+              masterFolio_ = new global::HOLMS.Types.Folio.FSv2.FolioIndicator();
             }
-            input.ReadMessage(masterFolioReservationId_);
-            break;
-          }
-          case 34: {
-            if (masterFolioGroupBookingId_ == null) {
-              masterFolioGroupBookingId_ = new global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator();
-            }
-            input.ReadMessage(masterFolioGroupBookingId_);
+            input.ReadMessage(masterFolio_);
             break;
           }
           case 42: {
