@@ -3,8 +3,8 @@
 package holms.types.folio.fsv2;
 option csharp_namespace = "HOLMS.Types.Folio.FSv2";
 
-import "booking/indicators/reservation_indicator.proto";
 import "folio/charge_credit_type.proto";
+import "folio/fsv2/folio_indicator.proto";
 import "google/protobuf/timestamp.proto";
 import "primitive/monetary_amount.proto";
 import "primitive/pb_local_date.proto";
@@ -23,7 +23,7 @@ message FolioAtomicCharge {
 	google.protobuf.Timestamp effective_at_clock = 5;
 
 	.holms.types.supply.incidental_items.IncidentalItemIndicator incidental_item = 6;
-	.holms.types.booking.indicators.ReservationIndicator incurred_by = 7;
+	.holms.types.folio.fsv2.FolioIndicator incurred_by = 7;
 	FolioAtomicChargeIssuanceSchedule issuance_schedule = 8;
 }
 

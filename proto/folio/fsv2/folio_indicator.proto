@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.folio.fsv2;
+option csharp_namespace = "HOLMS.Types.Folio.FSv2";
+
+import "booking/indicators/group_booking_indicator.proto";
+import "booking/indicators/reservation_indicator.proto";
+
+message FolioIndicator {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	.holms.types.booking.indicators.GroupBookingIndicator group_booking = 2;
+}
+
