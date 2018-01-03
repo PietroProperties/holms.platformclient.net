@@ -3,7 +3,6 @@ syntax = "proto3";
 package holms.types.folio.fsv2;
 option csharp_namespace = "HOLMS.Types.Folio.FSv2";
 
-import "booking/indicators/group_booking_indicator.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "booking/reservations/reservation_guarantee_status.proto";
 import "folio/fsv2/folio_indicator.proto";
@@ -13,12 +12,11 @@ import "primitive/pb_local_date.proto";
 
 message ReservationFolioSummary {
 	.holms.types.booking.indicators.ReservationIndicator reservation_id = 1;
+
 	.holms.types.folio.fsv2.MasterFolioStatus master_folio_status = 2;
-
-	.holms.types.booking.indicators.ReservationIndicator master_folio_reservation_id = 3;
-	.holms.types.booking.indicators.GroupBookingIndicator master_folio_group_booking_id = 4;
-
+	.holms.types.folio.fsv2.FolioIndicator master_folio = 3;
 	repeated .holms.types.folio.fsv2.FolioIndicator client_folios = 5;
+
 	.holms.types.booking.reservations.ReservationGuaranteeStatus guarantee_status = 6;
 	.holms.types.primitive.PbLocalDate guarantee_due_on = 7;
 	.holms.types.tenancy_config.indicators.PropertyIndicator host_property = 8;
