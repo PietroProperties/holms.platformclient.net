@@ -46,10 +46,10 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_ReservationIndicator,
         __Marshaller_ReservationFolioSvcGetFolioStateResponse);
 
-    static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2> __Method_GetFolioStatev2 = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2>(
+    static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2> __Method_GetReservationFolioState = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2>(
         MethodType.Unary,
         __ServiceName,
-        "GetFolioStatev2",
+        "GetReservationFolioState",
         __Marshaller_ReservationIndicator,
         __Marshaller_ReservationFolioSvcGetFolioStateResponsev2);
 
@@ -168,7 +168,7 @@ namespace HOLMS.Types.Folio.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2> GetFolioStatev2(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2> GetReservationFolioState(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -309,21 +309,21 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetFolioState, null, options, request);
       }
-      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2 GetFolioStatev2(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2 GetReservationFolioState(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetFolioStatev2(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetReservationFolioState(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2 GetFolioStatev2(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
+      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2 GetReservationFolioState(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetFolioStatev2, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetReservationFolioState, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2> GetFolioStatev2Async(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2> GetReservationFolioStateAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetFolioStatev2Async(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetReservationFolioStateAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2> GetFolioStatev2Async(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2> GetReservationFolioStateAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetFolioStatev2, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetReservationFolioState, null, options, request);
       }
       public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetOnFileCardsResponse GetOnFileCards(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
@@ -612,7 +612,7 @@ namespace HOLMS.Types.Folio.RPC {
     {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetFolioState, serviceImpl.GetFolioState)
-          .AddMethod(__Method_GetFolioStatev2, serviceImpl.GetFolioStatev2)
+          .AddMethod(__Method_GetReservationFolioState, serviceImpl.GetReservationFolioState)
           .AddMethod(__Method_GetOnFileCards, serviceImpl.GetOnFileCards)
           .AddMethod(__Method_GetFolioSummaries, serviceImpl.GetFolioSummaries)
           .AddMethod(__Method_AddCardAuthorizationFromStoredCard, serviceImpl.AddCardAuthorizationFromStoredCard)

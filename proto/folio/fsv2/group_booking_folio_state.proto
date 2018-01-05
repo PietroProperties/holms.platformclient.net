@@ -24,7 +24,7 @@ message GroupBookingFolioState {
 	repeated .holms.types.folio.fsv2.FolioAtomicCharge imported_from_other_folio_charges = 8;
 
 	.holms.types.primitive.MonetaryAmount current_net_charges = 9;
-	.holms.types.primitive.MonetaryAmount anticipated_net_charges = 10;
+	.holms.types.primitive.MonetaryAmount anticipated_charges = 10;
 	.holms.types.primitive.MonetaryAmount posted_payments = 11;
 	.holms.types.primitive.MonetaryAmount posted_refunds = 12;
 

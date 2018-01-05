@@ -12,7 +12,7 @@ import "primitive/monetary_amount.proto";
 import "folio/fsv2/reservation_folio_summary.proto";
 
 
-message FolioStatev2 {
+message ReservationFolioState {
 	repeated .holms.types.folio.fsv2.FolioAtomicCharge effective_charges = 1;
 	// deprecated adjustments = 2
 	repeated .holms.types.folio.fsv2.FolioCardRefund card_refunds = 3;
