@@ -14,6 +14,8 @@ namespace HOLMS.Types.Folio.RPC {
 
     static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> __Marshaller_GroupBookingIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetFolioStateResponse> __Marshaller_GroupBookingFolioSvcGetFolioStateResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetFolioStateResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.FSv2.FolioIndicator> __Marshaller_FolioIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.FSv2.FolioIndicator.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.FSv2.GroupBookingFolioState> __Marshaller_GroupBookingFolioState = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.FSv2.GroupBookingFolioState.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest> __Marshaller_GroupBookingFolioSvcCardAuthorizationFromTokenRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> __Marshaller_CardAuthorizationResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest> __Marshaller_GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest.Parser.ParseFrom);
@@ -35,6 +37,13 @@ namespace HOLMS.Types.Folio.RPC {
         "GetFolioState",
         __Marshaller_GroupBookingIndicator,
         __Marshaller_GroupBookingFolioSvcGetFolioStateResponse);
+
+    static readonly Method<global::HOLMS.Types.Folio.FSv2.FolioIndicator, global::HOLMS.Types.Folio.FSv2.GroupBookingFolioState> __Method_GetFolioStatev2 = new Method<global::HOLMS.Types.Folio.FSv2.FolioIndicator, global::HOLMS.Types.Folio.FSv2.GroupBookingFolioState>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetFolioStatev2",
+        __Marshaller_FolioIndicator,
+        __Marshaller_GroupBookingFolioState);
 
     static readonly Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> __Method_AddCardAuthorizationFromToken = new Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse>(
         MethodType.Unary,
@@ -109,6 +118,11 @@ namespace HOLMS.Types.Folio.RPC {
     public abstract class GroupBookingFolioSvcBase
     {
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetFolioStateResponse> GetFolioState(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.FSv2.GroupBookingFolioState> GetFolioStatev2(global::HOLMS.Types.Folio.FSv2.FolioIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -207,6 +221,22 @@ namespace HOLMS.Types.Folio.RPC {
       public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetFolioStateResponse> GetFolioStateAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetFolioState, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Folio.FSv2.GroupBookingFolioState GetFolioStatev2(global::HOLMS.Types.Folio.FSv2.FolioIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetFolioStatev2(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Folio.FSv2.GroupBookingFolioState GetFolioStatev2(global::HOLMS.Types.Folio.FSv2.FolioIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetFolioStatev2, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.FSv2.GroupBookingFolioState> GetFolioStatev2Async(global::HOLMS.Types.Folio.FSv2.FolioIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetFolioStatev2Async(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.FSv2.GroupBookingFolioState> GetFolioStatev2Async(global::HOLMS.Types.Folio.FSv2.FolioIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetFolioStatev2, null, options, request);
       }
       /// <summary>
       ///  Cards
@@ -399,6 +429,7 @@ namespace HOLMS.Types.Folio.RPC {
     {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetFolioState, serviceImpl.GetFolioState)
+          .AddMethod(__Method_GetFolioStatev2, serviceImpl.GetFolioStatev2)
           .AddMethod(__Method_AddCardAuthorizationFromToken, serviceImpl.AddCardAuthorizationFromToken)
           .AddMethod(__Method_AddCardAuthorizationFromPresentedCard, serviceImpl.AddCardAuthorizationFromPresentedCard)
           .AddMethod(__Method_AddCardAuthorizationFromNotPresentCard, serviceImpl.AddCardAuthorizationFromNotPresentCard)

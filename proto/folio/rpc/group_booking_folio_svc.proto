@@ -14,6 +14,8 @@ import "money/cards/guest_payment_card_indicator.proto";
 import "folio/folio_state.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
+import "folio/fsv2/folio_indicator.proto";
+import "folio/fsv2/group_booking_folio_state.proto";
 
 enum GroupBookingFolioSvcPostChargesResult {
 	GROUP_BOOKING_FOLIO_SVC_POST_CHARGES_RESULT_OK = 0;
@@ -128,7 +130,8 @@ message GroupBookingFolioSvcPostMiscChargeCorrectionRequest {
 service GroupBookingFolioSvc {
 	rpc GetFolioState(.holms.types.booking.indicators.GroupBookingIndicator)
 		returns(GroupBookingFolioSvcGetFolioStateResponse);
-
+	rpc GetFolioStatev2(.holms.types.folio.fsv2.FolioIndicator)
+		returns(.holms.types.folio.fsv2.GroupBookingFolioState);
 	// Cards
 	rpc AddCardAuthorizationFromToken(GroupBookingFolioSvcCardAuthorizationFromTokenRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);

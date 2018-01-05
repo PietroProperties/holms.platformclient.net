@@ -27,9 +27,9 @@ namespace HOLMS.Types.Folio.FSv2 {
             "cHJvdG8aImZvbGlvL2ZzdjIvZm9saW9fY2FyZF9yZWZ1bmQucHJvdG8aIGZv",
             "bGlvL2ZzdjIvZm9saW9fY2FyZF9zYWxlLnByb3RvGilmb2xpby9mc3YyL2Zv",
             "bGlvX2NoZWNrX2Nhc2hfcGF5bWVudC5wcm90bxolZm9saW8vZnN2Mi9mb2xp",
-            "b190YXhfYXNzZXNzbWVudC5wcm90bxoqZm9saW8vZnN2Mi9yZXNlcnZhdGlv",
-            "bl9mb2xpb19zdW1tYXJ5LnByb3RvGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1v",
-            "dW50LnByb3RvIrMLCgxGb2xpb1N0YXRldjISRAoRZWZmZWN0aXZlX2NoYXJn",
+            "b190YXhfYXNzZXNzbWVudC5wcm90bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ft",
+            "b3VudC5wcm90bxoqZm9saW8vZnN2Mi9yZXNlcnZhdGlvbl9mb2xpb19zdW1t",
+            "YXJ5LnByb3RvIrMLCgxGb2xpb1N0YXRldjISRAoRZWZmZWN0aXZlX2NoYXJn",
             "ZXMYASADKAsyKS5ob2xtcy50eXBlcy5mb2xpby5mc3YyLkZvbGlvQXRvbWlj",
             "Q2hhcmdlEj0KDGNhcmRfcmVmdW5kcxgDIAMoCzInLmhvbG1zLnR5cGVzLmZv",
             "bGlvLmZzdjIuRm9saW9DYXJkUmVmdW5kEjkKCmNhcmRfc2FsZXMYBCADKAsy",
@@ -64,7 +64,7 @@ namespace HOLMS.Types.Folio.FSv2 {
             "Y2NydWVzX2luY2lkZW50YWxfY2hhcmdlcxgXIAEoCEIZqgIWSE9MTVMuVHlw",
             "ZXMuRm9saW8uRlN2MmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioTaxAssessmentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.ReservationFolioSummaryReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FSv2.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.FolioTaxAssessmentReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.FSv2.ReservationFolioSummaryReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FSv2.FolioStatev2), global::HOLMS.Types.Folio.FSv2.FolioStatev2.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges" }, null, null, null)
           }));
