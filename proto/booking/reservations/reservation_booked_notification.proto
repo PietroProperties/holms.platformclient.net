@@ -6,9 +6,11 @@ option csharp_namespace = "HOLMS.Types.Booking.Reservations";
 
 import "booking/indicators/reservation_indicator.proto";
 import "booking/pricing/pretax_reservation_quote.proto";
+import "booking/reservations/reservation_summary.proto";
 
 message ReservationBookedNotification {
 	string j_w_token = 1;
 	holms.types.booking.indicators.ReservationIndicator reservation = 2;
 	holms.types.booking.pricing.PretaxReservationQuote price_quote = 3;
+	holms.types.booking.reservations.ReservationSummary reservation_summary = 4;
 }
