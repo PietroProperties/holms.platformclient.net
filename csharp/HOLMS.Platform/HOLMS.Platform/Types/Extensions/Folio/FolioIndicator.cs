@@ -1,6 +1,6 @@
 ﻿using HOLMS.Types.Booking.Indicators;
 
-namespace HOLMS.Types.Folio.FSv2 {
+namespace HOLMS.Types.Folio {
     public partial class FolioIndicator {
         public FolioIndicator(GroupBookingIndicator gb) {
             GroupBooking = gb;

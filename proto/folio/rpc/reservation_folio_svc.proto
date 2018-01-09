@@ -2,11 +2,9 @@
 
 package holms.types.folio.rpc;
 option csharp_namespace = "HOLMS.Types.Folio.RPC";
-option go_package = "folio/rpc";
 
 import "booking/indicators/reservation_indicator.proto";
-import "folio/folio_state.proto";
-import "folio/fsv2/reservation_folio_state.proto";
+import "folio/reservation_folio_state.proto";
 import "google/protobuf/empty.proto";
 import "money/cards/card_sale_purpose.proto";
 import "money/cards/guest_payment_card.proto";
@@ -16,14 +14,14 @@ import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
-import "folio/fsv2/reservation_folio_summary.proto";
+import "folio/reservation_folio_summary.proto";
 
 message ReservationFolioSvcGetSummariesRequest {
 	repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
 }
 
 message ReservationFolioSvcGetSummariesResponse {
-	repeated .holms.types.folio.fsv2.ReservationFolioSummary summaries = 1;
+	repeated .holms.types.folio.ReservationFolioSummary summaries = 1;
 }
 
 enum ReservationFolioSvcPostChargesResult {
@@ -42,14 +40,9 @@ enum ReservationFolioSvcGetFolioStateResult {
 
 }
 
-message ReservationFolioSvcGetFolioStateResponse {
-	ReservationFolioSvcGetFolioStateResult result = 1;
-	.holms.types.folio.FolioState folio_state = 2;
-}
-
 message ReservationFolioSvcGetFolioStateResponsev2 {
 	ReservationFolioSvcGetFolioStateResult result = 1;
-	.holms.types.folio.fsv2.ReservationFolioState folio_state = 2;
+	.holms.types.folio.ReservationFolioState folio_state = 2;
 }
 
 enum ReservationFolioSvcPostCashPaymentResult {
@@ -196,8 +189,6 @@ message ReservationFolioSvcCancelPaymentResponse {
 
 service ReservationFolioSvc {
 	// Get info about the folio
-	rpc GetFolioState(.holms.types.booking.indicators.ReservationIndicator)
-		returns(ReservationFolioSvcGetFolioStateResponse);
 	rpc GetReservationFolioState(.holms.types.booking.indicators.ReservationIndicator)
 		returns(ReservationFolioSvcGetFolioStateResponsev2);
 	rpc GetOnFileCards(holms.types.booking.indicators.ReservationIndicator) 
