@@ -6,6 +6,7 @@ option csharp_namespace = "HOLMS.Types.Folio";
 import "folio/folio_card_sale_purpose.proto";
 import "folio/folio_guest_payment_card.proto";
 import "google/protobuf/timestamp.proto";
+import "iam/staff_member_indicator.proto";
 import "money/cards/transactions/authorization_entry_method.proto";
 import "money/cards/transactions/card_sale_state.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
@@ -26,5 +27,7 @@ message FolioCardSale {
 	string a_i_d = 10;
 	string application_crypto = 11;
 	string approval_code = 12;
+
+	.holms.types.iam.StaffMemberIndicator received_by = 13;
 }
 

@@ -24,19 +24,21 @@ namespace HOLMS.Types.Folio {
           string.Concat(
             "Ch1mb2xpby9mb2xpb19jYXJkX3JlZnVuZC5wcm90bxIRaG9sbXMudHlwZXMu",
             "Zm9saW8aJGZvbGlvL2ZvbGlvX2d1ZXN0X3BheW1lbnRfY2FyZC5wcm90bxof",
-            "Z29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxowbW9uZXkvY2FyZHMv",
-            "dHJhbnNhY3Rpb25zL2NhcmRfcmVmdW5kX3N0YXRlLnByb3RvGh9wcmltaXRp",
-            "dmUvbW9uZXRhcnlfYW1vdW50LnByb3RvIvUBCg9Gb2xpb0NhcmRSZWZ1bmQS",
-            "NgoEY2FyZBgBIAEoCzIoLmhvbG1zLnR5cGVzLmZvbGlvLkZvbGlvR3Vlc3RQ",
-            "YXltZW50Q2FyZBJECgVzdGF0ZRgCIAEoDjI1LmhvbG1zLnR5cGVzLm1vbmV5",
-            "LmNhcmRzLnRyYW5zYWN0aW9ucy5DYXJkUmVmdW5kU3RhdGUSNQoGYW1vdW50",
-            "GAMgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
-            "Ei0KCXBvc3RlZF9hdBgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
-            "bXBCFKoCEUhPTE1TLlR5cGVzLkZvbGlvYgZwcm90bzM="));
+            "Z29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxogaWFtL3N0YWZmX21l",
+            "bWJlcl9pbmRpY2F0b3IucHJvdG8aMG1vbmV5L2NhcmRzL3RyYW5zYWN0aW9u",
+            "cy9jYXJkX3JlZnVuZF9zdGF0ZS5wcm90bxofcHJpbWl0aXZlL21vbmV0YXJ5",
+            "X2Ftb3VudC5wcm90byKxAgoPRm9saW9DYXJkUmVmdW5kEjYKBGNhcmQYASAB",
+            "KAsyKC5ob2xtcy50eXBlcy5mb2xpby5Gb2xpb0d1ZXN0UGF5bWVudENhcmQS",
+            "RAoFc3RhdGUYAiABKA4yNS5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFu",
+            "c2FjdGlvbnMuQ2FyZFJlZnVuZFN0YXRlEjUKBmFtb3VudBgDIAEoCzIlLmhv",
+            "bG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBItCglwb3N0ZWRf",
+            "YXQYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjoKC3JlY2Vp",
+            "dmVkX2J5GAUgASgLMiUuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5k",
+            "aWNhdG9yQhSqAhFIT0xNUy5UeXBlcy5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioGuestPaymentCardReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.CardRefundStateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioGuestPaymentCardReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.CardRefundStateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioCardRefund), global::HOLMS.Types.Folio.FolioCardRefund.Parser, new[]{ "Card", "State", "Amount", "PostedAt" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioCardRefund), global::HOLMS.Types.Folio.FolioCardRefund.Parser, new[]{ "Card", "State", "Amount", "PostedAt", "ReceivedBy" }, null, null, null)
           }));
     }
     #endregion
@@ -71,6 +73,7 @@ namespace HOLMS.Types.Folio {
       state_ = other.state_;
       Amount = other.amount_ != null ? other.Amount.Clone() : null;
       PostedAt = other.postedAt_ != null ? other.PostedAt.Clone() : null;
+      ReceivedBy = other.receivedBy_ != null ? other.ReceivedBy.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -122,6 +125,17 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "received_by" field.</summary>
+    public const int ReceivedByFieldNumber = 5;
+    private global::HOLMS.Types.IAM.StaffMemberIndicator receivedBy_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.IAM.StaffMemberIndicator ReceivedBy {
+      get { return receivedBy_; }
+      set {
+        receivedBy_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioCardRefund);
@@ -139,6 +153,7 @@ namespace HOLMS.Types.Folio {
       if (State != other.State) return false;
       if (!object.Equals(Amount, other.Amount)) return false;
       if (!object.Equals(PostedAt, other.PostedAt)) return false;
+      if (!object.Equals(ReceivedBy, other.ReceivedBy)) return false;
       return true;
     }
 
@@ -149,6 +164,7 @@ namespace HOLMS.Types.Folio {
       if (State != 0) hash ^= State.GetHashCode();
       if (amount_ != null) hash ^= Amount.GetHashCode();
       if (postedAt_ != null) hash ^= PostedAt.GetHashCode();
+      if (receivedBy_ != null) hash ^= ReceivedBy.GetHashCode();
       return hash;
     }
 
@@ -175,6 +191,10 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(34);
         output.WriteMessage(PostedAt);
       }
+      if (receivedBy_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ReceivedBy);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -191,6 +211,9 @@ namespace HOLMS.Types.Folio {
       }
       if (postedAt_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PostedAt);
+      }
+      if (receivedBy_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReceivedBy);
       }
       return size;
     }
@@ -220,6 +243,12 @@ namespace HOLMS.Types.Folio {
           postedAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         PostedAt.MergeFrom(other.PostedAt);
+      }
+      if (other.receivedBy_ != null) {
+        if (receivedBy_ == null) {
+          receivedBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
+        }
+        ReceivedBy.MergeFrom(other.ReceivedBy);
       }
     }
 
@@ -254,6 +283,13 @@ namespace HOLMS.Types.Folio {
               postedAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(postedAt_);
+            break;
+          }
+          case 42: {
+            if (receivedBy_ == null) {
+              receivedBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
+            }
+            input.ReadMessage(receivedBy_);
             break;
           }
         }
