@@ -1,0 +1,45 @@
+﻿syntax = "proto3";
+
+package holms.types.folio;
+option csharp_namespace = "HOLMS.Types.Folio";
+
+import "folio/folio_atomic_charge.proto";
+import "folio/folio_card_refund.proto";
+import "folio/folio_card_sale.proto";
+import "folio/folio_check_cash_payment.proto";
+import "folio/folio_tax_assessment.proto";
+import "folio/reservation_folio_summary.proto";
+import "primitive/monetary_amount.proto";
+
+
+message ReservationFolioState {
+	repeated .holms.types.folio.FolioAtomicCharge effective_charges = 1;
+	// deprecated adjustments = 2
+	repeated .holms.types.folio.FolioCardRefund card_refunds = 3;
+	repeated .holms.types.folio.FolioCardSale card_sales = 4;
+	repeated .holms.types.folio.FolioCheckCashPayment check_cash_payments = 5;
+
+	repeated .holms.types.folio.FolioTaxAssessment current_tax_assessments = 6;
+	repeated .holms.types.folio.FolioTaxAssessment anticipated_ending_tax_assessment = 7;
+
+	// deprecated master folio status = 8
+	repeated .holms.types.folio.FolioAtomicCharge native_charges = 9;
+	repeated .holms.types.folio.FolioAtomicCharge exported_to_other_folio_charges = 10;
+	repeated .holms.types.folio.FolioAtomicCharge imported_from_other_folio_charges = 11;
+
+	.holms.types.primitive.MonetaryAmount current_net_charges = 12;
+	.holms.types.primitive.MonetaryAmount anticipated_net_charges = 13;
+	.holms.types.primitive.MonetaryAmount posted_payments = 14;
+	.holms.types.primitive.MonetaryAmount posted_refunds = 15;
+	.holms.types.primitive.MonetaryAmount unused_payment_authorizations = 16;
+	.holms.types.primitive.MonetaryAmount unused_guarantee_authorizations = 17;
+
+	.holms.types.primitive.MonetaryAmount current_due_from_guest = 18;
+	.holms.types.primitive.MonetaryAmount anticipated_checkout_due_from_guest = 19;
+	bool graceful_closure_possible = 20;
+
+	.holms.types.folio.ReservationFolioSummary summary = 21;
+	bool master_folio_accrues_lodging_charges = 22;
+	bool master_folio_accrues_incidental_charges = 23;
+}
+
