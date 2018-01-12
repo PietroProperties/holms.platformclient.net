@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HOLMS.Platform", "HOLMS.Platform\HOLMS.Platform.csproj", "{D108093F-0489-4F30-AE0D-BB0C593DFC2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HOLMS.Platform", "HOLMS.Platform\HOLMS.Platform.csproj", "{D108093F-0489-4F30-AE0D-BB0C593DFC2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HOLMS.Platform.Tests", "HOLMS.Platform.Tests\HOLMS.Platform.Tests.csproj", "{59C80EB7-19B6-4BDB-AF3F-3FD0C6AC5B3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HOLMS.Platform.Tests", "HOLMS.Platform.Tests\HOLMS.Platform.Tests.csproj", "{59C80EB7-19B6-4BDB-AF3F-3FD0C6AC5B3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46093D65-8756-4461-B092-1C55FE00DC55}
 	EndGlobalSection
 EndGlobal
