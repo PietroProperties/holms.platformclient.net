@@ -28,7 +28,7 @@ namespace HOLMS.Types.Folio {
             "YXJkX3NhbGUucHJvdG8aJGZvbGlvL2ZvbGlvX2NoZWNrX2Nhc2hfcGF5bWVu",
             "dC5wcm90bxogZm9saW8vZm9saW9fdGF4X2Fzc2Vzc21lbnQucHJvdG8aJWZv",
             "bGlvL3Jlc2VydmF0aW9uX2ZvbGlvX3N1bW1hcnkucHJvdG8aH3ByaW1pdGl2",
-            "ZS9tb25ldGFyeV9hbW91bnQucHJvdG8iigsKFVJlc2VydmF0aW9uRm9saW9T",
+            "ZS9tb25ldGFyeV9hbW91bnQucHJvdG8i4gsKFVJlc2VydmF0aW9uRm9saW9T",
             "dGF0ZRI/ChFlZmZlY3RpdmVfY2hhcmdlcxgBIAMoCzIkLmhvbG1zLnR5cGVz",
             "LmZvbGlvLkZvbGlvQXRvbWljQ2hhcmdlEjgKDGNhcmRfcmVmdW5kcxgDIAMo",
             "CzIiLmhvbG1zLnR5cGVzLmZvbGlvLkZvbGlvQ2FyZFJlZnVuZBI0CgpjYXJk",
@@ -60,11 +60,13 @@ namespace HOLMS.Types.Folio {
             "MiouaG9sbXMudHlwZXMuZm9saW8uUmVzZXJ2YXRpb25Gb2xpb1N1bW1hcnkS",
             "LAokbWFzdGVyX2ZvbGlvX2FjY3J1ZXNfbG9kZ2luZ19jaGFyZ2VzGBYgASgI",
             "Ei8KJ21hc3Rlcl9mb2xpb19hY2NydWVzX2luY2lkZW50YWxfY2hhcmdlcxgX",
-            "IAEoCEIUqgIRSE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
+            "IAEoCBJWCidyZW1haW5pbmdfdGVuZGVyX3JlcXVpcmVkX2Zvcl9ndWFyYW50",
+            "ZWUYGCABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91",
+            "bnRCFKoCEUhPTE1TLlR5cGVzLkZvbGlvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.FolioTaxAssessmentReflection.Descriptor, global::HOLMS.Types.Folio.ReservationFolioSummaryReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges", "RemainingTenderRequiredForGuarantee" }, null, null, null)
           }));
     }
     #endregion
@@ -116,6 +118,7 @@ namespace HOLMS.Types.Folio {
       Summary = other.summary_ != null ? other.Summary.Clone() : null;
       masterFolioAccruesLodgingCharges_ = other.masterFolioAccruesLodgingCharges_;
       masterFolioAccruesIncidentalCharges_ = other.masterFolioAccruesIncidentalCharges_;
+      RemainingTenderRequiredForGuarantee = other.remainingTenderRequiredForGuarantee_ != null ? other.RemainingTenderRequiredForGuarantee.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -351,6 +354,17 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "remaining_tender_required_for_guarantee" field.</summary>
+    public const int RemainingTenderRequiredForGuaranteeFieldNumber = 24;
+    private global::HOLMS.Types.Primitive.MonetaryAmount remainingTenderRequiredForGuarantee_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount RemainingTenderRequiredForGuarantee {
+      get { return remainingTenderRequiredForGuarantee_; }
+      set {
+        remainingTenderRequiredForGuarantee_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationFolioState);
@@ -385,6 +399,7 @@ namespace HOLMS.Types.Folio {
       if (!object.Equals(Summary, other.Summary)) return false;
       if (MasterFolioAccruesLodgingCharges != other.MasterFolioAccruesLodgingCharges) return false;
       if (MasterFolioAccruesIncidentalCharges != other.MasterFolioAccruesIncidentalCharges) return false;
+      if (!object.Equals(RemainingTenderRequiredForGuarantee, other.RemainingTenderRequiredForGuarantee)) return false;
       return true;
     }
 
@@ -412,6 +427,7 @@ namespace HOLMS.Types.Folio {
       if (summary_ != null) hash ^= Summary.GetHashCode();
       if (MasterFolioAccruesLodgingCharges != false) hash ^= MasterFolioAccruesLodgingCharges.GetHashCode();
       if (MasterFolioAccruesIncidentalCharges != false) hash ^= MasterFolioAccruesIncidentalCharges.GetHashCode();
+      if (remainingTenderRequiredForGuarantee_ != null) hash ^= RemainingTenderRequiredForGuarantee.GetHashCode();
       return hash;
     }
 
@@ -479,6 +495,10 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(184, 1);
         output.WriteBool(MasterFolioAccruesIncidentalCharges);
       }
+      if (remainingTenderRequiredForGuarantee_ != null) {
+        output.WriteRawTag(194, 1);
+        output.WriteMessage(RemainingTenderRequiredForGuarantee);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -528,6 +548,9 @@ namespace HOLMS.Types.Folio {
       }
       if (MasterFolioAccruesIncidentalCharges != false) {
         size += 2 + 1;
+      }
+      if (remainingTenderRequiredForGuarantee_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(RemainingTenderRequiredForGuarantee);
       }
       return size;
     }
@@ -608,6 +631,12 @@ namespace HOLMS.Types.Folio {
       }
       if (other.MasterFolioAccruesIncidentalCharges != false) {
         MasterFolioAccruesIncidentalCharges = other.MasterFolioAccruesIncidentalCharges;
+      }
+      if (other.remainingTenderRequiredForGuarantee_ != null) {
+        if (remainingTenderRequiredForGuarantee_ == null) {
+          remainingTenderRequiredForGuarantee_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        RemainingTenderRequiredForGuarantee.MergeFrom(other.RemainingTenderRequiredForGuarantee);
       }
     }
 
@@ -728,6 +757,13 @@ namespace HOLMS.Types.Folio {
           }
           case 184: {
             MasterFolioAccruesIncidentalCharges = input.ReadBool();
+            break;
+          }
+          case 194: {
+            if (remainingTenderRequiredForGuarantee_ == null) {
+              remainingTenderRequiredForGuarantee_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(remainingTenderRequiredForGuarantee_);
             break;
           }
         }
