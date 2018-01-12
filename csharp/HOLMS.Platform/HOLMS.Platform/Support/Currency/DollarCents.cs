@@ -67,6 +67,14 @@ namespace HOLMS.Platform.Support.Currency {
         public static DollarCents operator -(DollarCents a) =>
             new DollarCents(!a.IsNegative, a.Dollars, a.Cents);
 
+        public static DollarCents Max(DollarCents a, DollarCents b) {
+            return a >= b ? a : b;
+        }
+
+        public static DollarCents Min(DollarCents a, DollarCents b) {
+            return a <= b ? a : b;
+        }
+
         // h/t https://stackoverflow.com/questions/20593755/why-do-i-have-to-overload-operators-when-implementing-compareto
         public int CompareTo(DollarCents x) { return CompareTo(this, x); }
         public bool Equals(DollarCents x) { return CompareTo(this, x) == 0; }

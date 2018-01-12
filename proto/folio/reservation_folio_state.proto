@@ -41,5 +41,7 @@ message ReservationFolioState {
 	.holms.types.folio.ReservationFolioSummary summary = 21;
 	bool master_folio_accrues_lodging_charges = 22;
 	bool master_folio_accrues_incidental_charges = 23;
+
+	.holms.types.primitive.MonetaryAmount remaining_tender_required_for_guarantee = 24;
 }
 
