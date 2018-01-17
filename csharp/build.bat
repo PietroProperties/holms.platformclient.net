@@ -44,6 +44,7 @@ for %%P in (..\proto\money\cards\transactions\*.proto) do %PROTOC% -I..\proto\ -
 
 for %%P in (..\proto\folio\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\folio\fsv2\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
+for %%P in (..\proto\folio\guarantees\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 
 for %%P in (..\proto\operations\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\operations\attractions\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255

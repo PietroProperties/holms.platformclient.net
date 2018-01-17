@@ -24,26 +24,25 @@ namespace HOLMS.Types.Folio {
           string.Concat(
             "CiVmb2xpby9yZXNlcnZhdGlvbl9mb2xpb19zdW1tYXJ5LnByb3RvEhFob2xt",
             "cy50eXBlcy5mb2xpbxouYm9va2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9u",
-            "X2luZGljYXRvci5wcm90bxo3Ym9va2luZy9yZXNlcnZhdGlvbnMvcmVzZXJ2",
-            "YXRpb25fZ3VhcmFudGVlX3N0YXR1cy5wcm90bxobZm9saW8vZm9saW9faW5k",
-            "aWNhdG9yLnByb3RvGh9mb2xpby9tYXN0ZXJfZm9saW9fc3RhdHVzLnByb3Rv",
-            "GjJ0ZW5hbmN5X2NvbmZpZy9pbmRpY2F0b3JzL3Byb3BlcnR5X2luZGljYXRv",
-            "ci5wcm90bxodcHJpbWl0aXZlL3BiX2xvY2FsX2RhdGUucHJvdG8ihAQKF1Jl",
-            "c2VydmF0aW9uRm9saW9TdW1tYXJ5EkwKDnJlc2VydmF0aW9uX2lkGAEgASgL",
-            "MjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9u",
-            "SW5kaWNhdG9yEkEKE21hc3Rlcl9mb2xpb19zdGF0dXMYAiABKA4yJC5ob2xt",
-            "cy50eXBlcy5mb2xpby5NYXN0ZXJGb2xpb1N0YXR1cxI3CgxtYXN0ZXJfZm9s",
-            "aW8YAyABKAsyIS5ob2xtcy50eXBlcy5mb2xpby5Gb2xpb0luZGljYXRvchI4",
-            "Cg1jbGllbnRfZm9saW9zGAUgAygLMiEuaG9sbXMudHlwZXMuZm9saW8uRm9s",
-            "aW9JbmRpY2F0b3ISVgoQZ3VhcmFudGVlX3N0YXR1cxgGIAEoDjI8LmhvbG1z",
-            "LnR5cGVzLmJvb2tpbmcucmVzZXJ2YXRpb25zLlJlc2VydmF0aW9uR3VhcmFu",
-            "dGVlU3RhdHVzEjwKEGd1YXJhbnRlZV9kdWVfb24YByABKAsyIi5ob2xtcy50",
-            "eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGUSTwoNaG9zdF9wcm9wZXJ0eRgI",
-            "IAEoCzI4LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMu",
-            "UHJvcGVydHlJbmRpY2F0b3JCFKoCEUhPTE1TLlR5cGVzLkZvbGlvYgZwcm90",
-            "bzM="));
+            "X2luZGljYXRvci5wcm90bxozZm9saW8vZ3VhcmFudGVlcy9yZXNlcnZhdGlv",
+            "bl9ndWFyYW50ZWVfc3RhdHVzLnByb3RvGhtmb2xpby9mb2xpb19pbmRpY2F0",
+            "b3IucHJvdG8aH2ZvbGlvL21hc3Rlcl9mb2xpb19zdGF0dXMucHJvdG8aMnRl",
+            "bmFuY3lfY29uZmlnL2luZGljYXRvcnMvcHJvcGVydHlfaW5kaWNhdG9yLnBy",
+            "b3RvGh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90byKEBAoXUmVzZXJ2",
+            "YXRpb25Gb2xpb1N1bW1hcnkSTAoOcmVzZXJ2YXRpb25faWQYASABKAsyNC5o",
+            "b2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRp",
+            "Y2F0b3ISQQoTbWFzdGVyX2ZvbGlvX3N0YXR1cxgCIAEoDjIkLmhvbG1zLnR5",
+            "cGVzLmZvbGlvLk1hc3RlckZvbGlvU3RhdHVzEjcKDG1hc3Rlcl9mb2xpbxgD",
+            "IAEoCzIhLmhvbG1zLnR5cGVzLmZvbGlvLkZvbGlvSW5kaWNhdG9yEjgKDWNs",
+            "aWVudF9mb2xpb3MYBSADKAsyIS5ob2xtcy50eXBlcy5mb2xpby5Gb2xpb0lu",
+            "ZGljYXRvchJWChBndWFyYW50ZWVfc3RhdHVzGAYgASgOMjwuaG9sbXMudHlw",
+            "ZXMuYm9va2luZy5yZXNlcnZhdGlvbnMuUmVzZXJ2YXRpb25HdWFyYW50ZWVT",
+            "dGF0dXMSPAoQZ3VhcmFudGVlX2R1ZV9vbhgHIAEoCzIiLmhvbG1zLnR5cGVz",
+            "LnByaW1pdGl2ZS5QYkxvY2FsRGF0ZRJPCg1ob3N0X3Byb3BlcnR5GAggASgL",
+            "MjguaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9w",
+            "ZXJ0eUluZGljYXRvckIUqgIRSE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Folio.FolioIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.Guarantees.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Folio.FolioIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioSummary), global::HOLMS.Types.Folio.ReservationFolioSummary.Parser, new[]{ "ReservationId", "MasterFolioStatus", "MasterFolio", "ClientFolios", "GuaranteeStatus", "GuaranteeDueOn", "HostProperty" }, null, null, null)
           }));
@@ -135,9 +134,9 @@ namespace HOLMS.Types.Folio {
 
     /// <summary>Field number for the "guarantee_status" field.</summary>
     public const int GuaranteeStatusFieldNumber = 6;
-    private global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatus guaranteeStatus_ = 0;
+    private global::HOLMS.Types.Folio.Guarantees.ReservationGuaranteeStatus guaranteeStatus_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatus GuaranteeStatus {
+    public global::HOLMS.Types.Folio.Guarantees.ReservationGuaranteeStatus GuaranteeStatus {
       get { return guaranteeStatus_; }
       set {
         guaranteeStatus_ = value;
@@ -330,7 +329,7 @@ namespace HOLMS.Types.Folio {
             break;
           }
           case 48: {
-            guaranteeStatus_ = (global::HOLMS.Types.Booking.Reservations.ReservationGuaranteeStatus) input.ReadEnum();
+            guaranteeStatus_ = (global::HOLMS.Types.Folio.Guarantees.ReservationGuaranteeStatus) input.ReadEnum();
             break;
           }
           case 58: {

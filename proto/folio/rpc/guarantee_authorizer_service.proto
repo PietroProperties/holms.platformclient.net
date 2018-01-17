@@ -1,8 +1,8 @@
 ﻿syntax = "proto3";
 
 package holms.types.booking.rpc;
-option csharp_namespace = "HOLMS.Types.Booking.RPC";
-option go_package = "booking/rpc";
+option csharp_namespace = "HOLMS.Types.Folio.RPC";
+option go_package = "folio/rpc";
 
 import "google/protobuf/empty.proto";
 
