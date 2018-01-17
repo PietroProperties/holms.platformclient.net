@@ -4,7 +4,7 @@ package holms.types.folio;
 option csharp_namespace = "HOLMS.Types.Folio";
 
 import "booking/indicators/reservation_indicator.proto";
-import "booking/reservations/reservation_guarantee_status.proto";
+import "folio/guarantees/reservation_guarantee_status.proto";
 import "folio/folio_indicator.proto";
 import "folio/master_folio_status.proto";
 import "tenancy_config/indicators/property_indicator.proto";
