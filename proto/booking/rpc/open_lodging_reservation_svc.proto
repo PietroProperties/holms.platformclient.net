@@ -26,6 +26,7 @@ message UpdateRoomAssignmentsResponse {
 
 message GetReservationHistoryResponse {
 	repeated holms.types.booking.history.HistoryEvent res_history_log = 1;
+	repeated holms.types.booking.history.HistoryEvent folio_history_log = 2;
 }
 
 message GetReservationContactsResponse {
