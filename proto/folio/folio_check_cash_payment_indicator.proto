@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package holms.types.folio;
+option csharp_namespace = "HOLMS.Types.Folio";
+
+import "primitive/uuid.proto";
+
+message FolioCheckCashPaymentIndicator {
+	.holms.types.primitive.Uuid id = 1;
+}
