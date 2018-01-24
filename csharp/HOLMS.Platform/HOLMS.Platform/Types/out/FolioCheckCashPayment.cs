@@ -26,17 +26,20 @@ namespace HOLMS.Types.Folio {
             "LnR5cGVzLmZvbGlvGhhmb2xpby9wYXltZW50X3R5cGUucHJvdG8aH2dvb2ds",
             "ZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aIGlhbS9zdGFmZl9tZW1iZXJf",
             "aW5kaWNhdG9yLnByb3RvGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnBy",
-            "b3RvIoQCChVGb2xpb0NoZWNrQ2FzaFBheW1lbnQSNQoGYW1vdW50GAEgASgL",
-            "MiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EhMKC2lz",
-            "X2NhbmNlbGVkGAIgASgIEjQKDHBheW1lbnRfdHlwZRgDIAEoDjIeLmhvbG1z",
-            "LnR5cGVzLmZvbGlvLlBheW1lbnRUeXBlEjoKC3JlY2VpdmVkX2J5GAQgASgL",
-            "MiUuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNhdG9yEi0KCXBv",
-            "c3RlZF9hdBgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCFKoC",
-            "EUhPTE1TLlR5cGVzLkZvbGlvYgZwcm90bzM="));
+            "b3RvGi5mb2xpby9mb2xpb19jaGVja19jYXNoX3BheW1lbnRfaW5kaWNhdG9y",
+            "LnByb3RvIsoCChVGb2xpb0NoZWNrQ2FzaFBheW1lbnQSNQoGYW1vdW50GAEg",
+            "ASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EhMK",
+            "C2lzX2NhbmNlbGVkGAIgASgIEjQKDHBheW1lbnRfdHlwZRgDIAEoDjIeLmhv",
+            "bG1zLnR5cGVzLmZvbGlvLlBheW1lbnRUeXBlEjoKC3JlY2VpdmVkX2J5GAQg",
+            "ASgLMiUuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNhdG9yEi0K",
+            "CXBvc3RlZF9hdBgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAS",
+            "RAoJZW50aXR5X2lkGAYgASgLMjEuaG9sbXMudHlwZXMuZm9saW8uRm9saW9D",
+            "aGVja0Nhc2hQYXltZW50SW5kaWNhdG9yQhSqAhFIT0xNUy5UeXBlcy5Gb2xp",
+            "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.PaymentTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.PaymentTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioCheckCashPayment), global::HOLMS.Types.Folio.FolioCheckCashPayment.Parser, new[]{ "Amount", "IsCanceled", "PaymentType", "ReceivedBy", "PostedAt" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioCheckCashPayment), global::HOLMS.Types.Folio.FolioCheckCashPayment.Parser, new[]{ "Amount", "IsCanceled", "PaymentType", "ReceivedBy", "PostedAt", "EntityId" }, null, null, null)
           }));
     }
     #endregion
@@ -72,6 +75,7 @@ namespace HOLMS.Types.Folio {
       paymentType_ = other.paymentType_;
       ReceivedBy = other.receivedBy_ != null ? other.ReceivedBy.Clone() : null;
       PostedAt = other.postedAt_ != null ? other.PostedAt.Clone() : null;
+      EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -134,6 +138,17 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "entity_id" field.</summary>
+    public const int EntityIdFieldNumber = 6;
+    private global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator entityId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator EntityId {
+      get { return entityId_; }
+      set {
+        entityId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioCheckCashPayment);
@@ -152,6 +167,7 @@ namespace HOLMS.Types.Folio {
       if (PaymentType != other.PaymentType) return false;
       if (!object.Equals(ReceivedBy, other.ReceivedBy)) return false;
       if (!object.Equals(PostedAt, other.PostedAt)) return false;
+      if (!object.Equals(EntityId, other.EntityId)) return false;
       return true;
     }
 
@@ -163,6 +179,7 @@ namespace HOLMS.Types.Folio {
       if (PaymentType != 0) hash ^= PaymentType.GetHashCode();
       if (receivedBy_ != null) hash ^= ReceivedBy.GetHashCode();
       if (postedAt_ != null) hash ^= PostedAt.GetHashCode();
+      if (entityId_ != null) hash ^= EntityId.GetHashCode();
       return hash;
     }
 
@@ -193,6 +210,10 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(42);
         output.WriteMessage(PostedAt);
       }
+      if (entityId_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(EntityId);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -212,6 +233,9 @@ namespace HOLMS.Types.Folio {
       }
       if (postedAt_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PostedAt);
+      }
+      if (entityId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EntityId);
       }
       return size;
     }
@@ -244,6 +268,12 @@ namespace HOLMS.Types.Folio {
           postedAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         PostedAt.MergeFrom(other.PostedAt);
+      }
+      if (other.entityId_ != null) {
+        if (entityId_ == null) {
+          entityId_ = new global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator();
+        }
+        EntityId.MergeFrom(other.EntityId);
       }
     }
 
@@ -282,6 +312,13 @@ namespace HOLMS.Types.Folio {
               postedAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(postedAt_);
+            break;
+          }
+          case 50: {
+            if (entityId_ == null) {
+              entityId_ = new global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator();
+            }
+            input.ReadMessage(entityId_);
             break;
           }
         }

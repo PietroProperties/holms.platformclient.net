@@ -15,6 +15,7 @@ import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
 import "folio/reservation_folio_summary.proto";
+import "folio/folio_check_cash_payment_indicator.proto";
 
 message ReservationFolioSvcGetSummariesRequest {
 	repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
@@ -218,6 +219,8 @@ service ReservationFolioSvc {
 		returns (ReservationFolioSvcPostCheckPaymentResponse);
 	rpc PostCashPayment(ReservationFolioSvcPostCashPaymentRequest)
 		returns (ReservationFolioSvcPostCashPaymentResponse);
+	rpc CancelCashCheckPayment(FolioCheckCashPaymentIndicator)
+		returns (google.protobuf.Empty);
 
 	// Post a correction to the reservation folio
 	rpc PostLodgingChargeCorrection (ReservationFolioSvcPostLodgingChargeCorrectionRequest)

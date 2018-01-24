@@ -7,6 +7,7 @@ import "folio/payment_type.proto";
 import "google/protobuf/timestamp.proto";
 import "iam/staff_member_indicator.proto";
 import "primitive/monetary_amount.proto";
+import "folio/folio_check_cash_payment_indicator.proto";
 
 message FolioCheckCashPayment {
 	.holms.types.primitive.MonetaryAmount amount = 1;
@@ -14,5 +15,7 @@ message FolioCheckCashPayment {
 	.holms.types.folio.PaymentType payment_type = 3;
 	.holms.types.iam.StaffMemberIndicator received_by = 4;
 	google.protobuf.Timestamp posted_at = 5;
+	.holms.types.folio.FolioCheckCashPaymentIndicator entity_id = 6;
 }
+
 
