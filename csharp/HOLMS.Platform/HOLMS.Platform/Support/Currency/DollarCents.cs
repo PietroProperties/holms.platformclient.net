@@ -64,9 +64,6 @@ namespace HOLMS.Platform.Support.Currency {
             return x.Cents.CompareTo(y.Cents);
         }
 
-        public static DollarCents operator -(DollarCents a) =>
-            new DollarCents(!a.IsNegative, a.Dollars, a.Cents);
-
         public static DollarCents Max(DollarCents a, DollarCents b) {
             return a >= b ? a : b;
         }
@@ -87,6 +84,9 @@ namespace HOLMS.Platform.Support.Currency {
 
         public static DollarCents operator +(DollarCents a, DollarCents b) => FromCents(a.TotalCents + b.TotalCents);
         public static DollarCents operator -(DollarCents a, DollarCents b) => FromCents(a.TotalCents - b.TotalCents);
+        public static DollarCents operator +(DollarCents a) => FromCents(a.TotalCents);
+        public static DollarCents operator -(DollarCents a) => FromCents(-(a.TotalCents));
+
 
         public override bool Equals(object obj) {
             return (obj is DollarCents) && (CompareTo(this, (DollarCents)obj) == 0);
