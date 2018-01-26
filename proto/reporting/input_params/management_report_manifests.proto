@@ -24,11 +24,12 @@ message ManagementClockTimeRangeReportManifest {
 	bool ledger_activity_summary_report = 7;
 	bool ledger_journal_entries_report = 8;
 	bool bookings_by_period_report = 9;
-	bool planned_lodging_revenue_by_source = 10;
 }
 
 message ManagementOpsdateRangeReportManifest {
 	holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
 	bool room_usage_detailed_report = 2;
 	bool room_usage_summary_report = 3;
+	bool planned_lodging_revenue_by_source = 4;
 }
+
