@@ -4,8 +4,8 @@ package holms.types.reporting.rpc;
 option csharp_namespace = "HOLMS.Types.Reporting.RPC";
 option go_package = "operations/rpc";
 
+import "google/protobuf/timestamp.proto";
 import "money/cards/card_merchant_indicator.proto";
-import "primitive/pb_inclusive_calendar_date_range.proto";
 
 message CardCaptureReportingSvcGetPendingTransactionsRequest {
 	.holms.types.money.cards.CardMerchantIndicator card_merchant = 1;
@@ -13,7 +13,8 @@ message CardCaptureReportingSvcGetPendingTransactionsRequest {
 
 message CardCaptureReportSvcGetSettledTransactionsRequest {
 	.holms.types.money.cards.CardMerchantIndicator card_merchant = 1;
-	.holms.types.primitive.PbInclusiveCalendarDateRange date_range = 2;
+	google.protobuf.Timestamp report_start = 2;
+	google.protobuf.Timestamp report_end = 3;
 }
 
 message CardCaptureReportingSvcReportResponse {
