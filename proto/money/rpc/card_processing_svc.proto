@@ -4,6 +4,7 @@ package holms.types.money.rpc;
 option csharp_namespace = "HOLMS.Types.Money.RPC";
 
 import "crm/guests/guest_indicator.proto";
+import "google/protobuf/timestamp.proto";
 import "money/cards/card_merchant_indicator.proto";
 import "money/cards/guest_payment_card_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
@@ -12,7 +13,6 @@ import "money/cards/transactions/get_open_batch_state_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/cards/transactions/payment_card_refund_indicator.proto";
 import "money/cards/transactions/processor_transaction_result.proto";
-import "primitive/pb_inclusive_calendar_date_range.proto";
 import "tenancy_config/indicators/property_indicator.proto";
 
 
@@ -34,7 +34,8 @@ message MerchantBatchEnumResponse {
 
 message CardProcessingSvcSearchHistoricalBatchesRequest {
 	holms.types.money.cards.CardMerchantIndicator merchant = 1;
-	holms.types.primitive.PbInclusiveCalendarDateRange batch_closure_date_range = 2;
+	google.protobuf.Timestamp search_range_start = 2;
+	google.protobuf.Timestamp search_range_end = 3;
 }
 
 enum CardProcessingSvcVoidTransactionResult {
