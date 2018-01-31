@@ -7,6 +7,7 @@ import "folio/folio_guest_payment_card.proto";
 import "google/protobuf/timestamp.proto";
 import "iam/staff_member_indicator.proto";
 import "money/cards/transactions/card_refund_state.proto";
+import "money/cards/transactions/payment_card_refund_indicator.proto";
 import "primitive/monetary_amount.proto";
 
 message FolioCardRefund {
@@ -15,5 +16,6 @@ message FolioCardRefund {
 	.holms.types.primitive.MonetaryAmount amount = 3;
 	google.protobuf.Timestamp posted_at = 4;
 	.holms.types.iam.StaffMemberIndicator received_by = 5;
+	.holms.types.money.cards.transactions.PaymentCardRefundIndicator refund = 6;
 }
 
