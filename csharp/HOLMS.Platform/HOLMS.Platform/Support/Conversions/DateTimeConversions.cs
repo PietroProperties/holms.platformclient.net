@@ -11,5 +11,13 @@ namespace HOLMS.Support.Conversions {
             var dt = ts.ToDateTime();
             return new LocalDate(dt.Year, dt.Month, dt.Day);
         }
+
+        public static Instant ToInstant(this Timestamp ts) {
+            return Instant.FromDateTimeUtc(ts.ToDateTime().ToUniversalTime());
+        }
+
+        public static Timestamp ToTS(this Instant ins) {
+            return ins.ToDateTimeUtc().ToTS();
+        }
     }
 }
