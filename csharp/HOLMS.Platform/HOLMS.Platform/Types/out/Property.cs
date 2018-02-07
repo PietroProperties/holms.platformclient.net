@@ -28,37 +28,35 @@ namespace HOLMS.Types.TenancyConfig {
             "ZHMvY2FyZF9tZXJjaGFudF9pbmRpY2F0b3IucHJvdG8aH3ByaW1pdGl2ZS9t",
             "b25ldGFyeV9hbW91bnQucHJvdG8aNmJvb2tpbmcvaW5kaWNhdG9ycy9jYW5j",
             "ZWxsYXRpb25fcG9saWN5X2luZGljYXRvci5wcm90bxoydGVuYW5jeV9jb25m",
-            "aWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8ivQgKCFBy",
-            "b3BlcnR5EksKCWVudGl0eV9pZBgBIAEoCzI4LmhvbG1zLnR5cGVzLnRlbmFu",
-            "Y3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3ISEwoLZGVz",
-            "Y3JpcHRpb24YAiABKAkSNgoTY2hlY2tpbl90aW1lX29mX2RheRgDIAEoCzIZ",
-            "Lmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbhI4ChVjaGVja19vdXRfdGltZV9v",
-            "Zl9kYXkYBCABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb24SNwoUcm9s",
-            "bG92ZXJfdGltZV9vZl9kYXkYBSABKAsyGS5nb29nbGUucHJvdG9idWYuRHVy",
-            "YXRpb24SIwobYWxsb3dlZF9lYXJseV9jaGVja2luX2hvdXJzGAYgASgNEhkK",
-            "EWlpZl9kb2NudW1fcHJlZml4GAcgASgJEhkKEWlpZl9jdXN0b21lcl9uYW1l",
-            "GAggASgJEj4KD2NoZWNraW5fZGVwb3NpdBgJIAEoCzIlLmhvbG1zLnR5cGVz",
-            "LnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI+ChpsYXN0X3JldmVudWVfYWNj",
-            "cnVhbF9zdGFydBgKIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAS",
-            "PQoZbGFzdF9kYXRlX2hrX3JvbGxvdmVyX3JhbhgLIAEoCzIaLmdvb2dsZS5w",
-            "cm90b2J1Zi5UaW1lc3RhbXASEAoIYWRkcmVzczEYDCABKAkSEAoIYWRkcmVz",
-            "czIYDSABKAkSDAoEY2l0eRgOIAEoCRINCgVzdGF0ZRgPIAEoCRILCgN6aXAY",
-            "ECABKAkSFAoMcGhvbmVfbnVtYmVyGBEgASgJEkUKDWNhcmRfbWVyY2hhbnQY",
-            "EiABKAsyLi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5DYXJkTWVyY2hhbnRJ",
-            "bmRpY2F0b3ISWAoTY2FuY2VsbGF0aW9uX3BvbGljeRgTIAEoCzI7LmhvbG1z",
-            "LnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5DYW5jZWxsYXRpb25Qb2xpY3lJ",
-            "bmRpY2F0b3ISSwocbWF4aW11bV9hdXRob3JpemF0aW9uX2Ftb3VudBgUIAEo",
-            "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIbChNk",
-            "ZWZhdWx0X3N0YXlfbGVuZ3RoGBUgASgFEg8KB3dlYnNpdGUYFiABKAkSGQoR",
-            "cmVzZXJ2YXRpb25fZW1haWwYFyABKAkSEgoKZmF4X251bWJlchgeIAEoCRIW",
-            "Cg5ib29raW5nX3ByZWZpeBgfIAEoCRImCh52b2lkX2F1dGhvcml6YXRpb25z",
-            "X2FmdGVyX2RheXMYICABKA0SGwoTbm9fc2hvd19kZWxheV9ob3VycxghIAEo",
-            "DUIrWg10ZW5hbmN5Y29uZmlnqgIZSE9MTVMuVHlwZXMuVGVuYW5jeUNvbmZp",
-            "Z2IGcHJvdG8z"));
+            "aWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8aHXByaW1p",
+            "dGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvIr8HCghQcm9wZXJ0eRJLCgllbnRp",
+            "dHlfaWQYASABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRp",
+            "Y2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEhMKC2Rlc2NyaXB0aW9uGAIgASgJ",
+            "EjYKE2NoZWNraW5fdGltZV9vZl9kYXkYAyABKAsyGS5nb29nbGUucHJvdG9i",
+            "dWYuRHVyYXRpb24SOAoVY2hlY2tfb3V0X3RpbWVfb2ZfZGF5GAQgASgLMhku",
+            "Z29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uEiMKG2FsbG93ZWRfZWFybHlfY2hl",
+            "Y2tpbl9ob3VycxgGIAEoDRIZChFpaWZfZG9jbnVtX3ByZWZpeBgHIAEoCRIZ",
+            "ChFpaWZfY3VzdG9tZXJfbmFtZRgIIAEoCRI+Cg9jaGVja2luX2RlcG9zaXQY",
+            "CSABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQS",
+            "PgoabGFzdF9yZXZlbnVlX2FjY3J1YWxfc3RhcnQYCiABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wEkUKGWxhc3RfZGF0ZV9oa19yb2xsb3Zlcl9y",
+            "YW4YCyABKAsyIi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGUS",
+            "EAoIYWRkcmVzczEYDCABKAkSEAoIYWRkcmVzczIYDSABKAkSDAoEY2l0eRgO",
+            "IAEoCRINCgVzdGF0ZRgPIAEoCRILCgN6aXAYECABKAkSFAoMcGhvbmVfbnVt",
+            "YmVyGBEgASgJEkUKDWNhcmRfbWVyY2hhbnQYEiABKAsyLi5ob2xtcy50eXBl",
+            "cy5tb25leS5jYXJkcy5DYXJkTWVyY2hhbnRJbmRpY2F0b3ISWAoTY2FuY2Vs",
+            "bGF0aW9uX3BvbGljeRgTIAEoCzI7LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5k",
+            "aWNhdG9ycy5DYW5jZWxsYXRpb25Qb2xpY3lJbmRpY2F0b3ISGwoTZGVmYXVs",
+            "dF9zdGF5X2xlbmd0aBgVIAEoBRIPCgd3ZWJzaXRlGBYgASgJEhkKEXJlc2Vy",
+            "dmF0aW9uX2VtYWlsGBcgASgJEhIKCmZheF9udW1iZXIYHiABKAkSFgoOYm9v",
+            "a2luZ19wcmVmaXgYHyABKAkSJgoedm9pZF9hdXRob3JpemF0aW9uc19hZnRl",
+            "cl9kYXlzGCAgASgNEhsKE25vX3Nob3dfZGVsYXlfaG91cnMYISABKA1CK1oN",
+            "dGVuYW5jeWNvbmZpZ6oCGUhPTE1TLlR5cGVzLlRlbmFuY3lDb25maWdiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.Property), global::HOLMS.Types.TenancyConfig.Property.Parser, new[]{ "EntityId", "Description", "CheckinTimeOfDay", "CheckOutTimeOfDay", "RolloverTimeOfDay", "AllowedEarlyCheckinHours", "IifDocnumPrefix", "IifCustomerName", "CheckinDeposit", "LastRevenueAccrualStart", "LastDateHkRolloverRan", "Address1", "Address2", "City", "State", "Zip", "PhoneNumber", "CardMerchant", "CancellationPolicy", "MaximumAuthorizationAmount", "DefaultStayLength", "Website", "ReservationEmail", "FaxNumber", "BookingPrefix", "VoidAuthorizationsAfterDays", "NoShowDelayHours" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.Property), global::HOLMS.Types.TenancyConfig.Property.Parser, new[]{ "EntityId", "Description", "CheckinTimeOfDay", "CheckOutTimeOfDay", "AllowedEarlyCheckinHours", "IifDocnumPrefix", "IifCustomerName", "CheckinDeposit", "LastRevenueAccrualStart", "LastDateHkRolloverRan", "Address1", "Address2", "City", "State", "Zip", "PhoneNumber", "CardMerchant", "CancellationPolicy", "DefaultStayLength", "Website", "ReservationEmail", "FaxNumber", "BookingPrefix", "VoidAuthorizationsAfterDays", "NoShowDelayHours" }, null, null, null)
           }));
     }
     #endregion
@@ -93,7 +91,6 @@ namespace HOLMS.Types.TenancyConfig {
       description_ = other.description_;
       CheckinTimeOfDay = other.checkinTimeOfDay_ != null ? other.CheckinTimeOfDay.Clone() : null;
       CheckOutTimeOfDay = other.checkOutTimeOfDay_ != null ? other.CheckOutTimeOfDay.Clone() : null;
-      RolloverTimeOfDay = other.rolloverTimeOfDay_ != null ? other.RolloverTimeOfDay.Clone() : null;
       allowedEarlyCheckinHours_ = other.allowedEarlyCheckinHours_;
       iifDocnumPrefix_ = other.iifDocnumPrefix_;
       iifCustomerName_ = other.iifCustomerName_;
@@ -108,7 +105,6 @@ namespace HOLMS.Types.TenancyConfig {
       phoneNumber_ = other.phoneNumber_;
       CardMerchant = other.cardMerchant_ != null ? other.CardMerchant.Clone() : null;
       CancellationPolicy = other.cancellationPolicy_ != null ? other.CancellationPolicy.Clone() : null;
-      MaximumAuthorizationAmount = other.maximumAuthorizationAmount_ != null ? other.MaximumAuthorizationAmount.Clone() : null;
       defaultStayLength_ = other.defaultStayLength_;
       website_ = other.website_;
       reservationEmail_ = other.reservationEmail_;
@@ -164,17 +160,6 @@ namespace HOLMS.Types.TenancyConfig {
       get { return checkOutTimeOfDay_; }
       set {
         checkOutTimeOfDay_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "rollover_time_of_day" field.</summary>
-    public const int RolloverTimeOfDayFieldNumber = 5;
-    private global::Google.Protobuf.WellKnownTypes.Duration rolloverTimeOfDay_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Duration RolloverTimeOfDay {
-      get { return rolloverTimeOfDay_; }
-      set {
-        rolloverTimeOfDay_ = value;
       }
     }
 
@@ -235,9 +220,9 @@ namespace HOLMS.Types.TenancyConfig {
 
     /// <summary>Field number for the "last_date_hk_rollover_ran" field.</summary>
     public const int LastDateHkRolloverRanFieldNumber = 11;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp lastDateHkRolloverRan_;
+    private global::HOLMS.Types.Primitive.PbLocalDate lastDateHkRolloverRan_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp LastDateHkRolloverRan {
+    public global::HOLMS.Types.Primitive.PbLocalDate LastDateHkRolloverRan {
       get { return lastDateHkRolloverRan_; }
       set {
         lastDateHkRolloverRan_ = value;
@@ -329,17 +314,6 @@ namespace HOLMS.Types.TenancyConfig {
       get { return cancellationPolicy_; }
       set {
         cancellationPolicy_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "maximum_authorization_amount" field.</summary>
-    public const int MaximumAuthorizationAmountFieldNumber = 20;
-    private global::HOLMS.Types.Primitive.MonetaryAmount maximumAuthorizationAmount_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.MonetaryAmount MaximumAuthorizationAmount {
-      get { return maximumAuthorizationAmount_; }
-      set {
-        maximumAuthorizationAmount_ = value;
       }
     }
 
@@ -437,7 +411,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (Description != other.Description) return false;
       if (!object.Equals(CheckinTimeOfDay, other.CheckinTimeOfDay)) return false;
       if (!object.Equals(CheckOutTimeOfDay, other.CheckOutTimeOfDay)) return false;
-      if (!object.Equals(RolloverTimeOfDay, other.RolloverTimeOfDay)) return false;
       if (AllowedEarlyCheckinHours != other.AllowedEarlyCheckinHours) return false;
       if (IifDocnumPrefix != other.IifDocnumPrefix) return false;
       if (IifCustomerName != other.IifCustomerName) return false;
@@ -452,7 +425,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (PhoneNumber != other.PhoneNumber) return false;
       if (!object.Equals(CardMerchant, other.CardMerchant)) return false;
       if (!object.Equals(CancellationPolicy, other.CancellationPolicy)) return false;
-      if (!object.Equals(MaximumAuthorizationAmount, other.MaximumAuthorizationAmount)) return false;
       if (DefaultStayLength != other.DefaultStayLength) return false;
       if (Website != other.Website) return false;
       if (ReservationEmail != other.ReservationEmail) return false;
@@ -470,7 +442,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (checkinTimeOfDay_ != null) hash ^= CheckinTimeOfDay.GetHashCode();
       if (checkOutTimeOfDay_ != null) hash ^= CheckOutTimeOfDay.GetHashCode();
-      if (rolloverTimeOfDay_ != null) hash ^= RolloverTimeOfDay.GetHashCode();
       if (AllowedEarlyCheckinHours != 0) hash ^= AllowedEarlyCheckinHours.GetHashCode();
       if (IifDocnumPrefix.Length != 0) hash ^= IifDocnumPrefix.GetHashCode();
       if (IifCustomerName.Length != 0) hash ^= IifCustomerName.GetHashCode();
@@ -485,7 +456,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (PhoneNumber.Length != 0) hash ^= PhoneNumber.GetHashCode();
       if (cardMerchant_ != null) hash ^= CardMerchant.GetHashCode();
       if (cancellationPolicy_ != null) hash ^= CancellationPolicy.GetHashCode();
-      if (maximumAuthorizationAmount_ != null) hash ^= MaximumAuthorizationAmount.GetHashCode();
       if (DefaultStayLength != 0) hash ^= DefaultStayLength.GetHashCode();
       if (Website.Length != 0) hash ^= Website.GetHashCode();
       if (ReservationEmail.Length != 0) hash ^= ReservationEmail.GetHashCode();
@@ -518,10 +488,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (checkOutTimeOfDay_ != null) {
         output.WriteRawTag(34);
         output.WriteMessage(CheckOutTimeOfDay);
-      }
-      if (rolloverTimeOfDay_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(RolloverTimeOfDay);
       }
       if (AllowedEarlyCheckinHours != 0) {
         output.WriteRawTag(48);
@@ -579,10 +545,6 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(154, 1);
         output.WriteMessage(CancellationPolicy);
       }
-      if (maximumAuthorizationAmount_ != null) {
-        output.WriteRawTag(162, 1);
-        output.WriteMessage(MaximumAuthorizationAmount);
-      }
       if (DefaultStayLength != 0) {
         output.WriteRawTag(168, 1);
         output.WriteInt32(DefaultStayLength);
@@ -628,9 +590,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (checkOutTimeOfDay_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CheckOutTimeOfDay);
       }
-      if (rolloverTimeOfDay_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RolloverTimeOfDay);
-      }
       if (AllowedEarlyCheckinHours != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AllowedEarlyCheckinHours);
       }
@@ -672,9 +631,6 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (cancellationPolicy_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(CancellationPolicy);
-      }
-      if (maximumAuthorizationAmount_ != null) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(MaximumAuthorizationAmount);
       }
       if (DefaultStayLength != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(DefaultStayLength);
@@ -726,12 +682,6 @@ namespace HOLMS.Types.TenancyConfig {
         }
         CheckOutTimeOfDay.MergeFrom(other.CheckOutTimeOfDay);
       }
-      if (other.rolloverTimeOfDay_ != null) {
-        if (rolloverTimeOfDay_ == null) {
-          rolloverTimeOfDay_ = new global::Google.Protobuf.WellKnownTypes.Duration();
-        }
-        RolloverTimeOfDay.MergeFrom(other.RolloverTimeOfDay);
-      }
       if (other.AllowedEarlyCheckinHours != 0) {
         AllowedEarlyCheckinHours = other.AllowedEarlyCheckinHours;
       }
@@ -755,7 +705,7 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.lastDateHkRolloverRan_ != null) {
         if (lastDateHkRolloverRan_ == null) {
-          lastDateHkRolloverRan_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+          lastDateHkRolloverRan_ = new global::HOLMS.Types.Primitive.PbLocalDate();
         }
         LastDateHkRolloverRan.MergeFrom(other.LastDateHkRolloverRan);
       }
@@ -788,12 +738,6 @@ namespace HOLMS.Types.TenancyConfig {
           cancellationPolicy_ = new global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicator();
         }
         CancellationPolicy.MergeFrom(other.CancellationPolicy);
-      }
-      if (other.maximumAuthorizationAmount_ != null) {
-        if (maximumAuthorizationAmount_ == null) {
-          maximumAuthorizationAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
-        }
-        MaximumAuthorizationAmount.MergeFrom(other.MaximumAuthorizationAmount);
       }
       if (other.DefaultStayLength != 0) {
         DefaultStayLength = other.DefaultStayLength;
@@ -851,13 +795,6 @@ namespace HOLMS.Types.TenancyConfig {
             input.ReadMessage(checkOutTimeOfDay_);
             break;
           }
-          case 42: {
-            if (rolloverTimeOfDay_ == null) {
-              rolloverTimeOfDay_ = new global::Google.Protobuf.WellKnownTypes.Duration();
-            }
-            input.ReadMessage(rolloverTimeOfDay_);
-            break;
-          }
           case 48: {
             AllowedEarlyCheckinHours = input.ReadUInt32();
             break;
@@ -886,7 +823,7 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 90: {
             if (lastDateHkRolloverRan_ == null) {
-              lastDateHkRolloverRan_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+              lastDateHkRolloverRan_ = new global::HOLMS.Types.Primitive.PbLocalDate();
             }
             input.ReadMessage(lastDateHkRolloverRan_);
             break;
@@ -927,13 +864,6 @@ namespace HOLMS.Types.TenancyConfig {
               cancellationPolicy_ = new global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicator();
             }
             input.ReadMessage(cancellationPolicy_);
-            break;
-          }
-          case 162: {
-            if (maximumAuthorizationAmount_ == null) {
-              maximumAuthorizationAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
-            }
-            input.ReadMessage(maximumAuthorizationAmount_);
             break;
           }
           case 168: {
