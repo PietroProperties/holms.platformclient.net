@@ -2,7 +2,6 @@
 
 package holms.types.booking.rpc;
 option csharp_namespace = "HOLMS.Types.Booking.RPC";
-option go_package = "booking/rpc";
 
 import "booking/indicators/reservation_indicator.proto";
 import "booking/query_filter.proto";
@@ -11,6 +10,12 @@ import "primitive/pb_local_date.proto";
 
 message ReservationSearchSvcGetFilteredReservationListRequest {
 	.holms.types.booking.QueryFilter filter = 1;
+	bool include_canceled = 2;
+}
+
+message ReservationSearchSvcGetDateFilteredReservationListRequest {
+	.holms.types.primitive.PbLocalDate date = 1;
+	bool include_canceled = 2;
 }
 
 message ReservationSearchSvcGetFilteredReservationListResponse {
@@ -20,11 +25,6 @@ message ReservationSearchSvcGetFilteredReservationListResponse {
 enum ReservationSearchSvcGetReservationSummaryResult {
 	RESERVATION_SEARCH_SVC_GET_RESERVATION_SUMMARY_RESULT_OK = 0;
 	RESERVATION_SEARCH_SVC_GET_RESERVATION_SUMMARY_RESULT_NOT_FOUND = 1;
-}
-
-// NOTE(DA) Remove when SearchReservationsByBookingId removed
-message ReservationSearchSvcSearchReservationsByBookingId {
-	string booking_i_d = 1;
 }
 
 message ReservationSearchSvcSearchReservationsRequest {
@@ -41,34 +41,34 @@ message GetReservationSummariesRequest {
 }
 
 service ReservationSearchSvc {
+	// Get all of type - no date
 	rpc GetFilteredReservationList (ReservationSearchSvcGetFilteredReservationListRequest)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
 	
+	// Date-scoped searches
+	rpc GetArrivalsByCalendarDate(ReservationSearchSvcGetDateFilteredReservationListRequest)
+		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+
+	rpc GetDeparturesByCalendarDate(ReservationSearchSvcGetDateFilteredReservationListRequest)
+		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+
+	rpc GetNoShowsByDate(ReservationSearchSvcGetDateFilteredReservationListRequest)
+		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+
+	rpc GetStayOversByDate(ReservationSearchSvcGetDateFilteredReservationListRequest)
+		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+
+	rpc GetAllDuringDate(ReservationSearchSvcGetDateFilteredReservationListRequest)
+		returns	(ReservationSearchSvcGetFilteredReservationListResponse);
+		
+
+	// Search/GetById(s)
 	rpc GetReservationSummary(.holms.types.booking.indicators.ReservationIndicator) 
 		returns (ReservationSearchSvcGetReservationSummaryResponse);
 
 	rpc GetReservationSummaries(GetReservationSummariesRequest)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
 
-	rpc GetArrivalsByCalendarDate(holms.types.primitive.PbLocalDate)
-		returns (ReservationSearchSvcGetFilteredReservationListResponse);
-
-	rpc GetDeparturesByCalendarDate(holms.types.primitive.PbLocalDate)
-		returns (ReservationSearchSvcGetFilteredReservationListResponse);
-
-	rpc GetNoShowsByDate(holms.types.primitive.PbLocalDate)
-		returns (ReservationSearchSvcGetFilteredReservationListResponse);
-
-	rpc GetStayOversByDate(holms.types.primitive.PbLocalDate)
-		returns (ReservationSearchSvcGetFilteredReservationListResponse);
-
-	rpc GetAllDuringDate(holms.types.primitive.PbLocalDate)
-		returns	(ReservationSearchSvcGetFilteredReservationListResponse);
-		
-	// NOTE(DA) Deprecated; remove when no longer used
-	rpc SearchReservationsByBookingId(ReservationSearchSvcSearchReservationsByBookingId)
-		returns (ReservationSearchSvcGetFilteredReservationListResponse);
-	
 	rpc SearchReservations(ReservationSearchSvcSearchReservationsRequest)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
 }
