@@ -12,7 +12,7 @@ message Account {
 	string account_number = 2;
 	string description = 3;
 	LedgerAccountCategory account_category = 4;
-	bool is_programmatically_generated = 5;
-	string quickbooks_identifier = 6;
-	string quickbooks_incidental_identifier = 7;
+	string quickbooks_identifier = 5;
+	string quickbooks_incidental_identifier = 6;
 }
+
