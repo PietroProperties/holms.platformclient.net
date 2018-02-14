@@ -14,6 +14,6 @@ message AccountingTransaction {
 	string narration = 2;
 	repeated holms.types.money.accounting.AccountingTransactionLine lines = 3;
 	holms.types.primitive.Uuid Id = 4;
-	bool was_manually_entered = 5;
-	holms.types.iam.StaffMemberIndicator entered_by = 6;
+	holms.types.iam.StaffMemberIndicator entered_by = 5;
 }
+
