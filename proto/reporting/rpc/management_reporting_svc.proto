@@ -2,15 +2,10 @@ syntax = "proto3";
 
 package holms.types.reporting.rpc;
 option csharp_namespace = "HOLMS.Types.Reporting.RPC";
-option go_package = "reporting/rpc";
 
-import "google/protobuf/empty.proto";
-import "reporting/input_params/property_clocktime_range.proto";
-import "reporting/outputs/html_report_response.proto";
-import "reporting/input_params/property_opsdate_range.proto";
 import "reporting/input_params/management_report_manifests.proto";
+import "reporting/outputs/html_report_response.proto";
 import "tenancy_config/indicators/property_indicator.proto";
-
 
 message ManagmentReportingSvcBatchReportRequest {
 	repeated holms.types.tenancy_config.indicators.PropertyIndicator properties = 1;
@@ -20,28 +15,6 @@ message ManagmentReportingSvcBatchReportRequest {
 }
 
 service ManagementReportingSvc {
-	// Obsolete
-		rpc GetFolioBalancesReport(google.protobuf.Empty)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-		rpc GetFolioGrossChargesReport(holms.types.reporting.input_params.PropertyClockTimeRange)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-		rpc GetFolioPaymentsReport(holms.types.reporting.input_params.PropertyClockTimeRange)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-		rpc GetFolioAdjustmentsReport(holms.types.reporting.input_params.PropertyClockTimeRange)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-
-		rpc GetCallAccountingReport(holms.types.reporting.input_params.PropertyClockTimeRange)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-
-		rpc GetLedgerActivitySummary(holms.types.reporting.input_params.PropertyClockTimeRange)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-		rpc GetLedgerJournalEntries(holms.types.reporting.input_params.PropertyClockTimeRange)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-		rpc GetRoomUsageReportDetailed(holms.types.reporting.input_params.PropertyOpsdateRange)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-		rpc GetRoomUsageReportSummary(holms.types.reporting.input_params.PropertyOpsdateRange)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-	// New batch endpoint
 	rpc GetManagementReportBatch(ManagmentReportingSvcBatchReportRequest)
 		returns (holms.types.reporting.outputs.HtmlReportResponse);
 }

@@ -2,49 +2,10 @@ syntax = "proto3";
 
 package holms.types.reporting.rpc;
 option csharp_namespace = "HOLMS.Types.Reporting.RPC";
-option go_package = "reporting/rpc";
 
-import "google/protobuf/timestamp.proto";
-import "google/protobuf/empty.proto";
-import "iam/staff_member_indicator.proto";
-import "primitive/pb_inclusive_opsdate_range.proto";
-import "primitive/pb_local_date.proto";
 import "tenancy_config/indicators/property_indicator.proto";
-import "reporting/outputs/html_report_response.proto";
 import "reporting/input_params/front_desk_report_manifests.proto";
-
-enum InHouseGuestReportSorting {
-	BY_GUEST_NAME = 0;
-	BY_ROOM_NUMBER = 1;
-}
-	
-message FrontDeskReportingSvcRequest {
-	google.protobuf.Timestamp date = 1;
-}
-
-message FrontDeskReportingSvcInHouseGuestsRequest {
-	google.protobuf.Timestamp date = 1;
-	InHouseGuestReportSorting sort_type = 2;
-}
-
-message FrontDeskReportingSvcCancelledReservationsRequest {
-	holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
-}
-
-message FrontDeskReportingSvcHousekeepingRequest {
-	repeated .holms.types.iam.StaffMemberIndicator staff_members = 1;
-	string add_notes = 2;
-}
-
-message FrontDeskReportingSvcPropertyDateRangeRequest {
-	holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
-	holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
-}
-
-message FrontDeskReportingSvcPropertyOpsdateRequest {
-	holms.types.primitive.PbLocalDate date = 1;
-	holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
-}
+import "reporting/outputs/html_report_response.proto";
 
 message FrontDeskBatchReportingSvcRequest {
 	repeated holms.types.tenancy_config.indicators.PropertyIndicator properties = 1;
@@ -53,36 +14,7 @@ message FrontDeskBatchReportingSvcRequest {
 }
 
 service FrontDeskReportingSvc {
-	// OBSOLETE
-		// Daily reports -- these should get consolidated into a single call
-		// with all reports selected as booleans like include_XXX
-		rpc GetArrivalsReport(FrontDeskReportingSvcRequest)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-		rpc GetCancelledReservationsReport(FrontDeskReportingSvcCancelledReservationsRequest)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-		rpc GetDeparturesReport(FrontDeskReportingSvcRequest)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-		rpc GetInHouseGuestsReport(FrontDeskReportingSvcInHouseGuestsRequest)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-		rpc GetNoShowsReport(FrontDeskReportingSvcRequest)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-
-		// Vehicle report
-		rpc GetVehiclesReport(google.protobuf.Empty)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-
-		// Distribution
-		rpc GetGeneralAvailabilityReport(FrontDeskReportingSvcPropertyDateRangeRequest)
-    		returns (holms.types.reporting.outputs.HtmlReportResponse);
-
-		// Not sure where this goes?
-		rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
-			returns (holms.types.reporting.outputs.HtmlReportResponse);
-
-		rpc GetUnoccupiedRoomsReport(FrontDeskReportingSvcPropertyOpsdateRequest)
-			returns(holms.types.reporting.outputs.HtmlReportResponse);
-
-	// NEW REPORTING ENDPOINT
 	rpc GetFrontDeskReports(FrontDeskBatchReportingSvcRequest)
 		returns (holms.types.reporting.outputs.HtmlReportResponse);
 }
+
