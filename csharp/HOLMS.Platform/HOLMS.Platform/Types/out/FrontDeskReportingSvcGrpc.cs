@@ -14,12 +14,20 @@ namespace HOLMS.Types.Reporting.RPC {
 
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest> __Marshaller_FrontDeskBatchReportingSvcRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Marshaller_HtmlReportResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest> __Marshaller_FrontDeskReportingSvcHousekeepingRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetFrontDeskReports = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         MethodType.Unary,
         __ServiceName,
         "GetFrontDeskReports",
         __Marshaller_FrontDeskBatchReportingSvcRequest,
+        __Marshaller_HtmlReportResponse);
+
+    static readonly Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetHousekeepingAssignmentsReport = new Method<global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetHousekeepingAssignmentsReport",
+        __Marshaller_FrontDeskReportingSvcHousekeepingRequest,
         __Marshaller_HtmlReportResponse);
 
     /// <summary>Service descriptor</summary>
@@ -32,6 +40,11 @@ namespace HOLMS.Types.Reporting.RPC {
     public abstract class FrontDeskReportingSvcBase
     {
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetFrontDeskReports(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetHousekeepingAssignmentsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -77,6 +90,22 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetFrontDeskReports, null, options, request);
       }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetHousekeepingAssignmentsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetHousekeepingAssignmentsReport(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetHousekeepingAssignmentsReport(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetHousekeepingAssignmentsReport, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetHousekeepingAssignmentsReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetHousekeepingAssignmentsReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetHousekeepingAssignmentsReportAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetHousekeepingAssignmentsReport, null, options, request);
+      }
       protected override FrontDeskReportingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new FrontDeskReportingSvcClient(configuration);
@@ -87,7 +116,8 @@ namespace HOLMS.Types.Reporting.RPC {
     public static ServerServiceDefinition BindService(FrontDeskReportingSvcBase serviceImpl)
     {
       return ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetFrontDeskReports, serviceImpl.GetFrontDeskReports).Build();
+          .AddMethod(__Method_GetFrontDeskReports, serviceImpl.GetFrontDeskReports)
+          .AddMethod(__Method_GetHousekeepingAssignmentsReport, serviceImpl.GetHousekeepingAssignmentsReport).Build();
     }
 
   }

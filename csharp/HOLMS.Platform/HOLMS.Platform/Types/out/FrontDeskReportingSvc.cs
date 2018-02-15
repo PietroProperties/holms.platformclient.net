@@ -23,27 +23,35 @@ namespace HOLMS.Types.Reporting.RPC {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CixyZXBvcnRpbmcvcnBjL2Zyb250X2Rlc2tfcmVwb3J0aW5nX3N2Yy5wcm90",
-            "bxIZaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYxoydGVuYW5jeV9jb25maWcv",
-            "aW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8aOHJlcG9ydGlu",
-            "Zy9pbnB1dF9wYXJhbXMvZnJvbnRfZGVza19yZXBvcnRfbWFuaWZlc3RzLnBy",
-            "b3RvGixyZXBvcnRpbmcvb3V0cHV0cy9odG1sX3JlcG9ydF9yZXNwb25zZS5w",
-            "cm90byLSAgohRnJvbnREZXNrQmF0Y2hSZXBvcnRpbmdTdmNSZXF1ZXN0EkwK",
-            "CnByb3BlcnRpZXMYASADKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZp",
-            "Zy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEm4KHmNhbGVuZGFyX2Rh",
-            "dGVfcmVwb3J0c19tYW5pZmVzdBgCIAEoCzJGLmhvbG1zLnR5cGVzLnJlcG9y",
-            "dGluZy5pbnB1dF9wYXJhbXMuRnJvbnREZXNrQ3VycmVudERhdGVSZXBvcnRN",
-            "YW5pZmVzdBJvCh5vcHNkYXRlX3JhbmdlX3JlcG9ydHNfbWFuaWZlc3QYAyAB",
-            "KAsyRy5ob2xtcy50eXBlcy5yZXBvcnRpbmcuaW5wdXRfcGFyYW1zLkZyb250",
-            "RGVza09wc2RhdGVSYW5nZVJlcG9ydE1hbmlmZXN0MqABChVGcm9udERlc2tS",
-            "ZXBvcnRpbmdTdmMShgEKE0dldEZyb250RGVza1JlcG9ydHMSPC5ob2xtcy50",
-            "eXBlcy5yZXBvcnRpbmcucnBjLkZyb250RGVza0JhdGNoUmVwb3J0aW5nU3Zj",
-            "UmVxdWVzdBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxS",
-            "ZXBvcnRSZXNwb25zZUIcqgIZSE9MTVMuVHlwZXMuUmVwb3J0aW5nLlJQQ2IG",
-            "cHJvdG8z"));
+            "bxIZaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYxogaWFtL3N0YWZmX21lbWJl",
+            "cl9pbmRpY2F0b3IucHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMv",
+            "cHJvcGVydHlfaW5kaWNhdG9yLnByb3RvGjhyZXBvcnRpbmcvaW5wdXRfcGFy",
+            "YW1zL2Zyb250X2Rlc2tfcmVwb3J0X21hbmlmZXN0cy5wcm90bxoscmVwb3J0",
+            "aW5nL291dHB1dHMvaHRtbF9yZXBvcnRfcmVzcG9uc2UucHJvdG8i0gIKIUZy",
+            "b250RGVza0JhdGNoUmVwb3J0aW5nU3ZjUmVxdWVzdBJMCgpwcm9wZXJ0aWVz",
+            "GAEgAygLMjguaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9y",
+            "cy5Qcm9wZXJ0eUluZGljYXRvchJuCh5jYWxlbmRhcl9kYXRlX3JlcG9ydHNf",
+            "bWFuaWZlc3QYAiABKAsyRi5ob2xtcy50eXBlcy5yZXBvcnRpbmcuaW5wdXRf",
+            "cGFyYW1zLkZyb250RGVza0N1cnJlbnREYXRlUmVwb3J0TWFuaWZlc3QSbwoe",
+            "b3BzZGF0ZV9yYW5nZV9yZXBvcnRzX21hbmlmZXN0GAMgASgLMkcuaG9sbXMu",
+            "dHlwZXMucmVwb3J0aW5nLmlucHV0X3BhcmFtcy5Gcm9udERlc2tPcHNkYXRl",
+            "UmFuZ2VSZXBvcnRNYW5pZmVzdCJ7CihGcm9udERlc2tSZXBvcnRpbmdTdmNI",
+            "b3VzZWtlZXBpbmdSZXF1ZXN0EjwKDXN0YWZmX21lbWJlcnMYASADKAsyJS5o",
+            "b2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXJJbmRpY2F0b3ISEQoJYWRkX25v",
+            "dGVzGAIgASgJMr0CChVGcm9udERlc2tSZXBvcnRpbmdTdmMShgEKE0dldEZy",
+            "b250RGVza1JlcG9ydHMSPC5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZy",
+            "b250RGVza0JhdGNoUmVwb3J0aW5nU3ZjUmVxdWVzdBoxLmhvbG1zLnR5cGVz",
+            "LnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZRKaAQogR2V0",
+            "SG91c2VrZWVwaW5nQXNzaWdubWVudHNSZXBvcnQSQy5ob2xtcy50eXBlcy5y",
+            "ZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y0hvdXNla2VlcGlu",
+            "Z1JlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1s",
+            "UmVwb3J0UmVzcG9uc2VCHKoCGUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportManifestsReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportManifestsReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest.Parser, new[]{ "Properties", "CalendarDateReportsManifest", "OpsdateRangeReportsManifest" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest.Parser, new[]{ "Properties", "CalendarDateReportsManifest", "OpsdateRangeReportsManifest" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser, new[]{ "StaffMembers", "AddNotes" }, null, null, null)
           }));
     }
     #endregion
@@ -219,6 +227,143 @@ namespace HOLMS.Types.Reporting.RPC {
               opsdateRangeReportsManifest_ = new global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest();
             }
             input.ReadMessage(opsdateRangeReportsManifest_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class FrontDeskReportingSvcHousekeepingRequest : pb::IMessage<FrontDeskReportingSvcHousekeepingRequest> {
+    private static readonly pb::MessageParser<FrontDeskReportingSvcHousekeepingRequest> _parser = new pb::MessageParser<FrontDeskReportingSvcHousekeepingRequest>(() => new FrontDeskReportingSvcHousekeepingRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FrontDeskReportingSvcHousekeepingRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FrontDeskReportingSvcHousekeepingRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FrontDeskReportingSvcHousekeepingRequest(FrontDeskReportingSvcHousekeepingRequest other) : this() {
+      staffMembers_ = other.staffMembers_.Clone();
+      addNotes_ = other.addNotes_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FrontDeskReportingSvcHousekeepingRequest Clone() {
+      return new FrontDeskReportingSvcHousekeepingRequest(this);
+    }
+
+    /// <summary>Field number for the "staff_members" field.</summary>
+    public const int StaffMembersFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.IAM.StaffMemberIndicator> _repeated_staffMembers_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.IAM.StaffMemberIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.IAM.StaffMemberIndicator> staffMembers_ = new pbc::RepeatedField<global::HOLMS.Types.IAM.StaffMemberIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.IAM.StaffMemberIndicator> StaffMembers {
+      get { return staffMembers_; }
+    }
+
+    /// <summary>Field number for the "add_notes" field.</summary>
+    public const int AddNotesFieldNumber = 2;
+    private string addNotes_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AddNotes {
+      get { return addNotes_; }
+      set {
+        addNotes_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FrontDeskReportingSvcHousekeepingRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FrontDeskReportingSvcHousekeepingRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!staffMembers_.Equals(other.staffMembers_)) return false;
+      if (AddNotes != other.AddNotes) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= staffMembers_.GetHashCode();
+      if (AddNotes.Length != 0) hash ^= AddNotes.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      staffMembers_.WriteTo(output, _repeated_staffMembers_codec);
+      if (AddNotes.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AddNotes);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += staffMembers_.CalculateSize(_repeated_staffMembers_codec);
+      if (AddNotes.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AddNotes);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FrontDeskReportingSvcHousekeepingRequest other) {
+      if (other == null) {
+        return;
+      }
+      staffMembers_.Add(other.staffMembers_);
+      if (other.AddNotes.Length != 0) {
+        AddNotes = other.AddNotes;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            staffMembers_.AddEntriesFrom(input, _repeated_staffMembers_codec);
+            break;
+          }
+          case 18: {
+            AddNotes = input.ReadString();
             break;
           }
         }

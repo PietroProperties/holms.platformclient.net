@@ -3,6 +3,7 @@ syntax = "proto3";
 package holms.types.reporting.rpc;
 option csharp_namespace = "HOLMS.Types.Reporting.RPC";
 
+import "iam/staff_member_indicator.proto";
 import "tenancy_config/indicators/property_indicator.proto";
 import "reporting/input_params/front_desk_report_manifests.proto";
 import "reporting/outputs/html_report_response.proto";
@@ -13,8 +14,15 @@ message FrontDeskBatchReportingSvcRequest {
 	holms.types.reporting.input_params.FrontDeskOpsdateRangeReportManifest opsdate_range_reports_manifest = 3;
 }
 
+message FrontDeskReportingSvcHousekeepingRequest {
+	repeated .holms.types.iam.StaffMemberIndicator staff_members = 1;
+	string add_notes = 2;
+}
+
 service FrontDeskReportingSvc {
 	rpc GetFrontDeskReports(FrontDeskBatchReportingSvcRequest)
+		returns (holms.types.reporting.outputs.HtmlReportResponse);
+	rpc GetHousekeepingAssignmentsReport(FrontDeskReportingSvcHousekeepingRequest)
 		returns (holms.types.reporting.outputs.HtmlReportResponse);
 }
 
