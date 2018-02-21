@@ -107,6 +107,7 @@ namespace HOLMS.Application.Client {
         public PricingSvc.PricingSvcClient PricingSvc { get; protected set; }
         public RateScheduleSvc.RateScheduleSvcClient RateScheduleSvc { get; protected set; }
         public RoomTypeSvc.RoomTypeSvcClient RoomTypeSvc { get; protected set; }
+        public SupplyHistorySnapshotSvc.SupplyHistorySnapshotSvcClient SupplyHistorySnapshotSvc { get; protected set; }
         public SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc { get; protected set; }
         #endregion
 
@@ -312,6 +313,7 @@ namespace HOLMS.Application.Client {
             PricingSvc = new PricingSvc.PricingSvcClient(_authenticatedChannel);
             RateScheduleSvc = new RateScheduleSvc.RateScheduleSvcClient(_authenticatedChannel);
             RoomTypeSvc = new RoomTypeSvc.RoomTypeSvcClient(_authenticatedChannel);
+            SupplyHistorySnapshotSvc = new SupplyHistorySnapshotSvc.SupplyHistorySnapshotSvcClient(_authenticatedChannel);
             SupplySnapshotSvc = new SupplySnapshotSvc.SupplySnapshotSvcClient(_authenticatedChannel);
             #endregion
 
