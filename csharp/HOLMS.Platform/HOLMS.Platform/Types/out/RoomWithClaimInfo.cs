@@ -23,19 +23,16 @@ namespace HOLMS.Types.Operations.Rooms {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CitvcGVyYXRpb25zL3Jvb21zL3Jvb21fd2l0aF9jbGFpbV9pbmZvLnByb3Rv",
-            "Ehxob2xtcy50eXBlcy5vcGVyYXRpb25zLnJvb21zGi5ib29raW5nL3Jlc2Vy",
-            "dmF0aW9ucy9yZXNlcnZhdGlvbl9zdW1tYXJ5LnByb3RvGhtvcGVyYXRpb25z",
-            "L3Jvb21zL3Jvb20ucHJvdG8izwEKEVJvb21XaXRoQ2xhaW1JbmZvEjAKBHJv",
-            "b20YASABKAsyIi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJvb21zLlJvb20S",
-            "HQoVaGFzX3Jlc2VydmF0aW9uX2NsYWltGAIgASgIEhUKDWhhc19vb29fY2xh",
-            "aW0YAyABKAgSUgoUY2xhaW1pbmdfcmVzZXJ2YXRpb24YBCABKAsyNC5ob2xt",
-            "cy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5SZXNlcnZhdGlvblN1bW1h",
-            "cnlCMVoQb3BlcmF0aW9ucy9yb29tc6oCHEhPTE1TLlR5cGVzLk9wZXJhdGlv",
+            "Ehxob2xtcy50eXBlcy5vcGVyYXRpb25zLnJvb21zGhtvcGVyYXRpb25zL3Jv",
+            "b21zL3Jvb20ucHJvdG8iigEKEVJvb21XaXRoQ2xhaW1JbmZvEjAKBHJvb20Y",
+            "ASABKAsyIi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJvb21zLlJvb20SHgoW",
+            "Y3VycmVudGx5X291dF9vZl9vcmRlchgCIAEoCBIjChthc3NpZ25hYmxlX2Zv",
+            "cl90YXJnZXRfZGF0ZXMYAyABKAhCH6oCHEhPTE1TLlR5cGVzLk9wZXJhdGlv",
             "bnMuUm9vbXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Reservations.ReservationSummaryReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Operations.Rooms.RoomReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.Rooms.RoomWithClaimInfo), global::HOLMS.Types.Operations.Rooms.RoomWithClaimInfo.Parser, new[]{ "Room", "HasReservationClaim", "HasOooClaim", "ClaimingReservation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.Rooms.RoomWithClaimInfo), global::HOLMS.Types.Operations.Rooms.RoomWithClaimInfo.Parser, new[]{ "Room", "CurrentlyOutOfOrder", "AssignableForTargetDates" }, null, null, null)
           }));
     }
     #endregion
@@ -67,9 +64,8 @@ namespace HOLMS.Types.Operations.Rooms {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RoomWithClaimInfo(RoomWithClaimInfo other) : this() {
       Room = other.room_ != null ? other.Room.Clone() : null;
-      hasReservationClaim_ = other.hasReservationClaim_;
-      hasOooClaim_ = other.hasOooClaim_;
-      ClaimingReservation = other.claimingReservation_ != null ? other.ClaimingReservation.Clone() : null;
+      currentlyOutOfOrder_ = other.currentlyOutOfOrder_;
+      assignableForTargetDates_ = other.assignableForTargetDates_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -88,36 +84,25 @@ namespace HOLMS.Types.Operations.Rooms {
       }
     }
 
-    /// <summary>Field number for the "has_reservation_claim" field.</summary>
-    public const int HasReservationClaimFieldNumber = 2;
-    private bool hasReservationClaim_;
+    /// <summary>Field number for the "currently_out_of_order" field.</summary>
+    public const int CurrentlyOutOfOrderFieldNumber = 2;
+    private bool currentlyOutOfOrder_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasReservationClaim {
-      get { return hasReservationClaim_; }
+    public bool CurrentlyOutOfOrder {
+      get { return currentlyOutOfOrder_; }
       set {
-        hasReservationClaim_ = value;
+        currentlyOutOfOrder_ = value;
       }
     }
 
-    /// <summary>Field number for the "has_ooo_claim" field.</summary>
-    public const int HasOooClaimFieldNumber = 3;
-    private bool hasOooClaim_;
+    /// <summary>Field number for the "assignable_for_target_dates" field.</summary>
+    public const int AssignableForTargetDatesFieldNumber = 3;
+    private bool assignableForTargetDates_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasOooClaim {
-      get { return hasOooClaim_; }
+    public bool AssignableForTargetDates {
+      get { return assignableForTargetDates_; }
       set {
-        hasOooClaim_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "claiming_reservation" field.</summary>
-    public const int ClaimingReservationFieldNumber = 4;
-    private global::HOLMS.Types.Booking.Reservations.ReservationSummary claimingReservation_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Booking.Reservations.ReservationSummary ClaimingReservation {
-      get { return claimingReservation_; }
-      set {
-        claimingReservation_ = value;
+        assignableForTargetDates_ = value;
       }
     }
 
@@ -135,9 +120,8 @@ namespace HOLMS.Types.Operations.Rooms {
         return true;
       }
       if (!object.Equals(Room, other.Room)) return false;
-      if (HasReservationClaim != other.HasReservationClaim) return false;
-      if (HasOooClaim != other.HasOooClaim) return false;
-      if (!object.Equals(ClaimingReservation, other.ClaimingReservation)) return false;
+      if (CurrentlyOutOfOrder != other.CurrentlyOutOfOrder) return false;
+      if (AssignableForTargetDates != other.AssignableForTargetDates) return false;
       return true;
     }
 
@@ -145,9 +129,8 @@ namespace HOLMS.Types.Operations.Rooms {
     public override int GetHashCode() {
       int hash = 1;
       if (room_ != null) hash ^= Room.GetHashCode();
-      if (HasReservationClaim != false) hash ^= HasReservationClaim.GetHashCode();
-      if (HasOooClaim != false) hash ^= HasOooClaim.GetHashCode();
-      if (claimingReservation_ != null) hash ^= ClaimingReservation.GetHashCode();
+      if (CurrentlyOutOfOrder != false) hash ^= CurrentlyOutOfOrder.GetHashCode();
+      if (AssignableForTargetDates != false) hash ^= AssignableForTargetDates.GetHashCode();
       return hash;
     }
 
@@ -162,17 +145,13 @@ namespace HOLMS.Types.Operations.Rooms {
         output.WriteRawTag(10);
         output.WriteMessage(Room);
       }
-      if (HasReservationClaim != false) {
+      if (CurrentlyOutOfOrder != false) {
         output.WriteRawTag(16);
-        output.WriteBool(HasReservationClaim);
+        output.WriteBool(CurrentlyOutOfOrder);
       }
-      if (HasOooClaim != false) {
+      if (AssignableForTargetDates != false) {
         output.WriteRawTag(24);
-        output.WriteBool(HasOooClaim);
-      }
-      if (claimingReservation_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(ClaimingReservation);
+        output.WriteBool(AssignableForTargetDates);
       }
     }
 
@@ -182,14 +161,11 @@ namespace HOLMS.Types.Operations.Rooms {
       if (room_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Room);
       }
-      if (HasReservationClaim != false) {
+      if (CurrentlyOutOfOrder != false) {
         size += 1 + 1;
       }
-      if (HasOooClaim != false) {
+      if (AssignableForTargetDates != false) {
         size += 1 + 1;
-      }
-      if (claimingReservation_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClaimingReservation);
       }
       return size;
     }
@@ -205,17 +181,11 @@ namespace HOLMS.Types.Operations.Rooms {
         }
         Room.MergeFrom(other.Room);
       }
-      if (other.HasReservationClaim != false) {
-        HasReservationClaim = other.HasReservationClaim;
+      if (other.CurrentlyOutOfOrder != false) {
+        CurrentlyOutOfOrder = other.CurrentlyOutOfOrder;
       }
-      if (other.HasOooClaim != false) {
-        HasOooClaim = other.HasOooClaim;
-      }
-      if (other.claimingReservation_ != null) {
-        if (claimingReservation_ == null) {
-          claimingReservation_ = new global::HOLMS.Types.Booking.Reservations.ReservationSummary();
-        }
-        ClaimingReservation.MergeFrom(other.ClaimingReservation);
+      if (other.AssignableForTargetDates != false) {
+        AssignableForTargetDates = other.AssignableForTargetDates;
       }
     }
 
@@ -235,18 +205,11 @@ namespace HOLMS.Types.Operations.Rooms {
             break;
           }
           case 16: {
-            HasReservationClaim = input.ReadBool();
+            CurrentlyOutOfOrder = input.ReadBool();
             break;
           }
           case 24: {
-            HasOooClaim = input.ReadBool();
-            break;
-          }
-          case 34: {
-            if (claimingReservation_ == null) {
-              claimingReservation_ = new global::HOLMS.Types.Booking.Reservations.ReservationSummary();
-            }
-            input.ReadMessage(claimingReservation_);
+            AssignableForTargetDates = input.ReadBool();
             break;
           }
         }

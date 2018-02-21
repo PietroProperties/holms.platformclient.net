@@ -2,15 +2,12 @@
 
 package holms.types.operations.rooms;
 option csharp_namespace = "HOLMS.Types.Operations.Rooms";
-option go_package = "operations/rooms";
 
-import "booking/reservations/reservation_summary.proto";
 import "operations/rooms/room.proto";
 
 message RoomWithClaimInfo {
 	.holms.types.operations.rooms.Room room = 1;
-	bool has_reservation_claim = 2;
-	bool has_ooo_claim = 3;
-
-	.holms.types.booking.reservations.ReservationSummary claiming_reservation = 4;
+	bool currently_out_of_order = 2;
+	bool assignable_for_target_dates = 3;
 }
+
