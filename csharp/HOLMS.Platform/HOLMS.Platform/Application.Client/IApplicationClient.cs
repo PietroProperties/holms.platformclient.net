@@ -93,6 +93,7 @@ namespace HOLMS.Application.Client {
         PricingSvc.PricingSvcClient PricingSvc { get; }
         RateScheduleSvc.RateScheduleSvcClient RateScheduleSvc { get; }
         RoomTypeSvc.RoomTypeSvcClient RoomTypeSvc { get; }
+        SupplyHistorySnapshotSvc.SupplyHistorySnapshotSvcClient SupplyHistorySnapshotSvc { get; }
         SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc { get; }
         #endregion
 

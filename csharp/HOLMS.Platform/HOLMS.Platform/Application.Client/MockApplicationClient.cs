@@ -407,6 +407,10 @@ namespace HOLMS.Platform.Application.Client {
             }
         }
 
+        public SupplyHistorySnapshotSvc.SupplyHistorySnapshotSvcClient SupplyHistorySnapshotSvc {
+            get { throw new NotImplementedException(); }
+        }
+
         public SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc {
             get {
                 throw new NotImplementedException();
