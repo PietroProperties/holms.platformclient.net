@@ -58,28 +58,29 @@ namespace HOLMS.Types.Operations.RPC {
             "cy5yb29tX2NsYWltcy5SZXNlcnZhdGlvblJvb21Bc3NpZ25tZW50UmVzdWx0",
             "Il8KHUdldEFsbFJvb21zV2l0aENsYWltc1Jlc3BvbnNlEj4KBXJvb21zGAEg",
             "AygLMi8uaG9sbXMudHlwZXMub3BlcmF0aW9ucy5yb29tcy5Sb29tV2l0aENs",
-            "YWltSW5mbyJRChxHZXRBbGxSb29tc1dpdGhDbGFpbXNSZXF1ZXN0EjEKBWRh",
-            "dGVzGAEgAygLMiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRl",
-            "Mp8GCg1Sb29tQ2xhaW1zU3ZjEnkKBlNlYXJjaBI2LmhvbG1zLnR5cGVzLm9w",
-            "ZXJhdGlvbnMucnBjLlJvb21DbGFpbXNTdmNTZWFyY2hSZXF1ZXN0GjcuaG9s",
-            "bXMudHlwZXMub3BlcmF0aW9ucy5ycGMuUm9vbUNsYWltc1N2Y1NlYXJjaFJl",
-            "c3BvbnNlEpMBChZTZWFyY2hDb250aW51b3VzQ2xhaW1zEjYuaG9sbXMudHlw",
-            "ZXMub3BlcmF0aW9ucy5ycGMuUm9vbUNsYWltc1N2Y1NlYXJjaFJlcXVlc3Qa",
-            "QS5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJwYy5Db250aW51b3VzUm9vbUNs",
-            "YWltc1N2Y1NlYXJjaFJlc3BvbnNlErIBChlHZXRDbGFpbWFibGVCeVJlc2Vy",
-            "dmF0aW9uEkkuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ycGMuUm9vbUNsYWlt",
-            "c1N2Y0dldENsYWltYWJsZUJ5UmVzZXJ2YXRpb25SZXF1ZXN0GkouaG9sbXMu",
-            "dHlwZXMub3BlcmF0aW9ucy5ycGMuUm9vbUNsYWltc1N2Y0dldENsYWltYWJs",
-            "ZUJ5UmVzZXJ2YXRpb25SZXNwb25zZRK4AQobVXBkYXRlUmVzZXJ2YXRpb25S",
-            "b29tQ2xhaW1zEksuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ycGMuUm9vbUNs",
-            "YWltc1N2Y1VwZGF0ZVJlc2VydmF0aW9uUm9vbUNsYWltc1JlcXVlc3QaTC5o",
-            "b2xtcy50eXBlcy5vcGVyYXRpb25zLnJwYy5Sb29tQ2xhaW1zU3ZjVXBkYXRl",
-            "UmVzZXJ2YXRpb25Sb29tQ2xhaW1zUmVzcG9uc2USjAEKFUdldEFsbFJvb21z",
-            "V2l0aENsYWltcxI4LmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucnBjLkdldEFs",
-            "bFJvb21zV2l0aENsYWltc1JlcXVlc3QaOS5ob2xtcy50eXBlcy5vcGVyYXRp",
-            "b25zLnJwYy5HZXRBbGxSb29tc1dpdGhDbGFpbXNSZXNwb25zZUItWg5vcGVy",
-            "YXRpb25zL3JwY6oCGkhPTE1TLlR5cGVzLk9wZXJhdGlvbnMuUlBDYgZwcm90",
-            "bzM="));
+            "YWltSW5mbyKcAQocR2V0QWxsUm9vbXNXaXRoQ2xhaW1zUmVxdWVzdBIxCgVk",
+            "YXRlcxgBIAMoCzIiLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkxvY2FsRGF0",
+            "ZRJJCgtyZXNlcnZhdGlvbhgCIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcu",
+            "aW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvcjKfBgoNUm9vbUNsYWlt",
+            "c1N2YxJ5CgZTZWFyY2gSNi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJwYy5S",
+            "b29tQ2xhaW1zU3ZjU2VhcmNoUmVxdWVzdBo3LmhvbG1zLnR5cGVzLm9wZXJh",
+            "dGlvbnMucnBjLlJvb21DbGFpbXNTdmNTZWFyY2hSZXNwb25zZRKTAQoWU2Vh",
+            "cmNoQ29udGludW91c0NsYWltcxI2LmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMu",
+            "cnBjLlJvb21DbGFpbXNTdmNTZWFyY2hSZXF1ZXN0GkEuaG9sbXMudHlwZXMu",
+            "b3BlcmF0aW9ucy5ycGMuQ29udGludW91c1Jvb21DbGFpbXNTdmNTZWFyY2hS",
+            "ZXNwb25zZRKyAQoZR2V0Q2xhaW1hYmxlQnlSZXNlcnZhdGlvbhJJLmhvbG1z",
+            "LnR5cGVzLm9wZXJhdGlvbnMucnBjLlJvb21DbGFpbXNTdmNHZXRDbGFpbWFi",
+            "bGVCeVJlc2VydmF0aW9uUmVxdWVzdBpKLmhvbG1zLnR5cGVzLm9wZXJhdGlv",
+            "bnMucnBjLlJvb21DbGFpbXNTdmNHZXRDbGFpbWFibGVCeVJlc2VydmF0aW9u",
+            "UmVzcG9uc2USuAEKG1VwZGF0ZVJlc2VydmF0aW9uUm9vbUNsYWltcxJLLmhv",
+            "bG1zLnR5cGVzLm9wZXJhdGlvbnMucnBjLlJvb21DbGFpbXNTdmNVcGRhdGVS",
+            "ZXNlcnZhdGlvblJvb21DbGFpbXNSZXF1ZXN0GkwuaG9sbXMudHlwZXMub3Bl",
+            "cmF0aW9ucy5ycGMuUm9vbUNsYWltc1N2Y1VwZGF0ZVJlc2VydmF0aW9uUm9v",
+            "bUNsYWltc1Jlc3BvbnNlEowBChVHZXRBbGxSb29tc1dpdGhDbGFpbXMSOC5o",
+            "b2xtcy50eXBlcy5vcGVyYXRpb25zLnJwYy5HZXRBbGxSb29tc1dpdGhDbGFp",
+            "bXNSZXF1ZXN0GjkuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ycGMuR2V0QWxs",
+            "Um9vbXNXaXRoQ2xhaW1zUmVzcG9uc2VCLVoOb3BlcmF0aW9ucy9ycGOqAhpI",
+            "T0xNUy5UeXBlcy5PcGVyYXRpb25zLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.RoomClaims.ReservationRoomAssignmentResultReflection.Descriptor, global::HOLMS.Types.Operations.RoomClaims.RoomAssignmentByNightReflection.Descriptor, global::HOLMS.Types.Operations.RoomClaims.RoomClaimReflection.Descriptor, global::HOLMS.Types.Operations.RoomClaims.ContinuousRoomClaimReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomWithClaimInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -91,7 +92,7 @@ namespace HOLMS.Types.Operations.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.RoomClaimsSvcUpdateReservationRoomClaimsRequest), global::HOLMS.Types.Operations.RPC.RoomClaimsSvcUpdateReservationRoomClaimsRequest.Parser, new[]{ "Reservation", "Requests" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.RoomClaimsSvcUpdateReservationRoomClaimsResponse), global::HOLMS.Types.Operations.RPC.RoomClaimsSvcUpdateReservationRoomClaimsResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.GetAllRoomsWithClaimsResponse), global::HOLMS.Types.Operations.RPC.GetAllRoomsWithClaimsResponse.Parser, new[]{ "Rooms" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.GetAllRoomsWithClaimsRequest), global::HOLMS.Types.Operations.RPC.GetAllRoomsWithClaimsRequest.Parser, new[]{ "Dates" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.GetAllRoomsWithClaimsRequest), global::HOLMS.Types.Operations.RPC.GetAllRoomsWithClaimsRequest.Parser, new[]{ "Dates", "Reservation" }, null, null, null)
           }));
     }
     #endregion
@@ -1119,6 +1120,7 @@ namespace HOLMS.Types.Operations.RPC {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetAllRoomsWithClaimsRequest(GetAllRoomsWithClaimsRequest other) : this() {
       dates_ = other.dates_.Clone();
+      Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1136,6 +1138,17 @@ namespace HOLMS.Types.Operations.RPC {
       get { return dates_; }
     }
 
+    /// <summary>Field number for the "reservation" field.</summary>
+    public const int ReservationFieldNumber = 2;
+    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator reservation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator Reservation {
+      get { return reservation_; }
+      set {
+        reservation_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GetAllRoomsWithClaimsRequest);
@@ -1150,6 +1163,7 @@ namespace HOLMS.Types.Operations.RPC {
         return true;
       }
       if(!dates_.Equals(other.dates_)) return false;
+      if (!object.Equals(Reservation, other.Reservation)) return false;
       return true;
     }
 
@@ -1157,6 +1171,7 @@ namespace HOLMS.Types.Operations.RPC {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= dates_.GetHashCode();
+      if (reservation_ != null) hash ^= Reservation.GetHashCode();
       return hash;
     }
 
@@ -1168,12 +1183,19 @@ namespace HOLMS.Types.Operations.RPC {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       dates_.WriteTo(output, _repeated_dates_codec);
+      if (reservation_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Reservation);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       size += dates_.CalculateSize(_repeated_dates_codec);
+      if (reservation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Reservation);
+      }
       return size;
     }
 
@@ -1183,6 +1205,12 @@ namespace HOLMS.Types.Operations.RPC {
         return;
       }
       dates_.Add(other.dates_);
+      if (other.reservation_ != null) {
+        if (reservation_ == null) {
+          reservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+        }
+        Reservation.MergeFrom(other.Reservation);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1195,6 +1223,13 @@ namespace HOLMS.Types.Operations.RPC {
             break;
           case 10: {
             dates_.AddEntriesFrom(input, _repeated_dates_codec);
+            break;
+          }
+          case 18: {
+            if (reservation_ == null) {
+              reservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+            }
+            input.ReadMessage(reservation_);
             break;
           }
         }

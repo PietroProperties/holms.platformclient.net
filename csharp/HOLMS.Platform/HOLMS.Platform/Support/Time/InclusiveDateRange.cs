@@ -32,6 +32,8 @@ namespace HOLMS.Support.Time {
             End = other.End;
         }
 
+        public bool Overlaps(InclusiveDateRange other) => !(other.End < Start || End < other.Start);
+
         public DateTime StartDateTime {
             get { return new DateTime(Start.Year, Start.Month, Start.Day); }
             set { Start = new LocalDate(value.Year, value.Month, value.Day); }

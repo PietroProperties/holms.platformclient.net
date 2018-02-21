@@ -52,6 +52,7 @@ message GetAllRoomsWithClaimsResponse {
 
 message GetAllRoomsWithClaimsRequest {
 	repeated .holms.types.primitive.PbLocalDate dates = 1;
+	.holms.types.booking.indicators.ReservationIndicator reservation = 2;
 }
 
 service RoomClaimsSvc {
