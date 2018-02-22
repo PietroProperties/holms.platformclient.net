@@ -28,22 +28,25 @@ namespace HOLMS.Types.Booking.Reservations {
             "Zy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX25vdGVfaW5kaWNhdG9yLnByb3Rv",
             "GjVvcGVyYXRpb25zL25vdGVfcmVxdWVzdHMvbm90ZV9yZXF1ZXN0X2luZGlj",
             "YXRvci5wcm90bxosb3BlcmF0aW9ucy9ub3RlX3JlcXVlc3RzL25vdGVfY2F0",
-            "ZWdvcnkucHJvdG8itQMKD1Jlc2VydmF0aW9uTm90ZRJLCgllbnRpdHlfaWQY",
-            "ASABKAsyOC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2",
-            "YXRpb25Ob3RlSW5kaWNhdG9yEk8KC3NvdXJjZV9ub3RlGAIgASgLMjouaG9s",
-            "bXMudHlwZXMub3BlcmF0aW9ucy5ub3RlX3JlcXVlc3RzLk5vdGVSZXF1ZXN0",
-            "SW5kaWNhdG9yEkQKCGNhdGVnb3J5GAMgASgOMjIuaG9sbXMudHlwZXMub3Bl",
-            "cmF0aW9ucy5ub3RlX3JlcXVlc3RzLk5vdGVDYXRlZ29yeRIXCg9hZGRpdGlv",
-            "bmFsX25vdGUYBCABKAkSHwoXaW5jbHVkZV9vbl9jb25maXJtYXRpb24YBSAB",
-            "KAgSUQoTbG9kZ2luZ19yZXNlcnZhdGlvbhgGIAEoCzI0LmhvbG1zLnR5cGVz",
-            "LmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchIbChNz",
-            "b3VyY2Vfbm90ZV9zdWJqZWN0GAcgASgJEhQKDGlzX2Z1bGZpbGxlZBgIIAEo",
-            "CEI5WhRib29raW5nL3Jlc2VydmF0aW9uc6oCIEhPTE1TLlR5cGVzLkJvb2tp",
-            "bmcuUmVzZXJ2YXRpb25zYgZwcm90bzM="));
+            "ZWdvcnkucHJvdG8aIGNybS9ndWVzdHMvZ3Vlc3RfaW5kaWNhdG9yLnByb3Rv",
+            "Ip0ECg9SZXNlcnZhdGlvbk5vdGUSSwoJZW50aXR5X2lkGAEgASgLMjguaG9s",
+            "bXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uTm90ZUlu",
+            "ZGljYXRvchJPCgtzb3VyY2Vfbm90ZRgCIAEoCzI6LmhvbG1zLnR5cGVzLm9w",
+            "ZXJhdGlvbnMubm90ZV9yZXF1ZXN0cy5Ob3RlUmVxdWVzdEluZGljYXRvchJE",
+            "CghjYXRlZ29yeRgDIAEoDjIyLmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMubm90",
+            "ZV9yZXF1ZXN0cy5Ob3RlQ2F0ZWdvcnkSFwoPYWRkaXRpb25hbF9ub3RlGAQg",
+            "ASgJEh8KF2luY2x1ZGVfb25fY29uZmlybWF0aW9uGAUgASgIElEKE2xvZGdp",
+            "bmdfcmVzZXJ2YXRpb24YBiABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmlu",
+            "ZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISGwoTc291cmNlX25vdGVf",
+            "c3ViamVjdBgHIAEoCRIUCgxpc19mdWxmaWxsZWQYCCABKAgSIQoZcGVybWFu",
+            "ZW50X29uX2d1ZXN0X3JlY29yZBgJIAEoCBJDChNwZXJtYW5lbnRfZm9yX2d1",
+            "ZXN0GAogASgLMiYuaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdEluZGlj",
+            "YXRvckI5WhRib29raW5nL3Jlc2VydmF0aW9uc6oCIEhPTE1TLlR5cGVzLkJv",
+            "b2tpbmcuUmVzZXJ2YXRpb25zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationNoteIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.NoteRequests.NoteRequestIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.NoteRequests.NoteCategoryReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationNoteIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.NoteRequests.NoteRequestIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.NoteRequests.NoteCategoryReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationNote), global::HOLMS.Types.Booking.Reservations.ReservationNote.Parser, new[]{ "EntityId", "SourceNote", "Category", "AdditionalNote", "IncludeOnConfirmation", "LodgingReservation", "SourceNoteSubject", "IsFulfilled" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationNote), global::HOLMS.Types.Booking.Reservations.ReservationNote.Parser, new[]{ "EntityId", "SourceNote", "Category", "AdditionalNote", "IncludeOnConfirmation", "LodgingReservation", "SourceNoteSubject", "IsFulfilled", "PermanentOnGuestRecord", "PermanentForGuest" }, null, null, null)
           }));
     }
     #endregion
@@ -82,6 +85,8 @@ namespace HOLMS.Types.Booking.Reservations {
       LodgingReservation = other.lodgingReservation_ != null ? other.LodgingReservation.Clone() : null;
       sourceNoteSubject_ = other.sourceNoteSubject_;
       isFulfilled_ = other.isFulfilled_;
+      permanentOnGuestRecord_ = other.permanentOnGuestRecord_;
+      PermanentForGuest = other.permanentForGuest_ != null ? other.PermanentForGuest.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -177,6 +182,28 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
+    /// <summary>Field number for the "permanent_on_guest_record" field.</summary>
+    public const int PermanentOnGuestRecordFieldNumber = 9;
+    private bool permanentOnGuestRecord_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PermanentOnGuestRecord {
+      get { return permanentOnGuestRecord_; }
+      set {
+        permanentOnGuestRecord_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "permanent_for_guest" field.</summary>
+    public const int PermanentForGuestFieldNumber = 10;
+    private global::HOLMS.Types.CRM.Guests.GuestIndicator permanentForGuest_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.CRM.Guests.GuestIndicator PermanentForGuest {
+      get { return permanentForGuest_; }
+      set {
+        permanentForGuest_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationNote);
@@ -198,6 +225,8 @@ namespace HOLMS.Types.Booking.Reservations {
       if (!object.Equals(LodgingReservation, other.LodgingReservation)) return false;
       if (SourceNoteSubject != other.SourceNoteSubject) return false;
       if (IsFulfilled != other.IsFulfilled) return false;
+      if (PermanentOnGuestRecord != other.PermanentOnGuestRecord) return false;
+      if (!object.Equals(PermanentForGuest, other.PermanentForGuest)) return false;
       return true;
     }
 
@@ -212,6 +241,8 @@ namespace HOLMS.Types.Booking.Reservations {
       if (lodgingReservation_ != null) hash ^= LodgingReservation.GetHashCode();
       if (SourceNoteSubject.Length != 0) hash ^= SourceNoteSubject.GetHashCode();
       if (IsFulfilled != false) hash ^= IsFulfilled.GetHashCode();
+      if (PermanentOnGuestRecord != false) hash ^= PermanentOnGuestRecord.GetHashCode();
+      if (permanentForGuest_ != null) hash ^= PermanentForGuest.GetHashCode();
       return hash;
     }
 
@@ -254,6 +285,14 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(64);
         output.WriteBool(IsFulfilled);
       }
+      if (PermanentOnGuestRecord != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(PermanentOnGuestRecord);
+      }
+      if (permanentForGuest_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(PermanentForGuest);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -282,6 +321,12 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (IsFulfilled != false) {
         size += 1 + 1;
+      }
+      if (PermanentOnGuestRecord != false) {
+        size += 1 + 1;
+      }
+      if (permanentForGuest_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PermanentForGuest);
       }
       return size;
     }
@@ -323,6 +368,15 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (other.IsFulfilled != false) {
         IsFulfilled = other.IsFulfilled;
+      }
+      if (other.PermanentOnGuestRecord != false) {
+        PermanentOnGuestRecord = other.PermanentOnGuestRecord;
+      }
+      if (other.permanentForGuest_ != null) {
+        if (permanentForGuest_ == null) {
+          permanentForGuest_ = new global::HOLMS.Types.CRM.Guests.GuestIndicator();
+        }
+        PermanentForGuest.MergeFrom(other.PermanentForGuest);
       }
     }
 
@@ -373,6 +427,17 @@ namespace HOLMS.Types.Booking.Reservations {
           }
           case 64: {
             IsFulfilled = input.ReadBool();
+            break;
+          }
+          case 72: {
+            PermanentOnGuestRecord = input.ReadBool();
+            break;
+          }
+          case 82: {
+            if (permanentForGuest_ == null) {
+              permanentForGuest_ = new global::HOLMS.Types.CRM.Guests.GuestIndicator();
+            }
+            input.ReadMessage(permanentForGuest_);
             break;
           }
         }
