@@ -82,6 +82,8 @@ namespace HOLMS.Application.Client {
         public ReservationFolioSvc.ReservationFolioSvcClient ReservationFolioSvc { get; protected set; }
         public FolioAuthCleanupSvc.FolioAuthCleanupSvcClient FolioAuthCleanupSvc { get; protected set; }
         public MasterFolioSvc.MasterFolioSvcClient MasterFolioSvc { get; protected set; }
+        public TaxAssessmentSvc.TaxAssessmentSvcClient TaxAssessmentSvc { get; protected set; }
+
         #endregion
 
         #region Operations
@@ -288,6 +290,7 @@ namespace HOLMS.Application.Client {
             ReservationFolioSvc = new ReservationFolioSvc.ReservationFolioSvcClient(_authenticatedChannel);
             FolioAuthCleanupSvc = new FolioAuthCleanupSvc.FolioAuthCleanupSvcClient(_authenticatedChannel);
             MasterFolioSvc = new MasterFolioSvc.MasterFolioSvcClient(_authenticatedChannel);
+            TaxAssessmentSvc = new TaxAssessmentSvc.TaxAssessmentSvcClient(_authenticatedChannel);
             #endregion
 
             #region Operations

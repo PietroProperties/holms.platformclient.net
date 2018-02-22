@@ -417,6 +417,8 @@ namespace HOLMS.Platform.Application.Client {
             }
         }
 
+        public TaxAssessmentSvc.TaxAssessmentSvcClient TaxAssessmentSvc => throw new NotImplementedException();
+
         public string TenancyName {
             get {
                 throw new NotImplementedException();
