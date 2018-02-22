@@ -24,36 +24,36 @@ namespace HOLMS.Types.Folio.RPC {
           string.Concat(
             "CiJmb2xpby9ycGMvdGF4X2Fzc2Vzc21lbnRfc3ZjLnByb3RvEhdob2xtcy50",
             "eXBlcy5ib29raW5nLnJwYxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5w",
-            "cm90bxoeZm9saW8vY2hhcmdlX2NyZWRpdF90eXBlLnByb3RvGiBmb2xpby9m",
-            "b2xpb190YXhfYXNzZXNzbWVudC5wcm90bxowYm9va2luZy9pbmRpY2F0b3Jz",
-            "L2dyb3VwX2Jvb2tpbmdfaW5kaWNhdG9yLnByb3RvGi5ib29raW5nL2luZGlj",
-            "YXRvcnMvcmVzZXJ2YXRpb25faW5kaWNhdG9yLnByb3RvIvoBCjdUYXhBc3Nl",
-            "c3NtZW50U3ZjSHlwb3RoZXRpY2FsR3JvdXBCb29raW5nRm9saW9BZGp1c3Rt",
-            "ZW50EkwKDWdyb3VwX2Jvb2tpbmcYASABKAsyNS5ob2xtcy50eXBlcy5ib29r",
-            "aW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yEj4KD2Ftb3Vu",
-            "dF90ZW5kZXJlZBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25l",
-            "dGFyeUFtb3VudBIxCgR0eXBlGAMgASgOMiMuaG9sbXMudHlwZXMuZm9saW8u",
-            "Q2hhcmdlQ3JlZGl0VHlwZSL2AQo2VGF4QXNzZXNzbWVudFN2Y0h5cG90aGV0",
-            "aWNhbFJlc2VydmF0aW9uRm9saW9BZGp1c3RtZW50EkkKC3Jlc2VydmF0aW9u",
-            "GAEgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2Vy",
-            "dmF0aW9uSW5kaWNhdG9yEj4KD2Ftb3VudF90ZW5kZXJlZBgCIAEoCzIlLmhv",
-            "bG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIxCgR0eXBlGAMg",
-            "ASgOMiMuaG9sbXMudHlwZXMuZm9saW8uQ2hhcmdlQ3JlZGl0VHlwZSJuCjBU",
-            "YXhBc3Nlc3NtZW50U3ZjSHlwb3RoZXRpY2FsQWRqdXN0bWVudEFzc2Vzc21l",
-            "bnQSOgoLYXNzZXNzbWVudHMYASADKAsyJS5ob2xtcy50eXBlcy5mb2xpby5G",
-            "b2xpb1RheEFzc2Vzc21lbnQyrQMKEFRheEFzc2Vzc21lbnRTdmMSzAEKLUFz",
-            "c2Vzc0h5cG90aGV0aWNhbEdyb3VwQm9va2luZ0ZvbGlvQWRqdXN0bWVudBJQ",
-            "LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlRheEFzc2Vzc21lbnRTdmNIeXBv",
-            "dGhldGljYWxHcm91cEJvb2tpbmdGb2xpb0FkanVzdG1lbnQaSS5ob2xtcy50",
-            "eXBlcy5ib29raW5nLnJwYy5UYXhBc3Nlc3NtZW50U3ZjSHlwb3RoZXRpY2Fs",
-            "QWRqdXN0bWVudEFzc2Vzc21lbnQSyQEKK0Fzc2Vzc0h5cG90aGV0aWNhbFJl",
-            "c2VydmFpb25Gb2xpb0FkanVzdG1lbnQSTy5ob2xtcy50eXBlcy5ib29raW5n",
-            "LnJwYy5UYXhBc3Nlc3NtZW50U3ZjSHlwb3RoZXRpY2FsUmVzZXJ2YXRpb25G",
-            "b2xpb0FkanVzdG1lbnQaSS5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5UYXhB",
-            "c3Nlc3NtZW50U3ZjSHlwb3RoZXRpY2FsQWRqdXN0bWVudEFzc2Vzc21lbnRC",
-            "GKoCFUhPTE1TLlR5cGVzLkZvbGlvLlJQQ2IGcHJvdG8z"));
+            "cm90bxoeZm9saW8vY2hhcmdlX2NyZWRpdF90eXBlLnByb3RvGhpmb2xpby90",
+            "YXhfYXNzZXNzbWVudC5wcm90bxowYm9va2luZy9pbmRpY2F0b3JzL2dyb3Vw",
+            "X2Jvb2tpbmdfaW5kaWNhdG9yLnByb3RvGi5ib29raW5nL2luZGljYXRvcnMv",
+            "cmVzZXJ2YXRpb25faW5kaWNhdG9yLnByb3RvIvoBCjdUYXhBc3Nlc3NtZW50",
+            "U3ZjSHlwb3RoZXRpY2FsR3JvdXBCb29raW5nRm9saW9BZGp1c3RtZW50EkwK",
+            "DWdyb3VwX2Jvb2tpbmcYASABKAsyNS5ob2xtcy50eXBlcy5ib29raW5nLmlu",
+            "ZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yEj4KD2Ftb3VudF90ZW5k",
+            "ZXJlZBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFt",
+            "b3VudBIxCgR0eXBlGAMgASgOMiMuaG9sbXMudHlwZXMuZm9saW8uQ2hhcmdl",
+            "Q3JlZGl0VHlwZSL2AQo2VGF4QXNzZXNzbWVudFN2Y0h5cG90aGV0aWNhbFJl",
+            "c2VydmF0aW9uRm9saW9BZGp1c3RtZW50EkkKC3Jlc2VydmF0aW9uGAEgASgL",
+            "MjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9u",
+            "SW5kaWNhdG9yEj4KD2Ftb3VudF90ZW5kZXJlZBgCIAEoCzIlLmhvbG1zLnR5",
+            "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIxCgR0eXBlGAMgASgOMiMu",
+            "aG9sbXMudHlwZXMuZm9saW8uQ2hhcmdlQ3JlZGl0VHlwZSJpCjBUYXhBc3Nl",
+            "c3NtZW50U3ZjSHlwb3RoZXRpY2FsQWRqdXN0bWVudEFzc2Vzc21lbnQSNQoL",
+            "YXNzZXNzbWVudHMYASADKAsyIC5ob2xtcy50eXBlcy5mb2xpby5UYXhBc3Nl",
+            "c3NtZW50Mq0DChBUYXhBc3Nlc3NtZW50U3ZjEswBCi1Bc3Nlc3NIeXBvdGhl",
+            "dGljYWxHcm91cEJvb2tpbmdGb2xpb0FkanVzdG1lbnQSUC5ob2xtcy50eXBl",
+            "cy5ib29raW5nLnJwYy5UYXhBc3Nlc3NtZW50U3ZjSHlwb3RoZXRpY2FsR3Jv",
+            "dXBCb29raW5nRm9saW9BZGp1c3RtZW50GkkuaG9sbXMudHlwZXMuYm9va2lu",
+            "Zy5ycGMuVGF4QXNzZXNzbWVudFN2Y0h5cG90aGV0aWNhbEFkanVzdG1lbnRB",
+            "c3Nlc3NtZW50EskBCitBc3Nlc3NIeXBvdGhldGljYWxSZXNlcnZhaW9uRm9s",
+            "aW9BZGp1c3RtZW50Ek8uaG9sbXMudHlwZXMuYm9va2luZy5ycGMuVGF4QXNz",
+            "ZXNzbWVudFN2Y0h5cG90aGV0aWNhbFJlc2VydmF0aW9uRm9saW9BZGp1c3Rt",
+            "ZW50GkkuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuVGF4QXNzZXNzbWVudFN2",
+            "Y0h5cG90aGV0aWNhbEFkanVzdG1lbnRBc3Nlc3NtZW50QhiqAhVIT0xNUy5U",
+            "eXBlcy5Gb2xpby5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.ChargeCreditTypeReflection.Descriptor, global::HOLMS.Types.Folio.FolioTaxAssessmentReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.ChargeCreditTypeReflection.Descriptor, global::HOLMS.Types.Folio.TaxAssessmentReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.TaxAssessmentSvcHypotheticalGroupBookingFolioAdjustment), global::HOLMS.Types.Folio.RPC.TaxAssessmentSvcHypotheticalGroupBookingFolioAdjustment.Parser, new[]{ "GroupBooking", "AmountTendered", "Type" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.TaxAssessmentSvcHypotheticalReservationFolioAdjustment), global::HOLMS.Types.Folio.RPC.TaxAssessmentSvcHypotheticalReservationFolioAdjustment.Parser, new[]{ "Reservation", "AmountTendered", "Type" }, null, null, null),
@@ -468,11 +468,11 @@ namespace HOLMS.Types.Folio.RPC {
 
     /// <summary>Field number for the "assessments" field.</summary>
     public const int AssessmentsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FolioTaxAssessment> _repeated_assessments_codec
-        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Folio.FolioTaxAssessment.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FolioTaxAssessment> assessments_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FolioTaxAssessment>();
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.TaxAssessment> _repeated_assessments_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Folio.TaxAssessment.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment> assessments_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Folio.FolioTaxAssessment> Assessments {
+    public pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment> Assessments {
       get { return assessments_; }
     }
 

@@ -5,7 +5,7 @@ option csharp_namespace = "HOLMS.Types.Folio.RPC";
 
 import "primitive/monetary_amount.proto";
 import "folio/charge_credit_type.proto";
-import "folio/folio_tax_assessment.proto";
+import "folio/tax_assessment.proto";
 import "booking/indicators/group_booking_indicator.proto";
 import "booking/indicators/reservation_indicator.proto";
 
@@ -22,7 +22,7 @@ message TaxAssessmentSvcHypotheticalReservationFolioAdjustment {
 }
 
 message TaxAssessmentSvcHypotheticalAdjustmentAssessment {
-	repeated .holms.types.folio.FolioTaxAssessment assessments = 1;
+	repeated .holms.types.folio.TaxAssessment assessments = 1;
 }
 	
 

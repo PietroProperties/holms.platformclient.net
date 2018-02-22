@@ -8,7 +8,7 @@ import "folio/folio_card_refund.proto";
 import "folio/folio_card_sale.proto";
 import "folio/folio_check_cash_payment.proto";
 import "folio/folio_indicator.proto";
-import "folio/folio_tax_assessment.proto";
+import "folio/tax_assessment.proto";
 import "primitive/monetary_amount.proto";
 
 message GroupBookingFolioState {
@@ -17,8 +17,8 @@ message GroupBookingFolioState {
 	repeated .holms.types.folio.FolioCardSale card_sales = 3;
 	repeated .holms.types.folio.FolioCheckCashPayment check_cash_payments = 4;
 
-	repeated .holms.types.folio.FolioTaxAssessment current_tax_assessments = 5;
-	repeated .holms.types.folio.FolioTaxAssessment anticipated_ending_tax_assessment = 6;
+	repeated .holms.types.folio.TaxAssessment current_tax_assessments = 5;
+	repeated .holms.types.folio.TaxAssessment anticipated_ending_tax_assessment = 6;
 
 	repeated .holms.types.folio.FolioAtomicCharge native_charges = 7;
 	repeated .holms.types.folio.FolioAtomicCharge imported_from_other_folio_charges = 8;

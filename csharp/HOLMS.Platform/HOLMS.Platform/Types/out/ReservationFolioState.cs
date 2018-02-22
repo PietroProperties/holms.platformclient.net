@@ -26,45 +26,45 @@ namespace HOLMS.Types.Folio {
             "dHlwZXMuZm9saW8aH2ZvbGlvL2ZvbGlvX2F0b21pY19jaGFyZ2UucHJvdG8a",
             "HWZvbGlvL2ZvbGlvX2NhcmRfcmVmdW5kLnByb3RvGhtmb2xpby9mb2xpb19j",
             "YXJkX3NhbGUucHJvdG8aJGZvbGlvL2ZvbGlvX2NoZWNrX2Nhc2hfcGF5bWVu",
-            "dC5wcm90bxogZm9saW8vZm9saW9fdGF4X2Fzc2Vzc21lbnQucHJvdG8aJWZv",
-            "bGlvL3Jlc2VydmF0aW9uX2ZvbGlvX3N1bW1hcnkucHJvdG8aH3ByaW1pdGl2",
-            "ZS9tb25ldGFyeV9hbW91bnQucHJvdG8i4gsKFVJlc2VydmF0aW9uRm9saW9T",
-            "dGF0ZRI/ChFlZmZlY3RpdmVfY2hhcmdlcxgBIAMoCzIkLmhvbG1zLnR5cGVz",
-            "LmZvbGlvLkZvbGlvQXRvbWljQ2hhcmdlEjgKDGNhcmRfcmVmdW5kcxgDIAMo",
-            "CzIiLmhvbG1zLnR5cGVzLmZvbGlvLkZvbGlvQ2FyZFJlZnVuZBI0CgpjYXJk",
-            "X3NhbGVzGAQgAygLMiAuaG9sbXMudHlwZXMuZm9saW8uRm9saW9DYXJkU2Fs",
-            "ZRJFChNjaGVja19jYXNoX3BheW1lbnRzGAUgAygLMiguaG9sbXMudHlwZXMu",
-            "Zm9saW8uRm9saW9DaGVja0Nhc2hQYXltZW50EkYKF2N1cnJlbnRfdGF4X2Fz",
-            "c2Vzc21lbnRzGAYgAygLMiUuaG9sbXMudHlwZXMuZm9saW8uRm9saW9UYXhB",
-            "c3Nlc3NtZW50ElAKIWFudGljaXBhdGVkX2VuZGluZ190YXhfYXNzZXNzbWVu",
-            "dBgHIAMoCzIlLmhvbG1zLnR5cGVzLmZvbGlvLkZvbGlvVGF4QXNzZXNzbWVu",
-            "dBI8Cg5uYXRpdmVfY2hhcmdlcxgJIAMoCzIkLmhvbG1zLnR5cGVzLmZvbGlv",
-            "LkZvbGlvQXRvbWljQ2hhcmdlEk0KH2V4cG9ydGVkX3RvX290aGVyX2ZvbGlv",
-            "X2NoYXJnZXMYCiADKAsyJC5ob2xtcy50eXBlcy5mb2xpby5Gb2xpb0F0b21p",
-            "Y0NoYXJnZRJPCiFpbXBvcnRlZF9mcm9tX290aGVyX2ZvbGlvX2NoYXJnZXMY",
-            "CyADKAsyJC5ob2xtcy50eXBlcy5mb2xpby5Gb2xpb0F0b21pY0NoYXJnZRJC",
-            "ChNjdXJyZW50X25ldF9jaGFyZ2VzGAwgASgLMiUuaG9sbXMudHlwZXMucHJp",
-            "bWl0aXZlLk1vbmV0YXJ5QW1vdW50EkYKF2FudGljaXBhdGVkX25ldF9jaGFy",
-            "Z2VzGA0gASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1v",
-            "dW50Ej4KD3Bvc3RlZF9wYXltZW50cxgOIAEoCzIlLmhvbG1zLnR5cGVzLnBy",
-            "aW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI9Cg5wb3N0ZWRfcmVmdW5kcxgPIAEo",
-            "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJMCh11",
-            "bnVzZWRfcGF5bWVudF9hdXRob3JpemF0aW9ucxgQIAEoCzIlLmhvbG1zLnR5",
-            "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJOCh91bnVzZWRfZ3VhcmFu",
-            "dGVlX2F1dGhvcml6YXRpb25zGBEgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0",
-            "aXZlLk1vbmV0YXJ5QW1vdW50EkUKFmN1cnJlbnRfZHVlX2Zyb21fZ3Vlc3QY",
-            "EiABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQS",
-            "UgojYW50aWNpcGF0ZWRfY2hlY2tvdXRfZHVlX2Zyb21fZ3Vlc3QYEyABKAsy",
-            "JS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSIQoZZ3Jh",
-            "Y2VmdWxfY2xvc3VyZV9wb3NzaWJsZRgUIAEoCBI7CgdzdW1tYXJ5GBUgASgL",
-            "MiouaG9sbXMudHlwZXMuZm9saW8uUmVzZXJ2YXRpb25Gb2xpb1N1bW1hcnkS",
-            "LAokbWFzdGVyX2ZvbGlvX2FjY3J1ZXNfbG9kZ2luZ19jaGFyZ2VzGBYgASgI",
-            "Ei8KJ21hc3Rlcl9mb2xpb19hY2NydWVzX2luY2lkZW50YWxfY2hhcmdlcxgX",
-            "IAEoCBJWCidyZW1haW5pbmdfdGVuZGVyX3JlcXVpcmVkX2Zvcl9ndWFyYW50",
-            "ZWUYGCABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91",
-            "bnRCFKoCEUhPTE1TLlR5cGVzLkZvbGlvYgZwcm90bzM="));
+            "dC5wcm90bxolZm9saW8vcmVzZXJ2YXRpb25fZm9saW9fc3VtbWFyeS5wcm90",
+            "bxoaZm9saW8vdGF4X2Fzc2Vzc21lbnQucHJvdG8aH3ByaW1pdGl2ZS9tb25l",
+            "dGFyeV9hbW91bnQucHJvdG8i2AsKFVJlc2VydmF0aW9uRm9saW9TdGF0ZRI/",
+            "ChFlZmZlY3RpdmVfY2hhcmdlcxgBIAMoCzIkLmhvbG1zLnR5cGVzLmZvbGlv",
+            "LkZvbGlvQXRvbWljQ2hhcmdlEjgKDGNhcmRfcmVmdW5kcxgDIAMoCzIiLmhv",
+            "bG1zLnR5cGVzLmZvbGlvLkZvbGlvQ2FyZFJlZnVuZBI0CgpjYXJkX3NhbGVz",
+            "GAQgAygLMiAuaG9sbXMudHlwZXMuZm9saW8uRm9saW9DYXJkU2FsZRJFChNj",
+            "aGVja19jYXNoX3BheW1lbnRzGAUgAygLMiguaG9sbXMudHlwZXMuZm9saW8u",
+            "Rm9saW9DaGVja0Nhc2hQYXltZW50EkEKF2N1cnJlbnRfdGF4X2Fzc2Vzc21l",
+            "bnRzGAYgAygLMiAuaG9sbXMudHlwZXMuZm9saW8uVGF4QXNzZXNzbWVudBJL",
+            "CiFhbnRpY2lwYXRlZF9lbmRpbmdfdGF4X2Fzc2Vzc21lbnQYByADKAsyIC5o",
+            "b2xtcy50eXBlcy5mb2xpby5UYXhBc3Nlc3NtZW50EjwKDm5hdGl2ZV9jaGFy",
+            "Z2VzGAkgAygLMiQuaG9sbXMudHlwZXMuZm9saW8uRm9saW9BdG9taWNDaGFy",
+            "Z2USTQofZXhwb3J0ZWRfdG9fb3RoZXJfZm9saW9fY2hhcmdlcxgKIAMoCzIk",
+            "LmhvbG1zLnR5cGVzLmZvbGlvLkZvbGlvQXRvbWljQ2hhcmdlEk8KIWltcG9y",
+            "dGVkX2Zyb21fb3RoZXJfZm9saW9fY2hhcmdlcxgLIAMoCzIkLmhvbG1zLnR5",
+            "cGVzLmZvbGlvLkZvbGlvQXRvbWljQ2hhcmdlEkIKE2N1cnJlbnRfbmV0X2No",
+            "YXJnZXMYDCABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlB",
+            "bW91bnQSRgoXYW50aWNpcGF0ZWRfbmV0X2NoYXJnZXMYDSABKAsyJS5ob2xt",
+            "cy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSPgoPcG9zdGVkX3Bh",
+            "eW1lbnRzGA4gASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5",
+            "QW1vdW50Ej0KDnBvc3RlZF9yZWZ1bmRzGA8gASgLMiUuaG9sbXMudHlwZXMu",
+            "cHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkwKHXVudXNlZF9wYXltZW50X2F1",
+            "dGhvcml6YXRpb25zGBAgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1v",
+            "bmV0YXJ5QW1vdW50Ek4KH3VudXNlZF9ndWFyYW50ZWVfYXV0aG9yaXphdGlv",
+            "bnMYESABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91",
+            "bnQSRQoWY3VycmVudF9kdWVfZnJvbV9ndWVzdBgSIAEoCzIlLmhvbG1zLnR5",
+            "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJSCiNhbnRpY2lwYXRlZF9j",
+            "aGVja291dF9kdWVfZnJvbV9ndWVzdBgTIAEoCzIlLmhvbG1zLnR5cGVzLnBy",
+            "aW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIhChlncmFjZWZ1bF9jbG9zdXJlX3Bv",
+            "c3NpYmxlGBQgASgIEjsKB3N1bW1hcnkYFSABKAsyKi5ob2xtcy50eXBlcy5m",
+            "b2xpby5SZXNlcnZhdGlvbkZvbGlvU3VtbWFyeRIsCiRtYXN0ZXJfZm9saW9f",
+            "YWNjcnVlc19sb2RnaW5nX2NoYXJnZXMYFiABKAgSLwonbWFzdGVyX2ZvbGlv",
+            "X2FjY3J1ZXNfaW5jaWRlbnRhbF9jaGFyZ2VzGBcgASgIElYKJ3JlbWFpbmlu",
+            "Z190ZW5kZXJfcmVxdWlyZWRfZm9yX2d1YXJhbnRlZRgYIAEoCzIlLmhvbG1z",
+            "LnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudEIUqgIRSE9MTVMuVHlw",
+            "ZXMuRm9saW9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.FolioTaxAssessmentReflection.Descriptor, global::HOLMS.Types.Folio.ReservationFolioSummaryReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.ReservationFolioSummaryReflection.Descriptor, global::HOLMS.Types.Folio.TaxAssessmentReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges", "RemainingTenderRequiredForGuarantee" }, null, null, null)
           }));
@@ -171,21 +171,21 @@ namespace HOLMS.Types.Folio {
 
     /// <summary>Field number for the "current_tax_assessments" field.</summary>
     public const int CurrentTaxAssessmentsFieldNumber = 6;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FolioTaxAssessment> _repeated_currentTaxAssessments_codec
-        = pb::FieldCodec.ForMessage(50, global::HOLMS.Types.Folio.FolioTaxAssessment.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FolioTaxAssessment> currentTaxAssessments_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FolioTaxAssessment>();
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.TaxAssessment> _repeated_currentTaxAssessments_codec
+        = pb::FieldCodec.ForMessage(50, global::HOLMS.Types.Folio.TaxAssessment.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment> currentTaxAssessments_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Folio.FolioTaxAssessment> CurrentTaxAssessments {
+    public pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment> CurrentTaxAssessments {
       get { return currentTaxAssessments_; }
     }
 
     /// <summary>Field number for the "anticipated_ending_tax_assessment" field.</summary>
     public const int AnticipatedEndingTaxAssessmentFieldNumber = 7;
-    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FolioTaxAssessment> _repeated_anticipatedEndingTaxAssessment_codec
-        = pb::FieldCodec.ForMessage(58, global::HOLMS.Types.Folio.FolioTaxAssessment.Parser);
-    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FolioTaxAssessment> anticipatedEndingTaxAssessment_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FolioTaxAssessment>();
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.TaxAssessment> _repeated_anticipatedEndingTaxAssessment_codec
+        = pb::FieldCodec.ForMessage(58, global::HOLMS.Types.Folio.TaxAssessment.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment> anticipatedEndingTaxAssessment_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::HOLMS.Types.Folio.FolioTaxAssessment> AnticipatedEndingTaxAssessment {
+    public pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment> AnticipatedEndingTaxAssessment {
       get { return anticipatedEndingTaxAssessment_; }
     }
 
