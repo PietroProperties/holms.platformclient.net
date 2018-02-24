@@ -25,32 +25,36 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "CjhyZXBvcnRpbmcvaW5wdXRfcGFyYW1zL21hbmFnZW1lbnRfcmVwb3J0X21h",
             "bmlmZXN0cy5wcm90bxIiaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3Bh",
             "cmFtcxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxoqcHJpbWl0",
-            "aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnByb3RvIqMBCiNNYW5h",
+            "aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnByb3RvIuwCCiNNYW5h",
             "Z2VtZW50Q3VycmVudFRpbWVSZXBvcnRNYW5pZmVzdBIfChd1bm9jY3VwaWVk",
             "X3Jvb21zX3JlcG9ydBgBIAEoCBIcChRmb2xpb19iYWxhbmNlX3JlcG9ydBgC",
             "IAEoCBIjChtsb2RnaW5nX3ZlcmlmaWNhdGlvbl9yZXBvcnQYAyABKAgSGAoQ",
-            "Y29tcF9zdGF5X3JlcG9ydBgEIAEoCCL3AgomTWFuYWdlbWVudENsb2NrVGlt",
-            "ZVJhbmdlUmVwb3J0TWFuaWZlc3QSPAoYcmVwb3J0aW5nX2ludGVydmFsX3N0",
-            "YXJ0GAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBI6ChZyZXBv",
-            "cnRpbmdfaW50ZXJ2YWxfZW5kGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
-            "bWVzdGFtcBIiChpmb2xpb19ncm9zc19jaGFyZ2VzX3JlcG9ydBgDIAEoCBId",
-            "ChVmb2xpb19wYXltZW50c19yZXBvcnQYBCABKAgSHgoWY2FsbF9hY2NvdW50",
-            "aW5nX3JlcG9ydBgFIAEoCBImCh5sZWRnZXJfYWN0aXZpdHlfc3VtbWFyeV9y",
-            "ZXBvcnQYBiABKAgSJQodbGVkZ2VyX2pvdXJuYWxfZW50cmllc19yZXBvcnQY",
-            "ByABKAgSIQoZYm9va2luZ3NfYnlfcGVyaW9kX3JlcG9ydBgIIAEoCCKoAgok",
-            "TWFuYWdlbWVudE9wc2RhdGVSYW5nZVJlcG9ydE1hbmlmZXN0EkIKCmRhdGVf",
-            "cmFuZ2UYASABKAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNp",
-            "dmVPcHNkYXRlUmFuZ2USIgoacm9vbV91c2FnZV9kZXRhaWxlZF9yZXBvcnQY",
-            "AiABKAgSIQoZcm9vbV91c2FnZV9zdW1tYXJ5X3JlcG9ydBgDIAEoCBIpCiFw",
-            "bGFubmVkX2xvZGdpbmdfcmV2ZW51ZV9ieV9zb3VyY2UYBCABKAgSJgoeZm9s",
-            "aW9faW1tZWRpYXRlX2NoYXJnZXNfcmVwb3J0GAUgASgIEiIKGnByb3BlcnR5",
-            "X3N0YXRpc3RpY3NfcmVwb3J0GAYgASgIQj1aFnJlcG9ydGluZy9pbnB1dF9w",
-            "YXJhbXOqAiJIT0xNUy5UeXBlcy5SZXBvcnRpbmcuUmVwb3J0UGFyYW1zYgZw",
-            "cm90bzM="));
+            "Y29tcF9zdGF5X3JlcG9ydBgEIAEoCBIcChRwcm9wX3N0YXRzX3llc3RlcmRh",
+            "eRgFIAEoCBIeChZwcm9wX3N0YXRzX3RyYWlsaW5nXzdkGAYgASgIEh8KF3By",
+            "b3Bfc3RhdHNfdHJhaWxpbmdfMjhkGAcgASgIEiEKGXByb3Bfc3RhdHNfbGFz",
+            "dF9mdWxsX3dlZWsYCCABKAgSIgoacHJvcF9zdGF0c19sYXN0X2Z1bGxfbW9u",
+            "dGgYCSABKAgSIQoZcHJvcF9zdGF0c19sYXN0X2Z1bGxfeWVhchgKIAEoCCL3",
+            "AgomTWFuYWdlbWVudENsb2NrVGltZVJhbmdlUmVwb3J0TWFuaWZlc3QSPAoY",
+            "cmVwb3J0aW5nX2ludGVydmFsX3N0YXJ0GAEgASgLMhouZ29vZ2xlLnByb3Rv",
+            "YnVmLlRpbWVzdGFtcBI6ChZyZXBvcnRpbmdfaW50ZXJ2YWxfZW5kGAIgASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIiChpmb2xpb19ncm9zc19j",
+            "aGFyZ2VzX3JlcG9ydBgDIAEoCBIdChVmb2xpb19wYXltZW50c19yZXBvcnQY",
+            "BCABKAgSHgoWY2FsbF9hY2NvdW50aW5nX3JlcG9ydBgFIAEoCBImCh5sZWRn",
+            "ZXJfYWN0aXZpdHlfc3VtbWFyeV9yZXBvcnQYBiABKAgSJQodbGVkZ2VyX2pv",
+            "dXJuYWxfZW50cmllc19yZXBvcnQYByABKAgSIQoZYm9va2luZ3NfYnlfcGVy",
+            "aW9kX3JlcG9ydBgIIAEoCCKoAgokTWFuYWdlbWVudE9wc2RhdGVSYW5nZVJl",
+            "cG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5ob2xtcy50eXBl",
+            "cy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2USIgoacm9vbV91",
+            "c2FnZV9kZXRhaWxlZF9yZXBvcnQYAiABKAgSIQoZcm9vbV91c2FnZV9zdW1t",
+            "YXJ5X3JlcG9ydBgDIAEoCBIpCiFwbGFubmVkX2xvZGdpbmdfcmV2ZW51ZV9i",
+            "eV9zb3VyY2UYBCABKAgSJgoeZm9saW9faW1tZWRpYXRlX2NoYXJnZXNfcmVw",
+            "b3J0GAUgASgIEiIKGnByb3BlcnR5X3N0YXRpc3RpY3NfcmVwb3J0GAYgASgI",
+            "Qj1aFnJlcG9ydGluZy9pbnB1dF9wYXJhbXOqAiJIT0xNUy5UeXBlcy5SZXBv",
+            "cnRpbmcuUmVwb3J0UGFyYW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport", "PropStatsYesterday", "PropStatsTrailing7D", "PropStatsTrailing28D", "PropStatsLastFullWeek", "PropStatsLastFullMonth", "PropStatsLastFullYear" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest.Parser, new[]{ "ReportingIntervalStart", "ReportingIntervalEnd", "FolioGrossChargesReport", "FolioPaymentsReport", "CallAccountingReport", "LedgerActivitySummaryReport", "LedgerJournalEntriesReport", "BookingsByPeriodReport" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport", "PlannedLodgingRevenueBySource", "FolioImmediateChargesReport", "PropertyStatisticsReport" }, null, null, null)
           }));
@@ -87,6 +91,12 @@ namespace HOLMS.Types.Reporting.ReportParams {
       folioBalanceReport_ = other.folioBalanceReport_;
       lodgingVerificationReport_ = other.lodgingVerificationReport_;
       compStayReport_ = other.compStayReport_;
+      propStatsYesterday_ = other.propStatsYesterday_;
+      propStatsTrailing7D_ = other.propStatsTrailing7D_;
+      propStatsTrailing28D_ = other.propStatsTrailing28D_;
+      propStatsLastFullWeek_ = other.propStatsLastFullWeek_;
+      propStatsLastFullMonth_ = other.propStatsLastFullMonth_;
+      propStatsLastFullYear_ = other.propStatsLastFullYear_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -138,6 +148,72 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
+    /// <summary>Field number for the "prop_stats_yesterday" field.</summary>
+    public const int PropStatsYesterdayFieldNumber = 5;
+    private bool propStatsYesterday_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PropStatsYesterday {
+      get { return propStatsYesterday_; }
+      set {
+        propStatsYesterday_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "prop_stats_trailing_7d" field.</summary>
+    public const int PropStatsTrailing7DFieldNumber = 6;
+    private bool propStatsTrailing7D_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PropStatsTrailing7D {
+      get { return propStatsTrailing7D_; }
+      set {
+        propStatsTrailing7D_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "prop_stats_trailing_28d" field.</summary>
+    public const int PropStatsTrailing28DFieldNumber = 7;
+    private bool propStatsTrailing28D_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PropStatsTrailing28D {
+      get { return propStatsTrailing28D_; }
+      set {
+        propStatsTrailing28D_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "prop_stats_last_full_week" field.</summary>
+    public const int PropStatsLastFullWeekFieldNumber = 8;
+    private bool propStatsLastFullWeek_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PropStatsLastFullWeek {
+      get { return propStatsLastFullWeek_; }
+      set {
+        propStatsLastFullWeek_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "prop_stats_last_full_month" field.</summary>
+    public const int PropStatsLastFullMonthFieldNumber = 9;
+    private bool propStatsLastFullMonth_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PropStatsLastFullMonth {
+      get { return propStatsLastFullMonth_; }
+      set {
+        propStatsLastFullMonth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "prop_stats_last_full_year" field.</summary>
+    public const int PropStatsLastFullYearFieldNumber = 10;
+    private bool propStatsLastFullYear_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PropStatsLastFullYear {
+      get { return propStatsLastFullYear_; }
+      set {
+        propStatsLastFullYear_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ManagementCurrentTimeReportManifest);
@@ -155,6 +231,12 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (FolioBalanceReport != other.FolioBalanceReport) return false;
       if (LodgingVerificationReport != other.LodgingVerificationReport) return false;
       if (CompStayReport != other.CompStayReport) return false;
+      if (PropStatsYesterday != other.PropStatsYesterday) return false;
+      if (PropStatsTrailing7D != other.PropStatsTrailing7D) return false;
+      if (PropStatsTrailing28D != other.PropStatsTrailing28D) return false;
+      if (PropStatsLastFullWeek != other.PropStatsLastFullWeek) return false;
+      if (PropStatsLastFullMonth != other.PropStatsLastFullMonth) return false;
+      if (PropStatsLastFullYear != other.PropStatsLastFullYear) return false;
       return true;
     }
 
@@ -165,6 +247,12 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (FolioBalanceReport != false) hash ^= FolioBalanceReport.GetHashCode();
       if (LodgingVerificationReport != false) hash ^= LodgingVerificationReport.GetHashCode();
       if (CompStayReport != false) hash ^= CompStayReport.GetHashCode();
+      if (PropStatsYesterday != false) hash ^= PropStatsYesterday.GetHashCode();
+      if (PropStatsTrailing7D != false) hash ^= PropStatsTrailing7D.GetHashCode();
+      if (PropStatsTrailing28D != false) hash ^= PropStatsTrailing28D.GetHashCode();
+      if (PropStatsLastFullWeek != false) hash ^= PropStatsLastFullWeek.GetHashCode();
+      if (PropStatsLastFullMonth != false) hash ^= PropStatsLastFullMonth.GetHashCode();
+      if (PropStatsLastFullYear != false) hash ^= PropStatsLastFullYear.GetHashCode();
       return hash;
     }
 
@@ -191,6 +279,30 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(32);
         output.WriteBool(CompStayReport);
       }
+      if (PropStatsYesterday != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(PropStatsYesterday);
+      }
+      if (PropStatsTrailing7D != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(PropStatsTrailing7D);
+      }
+      if (PropStatsTrailing28D != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(PropStatsTrailing28D);
+      }
+      if (PropStatsLastFullWeek != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(PropStatsLastFullWeek);
+      }
+      if (PropStatsLastFullMonth != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(PropStatsLastFullMonth);
+      }
+      if (PropStatsLastFullYear != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(PropStatsLastFullYear);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -206,6 +318,24 @@ namespace HOLMS.Types.Reporting.ReportParams {
         size += 1 + 1;
       }
       if (CompStayReport != false) {
+        size += 1 + 1;
+      }
+      if (PropStatsYesterday != false) {
+        size += 1 + 1;
+      }
+      if (PropStatsTrailing7D != false) {
+        size += 1 + 1;
+      }
+      if (PropStatsTrailing28D != false) {
+        size += 1 + 1;
+      }
+      if (PropStatsLastFullWeek != false) {
+        size += 1 + 1;
+      }
+      if (PropStatsLastFullMonth != false) {
+        size += 1 + 1;
+      }
+      if (PropStatsLastFullYear != false) {
         size += 1 + 1;
       }
       return size;
@@ -227,6 +357,24 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
       if (other.CompStayReport != false) {
         CompStayReport = other.CompStayReport;
+      }
+      if (other.PropStatsYesterday != false) {
+        PropStatsYesterday = other.PropStatsYesterday;
+      }
+      if (other.PropStatsTrailing7D != false) {
+        PropStatsTrailing7D = other.PropStatsTrailing7D;
+      }
+      if (other.PropStatsTrailing28D != false) {
+        PropStatsTrailing28D = other.PropStatsTrailing28D;
+      }
+      if (other.PropStatsLastFullWeek != false) {
+        PropStatsLastFullWeek = other.PropStatsLastFullWeek;
+      }
+      if (other.PropStatsLastFullMonth != false) {
+        PropStatsLastFullMonth = other.PropStatsLastFullMonth;
+      }
+      if (other.PropStatsLastFullYear != false) {
+        PropStatsLastFullYear = other.PropStatsLastFullYear;
       }
     }
 
@@ -252,6 +400,30 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 32: {
             CompStayReport = input.ReadBool();
+            break;
+          }
+          case 40: {
+            PropStatsYesterday = input.ReadBool();
+            break;
+          }
+          case 48: {
+            PropStatsTrailing7D = input.ReadBool();
+            break;
+          }
+          case 56: {
+            PropStatsTrailing28D = input.ReadBool();
+            break;
+          }
+          case 64: {
+            PropStatsLastFullWeek = input.ReadBool();
+            break;
+          }
+          case 72: {
+            PropStatsLastFullMonth = input.ReadBool();
+            break;
+          }
+          case 80: {
+            PropStatsLastFullYear = input.ReadBool();
             break;
           }
         }
