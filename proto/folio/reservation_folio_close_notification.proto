@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package holms.types.folio;
+option csharp_namespace = "HOLMS.Types.Folio";
+
+import "booking/indicators/reservation_indicator.proto";
+
+message ReservationFolioCloseNotification {
+	string j_w_token = 1;
+	holms.types.booking.indicators.ReservationIndicator reservation = 2;
+}
