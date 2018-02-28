@@ -4,6 +4,6 @@ using System.Text;
 
 namespace HOLMS.Platform.Types.Topics {
     public class FolioContextTopics {
-        public static string ReservationsFolioClose = "folio.reservation_close";
+        public static string ReservationsFolioClosed = "folio.reservation_closed";
     }
 }
