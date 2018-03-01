@@ -24,15 +24,17 @@ namespace HOLMS.Types.Folio {
           string.Concat(
             "CjBmb2xpby9yZXNlcnZhdGlvbl9mb2xpb19jbG9zZV9ub3RpZmljYXRpb24u",
             "cHJvdG8SEWhvbG1zLnR5cGVzLmZvbGlvGi5ib29raW5nL2luZGljYXRvcnMv",
-            "cmVzZXJ2YXRpb25faW5kaWNhdG9yLnByb3RvGiBjcm0vZ3Vlc3RzL2d1ZXN0",
-            "X2luZGljYXRvci5wcm90byKBAQohUmVzZXJ2YXRpb25Gb2xpb0Nsb3NlTm90",
-            "aWZpY2F0aW9uEhEKCWpfd190b2tlbhgBIAEoCRJJCgtyZXNlcnZhdGlvbhgC",
-            "IAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZh",
-            "dGlvbkluZGljYXRvckIUqgIRSE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
+            "cmVzZXJ2YXRpb25faW5kaWNhdG9yLnByb3RvGipwcmltaXRpdmUvcGJfaW5j",
+            "bHVzaXZlX29wc2RhdGVfcmFuZ2UucHJvdG8izgEKIVJlc2VydmF0aW9uRm9s",
+            "aW9DbG9zZU5vdGlmaWNhdGlvbhIRCglqX3dfdG9rZW4YASABKAkSSQoLcmVz",
+            "ZXJ2YXRpb24YAiABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRv",
+            "cnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISSwoTaW52b2ljZWRfZGF0ZV9yYW5n",
+            "ZRgDIAEoCzIuLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkluY2x1c2l2ZU9w",
+            "c2RhdGVSYW5nZUIUqgIRSE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioCloseNotification), global::HOLMS.Types.Folio.ReservationFolioCloseNotification.Parser, new[]{ "JWToken", "Reservation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioCloseNotification), global::HOLMS.Types.Folio.ReservationFolioCloseNotification.Parser, new[]{ "JWToken", "Reservation", "InvoicedDateRange" }, null, null, null)
           }));
     }
     #endregion
@@ -65,6 +67,7 @@ namespace HOLMS.Types.Folio {
     public ReservationFolioCloseNotification(ReservationFolioCloseNotification other) : this() {
       jWToken_ = other.jWToken_;
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
+      InvoicedDateRange = other.invoicedDateRange_ != null ? other.InvoicedDateRange.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -94,6 +97,17 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "invoiced_date_range" field.</summary>
+    public const int InvoicedDateRangeFieldNumber = 3;
+    private global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange invoicedDateRange_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange InvoicedDateRange {
+      get { return invoicedDateRange_; }
+      set {
+        invoicedDateRange_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationFolioCloseNotification);
@@ -109,6 +123,7 @@ namespace HOLMS.Types.Folio {
       }
       if (JWToken != other.JWToken) return false;
       if (!object.Equals(Reservation, other.Reservation)) return false;
+      if (!object.Equals(InvoicedDateRange, other.InvoicedDateRange)) return false;
       return true;
     }
 
@@ -117,6 +132,7 @@ namespace HOLMS.Types.Folio {
       int hash = 1;
       if (JWToken.Length != 0) hash ^= JWToken.GetHashCode();
       if (reservation_ != null) hash ^= Reservation.GetHashCode();
+      if (invoicedDateRange_ != null) hash ^= InvoicedDateRange.GetHashCode();
       return hash;
     }
 
@@ -135,6 +151,10 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(18);
         output.WriteMessage(Reservation);
       }
+      if (invoicedDateRange_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(InvoicedDateRange);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -145,6 +165,9 @@ namespace HOLMS.Types.Folio {
       }
       if (reservation_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Reservation);
+      }
+      if (invoicedDateRange_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(InvoicedDateRange);
       }
       return size;
     }
@@ -162,6 +185,12 @@ namespace HOLMS.Types.Folio {
           reservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
         }
         Reservation.MergeFrom(other.Reservation);
+      }
+      if (other.invoicedDateRange_ != null) {
+        if (invoicedDateRange_ == null) {
+          invoicedDateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
+        }
+        InvoicedDateRange.MergeFrom(other.InvoicedDateRange);
       }
     }
 
@@ -182,6 +211,13 @@ namespace HOLMS.Types.Folio {
               reservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
             }
             input.ReadMessage(reservation_);
+            break;
+          }
+          case 26: {
+            if (invoicedDateRange_ == null) {
+              invoicedDateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
+            }
+            input.ReadMessage(invoicedDateRange_);
             break;
           }
         }
