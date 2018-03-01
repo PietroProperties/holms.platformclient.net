@@ -7,7 +7,6 @@ import "folio/folio_atomic_charge.proto";
 import "folio/folio_card_refund.proto";
 import "folio/folio_card_sale.proto";
 import "folio/folio_check_cash_payment.proto";
-import "folio/folio_indicator.proto";
 import "folio/tax_assessment.proto";
 import "primitive/monetary_amount.proto";
 
@@ -21,14 +20,16 @@ message GroupBookingFolioState {
 	repeated .holms.types.folio.TaxAssessment anticipated_ending_tax_assessment = 6;
 
 	repeated .holms.types.folio.FolioAtomicCharge native_charges = 7;
-	repeated .holms.types.folio.FolioAtomicCharge imported_from_other_folio_charges = 8;
+        repeated .holms.types.folio.FolioAtomicCharge exported_to_other_folio_charges = 8;
+	repeated .holms.types.folio.FolioAtomicCharge imported_from_other_folio_charges = 9;
 
-	.holms.types.primitive.MonetaryAmount current_charges = 9;
-	.holms.types.primitive.MonetaryAmount anticipated_charges = 10;
-	.holms.types.primitive.MonetaryAmount posted_payments = 11;
-	.holms.types.primitive.MonetaryAmount posted_refunds = 12;
+	.holms.types.primitive.MonetaryAmount current_charges = 10;
+	.holms.types.primitive.MonetaryAmount anticipated_charges = 11;
+	.holms.types.primitive.MonetaryAmount posted_payments = 12;
+	.holms.types.primitive.MonetaryAmount posted_refunds = 13;
+        .holms.types.primitive.MonetaryAmount unused_payment_authorizations = 14;
 
-	.holms.types.primitive.MonetaryAmount current_due_from_group = 13;
-	.holms.types.primitive.MonetaryAmount anticipated_due_from_group = 14;
-	.holms.types.folio.FolioIndicator entity_id = 15;
+	.holms.types.primitive.MonetaryAmount current_due_from_group = 15;
+	.holms.types.primitive.MonetaryAmount anticipated_settlement_due_from_group = 16;
 }
+

@@ -197,15 +197,13 @@ service ReservationFolioSvc {
 	rpc GetFolioSummaries(ReservationFolioSvcGetSummariesRequest)
 		returns(ReservationFolioSvcGetSummariesResponse);
 
-	// New activity
-	// Attach new sale to this reservation
+	// Cards
 	rpc AddCardAuthorizationFromStoredCard(CardAuthorizationFromStoredCardRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromPresentedCard(CardAuthorizationFromPresentCardRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromNotPresentCard(CardAuthorizationFromNotPresentCardRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
-	// Attach new refund to this reservation
 	rpc RefundTokenizedCard(ReservationFolioSvcPaymentCardRefundRequest)
 		returns (ReservationFolioSvcRefundResponse);
 		
@@ -221,6 +219,8 @@ service ReservationFolioSvc {
 		returns (ReservationFolioSvcPostCashPaymentResponse);
 	rpc CancelCashCheckPayment(FolioCheckCashPaymentIndicator)
 		returns (google.protobuf.Empty);
+	rpc CancelCardPayment(holms.types.money.cards.transactions.PaymentCardSaleIndicator)
+		returns (ReservationFolioSvcCancelPaymentResponse);
 
 	// Post a correction to the reservation folio
 	rpc PostLodgingChargeCorrection (ReservationFolioSvcPostLodgingChargeCorrectionRequest)
@@ -229,7 +229,6 @@ service ReservationFolioSvc {
 		returns (google.protobuf.Empty);
 	rpc PostMiscChargeCorrection (ReservationFolioSvcPostMiscChargeCorrectionRequest)
 		returns (google.protobuf.Empty);
-	rpc CancelPayment(holms.types.money.cards.transactions.PaymentCardSaleIndicator)
-		returns (ReservationFolioSvcCancelPaymentResponse);
 
 }
+

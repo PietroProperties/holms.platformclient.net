@@ -14,23 +14,21 @@ import "primitive/monetary_amount.proto";
 
 message ReservationFolioState {
 	repeated .holms.types.folio.FolioAtomicCharge effective_charges = 1;
-	// deprecated adjustments = 2
-	repeated .holms.types.folio.FolioCardRefund card_refunds = 3;
-	repeated .holms.types.folio.FolioCardSale card_sales = 4;
-	repeated .holms.types.folio.FolioCheckCashPayment check_cash_payments = 5;
+	repeated .holms.types.folio.FolioCardRefund card_refunds = 2;
+	repeated .holms.types.folio.FolioCardSale card_sales = 3;
+	repeated .holms.types.folio.FolioCheckCashPayment check_cash_payments = 4;
 
-	repeated .holms.types.folio.TaxAssessment current_tax_assessments = 6;
-	repeated .holms.types.folio.TaxAssessment anticipated_ending_tax_assessment = 7;
+	repeated .holms.types.folio.TaxAssessment current_tax_assessments = 5;
+	repeated .holms.types.folio.TaxAssessment anticipated_ending_tax_assessment = 6;
 
-	// deprecated master folio status = 8
-	repeated .holms.types.folio.FolioAtomicCharge native_charges = 9;
-	repeated .holms.types.folio.FolioAtomicCharge exported_to_other_folio_charges = 10;
-	repeated .holms.types.folio.FolioAtomicCharge imported_from_other_folio_charges = 11;
+	repeated .holms.types.folio.FolioAtomicCharge native_charges = 7;
+	repeated .holms.types.folio.FolioAtomicCharge exported_to_other_folio_charges = 8;
+	repeated .holms.types.folio.FolioAtomicCharge imported_from_other_folio_charges = 9;
 
-	.holms.types.primitive.MonetaryAmount current_net_charges = 12;
-	.holms.types.primitive.MonetaryAmount anticipated_net_charges = 13;
-	.holms.types.primitive.MonetaryAmount posted_payments = 14;
-	.holms.types.primitive.MonetaryAmount posted_refunds = 15;
+	.holms.types.primitive.MonetaryAmount current_charges = 10;
+	.holms.types.primitive.MonetaryAmount anticipated_charges = 11;
+	.holms.types.primitive.MonetaryAmount posted_payments = 12;
+	.holms.types.primitive.MonetaryAmount posted_refunds = 13;
 	.holms.types.primitive.MonetaryAmount unused_payment_authorizations = 16;
 	.holms.types.primitive.MonetaryAmount unused_guarantee_authorizations = 17;
 
