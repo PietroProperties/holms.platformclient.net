@@ -7,6 +7,7 @@ import "folio/folio_atomic_charge.proto";
 import "folio/folio_card_refund.proto";
 import "folio/folio_card_sale.proto";
 import "folio/folio_check_cash_payment.proto";
+import "folio/folio_indicator.proto";
 import "folio/tax_assessment.proto";
 import "primitive/monetary_amount.proto";
 
@@ -31,5 +32,7 @@ message GroupBookingFolioState {
 
 	.holms.types.primitive.MonetaryAmount current_due_from_group = 15;
 	.holms.types.primitive.MonetaryAmount anticipated_settlement_due_from_group = 16;
+
+        repeated .holms.types.folio.FolioIndicator client_folios = 17;
 }
 
