@@ -4,10 +4,10 @@ package holms.types.folio;
 option csharp_namespace = "HOLMS.Types.Folio";
 
 import "booking/indicators/reservation_indicator.proto";
-import "primitive/pb_inclusive_opsdate_range.proto";
+import "google/protobuf/Timestamp.proto";
 
 message ReservationFolioCloseNotification {
 	string j_w_token = 1;
 	holms.types.booking.indicators.ReservationIndicator reservation = 2;
-	holms.types.primitive.PbInclusiveOpsdateRange invoiced_date_range = 3;
+	google.protobuf.Timestamp previously_closed_at = 3;
 }
