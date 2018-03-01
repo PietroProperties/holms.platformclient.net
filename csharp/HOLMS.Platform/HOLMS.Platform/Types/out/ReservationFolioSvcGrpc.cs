@@ -33,11 +33,11 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostCashPaymentResponse> __Marshaller_ReservationFolioSvcPostCashPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostCashPaymentResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator> __Marshaller_FolioCheckCashPaymentIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator> __Marshaller_PaymentCardSaleIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> __Marshaller_ReservationFolioSvcCancelPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostLodgingChargeCorrectionRequest> __Marshaller_ReservationFolioSvcPostLodgingChargeCorrectionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostLodgingChargeCorrectionRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostIncidentalChargeCorrectionRequest> __Marshaller_ReservationFolioSvcPostIncidentalChargeCorrectionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostIncidentalChargeCorrectionRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest> __Marshaller_ReservationFolioSvcPostMiscChargeCorrectionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator> __Marshaller_PaymentCardSaleIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> __Marshaller_ReservationFolioSvcCancelPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2> __Method_GetReservationFolioState = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponsev2>(
         MethodType.Unary,
@@ -123,6 +123,13 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_FolioCheckCashPaymentIndicator,
         __Marshaller_Empty);
 
+    static readonly Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> __Method_CancelCardPayment = new Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "CancelCardPayment",
+        __Marshaller_PaymentCardSaleIndicator,
+        __Marshaller_ReservationFolioSvcCancelPaymentResponse);
+
     static readonly Method<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostLodgingChargeCorrectionRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_PostLodgingChargeCorrection = new Method<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostLodgingChargeCorrectionRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         MethodType.Unary,
         __ServiceName,
@@ -143,13 +150,6 @@ namespace HOLMS.Types.Folio.RPC {
         "PostMiscChargeCorrection",
         __Marshaller_ReservationFolioSvcPostMiscChargeCorrectionRequest,
         __Marshaller_Empty);
-
-    static readonly Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> __Method_CancelPayment = new Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse>(
-        MethodType.Unary,
-        __ServiceName,
-        "CancelPayment",
-        __Marshaller_PaymentCardSaleIndicator,
-        __Marshaller_ReservationFolioSvcCancelPaymentResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -179,8 +179,7 @@ namespace HOLMS.Types.Folio.RPC {
       }
 
       /// <summary>
-      ///  New activity
-      ///  Attach new sale to this reservation
+      ///  Cards
       /// </summary>
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> AddCardAuthorizationFromStoredCard(global::HOLMS.Types.Folio.RPC.CardAuthorizationFromStoredCardRequest request, ServerCallContext context)
       {
@@ -197,9 +196,6 @@ namespace HOLMS.Types.Folio.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      /// <summary>
-      ///  Attach new refund to this reservation
-      /// </summary>
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcRefundResponse> RefundTokenizedCard(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPaymentCardRefundRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
@@ -233,6 +229,11 @@ namespace HOLMS.Types.Folio.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> CancelCardPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
       /// <summary>
       ///  Post a correction to the reservation folio
       /// </summary>
@@ -247,11 +248,6 @@ namespace HOLMS.Types.Folio.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> PostMiscChargeCorrection(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> CancelPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -342,32 +338,28 @@ namespace HOLMS.Types.Folio.RPC {
         return CallInvoker.AsyncUnaryCall(__Method_GetFolioSummaries, null, options, request);
       }
       /// <summary>
-      ///  New activity
-      ///  Attach new sale to this reservation
+      ///  Cards
       /// </summary>
       public virtual global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse AddCardAuthorizationFromStoredCard(global::HOLMS.Types.Folio.RPC.CardAuthorizationFromStoredCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AddCardAuthorizationFromStoredCard(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///  New activity
-      ///  Attach new sale to this reservation
+      ///  Cards
       /// </summary>
       public virtual global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse AddCardAuthorizationFromStoredCard(global::HOLMS.Types.Folio.RPC.CardAuthorizationFromStoredCardRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AddCardAuthorizationFromStoredCard, null, options, request);
       }
       /// <summary>
-      ///  New activity
-      ///  Attach new sale to this reservation
+      ///  Cards
       /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> AddCardAuthorizationFromStoredCardAsync(global::HOLMS.Types.Folio.RPC.CardAuthorizationFromStoredCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AddCardAuthorizationFromStoredCardAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///  New activity
-      ///  Attach new sale to this reservation
+      ///  Cards
       /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> AddCardAuthorizationFromStoredCardAsync(global::HOLMS.Types.Folio.RPC.CardAuthorizationFromStoredCardRequest request, CallOptions options)
       {
@@ -405,30 +397,18 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_AddCardAuthorizationFromNotPresentCard, null, options, request);
       }
-      /// <summary>
-      ///  Attach new refund to this reservation
-      /// </summary>
       public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcRefundResponse RefundTokenizedCard(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPaymentCardRefundRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return RefundTokenizedCard(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      ///  Attach new refund to this reservation
-      /// </summary>
       public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcRefundResponse RefundTokenizedCard(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPaymentCardRefundRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_RefundTokenizedCard, null, options, request);
       }
-      /// <summary>
-      ///  Attach new refund to this reservation
-      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcRefundResponse> RefundTokenizedCardAsync(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPaymentCardRefundRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return RefundTokenizedCardAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      ///  Attach new refund to this reservation
-      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcRefundResponse> RefundTokenizedCardAsync(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPaymentCardRefundRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_RefundTokenizedCard, null, options, request);
@@ -525,6 +505,22 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_CancelCashCheckPayment, null, options, request);
       }
+      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse CancelCardPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return CancelCardPayment(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse CancelCardPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CancelCardPayment, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> CancelCardPaymentAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return CancelCardPaymentAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> CancelCardPaymentAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CancelCardPayment, null, options, request);
+      }
       /// <summary>
       ///  Post a correction to the reservation folio
       /// </summary>
@@ -585,22 +581,6 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostMiscChargeCorrection, null, options, request);
       }
-      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse CancelPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return CancelPayment(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse CancelPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_CancelPayment, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> CancelPaymentAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return CancelPaymentAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcCancelPaymentResponse> CancelPaymentAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_CancelPayment, null, options, request);
-      }
       protected override ReservationFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new ReservationFolioSvcClient(configuration);
@@ -623,10 +603,10 @@ namespace HOLMS.Types.Folio.RPC {
           .AddMethod(__Method_PostCheckPayment, serviceImpl.PostCheckPayment)
           .AddMethod(__Method_PostCashPayment, serviceImpl.PostCashPayment)
           .AddMethod(__Method_CancelCashCheckPayment, serviceImpl.CancelCashCheckPayment)
+          .AddMethod(__Method_CancelCardPayment, serviceImpl.CancelCardPayment)
           .AddMethod(__Method_PostLodgingChargeCorrection, serviceImpl.PostLodgingChargeCorrection)
           .AddMethod(__Method_PostIncidentalChargeCorrection, serviceImpl.PostIncidentalChargeCorrection)
-          .AddMethod(__Method_PostMiscChargeCorrection, serviceImpl.PostMiscChargeCorrection)
-          .AddMethod(__Method_CancelPayment, serviceImpl.CancelPayment).Build();
+          .AddMethod(__Method_PostMiscChargeCorrection, serviceImpl.PostMiscChargeCorrection).Build();
     }
 
   }

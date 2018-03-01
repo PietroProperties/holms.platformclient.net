@@ -28,45 +28,45 @@ namespace HOLMS.Types.Folio {
             "YXJkX3NhbGUucHJvdG8aJGZvbGlvL2ZvbGlvX2NoZWNrX2Nhc2hfcGF5bWVu",
             "dC5wcm90bxolZm9saW8vcmVzZXJ2YXRpb25fZm9saW9fc3VtbWFyeS5wcm90",
             "bxoaZm9saW8vdGF4X2Fzc2Vzc21lbnQucHJvdG8aH3ByaW1pdGl2ZS9tb25l",
-            "dGFyeV9hbW91bnQucHJvdG8i2AsKFVJlc2VydmF0aW9uRm9saW9TdGF0ZRI/",
+            "dGFyeV9hbW91bnQucHJvdG8i0AsKFVJlc2VydmF0aW9uRm9saW9TdGF0ZRI/",
             "ChFlZmZlY3RpdmVfY2hhcmdlcxgBIAMoCzIkLmhvbG1zLnR5cGVzLmZvbGlv",
-            "LkZvbGlvQXRvbWljQ2hhcmdlEjgKDGNhcmRfcmVmdW5kcxgDIAMoCzIiLmhv",
+            "LkZvbGlvQXRvbWljQ2hhcmdlEjgKDGNhcmRfcmVmdW5kcxgCIAMoCzIiLmhv",
             "bG1zLnR5cGVzLmZvbGlvLkZvbGlvQ2FyZFJlZnVuZBI0CgpjYXJkX3NhbGVz",
-            "GAQgAygLMiAuaG9sbXMudHlwZXMuZm9saW8uRm9saW9DYXJkU2FsZRJFChNj",
-            "aGVja19jYXNoX3BheW1lbnRzGAUgAygLMiguaG9sbXMudHlwZXMuZm9saW8u",
+            "GAMgAygLMiAuaG9sbXMudHlwZXMuZm9saW8uRm9saW9DYXJkU2FsZRJFChNj",
+            "aGVja19jYXNoX3BheW1lbnRzGAQgAygLMiguaG9sbXMudHlwZXMuZm9saW8u",
             "Rm9saW9DaGVja0Nhc2hQYXltZW50EkEKF2N1cnJlbnRfdGF4X2Fzc2Vzc21l",
-            "bnRzGAYgAygLMiAuaG9sbXMudHlwZXMuZm9saW8uVGF4QXNzZXNzbWVudBJL",
-            "CiFhbnRpY2lwYXRlZF9lbmRpbmdfdGF4X2Fzc2Vzc21lbnQYByADKAsyIC5o",
+            "bnRzGAUgAygLMiAuaG9sbXMudHlwZXMuZm9saW8uVGF4QXNzZXNzbWVudBJL",
+            "CiFhbnRpY2lwYXRlZF9lbmRpbmdfdGF4X2Fzc2Vzc21lbnQYBiADKAsyIC5o",
             "b2xtcy50eXBlcy5mb2xpby5UYXhBc3Nlc3NtZW50EjwKDm5hdGl2ZV9jaGFy",
-            "Z2VzGAkgAygLMiQuaG9sbXMudHlwZXMuZm9saW8uRm9saW9BdG9taWNDaGFy",
-            "Z2USTQofZXhwb3J0ZWRfdG9fb3RoZXJfZm9saW9fY2hhcmdlcxgKIAMoCzIk",
+            "Z2VzGAcgAygLMiQuaG9sbXMudHlwZXMuZm9saW8uRm9saW9BdG9taWNDaGFy",
+            "Z2USTQofZXhwb3J0ZWRfdG9fb3RoZXJfZm9saW9fY2hhcmdlcxgIIAMoCzIk",
             "LmhvbG1zLnR5cGVzLmZvbGlvLkZvbGlvQXRvbWljQ2hhcmdlEk8KIWltcG9y",
-            "dGVkX2Zyb21fb3RoZXJfZm9saW9fY2hhcmdlcxgLIAMoCzIkLmhvbG1zLnR5",
-            "cGVzLmZvbGlvLkZvbGlvQXRvbWljQ2hhcmdlEkIKE2N1cnJlbnRfbmV0X2No",
-            "YXJnZXMYDCABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlB",
-            "bW91bnQSRgoXYW50aWNpcGF0ZWRfbmV0X2NoYXJnZXMYDSABKAsyJS5ob2xt",
-            "cy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSPgoPcG9zdGVkX3Bh",
-            "eW1lbnRzGA4gASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5",
-            "QW1vdW50Ej0KDnBvc3RlZF9yZWZ1bmRzGA8gASgLMiUuaG9sbXMudHlwZXMu",
-            "cHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkwKHXVudXNlZF9wYXltZW50X2F1",
-            "dGhvcml6YXRpb25zGBAgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1v",
-            "bmV0YXJ5QW1vdW50Ek4KH3VudXNlZF9ndWFyYW50ZWVfYXV0aG9yaXphdGlv",
-            "bnMYESABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91",
-            "bnQSRQoWY3VycmVudF9kdWVfZnJvbV9ndWVzdBgSIAEoCzIlLmhvbG1zLnR5",
-            "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJSCiNhbnRpY2lwYXRlZF9j",
-            "aGVja291dF9kdWVfZnJvbV9ndWVzdBgTIAEoCzIlLmhvbG1zLnR5cGVzLnBy",
-            "aW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIhChlncmFjZWZ1bF9jbG9zdXJlX3Bv",
-            "c3NpYmxlGBQgASgIEjsKB3N1bW1hcnkYFSABKAsyKi5ob2xtcy50eXBlcy5m",
-            "b2xpby5SZXNlcnZhdGlvbkZvbGlvU3VtbWFyeRIsCiRtYXN0ZXJfZm9saW9f",
-            "YWNjcnVlc19sb2RnaW5nX2NoYXJnZXMYFiABKAgSLwonbWFzdGVyX2ZvbGlv",
-            "X2FjY3J1ZXNfaW5jaWRlbnRhbF9jaGFyZ2VzGBcgASgIElYKJ3JlbWFpbmlu",
-            "Z190ZW5kZXJfcmVxdWlyZWRfZm9yX2d1YXJhbnRlZRgYIAEoCzIlLmhvbG1z",
-            "LnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudEIUqgIRSE9MTVMuVHlw",
-            "ZXMuRm9saW9iBnByb3RvMw=="));
+            "dGVkX2Zyb21fb3RoZXJfZm9saW9fY2hhcmdlcxgJIAMoCzIkLmhvbG1zLnR5",
+            "cGVzLmZvbGlvLkZvbGlvQXRvbWljQ2hhcmdlEj4KD2N1cnJlbnRfY2hhcmdl",
+            "cxgKIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3Vu",
+            "dBJCChNhbnRpY2lwYXRlZF9jaGFyZ2VzGAsgASgLMiUuaG9sbXMudHlwZXMu",
+            "cHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50Ej4KD3Bvc3RlZF9wYXltZW50cxgM",
+            "IAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI9",
+            "Cg5wb3N0ZWRfcmVmdW5kcxgNIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2",
+            "ZS5Nb25ldGFyeUFtb3VudBJMCh11bnVzZWRfcGF5bWVudF9hdXRob3JpemF0",
+            "aW9ucxgQIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFt",
+            "b3VudBJOCh91bnVzZWRfZ3VhcmFudGVlX2F1dGhvcml6YXRpb25zGBEgASgL",
+            "MiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkUKFmN1",
+            "cnJlbnRfZHVlX2Zyb21fZ3Vlc3QYEiABKAsyJS5ob2xtcy50eXBlcy5wcmlt",
+            "aXRpdmUuTW9uZXRhcnlBbW91bnQSUgojYW50aWNpcGF0ZWRfY2hlY2tvdXRf",
+            "ZHVlX2Zyb21fZ3Vlc3QYEyABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
+            "TW9uZXRhcnlBbW91bnQSIQoZZ3JhY2VmdWxfY2xvc3VyZV9wb3NzaWJsZRgU",
+            "IAEoCBI7CgdzdW1tYXJ5GBUgASgLMiouaG9sbXMudHlwZXMuZm9saW8uUmVz",
+            "ZXJ2YXRpb25Gb2xpb1N1bW1hcnkSLAokbWFzdGVyX2ZvbGlvX2FjY3J1ZXNf",
+            "bG9kZ2luZ19jaGFyZ2VzGBYgASgIEi8KJ21hc3Rlcl9mb2xpb19hY2NydWVz",
+            "X2luY2lkZW50YWxfY2hhcmdlcxgXIAEoCBJWCidyZW1haW5pbmdfdGVuZGVy",
+            "X3JlcXVpcmVkX2Zvcl9ndWFyYW50ZWUYGCABKAsyJS5ob2xtcy50eXBlcy5w",
+            "cmltaXRpdmUuTW9uZXRhcnlBbW91bnRCFKoCEUhPTE1TLlR5cGVzLkZvbGlv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.ReservationFolioSummaryReflection.Descriptor, global::HOLMS.Types.Folio.TaxAssessmentReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentNetCharges", "AnticipatedNetCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges", "RemainingTenderRequiredForGuarantee" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentCharges", "AnticipatedCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges", "RemainingTenderRequiredForGuarantee" }, null, null, null)
           }));
     }
     #endregion
@@ -106,8 +106,8 @@ namespace HOLMS.Types.Folio {
       nativeCharges_ = other.nativeCharges_.Clone();
       exportedToOtherFolioCharges_ = other.exportedToOtherFolioCharges_.Clone();
       importedFromOtherFolioCharges_ = other.importedFromOtherFolioCharges_.Clone();
-      CurrentNetCharges = other.currentNetCharges_ != null ? other.CurrentNetCharges.Clone() : null;
-      AnticipatedNetCharges = other.anticipatedNetCharges_ != null ? other.AnticipatedNetCharges.Clone() : null;
+      CurrentCharges = other.currentCharges_ != null ? other.CurrentCharges.Clone() : null;
+      AnticipatedCharges = other.anticipatedCharges_ != null ? other.AnticipatedCharges.Clone() : null;
       PostedPayments = other.postedPayments_ != null ? other.PostedPayments.Clone() : null;
       PostedRefunds = other.postedRefunds_ != null ? other.PostedRefunds.Clone() : null;
       UnusedPaymentAuthorizations = other.unusedPaymentAuthorizations_ != null ? other.UnusedPaymentAuthorizations.Clone() : null;
@@ -137,22 +137,19 @@ namespace HOLMS.Types.Folio {
     }
 
     /// <summary>Field number for the "card_refunds" field.</summary>
-    public const int CardRefundsFieldNumber = 3;
+    public const int CardRefundsFieldNumber = 2;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FolioCardRefund> _repeated_cardRefunds_codec
-        = pb::FieldCodec.ForMessage(26, global::HOLMS.Types.Folio.FolioCardRefund.Parser);
+        = pb::FieldCodec.ForMessage(18, global::HOLMS.Types.Folio.FolioCardRefund.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCardRefund> cardRefunds_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCardRefund>();
-    /// <summary>
-    ///  deprecated adjustments = 2
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCardRefund> CardRefunds {
       get { return cardRefunds_; }
     }
 
     /// <summary>Field number for the "card_sales" field.</summary>
-    public const int CardSalesFieldNumber = 4;
+    public const int CardSalesFieldNumber = 3;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FolioCardSale> _repeated_cardSales_codec
-        = pb::FieldCodec.ForMessage(34, global::HOLMS.Types.Folio.FolioCardSale.Parser);
+        = pb::FieldCodec.ForMessage(26, global::HOLMS.Types.Folio.FolioCardSale.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCardSale> cardSales_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCardSale>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCardSale> CardSales {
@@ -160,9 +157,9 @@ namespace HOLMS.Types.Folio {
     }
 
     /// <summary>Field number for the "check_cash_payments" field.</summary>
-    public const int CheckCashPaymentsFieldNumber = 5;
+    public const int CheckCashPaymentsFieldNumber = 4;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FolioCheckCashPayment> _repeated_checkCashPayments_codec
-        = pb::FieldCodec.ForMessage(42, global::HOLMS.Types.Folio.FolioCheckCashPayment.Parser);
+        = pb::FieldCodec.ForMessage(34, global::HOLMS.Types.Folio.FolioCheckCashPayment.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCheckCashPayment> checkCashPayments_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCheckCashPayment>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCheckCashPayment> CheckCashPayments {
@@ -170,9 +167,9 @@ namespace HOLMS.Types.Folio {
     }
 
     /// <summary>Field number for the "current_tax_assessments" field.</summary>
-    public const int CurrentTaxAssessmentsFieldNumber = 6;
+    public const int CurrentTaxAssessmentsFieldNumber = 5;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.TaxAssessment> _repeated_currentTaxAssessments_codec
-        = pb::FieldCodec.ForMessage(50, global::HOLMS.Types.Folio.TaxAssessment.Parser);
+        = pb::FieldCodec.ForMessage(42, global::HOLMS.Types.Folio.TaxAssessment.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment> currentTaxAssessments_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment> CurrentTaxAssessments {
@@ -180,9 +177,9 @@ namespace HOLMS.Types.Folio {
     }
 
     /// <summary>Field number for the "anticipated_ending_tax_assessment" field.</summary>
-    public const int AnticipatedEndingTaxAssessmentFieldNumber = 7;
+    public const int AnticipatedEndingTaxAssessmentFieldNumber = 6;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.TaxAssessment> _repeated_anticipatedEndingTaxAssessment_codec
-        = pb::FieldCodec.ForMessage(58, global::HOLMS.Types.Folio.TaxAssessment.Parser);
+        = pb::FieldCodec.ForMessage(50, global::HOLMS.Types.Folio.TaxAssessment.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment> anticipatedEndingTaxAssessment_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment> AnticipatedEndingTaxAssessment {
@@ -190,22 +187,19 @@ namespace HOLMS.Types.Folio {
     }
 
     /// <summary>Field number for the "native_charges" field.</summary>
-    public const int NativeChargesFieldNumber = 9;
+    public const int NativeChargesFieldNumber = 7;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FolioAtomicCharge> _repeated_nativeCharges_codec
-        = pb::FieldCodec.ForMessage(74, global::HOLMS.Types.Folio.FolioAtomicCharge.Parser);
+        = pb::FieldCodec.ForMessage(58, global::HOLMS.Types.Folio.FolioAtomicCharge.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FolioAtomicCharge> nativeCharges_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FolioAtomicCharge>();
-    /// <summary>
-    ///  deprecated master folio status = 8
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Folio.FolioAtomicCharge> NativeCharges {
       get { return nativeCharges_; }
     }
 
     /// <summary>Field number for the "exported_to_other_folio_charges" field.</summary>
-    public const int ExportedToOtherFolioChargesFieldNumber = 10;
+    public const int ExportedToOtherFolioChargesFieldNumber = 8;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FolioAtomicCharge> _repeated_exportedToOtherFolioCharges_codec
-        = pb::FieldCodec.ForMessage(82, global::HOLMS.Types.Folio.FolioAtomicCharge.Parser);
+        = pb::FieldCodec.ForMessage(66, global::HOLMS.Types.Folio.FolioAtomicCharge.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FolioAtomicCharge> exportedToOtherFolioCharges_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FolioAtomicCharge>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Folio.FolioAtomicCharge> ExportedToOtherFolioCharges {
@@ -213,39 +207,39 @@ namespace HOLMS.Types.Folio {
     }
 
     /// <summary>Field number for the "imported_from_other_folio_charges" field.</summary>
-    public const int ImportedFromOtherFolioChargesFieldNumber = 11;
+    public const int ImportedFromOtherFolioChargesFieldNumber = 9;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FolioAtomicCharge> _repeated_importedFromOtherFolioCharges_codec
-        = pb::FieldCodec.ForMessage(90, global::HOLMS.Types.Folio.FolioAtomicCharge.Parser);
+        = pb::FieldCodec.ForMessage(74, global::HOLMS.Types.Folio.FolioAtomicCharge.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FolioAtomicCharge> importedFromOtherFolioCharges_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FolioAtomicCharge>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Folio.FolioAtomicCharge> ImportedFromOtherFolioCharges {
       get { return importedFromOtherFolioCharges_; }
     }
 
-    /// <summary>Field number for the "current_net_charges" field.</summary>
-    public const int CurrentNetChargesFieldNumber = 12;
-    private global::HOLMS.Types.Primitive.MonetaryAmount currentNetCharges_;
+    /// <summary>Field number for the "current_charges" field.</summary>
+    public const int CurrentChargesFieldNumber = 10;
+    private global::HOLMS.Types.Primitive.MonetaryAmount currentCharges_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.MonetaryAmount CurrentNetCharges {
-      get { return currentNetCharges_; }
+    public global::HOLMS.Types.Primitive.MonetaryAmount CurrentCharges {
+      get { return currentCharges_; }
       set {
-        currentNetCharges_ = value;
+        currentCharges_ = value;
       }
     }
 
-    /// <summary>Field number for the "anticipated_net_charges" field.</summary>
-    public const int AnticipatedNetChargesFieldNumber = 13;
-    private global::HOLMS.Types.Primitive.MonetaryAmount anticipatedNetCharges_;
+    /// <summary>Field number for the "anticipated_charges" field.</summary>
+    public const int AnticipatedChargesFieldNumber = 11;
+    private global::HOLMS.Types.Primitive.MonetaryAmount anticipatedCharges_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.MonetaryAmount AnticipatedNetCharges {
-      get { return anticipatedNetCharges_; }
+    public global::HOLMS.Types.Primitive.MonetaryAmount AnticipatedCharges {
+      get { return anticipatedCharges_; }
       set {
-        anticipatedNetCharges_ = value;
+        anticipatedCharges_ = value;
       }
     }
 
     /// <summary>Field number for the "posted_payments" field.</summary>
-    public const int PostedPaymentsFieldNumber = 14;
+    public const int PostedPaymentsFieldNumber = 12;
     private global::HOLMS.Types.Primitive.MonetaryAmount postedPayments_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.MonetaryAmount PostedPayments {
@@ -256,7 +250,7 @@ namespace HOLMS.Types.Folio {
     }
 
     /// <summary>Field number for the "posted_refunds" field.</summary>
-    public const int PostedRefundsFieldNumber = 15;
+    public const int PostedRefundsFieldNumber = 13;
     private global::HOLMS.Types.Primitive.MonetaryAmount postedRefunds_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.MonetaryAmount PostedRefunds {
@@ -387,8 +381,8 @@ namespace HOLMS.Types.Folio {
       if(!nativeCharges_.Equals(other.nativeCharges_)) return false;
       if(!exportedToOtherFolioCharges_.Equals(other.exportedToOtherFolioCharges_)) return false;
       if(!importedFromOtherFolioCharges_.Equals(other.importedFromOtherFolioCharges_)) return false;
-      if (!object.Equals(CurrentNetCharges, other.CurrentNetCharges)) return false;
-      if (!object.Equals(AnticipatedNetCharges, other.AnticipatedNetCharges)) return false;
+      if (!object.Equals(CurrentCharges, other.CurrentCharges)) return false;
+      if (!object.Equals(AnticipatedCharges, other.AnticipatedCharges)) return false;
       if (!object.Equals(PostedPayments, other.PostedPayments)) return false;
       if (!object.Equals(PostedRefunds, other.PostedRefunds)) return false;
       if (!object.Equals(UnusedPaymentAuthorizations, other.UnusedPaymentAuthorizations)) return false;
@@ -415,8 +409,8 @@ namespace HOLMS.Types.Folio {
       hash ^= nativeCharges_.GetHashCode();
       hash ^= exportedToOtherFolioCharges_.GetHashCode();
       hash ^= importedFromOtherFolioCharges_.GetHashCode();
-      if (currentNetCharges_ != null) hash ^= CurrentNetCharges.GetHashCode();
-      if (anticipatedNetCharges_ != null) hash ^= AnticipatedNetCharges.GetHashCode();
+      if (currentCharges_ != null) hash ^= CurrentCharges.GetHashCode();
+      if (anticipatedCharges_ != null) hash ^= AnticipatedCharges.GetHashCode();
       if (postedPayments_ != null) hash ^= PostedPayments.GetHashCode();
       if (postedRefunds_ != null) hash ^= PostedRefunds.GetHashCode();
       if (unusedPaymentAuthorizations_ != null) hash ^= UnusedPaymentAuthorizations.GetHashCode();
@@ -447,20 +441,20 @@ namespace HOLMS.Types.Folio {
       nativeCharges_.WriteTo(output, _repeated_nativeCharges_codec);
       exportedToOtherFolioCharges_.WriteTo(output, _repeated_exportedToOtherFolioCharges_codec);
       importedFromOtherFolioCharges_.WriteTo(output, _repeated_importedFromOtherFolioCharges_codec);
-      if (currentNetCharges_ != null) {
-        output.WriteRawTag(98);
-        output.WriteMessage(CurrentNetCharges);
+      if (currentCharges_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(CurrentCharges);
       }
-      if (anticipatedNetCharges_ != null) {
-        output.WriteRawTag(106);
-        output.WriteMessage(AnticipatedNetCharges);
+      if (anticipatedCharges_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(AnticipatedCharges);
       }
       if (postedPayments_ != null) {
-        output.WriteRawTag(114);
+        output.WriteRawTag(98);
         output.WriteMessage(PostedPayments);
       }
       if (postedRefunds_ != null) {
-        output.WriteRawTag(122);
+        output.WriteRawTag(106);
         output.WriteMessage(PostedRefunds);
       }
       if (unusedPaymentAuthorizations_ != null) {
@@ -513,11 +507,11 @@ namespace HOLMS.Types.Folio {
       size += nativeCharges_.CalculateSize(_repeated_nativeCharges_codec);
       size += exportedToOtherFolioCharges_.CalculateSize(_repeated_exportedToOtherFolioCharges_codec);
       size += importedFromOtherFolioCharges_.CalculateSize(_repeated_importedFromOtherFolioCharges_codec);
-      if (currentNetCharges_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CurrentNetCharges);
+      if (currentCharges_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CurrentCharges);
       }
-      if (anticipatedNetCharges_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AnticipatedNetCharges);
+      if (anticipatedCharges_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AnticipatedCharges);
       }
       if (postedPayments_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PostedPayments);
@@ -569,17 +563,17 @@ namespace HOLMS.Types.Folio {
       nativeCharges_.Add(other.nativeCharges_);
       exportedToOtherFolioCharges_.Add(other.exportedToOtherFolioCharges_);
       importedFromOtherFolioCharges_.Add(other.importedFromOtherFolioCharges_);
-      if (other.currentNetCharges_ != null) {
-        if (currentNetCharges_ == null) {
-          currentNetCharges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+      if (other.currentCharges_ != null) {
+        if (currentCharges_ == null) {
+          currentCharges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
-        CurrentNetCharges.MergeFrom(other.CurrentNetCharges);
+        CurrentCharges.MergeFrom(other.CurrentCharges);
       }
-      if (other.anticipatedNetCharges_ != null) {
-        if (anticipatedNetCharges_ == null) {
-          anticipatedNetCharges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+      if (other.anticipatedCharges_ != null) {
+        if (anticipatedCharges_ == null) {
+          anticipatedCharges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
-        AnticipatedNetCharges.MergeFrom(other.AnticipatedNetCharges);
+        AnticipatedCharges.MergeFrom(other.AnticipatedCharges);
       }
       if (other.postedPayments_ != null) {
         if (postedPayments_ == null) {
@@ -652,60 +646,60 @@ namespace HOLMS.Types.Folio {
             effectiveCharges_.AddEntriesFrom(input, _repeated_effectiveCharges_codec);
             break;
           }
-          case 26: {
+          case 18: {
             cardRefunds_.AddEntriesFrom(input, _repeated_cardRefunds_codec);
             break;
           }
-          case 34: {
+          case 26: {
             cardSales_.AddEntriesFrom(input, _repeated_cardSales_codec);
             break;
           }
-          case 42: {
+          case 34: {
             checkCashPayments_.AddEntriesFrom(input, _repeated_checkCashPayments_codec);
             break;
           }
-          case 50: {
+          case 42: {
             currentTaxAssessments_.AddEntriesFrom(input, _repeated_currentTaxAssessments_codec);
             break;
           }
-          case 58: {
+          case 50: {
             anticipatedEndingTaxAssessment_.AddEntriesFrom(input, _repeated_anticipatedEndingTaxAssessment_codec);
             break;
           }
-          case 74: {
+          case 58: {
             nativeCharges_.AddEntriesFrom(input, _repeated_nativeCharges_codec);
             break;
           }
-          case 82: {
+          case 66: {
             exportedToOtherFolioCharges_.AddEntriesFrom(input, _repeated_exportedToOtherFolioCharges_codec);
             break;
           }
-          case 90: {
+          case 74: {
             importedFromOtherFolioCharges_.AddEntriesFrom(input, _repeated_importedFromOtherFolioCharges_codec);
             break;
           }
+          case 82: {
+            if (currentCharges_ == null) {
+              currentCharges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(currentCharges_);
+            break;
+          }
+          case 90: {
+            if (anticipatedCharges_ == null) {
+              anticipatedCharges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(anticipatedCharges_);
+            break;
+          }
           case 98: {
-            if (currentNetCharges_ == null) {
-              currentNetCharges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
-            }
-            input.ReadMessage(currentNetCharges_);
-            break;
-          }
-          case 106: {
-            if (anticipatedNetCharges_ == null) {
-              anticipatedNetCharges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
-            }
-            input.ReadMessage(anticipatedNetCharges_);
-            break;
-          }
-          case 114: {
             if (postedPayments_ == null) {
               postedPayments_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(postedPayments_);
             break;
           }
-          case 122: {
+          case 106: {
             if (postedRefunds_ == null) {
               postedRefunds_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
