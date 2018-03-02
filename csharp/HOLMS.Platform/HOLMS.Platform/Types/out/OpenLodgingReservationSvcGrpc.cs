@@ -23,6 +23,8 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.AddReservationContactRequest> __Marshaller_AddReservationContactRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.AddReservationContactRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.HousekeepingTimePreferenceRequest> __Marshaller_HousekeepingTimePreferenceRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.HousekeepingTimePreferenceRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.ReservationAssociatedParties> __Marshaller_ReservationAssociatedParties = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.ReservationAssociatedParties.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsRequest> __Marshaller_GetRAPsForReservationsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsResponse> __Marshaller_GetRAPsForReservationsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest> __Marshaller_VehiclePlateInformationUpdateRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.GetReservationHistoryResponse> __Method_GetReservationHistory = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.GetReservationHistoryResponse>(
@@ -81,6 +83,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_ReservationIndicator,
         __Marshaller_ReservationAssociatedParties);
 
+    static readonly Method<global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsRequest, global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsResponse> __Method_GetReservationAssociatedPartiesForReservations = new Method<global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsRequest, global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetReservationAssociatedPartiesForReservations",
+        __Marshaller_GetRAPsForReservationsRequest,
+        __Marshaller_GetRAPsForReservationsResponse);
+
     static readonly Method<global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UpdateVehiclePlateInformation = new Method<global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         MethodType.Unary,
         __ServiceName,
@@ -133,6 +142,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.ReservationAssociatedParties> GetReservationAssociatedParties(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsResponse> GetReservationAssociatedPartiesForReservations(global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -295,6 +309,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationAssociatedParties, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsResponse GetReservationAssociatedPartiesForReservations(global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetReservationAssociatedPartiesForReservations(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsResponse GetReservationAssociatedPartiesForReservations(global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetReservationAssociatedPartiesForReservations, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsResponse> GetReservationAssociatedPartiesForReservationsAsync(global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetReservationAssociatedPartiesForReservationsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsResponse> GetReservationAssociatedPartiesForReservationsAsync(global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetReservationAssociatedPartiesForReservations, null, options, request);
+      }
       public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateVehiclePlateInformation(global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return UpdateVehiclePlateInformation(request, new CallOptions(headers, deadline, cancellationToken));
@@ -329,6 +359,7 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_AddContactPerson, serviceImpl.AddContactPerson)
           .AddMethod(__Method_SetHousekeepingTimePreference, serviceImpl.SetHousekeepingTimePreference)
           .AddMethod(__Method_GetReservationAssociatedParties, serviceImpl.GetReservationAssociatedParties)
+          .AddMethod(__Method_GetReservationAssociatedPartiesForReservations, serviceImpl.GetReservationAssociatedPartiesForReservations)
           .AddMethod(__Method_UpdateVehiclePlateInformation, serviceImpl.UpdateVehiclePlateInformation).Build();
     }
 

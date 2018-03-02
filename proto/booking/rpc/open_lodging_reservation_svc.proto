@@ -54,6 +54,14 @@ message VehiclePlateInformationUpdateRequest {
 	string vehicle_plate_information = 2;
 }
 
+message GetRAPsForReservationsRequest {
+	repeated holms.types.booking.indicators.ReservationIndicator reservations = 1;
+}
+
+message GetRAPsForReservationsResponse {
+	repeated holms.types.booking.ReservationAssociatedParties raps = 1;
+}
+
 service OpenLodgingReservationSvc {
 	rpc GetReservationHistory (holms.types.booking.indicators.ReservationIndicator)
 		returns (GetReservationHistoryResponse);
@@ -78,6 +86,9 @@ service OpenLodgingReservationSvc {
 
 	rpc GetReservationAssociatedParties(holms.types.booking.indicators.ReservationIndicator)
 		returns(holms.types.booking.ReservationAssociatedParties);
+
+	rpc GetReservationAssociatedPartiesForReservations(GetRAPsForReservationsRequest)
+		returns(GetRAPsForReservationsResponse);
 
 	rpc UpdateVehiclePlateInformation(VehiclePlateInformationUpdateRequest)
 		returns(google.protobuf.Empty);

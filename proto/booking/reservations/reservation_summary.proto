@@ -48,5 +48,6 @@ message ReservationSummary {
 
 	int32 opta_room_stay_index = 25;
 	string reservation_id_from_channel = 26;
+	repeated holms.types.crm.guests.Guest additional_guests = 27;
 }
 

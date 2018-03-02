@@ -63,34 +63,43 @@ namespace HOLMS.Types.Booking.RPC {
             "bWVJbmRpY2F0b3IilAEKJFZlaGljbGVQbGF0ZUluZm9ybWF0aW9uVXBkYXRl",
             "UmVxdWVzdBJJCgtyZXNlcnZhdGlvbhgBIAEoCzI0LmhvbG1zLnR5cGVzLmJv",
             "b2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchIhChl2ZWhp",
-            "Y2xlX3BsYXRlX2luZm9ybWF0aW9uGAIgASgJMpMJChlPcGVuTG9kZ2luZ1Jl",
-            "c2VydmF0aW9uU3ZjEoUBChVHZXRSZXNlcnZhdGlvbkhpc3RvcnkSNC5ob2xt",
-            "cy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0",
-            "b3IaNi5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5HZXRSZXNlcnZhdGlvbkhp",
-            "c3RvcnlSZXNwb25zZRKGAQoVVXBkYXRlUm9vbUFzc2lnbm1lbnRzEjUuaG9s",
-            "bXMudHlwZXMuYm9va2luZy5ycGMuVXBkYXRlUm9vbUFzc2lnbm1lbnRzUmVx",
-            "dWVzdBo2LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlVwZGF0ZVJvb21Bc3Np",
-            "Z25tZW50c1Jlc3BvbnNlEo8BChJHZXRSb29tQXNzaWdubWVudHMSNC5ob2xt",
-            "cy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0",
-            "b3IaQy5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5SZXNlcnZh",
-            "dGlvblJvb21Bc3NpZ25tZW50U2NoZWR1bGUShwEKFkdldFJlc2VydmF0aW9u",
-            "Q29udGFjdHMSNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVz",
-            "ZXJ2YXRpb25JbmRpY2F0b3IaNy5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5H",
-            "ZXRSZXNlcnZhdGlvbkNvbnRhY3RzUmVzcG9uc2USbAoYUmVtb3ZlUmVzZXJ2",
-            "YXRpb25Db250YWN0EjguaG9sbXMudHlwZXMuYm9va2luZy5ycGMuUmVtb3Zl",
-            "UmVzZXJ2YXRpb25Db250YWN0UmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5F",
-            "bXB0eRJhChBBZGRDb250YWN0UGVyc29uEjUuaG9sbXMudHlwZXMuYm9va2lu",
-            "Zy5ycGMuQWRkUmVzZXJ2YXRpb25Db250YWN0UmVxdWVzdBoWLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbXB0eRJzCh1TZXRIb3VzZWtlZXBpbmdUaW1lUHJlZmVyZW5j",
-            "ZRI6LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkhvdXNla2VlcGluZ1RpbWVQ",
-            "cmVmZXJlbmNlUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRKKAQof",
-            "R2V0UmVzZXJ2YXRpb25Bc3NvY2lhdGVkUGFydGllcxI0LmhvbG1zLnR5cGVz",
-            "LmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchoxLmhv",
-            "bG1zLnR5cGVzLmJvb2tpbmcuUmVzZXJ2YXRpb25Bc3NvY2lhdGVkUGFydGll",
-            "cxJ2Ch1VcGRhdGVWZWhpY2xlUGxhdGVJbmZvcm1hdGlvbhI9LmhvbG1zLnR5",
-            "cGVzLmJvb2tpbmcucnBjLlZlaGljbGVQbGF0ZUluZm9ybWF0aW9uVXBkYXRl",
-            "UmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eUInWgtib29raW5nL3Jw",
-            "Y6oCF0hPTE1TLlR5cGVzLkJvb2tpbmcuUlBDYgZwcm90bzM="));
+            "Y2xlX3BsYXRlX2luZm9ybWF0aW9uGAIgASgJImsKHUdldFJBUHNGb3JSZXNl",
+            "cnZhdGlvbnNSZXF1ZXN0EkoKDHJlc2VydmF0aW9ucxgBIAMoCzI0LmhvbG1z",
+            "LnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRv",
+            "ciJhCh5HZXRSQVBzRm9yUmVzZXJ2YXRpb25zUmVzcG9uc2USPwoEcmFwcxgB",
+            "IAMoCzIxLmhvbG1zLnR5cGVzLmJvb2tpbmcuUmVzZXJ2YXRpb25Bc3NvY2lh",
+            "dGVkUGFydGllczK3CgoZT3BlbkxvZGdpbmdSZXNlcnZhdGlvblN2YxKFAQoV",
+            "R2V0UmVzZXJ2YXRpb25IaXN0b3J5EjQuaG9sbXMudHlwZXMuYm9va2luZy5p",
+            "bmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yGjYuaG9sbXMudHlwZXMu",
+            "Ym9va2luZy5ycGMuR2V0UmVzZXJ2YXRpb25IaXN0b3J5UmVzcG9uc2UShgEK",
+            "FVVwZGF0ZVJvb21Bc3NpZ25tZW50cxI1LmhvbG1zLnR5cGVzLmJvb2tpbmcu",
+            "cnBjLlVwZGF0ZVJvb21Bc3NpZ25tZW50c1JlcXVlc3QaNi5ob2xtcy50eXBl",
+            "cy5ib29raW5nLnJwYy5VcGRhdGVSb29tQXNzaWdubWVudHNSZXNwb25zZRKP",
+            "AQoSR2V0Um9vbUFzc2lnbm1lbnRzEjQuaG9sbXMudHlwZXMuYm9va2luZy5p",
+            "bmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yGkMuaG9sbXMudHlwZXMu",
+            "Ym9va2luZy5yZXNlcnZhdGlvbnMuUmVzZXJ2YXRpb25Sb29tQXNzaWdubWVu",
+            "dFNjaGVkdWxlEocBChZHZXRSZXNlcnZhdGlvbkNvbnRhY3RzEjQuaG9sbXMu",
+            "dHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9y",
+            "GjcuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR2V0UmVzZXJ2YXRpb25Db250",
+            "YWN0c1Jlc3BvbnNlEmwKGFJlbW92ZVJlc2VydmF0aW9uQ29udGFjdBI4Lmhv",
+            "bG1zLnR5cGVzLmJvb2tpbmcucnBjLlJlbW92ZVJlc2VydmF0aW9uQ29udGFj",
+            "dFJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSYQoQQWRkQ29udGFj",
+            "dFBlcnNvbhI1LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkFkZFJlc2VydmF0",
+            "aW9uQ29udGFjdFJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkScwod",
+            "U2V0SG91c2VrZWVwaW5nVGltZVByZWZlcmVuY2USOi5ob2xtcy50eXBlcy5i",
+            "b29raW5nLnJwYy5Ib3VzZWtlZXBpbmdUaW1lUHJlZmVyZW5jZVJlcXVlc3Qa",
+            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkSigEKH0dldFJlc2VydmF0aW9uQXNz",
+            "b2NpYXRlZFBhcnRpZXMSNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRv",
+            "cnMuUmVzZXJ2YXRpb25JbmRpY2F0b3IaMS5ob2xtcy50eXBlcy5ib29raW5n",
+            "LlJlc2VydmF0aW9uQXNzb2NpYXRlZFBhcnRpZXMSoQEKLkdldFJlc2VydmF0",
+            "aW9uQXNzb2NpYXRlZFBhcnRpZXNGb3JSZXNlcnZhdGlvbnMSNi5ob2xtcy50",
+            "eXBlcy5ib29raW5nLnJwYy5HZXRSQVBzRm9yUmVzZXJ2YXRpb25zUmVxdWVz",
+            "dBo3LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdldFJBUHNGb3JSZXNlcnZh",
+            "dGlvbnNSZXNwb25zZRJ2Ch1VcGRhdGVWZWhpY2xlUGxhdGVJbmZvcm1hdGlv",
+            "bhI9LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlZlaGljbGVQbGF0ZUluZm9y",
+            "bWF0aW9uVXBkYXRlUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eUIn",
+            "Wgtib29raW5nL3JwY6oCF0hPTE1TLlR5cGVzLkJvb2tpbmcuUlBDYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.RoomClaims.RoomAssignmentByNightReflection.Descriptor, global::HOLMS.Types.Operations.RoomClaims.ReservationRoomAssignmentResultReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationRoomAssignmentScheduleReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationContactPersonReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationContactPersonIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.History.HistoryEventReflection.Descriptor, global::HOLMS.Types.Operations.Housekeeping.HousekeepingTimeIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.ReservationAssociatedPartiesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -101,7 +110,9 @@ namespace HOLMS.Types.Booking.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.RemoveReservationContactRequest), global::HOLMS.Types.Booking.RPC.RemoveReservationContactRequest.Parser, new[]{ "Reservation", "Contact" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.AddReservationContactRequest), global::HOLMS.Types.Booking.RPC.AddReservationContactRequest.Parser, new[]{ "Reservation", "Name", "Email" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.HousekeepingTimePreferenceRequest), global::HOLMS.Types.Booking.RPC.HousekeepingTimePreferenceRequest.Parser, new[]{ "Reservation", "RequestedHkTime" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest), global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest.Parser, new[]{ "Reservation", "VehiclePlateInformation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest), global::HOLMS.Types.Booking.RPC.VehiclePlateInformationUpdateRequest.Parser, new[]{ "Reservation", "VehiclePlateInformation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsRequest), global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsRequest.Parser, new[]{ "Reservations" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsResponse), global::HOLMS.Types.Booking.RPC.GetRAPsForReservationsResponse.Parser, new[]{ "Raps" }, null, null, null)
           }));
     }
     #endregion
@@ -1242,6 +1253,224 @@ namespace HOLMS.Types.Booking.RPC {
           }
           case 18: {
             VehiclePlateInformation = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GetRAPsForReservationsRequest : pb::IMessage<GetRAPsForReservationsRequest> {
+    private static readonly pb::MessageParser<GetRAPsForReservationsRequest> _parser = new pb::MessageParser<GetRAPsForReservationsRequest>(() => new GetRAPsForReservationsRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetRAPsForReservationsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Booking.RPC.OpenLodgingReservationSvcReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetRAPsForReservationsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetRAPsForReservationsRequest(GetRAPsForReservationsRequest other) : this() {
+      reservations_ = other.reservations_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetRAPsForReservationsRequest Clone() {
+      return new GetRAPsForReservationsRequest(this);
+    }
+
+    /// <summary>Field number for the "reservations" field.</summary>
+    public const int ReservationsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> _repeated_reservations_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> reservations_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> Reservations {
+      get { return reservations_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetRAPsForReservationsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetRAPsForReservationsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!reservations_.Equals(other.reservations_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= reservations_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      reservations_.WriteTo(output, _repeated_reservations_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += reservations_.CalculateSize(_repeated_reservations_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetRAPsForReservationsRequest other) {
+      if (other == null) {
+        return;
+      }
+      reservations_.Add(other.reservations_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            reservations_.AddEntriesFrom(input, _repeated_reservations_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GetRAPsForReservationsResponse : pb::IMessage<GetRAPsForReservationsResponse> {
+    private static readonly pb::MessageParser<GetRAPsForReservationsResponse> _parser = new pb::MessageParser<GetRAPsForReservationsResponse>(() => new GetRAPsForReservationsResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetRAPsForReservationsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Booking.RPC.OpenLodgingReservationSvcReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetRAPsForReservationsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetRAPsForReservationsResponse(GetRAPsForReservationsResponse other) : this() {
+      raps_ = other.raps_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetRAPsForReservationsResponse Clone() {
+      return new GetRAPsForReservationsResponse(this);
+    }
+
+    /// <summary>Field number for the "raps" field.</summary>
+    public const int RapsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.ReservationAssociatedParties> _repeated_raps_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Booking.ReservationAssociatedParties.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.ReservationAssociatedParties> raps_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.ReservationAssociatedParties>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Booking.ReservationAssociatedParties> Raps {
+      get { return raps_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetRAPsForReservationsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetRAPsForReservationsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!raps_.Equals(other.raps_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= raps_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      raps_.WriteTo(output, _repeated_raps_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += raps_.CalculateSize(_repeated_raps_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetRAPsForReservationsResponse other) {
+      if (other == null) {
+        return;
+      }
+      raps_.Add(other.raps_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            raps_.AddEntriesFrom(input, _repeated_raps_codec);
             break;
           }
         }
