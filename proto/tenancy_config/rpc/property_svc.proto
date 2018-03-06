@@ -13,6 +13,7 @@ import "tenancy_config/property_confirmation_letter_text.proto";
 import "tenancy_config/property_cancellation_letter_text.proto";
 import "tenancy_config/property_arrival_letter_text.proto";
 import "tenancy_config/property_email_sender_config.proto";
+import "tenancy_config/property_report_stylesheet_config.proto";
 
 message PropertySvcAllResponse {
 	repeated .holms.types.tenancy_config.Property properties = 1;
@@ -41,6 +42,10 @@ message GetAllArrivalBodyTextsResponse {
 
 message GetAllEmailSenderConfigsResponse {
 	repeated .holms.types.tenancy_config.PropertyEmailSenderConfig configs = 1;
+}
+
+message GetAllPropertyReportStylesheetsResponse {
+	repeated .holms.types.tenancy_config.PropertyReportStylesheetConfig configs = 1;
 }
 
 service PropertySvc {
@@ -103,5 +108,14 @@ service PropertySvc {
 		returns (.holms.types.tenancy_config.PropertyEmailSenderConfig);
 
 	rpc SetEmailSenderConfig(.holms.types.tenancy_config.PropertyEmailSenderConfig)
+		returns (google.protobuf.Empty);
+
+	rpc GetAllStylesheetConfigs(google.protobuf.Empty)
+		returns(GetAllPropertyReportStylesheetsResponse);
+
+	rpc GetPropertyStylesheetConfig(.holms.types.tenancy_config.indicators.PropertyIndicator)
+		returns (.holms.types.tenancy_config.PropertyReportStylesheetConfig);
+
+	rpc SetPropertyStylesheetConfig(.holms.types.tenancy_config.PropertyReportStylesheetConfig)
 		returns (google.protobuf.Empty);
 }

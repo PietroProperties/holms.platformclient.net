@@ -28,6 +28,8 @@ namespace HOLMS.Types.TenancyConfig.RPC {
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText> __Marshaller_PropertyCancellationLetterText = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse> __Marshaller_GetAllEmailSenderConfigsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig> __Marshaller_PropertyEmailSenderConfig = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.TenancyConfig.RPC.GetAllPropertyReportStylesheetsResponse> __Marshaller_GetAllPropertyReportStylesheetsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.RPC.GetAllPropertyReportStylesheetsResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig> __Marshaller_PropertyReportStylesheetConfig = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.TenancyConfig.RPC.PropertySvcAllResponse> __Method_All = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.TenancyConfig.RPC.PropertySvcAllResponse>(
         MethodType.Unary,
@@ -169,6 +171,27 @@ namespace HOLMS.Types.TenancyConfig.RPC {
         __Marshaller_PropertyEmailSenderConfig,
         __Marshaller_Empty);
 
+    static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.TenancyConfig.RPC.GetAllPropertyReportStylesheetsResponse> __Method_GetAllStylesheetConfigs = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.TenancyConfig.RPC.GetAllPropertyReportStylesheetsResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetAllStylesheetConfigs",
+        __Marshaller_Empty,
+        __Marshaller_GetAllPropertyReportStylesheetsResponse);
+
+    static readonly Method<global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator, global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig> __Method_GetPropertyStylesheetConfig = new Method<global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator, global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetPropertyStylesheetConfig",
+        __Marshaller_PropertyIndicator,
+        __Marshaller_PropertyReportStylesheetConfig);
+
+    static readonly Method<global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetPropertyStylesheetConfig = new Method<global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "SetPropertyStylesheetConfig",
+        __Marshaller_PropertyReportStylesheetConfig,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -277,6 +300,21 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetEmailSenderConfig(global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.TenancyConfig.RPC.GetAllPropertyReportStylesheetsResponse> GetAllStylesheetConfigs(global::Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig> GetPropertyStylesheetConfig(global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetPropertyStylesheetConfig(global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -638,6 +676,54 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetEmailSenderConfig, null, options, request);
       }
+      public virtual global::HOLMS.Types.TenancyConfig.RPC.GetAllPropertyReportStylesheetsResponse GetAllStylesheetConfigs(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetAllStylesheetConfigs(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.TenancyConfig.RPC.GetAllPropertyReportStylesheetsResponse GetAllStylesheetConfigs(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetAllStylesheetConfigs, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.GetAllPropertyReportStylesheetsResponse> GetAllStylesheetConfigsAsync(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetAllStylesheetConfigsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.GetAllPropertyReportStylesheetsResponse> GetAllStylesheetConfigsAsync(global::Google.Protobuf.WellKnownTypes.Empty request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetAllStylesheetConfigs, null, options, request);
+      }
+      public virtual global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig GetPropertyStylesheetConfig(global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetPropertyStylesheetConfig(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig GetPropertyStylesheetConfig(global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetPropertyStylesheetConfig, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig> GetPropertyStylesheetConfigAsync(global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetPropertyStylesheetConfigAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig> GetPropertyStylesheetConfigAsync(global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetPropertyStylesheetConfig, null, options, request);
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetPropertyStylesheetConfig(global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SetPropertyStylesheetConfig(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetPropertyStylesheetConfig(global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SetPropertyStylesheetConfig, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetPropertyStylesheetConfigAsync(global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SetPropertyStylesheetConfigAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetPropertyStylesheetConfigAsync(global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SetPropertyStylesheetConfig, null, options, request);
+      }
       protected override PropertySvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new PropertySvcClient(configuration);
@@ -667,7 +753,10 @@ namespace HOLMS.Types.TenancyConfig.RPC {
           .AddMethod(__Method_SetPropertyCancellationBodyText, serviceImpl.SetPropertyCancellationBodyText)
           .AddMethod(__Method_GetAllEmailSenderConfigs, serviceImpl.GetAllEmailSenderConfigs)
           .AddMethod(__Method_GetEmailSenderConfig, serviceImpl.GetEmailSenderConfig)
-          .AddMethod(__Method_SetEmailSenderConfig, serviceImpl.SetEmailSenderConfig).Build();
+          .AddMethod(__Method_SetEmailSenderConfig, serviceImpl.SetEmailSenderConfig)
+          .AddMethod(__Method_GetAllStylesheetConfigs, serviceImpl.GetAllStylesheetConfigs)
+          .AddMethod(__Method_GetPropertyStylesheetConfig, serviceImpl.GetPropertyStylesheetConfig)
+          .AddMethod(__Method_SetPropertyStylesheetConfig, serviceImpl.SetPropertyStylesheetConfig).Build();
     }
 
   }

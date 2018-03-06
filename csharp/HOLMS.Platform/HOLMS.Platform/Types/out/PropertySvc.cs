@@ -32,78 +32,91 @@ namespace HOLMS.Types.TenancyConfig.RPC {
             "cm90bxo2dGVuYW5jeV9jb25maWcvcHJvcGVydHlfY2FuY2VsbGF0aW9uX2xl",
             "dHRlcl90ZXh0LnByb3RvGjF0ZW5hbmN5X2NvbmZpZy9wcm9wZXJ0eV9hcnJp",
             "dmFsX2xldHRlcl90ZXh0LnByb3RvGjF0ZW5hbmN5X2NvbmZpZy9wcm9wZXJ0",
-            "eV9lbWFpbF9zZW5kZXJfY29uZmlnLnByb3RvIlIKFlByb3BlcnR5U3ZjQWxs",
-            "UmVzcG9uc2USOAoKcHJvcGVydGllcxgBIAMoCzIkLmhvbG1zLnR5cGVzLnRl",
-            "bmFuY3lfY29uZmlnLlByb3BlcnR5IloKGlByb3BlcnR5U3ZjQWxsRnVsbFJl",
-            "c3BvbnNlEjwKCnByb3BlcnRpZXMYASADKAsyKC5ob2xtcy50eXBlcy50ZW5h",
-            "bmN5X2NvbmZpZy5GdWxsUHJvcGVydHkihQEKH1Byb3BlcnR5U3ZjQWNjcnVl",
-            "UmV2ZW51ZVJlcXVlc3QSSgoIcHJvcGVydHkYASABKAsyOC5ob2xtcy50eXBl",
-            "cy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9y",
-            "EhYKDnJ1bl9ldmVyeV9taW5zGAIgASgNInAKI0dldEFsbENvbmZpcm1hdGlv",
-            "bkJvZHlUZXh0c1Jlc3BvbnNlEkkKBXRleHRzGAEgAygLMjouaG9sbXMudHlw",
-            "ZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHlDb25maXJtYXRpb25MZXR0ZXJU",
-            "ZXh0InAKI0dldEFsbENhbmNlbGxhdGlvbkJvZHlUZXh0c1Jlc3BvbnNlEkkK",
-            "BXRleHRzGAEgAygLMjouaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuUHJv",
-            "cGVydHlDYW5jZWxsYXRpb25MZXR0ZXJUZXh0ImYKHkdldEFsbEFycml2YWxC",
-            "b2R5VGV4dHNSZXNwb25zZRJECgV0ZXh0cxgBIAMoCzI1LmhvbG1zLnR5cGVz",
-            "LnRlbmFuY3lfY29uZmlnLlByb3BlcnR5QXJyaXZhbExldHRlclRleHQiagog",
-            "R2V0QWxsRW1haWxTZW5kZXJDb25maWdzUmVzcG9uc2USRgoHY29uZmlncxgB",
-            "IAMoCzI1LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLlByb3BlcnR5RW1h",
-            "aWxTZW5kZXJDb25maWcy9BEKC1Byb3BlcnR5U3ZjElUKA0FsbBIWLmdvb2ds",
-            "ZS5wcm90b2J1Zi5FbXB0eRo2LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmln",
-            "LnJwYy5Qcm9wZXJ0eVN2Y0FsbFJlc3BvbnNlEmkKB0dldEJ5SWQSOC5ob2xt",
-            "cy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5k",
-            "aWNhdG9yGiQuaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHkS",
-            "VAoGQ3JlYXRlEiQuaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuUHJvcGVy",
-            "dHkaJC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eRJUCgZV",
-            "cGRhdGUSJC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eRok",
-            "LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLlByb3BlcnR5El8KBkRlbGV0",
-            "ZRIkLmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLlByb3BlcnR5Gi8uaG9s",
-            "bXMudHlwZXMucHJpbWl0aXZlLlNlcnZlckFjdGlvbkNvbmZpcm1hdGlvbhJd",
-            "CgdBbGxGdWxsEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GjouaG9sbXMudHlw",
-            "ZXMudGVuYW5jeV9jb25maWcucnBjLlByb3BlcnR5U3ZjQWxsRnVsbFJlc3Bv",
-            "bnNlEnUKD0dldEZ1bGxQcm9wZXJ0eRI4LmhvbG1zLnR5cGVzLnRlbmFuY3lf",
-            "Y29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3IaKC5ob2xtcy50",
-            "eXBlcy50ZW5hbmN5X2NvbmZpZy5GdWxsUHJvcGVydHkSaAoNQWNjcnVlUmV2",
-            "ZW51ZRI/LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLnJwYy5Qcm9wZXJ0",
-            "eVN2Y0FjY3J1ZVJldmVudWVSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVt",
-            "cHR5EnoKG0dldEFsbENvbmZpcm1hdGlvbkJvZHlUZXh0cxIWLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbXB0eRpDLmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLnJw",
-            "Yy5HZXRBbGxDb25maXJtYXRpb25Cb2R5VGV4dHNSZXNwb25zZRKPAQoXR2V0",
-            "Q29uZmlybWF0aW9uQm9keVRleHQSOC5ob2xtcy50eXBlcy50ZW5hbmN5X2Nv",
-            "bmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yGjouaG9sbXMudHlw",
-            "ZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHlDb25maXJtYXRpb25MZXR0ZXJU",
-            "ZXh0EnUKH1NldFByb3BlcnR5Q29uZmlybWF0aW9uQm9keVRleHQSOi5ob2xt",
-            "cy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eUNvbmZpcm1hdGlvbkxl",
-            "dHRlclRleHQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkScAoWR2V0QWxsQXJy",
-            "aXZhbEJvZHlUZXh0cxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRo+LmhvbG1z",
-            "LnR5cGVzLnRlbmFuY3lfY29uZmlnLnJwYy5HZXRBbGxBcnJpdmFsQm9keVRl",
-            "eHRzUmVzcG9uc2UShQEKEkdldEFycml2YWxCb2R5VGV4dBI4LmhvbG1zLnR5",
-            "cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0",
-            "b3IaNS5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eUFycml2",
-            "YWxMZXR0ZXJUZXh0EmsKGlNldFByb3BlcnR5QXJyaXZhbEJvZHlUZXh0EjUu",
+            "eV9lbWFpbF9zZW5kZXJfY29uZmlnLnByb3RvGjZ0ZW5hbmN5X2NvbmZpZy9w",
+            "cm9wZXJ0eV9yZXBvcnRfc3R5bGVzaGVldF9jb25maWcucHJvdG8iUgoWUHJv",
+            "cGVydHlTdmNBbGxSZXNwb25zZRI4Cgpwcm9wZXJ0aWVzGAEgAygLMiQuaG9s",
+            "bXMudHlwZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHkiWgoaUHJvcGVydHlT",
+            "dmNBbGxGdWxsUmVzcG9uc2USPAoKcHJvcGVydGllcxgBIAMoCzIoLmhvbG1z",
+            "LnR5cGVzLnRlbmFuY3lfY29uZmlnLkZ1bGxQcm9wZXJ0eSKFAQofUHJvcGVy",
+            "dHlTdmNBY2NydWVSZXZlbnVlUmVxdWVzdBJKCghwcm9wZXJ0eRgBIAEoCzI4",
+            "LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVy",
+            "dHlJbmRpY2F0b3ISFgoOcnVuX2V2ZXJ5X21pbnMYAiABKA0icAojR2V0QWxs",
+            "Q29uZmlybWF0aW9uQm9keVRleHRzUmVzcG9uc2USSQoFdGV4dHMYASADKAsy",
+            "Oi5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eUNvbmZpcm1h",
+            "dGlvbkxldHRlclRleHQicAojR2V0QWxsQ2FuY2VsbGF0aW9uQm9keVRleHRz",
+            "UmVzcG9uc2USSQoFdGV4dHMYASADKAsyOi5ob2xtcy50eXBlcy50ZW5hbmN5",
+            "X2NvbmZpZy5Qcm9wZXJ0eUNhbmNlbGxhdGlvbkxldHRlclRleHQiZgoeR2V0",
+            "QWxsQXJyaXZhbEJvZHlUZXh0c1Jlc3BvbnNlEkQKBXRleHRzGAEgAygLMjUu",
             "aG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHlBcnJpdmFsTGV0",
-            "dGVyVGV4dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJ6ChtHZXRBbGxDYW5j",
-            "ZWxsYXRpb25Cb2R5VGV4dHMSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaQy5o",
-            "b2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5ycGMuR2V0QWxsQ2FuY2VsbGF0",
-            "aW9uQm9keVRleHRzUmVzcG9uc2USjwEKF0dldENhbmNlbGxhdGlvbkJvZHlU",
-            "ZXh0EjguaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Q",
-            "cm9wZXJ0eUluZGljYXRvcho6LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmln",
-            "LlByb3BlcnR5Q2FuY2VsbGF0aW9uTGV0dGVyVGV4dBJ1Ch9TZXRQcm9wZXJ0",
-            "eUNhbmNlbGxhdGlvbkJvZHlUZXh0EjouaG9sbXMudHlwZXMudGVuYW5jeV9j",
-            "b25maWcuUHJvcGVydHlDYW5jZWxsYXRpb25MZXR0ZXJUZXh0GhYuZ29vZ2xl",
-            "LnByb3RvYnVmLkVtcHR5EnQKGEdldEFsbEVtYWlsU2VuZGVyQ29uZmlncxIW",
-            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eRpALmhvbG1zLnR5cGVzLnRlbmFuY3lf",
-            "Y29uZmlnLnJwYy5HZXRBbGxFbWFpbFNlbmRlckNvbmZpZ3NSZXNwb25zZRKH",
-            "AQoUR2V0RW1haWxTZW5kZXJDb25maWcSOC5ob2xtcy50eXBlcy50ZW5hbmN5",
-            "X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yGjUuaG9sbXMu",
-            "dHlwZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHlFbWFpbFNlbmRlckNvbmZp",
-            "ZxJlChRTZXRFbWFpbFNlbmRlckNvbmZpZxI1LmhvbG1zLnR5cGVzLnRlbmFu",
-            "Y3lfY29uZmlnLlByb3BlcnR5RW1haWxTZW5kZXJDb25maWcaFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHlCM1oRdGVuYW5jeWNvbmZpZy9ycGOqAh1IT0xNUy5U",
-            "eXBlcy5UZW5hbmN5Q29uZmlnLlJQQ2IGcHJvdG8z"));
+            "dGVyVGV4dCJqCiBHZXRBbGxFbWFpbFNlbmRlckNvbmZpZ3NSZXNwb25zZRJG",
+            "Cgdjb25maWdzGAEgAygLMjUuaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcu",
+            "UHJvcGVydHlFbWFpbFNlbmRlckNvbmZpZyJ2CidHZXRBbGxQcm9wZXJ0eVJl",
+            "cG9ydFN0eWxlc2hlZXRzUmVzcG9uc2USSwoHY29uZmlncxgBIAMoCzI6Lmhv",
+            "bG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLlByb3BlcnR5UmVwb3J0U3R5bGVz",
+            "aGVldENvbmZpZzL5FAoLUHJvcGVydHlTdmMSVQoDQWxsEhYuZ29vZ2xlLnBy",
+            "b3RvYnVmLkVtcHR5GjYuaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcucnBj",
+            "LlByb3BlcnR5U3ZjQWxsUmVzcG9uc2USaQoHR2V0QnlJZBI4LmhvbG1zLnR5",
+            "cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0",
+            "b3IaJC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eRJUCgZD",
+            "cmVhdGUSJC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eRok",
+            "LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLlByb3BlcnR5ElQKBlVwZGF0",
+            "ZRIkLmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLlByb3BlcnR5GiQuaG9s",
+            "bXMudHlwZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHkSXwoGRGVsZXRlEiQu",
+            "aG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHkaLy5ob2xtcy50",
+            "eXBlcy5wcmltaXRpdmUuU2VydmVyQWN0aW9uQ29uZmlybWF0aW9uEl0KB0Fs",
+            "bEZ1bGwSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaOi5ob2xtcy50eXBlcy50",
+            "ZW5hbmN5X2NvbmZpZy5ycGMuUHJvcGVydHlTdmNBbGxGdWxsUmVzcG9uc2US",
+            "dQoPR2V0RnVsbFByb3BlcnR5EjguaG9sbXMudHlwZXMudGVuYW5jeV9jb25m",
+            "aWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRvchooLmhvbG1zLnR5cGVz",
+            "LnRlbmFuY3lfY29uZmlnLkZ1bGxQcm9wZXJ0eRJoCg1BY2NydWVSZXZlbnVl",
+            "Ej8uaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcucnBjLlByb3BlcnR5U3Zj",
+            "QWNjcnVlUmV2ZW51ZVJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkS",
+            "egobR2V0QWxsQ29uZmlybWF0aW9uQm9keVRleHRzEhYuZ29vZ2xlLnByb3Rv",
+            "YnVmLkVtcHR5GkMuaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcucnBjLkdl",
+            "dEFsbENvbmZpcm1hdGlvbkJvZHlUZXh0c1Jlc3BvbnNlEo8BChdHZXRDb25m",
+            "aXJtYXRpb25Cb2R5VGV4dBI4LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmln",
+            "LmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3IaOi5ob2xtcy50eXBlcy50",
+            "ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eUNvbmZpcm1hdGlvbkxldHRlclRleHQS",
+            "dQofU2V0UHJvcGVydHlDb25maXJtYXRpb25Cb2R5VGV4dBI6LmhvbG1zLnR5",
+            "cGVzLnRlbmFuY3lfY29uZmlnLlByb3BlcnR5Q29uZmlybWF0aW9uTGV0dGVy",
+            "VGV4dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJwChZHZXRBbGxBcnJpdmFs",
+            "Qm9keVRleHRzEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gj4uaG9sbXMudHlw",
+            "ZXMudGVuYW5jeV9jb25maWcucnBjLkdldEFsbEFycml2YWxCb2R5VGV4dHNS",
+            "ZXNwb25zZRKFAQoSR2V0QXJyaXZhbEJvZHlUZXh0EjguaG9sbXMudHlwZXMu",
+            "dGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRvcho1",
+            "LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLlByb3BlcnR5QXJyaXZhbExl",
+            "dHRlclRleHQSawoaU2V0UHJvcGVydHlBcnJpdmFsQm9keVRleHQSNS5ob2xt",
+            "cy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eUFycml2YWxMZXR0ZXJU",
+            "ZXh0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EnoKG0dldEFsbENhbmNlbGxh",
+            "dGlvbkJvZHlUZXh0cxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRpDLmhvbG1z",
+            "LnR5cGVzLnRlbmFuY3lfY29uZmlnLnJwYy5HZXRBbGxDYW5jZWxsYXRpb25C",
+            "b2R5VGV4dHNSZXNwb25zZRKPAQoXR2V0Q2FuY2VsbGF0aW9uQm9keVRleHQS",
+            "OC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3Bl",
+            "cnR5SW5kaWNhdG9yGjouaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuUHJv",
+            "cGVydHlDYW5jZWxsYXRpb25MZXR0ZXJUZXh0EnUKH1NldFByb3BlcnR5Q2Fu",
+            "Y2VsbGF0aW9uQm9keVRleHQSOi5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZp",
+            "Zy5Qcm9wZXJ0eUNhbmNlbGxhdGlvbkxldHRlclRleHQaFi5nb29nbGUucHJv",
+            "dG9idWYuRW1wdHkSdAoYR2V0QWxsRW1haWxTZW5kZXJDb25maWdzEhYuZ29v",
+            "Z2xlLnByb3RvYnVmLkVtcHR5GkAuaG9sbXMudHlwZXMudGVuYW5jeV9jb25m",
+            "aWcucnBjLkdldEFsbEVtYWlsU2VuZGVyQ29uZmlnc1Jlc3BvbnNlEocBChRH",
+            "ZXRFbWFpbFNlbmRlckNvbmZpZxI4LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29u",
+            "ZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3IaNS5ob2xtcy50eXBl",
+            "cy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eUVtYWlsU2VuZGVyQ29uZmlnEmUK",
+            "FFNldEVtYWlsU2VuZGVyQ29uZmlnEjUuaG9sbXMudHlwZXMudGVuYW5jeV9j",
+            "b25maWcuUHJvcGVydHlFbWFpbFNlbmRlckNvbmZpZxoWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eRJ6ChdHZXRBbGxTdHlsZXNoZWV0Q29uZmlncxIWLmdvb2ds",
+            "ZS5wcm90b2J1Zi5FbXB0eRpHLmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmln",
+            "LnJwYy5HZXRBbGxQcm9wZXJ0eVJlcG9ydFN0eWxlc2hlZXRzUmVzcG9uc2US",
+            "kwEKG0dldFByb3BlcnR5U3R5bGVzaGVldENvbmZpZxI4LmhvbG1zLnR5cGVz",
+            "LnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3Ia",
+            "Oi5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eVJlcG9ydFN0",
+            "eWxlc2hlZXRDb25maWcScQobU2V0UHJvcGVydHlTdHlsZXNoZWV0Q29uZmln",
+            "EjouaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHlSZXBvcnRT",
+            "dHlsZXNoZWV0Q29uZmlnGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5QjNaEXRl",
+            "bmFuY3ljb25maWcvcnBjqgIdSE9MTVMuVHlwZXMuVGVuYW5jeUNvbmZpZy5S",
+            "UENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.ServerActionConfirmationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.TenancyConfig.FullPropertyReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfigReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.ServerActionConfirmationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.TenancyConfig.FullPropertyReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfigReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfigReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.PropertySvcAllResponse), global::HOLMS.Types.TenancyConfig.RPC.PropertySvcAllResponse.Parser, new[]{ "Properties" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.PropertySvcAllFullResponse), global::HOLMS.Types.TenancyConfig.RPC.PropertySvcAllFullResponse.Parser, new[]{ "Properties" }, null, null, null),
@@ -111,7 +124,8 @@ namespace HOLMS.Types.TenancyConfig.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.GetAllConfirmationBodyTextsResponse), global::HOLMS.Types.TenancyConfig.RPC.GetAllConfirmationBodyTextsResponse.Parser, new[]{ "Texts" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.GetAllCancellationBodyTextsResponse), global::HOLMS.Types.TenancyConfig.RPC.GetAllCancellationBodyTextsResponse.Parser, new[]{ "Texts" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.GetAllArrivalBodyTextsResponse), global::HOLMS.Types.TenancyConfig.RPC.GetAllArrivalBodyTextsResponse.Parser, new[]{ "Texts" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse), global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse.Parser, new[]{ "Configs" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse), global::HOLMS.Types.TenancyConfig.RPC.GetAllEmailSenderConfigsResponse.Parser, new[]{ "Configs" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.GetAllPropertyReportStylesheetsResponse), global::HOLMS.Types.TenancyConfig.RPC.GetAllPropertyReportStylesheetsResponse.Parser, new[]{ "Configs" }, null, null, null)
           }));
     }
     #endregion
@@ -899,6 +913,115 @@ namespace HOLMS.Types.TenancyConfig.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(GetAllEmailSenderConfigsResponse other) {
+      if (other == null) {
+        return;
+      }
+      configs_.Add(other.configs_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            configs_.AddEntriesFrom(input, _repeated_configs_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GetAllPropertyReportStylesheetsResponse : pb::IMessage<GetAllPropertyReportStylesheetsResponse> {
+    private static readonly pb::MessageParser<GetAllPropertyReportStylesheetsResponse> _parser = new pb::MessageParser<GetAllPropertyReportStylesheetsResponse>(() => new GetAllPropertyReportStylesheetsResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetAllPropertyReportStylesheetsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.TenancyConfig.RPC.PropertySvcReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetAllPropertyReportStylesheetsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetAllPropertyReportStylesheetsResponse(GetAllPropertyReportStylesheetsResponse other) : this() {
+      configs_ = other.configs_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetAllPropertyReportStylesheetsResponse Clone() {
+      return new GetAllPropertyReportStylesheetsResponse(this);
+    }
+
+    /// <summary>Field number for the "configs" field.</summary>
+    public const int ConfigsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig> _repeated_configs_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig> configs_ = new pbc::RepeatedField<global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.TenancyConfig.PropertyReportStylesheetConfig> Configs {
+      get { return configs_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetAllPropertyReportStylesheetsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetAllPropertyReportStylesheetsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!configs_.Equals(other.configs_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= configs_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      configs_.WriteTo(output, _repeated_configs_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += configs_.CalculateSize(_repeated_configs_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetAllPropertyReportStylesheetsResponse other) {
       if (other == null) {
         return;
       }
