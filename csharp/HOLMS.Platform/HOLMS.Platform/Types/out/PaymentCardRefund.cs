@@ -25,25 +25,25 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             "CjJtb25leS9jYXJkcy90cmFuc2FjdGlvbnMvcGF5bWVudF9jYXJkX3JlZnVu",
             "ZC5wcm90bxIkaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25z",
             "Gh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3RvGiltb25leS9jYXJk",
-            "cy9jYXJkX21lcmNoYW50X2luZGljYXRvci5wcm90bxokbW9uZXkvY2FyZHMv",
-            "Z3Vlc3RfcGF5bWVudF9jYXJkLnByb3RvGjBtb25leS9jYXJkcy90cmFuc2Fj",
-            "dGlvbnMvY2FyZF9yZWZ1bmRfc3RhdGUucHJvdG8aPG1vbmV5L2NhcmRzL3Ry",
-            "YW5zYWN0aW9ucy9wYXltZW50X2NhcmRfcmVmdW5kX2luZGljYXRvci5wcm90",
-            "bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90byLgAwoRUGF5bWVu",
-            "dENhcmRSZWZ1bmQSUwoJZW50aXR5X2lkGAEgASgLMkAuaG9sbXMudHlwZXMu",
-            "bW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBheW1lbnRDYXJkUmVmdW5kSW5k",
-            "aWNhdG9yEkMKC21lcmNoYW50X2lkGAIgASgLMi4uaG9sbXMudHlwZXMubW9u",
-            "ZXkuY2FyZHMuQ2FyZE1lcmNoYW50SW5kaWNhdG9yEj4KD3JlZnVuZGVkX2Ft",
-            "b3VudBgDIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFt",
-            "b3VudBIdChVob3N0X3JlZmVyZW5jZV9udW1iZXIYBCABKAkSHAoUZm9saW9f",
-            "Ym9va2luZ19udW1iZXIYBSABKAkSPwoMcGF5bWVudF9jYXJkGAYgASgLMiku",
-            "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMuR3Vlc3RQYXltZW50Q2FyZBItCglw",
-            "b3N0ZWRfYXQYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEkQK",
-            "BXN0YXRlGAggASgOMjUuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNh",
-            "Y3Rpb25zLkNhcmRSZWZ1bmRTdGF0ZUInqgIkSE9MTVMuVHlwZXMuTW9uZXku",
-            "Q2FyZHMuVHJhbnNhY3Rpb25zYgZwcm90bzM="));
+            "cy9jYXJkX21lcmNoYW50X2luZGljYXRvci5wcm90bxonbW9uZXkvY2FyZHMv",
+            "Y3VzdG9tZXJfcGF5bWVudF9jYXJkLnByb3RvGjBtb25leS9jYXJkcy90cmFu",
+            "c2FjdGlvbnMvY2FyZF9yZWZ1bmRfc3RhdGUucHJvdG8aPG1vbmV5L2NhcmRz",
+            "L3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfcmVmdW5kX2luZGljYXRvci5w",
+            "cm90bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90byLjAwoRUGF5",
+            "bWVudENhcmRSZWZ1bmQSUwoJZW50aXR5X2lkGAEgASgLMkAuaG9sbXMudHlw",
+            "ZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBheW1lbnRDYXJkUmVmdW5k",
+            "SW5kaWNhdG9yEkMKC21lcmNoYW50X2lkGAIgASgLMi4uaG9sbXMudHlwZXMu",
+            "bW9uZXkuY2FyZHMuQ2FyZE1lcmNoYW50SW5kaWNhdG9yEj4KD3JlZnVuZGVk",
+            "X2Ftb3VudBgDIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFy",
+            "eUFtb3VudBIdChVob3N0X3JlZmVyZW5jZV9udW1iZXIYBCABKAkSHAoUZm9s",
+            "aW9fYm9va2luZ19udW1iZXIYBSABKAkSQgoMcGF5bWVudF9jYXJkGAYgASgL",
+            "MiwuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ3VzdG9tZXJQYXltZW50Q2Fy",
+            "ZBItCglwb3N0ZWRfYXQYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
+            "YW1wEkQKBXN0YXRlGAggASgOMjUuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMu",
+            "dHJhbnNhY3Rpb25zLkNhcmRSZWZ1bmRTdGF0ZUInqgIkSE9MTVMuVHlwZXMu",
+            "TW9uZXkuQ2FyZHMuVHJhbnNhY3Rpb25zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.GuestPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.CardRefundStateReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CustomerPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.CardRefundStateReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefund), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefund.Parser, new[]{ "EntityId", "MerchantId", "RefundedAmount", "HostReferenceNumber", "FolioBookingNumber", "PaymentCard", "PostedAt", "State" }, null, null, null)
           }));
@@ -148,9 +148,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
 
     /// <summary>Field number for the "payment_card" field.</summary>
     public const int PaymentCardFieldNumber = 6;
-    private global::HOLMS.Types.Money.Cards.GuestPaymentCard paymentCard_;
+    private global::HOLMS.Types.Money.Cards.CustomerPaymentCard paymentCard_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Cards.GuestPaymentCard PaymentCard {
+    public global::HOLMS.Types.Money.Cards.CustomerPaymentCard PaymentCard {
       get { return paymentCard_; }
       set {
         paymentCard_ = value;
@@ -319,7 +319,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       }
       if (other.paymentCard_ != null) {
         if (paymentCard_ == null) {
-          paymentCard_ = new global::HOLMS.Types.Money.Cards.GuestPaymentCard();
+          paymentCard_ = new global::HOLMS.Types.Money.Cards.CustomerPaymentCard();
         }
         PaymentCard.MergeFrom(other.PaymentCard);
       }
@@ -373,7 +373,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
           }
           case 50: {
             if (paymentCard_ == null) {
-              paymentCard_ = new global::HOLMS.Types.Money.Cards.GuestPaymentCard();
+              paymentCard_ = new global::HOLMS.Types.Money.Cards.CustomerPaymentCard();
             }
             input.ReadMessage(paymentCard_);
             break;

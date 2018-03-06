@@ -4,7 +4,7 @@ package holms.types.money.cards.transactions;
 option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 
 import "money/cards/card_merchant_indicator.proto";
-import "money/cards/guest_payment_card.proto";
+import "money/cards/customer_payment_card.proto";
 import "money/cards/transactions/authorization_entry_method.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/cards/transactions/payment_card_authorization.proto";
@@ -18,7 +18,7 @@ import "primitive/monetary_amount.proto";
 message PaymentCardSale {
 	holms.types.money.cards.transactions.PaymentCardSaleIndicator entity_id = 1;
 	holms.types.money.cards.CardMerchantIndicator merchant_id = 2;	
-	holms.types.money.cards.GuestPaymentCard payment_card = 3;
+	holms.types.money.cards.CustomerPaymentCard payment_card = 3;
 	holms.types.primitive.MonetaryAmount authorized_amount = 4;
 	holms.types.primitive.MonetaryAmount captured_amount = 5;
 	string host_reference_number = 6;

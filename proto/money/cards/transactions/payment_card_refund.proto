@@ -5,7 +5,7 @@ option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 
 import "google/protobuf/timestamp.proto";
 import "money/cards/card_merchant_indicator.proto";
-import "money/cards/guest_payment_card.proto";
+import "money/cards/customer_payment_card.proto";
 import "money/cards/transactions/card_refund_state.proto";
 import "money/cards/transactions/payment_card_refund_indicator.proto";
 import "primitive/monetary_amount.proto";
@@ -16,7 +16,7 @@ message PaymentCardRefund {
 	holms.types.primitive.MonetaryAmount refunded_amount = 3;
 	string host_reference_number = 4;
 	string folio_booking_number = 5;
-	holms.types.money.cards.GuestPaymentCard payment_card = 6;
+	holms.types.money.cards.CustomerPaymentCard payment_card = 6;
 	google.protobuf.Timestamp posted_at = 7;
 	holms.types.money.cards.transactions.CardRefundState state = 8;
 }

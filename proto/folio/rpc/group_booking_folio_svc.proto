@@ -12,7 +12,7 @@ import "money/cards/card_sale_purpose.proto";
 import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
-import "money/cards/guest_payment_card_indicator.proto";
+import "money/cards/customer_payment_card_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
 
@@ -53,7 +53,7 @@ message GroupBookingFolioSvcPostCheckPaymentRequest {
 
 message GroupBookingFolioSvcCardAuthorizationFromTokenRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
-	.holms.types.money.cards.GuestPaymentCardIndicator card = 2;
+	.holms.types.money.cards.CustomerPaymentCardIndicator card = 2;
 	holms.types.primitive.MonetaryAmount amount = 3;
 	holms.types.money.cards.CardSalePurpose purpose = 4;
 }
@@ -119,7 +119,7 @@ message GroupBookingFolioSvcPostMiscChargeCorrectionRequest {
 message GroupBookingFolioSvcPaymentCardRefundRequest {
 	holms.types.booking.indicators.GroupBookingIndicator group_booking = 1;
         holms.types.primitive.MonetaryAmount amount = 2;
-        holms.types.money.cards.GuestPaymentCardIndicator card = 3;
+        holms.types.money.cards.CustomerPaymentCardIndicator card = 3;
         string description = 4;
 }
 

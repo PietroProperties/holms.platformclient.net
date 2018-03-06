@@ -6,7 +6,7 @@ option csharp_namespace = "HOLMS.Types.Money.RPC";
 import "crm/guests/guest_indicator.proto";
 import "google/protobuf/timestamp.proto";
 import "money/cards/card_merchant_indicator.proto";
-import "money/cards/guest_payment_card_indicator.proto";
+import "money/cards/customer_payment_card_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
 import "money/cards/transactions/closed_merchant_batch.proto";
 import "money/cards/transactions/get_open_batch_state_response.proto";
@@ -24,7 +24,7 @@ message CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest {
 
 message CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse {
 	holms.types.money.cards.transactions.ProcessorTransactionResult result = 1;
-	holms.types.money.cards.GuestPaymentCardIndicator card = 2;
+	holms.types.money.cards.CustomerPaymentCardIndicator card = 2;
 }
 
 message MerchantBatchEnumResponse {

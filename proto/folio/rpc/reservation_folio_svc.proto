@@ -7,8 +7,8 @@ import "booking/indicators/reservation_indicator.proto";
 import "folio/reservation_folio_state.proto";
 import "google/protobuf/empty.proto";
 import "money/cards/card_sale_purpose.proto";
-import "money/cards/guest_payment_card.proto";
-import "money/cards/guest_payment_card_indicator.proto";
+import "money/cards/customer_payment_card.proto";
+import "money/cards/customer_payment_card_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
 import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
@@ -73,7 +73,7 @@ message ReservationFolioSvcPostCheckPaymentRequest {
 
 message CardAuthorizationFromStoredCardRequest {
 	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
-	.holms.types.money.cards.GuestPaymentCardIndicator card = 2;
+	.holms.types.money.cards.CustomerPaymentCardIndicator card = 2;
 	holms.types.primitive.MonetaryAmount amount = 3;
 	holms.types.money.cards.CardSalePurpose purpose = 4;
 }
@@ -117,7 +117,7 @@ message ReservationFolioSvcPostCashPaymentRequest {
 }
 
 message ReservationFolioSvcGetOnFileCardsResponse {
-	repeated holms.types.money.cards.GuestPaymentCard cards = 1;
+	repeated holms.types.money.cards.CustomerPaymentCard cards = 1;
 }
 
 message ReservationFolioSvcPostLodgingChargeCorrectionRequest {
@@ -145,7 +145,7 @@ message ReservationFolioSvcPostMiscChargeCorrectionRequest {
 message ReservationFolioSvcPaymentCardRefundRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
 	holms.types.primitive.MonetaryAmount amount = 2;
-	holms.types.money.cards.GuestPaymentCardIndicator card = 3;
+	holms.types.money.cards.CustomerPaymentCardIndicator card = 3;
 	string description = 4;
 }
 
