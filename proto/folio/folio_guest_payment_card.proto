@@ -3,13 +3,13 @@
 package holms.types.folio;
 option csharp_namespace = "HOLMS.Types.Folio";
 
-import "money/cards/guest_payment_card_indicator.proto";
+import "money/cards/customer_payment_card_indicator.proto";
 import "money/cards/payment_card_brand.proto";
 
 message FolioGuestPaymentCard {
 	.holms.types.money.cards.PaymentCardBrand brand = 1;
 	string masked_pan = 2;
-	.holms.types.money.cards.GuestPaymentCardIndicator card = 3;
+	.holms.types.money.cards.CustomerPaymentCardIndicator card = 3;
 	string cardmember_name = 4;
 }
 

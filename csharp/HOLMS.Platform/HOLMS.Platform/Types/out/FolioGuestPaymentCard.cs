@@ -23,16 +23,16 @@ namespace HOLMS.Types.Folio {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiRmb2xpby9mb2xpb19ndWVzdF9wYXltZW50X2NhcmQucHJvdG8SEWhvbG1z",
-            "LnR5cGVzLmZvbGlvGi5tb25leS9jYXJkcy9ndWVzdF9wYXltZW50X2NhcmRf",
-            "aW5kaWNhdG9yLnByb3RvGiRtb25leS9jYXJkcy9wYXltZW50X2NhcmRfYnJh",
-            "bmQucHJvdG8iwAEKFUZvbGlvR3Vlc3RQYXltZW50Q2FyZBI4CgVicmFuZBgB",
-            "IAEoDjIpLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLlBheW1lbnRDYXJkQnJh",
-            "bmQSEgoKbWFza2VkX3BhbhgCIAEoCRJACgRjYXJkGAMgASgLMjIuaG9sbXMu",
-            "dHlwZXMubW9uZXkuY2FyZHMuR3Vlc3RQYXltZW50Q2FyZEluZGljYXRvchIX",
-            "Cg9jYXJkbWVtYmVyX25hbWUYBCABKAlCFKoCEUhPTE1TLlR5cGVzLkZvbGlv",
-            "YgZwcm90bzM="));
+            "LnR5cGVzLmZvbGlvGjFtb25leS9jYXJkcy9jdXN0b21lcl9wYXltZW50X2Nh",
+            "cmRfaW5kaWNhdG9yLnByb3RvGiRtb25leS9jYXJkcy9wYXltZW50X2NhcmRf",
+            "YnJhbmQucHJvdG8iwwEKFUZvbGlvR3Vlc3RQYXltZW50Q2FyZBI4CgVicmFu",
+            "ZBgBIAEoDjIpLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLlBheW1lbnRDYXJk",
+            "QnJhbmQSEgoKbWFza2VkX3BhbhgCIAEoCRJDCgRjYXJkGAMgASgLMjUuaG9s",
+            "bXMudHlwZXMubW9uZXkuY2FyZHMuQ3VzdG9tZXJQYXltZW50Q2FyZEluZGlj",
+            "YXRvchIXCg9jYXJkbWVtYmVyX25hbWUYBCABKAlCFKoCEUhPTE1TLlR5cGVz",
+            "LkZvbGlvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardBrandReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.PaymentCardBrandReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioGuestPaymentCard), global::HOLMS.Types.Folio.FolioGuestPaymentCard.Parser, new[]{ "Brand", "MaskedPan", "Card", "CardmemberName" }, null, null, null)
           }));
@@ -100,9 +100,9 @@ namespace HOLMS.Types.Folio {
 
     /// <summary>Field number for the "card" field.</summary>
     public const int CardFieldNumber = 3;
-    private global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator card_;
+    private global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator card_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator Card {
+    public global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator Card {
       get { return card_; }
       set {
         card_ = value;
@@ -206,7 +206,7 @@ namespace HOLMS.Types.Folio {
       }
       if (other.card_ != null) {
         if (card_ == null) {
-          card_ = new global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator();
+          card_ = new global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator();
         }
         Card.MergeFrom(other.Card);
       }
@@ -233,7 +233,7 @@ namespace HOLMS.Types.Folio {
           }
           case 26: {
             if (card_ == null) {
-              card_ = new global::HOLMS.Types.Money.Cards.GuestPaymentCardIndicator();
+              card_ = new global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator();
             }
             input.ReadMessage(card_);
             break;

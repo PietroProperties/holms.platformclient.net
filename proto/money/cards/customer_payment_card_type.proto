@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package holms.types.money.cards;
+option csharp_namespace = "HOLMS.Types.Money.Cards";
+
+enum CustomerPaymentCardType {
+	CUSTOMER_PAYMENT_CARD_TYPE_GUEST = 0;
+	CUSTOMER_PAYMENT_CARD_TYPE_GROUP = 1;
+}
+

@@ -5,7 +5,7 @@ option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 
 import "google/protobuf/timestamp.proto";
 import "money/cards/card_merchant_indicator.proto";
-import "money/cards/guest_payment_card.proto";
+import "money/cards/customer_payment_card.proto";
 import "money/cards/transactions/card_sale_state.proto";
 import "money/cards/transactions/payment_card_sale_capture_indicator.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
@@ -17,7 +17,7 @@ message PaymentCardSaleCapture {
 	holms.types.primitive.MonetaryAmount captured_amount = 3;
 	string host_reference_number = 5;
 	string folio_booking_number = 6;
-	holms.types.money.cards.GuestPaymentCard payment_card = 7;
+	holms.types.money.cards.CustomerPaymentCard payment_card = 7;
 	string authorization_approval_code = 8;
 	string authorization_host_reference_number = 9;
 	holms.types.primitive.MonetaryAmount authorization_amount = 10;
