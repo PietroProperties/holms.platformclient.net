@@ -532,5 +532,7 @@ namespace HOLMS.Platform.Application.Client {
                 throw new NotImplementedException();
             }
         }
+
+        public ReportingConfigurationSvc.ReportingConfigurationSvcClient ReportingConfigurationSvc => throw new NotImplementedException();
     }
 }

@@ -115,10 +115,11 @@ namespace HOLMS.Application.Client {
         RoomStatusColorsSvc.RoomStatusColorsSvcClient RoomStatusColorsSvc { get; }
         RoomStatusSettingsSvc.RoomStatusSettingsSvcClient RoomStatusSettingsSvc { get; }
         TaxExemptCategorySvc.TaxExemptCategorySvcClient TaxExemptCategorySvc { get; }
-        #endregion
+        ReportingConfigurationSvc.ReportingConfigurationSvcClient ReportingConfigurationSvc { get; }
+            #endregion
 
-        #region Reporting
-        CardCaptureReportingSvc.CardCaptureReportingSvcClient CardCaptureReportingSvc { get; }
+            #region Reporting
+            CardCaptureReportingSvc.CardCaptureReportingSvcClient CardCaptureReportingSvc { get; }
         FrontDeskReportingSvc.FrontDeskReportingSvcClient FrontDeskReportingSvc { get; }
         ManagementReportingSvc.ManagementReportingSvcClient ManagementReportingSvc { get; }
         #endregion
