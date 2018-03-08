@@ -26,17 +26,16 @@ namespace HOLMS.Types.Operations.Housekeeping {
             "dGF0dXMucHJvdG8SI2hvbG1zLnR5cGVzLm9wZXJhdGlvbnMuaG91c2VrZWVw",
             "aW5nGjtvcGVyYXRpb25zL2hvdXNla2VlcGluZy9yb29tX2Fycml2YWxfZGVw",
             "YXJ0dXJlX3N0YXR1cy5wcm90bxolb3BlcmF0aW9ucy9yb29tcy9yb29tX2lu",
-            "ZGljYXRvci5wcm90byK5AQoWSG91c2VrZWVwaW5nUm9vbVN0YXR1cxI5CgRy",
+            "ZGljYXRvci5wcm90byKkAQoWSG91c2VrZWVwaW5nUm9vbVN0YXR1cxI5CgRy",
             "b29tGAEgASgLMisuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5yb29tcy5Sb29t",
             "SW5kaWNhdG9yEk8KBnN0YXR1cxgCIAEoDjI/LmhvbG1zLnR5cGVzLm9wZXJh",
             "dGlvbnMuaG91c2VrZWVwaW5nLlJvb21BcnJpdmFsRGVwYXJ0dXJlU3RhdHVz",
-            "EhMKC2lzX29jY3VwaWVkGAMgASgIQj9aF29wZXJhdGlvbnMvaG91c2VrZWVw",
-            "aW5nqgIjSE9MTVMuVHlwZXMuT3BlcmF0aW9ucy5Ib3VzZWtlZXBpbmdiBnBy",
-            "b3RvMw=="));
+            "QiaqAiNIT0xNUy5UeXBlcy5PcGVyYXRpb25zLkhvdXNla2VlcGluZ2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Operations.Housekeeping.RoomArrivalDepartureStatusReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.Housekeeping.HousekeepingRoomStatus), global::HOLMS.Types.Operations.Housekeeping.HousekeepingRoomStatus.Parser, new[]{ "Room", "Status", "IsOccupied" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.Housekeeping.HousekeepingRoomStatus), global::HOLMS.Types.Operations.Housekeeping.HousekeepingRoomStatus.Parser, new[]{ "Room", "Status" }, null, null, null)
           }));
     }
     #endregion
@@ -69,7 +68,6 @@ namespace HOLMS.Types.Operations.Housekeeping {
     public HousekeepingRoomStatus(HousekeepingRoomStatus other) : this() {
       Room = other.room_ != null ? other.Room.Clone() : null;
       status_ = other.status_;
-      isOccupied_ = other.isOccupied_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -99,17 +97,6 @@ namespace HOLMS.Types.Operations.Housekeeping {
       }
     }
 
-    /// <summary>Field number for the "is_occupied" field.</summary>
-    public const int IsOccupiedFieldNumber = 3;
-    private bool isOccupied_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsOccupied {
-      get { return isOccupied_; }
-      set {
-        isOccupied_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as HousekeepingRoomStatus);
@@ -125,7 +112,6 @@ namespace HOLMS.Types.Operations.Housekeeping {
       }
       if (!object.Equals(Room, other.Room)) return false;
       if (Status != other.Status) return false;
-      if (IsOccupied != other.IsOccupied) return false;
       return true;
     }
 
@@ -134,7 +120,6 @@ namespace HOLMS.Types.Operations.Housekeeping {
       int hash = 1;
       if (room_ != null) hash ^= Room.GetHashCode();
       if (Status != 0) hash ^= Status.GetHashCode();
-      if (IsOccupied != false) hash ^= IsOccupied.GetHashCode();
       return hash;
     }
 
@@ -153,10 +138,6 @@ namespace HOLMS.Types.Operations.Housekeeping {
         output.WriteRawTag(16);
         output.WriteEnum((int) Status);
       }
-      if (IsOccupied != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsOccupied);
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -167,9 +148,6 @@ namespace HOLMS.Types.Operations.Housekeeping {
       }
       if (Status != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
-      }
-      if (IsOccupied != false) {
-        size += 1 + 1;
       }
       return size;
     }
@@ -187,9 +165,6 @@ namespace HOLMS.Types.Operations.Housekeeping {
       }
       if (other.Status != 0) {
         Status = other.Status;
-      }
-      if (other.IsOccupied != false) {
-        IsOccupied = other.IsOccupied;
       }
     }
 
@@ -210,10 +185,6 @@ namespace HOLMS.Types.Operations.Housekeeping {
           }
           case 16: {
             status_ = (global::HOLMS.Types.Operations.Housekeeping.RoomArrivalDepartureStatus) input.ReadEnum();
-            break;
-          }
-          case 24: {
-            IsOccupied = input.ReadBool();
             break;
           }
         }
