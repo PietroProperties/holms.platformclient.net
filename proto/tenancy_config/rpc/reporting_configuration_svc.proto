@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+
+import "tenancy_config/report_stylesheet_config.proto";
+import "google/protobuf/empty.proto";
+
+service ReportingConfigurationSvc {
+	rpc GetStylesheetConfig(google.protobuf.Empty)
+		returns (.holms.types.tenancy_config.ReportStylesheetConfig);
+
+	rpc SetStylesheetConfig(.holms.types.tenancy_config.ReportStylesheetConfig)
+		returns (google.protobuf.Empty);
+}
