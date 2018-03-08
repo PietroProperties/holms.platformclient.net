@@ -130,6 +130,7 @@ namespace HOLMS.Application.Client {
         public RoomStatusColorsSvc.RoomStatusColorsSvcClient RoomStatusColorsSvc { get; protected set; }
         public RoomStatusSettingsSvc.RoomStatusSettingsSvcClient RoomStatusSettingsSvc { get; protected set; }
         public TaxExemptCategorySvc.TaxExemptCategorySvcClient TaxExemptCategorySvc { get; protected set; }
+        public ReportingConfigurationSvc.ReportingConfigurationSvcClient ReportingConfigurationSvc { get; protected set; }
         #endregion
 
         #region Reporting
@@ -337,6 +338,7 @@ namespace HOLMS.Application.Client {
             RoomStatusColorsSvc = new RoomStatusColorsSvc.RoomStatusColorsSvcClient(_authenticatedChannel);
             RoomStatusSettingsSvc = new RoomStatusSettingsSvc.RoomStatusSettingsSvcClient(_authenticatedChannel);
             TaxExemptCategorySvc = new Types.TenancyConfig.RPC.TaxExemptCategorySvc.TaxExemptCategorySvcClient(_authenticatedChannel);
+            ReportingConfigurationSvc = new ReportingConfigurationSvc.ReportingConfigurationSvcClient(_authenticatedChannel);
             #endregion
 
             #region Reporting
