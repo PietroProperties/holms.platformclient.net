@@ -7,6 +7,8 @@ option go_package = "crm/rpc";
 import "google/protobuf/empty.proto";
 import "crm/guests/guest_indicator.proto";
 import "crm/guests/guest.proto";
+import "crm/guests/reservation_note_template.proto";
+import "crm/guests/reservation_note_template_indicator.proto";
 
 message GuestSvcManyGuestsResponse {
 	repeated .holms.types.crm.guests.Guest guests = 1;
@@ -24,6 +26,10 @@ message GuestSvcPrefixSearchRequest {
 
 message GuestSvcSearchByEmailRequest {
 	string email_address = 1;
+}
+
+message GuestSvcGetNoteTemplatesForGuestResponse {
+	repeated .holms.types.crm.guests.ReservationNoteTemplate templates = 1;
 }
 
 service GuestSvc {
@@ -47,4 +53,16 @@ service GuestSvc {
 		
 	rpc Update (.holms.types.crm.guests.Guest) 
 		returns (.holms.types.crm.guests.Guest);
+
+	rpc AddNoteTemplateToGuest(.holms.types.crm.guests.ReservationNoteTemplate)
+		returns (google.protobuf.Empty);
+
+	rpc AmendNoteTemplate(.holms.types.crm.guests.ReservationNoteTemplate)
+		returns (google.protobuf.Empty);
+
+	rpc RemoveNoteTemplateFromGuest(.holms.types.crm.guests.ReservationNoteTemplateIndicator)
+		returns (google.protobuf.Empty);
+
+	rpc GetNoteTemplatesForGuest(.holms.types.crm.guests.GuestIndicator)
+		returns(GuestSvcGetNoteTemplatesForGuestResponse);
 }

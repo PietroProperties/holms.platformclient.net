@@ -19,6 +19,9 @@ namespace HOLMS.Types.CRM.RPC {
     static readonly Marshaller<global::HOLMS.Types.CRM.RPC.GuestSvcGetManyRequest> __Marshaller_GuestSvcGetManyRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestSvcGetManyRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.CRM.RPC.GuestSvcPrefixSearchRequest> __Marshaller_GuestSvcPrefixSearchRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestSvcPrefixSearchRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest> __Marshaller_GuestSvcSearchByEmailRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate> __Marshaller_ReservationNoteTemplate = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator> __Marshaller_ReservationNoteTemplateIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse> __Marshaller_GuestSvcGetNoteTemplatesForGuestResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> __Method_All = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse>(
         MethodType.Unary,
@@ -69,6 +72,34 @@ namespace HOLMS.Types.CRM.RPC {
         __Marshaller_Guest,
         __Marshaller_Guest);
 
+    static readonly Method<global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate, global::Google.Protobuf.WellKnownTypes.Empty> __Method_AddNoteTemplateToGuest = new Method<global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "AddNoteTemplateToGuest",
+        __Marshaller_ReservationNoteTemplate,
+        __Marshaller_Empty);
+
+    static readonly Method<global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate, global::Google.Protobuf.WellKnownTypes.Empty> __Method_AmendNoteTemplate = new Method<global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "AmendNoteTemplate",
+        __Marshaller_ReservationNoteTemplate,
+        __Marshaller_Empty);
+
+    static readonly Method<global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator, global::Google.Protobuf.WellKnownTypes.Empty> __Method_RemoveNoteTemplateFromGuest = new Method<global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "RemoveNoteTemplateFromGuest",
+        __Marshaller_ReservationNoteTemplateIndicator,
+        __Marshaller_Empty);
+
+    static readonly Method<global::HOLMS.Types.CRM.Guests.GuestIndicator, global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse> __Method_GetNoteTemplatesForGuest = new Method<global::HOLMS.Types.CRM.Guests.GuestIndicator, global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetNoteTemplatesForGuest",
+        __Marshaller_GuestIndicator,
+        __Marshaller_GuestSvcGetNoteTemplatesForGuestResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -109,6 +140,26 @@ namespace HOLMS.Types.CRM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.Guests.Guest> Update(global::HOLMS.Types.CRM.Guests.Guest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> AddNoteTemplateToGuest(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> AmendNoteTemplate(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> RemoveNoteTemplateFromGuest(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse> GetNoteTemplatesForGuest(global::HOLMS.Types.CRM.Guests.GuestIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -250,6 +301,70 @@ namespace HOLMS.Types.CRM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty AddNoteTemplateToGuest(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AddNoteTemplateToGuest(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty AddNoteTemplateToGuest(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AddNoteTemplateToGuest, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> AddNoteTemplateToGuestAsync(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AddNoteTemplateToGuestAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> AddNoteTemplateToGuestAsync(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AddNoteTemplateToGuest, null, options, request);
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty AmendNoteTemplate(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AmendNoteTemplate(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty AmendNoteTemplate(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AmendNoteTemplate, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> AmendNoteTemplateAsync(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AmendNoteTemplateAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> AmendNoteTemplateAsync(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AmendNoteTemplate, null, options, request);
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RemoveNoteTemplateFromGuest(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return RemoveNoteTemplateFromGuest(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RemoveNoteTemplateFromGuest(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RemoveNoteTemplateFromGuest, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RemoveNoteTemplateFromGuestAsync(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return RemoveNoteTemplateFromGuestAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RemoveNoteTemplateFromGuestAsync(global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RemoveNoteTemplateFromGuest, null, options, request);
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse GetNoteTemplatesForGuest(global::HOLMS.Types.CRM.Guests.GuestIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetNoteTemplatesForGuest(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse GetNoteTemplatesForGuest(global::HOLMS.Types.CRM.Guests.GuestIndicator request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetNoteTemplatesForGuest, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse> GetNoteTemplatesForGuestAsync(global::HOLMS.Types.CRM.Guests.GuestIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetNoteTemplatesForGuestAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse> GetNoteTemplatesForGuestAsync(global::HOLMS.Types.CRM.Guests.GuestIndicator request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetNoteTemplatesForGuest, null, options, request);
+      }
       protected override GuestSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new GuestSvcClient(configuration);
@@ -266,7 +381,11 @@ namespace HOLMS.Types.CRM.RPC {
           .AddMethod(__Method_SearchByNamePrefix, serviceImpl.SearchByNamePrefix)
           .AddMethod(__Method_SearchByEmailAddress, serviceImpl.SearchByEmailAddress)
           .AddMethod(__Method_Create, serviceImpl.Create)
-          .AddMethod(__Method_Update, serviceImpl.Update).Build();
+          .AddMethod(__Method_Update, serviceImpl.Update)
+          .AddMethod(__Method_AddNoteTemplateToGuest, serviceImpl.AddNoteTemplateToGuest)
+          .AddMethod(__Method_AmendNoteTemplate, serviceImpl.AmendNoteTemplate)
+          .AddMethod(__Method_RemoveNoteTemplateFromGuest, serviceImpl.RemoveNoteTemplateFromGuest)
+          .AddMethod(__Method_GetNoteTemplatesForGuest, serviceImpl.GetNoteTemplatesForGuest).Build();
     }
 
   }
