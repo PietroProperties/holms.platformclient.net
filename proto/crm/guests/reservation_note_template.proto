@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package holms.types.crm.guests;
+option csharp_namespace = "HOLMS.Types.CRM.Guests";
+
+import "crm/guests/reservation_note_template_indicator.proto";
+import "operations/note_requests/note_request_indicator.proto";
+import "operations/note_requests/note_category.proto";
+import "crm/guests/guest_indicator.proto";
+
+message ReservationNoteTemplate {
+	.holms.types.crm.guests.ReservationNoteTemplateIndicator entity_id = 1;
+	.holms.types.operations.note_requests.NoteRequestIndicator source_note = 2;
+	.holms.types.operations.note_requests.NoteCategory category = 3;
+	string additional_note = 4;
+	bool include_on_confirmation = 5;
+	string source_note_subject = 7;
+	.holms.types.crm.guests.GuestIndicator guest = 8;
+}

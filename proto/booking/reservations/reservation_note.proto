@@ -8,7 +8,6 @@ import "booking/indicators/reservation_indicator.proto";
 import "booking/indicators/reservation_note_indicator.proto";
 import "operations/note_requests/note_request_indicator.proto";
 import "operations/note_requests/note_category.proto";
-import "crm/guests/guest_indicator.proto";
 
 message ReservationNote {
 	.holms.types.booking.indicators.ReservationNoteIndicator entity_id = 1;
@@ -20,5 +19,4 @@ message ReservationNote {
 	string source_note_subject = 7;
 	bool is_fulfilled = 8;
 	bool permanent_on_guest_record = 9;
-	.holms.types.crm.guests.GuestIndicator permanent_for_guest = 10;
 }
