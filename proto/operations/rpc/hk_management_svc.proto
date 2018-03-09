@@ -2,14 +2,13 @@
 
 package holms.types.operations.rpc;
 option csharp_namespace = "HOLMS.Types.Operations.RPC";
-option go_package = "operations/rpc";
 
 import "google/protobuf/empty.proto";
-import "google/protobuf/timestamp.proto";
+import "iam/staff_member_indicator.proto";
 import "operations/housekeeping/housekeeping_assignment.proto";
 import "operations/rooms/room_indicator.proto";
 import "operations/rooms/room.proto";
-import "iam/staff_member_indicator.proto";
+import "primitive/pb_local_date.proto";
 
 message HousekeepingManagementSvcAssignmentsResponse {
 	repeated .holms.types.operations.housekeeping.HousekeepingAssignment assignments = 1;
@@ -25,7 +24,7 @@ message HousekeepingManagementSvcUpdateRoomStatusRequest {
 }
 
 service HousekeepingManagementSvc {
-	rpc GetAssignmentsByDate(google.protobuf.Timestamp)
+	rpc GetAssignmentsByDate(holms.types.primitive.PbLocalDate)
 		returns (HousekeepingManagementSvcAssignmentsResponse);
 
 	rpc AssignHousekeeperToRoomsNow (HousekeepingManagementSvcAssignmentRequest)

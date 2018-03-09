@@ -12,17 +12,17 @@ namespace HOLMS.Types.Operations.RPC {
   {
     static readonly string __ServiceName = "holms.types.operations.rpc.HousekeepingManagementSvc";
 
-    static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Timestamp> __Marshaller_Timestamp = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Timestamp.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Primitive.PbLocalDate> __Marshaller_PbLocalDate = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.PbLocalDate.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse> __Marshaller_HousekeepingManagementSvcAssignmentsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentRequest> __Marshaller_HousekeepingManagementSvcAssignmentRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentRequest.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest> __Marshaller_HousekeepingManagementSvcUpdateRoomStatusRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest.Parser.ParseFrom);
 
-    static readonly Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse> __Method_GetAssignmentsByDate = new Method<global::Google.Protobuf.WellKnownTypes.Timestamp, global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse>(
+    static readonly Method<global::HOLMS.Types.Primitive.PbLocalDate, global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse> __Method_GetAssignmentsByDate = new Method<global::HOLMS.Types.Primitive.PbLocalDate, global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse>(
         MethodType.Unary,
         __ServiceName,
         "GetAssignmentsByDate",
-        __Marshaller_Timestamp,
+        __Marshaller_PbLocalDate,
         __Marshaller_HousekeepingManagementSvcAssignmentsResponse);
 
     static readonly Method<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_AssignHousekeeperToRoomsNow = new Method<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -48,7 +48,7 @@ namespace HOLMS.Types.Operations.RPC {
     /// <summary>Base class for server-side implementations of HousekeepingManagementSvc</summary>
     public abstract class HousekeepingManagementSvcBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse> GetAssignmentsByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse> GetAssignmentsByDate(global::HOLMS.Types.Primitive.PbLocalDate request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -88,19 +88,19 @@ namespace HOLMS.Types.Operations.RPC {
       {
       }
 
-      public virtual global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse GetAssignmentsByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse GetAssignmentsByDate(global::HOLMS.Types.Primitive.PbLocalDate request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetAssignmentsByDate(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse GetAssignmentsByDate(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
+      public virtual global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse GetAssignmentsByDate(global::HOLMS.Types.Primitive.PbLocalDate request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAssignmentsByDate, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse> GetAssignmentsByDateAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse> GetAssignmentsByDateAsync(global::HOLMS.Types.Primitive.PbLocalDate request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetAssignmentsByDateAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse> GetAssignmentsByDateAsync(global::Google.Protobuf.WellKnownTypes.Timestamp request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse> GetAssignmentsByDateAsync(global::HOLMS.Types.Primitive.PbLocalDate request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAssignmentsByDate, null, options, request);
       }

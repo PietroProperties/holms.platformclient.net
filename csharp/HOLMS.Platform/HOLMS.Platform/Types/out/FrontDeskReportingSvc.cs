@@ -24,34 +24,35 @@ namespace HOLMS.Types.Reporting.RPC {
           string.Concat(
             "CixyZXBvcnRpbmcvcnBjL2Zyb250X2Rlc2tfcmVwb3J0aW5nX3N2Yy5wcm90",
             "bxIZaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYxogaWFtL3N0YWZmX21lbWJl",
-            "cl9pbmRpY2F0b3IucHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMv",
-            "cHJvcGVydHlfaW5kaWNhdG9yLnByb3RvGjhyZXBvcnRpbmcvaW5wdXRfcGFy",
-            "YW1zL2Zyb250X2Rlc2tfcmVwb3J0X21hbmlmZXN0cy5wcm90bxoscmVwb3J0",
-            "aW5nL291dHB1dHMvaHRtbF9yZXBvcnRfcmVzcG9uc2UucHJvdG8i0gIKIUZy",
-            "b250RGVza0JhdGNoUmVwb3J0aW5nU3ZjUmVxdWVzdBJMCgpwcm9wZXJ0aWVz",
-            "GAEgAygLMjguaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9y",
-            "cy5Qcm9wZXJ0eUluZGljYXRvchJuCh5jYWxlbmRhcl9kYXRlX3JlcG9ydHNf",
-            "bWFuaWZlc3QYAiABKAsyRi5ob2xtcy50eXBlcy5yZXBvcnRpbmcuaW5wdXRf",
-            "cGFyYW1zLkZyb250RGVza0N1cnJlbnREYXRlUmVwb3J0TWFuaWZlc3QSbwoe",
-            "b3BzZGF0ZV9yYW5nZV9yZXBvcnRzX21hbmlmZXN0GAMgASgLMkcuaG9sbXMu",
-            "dHlwZXMucmVwb3J0aW5nLmlucHV0X3BhcmFtcy5Gcm9udERlc2tPcHNkYXRl",
-            "UmFuZ2VSZXBvcnRNYW5pZmVzdCJ7CihGcm9udERlc2tSZXBvcnRpbmdTdmNI",
-            "b3VzZWtlZXBpbmdSZXF1ZXN0EjwKDXN0YWZmX21lbWJlcnMYASADKAsyJS5o",
-            "b2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXJJbmRpY2F0b3ISEQoJYWRkX25v",
-            "dGVzGAIgASgJMr0CChVGcm9udERlc2tSZXBvcnRpbmdTdmMShgEKE0dldEZy",
-            "b250RGVza1JlcG9ydHMSPC5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZy",
-            "b250RGVza0JhdGNoUmVwb3J0aW5nU3ZjUmVxdWVzdBoxLmhvbG1zLnR5cGVz",
-            "LnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZRKaAQogR2V0",
-            "SG91c2VrZWVwaW5nQXNzaWdubWVudHNSZXBvcnQSQy5ob2xtcy50eXBlcy5y",
-            "ZXBvcnRpbmcucnBjLkZyb250RGVza1JlcG9ydGluZ1N2Y0hvdXNla2VlcGlu",
-            "Z1JlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1s",
-            "UmVwb3J0UmVzcG9uc2VCHKoCGUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENi",
-            "BnByb3RvMw=="));
+            "cl9pbmRpY2F0b3IucHJvdG8aHXByaW1pdGl2ZS9wYl9sb2NhbF9kYXRlLnBy",
+            "b3RvGjhyZXBvcnRpbmcvaW5wdXRfcGFyYW1zL2Zyb250X2Rlc2tfcmVwb3J0",
+            "X21hbmlmZXN0cy5wcm90bxoscmVwb3J0aW5nL291dHB1dHMvaHRtbF9yZXBv",
+            "cnRfcmVzcG9uc2UucHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMv",
+            "cHJvcGVydHlfaW5kaWNhdG9yLnByb3RvItICCiFGcm9udERlc2tCYXRjaFJl",
+            "cG9ydGluZ1N2Y1JlcXVlc3QSTAoKcHJvcGVydGllcxgBIAMoCzI4LmhvbG1z",
+            "LnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRp",
+            "Y2F0b3ISbgoeY2FsZW5kYXJfZGF0ZV9yZXBvcnRzX21hbmlmZXN0GAIgASgL",
+            "MkYuaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3BhcmFtcy5Gcm9udERl",
+            "c2tDdXJyZW50RGF0ZVJlcG9ydE1hbmlmZXN0Em8KHm9wc2RhdGVfcmFuZ2Vf",
+            "cmVwb3J0c19tYW5pZmVzdBgDIAEoCzJHLmhvbG1zLnR5cGVzLnJlcG9ydGlu",
+            "Zy5pbnB1dF9wYXJhbXMuRnJvbnREZXNrT3BzZGF0ZVJhbmdlUmVwb3J0TWFu",
+            "aWZlc3QirQEKKEZyb250RGVza1JlcG9ydGluZ1N2Y0hvdXNla2VlcGluZ1Jl",
+            "cXVlc3QSPAoNc3RhZmZfbWVtYmVycxgBIAMoCzIlLmhvbG1zLnR5cGVzLmlh",
+            "bS5TdGFmZk1lbWJlckluZGljYXRvchIRCglhZGRfbm90ZXMYAiABKAkSMAoE",
+            "ZGF0ZRgDIAEoCzIiLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkxvY2FsRGF0",
+            "ZTK9AgoVRnJvbnREZXNrUmVwb3J0aW5nU3ZjEoYBChNHZXRGcm9udERlc2tS",
+            "ZXBvcnRzEjwuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tC",
+            "YXRjaFJlcG9ydGluZ1N2Y1JlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRp",
+            "bmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USmgEKIEdldEhvdXNla2Vl",
+            "cGluZ0Fzc2lnbm1lbnRzUmVwb3J0EkMuaG9sbXMudHlwZXMucmVwb3J0aW5n",
+            "LnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNIb3VzZWtlZXBpbmdSZXF1ZXN0",
+            "GjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJl",
+            "c3BvbnNlQhyqAhlIT0xNUy5UeXBlcy5SZXBvcnRpbmcuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportManifestsReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportManifestsReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest.Parser, new[]{ "Properties", "CalendarDateReportsManifest", "OpsdateRangeReportsManifest" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser, new[]{ "StaffMembers", "AddNotes" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser, new[]{ "StaffMembers", "AddNotes", "Date" }, null, null, null)
           }));
     }
     #endregion
@@ -261,6 +262,7 @@ namespace HOLMS.Types.Reporting.RPC {
     public FrontDeskReportingSvcHousekeepingRequest(FrontDeskReportingSvcHousekeepingRequest other) : this() {
       staffMembers_ = other.staffMembers_.Clone();
       addNotes_ = other.addNotes_;
+      Date = other.date_ != null ? other.Date.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -289,6 +291,17 @@ namespace HOLMS.Types.Reporting.RPC {
       }
     }
 
+    /// <summary>Field number for the "date" field.</summary>
+    public const int DateFieldNumber = 3;
+    private global::HOLMS.Types.Primitive.PbLocalDate date_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate Date {
+      get { return date_; }
+      set {
+        date_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FrontDeskReportingSvcHousekeepingRequest);
@@ -304,6 +317,7 @@ namespace HOLMS.Types.Reporting.RPC {
       }
       if(!staffMembers_.Equals(other.staffMembers_)) return false;
       if (AddNotes != other.AddNotes) return false;
+      if (!object.Equals(Date, other.Date)) return false;
       return true;
     }
 
@@ -312,6 +326,7 @@ namespace HOLMS.Types.Reporting.RPC {
       int hash = 1;
       hash ^= staffMembers_.GetHashCode();
       if (AddNotes.Length != 0) hash ^= AddNotes.GetHashCode();
+      if (date_ != null) hash ^= Date.GetHashCode();
       return hash;
     }
 
@@ -327,6 +342,10 @@ namespace HOLMS.Types.Reporting.RPC {
         output.WriteRawTag(18);
         output.WriteString(AddNotes);
       }
+      if (date_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Date);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -335,6 +354,9 @@ namespace HOLMS.Types.Reporting.RPC {
       size += staffMembers_.CalculateSize(_repeated_staffMembers_codec);
       if (AddNotes.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(AddNotes);
+      }
+      if (date_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Date);
       }
       return size;
     }
@@ -347,6 +369,12 @@ namespace HOLMS.Types.Reporting.RPC {
       staffMembers_.Add(other.staffMembers_);
       if (other.AddNotes.Length != 0) {
         AddNotes = other.AddNotes;
+      }
+      if (other.date_ != null) {
+        if (date_ == null) {
+          date_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        Date.MergeFrom(other.Date);
       }
     }
 
@@ -364,6 +392,13 @@ namespace HOLMS.Types.Reporting.RPC {
           }
           case 18: {
             AddNotes = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (date_ == null) {
+              date_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(date_);
             break;
           }
         }

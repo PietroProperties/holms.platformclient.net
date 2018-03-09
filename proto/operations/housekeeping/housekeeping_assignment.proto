@@ -5,12 +5,13 @@ option csharp_namespace = "HOLMS.Types.Operations.Housekeeping";
 option go_package = "operations/housekeeping";
 
 import "google/protobuf/timestamp.proto";
-import "operations/rooms/room_indicator.proto";
 import "iam/staff_member_indicator.proto";
+import "operations/rooms/room_indicator.proto";
+import "primitive/pb_local_date.proto";
 
 message HousekeepingAssignment {
 	google.protobuf.Timestamp created_at = 1;
-	google.protobuf.Timestamp effective_date = 2;
+	.holms.types.primitive.PbLocalDate effective_date = 2;
 	.holms.types.iam.StaffMemberIndicator housekeeper = 3;
 	.holms.types.operations.rooms.RoomIndicator room = 4;
 }

@@ -24,18 +24,19 @@ namespace HOLMS.Types.Operations.Housekeeping {
           string.Concat(
             "CjVvcGVyYXRpb25zL2hvdXNla2VlcGluZy9ob3VzZWtlZXBpbmdfYXNzaWdu",
             "bWVudC5wcm90bxIjaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ob3VzZWtlZXBp",
-            "bmcaH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aJW9wZXJhdGlv",
-            "bnMvcm9vbXMvcm9vbV9pbmRpY2F0b3IucHJvdG8aIGlhbS9zdGFmZl9tZW1i",
-            "ZXJfaW5kaWNhdG9yLnByb3RvIvMBChZIb3VzZWtlZXBpbmdBc3NpZ25tZW50",
-            "Ei4KCmNyZWF0ZWRfYXQYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
-            "YW1wEjIKDmVmZmVjdGl2ZV9kYXRlGAIgASgLMhouZ29vZ2xlLnByb3RvYnVm",
-            "LlRpbWVzdGFtcBI6Cgtob3VzZWtlZXBlchgDIAEoCzIlLmhvbG1zLnR5cGVz",
-            "LmlhbS5TdGFmZk1lbWJlckluZGljYXRvchI5CgRyb29tGAQgASgLMisuaG9s",
-            "bXMudHlwZXMub3BlcmF0aW9ucy5yb29tcy5Sb29tSW5kaWNhdG9yQj9aF29w",
-            "ZXJhdGlvbnMvaG91c2VrZWVwaW5nqgIjSE9MTVMuVHlwZXMuT3BlcmF0aW9u",
-            "cy5Ib3VzZWtlZXBpbmdiBnByb3RvMw=="));
+            "bmcaH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aIGlhbS9zdGFm",
+            "Zl9tZW1iZXJfaW5kaWNhdG9yLnByb3RvGiVvcGVyYXRpb25zL3Jvb21zL3Jv",
+            "b21faW5kaWNhdG9yLnByb3RvGh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5w",
+            "cm90byL7AQoWSG91c2VrZWVwaW5nQXNzaWdubWVudBIuCgpjcmVhdGVkX2F0",
+            "GAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBI6Cg5lZmZlY3Rp",
+            "dmVfZGF0ZRgCIAEoCzIiLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkxvY2Fs",
+            "RGF0ZRI6Cgtob3VzZWtlZXBlchgDIAEoCzIlLmhvbG1zLnR5cGVzLmlhbS5T",
+            "dGFmZk1lbWJlckluZGljYXRvchI5CgRyb29tGAQgASgLMisuaG9sbXMudHlw",
+            "ZXMub3BlcmF0aW9ucy5yb29tcy5Sb29tSW5kaWNhdG9yQj9aF29wZXJhdGlv",
+            "bnMvaG91c2VrZWVwaW5nqgIjSE9MTVMuVHlwZXMuT3BlcmF0aW9ucy5Ib3Vz",
+            "ZWtlZXBpbmdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.Housekeeping.HousekeepingAssignment), global::HOLMS.Types.Operations.Housekeeping.HousekeepingAssignment.Parser, new[]{ "CreatedAt", "EffectiveDate", "Housekeeper", "Room" }, null, null, null)
           }));
@@ -92,9 +93,9 @@ namespace HOLMS.Types.Operations.Housekeeping {
 
     /// <summary>Field number for the "effective_date" field.</summary>
     public const int EffectiveDateFieldNumber = 2;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp effectiveDate_;
+    private global::HOLMS.Types.Primitive.PbLocalDate effectiveDate_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp EffectiveDate {
+    public global::HOLMS.Types.Primitive.PbLocalDate EffectiveDate {
       get { return effectiveDate_; }
       set {
         effectiveDate_ = value;
@@ -209,7 +210,7 @@ namespace HOLMS.Types.Operations.Housekeeping {
       }
       if (other.effectiveDate_ != null) {
         if (effectiveDate_ == null) {
-          effectiveDate_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+          effectiveDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
         }
         EffectiveDate.MergeFrom(other.EffectiveDate);
       }
@@ -244,7 +245,7 @@ namespace HOLMS.Types.Operations.Housekeeping {
           }
           case 18: {
             if (effectiveDate_ == null) {
-              effectiveDate_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+              effectiveDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
             }
             input.ReadMessage(effectiveDate_);
             break;
