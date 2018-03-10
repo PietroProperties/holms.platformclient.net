@@ -25,17 +25,16 @@ message ReservationSummary {
 	holms.types.crm.guests.Guest guest = 4;
 	holms.types.primitive.PbInclusiveOpsdateRange date_range = 5;
 	holms.types.supply.room_types.RoomType room_type = 6;
-	// Deprecated Guarantee Status
-	// holms.types.booking.reservations.ReservationGuaranteeStatus guarantee_status = 7;
-	.holms.types.iam.TenancyIndicator tenancy = 8;
-	.holms.types.tenancy_config.indicators.PropertyIndicator property = 9;
-	.holms.types.booking.channels.Channel channel = 10;
-	string vehicle_plate_information = 11;
+	.holms.types.iam.TenancyIndicator tenancy = 7;
+	.holms.types.tenancy_config.indicators.PropertyIndicator property = 8;
+	.holms.types.booking.channels.Channel channel = 9;
+	string vehicle_plate_information = 10;
 
-	string current_occupied_room_number = 12;
-	holms.types.operations.rooms.RoomIndicator current_occupied_room = 13;
-	string terminal_occupied_room_number = 14;
-	holms.types.operations.rooms.RoomIndicator terminal_occupied_room = 15;
+	string current_occupied_room_number = 11;
+	holms.types.operations.rooms.RoomIndicator current_occupied_room = 12;
+	string terminal_occupied_room_number = 13;
+	holms.types.operations.rooms.RoomIndicator terminal_occupied_room = 14;
+	string first_night_assigned_room = 15;
 	int32 number_adults = 16;
 	int32 number_children = 17;
 	repeated string active_tags = 18;
