@@ -23,18 +23,16 @@ message CompleteOpenReservation {
 	int32 number_children = 7;
 	holms.types.supply.room_types.RoomType room_type = 8;
 	repeated holms.types.crm.guests.Guest additional_guests = 9;
-	bool tax_exempt = 11;
-		// Deprecated guarantee_status
-		// holms.types.booking.reservations.ReservationGuaranteeStatus guarantee_status = 12;
-		// Deprecated unpaid guarantee balance
-		// holms.types.primitive.MonetaryAmount unpaid_guarantee_balance = 13;
-	holms.types.operations.housekeeping.HousekeepingTime hk_time_preference = 15;
-	string vehicle_plate_information = 16;
+	bool tax_exempt = 10;
+	holms.types.operations.housekeeping.HousekeepingTime hk_time_preference = 11;
+	string vehicle_plate_information = 12;
 
-	string current_occupied_room_number = 17;
-	holms.types.operations.rooms.RoomIndicator current_occupied_room = 18;
-	string terminal_occupied_room_number = 19;
-	holms.types.operations.rooms.RoomIndicator terminal_occupied_room = 20;
+	string current_occupied_room_number = 15;
+	holms.types.operations.rooms.RoomIndicator current_occupied_room = 16;
+	string terminal_occupied_room_number = 17;
+	holms.types.operations.rooms.RoomIndicator terminal_occupied_room = 18;
+	string first_night_assigned_room = 19;
+
 	repeated string active_tags = 21;
 	string channel_manager_id = 22;
 	string source_channel_id = 23;
