@@ -1,9 +1,7 @@
-﻿using HOLMS.Support.Conversions;
-using HOLMS.Types.Extensions;
+﻿using HOLMS.Types.Extensions;
 using HOLMS.Types.Primitive;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using HOLMS.Platform.Support.Conversions;
 
 namespace HOLMS.Types.CRM.Guests {
     public partial class ReservationNoteTemplateIndicator : EntityIndicator<ReservationNoteTemplateIndicator> {

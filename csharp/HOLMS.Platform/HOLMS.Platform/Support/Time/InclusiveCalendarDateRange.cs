@@ -1,9 +1,9 @@
 ﻿using System;
-using HOLMS.Support.Conversions;
+using HOLMS.Platform.Support.Conversions;
 using HOLMS.Types.Primitive;
 using NodaTime;
 
-namespace HOLMS.Support.Time {
+namespace HOLMS.Platform.Support.Time {
     public class InclusiveCalendarDateRange : InclusiveDateRange {
         public InclusiveCalendarDateRange() { }
 

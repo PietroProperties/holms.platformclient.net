@@ -3,7 +3,7 @@ using System.Globalization;
 using HOLMS.Types.Primitive;
 using NodaTime;
 
-namespace HOLMS.Support.Conversions {
+namespace HOLMS.Platform.Support.Conversions {
     public static class LocalDateConversions {
         public static PbLocalDate ToPb(this LocalDate d) =>
             new PbLocalDate {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using NodaTime;
 
-namespace HOLMS.Support.Time {
+namespace HOLMS.Platform.Support.Time {
     public abstract class InclusiveDateRange : IEnumerable<LocalDate> {
         private readonly int _hashCode;
         public LocalDate Start;
@@ -18,30 +18,31 @@ namespace HOLMS.Support.Time {
         }
 
         protected InclusiveDateRange(LocalDate start, LocalDate end) {
+            if (start > end) {
+                throw new ArgumentException("Inverted date range not allowed");
+            }
+
             Start = start;
             End = end;
         }
 
-        protected InclusiveDateRange(LocalDate start, int daysInRange) {
-            Start = start;
-            End = start.PlusDays(daysInRange - 1);
-        }
+        protected InclusiveDateRange(LocalDate start, int daysInRange)
+            : this(start, start.PlusDays(daysInRange - 1)) { }
 
-        protected InclusiveDateRange(InclusiveDateRange other) {
-            Start = other.Start;
-            End = other.End;
-        }
+        protected InclusiveDateRange(InclusiveDateRange other) : this(other.Start, other.End) { }
 
         public bool Overlaps(InclusiveDateRange other) => !(other.End < Start || End < other.Start);
 
+        [Obsolete("Don't use this, it sets a time where there is none")]
         public DateTime StartDateTime {
-            get { return new DateTime(Start.Year, Start.Month, Start.Day); }
-            set { Start = new LocalDate(value.Year, value.Month, value.Day); }
+            get => new DateTime(Start.Year, Start.Month, Start.Day);
+            set => Start = new LocalDate(value.Year, value.Month, value.Day);
         }
 
+        [Obsolete("Don't use this, it sets a time where there is none")]
         public DateTime EndDateTime {
-            get { return new DateTime(End.Year, End.Month, End.Day); }
-            set { End = new LocalDate(value.Year, value.Month, value.Day); }
+            get => new DateTime(End.Year, End.Month, End.Day);
+            set => End = new LocalDate(value.Year, value.Month, value.Day);
         }
 
         public long DaysInRange {

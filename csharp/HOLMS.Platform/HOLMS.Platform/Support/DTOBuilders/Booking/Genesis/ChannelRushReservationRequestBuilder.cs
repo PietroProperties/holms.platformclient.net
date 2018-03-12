@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using HOLMS.Platform.Support.ReservationTags;
-using HOLMS.Support.Time;
+using HOLMS.Platform.Support.Time;
 using HOLMS.Types.Booking.Channels;
 using HOLMS.Types.Booking.Reservations;
 using HOLMS.Types.CRM.Guests;

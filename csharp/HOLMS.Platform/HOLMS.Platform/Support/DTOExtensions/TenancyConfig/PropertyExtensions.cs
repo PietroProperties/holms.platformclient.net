@@ -1,11 +1,7 @@
 ﻿using HOLMS.Types.TenancyConfig;
 using NodaTime;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HOLMS.Support.Time;
+using HOLMS.Platform.Support.Time;
 
 namespace HOLMS.Platform.Support.DTOExtensions.TenancyConfig {
     public static class PropertyExtensions {

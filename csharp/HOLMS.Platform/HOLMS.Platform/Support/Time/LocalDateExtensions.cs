@@ -1,7 +1,7 @@
-﻿using NodaTime;
-using System;
+﻿using System;
+using NodaTime;
 
-namespace HOLMS.Support.Time {
+namespace HOLMS.Platform.Support.Time {
     public static class LocalDateExtensions {
         public static LocalDate LocalToday {
             get {

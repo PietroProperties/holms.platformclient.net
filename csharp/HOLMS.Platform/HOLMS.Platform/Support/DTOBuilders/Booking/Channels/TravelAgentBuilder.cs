@@ -1,10 +1,10 @@
 ﻿using System;
+using HOLMS.Platform.Support.Conversions;
 using HOLMS.Platform.Support.Currency;
-using HOLMS.Support.Conversions;
 using HOLMS.Types.Booking.Channels;
 using HOLMS.Types.Booking.Indicators;
 
-namespace HOLMS.Support.DTOBuilders.Booking.Channels {
+namespace HOLMS.Platform.Support.DTOBuilders.Booking.Channels {
     public class TravelAgentBuilder {
         private readonly TravelAgentIndicator _ind;
         private readonly string _iataId;

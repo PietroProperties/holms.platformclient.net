@@ -1,4 +1,4 @@
-﻿namespace HOLMS.Support {
+﻿namespace HOLMS.Platform.Support {
     public enum IIFExportFrequency {
         Daily,
         Weekly,

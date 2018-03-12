@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using HOLMS.Support.Time;
+using HOLMS.Platform.Support.Time;
 using HOLMS.Types.Booking.Channels;
 using HOLMS.Types.Booking.Reservations;
 using HOLMS.Types.CRM.Guests;

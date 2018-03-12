@@ -1,11 +1,9 @@
-﻿using HOLMS.Types.Primitive;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using HOLMS.Types.Primitive;
 
-namespace HOLMS.Platform.Tests.Support {
+namespace HOLMS.Platform.Tests.TestSupport {
     internal static class SecurityActionFactory {
         public static List<SecurityAction> GetAll() {
             return Enum.GetValues(typeof(SecurityAction))

@@ -1,5 +1,5 @@
 ﻿using HOLMS.Platform.Support.ReservationTags;
-using HOLMS.Support.Time;
+using HOLMS.Platform.Support.Time;
 using HOLMS.Types.Booking.Indicators;
 using HOLMS.Types.Booking.Reservations;
 using HOLMS.Types.Supply.RoomTypes;

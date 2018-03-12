@@ -1,14 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using HOLMS.Types.IAM;
-using Microsoft.IdentityModel.Tokens;
-using HOLMS.Platform.Support.Security;
 using HOLMS.Types.Primitive;
-using System.Collections.Generic;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 
-namespace HOLMS.Support.Security {
+namespace HOLMS.Platform.Support.Security {
     public class ValidatedJWToken {
         public string RawTokenData { get; protected set; }
         public AuthenticatedClientClaims ACC { get; protected set; }

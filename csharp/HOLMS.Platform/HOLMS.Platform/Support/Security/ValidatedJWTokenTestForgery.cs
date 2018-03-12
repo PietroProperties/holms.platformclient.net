@@ -1,10 +1,9 @@
-﻿using HOLMS.Platform.Support.Security;
+﻿using System;
+using System.Collections.Generic;
 using HOLMS.Types.IAM;
 using HOLMS.Types.Primitive;
-using System;
-using System.Collections.Generic;
 
-namespace HOLMS.Support.Security {
+namespace HOLMS.Platform.Support.Security {
     public class ValidatedJWTokenTestForgery : ValidatedJWToken {
         public ValidatedJWTokenTestForgery(StaffMemberIndicator user, IEnumerable<SecurityAction> securityActions, 
                 TenancyIndicator tenancy, ClientInstanceIndicator clientInstance, DateTime requestTime, bool hasExpiration) {

@@ -1,14 +1,14 @@
-﻿using HOLMS.Types.IAM;
-using HOLMS.Types.Primitive;
-using Microsoft.IdentityModel.Tokens;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
+using HOLMS.Types.IAM;
+using HOLMS.Types.Primitive;
+using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 
-namespace HOLMS.Support.Security {
+namespace HOLMS.Platform.Support.Security {
     public sealed class JWToken {
         public const int AccessTokenExpirationMinutes = 60;
         public const string ClientIdKey = "client_id";

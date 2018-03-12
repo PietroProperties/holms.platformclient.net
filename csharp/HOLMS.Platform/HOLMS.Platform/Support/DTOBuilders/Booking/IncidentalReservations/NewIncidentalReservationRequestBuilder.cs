@@ -1,10 +1,10 @@
 ﻿using System;
-using HOLMS.Support.Time;
+using HOLMS.Platform.Support.Time;
 using HOLMS.Types.Booking.IncidentalReservations;
 using HOLMS.Types.Booking.Indicators;
 using HOLMS.Types.Supply.IncidentalItems;
 
-namespace HOLMS.Support.DTOBuilders.Booking.IncidentalReservations {
+namespace HOLMS.Platform.Support.DTOBuilders.Booking.IncidentalReservations {
     public class NewIncidentalReservationRequestBuilder {
         public InclusiveOpsdateRange DateRange;
         public ReservationIndicator LodgingReservation;

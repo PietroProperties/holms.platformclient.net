@@ -1,7 +1,7 @@
-﻿using HOLMS.Types.Primitive;
-using HOLMS.Platform.Support.Currency;
+﻿using HOLMS.Platform.Support.Currency;
+using HOLMS.Types.Primitive;
 
-namespace HOLMS.Support.Conversions {
+namespace HOLMS.Platform.Support.Conversions {
     public static class MoneyConversions {
         public static DecimalDollars ToDecimalDollars(this MonetaryAmount a) =>
             new DecimalDollars(a.Microdollars / 1000000m);

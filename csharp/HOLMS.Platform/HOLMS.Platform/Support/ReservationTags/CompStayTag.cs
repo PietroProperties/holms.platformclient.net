@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace HOLMS.Platform.Support.ReservationTags {
+﻿namespace HOLMS.Platform.Support.ReservationTags {
     public class CompStayTag : ReservationTagBase {
         public override bool IsPermanent => false;
 

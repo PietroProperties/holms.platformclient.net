@@ -3,7 +3,7 @@ using HOLMS.Types.Booking.Indicators;
 using HOLMS.Types.Booking.Reservations;
 using HOLMS.Types.Operations.NoteRequests;
 
-namespace HOLMS.Support.DTOBuilders.Booking.Reservations {
+namespace HOLMS.Platform.Support.DTOBuilders.Booking.Reservations {
     public class ReservationNoteBuilder {
         private readonly ReservationNoteIndicator _id;
         private readonly NoteRequestIndicator _sourceNote;

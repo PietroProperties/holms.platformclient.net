@@ -1,12 +1,7 @@
 ﻿using HOLMS.Types.Money.Accounting;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HOLMS.Platform.Tests.Tests {
+namespace HOLMS.Platform.Tests.Support {
     class EntityDTOTests {
         [Test]
         public void EqualsOperatorComparesEntityNotIndicatorToNull() {

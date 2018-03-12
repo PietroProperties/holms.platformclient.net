@@ -1,8 +1,8 @@
-﻿using HOLMS.Support.Time;
+﻿using HOLMS.Platform.Support.Time;
 using HOLMS.Types.Booking.Indicators;
 using HOLMS.Types.Supply.IncidentalItems;
 
-namespace HOLMS.Support.DTOBuilders.Booking.IncidentalReservations {
+namespace HOLMS.Platform.Support.DTOBuilders.Booking.IncidentalReservations {
     public class IncidentalAvailabilityRequestBuilder {
         public IncidentalItemIndicator IncidentalItem;
         public bool IsForAmendment;
