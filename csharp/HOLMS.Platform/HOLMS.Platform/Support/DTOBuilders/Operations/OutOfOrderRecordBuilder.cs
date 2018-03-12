@@ -1,6 +1,6 @@
 ﻿using System;
-using HOLMS.Support.Conversions;
-using HOLMS.Support.Time;
+using HOLMS.Platform.Support.Conversions;
+using HOLMS.Platform.Support.Time;
 using HOLMS.Types.IAM;
 using HOLMS.Types.Operations.OutOfOrder;
 using HOLMS.Types.Operations.Rooms;

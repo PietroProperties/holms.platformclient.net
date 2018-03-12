@@ -1,6 +1,6 @@
 ﻿using HOLMS.Types.Primitive;
 
-namespace HOLMS.Support.DTOExtensions.Primitive {
+namespace HOLMS.Platform.Support.DTOExtensions.Primitive {
     public static class ContactInfoExtensions {
         public static string GetNameFamilyGiven(this ContactInformation ci) {
             return $"{ci.FamilyName}, {ci.GivenName}";

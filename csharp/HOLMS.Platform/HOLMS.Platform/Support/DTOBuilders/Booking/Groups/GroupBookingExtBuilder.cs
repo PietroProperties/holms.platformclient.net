@@ -3,7 +3,7 @@ using HOLMS.Types.Booking.Groups;
 using HOLMS.Types.CRM.Groups;
 using HOLMS.Types.TenancyConfig.Indicators;
 
-namespace HOLMS.Support.DTOBuilders.Booking.Groups {
+namespace HOLMS.Platform.Support.DTOBuilders.Booking.Groups {
     public class GroupBookingExtBuilder {
         private readonly GroupBooking _gb;
         private readonly string _groupName;

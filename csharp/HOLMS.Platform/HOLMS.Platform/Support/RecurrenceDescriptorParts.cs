@@ -3,7 +3,7 @@
 // (without allowing for exceptions). We've used the UNIX cron format to
 // stringify how we represent recurrences.
 
-namespace HOLMS.Support {
+namespace HOLMS.Platform.Support {
     public abstract class RecurrenceDescriptorPart {
         // No wildcards yet
         public string DescriptorPartString { get; }

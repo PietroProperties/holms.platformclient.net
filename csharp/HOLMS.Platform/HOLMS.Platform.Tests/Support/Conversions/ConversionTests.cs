@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HOLMS.Support.Conversions;
+using HOLMS.Platform.Support.Conversions;
 using NUnit.Framework;
 
-namespace HOLMS.Platform.Tests.Tests {
+namespace HOLMS.Platform.Tests.Support.Conversions {
     internal class ConversionTests {
         [Test]
         public void TimespanToPbConversionRoundTripsIsomorphically() {

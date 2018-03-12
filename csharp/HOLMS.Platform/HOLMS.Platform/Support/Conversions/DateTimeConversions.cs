@@ -2,7 +2,7 @@
 using Google.Protobuf.WellKnownTypes;
 using NodaTime;
 
-namespace HOLMS.Support.Conversions {
+namespace HOLMS.Platform.Support.Conversions {
     public static class DateTimeConversions {
         public static Timestamp ToTS(this DateTime dt) =>
             Timestamp.FromDateTime(dt.ToUniversalTime());

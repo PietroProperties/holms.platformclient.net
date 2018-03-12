@@ -3,10 +3,10 @@
 
 using System.Collections;
 using System.Collections.Generic;
-using HOLMS.Support.Time;
+using HOLMS.Platform.Support.Time;
 using NodaTime;
 
-namespace HOLMS.Support {
+namespace HOLMS.Platform.Support {
     public class DateMap<T> : IEnumerable<T> {
         private readonly Dictionary<LocalDate, T> _dict;
         private readonly T _default;

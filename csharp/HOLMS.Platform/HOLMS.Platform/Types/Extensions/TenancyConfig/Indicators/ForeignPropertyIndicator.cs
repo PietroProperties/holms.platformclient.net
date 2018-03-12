@@ -1,10 +1,6 @@
-﻿using HOLMS.Support.Conversions;
-using HOLMS.Types.Extensions;
+﻿using HOLMS.Types.Extensions;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using HOLMS.Platform.Support.Conversions;
 using HOLMS.Types.Primitive;
 
 namespace HOLMS.Types.TenancyConfig.Indicators {

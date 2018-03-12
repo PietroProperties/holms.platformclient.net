@@ -1,13 +1,12 @@
-﻿using HOLMS.Platform.Tests.Support;
-using HOLMS.Support.Security;
+﻿using System;
+using System.IdentityModel.Tokens.Jwt;
+using HOLMS.Platform.Support.Security;
+using HOLMS.Platform.Tests.TestSupport;
 using HOLMS.Types.IAM;
 using Microsoft.IdentityModel.Tokens;
 using NUnit.Framework;
-using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security;
 
-namespace HOLMS.Platform.Tests {
+namespace HOLMS.Platform.Tests.Support {
     internal class JWTokenTests {
         private ClientInstanceIndicator _cii;
         private SecurityKey _secKey;

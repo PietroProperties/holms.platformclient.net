@@ -1,13 +1,13 @@
 ﻿using System;
-using HOLMS.Support.Conversions;
-using HOLMS.Support.Time;
+using HOLMS.Platform.Support.Conversions;
+using HOLMS.Platform.Support.Time;
 using HOLMS.Types.Booking.Groups;
 using HOLMS.Types.Booking.Indicators;
 using HOLMS.Types.CRM.Groups;
 using HOLMS.Types.Supply;
 using HOLMS.Types.TenancyConfig.Indicators;
 
-namespace HOLMS.Support.DTOBuilders.Booking.Groups {
+namespace HOLMS.Platform.Support.DTOBuilders.Booking.Groups {
     public class GroupBookingBuilder {
         // Bookings always have these things
         private readonly GroupBookingIndicator _gbi;

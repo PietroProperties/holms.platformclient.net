@@ -1,8 +1,8 @@
 ﻿using System;
-using HOLMS.Platform.Support.ReservationTags;
 using NUnit.Framework;
+using HOLMS.Platform.Support.ReservationTags;
 
-namespace HOLMS.Platform.Tests.Tests {
+namespace HOLMS.Platform.Tests.Support {
     class ReservationTagBaseTests {
         private const string GroupBookingId = "891a0b70-ae6c-435d-99e0-6834a5a6b3f6";
         [Test]

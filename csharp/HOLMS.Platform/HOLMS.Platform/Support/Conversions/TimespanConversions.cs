@@ -1,7 +1,7 @@
 ﻿using System;
 using Google.Protobuf.WellKnownTypes;
 
-namespace HOLMS.Support.Conversions {
+namespace HOLMS.Platform.Support.Conversions {
     public static class TimespanConversions {
         public static Duration ToPb(this TimeSpan ts) {
             var secs = Convert.ToInt64(ts.TotalMilliseconds/1000);

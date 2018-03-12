@@ -1,8 +1,8 @@
-﻿using HOLMS.Support.Conversions;
+﻿using HOLMS.Platform.Support.Conversions;
 using HOLMS.Types.Primitive;
 using NodaTime;
 
-namespace HOLMS.Support.Time {
+namespace HOLMS.Platform.Support.Time {
     public class InclusiveOpsdateRange : InclusiveDateRange {
         public InclusiveOpsdateRange() { }
         public InclusiveOpsdateRange(LocalDate start, int daysInRange) : base(start, daysInRange) { }

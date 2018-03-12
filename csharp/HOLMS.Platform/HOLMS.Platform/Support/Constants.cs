@@ -1,4 +1,4 @@
-﻿namespace HOLMS.Support {
+﻿namespace HOLMS.Platform.Support {
     public static class Constants {
         public static string[] GetStateAbbreviations() {
             return new string[] {

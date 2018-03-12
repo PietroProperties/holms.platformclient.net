@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HOLMS.Platform.Support.Conversions;
 using HOLMS.Types.Primitive;
-using HOLMS.Support.Conversions;
 
 namespace HOLMS.Types.Money.Accounting {
     public partial class AccountingTransactionLineIndicator : EntityIndicator<AccountingTransactionLineIndicator> {
