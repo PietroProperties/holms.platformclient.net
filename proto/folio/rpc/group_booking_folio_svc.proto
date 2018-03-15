@@ -78,6 +78,7 @@ enum GroupBookingFolioSvcPostCardPaymentResult {
 	GROUP_BOOKING_FOLIO_SVC_POST_CARD_PAYMENT_MISSING_ASSET_ACCOUNT = 2;
 	GROUP_BOOKING_FOLIO_SVC_POST_CARD_PAYMENT_INVALID_AMOUNT = 3;
 	GROUP_BOOKING_FOLIO_SVC_POST_CARD_PAYMENT_AUTHORIZATION_UNAVAILABLE = 4;
+	GROUP_BOOKING_FOLIO_SVC_POST_CARD_PAYMENT_REJECTED_BY_PROCESSOR = 5;
 }
 
 message GroupBookingFolioSvcPostCardPaymentResponse {
@@ -88,6 +89,7 @@ message GroupBookingFolioSvcPostCardPaymentRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
 	holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 2;
 	holms.types.primitive.MonetaryAmount amount = 3;
+        holms.types.money.cards.CardSalePurpose purpose = 4;
 }
 
 message GroupBookingFolioSvcPostCashPaymentRequest {
