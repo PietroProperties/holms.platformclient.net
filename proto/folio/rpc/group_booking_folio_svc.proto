@@ -9,6 +9,7 @@ import "folio/folio_check_cash_payment_indicator.proto";
 import "folio/group_booking_folio_state.proto";
 import "google/protobuf/empty.proto";
 import "money/cards/card_sale_purpose.proto";
+import "money/cards/customer_payment_card.proto";
 import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
@@ -145,10 +146,16 @@ message GroupBookingFolioSvcCancelPaymentResponse {
 	GroupBookingFolioSvcCancelPaymentResponseResult result = 1;
 }
 
+message GroupBookingSvcGetOnFileCardsResponse {
+	repeated holms.types.money.cards.CustomerPaymentCard cards = 1;
+}
+
 service GroupBookingFolioSvc {
 	// Get info
 	rpc GetGroupBookingFolioState(.holms.types.booking.indicators.GroupBookingIndicator)
 		returns(.holms.types.folio.GroupBookingFolioState);
+	rpc GetOnFileCards(.holms.types.booking.indicators.GroupBookingIndicator)
+		returns(GroupBookingSvcGetOnFileCardsResponse);
 
 	// Cards
 	rpc AddCardAuthorizationFromStoredCard(GroupBookingFolioSvcCardAuthorizationFromTokenRequest)
