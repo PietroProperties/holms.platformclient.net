@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package holms.types.folio.rpc;
+option csharp_namespace = "HOLMS.Types.Folio.RPC";
+
+import "money/cards/card_sale_purpose.proto";
+import "money/cards/transactions/payment_card_sale_indicator.proto";
+import "primitive/monetary_amount.proto";
+
+message FolioSvcAuthorizationModificationRequest {
+	holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 1;
+	holms.types.primitive.MonetaryAmount change_amount = 2;
+	holms.types.money.cards.CardSalePurpose purpose = 3;
+}
+

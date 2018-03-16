@@ -4,7 +4,11 @@ package holms.types.folio.rpc;
 option csharp_namespace = "HOLMS.Types.Folio.RPC";
 
 import "booking/indicators/reservation_indicator.proto";
+import "folio/folio_check_cash_payment_indicator.proto";
 import "folio/reservation_folio_state.proto";
+import "folio/reservation_folio_summary.proto";
+import "folio/rpc/folio_svc_authorization_modification_request.proto";
+import "folio/rpc/folio_svc_authorization_modification_response.proto";
 import "google/protobuf/empty.proto";
 import "money/cards/card_sale_purpose.proto";
 import "money/cards/customer_payment_card.proto";
@@ -14,9 +18,6 @@ import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
-import "folio/reservation_folio_summary.proto";
-import "folio/folio_check_cash_payment_indicator.proto";
-import "folio/rpc/folio_svc_authorization_modification_result.proto";
 
 message ReservationFolioSvcGetSummariesRequest {
 	repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
@@ -160,16 +161,6 @@ message ReservationFolioSvcRefundResponse {
 	ReservationFolioSvcRefundResult result = 1;
 }
 
-message ReservationFolioSvcAuthorizationModificationResponse {
-	FolioSvcAuthorizationModificationResult result = 1;
-}
-
-message ReservationFolioSvcAuthorizationModificationRequest {
-	holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 1;
-	holms.types.primitive.MonetaryAmount change_amount = 2;
-	holms.types.money.cards.CardSalePurpose purpose = 3;
-}
-
 enum ReservationFolioSvcCancelPaymentResponseResult {
 	RESERVATION_FOLIO_SVC_CANCEL_PAYMENT_SUCCESS = 0;
 	RESERVATION_FOLIO_SVC_CANCEL_PAYMENT_UNKNOWN_FAILURE = 1;
@@ -198,8 +189,8 @@ service ReservationFolioSvc {
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromNotPresentCard(CardAuthorizationFromNotPresentCardRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
-	rpc ChangeAuthorizationAmount(ReservationFolioSvcAuthorizationModificationRequest)
-		returns (ReservationFolioSvcAuthorizationModificationResponse);
+	rpc ChangeAuthorizationAmount(FolioSvcAuthorizationModificationRequest)
+		returns (FolioSvcAuthorizationModificationResponse);
 	
 	// Payment application/cancellation/refund
 	rpc PostCardPayment(ReservationFolioSvcPostCardPaymentRequest)

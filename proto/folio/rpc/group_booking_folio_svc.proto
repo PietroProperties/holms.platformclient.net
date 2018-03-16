@@ -7,7 +7,8 @@ option go_package = "folio/rpc";
 import "booking/indicators/group_booking_indicator.proto";
 import "folio/folio_check_cash_payment_indicator.proto";
 import "folio/group_booking_folio_state.proto";
-import "folio/rpc/folio_svc_authorization_modification_result.proto";
+import "folio/rpc/folio_svc_authorization_modification_response.proto";
+import "folio/rpc/folio_svc_authorization_modification_request.proto";
 import "google/protobuf/empty.proto";
 import "money/cards/card_sale_purpose.proto";
 import "money/cards/customer_payment_card.proto";
@@ -17,16 +18,6 @@ import "money/cards/not_present_payment_card.proto";
 import "money/cards/customer_payment_card_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
-
-message GroupBookingFolioSvcAuthorizationModificationRequest {
-	holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 1;
-	holms.types.primitive.MonetaryAmount change_amount = 2;
-	holms.types.money.cards.CardSalePurpose purpose = 3;
-}
-
-message GroupBookingFolioSvcAuthorizationModificationResponse {
-	.holms.types.folio.rpc.FolioSvcAuthorizationModificationResult result = 1;
-}
 
 enum GroupBookingFolioSvcPostChargesResult {
 	GROUP_BOOKING_FOLIO_SVC_POST_CHARGES_RESULT_OK = 0;
@@ -177,8 +168,8 @@ service GroupBookingFolioSvc {
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromNotPresentCard(GroupBookingFolioSvcCardAuthorizationFromNotPresentCardRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
-	rpc ChangeAuthorizationAmount(GroupBookingFolioSvcAuthorizationModificationRequest)
-		returns (GroupBookingFolioSvcAuthorizationModificationResponse);
+	rpc ChangeAuthorizationAmount(FolioSvcAuthorizationModificationRequest)
+		returns (FolioSvcAuthorizationModificationResponse);
 
 	// Payment application/cancellation/refund
 	rpc PostCardPayment(GroupBookingFolioSvcPostCardPaymentRequest)
