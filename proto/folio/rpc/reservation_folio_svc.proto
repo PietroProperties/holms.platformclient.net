@@ -9,15 +9,27 @@ import "folio/reservation_folio_state.proto";
 import "folio/reservation_folio_summary.proto";
 import "folio/rpc/folio_svc_authorization_modification_request.proto";
 import "folio/rpc/folio_svc_authorization_modification_response.proto";
+import "folio/rpc/folio_svc_cancel_payment_response.proto";
+import "folio/rpc/folio_svc_get_on_file_cards_response.proto";
+import "folio/rpc/folio_svc_post_card_payment_response.proto";
+import "folio/rpc/folio_svc_post_cash_payment_response.proto";
+import "folio/rpc/folio_svc_post_check_payment_response.proto";
+import "folio/rpc/folio_svc_refund_response.proto";
 import "google/protobuf/empty.proto";
 import "money/cards/card_sale_purpose.proto";
-import "money/cards/customer_payment_card.proto";
 import "money/cards/customer_payment_card_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
 import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
+
+message ReservationFolioSvcCardAuthorizationFromStoredCardRequest {
+	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	.holms.types.money.cards.CustomerPaymentCardIndicator card = 2;
+	holms.types.primitive.MonetaryAmount amount = 3;
+	holms.types.money.cards.CardSalePurpose purpose = 4;
+}
 
 message ReservationFolioSvcGetSummariesRequest {
 	repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
@@ -27,57 +39,19 @@ message ReservationFolioSvcGetSummariesResponse {
 	repeated .holms.types.folio.ReservationFolioSummary summaries = 1;
 }
 
-enum ReservationFolioSvcPostChargesResult {
-	RESERVATION_FOLIO_SVC_POST_CHARGES_RESULT_OK = 0;
-	RESERVATION_FOLIO_SVC_POST_CHARGES_RESULT_MISSING_HOUSE_ACCOUNT = 1;
-	RESERVATION_FOLIO_SVC_POST_CHARGES_RESULT_MISSING_RESERVATION = 2;
-}
-
-message ReservationFolioSvcPostChargesResponse {
-	ReservationFolioSvcPostChargesResult result = 1;
-}
-
 enum ReservationFolioSvcGetFolioStateResult {
 	RESERVATION_FOLIO_SVC_GET_FOLIO_STATE_OK = 0;
 	RESERVATION_FOLIO_SVC_GET_FOLIO_STATE_MISSING_HOUSE_ACCOUNT = 1;
-
 }
 
-message ReservationFolioSvcGetFolioStateResponsev2 {
+message ReservationFolioSvcGetFolioStateResponse {
 	ReservationFolioSvcGetFolioStateResult result = 1;
 	.holms.types.folio.ReservationFolioState folio_state = 2;
-}
-
-enum ReservationFolioSvcPostCashPaymentResult {
-	RESERVATION_FOLIO_SVC_POST_CASH_PAYMENT_OK = 0;
-	RESERVATION_FOLIO_SVC_POST_CASH_PAYMENT_MISSING_HOUSE_ACCOUNT = 1;
-	RESERVATION_FOLIO_SVC_POST_CASH_PAYMENT_INVALID_AMOUNT = 2;
-}
-
-message ReservationFolioSvcPostCashPaymentResponse {
-	ReservationFolioSvcPostCashPaymentResult result = 1;
-}
-
-enum ReservationFolioSvcPostCheckPaymentResult {
-	RESERVATION_FOLIO_SVC_POST_CHECK_PAYMENT_OK = 0;
-	RESERVATION_FOLIO_SVC_POST_CHECK_PAYMENT_MISSING_HOUSE_ACCOUNT = 1;
-	RESERVATION_FOLIO_SVC_POST_CHECK_PAYMENT_INVALID_AMOUNT = 2;
-}
-
-message ReservationFolioSvcPostCheckPaymentResponse {
-	ReservationFolioSvcPostCheckPaymentResult result = 1;
 }
 
 message ReservationFolioSvcPostCheckPaymentRequest {
 	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
 	.holms.types.primitive.MonetaryAmount amount = 2;
-}
-
-message CardAuthorizationFromStoredCardRequest {
-	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
-	.holms.types.money.cards.CustomerPaymentCardIndicator card = 2;
-	holms.types.primitive.MonetaryAmount amount = 3;
-	holms.types.money.cards.CardSalePurpose purpose = 4;
 }
 
 message CardAuthorizationFromPresentCardRequest {
@@ -93,19 +67,6 @@ message CardAuthorizationFromNotPresentCardRequest {
 	holms.types.money.cards.CardSalePurpose purpose = 4;
 }
 
-enum ReservationFolioSvcPostCardPaymentResult {
-	RESERVATION_FOLIO_SVC_POST_CARD_PAYMENT_OK = 0;
-	RESERVATION_FOLIO_SVC_POST_CARD_PAYMENT_MISSING_HOUSE_ACCOUNT = 1;
-	RESERVATION_FOLIO_SVC_POST_CARD_PAYMENT_MISSING_ASSET_ACCOUNT = 2;
-	RESERVATION_FOLIO_SVC_POST_CARD_PAYMENT_INVALID_AMOUNT = 3;
-	RESERVATION_FOLIO_SVC_POST_CARD_PAYMENT_AUTHORIZATION_UNAVAILABLE = 4;
-	RESERVATION_FOLIO_SVC_POST_CARD_PAYMENT_REJECTED_BY_PROCESSOR = 5;
-}
-
-message ReservationFolioSvcPostCardPaymentResponse {
-	ReservationFolioSvcPostCardPaymentResult result = 1;
-}
-
 message ReservationFolioSvcPostCardPaymentRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
 	holms.types.money.cards.transactions.PaymentCardSaleIndicator sale = 2;
@@ -116,10 +77,6 @@ message ReservationFolioSvcPostCardPaymentRequest {
 message ReservationFolioSvcPostCashPaymentRequest {
 	holms.types.primitive.MonetaryAmount amount_paid = 1;
 	holms.types.booking.indicators.ReservationIndicator reservation = 2;
-}
-
-message ReservationFolioSvcGetOnFileCardsResponse {
-	repeated holms.types.money.cards.CustomerPaymentCard cards = 1;
 }
 
 message ReservationFolioSvcPostLodgingChargeCorrectionRequest {
@@ -151,39 +108,17 @@ message ReservationFolioSvcPaymentCardRefundRequest {
 	string description = 4;
 }
 
-enum ReservationFolioSvcRefundResult {
-	RESERVATION_FOLIO_SVC_REFUND_SUCCESS = 0;
-	RESERVATION_FOLIO_SVC_REFUND_EXCEEDS_LIMIT = 1;
-	RESERVATION_FOLIO_SVC_REFUND_UNKNOWN_FAILURE = 2;
-}
-
-message ReservationFolioSvcRefundResponse {
-	ReservationFolioSvcRefundResult result = 1;
-}
-
-enum ReservationFolioSvcCancelPaymentResponseResult {
-	RESERVATION_FOLIO_SVC_CANCEL_PAYMENT_SUCCESS = 0;
-	RESERVATION_FOLIO_SVC_CANCEL_PAYMENT_UNKNOWN_FAILURE = 1;
-	RESERVATION_FOLIO_SVC_CANCEL_PAYMENT_SALE_NOT_FOUND = 2;
-	RESERVATION_FOLIO_SVC_CANCEL_PAYMENT_REJECTED_BY_PROCESSOR = 3;
-	RESERVATION_FOLIO_SVC_CANCEL_PAYMENT_INVALID_STATE = 4;
-}
-
-message ReservationFolioSvcCancelPaymentResponse {
-	ReservationFolioSvcCancelPaymentResponseResult result = 1;
-}
-
 service ReservationFolioSvc {
 	// Get info
 	rpc GetReservationFolioState(.holms.types.booking.indicators.ReservationIndicator)
-		returns(ReservationFolioSvcGetFolioStateResponsev2);
+		returns(ReservationFolioSvcGetFolioStateResponse);
 	rpc GetOnFileCards(holms.types.booking.indicators.ReservationIndicator) 
-		returns(ReservationFolioSvcGetOnFileCardsResponse);
+		returns(FolioSvcGetOnFileCardsResponse);
 	rpc GetFolioSummaries(ReservationFolioSvcGetSummariesRequest)
 		returns(ReservationFolioSvcGetSummariesResponse);
 
 	// Card authorization
-	rpc AddCardAuthorizationFromStoredCard(CardAuthorizationFromStoredCardRequest)
+	rpc AddCardAuthorizationFromStoredCard(ReservationFolioSvcCardAuthorizationFromStoredCardRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
 	rpc AddCardAuthorizationFromPresentedCard(CardAuthorizationFromPresentCardRequest)
 		returns (.holms.types.money.cards.transactions.CardAuthorizationResponse);
@@ -194,17 +129,17 @@ service ReservationFolioSvc {
 	
 	// Payment application/cancellation/refund
 	rpc PostCardPayment(ReservationFolioSvcPostCardPaymentRequest)
-		returns (ReservationFolioSvcPostCardPaymentResponse);
+		returns (FolioSvcPostCardPaymentResponse);
 	rpc PostCheckPayment(ReservationFolioSvcPostCheckPaymentRequest)
-		returns (ReservationFolioSvcPostCheckPaymentResponse);
+		returns (FolioSvcPostCheckPaymentResponse);
 	rpc PostCashPayment(ReservationFolioSvcPostCashPaymentRequest)
-		returns (ReservationFolioSvcPostCashPaymentResponse);
+		returns (FolioSvcPostCashPaymentResponse);
 	rpc CancelCashCheckPayment(FolioCheckCashPaymentIndicator)
 		returns (google.protobuf.Empty);
 	rpc CancelCardPayment(holms.types.money.cards.transactions.PaymentCardSaleIndicator)
-		returns (ReservationFolioSvcCancelPaymentResponse);
+		returns (FolioSvcCancelPaymentResponse);
 	rpc RefundTokenizedCard(ReservationFolioSvcPaymentCardRefundRequest)
-		returns (ReservationFolioSvcRefundResponse);
+		returns (FolioSvcRefundResponse);
 
 	// Charge correction
 	rpc PostLodgingChargeCorrection (ReservationFolioSvcPostLodgingChargeCorrectionRequest)

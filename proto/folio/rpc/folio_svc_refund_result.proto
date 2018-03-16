@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package holms.types.folio.rpc;
+option csharp_namespace = "HOLMS.Types.Folio.RPC";
+
+
+enum FolioSvcRefundResult {
+	FOLIO_SVC_REFUND_SUCCESS = 0;
+	FOLIO_SVC_REFUND_EXCEEDS_LIMIT = 1;
+	FOLIO_SVC_REFUND_UNKNOWN_FAILURE = 2;
+}
+

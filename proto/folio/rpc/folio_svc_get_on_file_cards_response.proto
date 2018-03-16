@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package holms.types.folio.rpc;
+option csharp_namespace = "HOLMS.Types.Folio.RPC";
+
+import "money/cards/customer_payment_card.proto";
+
+message FolioSvcGetOnFileCardsResponse {
+	repeated holms.types.money.cards.CustomerPaymentCard cards = 1;
+}
+

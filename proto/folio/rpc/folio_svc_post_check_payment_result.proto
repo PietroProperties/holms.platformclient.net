@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package holms.types.folio.rpc;
+option csharp_namespace = "HOLMS.Types.Folio.RPC";
+
+enum FolioSvcPostCheckPaymentResult {
+	FOLIO_SVC_POST_CHECK_PAYMENT_OK = 0;
+	FOLIO_SVC_POST_CHECK_PAYMENT_MISSING_HOUSE_ACCOUNT = 1;
+	FOLIO_SVC_POST_CHECK_PAYMENT_INVALID_AMOUNT = 2;
+}
+

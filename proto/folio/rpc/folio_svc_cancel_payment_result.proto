@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package holms.types.folio.rpc;
+option csharp_namespace = "HOLMS.Types.Folio.RPC";
+
+enum FolioSvcCancelPaymentResult {
+	FOLIO_SVC_CANCEL_PAYMENT_SUCCESS = 0;
+	FOLIO_SVC_CANCEL_PAYMENT_UNKNOWN_FAILURE = 1;
+	FOLIO_SVC_CANCEL_PAYMENT_SALE_NOT_FOUND = 2;
+	FOLIO_SVC_CANCEL_PAYMENT_REJECTED_BY_PROCESSOR = 3;
+	FOLIO_SVC_CANCEL_PAYMENT_INVALID_STATE = 4;
+}
+

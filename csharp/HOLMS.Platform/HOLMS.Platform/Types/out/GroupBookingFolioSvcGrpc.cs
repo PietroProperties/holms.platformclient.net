@@ -14,7 +14,7 @@ namespace HOLMS.Types.Folio.RPC {
 
     static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> __Marshaller_GroupBookingIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.GroupBookingFolioState> __Marshaller_GroupBookingFolioState = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.GroupBookingFolioState.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetOnFileCardsResponse> __Marshaller_GroupBookingFolioSvcGetOnFileCardsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetOnFileCardsResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse> __Marshaller_FolioSvcGetOnFileCardsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest> __Marshaller_GroupBookingFolioSvcCardAuthorizationFromTokenRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> __Marshaller_CardAuthorizationResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest> __Marshaller_GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCardAuthorizationFromPresentCardRequest.Parser.ParseFrom);
@@ -22,17 +22,17 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.FolioSvcAuthorizationModificationRequest> __Marshaller_FolioSvcAuthorizationModificationRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.FolioSvcAuthorizationModificationRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.FolioSvcAuthorizationModificationResponse> __Marshaller_FolioSvcAuthorizationModificationResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.FolioSvcAuthorizationModificationResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest> __Marshaller_GroupBookingFolioSvcPostCardPaymentRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentResponse> __Marshaller_GroupBookingFolioSvcPostCardPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.FolioSvcPostCardPaymentResponse> __Marshaller_FolioSvcPostCardPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.FolioSvcPostCardPaymentResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest> __Marshaller_GroupBookingFolioSvcPostCheckPaymentRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentResponse> __Marshaller_GroupBookingFolioSvcPostCheckPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.FolioSvcPostCheckPaymentResponse> __Marshaller_FolioSvcPostCheckPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.FolioSvcPostCheckPaymentResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest> __Marshaller_GroupBookingFolioSvcPostCashPaymentRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentResponse> __Marshaller_GroupBookingFolioSvcPostCashPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.FolioSvcPostCashPaymentResponse> __Marshaller_FolioSvcPostCashPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.FolioSvcPostCashPaymentResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator> __Marshaller_FolioCheckCashPaymentIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator> __Marshaller_PaymentCardSaleIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCancelPaymentResponse> __Marshaller_GroupBookingFolioSvcCancelPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCancelPaymentResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> __Marshaller_FolioSvcCancelPaymentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest> __Marshaller_GroupBookingFolioSvcPaymentCardRefundRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcRefundResponse> __Marshaller_GroupBookingFolioSvcRefundResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcRefundResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.FolioSvcRefundResponse> __Marshaller_FolioSvcRefundResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.FolioSvcRefundResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest> __Marshaller_GroupBookingFolioSvcPostLodgingChargeCorrectionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostIncidentalChargeCorrectionRequest> __Marshaller_GroupBookingFolioSvcPostIncidentalChargeCorrectionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostIncidentalChargeCorrectionRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostMiscChargeCorrectionRequest> __Marshaller_GroupBookingFolioSvcPostMiscChargeCorrectionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostMiscChargeCorrectionRequest.Parser.ParseFrom);
@@ -44,12 +44,12 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_GroupBookingIndicator,
         __Marshaller_GroupBookingFolioState);
 
-    static readonly Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetOnFileCardsResponse> __Method_GetOnFileCards = new Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetOnFileCardsResponse>(
+    static readonly Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse> __Method_GetOnFileCards = new Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse>(
         MethodType.Unary,
         __ServiceName,
         "GetOnFileCards",
         __Marshaller_GroupBookingIndicator,
-        __Marshaller_GroupBookingFolioSvcGetOnFileCardsResponse);
+        __Marshaller_FolioSvcGetOnFileCardsResponse);
 
     static readonly Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse> __Method_AddCardAuthorizationFromStoredCard = new Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCardAuthorizationFromTokenRequest, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponse>(
         MethodType.Unary,
@@ -79,26 +79,26 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_FolioSvcAuthorizationModificationRequest,
         __Marshaller_FolioSvcAuthorizationModificationResponse);
 
-    static readonly Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest, global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentResponse> __Method_PostCardPayment = new Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest, global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentResponse>(
+    static readonly Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest, global::HOLMS.Types.Folio.RPC.FolioSvcPostCardPaymentResponse> __Method_PostCardPayment = new Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest, global::HOLMS.Types.Folio.RPC.FolioSvcPostCardPaymentResponse>(
         MethodType.Unary,
         __ServiceName,
         "PostCardPayment",
         __Marshaller_GroupBookingFolioSvcPostCardPaymentRequest,
-        __Marshaller_GroupBookingFolioSvcPostCardPaymentResponse);
+        __Marshaller_FolioSvcPostCardPaymentResponse);
 
-    static readonly Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest, global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentResponse> __Method_PostCheckPayment = new Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest, global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentResponse>(
+    static readonly Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest, global::HOLMS.Types.Folio.RPC.FolioSvcPostCheckPaymentResponse> __Method_PostCheckPayment = new Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest, global::HOLMS.Types.Folio.RPC.FolioSvcPostCheckPaymentResponse>(
         MethodType.Unary,
         __ServiceName,
         "PostCheckPayment",
         __Marshaller_GroupBookingFolioSvcPostCheckPaymentRequest,
-        __Marshaller_GroupBookingFolioSvcPostCheckPaymentResponse);
+        __Marshaller_FolioSvcPostCheckPaymentResponse);
 
-    static readonly Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest, global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentResponse> __Method_PostCashPayment = new Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest, global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentResponse>(
+    static readonly Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest, global::HOLMS.Types.Folio.RPC.FolioSvcPostCashPaymentResponse> __Method_PostCashPayment = new Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest, global::HOLMS.Types.Folio.RPC.FolioSvcPostCashPaymentResponse>(
         MethodType.Unary,
         __ServiceName,
         "PostCashPayment",
         __Marshaller_GroupBookingFolioSvcPostCashPaymentRequest,
-        __Marshaller_GroupBookingFolioSvcPostCashPaymentResponse);
+        __Marshaller_FolioSvcPostCashPaymentResponse);
 
     static readonly Method<global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator, global::Google.Protobuf.WellKnownTypes.Empty> __Method_CancelCashCheckPayment = new Method<global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator, global::Google.Protobuf.WellKnownTypes.Empty>(
         MethodType.Unary,
@@ -107,19 +107,19 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_FolioCheckCashPaymentIndicator,
         __Marshaller_Empty);
 
-    static readonly Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator, global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCancelPaymentResponse> __Method_CancelCardPayment = new Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator, global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCancelPaymentResponse>(
+    static readonly Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator, global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> __Method_CancelCardPayment = new Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator, global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse>(
         MethodType.Unary,
         __ServiceName,
         "CancelCardPayment",
         __Marshaller_PaymentCardSaleIndicator,
-        __Marshaller_GroupBookingFolioSvcCancelPaymentResponse);
+        __Marshaller_FolioSvcCancelPaymentResponse);
 
-    static readonly Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest, global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcRefundResponse> __Method_RefundTokenizedCard = new Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest, global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcRefundResponse>(
+    static readonly Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest, global::HOLMS.Types.Folio.RPC.FolioSvcRefundResponse> __Method_RefundTokenizedCard = new Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest, global::HOLMS.Types.Folio.RPC.FolioSvcRefundResponse>(
         MethodType.Unary,
         __ServiceName,
         "RefundTokenizedCard",
         __Marshaller_GroupBookingFolioSvcPaymentCardRefundRequest,
-        __Marshaller_GroupBookingFolioSvcRefundResponse);
+        __Marshaller_FolioSvcRefundResponse);
 
     static readonly Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_PostLodgingChargeCorrection = new Method<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         MethodType.Unary,
@@ -159,7 +159,7 @@ namespace HOLMS.Types.Folio.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetOnFileCardsResponse> GetOnFileCards(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse> GetOnFileCards(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -190,17 +190,17 @@ namespace HOLMS.Types.Folio.RPC {
       /// <summary>
       ///  Payment application/cancellation/refund
       /// </summary>
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentResponse> PostCardPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioSvcPostCardPaymentResponse> PostCardPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentResponse> PostCheckPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioSvcPostCheckPaymentResponse> PostCheckPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentResponse> PostCashPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioSvcPostCashPaymentResponse> PostCashPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -210,12 +210,12 @@ namespace HOLMS.Types.Folio.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCancelPaymentResponse> CancelCardPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> CancelCardPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcRefundResponse> RefundTokenizedCard(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioSvcRefundResponse> RefundTokenizedCard(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -291,19 +291,19 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetGroupBookingFolioState, null, options, request);
       }
-      public virtual global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetOnFileCardsResponse GetOnFileCards(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse GetOnFileCards(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetOnFileCards(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetOnFileCardsResponse GetOnFileCards(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, CallOptions options)
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse GetOnFileCards(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetOnFileCards, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetOnFileCardsResponse> GetOnFileCardsAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse> GetOnFileCardsAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetOnFileCardsAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcGetOnFileCardsResponse> GetOnFileCardsAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse> GetOnFileCardsAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetOnFileCards, null, options, request);
       }
@@ -386,60 +386,60 @@ namespace HOLMS.Types.Folio.RPC {
       /// <summary>
       ///  Payment application/cancellation/refund
       /// </summary>
-      public virtual global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentResponse PostCardPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcPostCardPaymentResponse PostCardPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PostCardPayment(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Payment application/cancellation/refund
       /// </summary>
-      public virtual global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentResponse PostCardPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcPostCardPaymentResponse PostCardPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PostCardPayment, null, options, request);
       }
       /// <summary>
       ///  Payment application/cancellation/refund
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentResponse> PostCardPaymentAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcPostCardPaymentResponse> PostCardPaymentAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PostCardPaymentAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Payment application/cancellation/refund
       /// </summary>
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentResponse> PostCardPaymentAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcPostCardPaymentResponse> PostCardPaymentAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCardPaymentRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostCardPayment, null, options, request);
       }
-      public virtual global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentResponse PostCheckPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcPostCheckPaymentResponse PostCheckPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PostCheckPayment(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentResponse PostCheckPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcPostCheckPaymentResponse PostCheckPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PostCheckPayment, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentResponse> PostCheckPaymentAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcPostCheckPaymentResponse> PostCheckPaymentAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PostCheckPaymentAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentResponse> PostCheckPaymentAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcPostCheckPaymentResponse> PostCheckPaymentAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCheckPaymentRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostCheckPayment, null, options, request);
       }
-      public virtual global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentResponse PostCashPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcPostCashPaymentResponse PostCashPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PostCashPayment(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentResponse PostCashPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcPostCashPaymentResponse PostCashPayment(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PostCashPayment, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentResponse> PostCashPaymentAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcPostCashPaymentResponse> PostCashPaymentAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PostCashPaymentAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentResponse> PostCashPaymentAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcPostCashPaymentResponse> PostCashPaymentAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostCashPaymentRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostCashPayment, null, options, request);
       }
@@ -459,35 +459,35 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_CancelCashCheckPayment, null, options, request);
       }
-      public virtual global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCancelPaymentResponse CancelCardPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse CancelCardPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return CancelCardPayment(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCancelPaymentResponse CancelCardPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, CallOptions options)
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse CancelCardPayment(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CancelCardPayment, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCancelPaymentResponse> CancelCardPaymentAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> CancelCardPaymentAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return CancelCardPaymentAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcCancelPaymentResponse> CancelCardPaymentAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> CancelCardPaymentAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CancelCardPayment, null, options, request);
       }
-      public virtual global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcRefundResponse RefundTokenizedCard(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcRefundResponse RefundTokenizedCard(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return RefundTokenizedCard(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcRefundResponse RefundTokenizedCard(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcRefundResponse RefundTokenizedCard(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_RefundTokenizedCard, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcRefundResponse> RefundTokenizedCardAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcRefundResponse> RefundTokenizedCardAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return RefundTokenizedCardAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcRefundResponse> RefundTokenizedCardAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcRefundResponse> RefundTokenizedCardAsync(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPaymentCardRefundRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_RefundTokenizedCard, null, options, request);
       }
