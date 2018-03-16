@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package holms.types.folio.rpc;
+option csharp_namespace = "HOLMS.Types.Folio.RPC";
+
+enum FolioSvcAuthorizationModificationResult {
+	FOLIO_SVC_AUTHORIZATION_MODIFICATION_SUCCESS = 0;
+	FOLIO_SVC_AUTHORIZATION_MODIFICATION_SALE_NOT_FOUND = 1;
+	FOLIO_SVC_AUTHORIZATION_MODIFICATION_UNKNOWN_FAILURE = 2;
+	FOLIO_SVC_AUTHORIZATION_MODIFICATION_DECLINED = 3;
+}
+
