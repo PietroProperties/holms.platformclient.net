@@ -37,23 +37,30 @@ namespace HOLMS.Types.Operations.RPC {
             "IAMoCzIrLmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucm9vbXMuUm9vbUluZGlj",
             "YXRvciJlCjBIb3VzZWtlZXBpbmdNYW5hZ2VtZW50U3ZjVXBkYXRlUm9vbVN0",
             "YXR1c1JlcXVlc3QSMQoFcm9vbXMYASADKAsyIi5ob2xtcy50eXBlcy5vcGVy",
-            "YXRpb25zLnJvb21zLlJvb20ymwMKGUhvdXNla2VlcGluZ01hbmFnZW1lbnRT",
-            "dmMShAEKFEdldEFzc2lnbm1lbnRzQnlEYXRlEiIuaG9sbXMudHlwZXMucHJp",
-            "bWl0aXZlLlBiTG9jYWxEYXRlGkguaG9sbXMudHlwZXMub3BlcmF0aW9ucy5y",
-            "cGMuSG91c2VrZWVwaW5nTWFuYWdlbWVudFN2Y0Fzc2lnbm1lbnRzUmVzcG9u",
-            "c2USfQobQXNzaWduSG91c2VrZWVwZXJUb1Jvb21zTm93EkYuaG9sbXMudHlw",
-            "ZXMub3BlcmF0aW9ucy5ycGMuSG91c2VrZWVwaW5nTWFuYWdlbWVudFN2Y0Fz",
-            "c2lnbm1lbnRSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EngKEFVw",
-            "ZGF0ZVJvb21TdGF0dXMSTC5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJwYy5I",
-            "b3VzZWtlZXBpbmdNYW5hZ2VtZW50U3ZjVXBkYXRlUm9vbVN0YXR1c1JlcXVl",
-            "c3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHlCHaoCGkhPTE1TLlR5cGVzLk9w",
-            "ZXJhdGlvbnMuUlBDYgZwcm90bzM="));
+            "YXRpb25zLnJvb21zLlJvb20iegozSG91c2VrZWVwaW5nTWFuYWdlbWVudFN2",
+            "Y1VuYXNzaWduSG91c2VrZWVwZXJSZXF1ZXN0EkMKDmFzc2lnbmVkX3Jvb21z",
+            "GAEgAygLMisuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5yb29tcy5Sb29tSW5k",
+            "aWNhdG9yMpwEChlIb3VzZWtlZXBpbmdNYW5hZ2VtZW50U3ZjEoQBChRHZXRB",
+            "c3NpZ25tZW50c0J5RGF0ZRIiLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkxv",
+            "Y2FsRGF0ZRpILmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucnBjLkhvdXNla2Vl",
+            "cGluZ01hbmFnZW1lbnRTdmNBc3NpZ25tZW50c1Jlc3BvbnNlEn0KG0Fzc2ln",
+            "bkhvdXNla2VlcGVyVG9Sb29tc05vdxJGLmhvbG1zLnR5cGVzLm9wZXJhdGlv",
+            "bnMucnBjLkhvdXNla2VlcGluZ01hbmFnZW1lbnRTdmNBc3NpZ25tZW50UmVx",
+            "dWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJ4ChBVcGRhdGVSb29tU3Rh",
+            "dHVzEkwuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ycGMuSG91c2VrZWVwaW5n",
+            "TWFuYWdlbWVudFN2Y1VwZGF0ZVJvb21TdGF0dXNSZXF1ZXN0GhYuZ29vZ2xl",
+            "LnByb3RvYnVmLkVtcHR5En8KFFVuYXNzaWduSG91c2VrZWVwZXJzEk8uaG9s",
+            "bXMudHlwZXMub3BlcmF0aW9ucy5ycGMuSG91c2VrZWVwaW5nTWFuYWdlbWVu",
+            "dFN2Y1VuYXNzaWduSG91c2VrZWVwZXJSZXF1ZXN0GhYuZ29vZ2xlLnByb3Rv",
+            "YnVmLkVtcHR5Qh2qAhpIT0xNUy5UeXBlcy5PcGVyYXRpb25zLlJQQ2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.Housekeeping.HousekeepingAssignmentReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse.Parser, new[]{ "Assignments" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentRequest), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentRequest.Parser, new[]{ "Assignee", "AssignedRooms" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest.Parser, new[]{ "Rooms" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest.Parser, new[]{ "Rooms" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUnassignHousekeeperRequest), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUnassignHousekeeperRequest.Parser, new[]{ "AssignedRooms" }, null, null, null)
           }));
     }
     #endregion
@@ -413,6 +420,115 @@ namespace HOLMS.Types.Operations.RPC {
             break;
           case 10: {
             rooms_.AddEntriesFrom(input, _repeated_rooms_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class HousekeepingManagementSvcUnassignHousekeeperRequest : pb::IMessage<HousekeepingManagementSvcUnassignHousekeeperRequest> {
+    private static readonly pb::MessageParser<HousekeepingManagementSvcUnassignHousekeeperRequest> _parser = new pb::MessageParser<HousekeepingManagementSvcUnassignHousekeeperRequest>(() => new HousekeepingManagementSvcUnassignHousekeeperRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<HousekeepingManagementSvcUnassignHousekeeperRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Operations.RPC.HkManagementSvcReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HousekeepingManagementSvcUnassignHousekeeperRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HousekeepingManagementSvcUnassignHousekeeperRequest(HousekeepingManagementSvcUnassignHousekeeperRequest other) : this() {
+      assignedRooms_ = other.assignedRooms_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HousekeepingManagementSvcUnassignHousekeeperRequest Clone() {
+      return new HousekeepingManagementSvcUnassignHousekeeperRequest(this);
+    }
+
+    /// <summary>Field number for the "assigned_rooms" field.</summary>
+    public const int AssignedRoomsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Operations.Rooms.RoomIndicator> _repeated_assignedRooms_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Operations.Rooms.RoomIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Operations.Rooms.RoomIndicator> assignedRooms_ = new pbc::RepeatedField<global::HOLMS.Types.Operations.Rooms.RoomIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Operations.Rooms.RoomIndicator> AssignedRooms {
+      get { return assignedRooms_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as HousekeepingManagementSvcUnassignHousekeeperRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(HousekeepingManagementSvcUnassignHousekeeperRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!assignedRooms_.Equals(other.assignedRooms_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= assignedRooms_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      assignedRooms_.WriteTo(output, _repeated_assignedRooms_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += assignedRooms_.CalculateSize(_repeated_assignedRooms_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(HousekeepingManagementSvcUnassignHousekeeperRequest other) {
+      if (other == null) {
+        return;
+      }
+      assignedRooms_.Add(other.assignedRooms_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            assignedRooms_.AddEntriesFrom(input, _repeated_assignedRooms_codec);
             break;
           }
         }

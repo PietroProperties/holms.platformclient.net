@@ -23,6 +23,10 @@ message HousekeepingManagementSvcUpdateRoomStatusRequest {
 	repeated .holms.types.operations.rooms.Room rooms = 1;
 }
 
+message HousekeepingManagementSvcUnassignHousekeeperRequest {
+	repeated .holms.types.operations.rooms.RoomIndicator assigned_rooms = 1;
+}
+
 service HousekeepingManagementSvc {
 	rpc GetAssignmentsByDate(holms.types.primitive.PbLocalDate)
 		returns (HousekeepingManagementSvcAssignmentsResponse);
@@ -31,5 +35,8 @@ service HousekeepingManagementSvc {
 		returns (google.protobuf.Empty);
 
 	rpc UpdateRoomStatus (HousekeepingManagementSvcUpdateRoomStatusRequest)
+		returns (google.protobuf.Empty);
+
+	rpc UnassignHousekeepers (HousekeepingManagementSvcUnassignHousekeeperRequest) 
 		returns (google.protobuf.Empty);
 }
