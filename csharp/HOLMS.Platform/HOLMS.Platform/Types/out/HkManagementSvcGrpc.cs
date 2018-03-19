@@ -17,6 +17,7 @@ namespace HOLMS.Types.Operations.RPC {
     static readonly Marshaller<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentRequest> __Marshaller_HousekeepingManagementSvcAssignmentRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentRequest.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest> __Marshaller_HousekeepingManagementSvcUpdateRoomStatusRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUnassignHousekeeperRequest> __Marshaller_HousekeepingManagementSvcUnassignHousekeeperRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUnassignHousekeeperRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Primitive.PbLocalDate, global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse> __Method_GetAssignmentsByDate = new Method<global::HOLMS.Types.Primitive.PbLocalDate, global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse>(
         MethodType.Unary,
@@ -39,6 +40,13 @@ namespace HOLMS.Types.Operations.RPC {
         __Marshaller_HousekeepingManagementSvcUpdateRoomStatusRequest,
         __Marshaller_Empty);
 
+    static readonly Method<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUnassignHousekeeperRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UnassignHousekeepers = new Method<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUnassignHousekeeperRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "UnassignHousekeepers",
+        __Marshaller_HousekeepingManagementSvcUnassignHousekeeperRequest,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -59,6 +67,11 @@ namespace HOLMS.Types.Operations.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> UpdateRoomStatus(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> UnassignHousekeepers(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUnassignHousekeeperRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -136,6 +149,22 @@ namespace HOLMS.Types.Operations.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateRoomStatus, null, options, request);
       }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty UnassignHousekeepers(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUnassignHousekeeperRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UnassignHousekeepers(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty UnassignHousekeepers(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUnassignHousekeeperRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UnassignHousekeepers, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UnassignHousekeepersAsync(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUnassignHousekeeperRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UnassignHousekeepersAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UnassignHousekeepersAsync(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUnassignHousekeeperRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UnassignHousekeepers, null, options, request);
+      }
       protected override HousekeepingManagementSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new HousekeepingManagementSvcClient(configuration);
@@ -148,7 +177,8 @@ namespace HOLMS.Types.Operations.RPC {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetAssignmentsByDate, serviceImpl.GetAssignmentsByDate)
           .AddMethod(__Method_AssignHousekeeperToRoomsNow, serviceImpl.AssignHousekeeperToRoomsNow)
-          .AddMethod(__Method_UpdateRoomStatus, serviceImpl.UpdateRoomStatus).Build();
+          .AddMethod(__Method_UpdateRoomStatus, serviceImpl.UpdateRoomStatus)
+          .AddMethod(__Method_UnassignHousekeepers, serviceImpl.UnassignHousekeepers).Build();
     }
 
   }
