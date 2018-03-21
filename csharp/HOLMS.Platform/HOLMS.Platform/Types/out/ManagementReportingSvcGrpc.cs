@@ -14,12 +14,20 @@ namespace HOLMS.Types.Reporting.RPC {
 
     static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest> __Marshaller_ManagmentReportingSvcBatchReportRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Marshaller_HtmlReportResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest> __Marshaller_ManagementReportingSvcHousekeeperManagementReportRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetManagementReportBatch = new Method<global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         MethodType.Unary,
         __ServiceName,
         "GetManagementReportBatch",
         __Marshaller_ManagmentReportingSvcBatchReportRequest,
+        __Marshaller_HtmlReportResponse);
+
+    static readonly Method<global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetCurrentHousekeeperManagementReport = new Method<global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetCurrentHousekeeperManagementReport",
+        __Marshaller_ManagementReportingSvcHousekeeperManagementReportRequest,
         __Marshaller_HtmlReportResponse);
 
     /// <summary>Service descriptor</summary>
@@ -32,6 +40,11 @@ namespace HOLMS.Types.Reporting.RPC {
     public abstract class ManagementReportingSvcBase
     {
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetManagementReportBatch(global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetCurrentHousekeeperManagementReport(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -77,6 +90,22 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetManagementReportBatch, null, options, request);
       }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetCurrentHousekeeperManagementReport(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetCurrentHousekeeperManagementReport(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetCurrentHousekeeperManagementReport(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetCurrentHousekeeperManagementReport, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetCurrentHousekeeperManagementReportAsync(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetCurrentHousekeeperManagementReportAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetCurrentHousekeeperManagementReportAsync(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetCurrentHousekeeperManagementReport, null, options, request);
+      }
       protected override ManagementReportingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new ManagementReportingSvcClient(configuration);
@@ -87,7 +116,8 @@ namespace HOLMS.Types.Reporting.RPC {
     public static ServerServiceDefinition BindService(ManagementReportingSvcBase serviceImpl)
     {
       return ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetManagementReportBatch, serviceImpl.GetManagementReportBatch).Build();
+          .AddMethod(__Method_GetManagementReportBatch, serviceImpl.GetManagementReportBatch)
+          .AddMethod(__Method_GetCurrentHousekeeperManagementReport, serviceImpl.GetCurrentHousekeeperManagementReport).Build();
     }
 
   }
