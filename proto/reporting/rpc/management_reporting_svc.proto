@@ -28,7 +28,7 @@ message ManagementReportingSvcHousekeeperManagementReportRequest {
 service ManagementReportingSvc {
 	rpc GetManagementReportBatch(ManagmentReportingSvcBatchReportRequest)
 		returns (holms.types.reporting.outputs.HtmlReportResponse);
-	rpc GetCurrentHousekepperManagementReport(ManagementReportingSvcHousekeeperManagementReportRequest)
+	rpc GetCurrentHousekeeperManagementReport(ManagementReportingSvcHousekeeperManagementReportRequest)
 		returns (holms.types.reporting.outputs.HtmlReportResponse);
 }
 
