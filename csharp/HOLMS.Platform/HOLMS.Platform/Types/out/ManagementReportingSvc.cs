@@ -36,21 +36,42 @@ namespace HOLMS.Types.Reporting.RPC {
             "bG1zLnR5cGVzLnJlcG9ydGluZy5pbnB1dF9wYXJhbXMuTWFuYWdlbWVudENs",
             "b2NrVGltZVJhbmdlUmVwb3J0TWFuaWZlc3QSaAoWb3BzZGF0ZV9yYW5nZV9t",
             "YW5pZmVzdBgEIAEoCzJILmhvbG1zLnR5cGVzLnJlcG9ydGluZy5pbnB1dF9w",
-            "YXJhbXMuTWFuYWdlbWVudE9wc2RhdGVSYW5nZVJlcG9ydE1hbmlmZXN0MqwB",
-            "ChZNYW5hZ2VtZW50UmVwb3J0aW5nU3ZjEpEBChhHZXRNYW5hZ2VtZW50UmVw",
-            "b3J0QmF0Y2gSQi5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLk1hbmFnbWVu",
-            "dFJlcG9ydGluZ1N2Y0JhdGNoUmVwb3J0UmVxdWVzdBoxLmhvbG1zLnR5cGVz",
-            "LnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZUIcqgIZSE9M",
-            "TVMuVHlwZXMuUmVwb3J0aW5nLlJQQ2IGcHJvdG8z"));
+            "YXJhbXMuTWFuYWdlbWVudE9wc2RhdGVSYW5nZVJlcG9ydE1hbmlmZXN0IrEB",
+            "CjhNYW5hZ2VtZW50UmVwb3J0aW5nU3ZjSG91c2VrZWVwZXJNYW5hZ2VtZW50",
+            "UmVwb3J0UmVxdWVzdBIcChRvbmx5X2F0dGVudGlvbl9yb29tcxgBIAEoCBJX",
+            "Cg5ub3RlX3NlbGVjdGlvbhgCIAEoDjI/LmhvbG1zLnR5cGVzLnJlcG9ydGlu",
+            "Zy5ycGMuTWFuYWdlbWVudFJlcG9ydGluZ1N2Y05vdGVzU2VsZWN0aW9uKm0K",
+            "JE1hbmFnZW1lbnRSZXBvcnRpbmdTdmNOb3Rlc1NlbGVjdGlvbhINCglhbGxf",
+            "bm90ZXMQABIbChdvbmx5X2hvdXNla2VlcGluZ19ub3RlcxABEhkKFW9ubHlf",
+            "ZnJvbnRfZGVza19ub3RlcxACMt4CChZNYW5hZ2VtZW50UmVwb3J0aW5nU3Zj",
+            "EpEBChhHZXRNYW5hZ2VtZW50UmVwb3J0QmF0Y2gSQi5ob2xtcy50eXBlcy5y",
+            "ZXBvcnRpbmcucnBjLk1hbmFnbWVudFJlcG9ydGluZ1N2Y0JhdGNoUmVwb3J0",
+            "UmVxdWVzdBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxS",
+            "ZXBvcnRSZXNwb25zZRKvAQolR2V0Q3VycmVudEhvdXNla2VwcGVyTWFuYWdl",
+            "bWVudFJlcG9ydBJTLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuTWFuYWdl",
+            "bWVudFJlcG9ydGluZ1N2Y0hvdXNla2VlcGVyTWFuYWdlbWVudFJlcG9ydFJl",
+            "cXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVw",
+            "b3J0UmVzcG9uc2VCHKoCGUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Reporting.ReportParams.ManagementReportManifestsReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest), global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest.Parser, new[]{ "Properties", "CurrentTimeManifest", "ClockTimeRangeManifest", "OpsdateRangeManifest" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcNotesSelection), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest), global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest.Parser, new[]{ "Properties", "CurrentTimeManifest", "ClockTimeRangeManifest", "OpsdateRangeManifest" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest), global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest.Parser, new[]{ "OnlyAttentionRooms", "NoteSelection" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum ManagementReportingSvcNotesSelection {
+    [pbr::OriginalName("all_notes")] AllNotes = 0,
+    [pbr::OriginalName("only_housekeeping_notes")] OnlyHousekeepingNotes = 1,
+    [pbr::OriginalName("only_front_desk_notes")] OnlyFrontDeskNotes = 2,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class ManagmentReportingSvcBatchReportRequest : pb::IMessage<ManagmentReportingSvcBatchReportRequest> {
     private static readonly pb::MessageParser<ManagmentReportingSvcBatchReportRequest> _parser = new pb::MessageParser<ManagmentReportingSvcBatchReportRequest>(() => new ManagmentReportingSvcBatchReportRequest());
@@ -255,6 +276,151 @@ namespace HOLMS.Types.Reporting.RPC {
               opsdateRangeManifest_ = new global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest();
             }
             input.ReadMessage(opsdateRangeManifest_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class ManagementReportingSvcHousekeeperManagementReportRequest : pb::IMessage<ManagementReportingSvcHousekeeperManagementReportRequest> {
+    private static readonly pb::MessageParser<ManagementReportingSvcHousekeeperManagementReportRequest> _parser = new pb::MessageParser<ManagementReportingSvcHousekeeperManagementReportRequest>(() => new ManagementReportingSvcHousekeeperManagementReportRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ManagementReportingSvcHousekeeperManagementReportRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ManagementReportingSvcHousekeeperManagementReportRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ManagementReportingSvcHousekeeperManagementReportRequest(ManagementReportingSvcHousekeeperManagementReportRequest other) : this() {
+      onlyAttentionRooms_ = other.onlyAttentionRooms_;
+      noteSelection_ = other.noteSelection_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ManagementReportingSvcHousekeeperManagementReportRequest Clone() {
+      return new ManagementReportingSvcHousekeeperManagementReportRequest(this);
+    }
+
+    /// <summary>Field number for the "only_attention_rooms" field.</summary>
+    public const int OnlyAttentionRoomsFieldNumber = 1;
+    private bool onlyAttentionRooms_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool OnlyAttentionRooms {
+      get { return onlyAttentionRooms_; }
+      set {
+        onlyAttentionRooms_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "note_selection" field.</summary>
+    public const int NoteSelectionFieldNumber = 2;
+    private global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcNotesSelection noteSelection_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcNotesSelection NoteSelection {
+      get { return noteSelection_; }
+      set {
+        noteSelection_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ManagementReportingSvcHousekeeperManagementReportRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ManagementReportingSvcHousekeeperManagementReportRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (OnlyAttentionRooms != other.OnlyAttentionRooms) return false;
+      if (NoteSelection != other.NoteSelection) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (OnlyAttentionRooms != false) hash ^= OnlyAttentionRooms.GetHashCode();
+      if (NoteSelection != 0) hash ^= NoteSelection.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (OnlyAttentionRooms != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(OnlyAttentionRooms);
+      }
+      if (NoteSelection != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) NoteSelection);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (OnlyAttentionRooms != false) {
+        size += 1 + 1;
+      }
+      if (NoteSelection != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) NoteSelection);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ManagementReportingSvcHousekeeperManagementReportRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.OnlyAttentionRooms != false) {
+        OnlyAttentionRooms = other.OnlyAttentionRooms;
+      }
+      if (other.NoteSelection != 0) {
+        NoteSelection = other.NoteSelection;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            OnlyAttentionRooms = input.ReadBool();
+            break;
+          }
+          case 16: {
+            noteSelection_ = (global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcNotesSelection) input.ReadEnum();
             break;
           }
         }

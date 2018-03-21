@@ -14,8 +14,21 @@ message ManagmentReportingSvcBatchReportRequest {
 	holms.types.reporting.input_params.ManagementOpsdateRangeReportManifest opsdate_range_manifest = 4;
 }
 
+enum ManagementReportingSvcNotesSelection {
+	all_notes = 0;
+	only_housekeeping_notes = 1;
+	only_front_desk_notes = 2;
+}
+
+message ManagementReportingSvcHousekeeperManagementReportRequest {
+	bool only_attention_rooms = 1;
+	ManagementReportingSvcNotesSelection note_selection = 2;
+}
+
 service ManagementReportingSvc {
 	rpc GetManagementReportBatch(ManagmentReportingSvcBatchReportRequest)
+		returns (holms.types.reporting.outputs.HtmlReportResponse);
+	rpc GetCurrentHousekepperManagementReport(ManagementReportingSvcHousekeeperManagementReportRequest)
 		returns (holms.types.reporting.outputs.HtmlReportResponse);
 }
 
