@@ -13,19 +13,19 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly string __ServiceName = "holms.types.booking.rpc.ReservationGuaranteeSvc";
 
     static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> __Marshaller_ReservationIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Primitive.MonetaryAmount> __Marshaller_MonetaryAmount = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.MonetaryAmount.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus> __Marshaller_ResGSvcPreTenderStatus = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ResGSvcTenderCheckGuaranteeRequest> __Marshaller_ResGSvcTenderCheckGuaranteeRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ResGSvcTenderCheckGuaranteeRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ResGSvcTenderCheckGuaranteeResponse> __Marshaller_ResGSvcTenderCheckGuaranteeResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ResGSvcTenderCheckGuaranteeResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ResGSvcTenderNewNotPresentCardGuaranteeRequest> __Marshaller_ResGSvcTenderNewNotPresentCardGuaranteeRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ResGSvcTenderNewNotPresentCardGuaranteeRequest.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ResGSvcTenderNotPresentCardGuaranteeResponse> __Marshaller_ResGSvcTenderNotPresentCardGuaranteeResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ResGSvcTenderNotPresentCardGuaranteeResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Folio.RPC.ResGSvcTenderStoredNotPresentCardGuaranteeRequest> __Marshaller_ResGSvcTenderStoredNotPresentCardGuaranteeRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ResGSvcTenderStoredNotPresentCardGuaranteeRequest.Parser.ParseFrom);
 
-    static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Primitive.MonetaryAmount> __Method_GetRemainingGuaranteeOwed = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Primitive.MonetaryAmount>(
+    static readonly Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus> __Method_GetPreTenderStatus = new Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus>(
         MethodType.Unary,
         __ServiceName,
-        "GetRemainingGuaranteeOwed",
+        "GetPreTenderStatus",
         __Marshaller_ReservationIndicator,
-        __Marshaller_MonetaryAmount);
+        __Marshaller_ResGSvcPreTenderStatus);
 
     static readonly Method<global::HOLMS.Types.Folio.RPC.ResGSvcTenderCheckGuaranteeRequest, global::HOLMS.Types.Folio.RPC.ResGSvcTenderCheckGuaranteeResponse> __Method_TenderCheckGuarantee = new Method<global::HOLMS.Types.Folio.RPC.ResGSvcTenderCheckGuaranteeRequest, global::HOLMS.Types.Folio.RPC.ResGSvcTenderCheckGuaranteeResponse>(
         MethodType.Unary,
@@ -57,7 +57,7 @@ namespace HOLMS.Types.Folio.RPC {
     /// <summary>Base class for server-side implementations of ReservationGuaranteeSvc</summary>
     public abstract class ReservationGuaranteeSvcBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Primitive.MonetaryAmount> GetRemainingGuaranteeOwed(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus> GetPreTenderStatus(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -102,21 +102,21 @@ namespace HOLMS.Types.Folio.RPC {
       {
       }
 
-      public virtual global::HOLMS.Types.Primitive.MonetaryAmount GetRemainingGuaranteeOwed(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus GetPreTenderStatus(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetRemainingGuaranteeOwed(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetPreTenderStatus(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Primitive.MonetaryAmount GetRemainingGuaranteeOwed(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
+      public virtual global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus GetPreTenderStatus(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetRemainingGuaranteeOwed, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetPreTenderStatus, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Primitive.MonetaryAmount> GetRemainingGuaranteeOwedAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus> GetPreTenderStatusAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetRemainingGuaranteeOwedAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetPreTenderStatusAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Primitive.MonetaryAmount> GetRemainingGuaranteeOwedAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus> GetPreTenderStatusAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetRemainingGuaranteeOwed, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetPreTenderStatus, null, options, request);
       }
       public virtual global::HOLMS.Types.Folio.RPC.ResGSvcTenderCheckGuaranteeResponse TenderCheckGuarantee(global::HOLMS.Types.Folio.RPC.ResGSvcTenderCheckGuaranteeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
@@ -176,7 +176,7 @@ namespace HOLMS.Types.Folio.RPC {
     public static ServerServiceDefinition BindService(ReservationGuaranteeSvcBase serviceImpl)
     {
       return ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetRemainingGuaranteeOwed, serviceImpl.GetRemainingGuaranteeOwed)
+          .AddMethod(__Method_GetPreTenderStatus, serviceImpl.GetPreTenderStatus)
           .AddMethod(__Method_TenderCheckGuarantee, serviceImpl.TenderCheckGuarantee)
           .AddMethod(__Method_TenderNewNotPresentCardGuarantee, serviceImpl.TenderNewNotPresentCardGuarantee)
           .AddMethod(__Method_TenderStoredNotPresentCardGuarantee, serviceImpl.TenderStoredNotPresentCardGuarantee).Build();

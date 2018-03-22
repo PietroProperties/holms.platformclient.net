@@ -34,10 +34,14 @@ message ResGSvcTenderNotPresentCardGuaranteeResponse {
 	.holms.types.booking.guarantees.CardGuaranteeTenderResult result = 1;
 }
 
+message ResGSvcPreTenderStatus {
+	.holms.types.primitive.MonetaryAmount remaining_amount = 1;
+	bool is_due = 2;
+}
 
 service ReservationGuaranteeSvc {
-	rpc GetRemainingGuaranteeOwed (.holms.types.booking.indicators.ReservationIndicator)
-		returns (.holms.types.primitive.MonetaryAmount);
+	rpc GetPreTenderStatus (.holms.types.booking.indicators.ReservationIndicator)
+		returns (ResGSvcPreTenderStatus);
 
 	rpc TenderCheckGuarantee (ResGSvcTenderCheckGuaranteeRequest)
 		returns (ResGSvcTenderCheckGuaranteeResponse);

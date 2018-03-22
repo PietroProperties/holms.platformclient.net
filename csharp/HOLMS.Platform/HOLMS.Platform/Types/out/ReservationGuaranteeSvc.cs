@@ -45,23 +45,25 @@ namespace HOLMS.Types.Folio.RPC {
             "bW9uZXkuY2FyZHMuQ3VzdG9tZXJQYXltZW50Q2FyZEluZGljYXRvciJ5CixS",
             "ZXNHU3ZjVGVuZGVyTm90UHJlc2VudENhcmRHdWFyYW50ZWVSZXNwb25zZRJJ",
             "CgZyZXN1bHQYASABKA4yOS5ob2xtcy50eXBlcy5ib29raW5nLmd1YXJhbnRl",
-            "ZXMuQ2FyZEd1YXJhbnRlZVRlbmRlclJlc3VsdDKXBQoXUmVzZXJ2YXRpb25H",
-            "dWFyYW50ZWVTdmMSeAoZR2V0UmVtYWluaW5nR3VhcmFudGVlT3dlZBI0Lmhv",
-            "bG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGlj",
-            "YXRvcholLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBKR",
-            "AQoUVGVuZGVyQ2hlY2tHdWFyYW50ZWUSOy5ob2xtcy50eXBlcy5ib29raW5n",
-            "LnJwYy5SZXNHU3ZjVGVuZGVyQ2hlY2tHdWFyYW50ZWVSZXF1ZXN0GjwuaG9s",
-            "bXMudHlwZXMuYm9va2luZy5ycGMuUmVzR1N2Y1RlbmRlckNoZWNrR3VhcmFu",
-            "dGVlUmVzcG9uc2USsgEKIFRlbmRlck5ld05vdFByZXNlbnRDYXJkR3VhcmFu",
-            "dGVlEkcuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuUmVzR1N2Y1RlbmRlck5l",
-            "d05vdFByZXNlbnRDYXJkR3VhcmFudGVlUmVxdWVzdBpFLmhvbG1zLnR5cGVz",
-            "LmJvb2tpbmcucnBjLlJlc0dTdmNUZW5kZXJOb3RQcmVzZW50Q2FyZEd1YXJh",
-            "bnRlZVJlc3BvbnNlErgBCiNUZW5kZXJTdG9yZWROb3RQcmVzZW50Q2FyZEd1",
-            "YXJhbnRlZRJKLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlJlc0dTdmNUZW5k",
-            "ZXJTdG9yZWROb3RQcmVzZW50Q2FyZEd1YXJhbnRlZVJlcXVlc3QaRS5ob2xt",
-            "cy50eXBlcy5ib29raW5nLnJwYy5SZXNHU3ZjVGVuZGVyTm90UHJlc2VudENh",
-            "cmRHdWFyYW50ZWVSZXNwb25zZUIjWglmb2xpby9ycGOqAhVIT0xNUy5UeXBl",
-            "cy5Gb2xpby5SUENiBnByb3RvMw=="));
+            "ZXMuQ2FyZEd1YXJhbnRlZVRlbmRlclJlc3VsdCJpChZSZXNHU3ZjUHJlVGVu",
+            "ZGVyU3RhdHVzEj8KEHJlbWFpbmluZ19hbW91bnQYASABKAsyJS5ob2xtcy50",
+            "eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSDgoGaXNfZHVlGAIgASgI",
+            "MpoFChdSZXNlcnZhdGlvbkd1YXJhbnRlZVN2YxJ7ChJHZXRQcmVUZW5kZXJT",
+            "dGF0dXMSNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2",
+            "YXRpb25JbmRpY2F0b3IaLy5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5SZXNH",
+            "U3ZjUHJlVGVuZGVyU3RhdHVzEpEBChRUZW5kZXJDaGVja0d1YXJhbnRlZRI7",
+            "LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlJlc0dTdmNUZW5kZXJDaGVja0d1",
+            "YXJhbnRlZVJlcXVlc3QaPC5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5SZXNH",
+            "U3ZjVGVuZGVyQ2hlY2tHdWFyYW50ZWVSZXNwb25zZRKyAQogVGVuZGVyTmV3",
+            "Tm90UHJlc2VudENhcmRHdWFyYW50ZWUSRy5ob2xtcy50eXBlcy5ib29raW5n",
+            "LnJwYy5SZXNHU3ZjVGVuZGVyTmV3Tm90UHJlc2VudENhcmRHdWFyYW50ZWVS",
+            "ZXF1ZXN0GkUuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuUmVzR1N2Y1RlbmRl",
+            "ck5vdFByZXNlbnRDYXJkR3VhcmFudGVlUmVzcG9uc2USuAEKI1RlbmRlclN0",
+            "b3JlZE5vdFByZXNlbnRDYXJkR3VhcmFudGVlEkouaG9sbXMudHlwZXMuYm9v",
+            "a2luZy5ycGMuUmVzR1N2Y1RlbmRlclN0b3JlZE5vdFByZXNlbnRDYXJkR3Vh",
+            "cmFudGVlUmVxdWVzdBpFLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlJlc0dT",
+            "dmNUZW5kZXJOb3RQcmVzZW50Q2FyZEd1YXJhbnRlZVJlc3BvbnNlQiNaCWZv",
+            "bGlvL3JwY6oCFUhPTE1TLlR5cGVzLkZvbGlvLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Guarantees.CardGuaranteeTenderResultReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.NotPresentPaymentCardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -69,7 +71,8 @@ namespace HOLMS.Types.Folio.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.ResGSvcTenderCheckGuaranteeResponse), global::HOLMS.Types.Folio.RPC.ResGSvcTenderCheckGuaranteeResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.ResGSvcTenderNewNotPresentCardGuaranteeRequest), global::HOLMS.Types.Folio.RPC.ResGSvcTenderNewNotPresentCardGuaranteeRequest.Parser, new[]{ "Reservation", "Card" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.ResGSvcTenderStoredNotPresentCardGuaranteeRequest), global::HOLMS.Types.Folio.RPC.ResGSvcTenderStoredNotPresentCardGuaranteeRequest.Parser, new[]{ "Reservation", "Card" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.ResGSvcTenderNotPresentCardGuaranteeResponse), global::HOLMS.Types.Folio.RPC.ResGSvcTenderNotPresentCardGuaranteeResponse.Parser, new[]{ "Result" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.ResGSvcTenderNotPresentCardGuaranteeResponse), global::HOLMS.Types.Folio.RPC.ResGSvcTenderNotPresentCardGuaranteeResponse.Parser, new[]{ "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus), global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus.Parser, new[]{ "RemainingAmount", "IsDue" }, null, null, null)
           }));
     }
     #endregion
@@ -801,6 +804,157 @@ namespace HOLMS.Types.Folio.RPC {
             break;
           case 8: {
             result_ = (global::HOLMS.Types.Booking.Guarantees.CardGuaranteeTenderResult) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class ResGSvcPreTenderStatus : pb::IMessage<ResGSvcPreTenderStatus> {
+    private static readonly pb::MessageParser<ResGSvcPreTenderStatus> _parser = new pb::MessageParser<ResGSvcPreTenderStatus>(() => new ResGSvcPreTenderStatus());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ResGSvcPreTenderStatus> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Folio.RPC.ReservationGuaranteeSvcReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ResGSvcPreTenderStatus() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ResGSvcPreTenderStatus(ResGSvcPreTenderStatus other) : this() {
+      RemainingAmount = other.remainingAmount_ != null ? other.RemainingAmount.Clone() : null;
+      isDue_ = other.isDue_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ResGSvcPreTenderStatus Clone() {
+      return new ResGSvcPreTenderStatus(this);
+    }
+
+    /// <summary>Field number for the "remaining_amount" field.</summary>
+    public const int RemainingAmountFieldNumber = 1;
+    private global::HOLMS.Types.Primitive.MonetaryAmount remainingAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount RemainingAmount {
+      get { return remainingAmount_; }
+      set {
+        remainingAmount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_due" field.</summary>
+    public const int IsDueFieldNumber = 2;
+    private bool isDue_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsDue {
+      get { return isDue_; }
+      set {
+        isDue_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ResGSvcPreTenderStatus);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ResGSvcPreTenderStatus other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(RemainingAmount, other.RemainingAmount)) return false;
+      if (IsDue != other.IsDue) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (remainingAmount_ != null) hash ^= RemainingAmount.GetHashCode();
+      if (IsDue != false) hash ^= IsDue.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (remainingAmount_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(RemainingAmount);
+      }
+      if (IsDue != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(IsDue);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (remainingAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RemainingAmount);
+      }
+      if (IsDue != false) {
+        size += 1 + 1;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ResGSvcPreTenderStatus other) {
+      if (other == null) {
+        return;
+      }
+      if (other.remainingAmount_ != null) {
+        if (remainingAmount_ == null) {
+          remainingAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        RemainingAmount.MergeFrom(other.RemainingAmount);
+      }
+      if (other.IsDue != false) {
+        IsDue = other.IsDue;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (remainingAmount_ == null) {
+              remainingAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(remainingAmount_);
+            break;
+          }
+          case 16: {
+            IsDue = input.ReadBool();
             break;
           }
         }
