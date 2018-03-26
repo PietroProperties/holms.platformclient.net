@@ -23,14 +23,13 @@ namespace HOLMS.Types.Folio {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chpmb2xpby90YXhfYXNzZXNzbWVudC5wcm90bxIRaG9sbXMudHlwZXMuZm9s",
-            "aW8aHm1vbmV5L2FjY291bnRpbmcvdGF4X2ZlZS5wcm90bxofcHJpbWl0aXZl",
-            "L21vbmV0YXJ5X2Ftb3VudC5wcm90byKGAQoNVGF4QXNzZXNzbWVudBIxCgN0",
-            "YXgYASABKAsyJC5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLlRheEZl",
-            "ZRJCChNhc3Nlc3NlZF90YXhfYW1vdW50GAIgASgLMiUuaG9sbXMudHlwZXMu",
-            "cHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50QhtaBWZvbGlvqgIRSE9MTVMuVHlw",
-            "ZXMuRm9saW9iBnByb3RvMw=="));
+            "aW8aE2ZvbGlvL3RheF9mZWUucHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9h",
+            "bW91bnQucHJvdG8iewoNVGF4QXNzZXNzbWVudBImCgN0YXgYASABKAsyGS5o",
+            "b2xtcy50eXBlcy5mb2xpby5UYXhGZWUSQgoTYXNzZXNzZWRfdGF4X2Ftb3Vu",
+            "dBgCIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3Vu",
+            "dEIUqgIRSE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Accounting.TaxFeeReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.TaxFeeReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxAssessment), global::HOLMS.Types.Folio.TaxAssessment.Parser, new[]{ "Tax", "AssessedTaxAmount" }, null, null, null)
           }));
@@ -74,9 +73,9 @@ namespace HOLMS.Types.Folio {
 
     /// <summary>Field number for the "tax" field.</summary>
     public const int TaxFieldNumber = 1;
-    private global::HOLMS.Types.Money.Accounting.TaxFee tax_;
+    private global::HOLMS.Types.Folio.TaxFee tax_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Accounting.TaxFee Tax {
+    public global::HOLMS.Types.Folio.TaxFee Tax {
       get { return tax_; }
       set {
         tax_ = value;
@@ -156,7 +155,7 @@ namespace HOLMS.Types.Folio {
       }
       if (other.tax_ != null) {
         if (tax_ == null) {
-          tax_ = new global::HOLMS.Types.Money.Accounting.TaxFee();
+          tax_ = new global::HOLMS.Types.Folio.TaxFee();
         }
         Tax.MergeFrom(other.Tax);
       }
@@ -178,7 +177,7 @@ namespace HOLMS.Types.Folio {
             break;
           case 10: {
             if (tax_ == null) {
-              tax_ = new global::HOLMS.Types.Money.Accounting.TaxFee();
+              tax_ = new global::HOLMS.Types.Folio.TaxFee();
             }
             input.ReadMessage(tax_);
             break;

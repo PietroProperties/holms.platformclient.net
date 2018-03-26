@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package holms.types.folio.rpc;
+option csharp_namespace = "HOLMS.Types.Folio";
+
+import "folio/tax_fee.proto";
+import "folio/tax_fee_indicator.proto";
+import "google/protobuf/empty.proto";
+import "primitive/server_action_confirmation.proto";
+
+message TaxFeeSvcAllResponse {
+	repeated .holms.types.folio.TaxFee tax_fees = 1;
+}
+
+service TaxFeeSvc {
+	rpc All (google.protobuf.Empty) 
+		returns (TaxFeeSvcAllResponse);
+
+	rpc GetById (.holms.types.folio.TaxFeeIndicator) 
+		returns (.holms.types.folio.TaxFee);
+
+	rpc Create (.holms.types.folio.TaxFee) 
+		returns (.holms.types.folio.TaxFee);
+
+	rpc Update (.holms.types.folio.TaxFee) 
+		returns (.holms.types.folio.TaxFee);
+
+	rpc Delete (.holms.types.folio.TaxFee) 
+		returns (.holms.types.primitive.ServerActionConfirmation);
+}
+

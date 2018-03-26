@@ -12,17 +12,9 @@ namespace HOLMS.Types.Money.RPC {
   {
     static readonly string __ServiceName = "holms.types.money.rpc.AccountingTxnSvc";
 
-    static readonly Marshaller<global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq> __Marshaller_AssignGuestOwnerToTxnReq = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus> __Marshaller_AccountingTxnExportStatus = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest> __Marshaller_AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest.Parser.ParseFrom);
-
-    static readonly Method<global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq, global::Google.Protobuf.WellKnownTypes.Empty> __Method_AssignGuestOwnerToTransaction = new Method<global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq, global::Google.Protobuf.WellKnownTypes.Empty>(
-        MethodType.Unary,
-        __ServiceName,
-        "AssignGuestOwnerToTransaction",
-        __Marshaller_AssignGuestOwnerToTxnReq,
-        __Marshaller_Empty);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus> __Method_GetExportJobStatus = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus>(
         MethodType.Unary,
@@ -47,11 +39,6 @@ namespace HOLMS.Types.Money.RPC {
     /// <summary>Base class for server-side implementations of AccountingTxnSvc</summary>
     public abstract class AccountingTxnSvcBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> AssignGuestOwnerToTransaction(global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus> GetExportJobStatus(global::Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
@@ -87,22 +74,6 @@ namespace HOLMS.Types.Money.RPC {
       {
       }
 
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty AssignGuestOwnerToTransaction(global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return AssignGuestOwnerToTransaction(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty AssignGuestOwnerToTransaction(global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_AssignGuestOwnerToTransaction, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> AssignGuestOwnerToTransactionAsync(global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return AssignGuestOwnerToTransactionAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> AssignGuestOwnerToTransactionAsync(global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_AssignGuestOwnerToTransaction, null, options, request);
-      }
       public virtual global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatus GetExportJobStatus(global::Google.Protobuf.WellKnownTypes.Empty request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetExportJobStatus(request, new CallOptions(headers, deadline, cancellationToken));
@@ -145,7 +116,6 @@ namespace HOLMS.Types.Money.RPC {
     public static ServerServiceDefinition BindService(AccountingTxnSvcBase serviceImpl)
     {
       return ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_AssignGuestOwnerToTransaction, serviceImpl.AssignGuestOwnerToTransaction)
           .AddMethod(__Method_GetExportJobStatus, serviceImpl.GetExportJobStatus)
           .AddMethod(__Method_UploadPropertyTransactionsInFormat, serviceImpl.UploadPropertyTransactionsInFormat).Build();
     }
