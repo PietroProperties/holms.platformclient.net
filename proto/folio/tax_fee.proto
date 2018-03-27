@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+package holms.types.folio;
+option csharp_namespace = "HOLMS.Types.Folio";
+
+import "folio/tax_fee_category.proto";
+import "folio/tax_fee_indicator.proto";
+import "money/accounting/account_indicator.proto";
+import "primitive/fixed_point_ratio.proto";
+
+message TaxFee {
+	TaxFeeIndicator entity_id = 1;
+	string description = 2;
+	.holms.types.primitive.FixedPointRatio tax_rate = 3;
+	holms.types.folio.TaxFeeCategory category = 4;
+	holms.types.money.accounting.AccountIndicator liability_account_id = 5;
+}
+

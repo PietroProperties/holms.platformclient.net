@@ -20,7 +20,6 @@ namespace HOLMS.Types.Money.RPC {
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.AccountSvcUpdateResponse> __Marshaller_AccountSvcUpdateResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AccountSvcUpdateResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse> __Marshaller_AccountSvcDeleteResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AccountSvcDeleteResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Money.RPC.AccountSvcAllByCategoryReq> __Marshaller_AccountSvcAllByCategoryReq = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.AccountSvcAllByCategoryReq.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Money.Accounting.AccountActivityLedger> __Marshaller_AccountActivityLedger = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Accounting.AccountActivityLedger.Parser.ParseFrom);
 
     static readonly Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Money.RPC.AccountSvcEnumResponse> __Method_All = new Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Money.RPC.AccountSvcEnumResponse>(
         MethodType.Unary,
@@ -64,13 +63,6 @@ namespace HOLMS.Types.Money.RPC {
         __Marshaller_AccountSvcAllByCategoryReq,
         __Marshaller_AccountSvcEnumResponse);
 
-    static readonly Method<global::HOLMS.Types.Money.Accounting.AccountIndicator, global::HOLMS.Types.Money.Accounting.AccountActivityLedger> __Method_GetLedgerForAccount = new Method<global::HOLMS.Types.Money.Accounting.AccountIndicator, global::HOLMS.Types.Money.Accounting.AccountActivityLedger>(
-        MethodType.Unary,
-        __ServiceName,
-        "GetLedgerForAccount",
-        __Marshaller_AccountIndicator,
-        __Marshaller_AccountActivityLedger);
-
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -106,11 +98,6 @@ namespace HOLMS.Types.Money.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.AccountSvcEnumResponse> AllByCategory(global::HOLMS.Types.Money.RPC.AccountSvcAllByCategoryReq request, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Accounting.AccountActivityLedger> GetLedgerForAccount(global::HOLMS.Types.Money.Accounting.AccountIndicator request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -236,22 +223,6 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_AllByCategory, null, options, request);
       }
-      public virtual global::HOLMS.Types.Money.Accounting.AccountActivityLedger GetLedgerForAccount(global::HOLMS.Types.Money.Accounting.AccountIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetLedgerForAccount(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Money.Accounting.AccountActivityLedger GetLedgerForAccount(global::HOLMS.Types.Money.Accounting.AccountIndicator request, CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetLedgerForAccount, null, options, request);
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Accounting.AccountActivityLedger> GetLedgerForAccountAsync(global::HOLMS.Types.Money.Accounting.AccountIndicator request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetLedgerForAccountAsync(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.Money.Accounting.AccountActivityLedger> GetLedgerForAccountAsync(global::HOLMS.Types.Money.Accounting.AccountIndicator request, CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetLedgerForAccount, null, options, request);
-      }
       protected override AccountSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new AccountSvcClient(configuration);
@@ -267,8 +238,7 @@ namespace HOLMS.Types.Money.RPC {
           .AddMethod(__Method_Create, serviceImpl.Create)
           .AddMethod(__Method_Update, serviceImpl.Update)
           .AddMethod(__Method_Delete, serviceImpl.Delete)
-          .AddMethod(__Method_AllByCategory, serviceImpl.AllByCategory)
-          .AddMethod(__Method_GetLedgerForAccount, serviceImpl.GetLedgerForAccount).Build();
+          .AddMethod(__Method_AllByCategory, serviceImpl.AllByCategory).Build();
     }
 
   }

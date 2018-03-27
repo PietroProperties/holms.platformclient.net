@@ -2,11 +2,9 @@
 
 package holms.types.money.rpc;
 option csharp_namespace = "HOLMS.Types.Money.RPC";
-option go_package = "money/rpc";
 
 import "google/protobuf/empty.proto";
 import "money/accounting/account.proto";
-import "money/accounting/account_activity_ledger.proto";
 import "money/accounting/account_indicator.proto";
 import "money/accounting/ledger_account_category.proto";
 
@@ -68,7 +66,4 @@ service AccountSvc {
 	
 	rpc AllByCategory(AccountSvcAllByCategoryReq) 
 		returns (AccountSvcEnumResponse);
-
-	rpc GetLedgerForAccount(.holms.types.money.accounting.AccountIndicator)
-		returns (.holms.types.money.accounting.AccountActivityLedger);
 }

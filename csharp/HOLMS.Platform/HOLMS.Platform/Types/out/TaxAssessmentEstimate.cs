@@ -23,14 +23,14 @@ namespace HOLMS.Types.Folio {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNmb2xpby90YXhfYXNzZXNzbWVudF9lc3RpbWF0ZS5wcm90bxIRaG9sbXMu",
-            "dHlwZXMuZm9saW8aHm1vbmV5L2FjY291bnRpbmcvdGF4X2ZlZS5wcm90bxof",
-            "cHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90byKPAQoVVGF4QXNzZXNz",
-            "bWVudEVzdGltYXRlEjEKA3RheBgBIAEoCzIkLmhvbG1zLnR5cGVzLm1vbmV5",
-            "LmFjY291bnRpbmcuVGF4RmVlEkMKFGVzdGltYXRlZF90YXhfYW1vdW50GAIg",
-            "ASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50Qhta",
-            "BWZvbGlvqgIRSE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
+            "dHlwZXMuZm9saW8aE2ZvbGlvL3RheF9mZWUucHJvdG8aH3ByaW1pdGl2ZS9t",
+            "b25ldGFyeV9hbW91bnQucHJvdG8ihAEKFVRheEFzc2Vzc21lbnRFc3RpbWF0",
+            "ZRImCgN0YXgYASABKAsyGS5ob2xtcy50eXBlcy5mb2xpby5UYXhGZWUSQwoU",
+            "ZXN0aW1hdGVkX3RheF9hbW91bnQYAiABKAsyJS5ob2xtcy50eXBlcy5wcmlt",
+            "aXRpdmUuTW9uZXRhcnlBbW91bnRCFKoCEUhPTE1TLlR5cGVzLkZvbGlvYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Accounting.TaxFeeReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.TaxFeeReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxAssessmentEstimate), global::HOLMS.Types.Folio.TaxAssessmentEstimate.Parser, new[]{ "Tax", "EstimatedTaxAmount" }, null, null, null)
           }));
@@ -74,9 +74,9 @@ namespace HOLMS.Types.Folio {
 
     /// <summary>Field number for the "tax" field.</summary>
     public const int TaxFieldNumber = 1;
-    private global::HOLMS.Types.Money.Accounting.TaxFee tax_;
+    private global::HOLMS.Types.Folio.TaxFee tax_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Accounting.TaxFee Tax {
+    public global::HOLMS.Types.Folio.TaxFee Tax {
       get { return tax_; }
       set {
         tax_ = value;
@@ -156,7 +156,7 @@ namespace HOLMS.Types.Folio {
       }
       if (other.tax_ != null) {
         if (tax_ == null) {
-          tax_ = new global::HOLMS.Types.Money.Accounting.TaxFee();
+          tax_ = new global::HOLMS.Types.Folio.TaxFee();
         }
         Tax.MergeFrom(other.Tax);
       }
@@ -178,7 +178,7 @@ namespace HOLMS.Types.Folio {
             break;
           case 10: {
             if (tax_ == null) {
-              tax_ = new global::HOLMS.Types.Money.Accounting.TaxFee();
+              tax_ = new global::HOLMS.Types.Folio.TaxFee();
             }
             input.ReadMessage(tax_);
             break;

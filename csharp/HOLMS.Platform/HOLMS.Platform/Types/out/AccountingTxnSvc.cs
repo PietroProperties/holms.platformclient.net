@@ -25,34 +25,25 @@ namespace HOLMS.Types.Money.RPC {
             "CiJtb25leS9ycGMvYWNjb3VudGluZ190eG5fc3ZjLnByb3RvEhVob2xtcy50",
             "eXBlcy5tb25leS5ycGMaG2dvb2dsZS9wcm90b2J1Zi9lbXB0eS5wcm90bxow",
             "cHJpbWl0aXZlL3BiX2luY2x1c2l2ZV9jYWxlbmRhcl9kYXRlX3JhbmdlLnBy",
-            "b3RvGiBjcm0vZ3Vlc3RzL2d1ZXN0X2luZGljYXRvci5wcm90bxo7bW9uZXkv",
-            "YWNjb3VudGluZy9hY2NvdW50aW5nX3RyYW5zYWN0aW9uX2V4cG9ydF9mb3Jt",
-            "YXQucHJvdG8aM21vbmV5L2FjY291bnRpbmcvYWNjb3VudGluZ190eG5fZXhw",
-            "b3J0X3N0YXR1cy5wcm90bxo4bW9uZXkvYWNjb3VudGluZy9hY2NvdW50aW5n",
-            "X3RyYW5zYWN0aW9uX3dpdGhfZ3Vlc3QucHJvdG8iugEKGEFzc2lnbkd1ZXN0",
-            "T3duZXJUb1R4blJlcRJnCiFhY2NvdW50aW5nX3RyYW5zYWN0aW9uX3dpdGhf",
-            "Z3Vlc3QYASABKAsyPC5ob2xtcy50eXBlcy5tb25leS5hY2NvdW50aW5nLkFj",
-            "Y291bnRpbmdUcmFuc2FjdGlvbldpdGhHdWVzdBI1CgVndWVzdBgCIAEoCzIm",
-            "LmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJbmRpY2F0b3Ii9gEKPEFj",
-            "Y291bnRUeG5FeHBvcnRTdmNVcGxvYWRQcm9wZXJ0eVRyYW5zYWN0aW9uc0lu",
-            "Rm9ybWF0UmVxdWVzdBJPCgZmb3JtYXQYASABKA4yPy5ob2xtcy50eXBlcy5t",
-            "b25leS5hY2NvdW50aW5nLkFjY291bnRpbmdUcmFuc2FjdGlvbkV4cG9ydEZv",
-            "cm1hdBJHCgpkYXRlX3JhbmdlGAMgASgLMjMuaG9sbXMudHlwZXMucHJpbWl0",
-            "aXZlLlBiSW5jbHVzaXZlQ2FsZW5kYXJEYXRlUmFuZ2USHAoUdXBkYXRlX2xh",
-            "c3RfcnVuX2RhdGUYBCABKAgy9wIKEEFjY291bnRpbmdUeG5TdmMSaAodQXNz",
-            "aWduR3Vlc3RPd25lclRvVHJhbnNhY3Rpb24SLy5ob2xtcy50eXBlcy5tb25l",
-            "eS5ycGMuQXNzaWduR3Vlc3RPd25lclRvVHhuUmVxGhYuZ29vZ2xlLnByb3Rv",
-            "YnVmLkVtcHR5EmUKEkdldEV4cG9ydEpvYlN0YXR1cxIWLmdvb2dsZS5wcm90",
-            "b2J1Zi5FbXB0eRo3LmhvbG1zLnR5cGVzLm1vbmV5LmFjY291bnRpbmcuQWNj",
-            "b3VudGluZ1R4bkV4cG9ydFN0YXR1cxKRAQoiVXBsb2FkUHJvcGVydHlUcmFu",
-            "c2FjdGlvbnNJbkZvcm1hdBJTLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5BY2Nv",
-            "dW50VHhuRXhwb3J0U3ZjVXBsb2FkUHJvcGVydHlUcmFuc2FjdGlvbnNJbkZv",
-            "cm1hdFJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHlCI1oJbW9uZXkv",
-            "cnBjqgIVSE9MTVMuVHlwZXMuTW9uZXkuUlBDYgZwcm90bzM="));
+            "b3RvGjttb25leS9hY2NvdW50aW5nL2FjY291bnRpbmdfdHJhbnNhY3Rpb25f",
+            "ZXhwb3J0X2Zvcm1hdC5wcm90bxozbW9uZXkvYWNjb3VudGluZy9hY2NvdW50",
+            "aW5nX3R4bl9leHBvcnRfc3RhdHVzLnByb3RvIvYBCjxBY2NvdW50VHhuRXhw",
+            "b3J0U3ZjVXBsb2FkUHJvcGVydHlUcmFuc2FjdGlvbnNJbkZvcm1hdFJlcXVl",
+            "c3QSTwoGZm9ybWF0GAEgASgOMj8uaG9sbXMudHlwZXMubW9uZXkuYWNjb3Vu",
+            "dGluZy5BY2NvdW50aW5nVHJhbnNhY3Rpb25FeHBvcnRGb3JtYXQSRwoKZGF0",
+            "ZV9yYW5nZRgDIAEoCzIzLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkluY2x1",
+            "c2l2ZUNhbGVuZGFyRGF0ZVJhbmdlEhwKFHVwZGF0ZV9sYXN0X3J1bl9kYXRl",
+            "GAQgASgIMo0CChBBY2NvdW50aW5nVHhuU3ZjEmUKEkdldEV4cG9ydEpvYlN0",
+            "YXR1cxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRo3LmhvbG1zLnR5cGVzLm1v",
+            "bmV5LmFjY291bnRpbmcuQWNjb3VudGluZ1R4bkV4cG9ydFN0YXR1cxKRAQoi",
+            "VXBsb2FkUHJvcGVydHlUcmFuc2FjdGlvbnNJbkZvcm1hdBJTLmhvbG1zLnR5",
+            "cGVzLm1vbmV5LnJwYy5BY2NvdW50VHhuRXhwb3J0U3ZjVXBsb2FkUHJvcGVy",
+            "dHlUcmFuc2FjdGlvbnNJbkZvcm1hdFJlcXVlc3QaFi5nb29nbGUucHJvdG9i",
+            "dWYuRW1wdHlCI1oJbW9uZXkvcnBjqgIVSE9MTVMuVHlwZXMuTW9uZXkuUlBD",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRangeReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTransactionExportFormatReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatusReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTransactionWithGuestReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRangeReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTransactionExportFormatReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountingTxnExportStatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq), global::HOLMS.Types.Money.RPC.AssignGuestOwnerToTxnReq.Parser, new[]{ "AccountingTransactionWithGuest", "Guest" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest), global::HOLMS.Types.Money.RPC.AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest.Parser, new[]{ "Format", "DateRange", "UpdateLastRunDate" }, null, null, null)
           }));
     }
@@ -60,163 +51,6 @@ namespace HOLMS.Types.Money.RPC {
 
   }
   #region Messages
-  public sealed partial class AssignGuestOwnerToTxnReq : pb::IMessage<AssignGuestOwnerToTxnReq> {
-    private static readonly pb::MessageParser<AssignGuestOwnerToTxnReq> _parser = new pb::MessageParser<AssignGuestOwnerToTxnReq>(() => new AssignGuestOwnerToTxnReq());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<AssignGuestOwnerToTxnReq> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.AccountingTxnSvcReflection.Descriptor.MessageTypes[0]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AssignGuestOwnerToTxnReq() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AssignGuestOwnerToTxnReq(AssignGuestOwnerToTxnReq other) : this() {
-      AccountingTransactionWithGuest = other.accountingTransactionWithGuest_ != null ? other.AccountingTransactionWithGuest.Clone() : null;
-      Guest = other.guest_ != null ? other.Guest.Clone() : null;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AssignGuestOwnerToTxnReq Clone() {
-      return new AssignGuestOwnerToTxnReq(this);
-    }
-
-    /// <summary>Field number for the "accounting_transaction_with_guest" field.</summary>
-    public const int AccountingTransactionWithGuestFieldNumber = 1;
-    private global::HOLMS.Types.Money.Accounting.AccountingTransactionWithGuest accountingTransactionWithGuest_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Accounting.AccountingTransactionWithGuest AccountingTransactionWithGuest {
-      get { return accountingTransactionWithGuest_; }
-      set {
-        accountingTransactionWithGuest_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "guest" field.</summary>
-    public const int GuestFieldNumber = 2;
-    private global::HOLMS.Types.CRM.Guests.GuestIndicator guest_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.CRM.Guests.GuestIndicator Guest {
-      get { return guest_; }
-      set {
-        guest_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as AssignGuestOwnerToTxnReq);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(AssignGuestOwnerToTxnReq other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(AccountingTransactionWithGuest, other.AccountingTransactionWithGuest)) return false;
-      if (!object.Equals(Guest, other.Guest)) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (accountingTransactionWithGuest_ != null) hash ^= AccountingTransactionWithGuest.GetHashCode();
-      if (guest_ != null) hash ^= Guest.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (accountingTransactionWithGuest_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(AccountingTransactionWithGuest);
-      }
-      if (guest_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Guest);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (accountingTransactionWithGuest_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AccountingTransactionWithGuest);
-      }
-      if (guest_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Guest);
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(AssignGuestOwnerToTxnReq other) {
-      if (other == null) {
-        return;
-      }
-      if (other.accountingTransactionWithGuest_ != null) {
-        if (accountingTransactionWithGuest_ == null) {
-          accountingTransactionWithGuest_ = new global::HOLMS.Types.Money.Accounting.AccountingTransactionWithGuest();
-        }
-        AccountingTransactionWithGuest.MergeFrom(other.AccountingTransactionWithGuest);
-      }
-      if (other.guest_ != null) {
-        if (guest_ == null) {
-          guest_ = new global::HOLMS.Types.CRM.Guests.GuestIndicator();
-        }
-        Guest.MergeFrom(other.Guest);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 10: {
-            if (accountingTransactionWithGuest_ == null) {
-              accountingTransactionWithGuest_ = new global::HOLMS.Types.Money.Accounting.AccountingTransactionWithGuest();
-            }
-            input.ReadMessage(accountingTransactionWithGuest_);
-            break;
-          }
-          case 18: {
-            if (guest_ == null) {
-              guest_ = new global::HOLMS.Types.CRM.Guests.GuestIndicator();
-            }
-            input.ReadMessage(guest_);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
   public sealed partial class AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest : pb::IMessage<AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest> {
     private static readonly pb::MessageParser<AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest> _parser = new pb::MessageParser<AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest>(() => new AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -224,7 +58,7 @@ namespace HOLMS.Types.Money.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.AccountingTxnSvcReflection.Descriptor.MessageTypes[1]; }
+      get { return global::HOLMS.Types.Money.RPC.AccountingTxnSvcReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -265,9 +99,6 @@ namespace HOLMS.Types.Money.RPC {
     /// <summary>Field number for the "date_range" field.</summary>
     public const int DateRangeFieldNumber = 3;
     private global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange dateRange_;
-    /// <summary>
-    ///  .holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.PbInclusiveCalendarDateRange DateRange {
       get { return dateRange_; }

@@ -6,27 +6,16 @@ option go_package = "money/rpc";
 
 import "google/protobuf/empty.proto";
 import "primitive/pb_inclusive_calendar_date_range.proto";
-import "crm/guests/guest_indicator.proto";
 import "money/accounting/accounting_transaction_export_format.proto";
 import "money/accounting/accounting_txn_export_status.proto";
-import "money/accounting/accounting_transaction_with_guest.proto";
-
-message AssignGuestOwnerToTxnReq {
-	.holms.types.money.accounting.AccountingTransactionWithGuest accounting_transaction_with_guest = 1;
-	.holms.types.crm.guests.GuestIndicator guest = 2;
-}
 
 message AccountTxnExportSvcUploadPropertyTransactionsInFormatRequest {
 	.holms.types.money.accounting.AccountingTransactionExportFormat format = 1;
-	// .holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
 	.holms.types.primitive.PbInclusiveCalendarDateRange date_range = 3;
 	bool update_last_run_date = 4;
 }
 
 service AccountingTxnSvc {
-	rpc AssignGuestOwnerToTransaction(AssignGuestOwnerToTxnReq) 
-		returns (google.protobuf.Empty);
-
 	rpc GetExportJobStatus(google.protobuf.Empty)
 		returns (.holms.types.money.accounting.AccountingTxnExportStatus);
 
