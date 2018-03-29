@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package holms.types.primitive;
+option csharp_namespace = "HOLMS.Types.Primitive";
+
+import "google/protobuf/timestamp.proto";
+
+message Interval {
+	.google.protobuf.Timestamp start = 1;
+	.google.protobuf.Timestamp end = 2;
+}
+
