@@ -13,7 +13,7 @@ import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/cards/transactions/payment_card_refund_indicator.proto";
 import "money/cards/transactions/processor_transaction_result.proto";
 import "tenancy_config/indicators/property_indicator.proto";
-import "primitive/interval.proto";
+import "primitive/pb_interval.proto";
 
 message CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest {
 	holms.types.crm.guests.GuestIndicator guest = 1;
@@ -33,7 +33,7 @@ message MerchantBatchEnumResponse {
 
 message CardProcessingSvcSearchHistoricalBatchesRequest {
 	holms.types.money.cards.CardMerchantIndicator merchant = 1;
-	.holms.types.primitive.Interval search_range = 2;
+	.holms.types.primitive.PbInterval search_range = 2;
 }
 
 enum CardProcessingSvcVoidTransactionResult {

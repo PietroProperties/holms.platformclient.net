@@ -5,7 +5,7 @@ option csharp_namespace = "HOLMS.Types.Primitive";
 
 import "google/protobuf/timestamp.proto";
 
-message Interval {
+message PbInterval {
 	.google.protobuf.Timestamp start = 1;
 	.google.protobuf.Timestamp end = 2;
 }
