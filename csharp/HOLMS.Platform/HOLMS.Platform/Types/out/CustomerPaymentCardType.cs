@@ -23,10 +23,11 @@ namespace HOLMS.Types.Money.Cards {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cixtb25leS9jYXJkcy9jdXN0b21lcl9wYXltZW50X2NhcmRfdHlwZS5wcm90",
-            "bxIXaG9sbXMudHlwZXMubW9uZXkuY2FyZHMqZQoXQ3VzdG9tZXJQYXltZW50",
-            "Q2FyZFR5cGUSJAogQ1VTVE9NRVJfUEFZTUVOVF9DQVJEX1RZUEVfR1VFU1QQ",
-            "ABIkCiBDVVNUT01FUl9QQVlNRU5UX0NBUkRfVFlQRV9HUk9VUBABQhqqAhdI",
-            "T0xNUy5UeXBlcy5Nb25leS5DYXJkc2IGcHJvdG8z"));
+            "bxIXaG9sbXMudHlwZXMubW9uZXkuY2FyZHMqiwEKF0N1c3RvbWVyUGF5bWVu",
+            "dENhcmRUeXBlEiQKIENVU1RPTUVSX1BBWU1FTlRfQ0FSRF9UWVBFX0dVRVNU",
+            "EAASJAogQ1VTVE9NRVJfUEFZTUVOVF9DQVJEX1RZUEVfR1JPVVAQARIkCiBD",
+            "VVNUT01FUl9QQVlNRU5UX0NBUkRfVFlQRV9GT0xJTxACQhqqAhdIT0xNUy5U",
+            "eXBlcy5Nb25leS5DYXJkc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.CustomerPaymentCardType), }, null));
@@ -38,6 +39,7 @@ namespace HOLMS.Types.Money.Cards {
   public enum CustomerPaymentCardType {
     [pbr::OriginalName("CUSTOMER_PAYMENT_CARD_TYPE_GUEST")] Guest = 0,
     [pbr::OriginalName("CUSTOMER_PAYMENT_CARD_TYPE_GROUP")] Group = 1,
+    [pbr::OriginalName("CUSTOMER_PAYMENT_CARD_TYPE_FOLIO")] Folio = 2,
   }
 
   #endregion
