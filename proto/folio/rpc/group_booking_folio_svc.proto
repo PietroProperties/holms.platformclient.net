@@ -12,7 +12,7 @@ import "folio/rpc/folio_svc_authorization_modification_response.proto";
 import "folio/rpc/folio_svc_cancel_payment_response.proto";
 import "folio/rpc/folio_svc_get_on_file_cards_response.proto";
 import "folio/rpc/folio_svc_post_card_payment_response.proto";
-import "folio/rpc/folio_svc_post_cash_payment_response.proto";
+import "folio/rpc/folio_svc_post_cash_response.proto";
 import "folio/rpc/folio_svc_post_check_payment_response.proto";
 import "folio/rpc/folio_svc_refund_response.proto";
 import "google/protobuf/empty.proto";
@@ -58,6 +58,11 @@ message GroupBookingFolioSvcPostCardPaymentRequest {
 
 message GroupBookingFolioSvcPostCashPaymentRequest {
 	holms.types.primitive.MonetaryAmount amount_paid = 1;
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 2;
+}
+
+message GroupBookingFolioSvcPostCashRefundRequest {
+	holms.types.primitive.MonetaryAmount amount = 1;
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 2;
 }
 
@@ -113,13 +118,15 @@ service GroupBookingFolioSvc {
 	rpc PostCheckPayment(GroupBookingFolioSvcPostCheckPaymentRequest)
 		returns (FolioSvcPostCheckPaymentResponse);
 	rpc PostCashPayment(GroupBookingFolioSvcPostCashPaymentRequest)
-		returns (FolioSvcPostCashPaymentResponse);
+		returns (FolioSvcPostCashResponse);
         rpc CancelCashCheckPayment(FolioCheckCashPaymentIndicator)
                 returns (google.protobuf.Empty);
         rpc CancelCardPayment(holms.types.money.cards.transactions.PaymentCardSaleIndicator)
 		returns (FolioSvcCancelPaymentResponse);
 	rpc RefundTokenizedCard(GroupBookingFolioSvcPaymentCardRefundRequest)
 		returns (FolioSvcRefundResponse);
+	rpc PostCashRefund(GroupBookingFolioSvcPostCashRefundRequest)
+		returns (FolioSvcPostCashResponse);
 
 	// Charge corrections
 	rpc PostLodgingChargeCorrection (GroupBookingFolioSvcPostLodgingChargeCorrectionRequest)
