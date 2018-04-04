@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.snapshot;
+option csharp_namespace = "HOLMS.Types.Supply.Snapshot";
+
+import "booking/indicators/group_booking_indicator.proto";
+
+message GroupBookingQuantitySnapshot {
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	int32 total_hold_nights = 2;
+	int32 used_hold_nights = 3; 
+}
+

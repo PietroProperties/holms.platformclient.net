@@ -12,10 +12,19 @@ namespace HOLMS.Types.Supply.RPC {
   {
     static readonly string __ServiceName = "holms.types.supply.rpc.HoldsSvc";
 
+    static readonly Marshaller<global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq> __Marshaller_HoldsSvcGbQtySnapRq = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp> __Marshaller_HoldsSvcGbQtySnapRsp = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Supply.RPC.HoldsSvcAdjustManagementHoldsRequest> __Marshaller_HoldsSvcAdjustManagementHoldsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.HoldsSvcAdjustManagementHoldsRequest.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> __Marshaller_GroupBookingIndicator = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Supply.RPC.HoldsSvcGetGroupBookingHoldsResponse> __Marshaller_HoldsSvcGetGroupBookingHoldsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.HoldsSvcGetGroupBookingHoldsResponse.Parser.ParseFrom);
+
+    static readonly Method<global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq, global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp> __Method_GetGroupBookingsQuantitySnapshot = new Method<global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq, global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp>(
+        MethodType.Unary,
+        __ServiceName,
+        "GetGroupBookingsQuantitySnapshot",
+        __Marshaller_HoldsSvcGbQtySnapRq,
+        __Marshaller_HoldsSvcGbQtySnapRsp);
 
     static readonly Method<global::HOLMS.Types.Supply.RPC.HoldsSvcAdjustManagementHoldsRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_AdjustManagementHolds = new Method<global::HOLMS.Types.Supply.RPC.HoldsSvcAdjustManagementHoldsRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         MethodType.Unary,
@@ -40,6 +49,11 @@ namespace HOLMS.Types.Supply.RPC {
     /// <summary>Base class for server-side implementations of HoldsSvc</summary>
     public abstract class HoldsSvcBase
     {
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp> GetGroupBookingsQuantitySnapshot(global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> AdjustManagementHolds(global::HOLMS.Types.Supply.RPC.HoldsSvcAdjustManagementHoldsRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
@@ -75,6 +89,22 @@ namespace HOLMS.Types.Supply.RPC {
       {
       }
 
+      public virtual global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp GetGroupBookingsQuantitySnapshot(global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetGroupBookingsQuantitySnapshot(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp GetGroupBookingsQuantitySnapshot(global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetGroupBookingsQuantitySnapshot, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp> GetGroupBookingsQuantitySnapshotAsync(global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetGroupBookingsQuantitySnapshotAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp> GetGroupBookingsQuantitySnapshotAsync(global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetGroupBookingsQuantitySnapshot, null, options, request);
+      }
       public virtual global::Google.Protobuf.WellKnownTypes.Empty AdjustManagementHolds(global::HOLMS.Types.Supply.RPC.HoldsSvcAdjustManagementHoldsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AdjustManagementHolds(request, new CallOptions(headers, deadline, cancellationToken));
@@ -117,6 +147,7 @@ namespace HOLMS.Types.Supply.RPC {
     public static ServerServiceDefinition BindService(HoldsSvcBase serviceImpl)
     {
       return ServerServiceDefinition.CreateBuilder()
+          .AddMethod(__Method_GetGroupBookingsQuantitySnapshot, serviceImpl.GetGroupBookingsQuantitySnapshot)
           .AddMethod(__Method_AdjustManagementHolds, serviceImpl.AdjustManagementHolds)
           .AddMethod(__Method_GetGroupBookingHolds, serviceImpl.GetGroupBookingHolds).Build();
     }

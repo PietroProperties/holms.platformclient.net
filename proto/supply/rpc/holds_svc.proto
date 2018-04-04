@@ -2,11 +2,11 @@
 
 package holms.types.supply.rpc;
 option csharp_namespace = "HOLMS.Types.Supply.RPC";
-option go_package = "supply/rpc";
 
-import "google/protobuf/empty.proto";
 import "booking/indicators/group_booking_indicator.proto";
+import "google/protobuf/empty.proto";
 import "supply/group_booking_hold.proto";
+import "supply/snapshot/group_booking_quantity_snapshot.proto";
 import "supply/hold_adjustment.proto";
 import "supply/maintenance_hold_indicator.proto";
 
@@ -51,10 +51,20 @@ message HoldsSvcDeleteMaintenanceHoldResponse {
 	.holms.types.supply.MaintenanceHoldIndicator maintenance_hold = 3;
 }
 
+message HoldsSvcGbQtySnapRq {
+	repeated .holms.types.booking.indicators.GroupBookingIndicator bookings = 1;
+}
+
+message HoldsSvcGbQtySnapRsp {
+	repeated .holms.types.supply.snapshot.GroupBookingQuantitySnapshot snapshots = 1;
+}
+
 service HoldsSvc {
+	rpc GetGroupBookingsQuantitySnapshot(HoldsSvcGbQtySnapRq)
+		returns (HoldsSvcGbQtySnapRsp);
 	rpc AdjustManagementHolds(HoldsSvcAdjustManagementHoldsRequest) 
 		returns (google.protobuf.Empty);
-
 	rpc GetGroupBookingHolds(holms.types.booking.indicators.GroupBookingIndicator) 
 		returns (HoldsSvcGetGroupBookingHoldsResponse);
 }
+
