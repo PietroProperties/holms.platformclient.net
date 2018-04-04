@@ -24,39 +24,39 @@ namespace HOLMS.Types.Reporting.ReportParams {
           string.Concat(
             "CjhyZXBvcnRpbmcvaW5wdXRfcGFyYW1zL21hbmFnZW1lbnRfcmVwb3J0X21h",
             "bmlmZXN0cy5wcm90bxIiaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3Bh",
-            "cmFtcxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxoqcHJpbWl0",
-            "aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnByb3RvIuwCCiNNYW5h",
-            "Z2VtZW50Q3VycmVudFRpbWVSZXBvcnRNYW5pZmVzdBIfChd1bm9jY3VwaWVk",
-            "X3Jvb21zX3JlcG9ydBgBIAEoCBIcChRmb2xpb19iYWxhbmNlX3JlcG9ydBgC",
-            "IAEoCBIjChtsb2RnaW5nX3ZlcmlmaWNhdGlvbl9yZXBvcnQYAyABKAgSGAoQ",
-            "Y29tcF9zdGF5X3JlcG9ydBgEIAEoCBIcChRwcm9wX3N0YXRzX3llc3RlcmRh",
-            "eRgFIAEoCBIeChZwcm9wX3N0YXRzX3RyYWlsaW5nXzdkGAYgASgIEh8KF3By",
-            "b3Bfc3RhdHNfdHJhaWxpbmdfMjhkGAcgASgIEiEKGXByb3Bfc3RhdHNfbGFz",
-            "dF9mdWxsX3dlZWsYCCABKAgSIgoacHJvcF9zdGF0c19sYXN0X2Z1bGxfbW9u",
-            "dGgYCSABKAgSIQoZcHJvcF9zdGF0c19sYXN0X2Z1bGxfeWVhchgKIAEoCCL3",
-            "AgomTWFuYWdlbWVudENsb2NrVGltZVJhbmdlUmVwb3J0TWFuaWZlc3QSPAoY",
-            "cmVwb3J0aW5nX2ludGVydmFsX3N0YXJ0GAEgASgLMhouZ29vZ2xlLnByb3Rv",
-            "YnVmLlRpbWVzdGFtcBI6ChZyZXBvcnRpbmdfaW50ZXJ2YWxfZW5kGAIgASgL",
-            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIiChpmb2xpb19ncm9zc19j",
-            "aGFyZ2VzX3JlcG9ydBgDIAEoCBIdChVmb2xpb19wYXltZW50c19yZXBvcnQY",
-            "BCABKAgSHgoWY2FsbF9hY2NvdW50aW5nX3JlcG9ydBgFIAEoCBImCh5sZWRn",
-            "ZXJfYWN0aXZpdHlfc3VtbWFyeV9yZXBvcnQYBiABKAgSJQodbGVkZ2VyX2pv",
-            "dXJuYWxfZW50cmllc19yZXBvcnQYByABKAgSIQoZYm9va2luZ3NfYnlfcGVy",
-            "aW9kX3JlcG9ydBgIIAEoCCKoAgokTWFuYWdlbWVudE9wc2RhdGVSYW5nZVJl",
-            "cG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5ob2xtcy50eXBl",
-            "cy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2USIgoacm9vbV91",
-            "c2FnZV9kZXRhaWxlZF9yZXBvcnQYAiABKAgSIQoZcm9vbV91c2FnZV9zdW1t",
-            "YXJ5X3JlcG9ydBgDIAEoCBIpCiFwbGFubmVkX2xvZGdpbmdfcmV2ZW51ZV9i",
-            "eV9zb3VyY2UYBCABKAgSJgoeZm9saW9faW1tZWRpYXRlX2NoYXJnZXNfcmVw",
-            "b3J0GAUgASgIEiIKGnByb3BlcnR5X3N0YXRpc3RpY3NfcmVwb3J0GAYgASgI",
-            "Qj1aFnJlcG9ydGluZy9pbnB1dF9wYXJhbXOqAiJIT0xNUy5UeXBlcy5SZXBv",
-            "cnRpbmcuUmVwb3J0UGFyYW1zYgZwcm90bzM="));
+            "cmFtcxoqcHJpbWl0aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnBy",
+            "b3RvGhtwcmltaXRpdmUvcGJfaW50ZXJ2YWwucHJvdG8iswMKI01hbmFnZW1l",
+            "bnRDdXJyZW50VGltZVJlcG9ydE1hbmlmZXN0Eh8KF3Vub2NjdXBpZWRfcm9v",
+            "bXNfcmVwb3J0GAEgASgIEhwKFGZvbGlvX2JhbGFuY2VfcmVwb3J0GAIgASgI",
+            "EiMKG2xvZGdpbmdfdmVyaWZpY2F0aW9uX3JlcG9ydBgDIAEoCBIYChBjb21w",
+            "X3N0YXlfcmVwb3J0GAQgASgIEhwKFHByb3Bfc3RhdHNfeWVzdGVyZGF5GAUg",
+            "ASgIEh4KFnByb3Bfc3RhdHNfdHJhaWxpbmdfN2QYBiABKAgSHwoXcHJvcF9z",
+            "dGF0c190cmFpbGluZ18yOGQYByABKAgSIQoZcHJvcF9zdGF0c19sYXN0X2Z1",
+            "bGxfd2VlaxgIIAEoCBIiChpwcm9wX3N0YXRzX2xhc3RfZnVsbF9tb250aBgJ",
+            "IAEoCBIhChlwcm9wX3N0YXRzX2xhc3RfZnVsbF95ZWFyGAogASgIEkUKDWN1",
+            "c3RvbV9yYW5nZXMYCyADKAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJ",
+            "bmNsdXNpdmVPcHNkYXRlUmFuZ2UivQIKJk1hbmFnZW1lbnRDbG9ja1RpbWVS",
+            "YW5nZVJlcG9ydE1hbmlmZXN0EjoKD3JlcG9ydGluZ19yYW5nZRgBIAEoCzIh",
+            "LmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkludGVydmFsEh0KFWZvbGlvX3Bh",
+            "eW1lbnRzX3JlcG9ydBgCIAEoCBIeChZjYWxsX2FjY291bnRpbmdfcmVwb3J0",
+            "GAMgASgIEiYKHmxlZGdlcl9hY3Rpdml0eV9zdW1tYXJ5X3JlcG9ydBgEIAEo",
+            "CBIlCh1sZWRnZXJfam91cm5hbF9lbnRyaWVzX3JlcG9ydBgFIAEoCBIhChli",
+            "b29raW5nc19ieV9wZXJpb2RfcmVwb3J0GAYgASgIEiYKHmZvbGlvX2ltbWVk",
+            "aWF0ZV9jaGFyZ2VzX3JlcG9ydBgHIAEoCCKkAgokTWFuYWdlbWVudE9wc2Rh",
+            "dGVSYW5nZVJlcG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5o",
+            "b2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2US",
+            "Igoacm9vbV91c2FnZV9kZXRhaWxlZF9yZXBvcnQYAiABKAgSIQoZcm9vbV91",
+            "c2FnZV9zdW1tYXJ5X3JlcG9ydBgDIAEoCBIpCiFwbGFubmVkX2xvZGdpbmdf",
+            "cmV2ZW51ZV9ieV9zb3VyY2UYBCABKAgSIgoacHJvcGVydHlfc3RhdGlzdGlj",
+            "c19yZXBvcnQYBSABKAgSIgoaZm9saW9fZ3Jvc3NfY2hhcmdlc19yZXBvcnQY",
+            "BiABKAhCJaoCIkhPTE1TLlR5cGVzLlJlcG9ydGluZy5SZXBvcnRQYXJhbXNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbIntervalReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport", "PropStatsYesterday", "PropStatsTrailing7D", "PropStatsTrailing28D", "PropStatsLastFullWeek", "PropStatsLastFullMonth", "PropStatsLastFullYear" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest.Parser, new[]{ "ReportingIntervalStart", "ReportingIntervalEnd", "FolioGrossChargesReport", "FolioPaymentsReport", "CallAccountingReport", "LedgerActivitySummaryReport", "LedgerJournalEntriesReport", "BookingsByPeriodReport" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport", "PlannedLodgingRevenueBySource", "FolioImmediateChargesReport", "PropertyStatisticsReport" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport", "PropStatsYesterday", "PropStatsTrailing7D", "PropStatsTrailing28D", "PropStatsLastFullWeek", "PropStatsLastFullMonth", "PropStatsLastFullYear", "CustomRanges" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest.Parser, new[]{ "ReportingRange", "FolioPaymentsReport", "CallAccountingReport", "LedgerActivitySummaryReport", "LedgerJournalEntriesReport", "BookingsByPeriodReport", "FolioImmediateChargesReport" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport", "PlannedLodgingRevenueBySource", "PropertyStatisticsReport", "FolioGrossChargesReport" }, null, null, null)
           }));
     }
     #endregion
@@ -97,6 +97,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       propStatsLastFullWeek_ = other.propStatsLastFullWeek_;
       propStatsLastFullMonth_ = other.propStatsLastFullMonth_;
       propStatsLastFullYear_ = other.propStatsLastFullYear_;
+      customRanges_ = other.customRanges_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -214,6 +215,16 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
+    /// <summary>Field number for the "custom_ranges" field.</summary>
+    public const int CustomRangesFieldNumber = 11;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange> _repeated_customRanges_codec
+        = pb::FieldCodec.ForMessage(90, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange> customRanges_ = new pbc::RepeatedField<global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange> CustomRanges {
+      get { return customRanges_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ManagementCurrentTimeReportManifest);
@@ -237,6 +248,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (PropStatsLastFullWeek != other.PropStatsLastFullWeek) return false;
       if (PropStatsLastFullMonth != other.PropStatsLastFullMonth) return false;
       if (PropStatsLastFullYear != other.PropStatsLastFullYear) return false;
+      if(!customRanges_.Equals(other.customRanges_)) return false;
       return true;
     }
 
@@ -253,6 +265,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (PropStatsLastFullWeek != false) hash ^= PropStatsLastFullWeek.GetHashCode();
       if (PropStatsLastFullMonth != false) hash ^= PropStatsLastFullMonth.GetHashCode();
       if (PropStatsLastFullYear != false) hash ^= PropStatsLastFullYear.GetHashCode();
+      hash ^= customRanges_.GetHashCode();
       return hash;
     }
 
@@ -303,6 +316,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(80);
         output.WriteBool(PropStatsLastFullYear);
       }
+      customRanges_.WriteTo(output, _repeated_customRanges_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -338,6 +352,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (PropStatsLastFullYear != false) {
         size += 1 + 1;
       }
+      size += customRanges_.CalculateSize(_repeated_customRanges_codec);
       return size;
     }
 
@@ -376,6 +391,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (other.PropStatsLastFullYear != false) {
         PropStatsLastFullYear = other.PropStatsLastFullYear;
       }
+      customRanges_.Add(other.customRanges_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -426,6 +442,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
             PropStatsLastFullYear = input.ReadBool();
             break;
           }
+          case 90: {
+            customRanges_.AddEntriesFrom(input, _repeated_customRanges_codec);
+            break;
+          }
         }
       }
     }
@@ -456,14 +476,13 @@ namespace HOLMS.Types.Reporting.ReportParams {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ManagementClockTimeRangeReportManifest(ManagementClockTimeRangeReportManifest other) : this() {
-      ReportingIntervalStart = other.reportingIntervalStart_ != null ? other.ReportingIntervalStart.Clone() : null;
-      ReportingIntervalEnd = other.reportingIntervalEnd_ != null ? other.ReportingIntervalEnd.Clone() : null;
-      folioGrossChargesReport_ = other.folioGrossChargesReport_;
+      ReportingRange = other.reportingRange_ != null ? other.ReportingRange.Clone() : null;
       folioPaymentsReport_ = other.folioPaymentsReport_;
       callAccountingReport_ = other.callAccountingReport_;
       ledgerActivitySummaryReport_ = other.ledgerActivitySummaryReport_;
       ledgerJournalEntriesReport_ = other.ledgerJournalEntriesReport_;
       bookingsByPeriodReport_ = other.bookingsByPeriodReport_;
+      folioImmediateChargesReport_ = other.folioImmediateChargesReport_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -471,41 +490,19 @@ namespace HOLMS.Types.Reporting.ReportParams {
       return new ManagementClockTimeRangeReportManifest(this);
     }
 
-    /// <summary>Field number for the "reporting_interval_start" field.</summary>
-    public const int ReportingIntervalStartFieldNumber = 1;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp reportingIntervalStart_;
+    /// <summary>Field number for the "reporting_range" field.</summary>
+    public const int ReportingRangeFieldNumber = 1;
+    private global::HOLMS.Types.Primitive.PbInterval reportingRange_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp ReportingIntervalStart {
-      get { return reportingIntervalStart_; }
+    public global::HOLMS.Types.Primitive.PbInterval ReportingRange {
+      get { return reportingRange_; }
       set {
-        reportingIntervalStart_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "reporting_interval_end" field.</summary>
-    public const int ReportingIntervalEndFieldNumber = 2;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp reportingIntervalEnd_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp ReportingIntervalEnd {
-      get { return reportingIntervalEnd_; }
-      set {
-        reportingIntervalEnd_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "folio_gross_charges_report" field.</summary>
-    public const int FolioGrossChargesReportFieldNumber = 3;
-    private bool folioGrossChargesReport_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool FolioGrossChargesReport {
-      get { return folioGrossChargesReport_; }
-      set {
-        folioGrossChargesReport_ = value;
+        reportingRange_ = value;
       }
     }
 
     /// <summary>Field number for the "folio_payments_report" field.</summary>
-    public const int FolioPaymentsReportFieldNumber = 4;
+    public const int FolioPaymentsReportFieldNumber = 2;
     private bool folioPaymentsReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool FolioPaymentsReport {
@@ -516,7 +513,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
     }
 
     /// <summary>Field number for the "call_accounting_report" field.</summary>
-    public const int CallAccountingReportFieldNumber = 5;
+    public const int CallAccountingReportFieldNumber = 3;
     private bool callAccountingReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool CallAccountingReport {
@@ -527,7 +524,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
     }
 
     /// <summary>Field number for the "ledger_activity_summary_report" field.</summary>
-    public const int LedgerActivitySummaryReportFieldNumber = 6;
+    public const int LedgerActivitySummaryReportFieldNumber = 4;
     private bool ledgerActivitySummaryReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool LedgerActivitySummaryReport {
@@ -538,7 +535,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
     }
 
     /// <summary>Field number for the "ledger_journal_entries_report" field.</summary>
-    public const int LedgerJournalEntriesReportFieldNumber = 7;
+    public const int LedgerJournalEntriesReportFieldNumber = 5;
     private bool ledgerJournalEntriesReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool LedgerJournalEntriesReport {
@@ -549,13 +546,24 @@ namespace HOLMS.Types.Reporting.ReportParams {
     }
 
     /// <summary>Field number for the "bookings_by_period_report" field.</summary>
-    public const int BookingsByPeriodReportFieldNumber = 8;
+    public const int BookingsByPeriodReportFieldNumber = 6;
     private bool bookingsByPeriodReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool BookingsByPeriodReport {
       get { return bookingsByPeriodReport_; }
       set {
         bookingsByPeriodReport_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "folio_immediate_charges_report" field.</summary>
+    public const int FolioImmediateChargesReportFieldNumber = 7;
+    private bool folioImmediateChargesReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool FolioImmediateChargesReport {
+      get { return folioImmediateChargesReport_; }
+      set {
+        folioImmediateChargesReport_ = value;
       }
     }
 
@@ -572,28 +580,26 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(ReportingIntervalStart, other.ReportingIntervalStart)) return false;
-      if (!object.Equals(ReportingIntervalEnd, other.ReportingIntervalEnd)) return false;
-      if (FolioGrossChargesReport != other.FolioGrossChargesReport) return false;
+      if (!object.Equals(ReportingRange, other.ReportingRange)) return false;
       if (FolioPaymentsReport != other.FolioPaymentsReport) return false;
       if (CallAccountingReport != other.CallAccountingReport) return false;
       if (LedgerActivitySummaryReport != other.LedgerActivitySummaryReport) return false;
       if (LedgerJournalEntriesReport != other.LedgerJournalEntriesReport) return false;
       if (BookingsByPeriodReport != other.BookingsByPeriodReport) return false;
+      if (FolioImmediateChargesReport != other.FolioImmediateChargesReport) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (reportingIntervalStart_ != null) hash ^= ReportingIntervalStart.GetHashCode();
-      if (reportingIntervalEnd_ != null) hash ^= ReportingIntervalEnd.GetHashCode();
-      if (FolioGrossChargesReport != false) hash ^= FolioGrossChargesReport.GetHashCode();
+      if (reportingRange_ != null) hash ^= ReportingRange.GetHashCode();
       if (FolioPaymentsReport != false) hash ^= FolioPaymentsReport.GetHashCode();
       if (CallAccountingReport != false) hash ^= CallAccountingReport.GetHashCode();
       if (LedgerActivitySummaryReport != false) hash ^= LedgerActivitySummaryReport.GetHashCode();
       if (LedgerJournalEntriesReport != false) hash ^= LedgerJournalEntriesReport.GetHashCode();
       if (BookingsByPeriodReport != false) hash ^= BookingsByPeriodReport.GetHashCode();
+      if (FolioImmediateChargesReport != false) hash ^= FolioImmediateChargesReport.GetHashCode();
       return hash;
     }
 
@@ -604,51 +610,41 @@ namespace HOLMS.Types.Reporting.ReportParams {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (reportingIntervalStart_ != null) {
+      if (reportingRange_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(ReportingIntervalStart);
-      }
-      if (reportingIntervalEnd_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ReportingIntervalEnd);
-      }
-      if (FolioGrossChargesReport != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(FolioGrossChargesReport);
+        output.WriteMessage(ReportingRange);
       }
       if (FolioPaymentsReport != false) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(16);
         output.WriteBool(FolioPaymentsReport);
       }
       if (CallAccountingReport != false) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(24);
         output.WriteBool(CallAccountingReport);
       }
       if (LedgerActivitySummaryReport != false) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(32);
         output.WriteBool(LedgerActivitySummaryReport);
       }
       if (LedgerJournalEntriesReport != false) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(40);
         output.WriteBool(LedgerJournalEntriesReport);
       }
       if (BookingsByPeriodReport != false) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(48);
         output.WriteBool(BookingsByPeriodReport);
+      }
+      if (FolioImmediateChargesReport != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(FolioImmediateChargesReport);
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (reportingIntervalStart_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReportingIntervalStart);
-      }
-      if (reportingIntervalEnd_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReportingIntervalEnd);
-      }
-      if (FolioGrossChargesReport != false) {
-        size += 1 + 1;
+      if (reportingRange_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReportingRange);
       }
       if (FolioPaymentsReport != false) {
         size += 1 + 1;
@@ -663,6 +659,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
         size += 1 + 1;
       }
       if (BookingsByPeriodReport != false) {
+        size += 1 + 1;
+      }
+      if (FolioImmediateChargesReport != false) {
         size += 1 + 1;
       }
       return size;
@@ -673,20 +672,11 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (other == null) {
         return;
       }
-      if (other.reportingIntervalStart_ != null) {
-        if (reportingIntervalStart_ == null) {
-          reportingIntervalStart_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+      if (other.reportingRange_ != null) {
+        if (reportingRange_ == null) {
+          reportingRange_ = new global::HOLMS.Types.Primitive.PbInterval();
         }
-        ReportingIntervalStart.MergeFrom(other.ReportingIntervalStart);
-      }
-      if (other.reportingIntervalEnd_ != null) {
-        if (reportingIntervalEnd_ == null) {
-          reportingIntervalEnd_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        ReportingIntervalEnd.MergeFrom(other.ReportingIntervalEnd);
-      }
-      if (other.FolioGrossChargesReport != false) {
-        FolioGrossChargesReport = other.FolioGrossChargesReport;
+        ReportingRange.MergeFrom(other.ReportingRange);
       }
       if (other.FolioPaymentsReport != false) {
         FolioPaymentsReport = other.FolioPaymentsReport;
@@ -703,6 +693,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (other.BookingsByPeriodReport != false) {
         BookingsByPeriodReport = other.BookingsByPeriodReport;
       }
+      if (other.FolioImmediateChargesReport != false) {
+        FolioImmediateChargesReport = other.FolioImmediateChargesReport;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -714,41 +707,34 @@ namespace HOLMS.Types.Reporting.ReportParams {
             input.SkipLastField();
             break;
           case 10: {
-            if (reportingIntervalStart_ == null) {
-              reportingIntervalStart_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            if (reportingRange_ == null) {
+              reportingRange_ = new global::HOLMS.Types.Primitive.PbInterval();
             }
-            input.ReadMessage(reportingIntervalStart_);
+            input.ReadMessage(reportingRange_);
             break;
           }
-          case 18: {
-            if (reportingIntervalEnd_ == null) {
-              reportingIntervalEnd_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(reportingIntervalEnd_);
-            break;
-          }
-          case 24: {
-            FolioGrossChargesReport = input.ReadBool();
-            break;
-          }
-          case 32: {
+          case 16: {
             FolioPaymentsReport = input.ReadBool();
             break;
           }
-          case 40: {
+          case 24: {
             CallAccountingReport = input.ReadBool();
             break;
           }
-          case 48: {
+          case 32: {
             LedgerActivitySummaryReport = input.ReadBool();
             break;
           }
-          case 56: {
+          case 40: {
             LedgerJournalEntriesReport = input.ReadBool();
             break;
           }
-          case 64: {
+          case 48: {
             BookingsByPeriodReport = input.ReadBool();
+            break;
+          }
+          case 56: {
+            FolioImmediateChargesReport = input.ReadBool();
             break;
           }
         }
@@ -785,8 +771,8 @@ namespace HOLMS.Types.Reporting.ReportParams {
       roomUsageDetailedReport_ = other.roomUsageDetailedReport_;
       roomUsageSummaryReport_ = other.roomUsageSummaryReport_;
       plannedLodgingRevenueBySource_ = other.plannedLodgingRevenueBySource_;
-      folioImmediateChargesReport_ = other.folioImmediateChargesReport_;
       propertyStatisticsReport_ = other.propertyStatisticsReport_;
+      folioGrossChargesReport_ = other.folioGrossChargesReport_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -838,25 +824,25 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
-    /// <summary>Field number for the "folio_immediate_charges_report" field.</summary>
-    public const int FolioImmediateChargesReportFieldNumber = 5;
-    private bool folioImmediateChargesReport_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool FolioImmediateChargesReport {
-      get { return folioImmediateChargesReport_; }
-      set {
-        folioImmediateChargesReport_ = value;
-      }
-    }
-
     /// <summary>Field number for the "property_statistics_report" field.</summary>
-    public const int PropertyStatisticsReportFieldNumber = 6;
+    public const int PropertyStatisticsReportFieldNumber = 5;
     private bool propertyStatisticsReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool PropertyStatisticsReport {
       get { return propertyStatisticsReport_; }
       set {
         propertyStatisticsReport_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "folio_gross_charges_report" field.</summary>
+    public const int FolioGrossChargesReportFieldNumber = 6;
+    private bool folioGrossChargesReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool FolioGrossChargesReport {
+      get { return folioGrossChargesReport_; }
+      set {
+        folioGrossChargesReport_ = value;
       }
     }
 
@@ -877,8 +863,8 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (RoomUsageDetailedReport != other.RoomUsageDetailedReport) return false;
       if (RoomUsageSummaryReport != other.RoomUsageSummaryReport) return false;
       if (PlannedLodgingRevenueBySource != other.PlannedLodgingRevenueBySource) return false;
-      if (FolioImmediateChargesReport != other.FolioImmediateChargesReport) return false;
       if (PropertyStatisticsReport != other.PropertyStatisticsReport) return false;
+      if (FolioGrossChargesReport != other.FolioGrossChargesReport) return false;
       return true;
     }
 
@@ -889,8 +875,8 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (RoomUsageDetailedReport != false) hash ^= RoomUsageDetailedReport.GetHashCode();
       if (RoomUsageSummaryReport != false) hash ^= RoomUsageSummaryReport.GetHashCode();
       if (PlannedLodgingRevenueBySource != false) hash ^= PlannedLodgingRevenueBySource.GetHashCode();
-      if (FolioImmediateChargesReport != false) hash ^= FolioImmediateChargesReport.GetHashCode();
       if (PropertyStatisticsReport != false) hash ^= PropertyStatisticsReport.GetHashCode();
+      if (FolioGrossChargesReport != false) hash ^= FolioGrossChargesReport.GetHashCode();
       return hash;
     }
 
@@ -917,13 +903,13 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(32);
         output.WriteBool(PlannedLodgingRevenueBySource);
       }
-      if (FolioImmediateChargesReport != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(FolioImmediateChargesReport);
-      }
       if (PropertyStatisticsReport != false) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(40);
         output.WriteBool(PropertyStatisticsReport);
+      }
+      if (FolioGrossChargesReport != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(FolioGrossChargesReport);
       }
     }
 
@@ -942,10 +928,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (PlannedLodgingRevenueBySource != false) {
         size += 1 + 1;
       }
-      if (FolioImmediateChargesReport != false) {
+      if (PropertyStatisticsReport != false) {
         size += 1 + 1;
       }
-      if (PropertyStatisticsReport != false) {
+      if (FolioGrossChargesReport != false) {
         size += 1 + 1;
       }
       return size;
@@ -971,11 +957,11 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (other.PlannedLodgingRevenueBySource != false) {
         PlannedLodgingRevenueBySource = other.PlannedLodgingRevenueBySource;
       }
-      if (other.FolioImmediateChargesReport != false) {
-        FolioImmediateChargesReport = other.FolioImmediateChargesReport;
-      }
       if (other.PropertyStatisticsReport != false) {
         PropertyStatisticsReport = other.PropertyStatisticsReport;
+      }
+      if (other.FolioGrossChargesReport != false) {
+        FolioGrossChargesReport = other.FolioGrossChargesReport;
       }
     }
 
@@ -1007,11 +993,11 @@ namespace HOLMS.Types.Reporting.ReportParams {
             break;
           }
           case 40: {
-            FolioImmediateChargesReport = input.ReadBool();
+            PropertyStatisticsReport = input.ReadBool();
             break;
           }
           case 48: {
-            PropertyStatisticsReport = input.ReadBool();
+            FolioGrossChargesReport = input.ReadBool();
             break;
           }
         }
