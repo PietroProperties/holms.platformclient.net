@@ -23,54 +23,64 @@ namespace HOLMS.Types.Supply.RPC {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChpzdXBwbHkvcnBjL2hvbGRzX3N2Yy5wcm90bxIWaG9sbXMudHlwZXMuc3Vw",
-            "cGx5LnJwYxobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3RvGjBib29raW5n",
-            "L2luZGljYXRvcnMvZ3JvdXBfYm9va2luZ19pbmRpY2F0b3IucHJvdG8aH3N1",
-            "cHBseS9ncm91cF9ib29raW5nX2hvbGQucHJvdG8aHHN1cHBseS9ob2xkX2Fk",
-            "anVzdG1lbnQucHJvdG8aJ3N1cHBseS9tYWludGVuYW5jZV9ob2xkX2luZGlj",
-            "YXRvci5wcm90byJkCiRIb2xkc1N2Y0FkanVzdE1hbmFnZW1lbnRIb2xkc1Jl",
-            "cXVlc3QSPAoQaG9sZF9hZGp1c3RtZW50cxgCIAMoCzIiLmhvbG1zLnR5cGVz",
-            "LnN1cHBseS5Ib2xkQWRqdXN0bWVudCJpCiRIb2xkc1N2Y0dldEdyb3VwQm9v",
-            "a2luZ0hvbGRzUmVzcG9uc2USQQoTZ3JvdXBfYm9va2luZ19ob2xkcxgBIAMo",
-            "CzIkLmhvbG1zLnR5cGVzLnN1cHBseS5Hcm91cEJvb2tpbmdIb2xkIrwBCiVI",
-            "b2xkc1N2Y0NyZWF0ZU1haW50ZW5hbmNlSG9sZFJlc3BvbnNlEksKBnJlc3Vs",
-            "dBgBIAEoDjI7LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuSG9sZHNTdmNDcmVh",
-            "dGVNYWludGVuYW5jZUhvbGRSZXN1bHQSRgoQbWFpbnRlbmFuY2VfaG9sZBgC",
-            "IAEoCzIsLmhvbG1zLnR5cGVzLnN1cHBseS5NYWludGVuYW5jZUhvbGRJbmRp",
-            "Y2F0b3IivAEKJUhvbGRzU3ZjVXBkYXRlTWFpbnRlbmFuY2VIb2xkUmVzcG9u",
-            "c2USSwoGcmVzdWx0GAEgASgOMjsuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5I",
-            "b2xkc1N2Y1VwZGF0ZU1haW50ZW5hbmNlSG9sZFJlc3VsdBJGChBtYWludGVu",
-            "YW5jZV9ob2xkGAIgASgLMiwuaG9sbXMudHlwZXMuc3VwcGx5Lk1haW50ZW5h",
-            "bmNlSG9sZEluZGljYXRvciK8AQolSG9sZHNTdmNEZWxldGVNYWludGVuYW5j",
-            "ZUhvbGRSZXNwb25zZRJLCgZyZXN1bHQYASABKA4yOy5ob2xtcy50eXBlcy5z",
-            "dXBwbHkucnBjLkhvbGRzU3ZjRGVsZXRlTWFpbnRlbmFuY2VIb2xkUmVzdWx0",
-            "EkYKEG1haW50ZW5hbmNlX2hvbGQYAyABKAsyLC5ob2xtcy50eXBlcy5zdXBw",
-            "bHkuTWFpbnRlbmFuY2VIb2xkSW5kaWNhdG9yKqgBCiNIb2xkc1N2Y0NyZWF0",
-            "ZU1haW50ZW5hbmNlSG9sZFJlc3VsdBIjCh9DUkVBVEVfTUFJTlRFTkFOQ0Vf",
-            "SE9MRF9TVUNDRVNTEAASLworQ1JFQVRFX01BSU5URU5BTkNFX0hPTERfUk9P",
-            "TV9UWVBFX05PVF9GT1VORBABEisKJ0NSRUFURV9NQUlOVEVOQU5DRV9IT0xE",
-            "X05PX0FWQUlMQUJJTElUWRACKtIBCiNIb2xkc1N2Y1VwZGF0ZU1haW50ZW5h",
-            "bmNlSG9sZFJlc3VsdBIjCh9VUERBVEVfTUFJTlRFTkFOQ0VfSE9MRF9TVUND",
-            "RVNTEAASKAokVVBEQVRFX01BSU5URU5BTkNFX0hPTERfTUlTU0lOR19IT0xE",
-            "EAESLworVVBEQVRFX01BSU5URU5BTkNFX0hPTERfUk9PTV9UWVBFX05PVF9G",
-            "T1VORBACEisKJ1VQREFURV9NQUlOVEVOQU5DRV9IT0xEX05PX0FWQUlMQUJJ",
-            "TElUWRADKnQKI0hvbGRzU3ZjRGVsZXRlTWFpbnRlbmFuY2VIb2xkUmVzdWx0",
-            "EiMKH0RFTEVURV9NQUlOVEVOQU5DRV9IT0xEX1NVQ0NFU1MQABIoCiRERUxF",
-            "VEVfTUFJTlRFTkFOQ0VfSE9MRF9NSVNTSU5HX0hPTEQQATKHAgoISG9sZHNT",
-            "dmMSbQoVQWRqdXN0TWFuYWdlbWVudEhvbGRzEjwuaG9sbXMudHlwZXMuc3Vw",
-            "cGx5LnJwYy5Ib2xkc1N2Y0FkanVzdE1hbmFnZW1lbnRIb2xkc1JlcXVlc3Qa",
-            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkSiwEKFEdldEdyb3VwQm9va2luZ0hv",
-            "bGRzEjUuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9v",
-            "a2luZ0luZGljYXRvcho8LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuSG9sZHNT",
-            "dmNHZXRHcm91cEJvb2tpbmdIb2xkc1Jlc3BvbnNlQiVaCnN1cHBseS9ycGOq",
-            "AhZIT0xNUy5UeXBlcy5TdXBwbHkuUlBDYgZwcm90bzM="));
+            "cGx5LnJwYxowYm9va2luZy9pbmRpY2F0b3JzL2dyb3VwX2Jvb2tpbmdfaW5k",
+            "aWNhdG9yLnByb3RvGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aH3N1",
+            "cHBseS9ncm91cF9ib29raW5nX2hvbGQucHJvdG8aNXN1cHBseS9zbmFwc2hv",
+            "dC9ncm91cF9ib29raW5nX3F1YW50aXR5X3NuYXBzaG90LnByb3RvGhxzdXBw",
+            "bHkvaG9sZF9hZGp1c3RtZW50LnByb3RvGidzdXBwbHkvbWFpbnRlbmFuY2Vf",
+            "aG9sZF9pbmRpY2F0b3IucHJvdG8iZAokSG9sZHNTdmNBZGp1c3RNYW5hZ2Vt",
+            "ZW50SG9sZHNSZXF1ZXN0EjwKEGhvbGRfYWRqdXN0bWVudHMYAiADKAsyIi5o",
+            "b2xtcy50eXBlcy5zdXBwbHkuSG9sZEFkanVzdG1lbnQiaQokSG9sZHNTdmNH",
+            "ZXRHcm91cEJvb2tpbmdIb2xkc1Jlc3BvbnNlEkEKE2dyb3VwX2Jvb2tpbmdf",
+            "aG9sZHMYASADKAsyJC5ob2xtcy50eXBlcy5zdXBwbHkuR3JvdXBCb29raW5n",
+            "SG9sZCK8AQolSG9sZHNTdmNDcmVhdGVNYWludGVuYW5jZUhvbGRSZXNwb25z",
+            "ZRJLCgZyZXN1bHQYASABKA4yOy5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkhv",
+            "bGRzU3ZjQ3JlYXRlTWFpbnRlbmFuY2VIb2xkUmVzdWx0EkYKEG1haW50ZW5h",
+            "bmNlX2hvbGQYAiABKAsyLC5ob2xtcy50eXBlcy5zdXBwbHkuTWFpbnRlbmFu",
+            "Y2VIb2xkSW5kaWNhdG9yIrwBCiVIb2xkc1N2Y1VwZGF0ZU1haW50ZW5hbmNl",
+            "SG9sZFJlc3BvbnNlEksKBnJlc3VsdBgBIAEoDjI7LmhvbG1zLnR5cGVzLnN1",
+            "cHBseS5ycGMuSG9sZHNTdmNVcGRhdGVNYWludGVuYW5jZUhvbGRSZXN1bHQS",
+            "RgoQbWFpbnRlbmFuY2VfaG9sZBgCIAEoCzIsLmhvbG1zLnR5cGVzLnN1cHBs",
+            "eS5NYWludGVuYW5jZUhvbGRJbmRpY2F0b3IivAEKJUhvbGRzU3ZjRGVsZXRl",
+            "TWFpbnRlbmFuY2VIb2xkUmVzcG9uc2USSwoGcmVzdWx0GAEgASgOMjsuaG9s",
+            "bXMudHlwZXMuc3VwcGx5LnJwYy5Ib2xkc1N2Y0RlbGV0ZU1haW50ZW5hbmNl",
+            "SG9sZFJlc3VsdBJGChBtYWludGVuYW5jZV9ob2xkGAMgASgLMiwuaG9sbXMu",
+            "dHlwZXMuc3VwcGx5Lk1haW50ZW5hbmNlSG9sZEluZGljYXRvciJeChNIb2xk",
+            "c1N2Y0diUXR5U25hcFJxEkcKCGJvb2tpbmdzGAEgAygLMjUuaG9sbXMudHlw",
+            "ZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGljYXRvciJk",
+            "ChRIb2xkc1N2Y0diUXR5U25hcFJzcBJMCglzbmFwc2hvdHMYASADKAsyOS5o",
+            "b2xtcy50eXBlcy5zdXBwbHkuc25hcHNob3QuR3JvdXBCb29raW5nUXVhbnRp",
+            "dHlTbmFwc2hvdCqoAQojSG9sZHNTdmNDcmVhdGVNYWludGVuYW5jZUhvbGRS",
+            "ZXN1bHQSIwofQ1JFQVRFX01BSU5URU5BTkNFX0hPTERfU1VDQ0VTUxAAEi8K",
+            "K0NSRUFURV9NQUlOVEVOQU5DRV9IT0xEX1JPT01fVFlQRV9OT1RfRk9VTkQQ",
+            "ARIrCidDUkVBVEVfTUFJTlRFTkFOQ0VfSE9MRF9OT19BVkFJTEFCSUxJVFkQ",
+            "AirSAQojSG9sZHNTdmNVcGRhdGVNYWludGVuYW5jZUhvbGRSZXN1bHQSIwof",
+            "VVBEQVRFX01BSU5URU5BTkNFX0hPTERfU1VDQ0VTUxAAEigKJFVQREFURV9N",
+            "QUlOVEVOQU5DRV9IT0xEX01JU1NJTkdfSE9MRBABEi8KK1VQREFURV9NQUlO",
+            "VEVOQU5DRV9IT0xEX1JPT01fVFlQRV9OT1RfRk9VTkQQAhIrCidVUERBVEVf",
+            "TUFJTlRFTkFOQ0VfSE9MRF9OT19BVkFJTEFCSUxJVFkQAyp0CiNIb2xkc1N2",
+            "Y0RlbGV0ZU1haW50ZW5hbmNlSG9sZFJlc3VsdBIjCh9ERUxFVEVfTUFJTlRF",
+            "TkFOQ0VfSE9MRF9TVUNDRVNTEAASKAokREVMRVRFX01BSU5URU5BTkNFX0hP",
+            "TERfTUlTU0lOR19IT0xEEAEyhgMKCEhvbGRzU3ZjEn0KIEdldEdyb3VwQm9v",
+            "a2luZ3NRdWFudGl0eVNuYXBzaG90EisuaG9sbXMudHlwZXMuc3VwcGx5LnJw",
+            "Yy5Ib2xkc1N2Y0diUXR5U25hcFJxGiwuaG9sbXMudHlwZXMuc3VwcGx5LnJw",
+            "Yy5Ib2xkc1N2Y0diUXR5U25hcFJzcBJtChVBZGp1c3RNYW5hZ2VtZW50SG9s",
+            "ZHMSPC5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkhvbGRzU3ZjQWRqdXN0TWFu",
+            "YWdlbWVudEhvbGRzUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRKL",
+            "AQoUR2V0R3JvdXBCb29raW5nSG9sZHMSNS5ob2xtcy50eXBlcy5ib29raW5n",
+            "LmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yGjwuaG9sbXMudHlw",
+            "ZXMuc3VwcGx5LnJwYy5Ib2xkc1N2Y0dldEdyb3VwQm9va2luZ0hvbGRzUmVz",
+            "cG9uc2VCGaoCFkhPTE1TLlR5cGVzLlN1cHBseS5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.GroupBookingHoldReflection.Descriptor, global::HOLMS.Types.Supply.HoldAdjustmentReflection.Descriptor, global::HOLMS.Types.Supply.MaintenanceHoldIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Supply.GroupBookingHoldReflection.Descriptor, global::HOLMS.Types.Supply.Snapshot.GroupBookingQuantitySnapshotReflection.Descriptor, global::HOLMS.Types.Supply.HoldAdjustmentReflection.Descriptor, global::HOLMS.Types.Supply.MaintenanceHoldIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Supply.RPC.HoldsSvcCreateMaintenanceHoldResult), typeof(global::HOLMS.Types.Supply.RPC.HoldsSvcUpdateMaintenanceHoldResult), typeof(global::HOLMS.Types.Supply.RPC.HoldsSvcDeleteMaintenanceHoldResult), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.HoldsSvcAdjustManagementHoldsRequest), global::HOLMS.Types.Supply.RPC.HoldsSvcAdjustManagementHoldsRequest.Parser, new[]{ "HoldAdjustments" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.HoldsSvcGetGroupBookingHoldsResponse), global::HOLMS.Types.Supply.RPC.HoldsSvcGetGroupBookingHoldsResponse.Parser, new[]{ "GroupBookingHolds" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.HoldsSvcCreateMaintenanceHoldResponse), global::HOLMS.Types.Supply.RPC.HoldsSvcCreateMaintenanceHoldResponse.Parser, new[]{ "Result", "MaintenanceHold" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.HoldsSvcUpdateMaintenanceHoldResponse), global::HOLMS.Types.Supply.RPC.HoldsSvcUpdateMaintenanceHoldResponse.Parser, new[]{ "Result", "MaintenanceHold" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.HoldsSvcDeleteMaintenanceHoldResponse), global::HOLMS.Types.Supply.RPC.HoldsSvcDeleteMaintenanceHoldResponse.Parser, new[]{ "Result", "MaintenanceHold" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.HoldsSvcDeleteMaintenanceHoldResponse), global::HOLMS.Types.Supply.RPC.HoldsSvcDeleteMaintenanceHoldResponse.Parser, new[]{ "Result", "MaintenanceHold" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq), global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq.Parser, new[]{ "Bookings" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp), global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp.Parser, new[]{ "Snapshots" }, null, null, null)
           }));
     }
     #endregion
@@ -761,6 +771,224 @@ namespace HOLMS.Types.Supply.RPC {
               maintenanceHold_ = new global::HOLMS.Types.Supply.MaintenanceHoldIndicator();
             }
             input.ReadMessage(maintenanceHold_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class HoldsSvcGbQtySnapRq : pb::IMessage<HoldsSvcGbQtySnapRq> {
+    private static readonly pb::MessageParser<HoldsSvcGbQtySnapRq> _parser = new pb::MessageParser<HoldsSvcGbQtySnapRq>(() => new HoldsSvcGbQtySnapRq());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<HoldsSvcGbQtySnapRq> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Supply.RPC.HoldsSvcReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HoldsSvcGbQtySnapRq() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HoldsSvcGbQtySnapRq(HoldsSvcGbQtySnapRq other) : this() {
+      bookings_ = other.bookings_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HoldsSvcGbQtySnapRq Clone() {
+      return new HoldsSvcGbQtySnapRq(this);
+    }
+
+    /// <summary>Field number for the "bookings" field.</summary>
+    public const int BookingsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> _repeated_bookings_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> bookings_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> Bookings {
+      get { return bookings_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as HoldsSvcGbQtySnapRq);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(HoldsSvcGbQtySnapRq other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!bookings_.Equals(other.bookings_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= bookings_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      bookings_.WriteTo(output, _repeated_bookings_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += bookings_.CalculateSize(_repeated_bookings_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(HoldsSvcGbQtySnapRq other) {
+      if (other == null) {
+        return;
+      }
+      bookings_.Add(other.bookings_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            bookings_.AddEntriesFrom(input, _repeated_bookings_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class HoldsSvcGbQtySnapRsp : pb::IMessage<HoldsSvcGbQtySnapRsp> {
+    private static readonly pb::MessageParser<HoldsSvcGbQtySnapRsp> _parser = new pb::MessageParser<HoldsSvcGbQtySnapRsp>(() => new HoldsSvcGbQtySnapRsp());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<HoldsSvcGbQtySnapRsp> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Supply.RPC.HoldsSvcReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HoldsSvcGbQtySnapRsp() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HoldsSvcGbQtySnapRsp(HoldsSvcGbQtySnapRsp other) : this() {
+      snapshots_ = other.snapshots_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HoldsSvcGbQtySnapRsp Clone() {
+      return new HoldsSvcGbQtySnapRsp(this);
+    }
+
+    /// <summary>Field number for the "snapshots" field.</summary>
+    public const int SnapshotsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Supply.Snapshot.GroupBookingQuantitySnapshot> _repeated_snapshots_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Supply.Snapshot.GroupBookingQuantitySnapshot.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Supply.Snapshot.GroupBookingQuantitySnapshot> snapshots_ = new pbc::RepeatedField<global::HOLMS.Types.Supply.Snapshot.GroupBookingQuantitySnapshot>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Supply.Snapshot.GroupBookingQuantitySnapshot> Snapshots {
+      get { return snapshots_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as HoldsSvcGbQtySnapRsp);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(HoldsSvcGbQtySnapRsp other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!snapshots_.Equals(other.snapshots_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= snapshots_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      snapshots_.WriteTo(output, _repeated_snapshots_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += snapshots_.CalculateSize(_repeated_snapshots_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(HoldsSvcGbQtySnapRsp other) {
+      if (other == null) {
+        return;
+      }
+      snapshots_.Add(other.snapshots_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            snapshots_.AddEntriesFrom(input, _repeated_snapshots_codec);
             break;
           }
         }
