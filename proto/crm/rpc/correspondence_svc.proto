@@ -3,15 +3,15 @@ syntax = "proto3";
 package holms.types.crm.rpc;
 option csharp_namespace = "HOLMS.Types.CRM.RPC";
 
-import "google/protobuf/empty.proto";
-import "crm/guests/guest_indicator.proto";
-import "booking/reservations/reservation_contact_person.proto";
-import "booking/indicators/reservation_indicator.proto";
 import "booking/indicators/group_booking_indicator.proto";
-import "tenancy_config/property_confirmation_letter_text.proto";
-import "tenancy_config/property_cancellation_letter_text.proto";
-import "tenancy_config/property_arrival_letter_text.proto";
+import "booking/indicators/reservation_indicator.proto";
+import "booking/reservations/reservation_contact_person.proto";
+import "crm/guests/guest_indicator.proto";
+import "google/protobuf/empty.proto";
 import "primitive/pb_local_date.proto";
+import "tenancy_config/property_arrival_letter_text.proto";
+import "tenancy_config/property_cancellation_letter_text.proto";
+import "tenancy_config/property_confirmation_letter_text.proto";
 
 message CorrespondenceRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
@@ -36,6 +36,8 @@ service CorrespondenceSvc {
 		returns(CorrespondenceServiceDocumentResponse);
 	rpc GetArrivalLetterDocument(.holms.types.booking.indicators.ReservationIndicator)
 		returns(CorrespondenceServiceDocumentResponse);
+	rpc GetBookingAssociatedFoliosSummary(.holms.types.booking.indicators.GroupBookingIndicator)
+		returns(CorrespondenceServiceDocumentResponse);
 
 	rpc PreviewConfirmationLetter(holms.types.tenancy_config.PropertyConfirmationLetterText)
 		returns(CorrespondenceServiceDocumentResponse);
@@ -48,3 +50,4 @@ service CorrespondenceSvc {
 	rpc GetReservationConfirmationPrintDoc(holms.types.booking.indicators.ReservationIndicator)
 		returns(CorrespondenceServiceDocumentResponse);
 }
+
