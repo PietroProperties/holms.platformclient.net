@@ -27,65 +27,89 @@ namespace HOLMS.Types.CRM.RPC {
             "aW5kaWNhdG9yLnByb3RvGi5ib29raW5nL2luZGljYXRvcnMvcmVzZXJ2YXRp",
             "b25faW5kaWNhdG9yLnByb3RvGjVib29raW5nL3Jlc2VydmF0aW9ucy9yZXNl",
             "cnZhdGlvbl9jb250YWN0X3BlcnNvbi5wcm90bxogY3JtL2d1ZXN0cy9ndWVz",
-            "dF9pbmRpY2F0b3IucHJvdG8aG2dvb2dsZS9wcm90b2J1Zi9lbXB0eS5wcm90",
-            "bxodcHJpbWl0aXZlL3BiX2xvY2FsX2RhdGUucHJvdG8aMXRlbmFuY3lfY29u",
-            "ZmlnL3Byb3BlcnR5X2Fycml2YWxfbGV0dGVyX3RleHQucHJvdG8aNnRlbmFu",
-            "Y3lfY29uZmlnL3Byb3BlcnR5X2NhbmNlbGxhdGlvbl9sZXR0ZXJfdGV4dC5w",
-            "cm90bxo2dGVuYW5jeV9jb25maWcvcHJvcGVydHlfY29uZmlybWF0aW9uX2xl",
-            "dHRlcl90ZXh0LnByb3RvIugBChVDb3JyZXNwb25kZW5jZVJlcXVlc3QSSQoL",
-            "cmVzZXJ2YXRpb24YASABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGlj",
-            "YXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISNgoGZ3Vlc3RzGAIgAygLMiYu",
-            "aG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdEluZGljYXRvchJMCghjb250",
-            "YWN0cxgDIAMoCzI6LmhvbG1zLnR5cGVzLmJvb2tpbmcucmVzZXJ2YXRpb25z",
-            "LlJlc2VydmF0aW9uQ29udGFjdFBlcnNvbiI5CiVDb3JyZXNwb25kZW5jZVNl",
-            "cnZpY2VEb2N1bWVudFJlc3BvbnNlEhAKCGRvY3VtZW50GAEgASgJMsoMChFD",
-            "b3JyZXNwb25kZW5jZVN2YxJcChZTZW5kQ29uZmlybWF0aW9uTGV0dGVyEiou",
-            "aG9sbXMudHlwZXMuY3JtLnJwYy5Db3JyZXNwb25kZW5jZVJlcXVlc3QaFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkSWwoVU2VuZENhbmNlbGxhdGlvbkVtYWls",
-            "EiouaG9sbXMudHlwZXMuY3JtLnJwYy5Db3JyZXNwb25kZW5jZVJlcXVlc3Qa",
-            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkSVAoOU2VuZEd1ZXN0Rm9saW8SKi5o",
-            "b2xtcy50eXBlcy5jcm0ucnBjLkNvcnJlc3BvbmRlbmNlUmVxdWVzdBoWLmdv",
-            "b2dsZS5wcm90b2J1Zi5FbXB0eRKJAQoUUHJldmlld0Fycml2YWxMZXR0ZXIS",
-            "NS5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eUFycml2YWxM",
-            "ZXR0ZXJUZXh0GjouaG9sbXMudHlwZXMuY3JtLnJwYy5Db3JyZXNwb25kZW5j",
-            "ZVNlcnZpY2VEb2N1bWVudFJlc3BvbnNlEoUBCiNHZXRBcnJpdmFsTGV0dGVy",
-            "RG9jdW1lbnRzQXJyaXZpbmdPbhIiLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Q",
-            "YkxvY2FsRGF0ZRo6LmhvbG1zLnR5cGVzLmNybS5ycGMuQ29ycmVzcG9uZGVu",
-            "Y2VTZXJ2aWNlRG9jdW1lbnRSZXNwb25zZRKMAQoYR2V0QXJyaXZhbExldHRl",
-            "ckRvY3VtZW50EjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJl",
-            "c2VydmF0aW9uSW5kaWNhdG9yGjouaG9sbXMudHlwZXMuY3JtLnJwYy5Db3Jy",
-            "ZXNwb25kZW5jZVNlcnZpY2VEb2N1bWVudFJlc3BvbnNlEpYBCiFHZXRCb29r",
-            "aW5nQXNzb2NpYXRlZEZvbGlvc1N1bW1hcnkSNS5ob2xtcy50eXBlcy5ib29r",
-            "aW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yGjouaG9sbXMu",
-            "dHlwZXMuY3JtLnJwYy5Db3JyZXNwb25kZW5jZVNlcnZpY2VEb2N1bWVudFJl",
-            "c3BvbnNlEpMBChlQcmV2aWV3Q29uZmlybWF0aW9uTGV0dGVyEjouaG9sbXMu",
-            "dHlwZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHlDb25maXJtYXRpb25MZXR0",
-            "ZXJUZXh0GjouaG9sbXMudHlwZXMuY3JtLnJwYy5Db3JyZXNwb25kZW5jZVNl",
-            "cnZpY2VEb2N1bWVudFJlc3BvbnNlEpIBChhQcmV2aWV3Q2FuY2VsbGF0aW9u",
-            "RW1haWwSOi5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eUNh",
-            "bmNlbGxhdGlvbkxldHRlclRleHQaOi5ob2xtcy50eXBlcy5jcm0ucnBjLkNv",
-            "cnJlc3BvbmRlbmNlU2VydmljZURvY3VtZW50UmVzcG9uc2USjwEKG0dldFJl",
-            "c2VydmF0aW9uRm9saW9QcmludERvYxI0LmhvbG1zLnR5cGVzLmJvb2tpbmcu",
-            "aW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvcho6LmhvbG1zLnR5cGVz",
-            "LmNybS5ycGMuQ29ycmVzcG9uZGVuY2VTZXJ2aWNlRG9jdW1lbnRSZXNwb25z",
-            "ZRKRAQocR2V0R3JvdXBCb29raW5nRm9saW9QcmludERvYxI1LmhvbG1zLnR5",
-            "cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5Hcm91cEJvb2tpbmdJbmRpY2F0b3Ia",
-            "Oi5ob2xtcy50eXBlcy5jcm0ucnBjLkNvcnJlc3BvbmRlbmNlU2VydmljZURv",
-            "Y3VtZW50UmVzcG9uc2USlgEKIkdldFJlc2VydmF0aW9uQ29uZmlybWF0aW9u",
-            "UHJpbnREb2MSNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVz",
-            "ZXJ2YXRpb25JbmRpY2F0b3IaOi5ob2xtcy50eXBlcy5jcm0ucnBjLkNvcnJl",
-            "c3BvbmRlbmNlU2VydmljZURvY3VtZW50UmVzcG9uc2VCFqoCE0hPTE1TLlR5",
-            "cGVzLkNSTS5SUENiBnByb3RvMw=="));
+            "dF9pbmRpY2F0b3IucHJvdG8aHXByaW1pdGl2ZS9wYl9sb2NhbF9kYXRlLnBy",
+            "b3RvGjF0ZW5hbmN5X2NvbmZpZy9wcm9wZXJ0eV9hcnJpdmFsX2xldHRlcl90",
+            "ZXh0LnByb3RvGjZ0ZW5hbmN5X2NvbmZpZy9wcm9wZXJ0eV9jYW5jZWxsYXRp",
+            "b25fbGV0dGVyX3RleHQucHJvdG8aNnRlbmFuY3lfY29uZmlnL3Byb3BlcnR5",
+            "X2NvbmZpcm1hdGlvbl9sZXR0ZXJfdGV4dC5wcm90byLoAQoVQ29ycmVzcG9u",
+            "ZGVuY2VSZXF1ZXN0EkkKC3Jlc2VydmF0aW9uGAEgASgLMjQuaG9sbXMudHlw",
+            "ZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yEjYK",
+            "Bmd1ZXN0cxgCIAMoCzImLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJ",
+            "bmRpY2F0b3ISTAoIY29udGFjdHMYAyADKAsyOi5ob2xtcy50eXBlcy5ib29r",
+            "aW5nLnJlc2VydmF0aW9ucy5SZXNlcnZhdGlvbkNvbnRhY3RQZXJzb24iOQol",
+            "Q29ycmVzcG9uZGVuY2VTZXJ2aWNlRG9jdW1lbnRSZXNwb25zZRIQCghkb2N1",
+            "bWVudBgBIAEoCSKPAQokQ29ycmVzcG9uZGVuY2VTZXJ2aWNlRW1haWxTZW5k",
+            "UmVzdWx0Ek4KC3NlbmRfc3RhdHVzGAEgASgOMjkuaG9sbXMudHlwZXMuY3Jt",
+            "LnJwYy5Db3JyZXNwb25kZW5jZVNlcnZpY2VFbWFpbFNlbmRTdGF0dXMSFwoP",
+            "cmVjaXBpZW50X2VtYWlsGAIgASgJInQKJkNvcnJlc3BvbmRlbmNlU2Vydmlj",
+            "ZUVtYWlsU2VuZFJlc3BvbnNlEkoKB3Jlc3VsdHMYASADKAsyOS5ob2xtcy50",
+            "eXBlcy5jcm0ucnBjLkNvcnJlc3BvbmRlbmNlU2VydmljZUVtYWlsU2VuZFJl",
+            "c3VsdCq7AQokQ29ycmVzcG9uZGVuY2VTZXJ2aWNlRW1haWxTZW5kU3RhdHVz",
+            "Eh0KGUVNQUlMX1NFTkRfU1RBVFVTX1NVQ0NFU1MQABIkCiBFTUFJTF9TRU5E",
+            "X1NUQVRVU19TRVJWRVJfRkFJTFVSRRABEiUKIUVNQUlMX1NFTkRfU1RBVFVT",
+            "X1VOS05PV05fRkFJTFVSRRACEicKI0VNQUlMX1NFTkRfU1RBVFVTX0lOVkFM",
+            "SURfUkVDSVBJRU5UEAMyuw0KEUNvcnJlc3BvbmRlbmNlU3ZjEoEBChZTZW5k",
+            "Q29uZmlybWF0aW9uTGV0dGVyEiouaG9sbXMudHlwZXMuY3JtLnJwYy5Db3Jy",
+            "ZXNwb25kZW5jZVJlcXVlc3QaOy5ob2xtcy50eXBlcy5jcm0ucnBjLkNvcnJl",
+            "c3BvbmRlbmNlU2VydmljZUVtYWlsU2VuZFJlc3BvbnNlEoABChVTZW5kQ2Fu",
+            "Y2VsbGF0aW9uRW1haWwSKi5ob2xtcy50eXBlcy5jcm0ucnBjLkNvcnJlc3Bv",
+            "bmRlbmNlUmVxdWVzdBo7LmhvbG1zLnR5cGVzLmNybS5ycGMuQ29ycmVzcG9u",
+            "ZGVuY2VTZXJ2aWNlRW1haWxTZW5kUmVzcG9uc2USeQoOU2VuZEd1ZXN0Rm9s",
+            "aW8SKi5ob2xtcy50eXBlcy5jcm0ucnBjLkNvcnJlc3BvbmRlbmNlUmVxdWVz",
+            "dBo7LmhvbG1zLnR5cGVzLmNybS5ycGMuQ29ycmVzcG9uZGVuY2VTZXJ2aWNl",
+            "RW1haWxTZW5kUmVzcG9uc2USiQEKFFByZXZpZXdBcnJpdmFsTGV0dGVyEjUu",
+            "aG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHlBcnJpdmFsTGV0",
+            "dGVyVGV4dBo6LmhvbG1zLnR5cGVzLmNybS5ycGMuQ29ycmVzcG9uZGVuY2VT",
+            "ZXJ2aWNlRG9jdW1lbnRSZXNwb25zZRKFAQojR2V0QXJyaXZhbExldHRlckRv",
+            "Y3VtZW50c0Fycml2aW5nT24SIi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJM",
+            "b2NhbERhdGUaOi5ob2xtcy50eXBlcy5jcm0ucnBjLkNvcnJlc3BvbmRlbmNl",
+            "U2VydmljZURvY3VtZW50UmVzcG9uc2USjAEKGEdldEFycml2YWxMZXR0ZXJE",
+            "b2N1bWVudBI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNl",
+            "cnZhdGlvbkluZGljYXRvcho6LmhvbG1zLnR5cGVzLmNybS5ycGMuQ29ycmVz",
+            "cG9uZGVuY2VTZXJ2aWNlRG9jdW1lbnRSZXNwb25zZRKWAQohR2V0Qm9va2lu",
+            "Z0Fzc29jaWF0ZWRGb2xpb3NTdW1tYXJ5EjUuaG9sbXMudHlwZXMuYm9va2lu",
+            "Zy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGljYXRvcho6LmhvbG1zLnR5",
+            "cGVzLmNybS5ycGMuQ29ycmVzcG9uZGVuY2VTZXJ2aWNlRG9jdW1lbnRSZXNw",
+            "b25zZRKTAQoZUHJldmlld0NvbmZpcm1hdGlvbkxldHRlchI6LmhvbG1zLnR5",
+            "cGVzLnRlbmFuY3lfY29uZmlnLlByb3BlcnR5Q29uZmlybWF0aW9uTGV0dGVy",
+            "VGV4dBo6LmhvbG1zLnR5cGVzLmNybS5ycGMuQ29ycmVzcG9uZGVuY2VTZXJ2",
+            "aWNlRG9jdW1lbnRSZXNwb25zZRKSAQoYUHJldmlld0NhbmNlbGxhdGlvbkVt",
+            "YWlsEjouaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHlDYW5j",
+            "ZWxsYXRpb25MZXR0ZXJUZXh0GjouaG9sbXMudHlwZXMuY3JtLnJwYy5Db3Jy",
+            "ZXNwb25kZW5jZVNlcnZpY2VEb2N1bWVudFJlc3BvbnNlEo8BChtHZXRSZXNl",
+            "cnZhdGlvbkZvbGlvUHJpbnREb2MSNC5ob2xtcy50eXBlcy5ib29raW5nLmlu",
+            "ZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3IaOi5ob2xtcy50eXBlcy5j",
+            "cm0ucnBjLkNvcnJlc3BvbmRlbmNlU2VydmljZURvY3VtZW50UmVzcG9uc2US",
+            "kQEKHEdldEdyb3VwQm9va2luZ0ZvbGlvUHJpbnREb2MSNS5ob2xtcy50eXBl",
+            "cy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yGjou",
+            "aG9sbXMudHlwZXMuY3JtLnJwYy5Db3JyZXNwb25kZW5jZVNlcnZpY2VEb2N1",
+            "bWVudFJlc3BvbnNlEpYBCiJHZXRSZXNlcnZhdGlvbkNvbmZpcm1hdGlvblBy",
+            "aW50RG9jEjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2Vy",
+            "dmF0aW9uSW5kaWNhdG9yGjouaG9sbXMudHlwZXMuY3JtLnJwYy5Db3JyZXNw",
+            "b25kZW5jZVNlcnZpY2VEb2N1bWVudFJlc3BvbnNlQhaqAhNIT0xNUy5UeXBl",
+            "cy5DUk0uUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationContactPersonReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterTextReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationContactPersonReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterTextReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendStatus), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest), global::HOLMS.Types.CRM.RPC.CorrespondenceRequest.Parser, new[]{ "Reservation", "Guests", "Contacts" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse.Parser, new[]{ "Document" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse.Parser, new[]{ "Document" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult.Parser, new[]{ "SendStatus", "RecipientEmail" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse.Parser, new[]{ "Results" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum CorrespondenceServiceEmailSendStatus {
+    [pbr::OriginalName("EMAIL_SEND_STATUS_SUCCESS")] EmailSendStatusSuccess = 0,
+    [pbr::OriginalName("EMAIL_SEND_STATUS_SERVER_FAILURE")] EmailSendStatusServerFailure = 1,
+    [pbr::OriginalName("EMAIL_SEND_STATUS_UNKNOWN_FAILURE")] EmailSendStatusUnknownFailure = 2,
+    [pbr::OriginalName("EMAIL_SEND_STATUS_INVALID_RECIPIENT")] EmailSendStatusInvalidRecipient = 3,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class CorrespondenceRequest : pb::IMessage<CorrespondenceRequest> {
     private static readonly pb::MessageParser<CorrespondenceRequest> _parser = new pb::MessageParser<CorrespondenceRequest>(() => new CorrespondenceRequest());
@@ -359,6 +383,260 @@ namespace HOLMS.Types.CRM.RPC {
             break;
           case 10: {
             Document = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CorrespondenceServiceEmailSendResult : pb::IMessage<CorrespondenceServiceEmailSendResult> {
+    private static readonly pb::MessageParser<CorrespondenceServiceEmailSendResult> _parser = new pb::MessageParser<CorrespondenceServiceEmailSendResult>(() => new CorrespondenceServiceEmailSendResult());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CorrespondenceServiceEmailSendResult> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CorrespondenceServiceEmailSendResult() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CorrespondenceServiceEmailSendResult(CorrespondenceServiceEmailSendResult other) : this() {
+      sendStatus_ = other.sendStatus_;
+      recipientEmail_ = other.recipientEmail_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CorrespondenceServiceEmailSendResult Clone() {
+      return new CorrespondenceServiceEmailSendResult(this);
+    }
+
+    /// <summary>Field number for the "send_status" field.</summary>
+    public const int SendStatusFieldNumber = 1;
+    private global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendStatus sendStatus_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendStatus SendStatus {
+      get { return sendStatus_; }
+      set {
+        sendStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "recipient_email" field.</summary>
+    public const int RecipientEmailFieldNumber = 2;
+    private string recipientEmail_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RecipientEmail {
+      get { return recipientEmail_; }
+      set {
+        recipientEmail_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CorrespondenceServiceEmailSendResult);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CorrespondenceServiceEmailSendResult other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (SendStatus != other.SendStatus) return false;
+      if (RecipientEmail != other.RecipientEmail) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (SendStatus != 0) hash ^= SendStatus.GetHashCode();
+      if (RecipientEmail.Length != 0) hash ^= RecipientEmail.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (SendStatus != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) SendStatus);
+      }
+      if (RecipientEmail.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(RecipientEmail);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (SendStatus != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SendStatus);
+      }
+      if (RecipientEmail.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RecipientEmail);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CorrespondenceServiceEmailSendResult other) {
+      if (other == null) {
+        return;
+      }
+      if (other.SendStatus != 0) {
+        SendStatus = other.SendStatus;
+      }
+      if (other.RecipientEmail.Length != 0) {
+        RecipientEmail = other.RecipientEmail;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            sendStatus_ = (global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendStatus) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            RecipientEmail = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CorrespondenceServiceEmailSendResponse : pb::IMessage<CorrespondenceServiceEmailSendResponse> {
+    private static readonly pb::MessageParser<CorrespondenceServiceEmailSendResponse> _parser = new pb::MessageParser<CorrespondenceServiceEmailSendResponse>(() => new CorrespondenceServiceEmailSendResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CorrespondenceServiceEmailSendResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CorrespondenceServiceEmailSendResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CorrespondenceServiceEmailSendResponse(CorrespondenceServiceEmailSendResponse other) : this() {
+      results_ = other.results_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CorrespondenceServiceEmailSendResponse Clone() {
+      return new CorrespondenceServiceEmailSendResponse(this);
+    }
+
+    /// <summary>Field number for the "results" field.</summary>
+    public const int ResultsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult> _repeated_results_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult> results_ = new pbc::RepeatedField<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult> Results {
+      get { return results_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CorrespondenceServiceEmailSendResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CorrespondenceServiceEmailSendResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!results_.Equals(other.results_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= results_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      results_.WriteTo(output, _repeated_results_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += results_.CalculateSize(_repeated_results_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CorrespondenceServiceEmailSendResponse other) {
+      if (other == null) {
+        return;
+      }
+      results_.Add(other.results_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            results_.AddEntriesFrom(input, _repeated_results_codec);
             break;
           }
         }
