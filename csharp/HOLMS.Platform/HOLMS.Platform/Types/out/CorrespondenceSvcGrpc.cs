@@ -13,7 +13,7 @@ namespace HOLMS.Types.CRM.RPC {
     static readonly string __ServiceName = "holms.types.crm.rpc.CorrespondenceSvc";
 
     static readonly Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest> __Marshaller_CorrespondenceRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> __Marshaller_CorrespondenceServiceEmailSendResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText> __Marshaller_PropertyArrivalLetterText = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Marshaller_CorrespondenceServiceDocumentResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Primitive.PbLocalDate> __Marshaller_PbLocalDate = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.PbLocalDate.Parser.ParseFrom);
@@ -22,26 +22,26 @@ namespace HOLMS.Types.CRM.RPC {
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText> __Marshaller_PropertyConfirmationLetterText = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText> __Marshaller_PropertyCancellationLetterText = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText.Parser.ParseFrom);
 
-    static readonly Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SendConfirmationLetter = new Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> __Method_SendConfirmationLetter = new Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse>(
         MethodType.Unary,
         __ServiceName,
         "SendConfirmationLetter",
         __Marshaller_CorrespondenceRequest,
-        __Marshaller_Empty);
+        __Marshaller_CorrespondenceServiceEmailSendResponse);
 
-    static readonly Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SendCancellationEmail = new Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> __Method_SendCancellationEmail = new Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse>(
         MethodType.Unary,
         __ServiceName,
         "SendCancellationEmail",
         __Marshaller_CorrespondenceRequest,
-        __Marshaller_Empty);
+        __Marshaller_CorrespondenceServiceEmailSendResponse);
 
-    static readonly Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SendGuestFolio = new Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> __Method_SendGuestFolio = new Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse>(
         MethodType.Unary,
         __ServiceName,
         "SendGuestFolio",
         __Marshaller_CorrespondenceRequest,
-        __Marshaller_Empty);
+        __Marshaller_CorrespondenceServiceEmailSendResponse);
 
     static readonly Method<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_PreviewArrivalLetter = new Method<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
         MethodType.Unary,
@@ -118,17 +118,17 @@ namespace HOLMS.Types.CRM.RPC {
       /// <summary>
       ///  Email
       /// </summary>
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SendConfirmationLetter(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendConfirmationLetter(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SendCancellationEmail(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendCancellationEmail(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SendGuestFolio(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendGuestFolio(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -209,60 +209,60 @@ namespace HOLMS.Types.CRM.RPC {
       /// <summary>
       ///  Email
       /// </summary>
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendConfirmationLetter(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse SendConfirmationLetter(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SendConfirmationLetter(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Email
       /// </summary>
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendConfirmationLetter(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse SendConfirmationLetter(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SendConfirmationLetter, null, options, request);
       }
       /// <summary>
       ///  Email
       /// </summary>
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendConfirmationLetterAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendConfirmationLetterAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SendConfirmationLetterAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       ///  Email
       /// </summary>
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendConfirmationLetterAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendConfirmationLetterAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SendConfirmationLetter, null, options, request);
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendCancellationEmail(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse SendCancellationEmail(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SendCancellationEmail(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendCancellationEmail(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse SendCancellationEmail(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SendCancellationEmail, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendCancellationEmailAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendCancellationEmailAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SendCancellationEmailAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendCancellationEmailAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendCancellationEmailAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SendCancellationEmail, null, options, request);
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendGuestFolio(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse SendGuestFolio(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SendGuestFolio(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendGuestFolio(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse SendGuestFolio(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SendGuestFolio, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendGuestFolioAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendGuestFolioAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SendGuestFolioAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendGuestFolioAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendGuestFolioAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SendGuestFolio, null, options, request);
       }

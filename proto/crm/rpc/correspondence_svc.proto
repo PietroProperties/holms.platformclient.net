@@ -7,7 +7,6 @@ import "booking/indicators/group_booking_indicator.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "booking/reservations/reservation_contact_person.proto";
 import "crm/guests/guest_indicator.proto";
-import "google/protobuf/empty.proto";
 import "primitive/pb_local_date.proto";
 import "tenancy_config/property_arrival_letter_text.proto";
 import "tenancy_config/property_cancellation_letter_text.proto";
@@ -23,11 +22,27 @@ message CorrespondenceServiceDocumentResponse {
 	string document = 1;
 }
 
+enum CorrespondenceServiceEmailSendStatus {
+	EMAIL_SEND_STATUS_SUCCESS = 0;
+	EMAIL_SEND_STATUS_SERVER_FAILURE = 1;
+	EMAIL_SEND_STATUS_UNKNOWN_FAILURE = 2;
+	EMAIL_SEND_STATUS_INVALID_RECIPIENT = 3;
+}
+
+message CorrespondenceServiceEmailSendResult {
+	CorrespondenceServiceEmailSendStatus send_status = 1;
+	string recipient_email_address = 2;
+}
+
+message CorrespondenceServiceEmailSendResponse {
+	repeated CorrespondenceServiceEmailSendResult results = 1;
+}
+
 service CorrespondenceSvc {
 	// Email
-	rpc SendConfirmationLetter(CorrespondenceRequest) returns(google.protobuf.Empty);
-	rpc SendCancellationEmail(CorrespondenceRequest) returns(google.protobuf.Empty);
-	rpc SendGuestFolio(CorrespondenceRequest) returns (google.protobuf.Empty);
+	rpc SendConfirmationLetter(CorrespondenceRequest) returns(CorrespondenceServiceEmailSendResponse);
+	rpc SendCancellationEmail(CorrespondenceRequest) returns(CorrespondenceServiceEmailSendResponse);
+	rpc SendGuestFolio(CorrespondenceRequest) returns (CorrespondenceServiceEmailSendResponse);
 
 	// Print (get HTML)
 	rpc PreviewArrivalLetter(.holms.types.tenancy_config.PropertyArrivalLetterText)
