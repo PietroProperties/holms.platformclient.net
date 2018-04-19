@@ -31,7 +31,7 @@ enum CorrespondenceServiceEmailSendStatus {
 
 message CorrespondenceServiceEmailSendResult {
 	CorrespondenceServiceEmailSendStatus send_status = 1;
-	string recipient_email = 2;
+	string recipient_email_address = 2;
 }
 
 message CorrespondenceServiceEmailSendResponse {
