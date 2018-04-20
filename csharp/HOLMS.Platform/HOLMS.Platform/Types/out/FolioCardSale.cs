@@ -30,7 +30,7 @@ namespace HOLMS.Types.Folio {
             "YXRpb25fZW50cnlfbWV0aG9kLnByb3RvGi5tb25leS9jYXJkcy90cmFuc2Fj",
             "dGlvbnMvY2FyZF9zYWxlX3N0YXRlLnByb3RvGjptb25leS9jYXJkcy90cmFu",
             "c2FjdGlvbnMvcGF5bWVudF9jYXJkX3NhbGVfaW5kaWNhdG9yLnByb3RvGh9w",
-            "cmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3RvIu4FCg1Gb2xpb0NhcmRT",
+            "cmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3RvIvoFCg1Gb2xpb0NhcmRT",
             "YWxlEkwKBHNhbGUYASABKAsyPi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50",
             "cmFuc2FjdGlvbnMuUGF5bWVudENhcmRTYWxlSW5kaWNhdG9yEjYKBGNhcmQY",
             "AiABKAsyKC5ob2xtcy50eXBlcy5mb2xpby5Gb2xpb0d1ZXN0UGF5bWVudENh",
@@ -46,13 +46,13 @@ namespace HOLMS.Types.Folio {
             "YmVsGAkgASgJEg0KBWFfaV9kGAogASgJEhoKEmFwcGxpY2F0aW9uX2NyeXB0",
             "bxgLIAEoCRIVCg1hcHByb3ZhbF9jb2RlGAwgASgJEjoKC3JlY2VpdmVkX2J5",
             "GA0gASgLMiUuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNhdG9y",
-            "Ej0KDnJhd19hdXRob3JpemVkGA4gASgLMiUuaG9sbXMudHlwZXMucHJpbWl0",
-            "aXZlLk1vbmV0YXJ5QW1vdW50QhSqAhFIT0xNUy5UeXBlcy5Gb2xpb2IGcHJv",
-            "dG8z"));
+            "EkkKGnRlcm1pbmFsX2F1dGhvcml6ZWRfYW1vdW50GA4gASgLMiUuaG9sbXMu",
+            "dHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50QhSqAhFIT0xNUy5UeXBl",
+            "cy5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioCardSalePurposeReflection.Descriptor, global::HOLMS.Types.Folio.FolioGuestPaymentCardReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.AuthorizationEntryMethodReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.CardSaleStateReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioCardSale), global::HOLMS.Types.Folio.FolioCardSale.Parser, new[]{ "Sale", "Card", "Purpose", "SaleState", "OpenAuthorized", "Captured", "EntryMethod", "OpenedAt", "ApplicationLabel", "AID", "ApplicationCrypto", "ApprovalCode", "ReceivedBy", "RawAuthorized" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioCardSale), global::HOLMS.Types.Folio.FolioCardSale.Parser, new[]{ "Sale", "Card", "Purpose", "SaleState", "OpenAuthorized", "Captured", "EntryMethod", "OpenedAt", "ApplicationLabel", "AID", "ApplicationCrypto", "ApprovalCode", "ReceivedBy", "TerminalAuthorizedAmount" }, null, null, null)
           }));
     }
     #endregion
@@ -96,7 +96,7 @@ namespace HOLMS.Types.Folio {
       applicationCrypto_ = other.applicationCrypto_;
       approvalCode_ = other.approvalCode_;
       ReceivedBy = other.receivedBy_ != null ? other.ReceivedBy.Clone() : null;
-      RawAuthorized = other.rawAuthorized_ != null ? other.RawAuthorized.Clone() : null;
+      TerminalAuthorizedAmount = other.terminalAuthorizedAmount_ != null ? other.TerminalAuthorizedAmount.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -250,14 +250,14 @@ namespace HOLMS.Types.Folio {
       }
     }
 
-    /// <summary>Field number for the "raw_authorized" field.</summary>
-    public const int RawAuthorizedFieldNumber = 14;
-    private global::HOLMS.Types.Primitive.MonetaryAmount rawAuthorized_;
+    /// <summary>Field number for the "terminal_authorized_amount" field.</summary>
+    public const int TerminalAuthorizedAmountFieldNumber = 14;
+    private global::HOLMS.Types.Primitive.MonetaryAmount terminalAuthorizedAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.MonetaryAmount RawAuthorized {
-      get { return rawAuthorized_; }
+    public global::HOLMS.Types.Primitive.MonetaryAmount TerminalAuthorizedAmount {
+      get { return terminalAuthorizedAmount_; }
       set {
-        rawAuthorized_ = value;
+        terminalAuthorizedAmount_ = value;
       }
     }
 
@@ -287,7 +287,7 @@ namespace HOLMS.Types.Folio {
       if (ApplicationCrypto != other.ApplicationCrypto) return false;
       if (ApprovalCode != other.ApprovalCode) return false;
       if (!object.Equals(ReceivedBy, other.ReceivedBy)) return false;
-      if (!object.Equals(RawAuthorized, other.RawAuthorized)) return false;
+      if (!object.Equals(TerminalAuthorizedAmount, other.TerminalAuthorizedAmount)) return false;
       return true;
     }
 
@@ -307,7 +307,7 @@ namespace HOLMS.Types.Folio {
       if (ApplicationCrypto.Length != 0) hash ^= ApplicationCrypto.GetHashCode();
       if (ApprovalCode.Length != 0) hash ^= ApprovalCode.GetHashCode();
       if (receivedBy_ != null) hash ^= ReceivedBy.GetHashCode();
-      if (rawAuthorized_ != null) hash ^= RawAuthorized.GetHashCode();
+      if (terminalAuthorizedAmount_ != null) hash ^= TerminalAuthorizedAmount.GetHashCode();
       return hash;
     }
 
@@ -370,9 +370,9 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(106);
         output.WriteMessage(ReceivedBy);
       }
-      if (rawAuthorized_ != null) {
+      if (terminalAuthorizedAmount_ != null) {
         output.WriteRawTag(114);
-        output.WriteMessage(RawAuthorized);
+        output.WriteMessage(TerminalAuthorizedAmount);
       }
     }
 
@@ -418,8 +418,8 @@ namespace HOLMS.Types.Folio {
       if (receivedBy_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReceivedBy);
       }
-      if (rawAuthorized_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RawAuthorized);
+      if (terminalAuthorizedAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TerminalAuthorizedAmount);
       }
       return size;
     }
@@ -486,11 +486,11 @@ namespace HOLMS.Types.Folio {
         }
         ReceivedBy.MergeFrom(other.ReceivedBy);
       }
-      if (other.rawAuthorized_ != null) {
-        if (rawAuthorized_ == null) {
-          rawAuthorized_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+      if (other.terminalAuthorizedAmount_ != null) {
+        if (terminalAuthorizedAmount_ == null) {
+          terminalAuthorizedAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
-        RawAuthorized.MergeFrom(other.RawAuthorized);
+        TerminalAuthorizedAmount.MergeFrom(other.TerminalAuthorizedAmount);
       }
     }
 
@@ -573,10 +573,10 @@ namespace HOLMS.Types.Folio {
             break;
           }
           case 114: {
-            if (rawAuthorized_ == null) {
-              rawAuthorized_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            if (terminalAuthorizedAmount_ == null) {
+              terminalAuthorizedAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
-            input.ReadMessage(rawAuthorized_);
+            input.ReadMessage(terminalAuthorizedAmount_);
             break;
           }
         }

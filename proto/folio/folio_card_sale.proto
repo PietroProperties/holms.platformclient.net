@@ -29,6 +29,6 @@ message FolioCardSale {
 	string approval_code = 12;
 
 	.holms.types.iam.StaffMemberIndicator received_by = 13;
-	.holms.types.primitive.MonetaryAmount raw_authorized = 14;
+	.holms.types.primitive.MonetaryAmount terminal_authorized_amount = 14;
 }
 
