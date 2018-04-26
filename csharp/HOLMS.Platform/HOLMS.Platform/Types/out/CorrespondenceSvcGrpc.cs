@@ -161,6 +161,9 @@ namespace HOLMS.Types.CRM.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      ///  Don't think this is used?
+      /// </summary>
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> PreviewCancellationEmail(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
@@ -358,18 +361,30 @@ namespace HOLMS.Types.CRM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PreviewConfirmationLetter, null, options, request);
       }
+      /// <summary>
+      ///  Don't think this is used?
+      /// </summary>
       public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse PreviewCancellationEmail(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PreviewCancellationEmail(request, new CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///  Don't think this is used?
+      /// </summary>
       public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse PreviewCancellationEmail(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PreviewCancellationEmail, null, options, request);
       }
+      /// <summary>
+      ///  Don't think this is used?
+      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> PreviewCancellationEmailAsync(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PreviewCancellationEmailAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///  Don't think this is used?
+      /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> PreviewCancellationEmailAsync(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PreviewCancellationEmail, null, options, request);

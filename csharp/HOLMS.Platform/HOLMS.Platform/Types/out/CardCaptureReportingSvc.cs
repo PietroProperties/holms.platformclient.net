@@ -23,33 +23,32 @@ namespace HOLMS.Types.Reporting.RPC {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci5yZXBvcnRpbmcvcnBjL2NhcmRfY2FwdHVyZV9yZXBvcnRpbmdfc3ZjLnBy",
-            "b3RvEhlob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjGh9nb29nbGUvcHJvdG9i",
-            "dWYvdGltZXN0YW1wLnByb3RvGiltb25leS9jYXJkcy9jYXJkX21lcmNoYW50",
-            "X2luZGljYXRvci5wcm90byJ9CjRDYXJkQ2FwdHVyZVJlcG9ydGluZ1N2Y0dl",
-            "dFBlbmRpbmdUcmFuc2FjdGlvbnNSZXF1ZXN0EkUKDWNhcmRfbWVyY2hhbnQY",
-            "ASABKAsyLi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5DYXJkTWVyY2hhbnRJ",
-            "bmRpY2F0b3Ii3AEKMUNhcmRDYXB0dXJlUmVwb3J0U3ZjR2V0U2V0dGxlZFRy",
-            "YW5zYWN0aW9uc1JlcXVlc3QSRQoNY2FyZF9tZXJjaGFudBgBIAEoCzIuLmhv",
-            "bG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRNZXJjaGFudEluZGljYXRvchIw",
-            "CgxyZXBvcnRfc3RhcnQYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
-            "YW1wEi4KCnJlcG9ydF9lbmQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt",
-            "ZXN0YW1wIjkKJUNhcmRDYXB0dXJlUmVwb3J0aW5nU3ZjUmVwb3J0UmVzcG9u",
-            "c2USEAoIZG9jdW1lbnQYASABKAky/gIKF0NhcmRDYXB0dXJlUmVwb3J0aW5n",
-            "U3ZjErEBChxHZXRQZW5kaW5nVHJhbnNhY3Rpb25zUmVwb3J0Ek8uaG9sbXMu",
-            "dHlwZXMucmVwb3J0aW5nLnJwYy5DYXJkQ2FwdHVyZVJlcG9ydGluZ1N2Y0dl",
-            "dFBlbmRpbmdUcmFuc2FjdGlvbnNSZXF1ZXN0GkAuaG9sbXMudHlwZXMucmVw",
-            "b3J0aW5nLnJwYy5DYXJkQ2FwdHVyZVJlcG9ydGluZ1N2Y1JlcG9ydFJlc3Bv",
-            "bnNlEq4BChxHZXRTZXR0bGVkVHJhbnNhY3Rpb25zUmVwb3J0EkwuaG9sbXMu",
-            "dHlwZXMucmVwb3J0aW5nLnJwYy5DYXJkQ2FwdHVyZVJlcG9ydFN2Y0dldFNl",
-            "dHRsZWRUcmFuc2FjdGlvbnNSZXF1ZXN0GkAuaG9sbXMudHlwZXMucmVwb3J0",
-            "aW5nLnJwYy5DYXJkQ2FwdHVyZVJlcG9ydGluZ1N2Y1JlcG9ydFJlc3BvbnNl",
-            "QixaDm9wZXJhdGlvbnMvcnBjqgIZSE9MTVMuVHlwZXMuUmVwb3J0aW5nLlJQ",
-            "Q2IGcHJvdG8z"));
+            "b3RvEhlob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjGiltb25leS9jYXJkcy9j",
+            "YXJkX21lcmNoYW50X2luZGljYXRvci5wcm90bxo+bW9uZXkvY2FyZHMvdHJh",
+            "bnNhY3Rpb25zL2Nsb3NlZF9tZXJjaGFudF9iYXRjaF9pbmRpY2F0b3IucHJv",
+            "dG8ifQo0Q2FyZENhcHR1cmVSZXBvcnRpbmdTdmNHZXRQZW5kaW5nVHJhbnNh",
+            "Y3Rpb25zUmVxdWVzdBJFCg1jYXJkX21lcmNoYW50GAEgASgLMi4uaG9sbXMu",
+            "dHlwZXMubW9uZXkuY2FyZHMuQ2FyZE1lcmNoYW50SW5kaWNhdG9yIogBCjFD",
+            "YXJkQ2FwdHVyZVJlcG9ydFN2Y0dldFNldHRsZWRUcmFuc2FjdGlvbnNSZXF1",
+            "ZXN0ElMKB2JhdGNoZXMYASADKAsyQi5ob2xtcy50eXBlcy5tb25leS5jYXJk",
+            "cy50cmFuc2FjdGlvbnMuQ2xvc2VkTWVyY2hhbnRCYXRjaEluZGljYXRvciI5",
+            "CiVDYXJkQ2FwdHVyZVJlcG9ydGluZ1N2Y1JlcG9ydFJlc3BvbnNlEhAKCGRv",
+            "Y3VtZW50GAEgASgJMv4CChdDYXJkQ2FwdHVyZVJlcG9ydGluZ1N2YxKxAQoc",
+            "R2V0UGVuZGluZ1RyYW5zYWN0aW9uc1JlcG9ydBJPLmhvbG1zLnR5cGVzLnJl",
+            "cG9ydGluZy5ycGMuQ2FyZENhcHR1cmVSZXBvcnRpbmdTdmNHZXRQZW5kaW5n",
+            "VHJhbnNhY3Rpb25zUmVxdWVzdBpALmhvbG1zLnR5cGVzLnJlcG9ydGluZy5y",
+            "cGMuQ2FyZENhcHR1cmVSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZRKuAQoc",
+            "R2V0U2V0dGxlZFRyYW5zYWN0aW9uc1JlcG9ydBJMLmhvbG1zLnR5cGVzLnJl",
+            "cG9ydGluZy5ycGMuQ2FyZENhcHR1cmVSZXBvcnRTdmNHZXRTZXR0bGVkVHJh",
+            "bnNhY3Rpb25zUmVxdWVzdBpALmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMu",
+            "Q2FyZENhcHR1cmVSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZUIsWg5vcGVy",
+            "YXRpb25zL3JwY6oCGUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatchIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest), global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest.Parser, new[]{ "CardMerchant" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest), global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest.Parser, new[]{ "CardMerchant", "ReportStart", "ReportEnd" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest), global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest.Parser, new[]{ "Batches" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse), global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse.Parser, new[]{ "Document" }, null, null, null)
           }));
     }
@@ -204,9 +203,7 @@ namespace HOLMS.Types.Reporting.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CardCaptureReportSvcGetSettledTransactionsRequest(CardCaptureReportSvcGetSettledTransactionsRequest other) : this() {
-      CardMerchant = other.cardMerchant_ != null ? other.CardMerchant.Clone() : null;
-      ReportStart = other.reportStart_ != null ? other.ReportStart.Clone() : null;
-      ReportEnd = other.reportEnd_ != null ? other.ReportEnd.Clone() : null;
+      batches_ = other.batches_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -214,37 +211,14 @@ namespace HOLMS.Types.Reporting.RPC {
       return new CardCaptureReportSvcGetSettledTransactionsRequest(this);
     }
 
-    /// <summary>Field number for the "card_merchant" field.</summary>
-    public const int CardMerchantFieldNumber = 1;
-    private global::HOLMS.Types.Money.Cards.CardMerchantIndicator cardMerchant_;
+    /// <summary>Field number for the "batches" field.</summary>
+    public const int BatchesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatchIndicator> _repeated_batches_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatchIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatchIndicator> batches_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatchIndicator>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Money.Cards.CardMerchantIndicator CardMerchant {
-      get { return cardMerchant_; }
-      set {
-        cardMerchant_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "report_start" field.</summary>
-    public const int ReportStartFieldNumber = 2;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp reportStart_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp ReportStart {
-      get { return reportStart_; }
-      set {
-        reportStart_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "report_end" field.</summary>
-    public const int ReportEndFieldNumber = 3;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp reportEnd_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp ReportEnd {
-      get { return reportEnd_; }
-      set {
-        reportEnd_ = value;
-      }
+    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatchIndicator> Batches {
+      get { return batches_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -260,18 +234,14 @@ namespace HOLMS.Types.Reporting.RPC {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(CardMerchant, other.CardMerchant)) return false;
-      if (!object.Equals(ReportStart, other.ReportStart)) return false;
-      if (!object.Equals(ReportEnd, other.ReportEnd)) return false;
+      if(!batches_.Equals(other.batches_)) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (cardMerchant_ != null) hash ^= CardMerchant.GetHashCode();
-      if (reportStart_ != null) hash ^= ReportStart.GetHashCode();
-      if (reportEnd_ != null) hash ^= ReportEnd.GetHashCode();
+      hash ^= batches_.GetHashCode();
       return hash;
     }
 
@@ -282,32 +252,13 @@ namespace HOLMS.Types.Reporting.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (cardMerchant_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(CardMerchant);
-      }
-      if (reportStart_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ReportStart);
-      }
-      if (reportEnd_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(ReportEnd);
-      }
+      batches_.WriteTo(output, _repeated_batches_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (cardMerchant_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CardMerchant);
-      }
-      if (reportStart_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReportStart);
-      }
-      if (reportEnd_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReportEnd);
-      }
+      size += batches_.CalculateSize(_repeated_batches_codec);
       return size;
     }
 
@@ -316,24 +267,7 @@ namespace HOLMS.Types.Reporting.RPC {
       if (other == null) {
         return;
       }
-      if (other.cardMerchant_ != null) {
-        if (cardMerchant_ == null) {
-          cardMerchant_ = new global::HOLMS.Types.Money.Cards.CardMerchantIndicator();
-        }
-        CardMerchant.MergeFrom(other.CardMerchant);
-      }
-      if (other.reportStart_ != null) {
-        if (reportStart_ == null) {
-          reportStart_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        ReportStart.MergeFrom(other.ReportStart);
-      }
-      if (other.reportEnd_ != null) {
-        if (reportEnd_ == null) {
-          reportEnd_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        ReportEnd.MergeFrom(other.ReportEnd);
-      }
+      batches_.Add(other.batches_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -345,24 +279,7 @@ namespace HOLMS.Types.Reporting.RPC {
             input.SkipLastField();
             break;
           case 10: {
-            if (cardMerchant_ == null) {
-              cardMerchant_ = new global::HOLMS.Types.Money.Cards.CardMerchantIndicator();
-            }
-            input.ReadMessage(cardMerchant_);
-            break;
-          }
-          case 18: {
-            if (reportStart_ == null) {
-              reportStart_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(reportStart_);
-            break;
-          }
-          case 26: {
-            if (reportEnd_ == null) {
-              reportEnd_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(reportEnd_);
+            batches_.AddEntriesFrom(input, _repeated_batches_codec);
             break;
           }
         }

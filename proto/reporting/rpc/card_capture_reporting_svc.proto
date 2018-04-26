@@ -4,17 +4,15 @@ package holms.types.reporting.rpc;
 option csharp_namespace = "HOLMS.Types.Reporting.RPC";
 option go_package = "operations/rpc";
 
-import "google/protobuf/timestamp.proto";
 import "money/cards/card_merchant_indicator.proto";
+import "money/cards/transactions/closed_merchant_batch_indicator.proto";
 
 message CardCaptureReportingSvcGetPendingTransactionsRequest {
 	.holms.types.money.cards.CardMerchantIndicator card_merchant = 1;
 }
 
 message CardCaptureReportSvcGetSettledTransactionsRequest {
-	.holms.types.money.cards.CardMerchantIndicator card_merchant = 1;
-	google.protobuf.Timestamp report_start = 2;
-	google.protobuf.Timestamp report_end = 3;
+	repeated .holms.types.money.cards.transactions.ClosedMerchantBatchIndicator batches = 1;
 }
 
 message CardCaptureReportingSvcReportResponse {
@@ -27,3 +25,4 @@ service CardCaptureReportingSvc {
 	rpc GetSettledTransactionsReport(CardCaptureReportSvcGetSettledTransactionsRequest)
 		returns (CardCaptureReportingSvcReportResponse);
 }
+
