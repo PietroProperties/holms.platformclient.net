@@ -41,6 +41,7 @@ service CorrespondenceSvc {
 
 	rpc PreviewConfirmationLetter(holms.types.tenancy_config.PropertyConfirmationLetterText)
 		returns(CorrespondenceServiceDocumentResponse);
+	// Don't think this is used?
 	rpc PreviewCancellationEmail(holms.types.tenancy_config.PropertyCancellationLetterText)
 		returns(CorrespondenceServiceDocumentResponse);
 	rpc GetReservationFolioPrintDoc(.holms.types.booking.indicators.ReservationIndicator)
