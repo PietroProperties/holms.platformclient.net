@@ -25,15 +25,18 @@ namespace HOLMS.Types.Booking.Pricing {
             "Cj1ib29raW5nL3ByaWNpbmcvcmVzZXJ2YXRpb25fcHJpY2Vfb3ZlcnJpZGVf",
             "bm90aWZpY2F0aW9uLnByb3RvEhtob2xtcy50eXBlcy5ib29raW5nLnByaWNp",
             "bmcaLmJvb2tpbmcvcmVzZXJ2YXRpb25zL3Jlc2VydmF0aW9uX3N1bW1hcnku",
-            "cHJvdG8ijAEKJFJlc2VydmF0aW9uUHJpY2VPdmVycmlkZU5vdGlmaWNhdGlv",
-            "bhIRCglqX3dfdG9rZW4YASABKAkSUQoTcmVzZXJ2YXRpb25fc3VtbWFyeRgC",
-            "IAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcucmVzZXJ2YXRpb25zLlJlc2Vy",
-            "dmF0aW9uU3VtbWFyeUI0WhRib29raW5nL3Jlc2VydmF0aW9uc6oCG0hPTE1T",
-            "LlR5cGVzLkJvb2tpbmcuUHJpY2luZ2IGcHJvdG8z"));
+            "cHJvdG8aLmJvb2tpbmcvcHJpY2luZy9wcmV0YXhfcmVzZXJ2YXRpb25fcXVv",
+            "dGUucHJvdG8i3AEKJFJlc2VydmF0aW9uUHJpY2VPdmVycmlkZU5vdGlmaWNh",
+            "dGlvbhIRCglqX3dfdG9rZW4YASABKAkSUQoTcmVzZXJ2YXRpb25fc3VtbWFy",
+            "eRgCIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcucmVzZXJ2YXRpb25zLlJl",
+            "c2VydmF0aW9uU3VtbWFyeRJOChFyZXNlcnZhdGlvbl9xdW90ZRgDIAEoCzIz",
+            "LmhvbG1zLnR5cGVzLmJvb2tpbmcucHJpY2luZy5QcmV0YXhSZXNlcnZhdGlv",
+            "blF1b3RlQjRaFGJvb2tpbmcvcmVzZXJ2YXRpb25zqgIbSE9MTVMuVHlwZXMu",
+            "Qm9va2luZy5QcmljaW5nYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Reservations.ReservationSummaryReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Reservations.ReservationSummaryReflection.Descriptor, global::HOLMS.Types.Booking.Pricing.PretaxReservationQuoteReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.ReservationPriceOverrideNotification), global::HOLMS.Types.Booking.Pricing.ReservationPriceOverrideNotification.Parser, new[]{ "JWToken", "ReservationSummary" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.ReservationPriceOverrideNotification), global::HOLMS.Types.Booking.Pricing.ReservationPriceOverrideNotification.Parser, new[]{ "JWToken", "ReservationSummary", "ReservationQuote" }, null, null, null)
           }));
     }
     #endregion
@@ -66,6 +69,7 @@ namespace HOLMS.Types.Booking.Pricing {
     public ReservationPriceOverrideNotification(ReservationPriceOverrideNotification other) : this() {
       jWToken_ = other.jWToken_;
       ReservationSummary = other.reservationSummary_ != null ? other.ReservationSummary.Clone() : null;
+      ReservationQuote = other.reservationQuote_ != null ? other.ReservationQuote.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -95,6 +99,17 @@ namespace HOLMS.Types.Booking.Pricing {
       }
     }
 
+    /// <summary>Field number for the "reservation_quote" field.</summary>
+    public const int ReservationQuoteFieldNumber = 3;
+    private global::HOLMS.Types.Booking.Pricing.PretaxReservationQuote reservationQuote_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Pricing.PretaxReservationQuote ReservationQuote {
+      get { return reservationQuote_; }
+      set {
+        reservationQuote_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationPriceOverrideNotification);
@@ -110,6 +125,7 @@ namespace HOLMS.Types.Booking.Pricing {
       }
       if (JWToken != other.JWToken) return false;
       if (!object.Equals(ReservationSummary, other.ReservationSummary)) return false;
+      if (!object.Equals(ReservationQuote, other.ReservationQuote)) return false;
       return true;
     }
 
@@ -118,6 +134,7 @@ namespace HOLMS.Types.Booking.Pricing {
       int hash = 1;
       if (JWToken.Length != 0) hash ^= JWToken.GetHashCode();
       if (reservationSummary_ != null) hash ^= ReservationSummary.GetHashCode();
+      if (reservationQuote_ != null) hash ^= ReservationQuote.GetHashCode();
       return hash;
     }
 
@@ -136,6 +153,10 @@ namespace HOLMS.Types.Booking.Pricing {
         output.WriteRawTag(18);
         output.WriteMessage(ReservationSummary);
       }
+      if (reservationQuote_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ReservationQuote);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -146,6 +167,9 @@ namespace HOLMS.Types.Booking.Pricing {
       }
       if (reservationSummary_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReservationSummary);
+      }
+      if (reservationQuote_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReservationQuote);
       }
       return size;
     }
@@ -163,6 +187,12 @@ namespace HOLMS.Types.Booking.Pricing {
           reservationSummary_ = new global::HOLMS.Types.Booking.Reservations.ReservationSummary();
         }
         ReservationSummary.MergeFrom(other.ReservationSummary);
+      }
+      if (other.reservationQuote_ != null) {
+        if (reservationQuote_ == null) {
+          reservationQuote_ = new global::HOLMS.Types.Booking.Pricing.PretaxReservationQuote();
+        }
+        ReservationQuote.MergeFrom(other.ReservationQuote);
       }
     }
 
@@ -183,6 +213,13 @@ namespace HOLMS.Types.Booking.Pricing {
               reservationSummary_ = new global::HOLMS.Types.Booking.Reservations.ReservationSummary();
             }
             input.ReadMessage(reservationSummary_);
+            break;
+          }
+          case 26: {
+            if (reservationQuote_ == null) {
+              reservationQuote_ = new global::HOLMS.Types.Booking.Pricing.PretaxReservationQuote();
+            }
+            input.ReadMessage(reservationQuote_);
             break;
           }
         }
