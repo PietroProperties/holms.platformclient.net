@@ -4,15 +4,15 @@ package holms.types.tenancy_config.rpc;
 option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
 option go_package = "tenancyconfig/rpc";
 
-import "tenancy_config/kaba_config.proto";
-import "tenancy_config/miwa_config.proto";
-import "tenancy_config/active_kce_configuration.proto";
+import "tenancy_config/kaba_encoder_config.proto";
+import "tenancy_config/miwa_encoder_config.proto";
+import "tenancy_config/active_key_card_system.proto";
 import "google/protobuf/empty.proto";
 
 message GetKCEConfigResponse {
-	.holms.types.tenancy_config.KabaConfig kaba_configuration = 1;
-	.holms.types.tenancy_config.MiwaConfig miwa_configuration = 2;
-	.holms.types.tenancy_config.ActiveKCEConfiguration active_kce_config = 3;
+	.holms.types.tenancy_config.KabaEncoderConfig kaba_configuration = 1;
+	.holms.types.tenancy_config.MiwaEncoderConfig miwa_configuration = 2;
+	.holms.types.tenancy_config.ActiveKeyCardSystem active_kc_system = 3;
 }
 
 message SetKabaConfigResponse {
@@ -39,17 +39,17 @@ message KCESvcSetMiwaConfigResponse {
 }
 
 message KCESvcSetActiveKCEConfigRequest {
-	.holms.types.tenancy_config.ActiveKCEConfiguration active_kce_config = 1;
+	.holms.types.tenancy_config.ActiveKeyCardSystem active_kc_system = 1;
 }
 
 service KCEConfigSvc {
 	rpc Get(google.protobuf.Empty) 
 		returns (GetKCEConfigResponse);
 
-	rpc SetKabaConfig(.holms.types.tenancy_config.KabaConfig)
+	rpc SetKabaConfig(.holms.types.tenancy_config.KabaEncoderConfig)
 		returns (SetKabaConfigResponse);
 
-	rpc SetMiwaConfig(.holms.types.tenancy_config.MiwaConfig)
+	rpc SetMiwaConfig(.holms.types.tenancy_config.MiwaEncoderConfig)
 		returns (KCESvcSetMiwaConfigResponse);
 
 	rpc SetActiveKCEConfiguration(KCESvcSetActiveKCEConfigRequest)

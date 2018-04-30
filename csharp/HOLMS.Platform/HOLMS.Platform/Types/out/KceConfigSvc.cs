@@ -23,49 +23,50 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cid0ZW5hbmN5X2NvbmZpZy9ycGMva2NlX2NvbmZpZ19zdmMucHJvdG8SHmhv",
-            "bG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLnJwYxogdGVuYW5jeV9jb25maWcv",
-            "a2FiYV9jb25maWcucHJvdG8aIHRlbmFuY3lfY29uZmlnL21pd2FfY29uZmln",
-            "LnByb3RvGi10ZW5hbmN5X2NvbmZpZy9hY3RpdmVfa2NlX2NvbmZpZ3VyYXRp",
-            "b24ucHJvdG8aG2dvb2dsZS9wcm90b2J1Zi9lbXB0eS5wcm90byLtAQoUR2V0",
-            "S0NFQ29uZmlnUmVzcG9uc2USQgoSa2FiYV9jb25maWd1cmF0aW9uGAEgASgL",
-            "MiYuaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuS2FiYUNvbmZpZxJCChJt",
-            "aXdhX2NvbmZpZ3VyYXRpb24YAiABKAsyJi5ob2xtcy50eXBlcy50ZW5hbmN5",
-            "X2NvbmZpZy5NaXdhQ29uZmlnEk0KEWFjdGl2ZV9rY2VfY29uZmlnGAMgASgO",
-            "MjIuaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuQWN0aXZlS0NFQ29uZmln",
-            "dXJhdGlvbiJiChVTZXRLYWJhQ29uZmlnUmVzcG9uc2USSQoGcmVzdWx0GAEg",
-            "ASgOMjkuaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcucnBjLktDRVN2Y1Nl",
-            "dEthYmFDb25maWdSZXN1bHQiYgobS0NFU3ZjU2V0TWl3YUNvbmZpZ1Jlc3Bv",
-            "bnNlEkMKBnJlc3VsdBgBIAEoDjIzLmhvbG1zLnR5cGVzLnRlbmFuY3lfY29u",
-            "ZmlnLnJwYy5TZXRNaXdhQ29uZmlnUmVzdWx0InAKH0tDRVN2Y1NldEFjdGl2",
-            "ZUtDRUNvbmZpZ1JlcXVlc3QSTQoRYWN0aXZlX2tjZV9jb25maWcYASABKA4y",
-            "Mi5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5BY3RpdmVLQ0VDb25maWd1",
-            "cmF0aW9uKs0BChlLQ0VTdmNTZXRLYWJhQ29uZmlnUmVzdWx0EiUKIVNFVF9L",
-            "Q0VfQ09ORklHX0lOVkFMSURfSVBfQUREUkVTUxAAEikKJVNFVF9LQ0VfQ09O",
-            "RklHX0lOVkFMSURfRU5DT0RFUl9OVU1CRVIQARIeChpTRVRfS0NFX0NPTkZJ",
-            "R19JTlZBTElEX1BXRBACEiIKHlNFVF9LQ0VfQ09ORklHX1VOS05PV05fRkFJ",
-            "TFVSRRADEhoKFlNFVF9LQ0VfQ09ORklHX1NVQ0NFU1MQBCqsAQoTU2V0TWl3",
-            "YUNvbmZpZ1Jlc3VsdBImCiJTRVRfTUlXQV9DT05GSUdfSU5WQUxJRF9JUF9B",
-            "RERSRVNTEAASKwonU0VUX01JV0FfQ09ORklHX0lOVkFMSURfVEVSTUlOQUxf",
-            "TlVNQkVSEAESIwofU0VUX01JV0FfQ09ORklHX1VOS05PV05fRkFJTFVSRRAC",
-            "EhsKF1NFVF9NSVdBX0NPTkZJR19TVUNDRVNTEAMyvwMKDEtDRUNvbmZpZ1N2",
-            "YxJTCgNHZXQSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaNC5ob2xtcy50eXBl",
-            "cy50ZW5hbmN5X2NvbmZpZy5ycGMuR2V0S0NFQ29uZmlnUmVzcG9uc2USbgoN",
-            "U2V0S2FiYUNvbmZpZxImLmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLkth",
-            "YmFDb25maWcaNS5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5ycGMuU2V0",
-            "S2FiYUNvbmZpZ1Jlc3BvbnNlEnQKDVNldE1pd2FDb25maWcSJi5ob2xtcy50",
-            "eXBlcy50ZW5hbmN5X2NvbmZpZy5NaXdhQ29uZmlnGjsuaG9sbXMudHlwZXMu",
-            "dGVuYW5jeV9jb25maWcucnBjLktDRVN2Y1NldE1pd2FDb25maWdSZXNwb25z",
-            "ZRJ0ChlTZXRBY3RpdmVLQ0VDb25maWd1cmF0aW9uEj8uaG9sbXMudHlwZXMu",
-            "dGVuYW5jeV9jb25maWcucnBjLktDRVN2Y1NldEFjdGl2ZUtDRUNvbmZpZ1Jl",
-            "cXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHlCM1oRdGVuYW5jeWNvbmZp",
-            "Zy9ycGOqAh1IT0xNUy5UeXBlcy5UZW5hbmN5Q29uZmlnLlJQQ2IGcHJvdG8z"));
+            "bG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLnJwYxoodGVuYW5jeV9jb25maWcv",
+            "a2FiYV9lbmNvZGVyX2NvbmZpZy5wcm90bxoodGVuYW5jeV9jb25maWcvbWl3",
+            "YV9lbmNvZGVyX2NvbmZpZy5wcm90bxordGVuYW5jeV9jb25maWcvYWN0aXZl",
+            "X2tleV9jYXJkX3N5c3RlbS5wcm90bxobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5",
+            "LnByb3RvIvcBChRHZXRLQ0VDb25maWdSZXNwb25zZRJJChJrYWJhX2NvbmZp",
+            "Z3VyYXRpb24YASABKAsyLS5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5L",
+            "YWJhRW5jb2RlckNvbmZpZxJJChJtaXdhX2NvbmZpZ3VyYXRpb24YAiABKAsy",
+            "LS5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5NaXdhRW5jb2RlckNvbmZp",
+            "ZxJJChBhY3RpdmVfa2Nfc3lzdGVtGAMgASgOMi8uaG9sbXMudHlwZXMudGVu",
+            "YW5jeV9jb25maWcuQWN0aXZlS2V5Q2FyZFN5c3RlbSJiChVTZXRLYWJhQ29u",
+            "ZmlnUmVzcG9uc2USSQoGcmVzdWx0GAEgASgOMjkuaG9sbXMudHlwZXMudGVu",
+            "YW5jeV9jb25maWcucnBjLktDRVN2Y1NldEthYmFDb25maWdSZXN1bHQiYgob",
+            "S0NFU3ZjU2V0TWl3YUNvbmZpZ1Jlc3BvbnNlEkMKBnJlc3VsdBgBIAEoDjIz",
+            "LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLnJwYy5TZXRNaXdhQ29uZmln",
+            "UmVzdWx0ImwKH0tDRVN2Y1NldEFjdGl2ZUtDRUNvbmZpZ1JlcXVlc3QSSQoQ",
+            "YWN0aXZlX2tjX3N5c3RlbRgBIAEoDjIvLmhvbG1zLnR5cGVzLnRlbmFuY3lf",
+            "Y29uZmlnLkFjdGl2ZUtleUNhcmRTeXN0ZW0qzQEKGUtDRVN2Y1NldEthYmFD",
+            "b25maWdSZXN1bHQSJQohU0VUX0tDRV9DT05GSUdfSU5WQUxJRF9JUF9BRERS",
+            "RVNTEAASKQolU0VUX0tDRV9DT05GSUdfSU5WQUxJRF9FTkNPREVSX05VTUJF",
+            "UhABEh4KGlNFVF9LQ0VfQ09ORklHX0lOVkFMSURfUFdEEAISIgoeU0VUX0tD",
+            "RV9DT05GSUdfVU5LTk9XTl9GQUlMVVJFEAMSGgoWU0VUX0tDRV9DT05GSUdf",
+            "U1VDQ0VTUxAEKqwBChNTZXRNaXdhQ29uZmlnUmVzdWx0EiYKIlNFVF9NSVdB",
+            "X0NPTkZJR19JTlZBTElEX0lQX0FERFJFU1MQABIrCidTRVRfTUlXQV9DT05G",
+            "SUdfSU5WQUxJRF9URVJNSU5BTF9OVU1CRVIQARIjCh9TRVRfTUlXQV9DT05G",
+            "SUdfVU5LTk9XTl9GQUlMVVJFEAISGwoXU0VUX01JV0FfQ09ORklHX1NVQ0NF",
+            "U1MQAzLNAwoMS0NFQ29uZmlnU3ZjElMKA0dldBIWLmdvb2dsZS5wcm90b2J1",
+            "Zi5FbXB0eRo0LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLnJwYy5HZXRL",
+            "Q0VDb25maWdSZXNwb25zZRJ1Cg1TZXRLYWJhQ29uZmlnEi0uaG9sbXMudHlw",
+            "ZXMudGVuYW5jeV9jb25maWcuS2FiYUVuY29kZXJDb25maWcaNS5ob2xtcy50",
+            "eXBlcy50ZW5hbmN5X2NvbmZpZy5ycGMuU2V0S2FiYUNvbmZpZ1Jlc3BvbnNl",
+            "EnsKDVNldE1pd2FDb25maWcSLS5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZp",
+            "Zy5NaXdhRW5jb2RlckNvbmZpZxo7LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29u",
+            "ZmlnLnJwYy5LQ0VTdmNTZXRNaXdhQ29uZmlnUmVzcG9uc2USdAoZU2V0QWN0",
+            "aXZlS0NFQ29uZmlndXJhdGlvbhI/LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29u",
+            "ZmlnLnJwYy5LQ0VTdmNTZXRBY3RpdmVLQ0VDb25maWdSZXF1ZXN0GhYuZ29v",
+            "Z2xlLnByb3RvYnVmLkVtcHR5QjNaEXRlbmFuY3ljb25maWcvcnBjqgIdSE9M",
+            "TVMuVHlwZXMuVGVuYW5jeUNvbmZpZy5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.TenancyConfig.KabaConfigReflection.Descriptor, global::HOLMS.Types.TenancyConfig.MiwaConfigReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ActiveKceConfigurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.TenancyConfig.KabaEncoderConfigReflection.Descriptor, global::HOLMS.Types.TenancyConfig.MiwaEncoderConfigReflection.Descriptor, global::HOLMS.Types.TenancyConfig.ActiveKeyCardSystemReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetKabaConfigResult), typeof(global::HOLMS.Types.TenancyConfig.RPC.SetMiwaConfigResult), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.GetKCEConfigResponse), global::HOLMS.Types.TenancyConfig.RPC.GetKCEConfigResponse.Parser, new[]{ "KabaConfiguration", "MiwaConfiguration", "ActiveKceConfig" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.GetKCEConfigResponse), global::HOLMS.Types.TenancyConfig.RPC.GetKCEConfigResponse.Parser, new[]{ "KabaConfiguration", "MiwaConfiguration", "ActiveKcSystem" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse), global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse), global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse.Parser, new[]{ "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetActiveKCEConfigRequest), global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetActiveKCEConfigRequest.Parser, new[]{ "ActiveKceConfig" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetActiveKCEConfigRequest), global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetActiveKCEConfigRequest.Parser, new[]{ "ActiveKcSystem" }, null, null, null)
           }));
     }
     #endregion
@@ -116,7 +117,7 @@ namespace HOLMS.Types.TenancyConfig.RPC {
     public GetKCEConfigResponse(GetKCEConfigResponse other) : this() {
       KabaConfiguration = other.kabaConfiguration_ != null ? other.KabaConfiguration.Clone() : null;
       MiwaConfiguration = other.miwaConfiguration_ != null ? other.MiwaConfiguration.Clone() : null;
-      activeKceConfig_ = other.activeKceConfig_;
+      activeKcSystem_ = other.activeKcSystem_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -126,9 +127,9 @@ namespace HOLMS.Types.TenancyConfig.RPC {
 
     /// <summary>Field number for the "kaba_configuration" field.</summary>
     public const int KabaConfigurationFieldNumber = 1;
-    private global::HOLMS.Types.TenancyConfig.KabaConfig kabaConfiguration_;
+    private global::HOLMS.Types.TenancyConfig.KabaEncoderConfig kabaConfiguration_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.TenancyConfig.KabaConfig KabaConfiguration {
+    public global::HOLMS.Types.TenancyConfig.KabaEncoderConfig KabaConfiguration {
       get { return kabaConfiguration_; }
       set {
         kabaConfiguration_ = value;
@@ -137,23 +138,23 @@ namespace HOLMS.Types.TenancyConfig.RPC {
 
     /// <summary>Field number for the "miwa_configuration" field.</summary>
     public const int MiwaConfigurationFieldNumber = 2;
-    private global::HOLMS.Types.TenancyConfig.MiwaConfig miwaConfiguration_;
+    private global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig miwaConfiguration_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.TenancyConfig.MiwaConfig MiwaConfiguration {
+    public global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig MiwaConfiguration {
       get { return miwaConfiguration_; }
       set {
         miwaConfiguration_ = value;
       }
     }
 
-    /// <summary>Field number for the "active_kce_config" field.</summary>
-    public const int ActiveKceConfigFieldNumber = 3;
-    private global::HOLMS.Types.TenancyConfig.ActiveKCEConfiguration activeKceConfig_ = 0;
+    /// <summary>Field number for the "active_kc_system" field.</summary>
+    public const int ActiveKcSystemFieldNumber = 3;
+    private global::HOLMS.Types.TenancyConfig.ActiveKeyCardSystem activeKcSystem_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.TenancyConfig.ActiveKCEConfiguration ActiveKceConfig {
-      get { return activeKceConfig_; }
+    public global::HOLMS.Types.TenancyConfig.ActiveKeyCardSystem ActiveKcSystem {
+      get { return activeKcSystem_; }
       set {
-        activeKceConfig_ = value;
+        activeKcSystem_ = value;
       }
     }
 
@@ -172,7 +173,7 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       }
       if (!object.Equals(KabaConfiguration, other.KabaConfiguration)) return false;
       if (!object.Equals(MiwaConfiguration, other.MiwaConfiguration)) return false;
-      if (ActiveKceConfig != other.ActiveKceConfig) return false;
+      if (ActiveKcSystem != other.ActiveKcSystem) return false;
       return true;
     }
 
@@ -181,7 +182,7 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       int hash = 1;
       if (kabaConfiguration_ != null) hash ^= KabaConfiguration.GetHashCode();
       if (miwaConfiguration_ != null) hash ^= MiwaConfiguration.GetHashCode();
-      if (ActiveKceConfig != 0) hash ^= ActiveKceConfig.GetHashCode();
+      if (ActiveKcSystem != 0) hash ^= ActiveKcSystem.GetHashCode();
       return hash;
     }
 
@@ -200,9 +201,9 @@ namespace HOLMS.Types.TenancyConfig.RPC {
         output.WriteRawTag(18);
         output.WriteMessage(MiwaConfiguration);
       }
-      if (ActiveKceConfig != 0) {
+      if (ActiveKcSystem != 0) {
         output.WriteRawTag(24);
-        output.WriteEnum((int) ActiveKceConfig);
+        output.WriteEnum((int) ActiveKcSystem);
       }
     }
 
@@ -215,8 +216,8 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       if (miwaConfiguration_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MiwaConfiguration);
       }
-      if (ActiveKceConfig != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ActiveKceConfig);
+      if (ActiveKcSystem != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ActiveKcSystem);
       }
       return size;
     }
@@ -228,18 +229,18 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       }
       if (other.kabaConfiguration_ != null) {
         if (kabaConfiguration_ == null) {
-          kabaConfiguration_ = new global::HOLMS.Types.TenancyConfig.KabaConfig();
+          kabaConfiguration_ = new global::HOLMS.Types.TenancyConfig.KabaEncoderConfig();
         }
         KabaConfiguration.MergeFrom(other.KabaConfiguration);
       }
       if (other.miwaConfiguration_ != null) {
         if (miwaConfiguration_ == null) {
-          miwaConfiguration_ = new global::HOLMS.Types.TenancyConfig.MiwaConfig();
+          miwaConfiguration_ = new global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig();
         }
         MiwaConfiguration.MergeFrom(other.MiwaConfiguration);
       }
-      if (other.ActiveKceConfig != 0) {
-        ActiveKceConfig = other.ActiveKceConfig;
+      if (other.ActiveKcSystem != 0) {
+        ActiveKcSystem = other.ActiveKcSystem;
       }
     }
 
@@ -253,20 +254,20 @@ namespace HOLMS.Types.TenancyConfig.RPC {
             break;
           case 10: {
             if (kabaConfiguration_ == null) {
-              kabaConfiguration_ = new global::HOLMS.Types.TenancyConfig.KabaConfig();
+              kabaConfiguration_ = new global::HOLMS.Types.TenancyConfig.KabaEncoderConfig();
             }
             input.ReadMessage(kabaConfiguration_);
             break;
           }
           case 18: {
             if (miwaConfiguration_ == null) {
-              miwaConfiguration_ = new global::HOLMS.Types.TenancyConfig.MiwaConfig();
+              miwaConfiguration_ = new global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig();
             }
             input.ReadMessage(miwaConfiguration_);
             break;
           }
           case 24: {
-            activeKceConfig_ = (global::HOLMS.Types.TenancyConfig.ActiveKCEConfiguration) input.ReadEnum();
+            activeKcSystem_ = (global::HOLMS.Types.TenancyConfig.ActiveKeyCardSystem) input.ReadEnum();
             break;
           }
         }
@@ -533,7 +534,7 @@ namespace HOLMS.Types.TenancyConfig.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public KCESvcSetActiveKCEConfigRequest(KCESvcSetActiveKCEConfigRequest other) : this() {
-      activeKceConfig_ = other.activeKceConfig_;
+      activeKcSystem_ = other.activeKcSystem_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -541,14 +542,14 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       return new KCESvcSetActiveKCEConfigRequest(this);
     }
 
-    /// <summary>Field number for the "active_kce_config" field.</summary>
-    public const int ActiveKceConfigFieldNumber = 1;
-    private global::HOLMS.Types.TenancyConfig.ActiveKCEConfiguration activeKceConfig_ = 0;
+    /// <summary>Field number for the "active_kc_system" field.</summary>
+    public const int ActiveKcSystemFieldNumber = 1;
+    private global::HOLMS.Types.TenancyConfig.ActiveKeyCardSystem activeKcSystem_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.TenancyConfig.ActiveKCEConfiguration ActiveKceConfig {
-      get { return activeKceConfig_; }
+    public global::HOLMS.Types.TenancyConfig.ActiveKeyCardSystem ActiveKcSystem {
+      get { return activeKcSystem_; }
       set {
-        activeKceConfig_ = value;
+        activeKcSystem_ = value;
       }
     }
 
@@ -565,14 +566,14 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ActiveKceConfig != other.ActiveKceConfig) return false;
+      if (ActiveKcSystem != other.ActiveKcSystem) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ActiveKceConfig != 0) hash ^= ActiveKceConfig.GetHashCode();
+      if (ActiveKcSystem != 0) hash ^= ActiveKcSystem.GetHashCode();
       return hash;
     }
 
@@ -583,17 +584,17 @@ namespace HOLMS.Types.TenancyConfig.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (ActiveKceConfig != 0) {
+      if (ActiveKcSystem != 0) {
         output.WriteRawTag(8);
-        output.WriteEnum((int) ActiveKceConfig);
+        output.WriteEnum((int) ActiveKcSystem);
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ActiveKceConfig != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ActiveKceConfig);
+      if (ActiveKcSystem != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ActiveKcSystem);
       }
       return size;
     }
@@ -603,8 +604,8 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       if (other == null) {
         return;
       }
-      if (other.ActiveKceConfig != 0) {
-        ActiveKceConfig = other.ActiveKceConfig;
+      if (other.ActiveKcSystem != 0) {
+        ActiveKcSystem = other.ActiveKcSystem;
       }
     }
 
@@ -617,7 +618,7 @@ namespace HOLMS.Types.TenancyConfig.RPC {
             input.SkipLastField();
             break;
           case 8: {
-            activeKceConfig_ = (global::HOLMS.Types.TenancyConfig.ActiveKCEConfiguration) input.ReadEnum();
+            activeKcSystem_ = (global::HOLMS.Types.TenancyConfig.ActiveKeyCardSystem) input.ReadEnum();
             break;
           }
         }

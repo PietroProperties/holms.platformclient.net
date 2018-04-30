@@ -4,7 +4,7 @@ package holms.types.tenancy_config;
 option csharp_namespace = "HOLMS.Types.TenancyConfig";
 option go_package = "tenancyconfig";
 
-enum ActiveKCEConfiguration {
+enum ActiveKeyCardSystem {
 	KABA_KEYCARD_ENCODER = 0;
 	MIWA_KEYCARD_ENCODER = 1;
 }

@@ -14,9 +14,9 @@ namespace HOLMS.Types.TenancyConfig.RPC {
 
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.RPC.GetKCEConfigResponse> __Marshaller_GetKCEConfigResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.RPC.GetKCEConfigResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.TenancyConfig.KabaConfig> __Marshaller_KabaConfig = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.KabaConfig.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.TenancyConfig.KabaEncoderConfig> __Marshaller_KabaEncoderConfig = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.KabaEncoderConfig.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse> __Marshaller_SetKabaConfigResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.TenancyConfig.MiwaConfig> __Marshaller_MiwaConfig = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.MiwaConfig.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig> __Marshaller_MiwaEncoderConfig = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse> __Marshaller_KCESvcSetMiwaConfigResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetActiveKCEConfigRequest> __Marshaller_KCESvcSetActiveKCEConfigRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetActiveKCEConfigRequest.Parser.ParseFrom);
 
@@ -27,18 +27,18 @@ namespace HOLMS.Types.TenancyConfig.RPC {
         __Marshaller_Empty,
         __Marshaller_GetKCEConfigResponse);
 
-    static readonly Method<global::HOLMS.Types.TenancyConfig.KabaConfig, global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse> __Method_SetKabaConfig = new Method<global::HOLMS.Types.TenancyConfig.KabaConfig, global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse>(
+    static readonly Method<global::HOLMS.Types.TenancyConfig.KabaEncoderConfig, global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse> __Method_SetKabaConfig = new Method<global::HOLMS.Types.TenancyConfig.KabaEncoderConfig, global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse>(
         MethodType.Unary,
         __ServiceName,
         "SetKabaConfig",
-        __Marshaller_KabaConfig,
+        __Marshaller_KabaEncoderConfig,
         __Marshaller_SetKabaConfigResponse);
 
-    static readonly Method<global::HOLMS.Types.TenancyConfig.MiwaConfig, global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse> __Method_SetMiwaConfig = new Method<global::HOLMS.Types.TenancyConfig.MiwaConfig, global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse>(
+    static readonly Method<global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig, global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse> __Method_SetMiwaConfig = new Method<global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig, global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse>(
         MethodType.Unary,
         __ServiceName,
         "SetMiwaConfig",
-        __Marshaller_MiwaConfig,
+        __Marshaller_MiwaEncoderConfig,
         __Marshaller_KCESvcSetMiwaConfigResponse);
 
     static readonly Method<global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetActiveKCEConfigRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetActiveKCEConfiguration = new Method<global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetActiveKCEConfigRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -62,12 +62,12 @@ namespace HOLMS.Types.TenancyConfig.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse> SetKabaConfig(global::HOLMS.Types.TenancyConfig.KabaConfig request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse> SetKabaConfig(global::HOLMS.Types.TenancyConfig.KabaEncoderConfig request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse> SetMiwaConfig(global::HOLMS.Types.TenancyConfig.MiwaConfig request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse> SetMiwaConfig(global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -118,35 +118,35 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Get, null, options, request);
       }
-      public virtual global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse SetKabaConfig(global::HOLMS.Types.TenancyConfig.KabaConfig request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse SetKabaConfig(global::HOLMS.Types.TenancyConfig.KabaEncoderConfig request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SetKabaConfig(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse SetKabaConfig(global::HOLMS.Types.TenancyConfig.KabaConfig request, CallOptions options)
+      public virtual global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse SetKabaConfig(global::HOLMS.Types.TenancyConfig.KabaEncoderConfig request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetKabaConfig, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse> SetKabaConfigAsync(global::HOLMS.Types.TenancyConfig.KabaConfig request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse> SetKabaConfigAsync(global::HOLMS.Types.TenancyConfig.KabaEncoderConfig request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SetKabaConfigAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse> SetKabaConfigAsync(global::HOLMS.Types.TenancyConfig.KabaConfig request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.SetKabaConfigResponse> SetKabaConfigAsync(global::HOLMS.Types.TenancyConfig.KabaEncoderConfig request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetKabaConfig, null, options, request);
       }
-      public virtual global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse SetMiwaConfig(global::HOLMS.Types.TenancyConfig.MiwaConfig request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse SetMiwaConfig(global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SetMiwaConfig(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse SetMiwaConfig(global::HOLMS.Types.TenancyConfig.MiwaConfig request, CallOptions options)
+      public virtual global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse SetMiwaConfig(global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetMiwaConfig, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse> SetMiwaConfigAsync(global::HOLMS.Types.TenancyConfig.MiwaConfig request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse> SetMiwaConfigAsync(global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SetMiwaConfigAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse> SetMiwaConfigAsync(global::HOLMS.Types.TenancyConfig.MiwaConfig request, CallOptions options)
+      public virtual AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.KCESvcSetMiwaConfigResponse> SetMiwaConfigAsync(global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetMiwaConfig, null, options, request);
       }
