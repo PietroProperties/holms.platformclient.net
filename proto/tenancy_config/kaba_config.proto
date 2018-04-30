@@ -4,7 +4,7 @@ package holms.types.tenancy_config;
 option csharp_namespace = "HOLMS.Types.TenancyConfig";
 option go_package = "tenancyconfig";
 
-message KCRConfig {
+message KabaConfig {
 	uint32 post_checkout_grace_hours = 1;
 	string safelok_server_ip_address = 2;
 	uint32 safelok_server_port = 3;

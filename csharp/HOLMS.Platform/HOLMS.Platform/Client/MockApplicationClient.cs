@@ -511,7 +511,7 @@ namespace HOLMS.Platform.Client {
             }
         }
 
-        public KCRConfigSvc.KCRConfigSvcClient KCRConfigSvc {
+        public KCEConfigSvc.KCEConfigSvcClient KCRConfigSvc {
             get {
                 throw new NotImplementedException();
             }
