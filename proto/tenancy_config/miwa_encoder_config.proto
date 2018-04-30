@@ -4,10 +4,9 @@ package holms.types.tenancy_config;
 option csharp_namespace = "HOLMS.Types.TenancyConfig";
 option go_package = "tenancyconfig";
 
-message KCRConfig {
+message MiwaEncoderConfig {
 	uint32 post_checkout_grace_hours = 1;
-	string safelok_server_ip_address = 2;
+	string miwa_server_ip_address = 2;
 	uint32 safelok_server_port = 3;
-	string safelok_server_password = 4;
-	uint32 safelok_encoder_station = 5;
+	uint32 miwa_terminal_number = 4;
 }

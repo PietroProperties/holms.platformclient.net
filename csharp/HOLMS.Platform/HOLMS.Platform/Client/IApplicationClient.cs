@@ -105,7 +105,7 @@ namespace HOLMS.Platform.Client {
         ForeignPropertyConfigurationSvc.ForeignPropertyConfigurationSvcClient ForeignPropertyConfigurationSvc { get; }
         GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc { get; }
         HkPhoneCodeSvc.HkPhoneCodeSvcClient HkPhoneCodeSvc { get; }
-        KCRConfigSvc.KCRConfigSvcClient KCRConfigSvc { get; }
+        KCEConfigSvc.KCEConfigSvcClient KCEConfigSvc { get; }
         IIFExportConfigSvc.IIFExportConfigSvcClient IIFExportConfigSvc { get; }
         PhoneCodeSvc.PhoneCodeSvcClient PhoneCodeSvc { get; }
         PropertySvc.PropertySvcClient PropertySvc { get; }

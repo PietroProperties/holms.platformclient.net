@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+option go_package = "tenancyconfig/rpc";
+
+import "tenancy_config/kaba_encoder_config.proto";
+import "tenancy_config/miwa_encoder_config.proto";
+import "tenancy_config/active_key_card_system.proto";
+import "google/protobuf/empty.proto";
+
+message GetKCEConfigResponse {
+	.holms.types.tenancy_config.KabaEncoderConfig kaba_configuration = 1;
+	.holms.types.tenancy_config.MiwaEncoderConfig miwa_configuration = 2;
+	.holms.types.tenancy_config.ActiveKeyCardSystem active_kc_system = 3;
+}
+
+message SetKabaConfigResponse {
+	KCESvcSetKabaConfigResult result = 1;
+}
+
+enum KCESvcSetKabaConfigResult {
+	SET_KCE_CONFIG_INVALID_IP_ADDRESS = 0;
+	SET_KCE_CONFIG_INVALID_ENCODER_NUMBER = 1;
+	SET_KCE_CONFIG_INVALID_PWD = 2;
+	SET_KCE_CONFIG_UNKNOWN_FAILURE = 3;
+	SET_KCE_CONFIG_SUCCESS = 4;
+}
+
+enum SetMiwaConfigResult {
+	SET_MIWA_CONFIG_INVALID_IP_ADDRESS = 0;
+	SET_MIWA_CONFIG_INVALID_TERMINAL_NUMBER = 1;
+	SET_MIWA_CONFIG_UNKNOWN_FAILURE = 2;
+	SET_MIWA_CONFIG_SUCCESS = 3;
+}
+
+message KCESvcSetMiwaConfigResponse {
+	SetMiwaConfigResult result = 1; 
+}
+
+message KCESvcSetActiveKCEConfigRequest {
+	.holms.types.tenancy_config.ActiveKeyCardSystem active_kc_system = 1;
+}
+
+service KCEConfigSvc {
+	rpc Get(google.protobuf.Empty) 
+		returns (GetKCEConfigResponse);
+
+	rpc SetKabaConfig(.holms.types.tenancy_config.KabaEncoderConfig)
+		returns (SetKabaConfigResponse);
+
+	rpc SetMiwaConfig(.holms.types.tenancy_config.MiwaEncoderConfig)
+		returns (KCESvcSetMiwaConfigResponse);
+
+	rpc SetActiveKCEConfiguration(KCESvcSetActiveKCEConfigRequest)
+		returns (google.protobuf.Empty);
+}
