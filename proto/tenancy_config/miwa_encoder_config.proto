@@ -7,6 +7,6 @@ option go_package = "tenancyconfig";
 message MiwaEncoderConfig {
 	uint32 post_checkout_grace_hours = 1;
 	string miwa_server_ip_address = 2;
-	uint32 safelok_server_port = 3;
+	uint32 miwa_server_port = 3;
 	uint32 miwa_terminal_number = 4;
 }

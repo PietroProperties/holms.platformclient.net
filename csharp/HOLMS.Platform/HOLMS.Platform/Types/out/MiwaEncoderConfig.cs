@@ -23,16 +23,15 @@ namespace HOLMS.Types.TenancyConfig {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cih0ZW5hbmN5X2NvbmZpZy9taXdhX2VuY29kZXJfY29uZmlnLnByb3RvEhpo",
-            "b2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZyKRAQoRTWl3YUVuY29kZXJDb25m",
+            "b2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZyKOAQoRTWl3YUVuY29kZXJDb25m",
             "aWcSIQoZcG9zdF9jaGVja291dF9ncmFjZV9ob3VycxgBIAEoDRIeChZtaXdh",
-            "X3NlcnZlcl9pcF9hZGRyZXNzGAIgASgJEhsKE3NhZmVsb2tfc2VydmVyX3Bv",
-            "cnQYAyABKA0SHAoUbWl3YV90ZXJtaW5hbF9udW1iZXIYBCABKA1CK1oNdGVu",
-            "YW5jeWNvbmZpZ6oCGUhPTE1TLlR5cGVzLlRlbmFuY3lDb25maWdiBnByb3Rv",
-            "Mw=="));
+            "X3NlcnZlcl9pcF9hZGRyZXNzGAIgASgJEhgKEG1pd2Ffc2VydmVyX3BvcnQY",
+            "AyABKA0SHAoUbWl3YV90ZXJtaW5hbF9udW1iZXIYBCABKA1CK1oNdGVuYW5j",
+            "eWNvbmZpZ6oCGUhPTE1TLlR5cGVzLlRlbmFuY3lDb25maWdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig), global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig.Parser, new[]{ "PostCheckoutGraceHours", "MiwaServerIpAddress", "SafelokServerPort", "MiwaTerminalNumber" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig), global::HOLMS.Types.TenancyConfig.MiwaEncoderConfig.Parser, new[]{ "PostCheckoutGraceHours", "MiwaServerIpAddress", "MiwaServerPort", "MiwaTerminalNumber" }, null, null, null)
           }));
     }
     #endregion
@@ -65,7 +64,7 @@ namespace HOLMS.Types.TenancyConfig {
     public MiwaEncoderConfig(MiwaEncoderConfig other) : this() {
       postCheckoutGraceHours_ = other.postCheckoutGraceHours_;
       miwaServerIpAddress_ = other.miwaServerIpAddress_;
-      safelokServerPort_ = other.safelokServerPort_;
+      miwaServerPort_ = other.miwaServerPort_;
       miwaTerminalNumber_ = other.miwaTerminalNumber_;
     }
 
@@ -96,14 +95,14 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
-    /// <summary>Field number for the "safelok_server_port" field.</summary>
-    public const int SafelokServerPortFieldNumber = 3;
-    private uint safelokServerPort_;
+    /// <summary>Field number for the "miwa_server_port" field.</summary>
+    public const int MiwaServerPortFieldNumber = 3;
+    private uint miwaServerPort_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint SafelokServerPort {
-      get { return safelokServerPort_; }
+    public uint MiwaServerPort {
+      get { return miwaServerPort_; }
       set {
-        safelokServerPort_ = value;
+        miwaServerPort_ = value;
       }
     }
 
@@ -133,7 +132,7 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (PostCheckoutGraceHours != other.PostCheckoutGraceHours) return false;
       if (MiwaServerIpAddress != other.MiwaServerIpAddress) return false;
-      if (SafelokServerPort != other.SafelokServerPort) return false;
+      if (MiwaServerPort != other.MiwaServerPort) return false;
       if (MiwaTerminalNumber != other.MiwaTerminalNumber) return false;
       return true;
     }
@@ -143,7 +142,7 @@ namespace HOLMS.Types.TenancyConfig {
       int hash = 1;
       if (PostCheckoutGraceHours != 0) hash ^= PostCheckoutGraceHours.GetHashCode();
       if (MiwaServerIpAddress.Length != 0) hash ^= MiwaServerIpAddress.GetHashCode();
-      if (SafelokServerPort != 0) hash ^= SafelokServerPort.GetHashCode();
+      if (MiwaServerPort != 0) hash ^= MiwaServerPort.GetHashCode();
       if (MiwaTerminalNumber != 0) hash ^= MiwaTerminalNumber.GetHashCode();
       return hash;
     }
@@ -163,9 +162,9 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(18);
         output.WriteString(MiwaServerIpAddress);
       }
-      if (SafelokServerPort != 0) {
+      if (MiwaServerPort != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(SafelokServerPort);
+        output.WriteUInt32(MiwaServerPort);
       }
       if (MiwaTerminalNumber != 0) {
         output.WriteRawTag(32);
@@ -182,8 +181,8 @@ namespace HOLMS.Types.TenancyConfig {
       if (MiwaServerIpAddress.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(MiwaServerIpAddress);
       }
-      if (SafelokServerPort != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SafelokServerPort);
+      if (MiwaServerPort != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MiwaServerPort);
       }
       if (MiwaTerminalNumber != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MiwaTerminalNumber);
@@ -202,8 +201,8 @@ namespace HOLMS.Types.TenancyConfig {
       if (other.MiwaServerIpAddress.Length != 0) {
         MiwaServerIpAddress = other.MiwaServerIpAddress;
       }
-      if (other.SafelokServerPort != 0) {
-        SafelokServerPort = other.SafelokServerPort;
+      if (other.MiwaServerPort != 0) {
+        MiwaServerPort = other.MiwaServerPort;
       }
       if (other.MiwaTerminalNumber != 0) {
         MiwaTerminalNumber = other.MiwaTerminalNumber;
@@ -227,7 +226,7 @@ namespace HOLMS.Types.TenancyConfig {
             break;
           }
           case 24: {
-            SafelokServerPort = input.ReadUInt32();
+            MiwaServerPort = input.ReadUInt32();
             break;
           }
           case 32: {
