@@ -2,7 +2,6 @@
 
 package holms.types.operations.rooms;
 option csharp_namespace = "HOLMS.Types.Operations.Rooms";
-option go_package = "operations/rooms";
 
 import "primitive/uuid.proto";
 

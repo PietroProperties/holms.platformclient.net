@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.operations;
+option csharp_namespace = "HOLMS.Types.Operations";
+
+enum RoomMaintenanceStatev2 {
+	MAINTENANCE_STATUS_CLEAN = 0;
+	MAINTENANCE_STATUS_DIRTY = 1;
+	MAINTENANCE_STATUS_MAID_IN_ROOM = 2;
+}
+
