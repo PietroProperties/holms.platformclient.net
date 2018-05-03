@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package holms.types.operations;
+option csharp_namespace = "HOLMS.Types.Operations";
+
+enum RoomMaintenanceRequest {
+	MAINTENANCE_REQUEST_NONE = 0;
+	MAINTENANCE_REQUEST_CLEAN = 1;
+	MAINTENANCE_REQUEST_DEEP_CLEAN = 2;
+	MAINTENANCE_REQUEST_INSPECT = 3;
+}
+

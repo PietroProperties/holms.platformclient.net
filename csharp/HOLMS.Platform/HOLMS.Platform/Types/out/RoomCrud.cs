@@ -28,9 +28,8 @@ namespace HOLMS.Types.Operations.Rooms {
             "EhEKCWpfd190b2tlbhgBIAEoCRI2CgtjcnVkX2FjdGlvbhgCIAEoDjIhLmhv",
             "bG1zLnR5cGVzLnByaW1pdGl2ZS5DcnVkQWN0aW9uEjIKBmJlZm9yZRgDIAEo",
             "CzIiLmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucm9vbXMuUm9vbRIxCgVhZnRl",
-            "chgEIAEoCzIiLmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucm9vbXMuUm9vbUIx",
-            "WhBvcGVyYXRpb25zL3Jvb21zqgIcSE9MTVMuVHlwZXMuT3BlcmF0aW9ucy5S",
-            "b29tc2IGcHJvdG8z"));
+            "chgEIAEoCzIiLmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucm9vbXMuUm9vbUIf",
+            "qgIcSE9MTVMuVHlwZXMuT3BlcmF0aW9ucy5Sb29tc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Operations.Rooms.RoomReflection.Descriptor, global::HOLMS.Types.Primitive.CrudActionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

@@ -1,9 +1,7 @@
-﻿using HOLMS.Types.Extensions;
-using System;
+﻿using System;
 using HOLMS.Platform.Types;
 using HOLMS.Types.Extensions.Support;
 using HOLMS.Types.Primitive;
-using HOLMS.Types.Folio;
 
 namespace HOLMS.Types.Folio {
     public partial class TaxFeeIndicator : EntityIndicator<TaxFeeIndicator> {

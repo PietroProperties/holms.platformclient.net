@@ -25,8 +25,8 @@ namespace HOLMS.Types.Operations.Rooms {
             "CiVvcGVyYXRpb25zL3Jvb21zL3Jvb21faW5kaWNhdG9yLnByb3RvEhxob2xt",
             "cy50eXBlcy5vcGVyYXRpb25zLnJvb21zGhRwcmltaXRpdmUvdXVpZC5wcm90",
             "byI4Cg1Sb29tSW5kaWNhdG9yEicKAmlkGAEgASgLMhsuaG9sbXMudHlwZXMu",
-            "cHJpbWl0aXZlLlV1aWRCMVoQb3BlcmF0aW9ucy9yb29tc6oCHEhPTE1TLlR5",
-            "cGVzLk9wZXJhdGlvbnMuUm9vbXNiBnByb3RvMw=="));
+            "cHJpbWl0aXZlLlV1aWRCH6oCHEhPTE1TLlR5cGVzLk9wZXJhdGlvbnMuUm9v",
+            "bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

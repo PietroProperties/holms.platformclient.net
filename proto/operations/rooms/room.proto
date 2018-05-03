@@ -2,11 +2,12 @@
 
 package holms.types.operations.rooms;
 option csharp_namespace = "HOLMS.Types.Operations.Rooms";
-option go_package = "operations/rooms";
 
 import "booking/indicators/reservation_indicator.proto";
 import "google/protobuf/timestamp.proto";
-import "operations/room_maintenance_status.proto";
+import "operations/room_maintenance_request.proto";
+import "operations/room_maintenance_state.proto";
+import "operations/room_maintenance_state_v2.proto";
 import "operations/rooms/room_indicator.proto";
 import "supply/room_types/room_type_indicator.proto";
 
@@ -18,10 +19,13 @@ message Room {
 	int32 nights_occupied_counter = 5;
 	google.protobuf.Timestamp last_cleaned_at = 6;
 	holms.types.operations.RoomMaintenanceState maintenance_state = 7;
-	holms.types.supply.room_types.RoomTypeIndicator room_type_id = 8;
-	string room_type_name = 9;
-	holms.types.operations.rooms.RoomIndicator connected_room = 10;
-	string trunk_id = 11;
-	holms.types.booking.indicators.ReservationIndicator occupying_reservation = 12;
-	string kcr_room_number = 13;
+	holms.types.operations.RoomMaintenanceStatev2 maintenance_state_v2 = 8;
+	holms.types.operations.RoomMaintenanceRequest maintenance_request = 9;
+	holms.types.supply.room_types.RoomTypeIndicator room_type_id = 10;
+	string room_type_name = 11;
+	holms.types.operations.rooms.RoomIndicator connected_room = 12;
+	string trunk_id = 13;
+	holms.types.booking.indicators.ReservationIndicator occupying_reservation = 14;
+	string kcr_room_number = 15;
 }
+
