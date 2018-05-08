@@ -35,25 +35,28 @@ namespace HOLMS.Types.Operations.RPC {
             "Z25tZW50UmVxdWVzdBI3Cghhc3NpZ25lZRgBIAEoCzIlLmhvbG1zLnR5cGVz",
             "LmlhbS5TdGFmZk1lbWJlckluZGljYXRvchJDCg5hc3NpZ25lZF9yb29tcxgC",
             "IAMoCzIrLmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucm9vbXMuUm9vbUluZGlj",
-            "YXRvciJlCjBIb3VzZWtlZXBpbmdNYW5hZ2VtZW50U3ZjVXBkYXRlUm9vbVN0",
-            "YXR1c1JlcXVlc3QSMQoFcm9vbXMYASADKAsyIi5ob2xtcy50eXBlcy5vcGVy",
-            "YXRpb25zLnJvb21zLlJvb20ymwMKGUhvdXNla2VlcGluZ01hbmFnZW1lbnRT",
-            "dmMShAEKFEdldEFzc2lnbm1lbnRzQnlEYXRlEiIuaG9sbXMudHlwZXMucHJp",
-            "bWl0aXZlLlBiTG9jYWxEYXRlGkguaG9sbXMudHlwZXMub3BlcmF0aW9ucy5y",
-            "cGMuSG91c2VrZWVwaW5nTWFuYWdlbWVudFN2Y0Fzc2lnbm1lbnRzUmVzcG9u",
-            "c2USfQobQXNzaWduSG91c2VrZWVwZXJUb1Jvb21zTm93EkYuaG9sbXMudHlw",
-            "ZXMub3BlcmF0aW9ucy5ycGMuSG91c2VrZWVwaW5nTWFuYWdlbWVudFN2Y0Fz",
-            "c2lnbm1lbnRSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EngKEFVw",
-            "ZGF0ZVJvb21TdGF0dXMSTC5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJwYy5I",
-            "b3VzZWtlZXBpbmdNYW5hZ2VtZW50U3ZjVXBkYXRlUm9vbVN0YXR1c1JlcXVl",
-            "c3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHlCHaoCGkhPTE1TLlR5cGVzLk9w",
-            "ZXJhdGlvbnMuUlBDYgZwcm90bzM="));
+            "YXRvciJgCitIb3VzZWtlZXBpbmdNYW5hZ2VtZW50U3ZjVXBkYXRlUm9vbXNS",
+            "ZXF1ZXN0EjEKBXJvb21zGAEgAygLMiIuaG9sbXMudHlwZXMub3BlcmF0aW9u",
+            "cy5yb29tcy5Sb29tMpcEChlIb3VzZWtlZXBpbmdNYW5hZ2VtZW50U3ZjEoQB",
+            "ChRHZXRBc3NpZ25tZW50c0J5RGF0ZRIiLmhvbG1zLnR5cGVzLnByaW1pdGl2",
+            "ZS5QYkxvY2FsRGF0ZRpILmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucnBjLkhv",
+            "dXNla2VlcGluZ01hbmFnZW1lbnRTdmNBc3NpZ25tZW50c1Jlc3BvbnNlEn0K",
+            "G0Fzc2lnbkhvdXNla2VlcGVyVG9Sb29tc05vdxJGLmhvbG1zLnR5cGVzLm9w",
+            "ZXJhdGlvbnMucnBjLkhvdXNla2VlcGluZ01hbmFnZW1lbnRTdmNBc3NpZ25t",
+            "ZW50UmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJ/ChxVcGRhdGVS",
+            "b29tTWFpbnRlbmFuY2VSZXF1ZXN0EkcuaG9sbXMudHlwZXMub3BlcmF0aW9u",
+            "cy5ycGMuSG91c2VrZWVwaW5nTWFuYWdlbWVudFN2Y1VwZGF0ZVJvb21zUmVx",
+            "dWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJzChBVcGRhdGVSb29tU3Rh",
+            "dHVzEkcuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ycGMuSG91c2VrZWVwaW5n",
+            "TWFuYWdlbWVudFN2Y1VwZGF0ZVJvb21zUmVxdWVzdBoWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eUIdqgIaSE9MTVMuVHlwZXMuT3BlcmF0aW9ucy5SUENiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.Housekeeping.HousekeepingAssignmentReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse.Parser, new[]{ "Assignments" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentRequest), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentRequest.Parser, new[]{ "Assignee", "AssignedRooms" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest.Parser, new[]{ "Rooms" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest.Parser, new[]{ "Rooms" }, null, null, null)
           }));
     }
     #endregion
@@ -312,10 +315,10 @@ namespace HOLMS.Types.Operations.RPC {
 
   }
 
-  public sealed partial class HousekeepingManagementSvcUpdateRoomStatusRequest : pb::IMessage<HousekeepingManagementSvcUpdateRoomStatusRequest> {
-    private static readonly pb::MessageParser<HousekeepingManagementSvcUpdateRoomStatusRequest> _parser = new pb::MessageParser<HousekeepingManagementSvcUpdateRoomStatusRequest>(() => new HousekeepingManagementSvcUpdateRoomStatusRequest());
+  public sealed partial class HousekeepingManagementSvcUpdateRoomsRequest : pb::IMessage<HousekeepingManagementSvcUpdateRoomsRequest> {
+    private static readonly pb::MessageParser<HousekeepingManagementSvcUpdateRoomsRequest> _parser = new pb::MessageParser<HousekeepingManagementSvcUpdateRoomsRequest>(() => new HousekeepingManagementSvcUpdateRoomsRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<HousekeepingManagementSvcUpdateRoomStatusRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<HousekeepingManagementSvcUpdateRoomsRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -328,20 +331,20 @@ namespace HOLMS.Types.Operations.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public HousekeepingManagementSvcUpdateRoomStatusRequest() {
+    public HousekeepingManagementSvcUpdateRoomsRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public HousekeepingManagementSvcUpdateRoomStatusRequest(HousekeepingManagementSvcUpdateRoomStatusRequest other) : this() {
+    public HousekeepingManagementSvcUpdateRoomsRequest(HousekeepingManagementSvcUpdateRoomsRequest other) : this() {
       rooms_ = other.rooms_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public HousekeepingManagementSvcUpdateRoomStatusRequest Clone() {
-      return new HousekeepingManagementSvcUpdateRoomStatusRequest(this);
+    public HousekeepingManagementSvcUpdateRoomsRequest Clone() {
+      return new HousekeepingManagementSvcUpdateRoomsRequest(this);
     }
 
     /// <summary>Field number for the "rooms" field.</summary>
@@ -356,11 +359,11 @@ namespace HOLMS.Types.Operations.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as HousekeepingManagementSvcUpdateRoomStatusRequest);
+      return Equals(other as HousekeepingManagementSvcUpdateRoomsRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(HousekeepingManagementSvcUpdateRoomStatusRequest other) {
+    public bool Equals(HousekeepingManagementSvcUpdateRoomsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -396,7 +399,7 @@ namespace HOLMS.Types.Operations.RPC {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(HousekeepingManagementSvcUpdateRoomStatusRequest other) {
+    public void MergeFrom(HousekeepingManagementSvcUpdateRoomsRequest other) {
       if (other == null) {
         return;
       }

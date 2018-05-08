@@ -16,7 +16,7 @@ namespace HOLMS.Types.Operations.RPC {
     static readonly Marshaller<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse> __Marshaller_HousekeepingManagementSvcAssignmentsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse.Parser.ParseFrom);
     static readonly Marshaller<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentRequest> __Marshaller_HousekeepingManagementSvcAssignmentRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentRequest.Parser.ParseFrom);
     static readonly Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
-    static readonly Marshaller<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest> __Marshaller_HousekeepingManagementSvcUpdateRoomStatusRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest.Parser.ParseFrom);
+    static readonly Marshaller<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest> __Marshaller_HousekeepingManagementSvcUpdateRoomsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest.Parser.ParseFrom);
 
     static readonly Method<global::HOLMS.Types.Primitive.PbLocalDate, global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse> __Method_GetAssignmentsByDate = new Method<global::HOLMS.Types.Primitive.PbLocalDate, global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcAssignmentsResponse>(
         MethodType.Unary,
@@ -32,11 +32,18 @@ namespace HOLMS.Types.Operations.RPC {
         __Marshaller_HousekeepingManagementSvcAssignmentRequest,
         __Marshaller_Empty);
 
-    static readonly Method<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UpdateRoomStatus = new Method<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly Method<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UpdateRoomMaintenanceRequest = new Method<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        MethodType.Unary,
+        __ServiceName,
+        "UpdateRoomMaintenanceRequest",
+        __Marshaller_HousekeepingManagementSvcUpdateRoomsRequest,
+        __Marshaller_Empty);
+
+    static readonly Method<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UpdateRoomStatus = new Method<global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         MethodType.Unary,
         __ServiceName,
         "UpdateRoomStatus",
-        __Marshaller_HousekeepingManagementSvcUpdateRoomStatusRequest,
+        __Marshaller_HousekeepingManagementSvcUpdateRoomsRequest,
         __Marshaller_Empty);
 
     /// <summary>Service descriptor</summary>
@@ -58,7 +65,12 @@ namespace HOLMS.Types.Operations.RPC {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> UpdateRoomStatus(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> UpdateRoomMaintenanceRequest(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest request, ServerCallContext context)
+      {
+        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> UpdateRoomStatus(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest request, ServerCallContext context)
       {
         throw new RpcException(new Status(StatusCode.Unimplemented, ""));
       }
@@ -120,19 +132,35 @@ namespace HOLMS.Types.Operations.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_AssignHousekeeperToRoomsNow, null, options, request);
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateRoomStatus(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateRoomMaintenanceRequest(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UpdateRoomMaintenanceRequest(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateRoomMaintenanceRequest(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest request, CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateRoomMaintenanceRequest, null, options, request);
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateRoomMaintenanceRequestAsync(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UpdateRoomMaintenanceRequestAsync(request, new CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateRoomMaintenanceRequestAsync(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest request, CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateRoomMaintenanceRequest, null, options, request);
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateRoomStatus(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return UpdateRoomStatus(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateRoomStatus(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest request, CallOptions options)
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateRoomStatus(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest request, CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateRoomStatus, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateRoomStatusAsync(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateRoomStatusAsync(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return UpdateRoomStatusAsync(request, new CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateRoomStatusAsync(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomStatusRequest request, CallOptions options)
+      public virtual AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateRoomStatusAsync(global::HOLMS.Types.Operations.RPC.HousekeepingManagementSvcUpdateRoomsRequest request, CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateRoomStatus, null, options, request);
       }
@@ -148,6 +176,7 @@ namespace HOLMS.Types.Operations.RPC {
       return ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetAssignmentsByDate, serviceImpl.GetAssignmentsByDate)
           .AddMethod(__Method_AssignHousekeeperToRoomsNow, serviceImpl.AssignHousekeeperToRoomsNow)
+          .AddMethod(__Method_UpdateRoomMaintenanceRequest, serviceImpl.UpdateRoomMaintenanceRequest)
           .AddMethod(__Method_UpdateRoomStatus, serviceImpl.UpdateRoomStatus).Build();
     }
 
