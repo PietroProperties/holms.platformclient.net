@@ -12,7 +12,8 @@ namespace HOLMS.Platform.Support.DTOBuilders.Operations {
         public string AdditionalDescription;
         public int NightsOccupiedCounter;
         public DateTime LastCleanedAt;
-        public RoomMaintenanceStatev2 MaintenanceState;
+        public RoomOccupancyState OccupancyState;
+        public RoomMaintenanceState MaintenanceState;
         public RoomMaintenanceRequest MaintenanceRequest;
         public Guid RoomTypeId;
         public string RoomTypeName;
@@ -24,10 +25,11 @@ namespace HOLMS.Platform.Support.DTOBuilders.Operations {
                 EntityId = Ind,
                 Description = Description,
                 RoomNumber = RoomNumber,
+                OccupancyState = OccupancyState,
                 AdditionalDescription = AdditionalDescription,
                 NightsOccupiedCounter = NightsOccupiedCounter,
                 LastCleanedAt = LastCleanedAt.ToTS(),
-                MaintenanceStateV2 = MaintenanceState,
+                MaintenanceState = MaintenanceState,
                 MaintenanceRequest = MaintenanceRequest,
                 RoomTypeId = new RoomTypeIndicator(RoomTypeId),
                 RoomTypeName = RoomTypeName,

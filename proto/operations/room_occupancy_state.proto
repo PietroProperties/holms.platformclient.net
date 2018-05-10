@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package holms.types.operations;
+option csharp_namespace = "HOLMS.Types.Operations";
+
+enum RoomOccupancyState {
+	OCCUPANCY_STATE_VACANT = 0;
+	OCCUPANCY_STATE_RESERVATION_OCCUPIED = 1;
+	OCCUPANCY_STATE_OUT_OF_ORDER = 2;
+}
+

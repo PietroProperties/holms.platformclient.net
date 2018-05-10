@@ -6,7 +6,8 @@ option csharp_namespace = "HOLMS.Types.Operations.Rooms";
 import "booking/indicators/reservation_indicator.proto";
 import "google/protobuf/timestamp.proto";
 import "operations/room_maintenance_request.proto";
-import "operations/room_maintenance_state_v2.proto";
+import "operations/room_maintenance_state.proto";
+import "operations/room_occupancy_state.proto";
 import "operations/rooms/room_indicator.proto";
 import "supply/room_types/room_type_indicator.proto";
 
@@ -17,7 +18,8 @@ message Room {
 	string additional_description = 4;
 	int32 nights_occupied_counter = 5;
 	google.protobuf.Timestamp last_cleaned_at = 6;
-	holms.types.operations.RoomMaintenanceStatev2 maintenance_state_v2 = 8;
+	holms.types.operations.RoomOccupancyState occupancy_state = 7;
+	holms.types.operations.RoomMaintenanceState maintenance_state = 8;
 	holms.types.operations.RoomMaintenanceRequest maintenance_request = 9;
 	holms.types.supply.room_types.RoomTypeIndicator room_type_id = 10;
 	string room_type_name = 11;
