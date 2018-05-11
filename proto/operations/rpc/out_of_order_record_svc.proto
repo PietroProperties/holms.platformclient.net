@@ -28,6 +28,7 @@ enum OutOfOrderRecordCreateResult {
 	OUT_OF_ORDER_RECORD_CREATE_RESERVATION_CONFLICT = 2;
 	OUT_OF_ORDER_RECORD_CREATE_ROOM_NOT_FOUND = 3;
 	OUT_OF_ORDER_RECORD_CREATE_NO_SUPPLY = 4;
+	OUT_OF_ORDER_RECORD_CREATE_OCCUPANCY_CONFLICT = 5;
 }
 
 message OutOfOrderRecordCreateResponse {
@@ -42,20 +43,12 @@ enum OutOfOrderRecordUpdateResult {
 	OUT_OF_ORDER_RECORD_UPDATE_RESERVATION_CONFLICT = 3;
 	OUT_OF_ORDER_RECORD_UPDATE_ROOM_NOT_FOUND = 4;
 	OUT_OF_ORDER_RECORD_UPDATE_NO_AVAILABILITY = 5;
+	OUT_OF_ORDER_RECORD_UPDATE_OCCUPANCY_CONFLICT = 6;
 }
 
 message OutOfOrderRecordUpdateResponse {
 	OutOfOrderRecordUpdateResult result = 1;
 	.holms.types.operations.out_of_order.OutOfOrderRecord record = 2;
-}
-
-enum OutOfOrderRecordCancelResult {
-	OUT_OF_ORDER_RECORD_CANCEL_SUCCESSFUL = 0;
-	OUT_OF_ORDER_RECORD_CANCEL_PRIOR_NOT_FOUND = 1;
-}
-
-message OutOfOrderRecordCancelResponse {
-	OutOfOrderRecordCancelResult result = 1;
 }
 
 enum OutOfOrderRecordDeleteResult {
