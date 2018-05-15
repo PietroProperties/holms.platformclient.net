@@ -116,6 +116,7 @@ namespace HOLMS.Platform.Client {
 
         #region Tenancy Config
         public ChannelManagerConfigurationSvc.ChannelManagerConfigurationSvcClient ChannelManagerConfigurationSvc { get; protected set; }
+        public ChimeSvc.ChimeSvcClient ChimeSvcClient { get; protected set; }
         public ForeignPropertyConfigurationSvc.ForeignPropertyConfigurationSvcClient ForeignPropertyConfigurationSvc { get; protected set; }
         public GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc { get; protected set; }
         public HkPhoneCodeSvc.HkPhoneCodeSvcClient HkPhoneCodeSvc { get; protected set; }
@@ -322,6 +323,7 @@ namespace HOLMS.Platform.Client {
             #region Tenancy Config
             AccountAssignmentSvc = new AccountAssignmentsSvc.AccountAssignmentsSvcClient(_authenticatedChannel);
             ChannelManagerConfigurationSvc = new ChannelManagerConfigurationSvc.ChannelManagerConfigurationSvcClient(_authenticatedChannel);
+            ChimeSvcClient = new ChimeSvc.ChimeSvcClient(_authenticatedChannel);
             ForeignPropertyConfigurationSvc = new ForeignPropertyConfigurationSvc.ForeignPropertyConfigurationSvcClient(_authenticatedChannel);
             GroupBookingMethodSvc = new GroupBookingMethodSvc.GroupBookingMethodSvcClient(_authenticatedChannel);
             KCEConfigSvc = new KCEConfigSvc.KCEConfigSvcClient(_authenticatedChannel);

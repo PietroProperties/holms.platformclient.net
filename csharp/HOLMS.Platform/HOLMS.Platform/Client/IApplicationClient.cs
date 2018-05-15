@@ -102,6 +102,7 @@ namespace HOLMS.Platform.Client {
 
         #region TenancyConfig
         ChannelManagerConfigurationSvc.ChannelManagerConfigurationSvcClient ChannelManagerConfigurationSvc { get; }
+        ChimeSvc.ChimeSvcClient ChimeSvcClient { get; }
         ForeignPropertyConfigurationSvc.ForeignPropertyConfigurationSvcClient ForeignPropertyConfigurationSvc { get; }
         GroupBookingMethodSvc.GroupBookingMethodSvcClient GroupBookingMethodSvc { get; }
         HkPhoneCodeSvc.HkPhoneCodeSvcClient HkPhoneCodeSvc { get; }
