@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+
+import "google/protobuf/empty.proto";
+import "tenancy_config/indicators/property_indicator.proto";
+
+service ChimeSvc {
+	rpc ChimeOpsdayStart (holms.types.tenancy_config.indicators.PropertyIndicator) 
+		returns (google.protobuf.Empty);
+}
+
