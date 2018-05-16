@@ -24,14 +24,15 @@ namespace HOLMS.Types.TenancyConfig {
           string.Concat(
             "Cid0ZW5hbmN5X2NvbmZpZy9vcHNkYXlfc3RhcnRfY2hpbWUucHJvdG8SGmhv",
             "bG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnGjJ0ZW5hbmN5X2NvbmZpZy9pbmRp",
-            "Y2F0b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byJhChBPcHNkYXlTdGFy",
-            "dENoaW1lEk0KC3Byb3BlcnR5X2lkGAEgASgLMjguaG9sbXMudHlwZXMudGVu",
-            "YW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRvckIcqgIZ",
-            "SE9MTVMuVHlwZXMuVGVuYW5jeUNvbmZpZ2IGcHJvdG8z"));
+            "Y2F0b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byJ0ChBPcHNkYXlTdGFy",
+            "dENoaW1lEhEKCWpfd190b2tlbhgBIAEoCRJNCgtwcm9wZXJ0eV9pZBgCIAEo",
+            "CzI4LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJv",
+            "cGVydHlJbmRpY2F0b3JCHKoCGUhPTE1TLlR5cGVzLlRlbmFuY3lDb25maWdi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.OpsdayStartChime), global::HOLMS.Types.TenancyConfig.OpsdayStartChime.Parser, new[]{ "PropertyId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.OpsdayStartChime), global::HOLMS.Types.TenancyConfig.OpsdayStartChime.Parser, new[]{ "JWToken", "PropertyId" }, null, null, null)
           }));
     }
     #endregion
@@ -62,6 +63,7 @@ namespace HOLMS.Types.TenancyConfig {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public OpsdayStartChime(OpsdayStartChime other) : this() {
+      jWToken_ = other.jWToken_;
       PropertyId = other.propertyId_ != null ? other.PropertyId.Clone() : null;
     }
 
@@ -70,8 +72,19 @@ namespace HOLMS.Types.TenancyConfig {
       return new OpsdayStartChime(this);
     }
 
+    /// <summary>Field number for the "j_w_token" field.</summary>
+    public const int JWTokenFieldNumber = 1;
+    private string jWToken_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string JWToken {
+      get { return jWToken_; }
+      set {
+        jWToken_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "property_id" field.</summary>
-    public const int PropertyIdFieldNumber = 1;
+    public const int PropertyIdFieldNumber = 2;
     private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator propertyId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator PropertyId {
@@ -94,6 +107,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (JWToken != other.JWToken) return false;
       if (!object.Equals(PropertyId, other.PropertyId)) return false;
       return true;
     }
@@ -101,6 +115,7 @@ namespace HOLMS.Types.TenancyConfig {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (JWToken.Length != 0) hash ^= JWToken.GetHashCode();
       if (propertyId_ != null) hash ^= PropertyId.GetHashCode();
       return hash;
     }
@@ -112,8 +127,12 @@ namespace HOLMS.Types.TenancyConfig {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (propertyId_ != null) {
+      if (JWToken.Length != 0) {
         output.WriteRawTag(10);
+        output.WriteString(JWToken);
+      }
+      if (propertyId_ != null) {
+        output.WriteRawTag(18);
         output.WriteMessage(PropertyId);
       }
     }
@@ -121,6 +140,9 @@ namespace HOLMS.Types.TenancyConfig {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (JWToken.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(JWToken);
+      }
       if (propertyId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PropertyId);
       }
@@ -131,6 +153,9 @@ namespace HOLMS.Types.TenancyConfig {
     public void MergeFrom(OpsdayStartChime other) {
       if (other == null) {
         return;
+      }
+      if (other.JWToken.Length != 0) {
+        JWToken = other.JWToken;
       }
       if (other.propertyId_ != null) {
         if (propertyId_ == null) {
@@ -149,6 +174,10 @@ namespace HOLMS.Types.TenancyConfig {
             input.SkipLastField();
             break;
           case 10: {
+            JWToken = input.ReadString();
+            break;
+          }
+          case 18: {
             if (propertyId_ == null) {
               propertyId_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
             }

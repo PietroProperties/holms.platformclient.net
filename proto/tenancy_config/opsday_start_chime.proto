@@ -6,6 +6,7 @@ option csharp_namespace = "HOLMS.Types.TenancyConfig";
 import "tenancy_config/indicators/property_indicator.proto";
 
 message OpsdayStartChime {
-	holms.types.tenancy_config.indicators.PropertyIndicator property_id = 1;
+	string j_w_token = 1;
+	holms.types.tenancy_config.indicators.PropertyIndicator property_id = 2;
 }
 
