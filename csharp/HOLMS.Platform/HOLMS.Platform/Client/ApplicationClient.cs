@@ -99,7 +99,6 @@ namespace HOLMS.Platform.Client {
         public PBXSvc.PBXSvcClient PBXSvc { get; protected set; }
         public RoomClaimsSvc.RoomClaimsSvcClient RoomClaimsSvc { get; protected set; }
         public RoomSvc.RoomSvcClient RoomSvc { get; protected set; }
-        public RoomUseStatusCalculatorSvc.RoomUseStatusCalculatorSvcClient RoomUseStatusCalculatorSvc { get; protected set; }
         public StaffMsgSvc.StaffMsgSvcClient StaffMsgSvc { get; protected set; }
         #endregion
 
@@ -297,7 +296,6 @@ namespace HOLMS.Platform.Client {
             AttractionCategorySvc = new AttractionCategorySvc.AttractionCategorySvcClient(_authenticatedChannel);
             CalendarMsgSvc = new CalendarMsgSvc.CalendarMsgSvcClient(_authenticatedChannel);
             GuestFolioTmplSvc = new GuestFolioTemplateSvc.GuestFolioTemplateSvcClient(_authenticatedChannel);
-            RoomUseStatusCalculatorSvc = new RoomUseStatusCalculatorSvc.RoomUseStatusCalculatorSvcClient(_authenticatedChannel);
             HKDirtyTrackingSvc = new HKDirtyTrackingSvc.HKDirtyTrackingSvcClient(_authenticatedChannel);
             HousekeepingManagementSvc = new HousekeepingManagementSvc.HousekeepingManagementSvcClient(_authenticatedChannel);
             HousekeepingTimeSvc = new HousekeepingTimeSvc.HousekeepingTimeSvcClient(_authenticatedChannel);

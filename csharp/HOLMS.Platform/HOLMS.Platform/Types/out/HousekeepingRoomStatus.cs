@@ -24,16 +24,16 @@ namespace HOLMS.Types.Operations.Housekeeping {
           string.Concat(
             "CjZvcGVyYXRpb25zL2hvdXNla2VlcGluZy9ob3VzZWtlZXBpbmdfcm9vbV9z",
             "dGF0dXMucHJvdG8SI2hvbG1zLnR5cGVzLm9wZXJhdGlvbnMuaG91c2VrZWVw",
-            "aW5nGjtvcGVyYXRpb25zL2hvdXNla2VlcGluZy9yb29tX2Fycml2YWxfZGVw",
-            "YXJ0dXJlX3N0YXR1cy5wcm90bxolb3BlcmF0aW9ucy9yb29tcy9yb29tX2lu",
-            "ZGljYXRvci5wcm90byKkAQoWSG91c2VrZWVwaW5nUm9vbVN0YXR1cxI5CgRy",
-            "b29tGAEgASgLMisuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5yb29tcy5Sb29t",
-            "SW5kaWNhdG9yEk8KBnN0YXR1cxgCIAEoDjI/LmhvbG1zLnR5cGVzLm9wZXJh",
-            "dGlvbnMuaG91c2VrZWVwaW5nLlJvb21BcnJpdmFsRGVwYXJ0dXJlU3RhdHVz",
-            "QiaqAiNIT0xNUy5UeXBlcy5PcGVyYXRpb25zLkhvdXNla2VlcGluZ2IGcHJv",
-            "dG8z"));
+            "aW5nGkBvcGVyYXRpb25zL2hvdXNla2VlcGluZy9yb29tX3Jlc2VydmF0aW9u",
+            "X2Fzc2lnbm1lbnRfc3RhdHVzLnByb3RvGiVvcGVyYXRpb25zL3Jvb21zL3Jv",
+            "b21faW5kaWNhdG9yLnByb3RvIqkBChZIb3VzZWtlZXBpbmdSb29tU3RhdHVz",
+            "EjkKBHJvb20YASABKAsyKy5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJvb21z",
+            "LlJvb21JbmRpY2F0b3ISVAoGc3RhdHVzGAIgASgOMkQuaG9sbXMudHlwZXMu",
+            "b3BlcmF0aW9ucy5ob3VzZWtlZXBpbmcuUm9vbVJlc2VydmF0aW9uQXNzaWdu",
+            "bWVudFN0YXR1c0ImqgIjSE9MTVMuVHlwZXMuT3BlcmF0aW9ucy5Ib3VzZWtl",
+            "ZXBpbmdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Operations.Housekeeping.RoomArrivalDepartureStatusReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Operations.Housekeeping.RoomReservationAssignmentStatusReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.Housekeeping.HousekeepingRoomStatus), global::HOLMS.Types.Operations.Housekeeping.HousekeepingRoomStatus.Parser, new[]{ "Room", "Status" }, null, null, null)
           }));
@@ -88,9 +88,9 @@ namespace HOLMS.Types.Operations.Housekeeping {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 2;
-    private global::HOLMS.Types.Operations.Housekeeping.RoomArrivalDepartureStatus status_ = 0;
+    private global::HOLMS.Types.Operations.Housekeeping.RoomReservationAssignmentStatus status_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Operations.Housekeeping.RoomArrivalDepartureStatus Status {
+    public global::HOLMS.Types.Operations.Housekeeping.RoomReservationAssignmentStatus Status {
       get { return status_; }
       set {
         status_ = value;
@@ -184,7 +184,7 @@ namespace HOLMS.Types.Operations.Housekeeping {
             break;
           }
           case 16: {
-            status_ = (global::HOLMS.Types.Operations.Housekeeping.RoomArrivalDepartureStatus) input.ReadEnum();
+            status_ = (global::HOLMS.Types.Operations.Housekeeping.RoomReservationAssignmentStatus) input.ReadEnum();
             break;
           }
         }

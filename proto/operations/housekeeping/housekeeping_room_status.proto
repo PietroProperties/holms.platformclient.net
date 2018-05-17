@@ -3,10 +3,11 @@
 package holms.types.operations.housekeeping;
 option csharp_namespace = "HOLMS.Types.Operations.Housekeeping";
 
-import "operations/housekeeping/room_arrival_departure_status.proto";
+import "operations/housekeeping/room_reservation_assignment_status.proto";
 import "operations/rooms/room_indicator.proto";
 
 message HousekeepingRoomStatus {
     holms.types.operations.rooms.RoomIndicator room = 1;
-    holms.types.operations.housekeeping.RoomArrivalDepartureStatus status = 2;
+    holms.types.operations.housekeeping.RoomReservationAssignmentStatus status = 2;
 }
+

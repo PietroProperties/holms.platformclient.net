@@ -85,7 +85,6 @@ namespace HOLMS.Platform.Client {
         PBXSvc.PBXSvcClient PBXSvc { get; }
         RoomClaimsSvc.RoomClaimsSvcClient RoomClaimsSvc { get; }
         RoomSvc.RoomSvcClient RoomSvc { get; }
-        RoomUseStatusCalculatorSvc.RoomUseStatusCalculatorSvcClient RoomUseStatusCalculatorSvc { get; }
         StaffMsgSvc.StaffMsgSvcClient StaffMsgSvc { get; }
         #endregion
 
