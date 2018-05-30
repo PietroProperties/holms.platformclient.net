@@ -51,6 +51,7 @@ message CardProcessingSvcVoidTransactionResponse {
 
 service CardProcessingSvc {
 	// Tokenize a new card
+	// TODO (DRA): Move this onto the reservation folio svc endpoint
 	rpc VerifyAndTokenizeNotPresentCard(CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest)
 		returns (CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse);
 
