@@ -13,12 +13,14 @@ import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "money/cards/transactions/payment_card_refund_indicator.proto";
 import "money/cards/transactions/processor_transaction_result.proto";
 import "tenancy_config/indicators/property_indicator.proto";
+import "booking/indicators/reservation_indicator.proto";
 import "primitive/pb_interval.proto";
 
 message CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest {
 	holms.types.crm.guests.GuestIndicator guest = 1;
 	holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
 	holms.types.money.cards.NotPresentPaymentCard card = 3;
+	holms.types.booking.indicators.ReservationIndicator res_folio = 4;
 }
 
 message CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse {
@@ -49,6 +51,7 @@ message CardProcessingSvcVoidTransactionResponse {
 
 service CardProcessingSvc {
 	// Tokenize a new card
+	// TODO (DRA): Move this onto the reservation folio svc endpoint
 	rpc VerifyAndTokenizeNotPresentCard(CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest)
 		returns (CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse);
 
