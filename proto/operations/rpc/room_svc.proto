@@ -65,6 +65,7 @@ message RoomSvcIssueRoomKeyRequest {
 	google.protobuf.Timestamp expiry_time = 2;
 	int32 number_of_keys = 3;
 	bool is_new_key = 4;
+	uint32 terminal_number = 5;
 }
 
 enum ROOM_SVC_ISSUE_ROOM_KEY_RESULT {

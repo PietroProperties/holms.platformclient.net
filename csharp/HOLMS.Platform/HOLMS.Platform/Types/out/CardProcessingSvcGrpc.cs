@@ -76,6 +76,7 @@ namespace HOLMS.Types.Money.RPC {
     {
       /// <summary>
       ///  Tokenize a new card
+      ///  TODO (DRA): Move this onto the reservation folio svc endpoint
       /// </summary>
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeNotPresentCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest request, ServerCallContext context)
       {
@@ -144,6 +145,7 @@ namespace HOLMS.Types.Money.RPC {
 
       /// <summary>
       ///  Tokenize a new card
+      ///  TODO (DRA): Move this onto the reservation folio svc endpoint
       /// </summary>
       public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse VerifyAndTokenizeNotPresentCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
@@ -151,6 +153,7 @@ namespace HOLMS.Types.Money.RPC {
       }
       /// <summary>
       ///  Tokenize a new card
+      ///  TODO (DRA): Move this onto the reservation folio svc endpoint
       /// </summary>
       public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse VerifyAndTokenizeNotPresentCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest request, CallOptions options)
       {
@@ -158,6 +161,7 @@ namespace HOLMS.Types.Money.RPC {
       }
       /// <summary>
       ///  Tokenize a new card
+      ///  TODO (DRA): Move this onto the reservation folio svc endpoint
       /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeNotPresentCardAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
@@ -165,6 +169,7 @@ namespace HOLMS.Types.Money.RPC {
       }
       /// <summary>
       ///  Tokenize a new card
+      ///  TODO (DRA): Move this onto the reservation folio svc endpoint
       /// </summary>
       public virtual AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeNotPresentCardAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest request, CallOptions options)
       {

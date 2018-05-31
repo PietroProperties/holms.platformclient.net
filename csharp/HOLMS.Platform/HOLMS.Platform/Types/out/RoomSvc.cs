@@ -46,56 +46,57 @@ namespace HOLMS.Types.Operations.RPC {
             "b25zLnJwYy5Sb29tU3ZjT2NjdXBhbmN5UmVsZWFzZVJlc3VsdCKIAQooUm9v",
             "bVN2Y0dldEJ5T2NjdXB5aW5nUmVzZXJ2YXRpb25SZXNwb25zZRIiChpyZXNl",
             "cnZhdGlvbl9oYXNfcm9vbV9jbGFpbRgBIAEoCBI4CgxjbGFpbWVkX3Jvb20Y",
-            "AiABKAsyIi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJvb21zLlJvb20ixAEK",
+            "AiABKAsyIi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJvb21zLlJvb20i3QEK",
             "GlJvb21TdmNJc3N1ZVJvb21LZXlSZXF1ZXN0EkkKC3Jlc2VydmF0aW9uGAEg",
             "ASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0",
             "aW9uSW5kaWNhdG9yEi8KC2V4cGlyeV90aW1lGAIgASgLMhouZ29vZ2xlLnBy",
             "b3RvYnVmLlRpbWVzdGFtcBIWCg5udW1iZXJfb2Zfa2V5cxgDIAEoBRISCgpp",
-            "c19uZXdfa2V5GAQgASgIImkKG1Jvb21TdmNJc3N1ZVJvb21LZXlSZXNwb25z",
-            "ZRJKCgZyZXN1bHQYASABKA4yOi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJw",
-            "Yy5ST09NX1NWQ19JU1NVRV9ST09NX0tFWV9SRVNVTFQieQooUm9vbVN2Y0dl",
-            "dEhvdXNla2VlcGluZ1Jvb21TdGF0dXNSZXNwb25zZRJNCghzdGF0dXNlcxgB",
-            "IAMoCzI7LmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMuaG91c2VrZWVwaW5nLkhv",
-            "dXNla2VlcGluZ1Jvb21TdGF0dXMqUAoRUm9vbVN2Y0NSVURSZXN1bHQSEAoM",
-            "Q1JVRF9TVUNDRVNTEAASEQoNVU5LTk9XTl9FUlJPUhABEhYKEkRVUExJQ0FU",
-            "RV9UUlVOS19JRBACKsMBChtSb29tU3ZjT2NjdXBhbmN5Q2xhaW1SZXN1bHQS",
-            "GwoXT0NDVVBBTkNZX0NMQUlNX1NVQ0NFU1MQABIeChpGQUlMX1JPT01fQUxS",
-            "RUFEWV9PQ0NVUElFRBABEicKI0ZBSUxfUkVTRVJWQVRJT05fSEFTX0VYSVNU",
-            "SU5HX0NMQUlNEAISLAooT0NDVVBBTkNZX0NMQUlNX1JFU1VMVF9ST09NX05P",
-            "VF9BU1NJR05FRBADEhAKDEZBSUxfVU5LTk9XThAEKqQBCh1Sb29tU3ZjT2Nj",
-            "dXBhbmN5UmVsZWFzZVJlc3VsdBIdChlPQ0NVUEFOQ1lfUkVMRUFTRV9TVUND",
-            "RVNTEAASJAogRkFJTF9OT19FWElTVElOR19PQ0NVUEFOQ1lfQ0xBSU0QARIt",
-            "CilGQUlMX1JFU0VSVkFUSU9OX09DQ1VQWUlOR19ESUZGRVJFTlRfUk9PTRAC",
-            "Eg8KC0ZBSUxfVU5OT1dOEAQqWwoeUk9PTV9TVkNfSVNTVUVfUk9PTV9LRVlf",
-            "UkVTVUxUEgsKB1NVQ0NFU1MQABILCgdUSU1FT1VUEAESEgoOSU5WQUxJRF9D",
-            "T05GSUcQAhILCgdGQUlMVVJFEAMynAkKB1Jvb21TdmMSTQoDQWxsEhYuZ29v",
-            "Z2xlLnByb3RvYnVmLkVtcHR5Gi4uaG9sbXMudHlwZXMub3BlcmF0aW9ucy5y",
-            "cGMuUm9vbVN2Y0FsbFJlc3BvbnNlEl0KBkNyZWF0ZRIiLmhvbG1zLnR5cGVz",
-            "Lm9wZXJhdGlvbnMucm9vbXMuUm9vbRovLmhvbG1zLnR5cGVzLm9wZXJhdGlv",
-            "bnMucnBjLlJvb21TdmNDUlVEUmVzcG9uc2USXQoGVXBkYXRlEiIuaG9sbXMu",
-            "dHlwZXMub3BlcmF0aW9ucy5yb29tcy5Sb29tGi8uaG9sbXMudHlwZXMub3Bl",
-            "cmF0aW9ucy5ycGMuUm9vbVN2Y0NSVURSZXNwb25zZRJdCgZEZWxldGUSIi5o",
-            "b2xtcy50eXBlcy5vcGVyYXRpb25zLnJvb21zLlJvb20aLy5ob2xtcy50eXBl",
-            "cy5wcmltaXRpdmUuU2VydmVyQWN0aW9uQ29uZmlybWF0aW9uEloKB0dldEJ5",
-            "SWQSKy5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJvb21zLlJvb21JbmRpY2F0",
-            "b3IaIi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJvb21zLlJvb20SlwEKGUdl",
-            "dEJ5T2NjdXB5aW5nUmVzZXJ2YXRpb24SNC5ob2xtcy50eXBlcy5ib29raW5n",
-            "LmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3IaRC5ob2xtcy50eXBl",
-            "cy5vcGVyYXRpb25zLnJwYy5Sb29tU3ZjR2V0QnlPY2N1cHlpbmdSZXNlcnZh",
-            "dGlvblJlc3BvbnNlEoQBChJDbGFpbVJvb21PY2N1cGFuY3kSMy5ob2xtcy50",
-            "eXBlcy5vcGVyYXRpb25zLnJwYy5Sb29tU3ZjT2NjdXBhbmN5UmVxdWVzdBo5",
-            "LmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucnBjLlJvb21TdmNDbGFpbU9jY3Vw",
-            "YW5jeVJlc3BvbnNlEogBChRSZWxlYXNlUm9vbU9jY3VwYW5jeRIzLmhvbG1z",
-            "LnR5cGVzLm9wZXJhdGlvbnMucnBjLlJvb21TdmNPY2N1cGFuY3lSZXF1ZXN0",
-            "GjsuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ycGMuUm9vbVN2Y1JlbGVhc2VP",
-            "Y2N1cGFuY3lSZXNwb25zZRJ/CgxJc3N1ZVJvb21LZXkSNi5ob2xtcy50eXBl",
-            "cy5vcGVyYXRpb25zLnJwYy5Sb29tU3ZjSXNzdWVSb29tS2V5UmVxdWVzdBo3",
-            "LmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucnBjLlJvb21TdmNJc3N1ZVJvb21L",
-            "ZXlSZXNwb25zZRKbAQoZR2V0SG91c2VrZWVwaW5nUm9vbVN0YXR1cxI4Lmhv",
-            "bG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJ",
-            "bmRpY2F0b3IaRC5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJwYy5Sb29tU3Zj",
-            "R2V0SG91c2VrZWVwaW5nUm9vbVN0YXR1c1Jlc3BvbnNlQh2qAhpIT0xNUy5U",
-            "eXBlcy5PcGVyYXRpb25zLlJQQ2IGcHJvdG8z"));
+            "c19uZXdfa2V5GAQgASgIEhcKD3Rlcm1pbmFsX251bWJlchgFIAEoDSJpChtS",
+            "b29tU3ZjSXNzdWVSb29tS2V5UmVzcG9uc2USSgoGcmVzdWx0GAEgASgOMjou",
+            "aG9sbXMudHlwZXMub3BlcmF0aW9ucy5ycGMuUk9PTV9TVkNfSVNTVUVfUk9P",
+            "TV9LRVlfUkVTVUxUInkKKFJvb21TdmNHZXRIb3VzZWtlZXBpbmdSb29tU3Rh",
+            "dHVzUmVzcG9uc2USTQoIc3RhdHVzZXMYASADKAsyOy5ob2xtcy50eXBlcy5v",
+            "cGVyYXRpb25zLmhvdXNla2VlcGluZy5Ib3VzZWtlZXBpbmdSb29tU3RhdHVz",
+            "KlAKEVJvb21TdmNDUlVEUmVzdWx0EhAKDENSVURfU1VDQ0VTUxAAEhEKDVVO",
+            "S05PV05fRVJST1IQARIWChJEVVBMSUNBVEVfVFJVTktfSUQQAirDAQobUm9v",
+            "bVN2Y09jY3VwYW5jeUNsYWltUmVzdWx0EhsKF09DQ1VQQU5DWV9DTEFJTV9T",
+            "VUNDRVNTEAASHgoaRkFJTF9ST09NX0FMUkVBRFlfT0NDVVBJRUQQARInCiNG",
+            "QUlMX1JFU0VSVkFUSU9OX0hBU19FWElTVElOR19DTEFJTRACEiwKKE9DQ1VQ",
+            "QU5DWV9DTEFJTV9SRVNVTFRfUk9PTV9OT1RfQVNTSUdORUQQAxIQCgxGQUlM",
+            "X1VOS05PV04QBCqkAQodUm9vbVN2Y09jY3VwYW5jeVJlbGVhc2VSZXN1bHQS",
+            "HQoZT0NDVVBBTkNZX1JFTEVBU0VfU1VDQ0VTUxAAEiQKIEZBSUxfTk9fRVhJ",
+            "U1RJTkdfT0NDVVBBTkNZX0NMQUlNEAESLQopRkFJTF9SRVNFUlZBVElPTl9P",
+            "Q0NVUFlJTkdfRElGRkVSRU5UX1JPT00QAhIPCgtGQUlMX1VOTk9XThAEKlsK",
+            "HlJPT01fU1ZDX0lTU1VFX1JPT01fS0VZX1JFU1VMVBILCgdTVUNDRVNTEAAS",
+            "CwoHVElNRU9VVBABEhIKDklOVkFMSURfQ09ORklHEAISCwoHRkFJTFVSRRAD",
+            "MpwJCgdSb29tU3ZjEk0KA0FsbBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRou",
+            "LmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucnBjLlJvb21TdmNBbGxSZXNwb25z",
+            "ZRJdCgZDcmVhdGUSIi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJvb21zLlJv",
+            "b20aLy5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJwYy5Sb29tU3ZjQ1JVRFJl",
+            "c3BvbnNlEl0KBlVwZGF0ZRIiLmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucm9v",
+            "bXMuUm9vbRovLmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucnBjLlJvb21TdmND",
+            "UlVEUmVzcG9uc2USXQoGRGVsZXRlEiIuaG9sbXMudHlwZXMub3BlcmF0aW9u",
+            "cy5yb29tcy5Sb29tGi8uaG9sbXMudHlwZXMucHJpbWl0aXZlLlNlcnZlckFj",
+            "dGlvbkNvbmZpcm1hdGlvbhJaCgdHZXRCeUlkEisuaG9sbXMudHlwZXMub3Bl",
+            "cmF0aW9ucy5yb29tcy5Sb29tSW5kaWNhdG9yGiIuaG9sbXMudHlwZXMub3Bl",
+            "cmF0aW9ucy5yb29tcy5Sb29tEpcBChlHZXRCeU9jY3VweWluZ1Jlc2VydmF0",
+            "aW9uEjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0",
+            "aW9uSW5kaWNhdG9yGkQuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ycGMuUm9v",
+            "bVN2Y0dldEJ5T2NjdXB5aW5nUmVzZXJ2YXRpb25SZXNwb25zZRKEAQoSQ2xh",
+            "aW1Sb29tT2NjdXBhbmN5EjMuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ycGMu",
+            "Um9vbVN2Y09jY3VwYW5jeVJlcXVlc3QaOS5ob2xtcy50eXBlcy5vcGVyYXRp",
+            "b25zLnJwYy5Sb29tU3ZjQ2xhaW1PY2N1cGFuY3lSZXNwb25zZRKIAQoUUmVs",
+            "ZWFzZVJvb21PY2N1cGFuY3kSMy5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJw",
+            "Yy5Sb29tU3ZjT2NjdXBhbmN5UmVxdWVzdBo7LmhvbG1zLnR5cGVzLm9wZXJh",
+            "dGlvbnMucnBjLlJvb21TdmNSZWxlYXNlT2NjdXBhbmN5UmVzcG9uc2USfwoM",
+            "SXNzdWVSb29tS2V5EjYuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ycGMuUm9v",
+            "bVN2Y0lzc3VlUm9vbUtleVJlcXVlc3QaNy5ob2xtcy50eXBlcy5vcGVyYXRp",
+            "b25zLnJwYy5Sb29tU3ZjSXNzdWVSb29tS2V5UmVzcG9uc2USmwEKGUdldEhv",
+            "dXNla2VlcGluZ1Jvb21TdGF0dXMSOC5ob2xtcy50eXBlcy50ZW5hbmN5X2Nv",
+            "bmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yGkQuaG9sbXMudHlw",
+            "ZXMub3BlcmF0aW9ucy5ycGMuUm9vbVN2Y0dldEhvdXNla2VlcGluZ1Jvb21T",
+            "dGF0dXNSZXNwb25zZUIdqgIaSE9MTVMuVHlwZXMuT3BlcmF0aW9ucy5SUENi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Operations.Housekeeping.HousekeepingRoomStatusReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.ServerActionConfirmationReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Operations.RPC.RoomSvcCRUDResult), typeof(global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyClaimResult), typeof(global::HOLMS.Types.Operations.RPC.RoomSvcOccupancyReleaseResult), typeof(global::HOLMS.Types.Operations.RPC.ROOM_SVC_ISSUE_ROOM_KEY_RESULT), }, new pbr::GeneratedClrTypeInfo[] {
@@ -105,7 +106,7 @@ namespace HOLMS.Types.Operations.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.RoomSvcClaimOccupancyResponse), global::HOLMS.Types.Operations.RPC.RoomSvcClaimOccupancyResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.RoomSvcReleaseOccupancyResponse), global::HOLMS.Types.Operations.RPC.RoomSvcReleaseOccupancyResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.RoomSvcGetByOccupyingReservationResponse), global::HOLMS.Types.Operations.RPC.RoomSvcGetByOccupyingReservationResponse.Parser, new[]{ "ReservationHasRoomClaim", "ClaimedRoom" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.RoomSvcIssueRoomKeyRequest), global::HOLMS.Types.Operations.RPC.RoomSvcIssueRoomKeyRequest.Parser, new[]{ "Reservation", "ExpiryTime", "NumberOfKeys", "IsNewKey" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.RoomSvcIssueRoomKeyRequest), global::HOLMS.Types.Operations.RPC.RoomSvcIssueRoomKeyRequest.Parser, new[]{ "Reservation", "ExpiryTime", "NumberOfKeys", "IsNewKey", "TerminalNumber" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.RoomSvcIssueRoomKeyResponse), global::HOLMS.Types.Operations.RPC.RoomSvcIssueRoomKeyResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.RoomSvcGetHousekeepingRoomStatusResponse), global::HOLMS.Types.Operations.RPC.RoomSvcGetHousekeepingRoomStatusResponse.Parser, new[]{ "Statuses" }, null, null, null)
           }));
@@ -975,6 +976,7 @@ namespace HOLMS.Types.Operations.RPC {
       ExpiryTime = other.expiryTime_ != null ? other.ExpiryTime.Clone() : null;
       numberOfKeys_ = other.numberOfKeys_;
       isNewKey_ = other.isNewKey_;
+      terminalNumber_ = other.terminalNumber_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1026,6 +1028,17 @@ namespace HOLMS.Types.Operations.RPC {
       }
     }
 
+    /// <summary>Field number for the "terminal_number" field.</summary>
+    public const int TerminalNumberFieldNumber = 5;
+    private uint terminalNumber_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint TerminalNumber {
+      get { return terminalNumber_; }
+      set {
+        terminalNumber_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RoomSvcIssueRoomKeyRequest);
@@ -1043,6 +1056,7 @@ namespace HOLMS.Types.Operations.RPC {
       if (!object.Equals(ExpiryTime, other.ExpiryTime)) return false;
       if (NumberOfKeys != other.NumberOfKeys) return false;
       if (IsNewKey != other.IsNewKey) return false;
+      if (TerminalNumber != other.TerminalNumber) return false;
       return true;
     }
 
@@ -1053,6 +1067,7 @@ namespace HOLMS.Types.Operations.RPC {
       if (expiryTime_ != null) hash ^= ExpiryTime.GetHashCode();
       if (NumberOfKeys != 0) hash ^= NumberOfKeys.GetHashCode();
       if (IsNewKey != false) hash ^= IsNewKey.GetHashCode();
+      if (TerminalNumber != 0) hash ^= TerminalNumber.GetHashCode();
       return hash;
     }
 
@@ -1079,6 +1094,10 @@ namespace HOLMS.Types.Operations.RPC {
         output.WriteRawTag(32);
         output.WriteBool(IsNewKey);
       }
+      if (TerminalNumber != 0) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(TerminalNumber);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1095,6 +1114,9 @@ namespace HOLMS.Types.Operations.RPC {
       }
       if (IsNewKey != false) {
         size += 1 + 1;
+      }
+      if (TerminalNumber != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TerminalNumber);
       }
       return size;
     }
@@ -1121,6 +1143,9 @@ namespace HOLMS.Types.Operations.RPC {
       }
       if (other.IsNewKey != false) {
         IsNewKey = other.IsNewKey;
+      }
+      if (other.TerminalNumber != 0) {
+        TerminalNumber = other.TerminalNumber;
       }
     }
 
@@ -1152,6 +1177,10 @@ namespace HOLMS.Types.Operations.RPC {
           }
           case 32: {
             IsNewKey = input.ReadBool();
+            break;
+          }
+          case 40: {
+            TerminalNumber = input.ReadUInt32();
             break;
           }
         }

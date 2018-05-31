@@ -9,5 +9,4 @@ message KabaEncoderConfig {
 	string safelok_server_ip_address = 2;
 	uint32 safelok_server_port = 3;
 	string safelok_server_password = 4;
-	uint32 safelok_encoder_station = 5;
 }
