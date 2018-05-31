@@ -23,16 +23,16 @@ namespace HOLMS.Types.TenancyConfig {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cih0ZW5hbmN5X2NvbmZpZy9rYWJhX2VuY29kZXJfY29uZmlnLnByb3RvEhpo",
-            "b2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZyK4AQoRS2FiYUVuY29kZXJDb25m",
+            "b2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZyKXAQoRS2FiYUVuY29kZXJDb25m",
             "aWcSIQoZcG9zdF9jaGVja291dF9ncmFjZV9ob3VycxgBIAEoDRIhChlzYWZl",
             "bG9rX3NlcnZlcl9pcF9hZGRyZXNzGAIgASgJEhsKE3NhZmVsb2tfc2VydmVy",
-            "X3BvcnQYAyABKA0SHwoXc2FmZWxva19zZXJ2ZXJfcGFzc3dvcmQYBCABKAkS",
-            "HwoXc2FmZWxva19lbmNvZGVyX3N0YXRpb24YBSABKA1CK1oNdGVuYW5jeWNv",
-            "bmZpZ6oCGUhPTE1TLlR5cGVzLlRlbmFuY3lDb25maWdiBnByb3RvMw=="));
+            "X3BvcnQYAyABKA0SHwoXc2FmZWxva19zZXJ2ZXJfcGFzc3dvcmQYBCABKAlC",
+            "K1oNdGVuYW5jeWNvbmZpZ6oCGUhPTE1TLlR5cGVzLlRlbmFuY3lDb25maWdi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.KabaEncoderConfig), global::HOLMS.Types.TenancyConfig.KabaEncoderConfig.Parser, new[]{ "PostCheckoutGraceHours", "SafelokServerIpAddress", "SafelokServerPort", "SafelokServerPassword", "SafelokEncoderStation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.KabaEncoderConfig), global::HOLMS.Types.TenancyConfig.KabaEncoderConfig.Parser, new[]{ "PostCheckoutGraceHours", "SafelokServerIpAddress", "SafelokServerPort", "SafelokServerPassword" }, null, null, null)
           }));
     }
     #endregion
@@ -67,7 +67,6 @@ namespace HOLMS.Types.TenancyConfig {
       safelokServerIpAddress_ = other.safelokServerIpAddress_;
       safelokServerPort_ = other.safelokServerPort_;
       safelokServerPassword_ = other.safelokServerPassword_;
-      safelokEncoderStation_ = other.safelokEncoderStation_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -119,17 +118,6 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
-    /// <summary>Field number for the "safelok_encoder_station" field.</summary>
-    public const int SafelokEncoderStationFieldNumber = 5;
-    private uint safelokEncoderStation_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint SafelokEncoderStation {
-      get { return safelokEncoderStation_; }
-      set {
-        safelokEncoderStation_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as KabaEncoderConfig);
@@ -147,7 +135,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (SafelokServerIpAddress != other.SafelokServerIpAddress) return false;
       if (SafelokServerPort != other.SafelokServerPort) return false;
       if (SafelokServerPassword != other.SafelokServerPassword) return false;
-      if (SafelokEncoderStation != other.SafelokEncoderStation) return false;
       return true;
     }
 
@@ -158,7 +145,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (SafelokServerIpAddress.Length != 0) hash ^= SafelokServerIpAddress.GetHashCode();
       if (SafelokServerPort != 0) hash ^= SafelokServerPort.GetHashCode();
       if (SafelokServerPassword.Length != 0) hash ^= SafelokServerPassword.GetHashCode();
-      if (SafelokEncoderStation != 0) hash ^= SafelokEncoderStation.GetHashCode();
       return hash;
     }
 
@@ -185,10 +171,6 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(34);
         output.WriteString(SafelokServerPassword);
       }
-      if (SafelokEncoderStation != 0) {
-        output.WriteRawTag(40);
-        output.WriteUInt32(SafelokEncoderStation);
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -205,9 +187,6 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (SafelokServerPassword.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(SafelokServerPassword);
-      }
-      if (SafelokEncoderStation != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SafelokEncoderStation);
       }
       return size;
     }
@@ -228,9 +207,6 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.SafelokServerPassword.Length != 0) {
         SafelokServerPassword = other.SafelokServerPassword;
-      }
-      if (other.SafelokEncoderStation != 0) {
-        SafelokEncoderStation = other.SafelokEncoderStation;
       }
     }
 
@@ -256,10 +232,6 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 34: {
             SafelokServerPassword = input.ReadString();
-            break;
-          }
-          case 40: {
-            SafelokEncoderStation = input.ReadUInt32();
             break;
           }
         }
