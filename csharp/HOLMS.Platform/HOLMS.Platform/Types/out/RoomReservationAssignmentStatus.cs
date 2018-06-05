@@ -24,7 +24,7 @@ namespace HOLMS.Types.Operations.Housekeeping {
           string.Concat(
             "CkBvcGVyYXRpb25zL2hvdXNla2VlcGluZy9yb29tX3Jlc2VydmF0aW9uX2Fz",
             "c2lnbm1lbnRfc3RhdHVzLnByb3RvEiNob2xtcy50eXBlcy5vcGVyYXRpb25z",
-            "LmhvdXNla2VlcGluZyrlAwofUm9vbVJlc2VydmF0aW9uQXNzaWdubWVudFN0",
+            "LmhvdXNla2VlcGluZyrRBAofUm9vbVJlc2VydmF0aW9uQXNzaWdubWVudFN0",
             "YXR1cxI0CjBST09NX1JFU0VSVkFUSU9OX0FTU0lHTk1FTlRfU1RBVFVTX1ZB",
             "Q0FOVF9WQUNBTlQQABI7CjdST09NX1JFU0VSVkFUSU9OX0FTU0lHTk1FTlRf",
             "U1RBVFVTX1ZBQ0FOVF9XSVRIX0lOQ09NSU5HEAESLworUk9PTV9SRVNFUlZB",
@@ -34,9 +34,11 @@ namespace HOLMS.Types.Operations.Housekeeping {
             "RUZUX05PTkVfSU5DT01JTkcQBBI8CjhST09NX1JFU0VSVkFUSU9OX0FTU0lH",
             "Tk1FTlRfU1RBVFVTX0xFQVZJTkdfV0lUSF9JTkNPTUlORxAFEjkKNVJPT01f",
             "UkVTRVJWQVRJT05fQVNTSUdOTUVOVF9TVEFUVVNfTEVGVF9XSVRIX0lOQ09N",
-            "SU5HEAYSLAooUk9PTV9SRVNFUlZBVElPTl9BU1NJR05NRU5UX1NUQVRVU19P",
-            "VEhFUhAHQiaqAiNIT0xNUy5UeXBlcy5PcGVyYXRpb25zLkhvdXNla2VlcGlu",
-            "Z2IGcHJvdG8z"));
+            "SU5HEAYSPAo4Uk9PTV9SRVNFUlZBVElPTl9BU1NJR05NRU5UX1NUQVRVU19B",
+            "UlJJVkVEX0FGVEVSX1ZBQ0FOQ1kQBxIsCihST09NX1JFU0VSVkFUSU9OX0FT",
+            "U0lHTk1FTlRfT1VUX09GX09SREVSEAgSLAooUk9PTV9SRVNFUlZBVElPTl9B",
+            "U1NJR05NRU5UX1NUQVRVU19PVEhFUhAJQiaqAiNIT0xNUy5UeXBlcy5PcGVy",
+            "YXRpb25zLkhvdXNla2VlcGluZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Operations.Housekeeping.RoomReservationAssignmentStatus), }, null));
@@ -53,7 +55,9 @@ namespace HOLMS.Types.Operations.Housekeeping {
     [pbr::OriginalName("ROOM_RESERVATION_ASSIGNMENT_STATUS_LEFT_NONE_INCOMING")] LeftNoneIncoming = 4,
     [pbr::OriginalName("ROOM_RESERVATION_ASSIGNMENT_STATUS_LEAVING_WITH_INCOMING")] LeavingWithIncoming = 5,
     [pbr::OriginalName("ROOM_RESERVATION_ASSIGNMENT_STATUS_LEFT_WITH_INCOMING")] LeftWithIncoming = 6,
-    [pbr::OriginalName("ROOM_RESERVATION_ASSIGNMENT_STATUS_OTHER")] Other = 7,
+    [pbr::OriginalName("ROOM_RESERVATION_ASSIGNMENT_STATUS_ARRIVED_AFTER_VACANCY")] ArrivedAfterVacancy = 7,
+    [pbr::OriginalName("ROOM_RESERVATION_ASSIGNMENT_OUT_OF_ORDER")] RoomReservationAssignmentOutOfOrder = 8,
+    [pbr::OriginalName("ROOM_RESERVATION_ASSIGNMENT_STATUS_OTHER")] Other = 9,
   }
 
   #endregion
