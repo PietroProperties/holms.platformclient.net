@@ -4,8 +4,8 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
   set "DEL=%%a"
 )
 
-SET PROTOC=%USERPROFILE%\.nuget\packages\Grpc.Tools\1.0.1\tools\windows_x64\protoc.exe
-SET GRPCC=%USERPROFILE%\.nuget\packages\Grpc.Tools\1.0.1\tools\windows_x64\grpc_csharp_plugin.exe
+SET PROTOC=%USERPROFILE%\.nuget\packages\Grpc.Tools\1.7.1\tools\windows_x64\protoc.exe
+SET GRPCC=%USERPROFILE%\.nuget\packages\Grpc.Tools\1.7.1\tools\windows_x64\grpc_csharp_plugin.exe
 SET OUT_DIR=%~dp0\HOLMS.Platform\HOLMS.Platform\Types\out
 SET INCL_DIR=..\proto\google\protobuf
 

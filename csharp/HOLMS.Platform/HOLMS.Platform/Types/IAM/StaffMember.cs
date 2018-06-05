@@ -3,6 +3,7 @@ using HOLMS.Platform.Types;
 using HOLMS.Types.Extensions;
 using HOLMS.Types.Extensions.Support;
 using HOLMS.Types.Primitive;
+using HOLMS.Platform.Support.DTOExtensions.Primitive;
 
 namespace HOLMS.Types.IAM {
     public partial class StaffMember : EntityDTO<StaffMemberIndicator> {
@@ -28,5 +29,10 @@ namespace HOLMS.Types.IAM {
         }
 
         public override StaffMemberIndicator GetIndicator() => EntityId;
+
+        public string NameFamilyGiven => ContactInfo.GetNameFamilyGiven();
+  
+        public string NameGivenFamily => ContactInfo.GetNameGivenFamily();
+        
     }
 }
