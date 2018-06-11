@@ -120,7 +120,7 @@ namespace HOLMS.Types.Booking.Pricing {
     public const int TaxExemptFieldNumber = 5;
     private bool taxExempt_;
     /// <summary>
-    ///  NOTE(DA) qual tombstone = 4;
+    /// NOTE(DA) qual tombstone = 4;
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool TaxExempt {

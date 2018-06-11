@@ -72,8 +72,8 @@ namespace HOLMS.Types.Primitive {
     public const int RatePpmFieldNumber = 1;
     private uint ratePpm_;
     /// <summary>
-    ///  Rate, expressed in parts per million, giving 1ppm precision,
-    ///  equivalent to .000001 or 0.0001%
+    /// Rate, expressed in parts per million, giving 1ppm precision,
+    /// equivalent to .000001 or 0.0001%
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint RatePpm {

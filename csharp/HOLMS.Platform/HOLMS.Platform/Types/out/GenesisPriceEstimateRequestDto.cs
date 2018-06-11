@@ -104,7 +104,7 @@ namespace HOLMS.Types.Booking.Pricing {
     public const int NumberAdultGuestsFieldNumber = 4;
     private int numberAdultGuests_;
     /// <summary>
-    ///  NOTE(DA) qual tombstone = 3
+    /// NOTE(DA) qual tombstone = 3
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int NumberAdultGuests {

@@ -107,7 +107,7 @@ namespace HOLMS.Types.Operations.NoteRequests {
     public const int DepartmentFieldNumber = 3;
     private global::HOLMS.Types.Operations.NoteRequests.NoteCategory department_ = 0;
     /// <summary>
-    ///  TODO(DA) Change this to department indicator, later
+    /// TODO(DA) Change this to department indicator, later
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Operations.NoteRequests.NoteCategory Department {

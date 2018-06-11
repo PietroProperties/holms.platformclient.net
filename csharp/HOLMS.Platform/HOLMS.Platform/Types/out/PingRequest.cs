@@ -73,7 +73,7 @@ namespace HOLMS.Types.PBXConnector {
     public const int PingCookieFieldNumber = 1;
     private global::HOLMS.Types.Primitive.Uuid pingCookie_;
     /// <summary>
-    ///  To prevent aliasing of concurrent pings
+    /// To prevent aliasing of concurrent pings
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.Uuid PingCookie {
