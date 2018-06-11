@@ -40,8 +40,8 @@ namespace HOLMS.Types.Primitive {
   }
   #region Messages
   /// <summary>
-  ///  We might need to revise this later -- we should have a first-class
-  ///  date type, but it doesn't seem that one is provided by protobuf
+  /// We might need to revise this later -- we should have a first-class
+  /// date type, but it doesn't seem that one is provided by protobuf
   /// </summary>
   public sealed partial class PbInclusiveOpsdateRange : pb::IMessage<PbInclusiveOpsdateRange> {
     private static readonly pb::MessageParser<PbInclusiveOpsdateRange> _parser = new pb::MessageParser<PbInclusiveOpsdateRange>(() => new PbInclusiveOpsdateRange());

@@ -150,7 +150,7 @@ namespace HOLMS.Types.Booking.IncidentalReservations {
     public const int TotalCostFieldNumber = 6;
     private global::HOLMS.Types.Primitive.MonetaryAmount totalCost_;
     /// <summary>
-    ///  Compted/extended properties
+    /// Compted/extended properties
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.MonetaryAmount TotalCost {

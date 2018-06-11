@@ -145,7 +145,7 @@ namespace HOLMS.Types.Operations.RoomClaims {
     public const int ReservationFieldNumber = 6;
     private global::HOLMS.Types.Booking.Indicators.ReservationIndicator reservation_;
     /// <summary>
-    ///  Following are only non-null for case of a reservation
+    /// Following are only non-null for case of a reservation
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Booking.Indicators.ReservationIndicator Reservation {

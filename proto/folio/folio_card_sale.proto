@@ -20,15 +20,16 @@ message FolioCardSale {
 	.holms.types.primitive.MonetaryAmount open_authorized = 5;
 	.holms.types.primitive.MonetaryAmount captured = 6;
 	.holms.types.money.cards.transactions.AuthorizationEntryMethod entry_method = 7;
-	google.protobuf.Timestamp opened_at = 8;
+	google.protobuf.Timestamp authorized_at = 8;
+	google.protobuf.Timestamp captured_at = 9;
 
 	// Card network stuff
-	string application_label = 9;
-	string a_i_d = 10;
-	string application_crypto = 11;
-	string approval_code = 12;
+	string application_label = 10;
+	string a_i_d = 11;
+	string application_crypto = 12;
+	string approval_code = 13;
 
-	.holms.types.iam.StaffMemberIndicator received_by = 13;
-	.holms.types.primitive.MonetaryAmount final_authorized_amount = 14;
+	.holms.types.iam.StaffMemberIndicator received_by = 14;
+	.holms.types.primitive.MonetaryAmount final_authorized_amount = 15;
 }
 

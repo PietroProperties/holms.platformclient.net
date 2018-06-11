@@ -93,7 +93,7 @@ namespace HOLMS.Types.TenancyConfig {
     public const int PropertyForeignTenancyIdFieldNumber = 2;
     private global::HOLMS.Types.Primitive.Uuid propertyForeignTenancyId_;
     /// <summary>
-    ///  UUID is used instead of an indicator for foreign property because the id does not exist in the tenancy
+    /// UUID is used instead of an indicator for foreign property because the id does not exist in the tenancy
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.Uuid PropertyForeignTenancyId {

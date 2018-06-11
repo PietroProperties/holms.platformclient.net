@@ -207,7 +207,7 @@ namespace HOLMS.Types.Booking.Pricing {
         = pb::FieldCodec.ForMessage(90, global::HOLMS.Types.Booking.Pricing.PriceNight.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Pricing.PriceNight> suppliedSubtotals_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Pricing.PriceNight>();
     /// <summary>
-    ///  Raw lodging subtotals before comp stay or taxes
+    /// Raw lodging subtotals before comp stay or taxes
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Booking.Pricing.PriceNight> SuppliedSubtotals {

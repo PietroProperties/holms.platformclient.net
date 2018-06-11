@@ -120,7 +120,7 @@ namespace HOLMS.Types.Booking.Reservations {
     public const int AdultGuestCountFieldNumber = 6;
     private int adultGuestCount_;
     /// <summary>
-    /// bool tax_exempt = 5;
+    ///bool tax_exempt = 5;
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int AdultGuestCount {
