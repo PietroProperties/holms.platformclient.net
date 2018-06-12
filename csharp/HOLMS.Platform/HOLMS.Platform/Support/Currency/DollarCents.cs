@@ -1,5 +1,6 @@
 ﻿using HOLMS.Types.Primitive;
 using System;
+using System.Globalization;
 
 namespace HOLMS.Platform.Support.Currency {
     public struct DollarCents : IComparable<DollarCents>, IEquatable<DollarCents> {
@@ -105,9 +106,9 @@ namespace HOLMS.Platform.Support.Currency {
             // This is tricky. Force $ irrespective of locale, because we really are dealing with dollars.
 
             if (IsNegative) {
-                return $"(${Dollars}.{Cents:00})";
+                return $"(${Dollars:n0}.{Cents:00})";
             } else {
-                return $"${Dollars}.{Cents:00}";
+                return $"${Dollars:n0}.{Cents:00}";
             }
         }
     }
