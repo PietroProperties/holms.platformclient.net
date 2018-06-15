@@ -41,9 +41,8 @@ namespace HOLMS.Types.Reporting.RPC {
             "R2V0U2V0dGxlZFRyYW5zYWN0aW9uc1JlcG9ydBJMLmhvbG1zLnR5cGVzLnJl",
             "cG9ydGluZy5ycGMuQ2FyZENhcHR1cmVSZXBvcnRTdmNHZXRTZXR0bGVkVHJh",
             "bnNhY3Rpb25zUmVxdWVzdBpALmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMu",
-            "Q2FyZENhcHR1cmVSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZUIsWg5vcGVy",
-            "YXRpb25zL3JwY6oCGUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENiBnByb3Rv",
-            "Mw=="));
+            "Q2FyZENhcHR1cmVSZXBvcnRpbmdTdmNSZXBvcnRSZXNwb25zZUIcqgIZSE9M",
+            "TVMuVHlwZXMuUmVwb3J0aW5nLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatchIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

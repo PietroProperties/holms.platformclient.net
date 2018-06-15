@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package holms.types.reporting.rpc;
+option csharp_namespace = "HOLMS.Types.Reporting.RPC";
+
+import "booking/indicators/group_booking_indicator.proto";
+import "reporting/outputs/html_report_response.proto";
+
+message FoliosReportingSvcCardCaptureReportingSvcReportResponse {
+	string document = 1;
+}
+
+service FoliosReportingSvc {
+	rpc GetBookingAssociatedFoliosDetail(.holms.types.booking.indicators.GroupBookingIndicator)
+		returns(.holms.types.reporting.outputs.HtmlReportResponse);
+        rpc GetBookingAssociatedFoliosSummary(.holms.types.booking.indicators.GroupBookingIndicator)
+		returns(.holms.types.reporting.outputs.HtmlReportResponse);
+}
+

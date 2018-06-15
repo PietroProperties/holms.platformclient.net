@@ -16,12 +16,12 @@ namespace HOLMS.Types.CRM.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest> __Marshaller_CorrespondenceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> __Marshaller_CorrespondenceServiceEmailSendResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText> __Marshaller_PropertyArrivalLetterText = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Marshaller_CorrespondenceServiceDocumentResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Marshaller_HtmlReportResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Primitive.PbLocalDate> __Marshaller_PbLocalDate = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.PbLocalDate.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> __Marshaller_ReservationIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> __Marshaller_GroupBookingIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText> __Marshaller_PropertyConfirmationLetterText = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText> __Marshaller_PropertyCancellationLetterText = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> __Marshaller_GroupBookingIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> __Method_SendConfirmationLetter = new grpc::Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse>(
         grpc::MethodType.Unary,
@@ -44,68 +44,61 @@ namespace HOLMS.Types.CRM.RPC {
         __Marshaller_CorrespondenceRequest,
         __Marshaller_CorrespondenceServiceEmailSendResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_PreviewArrivalLetter = new grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_PreviewArrivalLetter = new grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "PreviewArrivalLetter",
         __Marshaller_PropertyArrivalLetterText,
-        __Marshaller_CorrespondenceServiceDocumentResponse);
+        __Marshaller_HtmlReportResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.Primitive.PbLocalDate, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_GetArrivalLetterDocumentsArrivingOn = new grpc::Method<global::HOLMS.Types.Primitive.PbLocalDate, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.Primitive.PbLocalDate, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetArrivalLetterDocumentsArrivingOn = new grpc::Method<global::HOLMS.Types.Primitive.PbLocalDate, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetArrivalLetterDocumentsArrivingOn",
         __Marshaller_PbLocalDate,
-        __Marshaller_CorrespondenceServiceDocumentResponse);
+        __Marshaller_HtmlReportResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_GetArrivalLetterDocument = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetArrivalLetterDocument = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetArrivalLetterDocument",
         __Marshaller_ReservationIndicator,
-        __Marshaller_CorrespondenceServiceDocumentResponse);
+        __Marshaller_HtmlReportResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_GetBookingAssociatedFoliosSummary = new grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetBookingAssociatedFoliosSummary",
-        __Marshaller_GroupBookingIndicator,
-        __Marshaller_CorrespondenceServiceDocumentResponse);
-
-    static readonly grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_PreviewConfirmationLetter = new grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_PreviewConfirmationLetter = new grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "PreviewConfirmationLetter",
         __Marshaller_PropertyConfirmationLetterText,
-        __Marshaller_CorrespondenceServiceDocumentResponse);
+        __Marshaller_HtmlReportResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_PreviewCancellationEmail = new grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_PreviewCancellationEmail = new grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "PreviewCancellationEmail",
         __Marshaller_PropertyCancellationLetterText,
-        __Marshaller_CorrespondenceServiceDocumentResponse);
+        __Marshaller_HtmlReportResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_GetReservationFolioPrintDoc = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetReservationFolioPrintDoc = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetReservationFolioPrintDoc",
         __Marshaller_ReservationIndicator,
-        __Marshaller_CorrespondenceServiceDocumentResponse);
+        __Marshaller_HtmlReportResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_GetGroupBookingFolioPrintDoc = new grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetGroupBookingFolioPrintDoc = new grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetGroupBookingFolioPrintDoc",
         __Marshaller_GroupBookingIndicator,
-        __Marshaller_CorrespondenceServiceDocumentResponse);
+        __Marshaller_HtmlReportResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> __Method_GetReservationConfirmationPrintDoc = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetReservationConfirmationPrintDoc = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetReservationConfirmationPrintDoc",
         __Marshaller_ReservationIndicator,
-        __Marshaller_CorrespondenceServiceDocumentResponse);
+        __Marshaller_HtmlReportResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -143,27 +136,22 @@ namespace HOLMS.Types.CRM.RPC {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> PreviewArrivalLetter(global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> PreviewArrivalLetter(global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetArrivalLetterDocumentsArrivingOn(global::HOLMS.Types.Primitive.PbLocalDate request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetArrivalLetterDocumentsArrivingOn(global::HOLMS.Types.Primitive.PbLocalDate request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetArrivalLetterDocument(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetArrivalLetterDocument(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetBookingAssociatedFoliosSummary(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> PreviewConfirmationLetter(global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> PreviewConfirmationLetter(global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -174,22 +162,22 @@ namespace HOLMS.Types.CRM.RPC {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> PreviewCancellationEmail(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> PreviewCancellationEmail(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetReservationFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetReservationFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetGroupBookingFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetGroupBookingFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetReservationConfirmationPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetReservationConfirmationPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -303,7 +291,7 @@ namespace HOLMS.Types.CRM.RPC {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse PreviewArrivalLetter(global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse PreviewArrivalLetter(global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PreviewArrivalLetter(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -313,7 +301,7 @@ namespace HOLMS.Types.CRM.RPC {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse PreviewArrivalLetter(global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse PreviewArrivalLetter(global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PreviewArrivalLetter, null, options, request);
       }
@@ -325,7 +313,7 @@ namespace HOLMS.Types.CRM.RPC {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> PreviewArrivalLetterAsync(global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> PreviewArrivalLetterAsync(global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PreviewArrivalLetterAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -335,71 +323,55 @@ namespace HOLMS.Types.CRM.RPC {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> PreviewArrivalLetterAsync(global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> PreviewArrivalLetterAsync(global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PreviewArrivalLetter, null, options, request);
       }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetArrivalLetterDocumentsArrivingOn(global::HOLMS.Types.Primitive.PbLocalDate request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetArrivalLetterDocumentsArrivingOn(global::HOLMS.Types.Primitive.PbLocalDate request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetArrivalLetterDocumentsArrivingOn(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetArrivalLetterDocumentsArrivingOn(global::HOLMS.Types.Primitive.PbLocalDate request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetArrivalLetterDocumentsArrivingOn(global::HOLMS.Types.Primitive.PbLocalDate request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetArrivalLetterDocumentsArrivingOn, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetArrivalLetterDocumentsArrivingOnAsync(global::HOLMS.Types.Primitive.PbLocalDate request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetArrivalLetterDocumentsArrivingOnAsync(global::HOLMS.Types.Primitive.PbLocalDate request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetArrivalLetterDocumentsArrivingOnAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetArrivalLetterDocumentsArrivingOnAsync(global::HOLMS.Types.Primitive.PbLocalDate request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetArrivalLetterDocumentsArrivingOnAsync(global::HOLMS.Types.Primitive.PbLocalDate request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetArrivalLetterDocumentsArrivingOn, null, options, request);
       }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetArrivalLetterDocument(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetArrivalLetterDocument(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetArrivalLetterDocument(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetArrivalLetterDocument(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetArrivalLetterDocument(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetArrivalLetterDocument, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetArrivalLetterDocumentAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetArrivalLetterDocumentAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetArrivalLetterDocumentAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetArrivalLetterDocumentAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetArrivalLetterDocumentAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetArrivalLetterDocument, null, options, request);
       }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetBookingAssociatedFoliosSummary(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetBookingAssociatedFoliosSummary(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetBookingAssociatedFoliosSummary(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetBookingAssociatedFoliosSummary, null, options, request);
-      }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetBookingAssociatedFoliosSummaryAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetBookingAssociatedFoliosSummaryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetBookingAssociatedFoliosSummaryAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetBookingAssociatedFoliosSummary, null, options, request);
-      }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse PreviewConfirmationLetter(global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse PreviewConfirmationLetter(global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PreviewConfirmationLetter(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse PreviewConfirmationLetter(global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse PreviewConfirmationLetter(global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PreviewConfirmationLetter, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> PreviewConfirmationLetterAsync(global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> PreviewConfirmationLetterAsync(global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PreviewConfirmationLetterAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> PreviewConfirmationLetterAsync(global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> PreviewConfirmationLetterAsync(global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PreviewConfirmationLetter, null, options, request);
       }
@@ -411,7 +383,7 @@ namespace HOLMS.Types.CRM.RPC {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse PreviewCancellationEmail(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse PreviewCancellationEmail(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PreviewCancellationEmail(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -421,7 +393,7 @@ namespace HOLMS.Types.CRM.RPC {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse PreviewCancellationEmail(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse PreviewCancellationEmail(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PreviewCancellationEmail, null, options, request);
       }
@@ -433,7 +405,7 @@ namespace HOLMS.Types.CRM.RPC {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> PreviewCancellationEmailAsync(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> PreviewCancellationEmailAsync(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return PreviewCancellationEmailAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -443,55 +415,55 @@ namespace HOLMS.Types.CRM.RPC {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> PreviewCancellationEmailAsync(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> PreviewCancellationEmailAsync(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PreviewCancellationEmail, null, options, request);
       }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetReservationFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetReservationFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetReservationFolioPrintDoc(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetReservationFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetReservationFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetReservationFolioPrintDoc, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetReservationFolioPrintDocAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetReservationFolioPrintDocAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetReservationFolioPrintDocAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetReservationFolioPrintDocAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetReservationFolioPrintDocAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationFolioPrintDoc, null, options, request);
       }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetGroupBookingFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetGroupBookingFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetGroupBookingFolioPrintDoc(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetGroupBookingFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetGroupBookingFolioPrintDoc(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetGroupBookingFolioPrintDoc, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetGroupBookingFolioPrintDocAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetGroupBookingFolioPrintDocAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetGroupBookingFolioPrintDocAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetGroupBookingFolioPrintDocAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetGroupBookingFolioPrintDocAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetGroupBookingFolioPrintDoc, null, options, request);
       }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetReservationConfirmationPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetReservationConfirmationPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetReservationConfirmationPrintDoc(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse GetReservationConfirmationPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetReservationConfirmationPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetReservationConfirmationPrintDoc, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetReservationConfirmationPrintDocAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetReservationConfirmationPrintDocAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetReservationConfirmationPrintDocAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceDocumentResponse> GetReservationConfirmationPrintDocAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetReservationConfirmationPrintDocAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationConfirmationPrintDoc, null, options, request);
       }
@@ -513,7 +485,6 @@ namespace HOLMS.Types.CRM.RPC {
           .AddMethod(__Method_PreviewArrivalLetter, serviceImpl.PreviewArrivalLetter)
           .AddMethod(__Method_GetArrivalLetterDocumentsArrivingOn, serviceImpl.GetArrivalLetterDocumentsArrivingOn)
           .AddMethod(__Method_GetArrivalLetterDocument, serviceImpl.GetArrivalLetterDocument)
-          .AddMethod(__Method_GetBookingAssociatedFoliosSummary, serviceImpl.GetBookingAssociatedFoliosSummary)
           .AddMethod(__Method_PreviewConfirmationLetter, serviceImpl.PreviewConfirmationLetter)
           .AddMethod(__Method_PreviewCancellationEmail, serviceImpl.PreviewCancellationEmail)
           .AddMethod(__Method_GetReservationFolioPrintDoc, serviceImpl.GetReservationFolioPrintDoc)
