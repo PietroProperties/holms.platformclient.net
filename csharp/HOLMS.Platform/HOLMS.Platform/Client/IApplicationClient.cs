@@ -121,6 +121,7 @@ namespace HOLMS.Platform.Client {
 
         #region Reporting
         CardCaptureReportingSvc.CardCaptureReportingSvcClient CardCaptureReportingSvc { get; }
+        FoliosReportingSvc.FoliosReportingSvcClient FoliosReportingSvc { get; }
         FrontDeskReportingSvc.FrontDeskReportingSvcClient FrontDeskReportingSvc { get; }
         ManagementReportingSvc.ManagementReportingSvcClient ManagementReportingSvc { get; }
         OperationsReportingSvc.OperationsReportingSvcClient OperationsReportingSvc { get; }
