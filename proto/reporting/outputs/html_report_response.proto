@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package holms.types.reporting.outputs;
 option csharp_namespace = "HOLMS.Types.Reporting.Outputs";
-option go_package = "reporting/outputs";
 
 message HtmlReportResponse {
     string document = 1;

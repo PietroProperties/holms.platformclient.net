@@ -7,4 +7,5 @@ csharp/HOLMS.Platform/HOLMS.Platform.Tests/obj/
 csharp/HOLMS.Platform/packages
 .vs/
 TestResult.xml
+*.swp
 
