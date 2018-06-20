@@ -29,7 +29,7 @@ namespace HOLMS.Types.TenancyConfig {
             "b25ldGFyeV9hbW91bnQucHJvdG8aNmJvb2tpbmcvaW5kaWNhdG9ycy9jYW5j",
             "ZWxsYXRpb25fcG9saWN5X2luZGljYXRvci5wcm90bxoydGVuYW5jeV9jb25m",
             "aWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8aHXByaW1p",
-            "dGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvIr8HCghQcm9wZXJ0eRJLCgllbnRp",
+            "dGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvIuoHCghQcm9wZXJ0eRJLCgllbnRp",
             "dHlfaWQYASABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRp",
             "Y2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEhMKC2Rlc2NyaXB0aW9uGAIgASgJ",
             "EjYKE2NoZWNraW5fdGltZV9vZl9kYXkYAyABKAsyGS5nb29nbGUucHJvdG9i",
@@ -50,13 +50,14 @@ namespace HOLMS.Types.TenancyConfig {
             "dF9zdGF5X2xlbmd0aBgVIAEoBRIPCgd3ZWJzaXRlGBYgASgJEhkKEXJlc2Vy",
             "dmF0aW9uX2VtYWlsGBcgASgJEhIKCmZheF9udW1iZXIYHiABKAkSFgoOYm9v",
             "a2luZ19wcmVmaXgYHyABKAkSJgoedm9pZF9hdXRob3JpemF0aW9uc19hZnRl",
-            "cl9kYXlzGCAgASgNEhsKE25vX3Nob3dfZGVsYXlfaG91cnMYISABKA1CK1oN",
-            "dGVuYW5jeWNvbmZpZ6oCGUhPTE1TLlR5cGVzLlRlbmFuY3lDb25maWdiBnBy",
-            "b3RvMw=="));
+            "cl9kYXlzGCAgASgNEhsKE25vX3Nob3dfZGVsYXlfaG91cnMYISABKA0SKQoh",
+            "Z3VhcmFudGVlX2R1ZV9kYXlzX2JlZm9yZV9hcnJpdmFsGCIgASgNQitaDXRl",
+            "bmFuY3ljb25maWeqAhlIT0xNUy5UeXBlcy5UZW5hbmN5Q29uZmlnYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.Property), global::HOLMS.Types.TenancyConfig.Property.Parser, new[]{ "EntityId", "Description", "CheckinTimeOfDay", "CheckOutTimeOfDay", "AllowedEarlyCheckinHours", "IifDocnumPrefix", "IifCustomerName", "CheckinDeposit", "LastRevenueAccrualStart", "LastDateHkRolloverRan", "Address1", "Address2", "City", "State", "Zip", "PhoneNumber", "CardMerchant", "CancellationPolicy", "DefaultStayLength", "Website", "ReservationEmail", "FaxNumber", "BookingPrefix", "VoidAuthorizationsAfterDays", "NoShowDelayHours" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.Property), global::HOLMS.Types.TenancyConfig.Property.Parser, new[]{ "EntityId", "Description", "CheckinTimeOfDay", "CheckOutTimeOfDay", "AllowedEarlyCheckinHours", "IifDocnumPrefix", "IifCustomerName", "CheckinDeposit", "LastRevenueAccrualStart", "LastDateHkRolloverRan", "Address1", "Address2", "City", "State", "Zip", "PhoneNumber", "CardMerchant", "CancellationPolicy", "DefaultStayLength", "Website", "ReservationEmail", "FaxNumber", "BookingPrefix", "VoidAuthorizationsAfterDays", "NoShowDelayHours", "GuaranteeDueDaysBeforeArrival" }, null, null, null)
           }));
     }
     #endregion
@@ -112,6 +113,7 @@ namespace HOLMS.Types.TenancyConfig {
       bookingPrefix_ = other.bookingPrefix_;
       voidAuthorizationsAfterDays_ = other.voidAuthorizationsAfterDays_;
       noShowDelayHours_ = other.noShowDelayHours_;
+      guaranteeDueDaysBeforeArrival_ = other.guaranteeDueDaysBeforeArrival_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -394,6 +396,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "guarantee_due_days_before_arrival" field.</summary>
+    public const int GuaranteeDueDaysBeforeArrivalFieldNumber = 34;
+    private uint guaranteeDueDaysBeforeArrival_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GuaranteeDueDaysBeforeArrival {
+      get { return guaranteeDueDaysBeforeArrival_; }
+      set {
+        guaranteeDueDaysBeforeArrival_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Property);
@@ -432,6 +445,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (BookingPrefix != other.BookingPrefix) return false;
       if (VoidAuthorizationsAfterDays != other.VoidAuthorizationsAfterDays) return false;
       if (NoShowDelayHours != other.NoShowDelayHours) return false;
+      if (GuaranteeDueDaysBeforeArrival != other.GuaranteeDueDaysBeforeArrival) return false;
       return true;
     }
 
@@ -463,6 +477,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (BookingPrefix.Length != 0) hash ^= BookingPrefix.GetHashCode();
       if (VoidAuthorizationsAfterDays != 0) hash ^= VoidAuthorizationsAfterDays.GetHashCode();
       if (NoShowDelayHours != 0) hash ^= NoShowDelayHours.GetHashCode();
+      if (GuaranteeDueDaysBeforeArrival != 0) hash ^= GuaranteeDueDaysBeforeArrival.GetHashCode();
       return hash;
     }
 
@@ -573,6 +588,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(136, 2);
         output.WriteUInt32(NoShowDelayHours);
       }
+      if (GuaranteeDueDaysBeforeArrival != 0) {
+        output.WriteRawTag(144, 2);
+        output.WriteUInt32(GuaranteeDueDaysBeforeArrival);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -652,6 +671,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (NoShowDelayHours != 0) {
         size += 2 + pb::CodedOutputStream.ComputeUInt32Size(NoShowDelayHours);
+      }
+      if (GuaranteeDueDaysBeforeArrival != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(GuaranteeDueDaysBeforeArrival);
       }
       return size;
     }
@@ -759,6 +781,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.NoShowDelayHours != 0) {
         NoShowDelayHours = other.NoShowDelayHours;
+      }
+      if (other.GuaranteeDueDaysBeforeArrival != 0) {
+        GuaranteeDueDaysBeforeArrival = other.GuaranteeDueDaysBeforeArrival;
       }
     }
 
@@ -892,6 +917,10 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 264: {
             NoShowDelayHours = input.ReadUInt32();
+            break;
+          }
+          case 272: {
+            GuaranteeDueDaysBeforeArrival = input.ReadUInt32();
             break;
           }
         }
