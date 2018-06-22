@@ -25,25 +25,26 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "CjhyZXBvcnRpbmcvaW5wdXRfcGFyYW1zL2Zyb250X2Rlc2tfcmVwb3J0X21h",
             "bmlmZXN0cy5wcm90bxIiaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3Bh",
             "cmFtcxoqcHJpbWl0aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnBy",
-            "b3RvIqgCCiJGcm9udERlc2tDdXJyZW50RGF0ZVJlcG9ydE1hbmlmZXN0EhcK",
-            "D2Fycml2YWxzX3JlcG9ydBgCIAEoCBIZChFkZXBhcnR1cmVzX3JlcG9ydBgD",
-            "IAEoCBIeChZpbl9ob3VzZV9ndWVzdHNfcmVwb3J0GAQgASgIElsKFGd1ZXN0",
-            "X3JlcG9ydF9zb3J0aW5nGAUgASgOMj0uaG9sbXMudHlwZXMucmVwb3J0aW5n",
-            "LmlucHV0X3BhcmFtcy5JbkhvdXNlR3Vlc3RSZXBvcnRTb3J0aW5nEhcKD3Zl",
-            "aGljbGVzX3JlcG9ydBgGIAEoCBIXCg9ub19zaG93c19yZXBvcnQYByABKAgS",
-            "HwoXdW5vY2N1cGllZF9yb29tc19yZXBvcnQYCCABKAgitQEKI0Zyb250RGVz",
-            "a09wc2RhdGVSYW5nZVJlcG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASAB",
-            "KAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRl",
-            "UmFuZ2USIwobZ2VuZXJhbF9hdmFpbGFiaWxpdHlfcmVwb3J0GAIgASgIEiUK",
-            "HWNhbmNlbGxlZF9yZXNlcnZhdGlvbnNfcmVwb3J0GAMgASgIKkIKGUluSG91",
-            "c2VHdWVzdFJlcG9ydFNvcnRpbmcSEQoNQllfR1VFU1RfTkFNRRAAEhIKDkJZ",
-            "X1JPT01fTlVNQkVSEAFCPVoWcmVwb3J0aW5nL2lucHV0X3BhcmFtc6oCIkhP",
-            "TE1TLlR5cGVzLlJlcG9ydGluZy5SZXBvcnRQYXJhbXNiBnByb3RvMw=="));
+            "b3RvIq4CCiJGcm9udERlc2tDdXJyZW50RGF0ZVJlcG9ydE1hbmlmZXN0Eh0K",
+            "FXRvZGF5X2Fycml2YWxzX3JlcG9ydBgBIAEoCBIZChFkZXBhcnR1cmVzX3Jl",
+            "cG9ydBgCIAEoCBIeChZpbl9ob3VzZV9ndWVzdHNfcmVwb3J0GAMgASgIElsK",
+            "FGd1ZXN0X3JlcG9ydF9zb3J0aW5nGAQgASgOMj0uaG9sbXMudHlwZXMucmVw",
+            "b3J0aW5nLmlucHV0X3BhcmFtcy5JbkhvdXNlR3Vlc3RSZXBvcnRTb3J0aW5n",
+            "EhcKD3ZlaGljbGVzX3JlcG9ydBgFIAEoCBIXCg9ub19zaG93c19yZXBvcnQY",
+            "BiABKAgSHwoXdW5vY2N1cGllZF9yb29tc19yZXBvcnQYByABKAgi1QEKI0Zy",
+            "b250RGVza09wc2RhdGVSYW5nZVJlcG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFu",
+            "Z2UYASABKAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVP",
+            "cHNkYXRlUmFuZ2USIwobZ2VuZXJhbF9hdmFpbGFiaWxpdHlfcmVwb3J0GAIg",
+            "ASgIEiUKHWNhbmNlbGxlZF9yZXNlcnZhdGlvbnNfcmVwb3J0GAMgASgIEh4K",
+            "FnJhbmdlZF9hcnJpdmFsc19yZXBvcnQYBCABKAgqQgoZSW5Ib3VzZUd1ZXN0",
+            "UmVwb3J0U29ydGluZxIRCg1CWV9HVUVTVF9OQU1FEAASEgoOQllfUk9PTV9O",
+            "VU1CRVIQAUIlqgIiSE9MTVMuVHlwZXMuUmVwb3J0aW5nLlJlcG9ydFBhcmFt",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.ReportParams.InHouseGuestReportSorting), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest.Parser, new[]{ "ArrivalsReport", "DeparturesReport", "InHouseGuestsReport", "GuestReportSorting", "VehiclesReport", "NoShowsReport", "UnoccupiedRoomsReport" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "GeneralAvailabilityReport", "CancelledReservationsReport" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest.Parser, new[]{ "TodayArrivalsReport", "DeparturesReport", "InHouseGuestsReport", "GuestReportSorting", "VehiclesReport", "NoShowsReport", "UnoccupiedRoomsReport" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "GeneralAvailabilityReport", "CancelledReservationsReport", "RangedArrivalsReport" }, null, null, null)
           }));
     }
     #endregion
@@ -82,7 +83,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FrontDeskCurrentDateReportManifest(FrontDeskCurrentDateReportManifest other) : this() {
-      arrivalsReport_ = other.arrivalsReport_;
+      todayArrivalsReport_ = other.todayArrivalsReport_;
       departuresReport_ = other.departuresReport_;
       inHouseGuestsReport_ = other.inHouseGuestsReport_;
       guestReportSorting_ = other.guestReportSorting_;
@@ -96,19 +97,19 @@ namespace HOLMS.Types.Reporting.ReportParams {
       return new FrontDeskCurrentDateReportManifest(this);
     }
 
-    /// <summary>Field number for the "arrivals_report" field.</summary>
-    public const int ArrivalsReportFieldNumber = 2;
-    private bool arrivalsReport_;
+    /// <summary>Field number for the "today_arrivals_report" field.</summary>
+    public const int TodayArrivalsReportFieldNumber = 1;
+    private bool todayArrivalsReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool ArrivalsReport {
-      get { return arrivalsReport_; }
+    public bool TodayArrivalsReport {
+      get { return todayArrivalsReport_; }
       set {
-        arrivalsReport_ = value;
+        todayArrivalsReport_ = value;
       }
     }
 
     /// <summary>Field number for the "departures_report" field.</summary>
-    public const int DeparturesReportFieldNumber = 3;
+    public const int DeparturesReportFieldNumber = 2;
     private bool departuresReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool DeparturesReport {
@@ -119,7 +120,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
     }
 
     /// <summary>Field number for the "in_house_guests_report" field.</summary>
-    public const int InHouseGuestsReportFieldNumber = 4;
+    public const int InHouseGuestsReportFieldNumber = 3;
     private bool inHouseGuestsReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool InHouseGuestsReport {
@@ -130,7 +131,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
     }
 
     /// <summary>Field number for the "guest_report_sorting" field.</summary>
-    public const int GuestReportSortingFieldNumber = 5;
+    public const int GuestReportSortingFieldNumber = 4;
     private global::HOLMS.Types.Reporting.ReportParams.InHouseGuestReportSorting guestReportSorting_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Reporting.ReportParams.InHouseGuestReportSorting GuestReportSorting {
@@ -141,7 +142,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
     }
 
     /// <summary>Field number for the "vehicles_report" field.</summary>
-    public const int VehiclesReportFieldNumber = 6;
+    public const int VehiclesReportFieldNumber = 5;
     private bool vehiclesReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool VehiclesReport {
@@ -152,7 +153,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
     }
 
     /// <summary>Field number for the "no_shows_report" field.</summary>
-    public const int NoShowsReportFieldNumber = 7;
+    public const int NoShowsReportFieldNumber = 6;
     private bool noShowsReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool NoShowsReport {
@@ -163,7 +164,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
     }
 
     /// <summary>Field number for the "unoccupied_rooms_report" field.</summary>
-    public const int UnoccupiedRoomsReportFieldNumber = 8;
+    public const int UnoccupiedRoomsReportFieldNumber = 7;
     private bool unoccupiedRoomsReport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool UnoccupiedRoomsReport {
@@ -186,7 +187,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ArrivalsReport != other.ArrivalsReport) return false;
+      if (TodayArrivalsReport != other.TodayArrivalsReport) return false;
       if (DeparturesReport != other.DeparturesReport) return false;
       if (InHouseGuestsReport != other.InHouseGuestsReport) return false;
       if (GuestReportSorting != other.GuestReportSorting) return false;
@@ -199,7 +200,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ArrivalsReport != false) hash ^= ArrivalsReport.GetHashCode();
+      if (TodayArrivalsReport != false) hash ^= TodayArrivalsReport.GetHashCode();
       if (DeparturesReport != false) hash ^= DeparturesReport.GetHashCode();
       if (InHouseGuestsReport != false) hash ^= InHouseGuestsReport.GetHashCode();
       if (GuestReportSorting != 0) hash ^= GuestReportSorting.GetHashCode();
@@ -216,32 +217,32 @@ namespace HOLMS.Types.Reporting.ReportParams {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (ArrivalsReport != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(ArrivalsReport);
+      if (TodayArrivalsReport != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(TodayArrivalsReport);
       }
       if (DeparturesReport != false) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(16);
         output.WriteBool(DeparturesReport);
       }
       if (InHouseGuestsReport != false) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(24);
         output.WriteBool(InHouseGuestsReport);
       }
       if (GuestReportSorting != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(32);
         output.WriteEnum((int) GuestReportSorting);
       }
       if (VehiclesReport != false) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(40);
         output.WriteBool(VehiclesReport);
       }
       if (NoShowsReport != false) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(48);
         output.WriteBool(NoShowsReport);
       }
       if (UnoccupiedRoomsReport != false) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(56);
         output.WriteBool(UnoccupiedRoomsReport);
       }
     }
@@ -249,7 +250,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ArrivalsReport != false) {
+      if (TodayArrivalsReport != false) {
         size += 1 + 1;
       }
       if (DeparturesReport != false) {
@@ -278,8 +279,8 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (other == null) {
         return;
       }
-      if (other.ArrivalsReport != false) {
-        ArrivalsReport = other.ArrivalsReport;
+      if (other.TodayArrivalsReport != false) {
+        TodayArrivalsReport = other.TodayArrivalsReport;
       }
       if (other.DeparturesReport != false) {
         DeparturesReport = other.DeparturesReport;
@@ -309,31 +310,31 @@ namespace HOLMS.Types.Reporting.ReportParams {
           default:
             input.SkipLastField();
             break;
-          case 16: {
-            ArrivalsReport = input.ReadBool();
+          case 8: {
+            TodayArrivalsReport = input.ReadBool();
             break;
           }
-          case 24: {
+          case 16: {
             DeparturesReport = input.ReadBool();
             break;
           }
-          case 32: {
+          case 24: {
             InHouseGuestsReport = input.ReadBool();
             break;
           }
-          case 40: {
+          case 32: {
             guestReportSorting_ = (global::HOLMS.Types.Reporting.ReportParams.InHouseGuestReportSorting) input.ReadEnum();
             break;
           }
-          case 48: {
+          case 40: {
             VehiclesReport = input.ReadBool();
             break;
           }
-          case 56: {
+          case 48: {
             NoShowsReport = input.ReadBool();
             break;
           }
-          case 64: {
+          case 56: {
             UnoccupiedRoomsReport = input.ReadBool();
             break;
           }
@@ -370,6 +371,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
       generalAvailabilityReport_ = other.generalAvailabilityReport_;
       cancelledReservationsReport_ = other.cancelledReservationsReport_;
+      rangedArrivalsReport_ = other.rangedArrivalsReport_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -410,6 +412,17 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
+    /// <summary>Field number for the "ranged_arrivals_report" field.</summary>
+    public const int RangedArrivalsReportFieldNumber = 4;
+    private bool rangedArrivalsReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool RangedArrivalsReport {
+      get { return rangedArrivalsReport_; }
+      set {
+        rangedArrivalsReport_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FrontDeskOpsdateRangeReportManifest);
@@ -426,6 +439,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (!object.Equals(DateRange, other.DateRange)) return false;
       if (GeneralAvailabilityReport != other.GeneralAvailabilityReport) return false;
       if (CancelledReservationsReport != other.CancelledReservationsReport) return false;
+      if (RangedArrivalsReport != other.RangedArrivalsReport) return false;
       return true;
     }
 
@@ -435,6 +449,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (dateRange_ != null) hash ^= DateRange.GetHashCode();
       if (GeneralAvailabilityReport != false) hash ^= GeneralAvailabilityReport.GetHashCode();
       if (CancelledReservationsReport != false) hash ^= CancelledReservationsReport.GetHashCode();
+      if (RangedArrivalsReport != false) hash ^= RangedArrivalsReport.GetHashCode();
       return hash;
     }
 
@@ -457,6 +472,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(24);
         output.WriteBool(CancelledReservationsReport);
       }
+      if (RangedArrivalsReport != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(RangedArrivalsReport);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -469,6 +488,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
         size += 1 + 1;
       }
       if (CancelledReservationsReport != false) {
+        size += 1 + 1;
+      }
+      if (RangedArrivalsReport != false) {
         size += 1 + 1;
       }
       return size;
@@ -490,6 +512,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
       if (other.CancelledReservationsReport != false) {
         CancelledReservationsReport = other.CancelledReservationsReport;
+      }
+      if (other.RangedArrivalsReport != false) {
+        RangedArrivalsReport = other.RangedArrivalsReport;
       }
     }
 
@@ -514,6 +539,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 24: {
             CancelledReservationsReport = input.ReadBool();
+            break;
+          }
+          case 32: {
+            RangedArrivalsReport = input.ReadBool();
             break;
           }
         }

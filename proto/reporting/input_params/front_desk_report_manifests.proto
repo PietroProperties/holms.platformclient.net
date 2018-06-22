@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package holms.types.reporting.input_params;
 option csharp_namespace = "HOLMS.Types.Reporting.ReportParams";
-option go_package = "reporting/input_params";
 
 import "primitive/pb_inclusive_opsdate_range.proto";
 
@@ -12,17 +11,18 @@ enum InHouseGuestReportSorting {
 }
 
 message FrontDeskCurrentDateReportManifest {
-	bool arrivals_report = 2;
-	bool departures_report = 3;
-	bool in_house_guests_report = 4;
-	InHouseGuestReportSorting guest_report_sorting = 5;
-	bool vehicles_report = 6;
-	bool no_shows_report = 7;
-	bool unoccupied_rooms_report = 8;
+	bool today_arrivals_report = 1;
+	bool departures_report = 2;
+	bool in_house_guests_report = 3;
+	InHouseGuestReportSorting guest_report_sorting = 4;
+	bool vehicles_report = 5;
+	bool no_shows_report = 6;
+	bool unoccupied_rooms_report = 7;
 }
 
 message FrontDeskOpsdateRangeReportManifest {
 	holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
 	bool general_availability_report = 2;
 	bool cancelled_reservations_report = 3;
+	bool ranged_arrivals_report = 4;
 }
