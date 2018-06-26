@@ -2,7 +2,6 @@
 
 package holms.types.booking.pricing;
 option csharp_namespace = "HOLMS.Types.Booking.Pricing";
-option go_package = "booking/pricing";
 
 import "primitive/monetary_amount.proto";
 import "booking/pricing/price_night.proto";
@@ -19,7 +18,9 @@ message ReservationPriceEstimate {
 	bool is_available = 8;
 	bool violates_mlos = 9;
 	bool violates_cta = 10;
+	bool all_days_have_releasable_holds = 11;
 
 	// Raw lodging subtotals before comp stay or taxes
-	repeated holms.types.booking.pricing.PriceNight supplied_subtotals = 11;
+	repeated holms.types.booking.pricing.PriceNight supplied_subtotals = 12;
 }
+
