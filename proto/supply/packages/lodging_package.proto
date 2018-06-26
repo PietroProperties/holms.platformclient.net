@@ -2,7 +2,6 @@
 
 package holms.types.supply.packages;
 option csharp_namespace = "HOLMS.Types.Supply.Packages";
-option go_package = "supply/packages";
 
 import "google/protobuf/timestamp.proto";
 import "supply/priced_offered_lodging.proto";
@@ -10,7 +9,9 @@ import "supply/packages/lodging_package_indicator.proto";
 
 message LodgingPackage {
 	bool bookable = 1;
-	repeated holms.types.supply.PricedOfferedLodging offers = 2;
-	.holms.types.supply.packages.LodgingPackageIndicator package_id = 3;
-	google.protobuf.Timestamp expires_at = 4;
+	bool all_nights_have_releasable_holds = 2;
+	repeated holms.types.supply.PricedOfferedLodging offers = 3;
+	.holms.types.supply.packages.LodgingPackageIndicator package_id = 4;
+	google.protobuf.Timestamp expires_at = 5;
 }
+
