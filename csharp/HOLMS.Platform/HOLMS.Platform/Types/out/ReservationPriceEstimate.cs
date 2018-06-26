@@ -25,7 +25,7 @@ namespace HOLMS.Types.Booking.Pricing {
             "CjBib29raW5nL3ByaWNpbmcvcmVzZXJ2YXRpb25fcHJpY2VfZXN0aW1hdGUu",
             "cHJvdG8SG2hvbG1zLnR5cGVzLmJvb2tpbmcucHJpY2luZxofcHJpbWl0aXZl",
             "L21vbmV0YXJ5X2Ftb3VudC5wcm90bxohYm9va2luZy9wcmljaW5nL3ByaWNl",
-            "X25pZ2h0LnByb3RvItsEChhSZXNlcnZhdGlvblByaWNlRXN0aW1hdGUSNwoG",
+            "X25pZ2h0LnByb3RvItgEChhSZXNlcnZhdGlvblByaWNlRXN0aW1hdGUSNwoG",
             "cHJpY2VzGAEgAygLMicuaG9sbXMudHlwZXMuYm9va2luZy5wcmljaW5nLlBy",
             "aWNlTmlnaHQSPwoQbG9kZ2luZ19zdWJ0b3RhbBgCIAEoCzIlLmhvbG1zLnR5",
             "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJCChNpbmNpZGVudGFsX3N1",
@@ -36,14 +36,14 @@ namespace HOLMS.Types.Booking.Pricing {
             "ZXN0aW1hdGVkX3RvdGFsGAYgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZl",
             "Lk1vbmV0YXJ5QW1vdW50EhQKDGlzX3ByaWNlYWJsZRgHIAEoCBIUCgxpc19h",
             "dmFpbGFibGUYCCABKAgSFQoNdmlvbGF0ZXNfbWxvcxgJIAEoCBIUCgx2aW9s",
-            "YXRlc19jdGEYCiABKAgSJgoeYWxsX2RheXNfaGF2ZV9yZWxlYXNhYmxlX2hv",
-            "bGRzGAsgASgIEkMKEnN1cHBsaWVkX3N1YnRvdGFscxgMIAMoCzInLmhvbG1z",
-            "LnR5cGVzLmJvb2tpbmcucHJpY2luZy5QcmljZU5pZ2h0Qh6qAhtIT0xNUy5U",
-            "eXBlcy5Cb29raW5nLlByaWNpbmdiBnByb3RvMw=="));
+            "YXRlc19jdGEYCiABKAgSIwobaXNfYXZhaWxhYmxlX3dpdGhfaG9sZF9kcm9w",
+            "GAsgASgIEkMKEnN1cHBsaWVkX3N1YnRvdGFscxgMIAMoCzInLmhvbG1zLnR5",
+            "cGVzLmJvb2tpbmcucHJpY2luZy5QcmljZU5pZ2h0Qh6qAhtIT0xNUy5UeXBl",
+            "cy5Cb29raW5nLlByaWNpbmdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Pricing.PriceNightReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate), global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate.Parser, new[]{ "Prices", "LodgingSubtotal", "IncidentalSubtotal", "TaxesSubtotal", "FeesSubtotal", "EstimatedTotal", "IsPriceable", "IsAvailable", "ViolatesMlos", "ViolatesCta", "AllDaysHaveReleasableHolds", "SuppliedSubtotals" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate), global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate.Parser, new[]{ "Prices", "LodgingSubtotal", "IncidentalSubtotal", "TaxesSubtotal", "FeesSubtotal", "EstimatedTotal", "IsPriceable", "IsAvailable", "ViolatesMlos", "ViolatesCta", "IsAvailableWithHoldDrop", "SuppliedSubtotals" }, null, null, null)
           }));
     }
     #endregion
@@ -84,7 +84,7 @@ namespace HOLMS.Types.Booking.Pricing {
       isAvailable_ = other.isAvailable_;
       violatesMlos_ = other.violatesMlos_;
       violatesCta_ = other.violatesCta_;
-      allDaysHaveReleasableHolds_ = other.allDaysHaveReleasableHolds_;
+      isAvailableWithHoldDrop_ = other.isAvailableWithHoldDrop_;
       suppliedSubtotals_ = other.suppliedSubtotals_.Clone();
     }
 
@@ -202,14 +202,14 @@ namespace HOLMS.Types.Booking.Pricing {
       }
     }
 
-    /// <summary>Field number for the "all_days_have_releasable_holds" field.</summary>
-    public const int AllDaysHaveReleasableHoldsFieldNumber = 11;
-    private bool allDaysHaveReleasableHolds_;
+    /// <summary>Field number for the "is_available_with_hold_drop" field.</summary>
+    public const int IsAvailableWithHoldDropFieldNumber = 11;
+    private bool isAvailableWithHoldDrop_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool AllDaysHaveReleasableHolds {
-      get { return allDaysHaveReleasableHolds_; }
+    public bool IsAvailableWithHoldDrop {
+      get { return isAvailableWithHoldDrop_; }
       set {
-        allDaysHaveReleasableHolds_ = value;
+        isAvailableWithHoldDrop_ = value;
       }
     }
 
@@ -249,7 +249,7 @@ namespace HOLMS.Types.Booking.Pricing {
       if (IsAvailable != other.IsAvailable) return false;
       if (ViolatesMlos != other.ViolatesMlos) return false;
       if (ViolatesCta != other.ViolatesCta) return false;
-      if (AllDaysHaveReleasableHolds != other.AllDaysHaveReleasableHolds) return false;
+      if (IsAvailableWithHoldDrop != other.IsAvailableWithHoldDrop) return false;
       if(!suppliedSubtotals_.Equals(other.suppliedSubtotals_)) return false;
       return true;
     }
@@ -267,7 +267,7 @@ namespace HOLMS.Types.Booking.Pricing {
       if (IsAvailable != false) hash ^= IsAvailable.GetHashCode();
       if (ViolatesMlos != false) hash ^= ViolatesMlos.GetHashCode();
       if (ViolatesCta != false) hash ^= ViolatesCta.GetHashCode();
-      if (AllDaysHaveReleasableHolds != false) hash ^= AllDaysHaveReleasableHolds.GetHashCode();
+      if (IsAvailableWithHoldDrop != false) hash ^= IsAvailableWithHoldDrop.GetHashCode();
       hash ^= suppliedSubtotals_.GetHashCode();
       return hash;
     }
@@ -316,9 +316,9 @@ namespace HOLMS.Types.Booking.Pricing {
         output.WriteRawTag(80);
         output.WriteBool(ViolatesCta);
       }
-      if (AllDaysHaveReleasableHolds != false) {
+      if (IsAvailableWithHoldDrop != false) {
         output.WriteRawTag(88);
-        output.WriteBool(AllDaysHaveReleasableHolds);
+        output.WriteBool(IsAvailableWithHoldDrop);
       }
       suppliedSubtotals_.WriteTo(output, _repeated_suppliedSubtotals_codec);
     }
@@ -354,7 +354,7 @@ namespace HOLMS.Types.Booking.Pricing {
       if (ViolatesCta != false) {
         size += 1 + 1;
       }
-      if (AllDaysHaveReleasableHolds != false) {
+      if (IsAvailableWithHoldDrop != false) {
         size += 1 + 1;
       }
       size += suppliedSubtotals_.CalculateSize(_repeated_suppliedSubtotals_codec);
@@ -409,8 +409,8 @@ namespace HOLMS.Types.Booking.Pricing {
       if (other.ViolatesCta != false) {
         ViolatesCta = other.ViolatesCta;
       }
-      if (other.AllDaysHaveReleasableHolds != false) {
-        AllDaysHaveReleasableHolds = other.AllDaysHaveReleasableHolds;
+      if (other.IsAvailableWithHoldDrop != false) {
+        IsAvailableWithHoldDrop = other.IsAvailableWithHoldDrop;
       }
       suppliedSubtotals_.Add(other.suppliedSubtotals_);
     }
@@ -479,7 +479,7 @@ namespace HOLMS.Types.Booking.Pricing {
             break;
           }
           case 88: {
-            AllDaysHaveReleasableHolds = input.ReadBool();
+            IsAvailableWithHoldDrop = input.ReadBool();
             break;
           }
           case 98: {

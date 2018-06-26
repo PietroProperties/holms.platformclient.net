@@ -9,7 +9,7 @@ import "supply/packages/lodging_package_indicator.proto";
 
 message LodgingPackage {
 	bool bookable = 1;
-	bool all_nights_have_releasable_holds = 2;
+	bool bookable_with_hold_drop = 2;
 	repeated holms.types.supply.PricedOfferedLodging offers = 3;
 	.holms.types.supply.packages.LodgingPackageIndicator package_id = 4;
 	google.protobuf.Timestamp expires_at = 5;

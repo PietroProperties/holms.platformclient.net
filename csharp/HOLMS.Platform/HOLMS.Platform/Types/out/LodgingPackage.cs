@@ -26,17 +26,17 @@ namespace HOLMS.Types.Supply.Packages {
             "cy50eXBlcy5zdXBwbHkucGFja2FnZXMaH2dvb2dsZS9wcm90b2J1Zi90aW1l",
             "c3RhbXAucHJvdG8aI3N1cHBseS9wcmljZWRfb2ZmZXJlZF9sb2RnaW5nLnBy",
             "b3RvGi9zdXBwbHkvcGFja2FnZXMvbG9kZ2luZ19wYWNrYWdlX2luZGljYXRv",
-            "ci5wcm90byKAAgoOTG9kZ2luZ1BhY2thZ2USEAoIYm9va2FibGUYASABKAgS",
-            "KAogYWxsX25pZ2h0c19oYXZlX3JlbGVhc2FibGVfaG9sZHMYAiABKAgSOAoG",
-            "b2ZmZXJzGAMgAygLMiguaG9sbXMudHlwZXMuc3VwcGx5LlByaWNlZE9mZmVy",
-            "ZWRMb2RnaW5nEkgKCnBhY2thZ2VfaWQYBCABKAsyNC5ob2xtcy50eXBlcy5z",
-            "dXBwbHkucGFja2FnZXMuTG9kZ2luZ1BhY2thZ2VJbmRpY2F0b3ISLgoKZXhw",
-            "aXJlc19hdBgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCHqoC",
-            "G0hPTE1TLlR5cGVzLlN1cHBseS5QYWNrYWdlc2IGcHJvdG8z"));
+            "ci5wcm90byL3AQoOTG9kZ2luZ1BhY2thZ2USEAoIYm9va2FibGUYASABKAgS",
+            "HwoXYm9va2FibGVfd2l0aF9ob2xkX2Ryb3AYAiABKAgSOAoGb2ZmZXJzGAMg",
+            "AygLMiguaG9sbXMudHlwZXMuc3VwcGx5LlByaWNlZE9mZmVyZWRMb2RnaW5n",
+            "EkgKCnBhY2thZ2VfaWQYBCABKAsyNC5ob2xtcy50eXBlcy5zdXBwbHkucGFj",
+            "a2FnZXMuTG9kZ2luZ1BhY2thZ2VJbmRpY2F0b3ISLgoKZXhwaXJlc19hdBgF",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCHqoCG0hPTE1TLlR5",
+            "cGVzLlN1cHBseS5QYWNrYWdlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Supply.PricedOfferedLodgingReflection.Descriptor, global::HOLMS.Types.Supply.Packages.LodgingPackageIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.Packages.LodgingPackage), global::HOLMS.Types.Supply.Packages.LodgingPackage.Parser, new[]{ "Bookable", "AllNightsHaveReleasableHolds", "Offers", "PackageId", "ExpiresAt" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.Packages.LodgingPackage), global::HOLMS.Types.Supply.Packages.LodgingPackage.Parser, new[]{ "Bookable", "BookableWithHoldDrop", "Offers", "PackageId", "ExpiresAt" }, null, null, null)
           }));
     }
     #endregion
@@ -68,7 +68,7 @@ namespace HOLMS.Types.Supply.Packages {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LodgingPackage(LodgingPackage other) : this() {
       bookable_ = other.bookable_;
-      allNightsHaveReleasableHolds_ = other.allNightsHaveReleasableHolds_;
+      bookableWithHoldDrop_ = other.bookableWithHoldDrop_;
       offers_ = other.offers_.Clone();
       PackageId = other.packageId_ != null ? other.PackageId.Clone() : null;
       ExpiresAt = other.expiresAt_ != null ? other.ExpiresAt.Clone() : null;
@@ -90,14 +90,14 @@ namespace HOLMS.Types.Supply.Packages {
       }
     }
 
-    /// <summary>Field number for the "all_nights_have_releasable_holds" field.</summary>
-    public const int AllNightsHaveReleasableHoldsFieldNumber = 2;
-    private bool allNightsHaveReleasableHolds_;
+    /// <summary>Field number for the "bookable_with_hold_drop" field.</summary>
+    public const int BookableWithHoldDropFieldNumber = 2;
+    private bool bookableWithHoldDrop_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool AllNightsHaveReleasableHolds {
-      get { return allNightsHaveReleasableHolds_; }
+    public bool BookableWithHoldDrop {
+      get { return bookableWithHoldDrop_; }
       set {
-        allNightsHaveReleasableHolds_ = value;
+        bookableWithHoldDrop_ = value;
       }
     }
 
@@ -147,7 +147,7 @@ namespace HOLMS.Types.Supply.Packages {
         return true;
       }
       if (Bookable != other.Bookable) return false;
-      if (AllNightsHaveReleasableHolds != other.AllNightsHaveReleasableHolds) return false;
+      if (BookableWithHoldDrop != other.BookableWithHoldDrop) return false;
       if(!offers_.Equals(other.offers_)) return false;
       if (!object.Equals(PackageId, other.PackageId)) return false;
       if (!object.Equals(ExpiresAt, other.ExpiresAt)) return false;
@@ -158,7 +158,7 @@ namespace HOLMS.Types.Supply.Packages {
     public override int GetHashCode() {
       int hash = 1;
       if (Bookable != false) hash ^= Bookable.GetHashCode();
-      if (AllNightsHaveReleasableHolds != false) hash ^= AllNightsHaveReleasableHolds.GetHashCode();
+      if (BookableWithHoldDrop != false) hash ^= BookableWithHoldDrop.GetHashCode();
       hash ^= offers_.GetHashCode();
       if (packageId_ != null) hash ^= PackageId.GetHashCode();
       if (expiresAt_ != null) hash ^= ExpiresAt.GetHashCode();
@@ -176,9 +176,9 @@ namespace HOLMS.Types.Supply.Packages {
         output.WriteRawTag(8);
         output.WriteBool(Bookable);
       }
-      if (AllNightsHaveReleasableHolds != false) {
+      if (BookableWithHoldDrop != false) {
         output.WriteRawTag(16);
-        output.WriteBool(AllNightsHaveReleasableHolds);
+        output.WriteBool(BookableWithHoldDrop);
       }
       offers_.WriteTo(output, _repeated_offers_codec);
       if (packageId_ != null) {
@@ -197,7 +197,7 @@ namespace HOLMS.Types.Supply.Packages {
       if (Bookable != false) {
         size += 1 + 1;
       }
-      if (AllNightsHaveReleasableHolds != false) {
+      if (BookableWithHoldDrop != false) {
         size += 1 + 1;
       }
       size += offers_.CalculateSize(_repeated_offers_codec);
@@ -218,8 +218,8 @@ namespace HOLMS.Types.Supply.Packages {
       if (other.Bookable != false) {
         Bookable = other.Bookable;
       }
-      if (other.AllNightsHaveReleasableHolds != false) {
-        AllNightsHaveReleasableHolds = other.AllNightsHaveReleasableHolds;
+      if (other.BookableWithHoldDrop != false) {
+        BookableWithHoldDrop = other.BookableWithHoldDrop;
       }
       offers_.Add(other.offers_);
       if (other.packageId_ != null) {
@@ -249,7 +249,7 @@ namespace HOLMS.Types.Supply.Packages {
             break;
           }
           case 16: {
-            AllNightsHaveReleasableHolds = input.ReadBool();
+            BookableWithHoldDrop = input.ReadBool();
             break;
           }
           case 26: {
