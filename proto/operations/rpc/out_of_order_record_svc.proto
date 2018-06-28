@@ -21,6 +21,11 @@ message OutOfOrderRecordGetByIdResponse {
 	.holms.types.operations.out_of_order.OutOfOrderRecord record = 2;
 }
 
+message OutOfOrderRecordSvcCreateRequest {
+	.holms.types.operations.out_of_order.OutOfOrderRecord record = 1;
+	bool hold_drop_requested = 2;
+}
+
 enum OutOfOrderRecordCreateResult {
 	OUT_OF_ORDER_RECORD_CREATE_SUCCESS = 0;
 	OUT_OF_ORDER_RECORD_CREATE_MAINT_CONFLICT = 1;
@@ -34,6 +39,11 @@ enum OutOfOrderRecordCreateResult {
 message OutOfOrderRecordCreateResponse {
 	OutOfOrderRecordCreateResult result = 1;
 	.holms.types.operations.out_of_order.OutOfOrderRecord record = 2;
+}
+
+message OutOfOrderRecordSvcUpdateRequest {
+	.holms.types.operations.out_of_order.OutOfOrderRecord record = 1;
+	bool hold_drop_requested = 2;
 }
 
 enum OutOfOrderRecordUpdateResult {
@@ -65,10 +75,8 @@ service OutOfOrderRecordSvc {
 	rpc All(.holms.types.tenancy_config.indicators.PropertyIndicator) returns (OutOfOrderRecordSvcAllResponse);
 	rpc GetById(.holms.types.operations.out_of_order.OutOfOrderRecordIndicator)
 		returns (OutOfOrderRecordGetByIdResponse);
-	rpc Create (.holms.types.operations.out_of_order.OutOfOrderRecord)
-		returns (OutOfOrderRecordCreateResponse);
-	rpc Update (.holms.types.operations.out_of_order.OutOfOrderRecord)
-		returns (OutOfOrderRecordUpdateResponse);
+	rpc Create (OutOfOrderRecordSvcCreateRequest) returns (OutOfOrderRecordCreateResponse);
+	rpc Update (OutOfOrderRecordSvcUpdateRequest) returns (OutOfOrderRecordUpdateResponse);
 	rpc Delete (.holms.types.operations.out_of_order.OutOfOrderRecordIndicator)
 		returns (OutOfOrderRecordDeleteResponse);
 }

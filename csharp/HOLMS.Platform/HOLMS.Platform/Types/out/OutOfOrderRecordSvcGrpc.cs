@@ -17,8 +17,9 @@ namespace HOLMS.Types.Operations.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcAllResponse> __Marshaller_OutOfOrderRecordSvcAllResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcAllResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecordIndicator> __Marshaller_OutOfOrderRecordIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecordIndicator.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordGetByIdResponse> __Marshaller_OutOfOrderRecordGetByIdResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordGetByIdResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord> __Marshaller_OutOfOrderRecord = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcCreateRequest> __Marshaller_OutOfOrderRecordSvcCreateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcCreateRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse> __Marshaller_OutOfOrderRecordCreateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcUpdateRequest> __Marshaller_OutOfOrderRecordSvcUpdateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcUpdateRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse> __Marshaller_OutOfOrderRecordUpdateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordDeleteResponse> __Marshaller_OutOfOrderRecordDeleteResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordDeleteResponse.Parser.ParseFrom);
 
@@ -36,18 +37,18 @@ namespace HOLMS.Types.Operations.RPC {
         __Marshaller_OutOfOrderRecordIndicator,
         __Marshaller_OutOfOrderRecordGetByIdResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord, global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse> __Method_Create = new grpc::Method<global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord, global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcCreateRequest, global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse> __Method_Create = new grpc::Method<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcCreateRequest, global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Create",
-        __Marshaller_OutOfOrderRecord,
+        __Marshaller_OutOfOrderRecordSvcCreateRequest,
         __Marshaller_OutOfOrderRecordCreateResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord, global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse> __Method_Update = new grpc::Method<global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord, global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcUpdateRequest, global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse> __Method_Update = new grpc::Method<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcUpdateRequest, global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Update",
-        __Marshaller_OutOfOrderRecord,
+        __Marshaller_OutOfOrderRecordSvcUpdateRequest,
         __Marshaller_OutOfOrderRecordUpdateResponse);
 
     static readonly grpc::Method<global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecordIndicator, global::HOLMS.Types.Operations.RPC.OutOfOrderRecordDeleteResponse> __Method_Delete = new grpc::Method<global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecordIndicator, global::HOLMS.Types.Operations.RPC.OutOfOrderRecordDeleteResponse>(
@@ -76,12 +77,12 @@ namespace HOLMS.Types.Operations.RPC {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse> Create(global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse> Create(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcCreateRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse> Update(global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse> Update(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcUpdateRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -148,35 +149,35 @@ namespace HOLMS.Types.Operations.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetById, null, options, request);
       }
-      public virtual global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse Create(global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse Create(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcCreateRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Create(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse Create(global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse Create(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcCreateRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Create, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse> CreateAsync(global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse> CreateAsync(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcCreateRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return CreateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse> CreateAsync(global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse> CreateAsync(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcCreateRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Create, null, options, request);
       }
-      public virtual global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse Update(global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse Update(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcUpdateRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Update(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse Update(global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse Update(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcUpdateRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Update, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse> UpdateAsync(global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse> UpdateAsync(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcUpdateRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return UpdateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse> UpdateAsync(global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse> UpdateAsync(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcUpdateRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }

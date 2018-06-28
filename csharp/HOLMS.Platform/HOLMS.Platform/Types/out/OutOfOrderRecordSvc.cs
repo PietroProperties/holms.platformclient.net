@@ -33,62 +33,70 @@ namespace HOLMS.Types.Operations.RPC {
             "ZWNvcmRHZXRCeUlkUmVzcG9uc2USSQoGcmVzdWx0GAEgASgOMjkuaG9sbXMu",
             "dHlwZXMub3BlcmF0aW9ucy5ycGMuT3V0T2ZPcmRlclJlY29yZEdldEJ5SWRS",
             "ZXN1bHQSRQoGcmVjb3JkGAIgASgLMjUuaG9sbXMudHlwZXMub3BlcmF0aW9u",
-            "cy5vdXRfb2Zfb3JkZXIuT3V0T2ZPcmRlclJlY29yZCKxAQoeT3V0T2ZPcmRl",
-            "clJlY29yZENyZWF0ZVJlc3BvbnNlEkgKBnJlc3VsdBgBIAEoDjI4LmhvbG1z",
-            "LnR5cGVzLm9wZXJhdGlvbnMucnBjLk91dE9mT3JkZXJSZWNvcmRDcmVhdGVS",
-            "ZXN1bHQSRQoGcmVjb3JkGAIgASgLMjUuaG9sbXMudHlwZXMub3BlcmF0aW9u",
-            "cy5vdXRfb2Zfb3JkZXIuT3V0T2ZPcmRlclJlY29yZCKxAQoeT3V0T2ZPcmRl",
-            "clJlY29yZFVwZGF0ZVJlc3BvbnNlEkgKBnJlc3VsdBgBIAEoDjI4LmhvbG1z",
-            "LnR5cGVzLm9wZXJhdGlvbnMucnBjLk91dE9mT3JkZXJSZWNvcmRVcGRhdGVS",
-            "ZXN1bHQSRQoGcmVjb3JkGAIgASgLMjUuaG9sbXMudHlwZXMub3BlcmF0aW9u",
-            "cy5vdXRfb2Zfb3JkZXIuT3V0T2ZPcmRlclJlY29yZCJqCh5PdXRPZk9yZGVy",
-            "UmVjb3JkRGVsZXRlUmVzcG9uc2USSAoGcmVzdWx0GAEgASgOMjguaG9sbXMu",
-            "dHlwZXMub3BlcmF0aW9ucy5ycGMuT3V0T2ZPcmRlclJlY29yZERlbGV0ZVJl",
-            "c3VsdCphCh1PdXRPZk9yZGVyUmVjb3JkR2V0QnlJZFJlc3VsdBIdChlPVVRf",
-            "T0ZfT1JERVJfUkVDT1JEX0ZPVU5EEAASIQodT1VUX09GX09SREVSX1JFQ09S",
-            "RF9OT1RfRk9VTkQQASrpAgocT3V0T2ZPcmRlclJlY29yZENyZWF0ZVJlc3Vs",
-            "dBImCiJPVVRfT0ZfT1JERVJfUkVDT1JEX0NSRUFURV9TVUNDRVNTEAASLQop",
-            "T1VUX09GX09SREVSX1JFQ09SRF9DUkVBVEVfTUFJTlRfQ09ORkxJQ1QQARIz",
-            "Ci9PVVRfT0ZfT1JERVJfUkVDT1JEX0NSRUFURV9SRVNFUlZBVElPTl9DT05G",
-            "TElDVBACEi0KKU9VVF9PRl9PUkRFUl9SRUNPUkRfQ1JFQVRFX1JPT01fTk9U",
-            "X0ZPVU5EEAMSKAokT1VUX09GX09SREVSX1JFQ09SRF9DUkVBVEVfTk9fU1VQ",
-            "UExZEAQSMQotT1VUX09GX09SREVSX1JFQ09SRF9DUkVBVEVfT0NDVVBBTkNZ",
-            "X0NPTkZMSUNUEAUSMQotT1VUX09GX09SREVSX1JFQ09SRF9DUkVBVEVfSE9M",
-            "RF9EUk9QX1JFUVVJUkVEEAYqogMKHE91dE9mT3JkZXJSZWNvcmRVcGRhdGVS",
-            "ZXN1bHQSKQolT1VUX09GX09SREVSX1JFQ09SRF9VUERBVEVfU1VDQ0VTU0ZV",
-            "TBAAEi4KKk9VVF9PRl9PUkRFUl9SRUNPUkRfVVBEQVRFX1BSSU9SX05PVF9G",
-            "T1VORBABEi0KKU9VVF9PRl9PUkRFUl9SRUNPUkRfVVBEQVRFX01BSU5UX0NP",
-            "TkZMSUNUEAISMwovT1VUX09GX09SREVSX1JFQ09SRF9VUERBVEVfUkVTRVJW",
-            "QVRJT05fQ09ORkxJQ1QQAxItCilPVVRfT0ZfT1JERVJfUkVDT1JEX1VQREFU",
-            "RV9ST09NX05PVF9GT1VORBAEEi4KKk9VVF9PRl9PUkRFUl9SRUNPUkRfVVBE",
-            "QVRFX05PX0FWQUlMQUJJTElUWRAFEjEKLU9VVF9PRl9PUkRFUl9SRUNPUkRf",
-            "VVBEQVRFX09DQ1VQQU5DWV9DT05GTElDVBAGEjEKLU9VVF9PRl9PUkRFUl9S",
-            "RUNPUkRfVVBEQVRFX0hPTERfRFJPUF9SRVFVSVJFRBAHKnkKHE91dE9mT3Jk",
-            "ZXJSZWNvcmREZWxldGVSZXN1bHQSKQolT1VUX09GX09SREVSX1JFQ09SRF9E",
-            "RUxFVEVfU1VDQ0VTU0ZVTBAAEi4KKk9VVF9PRl9PUkRFUl9SRUNPUkRfREVM",
-            "RVRFX1BSSU9SX05PVF9GT1VORBABMpwFChNPdXRPZk9yZGVyUmVjb3JkU3Zj",
-            "EnsKA0FsbBI4LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRv",
-            "cnMuUHJvcGVydHlJbmRpY2F0b3IaOi5ob2xtcy50eXBlcy5vcGVyYXRpb25z",
-            "LnJwYy5PdXRPZk9yZGVyUmVjb3JkU3ZjQWxsUmVzcG9uc2UShgEKB0dldEJ5",
-            "SWQSPi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLm91dF9vZl9vcmRlci5PdXRP",
-            "Zk9yZGVyUmVjb3JkSW5kaWNhdG9yGjsuaG9sbXMudHlwZXMub3BlcmF0aW9u",
-            "cy5ycGMuT3V0T2ZPcmRlclJlY29yZEdldEJ5SWRSZXNwb25zZRJ7CgZDcmVh",
-            "dGUSNS5ob2xtcy50eXBlcy5vcGVyYXRpb25zLm91dF9vZl9vcmRlci5PdXRP",
-            "Zk9yZGVyUmVjb3JkGjouaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ycGMuT3V0",
-            "T2ZPcmRlclJlY29yZENyZWF0ZVJlc3BvbnNlEnsKBlVwZGF0ZRI1LmhvbG1z",
-            "LnR5cGVzLm9wZXJhdGlvbnMub3V0X29mX29yZGVyLk91dE9mT3JkZXJSZWNv",
-            "cmQaOi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJwYy5PdXRPZk9yZGVyUmVj",
-            "b3JkVXBkYXRlUmVzcG9uc2UShAEKBkRlbGV0ZRI+LmhvbG1zLnR5cGVzLm9w",
-            "ZXJhdGlvbnMub3V0X29mX29yZGVyLk91dE9mT3JkZXJSZWNvcmRJbmRpY2F0",
-            "b3IaOi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJwYy5PdXRPZk9yZGVyUmVj",
-            "b3JkRGVsZXRlUmVzcG9uc2VCHaoCGkhPTE1TLlR5cGVzLk9wZXJhdGlvbnMu",
-            "UlBDYgZwcm90bzM="));
+            "cy5vdXRfb2Zfb3JkZXIuT3V0T2ZPcmRlclJlY29yZCKGAQogT3V0T2ZPcmRl",
+            "clJlY29yZFN2Y0NyZWF0ZVJlcXVlc3QSRQoGcmVjb3JkGAEgASgLMjUuaG9s",
+            "bXMudHlwZXMub3BlcmF0aW9ucy5vdXRfb2Zfb3JkZXIuT3V0T2ZPcmRlclJl",
+            "Y29yZBIbChNob2xkX2Ryb3BfcmVxdWVzdGVkGAIgASgIIrEBCh5PdXRPZk9y",
+            "ZGVyUmVjb3JkQ3JlYXRlUmVzcG9uc2USSAoGcmVzdWx0GAEgASgOMjguaG9s",
+            "bXMudHlwZXMub3BlcmF0aW9ucy5ycGMuT3V0T2ZPcmRlclJlY29yZENyZWF0",
+            "ZVJlc3VsdBJFCgZyZWNvcmQYAiABKAsyNS5ob2xtcy50eXBlcy5vcGVyYXRp",
+            "b25zLm91dF9vZl9vcmRlci5PdXRPZk9yZGVyUmVjb3JkIoYBCiBPdXRPZk9y",
+            "ZGVyUmVjb3JkU3ZjVXBkYXRlUmVxdWVzdBJFCgZyZWNvcmQYASABKAsyNS5o",
+            "b2xtcy50eXBlcy5vcGVyYXRpb25zLm91dF9vZl9vcmRlci5PdXRPZk9yZGVy",
+            "UmVjb3JkEhsKE2hvbGRfZHJvcF9yZXF1ZXN0ZWQYAiABKAgisQEKHk91dE9m",
+            "T3JkZXJSZWNvcmRVcGRhdGVSZXNwb25zZRJICgZyZXN1bHQYASABKA4yOC5o",
+            "b2xtcy50eXBlcy5vcGVyYXRpb25zLnJwYy5PdXRPZk9yZGVyUmVjb3JkVXBk",
+            "YXRlUmVzdWx0EkUKBnJlY29yZBgCIAEoCzI1LmhvbG1zLnR5cGVzLm9wZXJh",
+            "dGlvbnMub3V0X29mX29yZGVyLk91dE9mT3JkZXJSZWNvcmQiagoeT3V0T2ZP",
+            "cmRlclJlY29yZERlbGV0ZVJlc3BvbnNlEkgKBnJlc3VsdBgBIAEoDjI4Lmhv",
+            "bG1zLnR5cGVzLm9wZXJhdGlvbnMucnBjLk91dE9mT3JkZXJSZWNvcmREZWxl",
+            "dGVSZXN1bHQqYQodT3V0T2ZPcmRlclJlY29yZEdldEJ5SWRSZXN1bHQSHQoZ",
+            "T1VUX09GX09SREVSX1JFQ09SRF9GT1VORBAAEiEKHU9VVF9PRl9PUkRFUl9S",
+            "RUNPUkRfTk9UX0ZPVU5EEAEq6QIKHE91dE9mT3JkZXJSZWNvcmRDcmVhdGVS",
+            "ZXN1bHQSJgoiT1VUX09GX09SREVSX1JFQ09SRF9DUkVBVEVfU1VDQ0VTUxAA",
+            "Ei0KKU9VVF9PRl9PUkRFUl9SRUNPUkRfQ1JFQVRFX01BSU5UX0NPTkZMSUNU",
+            "EAESMwovT1VUX09GX09SREVSX1JFQ09SRF9DUkVBVEVfUkVTRVJWQVRJT05f",
+            "Q09ORkxJQ1QQAhItCilPVVRfT0ZfT1JERVJfUkVDT1JEX0NSRUFURV9ST09N",
+            "X05PVF9GT1VORBADEigKJE9VVF9PRl9PUkRFUl9SRUNPUkRfQ1JFQVRFX05P",
+            "X1NVUFBMWRAEEjEKLU9VVF9PRl9PUkRFUl9SRUNPUkRfQ1JFQVRFX09DQ1VQ",
+            "QU5DWV9DT05GTElDVBAFEjEKLU9VVF9PRl9PUkRFUl9SRUNPUkRfQ1JFQVRF",
+            "X0hPTERfRFJPUF9SRVFVSVJFRBAGKqIDChxPdXRPZk9yZGVyUmVjb3JkVXBk",
+            "YXRlUmVzdWx0EikKJU9VVF9PRl9PUkRFUl9SRUNPUkRfVVBEQVRFX1NVQ0NF",
+            "U1NGVUwQABIuCipPVVRfT0ZfT1JERVJfUkVDT1JEX1VQREFURV9QUklPUl9O",
+            "T1RfRk9VTkQQARItCilPVVRfT0ZfT1JERVJfUkVDT1JEX1VQREFURV9NQUlO",
+            "VF9DT05GTElDVBACEjMKL09VVF9PRl9PUkRFUl9SRUNPUkRfVVBEQVRFX1JF",
+            "U0VSVkFUSU9OX0NPTkZMSUNUEAMSLQopT1VUX09GX09SREVSX1JFQ09SRF9V",
+            "UERBVEVfUk9PTV9OT1RfRk9VTkQQBBIuCipPVVRfT0ZfT1JERVJfUkVDT1JE",
+            "X1VQREFURV9OT19BVkFJTEFCSUxJVFkQBRIxCi1PVVRfT0ZfT1JERVJfUkVD",
+            "T1JEX1VQREFURV9PQ0NVUEFOQ1lfQ09ORkxJQ1QQBhIxCi1PVVRfT0ZfT1JE",
+            "RVJfUkVDT1JEX1VQREFURV9IT0xEX0RST1BfUkVRVUlSRUQQByp5ChxPdXRP",
+            "Zk9yZGVyUmVjb3JkRGVsZXRlUmVzdWx0EikKJU9VVF9PRl9PUkRFUl9SRUNP",
+            "UkRfREVMRVRFX1NVQ0NFU1NGVUwQABIuCipPVVRfT0ZfT1JERVJfUkVDT1JE",
+            "X0RFTEVURV9QUklPUl9OT1RfRk9VTkQQATKsBQoTT3V0T2ZPcmRlclJlY29y",
+            "ZFN2YxJ7CgNBbGwSOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRp",
+            "Y2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yGjouaG9sbXMudHlwZXMub3BlcmF0",
+            "aW9ucy5ycGMuT3V0T2ZPcmRlclJlY29yZFN2Y0FsbFJlc3BvbnNlEoYBCgdH",
+            "ZXRCeUlkEj4uaG9sbXMudHlwZXMub3BlcmF0aW9ucy5vdXRfb2Zfb3JkZXIu",
+            "T3V0T2ZPcmRlclJlY29yZEluZGljYXRvcho7LmhvbG1zLnR5cGVzLm9wZXJh",
+            "dGlvbnMucnBjLk91dE9mT3JkZXJSZWNvcmRHZXRCeUlkUmVzcG9uc2USggEK",
+            "BkNyZWF0ZRI8LmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucnBjLk91dE9mT3Jk",
+            "ZXJSZWNvcmRTdmNDcmVhdGVSZXF1ZXN0GjouaG9sbXMudHlwZXMub3BlcmF0",
+            "aW9ucy5ycGMuT3V0T2ZPcmRlclJlY29yZENyZWF0ZVJlc3BvbnNlEoIBCgZV",
+            "cGRhdGUSPC5ob2xtcy50eXBlcy5vcGVyYXRpb25zLnJwYy5PdXRPZk9yZGVy",
+            "UmVjb3JkU3ZjVXBkYXRlUmVxdWVzdBo6LmhvbG1zLnR5cGVzLm9wZXJhdGlv",
+            "bnMucnBjLk91dE9mT3JkZXJSZWNvcmRVcGRhdGVSZXNwb25zZRKEAQoGRGVs",
+            "ZXRlEj4uaG9sbXMudHlwZXMub3BlcmF0aW9ucy5vdXRfb2Zfb3JkZXIuT3V0",
+            "T2ZPcmRlclJlY29yZEluZGljYXRvcho6LmhvbG1zLnR5cGVzLm9wZXJhdGlv",
+            "bnMucnBjLk91dE9mT3JkZXJSZWNvcmREZWxldGVSZXNwb25zZUIdqgIaSE9M",
+            "TVMuVHlwZXMuT3BlcmF0aW9ucy5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecordReflection.Descriptor, global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecordIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordGetByIdResult), typeof(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResult), typeof(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResult), typeof(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordDeleteResult), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcAllResponse), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcAllResponse.Parser, new[]{ "Records" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordGetByIdResponse), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordGetByIdResponse.Parser, new[]{ "Result", "Record" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcCreateRequest), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcCreateRequest.Parser, new[]{ "Record", "HoldDropRequested" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordCreateResponse.Parser, new[]{ "Result", "Record" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcUpdateRequest), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcUpdateRequest.Parser, new[]{ "Record", "HoldDropRequested" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordUpdateResponse.Parser, new[]{ "Result", "Record" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.RPC.OutOfOrderRecordDeleteResponse), global::HOLMS.Types.Operations.RPC.OutOfOrderRecordDeleteResponse.Parser, new[]{ "Result" }, null, null, null)
           }));
@@ -391,6 +399,157 @@ namespace HOLMS.Types.Operations.RPC {
 
   }
 
+  public sealed partial class OutOfOrderRecordSvcCreateRequest : pb::IMessage<OutOfOrderRecordSvcCreateRequest> {
+    private static readonly pb::MessageParser<OutOfOrderRecordSvcCreateRequest> _parser = new pb::MessageParser<OutOfOrderRecordSvcCreateRequest>(() => new OutOfOrderRecordSvcCreateRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<OutOfOrderRecordSvcCreateRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OutOfOrderRecordSvcCreateRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OutOfOrderRecordSvcCreateRequest(OutOfOrderRecordSvcCreateRequest other) : this() {
+      Record = other.record_ != null ? other.Record.Clone() : null;
+      holdDropRequested_ = other.holdDropRequested_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OutOfOrderRecordSvcCreateRequest Clone() {
+      return new OutOfOrderRecordSvcCreateRequest(this);
+    }
+
+    /// <summary>Field number for the "record" field.</summary>
+    public const int RecordFieldNumber = 1;
+    private global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord record_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord Record {
+      get { return record_; }
+      set {
+        record_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "hold_drop_requested" field.</summary>
+    public const int HoldDropRequestedFieldNumber = 2;
+    private bool holdDropRequested_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HoldDropRequested {
+      get { return holdDropRequested_; }
+      set {
+        holdDropRequested_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as OutOfOrderRecordSvcCreateRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(OutOfOrderRecordSvcCreateRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Record, other.Record)) return false;
+      if (HoldDropRequested != other.HoldDropRequested) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (record_ != null) hash ^= Record.GetHashCode();
+      if (HoldDropRequested != false) hash ^= HoldDropRequested.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (record_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Record);
+      }
+      if (HoldDropRequested != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(HoldDropRequested);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (record_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Record);
+      }
+      if (HoldDropRequested != false) {
+        size += 1 + 1;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(OutOfOrderRecordSvcCreateRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.record_ != null) {
+        if (record_ == null) {
+          record_ = new global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord();
+        }
+        Record.MergeFrom(other.Record);
+      }
+      if (other.HoldDropRequested != false) {
+        HoldDropRequested = other.HoldDropRequested;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (record_ == null) {
+              record_ = new global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord();
+            }
+            input.ReadMessage(record_);
+            break;
+          }
+          case 16: {
+            HoldDropRequested = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class OutOfOrderRecordCreateResponse : pb::IMessage<OutOfOrderRecordCreateResponse> {
     private static readonly pb::MessageParser<OutOfOrderRecordCreateResponse> _parser = new pb::MessageParser<OutOfOrderRecordCreateResponse>(() => new OutOfOrderRecordCreateResponse());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -398,7 +557,7 @@ namespace HOLMS.Types.Operations.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcReflection.Descriptor.MessageTypes[2]; }
+      get { return global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -542,6 +701,157 @@ namespace HOLMS.Types.Operations.RPC {
 
   }
 
+  public sealed partial class OutOfOrderRecordSvcUpdateRequest : pb::IMessage<OutOfOrderRecordSvcUpdateRequest> {
+    private static readonly pb::MessageParser<OutOfOrderRecordSvcUpdateRequest> _parser = new pb::MessageParser<OutOfOrderRecordSvcUpdateRequest>(() => new OutOfOrderRecordSvcUpdateRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<OutOfOrderRecordSvcUpdateRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OutOfOrderRecordSvcUpdateRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OutOfOrderRecordSvcUpdateRequest(OutOfOrderRecordSvcUpdateRequest other) : this() {
+      Record = other.record_ != null ? other.Record.Clone() : null;
+      holdDropRequested_ = other.holdDropRequested_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OutOfOrderRecordSvcUpdateRequest Clone() {
+      return new OutOfOrderRecordSvcUpdateRequest(this);
+    }
+
+    /// <summary>Field number for the "record" field.</summary>
+    public const int RecordFieldNumber = 1;
+    private global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord record_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord Record {
+      get { return record_; }
+      set {
+        record_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "hold_drop_requested" field.</summary>
+    public const int HoldDropRequestedFieldNumber = 2;
+    private bool holdDropRequested_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HoldDropRequested {
+      get { return holdDropRequested_; }
+      set {
+        holdDropRequested_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as OutOfOrderRecordSvcUpdateRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(OutOfOrderRecordSvcUpdateRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Record, other.Record)) return false;
+      if (HoldDropRequested != other.HoldDropRequested) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (record_ != null) hash ^= Record.GetHashCode();
+      if (HoldDropRequested != false) hash ^= HoldDropRequested.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (record_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Record);
+      }
+      if (HoldDropRequested != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(HoldDropRequested);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (record_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Record);
+      }
+      if (HoldDropRequested != false) {
+        size += 1 + 1;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(OutOfOrderRecordSvcUpdateRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.record_ != null) {
+        if (record_ == null) {
+          record_ = new global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord();
+        }
+        Record.MergeFrom(other.Record);
+      }
+      if (other.HoldDropRequested != false) {
+        HoldDropRequested = other.HoldDropRequested;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (record_ == null) {
+              record_ = new global::HOLMS.Types.Operations.OutOfOrder.OutOfOrderRecord();
+            }
+            input.ReadMessage(record_);
+            break;
+          }
+          case 16: {
+            HoldDropRequested = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class OutOfOrderRecordUpdateResponse : pb::IMessage<OutOfOrderRecordUpdateResponse> {
     private static readonly pb::MessageParser<OutOfOrderRecordUpdateResponse> _parser = new pb::MessageParser<OutOfOrderRecordUpdateResponse>(() => new OutOfOrderRecordUpdateResponse());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -549,7 +859,7 @@ namespace HOLMS.Types.Operations.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcReflection.Descriptor.MessageTypes[3]; }
+      get { return global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -700,7 +1010,7 @@ namespace HOLMS.Types.Operations.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcReflection.Descriptor.MessageTypes[4]; }
+      get { return global::HOLMS.Types.Operations.RPC.OutOfOrderRecordSvcReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
