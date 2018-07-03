@@ -2,9 +2,9 @@
 
 package holms.types.supply.rpc;
 option csharp_namespace = "HOLMS.Types.Supply.RPC";
-option go_package = "supply/rpc";
 
 import "primitive/server_action_confirmation.proto";
+import "primitive/pb_local_date.proto";
 import "google/protobuf/empty.proto";
 import "supply/room_types/full_room_type.proto";
 import "supply/room_types/room_type.proto";
@@ -20,6 +20,19 @@ message RoomTypeSvcAllWithRoomsResponse {
 
 message RoomTypeSvcGetByChannelManagerRequest {
 	string channel_manager_id = 1;
+}
+
+enum RoomTypeSvcUpdateResult {
+	ROOM_TYPE_SVC_UPDATE_RESULT_OK = 0;
+	ROOM_TYPE_SVC_UPDATE_NOT_FOUND = 1;
+	ROOM_TYPE_SVC_UPDATE_RESULT_ILLEGAL_HOLDS = 2;
+}
+
+message RoomTypeSvcUpdateResponse {
+	RoomTypeSvcUpdateResult result = 1;
+	.holms.types.supply.room_types.RoomType updated = 2;
+	uint32 total_illegal_hold_dates = 3;
+	repeated .holms.types.primitive.PbLocalDate first_illegal_hold_dates = 4;
 }
 
 service RoomTypeSvc {
@@ -39,7 +52,7 @@ service RoomTypeSvc {
 		returns (.holms.types.supply.room_types.RoomType);
 
 	rpc Update (.holms.types.supply.room_types.RoomType)
-		returns (.holms.types.supply.room_types.RoomType);
+		returns (RoomTypeSvcUpdateResponse);
 
 	rpc Delete (.holms.types.supply.room_types.RoomType)
 		returns (.holms.types.primitive.ServerActionConfirmation);
