@@ -19,6 +19,7 @@ namespace HOLMS.Types.Supply.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator> __Marshaller_RoomTypeIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RoomTypes.RoomType> __Marshaller_RoomType = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest> __Marshaller_RoomTypeSvcGetByChannelManagerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse> __Marshaller_RoomTypeSvcUpdateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Primitive.ServerActionConfirmation> __Marshaller_ServerActionConfirmation = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.ServerActionConfirmation.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllResponse> __Method_All = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllResponse>(
@@ -56,12 +57,12 @@ namespace HOLMS.Types.Supply.RPC {
         __Marshaller_RoomType,
         __Marshaller_RoomType);
 
-    static readonly grpc::Method<global::HOLMS.Types.Supply.RoomTypes.RoomType, global::HOLMS.Types.Supply.RoomTypes.RoomType> __Method_Update = new grpc::Method<global::HOLMS.Types.Supply.RoomTypes.RoomType, global::HOLMS.Types.Supply.RoomTypes.RoomType>(
+    static readonly grpc::Method<global::HOLMS.Types.Supply.RoomTypes.RoomType, global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse> __Method_Update = new grpc::Method<global::HOLMS.Types.Supply.RoomTypes.RoomType, global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Update",
         __Marshaller_RoomType,
-        __Marshaller_RoomType);
+        __Marshaller_RoomTypeSvcUpdateResponse);
 
     static readonly grpc::Method<global::HOLMS.Types.Supply.RoomTypes.RoomType, global::HOLMS.Types.Primitive.ServerActionConfirmation> __Method_Delete = new grpc::Method<global::HOLMS.Types.Supply.RoomTypes.RoomType, global::HOLMS.Types.Primitive.ServerActionConfirmation>(
         grpc::MethodType.Unary,
@@ -104,7 +105,7 @@ namespace HOLMS.Types.Supply.RPC {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RoomTypes.RoomType> Update(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse> Update(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -219,19 +220,19 @@ namespace HOLMS.Types.Supply.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Create, null, options, request);
       }
-      public virtual global::HOLMS.Types.Supply.RoomTypes.RoomType Update(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse Update(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Update(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Supply.RoomTypes.RoomType Update(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse Update(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Update, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RoomTypes.RoomType> UpdateAsync(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse> UpdateAsync(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return UpdateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RoomTypes.RoomType> UpdateAsync(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse> UpdateAsync(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }
