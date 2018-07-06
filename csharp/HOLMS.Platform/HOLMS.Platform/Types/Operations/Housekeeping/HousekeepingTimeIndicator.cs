@@ -1,6 +1,5 @@
 ﻿using System;
 using HOLMS.Platform.Types;
-using HOLMS.Types.Extensions;
 using HOLMS.Types.Extensions.Support;
 using HOLMS.Types.Primitive;
 
