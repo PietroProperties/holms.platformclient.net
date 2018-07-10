@@ -27,18 +27,21 @@ namespace HOLMS.Types.Booking.Checkout {
             "bmcvY2hlY2tvdXQvZGVwYXJ0dXJlX2RhdGVfY2hlY2tvdXRfYWNjZXB0aWJp",
             "bGl0eS5wcm90bxouYm9va2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2lu",
             "ZGljYXRvci5wcm90bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90",
-            "byKyAgoaQ2hlY2tvdXRDYW5kaWRhdGVWaWFiaWxpdHkSSQoLcmVzZXJ2YXRp",
-            "b24YASABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVz",
-            "ZXJ2YXRpb25JbmRpY2F0b3ISXAoSZGF0ZV9hY2NlcHRpYmlsaXR5GAIgASgO",
-            "MkAuaG9sbXMudHlwZXMuYm9va2luZy5jaGVja291dC5EZXBhcnR1cmVEYXRl",
-            "Q2hlY2tvdXRBY2NlcHRpYmlsaXR5EjwKDWZvbGlvX2JhbGFuY2UYAyABKAsy",
-            "JS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSLQolZm9s",
-            "aW9fYmFsYW5jZV9hY2NlcHRpYmxlX2Zvcl9jaGVja291dBgEIAEoCEIfqgIc",
-            "SE9MTVMuVHlwZXMuQm9va2luZy5DaGVja291dGIGcHJvdG8z"));
+            "bxodcHJpbWl0aXZlL3BiX2xvY2FsX2RhdGUucHJvdG8i9wIKGkNoZWNrb3V0",
+            "Q2FuZGlkYXRlVmlhYmlsaXR5EkkKC3Jlc2VydmF0aW9uGAEgASgLMjQuaG9s",
+            "bXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNh",
+            "dG9yEkMKF2VmZmVjdGl2ZV9jaGVja291dF9kYXRlGAIgASgLMiIuaG9sbXMu",
+            "dHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlElwKEmRhdGVfYWNjZXB0aWJp",
+            "bGl0eRgDIAEoDjJALmhvbG1zLnR5cGVzLmJvb2tpbmcuY2hlY2tvdXQuRGVw",
+            "YXJ0dXJlRGF0ZUNoZWNrb3V0QWNjZXB0aWJpbGl0eRI8Cg1mb2xpb19iYWxh",
+            "bmNlGAQgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1v",
+            "dW50Ei0KJWZvbGlvX2JhbGFuY2VfYWNjZXB0aWJsZV9mb3JfY2hlY2tvdXQY",
+            "BSABKAhCH6oCHEhPTE1TLlR5cGVzLkJvb2tpbmcuQ2hlY2tvdXRiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Checkout.DepartureDateCheckoutAcceptibilityReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Checkout.DepartureDateCheckoutAcceptibilityReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Checkout.CheckoutCandidateViability), global::HOLMS.Types.Booking.Checkout.CheckoutCandidateViability.Parser, new[]{ "Reservation", "DateAcceptibility", "FolioBalance", "FolioBalanceAcceptibleForCheckout" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Checkout.CheckoutCandidateViability), global::HOLMS.Types.Booking.Checkout.CheckoutCandidateViability.Parser, new[]{ "Reservation", "EffectiveCheckoutDate", "DateAcceptibility", "FolioBalance", "FolioBalanceAcceptibleForCheckout" }, null, null, null)
           }));
     }
     #endregion
@@ -70,6 +73,7 @@ namespace HOLMS.Types.Booking.Checkout {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CheckoutCandidateViability(CheckoutCandidateViability other) : this() {
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
+      EffectiveCheckoutDate = other.effectiveCheckoutDate_ != null ? other.EffectiveCheckoutDate.Clone() : null;
       dateAcceptibility_ = other.dateAcceptibility_;
       FolioBalance = other.folioBalance_ != null ? other.FolioBalance.Clone() : null;
       folioBalanceAcceptibleForCheckout_ = other.folioBalanceAcceptibleForCheckout_;
@@ -91,8 +95,19 @@ namespace HOLMS.Types.Booking.Checkout {
       }
     }
 
+    /// <summary>Field number for the "effective_checkout_date" field.</summary>
+    public const int EffectiveCheckoutDateFieldNumber = 2;
+    private global::HOLMS.Types.Primitive.PbLocalDate effectiveCheckoutDate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate EffectiveCheckoutDate {
+      get { return effectiveCheckoutDate_; }
+      set {
+        effectiveCheckoutDate_ = value;
+      }
+    }
+
     /// <summary>Field number for the "date_acceptibility" field.</summary>
-    public const int DateAcceptibilityFieldNumber = 2;
+    public const int DateAcceptibilityFieldNumber = 3;
     private global::HOLMS.Types.Booking.Checkout.DepartureDateCheckoutAcceptibility dateAcceptibility_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Booking.Checkout.DepartureDateCheckoutAcceptibility DateAcceptibility {
@@ -103,7 +118,7 @@ namespace HOLMS.Types.Booking.Checkout {
     }
 
     /// <summary>Field number for the "folio_balance" field.</summary>
-    public const int FolioBalanceFieldNumber = 3;
+    public const int FolioBalanceFieldNumber = 4;
     private global::HOLMS.Types.Primitive.MonetaryAmount folioBalance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.MonetaryAmount FolioBalance {
@@ -114,7 +129,7 @@ namespace HOLMS.Types.Booking.Checkout {
     }
 
     /// <summary>Field number for the "folio_balance_acceptible_for_checkout" field.</summary>
-    public const int FolioBalanceAcceptibleForCheckoutFieldNumber = 4;
+    public const int FolioBalanceAcceptibleForCheckoutFieldNumber = 5;
     private bool folioBalanceAcceptibleForCheckout_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool FolioBalanceAcceptibleForCheckout {
@@ -138,6 +153,7 @@ namespace HOLMS.Types.Booking.Checkout {
         return true;
       }
       if (!object.Equals(Reservation, other.Reservation)) return false;
+      if (!object.Equals(EffectiveCheckoutDate, other.EffectiveCheckoutDate)) return false;
       if (DateAcceptibility != other.DateAcceptibility) return false;
       if (!object.Equals(FolioBalance, other.FolioBalance)) return false;
       if (FolioBalanceAcceptibleForCheckout != other.FolioBalanceAcceptibleForCheckout) return false;
@@ -148,6 +164,7 @@ namespace HOLMS.Types.Booking.Checkout {
     public override int GetHashCode() {
       int hash = 1;
       if (reservation_ != null) hash ^= Reservation.GetHashCode();
+      if (effectiveCheckoutDate_ != null) hash ^= EffectiveCheckoutDate.GetHashCode();
       if (DateAcceptibility != 0) hash ^= DateAcceptibility.GetHashCode();
       if (folioBalance_ != null) hash ^= FolioBalance.GetHashCode();
       if (FolioBalanceAcceptibleForCheckout != false) hash ^= FolioBalanceAcceptibleForCheckout.GetHashCode();
@@ -165,16 +182,20 @@ namespace HOLMS.Types.Booking.Checkout {
         output.WriteRawTag(10);
         output.WriteMessage(Reservation);
       }
+      if (effectiveCheckoutDate_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(EffectiveCheckoutDate);
+      }
       if (DateAcceptibility != 0) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteEnum((int) DateAcceptibility);
       }
       if (folioBalance_ != null) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(34);
         output.WriteMessage(FolioBalance);
       }
       if (FolioBalanceAcceptibleForCheckout != false) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteBool(FolioBalanceAcceptibleForCheckout);
       }
     }
@@ -184,6 +205,9 @@ namespace HOLMS.Types.Booking.Checkout {
       int size = 0;
       if (reservation_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Reservation);
+      }
+      if (effectiveCheckoutDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EffectiveCheckoutDate);
       }
       if (DateAcceptibility != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DateAcceptibility);
@@ -207,6 +231,12 @@ namespace HOLMS.Types.Booking.Checkout {
           reservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
         }
         Reservation.MergeFrom(other.Reservation);
+      }
+      if (other.effectiveCheckoutDate_ != null) {
+        if (effectiveCheckoutDate_ == null) {
+          effectiveCheckoutDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        EffectiveCheckoutDate.MergeFrom(other.EffectiveCheckoutDate);
       }
       if (other.DateAcceptibility != 0) {
         DateAcceptibility = other.DateAcceptibility;
@@ -237,18 +267,25 @@ namespace HOLMS.Types.Booking.Checkout {
             input.ReadMessage(reservation_);
             break;
           }
-          case 16: {
+          case 18: {
+            if (effectiveCheckoutDate_ == null) {
+              effectiveCheckoutDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(effectiveCheckoutDate_);
+            break;
+          }
+          case 24: {
             dateAcceptibility_ = (global::HOLMS.Types.Booking.Checkout.DepartureDateCheckoutAcceptibility) input.ReadEnum();
             break;
           }
-          case 26: {
+          case 34: {
             if (folioBalance_ == null) {
               folioBalance_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(folioBalance_);
             break;
           }
-          case 32: {
+          case 40: {
             FolioBalanceAcceptibleForCheckout = input.ReadBool();
             break;
           }
