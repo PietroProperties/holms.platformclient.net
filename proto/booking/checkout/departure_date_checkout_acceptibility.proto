@@ -8,5 +8,5 @@ enum DepartureDateCheckoutAcceptibility {
 	OnTimeForCheckout = 0;
 	TooEarlyForCheckout = 1;
 	OverdueForCheckout = 2;
-	TardyForCheckout = 3;
 }
+
