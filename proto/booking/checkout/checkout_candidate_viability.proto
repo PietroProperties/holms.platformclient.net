@@ -6,10 +6,13 @@ option csharp_namespace = "HOLMS.Types.Booking.Checkout";
 import "booking/checkout/departure_date_checkout_acceptibility.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "primitive/monetary_amount.proto";
+import "primitive/pb_local_date.proto";
 
 message CheckoutCandidateViability {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
-	holms.types.booking.checkout.DepartureDateCheckoutAcceptibility date_acceptibility = 2;
-	holms.types.primitive.MonetaryAmount folio_balance = 3;
-	bool folio_balance_acceptible_for_checkout = 4;
+	holms.types.primitive.PbLocalDate effective_checkout_date = 2;
+	holms.types.booking.checkout.DepartureDateCheckoutAcceptibility date_acceptibility = 3;
+	holms.types.primitive.MonetaryAmount folio_balance = 4;
+	bool folio_balance_acceptible_for_checkout = 5;
 }
+
