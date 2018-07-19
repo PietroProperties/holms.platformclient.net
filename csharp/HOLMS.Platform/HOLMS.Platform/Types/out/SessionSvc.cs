@@ -24,37 +24,38 @@ namespace HOLMS.Types.IAM.RPC {
           string.Concat(
             "ChlpYW0vcnBjL3Nlc3Npb25fc3ZjLnByb3RvEhNob2xtcy50eXBlcy5pYW0u",
             "cnBjGiNpYW0vY2xpZW50X2luc3RhbmNlX2luZGljYXRvci5wcm90bxofcHJp",
-            "bWl0aXZlL3Nlc3Npb25fY29udGV4dC5wcm90byK2AQodU2Vzc2lvblN2Y1N0",
-            "YXJ0U2Vzc2lvblJlcXVlc3QSGgoSY2FuZGlkYXRlX3VzZXJuYW1lGAEgASgJ",
-            "EhoKEmNhbmRpZGF0ZV9wYXNzd29yZBgCIAEoCRJEChJjbGllbnRfaW5zdGFu",
-            "Y2VfaWQYAyABKAsyKC5ob2xtcy50eXBlcy5pYW0uQ2xpZW50SW5zdGFuY2VJ",
-            "bmRpY2F0b3ISFwoPb2F1dGhfY2xpZW50X2lkGAQgASgJIk8KE1Rva2VuUmVm",
-            "cmVzaFJlcXVlc3QSEgoKZ3JhbnRfdHlwZRgBIAEoCRIVCg1yZWZyZXNoX3Rv",
-            "a2VuGAIgASgJEg0KBXNjb3BlGAMgASgJIjEKGFRva2VuSW52YWxpZGF0aW9u",
-            "UmVxdWVzdBIVCg1yZWZyZXNoX3Rva2VuGAEgASgJIlkKGVRva2VuSW52YWxp",
-            "ZGF0aW9uUmVzcG9uc2USPAoGcmVzdWx0GAEgASgOMiwuaG9sbXMudHlwZXMu",
-            "aWFtLnJwYy5Ub2tlbkludmFsaWRhdGlvblJlc3VsdCKjAQoeU2Vzc2lvblN2",
-            "Y1N0YXJ0U2Vzc2lvblJlc3BvbnNlEkEKBnJlc3VsdBgBIAEoDjIxLmhvbG1z",
-            "LnR5cGVzLmlhbS5ycGMuU2Vzc2lvblN2Y1N0YXJ0U2Vzc2lvblJlc3VsdBI+",
-            "Cg9zZXNzaW9uX2NvbnRleHQYAiABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRp",
-            "dmUuU2Vzc2lvbkNvbnRleHQqRgocU2Vzc2lvblN2Y1N0YXJ0U2Vzc2lvblJl",
-            "c3VsdBILCgdTVUNDRVNTEAASDAoISU5BQ1RJVkUQARILCgdGQUlMVVJFEAIq",
-            "TQoXVG9rZW5JbnZhbGlkYXRpb25SZXN1bHQSGAoUSU5WQUxJREFUSU9OX1NV",
-            "Q0NFU1MQABIYChRJTlZBTElEQVRJT05fRkFJTFVSRRABMvYCCgpTZXNzaW9u",
-            "U3ZjEnoKD1RyeVN0YXJ0U2Vzc2lvbhIyLmhvbG1zLnR5cGVzLmlhbS5ycGMu",
-            "U2Vzc2lvblN2Y1N0YXJ0U2Vzc2lvblJlcXVlc3QaMy5ob2xtcy50eXBlcy5p",
-            "YW0ucnBjLlNlc3Npb25TdmNTdGFydFNlc3Npb25SZXNwb25zZRJzChJSZWZy",
-            "ZXNoQWNjZXNzVG9rZW4SKC5ob2xtcy50eXBlcy5pYW0ucnBjLlRva2VuUmVm",
-            "cmVzaFJlcXVlc3QaMy5ob2xtcy50eXBlcy5pYW0ucnBjLlNlc3Npb25TdmNT",
-            "dGFydFNlc3Npb25SZXNwb25zZRJ3ChZJbnZhbGlkYXRlUmVmcmVzaFRva2Vu",
-            "Ei0uaG9sbXMudHlwZXMuaWFtLnJwYy5Ub2tlbkludmFsaWRhdGlvblJlcXVl",
-            "c3QaLi5ob2xtcy50eXBlcy5pYW0ucnBjLlRva2VuSW52YWxpZGF0aW9uUmVz",
-            "cG9uc2VCH1oHaWFtL3JwY6oCE0hPTE1TLlR5cGVzLklBTS5SUENiBnByb3Rv",
-            "Mw=="));
+            "bWl0aXZlL3Nlc3Npb25fY29udGV4dC5wcm90bxoZaWFtL2NsaWVudF9pbnN0",
+            "YW5jZS5wcm90byLwAQodU2Vzc2lvblN2Y1N0YXJ0U2Vzc2lvblJlcXVlc3QS",
+            "GgoSY2FuZGlkYXRlX3VzZXJuYW1lGAEgASgJEhoKEmNhbmRpZGF0ZV9wYXNz",
+            "d29yZBgCIAEoCRJEChJjbGllbnRfaW5zdGFuY2VfaWQYAyABKAsyKC5ob2xt",
+            "cy50eXBlcy5pYW0uQ2xpZW50SW5zdGFuY2VJbmRpY2F0b3ISFwoPb2F1dGhf",
+            "Y2xpZW50X2lkGAQgASgJEjgKD2NsaWVudF9pbnN0YW5jZRgFIAEoCzIfLmhv",
+            "bG1zLnR5cGVzLmlhbS5DbGllbnRJbnN0YW5jZSJPChNUb2tlblJlZnJlc2hS",
+            "ZXF1ZXN0EhIKCmdyYW50X3R5cGUYASABKAkSFQoNcmVmcmVzaF90b2tlbhgC",
+            "IAEoCRINCgVzY29wZRgDIAEoCSIxChhUb2tlbkludmFsaWRhdGlvblJlcXVl",
+            "c3QSFQoNcmVmcmVzaF90b2tlbhgBIAEoCSJZChlUb2tlbkludmFsaWRhdGlv",
+            "blJlc3BvbnNlEjwKBnJlc3VsdBgBIAEoDjIsLmhvbG1zLnR5cGVzLmlhbS5y",
+            "cGMuVG9rZW5JbnZhbGlkYXRpb25SZXN1bHQiowEKHlNlc3Npb25TdmNTdGFy",
+            "dFNlc3Npb25SZXNwb25zZRJBCgZyZXN1bHQYASABKA4yMS5ob2xtcy50eXBl",
+            "cy5pYW0ucnBjLlNlc3Npb25TdmNTdGFydFNlc3Npb25SZXN1bHQSPgoPc2Vz",
+            "c2lvbl9jb250ZXh0GAIgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLlNl",
+            "c3Npb25Db250ZXh0KkYKHFNlc3Npb25TdmNTdGFydFNlc3Npb25SZXN1bHQS",
+            "CwoHU1VDQ0VTUxAAEgwKCElOQUNUSVZFEAESCwoHRkFJTFVSRRACKk0KF1Rv",
+            "a2VuSW52YWxpZGF0aW9uUmVzdWx0EhgKFElOVkFMSURBVElPTl9TVUNDRVNT",
+            "EAASGAoUSU5WQUxJREFUSU9OX0ZBSUxVUkUQATL2AgoKU2Vzc2lvblN2YxJ6",
+            "Cg9UcnlTdGFydFNlc3Npb24SMi5ob2xtcy50eXBlcy5pYW0ucnBjLlNlc3Np",
+            "b25TdmNTdGFydFNlc3Npb25SZXF1ZXN0GjMuaG9sbXMudHlwZXMuaWFtLnJw",
+            "Yy5TZXNzaW9uU3ZjU3RhcnRTZXNzaW9uUmVzcG9uc2UScwoSUmVmcmVzaEFj",
+            "Y2Vzc1Rva2VuEiguaG9sbXMudHlwZXMuaWFtLnJwYy5Ub2tlblJlZnJlc2hS",
+            "ZXF1ZXN0GjMuaG9sbXMudHlwZXMuaWFtLnJwYy5TZXNzaW9uU3ZjU3RhcnRT",
+            "ZXNzaW9uUmVzcG9uc2USdwoWSW52YWxpZGF0ZVJlZnJlc2hUb2tlbhItLmhv",
+            "bG1zLnR5cGVzLmlhbS5ycGMuVG9rZW5JbnZhbGlkYXRpb25SZXF1ZXN0Gi4u",
+            "aG9sbXMudHlwZXMuaWFtLnJwYy5Ub2tlbkludmFsaWRhdGlvblJlc3BvbnNl",
+            "Qh9aB2lhbS9ycGOqAhNIT0xNUy5UeXBlcy5JQU0uUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.ClientInstanceIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.SessionContextReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.ClientInstanceIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.SessionContextReflection.Descriptor, global::HOLMS.Types.IAM.ClientInstanceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionResult), typeof(global::HOLMS.Types.IAM.RPC.TokenInvalidationResult), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest), global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest.Parser, new[]{ "CandidateUsername", "CandidatePassword", "ClientInstanceId", "OauthClientId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest), global::HOLMS.Types.IAM.RPC.SessionSvcStartSessionRequest.Parser, new[]{ "CandidateUsername", "CandidatePassword", "ClientInstanceId", "OauthClientId", "ClientInstance" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.TokenRefreshRequest), global::HOLMS.Types.IAM.RPC.TokenRefreshRequest.Parser, new[]{ "GrantType", "RefreshToken", "Scope" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.TokenInvalidationRequest), global::HOLMS.Types.IAM.RPC.TokenInvalidationRequest.Parser, new[]{ "RefreshToken" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.RPC.TokenInvalidationResponse), global::HOLMS.Types.IAM.RPC.TokenInvalidationResponse.Parser, new[]{ "Result" }, null, null, null),
@@ -107,6 +108,7 @@ namespace HOLMS.Types.IAM.RPC {
       candidatePassword_ = other.candidatePassword_;
       ClientInstanceId = other.clientInstanceId_ != null ? other.ClientInstanceId.Clone() : null;
       oauthClientId_ = other.oauthClientId_;
+      ClientInstance = other.clientInstance_ != null ? other.ClientInstance.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -158,6 +160,17 @@ namespace HOLMS.Types.IAM.RPC {
       }
     }
 
+    /// <summary>Field number for the "client_instance" field.</summary>
+    public const int ClientInstanceFieldNumber = 5;
+    private global::HOLMS.Types.IAM.ClientInstance clientInstance_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.IAM.ClientInstance ClientInstance {
+      get { return clientInstance_; }
+      set {
+        clientInstance_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SessionSvcStartSessionRequest);
@@ -175,6 +188,7 @@ namespace HOLMS.Types.IAM.RPC {
       if (CandidatePassword != other.CandidatePassword) return false;
       if (!object.Equals(ClientInstanceId, other.ClientInstanceId)) return false;
       if (OauthClientId != other.OauthClientId) return false;
+      if (!object.Equals(ClientInstance, other.ClientInstance)) return false;
       return true;
     }
 
@@ -185,6 +199,7 @@ namespace HOLMS.Types.IAM.RPC {
       if (CandidatePassword.Length != 0) hash ^= CandidatePassword.GetHashCode();
       if (clientInstanceId_ != null) hash ^= ClientInstanceId.GetHashCode();
       if (OauthClientId.Length != 0) hash ^= OauthClientId.GetHashCode();
+      if (clientInstance_ != null) hash ^= ClientInstance.GetHashCode();
       return hash;
     }
 
@@ -211,6 +226,10 @@ namespace HOLMS.Types.IAM.RPC {
         output.WriteRawTag(34);
         output.WriteString(OauthClientId);
       }
+      if (clientInstance_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ClientInstance);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -227,6 +246,9 @@ namespace HOLMS.Types.IAM.RPC {
       }
       if (OauthClientId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(OauthClientId);
+      }
+      if (clientInstance_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClientInstance);
       }
       return size;
     }
@@ -250,6 +272,12 @@ namespace HOLMS.Types.IAM.RPC {
       }
       if (other.OauthClientId.Length != 0) {
         OauthClientId = other.OauthClientId;
+      }
+      if (other.clientInstance_ != null) {
+        if (clientInstance_ == null) {
+          clientInstance_ = new global::HOLMS.Types.IAM.ClientInstance();
+        }
+        ClientInstance.MergeFrom(other.ClientInstance);
       }
     }
 
@@ -278,6 +306,13 @@ namespace HOLMS.Types.IAM.RPC {
           }
           case 34: {
             OauthClientId = input.ReadString();
+            break;
+          }
+          case 42: {
+            if (clientInstance_ == null) {
+              clientInstance_ = new global::HOLMS.Types.IAM.ClientInstance();
+            }
+            input.ReadMessage(clientInstance_);
             break;
           }
         }

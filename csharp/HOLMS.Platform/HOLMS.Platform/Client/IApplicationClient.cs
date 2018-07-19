@@ -134,6 +134,7 @@ namespace HOLMS.Platform.Client {
         string TenancyName { get; }
         string UserName { get; }
         
-        Task<SessionSvcStartSessionResult> StartSession(string candidateUsername, string candidatePassword);
+        Task<SessionSvcStartSessionResult> StartSession(string candidateUsername, string candidatePassword
+                                                            , ClientInstance clientInstance);
     }
 }

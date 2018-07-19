@@ -6,6 +6,7 @@ option go_package = "iam/rpc";
 
 import "iam/client_instance_indicator.proto";
 import "primitive/session_context.proto";
+import "iam/client_instance.proto";
 
 enum SessionSvcStartSessionResult {
     SUCCESS = 0;
@@ -23,6 +24,7 @@ message SessionSvcStartSessionRequest {
 	string candidate_password = 2;
 	.holms.types.iam.ClientInstanceIndicator client_instance_id = 3;
 	string oauth_client_id = 4;
+	.holms.types.iam.ClientInstance client_instance = 5;
 }
 
 message TokenRefreshRequest {

@@ -168,12 +168,17 @@ namespace HOLMS.Platform.Client {
             _authenticatedChannel = null;
         }
 
-        public virtual async Task<SessionSvcStartSessionResult> StartSession(string candidateUsername, string candidatePassword) {
+        public virtual async Task<SessionSvcStartSessionResult> StartSession(string candidateUsername, string candidatePassword
+                                                                                                , ClientInstance clientInstance)
+        {
+            var clientInstanceIndicator = new ClientInstanceIndicator(_sp.ClientInstanceId);
+            if (clientInstance != null) { clientInstance.InstanceId = clientInstanceIndicator; }
             var startReq = new SessionSvcStartSessionRequest {
                 CandidateUsername = candidateUsername,
                 CandidatePassword = candidatePassword,
-                ClientInstanceId = new ClientInstanceIndicator(_sp.ClientInstanceId),
+                ClientInstanceId = clientInstanceIndicator,
                 OauthClientId = _clientId,
+                ClientInstance = clientInstance
             };
 
             // NOTE(DA) This section of the code has given me more grief than would be expected.

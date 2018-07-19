@@ -9,4 +9,5 @@ import "iam/client_instance_indicator.proto";
 message ClientInstance {
 	.holms.types.iam.ClientInstanceIndicator instance_id = 1;
 	string name = 2;
+	string app_version = 3;
 }
