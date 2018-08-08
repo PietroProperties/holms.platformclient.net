@@ -7,6 +7,7 @@ import "booking/indicators/reservation_indicator.proto";
 import "booking/query_filter.proto";
 import "booking/reservations/reservation_summary.proto";
 import "primitive/pb_local_date.proto";
+import "operations/rooms/room.proto";
 
 message ReservationSearchSvcGetFilteredReservationListRequest {
 	.holms.types.booking.QueryFilter filter = 1;
@@ -20,6 +21,7 @@ message ReservationSearchSvcGetDateFilteredReservationListRequest {
 
 message ReservationSearchSvcGetFilteredReservationListResponse {
 	repeated .holms.types.booking.reservations.ReservationSummary reservations = 1;
+	repeated .holms.types.operations.rooms.Room rooms = 2;
 }
 
 enum ReservationSearchSvcGetReservationSummaryResult {
