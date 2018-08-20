@@ -42,21 +42,22 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "GAMgASgIEiYKHmxlZGdlcl9hY3Rpdml0eV9zdW1tYXJ5X3JlcG9ydBgEIAEo",
             "CBIlCh1sZWRnZXJfam91cm5hbF9lbnRyaWVzX3JlcG9ydBgFIAEoCBIhChli",
             "b29raW5nc19ieV9wZXJpb2RfcmVwb3J0GAYgASgIEiYKHmZvbGlvX2ltbWVk",
-            "aWF0ZV9jaGFyZ2VzX3JlcG9ydBgHIAEoCCKkAgokTWFuYWdlbWVudE9wc2Rh",
+            "aWF0ZV9jaGFyZ2VzX3JlcG9ydBgHIAEoCCLpAgokTWFuYWdlbWVudE9wc2Rh",
             "dGVSYW5nZVJlcG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5o",
             "b2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2US",
             "Igoacm9vbV91c2FnZV9kZXRhaWxlZF9yZXBvcnQYAiABKAgSIQoZcm9vbV91",
             "c2FnZV9zdW1tYXJ5X3JlcG9ydBgDIAEoCBIpCiFwbGFubmVkX2xvZGdpbmdf",
             "cmV2ZW51ZV9ieV9zb3VyY2UYBCABKAgSIgoacHJvcGVydHlfc3RhdGlzdGlj",
             "c19yZXBvcnQYBSABKAgSIgoaZm9saW9fZ3Jvc3NfY2hhcmdlc19yZXBvcnQY",
-            "BiABKAhCJaoCIkhPTE1TLlR5cGVzLlJlcG9ydGluZy5SZXBvcnRQYXJhbXNi",
-            "BnByb3RvMw=="));
+            "BiABKAgSIQoZdGF4X2V4ZW1wdF9zdW1tYXJ5X3JlcG9ydBgHIAEoCBIgChh0",
+            "YXhfZXhlbXB0X2RldGFpbF9yZXBvcnQYCCABKAhCJaoCIkhPTE1TLlR5cGVz",
+            "LlJlcG9ydGluZy5SZXBvcnRQYXJhbXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbIntervalReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport", "PropStatsYesterday", "PropStatsTrailing7D", "PropStatsTrailing28D", "PropStatsLastFullWeek", "PropStatsLastFullMonth", "PropStatsLastFullYear", "CustomRanges" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest.Parser, new[]{ "ReportingRange", "FolioPaymentsReport", "CallAccountingReport", "LedgerActivitySummaryReport", "LedgerJournalEntriesReport", "BookingsByPeriodReport", "FolioImmediateChargesReport" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport", "PlannedLodgingRevenueBySource", "PropertyStatisticsReport", "FolioGrossChargesReport" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport", "PlannedLodgingRevenueBySource", "PropertyStatisticsReport", "FolioGrossChargesReport", "TaxExemptSummaryReport", "TaxExemptDetailReport" }, null, null, null)
           }));
     }
     #endregion
@@ -773,6 +774,8 @@ namespace HOLMS.Types.Reporting.ReportParams {
       plannedLodgingRevenueBySource_ = other.plannedLodgingRevenueBySource_;
       propertyStatisticsReport_ = other.propertyStatisticsReport_;
       folioGrossChargesReport_ = other.folioGrossChargesReport_;
+      taxExemptSummaryReport_ = other.taxExemptSummaryReport_;
+      taxExemptDetailReport_ = other.taxExemptDetailReport_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -846,6 +849,28 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
+    /// <summary>Field number for the "tax_exempt_summary_report" field.</summary>
+    public const int TaxExemptSummaryReportFieldNumber = 7;
+    private bool taxExemptSummaryReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool TaxExemptSummaryReport {
+      get { return taxExemptSummaryReport_; }
+      set {
+        taxExemptSummaryReport_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tax_exempt_detail_report" field.</summary>
+    public const int TaxExemptDetailReportFieldNumber = 8;
+    private bool taxExemptDetailReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool TaxExemptDetailReport {
+      get { return taxExemptDetailReport_; }
+      set {
+        taxExemptDetailReport_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ManagementOpsdateRangeReportManifest);
@@ -865,6 +890,8 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (PlannedLodgingRevenueBySource != other.PlannedLodgingRevenueBySource) return false;
       if (PropertyStatisticsReport != other.PropertyStatisticsReport) return false;
       if (FolioGrossChargesReport != other.FolioGrossChargesReport) return false;
+      if (TaxExemptSummaryReport != other.TaxExemptSummaryReport) return false;
+      if (TaxExemptDetailReport != other.TaxExemptDetailReport) return false;
       return true;
     }
 
@@ -877,6 +904,8 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (PlannedLodgingRevenueBySource != false) hash ^= PlannedLodgingRevenueBySource.GetHashCode();
       if (PropertyStatisticsReport != false) hash ^= PropertyStatisticsReport.GetHashCode();
       if (FolioGrossChargesReport != false) hash ^= FolioGrossChargesReport.GetHashCode();
+      if (TaxExemptSummaryReport != false) hash ^= TaxExemptSummaryReport.GetHashCode();
+      if (TaxExemptDetailReport != false) hash ^= TaxExemptDetailReport.GetHashCode();
       return hash;
     }
 
@@ -911,6 +940,14 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(48);
         output.WriteBool(FolioGrossChargesReport);
       }
+      if (TaxExemptSummaryReport != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(TaxExemptSummaryReport);
+      }
+      if (TaxExemptDetailReport != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(TaxExemptDetailReport);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -932,6 +969,12 @@ namespace HOLMS.Types.Reporting.ReportParams {
         size += 1 + 1;
       }
       if (FolioGrossChargesReport != false) {
+        size += 1 + 1;
+      }
+      if (TaxExemptSummaryReport != false) {
+        size += 1 + 1;
+      }
+      if (TaxExemptDetailReport != false) {
         size += 1 + 1;
       }
       return size;
@@ -962,6 +1005,12 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
       if (other.FolioGrossChargesReport != false) {
         FolioGrossChargesReport = other.FolioGrossChargesReport;
+      }
+      if (other.TaxExemptSummaryReport != false) {
+        TaxExemptSummaryReport = other.TaxExemptSummaryReport;
+      }
+      if (other.TaxExemptDetailReport != false) {
+        TaxExemptDetailReport = other.TaxExemptDetailReport;
       }
     }
 
@@ -998,6 +1047,14 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 48: {
             FolioGrossChargesReport = input.ReadBool();
+            break;
+          }
+          case 56: {
+            TaxExemptSummaryReport = input.ReadBool();
+            break;
+          }
+          case 64: {
+            TaxExemptDetailReport = input.ReadBool();
             break;
           }
         }

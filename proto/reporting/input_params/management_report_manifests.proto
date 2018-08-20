@@ -38,5 +38,7 @@ message ManagementOpsdateRangeReportManifest {
 	bool planned_lodging_revenue_by_source = 4;
 	bool property_statistics_report = 5;
 	bool folio_gross_charges_report = 6;
+	bool tax_exempt_summary_report = 7;
+	bool tax_exempt_detail_report = 8;
 }
 
