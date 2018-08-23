@@ -10,6 +10,12 @@ import "primitive/pb_local_date.proto";
 
 message GroupBookingSvcGetFilteredBookingsListRequest {
 	.holms.types.booking.QueryFilter filter = 1;
+	bool include_canceled = 2;
+}
+
+message GroupBookingSvcGetDateFilteredBookingsListRequest {
+	.holms.types.primitive.PbLocalDate date = 1;
+	bool include_canceled = 2;
 }
 
 message GroupBookingSvcGetFilteredBookingsListResponse {
@@ -20,12 +26,12 @@ service GroupBookingSearchSvc {
 	rpc GetFilteredBookingsList (GroupBookingSvcGetFilteredBookingsListRequest)
 		returns (GroupBookingSvcGetFilteredBookingsListResponse);
 
-	rpc GetArrivalsByCalendarDate(holms.types.primitive.PbLocalDate)
+	rpc GetArrivalsByCalendarDate(GroupBookingSvcGetDateFilteredBookingsListRequest)  //(holms.types.primitive.PbLocalDate)
 		returns (GroupBookingSvcGetFilteredBookingsListResponse);
 
-	rpc GetDeparturesByCalendarDate(holms.types.primitive.PbLocalDate)
+	rpc GetDeparturesByCalendarDate(GroupBookingSvcGetDateFilteredBookingsListRequest)  //(holms.types.primitive.PbLocalDate)
 		returns (GroupBookingSvcGetFilteredBookingsListResponse);
 
-	rpc GetAllDuringDate(holms.types.primitive.PbLocalDate)
+	rpc GetAllDuringDate(GroupBookingSvcGetDateFilteredBookingsListRequest)  //(holms.types.primitive.PbLocalDate)
 		returns	(GroupBookingSvcGetFilteredBookingsListResponse);
 }

@@ -25,31 +25,38 @@ namespace HOLMS.Types.Booking.RPC {
             "Cipib29raW5nL3JwYy9ncm91cF9ib29raW5nX3NlYXJjaF9zdmMucHJvdG8S",
             "F2hvbG1zLnR5cGVzLmJvb2tpbmcucnBjGiZib29raW5nL2dyb3Vwcy9ncm91",
             "cF9ib29raW5nX2V4dC5wcm90bxoaYm9va2luZy9xdWVyeV9maWx0ZXIucHJv",
-            "dG8aHXByaW1pdGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvImEKLUdyb3VwQm9v",
+            "dG8aHXByaW1pdGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvInsKLUdyb3VwQm9v",
             "a2luZ1N2Y0dldEZpbHRlcmVkQm9va2luZ3NMaXN0UmVxdWVzdBIwCgZmaWx0",
-            "ZXIYASABKA4yIC5ob2xtcy50eXBlcy5ib29raW5nLlF1ZXJ5RmlsdGVyIm8K",
-            "Lkdyb3VwQm9va2luZ1N2Y0dldEZpbHRlcmVkQm9va2luZ3NMaXN0UmVzcG9u",
-            "c2USPQoIYm9va2luZ3MYASADKAsyKy5ob2xtcy50eXBlcy5ib29raW5nLmdy",
-            "b3Vwcy5Hcm91cEJvb2tpbmdFeHQy3QQKFUdyb3VwQm9va2luZ1NlYXJjaFN2",
-            "YxKqAQoXR2V0RmlsdGVyZWRCb29raW5nc0xpc3QSRi5ob2xtcy50eXBlcy5i",
-            "b29raW5nLnJwYy5Hcm91cEJvb2tpbmdTdmNHZXRGaWx0ZXJlZEJvb2tpbmdz",
-            "TGlzdFJlcXVlc3QaRy5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5Hcm91cEJv",
-            "b2tpbmdTdmNHZXRGaWx0ZXJlZEJvb2tpbmdzTGlzdFJlc3BvbnNlEogBChlH",
-            "ZXRBcnJpdmFsc0J5Q2FsZW5kYXJEYXRlEiIuaG9sbXMudHlwZXMucHJpbWl0",
-            "aXZlLlBiTG9jYWxEYXRlGkcuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3Jv",
-            "dXBCb29raW5nU3ZjR2V0RmlsdGVyZWRCb29raW5nc0xpc3RSZXNwb25zZRKK",
-            "AQobR2V0RGVwYXJ0dXJlc0J5Q2FsZW5kYXJEYXRlEiIuaG9sbXMudHlwZXMu",
-            "cHJpbWl0aXZlLlBiTG9jYWxEYXRlGkcuaG9sbXMudHlwZXMuYm9va2luZy5y",
+            "ZXIYASABKA4yIC5ob2xtcy50eXBlcy5ib29raW5nLlF1ZXJ5RmlsdGVyEhgK",
+            "EGluY2x1ZGVfY2FuY2VsZWQYAiABKAgifwoxR3JvdXBCb29raW5nU3ZjR2V0",
+            "RGF0ZUZpbHRlcmVkQm9va2luZ3NMaXN0UmVxdWVzdBIwCgRkYXRlGAEgASgL",
+            "MiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlEhgKEGluY2x1",
+            "ZGVfY2FuY2VsZWQYAiABKAgibwouR3JvdXBCb29raW5nU3ZjR2V0RmlsdGVy",
+            "ZWRCb29raW5nc0xpc3RSZXNwb25zZRI9Cghib29raW5ncxgBIAMoCzIrLmhv",
+            "bG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdyb3VwQm9va2luZ0V4dDLWBQoV",
+            "R3JvdXBCb29raW5nU2VhcmNoU3ZjEqoBChdHZXRGaWx0ZXJlZEJvb2tpbmdz",
+            "TGlzdBJGLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3VwQm9va2luZ1N2",
+            "Y0dldEZpbHRlcmVkQm9va2luZ3NMaXN0UmVxdWVzdBpHLmhvbG1zLnR5cGVz",
+            "LmJvb2tpbmcucnBjLkdyb3VwQm9va2luZ1N2Y0dldEZpbHRlcmVkQm9va2lu",
+            "Z3NMaXN0UmVzcG9uc2USsAEKGUdldEFycml2YWxzQnlDYWxlbmRhckRhdGUS",
+            "Si5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5Hcm91cEJvb2tpbmdTdmNHZXRE",
+            "YXRlRmlsdGVyZWRCb29raW5nc0xpc3RSZXF1ZXN0GkcuaG9sbXMudHlwZXMu",
+            "Ym9va2luZy5ycGMuR3JvdXBCb29raW5nU3ZjR2V0RmlsdGVyZWRCb29raW5n",
+            "c0xpc3RSZXNwb25zZRKyAQobR2V0RGVwYXJ0dXJlc0J5Q2FsZW5kYXJEYXRl",
+            "EkouaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBCb29raW5nU3ZjR2V0",
+            "RGF0ZUZpbHRlcmVkQm9va2luZ3NMaXN0UmVxdWVzdBpHLmhvbG1zLnR5cGVz",
+            "LmJvb2tpbmcucnBjLkdyb3VwQm9va2luZ1N2Y0dldEZpbHRlcmVkQm9va2lu",
+            "Z3NMaXN0UmVzcG9uc2USpwEKEEdldEFsbER1cmluZ0RhdGUSSi5ob2xtcy50",
+            "eXBlcy5ib29raW5nLnJwYy5Hcm91cEJvb2tpbmdTdmNHZXREYXRlRmlsdGVy",
+            "ZWRCb29raW5nc0xpc3RSZXF1ZXN0GkcuaG9sbXMudHlwZXMuYm9va2luZy5y",
             "cGMuR3JvdXBCb29raW5nU3ZjR2V0RmlsdGVyZWRCb29raW5nc0xpc3RSZXNw",
-            "b25zZRJ/ChBHZXRBbGxEdXJpbmdEYXRlEiIuaG9sbXMudHlwZXMucHJpbWl0",
-            "aXZlLlBiTG9jYWxEYXRlGkcuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3Jv",
-            "dXBCb29raW5nU3ZjR2V0RmlsdGVyZWRCb29raW5nc0xpc3RSZXNwb25zZUIn",
-            "Wgtib29raW5nL3JwY6oCF0hPTE1TLlR5cGVzLkJvb2tpbmcuUlBDYgZwcm90",
-            "bzM="));
+            "b25zZUInWgtib29raW5nL3JwY6oCF0hPTE1TLlR5cGVzLkJvb2tpbmcuUlBD",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Groups.GroupBookingExtReflection.Descriptor, global::HOLMS.Types.Booking.QueryFilterReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest.Parser, new[]{ "Filter" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest.Parser, new[]{ "Filter", "IncludeCanceled" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetDateFilteredBookingsListRequest), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetDateFilteredBookingsListRequest.Parser, new[]{ "Date", "IncludeCanceled" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse.Parser, new[]{ "Bookings" }, null, null, null)
           }));
     }
@@ -82,6 +89,7 @@ namespace HOLMS.Types.Booking.RPC {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GroupBookingSvcGetFilteredBookingsListRequest(GroupBookingSvcGetFilteredBookingsListRequest other) : this() {
       filter_ = other.filter_;
+      includeCanceled_ = other.includeCanceled_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -100,6 +108,17 @@ namespace HOLMS.Types.Booking.RPC {
       }
     }
 
+    /// <summary>Field number for the "include_canceled" field.</summary>
+    public const int IncludeCanceledFieldNumber = 2;
+    private bool includeCanceled_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IncludeCanceled {
+      get { return includeCanceled_; }
+      set {
+        includeCanceled_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GroupBookingSvcGetFilteredBookingsListRequest);
@@ -114,6 +133,7 @@ namespace HOLMS.Types.Booking.RPC {
         return true;
       }
       if (Filter != other.Filter) return false;
+      if (IncludeCanceled != other.IncludeCanceled) return false;
       return true;
     }
 
@@ -121,6 +141,7 @@ namespace HOLMS.Types.Booking.RPC {
     public override int GetHashCode() {
       int hash = 1;
       if (Filter != 0) hash ^= Filter.GetHashCode();
+      if (IncludeCanceled != false) hash ^= IncludeCanceled.GetHashCode();
       return hash;
     }
 
@@ -135,6 +156,10 @@ namespace HOLMS.Types.Booking.RPC {
         output.WriteRawTag(8);
         output.WriteEnum((int) Filter);
       }
+      if (IncludeCanceled != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(IncludeCanceled);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -142,6 +167,9 @@ namespace HOLMS.Types.Booking.RPC {
       int size = 0;
       if (Filter != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Filter);
+      }
+      if (IncludeCanceled != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -153,6 +181,9 @@ namespace HOLMS.Types.Booking.RPC {
       }
       if (other.Filter != 0) {
         Filter = other.Filter;
+      }
+      if (other.IncludeCanceled != false) {
+        IncludeCanceled = other.IncludeCanceled;
       }
     }
 
@@ -168,6 +199,161 @@ namespace HOLMS.Types.Booking.RPC {
             filter_ = (global::HOLMS.Types.Booking.QueryFilter) input.ReadEnum();
             break;
           }
+          case 16: {
+            IncludeCanceled = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GroupBookingSvcGetDateFilteredBookingsListRequest : pb::IMessage<GroupBookingSvcGetDateFilteredBookingsListRequest> {
+    private static readonly pb::MessageParser<GroupBookingSvcGetDateFilteredBookingsListRequest> _parser = new pb::MessageParser<GroupBookingSvcGetDateFilteredBookingsListRequest>(() => new GroupBookingSvcGetDateFilteredBookingsListRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GroupBookingSvcGetDateFilteredBookingsListRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Booking.RPC.GroupBookingSearchSvcReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GroupBookingSvcGetDateFilteredBookingsListRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GroupBookingSvcGetDateFilteredBookingsListRequest(GroupBookingSvcGetDateFilteredBookingsListRequest other) : this() {
+      Date = other.date_ != null ? other.Date.Clone() : null;
+      includeCanceled_ = other.includeCanceled_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GroupBookingSvcGetDateFilteredBookingsListRequest Clone() {
+      return new GroupBookingSvcGetDateFilteredBookingsListRequest(this);
+    }
+
+    /// <summary>Field number for the "date" field.</summary>
+    public const int DateFieldNumber = 1;
+    private global::HOLMS.Types.Primitive.PbLocalDate date_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate Date {
+      get { return date_; }
+      set {
+        date_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "include_canceled" field.</summary>
+    public const int IncludeCanceledFieldNumber = 2;
+    private bool includeCanceled_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IncludeCanceled {
+      get { return includeCanceled_; }
+      set {
+        includeCanceled_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GroupBookingSvcGetDateFilteredBookingsListRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GroupBookingSvcGetDateFilteredBookingsListRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Date, other.Date)) return false;
+      if (IncludeCanceled != other.IncludeCanceled) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (date_ != null) hash ^= Date.GetHashCode();
+      if (IncludeCanceled != false) hash ^= IncludeCanceled.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (date_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Date);
+      }
+      if (IncludeCanceled != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(IncludeCanceled);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (date_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Date);
+      }
+      if (IncludeCanceled != false) {
+        size += 1 + 1;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GroupBookingSvcGetDateFilteredBookingsListRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.date_ != null) {
+        if (date_ == null) {
+          date_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        Date.MergeFrom(other.Date);
+      }
+      if (other.IncludeCanceled != false) {
+        IncludeCanceled = other.IncludeCanceled;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (date_ == null) {
+              date_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(date_);
+            break;
+          }
+          case 16: {
+            IncludeCanceled = input.ReadBool();
+            break;
+          }
         }
       }
     }
@@ -181,7 +367,7 @@ namespace HOLMS.Types.Booking.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Booking.RPC.GroupBookingSearchSvcReflection.Descriptor.MessageTypes[1]; }
+      get { return global::HOLMS.Types.Booking.RPC.GroupBookingSearchSvcReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
