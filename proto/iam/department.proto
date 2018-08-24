@@ -12,4 +12,5 @@ message Department {
 	string name = 2;
 	bool is_housekeeper = 3;
 	repeated .holms.types.primitive.SecurityAction actions = 4;
+	bool is_cash_drop_include = 5;
 }

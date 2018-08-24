@@ -24,15 +24,16 @@ namespace HOLMS.Types.IAM {
           string.Concat(
             "ChRpYW0vZGVwYXJ0bWVudC5wcm90bxIPaG9sbXMudHlwZXMuaWFtGh5pYW0v",
             "ZGVwYXJ0bWVudF9pbmRpY2F0b3IucHJvdG8aH3ByaW1pdGl2ZS9zZXNzaW9u",
-            "X2NvbnRleHQucHJvdG8iowEKCkRlcGFydG1lbnQSNwoJZW50aXR5X2lkGAEg",
+            "X2NvbnRleHQucHJvdG8iwQEKCkRlcGFydG1lbnQSNwoJZW50aXR5X2lkGAEg",
             "ASgLMiQuaG9sbXMudHlwZXMuaWFtLkRlcGFydG1lbnRJbmRpY2F0b3ISDAoE",
             "bmFtZRgCIAEoCRIWCg5pc19ob3VzZWtlZXBlchgDIAEoCBI2CgdhY3Rpb25z",
             "GAQgAygOMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLlNlY3VyaXR5QWN0aW9u",
-            "QhdaA2lhbaoCD0hPTE1TLlR5cGVzLklBTWIGcHJvdG8z"));
+            "EhwKFGlzX2Nhc2hfZHJvcF9pbmNsdWRlGAUgASgIQhdaA2lhbaoCD0hPTE1T",
+            "LlR5cGVzLklBTWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.DepartmentIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.SessionContextReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Department), global::HOLMS.Types.IAM.Department.Parser, new[]{ "EntityId", "Name", "IsHousekeeper", "Actions" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.Department), global::HOLMS.Types.IAM.Department.Parser, new[]{ "EntityId", "Name", "IsHousekeeper", "Actions", "IsCashDropInclude" }, null, null, null)
           }));
     }
     #endregion
@@ -67,6 +68,7 @@ namespace HOLMS.Types.IAM {
       name_ = other.name_;
       isHousekeeper_ = other.isHousekeeper_;
       actions_ = other.actions_.Clone();
+      isCashDropInclude_ = other.isCashDropInclude_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -117,6 +119,17 @@ namespace HOLMS.Types.IAM {
       get { return actions_; }
     }
 
+    /// <summary>Field number for the "is_cash_drop_include" field.</summary>
+    public const int IsCashDropIncludeFieldNumber = 5;
+    private bool isCashDropInclude_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsCashDropInclude {
+      get { return isCashDropInclude_; }
+      set {
+        isCashDropInclude_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Department);
@@ -134,6 +147,7 @@ namespace HOLMS.Types.IAM {
       if (Name != other.Name) return false;
       if (IsHousekeeper != other.IsHousekeeper) return false;
       if(!actions_.Equals(other.actions_)) return false;
+      if (IsCashDropInclude != other.IsCashDropInclude) return false;
       return true;
     }
 
@@ -144,6 +158,7 @@ namespace HOLMS.Types.IAM {
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (IsHousekeeper != false) hash ^= IsHousekeeper.GetHashCode();
       hash ^= actions_.GetHashCode();
+      if (IsCashDropInclude != false) hash ^= IsCashDropInclude.GetHashCode();
       return hash;
     }
 
@@ -167,6 +182,10 @@ namespace HOLMS.Types.IAM {
         output.WriteBool(IsHousekeeper);
       }
       actions_.WriteTo(output, _repeated_actions_codec);
+      if (IsCashDropInclude != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(IsCashDropInclude);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -182,6 +201,9 @@ namespace HOLMS.Types.IAM {
         size += 1 + 1;
       }
       size += actions_.CalculateSize(_repeated_actions_codec);
+      if (IsCashDropInclude != false) {
+        size += 1 + 1;
+      }
       return size;
     }
 
@@ -203,6 +225,9 @@ namespace HOLMS.Types.IAM {
         IsHousekeeper = other.IsHousekeeper;
       }
       actions_.Add(other.actions_);
+      if (other.IsCashDropInclude != false) {
+        IsCashDropInclude = other.IsCashDropInclude;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -231,6 +256,10 @@ namespace HOLMS.Types.IAM {
           case 34:
           case 32: {
             actions_.AddEntriesFrom(input, _repeated_actions_codec);
+            break;
+          }
+          case 40: {
+            IsCashDropInclude = input.ReadBool();
             break;
           }
         }

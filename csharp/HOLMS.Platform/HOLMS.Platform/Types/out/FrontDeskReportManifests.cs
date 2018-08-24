@@ -25,24 +25,26 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "CjhyZXBvcnRpbmcvaW5wdXRfcGFyYW1zL2Zyb250X2Rlc2tfcmVwb3J0X21h",
             "bmlmZXN0cy5wcm90bxIiaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3Bh",
             "cmFtcxoqcHJpbWl0aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnBy",
-            "b3RvIqgCCiJGcm9udERlc2tDdXJyZW50RGF0ZVJlcG9ydE1hbmlmZXN0EhcK",
+            "b3RvIv8CCiJGcm9udERlc2tDdXJyZW50RGF0ZVJlcG9ydE1hbmlmZXN0EhcK",
             "D2Fycml2YWxzX3JlcG9ydBgCIAEoCBIZChFkZXBhcnR1cmVzX3JlcG9ydBgD",
             "IAEoCBIeChZpbl9ob3VzZV9ndWVzdHNfcmVwb3J0GAQgASgIElsKFGd1ZXN0",
             "X3JlcG9ydF9zb3J0aW5nGAUgASgOMj0uaG9sbXMudHlwZXMucmVwb3J0aW5n",
             "LmlucHV0X3BhcmFtcy5JbkhvdXNlR3Vlc3RSZXBvcnRTb3J0aW5nEhcKD3Zl",
             "aGljbGVzX3JlcG9ydBgGIAEoCBIXCg9ub19zaG93c19yZXBvcnQYByABKAgS",
-            "HwoXdW5vY2N1cGllZF9yb29tc19yZXBvcnQYCCABKAgitQEKI0Zyb250RGVz",
-            "a09wc2RhdGVSYW5nZVJlcG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASAB",
-            "KAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRl",
-            "UmFuZ2USIwobZ2VuZXJhbF9hdmFpbGFiaWxpdHlfcmVwb3J0GAIgASgIEiUK",
-            "HWNhbmNlbGxlZF9yZXNlcnZhdGlvbnNfcmVwb3J0GAMgASgIKkIKGUluSG91",
-            "c2VHdWVzdFJlcG9ydFNvcnRpbmcSEQoNQllfR1VFU1RfTkFNRRAAEhIKDkJZ",
-            "X1JPT01fTlVNQkVSEAFCPVoWcmVwb3J0aW5nL2lucHV0X3BhcmFtc6oCIkhP",
-            "TE1TLlR5cGVzLlJlcG9ydGluZy5SZXBvcnRQYXJhbXNiBnByb3RvMw=="));
+            "HwoXdW5vY2N1cGllZF9yb29tc19yZXBvcnQYCCABKAgSGAoQY2FzaF9kcm9w",
+            "X3JlcG9ydBgJIAEoCBISCgpzdGFydF90aW1lGAogASgJEhUKDWNhc2hfZHJv",
+            "cF9mb3IYCyABKAkSEAoIZW5kX3RpbWUYDCABKAkitQEKI0Zyb250RGVza09w",
+            "c2RhdGVSYW5nZVJlcG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsy",
+            "Li5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFu",
+            "Z2USIwobZ2VuZXJhbF9hdmFpbGFiaWxpdHlfcmVwb3J0GAIgASgIEiUKHWNh",
+            "bmNlbGxlZF9yZXNlcnZhdGlvbnNfcmVwb3J0GAMgASgIKkIKGUluSG91c2VH",
+            "dWVzdFJlcG9ydFNvcnRpbmcSEQoNQllfR1VFU1RfTkFNRRAAEhIKDkJZX1JP",
+            "T01fTlVNQkVSEAFCPVoWcmVwb3J0aW5nL2lucHV0X3BhcmFtc6oCIkhPTE1T",
+            "LlR5cGVzLlJlcG9ydGluZy5SZXBvcnRQYXJhbXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.ReportParams.InHouseGuestReportSorting), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest.Parser, new[]{ "ArrivalsReport", "DeparturesReport", "InHouseGuestsReport", "GuestReportSorting", "VehiclesReport", "NoShowsReport", "UnoccupiedRoomsReport" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest.Parser, new[]{ "ArrivalsReport", "DeparturesReport", "InHouseGuestsReport", "GuestReportSorting", "VehiclesReport", "NoShowsReport", "UnoccupiedRoomsReport", "CashDropReport", "StartTime", "CashDropFor", "EndTime" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "GeneralAvailabilityReport", "CancelledReservationsReport" }, null, null, null)
           }));
     }
@@ -89,6 +91,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
       vehiclesReport_ = other.vehiclesReport_;
       noShowsReport_ = other.noShowsReport_;
       unoccupiedRoomsReport_ = other.unoccupiedRoomsReport_;
+      cashDropReport_ = other.cashDropReport_;
+      startTime_ = other.startTime_;
+      cashDropFor_ = other.cashDropFor_;
+      endTime_ = other.endTime_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -173,6 +179,50 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
+    /// <summary>Field number for the "cash_drop_report" field.</summary>
+    public const int CashDropReportFieldNumber = 9;
+    private bool cashDropReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool CashDropReport {
+      get { return cashDropReport_; }
+      set {
+        cashDropReport_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "start_time" field.</summary>
+    public const int StartTimeFieldNumber = 10;
+    private string startTime_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string StartTime {
+      get { return startTime_; }
+      set {
+        startTime_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "cash_drop_for" field.</summary>
+    public const int CashDropForFieldNumber = 11;
+    private string cashDropFor_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CashDropFor {
+      get { return cashDropFor_; }
+      set {
+        cashDropFor_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "end_time" field.</summary>
+    public const int EndTimeFieldNumber = 12;
+    private string endTime_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string EndTime {
+      get { return endTime_; }
+      set {
+        endTime_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FrontDeskCurrentDateReportManifest);
@@ -193,6 +243,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (VehiclesReport != other.VehiclesReport) return false;
       if (NoShowsReport != other.NoShowsReport) return false;
       if (UnoccupiedRoomsReport != other.UnoccupiedRoomsReport) return false;
+      if (CashDropReport != other.CashDropReport) return false;
+      if (StartTime != other.StartTime) return false;
+      if (CashDropFor != other.CashDropFor) return false;
+      if (EndTime != other.EndTime) return false;
       return true;
     }
 
@@ -206,6 +260,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (VehiclesReport != false) hash ^= VehiclesReport.GetHashCode();
       if (NoShowsReport != false) hash ^= NoShowsReport.GetHashCode();
       if (UnoccupiedRoomsReport != false) hash ^= UnoccupiedRoomsReport.GetHashCode();
+      if (CashDropReport != false) hash ^= CashDropReport.GetHashCode();
+      if (StartTime.Length != 0) hash ^= StartTime.GetHashCode();
+      if (CashDropFor.Length != 0) hash ^= CashDropFor.GetHashCode();
+      if (EndTime.Length != 0) hash ^= EndTime.GetHashCode();
       return hash;
     }
 
@@ -244,6 +302,22 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(64);
         output.WriteBool(UnoccupiedRoomsReport);
       }
+      if (CashDropReport != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(CashDropReport);
+      }
+      if (StartTime.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(StartTime);
+      }
+      if (CashDropFor.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(CashDropFor);
+      }
+      if (EndTime.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(EndTime);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -269,6 +343,18 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
       if (UnoccupiedRoomsReport != false) {
         size += 1 + 1;
+      }
+      if (CashDropReport != false) {
+        size += 1 + 1;
+      }
+      if (StartTime.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(StartTime);
+      }
+      if (CashDropFor.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CashDropFor);
+      }
+      if (EndTime.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(EndTime);
       }
       return size;
     }
@@ -298,6 +384,18 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
       if (other.UnoccupiedRoomsReport != false) {
         UnoccupiedRoomsReport = other.UnoccupiedRoomsReport;
+      }
+      if (other.CashDropReport != false) {
+        CashDropReport = other.CashDropReport;
+      }
+      if (other.StartTime.Length != 0) {
+        StartTime = other.StartTime;
+      }
+      if (other.CashDropFor.Length != 0) {
+        CashDropFor = other.CashDropFor;
+      }
+      if (other.EndTime.Length != 0) {
+        EndTime = other.EndTime;
       }
     }
 
@@ -335,6 +433,22 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 64: {
             UnoccupiedRoomsReport = input.ReadBool();
+            break;
+          }
+          case 72: {
+            CashDropReport = input.ReadBool();
+            break;
+          }
+          case 82: {
+            StartTime = input.ReadString();
+            break;
+          }
+          case 90: {
+            CashDropFor = input.ReadString();
+            break;
+          }
+          case 98: {
+            EndTime = input.ReadString();
             break;
           }
         }

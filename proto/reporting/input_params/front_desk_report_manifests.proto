@@ -19,6 +19,10 @@ message FrontDeskCurrentDateReportManifest {
 	bool vehicles_report = 6;
 	bool no_shows_report = 7;
 	bool unoccupied_rooms_report = 8;
+	bool cash_drop_report = 9;
+	string start_time = 10;
+	string cash_drop_for = 11;
+	string end_time = 12;
 }
 
 message FrontDeskOpsdateRangeReportManifest {
