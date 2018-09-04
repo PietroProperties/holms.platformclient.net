@@ -27,15 +27,18 @@ namespace HOLMS.Types.Reporting.RPC {
             "Z3JvdXBfYm9va2luZ19pbmRpY2F0b3IucHJvdG8aLHJlcG9ydGluZy9vdXRw",
             "dXRzL2h0bWxfcmVwb3J0X3Jlc3BvbnNlLnByb3RvIksKN0ZvbGlvc1JlcG9y",
             "dGluZ1N2Y0NhcmRDYXB0dXJlUmVwb3J0aW5nU3ZjUmVwb3J0UmVzcG9uc2US",
-            "EAoIZG9jdW1lbnQYASABKAkyswIKEkZvbGlvc1JlcG9ydGluZ1N2YxKMAQog",
+            "EAoIZG9jdW1lbnQYASABKAkyvAMKEkZvbGlvc1JlcG9ydGluZ1N2YxKMAQog",
             "R2V0Qm9va2luZ0Fzc29jaWF0ZWRGb2xpb3NEZXRhaWwSNS5ob2xtcy50eXBl",
             "cy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yGjEu",
             "aG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3Bv",
             "bnNlEo0BCiFHZXRCb29raW5nQXNzb2NpYXRlZEZvbGlvc1N1bW1hcnkSNS5o",
             "b2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5k",
             "aWNhdG9yGjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJl",
-            "cG9ydFJlc3BvbnNlQhyqAhlIT0xNUy5UeXBlcy5SZXBvcnRpbmcuUlBDYgZw",
-            "cm90bzM="));
+            "cG9ydFJlc3BvbnNlEoYBChpHZXRSZXNlcnZhdGlvbkZvbGlvU3VtbWFyeRI1",
+            "LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5Hcm91cEJvb2tpbmdJ",
+            "bmRpY2F0b3IaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1s",
+            "UmVwb3J0UmVzcG9uc2VCHKoCGUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
