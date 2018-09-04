@@ -23,6 +23,7 @@ import "money/cards/transactions/card_authorization_response.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
+import "money/cards/transactions/payment_card_refund_indicator.proto";
 
 message ReservationFolioSvcCardAuthorizationFromStoredCardRequest {
 	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
@@ -155,5 +156,9 @@ service ReservationFolioSvc {
 		returns (google.protobuf.Empty);
 	rpc PostMiscChargeCorrection (ReservationFolioSvcPostMiscChargeCorrectionRequest)
 		returns (google.protobuf.Empty);
+
+	//Card Refund Cancelation
+	rpc CancelCardRefund(holms.types.money.cards.transactions.PaymentCardRefundIndicator)
+		returns (FolioSvcCancelPaymentResponse);
 }
 

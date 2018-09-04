@@ -38,6 +38,7 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest> __Marshaller_GroupBookingFolioSvcPostLodgingChargeCorrectionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostLodgingChargeCorrectionRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostIncidentalChargeCorrectionRequest> __Marshaller_GroupBookingFolioSvcPostIncidentalChargeCorrectionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostIncidentalChargeCorrectionRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostMiscChargeCorrectionRequest> __Marshaller_GroupBookingFolioSvcPostMiscChargeCorrectionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostMiscChargeCorrectionRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator> __Marshaller_PaymentCardRefundIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Folio.GroupBookingFolioState> __Method_GetGroupBookingFolioState = new grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Folio.GroupBookingFolioState>(
         grpc::MethodType.Unary,
@@ -151,6 +152,13 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_GroupBookingFolioSvcPostMiscChargeCorrectionRequest,
         __Marshaller_Empty);
 
+    static readonly grpc::Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator, global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> __Method_CancelCardRefund = new grpc::Method<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator, global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CancelCardRefund",
+        __Marshaller_PaymentCardRefundIndicator,
+        __Marshaller_FolioSvcCancelPaymentResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -260,6 +268,17 @@ namespace HOLMS.Types.Folio.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> PostMiscChargeCorrection(global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostMiscChargeCorrectionRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      ///Card Refund Cancelation
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> CancelCardRefund(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -657,6 +676,50 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostMiscChargeCorrection, null, options, request);
       }
+      /// <summary>
+      ///Card Refund Cancelation
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse CancelCardRefund(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return CancelCardRefund(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Card Refund Cancelation
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse CancelCardRefund(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CancelCardRefund, null, options, request);
+      }
+      /// <summary>
+      ///Card Refund Cancelation
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> CancelCardRefundAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return CancelCardRefundAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Card Refund Cancelation
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> CancelCardRefundAsync(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CancelCardRefund, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GroupBookingFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -684,7 +747,8 @@ namespace HOLMS.Types.Folio.RPC {
           .AddMethod(__Method_PostCashRefund, serviceImpl.PostCashRefund)
           .AddMethod(__Method_PostLodgingChargeCorrection, serviceImpl.PostLodgingChargeCorrection)
           .AddMethod(__Method_PostIncidentalChargeCorrection, serviceImpl.PostIncidentalChargeCorrection)
-          .AddMethod(__Method_PostMiscChargeCorrection, serviceImpl.PostMiscChargeCorrection).Build();
+          .AddMethod(__Method_PostMiscChargeCorrection, serviceImpl.PostMiscChargeCorrection)
+          .AddMethod(__Method_CancelCardRefund, serviceImpl.CancelCardRefund).Build();
     }
 
   }
