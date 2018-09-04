@@ -23,6 +23,7 @@ import "money/cards/not_present_payment_card.proto";
 import "money/cards/customer_payment_card_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
+import "money/cards/transactions/payment_card_refund_indicator.proto";
 
 message GroupBookingFolioSvcCardAuthorizationFromTokenRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
@@ -135,5 +136,9 @@ service GroupBookingFolioSvc {
 		returns (google.protobuf.Empty);
 	rpc PostMiscChargeCorrection (GroupBookingFolioSvcPostMiscChargeCorrectionRequest)
 		returns (google.protobuf.Empty);
+
+		//Card Refund Cancelation
+	rpc CancelCardRefund(holms.types.money.cards.transactions.PaymentCardRefundIndicator)
+		returns (FolioSvcCancelPaymentResponse);
 }
 
