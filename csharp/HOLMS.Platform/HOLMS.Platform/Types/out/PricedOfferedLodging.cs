@@ -26,19 +26,19 @@ namespace HOLMS.Types.Supply {
             "dHlwZXMuc3VwcGx5GitzdXBwbHkvcm9vbV90eXBlcy9yb29tX3R5cGVfaW5k",
             "aWNhdG9yLnByb3RvGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3Rv",
             "Gh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90bxokc3VwcGx5L3JhdGVf",
-            "c2NoZWR1bGVfaW5kaWNhdG9yLnByb3RvIrcCChRQcmljZWRPZmZlcmVkTG9k",
+            "c2NoZWR1bGVfaW5kaWNhdG9yLnByb3RvItECChRQcmljZWRPZmZlcmVkTG9k",
             "Z2luZxJDCglyb29tX3R5cGUYASABKAsyMC5ob2xtcy50eXBlcy5zdXBwbHku",
             "cm9vbV90eXBlcy5Sb29tVHlwZUluZGljYXRvchIwCgRkYXRlGAIgASgLMiIu",
             "aG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlEhEKCWF2YWlsYWJs",
             "ZRgDIAEoBRJACg1yYXRlX3NjaGVkdWxlGAQgASgLMikuaG9sbXMudHlwZXMu",
             "c3VwcGx5LlJhdGVTY2hlZHVsZUluZGljYXRvchI8Cg1uaWdodGx5X3ByaWNl",
             "GAUgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
-            "EhUKDXJlcXVpcmVkX3RhZ3MYBiADKAlCHVoGc3VwcGx5qgISSE9MTVMuVHlw",
-            "ZXMuU3VwcGx5YgZwcm90bzM="));
+            "EhUKDXJlcXVpcmVkX3RhZ3MYBiADKAkSGAoQcmVsZWFzYWJsZV9ob2xkcxgH",
+            "IAEoBUIdWgZzdXBwbHmqAhJIT0xNUy5UeXBlcy5TdXBwbHliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.PricedOfferedLodging), global::HOLMS.Types.Supply.PricedOfferedLodging.Parser, new[]{ "RoomType", "Date", "Available", "RateSchedule", "NightlyPrice", "RequiredTags" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.PricedOfferedLodging), global::HOLMS.Types.Supply.PricedOfferedLodging.Parser, new[]{ "RoomType", "Date", "Available", "RateSchedule", "NightlyPrice", "RequiredTags", "ReleasableHolds" }, null, null, null)
           }));
     }
     #endregion
@@ -75,6 +75,7 @@ namespace HOLMS.Types.Supply {
       RateSchedule = other.rateSchedule_ != null ? other.RateSchedule.Clone() : null;
       NightlyPrice = other.nightlyPrice_ != null ? other.NightlyPrice.Clone() : null;
       requiredTags_ = other.requiredTags_.Clone();
+      releasableHolds_ = other.releasableHolds_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -147,6 +148,17 @@ namespace HOLMS.Types.Supply {
       get { return requiredTags_; }
     }
 
+    /// <summary>Field number for the "releasable_holds" field.</summary>
+    public const int ReleasableHoldsFieldNumber = 7;
+    private int releasableHolds_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ReleasableHolds {
+      get { return releasableHolds_; }
+      set {
+        releasableHolds_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PricedOfferedLodging);
@@ -166,6 +178,7 @@ namespace HOLMS.Types.Supply {
       if (!object.Equals(RateSchedule, other.RateSchedule)) return false;
       if (!object.Equals(NightlyPrice, other.NightlyPrice)) return false;
       if(!requiredTags_.Equals(other.requiredTags_)) return false;
+      if (ReleasableHolds != other.ReleasableHolds) return false;
       return true;
     }
 
@@ -178,6 +191,7 @@ namespace HOLMS.Types.Supply {
       if (rateSchedule_ != null) hash ^= RateSchedule.GetHashCode();
       if (nightlyPrice_ != null) hash ^= NightlyPrice.GetHashCode();
       hash ^= requiredTags_.GetHashCode();
+      if (ReleasableHolds != 0) hash ^= ReleasableHolds.GetHashCode();
       return hash;
     }
 
@@ -209,6 +223,10 @@ namespace HOLMS.Types.Supply {
         output.WriteMessage(NightlyPrice);
       }
       requiredTags_.WriteTo(output, _repeated_requiredTags_codec);
+      if (ReleasableHolds != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(ReleasableHolds);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -230,6 +248,9 @@ namespace HOLMS.Types.Supply {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(NightlyPrice);
       }
       size += requiredTags_.CalculateSize(_repeated_requiredTags_codec);
+      if (ReleasableHolds != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ReleasableHolds);
+      }
       return size;
     }
 
@@ -266,6 +287,9 @@ namespace HOLMS.Types.Supply {
         NightlyPrice.MergeFrom(other.NightlyPrice);
       }
       requiredTags_.Add(other.requiredTags_);
+      if (other.ReleasableHolds != 0) {
+        ReleasableHolds = other.ReleasableHolds;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -310,6 +334,10 @@ namespace HOLMS.Types.Supply {
           }
           case 50: {
             requiredTags_.AddEntriesFrom(input, _repeated_requiredTags_codec);
+            break;
+          }
+          case 56: {
+            ReleasableHolds = input.ReadInt32();
             break;
           }
         }

@@ -25,25 +25,27 @@ namespace HOLMS.Types.Booking.Pricing {
             "CjBib29raW5nL3ByaWNpbmcvcmVzZXJ2YXRpb25fcHJpY2VfZXN0aW1hdGUu",
             "cHJvdG8SG2hvbG1zLnR5cGVzLmJvb2tpbmcucHJpY2luZxofcHJpbWl0aXZl",
             "L21vbmV0YXJ5X2Ftb3VudC5wcm90bxohYm9va2luZy9wcmljaW5nL3ByaWNl",
-            "X25pZ2h0LnByb3RvItgEChhSZXNlcnZhdGlvblByaWNlRXN0aW1hdGUSNwoG",
-            "cHJpY2VzGAEgAygLMicuaG9sbXMudHlwZXMuYm9va2luZy5wcmljaW5nLlBy",
-            "aWNlTmlnaHQSPwoQbG9kZ2luZ19zdWJ0b3RhbBgCIAEoCzIlLmhvbG1zLnR5",
-            "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJCChNpbmNpZGVudGFsX3N1",
-            "YnRvdGFsGAMgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5",
-            "QW1vdW50Ej0KDnRheGVzX3N1YnRvdGFsGAQgASgLMiUuaG9sbXMudHlwZXMu",
-            "cHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EjwKDWZlZXNfc3VidG90YWwYBSAB",
-            "KAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSPgoP",
-            "ZXN0aW1hdGVkX3RvdGFsGAYgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZl",
-            "Lk1vbmV0YXJ5QW1vdW50EhQKDGlzX3ByaWNlYWJsZRgHIAEoCBIUCgxpc19h",
-            "dmFpbGFibGUYCCABKAgSFQoNdmlvbGF0ZXNfbWxvcxgJIAEoCBIUCgx2aW9s",
-            "YXRlc19jdGEYCiABKAgSIwobaXNfYXZhaWxhYmxlX3dpdGhfaG9sZF9kcm9w",
-            "GAsgASgIEkMKEnN1cHBsaWVkX3N1YnRvdGFscxgMIAMoCzInLmhvbG1zLnR5",
-            "cGVzLmJvb2tpbmcucHJpY2luZy5QcmljZU5pZ2h0Qh6qAhtIT0xNUy5UeXBl",
-            "cy5Cb29raW5nLlByaWNpbmdiBnByb3RvMw=="));
+            "X25pZ2h0LnByb3RvGiNzdXBwbHkvcHJpY2VkX29mZmVyZWRfbG9kZ2luZy5w",
+            "cm90byKSBQoYUmVzZXJ2YXRpb25QcmljZUVzdGltYXRlEjcKBnByaWNlcxgB",
+            "IAMoCzInLmhvbG1zLnR5cGVzLmJvb2tpbmcucHJpY2luZy5QcmljZU5pZ2h0",
+            "Ej8KEGxvZGdpbmdfc3VidG90YWwYAiABKAsyJS5ob2xtcy50eXBlcy5wcmlt",
+            "aXRpdmUuTW9uZXRhcnlBbW91bnQSQgoTaW5jaWRlbnRhbF9zdWJ0b3RhbBgD",
+            "IAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI9",
+            "Cg50YXhlc19zdWJ0b3RhbBgEIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2",
+            "ZS5Nb25ldGFyeUFtb3VudBI8Cg1mZWVzX3N1YnRvdGFsGAUgASgLMiUuaG9s",
+            "bXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50Ej4KD2VzdGltYXRl",
+            "ZF90b3RhbBgGIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFy",
+            "eUFtb3VudBIUCgxpc19wcmljZWFibGUYByABKAgSFAoMaXNfYXZhaWxhYmxl",
+            "GAggASgIEhUKDXZpb2xhdGVzX21sb3MYCSABKAgSFAoMdmlvbGF0ZXNfY3Rh",
+            "GAogASgIEiMKG2lzX2F2YWlsYWJsZV93aXRoX2hvbGRfZHJvcBgLIAEoCBJD",
+            "ChJzdXBwbGllZF9zdWJ0b3RhbHMYDCADKAsyJy5ob2xtcy50eXBlcy5ib29r",
+            "aW5nLnByaWNpbmcuUHJpY2VOaWdodBI4CgZvZmZlcnMYDSADKAsyKC5ob2xt",
+            "cy50eXBlcy5zdXBwbHkuUHJpY2VkT2ZmZXJlZExvZGdpbmdCHqoCG0hPTE1T",
+            "LlR5cGVzLkJvb2tpbmcuUHJpY2luZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Pricing.PriceNightReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Pricing.PriceNightReflection.Descriptor, global::HOLMS.Types.Supply.PricedOfferedLodgingReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate), global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate.Parser, new[]{ "Prices", "LodgingSubtotal", "IncidentalSubtotal", "TaxesSubtotal", "FeesSubtotal", "EstimatedTotal", "IsPriceable", "IsAvailable", "ViolatesMlos", "ViolatesCta", "IsAvailableWithHoldDrop", "SuppliedSubtotals" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate), global::HOLMS.Types.Booking.Pricing.ReservationPriceEstimate.Parser, new[]{ "Prices", "LodgingSubtotal", "IncidentalSubtotal", "TaxesSubtotal", "FeesSubtotal", "EstimatedTotal", "IsPriceable", "IsAvailable", "ViolatesMlos", "ViolatesCta", "IsAvailableWithHoldDrop", "SuppliedSubtotals", "Offers" }, null, null, null)
           }));
     }
     #endregion
@@ -86,6 +88,7 @@ namespace HOLMS.Types.Booking.Pricing {
       violatesCta_ = other.violatesCta_;
       isAvailableWithHoldDrop_ = other.isAvailableWithHoldDrop_;
       suppliedSubtotals_ = other.suppliedSubtotals_.Clone();
+      offers_ = other.offers_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -226,6 +229,16 @@ namespace HOLMS.Types.Booking.Pricing {
       get { return suppliedSubtotals_; }
     }
 
+    /// <summary>Field number for the "offers" field.</summary>
+    public const int OffersFieldNumber = 13;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Supply.PricedOfferedLodging> _repeated_offers_codec
+        = pb::FieldCodec.ForMessage(106, global::HOLMS.Types.Supply.PricedOfferedLodging.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Supply.PricedOfferedLodging> offers_ = new pbc::RepeatedField<global::HOLMS.Types.Supply.PricedOfferedLodging>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Supply.PricedOfferedLodging> Offers {
+      get { return offers_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationPriceEstimate);
@@ -251,6 +264,7 @@ namespace HOLMS.Types.Booking.Pricing {
       if (ViolatesCta != other.ViolatesCta) return false;
       if (IsAvailableWithHoldDrop != other.IsAvailableWithHoldDrop) return false;
       if(!suppliedSubtotals_.Equals(other.suppliedSubtotals_)) return false;
+      if(!offers_.Equals(other.offers_)) return false;
       return true;
     }
 
@@ -269,6 +283,7 @@ namespace HOLMS.Types.Booking.Pricing {
       if (ViolatesCta != false) hash ^= ViolatesCta.GetHashCode();
       if (IsAvailableWithHoldDrop != false) hash ^= IsAvailableWithHoldDrop.GetHashCode();
       hash ^= suppliedSubtotals_.GetHashCode();
+      hash ^= offers_.GetHashCode();
       return hash;
     }
 
@@ -321,6 +336,7 @@ namespace HOLMS.Types.Booking.Pricing {
         output.WriteBool(IsAvailableWithHoldDrop);
       }
       suppliedSubtotals_.WriteTo(output, _repeated_suppliedSubtotals_codec);
+      offers_.WriteTo(output, _repeated_offers_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -358,6 +374,7 @@ namespace HOLMS.Types.Booking.Pricing {
         size += 1 + 1;
       }
       size += suppliedSubtotals_.CalculateSize(_repeated_suppliedSubtotals_codec);
+      size += offers_.CalculateSize(_repeated_offers_codec);
       return size;
     }
 
@@ -413,6 +430,7 @@ namespace HOLMS.Types.Booking.Pricing {
         IsAvailableWithHoldDrop = other.IsAvailableWithHoldDrop;
       }
       suppliedSubtotals_.Add(other.suppliedSubtotals_);
+      offers_.Add(other.offers_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -484,6 +502,10 @@ namespace HOLMS.Types.Booking.Pricing {
           }
           case 98: {
             suppliedSubtotals_.AddEntriesFrom(input, _repeated_suppliedSubtotals_codec);
+            break;
+          }
+          case 106: {
+            offers_.AddEntriesFrom(input, _repeated_offers_codec);
             break;
           }
         }
