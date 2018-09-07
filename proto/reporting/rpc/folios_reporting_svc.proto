@@ -15,7 +15,11 @@ service FoliosReportingSvc {
 		returns(.holms.types.reporting.outputs.HtmlReportResponse);
         rpc GetBookingAssociatedFoliosSummary(.holms.types.booking.indicators.GroupBookingIndicator)
 		returns(.holms.types.reporting.outputs.HtmlReportResponse);
- rpc GetReservationFolioSummary(.holms.types.booking.indicators.GroupBookingIndicator)
+
+	rpc GetReservationFolioSummary(.holms.types.booking.indicators.GroupBookingIndicator) 
+		returns(.holms.types.reporting.outputs.HtmlReportResponse);
+
+	rpc GetBookingWorksheetDetail(.holms.types.booking.indicators.GroupBookingIndicator)
 		returns(.holms.types.reporting.outputs.HtmlReportResponse);
 }
 

@@ -37,6 +37,13 @@ namespace HOLMS.Types.Reporting.RPC {
         __Marshaller_GroupBookingIndicator,
         __Marshaller_HtmlReportResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetBookingWorksheetDetail = new grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetBookingWorksheetDetail",
+        __Marshaller_GroupBookingIndicator,
+        __Marshaller_HtmlReportResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -57,6 +64,11 @@ namespace HOLMS.Types.Reporting.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetReservationFolioSummary(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetBookingWorksheetDetail(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -134,6 +146,22 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationFolioSummary, null, options, request);
       }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetBookingWorksheetDetail(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetBookingWorksheetDetail(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetBookingWorksheetDetail(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetBookingWorksheetDetail, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetBookingWorksheetDetailAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetBookingWorksheetDetailAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetBookingWorksheetDetailAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetBookingWorksheetDetail, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override FoliosReportingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -148,7 +176,8 @@ namespace HOLMS.Types.Reporting.RPC {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetBookingAssociatedFoliosDetail, serviceImpl.GetBookingAssociatedFoliosDetail)
           .AddMethod(__Method_GetBookingAssociatedFoliosSummary, serviceImpl.GetBookingAssociatedFoliosSummary)
-          .AddMethod(__Method_GetReservationFolioSummary, serviceImpl.GetReservationFolioSummary).Build();
+          .AddMethod(__Method_GetReservationFolioSummary, serviceImpl.GetReservationFolioSummary)
+          .AddMethod(__Method_GetBookingWorksheetDetail, serviceImpl.GetBookingWorksheetDetail).Build();
     }
 
   }
