@@ -9,6 +9,7 @@ import "supply/group_booking_hold.proto";
 import "supply/snapshot/group_booking_quantity_snapshot.proto";
 import "supply/hold_adjustment.proto";
 import "supply/maintenance_hold_indicator.proto";
+import "booking/reservations/reservation_management_hold.proto";
 
 message HoldsSvcAdjustManagementHoldsRequest {
 	repeated .holms.types.supply.HoldAdjustment hold_adjustments = 2;
@@ -68,5 +69,7 @@ service HoldsSvc {
 		returns (google.protobuf.Empty);
 	rpc GetGroupBookingHolds(holms.types.booking.indicators.GroupBookingIndicator) 
 		returns (HoldsSvcGetGroupBookingHoldsResponse);
+	rpc AddReservationManagementHolds(holms.types.booking.reservations.ReservationWithManagementHold) 
+		returns (google.protobuf.Empty);
 }
 

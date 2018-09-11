@@ -19,6 +19,7 @@ namespace HOLMS.Types.Supply.RPC {
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> __Marshaller_GroupBookingIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.HoldsSvcGetGroupBookingHoldsResponse> __Marshaller_HoldsSvcGetGroupBookingHoldsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.HoldsSvcGetGroupBookingHoldsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Reservations.ReservationWithManagementHold> __Marshaller_ReservationWithManagementHold = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.ReservationWithManagementHold.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq, global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp> __Method_GetGroupBookingsQuantitySnapshot = new grpc::Method<global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRq, global::HOLMS.Types.Supply.RPC.HoldsSvcGbQtySnapRsp>(
         grpc::MethodType.Unary,
@@ -41,6 +42,13 @@ namespace HOLMS.Types.Supply.RPC {
         __Marshaller_GroupBookingIndicator,
         __Marshaller_HoldsSvcGetGroupBookingHoldsResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Reservations.ReservationWithManagementHold, global::Google.Protobuf.WellKnownTypes.Empty> __Method_AddReservationManagementHolds = new grpc::Method<global::HOLMS.Types.Booking.Reservations.ReservationWithManagementHold, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AddReservationManagementHolds",
+        __Marshaller_ReservationWithManagementHold,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -61,6 +69,11 @@ namespace HOLMS.Types.Supply.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.HoldsSvcGetGroupBookingHoldsResponse> GetGroupBookingHolds(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> AddReservationManagementHolds(global::HOLMS.Types.Booking.Reservations.ReservationWithManagementHold request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -138,6 +151,22 @@ namespace HOLMS.Types.Supply.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetGroupBookingHolds, null, options, request);
       }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty AddReservationManagementHolds(global::HOLMS.Types.Booking.Reservations.ReservationWithManagementHold request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AddReservationManagementHolds(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty AddReservationManagementHolds(global::HOLMS.Types.Booking.Reservations.ReservationWithManagementHold request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AddReservationManagementHolds, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> AddReservationManagementHoldsAsync(global::HOLMS.Types.Booking.Reservations.ReservationWithManagementHold request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AddReservationManagementHoldsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> AddReservationManagementHoldsAsync(global::HOLMS.Types.Booking.Reservations.ReservationWithManagementHold request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AddReservationManagementHolds, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override HoldsSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -152,7 +181,8 @@ namespace HOLMS.Types.Supply.RPC {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetGroupBookingsQuantitySnapshot, serviceImpl.GetGroupBookingsQuantitySnapshot)
           .AddMethod(__Method_AdjustManagementHolds, serviceImpl.AdjustManagementHolds)
-          .AddMethod(__Method_GetGroupBookingHolds, serviceImpl.GetGroupBookingHolds).Build();
+          .AddMethod(__Method_GetGroupBookingHolds, serviceImpl.GetGroupBookingHolds)
+          .AddMethod(__Method_AddReservationManagementHolds, serviceImpl.AddReservationManagementHolds).Build();
     }
 
   }
