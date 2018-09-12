@@ -28,27 +28,28 @@ namespace HOLMS.Types.Folio {
             "c3RhbXAucHJvdG8aIGlhbS9zdGFmZl9tZW1iZXJfaW5kaWNhdG9yLnByb3Rv",
             "Gh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3RvGh1wcmltaXRpdmUv",
             "cGJfbG9jYWxfZGF0ZS5wcm90bxo3c3VwcGx5L2luY2lkZW50YWxfaXRlbXMv",
-            "aW5jaWRlbnRhbF9pdGVtX2luZGljYXRvci5wcm90byK0BAoRRm9saW9BdG9t",
-            "aWNDaGFyZ2USNQoGYW1vdW50GAEgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0",
-            "aXZlLk1vbmV0YXJ5QW1vdW50EhEKCW5hcnJhdGlvbhgCIAEoCRI/ChJjaGFy",
-            "Z2VfY3JlZGl0X3R5cGUYAyABKA4yIy5ob2xtcy50eXBlcy5mb2xpby5DaGFy",
-            "Z2VDcmVkaXRUeXBlEkEKFWVmZmVjdGl2ZV9mb3Jfb3BzZGF0ZRgEIAEoCzIi",
-            "LmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkxvY2FsRGF0ZRI2ChJlZmZlY3Rp",
-            "dmVfYXRfY2xvY2sYBSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
-            "ElUKD2luY2lkZW50YWxfaXRlbRgGIAEoCzI8LmhvbG1zLnR5cGVzLnN1cHBs",
-            "eS5pbmNpZGVudGFsX2l0ZW1zLkluY2lkZW50YWxJdGVtSW5kaWNhdG9yEjYK",
-            "C2luY3VycmVkX2J5GAcgASgLMiEuaG9sbXMudHlwZXMuZm9saW8uRm9saW9J",
-            "bmRpY2F0b3ISTwoRaXNzdWFuY2Vfc2NoZWR1bGUYCCABKA4yNC5ob2xtcy50",
-            "eXBlcy5mb2xpby5Gb2xpb0F0b21pY0NoYXJnZUlzc3VhbmNlU2NoZWR1bGUS",
-            "OQoKZW50ZXJlZF9ieRgJIAEoCzIlLmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1l",
-            "bWJlckluZGljYXRvcipvCiFGb2xpb0F0b21pY0NoYXJnZUlzc3VhbmNlU2No",
-            "ZWR1bGUSJQohSU1QTEVNRU5UQVRJT05fU0NIRURVTEVfSU1NRURJQVRFEAAS",
-            "IwofSU1QTEVNRU5UQVRJT05fU0NIRURVTEVfUExBTk5FRBABQhSqAhFIT0xN",
-            "Uy5UeXBlcy5Gb2xpb2IGcHJvdG8z"));
+            "aW5jaWRlbnRhbF9pdGVtX2luZGljYXRvci5wcm90bxoUcHJpbWl0aXZlL3V1",
+            "aWQucHJvdG8i3QQKEUZvbGlvQXRvbWljQ2hhcmdlEjUKBmFtb3VudBgBIAEo",
+            "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIRCglu",
+            "YXJyYXRpb24YAiABKAkSPwoSY2hhcmdlX2NyZWRpdF90eXBlGAMgASgOMiMu",
+            "aG9sbXMudHlwZXMuZm9saW8uQ2hhcmdlQ3JlZGl0VHlwZRJBChVlZmZlY3Rp",
+            "dmVfZm9yX29wc2RhdGUYBCABKAsyIi5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
+            "UGJMb2NhbERhdGUSNgoSZWZmZWN0aXZlX2F0X2Nsb2NrGAUgASgLMhouZ29v",
+            "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcBJVCg9pbmNpZGVudGFsX2l0ZW0YBiAB",
+            "KAsyPC5ob2xtcy50eXBlcy5zdXBwbHkuaW5jaWRlbnRhbF9pdGVtcy5JbmNp",
+            "ZGVudGFsSXRlbUluZGljYXRvchI2CgtpbmN1cnJlZF9ieRgHIAEoCzIhLmhv",
+            "bG1zLnR5cGVzLmZvbGlvLkZvbGlvSW5kaWNhdG9yEk8KEWlzc3VhbmNlX3Nj",
+            "aGVkdWxlGAggASgOMjQuaG9sbXMudHlwZXMuZm9saW8uRm9saW9BdG9taWND",
+            "aGFyZ2VJc3N1YW5jZVNjaGVkdWxlEjkKCmVudGVyZWRfYnkYCSABKAsyJS5o",
+            "b2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXJJbmRpY2F0b3ISJwoCaWQYCiAB",
+            "KAsyGy5ob2xtcy50eXBlcy5wcmltaXRpdmUuVXVpZCpvCiFGb2xpb0F0b21p",
+            "Y0NoYXJnZUlzc3VhbmNlU2NoZWR1bGUSJQohSU1QTEVNRU5UQVRJT05fU0NI",
+            "RURVTEVfSU1NRURJQVRFEAASIwofSU1QTEVNRU5UQVRJT05fU0NIRURVTEVf",
+            "UExBTk5FRBABQhSqAhFIT0xNUy5UeXBlcy5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.ChargeCreditTypeReflection.Descriptor, global::HOLMS.Types.Folio.FolioIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.ChargeCreditTypeReflection.Descriptor, global::HOLMS.Types.Folio.FolioIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Folio.FolioAtomicChargeIssuanceSchedule), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioAtomicCharge), global::HOLMS.Types.Folio.FolioAtomicCharge.Parser, new[]{ "Amount", "Narration", "ChargeCreditType", "EffectiveForOpsdate", "EffectiveAtClock", "IncidentalItem", "IncurredBy", "IssuanceSchedule", "EnteredBy" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioAtomicCharge), global::HOLMS.Types.Folio.FolioAtomicCharge.Parser, new[]{ "Amount", "Narration", "ChargeCreditType", "EffectiveForOpsdate", "EffectiveAtClock", "IncidentalItem", "IncurredBy", "IssuanceSchedule", "EnteredBy", "Id" }, null, null, null)
           }));
     }
     #endregion
@@ -96,6 +97,7 @@ namespace HOLMS.Types.Folio {
       IncurredBy = other.incurredBy_ != null ? other.IncurredBy.Clone() : null;
       issuanceSchedule_ = other.issuanceSchedule_;
       EnteredBy = other.enteredBy_ != null ? other.EnteredBy.Clone() : null;
+      Id = other.id_ != null ? other.Id.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -202,6 +204,17 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 10;
+    private global::HOLMS.Types.Primitive.Uuid id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.Uuid Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioAtomicCharge);
@@ -224,6 +237,7 @@ namespace HOLMS.Types.Folio {
       if (!object.Equals(IncurredBy, other.IncurredBy)) return false;
       if (IssuanceSchedule != other.IssuanceSchedule) return false;
       if (!object.Equals(EnteredBy, other.EnteredBy)) return false;
+      if (!object.Equals(Id, other.Id)) return false;
       return true;
     }
 
@@ -239,6 +253,7 @@ namespace HOLMS.Types.Folio {
       if (incurredBy_ != null) hash ^= IncurredBy.GetHashCode();
       if (IssuanceSchedule != 0) hash ^= IssuanceSchedule.GetHashCode();
       if (enteredBy_ != null) hash ^= EnteredBy.GetHashCode();
+      if (id_ != null) hash ^= Id.GetHashCode();
       return hash;
     }
 
@@ -285,6 +300,10 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(74);
         output.WriteMessage(EnteredBy);
       }
+      if (id_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(Id);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -316,6 +335,9 @@ namespace HOLMS.Types.Folio {
       }
       if (enteredBy_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(EnteredBy);
+      }
+      if (id_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
       }
       return size;
     }
@@ -369,6 +391,12 @@ namespace HOLMS.Types.Folio {
           enteredBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
         }
         EnteredBy.MergeFrom(other.EnteredBy);
+      }
+      if (other.id_ != null) {
+        if (id_ == null) {
+          id_ = new global::HOLMS.Types.Primitive.Uuid();
+        }
+        Id.MergeFrom(other.Id);
       }
     }
 
@@ -432,6 +460,13 @@ namespace HOLMS.Types.Folio {
               enteredBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
             }
             input.ReadMessage(enteredBy_);
+            break;
+          }
+          case 82: {
+            if (id_ == null) {
+              id_ = new global::HOLMS.Types.Primitive.Uuid();
+            }
+            input.ReadMessage(id_);
             break;
           }
         }

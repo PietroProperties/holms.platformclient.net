@@ -32,63 +32,94 @@ namespace HOLMS.Types.CRM.RPC {
             "cm90bxoxdGVuYW5jeV9jb25maWcvcHJvcGVydHlfYXJyaXZhbF9sZXR0ZXJf",
             "dGV4dC5wcm90bxo2dGVuYW5jeV9jb25maWcvcHJvcGVydHlfY2FuY2VsbGF0",
             "aW9uX2xldHRlcl90ZXh0LnByb3RvGjZ0ZW5hbmN5X2NvbmZpZy9wcm9wZXJ0",
-            "eV9jb25maXJtYXRpb25fbGV0dGVyX3RleHQucHJvdG8i6AEKFUNvcnJlc3Bv",
-            "bmRlbmNlUmVxdWVzdBJJCgtyZXNlcnZhdGlvbhgBIAEoCzI0LmhvbG1zLnR5",
-            "cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchI2",
-            "CgZndWVzdHMYAiADKAsyJi5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0",
-            "SW5kaWNhdG9yEkwKCGNvbnRhY3RzGAMgAygLMjouaG9sbXMudHlwZXMuYm9v",
-            "a2luZy5yZXNlcnZhdGlvbnMuUmVzZXJ2YXRpb25Db250YWN0UGVyc29uIpcB",
-            "CiRDb3JyZXNwb25kZW5jZVNlcnZpY2VFbWFpbFNlbmRSZXN1bHQSTgoLc2Vu",
-            "ZF9zdGF0dXMYASABKA4yOS5ob2xtcy50eXBlcy5jcm0ucnBjLkNvcnJlc3Bv",
-            "bmRlbmNlU2VydmljZUVtYWlsU2VuZFN0YXR1cxIfChdyZWNpcGllbnRfZW1h",
-            "aWxfYWRkcmVzcxgCIAEoCSJ0CiZDb3JyZXNwb25kZW5jZVNlcnZpY2VFbWFp",
-            "bFNlbmRSZXNwb25zZRJKCgdyZXN1bHRzGAEgAygLMjkuaG9sbXMudHlwZXMu",
-            "Y3JtLnJwYy5Db3JyZXNwb25kZW5jZVNlcnZpY2VFbWFpbFNlbmRSZXN1bHQq",
-            "uwEKJENvcnJlc3BvbmRlbmNlU2VydmljZUVtYWlsU2VuZFN0YXR1cxIdChlF",
-            "TUFJTF9TRU5EX1NUQVRVU19TVUNDRVNTEAASJAogRU1BSUxfU0VORF9TVEFU",
-            "VVNfU0VSVkVSX0ZBSUxVUkUQARIlCiFFTUFJTF9TRU5EX1NUQVRVU19VTktO",
-            "T1dOX0ZBSUxVUkUQAhInCiNFTUFJTF9TRU5EX1NUQVRVU19JTlZBTElEX1JF",
-            "Q0lQSUVOVBADMtkLChFDb3JyZXNwb25kZW5jZVN2YxKBAQoWU2VuZENvbmZp",
-            "cm1hdGlvbkxldHRlchIqLmhvbG1zLnR5cGVzLmNybS5ycGMuQ29ycmVzcG9u",
+            "eV9jb25maXJtYXRpb25fbGV0dGVyX3RleHQucHJvdG8aPG1vbmV5L2NhcmRz",
+            "L3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfcmVmdW5kX2luZGljYXRvci5w",
+            "cm90bxo6bW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL3BheW1lbnRfY2FyZF9z",
+            "YWxlX2luZGljYXRvci5wcm90bxouZm9saW8vZm9saW9fY2hlY2tfY2FzaF9w",
+            "YXltZW50X2luZGljYXRvci5wcm90bxoUcHJpbWl0aXZlL3V1aWQucHJvdG8i",
+            "6AEKFUNvcnJlc3BvbmRlbmNlUmVxdWVzdBJJCgtyZXNlcnZhdGlvbhgBIAEo",
+            "CzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlv",
+            "bkluZGljYXRvchI2CgZndWVzdHMYAiADKAsyJi5ob2xtcy50eXBlcy5jcm0u",
+            "Z3Vlc3RzLkd1ZXN0SW5kaWNhdG9yEkwKCGNvbnRhY3RzGAMgAygLMjouaG9s",
+            "bXMudHlwZXMuYm9va2luZy5yZXNlcnZhdGlvbnMuUmVzZXJ2YXRpb25Db250",
+            "YWN0UGVyc29uIpcBCiRDb3JyZXNwb25kZW5jZVNlcnZpY2VFbWFpbFNlbmRS",
+            "ZXN1bHQSTgoLc2VuZF9zdGF0dXMYASABKA4yOS5ob2xtcy50eXBlcy5jcm0u",
+            "cnBjLkNvcnJlc3BvbmRlbmNlU2VydmljZUVtYWlsU2VuZFN0YXR1cxIfChdy",
+            "ZWNpcGllbnRfZW1haWxfYWRkcmVzcxgCIAEoCSJ0CiZDb3JyZXNwb25kZW5j",
+            "ZVNlcnZpY2VFbWFpbFNlbmRSZXNwb25zZRJKCgdyZXN1bHRzGAEgAygLMjku",
+            "aG9sbXMudHlwZXMuY3JtLnJwYy5Db3JyZXNwb25kZW5jZVNlcnZpY2VFbWFp",
+            "bFNlbmRSZXN1bHQipwMKF1ByaW50UmVzZXJ2YXRpb25SZXF1ZXN0EkAKAnJp",
+            "GAEgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2Vy",
+            "dmF0aW9uSW5kaWNhdG9yElcKHGNoZWNrY2FzaF9wYXltZW50X2luZGljYXRv",
+            "cnMYAiADKAsyMS5ob2xtcy50eXBlcy5mb2xpby5Gb2xpb0NoZWNrQ2FzaFBh",
+            "eW1lbnRJbmRpY2F0b3ISXwoXY2FyZF9wYXltZW50X2luZGljYXRvcnMYAyAD",
+            "KAsyPi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5",
+            "bWVudENhcmRTYWxlSW5kaWNhdG9yElsKEXJlZnVuZF9pbmRpY2F0b3JzGAQg",
+            "AygLMkAuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBh",
+            "eW1lbnRDYXJkUmVmdW5kSW5kaWNhdG9yEjMKDmZvbGlvX2V2ZW50X2lkGAUg",
+            "AygLMhsuaG9sbXMudHlwZXMucHJpbWl0aXZlLlV1aWQirgMKHFByaW50R3Jv",
+            "dXBSZXNlcnZhdGlvblJlcXVlc3QSQgoDZ2JpGAEgASgLMjUuaG9sbXMudHlw",
+            "ZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGljYXRvchJX",
+            "ChxjaGVja2Nhc2hfcGF5bWVudF9pbmRpY2F0b3JzGAIgAygLMjEuaG9sbXMu",
+            "dHlwZXMuZm9saW8uRm9saW9DaGVja0Nhc2hQYXltZW50SW5kaWNhdG9yEl8K",
+            "F2NhcmRfcGF5bWVudF9pbmRpY2F0b3JzGAMgAygLMj4uaG9sbXMudHlwZXMu",
+            "bW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBheW1lbnRDYXJkU2FsZUluZGlj",
+            "YXRvchJbChFyZWZ1bmRfaW5kaWNhdG9ycxgEIAMoCzJALmhvbG1zLnR5cGVz",
+            "Lm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFJlZnVuZElu",
+            "ZGljYXRvchIzCg5mb2xpb19ldmVudF9pZBgFIAMoCzIbLmhvbG1zLnR5cGVz",
+            "LnByaW1pdGl2ZS5VdWlkKrsBCiRDb3JyZXNwb25kZW5jZVNlcnZpY2VFbWFp",
+            "bFNlbmRTdGF0dXMSHQoZRU1BSUxfU0VORF9TVEFUVVNfU1VDQ0VTUxAAEiQK",
+            "IEVNQUlMX1NFTkRfU1RBVFVTX1NFUlZFUl9GQUlMVVJFEAESJQohRU1BSUxf",
+            "U0VORF9TVEFUVVNfVU5LTk9XTl9GQUlMVVJFEAISJwojRU1BSUxfU0VORF9T",
+            "VEFUVVNfSU5WQUxJRF9SRUNJUElFTlQQAzLxDQoRQ29ycmVzcG9uZGVuY2VT",
+            "dmMSgQEKFlNlbmRDb25maXJtYXRpb25MZXR0ZXISKi5ob2xtcy50eXBlcy5j",
+            "cm0ucnBjLkNvcnJlc3BvbmRlbmNlUmVxdWVzdBo7LmhvbG1zLnR5cGVzLmNy",
+            "bS5ycGMuQ29ycmVzcG9uZGVuY2VTZXJ2aWNlRW1haWxTZW5kUmVzcG9uc2US",
+            "gAEKFVNlbmRDYW5jZWxsYXRpb25FbWFpbBIqLmhvbG1zLnR5cGVzLmNybS5y",
+            "cGMuQ29ycmVzcG9uZGVuY2VSZXF1ZXN0GjsuaG9sbXMudHlwZXMuY3JtLnJw",
+            "Yy5Db3JyZXNwb25kZW5jZVNlcnZpY2VFbWFpbFNlbmRSZXNwb25zZRJ5Cg5T",
+            "ZW5kR3Vlc3RGb2xpbxIqLmhvbG1zLnR5cGVzLmNybS5ycGMuQ29ycmVzcG9u",
             "ZGVuY2VSZXF1ZXN0GjsuaG9sbXMudHlwZXMuY3JtLnJwYy5Db3JyZXNwb25k",
-            "ZW5jZVNlcnZpY2VFbWFpbFNlbmRSZXNwb25zZRKAAQoVU2VuZENhbmNlbGxh",
-            "dGlvbkVtYWlsEiouaG9sbXMudHlwZXMuY3JtLnJwYy5Db3JyZXNwb25kZW5j",
-            "ZVJlcXVlc3QaOy5ob2xtcy50eXBlcy5jcm0ucnBjLkNvcnJlc3BvbmRlbmNl",
-            "U2VydmljZUVtYWlsU2VuZFJlc3BvbnNlEnkKDlNlbmRHdWVzdEZvbGlvEiou",
-            "aG9sbXMudHlwZXMuY3JtLnJwYy5Db3JyZXNwb25kZW5jZVJlcXVlc3QaOy5o",
-            "b2xtcy50eXBlcy5jcm0ucnBjLkNvcnJlc3BvbmRlbmNlU2VydmljZUVtYWls",
-            "U2VuZFJlc3BvbnNlEoABChRQcmV2aWV3QXJyaXZhbExldHRlchI1LmhvbG1z",
-            "LnR5cGVzLnRlbmFuY3lfY29uZmlnLlByb3BlcnR5QXJyaXZhbExldHRlclRl",
-            "eHQaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0",
-            "UmVzcG9uc2USfAojR2V0QXJyaXZhbExldHRlckRvY3VtZW50c0Fycml2aW5n",
-            "T24SIi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGUaMS5ob2xt",
-            "cy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2US",
-            "gwEKGEdldEFycml2YWxMZXR0ZXJEb2N1bWVudBI0LmhvbG1zLnR5cGVzLmJv",
-            "b2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchoxLmhvbG1z",
-            "LnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZRKK",
-            "AQoZUHJldmlld0NvbmZpcm1hdGlvbkxldHRlchI6LmhvbG1zLnR5cGVzLnRl",
-            "bmFuY3lfY29uZmlnLlByb3BlcnR5Q29uZmlybWF0aW9uTGV0dGVyVGV4dBox",
-            "LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNw",
-            "b25zZRKJAQoYUHJldmlld0NhbmNlbGxhdGlvbkVtYWlsEjouaG9sbXMudHlw",
-            "ZXMudGVuYW5jeV9jb25maWcuUHJvcGVydHlDYW5jZWxsYXRpb25MZXR0ZXJU",
-            "ZXh0GjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9y",
-            "dFJlc3BvbnNlEoYBChtHZXRSZXNlcnZhdGlvbkZvbGlvUHJpbnREb2MSNC5o",
-            "b2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRp",
-            "Y2F0b3IaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVw",
-            "b3J0UmVzcG9uc2USiAEKHEdldEdyb3VwQm9va2luZ0ZvbGlvUHJpbnREb2MS",
-            "NS5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5n",
-            "SW5kaWNhdG9yGjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRt",
-            "bFJlcG9ydFJlc3BvbnNlEo0BCiJHZXRSZXNlcnZhdGlvbkNvbmZpcm1hdGlv",
-            "blByaW50RG9jEjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJl",
-            "c2VydmF0aW9uSW5kaWNhdG9yGjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91",
-            "dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlQhaqAhNIT0xNUy5UeXBlcy5DUk0u",
-            "UlBDYgZwcm90bzM="));
+            "ZW5jZVNlcnZpY2VFbWFpbFNlbmRSZXNwb25zZRKAAQoUUHJldmlld0Fycml2",
+            "YWxMZXR0ZXISNS5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0",
+            "eUFycml2YWxMZXR0ZXJUZXh0GjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91",
+            "dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEnwKI0dldEFycml2YWxMZXR0ZXJE",
+            "b2N1bWVudHNBcnJpdmluZ09uEiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBi",
+            "TG9jYWxEYXRlGjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRt",
+            "bFJlcG9ydFJlc3BvbnNlEoMBChhHZXRBcnJpdmFsTGV0dGVyRG9jdW1lbnQS",
+            "NC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25J",
+            "bmRpY2F0b3IaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1s",
+            "UmVwb3J0UmVzcG9uc2USigEKGVByZXZpZXdDb25maXJtYXRpb25MZXR0ZXIS",
+            "Oi5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5Qcm9wZXJ0eUNvbmZpcm1h",
+            "dGlvbkxldHRlclRleHQaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0",
+            "cy5IdG1sUmVwb3J0UmVzcG9uc2USiQEKGFByZXZpZXdDYW5jZWxsYXRpb25F",
+            "bWFpbBI6LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLlByb3BlcnR5Q2Fu",
+            "Y2VsbGF0aW9uTGV0dGVyVGV4dBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5v",
+            "dXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZRKGAQobR2V0UmVzZXJ2YXRpb25G",
+            "b2xpb1ByaW50RG9jEjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3Jz",
+            "LlJlc2VydmF0aW9uSW5kaWNhdG9yGjEuaG9sbXMudHlwZXMucmVwb3J0aW5n",
+            "Lm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEogBChxHZXRHcm91cEJvb2tp",
+            "bmdGb2xpb1ByaW50RG9jEjUuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0",
+            "b3JzLkdyb3VwQm9va2luZ0luZGljYXRvchoxLmhvbG1zLnR5cGVzLnJlcG9y",
+            "dGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZRKNAQoiR2V0UmVzZXJ2",
+            "YXRpb25Db25maXJtYXRpb25QcmludERvYxI0LmhvbG1zLnR5cGVzLmJvb2tp",
+            "bmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchoxLmhvbG1zLnR5",
+            "cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZRKGAQoj",
+            "R2V0UmVzZXJ2YXRpb25Gb2xpb1ByaW50RG9jRXhjbHVkZWQSLC5ob2xtcy50",
+            "eXBlcy5jcm0ucnBjLlByaW50UmVzZXJ2YXRpb25SZXF1ZXN0GjEuaG9sbXMu",
+            "dHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEowB",
+            "CiRHZXRHcm91cEJvb2tpbmdGb2xpb1ByaW50RG9jRXhjbHVkZWQSMS5ob2xt",
+            "cy50eXBlcy5jcm0ucnBjLlByaW50R3JvdXBSZXNlcnZhdGlvblJlcXVlc3Qa",
+            "MS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVz",
+            "cG9uc2VCFqoCE0hPTE1TLlR5cGVzLkNSTS5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationContactPersonReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterTextReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationContactPersonReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterTextReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendStatus), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest), global::HOLMS.Types.CRM.RPC.CorrespondenceRequest.Parser, new[]{ "Reservation", "Guests", "Contacts" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult.Parser, new[]{ "SendStatus", "RecipientEmailAddress" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse.Parser, new[]{ "Results" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse.Parser, new[]{ "Results" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.PrintReservationRequest), global::HOLMS.Types.CRM.RPC.PrintReservationRequest.Parser, new[]{ "Ri", "CheckcashPaymentIndicators", "CardPaymentIndicators", "RefundIndicators", "FolioEventId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.PrintGroupReservationRequest), global::HOLMS.Types.CRM.RPC.PrintGroupReservationRequest.Parser, new[]{ "Gbi", "CheckcashPaymentIndicators", "CardPaymentIndicators", "RefundIndicators", "FolioEventId" }, null, null, null)
           }));
     }
     #endregion
@@ -514,6 +545,412 @@ namespace HOLMS.Types.CRM.RPC {
             break;
           case 10: {
             results_.AddEntriesFrom(input, _repeated_results_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PrintReservationRequest : pb::IMessage<PrintReservationRequest> {
+    private static readonly pb::MessageParser<PrintReservationRequest> _parser = new pb::MessageParser<PrintReservationRequest>(() => new PrintReservationRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PrintReservationRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PrintReservationRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PrintReservationRequest(PrintReservationRequest other) : this() {
+      Ri = other.ri_ != null ? other.Ri.Clone() : null;
+      checkcashPaymentIndicators_ = other.checkcashPaymentIndicators_.Clone();
+      cardPaymentIndicators_ = other.cardPaymentIndicators_.Clone();
+      refundIndicators_ = other.refundIndicators_.Clone();
+      folioEventId_ = other.folioEventId_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PrintReservationRequest Clone() {
+      return new PrintReservationRequest(this);
+    }
+
+    /// <summary>Field number for the "ri" field.</summary>
+    public const int RiFieldNumber = 1;
+    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator ri_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator Ri {
+      get { return ri_; }
+      set {
+        ri_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "checkcash_payment_indicators" field.</summary>
+    public const int CheckcashPaymentIndicatorsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator> _repeated_checkcashPaymentIndicators_codec
+        = pb::FieldCodec.ForMessage(18, global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator> checkcashPaymentIndicators_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator> CheckcashPaymentIndicators {
+      get { return checkcashPaymentIndicators_; }
+    }
+
+    /// <summary>Field number for the "card_payment_indicators" field.</summary>
+    public const int CardPaymentIndicatorsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator> _repeated_cardPaymentIndicators_codec
+        = pb::FieldCodec.ForMessage(26, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator> cardPaymentIndicators_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator> CardPaymentIndicators {
+      get { return cardPaymentIndicators_; }
+    }
+
+    /// <summary>Field number for the "refund_indicators" field.</summary>
+    public const int RefundIndicatorsFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator> _repeated_refundIndicators_codec
+        = pb::FieldCodec.ForMessage(34, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator> refundIndicators_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator> RefundIndicators {
+      get { return refundIndicators_; }
+    }
+
+    /// <summary>Field number for the "folio_event_id" field.</summary>
+    public const int FolioEventIdFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Primitive.Uuid> _repeated_folioEventId_codec
+        = pb::FieldCodec.ForMessage(42, global::HOLMS.Types.Primitive.Uuid.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Primitive.Uuid> folioEventId_ = new pbc::RepeatedField<global::HOLMS.Types.Primitive.Uuid>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Primitive.Uuid> FolioEventId {
+      get { return folioEventId_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PrintReservationRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PrintReservationRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Ri, other.Ri)) return false;
+      if(!checkcashPaymentIndicators_.Equals(other.checkcashPaymentIndicators_)) return false;
+      if(!cardPaymentIndicators_.Equals(other.cardPaymentIndicators_)) return false;
+      if(!refundIndicators_.Equals(other.refundIndicators_)) return false;
+      if(!folioEventId_.Equals(other.folioEventId_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ri_ != null) hash ^= Ri.GetHashCode();
+      hash ^= checkcashPaymentIndicators_.GetHashCode();
+      hash ^= cardPaymentIndicators_.GetHashCode();
+      hash ^= refundIndicators_.GetHashCode();
+      hash ^= folioEventId_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ri_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Ri);
+      }
+      checkcashPaymentIndicators_.WriteTo(output, _repeated_checkcashPaymentIndicators_codec);
+      cardPaymentIndicators_.WriteTo(output, _repeated_cardPaymentIndicators_codec);
+      refundIndicators_.WriteTo(output, _repeated_refundIndicators_codec);
+      folioEventId_.WriteTo(output, _repeated_folioEventId_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ri_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Ri);
+      }
+      size += checkcashPaymentIndicators_.CalculateSize(_repeated_checkcashPaymentIndicators_codec);
+      size += cardPaymentIndicators_.CalculateSize(_repeated_cardPaymentIndicators_codec);
+      size += refundIndicators_.CalculateSize(_repeated_refundIndicators_codec);
+      size += folioEventId_.CalculateSize(_repeated_folioEventId_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PrintReservationRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ri_ != null) {
+        if (ri_ == null) {
+          ri_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+        }
+        Ri.MergeFrom(other.Ri);
+      }
+      checkcashPaymentIndicators_.Add(other.checkcashPaymentIndicators_);
+      cardPaymentIndicators_.Add(other.cardPaymentIndicators_);
+      refundIndicators_.Add(other.refundIndicators_);
+      folioEventId_.Add(other.folioEventId_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (ri_ == null) {
+              ri_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+            }
+            input.ReadMessage(ri_);
+            break;
+          }
+          case 18: {
+            checkcashPaymentIndicators_.AddEntriesFrom(input, _repeated_checkcashPaymentIndicators_codec);
+            break;
+          }
+          case 26: {
+            cardPaymentIndicators_.AddEntriesFrom(input, _repeated_cardPaymentIndicators_codec);
+            break;
+          }
+          case 34: {
+            refundIndicators_.AddEntriesFrom(input, _repeated_refundIndicators_codec);
+            break;
+          }
+          case 42: {
+            folioEventId_.AddEntriesFrom(input, _repeated_folioEventId_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PrintGroupReservationRequest : pb::IMessage<PrintGroupReservationRequest> {
+    private static readonly pb::MessageParser<PrintGroupReservationRequest> _parser = new pb::MessageParser<PrintGroupReservationRequest>(() => new PrintGroupReservationRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PrintGroupReservationRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PrintGroupReservationRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PrintGroupReservationRequest(PrintGroupReservationRequest other) : this() {
+      Gbi = other.gbi_ != null ? other.Gbi.Clone() : null;
+      checkcashPaymentIndicators_ = other.checkcashPaymentIndicators_.Clone();
+      cardPaymentIndicators_ = other.cardPaymentIndicators_.Clone();
+      refundIndicators_ = other.refundIndicators_.Clone();
+      folioEventId_ = other.folioEventId_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PrintGroupReservationRequest Clone() {
+      return new PrintGroupReservationRequest(this);
+    }
+
+    /// <summary>Field number for the "gbi" field.</summary>
+    public const int GbiFieldNumber = 1;
+    private global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator gbi_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator Gbi {
+      get { return gbi_; }
+      set {
+        gbi_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "checkcash_payment_indicators" field.</summary>
+    public const int CheckcashPaymentIndicatorsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator> _repeated_checkcashPaymentIndicators_codec
+        = pb::FieldCodec.ForMessage(18, global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator> checkcashPaymentIndicators_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicator> CheckcashPaymentIndicators {
+      get { return checkcashPaymentIndicators_; }
+    }
+
+    /// <summary>Field number for the "card_payment_indicators" field.</summary>
+    public const int CardPaymentIndicatorsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator> _repeated_cardPaymentIndicators_codec
+        = pb::FieldCodec.ForMessage(26, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator> cardPaymentIndicators_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator> CardPaymentIndicators {
+      get { return cardPaymentIndicators_; }
+    }
+
+    /// <summary>Field number for the "refund_indicators" field.</summary>
+    public const int RefundIndicatorsFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator> _repeated_refundIndicators_codec
+        = pb::FieldCodec.ForMessage(34, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator> refundIndicators_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator> RefundIndicators {
+      get { return refundIndicators_; }
+    }
+
+    /// <summary>Field number for the "folio_event_id" field.</summary>
+    public const int FolioEventIdFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Primitive.Uuid> _repeated_folioEventId_codec
+        = pb::FieldCodec.ForMessage(42, global::HOLMS.Types.Primitive.Uuid.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Primitive.Uuid> folioEventId_ = new pbc::RepeatedField<global::HOLMS.Types.Primitive.Uuid>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Primitive.Uuid> FolioEventId {
+      get { return folioEventId_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PrintGroupReservationRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PrintGroupReservationRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Gbi, other.Gbi)) return false;
+      if(!checkcashPaymentIndicators_.Equals(other.checkcashPaymentIndicators_)) return false;
+      if(!cardPaymentIndicators_.Equals(other.cardPaymentIndicators_)) return false;
+      if(!refundIndicators_.Equals(other.refundIndicators_)) return false;
+      if(!folioEventId_.Equals(other.folioEventId_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (gbi_ != null) hash ^= Gbi.GetHashCode();
+      hash ^= checkcashPaymentIndicators_.GetHashCode();
+      hash ^= cardPaymentIndicators_.GetHashCode();
+      hash ^= refundIndicators_.GetHashCode();
+      hash ^= folioEventId_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (gbi_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Gbi);
+      }
+      checkcashPaymentIndicators_.WriteTo(output, _repeated_checkcashPaymentIndicators_codec);
+      cardPaymentIndicators_.WriteTo(output, _repeated_cardPaymentIndicators_codec);
+      refundIndicators_.WriteTo(output, _repeated_refundIndicators_codec);
+      folioEventId_.WriteTo(output, _repeated_folioEventId_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (gbi_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Gbi);
+      }
+      size += checkcashPaymentIndicators_.CalculateSize(_repeated_checkcashPaymentIndicators_codec);
+      size += cardPaymentIndicators_.CalculateSize(_repeated_cardPaymentIndicators_codec);
+      size += refundIndicators_.CalculateSize(_repeated_refundIndicators_codec);
+      size += folioEventId_.CalculateSize(_repeated_folioEventId_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PrintGroupReservationRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.gbi_ != null) {
+        if (gbi_ == null) {
+          gbi_ = new global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator();
+        }
+        Gbi.MergeFrom(other.Gbi);
+      }
+      checkcashPaymentIndicators_.Add(other.checkcashPaymentIndicators_);
+      cardPaymentIndicators_.Add(other.cardPaymentIndicators_);
+      refundIndicators_.Add(other.refundIndicators_);
+      folioEventId_.Add(other.folioEventId_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (gbi_ == null) {
+              gbi_ = new global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator();
+            }
+            input.ReadMessage(gbi_);
+            break;
+          }
+          case 18: {
+            checkcashPaymentIndicators_.AddEntriesFrom(input, _repeated_checkcashPaymentIndicators_codec);
+            break;
+          }
+          case 26: {
+            cardPaymentIndicators_.AddEntriesFrom(input, _repeated_cardPaymentIndicators_codec);
+            break;
+          }
+          case 34: {
+            refundIndicators_.AddEntriesFrom(input, _repeated_refundIndicators_codec);
+            break;
+          }
+          case 42: {
+            folioEventId_.AddEntriesFrom(input, _repeated_folioEventId_codec);
             break;
           }
         }
