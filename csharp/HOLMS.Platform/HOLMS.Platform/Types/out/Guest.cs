@@ -24,15 +24,16 @@ namespace HOLMS.Types.CRM.Guests {
           string.Concat(
             "ChZjcm0vZ3Vlc3RzL2d1ZXN0LnByb3RvEhZob2xtcy50eXBlcy5jcm0uZ3Vl",
             "c3RzGiBjcm0vZ3Vlc3RzL2d1ZXN0X2luZGljYXRvci5wcm90bxojcHJpbWl0",
-            "aXZlL2NvbnRhY3RfaW5mb3JtYXRpb24ucHJvdG8igwEKBUd1ZXN0EjkKCWVu",
+            "aXZlL2NvbnRhY3RfaW5mb3JtYXRpb24ucHJvdG8imwEKBUd1ZXN0EjkKCWVu",
             "dGl0eV9pZBgBIAEoCzImLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJ",
             "bmRpY2F0b3ISPwoMY29udGFjdF9pbmZvGAIgASgLMikuaG9sbXMudHlwZXMu",
-            "cHJpbWl0aXZlLkNvbnRhY3RJbmZvcm1hdGlvbkIlWgpjcm0vZ3Vlc3RzqgIW",
-            "SE9MTVMuVHlwZXMuQ1JNLkd1ZXN0c2IGcHJvdG8z"));
+            "cHJpbWl0aXZlLkNvbnRhY3RJbmZvcm1hdGlvbhIWCg5pc19ibGFja2xpc3Rl",
+            "ZBgDIAEoCEIlWgpjcm0vZ3Vlc3RzqgIWSE9MTVMuVHlwZXMuQ1JNLkd1ZXN0",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.ContactInformationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.Guests.Guest), global::HOLMS.Types.CRM.Guests.Guest.Parser, new[]{ "EntityId", "ContactInfo" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.Guests.Guest), global::HOLMS.Types.CRM.Guests.Guest.Parser, new[]{ "EntityId", "ContactInfo", "IsBlacklisted" }, null, null, null)
           }));
     }
     #endregion
@@ -65,6 +66,7 @@ namespace HOLMS.Types.CRM.Guests {
     public Guest(Guest other) : this() {
       EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
       ContactInfo = other.contactInfo_ != null ? other.ContactInfo.Clone() : null;
+      isBlacklisted_ = other.isBlacklisted_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -94,6 +96,17 @@ namespace HOLMS.Types.CRM.Guests {
       }
     }
 
+    /// <summary>Field number for the "is_blacklisted" field.</summary>
+    public const int IsBlacklistedFieldNumber = 3;
+    private bool isBlacklisted_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsBlacklisted {
+      get { return isBlacklisted_; }
+      set {
+        isBlacklisted_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Guest);
@@ -109,6 +122,7 @@ namespace HOLMS.Types.CRM.Guests {
       }
       if (!object.Equals(EntityId, other.EntityId)) return false;
       if (!object.Equals(ContactInfo, other.ContactInfo)) return false;
+      if (IsBlacklisted != other.IsBlacklisted) return false;
       return true;
     }
 
@@ -117,6 +131,7 @@ namespace HOLMS.Types.CRM.Guests {
       int hash = 1;
       if (entityId_ != null) hash ^= EntityId.GetHashCode();
       if (contactInfo_ != null) hash ^= ContactInfo.GetHashCode();
+      if (IsBlacklisted != false) hash ^= IsBlacklisted.GetHashCode();
       return hash;
     }
 
@@ -135,6 +150,10 @@ namespace HOLMS.Types.CRM.Guests {
         output.WriteRawTag(18);
         output.WriteMessage(ContactInfo);
       }
+      if (IsBlacklisted != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsBlacklisted);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -145,6 +164,9 @@ namespace HOLMS.Types.CRM.Guests {
       }
       if (contactInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContactInfo);
+      }
+      if (IsBlacklisted != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -165,6 +187,9 @@ namespace HOLMS.Types.CRM.Guests {
           contactInfo_ = new global::HOLMS.Types.Primitive.ContactInformation();
         }
         ContactInfo.MergeFrom(other.ContactInfo);
+      }
+      if (other.IsBlacklisted != false) {
+        IsBlacklisted = other.IsBlacklisted;
       }
     }
 
@@ -188,6 +213,10 @@ namespace HOLMS.Types.CRM.Guests {
               contactInfo_ = new global::HOLMS.Types.Primitive.ContactInformation();
             }
             input.ReadMessage(contactInfo_);
+            break;
+          }
+          case 24: {
+            IsBlacklisted = input.ReadBool();
             break;
           }
         }

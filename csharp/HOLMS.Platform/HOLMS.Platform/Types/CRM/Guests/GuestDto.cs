@@ -8,9 +8,10 @@ namespace HOLMS.Types.CRM.Guests {
             return EntityId;
         }
 
-        public Guest(GuestIndicator gi, ContactInformation ci) {
+        public Guest(GuestIndicator gi, ContactInformation ci, bool bl = false) {
             EntityId = new GuestIndicator(gi);
             ContactInfo = new ContactInformation(ci);
+            IsBlacklisted = bl;
         }
     }
 }

@@ -10,4 +10,5 @@ import "primitive/contact_information.proto";
 message Guest {
 	holms.types.crm.guests.GuestIndicator entity_id = 1;
 	holms.types.primitive.ContactInformation contact_info = 2;
+	bool is_blacklisted = 3;
 }
