@@ -24,6 +24,13 @@ message CorrespondenceRequest {
 
 }
 
+message CorrespondenceRequestWithExclusions {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	repeated holms.types.crm.guests.GuestIndicator guests = 2;
+	repeated holms.types.booking.reservations.ReservationContactPerson contacts = 3;
+	PrintReservationRequest exclusions = 4;
+}
+
 enum CorrespondenceServiceEmailSendStatus {
 	EMAIL_SEND_STATUS_SUCCESS = 0;
 	EMAIL_SEND_STATUS_SERVER_FAILURE = 1;
@@ -92,5 +99,8 @@ service CorrespondenceSvc {
 	rpc GetGroupBookingFolioPrintDocExcluded(PrintGroupReservationRequest)
 		returns(.holms.types.reporting.outputs.HtmlReportResponse); 	
 	
+	rpc SendGuestFolioExcluded(CorrespondenceRequestWithExclusions) 
+		returns (CorrespondenceServiceEmailSendResponse);
+
 }
 

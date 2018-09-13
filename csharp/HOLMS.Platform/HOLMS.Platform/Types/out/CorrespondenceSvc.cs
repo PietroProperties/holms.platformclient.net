@@ -42,7 +42,14 @@ namespace HOLMS.Types.CRM.RPC {
             "bkluZGljYXRvchI2CgZndWVzdHMYAiADKAsyJi5ob2xtcy50eXBlcy5jcm0u",
             "Z3Vlc3RzLkd1ZXN0SW5kaWNhdG9yEkwKCGNvbnRhY3RzGAMgAygLMjouaG9s",
             "bXMudHlwZXMuYm9va2luZy5yZXNlcnZhdGlvbnMuUmVzZXJ2YXRpb25Db250",
-            "YWN0UGVyc29uIpcBCiRDb3JyZXNwb25kZW5jZVNlcnZpY2VFbWFpbFNlbmRS",
+            "YWN0UGVyc29uIrgCCiNDb3JyZXNwb25kZW5jZVJlcXVlc3RXaXRoRXhjbHVz",
+            "aW9ucxJJCgtyZXNlcnZhdGlvbhgBIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tp",
+            "bmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchI2CgZndWVzdHMY",
+            "AiADKAsyJi5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0SW5kaWNhdG9y",
+            "EkwKCGNvbnRhY3RzGAMgAygLMjouaG9sbXMudHlwZXMuYm9va2luZy5yZXNl",
+            "cnZhdGlvbnMuUmVzZXJ2YXRpb25Db250YWN0UGVyc29uEkAKCmV4Y2x1c2lv",
+            "bnMYBCABKAsyLC5ob2xtcy50eXBlcy5jcm0ucnBjLlByaW50UmVzZXJ2YXRp",
+            "b25SZXF1ZXN0IpcBCiRDb3JyZXNwb25kZW5jZVNlcnZpY2VFbWFpbFNlbmRS",
             "ZXN1bHQSTgoLc2VuZF9zdGF0dXMYASABKA4yOS5ob2xtcy50eXBlcy5jcm0u",
             "cnBjLkNvcnJlc3BvbmRlbmNlU2VydmljZUVtYWlsU2VuZFN0YXR1cxIfChdy",
             "ZWNpcGllbnRfZW1haWxfYWRkcmVzcxgCIAEoCSJ0CiZDb3JyZXNwb25kZW5j",
@@ -71,7 +78,7 @@ namespace HOLMS.Types.CRM.RPC {
             "bFNlbmRTdGF0dXMSHQoZRU1BSUxfU0VORF9TVEFUVVNfU1VDQ0VTUxAAEiQK",
             "IEVNQUlMX1NFTkRfU1RBVFVTX1NFUlZFUl9GQUlMVVJFEAESJQohRU1BSUxf",
             "U0VORF9TVEFUVVNfVU5LTk9XTl9GQUlMVVJFEAISJwojRU1BSUxfU0VORF9T",
-            "VEFUVVNfSU5WQUxJRF9SRUNJUElFTlQQAzLxDQoRQ29ycmVzcG9uZGVuY2VT",
+            "VEFUVVNfSU5WQUxJRF9SRUNJUElFTlQQAzKDDwoRQ29ycmVzcG9uZGVuY2VT",
             "dmMSgQEKFlNlbmRDb25maXJtYXRpb25MZXR0ZXISKi5ob2xtcy50eXBlcy5j",
             "cm0ucnBjLkNvcnJlc3BvbmRlbmNlUmVxdWVzdBo7LmhvbG1zLnR5cGVzLmNy",
             "bS5ycGMuQ29ycmVzcG9uZGVuY2VTZXJ2aWNlRW1haWxTZW5kUmVzcG9uc2US",
@@ -111,11 +118,16 @@ namespace HOLMS.Types.CRM.RPC {
             "CiRHZXRHcm91cEJvb2tpbmdGb2xpb1ByaW50RG9jRXhjbHVkZWQSMS5ob2xt",
             "cy50eXBlcy5jcm0ucnBjLlByaW50R3JvdXBSZXNlcnZhdGlvblJlcXVlc3Qa",
             "MS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVz",
-            "cG9uc2VCFqoCE0hPTE1TLlR5cGVzLkNSTS5SUENiBnByb3RvMw=="));
+            "cG9uc2USjwEKFlNlbmRHdWVzdEZvbGlvRXhjbHVkZWQSOC5ob2xtcy50eXBl",
+            "cy5jcm0ucnBjLkNvcnJlc3BvbmRlbmNlUmVxdWVzdFdpdGhFeGNsdXNpb25z",
+            "GjsuaG9sbXMudHlwZXMuY3JtLnJwYy5Db3JyZXNwb25kZW5jZVNlcnZpY2VF",
+            "bWFpbFNlbmRSZXNwb25zZUIWqgITSE9MTVMuVHlwZXMuQ1JNLlJQQ2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationContactPersonReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterTextReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendStatus), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest), global::HOLMS.Types.CRM.RPC.CorrespondenceRequest.Parser, new[]{ "Reservation", "Guests", "Contacts" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions), global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions.Parser, new[]{ "Reservation", "Guests", "Contacts", "Exclusions" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult.Parser, new[]{ "SendStatus", "RecipientEmailAddress" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse.Parser, new[]{ "Results" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.PrintReservationRequest), global::HOLMS.Types.CRM.RPC.PrintReservationRequest.Parser, new[]{ "Ri", "CheckcashPaymentIndicators", "CardPaymentIndicators", "RefundIndicators", "FolioEventId" }, null, null, null),
@@ -299,6 +311,203 @@ namespace HOLMS.Types.CRM.RPC {
 
   }
 
+  public sealed partial class CorrespondenceRequestWithExclusions : pb::IMessage<CorrespondenceRequestWithExclusions> {
+    private static readonly pb::MessageParser<CorrespondenceRequestWithExclusions> _parser = new pb::MessageParser<CorrespondenceRequestWithExclusions>(() => new CorrespondenceRequestWithExclusions());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CorrespondenceRequestWithExclusions> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CorrespondenceRequestWithExclusions() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CorrespondenceRequestWithExclusions(CorrespondenceRequestWithExclusions other) : this() {
+      Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
+      guests_ = other.guests_.Clone();
+      contacts_ = other.contacts_.Clone();
+      Exclusions = other.exclusions_ != null ? other.Exclusions.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CorrespondenceRequestWithExclusions Clone() {
+      return new CorrespondenceRequestWithExclusions(this);
+    }
+
+    /// <summary>Field number for the "reservation" field.</summary>
+    public const int ReservationFieldNumber = 1;
+    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator reservation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator Reservation {
+      get { return reservation_; }
+      set {
+        reservation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "guests" field.</summary>
+    public const int GuestsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.CRM.Guests.GuestIndicator> _repeated_guests_codec
+        = pb::FieldCodec.ForMessage(18, global::HOLMS.Types.CRM.Guests.GuestIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.CRM.Guests.GuestIndicator> guests_ = new pbc::RepeatedField<global::HOLMS.Types.CRM.Guests.GuestIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.CRM.Guests.GuestIndicator> Guests {
+      get { return guests_; }
+    }
+
+    /// <summary>Field number for the "contacts" field.</summary>
+    public const int ContactsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Reservations.ReservationContactPerson> _repeated_contacts_codec
+        = pb::FieldCodec.ForMessage(26, global::HOLMS.Types.Booking.Reservations.ReservationContactPerson.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Reservations.ReservationContactPerson> contacts_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Reservations.ReservationContactPerson>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Booking.Reservations.ReservationContactPerson> Contacts {
+      get { return contacts_; }
+    }
+
+    /// <summary>Field number for the "exclusions" field.</summary>
+    public const int ExclusionsFieldNumber = 4;
+    private global::HOLMS.Types.CRM.RPC.PrintReservationRequest exclusions_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.CRM.RPC.PrintReservationRequest Exclusions {
+      get { return exclusions_; }
+      set {
+        exclusions_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CorrespondenceRequestWithExclusions);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CorrespondenceRequestWithExclusions other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Reservation, other.Reservation)) return false;
+      if(!guests_.Equals(other.guests_)) return false;
+      if(!contacts_.Equals(other.contacts_)) return false;
+      if (!object.Equals(Exclusions, other.Exclusions)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (reservation_ != null) hash ^= Reservation.GetHashCode();
+      hash ^= guests_.GetHashCode();
+      hash ^= contacts_.GetHashCode();
+      if (exclusions_ != null) hash ^= Exclusions.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (reservation_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Reservation);
+      }
+      guests_.WriteTo(output, _repeated_guests_codec);
+      contacts_.WriteTo(output, _repeated_contacts_codec);
+      if (exclusions_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Exclusions);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (reservation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Reservation);
+      }
+      size += guests_.CalculateSize(_repeated_guests_codec);
+      size += contacts_.CalculateSize(_repeated_contacts_codec);
+      if (exclusions_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Exclusions);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CorrespondenceRequestWithExclusions other) {
+      if (other == null) {
+        return;
+      }
+      if (other.reservation_ != null) {
+        if (reservation_ == null) {
+          reservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+        }
+        Reservation.MergeFrom(other.Reservation);
+      }
+      guests_.Add(other.guests_);
+      contacts_.Add(other.contacts_);
+      if (other.exclusions_ != null) {
+        if (exclusions_ == null) {
+          exclusions_ = new global::HOLMS.Types.CRM.RPC.PrintReservationRequest();
+        }
+        Exclusions.MergeFrom(other.Exclusions);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (reservation_ == null) {
+              reservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+            }
+            input.ReadMessage(reservation_);
+            break;
+          }
+          case 18: {
+            guests_.AddEntriesFrom(input, _repeated_guests_codec);
+            break;
+          }
+          case 26: {
+            contacts_.AddEntriesFrom(input, _repeated_contacts_codec);
+            break;
+          }
+          case 34: {
+            if (exclusions_ == null) {
+              exclusions_ = new global::HOLMS.Types.CRM.RPC.PrintReservationRequest();
+            }
+            input.ReadMessage(exclusions_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class CorrespondenceServiceEmailSendResult : pb::IMessage<CorrespondenceServiceEmailSendResult> {
     private static readonly pb::MessageParser<CorrespondenceServiceEmailSendResult> _parser = new pb::MessageParser<CorrespondenceServiceEmailSendResult>(() => new CorrespondenceServiceEmailSendResult());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -306,7 +515,7 @@ namespace HOLMS.Types.CRM.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[1]; }
+      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -451,7 +660,7 @@ namespace HOLMS.Types.CRM.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[2]; }
+      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -560,7 +769,7 @@ namespace HOLMS.Types.CRM.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[3]; }
+      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -763,7 +972,7 @@ namespace HOLMS.Types.CRM.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[4]; }
+      get { return global::HOLMS.Types.CRM.RPC.CorrespondenceSvcReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
