@@ -19,6 +19,7 @@ message ManagementCurrentTimeReportManifest {
 	bool prop_stats_last_full_month = 9;
 	bool prop_stats_last_full_year = 10;
 	repeated .holms.types.primitive.PbInclusiveOpsdateRange custom_ranges = 11;
+	bool vacant_and_clean_rooms_report = 12;
 }
 
 message ManagementClockTimeRangeReportManifest {
