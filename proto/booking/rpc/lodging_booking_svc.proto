@@ -29,4 +29,7 @@ service LodgingBookingSvc {
 
 	rpc AmendOpenReservationParameters (.holms.types.booking.reservations.ReservationFRPAmendmentRequest)
 		returns (.holms.types.booking.reservations.FRPAmendmentResponse);
+
+	rpc RequestChangePrimaryGuestInReservation (.holms.types.booking.reservations.AddGuestToReservationRequest)
+		returns (google.protobuf.Empty);
 }
