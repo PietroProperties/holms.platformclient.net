@@ -34,7 +34,7 @@ namespace HOLMS.Types.Booking.RPC {
             "cm9tX3Jlc2VydmF0aW9uX3JlcXVlc3QucHJvdG8aPGJvb2tpbmcvcmVzZXJ2",
             "YXRpb25zL3Jlc2VydmF0aW9uX2ZycF9hbWVuZG1lbnRfcmVxdWVzdC5wcm90",
             "bxoxYm9va2luZy9yZXNlcnZhdGlvbnMvZnJwX2FtZW5kbWVudF9yZXNwb25z",
-            "ZS5wcm90bzLHBQoRTG9kZ2luZ0Jvb2tpbmdTdmMSkQEKFkJvb2tHZW5lc2lz",
+            "ZS5wcm90bzLKBgoRTG9kZ2luZ0Jvb2tpbmdTdmMSkQEKFkJvb2tHZW5lc2lz",
             "UmVzZXJ2YXRpb24SPy5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9u",
             "cy5Cb29rR2VuZXNpc1Jlc2VydmF0aW9uUmVxdWVzdBo2LmhvbG1zLnR5cGVz",
             "LmJvb2tpbmcucmVzZXJ2YXRpb25zLkdlbmVzaXNCb29raW5nUmVzdWx0EoUB",
@@ -50,8 +50,11 @@ namespace HOLMS.Types.Booking.RPC {
             "dGlvblBhcmFtZXRlcnMSQC5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0",
             "aW9ucy5SZXNlcnZhdGlvbkZSUEFtZW5kbWVudFJlcXVlc3QaNi5ob2xtcy50",
             "eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5GUlBBbWVuZG1lbnRSZXNwb25z",
-            "ZUInWgtib29raW5nL3JwY6oCF0hPTE1TLlR5cGVzLkJvb2tpbmcuUlBDYgZw",
-            "cm90bzM="));
+            "ZRKAAQomUmVxdWVzdENoYW5nZVByaW1hcnlHdWVzdEluUmVzZXJ2YXRpb24S",
+            "Pi5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5BZGRHdWVzdFRv",
+            "UmVzZXJ2YXRpb25SZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Qida",
+            "C2Jvb2tpbmcvcnBjqgIXSE9MTVMuVHlwZXMuQm9va2luZy5SUENiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequestReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.GenesisBookingResultReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.CompleteOpenReservationReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.AddGuestToReservationRequestReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.RemoveGuestFromReservationRequestReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationFrpAmendmentRequestReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.FrpAmendmentResponseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null));

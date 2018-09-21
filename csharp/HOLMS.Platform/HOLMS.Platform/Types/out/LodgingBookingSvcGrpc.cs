@@ -58,6 +58,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_ReservationFRPAmendmentRequest,
         __Marshaller_FRPAmendmentResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Reservations.AddGuestToReservationRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_RequestChangePrimaryGuestInReservation = new grpc::Method<global::HOLMS.Types.Booking.Reservations.AddGuestToReservationRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "RequestChangePrimaryGuestInReservation",
+        __Marshaller_AddGuestToReservationRequest,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -88,6 +95,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse> AmendOpenReservationParameters(global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> RequestChangePrimaryGuestInReservation(global::HOLMS.Types.Booking.Reservations.AddGuestToReservationRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -197,6 +209,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_AmendOpenReservationParameters, null, options, request);
       }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RequestChangePrimaryGuestInReservation(global::HOLMS.Types.Booking.Reservations.AddGuestToReservationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return RequestChangePrimaryGuestInReservation(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RequestChangePrimaryGuestInReservation(global::HOLMS.Types.Booking.Reservations.AddGuestToReservationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RequestChangePrimaryGuestInReservation, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RequestChangePrimaryGuestInReservationAsync(global::HOLMS.Types.Booking.Reservations.AddGuestToReservationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return RequestChangePrimaryGuestInReservationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RequestChangePrimaryGuestInReservationAsync(global::HOLMS.Types.Booking.Reservations.AddGuestToReservationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RequestChangePrimaryGuestInReservation, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override LodgingBookingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -213,7 +241,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetOpenReservation, serviceImpl.GetOpenReservation)
           .AddMethod(__Method_RequestAddGuestToReservation, serviceImpl.RequestAddGuestToReservation)
           .AddMethod(__Method_RequestRemoveGuestFromReservation, serviceImpl.RequestRemoveGuestFromReservation)
-          .AddMethod(__Method_AmendOpenReservationParameters, serviceImpl.AmendOpenReservationParameters).Build();
+          .AddMethod(__Method_AmendOpenReservationParameters, serviceImpl.AmendOpenReservationParameters)
+          .AddMethod(__Method_RequestChangePrimaryGuestInReservation, serviceImpl.RequestChangePrimaryGuestInReservation).Build();
     }
 
   }
