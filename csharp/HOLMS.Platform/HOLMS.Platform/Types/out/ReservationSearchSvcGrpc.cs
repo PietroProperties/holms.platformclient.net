@@ -20,6 +20,7 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetReservationSummaryResponse> __Marshaller_ReservationSearchSvcGetReservationSummaryResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetReservationSummaryResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest> __Marshaller_GetReservationSummariesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest> __Marshaller_ReservationSearchSvcSearchReservationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse> __Marshaller_ReservationSearchSvcGetAssociatedHoldsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListRequest, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> __Method_GetFilteredReservationList = new grpc::Method<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListRequest, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse>(
         grpc::MethodType.Unary,
@@ -83,6 +84,13 @@ namespace HOLMS.Types.Booking.RPC {
         "SearchReservations",
         __Marshaller_ReservationSearchSvcSearchReservationsRequest,
         __Marshaller_ReservationSearchSvcGetFilteredReservationListResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse> __Method_GetAssociatedManagementHolds = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetAssociatedManagementHolds",
+        __Marshaller_ReservationIndicator,
+        __Marshaller_ReservationSearchSvcGetAssociatedHoldsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -152,6 +160,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> SearchReservations(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse> GetAssociatedManagementHolds(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -409,6 +422,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SearchReservations, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse GetAssociatedManagementHolds(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetAssociatedManagementHolds(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse GetAssociatedManagementHolds(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetAssociatedManagementHolds, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse> GetAssociatedManagementHoldsAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetAssociatedManagementHoldsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse> GetAssociatedManagementHoldsAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetAssociatedManagementHolds, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override ReservationSearchSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -429,7 +458,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetAllDuringDate, serviceImpl.GetAllDuringDate)
           .AddMethod(__Method_GetReservationSummary, serviceImpl.GetReservationSummary)
           .AddMethod(__Method_GetReservationSummaries, serviceImpl.GetReservationSummaries)
-          .AddMethod(__Method_SearchReservations, serviceImpl.SearchReservations).Build();
+          .AddMethod(__Method_SearchReservations, serviceImpl.SearchReservations)
+          .AddMethod(__Method_GetAssociatedManagementHolds, serviceImpl.GetAssociatedManagementHolds).Build();
     }
 
   }

@@ -8,6 +8,7 @@ import "booking/query_filter.proto";
 import "booking/reservations/reservation_summary.proto";
 import "primitive/pb_local_date.proto";
 import "operations/rooms/room.proto";
+import "booking/reservations/reservation_management_hold.proto";
 
 message ReservationSearchSvcGetFilteredReservationListRequest {
 	.holms.types.booking.QueryFilter filter = 1;
@@ -42,6 +43,10 @@ message GetReservationSummariesRequest {
 	repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
 }
 
+message ReservationSearchSvcGetAssociatedHoldsResponse {
+	.holms.types.booking.reservations.ReservationWithManagementHold reservation_with_management_hold = 1;
+}
+
 service ReservationSearchSvc {
 	// Get all of type - no date
 	rpc GetFilteredReservationList (ReservationSearchSvcGetFilteredReservationListRequest)
@@ -73,5 +78,7 @@ service ReservationSearchSvc {
 
 	rpc SearchReservations(ReservationSearchSvcSearchReservationsRequest)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+	rpc GetAssociatedManagementHolds(.holms.types.booking.indicators.ReservationIndicator)
+		returns (ReservationSearchSvcGetAssociatedHoldsResponse);
 }
 
