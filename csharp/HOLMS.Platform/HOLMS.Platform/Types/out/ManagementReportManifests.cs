@@ -25,7 +25,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "CjhyZXBvcnRpbmcvaW5wdXRfcGFyYW1zL21hbmFnZW1lbnRfcmVwb3J0X21h",
             "bmlmZXN0cy5wcm90bxIiaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3Bh",
             "cmFtcxoqcHJpbWl0aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnBy",
-            "b3RvGhtwcmltaXRpdmUvcGJfaW50ZXJ2YWwucHJvdG8iswMKI01hbmFnZW1l",
+            "b3RvGhtwcmltaXRpdmUvcGJfaW50ZXJ2YWwucHJvdG8i2gMKI01hbmFnZW1l",
             "bnRDdXJyZW50VGltZVJlcG9ydE1hbmlmZXN0Eh8KF3Vub2NjdXBpZWRfcm9v",
             "bXNfcmVwb3J0GAEgASgIEhwKFGZvbGlvX2JhbGFuY2VfcmVwb3J0GAIgASgI",
             "EiMKG2xvZGdpbmdfdmVyaWZpY2F0aW9uX3JlcG9ydBgDIAEoCBIYChBjb21w",
@@ -35,27 +35,28 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "bGxfd2VlaxgIIAEoCBIiChpwcm9wX3N0YXRzX2xhc3RfZnVsbF9tb250aBgJ",
             "IAEoCBIhChlwcm9wX3N0YXRzX2xhc3RfZnVsbF95ZWFyGAogASgIEkUKDWN1",
             "c3RvbV9yYW5nZXMYCyADKAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJ",
-            "bmNsdXNpdmVPcHNkYXRlUmFuZ2UivQIKJk1hbmFnZW1lbnRDbG9ja1RpbWVS",
-            "YW5nZVJlcG9ydE1hbmlmZXN0EjoKD3JlcG9ydGluZ19yYW5nZRgBIAEoCzIh",
-            "LmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkludGVydmFsEh0KFWZvbGlvX3Bh",
-            "eW1lbnRzX3JlcG9ydBgCIAEoCBIeChZjYWxsX2FjY291bnRpbmdfcmVwb3J0",
-            "GAMgASgIEiYKHmxlZGdlcl9hY3Rpdml0eV9zdW1tYXJ5X3JlcG9ydBgEIAEo",
-            "CBIlCh1sZWRnZXJfam91cm5hbF9lbnRyaWVzX3JlcG9ydBgFIAEoCBIhChli",
-            "b29raW5nc19ieV9wZXJpb2RfcmVwb3J0GAYgASgIEiYKHmZvbGlvX2ltbWVk",
-            "aWF0ZV9jaGFyZ2VzX3JlcG9ydBgHIAEoCCLpAgokTWFuYWdlbWVudE9wc2Rh",
-            "dGVSYW5nZVJlcG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5o",
-            "b2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2US",
-            "Igoacm9vbV91c2FnZV9kZXRhaWxlZF9yZXBvcnQYAiABKAgSIQoZcm9vbV91",
-            "c2FnZV9zdW1tYXJ5X3JlcG9ydBgDIAEoCBIpCiFwbGFubmVkX2xvZGdpbmdf",
-            "cmV2ZW51ZV9ieV9zb3VyY2UYBCABKAgSIgoacHJvcGVydHlfc3RhdGlzdGlj",
-            "c19yZXBvcnQYBSABKAgSIgoaZm9saW9fZ3Jvc3NfY2hhcmdlc19yZXBvcnQY",
-            "BiABKAgSIQoZdGF4X2V4ZW1wdF9zdW1tYXJ5X3JlcG9ydBgHIAEoCBIgChh0",
-            "YXhfZXhlbXB0X2RldGFpbF9yZXBvcnQYCCABKAhCJaoCIkhPTE1TLlR5cGVz",
-            "LlJlcG9ydGluZy5SZXBvcnRQYXJhbXNiBnByb3RvMw=="));
+            "bmNsdXNpdmVPcHNkYXRlUmFuZ2USJQoddmFjYW50X2FuZF9jbGVhbl9yb29t",
+            "c19yZXBvcnQYDCABKAgivQIKJk1hbmFnZW1lbnRDbG9ja1RpbWVSYW5nZVJl",
+            "cG9ydE1hbmlmZXN0EjoKD3JlcG9ydGluZ19yYW5nZRgBIAEoCzIhLmhvbG1z",
+            "LnR5cGVzLnByaW1pdGl2ZS5QYkludGVydmFsEh0KFWZvbGlvX3BheW1lbnRz",
+            "X3JlcG9ydBgCIAEoCBIeChZjYWxsX2FjY291bnRpbmdfcmVwb3J0GAMgASgI",
+            "EiYKHmxlZGdlcl9hY3Rpdml0eV9zdW1tYXJ5X3JlcG9ydBgEIAEoCBIlCh1s",
+            "ZWRnZXJfam91cm5hbF9lbnRyaWVzX3JlcG9ydBgFIAEoCBIhChlib29raW5n",
+            "c19ieV9wZXJpb2RfcmVwb3J0GAYgASgIEiYKHmZvbGlvX2ltbWVkaWF0ZV9j",
+            "aGFyZ2VzX3JlcG9ydBgHIAEoCCLpAgokTWFuYWdlbWVudE9wc2RhdGVSYW5n",
+            "ZVJlcG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5ob2xtcy50",
+            "eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2USIgoacm9v",
+            "bV91c2FnZV9kZXRhaWxlZF9yZXBvcnQYAiABKAgSIQoZcm9vbV91c2FnZV9z",
+            "dW1tYXJ5X3JlcG9ydBgDIAEoCBIpCiFwbGFubmVkX2xvZGdpbmdfcmV2ZW51",
+            "ZV9ieV9zb3VyY2UYBCABKAgSIgoacHJvcGVydHlfc3RhdGlzdGljc19yZXBv",
+            "cnQYBSABKAgSIgoaZm9saW9fZ3Jvc3NfY2hhcmdlc19yZXBvcnQYBiABKAgS",
+            "IQoZdGF4X2V4ZW1wdF9zdW1tYXJ5X3JlcG9ydBgHIAEoCBIgChh0YXhfZXhl",
+            "bXB0X2RldGFpbF9yZXBvcnQYCCABKAhCJaoCIkhPTE1TLlR5cGVzLlJlcG9y",
+            "dGluZy5SZXBvcnRQYXJhbXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbIntervalReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport", "PropStatsYesterday", "PropStatsTrailing7D", "PropStatsTrailing28D", "PropStatsLastFullWeek", "PropStatsLastFullMonth", "PropStatsLastFullYear", "CustomRanges" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport", "PropStatsYesterday", "PropStatsTrailing7D", "PropStatsTrailing28D", "PropStatsLastFullWeek", "PropStatsLastFullMonth", "PropStatsLastFullYear", "CustomRanges", "VacantAndCleanRoomsReport" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest.Parser, new[]{ "ReportingRange", "FolioPaymentsReport", "CallAccountingReport", "LedgerActivitySummaryReport", "LedgerJournalEntriesReport", "BookingsByPeriodReport", "FolioImmediateChargesReport" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport", "PlannedLodgingRevenueBySource", "PropertyStatisticsReport", "FolioGrossChargesReport", "TaxExemptSummaryReport", "TaxExemptDetailReport" }, null, null, null)
           }));
@@ -99,6 +100,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       propStatsLastFullMonth_ = other.propStatsLastFullMonth_;
       propStatsLastFullYear_ = other.propStatsLastFullYear_;
       customRanges_ = other.customRanges_.Clone();
+      vacantAndCleanRoomsReport_ = other.vacantAndCleanRoomsReport_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -226,6 +228,17 @@ namespace HOLMS.Types.Reporting.ReportParams {
       get { return customRanges_; }
     }
 
+    /// <summary>Field number for the "vacant_and_clean_rooms_report" field.</summary>
+    public const int VacantAndCleanRoomsReportFieldNumber = 12;
+    private bool vacantAndCleanRoomsReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool VacantAndCleanRoomsReport {
+      get { return vacantAndCleanRoomsReport_; }
+      set {
+        vacantAndCleanRoomsReport_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ManagementCurrentTimeReportManifest);
@@ -250,6 +263,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (PropStatsLastFullMonth != other.PropStatsLastFullMonth) return false;
       if (PropStatsLastFullYear != other.PropStatsLastFullYear) return false;
       if(!customRanges_.Equals(other.customRanges_)) return false;
+      if (VacantAndCleanRoomsReport != other.VacantAndCleanRoomsReport) return false;
       return true;
     }
 
@@ -267,6 +281,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (PropStatsLastFullMonth != false) hash ^= PropStatsLastFullMonth.GetHashCode();
       if (PropStatsLastFullYear != false) hash ^= PropStatsLastFullYear.GetHashCode();
       hash ^= customRanges_.GetHashCode();
+      if (VacantAndCleanRoomsReport != false) hash ^= VacantAndCleanRoomsReport.GetHashCode();
       return hash;
     }
 
@@ -318,6 +333,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteBool(PropStatsLastFullYear);
       }
       customRanges_.WriteTo(output, _repeated_customRanges_codec);
+      if (VacantAndCleanRoomsReport != false) {
+        output.WriteRawTag(96);
+        output.WriteBool(VacantAndCleanRoomsReport);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -354,6 +373,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
         size += 1 + 1;
       }
       size += customRanges_.CalculateSize(_repeated_customRanges_codec);
+      if (VacantAndCleanRoomsReport != false) {
+        size += 1 + 1;
+      }
       return size;
     }
 
@@ -393,6 +415,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
         PropStatsLastFullYear = other.PropStatsLastFullYear;
       }
       customRanges_.Add(other.customRanges_);
+      if (other.VacantAndCleanRoomsReport != false) {
+        VacantAndCleanRoomsReport = other.VacantAndCleanRoomsReport;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -445,6 +470,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 90: {
             customRanges_.AddEntriesFrom(input, _repeated_customRanges_codec);
+            break;
+          }
+          case 96: {
+            VacantAndCleanRoomsReport = input.ReadBool();
             break;
           }
         }
