@@ -12,11 +12,23 @@ import "reporting/outputs/html_report_response.proto";
 import "tenancy_config/property_arrival_letter_text.proto";
 import "tenancy_config/property_cancellation_letter_text.proto";
 import "tenancy_config/property_confirmation_letter_text.proto";
+import "money/cards/transactions/payment_card_refund_indicator.proto";
+import "money/cards/transactions/payment_card_sale_indicator.proto";
+import "folio/folio_check_cash_payment_indicator.proto";
+import "primitive/uuid.proto";
 
 message CorrespondenceRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
 	repeated holms.types.crm.guests.GuestIndicator guests = 2;
 	repeated holms.types.booking.reservations.ReservationContactPerson contacts = 3;
+
+}
+
+message CorrespondenceRequestWithExclusions {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	repeated holms.types.crm.guests.GuestIndicator guests = 2;
+	repeated holms.types.booking.reservations.ReservationContactPerson contacts = 3;
+	PrintReservationRequest exclusions = 4;
 }
 
 enum CorrespondenceServiceEmailSendStatus {
@@ -34,6 +46,25 @@ message CorrespondenceServiceEmailSendResult {
 message CorrespondenceServiceEmailSendResponse {
 	repeated CorrespondenceServiceEmailSendResult results = 1;
 }
+
+message PrintReservationRequest{
+	.holms.types.booking.indicators.ReservationIndicator ri = 1;
+	repeated .holms.types.folio.FolioCheckCashPaymentIndicator checkcash_payment_indicators = 2;
+	repeated .holms.types.money.cards.transactions.PaymentCardSaleIndicator card_payment_indicators = 3;
+	repeated .holms.types.money.cards.transactions.PaymentCardRefundIndicator refund_indicators = 4;
+	repeated .holms.types.primitive.Uuid folio_event_id = 5;
+
+}
+
+message PrintGroupReservationRequest{
+	.holms.types.booking.indicators.GroupBookingIndicator gbi = 1;
+	repeated .holms.types.folio.FolioCheckCashPaymentIndicator checkcash_payment_indicators = 2;
+	repeated .holms.types.money.cards.transactions.PaymentCardSaleIndicator card_payment_indicators = 3;
+	repeated .holms.types.money.cards.transactions.PaymentCardRefundIndicator refund_indicators = 4;
+	repeated .holms.types.primitive.Uuid folio_event_id = 5;
+
+}
+
 
 service CorrespondenceSvc {
 	// Email
@@ -60,5 +91,16 @@ service CorrespondenceSvc {
 		returns(.holms.types.reporting.outputs.HtmlReportResponse); 	
 	rpc GetReservationConfirmationPrintDoc(holms.types.booking.indicators.ReservationIndicator)
 		returns(.holms.types.reporting.outputs.HtmlReportResponse);
+
+
+	rpc GetReservationFolioPrintDocExcluded(PrintReservationRequest)
+		returns(.holms.types.reporting.outputs.HtmlReportResponse); 
+
+	rpc GetGroupBookingFolioPrintDocExcluded(PrintGroupReservationRequest)
+		returns(.holms.types.reporting.outputs.HtmlReportResponse); 	
+	
+	rpc SendGuestFolioExcluded(CorrespondenceRequestWithExclusions) 
+		returns (CorrespondenceServiceEmailSendResponse);
+
 }
 

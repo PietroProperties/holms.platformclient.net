@@ -10,6 +10,7 @@ import "iam/staff_member_indicator.proto";
 import "primitive/monetary_amount.proto";
 import "primitive/pb_local_date.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
+import "primitive/uuid.proto";
 
 enum FolioAtomicChargeIssuanceSchedule {
 	IMPLEMENTATION_SCHEDULE_IMMEDIATE = 0;
@@ -27,5 +28,8 @@ message FolioAtomicCharge {
 	.holms.types.folio.FolioIndicator incurred_by = 7;
 	FolioAtomicChargeIssuanceSchedule issuance_schedule = 8;
 	.holms.types.iam.StaffMemberIndicator entered_by = 9;
+
+	holms.types.primitive.Uuid id = 10;
+
 }
 

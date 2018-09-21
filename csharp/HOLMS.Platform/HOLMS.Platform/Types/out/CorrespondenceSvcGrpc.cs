@@ -22,6 +22,9 @@ namespace HOLMS.Types.CRM.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText> __Marshaller_PropertyConfirmationLetterText = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText> __Marshaller_PropertyCancellationLetterText = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> __Marshaller_GroupBookingIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.PrintReservationRequest> __Marshaller_PrintReservationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.PrintReservationRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.PrintGroupReservationRequest> __Marshaller_PrintGroupReservationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.PrintGroupReservationRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions> __Marshaller_CorrespondenceRequestWithExclusions = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> __Method_SendConfirmationLetter = new grpc::Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse>(
         grpc::MethodType.Unary,
@@ -99,6 +102,27 @@ namespace HOLMS.Types.CRM.RPC {
         "GetReservationConfirmationPrintDoc",
         __Marshaller_ReservationIndicator,
         __Marshaller_HtmlReportResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.CRM.RPC.PrintReservationRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetReservationFolioPrintDocExcluded = new grpc::Method<global::HOLMS.Types.CRM.RPC.PrintReservationRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetReservationFolioPrintDocExcluded",
+        __Marshaller_PrintReservationRequest,
+        __Marshaller_HtmlReportResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.CRM.RPC.PrintGroupReservationRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetGroupBookingFolioPrintDocExcluded = new grpc::Method<global::HOLMS.Types.CRM.RPC.PrintGroupReservationRequest, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetGroupBookingFolioPrintDocExcluded",
+        __Marshaller_PrintGroupReservationRequest,
+        __Marshaller_HtmlReportResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> __Method_SendGuestFolioExcluded = new grpc::Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SendGuestFolioExcluded",
+        __Marshaller_CorrespondenceRequestWithExclusions,
+        __Marshaller_CorrespondenceServiceEmailSendResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -178,6 +202,21 @@ namespace HOLMS.Types.CRM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetReservationConfirmationPrintDoc(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetReservationFolioPrintDocExcluded(global::HOLMS.Types.CRM.RPC.PrintReservationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetGroupBookingFolioPrintDocExcluded(global::HOLMS.Types.CRM.RPC.PrintGroupReservationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendGuestFolioExcluded(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -467,6 +506,54 @@ namespace HOLMS.Types.CRM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationConfirmationPrintDoc, null, options, request);
       }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetReservationFolioPrintDocExcluded(global::HOLMS.Types.CRM.RPC.PrintReservationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetReservationFolioPrintDocExcluded(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetReservationFolioPrintDocExcluded(global::HOLMS.Types.CRM.RPC.PrintReservationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetReservationFolioPrintDocExcluded, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetReservationFolioPrintDocExcludedAsync(global::HOLMS.Types.CRM.RPC.PrintReservationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetReservationFolioPrintDocExcludedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetReservationFolioPrintDocExcludedAsync(global::HOLMS.Types.CRM.RPC.PrintReservationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetReservationFolioPrintDocExcluded, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetGroupBookingFolioPrintDocExcluded(global::HOLMS.Types.CRM.RPC.PrintGroupReservationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetGroupBookingFolioPrintDocExcluded(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetGroupBookingFolioPrintDocExcluded(global::HOLMS.Types.CRM.RPC.PrintGroupReservationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetGroupBookingFolioPrintDocExcluded, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetGroupBookingFolioPrintDocExcludedAsync(global::HOLMS.Types.CRM.RPC.PrintGroupReservationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetGroupBookingFolioPrintDocExcludedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetGroupBookingFolioPrintDocExcludedAsync(global::HOLMS.Types.CRM.RPC.PrintGroupReservationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetGroupBookingFolioPrintDocExcluded, null, options, request);
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse SendGuestFolioExcluded(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SendGuestFolioExcluded(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse SendGuestFolioExcluded(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SendGuestFolioExcluded, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendGuestFolioExcludedAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SendGuestFolioExcludedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendGuestFolioExcludedAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SendGuestFolioExcluded, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override CorrespondenceSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -489,7 +576,10 @@ namespace HOLMS.Types.CRM.RPC {
           .AddMethod(__Method_PreviewCancellationEmail, serviceImpl.PreviewCancellationEmail)
           .AddMethod(__Method_GetReservationFolioPrintDoc, serviceImpl.GetReservationFolioPrintDoc)
           .AddMethod(__Method_GetGroupBookingFolioPrintDoc, serviceImpl.GetGroupBookingFolioPrintDoc)
-          .AddMethod(__Method_GetReservationConfirmationPrintDoc, serviceImpl.GetReservationConfirmationPrintDoc).Build();
+          .AddMethod(__Method_GetReservationConfirmationPrintDoc, serviceImpl.GetReservationConfirmationPrintDoc)
+          .AddMethod(__Method_GetReservationFolioPrintDocExcluded, serviceImpl.GetReservationFolioPrintDocExcluded)
+          .AddMethod(__Method_GetGroupBookingFolioPrintDocExcluded, serviceImpl.GetGroupBookingFolioPrintDocExcluded)
+          .AddMethod(__Method_SendGuestFolioExcluded, serviceImpl.SendGuestFolioExcluded).Build();
     }
 
   }
