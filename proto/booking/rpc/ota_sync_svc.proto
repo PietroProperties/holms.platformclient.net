@@ -4,8 +4,17 @@ package holms.types.booking.rpc;
 option csharp_namespace = "HOLMS.Types.Booking.RPC";
 
 import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+message ServerTaskDetails {
+	google.protobuf.Timestamp last_working_at = 1;
+}
 
 service OTASyncSvc {
 	rpc SyncReservations(google.protobuf.Empty)
 		returns (google.protobuf.Empty);
+
+	rpc GetSchedulerLastWorkingTime(google.protobuf.Empty)
+		returns(ServerTaskDetails);
+
 }	

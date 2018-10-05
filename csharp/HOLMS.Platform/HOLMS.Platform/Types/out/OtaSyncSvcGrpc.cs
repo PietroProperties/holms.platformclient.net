@@ -14,6 +14,7 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly string __ServiceName = "holms.types.booking.rpc.OTASyncSvc";
 
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ServerTaskDetails> __Marshaller_ServerTaskDetails = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ServerTaskDetails.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SyncReservations = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
@@ -21,6 +22,13 @@ namespace HOLMS.Types.Booking.RPC {
         "SyncReservations",
         __Marshaller_Empty,
         __Marshaller_Empty);
+
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.ServerTaskDetails> __Method_GetSchedulerLastWorkingTime = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.ServerTaskDetails>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetSchedulerLastWorkingTime",
+        __Marshaller_Empty,
+        __Marshaller_ServerTaskDetails);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -32,6 +40,11 @@ namespace HOLMS.Types.Booking.RPC {
     public abstract partial class OTASyncSvcBase
     {
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SyncReservations(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ServerTaskDetails> GetSchedulerLastWorkingTime(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -77,6 +90,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SyncReservations, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.ServerTaskDetails GetSchedulerLastWorkingTime(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetSchedulerLastWorkingTime(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.ServerTaskDetails GetSchedulerLastWorkingTime(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetSchedulerLastWorkingTime, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ServerTaskDetails> GetSchedulerLastWorkingTimeAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetSchedulerLastWorkingTimeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ServerTaskDetails> GetSchedulerLastWorkingTimeAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetSchedulerLastWorkingTime, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override OTASyncSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -89,7 +118,8 @@ namespace HOLMS.Types.Booking.RPC {
     public static grpc::ServerServiceDefinition BindService(OTASyncSvcBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_SyncReservations, serviceImpl.SyncReservations).Build();
+          .AddMethod(__Method_SyncReservations, serviceImpl.SyncReservations)
+          .AddMethod(__Method_GetSchedulerLastWorkingTime, serviceImpl.GetSchedulerLastWorkingTime).Build();
     }
 
   }

@@ -23,17 +23,150 @@ namespace HOLMS.Types.Booking.RPC {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5ib29raW5nL3JwYy9vdGFfc3luY19zdmMucHJvdG8SF2hvbG1zLnR5cGVz",
-            "LmJvb2tpbmcucnBjGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8yUAoK",
-            "T1RBU3luY1N2YxJCChBTeW5jUmVzZXJ2YXRpb25zEhYuZ29vZ2xlLnByb3Rv",
-            "YnVmLkVtcHR5GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5QhqqAhdIT0xNUy5U",
-            "eXBlcy5Cb29raW5nLlJQQ2IGcHJvdG8z"));
+            "LmJvb2tpbmcucnBjGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aH2dv",
+            "b2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8iSAoRU2VydmVyVGFza0Rl",
+            "dGFpbHMSMwoPbGFzdF93b3JraW5nX2F0GAEgASgLMhouZ29vZ2xlLnByb3Rv",
+            "YnVmLlRpbWVzdGFtcDKzAQoKT1RBU3luY1N2YxJCChBTeW5jUmVzZXJ2YXRp",
+            "b25zEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhYuZ29vZ2xlLnByb3RvYnVm",
+            "LkVtcHR5EmEKG0dldFNjaGVkdWxlckxhc3RXb3JraW5nVGltZRIWLmdvb2ds",
+            "ZS5wcm90b2J1Zi5FbXB0eRoqLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlNl",
+            "cnZlclRhc2tEZXRhaWxzQhqqAhdIT0xNUy5UeXBlcy5Cb29raW5nLlJQQ2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null));
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.ServerTaskDetails), global::HOLMS.Types.Booking.RPC.ServerTaskDetails.Parser, new[]{ "LastWorkingAt" }, null, null, null)
+          }));
     }
     #endregion
 
   }
+  #region Messages
+  public sealed partial class ServerTaskDetails : pb::IMessage<ServerTaskDetails> {
+    private static readonly pb::MessageParser<ServerTaskDetails> _parser = new pb::MessageParser<ServerTaskDetails>(() => new ServerTaskDetails());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ServerTaskDetails> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Booking.RPC.OtaSyncSvcReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ServerTaskDetails() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ServerTaskDetails(ServerTaskDetails other) : this() {
+      LastWorkingAt = other.lastWorkingAt_ != null ? other.LastWorkingAt.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ServerTaskDetails Clone() {
+      return new ServerTaskDetails(this);
+    }
+
+    /// <summary>Field number for the "last_working_at" field.</summary>
+    public const int LastWorkingAtFieldNumber = 1;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp lastWorkingAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp LastWorkingAt {
+      get { return lastWorkingAt_; }
+      set {
+        lastWorkingAt_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ServerTaskDetails);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ServerTaskDetails other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(LastWorkingAt, other.LastWorkingAt)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (lastWorkingAt_ != null) hash ^= LastWorkingAt.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (lastWorkingAt_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(LastWorkingAt);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (lastWorkingAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LastWorkingAt);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ServerTaskDetails other) {
+      if (other == null) {
+        return;
+      }
+      if (other.lastWorkingAt_ != null) {
+        if (lastWorkingAt_ == null) {
+          lastWorkingAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        LastWorkingAt.MergeFrom(other.LastWorkingAt);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (lastWorkingAt_ == null) {
+              lastWorkingAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(lastWorkingAt_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  #endregion
+
 }
 
 #endregion Designer generated code
