@@ -37,4 +37,7 @@ message CompleteOpenReservation {
 	string channel_manager_id = 22;
 	string source_channel_id = 23;
 	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 24;
+	string reservation_id_from_channel = 25;
+	string rush_reservation_id_from_channel = 26;
+	string source_indirect_channel = 27;
 }

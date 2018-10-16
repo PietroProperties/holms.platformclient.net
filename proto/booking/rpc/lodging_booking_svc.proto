@@ -13,6 +13,7 @@ import "booking/reservations/add_guest_to_reservation_request.proto";
 import "booking/reservations/remove_guest_from_reservation_request.proto";
 import "booking/reservations/reservation_frp_amendment_request.proto";
 import "booking/reservations/frp_amendment_response.proto";
+import "booking/reservations/reservation_channel_amendment_request.proto";
 
 service LodgingBookingSvc {
 	rpc BookGenesisReservation(.holms.types.booking.reservations.BookGenesisReservationRequest)
@@ -31,5 +32,8 @@ service LodgingBookingSvc {
 		returns (.holms.types.booking.reservations.FRPAmendmentResponse);
 
 	rpc RequestChangePrimaryGuestInReservation (.holms.types.booking.reservations.AddGuestToReservationRequest)
+		returns (google.protobuf.Empty);
+
+	rpc RequestUpdateChannelDetailsReservation(.holms.types.booking.reservations.ReservationChannelAmendmentRequest)
 		returns (google.protobuf.Empty);
 }
