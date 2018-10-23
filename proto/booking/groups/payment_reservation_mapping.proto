@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+package holms.types.booking.groups;
+option csharp_namespace = "HOLMS.Types.Booking.Groups";
+option go_package = "booking/groups";
+
+import "primitive/uuid.proto";
+import "booking/indicators/group_booking_indicator.proto";
+import "primitive/monetary_amount.proto";
+import "booking/groups/payment_state.proto";
+import "booking/indicators/reservation_indicator.proto";
+
+
+
+message PaymentReservationMapping {
+    .holms.types.booking.indicators.GroupBookingIndicator group_booking_id = 1;
+	.holms.types.primitive.Uuid payment_id =2;
+	.holms.types.booking.indicators.ReservationIndicator reservation_id = 3;
+	.holms.types.primitive.MonetaryAmount amount = 4;
+     PaymentState state = 5;
+
+}

@@ -12,6 +12,7 @@ import "booking/groups/group_booking_room_type_quantity.proto";
 import "crm/groups/group_indicator.proto";
 import "supply/price_update_request.proto";
 import "booking/reservations/reservation_summary.proto";
+import "booking/groups/payment_reservation_mapping.proto";
 
 message GroupBookingSvcAllBookings {
 	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
@@ -37,6 +38,10 @@ message GroupBookingSvcGetByIdsRequest {
 
 message GroupBookingSvcGetByIdsResponse {
 	repeated .holms.types.booking.groups.GroupBooking booking = 1;
+}
+
+message PaymentReservationMappingRequest{
+	repeated .holms.types.booking.groups.PaymentReservationMapping payment_mapping = 1; 
 }
 
 service GroupBookingSvc {
@@ -66,4 +71,7 @@ service GroupBookingSvc {
 
 	rpc GetByIds(GroupBookingSvcGetByIdsRequest)
 		returns(GroupBookingSvcGetByIdsResponse);
+
+	rpc MapPaymentWithReservation(PaymentReservationMappingRequest)
+		returns(google.protobuf.Empty);
 }
