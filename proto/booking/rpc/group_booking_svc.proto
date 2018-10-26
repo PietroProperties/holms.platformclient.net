@@ -44,6 +44,10 @@ message PaymentReservationMappingRequest{
 	repeated .holms.types.booking.groups.PaymentReservationMapping payment_mapping = 1; 
 }
 
+message GroupBookingPaymentMappingResponse{
+	repeated .holms.types.booking.groups.PaymentReservationMapping payment_mapping = 1;
+}
+
 service GroupBookingSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (GroupBookingSvcAllBookings);
@@ -74,4 +78,7 @@ service GroupBookingSvc {
 
 	rpc MapPaymentWithReservation(PaymentReservationMappingRequest)
 		returns(google.protobuf.Empty);
+	
+	rpc GetPaymentMappingById(.holms.types.booking.indicators.GroupBookingIndicator)
+		returns(GroupBookingPaymentMappingResponse);
 }
