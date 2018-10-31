@@ -28,7 +28,7 @@ namespace HOLMS.Types.Folio {
             "YXJkX3NhbGUucHJvdG8aJGZvbGlvL2ZvbGlvX2NoZWNrX2Nhc2hfcGF5bWVu",
             "dC5wcm90bxolZm9saW8vcmVzZXJ2YXRpb25fZm9saW9fc3VtbWFyeS5wcm90",
             "bxoaZm9saW8vdGF4X2Fzc2Vzc21lbnQucHJvdG8aH3ByaW1pdGl2ZS9tb25l",
-            "dGFyeV9hbW91bnQucHJvdG8i0AsKFVJlc2VydmF0aW9uRm9saW9TdGF0ZRI/",
+            "dGFyeV9hbW91bnQucHJvdG8img0KFVJlc2VydmF0aW9uRm9saW9TdGF0ZRI/",
             "ChFlZmZlY3RpdmVfY2hhcmdlcxgBIAMoCzIkLmhvbG1zLnR5cGVzLmZvbGlv",
             "LkZvbGlvQXRvbWljQ2hhcmdlEjgKDGNhcmRfcmVmdW5kcxgCIAMoCzIiLmhv",
             "bG1zLnR5cGVzLmZvbGlvLkZvbGlvQ2FyZFJlZnVuZBI0CgpjYXJkX3NhbGVz",
@@ -61,12 +61,16 @@ namespace HOLMS.Types.Folio {
             "bG9kZ2luZ19jaGFyZ2VzGBYgASgIEi8KJ21hc3Rlcl9mb2xpb19hY2NydWVz",
             "X2luY2lkZW50YWxfY2hhcmdlcxgXIAEoCBJWCidyZW1haW5pbmdfdGVuZGVy",
             "X3JlcXVpcmVkX2Zvcl9ndWFyYW50ZWUYGCABKAsyJS5ob2xtcy50eXBlcy5w",
-            "cmltaXRpdmUuTW9uZXRhcnlBbW91bnRCFKoCEUhPTE1TLlR5cGVzLkZvbGlv",
-            "YgZwcm90bzM="));
+            "cmltaXRpdmUuTW9uZXRhcnlBbW91bnQSQwoUdG90YWxfbWFzdGVyX2NoYXJn",
+            "ZXMYGSABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91",
+            "bnQSQQoSdG90YWxfbWFzdGVyX3RheGVzGBogASgLMiUuaG9sbXMudHlwZXMu",
+            "cHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkAKEXRvdGFsX21hc3Rlcl9mZWVz",
+            "GBsgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
+            "QhSqAhFIT0xNUy5UeXBlcy5Gb2xpb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.ReservationFolioSummaryReflection.Descriptor, global::HOLMS.Types.Folio.TaxAssessmentReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentCharges", "AnticipatedCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges", "RemainingTenderRequiredForGuarantee" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentCharges", "AnticipatedCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges", "RemainingTenderRequiredForGuarantee", "TotalMasterCharges", "TotalMasterTaxes", "TotalMasterFees" }, null, null, null)
           }));
     }
     #endregion
@@ -119,6 +123,9 @@ namespace HOLMS.Types.Folio {
       masterFolioAccruesLodgingCharges_ = other.masterFolioAccruesLodgingCharges_;
       masterFolioAccruesIncidentalCharges_ = other.masterFolioAccruesIncidentalCharges_;
       RemainingTenderRequiredForGuarantee = other.remainingTenderRequiredForGuarantee_ != null ? other.RemainingTenderRequiredForGuarantee.Clone() : null;
+      TotalMasterCharges = other.totalMasterCharges_ != null ? other.TotalMasterCharges.Clone() : null;
+      TotalMasterTaxes = other.totalMasterTaxes_ != null ? other.TotalMasterTaxes.Clone() : null;
+      TotalMasterFees = other.totalMasterFees_ != null ? other.TotalMasterFees.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -359,6 +366,39 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "total_master_charges" field.</summary>
+    public const int TotalMasterChargesFieldNumber = 25;
+    private global::HOLMS.Types.Primitive.MonetaryAmount totalMasterCharges_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount TotalMasterCharges {
+      get { return totalMasterCharges_; }
+      set {
+        totalMasterCharges_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "total_master_taxes" field.</summary>
+    public const int TotalMasterTaxesFieldNumber = 26;
+    private global::HOLMS.Types.Primitive.MonetaryAmount totalMasterTaxes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount TotalMasterTaxes {
+      get { return totalMasterTaxes_; }
+      set {
+        totalMasterTaxes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "total_master_fees" field.</summary>
+    public const int TotalMasterFeesFieldNumber = 27;
+    private global::HOLMS.Types.Primitive.MonetaryAmount totalMasterFees_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount TotalMasterFees {
+      get { return totalMasterFees_; }
+      set {
+        totalMasterFees_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationFolioState);
@@ -394,6 +434,9 @@ namespace HOLMS.Types.Folio {
       if (MasterFolioAccruesLodgingCharges != other.MasterFolioAccruesLodgingCharges) return false;
       if (MasterFolioAccruesIncidentalCharges != other.MasterFolioAccruesIncidentalCharges) return false;
       if (!object.Equals(RemainingTenderRequiredForGuarantee, other.RemainingTenderRequiredForGuarantee)) return false;
+      if (!object.Equals(TotalMasterCharges, other.TotalMasterCharges)) return false;
+      if (!object.Equals(TotalMasterTaxes, other.TotalMasterTaxes)) return false;
+      if (!object.Equals(TotalMasterFees, other.TotalMasterFees)) return false;
       return true;
     }
 
@@ -422,6 +465,9 @@ namespace HOLMS.Types.Folio {
       if (MasterFolioAccruesLodgingCharges != false) hash ^= MasterFolioAccruesLodgingCharges.GetHashCode();
       if (MasterFolioAccruesIncidentalCharges != false) hash ^= MasterFolioAccruesIncidentalCharges.GetHashCode();
       if (remainingTenderRequiredForGuarantee_ != null) hash ^= RemainingTenderRequiredForGuarantee.GetHashCode();
+      if (totalMasterCharges_ != null) hash ^= TotalMasterCharges.GetHashCode();
+      if (totalMasterTaxes_ != null) hash ^= TotalMasterTaxes.GetHashCode();
+      if (totalMasterFees_ != null) hash ^= TotalMasterFees.GetHashCode();
       return hash;
     }
 
@@ -493,6 +539,18 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(194, 1);
         output.WriteMessage(RemainingTenderRequiredForGuarantee);
       }
+      if (totalMasterCharges_ != null) {
+        output.WriteRawTag(202, 1);
+        output.WriteMessage(TotalMasterCharges);
+      }
+      if (totalMasterTaxes_ != null) {
+        output.WriteRawTag(210, 1);
+        output.WriteMessage(TotalMasterTaxes);
+      }
+      if (totalMasterFees_ != null) {
+        output.WriteRawTag(218, 1);
+        output.WriteMessage(TotalMasterFees);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -545,6 +603,15 @@ namespace HOLMS.Types.Folio {
       }
       if (remainingTenderRequiredForGuarantee_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(RemainingTenderRequiredForGuarantee);
+      }
+      if (totalMasterCharges_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TotalMasterCharges);
+      }
+      if (totalMasterTaxes_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TotalMasterTaxes);
+      }
+      if (totalMasterFees_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TotalMasterFees);
       }
       return size;
     }
@@ -631,6 +698,24 @@ namespace HOLMS.Types.Folio {
           remainingTenderRequiredForGuarantee_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
         RemainingTenderRequiredForGuarantee.MergeFrom(other.RemainingTenderRequiredForGuarantee);
+      }
+      if (other.totalMasterCharges_ != null) {
+        if (totalMasterCharges_ == null) {
+          totalMasterCharges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        TotalMasterCharges.MergeFrom(other.TotalMasterCharges);
+      }
+      if (other.totalMasterTaxes_ != null) {
+        if (totalMasterTaxes_ == null) {
+          totalMasterTaxes_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        TotalMasterTaxes.MergeFrom(other.TotalMasterTaxes);
+      }
+      if (other.totalMasterFees_ != null) {
+        if (totalMasterFees_ == null) {
+          totalMasterFees_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        TotalMasterFees.MergeFrom(other.TotalMasterFees);
       }
     }
 
@@ -758,6 +843,27 @@ namespace HOLMS.Types.Folio {
               remainingTenderRequiredForGuarantee_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(remainingTenderRequiredForGuarantee_);
+            break;
+          }
+          case 202: {
+            if (totalMasterCharges_ == null) {
+              totalMasterCharges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(totalMasterCharges_);
+            break;
+          }
+          case 210: {
+            if (totalMasterTaxes_ == null) {
+              totalMasterTaxes_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(totalMasterTaxes_);
+            break;
+          }
+          case 218: {
+            if (totalMasterFees_ == null) {
+              totalMasterFees_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(totalMasterFees_);
             break;
           }
         }

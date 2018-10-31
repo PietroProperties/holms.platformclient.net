@@ -41,5 +41,8 @@ message ReservationFolioState {
 	bool master_folio_accrues_incidental_charges = 23;
 
 	.holms.types.primitive.MonetaryAmount remaining_tender_required_for_guarantee = 24;
+	.holms.types.primitive.MonetaryAmount total_master_charges = 25;
+	.holms.types.primitive.MonetaryAmount total_master_taxes = 26;
+	.holms.types.primitive.MonetaryAmount total_master_fees = 27;
 }
 
