@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package holms.types.booking.groups;
+option csharp_namespace = "HOLMS.Types.Booking.Groups";
+option go_package = "booking/groups";
+
+import "booking/indicators/group_booking_indicator.proto";
+
+
+ message GroupBookingInvoiceMapping {
+    .holms.types.booking.indicators.GroupBookingIndicator group_booking_id = 1;
+	int32  invoice_number = 2;
+	string additional_notes = 3;
+ }
