@@ -60,6 +60,10 @@ message GroupBookingInvoiceMappingResponse{
 	int32 invoice_number =2;
 }
 
+message GroupBookingInvoiceResponse{
+	repeated .holms.types.booking.groups.GroupBookingInvoiceMapping  group_bookings_invoices = 1;
+}
+
 message ReservationInvoiceMappingRequest{
 	repeated .holms.types.booking.groups.ReservationInvoiceMapping  reservation_invoices = 1;
 }
@@ -102,7 +106,7 @@ service GroupBookingSvc {
 		returns(GroupBookingPaymentMappingResponse);
 
 	rpc GetGroupBookingInvoices(.holms.types.booking.indicators.GroupBookingIndicator)
-		returns(GroupBookingInvoiceMappingResponse);
+		returns(GroupBookingInvoiceResponse);
 
 	rpc CreateInvoiceForGroupBooking(GroupBookingInvoiceMappingRequest)
 		returns(GroupBookingInvoiceMappingResponse);

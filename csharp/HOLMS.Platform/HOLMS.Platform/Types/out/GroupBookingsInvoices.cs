@@ -24,16 +24,17 @@ namespace HOLMS.Types.Booking.Groups {
           string.Concat(
             "Cixib29raW5nL2dyb3Vwcy9ncm91cF9ib29raW5nc19pbnZvaWNlcy5wcm90",
             "bxIaaG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMaMGJvb2tpbmcvaW5kaWNh",
-            "dG9ycy9ncm91cF9ib29raW5nX2luZGljYXRvci5wcm90byKfAQoaR3JvdXBC",
-            "b29raW5nSW52b2ljZU1hcHBpbmcSTwoQZ3JvdXBfYm9va2luZ19pZBgBIAEo",
-            "CzI1LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5Hcm91cEJvb2tp",
-            "bmdJbmRpY2F0b3ISFgoOaW52b2ljZV9udW1iZXIYAiABKAUSGAoQYWRkaXRp",
-            "b25hbF9ub3RlcxgDIAEoCUItWg5ib29raW5nL2dyb3Vwc6oCGkhPTE1TLlR5",
+            "dG9ycy9ncm91cF9ib29raW5nX2luZGljYXRvci5wcm90bxoUcHJpbWl0aXZl",
+            "L3V1aWQucHJvdG8itgEKGkdyb3VwQm9va2luZ0ludm9pY2VNYXBwaW5nEk8K",
+            "EGdyb3VwX2Jvb2tpbmdfaWQYASABKAsyNS5ob2xtcy50eXBlcy5ib29raW5n",
+            "LmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yEhYKDmludm9pY2Vf",
+            "bnVtYmVyGAIgASgFEi8KCmludm9pY2VfaWQYAyABKAsyGy5ob2xtcy50eXBl",
+            "cy5wcmltaXRpdmUuVXVpZEItWg5ib29raW5nL2dyb3Vwc6oCGkhPTE1TLlR5",
             "cGVzLkJvb2tpbmcuR3JvdXBzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping), global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping.Parser, new[]{ "GroupBookingId", "InvoiceNumber", "AdditionalNotes" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping), global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping.Parser, new[]{ "GroupBookingId", "InvoiceNumber", "InvoiceId" }, null, null, null)
           }));
     }
     #endregion
@@ -66,7 +67,7 @@ namespace HOLMS.Types.Booking.Groups {
     public GroupBookingInvoiceMapping(GroupBookingInvoiceMapping other) : this() {
       GroupBookingId = other.groupBookingId_ != null ? other.GroupBookingId.Clone() : null;
       invoiceNumber_ = other.invoiceNumber_;
-      additionalNotes_ = other.additionalNotes_;
+      InvoiceId = other.invoiceId_ != null ? other.InvoiceId.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -96,14 +97,14 @@ namespace HOLMS.Types.Booking.Groups {
       }
     }
 
-    /// <summary>Field number for the "additional_notes" field.</summary>
-    public const int AdditionalNotesFieldNumber = 3;
-    private string additionalNotes_ = "";
+    /// <summary>Field number for the "invoice_id" field.</summary>
+    public const int InvoiceIdFieldNumber = 3;
+    private global::HOLMS.Types.Primitive.Uuid invoiceId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string AdditionalNotes {
-      get { return additionalNotes_; }
+    public global::HOLMS.Types.Primitive.Uuid InvoiceId {
+      get { return invoiceId_; }
       set {
-        additionalNotes_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        invoiceId_ = value;
       }
     }
 
@@ -122,7 +123,7 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (!object.Equals(GroupBookingId, other.GroupBookingId)) return false;
       if (InvoiceNumber != other.InvoiceNumber) return false;
-      if (AdditionalNotes != other.AdditionalNotes) return false;
+      if (!object.Equals(InvoiceId, other.InvoiceId)) return false;
       return true;
     }
 
@@ -131,7 +132,7 @@ namespace HOLMS.Types.Booking.Groups {
       int hash = 1;
       if (groupBookingId_ != null) hash ^= GroupBookingId.GetHashCode();
       if (InvoiceNumber != 0) hash ^= InvoiceNumber.GetHashCode();
-      if (AdditionalNotes.Length != 0) hash ^= AdditionalNotes.GetHashCode();
+      if (invoiceId_ != null) hash ^= InvoiceId.GetHashCode();
       return hash;
     }
 
@@ -150,9 +151,9 @@ namespace HOLMS.Types.Booking.Groups {
         output.WriteRawTag(16);
         output.WriteInt32(InvoiceNumber);
       }
-      if (AdditionalNotes.Length != 0) {
+      if (invoiceId_ != null) {
         output.WriteRawTag(26);
-        output.WriteString(AdditionalNotes);
+        output.WriteMessage(InvoiceId);
       }
     }
 
@@ -165,8 +166,8 @@ namespace HOLMS.Types.Booking.Groups {
       if (InvoiceNumber != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(InvoiceNumber);
       }
-      if (AdditionalNotes.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(AdditionalNotes);
+      if (invoiceId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(InvoiceId);
       }
       return size;
     }
@@ -185,8 +186,11 @@ namespace HOLMS.Types.Booking.Groups {
       if (other.InvoiceNumber != 0) {
         InvoiceNumber = other.InvoiceNumber;
       }
-      if (other.AdditionalNotes.Length != 0) {
-        AdditionalNotes = other.AdditionalNotes;
+      if (other.invoiceId_ != null) {
+        if (invoiceId_ == null) {
+          invoiceId_ = new global::HOLMS.Types.Primitive.Uuid();
+        }
+        InvoiceId.MergeFrom(other.InvoiceId);
       }
     }
 
@@ -210,7 +214,10 @@ namespace HOLMS.Types.Booking.Groups {
             break;
           }
           case 26: {
-            AdditionalNotes = input.ReadString();
+            if (invoiceId_ == null) {
+              invoiceId_ = new global::HOLMS.Types.Primitive.Uuid();
+            }
+            input.ReadMessage(invoiceId_);
             break;
           }
         }

@@ -26,8 +26,9 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse> __Marshaller_GroupBookingSvcGetByIdsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetByIdsResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.PaymentReservationMappingRequest> __Marshaller_PaymentReservationMappingRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.PaymentReservationMappingRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingPaymentMappingResponse> __Marshaller_GroupBookingPaymentMappingResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingPaymentMappingResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse> __Marshaller_GroupBookingInvoiceMappingResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceResponse> __Marshaller_GroupBookingInvoiceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingRequest> __Marshaller_GroupBookingInvoiceMappingRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse> __Marshaller_GroupBookingInvoiceMappingResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingRequest> __Marshaller_ReservationInvoiceMappingRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse> __Marshaller_ReservationInvoiceMappingResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse.Parser.ParseFrom);
 
@@ -108,12 +109,12 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_GroupBookingIndicator,
         __Marshaller_GroupBookingPaymentMappingResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse> __Method_GetGroupBookingInvoices = new grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceResponse> __Method_GetGroupBookingInvoices = new grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetGroupBookingInvoices",
         __Marshaller_GroupBookingIndicator,
-        __Marshaller_GroupBookingInvoiceMappingResponse);
+        __Marshaller_GroupBookingInvoiceResponse);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingRequest, global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse> __Method_CreateInvoiceForGroupBooking = new grpc::Method<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingRequest, global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse>(
         grpc::MethodType.Unary,
@@ -200,7 +201,7 @@ namespace HOLMS.Types.Booking.RPC {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse> GetGroupBookingInvoices(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceResponse> GetGroupBookingInvoices(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -421,19 +422,19 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetPaymentMappingById, null, options, request);
       }
-      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse GetGroupBookingInvoices(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceResponse GetGroupBookingInvoices(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetGroupBookingInvoices(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse GetGroupBookingInvoices(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceResponse GetGroupBookingInvoices(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetGroupBookingInvoices, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse> GetGroupBookingInvoicesAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceResponse> GetGroupBookingInvoicesAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return GetGroupBookingInvoicesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse> GetGroupBookingInvoicesAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceResponse> GetGroupBookingInvoicesAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetGroupBookingInvoices, null, options, request);
       }
