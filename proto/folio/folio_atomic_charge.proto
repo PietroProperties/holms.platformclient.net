@@ -30,6 +30,8 @@ message FolioAtomicCharge {
 	.holms.types.iam.StaffMemberIndicator entered_by = 9;
 
 	holms.types.primitive.Uuid id = 10;
+	.holms.types.primitive.MonetaryAmount taxes = 11;
+	.holms.types.primitive.MonetaryAmount fees = 12;
 
 }
 
