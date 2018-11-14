@@ -9,6 +9,8 @@ import "google/protobuf/empty.proto";
 import "supply/room_types/full_room_type.proto";
 import "supply/room_types/room_type.proto";
 import "supply/room_types/room_type_indicator.proto";
+import "booking/reservations/reservation_summary.proto";
+import "operations/rooms/room.proto";
 
 message RoomTypeSvcAllResponse {
 	repeated .holms.types.supply.room_types.RoomType room_types = 1;
@@ -35,6 +37,11 @@ message RoomTypeSvcUpdateResponse {
 	repeated .holms.types.primitive.PbLocalDate first_illegal_hold_dates = 4;
 }
 
+message CheckDependenciesResponse {
+	repeated .holms.types.booking.reservations.ReservationSummary reservations = 1;
+	repeated .holms.types.operations.rooms.Room attached_rooms = 2;
+}
+
 service RoomTypeSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (RoomTypeSvcAllResponse);
@@ -56,4 +63,7 @@ service RoomTypeSvc {
 
 	rpc Delete (.holms.types.supply.room_types.RoomType)
 		returns (.holms.types.primitive.ServerActionConfirmation);
+
+	rpc CheckDependencies (.holms.types.supply.room_types.RoomType)
+		returns (CheckDependenciesResponse);
 }

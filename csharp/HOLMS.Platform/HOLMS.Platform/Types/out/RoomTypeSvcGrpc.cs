@@ -21,6 +21,7 @@ namespace HOLMS.Types.Supply.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest> __Marshaller_RoomTypeSvcGetByChannelManagerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse> __Marshaller_RoomTypeSvcUpdateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Primitive.ServerActionConfirmation> __Marshaller_ServerActionConfirmation = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.ServerActionConfirmation.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse> __Marshaller_CheckDependenciesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllResponse> __Method_All = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllResponse>(
         grpc::MethodType.Unary,
@@ -71,6 +72,13 @@ namespace HOLMS.Types.Supply.RPC {
         __Marshaller_RoomType,
         __Marshaller_ServerActionConfirmation);
 
+    static readonly grpc::Method<global::HOLMS.Types.Supply.RoomTypes.RoomType, global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse> __Method_CheckDependencies = new grpc::Method<global::HOLMS.Types.Supply.RoomTypes.RoomType, global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CheckDependencies",
+        __Marshaller_RoomType,
+        __Marshaller_CheckDependenciesResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -111,6 +119,11 @@ namespace HOLMS.Types.Supply.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Primitive.ServerActionConfirmation> Delete(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse> CheckDependencies(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -252,6 +265,22 @@ namespace HOLMS.Types.Supply.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Delete, null, options, request);
       }
+      public virtual global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse CheckDependencies(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return CheckDependencies(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse CheckDependencies(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CheckDependencies, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse> CheckDependenciesAsync(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return CheckDependenciesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse> CheckDependenciesAsync(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CheckDependencies, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override RoomTypeSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -270,7 +299,8 @@ namespace HOLMS.Types.Supply.RPC {
           .AddMethod(__Method_GetByChannelManagerId, serviceImpl.GetByChannelManagerId)
           .AddMethod(__Method_Create, serviceImpl.Create)
           .AddMethod(__Method_Update, serviceImpl.Update)
-          .AddMethod(__Method_Delete, serviceImpl.Delete).Build();
+          .AddMethod(__Method_Delete, serviceImpl.Delete)
+          .AddMethod(__Method_CheckDependencies, serviceImpl.CheckDependencies).Build();
     }
 
   }
