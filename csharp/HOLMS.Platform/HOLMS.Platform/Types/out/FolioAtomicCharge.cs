@@ -29,7 +29,7 @@ namespace HOLMS.Types.Folio {
             "Gh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3RvGh1wcmltaXRpdmUv",
             "cGJfbG9jYWxfZGF0ZS5wcm90bxo3c3VwcGx5L2luY2lkZW50YWxfaXRlbXMv",
             "aW5jaWRlbnRhbF9pdGVtX2luZGljYXRvci5wcm90bxoUcHJpbWl0aXZlL3V1",
-            "aWQucHJvdG8i3QQKEUZvbGlvQXRvbWljQ2hhcmdlEjUKBmFtb3VudBgBIAEo",
+            "aWQucHJvdG8iyAUKEUZvbGlvQXRvbWljQ2hhcmdlEjUKBmFtb3VudBgBIAEo",
             "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIRCglu",
             "YXJyYXRpb24YAiABKAkSPwoSY2hhcmdlX2NyZWRpdF90eXBlGAMgASgOMiMu",
             "aG9sbXMudHlwZXMuZm9saW8uQ2hhcmdlQ3JlZGl0VHlwZRJBChVlZmZlY3Rp",
@@ -42,14 +42,17 @@ namespace HOLMS.Types.Folio {
             "aGVkdWxlGAggASgOMjQuaG9sbXMudHlwZXMuZm9saW8uRm9saW9BdG9taWND",
             "aGFyZ2VJc3N1YW5jZVNjaGVkdWxlEjkKCmVudGVyZWRfYnkYCSABKAsyJS5o",
             "b2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXJJbmRpY2F0b3ISJwoCaWQYCiAB",
-            "KAsyGy5ob2xtcy50eXBlcy5wcmltaXRpdmUuVXVpZCpvCiFGb2xpb0F0b21p",
-            "Y0NoYXJnZUlzc3VhbmNlU2NoZWR1bGUSJQohSU1QTEVNRU5UQVRJT05fU0NI",
-            "RURVTEVfSU1NRURJQVRFEAASIwofSU1QTEVNRU5UQVRJT05fU0NIRURVTEVf",
-            "UExBTk5FRBABQhSqAhFIT0xNUy5UeXBlcy5Gb2xpb2IGcHJvdG8z"));
+            "KAsyGy5ob2xtcy50eXBlcy5wcmltaXRpdmUuVXVpZBI0CgV0YXhlcxgLIAEo",
+            "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIzCgRm",
+            "ZWVzGAwgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1v",
+            "dW50Km8KIUZvbGlvQXRvbWljQ2hhcmdlSXNzdWFuY2VTY2hlZHVsZRIlCiFJ",
+            "TVBMRU1FTlRBVElPTl9TQ0hFRFVMRV9JTU1FRElBVEUQABIjCh9JTVBMRU1F",
+            "TlRBVElPTl9TQ0hFRFVMRV9QTEFOTkVEEAFCFKoCEUhPTE1TLlR5cGVzLkZv",
+            "bGlvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.ChargeCreditTypeReflection.Descriptor, global::HOLMS.Types.Folio.FolioIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Folio.FolioAtomicChargeIssuanceSchedule), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioAtomicCharge), global::HOLMS.Types.Folio.FolioAtomicCharge.Parser, new[]{ "Amount", "Narration", "ChargeCreditType", "EffectiveForOpsdate", "EffectiveAtClock", "IncidentalItem", "IncurredBy", "IssuanceSchedule", "EnteredBy", "Id" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioAtomicCharge), global::HOLMS.Types.Folio.FolioAtomicCharge.Parser, new[]{ "Amount", "Narration", "ChargeCreditType", "EffectiveForOpsdate", "EffectiveAtClock", "IncidentalItem", "IncurredBy", "IssuanceSchedule", "EnteredBy", "Id", "Taxes", "Fees" }, null, null, null)
           }));
     }
     #endregion
@@ -98,6 +101,8 @@ namespace HOLMS.Types.Folio {
       issuanceSchedule_ = other.issuanceSchedule_;
       EnteredBy = other.enteredBy_ != null ? other.EnteredBy.Clone() : null;
       Id = other.id_ != null ? other.Id.Clone() : null;
+      Taxes = other.taxes_ != null ? other.Taxes.Clone() : null;
+      Fees = other.fees_ != null ? other.Fees.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -215,6 +220,28 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "taxes" field.</summary>
+    public const int TaxesFieldNumber = 11;
+    private global::HOLMS.Types.Primitive.MonetaryAmount taxes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount Taxes {
+      get { return taxes_; }
+      set {
+        taxes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "fees" field.</summary>
+    public const int FeesFieldNumber = 12;
+    private global::HOLMS.Types.Primitive.MonetaryAmount fees_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount Fees {
+      get { return fees_; }
+      set {
+        fees_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioAtomicCharge);
@@ -238,6 +265,8 @@ namespace HOLMS.Types.Folio {
       if (IssuanceSchedule != other.IssuanceSchedule) return false;
       if (!object.Equals(EnteredBy, other.EnteredBy)) return false;
       if (!object.Equals(Id, other.Id)) return false;
+      if (!object.Equals(Taxes, other.Taxes)) return false;
+      if (!object.Equals(Fees, other.Fees)) return false;
       return true;
     }
 
@@ -254,6 +283,8 @@ namespace HOLMS.Types.Folio {
       if (IssuanceSchedule != 0) hash ^= IssuanceSchedule.GetHashCode();
       if (enteredBy_ != null) hash ^= EnteredBy.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
+      if (taxes_ != null) hash ^= Taxes.GetHashCode();
+      if (fees_ != null) hash ^= Fees.GetHashCode();
       return hash;
     }
 
@@ -304,6 +335,14 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(82);
         output.WriteMessage(Id);
       }
+      if (taxes_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Taxes);
+      }
+      if (fees_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(Fees);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -338,6 +377,12 @@ namespace HOLMS.Types.Folio {
       }
       if (id_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
+      }
+      if (taxes_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Taxes);
+      }
+      if (fees_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Fees);
       }
       return size;
     }
@@ -397,6 +442,18 @@ namespace HOLMS.Types.Folio {
           id_ = new global::HOLMS.Types.Primitive.Uuid();
         }
         Id.MergeFrom(other.Id);
+      }
+      if (other.taxes_ != null) {
+        if (taxes_ == null) {
+          taxes_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        Taxes.MergeFrom(other.Taxes);
+      }
+      if (other.fees_ != null) {
+        if (fees_ == null) {
+          fees_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        Fees.MergeFrom(other.Fees);
       }
     }
 
@@ -467,6 +524,20 @@ namespace HOLMS.Types.Folio {
               id_ = new global::HOLMS.Types.Primitive.Uuid();
             }
             input.ReadMessage(id_);
+            break;
+          }
+          case 90: {
+            if (taxes_ == null) {
+              taxes_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(taxes_);
+            break;
+          }
+          case 98: {
+            if (fees_ == null) {
+              fees_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(fees_);
             break;
           }
         }
