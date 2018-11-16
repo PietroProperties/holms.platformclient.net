@@ -15,6 +15,7 @@ namespace HOLMS.Types.Reporting.RPC {
 
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator> __Marshaller_GroupBookingIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Marshaller_HtmlReportResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping> __Marshaller_GroupBookingInvoiceMapping = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetBookingAssociatedFoliosDetail = new grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
         grpc::MethodType.Unary,
@@ -44,6 +45,13 @@ namespace HOLMS.Types.Reporting.RPC {
         __Marshaller_GroupBookingIndicator,
         __Marshaller_HtmlReportResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_GetInvoice = new grpc::Method<global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetInvoice",
+        __Marshaller_GroupBookingInvoiceMapping,
+        __Marshaller_HtmlReportResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -69,6 +77,11 @@ namespace HOLMS.Types.Reporting.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetBookingWorksheetDetail(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetInvoice(global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -162,6 +175,22 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetBookingWorksheetDetail, null, options, request);
       }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetInvoice(global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetInvoice(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse GetInvoice(global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetInvoice, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetInvoiceAsync(global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetInvoiceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> GetInvoiceAsync(global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetInvoice, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override FoliosReportingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -177,7 +206,8 @@ namespace HOLMS.Types.Reporting.RPC {
           .AddMethod(__Method_GetBookingAssociatedFoliosDetail, serviceImpl.GetBookingAssociatedFoliosDetail)
           .AddMethod(__Method_GetBookingAssociatedFoliosSummary, serviceImpl.GetBookingAssociatedFoliosSummary)
           .AddMethod(__Method_GetReservationFolioSummary, serviceImpl.GetReservationFolioSummary)
-          .AddMethod(__Method_GetBookingWorksheetDetail, serviceImpl.GetBookingWorksheetDetail).Build();
+          .AddMethod(__Method_GetBookingWorksheetDetail, serviceImpl.GetBookingWorksheetDetail)
+          .AddMethod(__Method_GetInvoice, serviceImpl.GetInvoice).Build();
     }
 
   }

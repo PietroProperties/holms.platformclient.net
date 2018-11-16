@@ -25,19 +25,22 @@ namespace HOLMS.Types.Booking.Groups {
             "Cilib29raW5nL2dyb3Vwcy9yZXNlcnZhdGlvbl9pbnZvaWNlcy5wcm90bxIa",
             "aG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMaLmJvb2tpbmcvaW5kaWNhdG9y",
             "cy9yZXNlcnZhdGlvbl9pbmRpY2F0b3IucHJvdG8aH3ByaW1pdGl2ZS9tb25l",
-            "dGFyeV9hbW91bnQucHJvdG8aFHByaW1pdGl2ZS91dWlkLnByb3RvIokCChlS",
+            "dGFyeV9hbW91bnQucHJvdG8aFHByaW1pdGl2ZS91dWlkLnByb3RvIqwDChlS",
             "ZXNlcnZhdGlvbkludm9pY2VNYXBwaW5nEi8KCmludm9pY2VfaWQYASABKAsy",
             "Gy5ob2xtcy50eXBlcy5wcmltaXRpdmUuVXVpZBJMCg5yZXNlcnZhdGlvbl9p",
             "ZBgCIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNl",
             "cnZhdGlvbkluZGljYXRvchI1CgZhbW91bnQYAyABKAsyJS5ob2xtcy50eXBl",
             "cy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSNgoHcGF5bWVudBgEIAEoCzIl",
-            "LmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudEItWg5ib29r",
-            "aW5nL2dyb3Vwc6oCGkhPTE1TLlR5cGVzLkJvb2tpbmcuR3JvdXBzYgZwcm90",
-            "bzM="));
+            "LmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI0CgV0YXhl",
+            "cxgFIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3Vu",
+            "dBIzCgRmZWVzGAYgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0",
+            "YXJ5QW1vdW50EjYKB2NoYXJnZXMYByABKAsyJS5ob2xtcy50eXBlcy5wcmlt",
+            "aXRpdmUuTW9uZXRhcnlBbW91bnRCLVoOYm9va2luZy9ncm91cHOqAhpIT0xN",
+            "Uy5UeXBlcy5Cb29raW5nLkdyb3Vwc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.ReservationInvoiceMapping), global::HOLMS.Types.Booking.Groups.ReservationInvoiceMapping.Parser, new[]{ "InvoiceId", "ReservationId", "Amount", "Payment" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.ReservationInvoiceMapping), global::HOLMS.Types.Booking.Groups.ReservationInvoiceMapping.Parser, new[]{ "InvoiceId", "ReservationId", "Amount", "Payment", "Taxes", "Fees", "Charges" }, null, null, null)
           }));
     }
     #endregion
@@ -72,6 +75,9 @@ namespace HOLMS.Types.Booking.Groups {
       ReservationId = other.reservationId_ != null ? other.ReservationId.Clone() : null;
       Amount = other.amount_ != null ? other.Amount.Clone() : null;
       Payment = other.payment_ != null ? other.Payment.Clone() : null;
+      Taxes = other.taxes_ != null ? other.Taxes.Clone() : null;
+      Fees = other.fees_ != null ? other.Fees.Clone() : null;
+      Charges = other.charges_ != null ? other.Charges.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -123,6 +129,39 @@ namespace HOLMS.Types.Booking.Groups {
       }
     }
 
+    /// <summary>Field number for the "taxes" field.</summary>
+    public const int TaxesFieldNumber = 5;
+    private global::HOLMS.Types.Primitive.MonetaryAmount taxes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount Taxes {
+      get { return taxes_; }
+      set {
+        taxes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "fees" field.</summary>
+    public const int FeesFieldNumber = 6;
+    private global::HOLMS.Types.Primitive.MonetaryAmount fees_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount Fees {
+      get { return fees_; }
+      set {
+        fees_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "charges" field.</summary>
+    public const int ChargesFieldNumber = 7;
+    private global::HOLMS.Types.Primitive.MonetaryAmount charges_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount Charges {
+      get { return charges_; }
+      set {
+        charges_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationInvoiceMapping);
@@ -140,6 +179,9 @@ namespace HOLMS.Types.Booking.Groups {
       if (!object.Equals(ReservationId, other.ReservationId)) return false;
       if (!object.Equals(Amount, other.Amount)) return false;
       if (!object.Equals(Payment, other.Payment)) return false;
+      if (!object.Equals(Taxes, other.Taxes)) return false;
+      if (!object.Equals(Fees, other.Fees)) return false;
+      if (!object.Equals(Charges, other.Charges)) return false;
       return true;
     }
 
@@ -150,6 +192,9 @@ namespace HOLMS.Types.Booking.Groups {
       if (reservationId_ != null) hash ^= ReservationId.GetHashCode();
       if (amount_ != null) hash ^= Amount.GetHashCode();
       if (payment_ != null) hash ^= Payment.GetHashCode();
+      if (taxes_ != null) hash ^= Taxes.GetHashCode();
+      if (fees_ != null) hash ^= Fees.GetHashCode();
+      if (charges_ != null) hash ^= Charges.GetHashCode();
       return hash;
     }
 
@@ -176,6 +221,18 @@ namespace HOLMS.Types.Booking.Groups {
         output.WriteRawTag(34);
         output.WriteMessage(Payment);
       }
+      if (taxes_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Taxes);
+      }
+      if (fees_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(Fees);
+      }
+      if (charges_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(Charges);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -192,6 +249,15 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (payment_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Payment);
+      }
+      if (taxes_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Taxes);
+      }
+      if (fees_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Fees);
+      }
+      if (charges_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Charges);
       }
       return size;
     }
@@ -224,6 +290,24 @@ namespace HOLMS.Types.Booking.Groups {
           payment_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
         Payment.MergeFrom(other.Payment);
+      }
+      if (other.taxes_ != null) {
+        if (taxes_ == null) {
+          taxes_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        Taxes.MergeFrom(other.Taxes);
+      }
+      if (other.fees_ != null) {
+        if (fees_ == null) {
+          fees_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        Fees.MergeFrom(other.Fees);
+      }
+      if (other.charges_ != null) {
+        if (charges_ == null) {
+          charges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        Charges.MergeFrom(other.Charges);
       }
     }
 
@@ -261,6 +345,27 @@ namespace HOLMS.Types.Booking.Groups {
               payment_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(payment_);
+            break;
+          }
+          case 42: {
+            if (taxes_ == null) {
+              taxes_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(taxes_);
+            break;
+          }
+          case 50: {
+            if (fees_ == null) {
+              fees_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(fees_);
+            break;
+          }
+          case 58: {
+            if (charges_ == null) {
+              charges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(charges_);
             break;
           }
         }

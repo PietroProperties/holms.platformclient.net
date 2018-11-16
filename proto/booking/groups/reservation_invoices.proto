@@ -14,4 +14,7 @@ import "primitive/uuid.proto";
 .holms.types.booking.indicators.ReservationIndicator reservation_id = 2;
 .holms.types.primitive.MonetaryAmount amount = 3;
 .holms.types.primitive.MonetaryAmount payment= 4;
+.holms.types.primitive.MonetaryAmount taxes= 5;
+.holms.types.primitive.MonetaryAmount fees = 6;
+.holms.types.primitive.MonetaryAmount charges = 7;
  }
