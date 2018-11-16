@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package holms.types.booking.groups;
+option csharp_namespace = "HOLMS.Types.Booking.Groups";
+option go_package = "booking/groups";
+
+import "booking/indicators/reservation_indicator.proto";
+import "primitive/monetary_amount.proto";
+import "primitive/uuid.proto";
+
+
+ message ReservationInvoiceMapping {
+.holms.types.primitive.Uuid invoice_id =1;
+.holms.types.booking.indicators.ReservationIndicator reservation_id = 2;
+.holms.types.primitive.MonetaryAmount amount = 3;
+.holms.types.primitive.MonetaryAmount payment= 4;
+.holms.types.primitive.MonetaryAmount taxes= 5;
+.holms.types.primitive.MonetaryAmount fees = 6;
+.holms.types.primitive.MonetaryAmount charges = 7;
+ }
