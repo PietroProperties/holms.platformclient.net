@@ -31,6 +31,13 @@ message CorrespondenceRequestWithExclusions {
 	PrintReservationRequest exclusions = 4;
 }
 
+message CorrespondenceRequestForReport{
+	string to_email=1;
+	string cc_email=2;
+	string reply_to_email =3;
+	string subject=4;
+	string reportString=5;
+}
 enum CorrespondenceServiceEmailSendStatus {
 	EMAIL_SEND_STATUS_SUCCESS = 0;
 	EMAIL_SEND_STATUS_SERVER_FAILURE = 1;
@@ -71,6 +78,7 @@ service CorrespondenceSvc {
 	rpc SendConfirmationLetter(CorrespondenceRequest) returns(CorrespondenceServiceEmailSendResponse);
 	rpc SendCancellationEmail(CorrespondenceRequest) returns(CorrespondenceServiceEmailSendResponse);
 	rpc SendGuestFolio(CorrespondenceRequest) returns (CorrespondenceServiceEmailSendResponse);
+	rpc SendReportToEmail(CorrespondenceRequestForReport) returns (CorrespondenceServiceEmailSendResponse);
 
 	// Print (get HTML)
 	rpc PreviewArrivalLetter(.holms.types.tenancy_config.PropertyArrivalLetterText)

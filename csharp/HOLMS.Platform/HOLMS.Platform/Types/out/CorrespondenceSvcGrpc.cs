@@ -15,6 +15,7 @@ namespace HOLMS.Types.CRM.RPC {
 
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceRequest> __Marshaller_CorrespondenceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> __Marshaller_CorrespondenceServiceEmailSendResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport> __Marshaller_CorrespondenceRequestForReport = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText> __Marshaller_PropertyArrivalLetterText = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Marshaller_HtmlReportResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Primitive.PbLocalDate> __Marshaller_PbLocalDate = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.PbLocalDate.Parser.ParseFrom);
@@ -45,6 +46,13 @@ namespace HOLMS.Types.CRM.RPC {
         __ServiceName,
         "SendGuestFolio",
         __Marshaller_CorrespondenceRequest,
+        __Marshaller_CorrespondenceServiceEmailSendResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> __Method_SendReportToEmail = new grpc::Method<global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport, global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SendReportToEmail",
+        __Marshaller_CorrespondenceRequestForReport,
         __Marshaller_CorrespondenceServiceEmailSendResponse);
 
     static readonly grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse> __Method_PreviewArrivalLetter = new grpc::Method<global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponse>(
@@ -150,6 +158,11 @@ namespace HOLMS.Types.CRM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendGuestFolio(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendReportToEmail(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -321,6 +334,22 @@ namespace HOLMS.Types.CRM.RPC {
       public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendGuestFolioAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SendGuestFolio, null, options, request);
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse SendReportToEmail(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SendReportToEmail(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse SendReportToEmail(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SendReportToEmail, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendReportToEmailAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SendReportToEmailAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse> SendReportToEmailAsync(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SendReportToEmail, null, options, request);
       }
       /// <summary>
       /// Print (get HTML)
@@ -569,6 +598,7 @@ namespace HOLMS.Types.CRM.RPC {
           .AddMethod(__Method_SendConfirmationLetter, serviceImpl.SendConfirmationLetter)
           .AddMethod(__Method_SendCancellationEmail, serviceImpl.SendCancellationEmail)
           .AddMethod(__Method_SendGuestFolio, serviceImpl.SendGuestFolio)
+          .AddMethod(__Method_SendReportToEmail, serviceImpl.SendReportToEmail)
           .AddMethod(__Method_PreviewArrivalLetter, serviceImpl.PreviewArrivalLetter)
           .AddMethod(__Method_GetArrivalLetterDocumentsArrivingOn, serviceImpl.GetArrivalLetterDocumentsArrivingOn)
           .AddMethod(__Method_GetArrivalLetterDocument, serviceImpl.GetArrivalLetterDocument)
