@@ -31,6 +31,7 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse> __Marshaller_GroupBookingInvoiceMappingResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingInvoiceMappingResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingRequest> __Marshaller_ReservationInvoiceMappingRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse> __Marshaller_ReservationInvoiceMappingResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest> __Marshaller_InvoiceVoidRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings> __Method_All = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings>(
         grpc::MethodType.Unary,
@@ -137,6 +138,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_GroupBookingIndicator,
         __Marshaller_ReservationInvoiceMappingResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest, global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse> __Method_VoideInvoiceById = new grpc::Method<global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest, global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "VoideInvoiceById",
+        __Marshaller_InvoiceVoidRequest,
+        __Marshaller_ReservationInvoiceMappingResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -217,6 +225,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse> GetReservationInvoiceFromGroupId(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse> VoideInvoiceById(global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -486,6 +499,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationInvoiceFromGroupId, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse VoideInvoiceById(global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return VoideInvoiceById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse VoideInvoiceById(global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_VoideInvoiceById, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse> VoideInvoiceByIdAsync(global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return VoideInvoiceByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse> VoideInvoiceByIdAsync(global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_VoideInvoiceById, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GroupBookingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -512,7 +541,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetGroupBookingInvoices, serviceImpl.GetGroupBookingInvoices)
           .AddMethod(__Method_CreateInvoiceForGroupBooking, serviceImpl.CreateInvoiceForGroupBooking)
           .AddMethod(__Method_CreateReservationInvoiceMappings, serviceImpl.CreateReservationInvoiceMappings)
-          .AddMethod(__Method_GetReservationInvoiceFromGroupId, serviceImpl.GetReservationInvoiceFromGroupId).Build();
+          .AddMethod(__Method_GetReservationInvoiceFromGroupId, serviceImpl.GetReservationInvoiceFromGroupId)
+          .AddMethod(__Method_VoideInvoiceById, serviceImpl.VoideInvoiceById).Build();
     }
 
   }

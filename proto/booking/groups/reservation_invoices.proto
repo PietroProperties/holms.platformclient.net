@@ -17,4 +17,5 @@ import "primitive/uuid.proto";
 .holms.types.primitive.MonetaryAmount taxes= 5;
 .holms.types.primitive.MonetaryAmount fees = 6;
 .holms.types.primitive.MonetaryAmount charges = 7;
+bool voided = 8;
  }

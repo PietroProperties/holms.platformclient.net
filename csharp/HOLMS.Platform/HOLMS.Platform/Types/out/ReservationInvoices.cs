@@ -25,7 +25,7 @@ namespace HOLMS.Types.Booking.Groups {
             "Cilib29raW5nL2dyb3Vwcy9yZXNlcnZhdGlvbl9pbnZvaWNlcy5wcm90bxIa",
             "aG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMaLmJvb2tpbmcvaW5kaWNhdG9y",
             "cy9yZXNlcnZhdGlvbl9pbmRpY2F0b3IucHJvdG8aH3ByaW1pdGl2ZS9tb25l",
-            "dGFyeV9hbW91bnQucHJvdG8aFHByaW1pdGl2ZS91dWlkLnByb3RvIqwDChlS",
+            "dGFyeV9hbW91bnQucHJvdG8aFHByaW1pdGl2ZS91dWlkLnByb3RvIrwDChlS",
             "ZXNlcnZhdGlvbkludm9pY2VNYXBwaW5nEi8KCmludm9pY2VfaWQYASABKAsy",
             "Gy5ob2xtcy50eXBlcy5wcmltaXRpdmUuVXVpZBJMCg5yZXNlcnZhdGlvbl9p",
             "ZBgCIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNl",
@@ -35,12 +35,13 @@ namespace HOLMS.Types.Booking.Groups {
             "cxgFIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3Vu",
             "dBIzCgRmZWVzGAYgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0",
             "YXJ5QW1vdW50EjYKB2NoYXJnZXMYByABKAsyJS5ob2xtcy50eXBlcy5wcmlt",
-            "aXRpdmUuTW9uZXRhcnlBbW91bnRCLVoOYm9va2luZy9ncm91cHOqAhpIT0xN",
-            "Uy5UeXBlcy5Cb29raW5nLkdyb3Vwc2IGcHJvdG8z"));
+            "aXRpdmUuTW9uZXRhcnlBbW91bnQSDgoGdm9pZGVkGAggASgIQi1aDmJvb2tp",
+            "bmcvZ3JvdXBzqgIaSE9MTVMuVHlwZXMuQm9va2luZy5Hcm91cHNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.ReservationInvoiceMapping), global::HOLMS.Types.Booking.Groups.ReservationInvoiceMapping.Parser, new[]{ "InvoiceId", "ReservationId", "Amount", "Payment", "Taxes", "Fees", "Charges" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.ReservationInvoiceMapping), global::HOLMS.Types.Booking.Groups.ReservationInvoiceMapping.Parser, new[]{ "InvoiceId", "ReservationId", "Amount", "Payment", "Taxes", "Fees", "Charges", "Voided" }, null, null, null)
           }));
     }
     #endregion
@@ -78,6 +79,7 @@ namespace HOLMS.Types.Booking.Groups {
       Taxes = other.taxes_ != null ? other.Taxes.Clone() : null;
       Fees = other.fees_ != null ? other.Fees.Clone() : null;
       Charges = other.charges_ != null ? other.Charges.Clone() : null;
+      voided_ = other.voided_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -162,6 +164,17 @@ namespace HOLMS.Types.Booking.Groups {
       }
     }
 
+    /// <summary>Field number for the "voided" field.</summary>
+    public const int VoidedFieldNumber = 8;
+    private bool voided_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Voided {
+      get { return voided_; }
+      set {
+        voided_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationInvoiceMapping);
@@ -182,6 +195,7 @@ namespace HOLMS.Types.Booking.Groups {
       if (!object.Equals(Taxes, other.Taxes)) return false;
       if (!object.Equals(Fees, other.Fees)) return false;
       if (!object.Equals(Charges, other.Charges)) return false;
+      if (Voided != other.Voided) return false;
       return true;
     }
 
@@ -195,6 +209,7 @@ namespace HOLMS.Types.Booking.Groups {
       if (taxes_ != null) hash ^= Taxes.GetHashCode();
       if (fees_ != null) hash ^= Fees.GetHashCode();
       if (charges_ != null) hash ^= Charges.GetHashCode();
+      if (Voided != false) hash ^= Voided.GetHashCode();
       return hash;
     }
 
@@ -233,6 +248,10 @@ namespace HOLMS.Types.Booking.Groups {
         output.WriteRawTag(58);
         output.WriteMessage(Charges);
       }
+      if (Voided != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(Voided);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -258,6 +277,9 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (charges_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Charges);
+      }
+      if (Voided != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -308,6 +330,9 @@ namespace HOLMS.Types.Booking.Groups {
           charges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
         Charges.MergeFrom(other.Charges);
+      }
+      if (other.Voided != false) {
+        Voided = other.Voided;
       }
     }
 
@@ -366,6 +391,10 @@ namespace HOLMS.Types.Booking.Groups {
               charges_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(charges_);
+            break;
+          }
+          case 64: {
+            Voided = input.ReadBool();
             break;
           }
         }

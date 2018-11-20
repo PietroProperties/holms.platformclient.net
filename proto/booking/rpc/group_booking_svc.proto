@@ -16,6 +16,8 @@ import "booking/groups/payment_reservation_mapping.proto";
 import "booking/groups/group_bookings_invoices.proto";
 import "booking/groups/reservation_invoices.proto";
 import "primitive/uuid.proto";
+import "iam/staff_member_indicator.proto";
+import "google/protobuf/timestamp.proto";
 
 message GroupBookingSvcAllBookings {
 	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
@@ -71,6 +73,12 @@ message ReservationInvoiceMappingRequest{
 message ReservationInvoiceMappingResponse{
 	repeated .holms.types.booking.groups.ReservationInvoiceMapping  reservation_invoices = 1;
 }
+
+message InvoiceVoidRequest{
+	.holms.types.primitive.Uuid invoice_id =1;
+	holms.types.iam.StaffMemberIndicator staff_id=2;
+	google.protobuf.Timestamp voided_at=3;
+}
 service GroupBookingSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (GroupBookingSvcAllBookings);
@@ -115,6 +123,9 @@ service GroupBookingSvc {
 		returns(google.protobuf.Empty);
 
 	rpc GetReservationInvoiceFromGroupId(.holms.types.booking.indicators.GroupBookingIndicator)
+		returns(ReservationInvoiceMappingResponse);
+
+	rpc VoideInvoiceById(InvoiceVoidRequest)
 		returns(ReservationInvoiceMappingResponse);
 
 }

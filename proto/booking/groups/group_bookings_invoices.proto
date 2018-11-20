@@ -6,6 +6,8 @@ option go_package = "booking/groups";
 
 import "booking/indicators/group_booking_indicator.proto";
 import "primitive/uuid.proto";
+import "iam/staff_member_indicator.proto";
+import "google/protobuf/timestamp.proto";
 
 
  message GroupBookingInvoiceMapping {
@@ -13,4 +15,8 @@ import "primitive/uuid.proto";
     	.holms.types.booking.indicators.GroupBookingIndicator group_booking_id = 1;
 	int32  invoice_number = 2;
 	.holms.types.primitive.Uuid invoice_id =3;
+	bool voided = 4;
+	holms.types.iam.StaffMemberIndicator created_by =5;
+ 	holms.types.iam.StaffMemberIndicator voided_by =6;
+	google.protobuf.Timestamp voided_at=7;	
  }

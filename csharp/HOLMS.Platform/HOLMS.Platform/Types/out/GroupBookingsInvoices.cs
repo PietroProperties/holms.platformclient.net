@@ -25,16 +25,22 @@ namespace HOLMS.Types.Booking.Groups {
             "Cixib29raW5nL2dyb3Vwcy9ncm91cF9ib29raW5nc19pbnZvaWNlcy5wcm90",
             "bxIaaG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMaMGJvb2tpbmcvaW5kaWNh",
             "dG9ycy9ncm91cF9ib29raW5nX2luZGljYXRvci5wcm90bxoUcHJpbWl0aXZl",
-            "L3V1aWQucHJvdG8itgEKGkdyb3VwQm9va2luZ0ludm9pY2VNYXBwaW5nEk8K",
-            "EGdyb3VwX2Jvb2tpbmdfaWQYASABKAsyNS5ob2xtcy50eXBlcy5ib29raW5n",
-            "LmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yEhYKDmludm9pY2Vf",
-            "bnVtYmVyGAIgASgFEi8KCmludm9pY2VfaWQYAyABKAsyGy5ob2xtcy50eXBl",
-            "cy5wcmltaXRpdmUuVXVpZEItWg5ib29raW5nL2dyb3Vwc6oCGkhPTE1TLlR5",
-            "cGVzLkJvb2tpbmcuR3JvdXBzYgZwcm90bzM="));
+            "L3V1aWQucHJvdG8aIGlhbS9zdGFmZl9tZW1iZXJfaW5kaWNhdG9yLnByb3Rv",
+            "Gh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3RvIuoCChpHcm91cEJv",
+            "b2tpbmdJbnZvaWNlTWFwcGluZxJPChBncm91cF9ib29raW5nX2lkGAEgASgL",
+            "MjUuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2lu",
+            "Z0luZGljYXRvchIWCg5pbnZvaWNlX251bWJlchgCIAEoBRIvCgppbnZvaWNl",
+            "X2lkGAMgASgLMhsuaG9sbXMudHlwZXMucHJpbWl0aXZlLlV1aWQSDgoGdm9p",
+            "ZGVkGAQgASgIEjkKCmNyZWF0ZWRfYnkYBSABKAsyJS5ob2xtcy50eXBlcy5p",
+            "YW0uU3RhZmZNZW1iZXJJbmRpY2F0b3ISOAoJdm9pZGVkX2J5GAYgASgLMiUu",
+            "aG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNhdG9yEi0KCXZvaWRl",
+            "ZF9hdBgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCLVoOYm9v",
+            "a2luZy9ncm91cHOqAhpIT0xNUy5UeXBlcy5Cb29raW5nLkdyb3Vwc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping), global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping.Parser, new[]{ "GroupBookingId", "InvoiceNumber", "InvoiceId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping), global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping.Parser, new[]{ "GroupBookingId", "InvoiceNumber", "InvoiceId", "Voided", "CreatedBy", "VoidedBy", "VoidedAt" }, null, null, null)
           }));
     }
     #endregion
@@ -68,6 +74,10 @@ namespace HOLMS.Types.Booking.Groups {
       GroupBookingId = other.groupBookingId_ != null ? other.GroupBookingId.Clone() : null;
       invoiceNumber_ = other.invoiceNumber_;
       InvoiceId = other.invoiceId_ != null ? other.InvoiceId.Clone() : null;
+      voided_ = other.voided_;
+      CreatedBy = other.createdBy_ != null ? other.CreatedBy.Clone() : null;
+      VoidedBy = other.voidedBy_ != null ? other.VoidedBy.Clone() : null;
+      VoidedAt = other.voidedAt_ != null ? other.VoidedAt.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -108,6 +118,50 @@ namespace HOLMS.Types.Booking.Groups {
       }
     }
 
+    /// <summary>Field number for the "voided" field.</summary>
+    public const int VoidedFieldNumber = 4;
+    private bool voided_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Voided {
+      get { return voided_; }
+      set {
+        voided_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "created_by" field.</summary>
+    public const int CreatedByFieldNumber = 5;
+    private global::HOLMS.Types.IAM.StaffMemberIndicator createdBy_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.IAM.StaffMemberIndicator CreatedBy {
+      get { return createdBy_; }
+      set {
+        createdBy_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "voided_by" field.</summary>
+    public const int VoidedByFieldNumber = 6;
+    private global::HOLMS.Types.IAM.StaffMemberIndicator voidedBy_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.IAM.StaffMemberIndicator VoidedBy {
+      get { return voidedBy_; }
+      set {
+        voidedBy_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "voided_at" field.</summary>
+    public const int VoidedAtFieldNumber = 7;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp voidedAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp VoidedAt {
+      get { return voidedAt_; }
+      set {
+        voidedAt_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GroupBookingInvoiceMapping);
@@ -124,6 +178,10 @@ namespace HOLMS.Types.Booking.Groups {
       if (!object.Equals(GroupBookingId, other.GroupBookingId)) return false;
       if (InvoiceNumber != other.InvoiceNumber) return false;
       if (!object.Equals(InvoiceId, other.InvoiceId)) return false;
+      if (Voided != other.Voided) return false;
+      if (!object.Equals(CreatedBy, other.CreatedBy)) return false;
+      if (!object.Equals(VoidedBy, other.VoidedBy)) return false;
+      if (!object.Equals(VoidedAt, other.VoidedAt)) return false;
       return true;
     }
 
@@ -133,6 +191,10 @@ namespace HOLMS.Types.Booking.Groups {
       if (groupBookingId_ != null) hash ^= GroupBookingId.GetHashCode();
       if (InvoiceNumber != 0) hash ^= InvoiceNumber.GetHashCode();
       if (invoiceId_ != null) hash ^= InvoiceId.GetHashCode();
+      if (Voided != false) hash ^= Voided.GetHashCode();
+      if (createdBy_ != null) hash ^= CreatedBy.GetHashCode();
+      if (voidedBy_ != null) hash ^= VoidedBy.GetHashCode();
+      if (voidedAt_ != null) hash ^= VoidedAt.GetHashCode();
       return hash;
     }
 
@@ -155,6 +217,22 @@ namespace HOLMS.Types.Booking.Groups {
         output.WriteRawTag(26);
         output.WriteMessage(InvoiceId);
       }
+      if (Voided != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(Voided);
+      }
+      if (createdBy_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(CreatedBy);
+      }
+      if (voidedBy_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(VoidedBy);
+      }
+      if (voidedAt_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(VoidedAt);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -168,6 +246,18 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (invoiceId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(InvoiceId);
+      }
+      if (Voided != false) {
+        size += 1 + 1;
+      }
+      if (createdBy_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreatedBy);
+      }
+      if (voidedBy_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VoidedBy);
+      }
+      if (voidedAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VoidedAt);
       }
       return size;
     }
@@ -191,6 +281,27 @@ namespace HOLMS.Types.Booking.Groups {
           invoiceId_ = new global::HOLMS.Types.Primitive.Uuid();
         }
         InvoiceId.MergeFrom(other.InvoiceId);
+      }
+      if (other.Voided != false) {
+        Voided = other.Voided;
+      }
+      if (other.createdBy_ != null) {
+        if (createdBy_ == null) {
+          createdBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
+        }
+        CreatedBy.MergeFrom(other.CreatedBy);
+      }
+      if (other.voidedBy_ != null) {
+        if (voidedBy_ == null) {
+          voidedBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
+        }
+        VoidedBy.MergeFrom(other.VoidedBy);
+      }
+      if (other.voidedAt_ != null) {
+        if (voidedAt_ == null) {
+          voidedAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        VoidedAt.MergeFrom(other.VoidedAt);
       }
     }
 
@@ -218,6 +329,31 @@ namespace HOLMS.Types.Booking.Groups {
               invoiceId_ = new global::HOLMS.Types.Primitive.Uuid();
             }
             input.ReadMessage(invoiceId_);
+            break;
+          }
+          case 32: {
+            Voided = input.ReadBool();
+            break;
+          }
+          case 42: {
+            if (createdBy_ == null) {
+              createdBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
+            }
+            input.ReadMessage(createdBy_);
+            break;
+          }
+          case 50: {
+            if (voidedBy_ == null) {
+              voidedBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
+            }
+            input.ReadMessage(voidedBy_);
+            break;
+          }
+          case 58: {
+            if (voidedAt_ == null) {
+              voidedAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(voidedAt_);
             break;
           }
         }
