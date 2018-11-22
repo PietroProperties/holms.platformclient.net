@@ -25,22 +25,22 @@ namespace HOLMS.Types.Booking.Groups {
             "Cixib29raW5nL2dyb3Vwcy9ncm91cF9ib29raW5nc19pbnZvaWNlcy5wcm90",
             "bxIaaG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMaMGJvb2tpbmcvaW5kaWNh",
             "dG9ycy9ncm91cF9ib29raW5nX2luZGljYXRvci5wcm90bxoUcHJpbWl0aXZl",
-            "L3V1aWQucHJvdG8aIGlhbS9zdGFmZl9tZW1iZXJfaW5kaWNhdG9yLnByb3Rv",
-            "Gh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3RvIuoCChpHcm91cEJv",
-            "b2tpbmdJbnZvaWNlTWFwcGluZxJPChBncm91cF9ib29raW5nX2lkGAEgASgL",
-            "MjUuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2lu",
-            "Z0luZGljYXRvchIWCg5pbnZvaWNlX251bWJlchgCIAEoBRIvCgppbnZvaWNl",
-            "X2lkGAMgASgLMhsuaG9sbXMudHlwZXMucHJpbWl0aXZlLlV1aWQSDgoGdm9p",
-            "ZGVkGAQgASgIEjkKCmNyZWF0ZWRfYnkYBSABKAsyJS5ob2xtcy50eXBlcy5p",
-            "YW0uU3RhZmZNZW1iZXJJbmRpY2F0b3ISOAoJdm9pZGVkX2J5GAYgASgLMiUu",
-            "aG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVySW5kaWNhdG9yEi0KCXZvaWRl",
-            "ZF9hdBgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCLVoOYm9v",
-            "a2luZy9ncm91cHOqAhpIT0xNUy5UeXBlcy5Cb29raW5nLkdyb3Vwc2IGcHJv",
-            "dG8z"));
+            "L3V1aWQucHJvdG8aFmlhbS9zdGFmZl9tZW1iZXIucHJvdG8aH2dvb2dsZS9w",
+            "cm90b2J1Zi90aW1lc3RhbXAucHJvdG8iiAMKGkdyb3VwQm9va2luZ0ludm9p",
+            "Y2VNYXBwaW5nEk8KEGdyb3VwX2Jvb2tpbmdfaWQYASABKAsyNS5ob2xtcy50",
+            "eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9y",
+            "EhYKDmludm9pY2VfbnVtYmVyGAIgASgFEi8KCmludm9pY2VfaWQYAyABKAsy",
+            "Gy5ob2xtcy50eXBlcy5wcmltaXRpdmUuVXVpZBIOCgZ2b2lkZWQYBCABKAgS",
+            "MAoKY3JlYXRlZF9ieRgFIAEoCzIcLmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1l",
+            "bWJlchIvCgl2b2lkZWRfYnkYBiABKAsyHC5ob2xtcy50eXBlcy5pYW0uU3Rh",
+            "ZmZNZW1iZXISLQoJdm9pZGVkX2F0GAcgASgLMhouZ29vZ2xlLnByb3RvYnVm",
+            "LlRpbWVzdGFtcBIuCgpjcmVhdGVkX2F0GAggASgLMhouZ29vZ2xlLnByb3Rv",
+            "YnVmLlRpbWVzdGFtcEItWg5ib29raW5nL2dyb3Vwc6oCGkhPTE1TLlR5cGVz",
+            "LkJvb2tpbmcuR3JvdXBzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping), global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping.Parser, new[]{ "GroupBookingId", "InvoiceNumber", "InvoiceId", "Voided", "CreatedBy", "VoidedBy", "VoidedAt" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping), global::HOLMS.Types.Booking.Groups.GroupBookingInvoiceMapping.Parser, new[]{ "GroupBookingId", "InvoiceNumber", "InvoiceId", "Voided", "CreatedBy", "VoidedBy", "VoidedAt", "CreatedAt" }, null, null, null)
           }));
     }
     #endregion
@@ -78,6 +78,7 @@ namespace HOLMS.Types.Booking.Groups {
       CreatedBy = other.createdBy_ != null ? other.CreatedBy.Clone() : null;
       VoidedBy = other.voidedBy_ != null ? other.VoidedBy.Clone() : null;
       VoidedAt = other.voidedAt_ != null ? other.VoidedAt.Clone() : null;
+      CreatedAt = other.createdAt_ != null ? other.CreatedAt.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -131,9 +132,9 @@ namespace HOLMS.Types.Booking.Groups {
 
     /// <summary>Field number for the "created_by" field.</summary>
     public const int CreatedByFieldNumber = 5;
-    private global::HOLMS.Types.IAM.StaffMemberIndicator createdBy_;
+    private global::HOLMS.Types.IAM.StaffMember createdBy_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.IAM.StaffMemberIndicator CreatedBy {
+    public global::HOLMS.Types.IAM.StaffMember CreatedBy {
       get { return createdBy_; }
       set {
         createdBy_ = value;
@@ -142,9 +143,9 @@ namespace HOLMS.Types.Booking.Groups {
 
     /// <summary>Field number for the "voided_by" field.</summary>
     public const int VoidedByFieldNumber = 6;
-    private global::HOLMS.Types.IAM.StaffMemberIndicator voidedBy_;
+    private global::HOLMS.Types.IAM.StaffMember voidedBy_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.IAM.StaffMemberIndicator VoidedBy {
+    public global::HOLMS.Types.IAM.StaffMember VoidedBy {
       get { return voidedBy_; }
       set {
         voidedBy_ = value;
@@ -159,6 +160,17 @@ namespace HOLMS.Types.Booking.Groups {
       get { return voidedAt_; }
       set {
         voidedAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "created_at" field.</summary>
+    public const int CreatedAtFieldNumber = 8;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp createdAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp CreatedAt {
+      get { return createdAt_; }
+      set {
+        createdAt_ = value;
       }
     }
 
@@ -182,6 +194,7 @@ namespace HOLMS.Types.Booking.Groups {
       if (!object.Equals(CreatedBy, other.CreatedBy)) return false;
       if (!object.Equals(VoidedBy, other.VoidedBy)) return false;
       if (!object.Equals(VoidedAt, other.VoidedAt)) return false;
+      if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
       return true;
     }
 
@@ -195,6 +208,7 @@ namespace HOLMS.Types.Booking.Groups {
       if (createdBy_ != null) hash ^= CreatedBy.GetHashCode();
       if (voidedBy_ != null) hash ^= VoidedBy.GetHashCode();
       if (voidedAt_ != null) hash ^= VoidedAt.GetHashCode();
+      if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
       return hash;
     }
 
@@ -233,6 +247,10 @@ namespace HOLMS.Types.Booking.Groups {
         output.WriteRawTag(58);
         output.WriteMessage(VoidedAt);
       }
+      if (createdAt_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(CreatedAt);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -258,6 +276,9 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (voidedAt_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(VoidedAt);
+      }
+      if (createdAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreatedAt);
       }
       return size;
     }
@@ -287,13 +308,13 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (other.createdBy_ != null) {
         if (createdBy_ == null) {
-          createdBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
+          createdBy_ = new global::HOLMS.Types.IAM.StaffMember();
         }
         CreatedBy.MergeFrom(other.CreatedBy);
       }
       if (other.voidedBy_ != null) {
         if (voidedBy_ == null) {
-          voidedBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
+          voidedBy_ = new global::HOLMS.Types.IAM.StaffMember();
         }
         VoidedBy.MergeFrom(other.VoidedBy);
       }
@@ -302,6 +323,12 @@ namespace HOLMS.Types.Booking.Groups {
           voidedAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         VoidedAt.MergeFrom(other.VoidedAt);
+      }
+      if (other.createdAt_ != null) {
+        if (createdAt_ == null) {
+          createdAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        CreatedAt.MergeFrom(other.CreatedAt);
       }
     }
 
@@ -337,14 +364,14 @@ namespace HOLMS.Types.Booking.Groups {
           }
           case 42: {
             if (createdBy_ == null) {
-              createdBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
+              createdBy_ = new global::HOLMS.Types.IAM.StaffMember();
             }
             input.ReadMessage(createdBy_);
             break;
           }
           case 50: {
             if (voidedBy_ == null) {
-              voidedBy_ = new global::HOLMS.Types.IAM.StaffMemberIndicator();
+              voidedBy_ = new global::HOLMS.Types.IAM.StaffMember();
             }
             input.ReadMessage(voidedBy_);
             break;
@@ -354,6 +381,13 @@ namespace HOLMS.Types.Booking.Groups {
               voidedAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(voidedAt_);
+            break;
+          }
+          case 66: {
+            if (createdAt_ == null) {
+              createdAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(createdAt_);
             break;
           }
         }

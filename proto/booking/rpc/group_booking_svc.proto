@@ -125,7 +125,6 @@ service GroupBookingSvc {
 	rpc GetReservationInvoiceFromGroupId(.holms.types.booking.indicators.GroupBookingIndicator)
 		returns(ReservationInvoiceMappingResponse);
 
-	rpc VoideInvoiceById(InvoiceVoidRequest)
-		returns(ReservationInvoiceMappingResponse);
-
+	rpc VoidInvoiceById(InvoiceVoidRequest)
+		returns(google.protobuf.Empty);
 }
