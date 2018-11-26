@@ -6,9 +6,15 @@ option csharp_namespace = "HOLMS.Types.Reporting.RPC";
 import "booking/indicators/group_booking_indicator.proto";
 import "reporting/outputs/html_report_response.proto";
 import "booking/groups/group_bookings_invoices.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
 
 message FoliosReportingSvcCardCaptureReportingSvcReportResponse {
 	string document = 1;
+}
+
+message BookingStatementRequest {
+	.holms.types.booking.indicators.GroupBookingIndicator group_booking_indicator = 1;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
 }
 
 service FoliosReportingSvc {
@@ -25,6 +31,9 @@ service FoliosReportingSvc {
 		returns(.holms.types.reporting.outputs.HtmlReportResponse);
 
 	rpc GetInvoice(.holms.types.booking.groups.GroupBookingInvoiceMapping )
+		returns(.holms.types.reporting.outputs.HtmlReportResponse);
+
+	rpc GetBookingStatement(BookingStatementRequest)
 		returns(.holms.types.reporting.outputs.HtmlReportResponse);
 }
 
