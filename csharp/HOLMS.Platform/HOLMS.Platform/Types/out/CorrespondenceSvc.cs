@@ -36,23 +36,26 @@ namespace HOLMS.Types.CRM.RPC {
             "L3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfcmVmdW5kX2luZGljYXRvci5w",
             "cm90bxo6bW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL3BheW1lbnRfY2FyZF9z",
             "YWxlX2luZGljYXRvci5wcm90bxouZm9saW8vZm9saW9fY2hlY2tfY2FzaF9w",
-            "YXltZW50X2luZGljYXRvci5wcm90bxoUcHJpbWl0aXZlL3V1aWQucHJvdG8i",
-            "6AEKFUNvcnJlc3BvbmRlbmNlUmVxdWVzdBJJCgtyZXNlcnZhdGlvbhgBIAEo",
-            "CzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlv",
-            "bkluZGljYXRvchI2CgZndWVzdHMYAiADKAsyJi5ob2xtcy50eXBlcy5jcm0u",
-            "Z3Vlc3RzLkd1ZXN0SW5kaWNhdG9yEkwKCGNvbnRhY3RzGAMgAygLMjouaG9s",
-            "bXMudHlwZXMuYm9va2luZy5yZXNlcnZhdGlvbnMuUmVzZXJ2YXRpb25Db250",
-            "YWN0UGVyc29uIrgCCiNDb3JyZXNwb25kZW5jZVJlcXVlc3RXaXRoRXhjbHVz",
-            "aW9ucxJJCgtyZXNlcnZhdGlvbhgBIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tp",
-            "bmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchI2CgZndWVzdHMY",
-            "AiADKAsyJi5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0SW5kaWNhdG9y",
-            "EkwKCGNvbnRhY3RzGAMgAygLMjouaG9sbXMudHlwZXMuYm9va2luZy5yZXNl",
-            "cnZhdGlvbnMuUmVzZXJ2YXRpb25Db250YWN0UGVyc29uEkAKCmV4Y2x1c2lv",
-            "bnMYBCABKAsyLC5ob2xtcy50eXBlcy5jcm0ucnBjLlByaW50UmVzZXJ2YXRp",
-            "b25SZXF1ZXN0IoMBCh5Db3JyZXNwb25kZW5jZVJlcXVlc3RGb3JSZXBvcnQS",
-            "EAoIdG9fZW1haWwYASABKAkSEAoIY2NfZW1haWwYAiABKAkSFgoOcmVwbHlf",
-            "dG9fZW1haWwYAyABKAkSDwoHc3ViamVjdBgEIAEoCRIUCgxyZXBvcnRTdHJp",
-            "bmcYBSABKAkilwEKJENvcnJlc3BvbmRlbmNlU2VydmljZUVtYWlsU2VuZFJl",
+            "YXltZW50X2luZGljYXRvci5wcm90bxoUcHJpbWl0aXZlL3V1aWQucHJvdG8a",
+            "HmNybS9ncm91cHMvZW1haWxfY29udGVudC5wcm90byLoAQoVQ29ycmVzcG9u",
+            "ZGVuY2VSZXF1ZXN0EkkKC3Jlc2VydmF0aW9uGAEgASgLMjQuaG9sbXMudHlw",
+            "ZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yEjYK",
+            "Bmd1ZXN0cxgCIAMoCzImLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJ",
+            "bmRpY2F0b3ISTAoIY29udGFjdHMYAyADKAsyOi5ob2xtcy50eXBlcy5ib29r",
+            "aW5nLnJlc2VydmF0aW9ucy5SZXNlcnZhdGlvbkNvbnRhY3RQZXJzb24iuAIK",
+            "I0NvcnJlc3BvbmRlbmNlUmVxdWVzdFdpdGhFeGNsdXNpb25zEkkKC3Jlc2Vy",
+            "dmF0aW9uGAEgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3Jz",
+            "LlJlc2VydmF0aW9uSW5kaWNhdG9yEjYKBmd1ZXN0cxgCIAMoCzImLmhvbG1z",
+            "LnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJbmRpY2F0b3ISTAoIY29udGFjdHMY",
+            "AyADKAsyOi5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5SZXNl",
+            "cnZhdGlvbkNvbnRhY3RQZXJzb24SQAoKZXhjbHVzaW9ucxgEIAEoCzIsLmhv",
+            "bG1zLnR5cGVzLmNybS5ycGMuUHJpbnRSZXNlcnZhdGlvblJlcXVlc3Qi6gEK",
+            "HkNvcnJlc3BvbmRlbmNlUmVxdWVzdEZvclJlcG9ydBIQCgh0b19lbWFpbBgB",
+            "IAEoCRIQCghjY19lbWFpbBgCIAEoCRIWCg5yZXBseV90b19lbWFpbBgDIAEo",
+            "CRIPCgdzdWJqZWN0GAQgASgJEhUKDXJlcG9ydF9zdHJpbmcYBSABKAkSFwoP",
+            "YXR0YWNobWVudF9uYW1lGAYgASgJEj4KDGNvbnRlbnRfdHlwZRgHIAEoDjIo",
+            "LmhvbG1zLnR5cGVzLmNybS5ncm91cHMuRW1haWxDb250ZW50VHlwZRILCgN0",
+            "YWcYCCABKAkilwEKJENvcnJlc3BvbmRlbmNlU2VydmljZUVtYWlsU2VuZFJl",
             "c3VsdBJOCgtzZW5kX3N0YXR1cxgBIAEoDjI5LmhvbG1zLnR5cGVzLmNybS5y",
             "cGMuQ29ycmVzcG9uZGVuY2VTZXJ2aWNlRW1haWxTZW5kU3RhdHVzEh8KF3Jl",
             "Y2lwaWVudF9lbWFpbF9hZGRyZXNzGAIgASgJInQKJkNvcnJlc3BvbmRlbmNl",
@@ -130,11 +133,11 @@ namespace HOLMS.Types.CRM.RPC {
             "bWFpbFNlbmRSZXNwb25zZUIWqgITSE9MTVMuVHlwZXMuQ1JNLlJQQ2IGcHJv",
             "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationContactPersonReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterTextReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationContactPersonReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterTextReflection.Descriptor, global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterTextReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.CRM.Groups.EmailContentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendStatus), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceRequest), global::HOLMS.Types.CRM.RPC.CorrespondenceRequest.Parser, new[]{ "Reservation", "Guests", "Contacts" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions), global::HOLMS.Types.CRM.RPC.CorrespondenceRequestWithExclusions.Parser, new[]{ "Reservation", "Guests", "Contacts", "Exclusions" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport), global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport.Parser, new[]{ "ToEmail", "CcEmail", "ReplyToEmail", "Subject", "ReportString" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport), global::HOLMS.Types.CRM.RPC.CorrespondenceRequestForReport.Parser, new[]{ "ToEmail", "CcEmail", "ReplyToEmail", "Subject", "ReportString", "AttachmentName", "ContentType", "Tag" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResult.Parser, new[]{ "SendStatus", "RecipientEmailAddress" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse), global::HOLMS.Types.CRM.RPC.CorrespondenceServiceEmailSendResponse.Parser, new[]{ "Results" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.PrintReservationRequest), global::HOLMS.Types.CRM.RPC.PrintReservationRequest.Parser, new[]{ "Ri", "CheckcashPaymentIndicators", "CardPaymentIndicators", "RefundIndicators", "FolioEventId" }, null, null, null),
@@ -544,6 +547,9 @@ namespace HOLMS.Types.CRM.RPC {
       replyToEmail_ = other.replyToEmail_;
       subject_ = other.subject_;
       reportString_ = other.reportString_;
+      attachmentName_ = other.attachmentName_;
+      contentType_ = other.contentType_;
+      tag_ = other.tag_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -595,7 +601,7 @@ namespace HOLMS.Types.CRM.RPC {
       }
     }
 
-    /// <summary>Field number for the "reportString" field.</summary>
+    /// <summary>Field number for the "report_string" field.</summary>
     public const int ReportStringFieldNumber = 5;
     private string reportString_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -603,6 +609,39 @@ namespace HOLMS.Types.CRM.RPC {
       get { return reportString_; }
       set {
         reportString_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "attachment_name" field.</summary>
+    public const int AttachmentNameFieldNumber = 6;
+    private string attachmentName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AttachmentName {
+      get { return attachmentName_; }
+      set {
+        attachmentName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "content_type" field.</summary>
+    public const int ContentTypeFieldNumber = 7;
+    private global::HOLMS.Types.CRM.Groups.EmailContentType contentType_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.CRM.Groups.EmailContentType ContentType {
+      get { return contentType_; }
+      set {
+        contentType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tag" field.</summary>
+    public const int TagFieldNumber = 8;
+    private string tag_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Tag {
+      get { return tag_; }
+      set {
+        tag_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -624,6 +663,9 @@ namespace HOLMS.Types.CRM.RPC {
       if (ReplyToEmail != other.ReplyToEmail) return false;
       if (Subject != other.Subject) return false;
       if (ReportString != other.ReportString) return false;
+      if (AttachmentName != other.AttachmentName) return false;
+      if (ContentType != other.ContentType) return false;
+      if (Tag != other.Tag) return false;
       return true;
     }
 
@@ -635,6 +677,9 @@ namespace HOLMS.Types.CRM.RPC {
       if (ReplyToEmail.Length != 0) hash ^= ReplyToEmail.GetHashCode();
       if (Subject.Length != 0) hash ^= Subject.GetHashCode();
       if (ReportString.Length != 0) hash ^= ReportString.GetHashCode();
+      if (AttachmentName.Length != 0) hash ^= AttachmentName.GetHashCode();
+      if (ContentType != 0) hash ^= ContentType.GetHashCode();
+      if (Tag.Length != 0) hash ^= Tag.GetHashCode();
       return hash;
     }
 
@@ -665,6 +710,18 @@ namespace HOLMS.Types.CRM.RPC {
         output.WriteRawTag(42);
         output.WriteString(ReportString);
       }
+      if (AttachmentName.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(AttachmentName);
+      }
+      if (ContentType != 0) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) ContentType);
+      }
+      if (Tag.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(Tag);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -684,6 +741,15 @@ namespace HOLMS.Types.CRM.RPC {
       }
       if (ReportString.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ReportString);
+      }
+      if (AttachmentName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AttachmentName);
+      }
+      if (ContentType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ContentType);
+      }
+      if (Tag.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Tag);
       }
       return size;
     }
@@ -707,6 +773,15 @@ namespace HOLMS.Types.CRM.RPC {
       }
       if (other.ReportString.Length != 0) {
         ReportString = other.ReportString;
+      }
+      if (other.AttachmentName.Length != 0) {
+        AttachmentName = other.AttachmentName;
+      }
+      if (other.ContentType != 0) {
+        ContentType = other.ContentType;
+      }
+      if (other.Tag.Length != 0) {
+        Tag = other.Tag;
       }
     }
 
@@ -736,6 +811,18 @@ namespace HOLMS.Types.CRM.RPC {
           }
           case 42: {
             ReportString = input.ReadString();
+            break;
+          }
+          case 50: {
+            AttachmentName = input.ReadString();
+            break;
+          }
+          case 56: {
+            contentType_ = (global::HOLMS.Types.CRM.Groups.EmailContentType) input.ReadEnum();
+            break;
+          }
+          case 66: {
+            Tag = input.ReadString();
             break;
           }
         }
