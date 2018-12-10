@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.folio;
+option csharp_namespace = "HOLMS.Types.Folio";
+
+import "folio/tax_assessment.proto";
+import "booking/indicators/reservation_indicator.proto";
+
+message ReservationTaxAssessment {
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	repeated .holms.types.folio.TaxAssessment current_tax_assessments = 2;
+}
+

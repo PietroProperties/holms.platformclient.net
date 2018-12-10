@@ -10,6 +10,7 @@ import "folio/folio_check_cash_payment.proto";
 import "folio/folio_indicator.proto";
 import "folio/tax_assessment.proto";
 import "primitive/monetary_amount.proto";
+import "folio/reservation_tax_assessment.proto";
 
 message GroupBookingFolioState {
 	repeated .holms.types.folio.FolioAtomicCharge effective_charges = 1;
@@ -34,5 +35,6 @@ message GroupBookingFolioState {
 	.holms.types.primitive.MonetaryAmount anticipated_settlement_due_from_group = 16;
 
         repeated .holms.types.folio.FolioIndicator client_folios = 17;
+		repeated .holms.types.folio.ReservationTaxAssessment reservation_tax_assess = 18;
 }
 
