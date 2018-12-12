@@ -7,6 +7,7 @@ import "booking/indicators/group_booking_indicator.proto";
 import "reporting/outputs/html_report_response.proto";
 import "booking/groups/group_bookings_invoices.proto";
 import "primitive/pb_inclusive_opsdate_range.proto";
+import "primitive/uuid.proto";
 
 message FoliosReportingSvcCardCaptureReportingSvcReportResponse {
 	string document = 1;
@@ -15,6 +16,14 @@ message FoliosReportingSvcCardCaptureReportingSvcReportResponse {
 message BookingStatementRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator group_booking_indicator = 1;
 	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
+}
+
+message FolioPaymentReceiptRequest{
+	.holms.types.booking.indicators.GroupBookingIndicator group_booking_indicator = 1;
+	.holms.types.primitive.Uuid payment_id=2;
+	string payment_date=3;
+	string payment_reference =4;
+	string payment_type=5;
 }
 
 service FoliosReportingSvc {
@@ -35,5 +44,9 @@ service FoliosReportingSvc {
 
 	rpc GetBookingStatement(BookingStatementRequest)
 		returns(.holms.types.reporting.outputs.HtmlReportResponse);
+
+	rpc GetFolioPaymentReceipt(FolioPaymentReceiptRequest)
+		returns(.holms.types.reporting.outputs.HtmlReportResponse);
+
 }
 
