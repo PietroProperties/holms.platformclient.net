@@ -28,46 +28,48 @@ namespace HOLMS.Types.Reporting.RPC {
             "dXRzL2h0bWxfcmVwb3J0X3Jlc3BvbnNlLnByb3RvGixib29raW5nL2dyb3Vw",
             "cy9ncm91cF9ib29raW5nc19pbnZvaWNlcy5wcm90bxoqcHJpbWl0aXZlL3Bi",
             "X2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnByb3RvGhRwcmltaXRpdmUvdXVp",
-            "ZC5wcm90byJLCjdGb2xpb3NSZXBvcnRpbmdTdmNDYXJkQ2FwdHVyZVJlcG9y",
-            "dGluZ1N2Y1JlcG9ydFJlc3BvbnNlEhAKCGRvY3VtZW50GAEgASgJIrUBChdC",
-            "b29raW5nU3RhdGVtZW50UmVxdWVzdBJWChdncm91cF9ib29raW5nX2luZGlj",
-            "YXRvchgBIAEoCzI1LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5H",
-            "cm91cEJvb2tpbmdJbmRpY2F0b3ISQgoKZGF0ZV9yYW5nZRgCIAEoCzIuLmhv",
-            "bG1zLnR5cGVzLnByaW1pdGl2ZS5QYkluY2x1c2l2ZU9wc2RhdGVSYW5nZSLs",
-            "AQoaRm9saW9QYXltZW50UmVjZWlwdFJlcXVlc3QSVgoXZ3JvdXBfYm9va2lu",
-            "Z19pbmRpY2F0b3IYASABKAsyNS5ob2xtcy50eXBlcy5ib29raW5nLmluZGlj",
-            "YXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yEi8KCnBheW1lbnRfaWQYAiAB",
-            "KAsyGy5ob2xtcy50eXBlcy5wcmltaXRpdmUuVXVpZBIUCgxwYXltZW50X2Rh",
-            "dGUYAyABKAkSGQoRcGF5bWVudF9yZWZlcmVuY2UYBCABKAkSFAoMcGF5bWVu",
-            "dF90eXBlGAUgASgJMsAHChJGb2xpb3NSZXBvcnRpbmdTdmMSjAEKIEdldEJv",
-            "b2tpbmdBc3NvY2lhdGVkRm9saW9zRGV0YWlsEjUuaG9sbXMudHlwZXMuYm9v",
-            "a2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGljYXRvchoxLmhvbG1z",
-            "LnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZRKN",
-            "AQohR2V0Qm9va2luZ0Fzc29jaWF0ZWRGb2xpb3NTdW1tYXJ5EjUuaG9sbXMu",
-            "dHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGljYXRv",
-            "choxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRS",
-            "ZXNwb25zZRKGAQoaR2V0UmVzZXJ2YXRpb25Gb2xpb1N1bW1hcnkSNS5ob2xt",
-            "cy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNh",
-            "dG9yGjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9y",
-            "dFJlc3BvbnNlEoUBChlHZXRCb29raW5nV29ya3NoZWV0RGV0YWlsEjUuaG9s",
-            "bXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGlj",
-            "YXRvchoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBv",
-            "cnRSZXNwb25zZRJ3CgpHZXRJbnZvaWNlEjYuaG9sbXMudHlwZXMuYm9va2lu",
-            "Zy5ncm91cHMuR3JvdXBCb29raW5nSW52b2ljZU1hcHBpbmcaMS5ob2xtcy50",
-            "eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USfAoT",
-            "R2V0Qm9va2luZ1N0YXRlbWVudBIyLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5y",
-            "cGMuQm9va2luZ1N0YXRlbWVudFJlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBv",
-            "cnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USggEKFkdldEZvbGlv",
-            "UGF5bWVudFJlY2VpcHQSNS5ob2xtcy50eXBlcy5yZXBvcnRpbmcucnBjLkZv",
-            "bGlvUGF5bWVudFJlY2VpcHRSZXF1ZXN0GjEuaG9sbXMudHlwZXMucmVwb3J0",
-            "aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlQhyqAhlIT0xNUy5UeXBl",
-            "cy5SZXBvcnRpbmcuUlBDYgZwcm90bzM="));
+            "ZC5wcm90bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90byJLCjdG",
+            "b2xpb3NSZXBvcnRpbmdTdmNDYXJkQ2FwdHVyZVJlcG9ydGluZ1N2Y1JlcG9y",
+            "dFJlc3BvbnNlEhAKCGRvY3VtZW50GAEgASgJIrUBChdCb29raW5nU3RhdGVt",
+            "ZW50UmVxdWVzdBJWChdncm91cF9ib29raW5nX2luZGljYXRvchgBIAEoCzI1",
+            "LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5Hcm91cEJvb2tpbmdJ",
+            "bmRpY2F0b3ISQgoKZGF0ZV9yYW5nZRgCIAEoCzIuLmhvbG1zLnR5cGVzLnBy",
+            "aW1pdGl2ZS5QYkluY2x1c2l2ZU9wc2RhdGVSYW5nZSKqAgoaRm9saW9QYXlt",
+            "ZW50UmVjZWlwdFJlcXVlc3QSVgoXZ3JvdXBfYm9va2luZ19pbmRpY2F0b3IY",
+            "ASABKAsyNS5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBC",
+            "b29raW5nSW5kaWNhdG9yEi8KCnBheW1lbnRfaWQYAiABKAsyGy5ob2xtcy50",
+            "eXBlcy5wcmltaXRpdmUuVXVpZBIUCgxwYXltZW50X2RhdGUYAyABKAkSGQoR",
+            "cGF5bWVudF9yZWZlcmVuY2UYBCABKAkSFAoMcGF5bWVudF90eXBlGAUgASgJ",
+            "EjwKDWNyZWRpdF9hbW91bnQYBiABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRp",
+            "dmUuTW9uZXRhcnlBbW91bnQywAcKEkZvbGlvc1JlcG9ydGluZ1N2YxKMAQog",
+            "R2V0Qm9va2luZ0Fzc29jaWF0ZWRGb2xpb3NEZXRhaWwSNS5ob2xtcy50eXBl",
+            "cy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yGjEu",
+            "aG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJlc3Bv",
+            "bnNlEo0BCiFHZXRCb29raW5nQXNzb2NpYXRlZEZvbGlvc1N1bW1hcnkSNS5o",
+            "b2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5k",
+            "aWNhdG9yGjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJl",
+            "cG9ydFJlc3BvbnNlEoYBChpHZXRSZXNlcnZhdGlvbkZvbGlvU3VtbWFyeRI1",
+            "LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5Hcm91cEJvb2tpbmdJ",
+            "bmRpY2F0b3IaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1s",
+            "UmVwb3J0UmVzcG9uc2UShQEKGUdldEJvb2tpbmdXb3Jrc2hlZXREZXRhaWwS",
+            "NS5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5n",
+            "SW5kaWNhdG9yGjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRt",
+            "bFJlcG9ydFJlc3BvbnNlEncKCkdldEludm9pY2USNi5ob2xtcy50eXBlcy5i",
+            "b29raW5nLmdyb3Vwcy5Hcm91cEJvb2tpbmdJbnZvaWNlTWFwcGluZxoxLmhv",
+            "bG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25z",
+            "ZRJ8ChNHZXRCb29raW5nU3RhdGVtZW50EjIuaG9sbXMudHlwZXMucmVwb3J0",
+            "aW5nLnJwYy5Cb29raW5nU3RhdGVtZW50UmVxdWVzdBoxLmhvbG1zLnR5cGVz",
+            "LnJlcG9ydGluZy5vdXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZRKCAQoWR2V0",
+            "Rm9saW9QYXltZW50UmVjZWlwdBI1LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5y",
+            "cGMuRm9saW9QYXltZW50UmVjZWlwdFJlcXVlc3QaMS5ob2xtcy50eXBlcy5y",
+            "ZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2VCHKoCGUhPTE1T",
+            "LlR5cGVzLlJlcG9ydGluZy5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingsInvoicesReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingsInvoicesReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FoliosReportingSvcCardCaptureReportingSvcReportResponse), global::HOLMS.Types.Reporting.RPC.FoliosReportingSvcCardCaptureReportingSvcReportResponse.Parser, new[]{ "Document" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.BookingStatementRequest), global::HOLMS.Types.Reporting.RPC.BookingStatementRequest.Parser, new[]{ "GroupBookingIndicator", "DateRange" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FolioPaymentReceiptRequest), global::HOLMS.Types.Reporting.RPC.FolioPaymentReceiptRequest.Parser, new[]{ "GroupBookingIndicator", "PaymentId", "PaymentDate", "PaymentReference", "PaymentType" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FolioPaymentReceiptRequest), global::HOLMS.Types.Reporting.RPC.FolioPaymentReceiptRequest.Parser, new[]{ "GroupBookingIndicator", "PaymentId", "PaymentDate", "PaymentReference", "PaymentType", "CreditAmount" }, null, null, null)
           }));
     }
     #endregion
@@ -377,6 +379,7 @@ namespace HOLMS.Types.Reporting.RPC {
       paymentDate_ = other.paymentDate_;
       paymentReference_ = other.paymentReference_;
       paymentType_ = other.paymentType_;
+      CreditAmount = other.creditAmount_ != null ? other.CreditAmount.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -439,6 +442,17 @@ namespace HOLMS.Types.Reporting.RPC {
       }
     }
 
+    /// <summary>Field number for the "credit_amount" field.</summary>
+    public const int CreditAmountFieldNumber = 6;
+    private global::HOLMS.Types.Primitive.MonetaryAmount creditAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount CreditAmount {
+      get { return creditAmount_; }
+      set {
+        creditAmount_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioPaymentReceiptRequest);
@@ -457,6 +471,7 @@ namespace HOLMS.Types.Reporting.RPC {
       if (PaymentDate != other.PaymentDate) return false;
       if (PaymentReference != other.PaymentReference) return false;
       if (PaymentType != other.PaymentType) return false;
+      if (!object.Equals(CreditAmount, other.CreditAmount)) return false;
       return true;
     }
 
@@ -468,6 +483,7 @@ namespace HOLMS.Types.Reporting.RPC {
       if (PaymentDate.Length != 0) hash ^= PaymentDate.GetHashCode();
       if (PaymentReference.Length != 0) hash ^= PaymentReference.GetHashCode();
       if (PaymentType.Length != 0) hash ^= PaymentType.GetHashCode();
+      if (creditAmount_ != null) hash ^= CreditAmount.GetHashCode();
       return hash;
     }
 
@@ -498,6 +514,10 @@ namespace HOLMS.Types.Reporting.RPC {
         output.WriteRawTag(42);
         output.WriteString(PaymentType);
       }
+      if (creditAmount_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CreditAmount);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -517,6 +537,9 @@ namespace HOLMS.Types.Reporting.RPC {
       }
       if (PaymentType.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PaymentType);
+      }
+      if (creditAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreditAmount);
       }
       return size;
     }
@@ -546,6 +569,12 @@ namespace HOLMS.Types.Reporting.RPC {
       }
       if (other.PaymentType.Length != 0) {
         PaymentType = other.PaymentType;
+      }
+      if (other.creditAmount_ != null) {
+        if (creditAmount_ == null) {
+          creditAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        CreditAmount.MergeFrom(other.CreditAmount);
       }
     }
 
@@ -581,6 +610,13 @@ namespace HOLMS.Types.Reporting.RPC {
           }
           case 42: {
             PaymentType = input.ReadString();
+            break;
+          }
+          case 50: {
+            if (creditAmount_ == null) {
+              creditAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(creditAmount_);
             break;
           }
         }

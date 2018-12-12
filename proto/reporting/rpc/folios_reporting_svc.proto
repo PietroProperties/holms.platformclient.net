@@ -8,6 +8,7 @@ import "reporting/outputs/html_report_response.proto";
 import "booking/groups/group_bookings_invoices.proto";
 import "primitive/pb_inclusive_opsdate_range.proto";
 import "primitive/uuid.proto";
+import "primitive/monetary_amount.proto";
 
 message FoliosReportingSvcCardCaptureReportingSvcReportResponse {
 	string document = 1;
@@ -24,6 +25,7 @@ message FolioPaymentReceiptRequest{
 	string payment_date=3;
 	string payment_reference =4;
 	string payment_type=5;
+	.holms.types.primitive.MonetaryAmount credit_amount=6;
 }
 
 service FoliosReportingSvc {
