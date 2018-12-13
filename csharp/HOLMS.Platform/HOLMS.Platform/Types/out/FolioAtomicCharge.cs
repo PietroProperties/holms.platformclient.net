@@ -29,30 +29,32 @@ namespace HOLMS.Types.Folio {
             "Gh9wcmltaXRpdmUvbW9uZXRhcnlfYW1vdW50LnByb3RvGh1wcmltaXRpdmUv",
             "cGJfbG9jYWxfZGF0ZS5wcm90bxo3c3VwcGx5L2luY2lkZW50YWxfaXRlbXMv",
             "aW5jaWRlbnRhbF9pdGVtX2luZGljYXRvci5wcm90bxoUcHJpbWl0aXZlL3V1",
-            "aWQucHJvdG8iyAUKEUZvbGlvQXRvbWljQ2hhcmdlEjUKBmFtb3VudBgBIAEo",
-            "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIRCglu",
-            "YXJyYXRpb24YAiABKAkSPwoSY2hhcmdlX2NyZWRpdF90eXBlGAMgASgOMiMu",
-            "aG9sbXMudHlwZXMuZm9saW8uQ2hhcmdlQ3JlZGl0VHlwZRJBChVlZmZlY3Rp",
-            "dmVfZm9yX29wc2RhdGUYBCABKAsyIi5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
-            "UGJMb2NhbERhdGUSNgoSZWZmZWN0aXZlX2F0X2Nsb2NrGAUgASgLMhouZ29v",
-            "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcBJVCg9pbmNpZGVudGFsX2l0ZW0YBiAB",
-            "KAsyPC5ob2xtcy50eXBlcy5zdXBwbHkuaW5jaWRlbnRhbF9pdGVtcy5JbmNp",
-            "ZGVudGFsSXRlbUluZGljYXRvchI2CgtpbmN1cnJlZF9ieRgHIAEoCzIhLmhv",
-            "bG1zLnR5cGVzLmZvbGlvLkZvbGlvSW5kaWNhdG9yEk8KEWlzc3VhbmNlX3Nj",
-            "aGVkdWxlGAggASgOMjQuaG9sbXMudHlwZXMuZm9saW8uRm9saW9BdG9taWND",
-            "aGFyZ2VJc3N1YW5jZVNjaGVkdWxlEjkKCmVudGVyZWRfYnkYCSABKAsyJS5o",
-            "b2xtcy50eXBlcy5pYW0uU3RhZmZNZW1iZXJJbmRpY2F0b3ISJwoCaWQYCiAB",
-            "KAsyGy5ob2xtcy50eXBlcy5wcmltaXRpdmUuVXVpZBI0CgV0YXhlcxgLIAEo",
-            "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIzCgRm",
-            "ZWVzGAwgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1v",
-            "dW50Km8KIUZvbGlvQXRvbWljQ2hhcmdlSXNzdWFuY2VTY2hlZHVsZRIlCiFJ",
-            "TVBMRU1FTlRBVElPTl9TQ0hFRFVMRV9JTU1FRElBVEUQABIjCh9JTVBMRU1F",
-            "TlRBVElPTl9TQ0hFRFVMRV9QTEFOTkVEEAFCFKoCEUhPTE1TLlR5cGVzLkZv",
-            "bGlvYgZwcm90bzM="));
+            "aWQucHJvdG8aGmZvbGlvL3RheF9hc3Nlc3NtZW50LnByb3RvIosGChFGb2xp",
+            "b0F0b21pY0NoYXJnZRI1CgZhbW91bnQYASABKAsyJS5ob2xtcy50eXBlcy5w",
+            "cmltaXRpdmUuTW9uZXRhcnlBbW91bnQSEQoJbmFycmF0aW9uGAIgASgJEj8K",
+            "EmNoYXJnZV9jcmVkaXRfdHlwZRgDIAEoDjIjLmhvbG1zLnR5cGVzLmZvbGlv",
+            "LkNoYXJnZUNyZWRpdFR5cGUSQQoVZWZmZWN0aXZlX2Zvcl9vcHNkYXRlGAQg",
+            "ASgLMiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlEjYKEmVm",
+            "ZmVjdGl2ZV9hdF9jbG9jaxgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
+            "c3RhbXASVQoPaW5jaWRlbnRhbF9pdGVtGAYgASgLMjwuaG9sbXMudHlwZXMu",
+            "c3VwcGx5LmluY2lkZW50YWxfaXRlbXMuSW5jaWRlbnRhbEl0ZW1JbmRpY2F0",
+            "b3ISNgoLaW5jdXJyZWRfYnkYByABKAsyIS5ob2xtcy50eXBlcy5mb2xpby5G",
+            "b2xpb0luZGljYXRvchJPChFpc3N1YW5jZV9zY2hlZHVsZRgIIAEoDjI0Lmhv",
+            "bG1zLnR5cGVzLmZvbGlvLkZvbGlvQXRvbWljQ2hhcmdlSXNzdWFuY2VTY2hl",
+            "ZHVsZRI5CgplbnRlcmVkX2J5GAkgASgLMiUuaG9sbXMudHlwZXMuaWFtLlN0",
+            "YWZmTWVtYmVySW5kaWNhdG9yEicKAmlkGAogASgLMhsuaG9sbXMudHlwZXMu",
+            "cHJpbWl0aXZlLlV1aWQSNAoFdGF4ZXMYCyABKAsyJS5ob2xtcy50eXBlcy5w",
+            "cmltaXRpdmUuTW9uZXRhcnlBbW91bnQSMwoEZmVlcxgMIAEoCzIlLmhvbG1z",
+            "LnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJBChdjdXJyZW50X3Rh",
+            "eF9hc3Nlc3NtZW50cxgNIAMoCzIgLmhvbG1zLnR5cGVzLmZvbGlvLlRheEFz",
+            "c2Vzc21lbnQqbwohRm9saW9BdG9taWNDaGFyZ2VJc3N1YW5jZVNjaGVkdWxl",
+            "EiUKIUlNUExFTUVOVEFUSU9OX1NDSEVEVUxFX0lNTUVESUFURRAAEiMKH0lN",
+            "UExFTUVOVEFUSU9OX1NDSEVEVUxFX1BMQU5ORUQQAUIUqgIRSE9MTVMuVHlw",
+            "ZXMuRm9saW9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.ChargeCreditTypeReflection.Descriptor, global::HOLMS.Types.Folio.FolioIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.ChargeCreditTypeReflection.Descriptor, global::HOLMS.Types.Folio.FolioIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.Folio.TaxAssessmentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Folio.FolioAtomicChargeIssuanceSchedule), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioAtomicCharge), global::HOLMS.Types.Folio.FolioAtomicCharge.Parser, new[]{ "Amount", "Narration", "ChargeCreditType", "EffectiveForOpsdate", "EffectiveAtClock", "IncidentalItem", "IncurredBy", "IssuanceSchedule", "EnteredBy", "Id", "Taxes", "Fees" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.FolioAtomicCharge), global::HOLMS.Types.Folio.FolioAtomicCharge.Parser, new[]{ "Amount", "Narration", "ChargeCreditType", "EffectiveForOpsdate", "EffectiveAtClock", "IncidentalItem", "IncurredBy", "IssuanceSchedule", "EnteredBy", "Id", "Taxes", "Fees", "CurrentTaxAssessments" }, null, null, null)
           }));
     }
     #endregion
@@ -103,6 +105,7 @@ namespace HOLMS.Types.Folio {
       Id = other.id_ != null ? other.Id.Clone() : null;
       Taxes = other.taxes_ != null ? other.Taxes.Clone() : null;
       Fees = other.fees_ != null ? other.Fees.Clone() : null;
+      currentTaxAssessments_ = other.currentTaxAssessments_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -242,6 +245,16 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "current_tax_assessments" field.</summary>
+    public const int CurrentTaxAssessmentsFieldNumber = 13;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Folio.TaxAssessment> _repeated_currentTaxAssessments_codec
+        = pb::FieldCodec.ForMessage(106, global::HOLMS.Types.Folio.TaxAssessment.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment> currentTaxAssessments_ = new pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Folio.TaxAssessment> CurrentTaxAssessments {
+      get { return currentTaxAssessments_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioAtomicCharge);
@@ -267,6 +280,7 @@ namespace HOLMS.Types.Folio {
       if (!object.Equals(Id, other.Id)) return false;
       if (!object.Equals(Taxes, other.Taxes)) return false;
       if (!object.Equals(Fees, other.Fees)) return false;
+      if(!currentTaxAssessments_.Equals(other.currentTaxAssessments_)) return false;
       return true;
     }
 
@@ -285,6 +299,7 @@ namespace HOLMS.Types.Folio {
       if (id_ != null) hash ^= Id.GetHashCode();
       if (taxes_ != null) hash ^= Taxes.GetHashCode();
       if (fees_ != null) hash ^= Fees.GetHashCode();
+      hash ^= currentTaxAssessments_.GetHashCode();
       return hash;
     }
 
@@ -343,6 +358,7 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(98);
         output.WriteMessage(Fees);
       }
+      currentTaxAssessments_.WriteTo(output, _repeated_currentTaxAssessments_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -384,6 +400,7 @@ namespace HOLMS.Types.Folio {
       if (fees_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Fees);
       }
+      size += currentTaxAssessments_.CalculateSize(_repeated_currentTaxAssessments_codec);
       return size;
     }
 
@@ -455,6 +472,7 @@ namespace HOLMS.Types.Folio {
         }
         Fees.MergeFrom(other.Fees);
       }
+      currentTaxAssessments_.Add(other.currentTaxAssessments_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -538,6 +556,10 @@ namespace HOLMS.Types.Folio {
               fees_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(fees_);
+            break;
+          }
+          case 106: {
+            currentTaxAssessments_.AddEntriesFrom(input, _repeated_currentTaxAssessments_codec);
             break;
           }
         }
