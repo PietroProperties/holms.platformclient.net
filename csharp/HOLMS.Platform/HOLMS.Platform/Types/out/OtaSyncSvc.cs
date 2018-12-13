@@ -26,16 +26,20 @@ namespace HOLMS.Types.Booking.RPC {
             "LmJvb2tpbmcucnBjGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aH2dv",
             "b2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8iSAoRU2VydmVyVGFza0Rl",
             "dGFpbHMSMwoPbGFzdF93b3JraW5nX2F0GAEgASgLMhouZ29vZ2xlLnByb3Rv",
-            "YnVmLlRpbWVzdGFtcDKzAQoKT1RBU3luY1N2YxJCChBTeW5jUmVzZXJ2YXRp",
-            "b25zEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhYuZ29vZ2xlLnByb3RvYnVm",
-            "LkVtcHR5EmEKG0dldFNjaGVkdWxlckxhc3RXb3JraW5nVGltZRIWLmdvb2ds",
-            "ZS5wcm90b2J1Zi5FbXB0eRoqLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlNl",
-            "cnZlclRhc2tEZXRhaWxzQhqqAhdIT0xNUy5UeXBlcy5Cb29raW5nLlJQQ2IG",
-            "cHJvdG8z"));
+            "YnVmLlRpbWVzdGFtcCI7Ch1TY2hlZHVsZXJTdGFydEF0dGVtcHRSZXNwb25z",
+            "ZRIaChJJc1NjaGVkdWxlclN0YXJ0ZWQYASABKAgynAIKCk9UQVN5bmNTdmMS",
+            "QgoQU3luY1Jlc2VydmF0aW9ucxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoW",
+            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJhChtHZXRTY2hlZHVsZXJMYXN0V29y",
+            "a2luZ1RpbWUSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaKi5ob2xtcy50eXBl",
+            "cy5ib29raW5nLnJwYy5TZXJ2ZXJUYXNrRGV0YWlscxJnChVBdHRlbXB0U3Rh",
+            "cnRTY2hlZHVsZXISFi5nb29nbGUucHJvdG9idWYuRW1wdHkaNi5ob2xtcy50",
+            "eXBlcy5ib29raW5nLnJwYy5TY2hlZHVsZXJTdGFydEF0dGVtcHRSZXNwb25z",
+            "ZUIaqgIXSE9MTVMuVHlwZXMuQm9va2luZy5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.ServerTaskDetails), global::HOLMS.Types.Booking.RPC.ServerTaskDetails.Parser, new[]{ "LastWorkingAt" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.ServerTaskDetails), global::HOLMS.Types.Booking.RPC.ServerTaskDetails.Parser, new[]{ "LastWorkingAt" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse), global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse.Parser, new[]{ "IsSchedulerStarted" }, null, null, null)
           }));
     }
     #endregion
@@ -157,6 +161,123 @@ namespace HOLMS.Types.Booking.RPC {
               lastWorkingAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(lastWorkingAt_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class SchedulerStartAttemptResponse : pb::IMessage<SchedulerStartAttemptResponse> {
+    private static readonly pb::MessageParser<SchedulerStartAttemptResponse> _parser = new pb::MessageParser<SchedulerStartAttemptResponse>(() => new SchedulerStartAttemptResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SchedulerStartAttemptResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Booking.RPC.OtaSyncSvcReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SchedulerStartAttemptResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SchedulerStartAttemptResponse(SchedulerStartAttemptResponse other) : this() {
+      isSchedulerStarted_ = other.isSchedulerStarted_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SchedulerStartAttemptResponse Clone() {
+      return new SchedulerStartAttemptResponse(this);
+    }
+
+    /// <summary>Field number for the "IsSchedulerStarted" field.</summary>
+    public const int IsSchedulerStartedFieldNumber = 1;
+    private bool isSchedulerStarted_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsSchedulerStarted {
+      get { return isSchedulerStarted_; }
+      set {
+        isSchedulerStarted_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SchedulerStartAttemptResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SchedulerStartAttemptResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsSchedulerStarted != other.IsSchedulerStarted) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsSchedulerStarted != false) hash ^= IsSchedulerStarted.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IsSchedulerStarted != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsSchedulerStarted);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsSchedulerStarted != false) {
+        size += 1 + 1;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SchedulerStartAttemptResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsSchedulerStarted != false) {
+        IsSchedulerStarted = other.IsSchedulerStarted;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            IsSchedulerStarted = input.ReadBool();
             break;
           }
         }

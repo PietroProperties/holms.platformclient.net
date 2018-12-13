@@ -15,6 +15,7 @@ namespace HOLMS.Types.Booking.RPC {
 
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ServerTaskDetails> __Marshaller_ServerTaskDetails = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ServerTaskDetails.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse> __Marshaller_SchedulerStartAttemptResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SyncReservations = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
@@ -29,6 +30,13 @@ namespace HOLMS.Types.Booking.RPC {
         "GetSchedulerLastWorkingTime",
         __Marshaller_Empty,
         __Marshaller_ServerTaskDetails);
+
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse> __Method_AttemptStartScheduler = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AttemptStartScheduler",
+        __Marshaller_Empty,
+        __Marshaller_SchedulerStartAttemptResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -45,6 +53,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ServerTaskDetails> GetSchedulerLastWorkingTime(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse> AttemptStartScheduler(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -106,6 +119,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetSchedulerLastWorkingTime, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse AttemptStartScheduler(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AttemptStartScheduler(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse AttemptStartScheduler(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AttemptStartScheduler, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse> AttemptStartSchedulerAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AttemptStartSchedulerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse> AttemptStartSchedulerAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AttemptStartScheduler, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override OTASyncSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -119,7 +148,8 @@ namespace HOLMS.Types.Booking.RPC {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_SyncReservations, serviceImpl.SyncReservations)
-          .AddMethod(__Method_GetSchedulerLastWorkingTime, serviceImpl.GetSchedulerLastWorkingTime).Build();
+          .AddMethod(__Method_GetSchedulerLastWorkingTime, serviceImpl.GetSchedulerLastWorkingTime)
+          .AddMethod(__Method_AttemptStartScheduler, serviceImpl.AttemptStartScheduler).Build();
     }
 
   }
