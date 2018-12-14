@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package holms.types.crm.groups;
+option csharp_namespace = "HOLMS.Types.CRM.Groups";
+option go_package = "crm/groups";
+
+enum EmailContentType {
+	Generic=0;
+	Error=1;
+	Invoice= 2;
+	Statement= 3;
+}

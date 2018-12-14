@@ -16,6 +16,7 @@ import "money/cards/transactions/payment_card_refund_indicator.proto";
 import "money/cards/transactions/payment_card_sale_indicator.proto";
 import "folio/folio_check_cash_payment_indicator.proto";
 import "primitive/uuid.proto";
+import "crm/groups/email_content.proto";
 
 message CorrespondenceRequest {
 	holms.types.booking.indicators.ReservationIndicator reservation = 1;
@@ -36,7 +37,10 @@ message CorrespondenceRequestForReport{
 	string cc_email=2;
 	string reply_to_email =3;
 	string subject=4;
-	string reportString=5;
+	string report_string=5;
+	string attachment_name =6;
+	holms.types.crm.groups.EmailContentType content_type=7;
+	string tag =8;
 }
 enum CorrespondenceServiceEmailSendStatus {
 	EMAIL_SEND_STATUS_SUCCESS = 0;
