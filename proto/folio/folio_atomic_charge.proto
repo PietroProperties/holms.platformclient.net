@@ -11,6 +11,7 @@ import "primitive/monetary_amount.proto";
 import "primitive/pb_local_date.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
 import "primitive/uuid.proto";
+import "folio/tax_assessment.proto";
 
 enum FolioAtomicChargeIssuanceSchedule {
 	IMPLEMENTATION_SCHEDULE_IMMEDIATE = 0;
@@ -32,6 +33,7 @@ message FolioAtomicCharge {
 	holms.types.primitive.Uuid id = 10;
 	.holms.types.primitive.MonetaryAmount taxes = 11;
 	.holms.types.primitive.MonetaryAmount fees = 12;
+	repeated .holms.types.folio.TaxAssessment current_tax_assessments = 13;
 
 }
 
