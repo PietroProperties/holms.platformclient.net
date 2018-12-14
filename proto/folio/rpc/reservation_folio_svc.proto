@@ -120,6 +120,10 @@ service ReservationFolioSvc {
 		returns(ReservationFolioSvcGetFolioStateResponse);
 	rpc GetOnFileCards(holms.types.booking.indicators.ReservationIndicator) 
 		returns(FolioSvcGetOnFileCardsResponse);
+
+	rpc GetOnFileCardsForGSA(holms.types.booking.indicators.ReservationIndicator) 
+		returns(FolioSvcGetOnFileCardsResponse);
+
 	rpc GetFolioSummaries(ReservationFolioSvcGetSummariesRequest)
 		returns(ReservationFolioSvcGetSummariesResponse);
 

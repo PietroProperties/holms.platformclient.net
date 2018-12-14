@@ -56,6 +56,13 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_ReservationIndicator,
         __Marshaller_FolioSvcGetOnFileCardsResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse> __Method_GetOnFileCardsForGSA = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetOnFileCardsForGSA",
+        __Marshaller_ReservationIndicator,
+        __Marshaller_FolioSvcGetOnFileCardsResponse);
+
     static readonly grpc::Method<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesRequest, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesResponse> __Method_GetFolioSummaries = new grpc::Method<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesRequest, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -189,6 +196,11 @@ namespace HOLMS.Types.Folio.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse> GetOnFileCards(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse> GetOnFileCardsForGSA(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -381,6 +393,22 @@ namespace HOLMS.Types.Folio.RPC {
       public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse> GetOnFileCardsAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetOnFileCards, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse GetOnFileCardsForGSA(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetOnFileCardsForGSA(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse GetOnFileCardsForGSA(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetOnFileCardsForGSA, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse> GetOnFileCardsForGSAAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetOnFileCardsForGSAAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponse> GetOnFileCardsForGSAAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetOnFileCardsForGSA, null, options, request);
       }
       public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesResponse GetFolioSummaries(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetSummariesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
@@ -764,6 +792,7 @@ namespace HOLMS.Types.Folio.RPC {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetReservationFolioState, serviceImpl.GetReservationFolioState)
           .AddMethod(__Method_GetOnFileCards, serviceImpl.GetOnFileCards)
+          .AddMethod(__Method_GetOnFileCardsForGSA, serviceImpl.GetOnFileCardsForGSA)
           .AddMethod(__Method_GetFolioSummaries, serviceImpl.GetFolioSummaries)
           .AddMethod(__Method_AddCardAuthorizationFromStoredCard, serviceImpl.AddCardAuthorizationFromStoredCard)
           .AddMethod(__Method_AddCardAuthorizationFromPresentedCard, serviceImpl.AddCardAuthorizationFromPresentedCard)
