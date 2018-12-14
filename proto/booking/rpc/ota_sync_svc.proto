@@ -10,6 +10,10 @@ message ServerTaskDetails {
 	google.protobuf.Timestamp last_working_at = 1;
 }
 
+message SchedulerStartAttemptResponse{
+	bool  IsSchedulerStarted=1;
+}
+
 service OTASyncSvc {
 	rpc SyncReservations(google.protobuf.Empty)
 		returns (google.protobuf.Empty);
@@ -17,4 +21,6 @@ service OTASyncSvc {
 	rpc GetSchedulerLastWorkingTime(google.protobuf.Empty)
 		returns(ServerTaskDetails);
 
+	rpc AttemptStartScheduler(google.protobuf.Empty)
+		returns(SchedulerStartAttemptResponse);
 }	
