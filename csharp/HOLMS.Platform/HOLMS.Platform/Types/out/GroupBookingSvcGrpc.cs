@@ -145,6 +145,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_InvoiceVoidRequest,
         __Marshaller_Empty);
 
+    static readonly grpc::Method<global::HOLMS.Types.CRM.Groups.GroupIndicator, global::HOLMS.Types.Booking.Groups.GroupBookingExt> __Method_CreateWithoutSave = new grpc::Method<global::HOLMS.Types.CRM.Groups.GroupIndicator, global::HOLMS.Types.Booking.Groups.GroupBookingExt>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateWithoutSave",
+        __Marshaller_GroupIndicator,
+        __Marshaller_GroupBookingExt);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -230,6 +237,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> VoidInvoiceById(global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Groups.GroupBookingExt> CreateWithoutSave(global::HOLMS.Types.CRM.Groups.GroupIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -515,6 +527,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_VoidInvoiceById, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.Groups.GroupBookingExt CreateWithoutSave(global::HOLMS.Types.CRM.Groups.GroupIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return CreateWithoutSave(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.Groups.GroupBookingExt CreateWithoutSave(global::HOLMS.Types.CRM.Groups.GroupIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CreateWithoutSave, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.Groups.GroupBookingExt> CreateWithoutSaveAsync(global::HOLMS.Types.CRM.Groups.GroupIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return CreateWithoutSaveAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.Groups.GroupBookingExt> CreateWithoutSaveAsync(global::HOLMS.Types.CRM.Groups.GroupIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CreateWithoutSave, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GroupBookingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -542,7 +570,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_CreateInvoiceForGroupBooking, serviceImpl.CreateInvoiceForGroupBooking)
           .AddMethod(__Method_CreateReservationInvoiceMappings, serviceImpl.CreateReservationInvoiceMappings)
           .AddMethod(__Method_GetReservationInvoiceFromGroupId, serviceImpl.GetReservationInvoiceFromGroupId)
-          .AddMethod(__Method_VoidInvoiceById, serviceImpl.VoidInvoiceById).Build();
+          .AddMethod(__Method_VoidInvoiceById, serviceImpl.VoidInvoiceById)
+          .AddMethod(__Method_CreateWithoutSave, serviceImpl.CreateWithoutSave).Build();
     }
 
   }
