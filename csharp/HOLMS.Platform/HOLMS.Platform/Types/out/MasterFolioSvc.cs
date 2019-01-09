@@ -26,81 +26,83 @@ namespace HOLMS.Types.Folio.RPC {
             "ZXMuZm9saW8ucnBjGi5ib29raW5nL2luZGljYXRvcnMvcmVzZXJ2YXRpb25f",
             "aW5kaWNhdG9yLnByb3RvGh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90",
             "bxo3c3VwcGx5L2luY2lkZW50YWxfaXRlbXMvaW5jaWRlbnRhbF9pdGVtX2lu",
-            "ZGljYXRvci5wcm90byKCAgokTWFzdGVyRm9saW9TZXJ2aWNlTWFzdGVyRm9s",
-            "aW9SZXF1ZXN0EkoKDGNsaWVudF9mb2xpbxgBIAEoCzI0LmhvbG1zLnR5cGVz",
-            "LmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchJKCgxt",
-            "YXN0ZXJfZm9saW8YAiABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGlj",
-            "YXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISHgoWbWFzdGVyX2FjY3J1ZXNf",
-            "bG9kZ2luZxgDIAEoCBIiChptYXN0ZXJfYWNjcnVlc19pbmNpZGVudGFscxgE",
-            "IAEoCCKCAQosTWFzdGVyRm9saW9TZXJ2aWNlUmVxdWVzdE1hc3RlckZvbGlv",
-            "UmVzcG9uc2USUgoGcmVzdWx0GAEgASgOMkIuaG9sbXMudHlwZXMuZm9saW8u",
-            "cnBjLlJlc2VydmF0aW9uRm9saW9TdmNSZXF1ZXN0TWFzdGVyRm9saW9SZXN1",
-            "bHQidAomTWFzdGVyRm9saW9TdmNSZW1vdmVNYXN0ZXJGb2xpb1JlcXVlc3QS",
-            "SgoMY2xpZW50X2ZvbGlvGAEgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5p",
-            "bmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yIoABCitNYXN0ZXJGb2xp",
-            "b1NlcnZpY2VSZW1vdmVNYXN0ZXJGb2xpb1Jlc3BvbnNlElEKBnJlc3VsdBgB",
-            "IAEoDjJBLmhvbG1zLnR5cGVzLmZvbGlvLnJwYy5SZXNlcnZhdGlvbkZvbGlv",
-            "U3ZjUmVtb3ZlTWFzdGVyRm9saW9SZXN1bHQihQMKIk1hc3RlckZvbGlvU2Vy",
-            "dmljZUZvbGlvU3dhcFJlcXVlc3QSOAoMc3dhcF9vcHNkYXRlGAEgASgLMiIu",
-            "aG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlEk8KDnN3YXBfZGly",
-            "ZWN0aW9uGAIgASgOMjcuaG9sbXMudHlwZXMuZm9saW8ucnBjLk1hc3RlckZv",
-            "bGlvU3ZjRm9saW9Td2FwRGlyZWN0aW9uEiYKHnN3YXBfaXNfZm9yX2luY2lk",
-            "ZW50YWxzX2NoYXJnZRgDIAEoCBJgChpzd2FwcGVkX2luY2lkZW50YWxzX2No",
-            "YXJnZRgEIAEoCzI8LmhvbG1zLnR5cGVzLnN1cHBseS5pbmNpZGVudGFsX2l0",
-            "ZW1zLkluY2lkZW50YWxJdGVtSW5kaWNhdG9yEkoKDGNsaWVudF9mb2xpbxgF",
-            "IAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZh",
-            "dGlvbkluZGljYXRvciLMAgogUmVzZXJ2YXRpb25NYXN0ZXJGb2xpb0Fzc2ln",
-            "bm1lbnQSSgoMbWFzdGVyX2ZvbGlvGAEgASgLMjQuaG9sbXMudHlwZXMuYm9v",
-            "a2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yEksKDWNsaWVu",
-            "dF9mb2xpb3MYAiADKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRv",
-            "cnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISSwoNcXVlcmllZF9mb2xpbxgDIAEo",
-            "CzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlv",
-            "bkluZGljYXRvchIeChZtYXN0ZXJfYWNjcnVlc19sb2RnaW5nGAQgASgIEiIK",
-            "Gm1hc3Rlcl9hY2NydWVzX2luY2lkZW50YWxzGAUgASgIImcKH01hc3RlckZv",
-            "bGlvU3ZjRm9saW9Td2FwUmVzcG9uc2USRAoGcmVzdWx0GAEgASgOMjQuaG9s",
-            "bXMudHlwZXMuZm9saW8ucnBjLk1hc3RlckZvbGlvU3ZjRm9saW9Td2FwUmVz",
-            "dWx0KrIDCitSZXNlcnZhdGlvbkZvbGlvU3ZjUmVxdWVzdE1hc3RlckZvbGlv",
-            "UmVzdWx0EiwKKE1BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJfRk9M",
-            "SU9fT0sQABI7CjdNQVNURVJfRk9MSU9fU1ZDX1JFUVVFU1RfTUFTVEVSX0ZP",
-            "TElPX0NMSUVOVF9IQVNfTUFTVEVSEAESOwo3TUFTVEVSX0ZPTElPX1NWQ19S",
-            "RVFVRVNUX01BU1RFUl9GT0xJT19NQVNURVJfSEFTX01BU1RFUhACEi4KKk1B",
-            "U1RFUl9GT0xJT19TVkNfUkVRVUVTVF9DTElFTlRfSEFTX0NMSUVOVBADEjsK",
-            "N01BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJfRk9MSU9fRElTQUxM",
-            "T1dFRF9NQVNURVIQBBI7CjdNQVNURVJfRk9MSU9fU1ZDX1JFUVVFU1RfTUFT",
-            "VEVSX0ZPTElPX0RJU0FMTE9XRURfQ0xJRU5UEAUSMQotTUFTVEVSX0ZPTElP",
-            "X1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19GQUlMVVJFEAYqvwEKKlJlc2Vy",
-            "dmF0aW9uRm9saW9TdmNSZW1vdmVNYXN0ZXJGb2xpb1Jlc3VsdBIrCidNQVNU",
-            "RVJfRk9MSU9fU1ZDX1JFTU9WRV9NQVNURVJfRk9MSU9fT0sQABIyCi5NQVNU",
-            "RVJfRk9MSU9fU1ZDX1JFTU9WRV9NQVNURVJfRk9MSU9fTk9fTUFTVEVSEAES",
-            "MAosTUFTVEVSX0ZPTElPX1NWQ19SRU1PVkVfTUFTVEVSX0ZPTElPX0ZBSUxV",
-            "UkUQAireAQodTWFzdGVyRm9saW9TdmNGb2xpb1N3YXBSZXN1bHQSIgoeTUFT",
-            "VEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX09LEAASNwozTUFTVEVSX0ZPTElP",
-            "X1NWQ19GT0xJT19TV0FQX0lOVkFMSURfTk9fTUFTVEVSX0ZPTElPEAESLwor",
-            "TUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX0lOVkFMSURfVU5LTk9XThAC",
-            "Ei8KK01BU1RFUl9GT0xJT19TVkNfRk9MSU9fU1dBUF9GQUlMVVJFX1VOS05P",
-            "V04QAyqGAQogTWFzdGVyRm9saW9TdmNGb2xpb1N3YXBEaXJlY3Rpb24SMAos",
-            "TUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX0NMSUVOVF9UT19NQVNURVIQ",
-            "ABIwCixNQVNURVJfRk9MSU9fU1ZDX0ZPTElPX1NXQVBfTUFTVEVSX1RPX0NM",
-            "SUVOVBABMs8DCg5NYXN0ZXJGb2xpb1N2YxKWAQoSUmVxdWVzdE1hc3RlckZv",
-            "bGlvEjsuaG9sbXMudHlwZXMuZm9saW8ucnBjLk1hc3RlckZvbGlvU2Vydmlj",
-            "ZU1hc3RlckZvbGlvUmVxdWVzdBpDLmhvbG1zLnR5cGVzLmZvbGlvLnJwYy5N",
-            "YXN0ZXJGb2xpb1NlcnZpY2VSZXF1ZXN0TWFzdGVyRm9saW9SZXNwb25zZRKW",
-            "AQoRUmVtb3ZlTWFzdGVyRm9saW8SPS5ob2xtcy50eXBlcy5mb2xpby5ycGMu",
-            "TWFzdGVyRm9saW9TdmNSZW1vdmVNYXN0ZXJGb2xpb1JlcXVlc3QaQi5ob2xt",
-            "cy50eXBlcy5mb2xpby5ycGMuTWFzdGVyRm9saW9TZXJ2aWNlUmVtb3ZlTWFz",
-            "dGVyRm9saW9SZXNwb25zZRKKAQoVQXRvbWljRm9saW9DaGFyZ2VTd2FwEjku",
-            "aG9sbXMudHlwZXMuZm9saW8ucnBjLk1hc3RlckZvbGlvU2VydmljZUZvbGlv",
-            "U3dhcFJlcXVlc3QaNi5ob2xtcy50eXBlcy5mb2xpby5ycGMuTWFzdGVyRm9s",
-            "aW9TdmNGb2xpb1N3YXBSZXNwb25zZUIjWglmb2xpby9ycGOqAhVIT0xNUy5U",
-            "eXBlcy5Gb2xpby5SUENiBnByb3RvMw=="));
+            "ZGljYXRvci5wcm90bxoUcHJpbWl0aXZlL3V1aWQucHJvdG8iggIKJE1hc3Rl",
+            "ckZvbGlvU2VydmljZU1hc3RlckZvbGlvUmVxdWVzdBJKCgxjbGllbnRfZm9s",
+            "aW8YASABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVz",
+            "ZXJ2YXRpb25JbmRpY2F0b3ISSgoMbWFzdGVyX2ZvbGlvGAIgASgLMjQuaG9s",
+            "bXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNh",
+            "dG9yEh4KFm1hc3Rlcl9hY2NydWVzX2xvZGdpbmcYAyABKAgSIgoabWFzdGVy",
+            "X2FjY3J1ZXNfaW5jaWRlbnRhbHMYBCABKAgiggEKLE1hc3RlckZvbGlvU2Vy",
+            "dmljZVJlcXVlc3RNYXN0ZXJGb2xpb1Jlc3BvbnNlElIKBnJlc3VsdBgBIAEo",
+            "DjJCLmhvbG1zLnR5cGVzLmZvbGlvLnJwYy5SZXNlcnZhdGlvbkZvbGlvU3Zj",
+            "UmVxdWVzdE1hc3RlckZvbGlvUmVzdWx0InQKJk1hc3RlckZvbGlvU3ZjUmVt",
+            "b3ZlTWFzdGVyRm9saW9SZXF1ZXN0EkoKDGNsaWVudF9mb2xpbxgBIAEoCzI0",
+            "LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbklu",
+            "ZGljYXRvciKAAQorTWFzdGVyRm9saW9TZXJ2aWNlUmVtb3ZlTWFzdGVyRm9s",
+            "aW9SZXNwb25zZRJRCgZyZXN1bHQYASABKA4yQS5ob2xtcy50eXBlcy5mb2xp",
+            "by5ycGMuUmVzZXJ2YXRpb25Gb2xpb1N2Y1JlbW92ZU1hc3RlckZvbGlvUmVz",
+            "dWx0ItUDCiJNYXN0ZXJGb2xpb1NlcnZpY2VGb2xpb1N3YXBSZXF1ZXN0EjgK",
+            "DHN3YXBfb3BzZGF0ZRgBIAEoCzIiLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Q",
+            "YkxvY2FsRGF0ZRJPCg5zd2FwX2RpcmVjdGlvbhgCIAEoDjI3LmhvbG1zLnR5",
+            "cGVzLmZvbGlvLnJwYy5NYXN0ZXJGb2xpb1N2Y0ZvbGlvU3dhcERpcmVjdGlv",
+            "bhImCh5zd2FwX2lzX2Zvcl9pbmNpZGVudGFsc19jaGFyZ2UYAyABKAgSYAoa",
+            "c3dhcHBlZF9pbmNpZGVudGFsc19jaGFyZ2UYBCABKAsyPC5ob2xtcy50eXBl",
+            "cy5zdXBwbHkuaW5jaWRlbnRhbF9pdGVtcy5JbmNpZGVudGFsSXRlbUluZGlj",
+            "YXRvchJKCgxjbGllbnRfZm9saW8YBSABKAsyNC5ob2xtcy50eXBlcy5ib29r",
+            "aW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISJQodc3dhcF9p",
+            "c19mb3JfYWRqdXN0bWVudF9jaGFyZ2UYBiABKAgSJwoCaWQYCiABKAsyGy5o",
+            "b2xtcy50eXBlcy5wcmltaXRpdmUuVXVpZCLMAgogUmVzZXJ2YXRpb25NYXN0",
+            "ZXJGb2xpb0Fzc2lnbm1lbnQSSgoMbWFzdGVyX2ZvbGlvGAEgASgLMjQuaG9s",
+            "bXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNh",
+            "dG9yEksKDWNsaWVudF9mb2xpb3MYAiADKAsyNC5ob2xtcy50eXBlcy5ib29r",
+            "aW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISSwoNcXVlcmll",
+            "ZF9mb2xpbxgDIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9y",
+            "cy5SZXNlcnZhdGlvbkluZGljYXRvchIeChZtYXN0ZXJfYWNjcnVlc19sb2Rn",
+            "aW5nGAQgASgIEiIKGm1hc3Rlcl9hY2NydWVzX2luY2lkZW50YWxzGAUgASgI",
+            "ImcKH01hc3RlckZvbGlvU3ZjRm9saW9Td2FwUmVzcG9uc2USRAoGcmVzdWx0",
+            "GAEgASgOMjQuaG9sbXMudHlwZXMuZm9saW8ucnBjLk1hc3RlckZvbGlvU3Zj",
+            "Rm9saW9Td2FwUmVzdWx0KrIDCitSZXNlcnZhdGlvbkZvbGlvU3ZjUmVxdWVz",
+            "dE1hc3RlckZvbGlvUmVzdWx0EiwKKE1BU1RFUl9GT0xJT19TVkNfUkVRVUVT",
+            "VF9NQVNURVJfRk9MSU9fT0sQABI7CjdNQVNURVJfRk9MSU9fU1ZDX1JFUVVF",
+            "U1RfTUFTVEVSX0ZPTElPX0NMSUVOVF9IQVNfTUFTVEVSEAESOwo3TUFTVEVS",
+            "X0ZPTElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19NQVNURVJfSEFTX01B",
+            "U1RFUhACEi4KKk1BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9DTElFTlRfSEFT",
+            "X0NMSUVOVBADEjsKN01BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJf",
+            "Rk9MSU9fRElTQUxMT1dFRF9NQVNURVIQBBI7CjdNQVNURVJfRk9MSU9fU1ZD",
+            "X1JFUVVFU1RfTUFTVEVSX0ZPTElPX0RJU0FMTE9XRURfQ0xJRU5UEAUSMQot",
+            "TUFTVEVSX0ZPTElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19GQUlMVVJF",
+            "EAYqvwEKKlJlc2VydmF0aW9uRm9saW9TdmNSZW1vdmVNYXN0ZXJGb2xpb1Jl",
+            "c3VsdBIrCidNQVNURVJfRk9MSU9fU1ZDX1JFTU9WRV9NQVNURVJfRk9MSU9f",
+            "T0sQABIyCi5NQVNURVJfRk9MSU9fU1ZDX1JFTU9WRV9NQVNURVJfRk9MSU9f",
+            "Tk9fTUFTVEVSEAESMAosTUFTVEVSX0ZPTElPX1NWQ19SRU1PVkVfTUFTVEVS",
+            "X0ZPTElPX0ZBSUxVUkUQAireAQodTWFzdGVyRm9saW9TdmNGb2xpb1N3YXBS",
+            "ZXN1bHQSIgoeTUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX09LEAASNwoz",
+            "TUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX0lOVkFMSURfTk9fTUFTVEVS",
+            "X0ZPTElPEAESLworTUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX0lOVkFM",
+            "SURfVU5LTk9XThACEi8KK01BU1RFUl9GT0xJT19TVkNfRk9MSU9fU1dBUF9G",
+            "QUlMVVJFX1VOS05PV04QAyqGAQogTWFzdGVyRm9saW9TdmNGb2xpb1N3YXBE",
+            "aXJlY3Rpb24SMAosTUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX0NMSUVO",
+            "VF9UT19NQVNURVIQABIwCixNQVNURVJfRk9MSU9fU1ZDX0ZPTElPX1NXQVBf",
+            "TUFTVEVSX1RPX0NMSUVOVBABMs8DCg5NYXN0ZXJGb2xpb1N2YxKWAQoSUmVx",
+            "dWVzdE1hc3RlckZvbGlvEjsuaG9sbXMudHlwZXMuZm9saW8ucnBjLk1hc3Rl",
+            "ckZvbGlvU2VydmljZU1hc3RlckZvbGlvUmVxdWVzdBpDLmhvbG1zLnR5cGVz",
+            "LmZvbGlvLnJwYy5NYXN0ZXJGb2xpb1NlcnZpY2VSZXF1ZXN0TWFzdGVyRm9s",
+            "aW9SZXNwb25zZRKWAQoRUmVtb3ZlTWFzdGVyRm9saW8SPS5ob2xtcy50eXBl",
+            "cy5mb2xpby5ycGMuTWFzdGVyRm9saW9TdmNSZW1vdmVNYXN0ZXJGb2xpb1Jl",
+            "cXVlc3QaQi5ob2xtcy50eXBlcy5mb2xpby5ycGMuTWFzdGVyRm9saW9TZXJ2",
+            "aWNlUmVtb3ZlTWFzdGVyRm9saW9SZXNwb25zZRKKAQoVQXRvbWljRm9saW9D",
+            "aGFyZ2VTd2FwEjkuaG9sbXMudHlwZXMuZm9saW8ucnBjLk1hc3RlckZvbGlv",
+            "U2VydmljZUZvbGlvU3dhcFJlcXVlc3QaNi5ob2xtcy50eXBlcy5mb2xpby5y",
+            "cGMuTWFzdGVyRm9saW9TdmNGb2xpb1N3YXBSZXNwb25zZUIjWglmb2xpby9y",
+            "cGOqAhVIT0xNUy5UeXBlcy5Gb2xpby5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcRequestMasterFolioResult), typeof(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcRemoveMasterFolioResult), typeof(global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResult), typeof(global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapDirection), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.MasterFolioServiceMasterFolioRequest), global::HOLMS.Types.Folio.RPC.MasterFolioServiceMasterFolioRequest.Parser, new[]{ "ClientFolio", "MasterFolio", "MasterAccruesLodging", "MasterAccruesIncidentals" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.MasterFolioServiceRequestMasterFolioResponse), global::HOLMS.Types.Folio.RPC.MasterFolioServiceRequestMasterFolioResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.MasterFolioSvcRemoveMasterFolioRequest), global::HOLMS.Types.Folio.RPC.MasterFolioSvcRemoveMasterFolioRequest.Parser, new[]{ "ClientFolio" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.MasterFolioServiceRemoveMasterFolioResponse), global::HOLMS.Types.Folio.RPC.MasterFolioServiceRemoveMasterFolioResponse.Parser, new[]{ "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.MasterFolioServiceFolioSwapRequest), global::HOLMS.Types.Folio.RPC.MasterFolioServiceFolioSwapRequest.Parser, new[]{ "SwapOpsdate", "SwapDirection", "SwapIsForIncidentalsCharge", "SwappedIncidentalsCharge", "ClientFolio" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.MasterFolioServiceFolioSwapRequest), global::HOLMS.Types.Folio.RPC.MasterFolioServiceFolioSwapRequest.Parser, new[]{ "SwapOpsdate", "SwapDirection", "SwapIsForIncidentalsCharge", "SwappedIncidentalsCharge", "ClientFolio", "SwapIsForAdjustmentCharge", "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.ReservationMasterFolioAssignment), global::HOLMS.Types.Folio.RPC.ReservationMasterFolioAssignment.Parser, new[]{ "MasterFolio", "ClientFolios", "QueriedFolio", "MasterAccruesLodging", "MasterAccruesIncidentals" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse), global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse.Parser, new[]{ "Result" }, null, null, null)
           }));
@@ -739,6 +741,8 @@ namespace HOLMS.Types.Folio.RPC {
       swapIsForIncidentalsCharge_ = other.swapIsForIncidentalsCharge_;
       SwappedIncidentalsCharge = other.swappedIncidentalsCharge_ != null ? other.SwappedIncidentalsCharge.Clone() : null;
       ClientFolio = other.clientFolio_ != null ? other.ClientFolio.Clone() : null;
+      swapIsForAdjustmentCharge_ = other.swapIsForAdjustmentCharge_;
+      Id = other.id_ != null ? other.Id.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -801,6 +805,28 @@ namespace HOLMS.Types.Folio.RPC {
       }
     }
 
+    /// <summary>Field number for the "swap_is_for_adjustment_charge" field.</summary>
+    public const int SwapIsForAdjustmentChargeFieldNumber = 6;
+    private bool swapIsForAdjustmentCharge_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SwapIsForAdjustmentCharge {
+      get { return swapIsForAdjustmentCharge_; }
+      set {
+        swapIsForAdjustmentCharge_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 10;
+    private global::HOLMS.Types.Primitive.Uuid id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.Uuid Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MasterFolioServiceFolioSwapRequest);
@@ -819,6 +845,8 @@ namespace HOLMS.Types.Folio.RPC {
       if (SwapIsForIncidentalsCharge != other.SwapIsForIncidentalsCharge) return false;
       if (!object.Equals(SwappedIncidentalsCharge, other.SwappedIncidentalsCharge)) return false;
       if (!object.Equals(ClientFolio, other.ClientFolio)) return false;
+      if (SwapIsForAdjustmentCharge != other.SwapIsForAdjustmentCharge) return false;
+      if (!object.Equals(Id, other.Id)) return false;
       return true;
     }
 
@@ -830,6 +858,8 @@ namespace HOLMS.Types.Folio.RPC {
       if (SwapIsForIncidentalsCharge != false) hash ^= SwapIsForIncidentalsCharge.GetHashCode();
       if (swappedIncidentalsCharge_ != null) hash ^= SwappedIncidentalsCharge.GetHashCode();
       if (clientFolio_ != null) hash ^= ClientFolio.GetHashCode();
+      if (SwapIsForAdjustmentCharge != false) hash ^= SwapIsForAdjustmentCharge.GetHashCode();
+      if (id_ != null) hash ^= Id.GetHashCode();
       return hash;
     }
 
@@ -860,6 +890,14 @@ namespace HOLMS.Types.Folio.RPC {
         output.WriteRawTag(42);
         output.WriteMessage(ClientFolio);
       }
+      if (SwapIsForAdjustmentCharge != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(SwapIsForAdjustmentCharge);
+      }
+      if (id_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(Id);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -879,6 +917,12 @@ namespace HOLMS.Types.Folio.RPC {
       }
       if (clientFolio_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClientFolio);
+      }
+      if (SwapIsForAdjustmentCharge != false) {
+        size += 1 + 1;
+      }
+      if (id_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
       }
       return size;
     }
@@ -911,6 +955,15 @@ namespace HOLMS.Types.Folio.RPC {
           clientFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
         }
         ClientFolio.MergeFrom(other.ClientFolio);
+      }
+      if (other.SwapIsForAdjustmentCharge != false) {
+        SwapIsForAdjustmentCharge = other.SwapIsForAdjustmentCharge;
+      }
+      if (other.id_ != null) {
+        if (id_ == null) {
+          id_ = new global::HOLMS.Types.Primitive.Uuid();
+        }
+        Id.MergeFrom(other.Id);
       }
     }
 
@@ -949,6 +1002,17 @@ namespace HOLMS.Types.Folio.RPC {
               clientFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
             }
             input.ReadMessage(clientFolio_);
+            break;
+          }
+          case 48: {
+            SwapIsForAdjustmentCharge = input.ReadBool();
+            break;
+          }
+          case 82: {
+            if (id_ == null) {
+              id_ = new global::HOLMS.Types.Primitive.Uuid();
+            }
+            input.ReadMessage(id_);
             break;
           }
         }

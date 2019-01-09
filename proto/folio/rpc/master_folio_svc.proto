@@ -7,6 +7,7 @@ option go_package = "folio/rpc";
 import "booking/indicators/reservation_indicator.proto";
 import "primitive/pb_local_date.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
+import "primitive/uuid.proto";
 
 message MasterFolioServiceMasterFolioRequest {
 	.holms.types.booking.indicators.ReservationIndicator client_folio = 1;
@@ -61,6 +62,8 @@ message MasterFolioServiceFolioSwapRequest {
 	bool swap_is_for_incidentals_charge = 3;
 	.holms.types.supply.incidental_items.IncidentalItemIndicator swapped_incidentals_charge = 4;
 	.holms.types.booking.indicators.ReservationIndicator client_folio = 5;
+	bool swap_is_for_adjustment_charge = 6;
+	holms.types.primitive.Uuid id = 10;
 }
 
 message ReservationMasterFolioAssignment {
