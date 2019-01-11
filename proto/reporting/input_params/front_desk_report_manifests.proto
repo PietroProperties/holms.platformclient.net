@@ -5,6 +5,7 @@ option csharp_namespace = "HOLMS.Types.Reporting.ReportParams";
 option go_package = "reporting/input_params";
 
 import "primitive/pb_inclusive_opsdate_range.proto";
+import "primitive/pb_local_date.proto";
 
 enum InHouseGuestReportSorting {
 	BY_GUEST_NAME = 0;
@@ -23,6 +24,7 @@ message FrontDeskCurrentDateReportManifest {
 	string start_time = 10;
 	string cash_drop_for = 11;
 	string end_time = 12;
+	.holms.types.primitive.PbLocalDate date = 1;
 }
 
 message FrontDeskOpsdateRangeReportManifest {
