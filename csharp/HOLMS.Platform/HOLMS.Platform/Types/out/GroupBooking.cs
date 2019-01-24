@@ -32,7 +32,7 @@ namespace HOLMS.Types.Booking.Groups {
             "X3N0YXR1cy5wcm90bxogY3JtL2dyb3Vwcy9ncm91cF9pbmRpY2F0b3IucHJv",
             "dG8aJHN1cHBseS9yYXRlX3NjaGVkdWxlX2luZGljYXRvci5wcm90bxo+dGVu",
             "YW5jeV9jb25maWcvaW5kaWNhdG9ycy9ncm91cF9ib29raW5nX21ldGhvZF9p",
-            "bmRpY2F0b3IucHJvdG8itwcKDEdyb3VwQm9va2luZxJICgllbnRpdHlfaWQY",
+            "bmRpY2F0b3IucHJvdG8i0wcKDEdyb3VwQm9va2luZxJICgllbnRpdHlfaWQY",
             "ASABKAsyNS5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBC",
             "b29raW5nSW5kaWNhdG9yEj4KBnN0YXR1cxgCIAEoDjIuLmhvbG1zLnR5cGVz",
             "LmJvb2tpbmcuZ3JvdXBzLkdyb3VwQm9va2luZ1N0YXR1cxISCgp0YXhfZXhl",
@@ -53,12 +53,13 @@ namespace HOLMS.Types.Booking.Groups {
             "bXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlRyYXZlbEFnZW50SW5kaWNh",
             "dG9yElgKE2NhbmNlbGxhdGlvbl9wb2xpY3kYEiABKAsyOy5ob2xtcy50eXBl",
             "cy5ib29raW5nLmluZGljYXRvcnMuQ2FuY2VsbGF0aW9uUG9saWN5SW5kaWNh",
-            "dG9yEhIKCmdyb3VwX25hbWUYEyABKAlCLVoOYm9va2luZy9ncm91cHOqAhpI",
-            "T0xNUy5UeXBlcy5Cb29raW5nLkdyb3Vwc2IGcHJvdG8z"));
+            "dG9yEhIKCmdyb3VwX25hbWUYEyABKAkSGgoSc3VycHJlc3NfcmF0ZV9pbmZv",
+            "GBQgASgIQi1aDmJvb2tpbmcvZ3JvdXBzqgIaSE9MTVMuVHlwZXMuQm9va2lu",
+            "Zy5Hcm91cHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.TravelAgentIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingStatusReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.GroupBookingMethodIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBooking), global::HOLMS.Types.Booking.Groups.GroupBooking.Parser, new[]{ "EntityId", "Status", "TaxExempt", "TaxId", "GroupPaysLodging", "GroupPaysIncidentals", "AdditionalNotes", "CustomerBookingId", "DateRange", "RateSchedule", "Group", "ConfirmationTemplateId", "BookingMethod", "ArrivalTemplateId", "ReservationSourceId", "TravelAgent", "CancellationPolicy", "GroupName" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBooking), global::HOLMS.Types.Booking.Groups.GroupBooking.Parser, new[]{ "EntityId", "Status", "TaxExempt", "TaxId", "GroupPaysLodging", "GroupPaysIncidentals", "AdditionalNotes", "CustomerBookingId", "DateRange", "RateSchedule", "Group", "ConfirmationTemplateId", "BookingMethod", "ArrivalTemplateId", "ReservationSourceId", "TravelAgent", "CancellationPolicy", "GroupName", "SurpressRateInfo" }, null, null, null)
           }));
     }
     #endregion
@@ -107,6 +108,7 @@ namespace HOLMS.Types.Booking.Groups {
       TravelAgent = other.travelAgent_ != null ? other.TravelAgent.Clone() : null;
       CancellationPolicy = other.cancellationPolicy_ != null ? other.CancellationPolicy.Clone() : null;
       groupName_ = other.groupName_;
+      surpressRateInfo_ = other.surpressRateInfo_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -312,6 +314,17 @@ namespace HOLMS.Types.Booking.Groups {
       }
     }
 
+    /// <summary>Field number for the "surpress_rate_info" field.</summary>
+    public const int SurpressRateInfoFieldNumber = 20;
+    private bool surpressRateInfo_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SurpressRateInfo {
+      get { return surpressRateInfo_; }
+      set {
+        surpressRateInfo_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GroupBooking);
@@ -343,6 +356,7 @@ namespace HOLMS.Types.Booking.Groups {
       if (!object.Equals(TravelAgent, other.TravelAgent)) return false;
       if (!object.Equals(CancellationPolicy, other.CancellationPolicy)) return false;
       if (GroupName != other.GroupName) return false;
+      if (SurpressRateInfo != other.SurpressRateInfo) return false;
       return true;
     }
 
@@ -367,6 +381,7 @@ namespace HOLMS.Types.Booking.Groups {
       if (travelAgent_ != null) hash ^= TravelAgent.GetHashCode();
       if (cancellationPolicy_ != null) hash ^= CancellationPolicy.GetHashCode();
       if (GroupName.Length != 0) hash ^= GroupName.GetHashCode();
+      if (SurpressRateInfo != false) hash ^= SurpressRateInfo.GetHashCode();
       return hash;
     }
 
@@ -449,6 +464,10 @@ namespace HOLMS.Types.Booking.Groups {
         output.WriteRawTag(154, 1);
         output.WriteString(GroupName);
       }
+      if (SurpressRateInfo != false) {
+        output.WriteRawTag(160, 1);
+        output.WriteBool(SurpressRateInfo);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -507,6 +526,9 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (GroupName.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(GroupName);
+      }
+      if (SurpressRateInfo != false) {
+        size += 2 + 1;
       }
       return size;
     }
@@ -599,6 +621,9 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (other.GroupName.Length != 0) {
         GroupName = other.GroupName;
+      }
+      if (other.SurpressRateInfo != false) {
+        SurpressRateInfo = other.SurpressRateInfo;
       }
     }
 
@@ -710,6 +735,10 @@ namespace HOLMS.Types.Booking.Groups {
           }
           case 154: {
             GroupName = input.ReadString();
+            break;
+          }
+          case 160: {
+            SurpressRateInfo = input.ReadBool();
             break;
           }
         }

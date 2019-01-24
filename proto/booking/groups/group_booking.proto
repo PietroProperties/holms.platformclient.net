@@ -33,6 +33,6 @@ message GroupBooking {
     .holms.types.primitive.Uuid reservation_source_id = 16;
     .holms.types.booking.indicators.TravelAgentIndicator travel_agent = 17;
     .holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 18;
-
 	string group_name = 19;
+    bool surpress_rate_info = 20;
 }
