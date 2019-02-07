@@ -21,6 +21,13 @@ message GetReservationNamesRequest{
 message ReservationNamesResponse{
 	repeated string reservation_names=1;
 }
+message SwapChargesRequest{
+	.holms.types.booking.indicators.ReservationIndicator reservation_indicator =1;
+	bool is_master_reservation_indicator=2;
+}
+message SwapChargesResponse{
+	bool charges_present_and_moved=1;
+}
 service LodgingBookingSvc {
 	rpc BookGenesisReservation(.holms.types.booking.reservations.BookGenesisReservationRequest)
 		returns (.holms.types.booking.reservations.GenesisBookingResult);
@@ -46,6 +53,6 @@ service LodgingBookingSvc {
 	rpc GetReservationNames(GetReservationNamesRequest)
 		returns(ReservationNamesResponse);
 
-	rpc SwapExtraStayCharges(.holms.types.booking.indicators.ReservationIndicator)
-		returns (google.protobuf.Empty);
+	rpc SwapExtraStayCharges(SwapChargesRequest)
+		returns(SwapChargesResponse);
 }

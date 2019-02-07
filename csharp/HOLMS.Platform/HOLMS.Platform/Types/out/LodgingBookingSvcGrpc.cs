@@ -25,6 +25,8 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Reservations.ReservationChannelAmendmentRequest> __Marshaller_ReservationChannelAmendmentRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.ReservationChannelAmendmentRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GetReservationNamesRequest> __Marshaller_GetReservationNamesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GetReservationNamesRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationNamesResponse> __Marshaller_ReservationNamesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationNamesResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.SwapChargesRequest> __Marshaller_SwapChargesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.SwapChargesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.SwapChargesResponse> __Marshaller_SwapChargesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.SwapChargesResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest, global::HOLMS.Types.Booking.Reservations.GenesisBookingResult> __Method_BookGenesisReservation = new grpc::Method<global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest, global::HOLMS.Types.Booking.Reservations.GenesisBookingResult>(
         grpc::MethodType.Unary,
@@ -82,12 +84,12 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_GetReservationNamesRequest,
         __Marshaller_ReservationNamesResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SwapExtraStayCharges = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly grpc::Method<global::HOLMS.Types.Booking.RPC.SwapChargesRequest, global::HOLMS.Types.Booking.RPC.SwapChargesResponse> __Method_SwapExtraStayCharges = new grpc::Method<global::HOLMS.Types.Booking.RPC.SwapChargesRequest, global::HOLMS.Types.Booking.RPC.SwapChargesResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "SwapExtraStayCharges",
-        __Marshaller_ReservationIndicator,
-        __Marshaller_Empty);
+        __Marshaller_SwapChargesRequest,
+        __Marshaller_SwapChargesResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -138,7 +140,7 @@ namespace HOLMS.Types.Booking.RPC {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SwapExtraStayCharges(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.SwapChargesResponse> SwapExtraStayCharges(global::HOLMS.Types.Booking.RPC.SwapChargesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -296,19 +298,19 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationNames, null, options, request);
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SwapExtraStayCharges(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Booking.RPC.SwapChargesResponse SwapExtraStayCharges(global::HOLMS.Types.Booking.RPC.SwapChargesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SwapExtraStayCharges(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SwapExtraStayCharges(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Booking.RPC.SwapChargesResponse SwapExtraStayCharges(global::HOLMS.Types.Booking.RPC.SwapChargesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SwapExtraStayCharges, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SwapExtraStayChargesAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.SwapChargesResponse> SwapExtraStayChargesAsync(global::HOLMS.Types.Booking.RPC.SwapChargesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SwapExtraStayChargesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SwapExtraStayChargesAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.SwapChargesResponse> SwapExtraStayChargesAsync(global::HOLMS.Types.Booking.RPC.SwapChargesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SwapExtraStayCharges, null, options, request);
       }
