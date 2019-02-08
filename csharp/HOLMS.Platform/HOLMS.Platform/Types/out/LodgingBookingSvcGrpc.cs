@@ -23,6 +23,8 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest> __Marshaller_ReservationFRPAmendmentRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse> __Marshaller_FRPAmendmentResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Reservations.ReservationChannelAmendmentRequest> __Marshaller_ReservationChannelAmendmentRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.ReservationChannelAmendmentRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GetReservationNamesRequest> __Marshaller_GetReservationNamesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GetReservationNamesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationNamesResponse> __Marshaller_ReservationNamesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationNamesResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest, global::HOLMS.Types.Booking.Reservations.GenesisBookingResult> __Method_BookGenesisReservation = new grpc::Method<global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest, global::HOLMS.Types.Booking.Reservations.GenesisBookingResult>(
         grpc::MethodType.Unary,
@@ -73,6 +75,20 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_ReservationChannelAmendmentRequest,
         __Marshaller_Empty);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.RPC.GetReservationNamesRequest, global::HOLMS.Types.Booking.RPC.ReservationNamesResponse> __Method_GetReservationNames = new grpc::Method<global::HOLMS.Types.Booking.RPC.GetReservationNamesRequest, global::HOLMS.Types.Booking.RPC.ReservationNamesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetReservationNames",
+        __Marshaller_GetReservationNamesRequest,
+        __Marshaller_ReservationNamesResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SwapExtraStayCharges = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SwapExtraStayCharges",
+        __Marshaller_ReservationIndicator,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -113,6 +129,16 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> RequestUpdateChannelDetailsReservation(global::HOLMS.Types.Booking.Reservations.ReservationChannelAmendmentRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ReservationNamesResponse> GetReservationNames(global::HOLMS.Types.Booking.RPC.GetReservationNamesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SwapExtraStayCharges(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -254,6 +280,38 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_RequestUpdateChannelDetailsReservation, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.ReservationNamesResponse GetReservationNames(global::HOLMS.Types.Booking.RPC.GetReservationNamesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetReservationNames(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.ReservationNamesResponse GetReservationNames(global::HOLMS.Types.Booking.RPC.GetReservationNamesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetReservationNames, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationNamesResponse> GetReservationNamesAsync(global::HOLMS.Types.Booking.RPC.GetReservationNamesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetReservationNamesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.ReservationNamesResponse> GetReservationNamesAsync(global::HOLMS.Types.Booking.RPC.GetReservationNamesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetReservationNames, null, options, request);
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SwapExtraStayCharges(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SwapExtraStayCharges(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SwapExtraStayCharges(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SwapExtraStayCharges, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SwapExtraStayChargesAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SwapExtraStayChargesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SwapExtraStayChargesAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SwapExtraStayCharges, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override LodgingBookingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -272,7 +330,9 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_RequestRemoveGuestFromReservation, serviceImpl.RequestRemoveGuestFromReservation)
           .AddMethod(__Method_AmendOpenReservationParameters, serviceImpl.AmendOpenReservationParameters)
           .AddMethod(__Method_RequestChangePrimaryGuestInReservation, serviceImpl.RequestChangePrimaryGuestInReservation)
-          .AddMethod(__Method_RequestUpdateChannelDetailsReservation, serviceImpl.RequestUpdateChannelDetailsReservation).Build();
+          .AddMethod(__Method_RequestUpdateChannelDetailsReservation, serviceImpl.RequestUpdateChannelDetailsReservation)
+          .AddMethod(__Method_GetReservationNames, serviceImpl.GetReservationNames)
+          .AddMethod(__Method_SwapExtraStayCharges, serviceImpl.SwapExtraStayCharges).Build();
     }
 
   }

@@ -15,6 +15,12 @@ import "booking/reservations/reservation_frp_amendment_request.proto";
 import "booking/reservations/frp_amendment_response.proto";
 import "booking/reservations/reservation_channel_amendment_request.proto";
 
+message GetReservationNamesRequest{
+	repeated .holms.types.booking.indicators.ReservationIndicator reservation_indicators=1;
+}
+message ReservationNamesResponse{
+	repeated string reservation_names=1;
+}
 service LodgingBookingSvc {
 	rpc BookGenesisReservation(.holms.types.booking.reservations.BookGenesisReservationRequest)
 		returns (.holms.types.booking.reservations.GenesisBookingResult);
@@ -35,5 +41,11 @@ service LodgingBookingSvc {
 		returns (google.protobuf.Empty);
 
 	rpc RequestUpdateChannelDetailsReservation(.holms.types.booking.reservations.ReservationChannelAmendmentRequest)
+		returns (google.protobuf.Empty);
+
+	rpc GetReservationNames(GetReservationNamesRequest)
+		returns(ReservationNamesResponse);
+
+	rpc SwapExtraStayCharges(.holms.types.booking.indicators.ReservationIndicator)
 		returns (google.protobuf.Empty);
 }
