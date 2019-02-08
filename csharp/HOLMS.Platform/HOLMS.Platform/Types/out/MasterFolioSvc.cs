@@ -61,40 +61,52 @@ namespace HOLMS.Types.Folio.RPC {
             "aW5nGAQgASgIEiIKGm1hc3Rlcl9hY2NydWVzX2luY2lkZW50YWxzGAUgASgI",
             "ImcKH01hc3RlckZvbGlvU3ZjRm9saW9Td2FwUmVzcG9uc2USRAoGcmVzdWx0",
             "GAEgASgOMjQuaG9sbXMudHlwZXMuZm9saW8ucnBjLk1hc3RlckZvbGlvU3Zj",
-            "Rm9saW9Td2FwUmVzdWx0KrIDCitSZXNlcnZhdGlvbkZvbGlvU3ZjUmVxdWVz",
-            "dE1hc3RlckZvbGlvUmVzdWx0EiwKKE1BU1RFUl9GT0xJT19TVkNfUkVRVUVT",
-            "VF9NQVNURVJfRk9MSU9fT0sQABI7CjdNQVNURVJfRk9MSU9fU1ZDX1JFUVVF",
-            "U1RfTUFTVEVSX0ZPTElPX0NMSUVOVF9IQVNfTUFTVEVSEAESOwo3TUFTVEVS",
-            "X0ZPTElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19NQVNURVJfSEFTX01B",
-            "U1RFUhACEi4KKk1BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9DTElFTlRfSEFT",
-            "X0NMSUVOVBADEjsKN01BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJf",
-            "Rk9MSU9fRElTQUxMT1dFRF9NQVNURVIQBBI7CjdNQVNURVJfRk9MSU9fU1ZD",
-            "X1JFUVVFU1RfTUFTVEVSX0ZPTElPX0RJU0FMTE9XRURfQ0xJRU5UEAUSMQot",
-            "TUFTVEVSX0ZPTElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19GQUlMVVJF",
-            "EAYqvwEKKlJlc2VydmF0aW9uRm9saW9TdmNSZW1vdmVNYXN0ZXJGb2xpb1Jl",
-            "c3VsdBIrCidNQVNURVJfRk9MSU9fU1ZDX1JFTU9WRV9NQVNURVJfRk9MSU9f",
-            "T0sQABIyCi5NQVNURVJfRk9MSU9fU1ZDX1JFTU9WRV9NQVNURVJfRk9MSU9f",
-            "Tk9fTUFTVEVSEAESMAosTUFTVEVSX0ZPTElPX1NWQ19SRU1PVkVfTUFTVEVS",
-            "X0ZPTElPX0ZBSUxVUkUQAireAQodTWFzdGVyRm9saW9TdmNGb2xpb1N3YXBS",
-            "ZXN1bHQSIgoeTUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX09LEAASNwoz",
-            "TUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX0lOVkFMSURfTk9fTUFTVEVS",
-            "X0ZPTElPEAESLworTUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX0lOVkFM",
-            "SURfVU5LTk9XThACEi8KK01BU1RFUl9GT0xJT19TVkNfRk9MSU9fU1dBUF9G",
-            "QUlMVVJFX1VOS05PV04QAyqGAQogTWFzdGVyRm9saW9TdmNGb2xpb1N3YXBE",
-            "aXJlY3Rpb24SMAosTUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX0NMSUVO",
-            "VF9UT19NQVNURVIQABIwCixNQVNURVJfRk9MSU9fU1ZDX0ZPTElPX1NXQVBf",
-            "TUFTVEVSX1RPX0NMSUVOVBABMs8DCg5NYXN0ZXJGb2xpb1N2YxKWAQoSUmVx",
-            "dWVzdE1hc3RlckZvbGlvEjsuaG9sbXMudHlwZXMuZm9saW8ucnBjLk1hc3Rl",
-            "ckZvbGlvU2VydmljZU1hc3RlckZvbGlvUmVxdWVzdBpDLmhvbG1zLnR5cGVz",
-            "LmZvbGlvLnJwYy5NYXN0ZXJGb2xpb1NlcnZpY2VSZXF1ZXN0TWFzdGVyRm9s",
-            "aW9SZXNwb25zZRKWAQoRUmVtb3ZlTWFzdGVyRm9saW8SPS5ob2xtcy50eXBl",
-            "cy5mb2xpby5ycGMuTWFzdGVyRm9saW9TdmNSZW1vdmVNYXN0ZXJGb2xpb1Jl",
-            "cXVlc3QaQi5ob2xtcy50eXBlcy5mb2xpby5ycGMuTWFzdGVyRm9saW9TZXJ2",
-            "aWNlUmVtb3ZlTWFzdGVyRm9saW9SZXNwb25zZRKKAQoVQXRvbWljRm9saW9D",
-            "aGFyZ2VTd2FwEjkuaG9sbXMudHlwZXMuZm9saW8ucnBjLk1hc3RlckZvbGlv",
-            "U2VydmljZUZvbGlvU3dhcFJlcXVlc3QaNi5ob2xtcy50eXBlcy5mb2xpby5y",
-            "cGMuTWFzdGVyRm9saW9TdmNGb2xpb1N3YXBSZXNwb25zZUIjWglmb2xpby9y",
-            "cGOqAhVIT0xNUy5UeXBlcy5Gb2xpby5SUENiBnByb3RvMw=="));
+            "Rm9saW9Td2FwUmVzdWx0Ir0BCiNMaW5rTWFzdGVyQXV0aG9yaXphdGlvbkNo",
+            "ZWNrUmVxdWVzdBJKCgxtYXN0ZXJfZm9saW8YASABKAsyNC5ob2xtcy50eXBl",
+            "cy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISSgoM",
+            "Y2xpZW50X2ZvbGlvGAIgASgLMjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRp",
+            "Y2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yIqkBCiRMaW5rTWFzdGVyQXV0",
+            "aG9yaXphdGlvbkNoZWNrUmVzcG9uc2USKQohaXNfYXV0aG9yaXphdGlvbl9p",
+            "bmNyZWFzZV9zdWNjZXNzGAEgASgIEioKIm5vX2NoYWdlX3RvX2F1dGhvcml6",
+            "YXRpb25fcmVxdWlyZWQYAiABKAgSKgoiaXNfYXV0aG9yaXphdGlvbl9pbmNy",
+            "ZWFzZV9yZXF1aXJlZBgDIAEoCCqyAworUmVzZXJ2YXRpb25Gb2xpb1N2Y1Jl",
+            "cXVlc3RNYXN0ZXJGb2xpb1Jlc3VsdBIsCihNQVNURVJfRk9MSU9fU1ZDX1JF",
+            "UVVFU1RfTUFTVEVSX0ZPTElPX09LEAASOwo3TUFTVEVSX0ZPTElPX1NWQ19S",
+            "RVFVRVNUX01BU1RFUl9GT0xJT19DTElFTlRfSEFTX01BU1RFUhABEjsKN01B",
+            "U1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJfRk9MSU9fTUFTVEVSX0hB",
+            "U19NQVNURVIQAhIuCipNQVNURVJfRk9MSU9fU1ZDX1JFUVVFU1RfQ0xJRU5U",
+            "X0hBU19DTElFTlQQAxI7CjdNQVNURVJfRk9MSU9fU1ZDX1JFUVVFU1RfTUFT",
+            "VEVSX0ZPTElPX0RJU0FMTE9XRURfTUFTVEVSEAQSOwo3TUFTVEVSX0ZPTElP",
+            "X1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19ESVNBTExPV0VEX0NMSUVOVBAF",
+            "EjEKLU1BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJfRk9MSU9fRkFJ",
+            "TFVSRRAGKr8BCipSZXNlcnZhdGlvbkZvbGlvU3ZjUmVtb3ZlTWFzdGVyRm9s",
+            "aW9SZXN1bHQSKwonTUFTVEVSX0ZPTElPX1NWQ19SRU1PVkVfTUFTVEVSX0ZP",
+            "TElPX09LEAASMgouTUFTVEVSX0ZPTElPX1NWQ19SRU1PVkVfTUFTVEVSX0ZP",
+            "TElPX05PX01BU1RFUhABEjAKLE1BU1RFUl9GT0xJT19TVkNfUkVNT1ZFX01B",
+            "U1RFUl9GT0xJT19GQUlMVVJFEAIq3gEKHU1hc3RlckZvbGlvU3ZjRm9saW9T",
+            "d2FwUmVzdWx0EiIKHk1BU1RFUl9GT0xJT19TVkNfRk9MSU9fU1dBUF9PSxAA",
+            "EjcKM01BU1RFUl9GT0xJT19TVkNfRk9MSU9fU1dBUF9JTlZBTElEX05PX01B",
+            "U1RFUl9GT0xJTxABEi8KK01BU1RFUl9GT0xJT19TVkNfRk9MSU9fU1dBUF9J",
+            "TlZBTElEX1VOS05PV04QAhIvCitNQVNURVJfRk9MSU9fU1ZDX0ZPTElPX1NX",
+            "QVBfRkFJTFVSRV9VTktOT1dOEAMqhgEKIE1hc3RlckZvbGlvU3ZjRm9saW9T",
+            "d2FwRGlyZWN0aW9uEjAKLE1BU1RFUl9GT0xJT19TVkNfRk9MSU9fU1dBUF9D",
+            "TElFTlRfVE9fTUFTVEVSEAASMAosTUFTVEVSX0ZPTElPX1NWQ19GT0xJT19T",
+            "V0FQX01BU1RFUl9UT19DTElFTlQQATLiBAoOTWFzdGVyRm9saW9TdmMSlgEK",
+            "ElJlcXVlc3RNYXN0ZXJGb2xpbxI7LmhvbG1zLnR5cGVzLmZvbGlvLnJwYy5N",
+            "YXN0ZXJGb2xpb1NlcnZpY2VNYXN0ZXJGb2xpb1JlcXVlc3QaQy5ob2xtcy50",
+            "eXBlcy5mb2xpby5ycGMuTWFzdGVyRm9saW9TZXJ2aWNlUmVxdWVzdE1hc3Rl",
+            "ckZvbGlvUmVzcG9uc2USlgEKEVJlbW92ZU1hc3RlckZvbGlvEj0uaG9sbXMu",
+            "dHlwZXMuZm9saW8ucnBjLk1hc3RlckZvbGlvU3ZjUmVtb3ZlTWFzdGVyRm9s",
+            "aW9SZXF1ZXN0GkIuaG9sbXMudHlwZXMuZm9saW8ucnBjLk1hc3RlckZvbGlv",
+            "U2VydmljZVJlbW92ZU1hc3RlckZvbGlvUmVzcG9uc2USigEKFUF0b21pY0Zv",
+            "bGlvQ2hhcmdlU3dhcBI5LmhvbG1zLnR5cGVzLmZvbGlvLnJwYy5NYXN0ZXJG",
+            "b2xpb1NlcnZpY2VGb2xpb1N3YXBSZXF1ZXN0GjYuaG9sbXMudHlwZXMuZm9s",
+            "aW8ucnBjLk1hc3RlckZvbGlvU3ZjRm9saW9Td2FwUmVzcG9uc2USkAEKFUF1",
+            "dGhvcml6YXRpb25JbmNyZWFzZRI6LmhvbG1zLnR5cGVzLmZvbGlvLnJwYy5M",
+            "aW5rTWFzdGVyQXV0aG9yaXphdGlvbkNoZWNrUmVxdWVzdBo7LmhvbG1zLnR5",
+            "cGVzLmZvbGlvLnJwYy5MaW5rTWFzdGVyQXV0aG9yaXphdGlvbkNoZWNrUmVz",
+            "cG9uc2VCI1oJZm9saW8vcnBjqgIVSE9MTVMuVHlwZXMuRm9saW8uUlBDYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcRequestMasterFolioResult), typeof(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcRemoveMasterFolioResult), typeof(global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResult), typeof(global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapDirection), }, new pbr::GeneratedClrTypeInfo[] {
@@ -104,7 +116,9 @@ namespace HOLMS.Types.Folio.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.MasterFolioServiceRemoveMasterFolioResponse), global::HOLMS.Types.Folio.RPC.MasterFolioServiceRemoveMasterFolioResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.MasterFolioServiceFolioSwapRequest), global::HOLMS.Types.Folio.RPC.MasterFolioServiceFolioSwapRequest.Parser, new[]{ "SwapOpsdate", "SwapDirection", "SwapIsForIncidentalsCharge", "SwappedIncidentalsCharge", "ClientFolio", "SwapIsForAdjustmentCharge", "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.ReservationMasterFolioAssignment), global::HOLMS.Types.Folio.RPC.ReservationMasterFolioAssignment.Parser, new[]{ "MasterFolio", "ClientFolios", "QueriedFolio", "MasterAccruesLodging", "MasterAccruesIncidentals" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse), global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse.Parser, new[]{ "Result" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse), global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse.Parser, new[]{ "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest), global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest.Parser, new[]{ "MasterFolio", "ClientFolio" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse), global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse.Parser, new[]{ "IsAuthorizationIncreaseSuccess", "NoChageToAuthorizationRequired", "IsAuthorizationIncreaseRequired" }, null, null, null)
           }));
     }
     #endregion
@@ -1363,6 +1377,336 @@ namespace HOLMS.Types.Folio.RPC {
             break;
           case 8: {
             result_ = (global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResult) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class LinkMasterAuthorizationCheckRequest : pb::IMessage<LinkMasterAuthorizationCheckRequest> {
+    private static readonly pb::MessageParser<LinkMasterAuthorizationCheckRequest> _parser = new pb::MessageParser<LinkMasterAuthorizationCheckRequest>(() => new LinkMasterAuthorizationCheckRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LinkMasterAuthorizationCheckRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Folio.RPC.MasterFolioSvcReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LinkMasterAuthorizationCheckRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LinkMasterAuthorizationCheckRequest(LinkMasterAuthorizationCheckRequest other) : this() {
+      MasterFolio = other.masterFolio_ != null ? other.MasterFolio.Clone() : null;
+      ClientFolio = other.clientFolio_ != null ? other.ClientFolio.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LinkMasterAuthorizationCheckRequest Clone() {
+      return new LinkMasterAuthorizationCheckRequest(this);
+    }
+
+    /// <summary>Field number for the "master_folio" field.</summary>
+    public const int MasterFolioFieldNumber = 1;
+    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator masterFolio_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator MasterFolio {
+      get { return masterFolio_; }
+      set {
+        masterFolio_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "client_folio" field.</summary>
+    public const int ClientFolioFieldNumber = 2;
+    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator clientFolio_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator ClientFolio {
+      get { return clientFolio_; }
+      set {
+        clientFolio_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LinkMasterAuthorizationCheckRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LinkMasterAuthorizationCheckRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(MasterFolio, other.MasterFolio)) return false;
+      if (!object.Equals(ClientFolio, other.ClientFolio)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (masterFolio_ != null) hash ^= MasterFolio.GetHashCode();
+      if (clientFolio_ != null) hash ^= ClientFolio.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (masterFolio_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(MasterFolio);
+      }
+      if (clientFolio_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ClientFolio);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (masterFolio_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MasterFolio);
+      }
+      if (clientFolio_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClientFolio);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LinkMasterAuthorizationCheckRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.masterFolio_ != null) {
+        if (masterFolio_ == null) {
+          masterFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+        }
+        MasterFolio.MergeFrom(other.MasterFolio);
+      }
+      if (other.clientFolio_ != null) {
+        if (clientFolio_ == null) {
+          clientFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+        }
+        ClientFolio.MergeFrom(other.ClientFolio);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (masterFolio_ == null) {
+              masterFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+            }
+            input.ReadMessage(masterFolio_);
+            break;
+          }
+          case 18: {
+            if (clientFolio_ == null) {
+              clientFolio_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+            }
+            input.ReadMessage(clientFolio_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class LinkMasterAuthorizationCheckResponse : pb::IMessage<LinkMasterAuthorizationCheckResponse> {
+    private static readonly pb::MessageParser<LinkMasterAuthorizationCheckResponse> _parser = new pb::MessageParser<LinkMasterAuthorizationCheckResponse>(() => new LinkMasterAuthorizationCheckResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LinkMasterAuthorizationCheckResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Folio.RPC.MasterFolioSvcReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LinkMasterAuthorizationCheckResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LinkMasterAuthorizationCheckResponse(LinkMasterAuthorizationCheckResponse other) : this() {
+      isAuthorizationIncreaseSuccess_ = other.isAuthorizationIncreaseSuccess_;
+      noChageToAuthorizationRequired_ = other.noChageToAuthorizationRequired_;
+      isAuthorizationIncreaseRequired_ = other.isAuthorizationIncreaseRequired_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LinkMasterAuthorizationCheckResponse Clone() {
+      return new LinkMasterAuthorizationCheckResponse(this);
+    }
+
+    /// <summary>Field number for the "is_authorization_increase_success" field.</summary>
+    public const int IsAuthorizationIncreaseSuccessFieldNumber = 1;
+    private bool isAuthorizationIncreaseSuccess_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsAuthorizationIncreaseSuccess {
+      get { return isAuthorizationIncreaseSuccess_; }
+      set {
+        isAuthorizationIncreaseSuccess_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "no_chage_to_authorization_required" field.</summary>
+    public const int NoChageToAuthorizationRequiredFieldNumber = 2;
+    private bool noChageToAuthorizationRequired_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool NoChageToAuthorizationRequired {
+      get { return noChageToAuthorizationRequired_; }
+      set {
+        noChageToAuthorizationRequired_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_authorization_increase_required" field.</summary>
+    public const int IsAuthorizationIncreaseRequiredFieldNumber = 3;
+    private bool isAuthorizationIncreaseRequired_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsAuthorizationIncreaseRequired {
+      get { return isAuthorizationIncreaseRequired_; }
+      set {
+        isAuthorizationIncreaseRequired_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LinkMasterAuthorizationCheckResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LinkMasterAuthorizationCheckResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsAuthorizationIncreaseSuccess != other.IsAuthorizationIncreaseSuccess) return false;
+      if (NoChageToAuthorizationRequired != other.NoChageToAuthorizationRequired) return false;
+      if (IsAuthorizationIncreaseRequired != other.IsAuthorizationIncreaseRequired) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsAuthorizationIncreaseSuccess != false) hash ^= IsAuthorizationIncreaseSuccess.GetHashCode();
+      if (NoChageToAuthorizationRequired != false) hash ^= NoChageToAuthorizationRequired.GetHashCode();
+      if (IsAuthorizationIncreaseRequired != false) hash ^= IsAuthorizationIncreaseRequired.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IsAuthorizationIncreaseSuccess != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsAuthorizationIncreaseSuccess);
+      }
+      if (NoChageToAuthorizationRequired != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(NoChageToAuthorizationRequired);
+      }
+      if (IsAuthorizationIncreaseRequired != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsAuthorizationIncreaseRequired);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsAuthorizationIncreaseSuccess != false) {
+        size += 1 + 1;
+      }
+      if (NoChageToAuthorizationRequired != false) {
+        size += 1 + 1;
+      }
+      if (IsAuthorizationIncreaseRequired != false) {
+        size += 1 + 1;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LinkMasterAuthorizationCheckResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsAuthorizationIncreaseSuccess != false) {
+        IsAuthorizationIncreaseSuccess = other.IsAuthorizationIncreaseSuccess;
+      }
+      if (other.NoChageToAuthorizationRequired != false) {
+        NoChageToAuthorizationRequired = other.NoChageToAuthorizationRequired;
+      }
+      if (other.IsAuthorizationIncreaseRequired != false) {
+        IsAuthorizationIncreaseRequired = other.IsAuthorizationIncreaseRequired;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            IsAuthorizationIncreaseSuccess = input.ReadBool();
+            break;
+          }
+          case 16: {
+            NoChageToAuthorizationRequired = input.ReadBool();
+            break;
+          }
+          case 24: {
+            IsAuthorizationIncreaseRequired = input.ReadBool();
             break;
           }
         }

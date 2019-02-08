@@ -19,6 +19,8 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.MasterFolioServiceRemoveMasterFolioResponse> __Marshaller_MasterFolioServiceRemoveMasterFolioResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.MasterFolioServiceRemoveMasterFolioResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.MasterFolioServiceFolioSwapRequest> __Marshaller_MasterFolioServiceFolioSwapRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.MasterFolioServiceFolioSwapRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse> __Marshaller_MasterFolioSvcFolioSwapResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest> __Marshaller_LinkMasterAuthorizationCheckRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse> __Marshaller_LinkMasterAuthorizationCheckResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Folio.RPC.MasterFolioServiceMasterFolioRequest, global::HOLMS.Types.Folio.RPC.MasterFolioServiceRequestMasterFolioResponse> __Method_RequestMasterFolio = new grpc::Method<global::HOLMS.Types.Folio.RPC.MasterFolioServiceMasterFolioRequest, global::HOLMS.Types.Folio.RPC.MasterFolioServiceRequestMasterFolioResponse>(
         grpc::MethodType.Unary,
@@ -41,6 +43,13 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_MasterFolioServiceFolioSwapRequest,
         __Marshaller_MasterFolioSvcFolioSwapResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest, global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse> __Method_AuthorizationIncrease = new grpc::Method<global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest, global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AuthorizationIncrease",
+        __Marshaller_LinkMasterAuthorizationCheckRequest,
+        __Marshaller_LinkMasterAuthorizationCheckResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -61,6 +70,11 @@ namespace HOLMS.Types.Folio.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse> AtomicFolioChargeSwap(global::HOLMS.Types.Folio.RPC.MasterFolioServiceFolioSwapRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse> AuthorizationIncrease(global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -138,6 +152,22 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_AtomicFolioChargeSwap, null, options, request);
       }
+      public virtual global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse AuthorizationIncrease(global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AuthorizationIncrease(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse AuthorizationIncrease(global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AuthorizationIncrease, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse> AuthorizationIncreaseAsync(global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AuthorizationIncreaseAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse> AuthorizationIncreaseAsync(global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AuthorizationIncrease, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MasterFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -152,7 +182,8 @@ namespace HOLMS.Types.Folio.RPC {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_RequestMasterFolio, serviceImpl.RequestMasterFolio)
           .AddMethod(__Method_RemoveMasterFolio, serviceImpl.RemoveMasterFolio)
-          .AddMethod(__Method_AtomicFolioChargeSwap, serviceImpl.AtomicFolioChargeSwap).Build();
+          .AddMethod(__Method_AtomicFolioChargeSwap, serviceImpl.AtomicFolioChargeSwap)
+          .AddMethod(__Method_AuthorizationIncrease, serviceImpl.AuthorizationIncrease).Build();
     }
 
   }
