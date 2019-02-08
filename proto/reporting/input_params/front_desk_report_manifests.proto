@@ -12,6 +12,11 @@ enum InHouseGuestReportSorting {
 	BY_ROOM_NUMBER = 1;
 }
 
+enum DepartureReportSorting {
+	BY_UN_SORTED = 0;
+	BY_ROOM = 1;
+}
+
 enum FrontDeskReportsNotesFilter {
 	NONE = 0;
 	ALL_NOTES = 1;
@@ -32,6 +37,7 @@ message FrontDeskCurrentDateReportManifest {
 	string cash_drop_for = 11;
 	string end_time = 12;
 	FrontDeskReportsNotesFilter note_category = 13;
+	DepartureReportSorting departure_report_sorting = 14;
 	.holms.types.primitive.PbLocalDate date = 1;
 }
 
