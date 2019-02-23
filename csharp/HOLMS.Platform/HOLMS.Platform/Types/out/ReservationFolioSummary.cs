@@ -29,25 +29,30 @@ namespace HOLMS.Types.Folio {
             "b3IucHJvdG8aH2ZvbGlvL21hc3Rlcl9mb2xpb19zdGF0dXMucHJvdG8aMnRl",
             "bmFuY3lfY29uZmlnL2luZGljYXRvcnMvcHJvcGVydHlfaW5kaWNhdG9yLnBy",
             "b3RvGh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90bxosYm9va2luZy9y",
-            "ZXNlcnZhdGlvbnMvcmVzZXJ2YXRpb25fc3RhdGUucHJvdG8i1AQKF1Jlc2Vy",
-            "dmF0aW9uRm9saW9TdW1tYXJ5EkwKDnJlc2VydmF0aW9uX2lkGAEgASgLMjQu",
-            "aG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5k",
-            "aWNhdG9yEkEKE21hc3Rlcl9mb2xpb19zdGF0dXMYAiABKA4yJC5ob2xtcy50",
-            "eXBlcy5mb2xpby5NYXN0ZXJGb2xpb1N0YXR1cxI3CgxtYXN0ZXJfZm9saW8Y",
-            "AyABKAsyIS5ob2xtcy50eXBlcy5mb2xpby5Gb2xpb0luZGljYXRvchI4Cg1j",
-            "bGllbnRfZm9saW9zGAUgAygLMiEuaG9sbXMudHlwZXMuZm9saW8uRm9saW9J",
-            "bmRpY2F0b3ISVgoQZ3VhcmFudGVlX3N0YXR1cxgGIAEoDjI8LmhvbG1zLnR5",
-            "cGVzLmJvb2tpbmcucmVzZXJ2YXRpb25zLlJlc2VydmF0aW9uR3VhcmFudGVl",
-            "U3RhdHVzEjwKEGd1YXJhbnRlZV9kdWVfb24YByABKAsyIi5ob2xtcy50eXBl",
-            "cy5wcmltaXRpdmUuUGJMb2NhbERhdGUSTwoNaG9zdF9wcm9wZXJ0eRgIIAEo",
-            "CzI4LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJv",
-            "cGVydHlJbmRpY2F0b3ISTgoSbWFzdGVyX2ZvbGlvX3N0YXRlGAkgASgOMjIu",
-            "aG9sbXMudHlwZXMuYm9va2luZy5yZXNlcnZhdGlvbnMuUmVzZXJ2YXRpb25T",
-            "dGF0ZUIUqgIRSE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
+            "ZXNlcnZhdGlvbnMvcmVzZXJ2YXRpb25fc3RhdGUucHJvdG8aKnByaW1pdGl2",
+            "ZS9wYl9pbmNsdXNpdmVfb3BzZGF0ZV9yYW5nZS5wcm90byL4BQoXUmVzZXJ2",
+            "YXRpb25Gb2xpb1N1bW1hcnkSTAoOcmVzZXJ2YXRpb25faWQYASABKAsyNC5o",
+            "b2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRp",
+            "Y2F0b3ISQQoTbWFzdGVyX2ZvbGlvX3N0YXR1cxgCIAEoDjIkLmhvbG1zLnR5",
+            "cGVzLmZvbGlvLk1hc3RlckZvbGlvU3RhdHVzEjcKDG1hc3Rlcl9mb2xpbxgD",
+            "IAEoCzIhLmhvbG1zLnR5cGVzLmZvbGlvLkZvbGlvSW5kaWNhdG9yEjgKDWNs",
+            "aWVudF9mb2xpb3MYBSADKAsyIS5ob2xtcy50eXBlcy5mb2xpby5Gb2xpb0lu",
+            "ZGljYXRvchJWChBndWFyYW50ZWVfc3RhdHVzGAYgASgOMjwuaG9sbXMudHlw",
+            "ZXMuYm9va2luZy5yZXNlcnZhdGlvbnMuUmVzZXJ2YXRpb25HdWFyYW50ZWVT",
+            "dGF0dXMSPAoQZ3VhcmFudGVlX2R1ZV9vbhgHIAEoCzIiLmhvbG1zLnR5cGVz",
+            "LnByaW1pdGl2ZS5QYkxvY2FsRGF0ZRJPCg1ob3N0X3Byb3BlcnR5GAggASgL",
+            "MjguaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9w",
+            "ZXJ0eUluZGljYXRvchJOChJtYXN0ZXJfZm9saW9fc3RhdGUYCSABKA4yMi5o",
+            "b2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5SZXNlcnZhdGlvblN0",
+            "YXRlElcKGWNsaWVudF9mb2xpb19yZXNlcnZhdGlvbnMYCiADKAsyNC5ob2xt",
+            "cy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0",
+            "b3ISSQoRbWFzdGVyX2RhdGVfcmFuZ2UYCyABKAsyLi5ob2xtcy50eXBlcy5w",
+            "cmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2VCFKoCEUhPTE1TLlR5",
+            "cGVzLkZvbGlvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.Guarantees.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Folio.FolioIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationStateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.Guarantees.ReservationGuaranteeStatusReflection.Descriptor, global::HOLMS.Types.Folio.FolioIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.MasterFolioStatusReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationStateReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioSummary), global::HOLMS.Types.Folio.ReservationFolioSummary.Parser, new[]{ "ReservationId", "MasterFolioStatus", "MasterFolio", "ClientFolios", "GuaranteeStatus", "GuaranteeDueOn", "HostProperty", "MasterFolioState" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioSummary), global::HOLMS.Types.Folio.ReservationFolioSummary.Parser, new[]{ "ReservationId", "MasterFolioStatus", "MasterFolio", "ClientFolios", "GuaranteeStatus", "GuaranteeDueOn", "HostProperty", "MasterFolioState", "ClientFolioReservations", "MasterDateRange" }, null, null, null)
           }));
     }
     #endregion
@@ -86,6 +91,8 @@ namespace HOLMS.Types.Folio {
       GuaranteeDueOn = other.guaranteeDueOn_ != null ? other.GuaranteeDueOn.Clone() : null;
       HostProperty = other.hostProperty_ != null ? other.HostProperty.Clone() : null;
       masterFolioState_ = other.masterFolioState_;
+      clientFolioReservations_ = other.clientFolioReservations_.Clone();
+      MasterDateRange = other.masterDateRange_ != null ? other.MasterDateRange.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -180,6 +187,27 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "client_folio_reservations" field.</summary>
+    public const int ClientFolioReservationsFieldNumber = 10;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> _repeated_clientFolioReservations_codec
+        = pb::FieldCodec.ForMessage(82, global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> clientFolioReservations_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> ClientFolioReservations {
+      get { return clientFolioReservations_; }
+    }
+
+    /// <summary>Field number for the "master_date_range" field.</summary>
+    public const int MasterDateRangeFieldNumber = 11;
+    private global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange masterDateRange_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange MasterDateRange {
+      get { return masterDateRange_; }
+      set {
+        masterDateRange_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationFolioSummary);
@@ -201,6 +229,8 @@ namespace HOLMS.Types.Folio {
       if (!object.Equals(GuaranteeDueOn, other.GuaranteeDueOn)) return false;
       if (!object.Equals(HostProperty, other.HostProperty)) return false;
       if (MasterFolioState != other.MasterFolioState) return false;
+      if(!clientFolioReservations_.Equals(other.clientFolioReservations_)) return false;
+      if (!object.Equals(MasterDateRange, other.MasterDateRange)) return false;
       return true;
     }
 
@@ -215,6 +245,8 @@ namespace HOLMS.Types.Folio {
       if (guaranteeDueOn_ != null) hash ^= GuaranteeDueOn.GetHashCode();
       if (hostProperty_ != null) hash ^= HostProperty.GetHashCode();
       if (MasterFolioState != 0) hash ^= MasterFolioState.GetHashCode();
+      hash ^= clientFolioReservations_.GetHashCode();
+      if (masterDateRange_ != null) hash ^= MasterDateRange.GetHashCode();
       return hash;
     }
 
@@ -254,6 +286,11 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(72);
         output.WriteEnum((int) MasterFolioState);
       }
+      clientFolioReservations_.WriteTo(output, _repeated_clientFolioReservations_codec);
+      if (masterDateRange_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(MasterDateRange);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -280,6 +317,10 @@ namespace HOLMS.Types.Folio {
       }
       if (MasterFolioState != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MasterFolioState);
+      }
+      size += clientFolioReservations_.CalculateSize(_repeated_clientFolioReservations_codec);
+      if (masterDateRange_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MasterDateRange);
       }
       return size;
     }
@@ -322,6 +363,13 @@ namespace HOLMS.Types.Folio {
       }
       if (other.MasterFolioState != 0) {
         MasterFolioState = other.MasterFolioState;
+      }
+      clientFolioReservations_.Add(other.clientFolioReservations_);
+      if (other.masterDateRange_ != null) {
+        if (masterDateRange_ == null) {
+          masterDateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
+        }
+        MasterDateRange.MergeFrom(other.MasterDateRange);
       }
     }
 
@@ -375,6 +423,17 @@ namespace HOLMS.Types.Folio {
           }
           case 72: {
             masterFolioState_ = (global::HOLMS.Types.Booking.Reservations.ReservationState) input.ReadEnum();
+            break;
+          }
+          case 82: {
+            clientFolioReservations_.AddEntriesFrom(input, _repeated_clientFolioReservations_codec);
+            break;
+          }
+          case 90: {
+            if (masterDateRange_ == null) {
+              masterDateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
+            }
+            input.ReadMessage(masterDateRange_);
             break;
           }
         }
