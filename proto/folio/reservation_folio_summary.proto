@@ -9,6 +9,7 @@ import "folio/folio_indicator.proto";
 import "folio/master_folio_status.proto";
 import "tenancy_config/indicators/property_indicator.proto";
 import "primitive/pb_local_date.proto";
+import "booking/reservations/reservation_state.proto";
 
 message ReservationFolioSummary {
 	.holms.types.booking.indicators.ReservationIndicator reservation_id = 1;
@@ -20,5 +21,6 @@ message ReservationFolioSummary {
 	.holms.types.booking.reservations.ReservationGuaranteeStatus guarantee_status = 6;
 	.holms.types.primitive.PbLocalDate guarantee_due_on = 7;
 	.holms.types.tenancy_config.indicators.PropertyIndicator host_property = 8;
+	holms.types.booking.reservations.ReservationState master_folio_state = 9;
 }
 
