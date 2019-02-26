@@ -13,7 +13,7 @@ enum InHouseGuestReportSorting {
 }
 
 enum DepartureReportSorting {
-	BY_UN_SORTED = 0;
+	BY_GUEST_NAME_SORT = 0;
 	BY_ROOM = 1;
 }
 
