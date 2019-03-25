@@ -45,11 +45,12 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "ZW5lcmFsX2F2YWlsYWJpbGl0eV9yZXBvcnQYAiABKAgSJQodY2FuY2VsbGVk",
             "X3Jlc2VydmF0aW9uc19yZXBvcnQYAyABKAgqQgoZSW5Ib3VzZUd1ZXN0UmVw",
             "b3J0U29ydGluZxIRCg1CWV9HVUVTVF9OQU1FEAASEgoOQllfUk9PTV9OVU1C",
-            "RVIQASo3ChZEZXBhcnR1cmVSZXBvcnRTb3J0aW5nEhAKDEJZX1VOX1NPUlRF",
-            "RBAAEgsKB0JZX1JPT00QASpYChtGcm9udERlc2tSZXBvcnRzTm90ZXNGaWx0",
-            "ZXISCAoETk9ORRAAEg0KCUFMTF9OT1RFUxABEg4KCkZST05UX0RFU0sQAhIQ",
-            "CgxIT1VTRUtFRVBJTkcQA0I9WhZyZXBvcnRpbmcvaW5wdXRfcGFyYW1zqgIi",
-            "SE9MTVMuVHlwZXMuUmVwb3J0aW5nLlJlcG9ydFBhcmFtc2IGcHJvdG8z"));
+            "RVIQASo9ChZEZXBhcnR1cmVSZXBvcnRTb3J0aW5nEhYKEkJZX0dVRVNUX05B",
+            "TUVfU09SVBAAEgsKB0JZX1JPT00QASpYChtGcm9udERlc2tSZXBvcnRzTm90",
+            "ZXNGaWx0ZXISCAoETk9ORRAAEg0KCUFMTF9OT1RFUxABEg4KCkZST05UX0RF",
+            "U0sQAhIQCgxIT1VTRUtFRVBJTkcQA0I9WhZyZXBvcnRpbmcvaW5wdXRfcGFy",
+            "YW1zqgIiSE9MTVMuVHlwZXMuUmVwb3J0aW5nLlJlcG9ydFBhcmFtc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.ReportParams.InHouseGuestReportSorting), typeof(global::HOLMS.Types.Reporting.ReportParams.DepartureReportSorting), typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter), }, new pbr::GeneratedClrTypeInfo[] {
@@ -67,7 +68,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
   }
 
   public enum DepartureReportSorting {
-    [pbr::OriginalName("BY_UN_SORTED")] ByUnSorted = 0,
+    [pbr::OriginalName("BY_GUEST_NAME_SORT")] ByGuestNameSort = 0,
     [pbr::OriginalName("BY_ROOM")] ByRoom = 1,
   }
 
