@@ -25,7 +25,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "CjhyZXBvcnRpbmcvaW5wdXRfcGFyYW1zL2Zyb250X2Rlc2tfcmVwb3J0X21h",
             "bmlmZXN0cy5wcm90bxIiaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3Bh",
             "cmFtcxoqcHJpbWl0aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnBy",
-            "b3RvGh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90byKJBAoiRnJvbnRE",
+            "b3RvGh1wcmltaXRpdmUvcGJfbG9jYWxfZGF0ZS5wcm90byLnBAoiRnJvbnRE",
             "ZXNrQ3VycmVudERhdGVSZXBvcnRNYW5pZmVzdBIXCg9hcnJpdmFsc19yZXBv",
             "cnQYAiABKAgSGQoRZGVwYXJ0dXJlc19yZXBvcnQYAyABKAgSHgoWaW5faG91",
             "c2VfZ3Vlc3RzX3JlcG9ydBgEIAEoCBJbChRndWVzdF9yZXBvcnRfc29ydGlu",
@@ -36,21 +36,25 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "EgoKc3RhcnRfdGltZRgKIAEoCRIVCg1jYXNoX2Ryb3BfZm9yGAsgASgJEhAK",
             "CGVuZF90aW1lGAwgASgJElYKDW5vdGVfY2F0ZWdvcnkYDSABKA4yPy5ob2xt",
             "cy50eXBlcy5yZXBvcnRpbmcuaW5wdXRfcGFyYW1zLkZyb250RGVza1JlcG9y",
-            "dHNOb3Rlc0ZpbHRlchIwCgRkYXRlGAEgASgLMiIuaG9sbXMudHlwZXMucHJp",
-            "bWl0aXZlLlBiTG9jYWxEYXRlIrUBCiNGcm9udERlc2tPcHNkYXRlUmFuZ2VS",
-            "ZXBvcnRNYW5pZmVzdBJCCgpkYXRlX3JhbmdlGAEgASgLMi4uaG9sbXMudHlw",
-            "ZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlEiMKG2dlbmVy",
-            "YWxfYXZhaWxhYmlsaXR5X3JlcG9ydBgCIAEoCBIlCh1jYW5jZWxsZWRfcmVz",
-            "ZXJ2YXRpb25zX3JlcG9ydBgDIAEoCCpCChlJbkhvdXNlR3Vlc3RSZXBvcnRT",
-            "b3J0aW5nEhEKDUJZX0dVRVNUX05BTUUQABISCg5CWV9ST09NX05VTUJFUhAB",
-            "KlgKG0Zyb250RGVza1JlcG9ydHNOb3Rlc0ZpbHRlchIICgROT05FEAASDQoJ",
-            "QUxMX05PVEVTEAESDgoKRlJPTlRfREVTSxACEhAKDEhPVVNFS0VFUElORxAD",
-            "Qj1aFnJlcG9ydGluZy9pbnB1dF9wYXJhbXOqAiJIT0xNUy5UeXBlcy5SZXBv",
-            "cnRpbmcuUmVwb3J0UGFyYW1zYgZwcm90bzM="));
+            "dHNOb3Rlc0ZpbHRlchJcChhkZXBhcnR1cmVfcmVwb3J0X3NvcnRpbmcYDiAB",
+            "KA4yOi5ob2xtcy50eXBlcy5yZXBvcnRpbmcuaW5wdXRfcGFyYW1zLkRlcGFy",
+            "dHVyZVJlcG9ydFNvcnRpbmcSMAoEZGF0ZRgBIAEoCzIiLmhvbG1zLnR5cGVz",
+            "LnByaW1pdGl2ZS5QYkxvY2FsRGF0ZSK1AQojRnJvbnREZXNrT3BzZGF0ZVJh",
+            "bmdlUmVwb3J0TWFuaWZlc3QSQgoKZGF0ZV9yYW5nZRgBIAEoCzIuLmhvbG1z",
+            "LnR5cGVzLnByaW1pdGl2ZS5QYkluY2x1c2l2ZU9wc2RhdGVSYW5nZRIjChtn",
+            "ZW5lcmFsX2F2YWlsYWJpbGl0eV9yZXBvcnQYAiABKAgSJQodY2FuY2VsbGVk",
+            "X3Jlc2VydmF0aW9uc19yZXBvcnQYAyABKAgqQgoZSW5Ib3VzZUd1ZXN0UmVw",
+            "b3J0U29ydGluZxIRCg1CWV9HVUVTVF9OQU1FEAASEgoOQllfUk9PTV9OVU1C",
+            "RVIQASo9ChZEZXBhcnR1cmVSZXBvcnRTb3J0aW5nEhYKEkJZX0dVRVNUX05B",
+            "TUVfU09SVBAAEgsKB0JZX1JPT00QASpYChtGcm9udERlc2tSZXBvcnRzTm90",
+            "ZXNGaWx0ZXISCAoETk9ORRAAEg0KCUFMTF9OT1RFUxABEg4KCkZST05UX0RF",
+            "U0sQAhIQCgxIT1VTRUtFRVBJTkcQA0I9WhZyZXBvcnRpbmcvaW5wdXRfcGFy",
+            "YW1zqgIiSE9MTVMuVHlwZXMuUmVwb3J0aW5nLlJlcG9ydFBhcmFtc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.ReportParams.InHouseGuestReportSorting), typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest.Parser, new[]{ "ArrivalsReport", "DeparturesReport", "InHouseGuestsReport", "GuestReportSorting", "VehiclesReport", "NoShowsReport", "UnoccupiedRoomsReport", "CashDropReport", "StartTime", "CashDropFor", "EndTime", "NoteCategory", "Date" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.ReportParams.InHouseGuestReportSorting), typeof(global::HOLMS.Types.Reporting.ReportParams.DepartureReportSorting), typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskCurrentDateReportManifest.Parser, new[]{ "ArrivalsReport", "DeparturesReport", "InHouseGuestsReport", "GuestReportSorting", "VehiclesReport", "NoShowsReport", "UnoccupiedRoomsReport", "CashDropReport", "StartTime", "CashDropFor", "EndTime", "NoteCategory", "DepartureReportSorting", "Date" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "GeneralAvailabilityReport", "CancelledReservationsReport" }, null, null, null)
           }));
     }
@@ -61,6 +65,11 @@ namespace HOLMS.Types.Reporting.ReportParams {
   public enum InHouseGuestReportSorting {
     [pbr::OriginalName("BY_GUEST_NAME")] ByGuestName = 0,
     [pbr::OriginalName("BY_ROOM_NUMBER")] ByRoomNumber = 1,
+  }
+
+  public enum DepartureReportSorting {
+    [pbr::OriginalName("BY_GUEST_NAME_SORT")] ByGuestNameSort = 0,
+    [pbr::OriginalName("BY_ROOM")] ByRoom = 1,
   }
 
   public enum FrontDeskReportsNotesFilter {
@@ -109,6 +118,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       cashDropFor_ = other.cashDropFor_;
       endTime_ = other.endTime_;
       noteCategory_ = other.noteCategory_;
+      departureReportSorting_ = other.departureReportSorting_;
       Date = other.date_ != null ? other.Date.Clone() : null;
     }
 
@@ -249,6 +259,17 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
+    /// <summary>Field number for the "departure_report_sorting" field.</summary>
+    public const int DepartureReportSortingFieldNumber = 14;
+    private global::HOLMS.Types.Reporting.ReportParams.DepartureReportSorting departureReportSorting_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Reporting.ReportParams.DepartureReportSorting DepartureReportSorting {
+      get { return departureReportSorting_; }
+      set {
+        departureReportSorting_ = value;
+      }
+    }
+
     /// <summary>Field number for the "date" field.</summary>
     public const int DateFieldNumber = 1;
     private global::HOLMS.Types.Primitive.PbLocalDate date_;
@@ -285,6 +306,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (CashDropFor != other.CashDropFor) return false;
       if (EndTime != other.EndTime) return false;
       if (NoteCategory != other.NoteCategory) return false;
+      if (DepartureReportSorting != other.DepartureReportSorting) return false;
       if (!object.Equals(Date, other.Date)) return false;
       return true;
     }
@@ -304,6 +326,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (CashDropFor.Length != 0) hash ^= CashDropFor.GetHashCode();
       if (EndTime.Length != 0) hash ^= EndTime.GetHashCode();
       if (NoteCategory != 0) hash ^= NoteCategory.GetHashCode();
+      if (DepartureReportSorting != 0) hash ^= DepartureReportSorting.GetHashCode();
       if (date_ != null) hash ^= Date.GetHashCode();
       return hash;
     }
@@ -367,6 +390,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(104);
         output.WriteEnum((int) NoteCategory);
       }
+      if (DepartureReportSorting != 0) {
+        output.WriteRawTag(112);
+        output.WriteEnum((int) DepartureReportSorting);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -407,6 +434,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
       if (NoteCategory != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) NoteCategory);
+      }
+      if (DepartureReportSorting != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DepartureReportSorting);
       }
       if (date_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Date);
@@ -454,6 +484,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
       if (other.NoteCategory != 0) {
         NoteCategory = other.NoteCategory;
+      }
+      if (other.DepartureReportSorting != 0) {
+        DepartureReportSorting = other.DepartureReportSorting;
       }
       if (other.date_ != null) {
         if (date_ == null) {
@@ -524,6 +557,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 104: {
             noteCategory_ = (global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter) input.ReadEnum();
+            break;
+          }
+          case 112: {
+            departureReportSorting_ = (global::HOLMS.Types.Reporting.ReportParams.DepartureReportSorting) input.ReadEnum();
             break;
           }
         }
