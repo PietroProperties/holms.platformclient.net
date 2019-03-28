@@ -26,17 +26,20 @@ namespace HOLMS.Types.Folio.RPC {
             "aW9uX3JlcXVlc3QucHJvdG8SFWhvbG1zLnR5cGVzLmZvbGlvLnJwYxojbW9u",
             "ZXkvY2FyZHMvY2FyZF9zYWxlX3B1cnBvc2UucHJvdG8aOm1vbmV5L2NhcmRz",
             "L3RyYW5zYWN0aW9ucy9wYXltZW50X2NhcmRfc2FsZV9pbmRpY2F0b3IucHJv",
-            "dG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8i8QEKKEZvbGlv",
-            "U3ZjQXV0aG9yaXphdGlvbk1vZGlmaWNhdGlvblJlcXVlc3QSTAoEc2FsZRgB",
-            "IAEoCzI+LmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5Q",
-            "YXltZW50Q2FyZFNhbGVJbmRpY2F0b3ISPAoNY2hhbmdlX2Ftb3VudBgCIAEo",
-            "CzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI5Cgdw",
-            "dXJwb3NlGAMgASgLMiguaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZFNh",
-            "bGVQdXJwb3NlQhiqAhVIT0xNUy5UeXBlcy5Gb2xpby5SUENiBnByb3RvMw=="));
+            "dG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8aLmJvb2tpbmcv",
+            "aW5kaWNhdG9ycy9yZXNlcnZhdGlvbl9pbmRpY2F0b3IucHJvdG8ivAIKKEZv",
+            "bGlvU3ZjQXV0aG9yaXphdGlvbk1vZGlmaWNhdGlvblJlcXVlc3QSTAoEc2Fs",
+            "ZRgBIAEoCzI+LmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9u",
+            "cy5QYXltZW50Q2FyZFNhbGVJbmRpY2F0b3ISPAoNY2hhbmdlX2Ftb3VudBgC",
+            "IAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI5",
+            "CgdwdXJwb3NlGAMgASgLMiguaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2Fy",
+            "ZFNhbGVQdXJwb3NlEkkKC3Jlc2VydmF0aW9uGAQgASgLMjQuaG9sbXMudHlw",
+            "ZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yQhiq",
+            "AhVIT0xNUy5UeXBlcy5Gb2xpby5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardSalePurposeReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardSalePurposeReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.FolioSvcAuthorizationModificationRequest), global::HOLMS.Types.Folio.RPC.FolioSvcAuthorizationModificationRequest.Parser, new[]{ "Sale", "ChangeAmount", "Purpose" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.FolioSvcAuthorizationModificationRequest), global::HOLMS.Types.Folio.RPC.FolioSvcAuthorizationModificationRequest.Parser, new[]{ "Sale", "ChangeAmount", "Purpose", "Reservation" }, null, null, null)
           }));
     }
     #endregion
@@ -70,6 +73,7 @@ namespace HOLMS.Types.Folio.RPC {
       Sale = other.sale_ != null ? other.Sale.Clone() : null;
       ChangeAmount = other.changeAmount_ != null ? other.ChangeAmount.Clone() : null;
       Purpose = other.purpose_ != null ? other.Purpose.Clone() : null;
+      Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -110,6 +114,17 @@ namespace HOLMS.Types.Folio.RPC {
       }
     }
 
+    /// <summary>Field number for the "reservation" field.</summary>
+    public const int ReservationFieldNumber = 4;
+    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator reservation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator Reservation {
+      get { return reservation_; }
+      set {
+        reservation_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FolioSvcAuthorizationModificationRequest);
@@ -126,6 +141,7 @@ namespace HOLMS.Types.Folio.RPC {
       if (!object.Equals(Sale, other.Sale)) return false;
       if (!object.Equals(ChangeAmount, other.ChangeAmount)) return false;
       if (!object.Equals(Purpose, other.Purpose)) return false;
+      if (!object.Equals(Reservation, other.Reservation)) return false;
       return true;
     }
 
@@ -135,6 +151,7 @@ namespace HOLMS.Types.Folio.RPC {
       if (sale_ != null) hash ^= Sale.GetHashCode();
       if (changeAmount_ != null) hash ^= ChangeAmount.GetHashCode();
       if (purpose_ != null) hash ^= Purpose.GetHashCode();
+      if (reservation_ != null) hash ^= Reservation.GetHashCode();
       return hash;
     }
 
@@ -157,6 +174,10 @@ namespace HOLMS.Types.Folio.RPC {
         output.WriteRawTag(26);
         output.WriteMessage(Purpose);
       }
+      if (reservation_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Reservation);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -170,6 +191,9 @@ namespace HOLMS.Types.Folio.RPC {
       }
       if (purpose_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Purpose);
+      }
+      if (reservation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Reservation);
       }
       return size;
     }
@@ -196,6 +220,12 @@ namespace HOLMS.Types.Folio.RPC {
           purpose_ = new global::HOLMS.Types.Money.Cards.CardSalePurpose();
         }
         Purpose.MergeFrom(other.Purpose);
+      }
+      if (other.reservation_ != null) {
+        if (reservation_ == null) {
+          reservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+        }
+        Reservation.MergeFrom(other.Reservation);
       }
     }
 
@@ -226,6 +256,13 @@ namespace HOLMS.Types.Folio.RPC {
               purpose_ = new global::HOLMS.Types.Money.Cards.CardSalePurpose();
             }
             input.ReadMessage(purpose_);
+            break;
+          }
+          case 34: {
+            if (reservation_ == null) {
+              reservation_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+            }
+            input.ReadMessage(reservation_);
             break;
           }
         }
