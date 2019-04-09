@@ -47,6 +47,12 @@ message ReservationSearchSvcGetAssociatedHoldsResponse {
 	.holms.types.booking.reservations.ReservationWithManagementHold reservation_with_management_hold = 1;
 }
 
+message ReservationSearchDuringDateRangeRequest {
+	.holms.types.primitive.PbLocalDate start_date= 1;
+	.holms.types.primitive.PbLocalDate end_date= 2;
+	bool include_canceled = 3;
+}
+
 service ReservationSearchSvc {
 	// Get all of type - no date
 	rpc GetFilteredReservationList (ReservationSearchSvcGetFilteredReservationListRequest)
@@ -80,5 +86,8 @@ service ReservationSearchSvc {
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
 	rpc GetAssociatedManagementHolds(.holms.types.booking.indicators.ReservationIndicator)
 		returns (ReservationSearchSvcGetAssociatedHoldsResponse);
+
+	rpc GetReservationsInDateRange(ReservationSearchDuringDateRangeRequest)
+		returns (ReservationSearchSvcGetFilteredReservationListResponse);
 }
 
