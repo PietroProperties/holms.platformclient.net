@@ -51,11 +51,15 @@ namespace HOLMS.Types.Booking.RPC {
             "ciKbAQouUmVzZXJ2YXRpb25TZWFyY2hTdmNHZXRBc3NvY2lhdGVkSG9sZHNS",
             "ZXNwb25zZRJpCiByZXNlcnZhdGlvbl93aXRoX21hbmFnZW1lbnRfaG9sZBgB",
             "IAEoCzI/LmhvbG1zLnR5cGVzLmJvb2tpbmcucmVzZXJ2YXRpb25zLlJlc2Vy",
-            "dmF0aW9uV2l0aE1hbmFnZW1lbnRIb2xkKrQBCi9SZXNlcnZhdGlvblNlYXJj",
+            "dmF0aW9uV2l0aE1hbmFnZW1lbnRIb2xkIrEBCidSZXNlcnZhdGlvblNlYXJj",
+            "aER1cmluZ0RhdGVSYW5nZVJlcXVlc3QSNgoKc3RhcnRfZGF0ZRgBIAEoCzIi",
+            "LmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkxvY2FsRGF0ZRI0CghlbmRfZGF0",
+            "ZRgCIAEoCzIiLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkxvY2FsRGF0ZRIY",
+            "ChBpbmNsdWRlX2NhbmNlbGVkGAMgASgIKrQBCi9SZXNlcnZhdGlvblNlYXJj",
             "aFN2Y0dldFJlc2VydmF0aW9uU3VtbWFyeVJlc3VsdBI8CjhSRVNFUlZBVElP",
             "Tl9TRUFSQ0hfU1ZDX0dFVF9SRVNFUlZBVElPTl9TVU1NQVJZX1JFU1VMVF9P",
             "SxAAEkMKP1JFU0VSVkFUSU9OX1NFQVJDSF9TVkNfR0VUX1JFU0VSVkFUSU9O",
-            "X1NVTU1BUllfUkVTVUxUX05PVF9GT1VORBABMqAOChRSZXNlcnZhdGlvblNl",
+            "X1NVTU1BUllfUkVTVUxUX05PVF9GT1VORBABMtIPChRSZXNlcnZhdGlvblNl",
             "YXJjaFN2YxK9AQoaR2V0RmlsdGVyZWRSZXNlcnZhdGlvbkxpc3QSTi5ob2xt",
             "cy50eXBlcy5ib29raW5nLnJwYy5SZXNlcnZhdGlvblNlYXJjaFN2Y0dldEZp",
             "bHRlcmVkUmVzZXJ2YXRpb25MaXN0UmVxdWVzdBpPLmhvbG1zLnR5cGVzLmJv",
@@ -96,7 +100,11 @@ namespace HOLMS.Types.Booking.RPC {
             "ZWRNYW5hZ2VtZW50SG9sZHMSNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGlj",
             "YXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3IaRy5ob2xtcy50eXBlcy5ib29r",
             "aW5nLnJwYy5SZXNlcnZhdGlvblNlYXJjaFN2Y0dldEFzc29jaWF0ZWRIb2xk",
-            "c1Jlc3BvbnNlQhqqAhdIT0xNUy5UeXBlcy5Cb29raW5nLlJQQ2IGcHJvdG8z"));
+            "c1Jlc3BvbnNlEq8BChpHZXRSZXNlcnZhdGlvbnNJbkRhdGVSYW5nZRJALmhv",
+            "bG1zLnR5cGVzLmJvb2tpbmcucnBjLlJlc2VydmF0aW9uU2VhcmNoRHVyaW5n",
+            "RGF0ZVJhbmdlUmVxdWVzdBpPLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlJl",
+            "c2VydmF0aW9uU2VhcmNoU3ZjR2V0RmlsdGVyZWRSZXNlcnZhdGlvbkxpc3RS",
+            "ZXNwb25zZUIaqgIXSE9MTVMuVHlwZXMuQm9va2luZy5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.QueryFilterReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationSummaryReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationManagementHoldReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetReservationSummaryResult), }, new pbr::GeneratedClrTypeInfo[] {
@@ -106,7 +114,8 @@ namespace HOLMS.Types.Booking.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest), global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest.Parser, new[]{ "SearchArg" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetReservationSummaryResponse), global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetReservationSummaryResponse.Parser, new[]{ "Result", "ReservationSummary" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest), global::HOLMS.Types.Booking.RPC.GetReservationSummariesRequest.Parser, new[]{ "Reservations" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse), global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse.Parser, new[]{ "ReservationWithManagementHold" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse), global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse.Parser, new[]{ "ReservationWithManagementHold" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.ReservationSearchDuringDateRangeRequest), global::HOLMS.Types.Booking.RPC.ReservationSearchDuringDateRangeRequest.Parser, new[]{ "StartDate", "EndDate", "IncludeCanceled" }, null, null, null)
           }));
     }
     #endregion
@@ -1038,6 +1047,191 @@ namespace HOLMS.Types.Booking.RPC {
               reservationWithManagementHold_ = new global::HOLMS.Types.Booking.Reservations.ReservationWithManagementHold();
             }
             input.ReadMessage(reservationWithManagementHold_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class ReservationSearchDuringDateRangeRequest : pb::IMessage<ReservationSearchDuringDateRangeRequest> {
+    private static readonly pb::MessageParser<ReservationSearchDuringDateRangeRequest> _parser = new pb::MessageParser<ReservationSearchDuringDateRangeRequest>(() => new ReservationSearchDuringDateRangeRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ReservationSearchDuringDateRangeRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Booking.RPC.ReservationSearchSvcReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReservationSearchDuringDateRangeRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReservationSearchDuringDateRangeRequest(ReservationSearchDuringDateRangeRequest other) : this() {
+      StartDate = other.startDate_ != null ? other.StartDate.Clone() : null;
+      EndDate = other.endDate_ != null ? other.EndDate.Clone() : null;
+      includeCanceled_ = other.includeCanceled_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReservationSearchDuringDateRangeRequest Clone() {
+      return new ReservationSearchDuringDateRangeRequest(this);
+    }
+
+    /// <summary>Field number for the "start_date" field.</summary>
+    public const int StartDateFieldNumber = 1;
+    private global::HOLMS.Types.Primitive.PbLocalDate startDate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate StartDate {
+      get { return startDate_; }
+      set {
+        startDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "end_date" field.</summary>
+    public const int EndDateFieldNumber = 2;
+    private global::HOLMS.Types.Primitive.PbLocalDate endDate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate EndDate {
+      get { return endDate_; }
+      set {
+        endDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "include_canceled" field.</summary>
+    public const int IncludeCanceledFieldNumber = 3;
+    private bool includeCanceled_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IncludeCanceled {
+      get { return includeCanceled_; }
+      set {
+        includeCanceled_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ReservationSearchDuringDateRangeRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ReservationSearchDuringDateRangeRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(StartDate, other.StartDate)) return false;
+      if (!object.Equals(EndDate, other.EndDate)) return false;
+      if (IncludeCanceled != other.IncludeCanceled) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (startDate_ != null) hash ^= StartDate.GetHashCode();
+      if (endDate_ != null) hash ^= EndDate.GetHashCode();
+      if (IncludeCanceled != false) hash ^= IncludeCanceled.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (startDate_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(StartDate);
+      }
+      if (endDate_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(EndDate);
+      }
+      if (IncludeCanceled != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IncludeCanceled);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (startDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartDate);
+      }
+      if (endDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EndDate);
+      }
+      if (IncludeCanceled != false) {
+        size += 1 + 1;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ReservationSearchDuringDateRangeRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.startDate_ != null) {
+        if (startDate_ == null) {
+          startDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        StartDate.MergeFrom(other.StartDate);
+      }
+      if (other.endDate_ != null) {
+        if (endDate_ == null) {
+          endDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        EndDate.MergeFrom(other.EndDate);
+      }
+      if (other.IncludeCanceled != false) {
+        IncludeCanceled = other.IncludeCanceled;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (startDate_ == null) {
+              startDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(startDate_);
+            break;
+          }
+          case 18: {
+            if (endDate_ == null) {
+              endDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(endDate_);
+            break;
+          }
+          case 24: {
+            IncludeCanceled = input.ReadBool();
             break;
           }
         }
