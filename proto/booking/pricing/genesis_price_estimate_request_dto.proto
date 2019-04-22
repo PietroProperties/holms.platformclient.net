@@ -13,4 +13,5 @@ message GenesisPriceEstimateRequestDTO {
     // NOTE(DA) qual tombstone = 3
     int32 number_adult_guests = 4;
     repeated string reservation_tags = 5;
+    bool is_mock_price_required_for_group =6;
 }
