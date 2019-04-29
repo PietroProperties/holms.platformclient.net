@@ -27,20 +27,20 @@ namespace HOLMS.Types.Booking.Reservations {
             "YXRpb25zGipwcmltaXRpdmUvcGJfaW5jbHVzaXZlX29wc2RhdGVfcmFuZ2Uu",
             "cHJvdG8aLmJvb2tpbmcvaW5kaWNhdG9ycy9yZXNlcnZhdGlvbl9pbmRpY2F0",
             "b3IucHJvdG8aK3N1cHBseS9yb29tX3R5cGVzL3Jvb21fdHlwZV9pbmRpY2F0",
-            "b3IucHJvdG8i4gIKHlJlc2VydmF0aW9uRlJQQW1lbmRtZW50UmVxdWVzdBJC",
+            "b3IucHJvdG8i4AIKHlJlc2VydmF0aW9uRlJQQW1lbmRtZW50UmVxdWVzdBJC",
             "CgpkYXRlX3JhbmdlGAEgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBi",
             "SW5jbHVzaXZlT3BzZGF0ZVJhbmdlEkkKC3Jlc2VydmF0aW9uGAIgASgLMjQu",
             "aG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5k",
             "aWNhdG9yEkMKCXJvb21fdHlwZRgDIAEoCzIwLmhvbG1zLnR5cGVzLnN1cHBs",
             "eS5yb29tX3R5cGVzLlJvb21UeXBlSW5kaWNhdG9yEhkKEWFkdWx0X2d1ZXN0",
             "X2NvdW50GAYgASgFEhkKEWNoaWxkX2d1ZXN0X2NvdW50GAcgASgFEgwKBHRh",
-            "Z3MYCCADKAkSKAogaXNfbW9ja19wcmljZV9yZXF1aXJlZF9mb3JfZ3JvdXAY",
-            "CSABKAhCOVoUYm9va2luZy9yZXNlcnZhdGlvbnOqAiBIT0xNUy5UeXBlcy5C",
-            "b29raW5nLlJlc2VydmF0aW9uc2IGcHJvdG8z"));
+            "Z3MYCCADKAkSJgoeaXNfZ3JvdXBfaG9sZF91cGRhdGVfcmVxdWVzdGVkGAkg",
+            "ASgIQjlaFGJvb2tpbmcvcmVzZXJ2YXRpb25zqgIgSE9MTVMuVHlwZXMuQm9v",
+            "a2luZy5SZXNlcnZhdGlvbnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest), global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest.Parser, new[]{ "DateRange", "Reservation", "RoomType", "AdultGuestCount", "ChildGuestCount", "Tags", "IsMockPriceRequiredForGroup" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest), global::HOLMS.Types.Booking.Reservations.ReservationFRPAmendmentRequest.Parser, new[]{ "DateRange", "Reservation", "RoomType", "AdultGuestCount", "ChildGuestCount", "Tags", "IsGroupHoldUpdateRequested" }, null, null, null)
           }));
     }
     #endregion
@@ -77,7 +77,7 @@ namespace HOLMS.Types.Booking.Reservations {
       adultGuestCount_ = other.adultGuestCount_;
       childGuestCount_ = other.childGuestCount_;
       tags_ = other.tags_.Clone();
-      isMockPriceRequiredForGroup_ = other.isMockPriceRequiredForGroup_;
+      isGroupHoldUpdateRequested_ = other.isGroupHoldUpdateRequested_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -153,14 +153,14 @@ namespace HOLMS.Types.Booking.Reservations {
       get { return tags_; }
     }
 
-    /// <summary>Field number for the "is_mock_price_required_for_group" field.</summary>
-    public const int IsMockPriceRequiredForGroupFieldNumber = 9;
-    private bool isMockPriceRequiredForGroup_;
+    /// <summary>Field number for the "is_group_hold_update_requested" field.</summary>
+    public const int IsGroupHoldUpdateRequestedFieldNumber = 9;
+    private bool isGroupHoldUpdateRequested_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsMockPriceRequiredForGroup {
-      get { return isMockPriceRequiredForGroup_; }
+    public bool IsGroupHoldUpdateRequested {
+      get { return isGroupHoldUpdateRequested_; }
       set {
-        isMockPriceRequiredForGroup_ = value;
+        isGroupHoldUpdateRequested_ = value;
       }
     }
 
@@ -183,7 +183,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (AdultGuestCount != other.AdultGuestCount) return false;
       if (ChildGuestCount != other.ChildGuestCount) return false;
       if(!tags_.Equals(other.tags_)) return false;
-      if (IsMockPriceRequiredForGroup != other.IsMockPriceRequiredForGroup) return false;
+      if (IsGroupHoldUpdateRequested != other.IsGroupHoldUpdateRequested) return false;
       return true;
     }
 
@@ -196,7 +196,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (AdultGuestCount != 0) hash ^= AdultGuestCount.GetHashCode();
       if (ChildGuestCount != 0) hash ^= ChildGuestCount.GetHashCode();
       hash ^= tags_.GetHashCode();
-      if (IsMockPriceRequiredForGroup != false) hash ^= IsMockPriceRequiredForGroup.GetHashCode();
+      if (IsGroupHoldUpdateRequested != false) hash ^= IsGroupHoldUpdateRequested.GetHashCode();
       return hash;
     }
 
@@ -228,9 +228,9 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteInt32(ChildGuestCount);
       }
       tags_.WriteTo(output, _repeated_tags_codec);
-      if (IsMockPriceRequiredForGroup != false) {
+      if (IsGroupHoldUpdateRequested != false) {
         output.WriteRawTag(72);
-        output.WriteBool(IsMockPriceRequiredForGroup);
+        output.WriteBool(IsGroupHoldUpdateRequested);
       }
     }
 
@@ -253,7 +253,7 @@ namespace HOLMS.Types.Booking.Reservations {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChildGuestCount);
       }
       size += tags_.CalculateSize(_repeated_tags_codec);
-      if (IsMockPriceRequiredForGroup != false) {
+      if (IsGroupHoldUpdateRequested != false) {
         size += 1 + 1;
       }
       return size;
@@ -289,8 +289,8 @@ namespace HOLMS.Types.Booking.Reservations {
         ChildGuestCount = other.ChildGuestCount;
       }
       tags_.Add(other.tags_);
-      if (other.IsMockPriceRequiredForGroup != false) {
-        IsMockPriceRequiredForGroup = other.IsMockPriceRequiredForGroup;
+      if (other.IsGroupHoldUpdateRequested != false) {
+        IsGroupHoldUpdateRequested = other.IsGroupHoldUpdateRequested;
       }
     }
 
@@ -336,7 +336,7 @@ namespace HOLMS.Types.Booking.Reservations {
             break;
           }
           case 72: {
-            IsMockPriceRequiredForGroup = input.ReadBool();
+            IsGroupHoldUpdateRequested = input.ReadBool();
             break;
           }
         }

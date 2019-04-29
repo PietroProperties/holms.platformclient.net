@@ -17,6 +17,7 @@ message FRPAmendmentResponse {
 		CLOSED_TO_ARRIVAL_RESTRICTION = 6;
 		DIFFERENT_PROPERTY = 7;
 		ILLEGAL_ARRIVAL_AMENDMENT_AFTER_CHECKIN = 8;
+		ERROR_UPDATING_HOLDS = 9;
 	}
 	AmendmentResult result = 2;
 }
