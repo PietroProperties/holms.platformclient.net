@@ -32,6 +32,8 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingRequest> __Marshaller_ReservationInvoiceMappingRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse> __Marshaller_ReservationInvoiceMappingResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest> __Marshaller_InvoiceVoidRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest> __Marshaller_IncreaseGroupHoldForReservationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse> __Marshaller_IncreaseGroupHoldForReservationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings> __Method_All = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings>(
         grpc::MethodType.Unary,
@@ -152,6 +154,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_GroupIndicator,
         __Marshaller_GroupBookingExt);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest, global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse> __Method_IncreaseEventGroupHoldForNewReservation = new grpc::Method<global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest, global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "IncreaseEventGroupHoldForNewReservation",
+        __Marshaller_IncreaseGroupHoldForReservationRequest,
+        __Marshaller_IncreaseGroupHoldForReservationResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -242,6 +251,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Groups.GroupBookingExt> CreateWithoutSave(global::HOLMS.Types.CRM.Groups.GroupIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse> IncreaseEventGroupHoldForNewReservation(global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -543,6 +557,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_CreateWithoutSave, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse IncreaseEventGroupHoldForNewReservation(global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return IncreaseEventGroupHoldForNewReservation(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse IncreaseEventGroupHoldForNewReservation(global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_IncreaseEventGroupHoldForNewReservation, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse> IncreaseEventGroupHoldForNewReservationAsync(global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return IncreaseEventGroupHoldForNewReservationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse> IncreaseEventGroupHoldForNewReservationAsync(global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_IncreaseEventGroupHoldForNewReservation, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GroupBookingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -571,7 +601,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_CreateReservationInvoiceMappings, serviceImpl.CreateReservationInvoiceMappings)
           .AddMethod(__Method_GetReservationInvoiceFromGroupId, serviceImpl.GetReservationInvoiceFromGroupId)
           .AddMethod(__Method_VoidInvoiceById, serviceImpl.VoidInvoiceById)
-          .AddMethod(__Method_CreateWithoutSave, serviceImpl.CreateWithoutSave).Build();
+          .AddMethod(__Method_CreateWithoutSave, serviceImpl.CreateWithoutSave)
+          .AddMethod(__Method_IncreaseEventGroupHoldForNewReservation, serviceImpl.IncreaseEventGroupHoldForNewReservation).Build();
     }
 
   }
