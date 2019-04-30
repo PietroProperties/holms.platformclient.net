@@ -36,5 +36,6 @@ message GroupBookingFolioState {
 
         repeated .holms.types.folio.FolioIndicator client_folios = 17;
 		repeated .holms.types.folio.ReservationTaxAssessment reservation_tax_assess = 18;
+	.holms.types.primitive.MonetaryAmount max_refund = 19;
 }
 

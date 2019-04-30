@@ -29,7 +29,7 @@ namespace HOLMS.Types.Folio {
             "ZW50LnByb3RvGhtmb2xpby9mb2xpb19pbmRpY2F0b3IucHJvdG8aGmZvbGlv",
             "L3RheF9hc3Nlc3NtZW50LnByb3RvGh9wcmltaXRpdmUvbW9uZXRhcnlfYW1v",
             "dW50LnByb3RvGiZmb2xpby9yZXNlcnZhdGlvbl90YXhfYXNzZXNzbWVudC5w",
-            "cm90byLzCQoWR3JvdXBCb29raW5nRm9saW9TdGF0ZRI/ChFlZmZlY3RpdmVf",
+            "cm90byKuCgoWR3JvdXBCb29raW5nRm9saW9TdGF0ZRI/ChFlZmZlY3RpdmVf",
             "Y2hhcmdlcxgBIAMoCzIkLmhvbG1zLnR5cGVzLmZvbGlvLkZvbGlvQXRvbWlj",
             "Q2hhcmdlEjgKDGNhcmRfcmVmdW5kcxgCIAMoCzIiLmhvbG1zLnR5cGVzLmZv",
             "bGlvLkZvbGlvQ2FyZFJlZnVuZBI0CgpjYXJkX3NhbGVzGAMgAygLMiAuaG9s",
@@ -57,11 +57,13 @@ namespace HOLMS.Types.Folio {
             "TW9uZXRhcnlBbW91bnQSOAoNY2xpZW50X2ZvbGlvcxgRIAMoCzIhLmhvbG1z",
             "LnR5cGVzLmZvbGlvLkZvbGlvSW5kaWNhdG9yEksKFnJlc2VydmF0aW9uX3Rh",
             "eF9hc3Nlc3MYEiADKAsyKy5ob2xtcy50eXBlcy5mb2xpby5SZXNlcnZhdGlv",
-            "blRheEFzc2Vzc21lbnRCFKoCEUhPTE1TLlR5cGVzLkZvbGlvYgZwcm90bzM="));
+            "blRheEFzc2Vzc21lbnQSOQoKbWF4X3JlZnVuZBgTIAEoCzIlLmhvbG1zLnR5",
+            "cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudEIUqgIRSE9MTVMuVHlwZXMu",
+            "Rm9saW9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.FolioIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.TaxAssessmentReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.ReservationTaxAssessmentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.GroupBookingFolioState), global::HOLMS.Types.Folio.GroupBookingFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentCharges", "AnticipatedCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "CurrentDueFromGroup", "AnticipatedSettlementDueFromGroup", "ClientFolios", "ReservationTaxAssess" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.GroupBookingFolioState), global::HOLMS.Types.Folio.GroupBookingFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentCharges", "AnticipatedCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "CurrentDueFromGroup", "AnticipatedSettlementDueFromGroup", "ClientFolios", "ReservationTaxAssess", "MaxRefund" }, null, null, null)
           }));
     }
     #endregion
@@ -110,6 +112,7 @@ namespace HOLMS.Types.Folio {
       AnticipatedSettlementDueFromGroup = other.anticipatedSettlementDueFromGroup_ != null ? other.AnticipatedSettlementDueFromGroup.Clone() : null;
       clientFolios_ = other.clientFolios_.Clone();
       reservationTaxAssess_ = other.reservationTaxAssess_.Clone();
+      MaxRefund = other.maxRefund_ != null ? other.MaxRefund.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -304,6 +307,17 @@ namespace HOLMS.Types.Folio {
       get { return reservationTaxAssess_; }
     }
 
+    /// <summary>Field number for the "max_refund" field.</summary>
+    public const int MaxRefundFieldNumber = 19;
+    private global::HOLMS.Types.Primitive.MonetaryAmount maxRefund_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount MaxRefund {
+      get { return maxRefund_; }
+      set {
+        maxRefund_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GroupBookingFolioState);
@@ -335,6 +349,7 @@ namespace HOLMS.Types.Folio {
       if (!object.Equals(AnticipatedSettlementDueFromGroup, other.AnticipatedSettlementDueFromGroup)) return false;
       if(!clientFolios_.Equals(other.clientFolios_)) return false;
       if(!reservationTaxAssess_.Equals(other.reservationTaxAssess_)) return false;
+      if (!object.Equals(MaxRefund, other.MaxRefund)) return false;
       return true;
     }
 
@@ -359,6 +374,7 @@ namespace HOLMS.Types.Folio {
       if (anticipatedSettlementDueFromGroup_ != null) hash ^= AnticipatedSettlementDueFromGroup.GetHashCode();
       hash ^= clientFolios_.GetHashCode();
       hash ^= reservationTaxAssess_.GetHashCode();
+      if (maxRefund_ != null) hash ^= MaxRefund.GetHashCode();
       return hash;
     }
 
@@ -408,6 +424,10 @@ namespace HOLMS.Types.Folio {
       }
       clientFolios_.WriteTo(output, _repeated_clientFolios_codec);
       reservationTaxAssess_.WriteTo(output, _repeated_reservationTaxAssess_codec);
+      if (maxRefund_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(MaxRefund);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -445,6 +465,9 @@ namespace HOLMS.Types.Folio {
       }
       size += clientFolios_.CalculateSize(_repeated_clientFolios_codec);
       size += reservationTaxAssess_.CalculateSize(_repeated_reservationTaxAssess_codec);
+      if (maxRefund_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(MaxRefund);
+      }
       return size;
     }
 
@@ -506,6 +529,12 @@ namespace HOLMS.Types.Folio {
       }
       clientFolios_.Add(other.clientFolios_);
       reservationTaxAssess_.Add(other.reservationTaxAssess_);
+      if (other.maxRefund_ != null) {
+        if (maxRefund_ == null) {
+          maxRefund_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        MaxRefund.MergeFrom(other.MaxRefund);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -607,6 +636,13 @@ namespace HOLMS.Types.Folio {
           }
           case 146: {
             reservationTaxAssess_.AddEntriesFrom(input, _repeated_reservationTaxAssess_codec);
+            break;
+          }
+          case 154: {
+            if (maxRefund_ == null) {
+              maxRefund_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(maxRefund_);
             break;
           }
         }
