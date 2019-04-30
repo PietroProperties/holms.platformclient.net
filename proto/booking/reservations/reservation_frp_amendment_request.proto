@@ -16,5 +16,6 @@ message ReservationFRPAmendmentRequest {
     int32 adult_guest_count = 6;
     int32 child_guest_count = 7;
     repeated string tags = 8;
+    bool is_group_hold_update_requested = 9;
 }
 

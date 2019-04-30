@@ -16,4 +16,5 @@ message OpenPriceEstimateRequest {
 	bool tax_exempt = 5;
 	int32 adult_guest_count = 6;
 	repeated string reservation_tags = 7;
+	bool is_mock_price_required_for_group =8;
 }

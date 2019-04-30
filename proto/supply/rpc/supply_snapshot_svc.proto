@@ -14,6 +14,7 @@ message SupplySnapshotSvcSnapshotWithTagsReq {
 	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
 	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
 	repeated string reservation_tags = 3;
+	bool is_mock_price_required_without_holds = 4;
 }
 
 message IncidentalSnapshotRequest {
