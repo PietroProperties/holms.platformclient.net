@@ -12,15 +12,13 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Reservations {
                 ImmutableTagSet tags,
                 ReservationIndicator ri,
                 int adults,
-                int children,
-                bool isGroupHoldUpdateRequested) {
+                int children) {
             DateRange = dr;
             RoomType = rt;
             Tags = tags;
             Reservation = ri;
             NumberAdults = adults;
             NumberChildren = children;
-            IsGroupHoldUpdateRequested = isGroupHoldUpdateRequested;
         }
 
         public InclusiveOpsdateRange DateRange;
@@ -29,7 +27,6 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Reservations {
         public ReservationIndicator Reservation;
         public int NumberAdults;
         public int NumberChildren;
-        public bool IsGroupHoldUpdateRequested;
 
         public ReservationFRPAmendmentRequest Build() {
             var request = new ReservationFRPAmendmentRequest() {
@@ -37,8 +34,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Reservations {
                 RoomType = RoomType,
                 DateRange = DateRange.ToPB,
                 AdultGuestCount = NumberAdults,
-                ChildGuestCount = NumberChildren,
-                IsGroupHoldUpdateRequested = IsGroupHoldUpdateRequested
+                ChildGuestCount = NumberChildren
             };
 
             request.Tags.Add(Tags.GetDescriptors());
