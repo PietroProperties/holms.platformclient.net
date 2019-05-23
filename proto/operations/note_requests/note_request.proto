@@ -7,6 +7,7 @@ option go_package = "operations/noterequests";
 import "operations/note_requests/note_request_indicator.proto";
 import "operations/note_requests/note_category.proto";
 import "operations/note_requests/note_type.proto";
+import "supply/room_types/room_type.proto";
 
 message NoteRequest {
 	.holms.types.operations.note_requests.NoteRequestIndicator entity_id = 1;
@@ -15,4 +16,5 @@ message NoteRequest {
 	NoteCategory department = 3;
 	NoteType note_type = 4;
 	bool available_on_website = 5;
+	repeated .holms.types.supply.room_types.RoomType request_room_type= 6;
 }

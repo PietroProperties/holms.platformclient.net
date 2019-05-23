@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package holms.types.operations.note_requests_room_types;
+option csharp_namespace = "HOLMS.Types.Operations.NoteRequestsRoomTypes";
+option go_package = "operations/noterequestsroomtypes";
+
+import "operations/note_requests_room_types/note_request_room_type_indicator.proto";
+import "operations/note_requests/note_request_indicator.proto";
+import "supply/room_types/room_type_indicator.proto";
+
+message NoteRequestRoomTypes {
+	.holms.types.operations.note_requests_room_types.NoteRequestRoomTypeIndicator entity_id = 1;
+	.holms.types.operations.note_requests.NoteRequestIndicator note_request_id = 2;
+	.holms.types.supply.room_types.RoomTypeIndicator room_type_id = 3;
+	}
