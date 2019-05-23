@@ -161,6 +161,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_IncreaseGroupHoldForReservationRequest,
         __Marshaller_IncreaseGroupHoldForReservationResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Groups.GroupBooking, global::Google.Protobuf.WellKnownTypes.Empty> __Method_FolioSync = new grpc::Method<global::HOLMS.Types.Booking.Groups.GroupBooking, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "FolioSync",
+        __Marshaller_GroupBooking,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -256,6 +263,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse> IncreaseEventGroupHoldForNewReservation(global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> FolioSync(global::HOLMS.Types.Booking.Groups.GroupBooking request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -573,6 +585,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_IncreaseEventGroupHoldForNewReservation, null, options, request);
       }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty FolioSync(global::HOLMS.Types.Booking.Groups.GroupBooking request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return FolioSync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty FolioSync(global::HOLMS.Types.Booking.Groups.GroupBooking request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_FolioSync, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> FolioSyncAsync(global::HOLMS.Types.Booking.Groups.GroupBooking request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return FolioSyncAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> FolioSyncAsync(global::HOLMS.Types.Booking.Groups.GroupBooking request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_FolioSync, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GroupBookingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -602,7 +630,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetReservationInvoiceFromGroupId, serviceImpl.GetReservationInvoiceFromGroupId)
           .AddMethod(__Method_VoidInvoiceById, serviceImpl.VoidInvoiceById)
           .AddMethod(__Method_CreateWithoutSave, serviceImpl.CreateWithoutSave)
-          .AddMethod(__Method_IncreaseEventGroupHoldForNewReservation, serviceImpl.IncreaseEventGroupHoldForNewReservation).Build();
+          .AddMethod(__Method_IncreaseEventGroupHoldForNewReservation, serviceImpl.IncreaseEventGroupHoldForNewReservation)
+          .AddMethod(__Method_FolioSync, serviceImpl.FolioSync).Build();
     }
 
   }
