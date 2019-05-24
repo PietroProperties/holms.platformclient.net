@@ -24,19 +24,20 @@ namespace HOLMS.Types.Booking.Reservations {
           string.Concat(
             "CjFib29raW5nL3Jlc2VydmF0aW9ucy9mcnBfYW1lbmRtZW50X3Jlc3BvbnNl",
             "LnByb3RvEiBob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucxouYm9v",
-            "a2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90byK/",
+            "a2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90byLZ",
             "AwoURlJQQW1lbmRtZW50UmVzcG9uc2USSwoNcmVzX2luZGljYXRvchgBIAEo",
             "CzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlv",
             "bkluZGljYXRvchJWCgZyZXN1bHQYAiABKA4yRi5ob2xtcy50eXBlcy5ib29r",
             "aW5nLnJlc2VydmF0aW9ucy5GUlBBbWVuZG1lbnRSZXNwb25zZS5BbWVuZG1l",
-            "bnRSZXN1bHQigQIKD0FtZW5kbWVudFJlc3VsdBIOCgpTVUNDRVNTRlVMEAAS",
+            "bnRSZXN1bHQimwIKD0FtZW5kbWVudFJlc3VsdBIOCgpTVUNDRVNTRlVMEAAS",
             "DwoLVU5BVkFJTEFCTEUQARIPCgtVTlBSSUNFQUJMRRACEiwKKFBPTElDWV9W",
             "SU9MQVRJT05fVE9PX01BTllfR1VFU1RTX0lOX1JPT00QAxImCiJNSU5JTVVN",
             "X0xFTkdUSF9PRl9TVEFZX1JFU1RSSUNUSU9OEAUSIQodQ0xPU0VEX1RPX0FS",
             "UklWQUxfUkVTVFJJQ1RJT04QBhIWChJESUZGRVJFTlRfUFJPUEVSVFkQBxIr",
-            "CidJTExFR0FMX0FSUklWQUxfQU1FTkRNRU5UX0FGVEVSX0NIRUNLSU4QCEI5",
-            "WhRib29raW5nL3Jlc2VydmF0aW9uc6oCIEhPTE1TLlR5cGVzLkJvb2tpbmcu",
-            "UmVzZXJ2YXRpb25zYgZwcm90bzM="));
+            "CidJTExFR0FMX0FSUklWQUxfQU1FTkRNRU5UX0FGVEVSX0NIRUNLSU4QCBIY",
+            "ChRFUlJPUl9VUERBVElOR19IT0xEUxAJQjlaFGJvb2tpbmcvcmVzZXJ2YXRp",
+            "b25zqgIgSE9MTVMuVHlwZXMuQm9va2luZy5SZXNlcnZhdGlvbnNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -209,6 +210,7 @@ namespace HOLMS.Types.Booking.Reservations {
         [pbr::OriginalName("CLOSED_TO_ARRIVAL_RESTRICTION")] ClosedToArrivalRestriction = 6,
         [pbr::OriginalName("DIFFERENT_PROPERTY")] DifferentProperty = 7,
         [pbr::OriginalName("ILLEGAL_ARRIVAL_AMENDMENT_AFTER_CHECKIN")] IllegalArrivalAmendmentAfterCheckin = 8,
+        [pbr::OriginalName("ERROR_UPDATING_HOLDS")] ErrorUpdatingHolds = 9,
       }
 
     }
