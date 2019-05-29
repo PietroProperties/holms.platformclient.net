@@ -81,7 +81,7 @@ namespace HOLMS.Types.Booking.RPC {
             "ZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGljYXRvchJD",
             "Cglyb29tX3R5cGUYAiABKAsyMC5ob2xtcy50eXBlcy5zdXBwbHkucm9vbV90",
             "eXBlcy5Sb29tVHlwZUluZGljYXRvciI5CidJbmNyZWFzZUdyb3VwSG9sZEZv",
-            "clJlc2VydmF0aW9uUmVzcG9uc2USDgoGcmVzdWx0GAEgASgIMqMRCg9Hcm91",
+            "clJlc2VydmF0aW9uUmVzcG9uc2USDgoGcmVzdWx0GAEgASgIMvIRCg9Hcm91",
             "cEJvb2tpbmdTdmMSUgoDQWxsEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GjMu",
             "aG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBCb29raW5nU3ZjQWxsQm9v",
             "a2luZ3MSXQoGQ3JlYXRlEiYuaG9sbXMudHlwZXMuY3JtLmdyb3Vwcy5Hcm91",
@@ -131,8 +131,9 @@ namespace HOLMS.Types.Booking.RPC {
             "dGlvbhI/LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkluY3JlYXNlR3JvdXBI",
             "b2xkRm9yUmVzZXJ2YXRpb25SZXF1ZXN0GkAuaG9sbXMudHlwZXMuYm9va2lu",
             "Zy5ycGMuSW5jcmVhc2VHcm91cEhvbGRGb3JSZXNlcnZhdGlvblJlc3BvbnNl",
-            "QidaC2Jvb2tpbmcvcnBjqgIXSE9MTVMuVHlwZXMuQm9va2luZy5SUENiBnBy",
-            "b3RvMw=="));
+            "Ek0KCUZvbGlvU3luYxIoLmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdy",
+            "b3VwQm9va2luZxoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eUInWgtib29raW5n",
+            "L3JwY6oCF0hPTE1TLlR5cGVzLkJvb2tpbmcuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingExtReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantityReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.PriceUpdateRequestReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationSummaryReflection.Descriptor, global::HOLMS.Types.Booking.Groups.PaymentReservationMappingReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingsInvoicesReflection.Descriptor, global::HOLMS.Types.Booking.Groups.ReservationInvoicesReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
