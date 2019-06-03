@@ -22,4 +22,5 @@ message ClosedMerchantBatch {
 	google.protobuf.Timestamp created_at = 8;
 	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture captures = 9;
 	repeated holms.types.money.cards.transactions.PaymentCardRefund refunds = 10;
+	int32 sequence_number = 11;
 }
