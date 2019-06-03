@@ -9,6 +9,7 @@ import "booking/guarantees/card_guarantee_tender_result.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "money/cards/customer_payment_card_indicator.proto";
 import "money/cards/not_present_payment_card.proto";
+import "booking/guarantees/guarantee_changes.proto";
 
 message ResGSvcTenderCheckGuaranteeRequest {
 	.holms.types.booking.indicators.ReservationIndicator reservation = 1;
@@ -51,5 +52,8 @@ service ReservationGuaranteeSvc {
 
 	rpc TenderStoredNotPresentCardGuarantee (ResGSvcTenderStoredNotPresentCardGuaranteeRequest)
 		returns (ResGSvcTenderNotPresentCardGuaranteeResponse);
+
+	rpc VoidGuarantee(.holms.types.booking.guarantees.VoidGuaranteeRequest)
+		returns(.holms.types.booking.guarantees.VoidGuaranteeResponse);
 }
 
