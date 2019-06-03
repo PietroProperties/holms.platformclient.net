@@ -143,4 +143,7 @@ service GroupBookingSvc {
 
 	rpc IncreaseEventGroupHoldForNewReservation(IncreaseGroupHoldForReservationRequest)
 		returns(IncreaseGroupHoldForReservationResponse);
+
+	rpc FolioSync(.holms.types.booking.groups.GroupBooking)
+		returns(google.protobuf.Empty);
 }
