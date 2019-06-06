@@ -45,5 +45,6 @@ message ReservationFolioState {
 	.holms.types.primitive.MonetaryAmount total_master_taxes = 26;
 	.holms.types.primitive.MonetaryAmount total_master_fees = 27;
 	.holms.types.primitive.MonetaryAmount max_refund = 28;
+	bool is_guarantee_by_master = 29;
 }
 

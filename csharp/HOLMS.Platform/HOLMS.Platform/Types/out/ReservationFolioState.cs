@@ -28,7 +28,7 @@ namespace HOLMS.Types.Folio {
             "YXJkX3NhbGUucHJvdG8aJGZvbGlvL2ZvbGlvX2NoZWNrX2Nhc2hfcGF5bWVu",
             "dC5wcm90bxolZm9saW8vcmVzZXJ2YXRpb25fZm9saW9fc3VtbWFyeS5wcm90",
             "bxoaZm9saW8vdGF4X2Fzc2Vzc21lbnQucHJvdG8aH3ByaW1pdGl2ZS9tb25l",
-            "dGFyeV9hbW91bnQucHJvdG8i1Q0KFVJlc2VydmF0aW9uRm9saW9TdGF0ZRI/",
+            "dGFyeV9hbW91bnQucHJvdG8i9Q0KFVJlc2VydmF0aW9uRm9saW9TdGF0ZRI/",
             "ChFlZmZlY3RpdmVfY2hhcmdlcxgBIAMoCzIkLmhvbG1zLnR5cGVzLmZvbGlv",
             "LkZvbGlvQXRvbWljQ2hhcmdlEjgKDGNhcmRfcmVmdW5kcxgCIAMoCzIiLmhv",
             "bG1zLnR5cGVzLmZvbGlvLkZvbGlvQ2FyZFJlZnVuZBI0CgpjYXJkX3NhbGVz",
@@ -67,11 +67,12 @@ namespace HOLMS.Types.Folio {
             "cHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkAKEXRvdGFsX21hc3Rlcl9mZWVz",
             "GBsgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
             "EjkKCm1heF9yZWZ1bmQYHCABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
-            "TW9uZXRhcnlBbW91bnRCFKoCEUhPTE1TLlR5cGVzLkZvbGlvYgZwcm90bzM="));
+            "TW9uZXRhcnlBbW91bnQSHgoWaXNfZ3VhcmFudGVlX2J5X21hc3RlchgdIAEo",
+            "CEIUqgIRSE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.ReservationFolioSummaryReflection.Descriptor, global::HOLMS.Types.Folio.TaxAssessmentReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentCharges", "AnticipatedCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges", "RemainingTenderRequiredForGuarantee", "TotalMasterCharges", "TotalMasterTaxes", "TotalMasterFees", "MaxRefund" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentCharges", "AnticipatedCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges", "RemainingTenderRequiredForGuarantee", "TotalMasterCharges", "TotalMasterTaxes", "TotalMasterFees", "MaxRefund", "IsGuaranteeByMaster" }, null, null, null)
           }));
     }
     #endregion
@@ -128,6 +129,7 @@ namespace HOLMS.Types.Folio {
       TotalMasterTaxes = other.totalMasterTaxes_ != null ? other.TotalMasterTaxes.Clone() : null;
       TotalMasterFees = other.totalMasterFees_ != null ? other.TotalMasterFees.Clone() : null;
       MaxRefund = other.maxRefund_ != null ? other.MaxRefund.Clone() : null;
+      isGuaranteeByMaster_ = other.isGuaranteeByMaster_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -412,6 +414,17 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "is_guarantee_by_master" field.</summary>
+    public const int IsGuaranteeByMasterFieldNumber = 29;
+    private bool isGuaranteeByMaster_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsGuaranteeByMaster {
+      get { return isGuaranteeByMaster_; }
+      set {
+        isGuaranteeByMaster_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationFolioState);
@@ -451,6 +464,7 @@ namespace HOLMS.Types.Folio {
       if (!object.Equals(TotalMasterTaxes, other.TotalMasterTaxes)) return false;
       if (!object.Equals(TotalMasterFees, other.TotalMasterFees)) return false;
       if (!object.Equals(MaxRefund, other.MaxRefund)) return false;
+      if (IsGuaranteeByMaster != other.IsGuaranteeByMaster) return false;
       return true;
     }
 
@@ -483,6 +497,7 @@ namespace HOLMS.Types.Folio {
       if (totalMasterTaxes_ != null) hash ^= TotalMasterTaxes.GetHashCode();
       if (totalMasterFees_ != null) hash ^= TotalMasterFees.GetHashCode();
       if (maxRefund_ != null) hash ^= MaxRefund.GetHashCode();
+      if (IsGuaranteeByMaster != false) hash ^= IsGuaranteeByMaster.GetHashCode();
       return hash;
     }
 
@@ -570,6 +585,10 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(226, 1);
         output.WriteMessage(MaxRefund);
       }
+      if (IsGuaranteeByMaster != false) {
+        output.WriteRawTag(232, 1);
+        output.WriteBool(IsGuaranteeByMaster);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -634,6 +653,9 @@ namespace HOLMS.Types.Folio {
       }
       if (maxRefund_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(MaxRefund);
+      }
+      if (IsGuaranteeByMaster != false) {
+        size += 2 + 1;
       }
       return size;
     }
@@ -744,6 +766,9 @@ namespace HOLMS.Types.Folio {
           maxRefund_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
         MaxRefund.MergeFrom(other.MaxRefund);
+      }
+      if (other.IsGuaranteeByMaster != false) {
+        IsGuaranteeByMaster = other.IsGuaranteeByMaster;
       }
     }
 
@@ -899,6 +924,10 @@ namespace HOLMS.Types.Folio {
               maxRefund_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(maxRefund_);
+            break;
+          }
+          case 232: {
+            IsGuaranteeByMaster = input.ReadBool();
             break;
           }
         }
