@@ -23,11 +23,10 @@ namespace HOLMS.Types.Booking.Reservations {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cixib29raW5nL3Jlc2VydmF0aW9ucy9yZXNlcnZhdGlvbl9zdGF0ZS5wcm90",
-            "bxIgaG9sbXMudHlwZXMuYm9va2luZy5yZXNlcnZhdGlvbnMqYAoQUmVzZXJ2",
+            "bxIgaG9sbXMudHlwZXMuYm9va2luZy5yZXNlcnZhdGlvbnMqSgoQUmVzZXJ2",
             "YXRpb25TdGF0ZRIICgRPcGVuEAASDQoJQ2FuY2VsbGVkEAESDQoJQ2hlY2tl",
-            "ZEluEAISDgoKQ2hlY2tlZE91dBADEhQKEENhbmNlbGxlZFdpdGhGZWUQBEI5",
-            "WhRib29raW5nL3Jlc2VydmF0aW9uc6oCIEhPTE1TLlR5cGVzLkJvb2tpbmcu",
-            "UmVzZXJ2YXRpb25zYgZwcm90bzM="));
+            "ZEluEAISDgoKQ2hlY2tlZE91dBADQjlaFGJvb2tpbmcvcmVzZXJ2YXRpb25z",
+            "qgIgSE9MTVMuVHlwZXMuQm9va2luZy5SZXNlcnZhdGlvbnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Booking.Reservations.ReservationState), }, null));
@@ -41,7 +40,6 @@ namespace HOLMS.Types.Booking.Reservations {
     [pbr::OriginalName("Cancelled")] Cancelled = 1,
     [pbr::OriginalName("CheckedIn")] CheckedIn = 2,
     [pbr::OriginalName("CheckedOut")] CheckedOut = 3,
-    [pbr::OriginalName("CancelledWithFee")] CancelledWithFee = 4,
   }
 
   #endregion

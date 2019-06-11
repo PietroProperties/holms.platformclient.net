@@ -9,5 +9,4 @@ enum ReservationState {
         Cancelled = 1;
         CheckedIn = 2;
         CheckedOut = 3;
-        CancelledWithFee = 4;
 }
