@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package holms.types.operations.note_requests_room_types;
+option csharp_namespace = "HOLMS.Types.Operations.NoteRequestsRoomTypes";
+option go_package = "operations/noterequestsroomtypes";
+
+import "primitive/uuid.proto";
+
+message NoteRequestRoomTypeIndicator {
+	.holms.types.primitive.Uuid id = 1;
+}

@@ -27,18 +27,21 @@ namespace HOLMS.Types.Operations.NoteRequests {
             "dGlvbnMvbm90ZV9yZXF1ZXN0cy9ub3RlX3JlcXVlc3RfaW5kaWNhdG9yLnBy",
             "b3RvGixvcGVyYXRpb25zL25vdGVfcmVxdWVzdHMvbm90ZV9jYXRlZ29yeS5w",
             "cm90bxoob3BlcmF0aW9ucy9ub3RlX3JlcXVlc3RzL25vdGVfdHlwZS5wcm90",
-            "byKWAgoLTm90ZVJlcXVlc3QSTQoJZW50aXR5X2lkGAEgASgLMjouaG9sbXMu",
-            "dHlwZXMub3BlcmF0aW9ucy5ub3RlX3JlcXVlc3RzLk5vdGVSZXF1ZXN0SW5k",
-            "aWNhdG9yEg8KB3N1YmplY3QYAiABKAkSRgoKZGVwYXJ0bWVudBgDIAEoDjIy",
-            "LmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMubm90ZV9yZXF1ZXN0cy5Ob3RlQ2F0",
-            "ZWdvcnkSQQoJbm90ZV90eXBlGAQgASgOMi4uaG9sbXMudHlwZXMub3BlcmF0",
-            "aW9ucy5ub3RlX3JlcXVlc3RzLk5vdGVUeXBlEhwKFGF2YWlsYWJsZV9vbl93",
-            "ZWJzaXRlGAUgASgIQj9aF29wZXJhdGlvbnMvbm90ZXJlcXVlc3RzqgIjSE9M",
-            "TVMuVHlwZXMuT3BlcmF0aW9ucy5Ob3RlUmVxdWVzdHNiBnByb3RvMw=="));
+            "bxohc3VwcGx5L3Jvb21fdHlwZXMvcm9vbV90eXBlLnByb3RvItoCCgtOb3Rl",
+            "UmVxdWVzdBJNCgllbnRpdHlfaWQYASABKAsyOi5ob2xtcy50eXBlcy5vcGVy",
+            "YXRpb25zLm5vdGVfcmVxdWVzdHMuTm90ZVJlcXVlc3RJbmRpY2F0b3ISDwoH",
+            "c3ViamVjdBgCIAEoCRJGCgpkZXBhcnRtZW50GAMgASgOMjIuaG9sbXMudHlw",
+            "ZXMub3BlcmF0aW9ucy5ub3RlX3JlcXVlc3RzLk5vdGVDYXRlZ29yeRJBCglu",
+            "b3RlX3R5cGUYBCABKA4yLi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLm5vdGVf",
+            "cmVxdWVzdHMuTm90ZVR5cGUSHAoUYXZhaWxhYmxlX29uX3dlYnNpdGUYBSAB",
+            "KAgSQgoRcmVxdWVzdF9yb29tX3R5cGUYBiADKAsyJy5ob2xtcy50eXBlcy5z",
+            "dXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZUI/WhdvcGVyYXRpb25zL25vdGVy",
+            "ZXF1ZXN0c6oCI0hPTE1TLlR5cGVzLk9wZXJhdGlvbnMuTm90ZVJlcXVlc3Rz",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Operations.NoteRequests.NoteRequestIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.NoteRequests.NoteCategoryReflection.Descriptor, global::HOLMS.Types.Operations.NoteRequests.NoteTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Operations.NoteRequests.NoteRequestIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.NoteRequests.NoteCategoryReflection.Descriptor, global::HOLMS.Types.Operations.NoteRequests.NoteTypeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.NoteRequests.NoteRequest), global::HOLMS.Types.Operations.NoteRequests.NoteRequest.Parser, new[]{ "EntityId", "Subject", "Department", "NoteType", "AvailableOnWebsite" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.NoteRequests.NoteRequest), global::HOLMS.Types.Operations.NoteRequests.NoteRequest.Parser, new[]{ "EntityId", "Subject", "Department", "NoteType", "AvailableOnWebsite", "RequestRoomType" }, null, null, null)
           }));
     }
     #endregion
@@ -74,6 +77,7 @@ namespace HOLMS.Types.Operations.NoteRequests {
       department_ = other.department_;
       noteType_ = other.noteType_;
       availableOnWebsite_ = other.availableOnWebsite_;
+      requestRoomType_ = other.requestRoomType_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -139,6 +143,16 @@ namespace HOLMS.Types.Operations.NoteRequests {
       }
     }
 
+    /// <summary>Field number for the "request_room_type" field.</summary>
+    public const int RequestRoomTypeFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Supply.RoomTypes.RoomType> _repeated_requestRoomType_codec
+        = pb::FieldCodec.ForMessage(50, global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Supply.RoomTypes.RoomType> requestRoomType_ = new pbc::RepeatedField<global::HOLMS.Types.Supply.RoomTypes.RoomType>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Supply.RoomTypes.RoomType> RequestRoomType {
+      get { return requestRoomType_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as NoteRequest);
@@ -157,6 +171,7 @@ namespace HOLMS.Types.Operations.NoteRequests {
       if (Department != other.Department) return false;
       if (NoteType != other.NoteType) return false;
       if (AvailableOnWebsite != other.AvailableOnWebsite) return false;
+      if(!requestRoomType_.Equals(other.requestRoomType_)) return false;
       return true;
     }
 
@@ -168,6 +183,7 @@ namespace HOLMS.Types.Operations.NoteRequests {
       if (Department != 0) hash ^= Department.GetHashCode();
       if (NoteType != 0) hash ^= NoteType.GetHashCode();
       if (AvailableOnWebsite != false) hash ^= AvailableOnWebsite.GetHashCode();
+      hash ^= requestRoomType_.GetHashCode();
       return hash;
     }
 
@@ -198,6 +214,7 @@ namespace HOLMS.Types.Operations.NoteRequests {
         output.WriteRawTag(40);
         output.WriteBool(AvailableOnWebsite);
       }
+      requestRoomType_.WriteTo(output, _repeated_requestRoomType_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -218,6 +235,7 @@ namespace HOLMS.Types.Operations.NoteRequests {
       if (AvailableOnWebsite != false) {
         size += 1 + 1;
       }
+      size += requestRoomType_.CalculateSize(_repeated_requestRoomType_codec);
       return size;
     }
 
@@ -244,6 +262,7 @@ namespace HOLMS.Types.Operations.NoteRequests {
       if (other.AvailableOnWebsite != false) {
         AvailableOnWebsite = other.AvailableOnWebsite;
       }
+      requestRoomType_.Add(other.requestRoomType_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -275,6 +294,10 @@ namespace HOLMS.Types.Operations.NoteRequests {
           }
           case 40: {
             AvailableOnWebsite = input.ReadBool();
+            break;
+          }
+          case 50: {
+            requestRoomType_.AddEntriesFrom(input, _repeated_requestRoomType_codec);
             break;
           }
         }
