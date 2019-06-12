@@ -14,6 +14,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Pricing {
         public InclusiveOpsdateRange DateRange;
         public int NumberAdults;
         public bool TaxExempt;
+        public bool IsMockPriceRequiredWihtoutHolds;
 
         public OpenPriceEstimateRequest Build() {
             var request = new OpenPriceEstimateRequest() {
@@ -21,7 +22,8 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Pricing {
                 DateRange = DateRange.ToPB,
                 TaxExempt = TaxExempt,
                 AdultGuestCount = NumberAdults,
-                RoomType = RoomType
+                RoomType = RoomType,
+                IsMockPriceRequiredForGroup = IsMockPriceRequiredWihtoutHolds
             };
 
             if (Tags != null) {

@@ -17,6 +17,11 @@ enum DepartureReportSorting {
 	BY_ROOM = 1;
 }
 
+enum ArrivalReportSorting {
+	ARRIVAL_BY_GUEST_NAME_SORT = 0;
+	ARRIVAL_BY_ROOM_SORT = 1;
+}
+
 enum FrontDeskReportsNotesFilter {
 	NONE = 0;
 	ALL_NOTES = 1;
@@ -38,7 +43,8 @@ message FrontDeskCurrentDateReportManifest {
 	string end_time = 12;
 	FrontDeskReportsNotesFilter note_category = 13;
 	DepartureReportSorting departure_report_sorting = 14;
-	.holms.types.primitive.PbLocalDate date = 1;
+	.holms.types.primitive.PbLocalDate selected_date = 15;
+	ArrivalReportSorting arrival_report_sorting = 16;
 }
 
 message FrontDeskOpsdateRangeReportManifest {

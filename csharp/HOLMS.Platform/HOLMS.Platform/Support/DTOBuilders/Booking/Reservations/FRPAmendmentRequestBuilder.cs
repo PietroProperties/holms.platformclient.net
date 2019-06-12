@@ -34,7 +34,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Reservations {
                 RoomType = RoomType,
                 DateRange = DateRange.ToPB,
                 AdultGuestCount = NumberAdults,
-                ChildGuestCount = NumberChildren,
+                ChildGuestCount = NumberChildren
             };
 
             request.Tags.Add(Tags.GetDescriptors());

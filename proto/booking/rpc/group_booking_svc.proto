@@ -18,6 +18,7 @@ import "booking/groups/reservation_invoices.proto";
 import "primitive/uuid.proto";
 import "iam/staff_member_indicator.proto";
 import "google/protobuf/timestamp.proto";
+import "supply/room_types/room_type_indicator.proto";
 
 message GroupBookingSvcAllBookings {
 	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
@@ -79,6 +80,15 @@ message InvoiceVoidRequest{
 	holms.types.iam.StaffMemberIndicator staff_id=2;
 	google.protobuf.Timestamp voided_at=3;
 }
+
+message IncreaseGroupHoldForReservationRequest{
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	holms.types.supply.room_types.RoomTypeIndicator room_type = 2;
+}
+
+message IncreaseGroupHoldForReservationResponse{
+	bool result=1;
+}
 service GroupBookingSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (GroupBookingSvcAllBookings);
@@ -128,6 +138,9 @@ service GroupBookingSvc {
 	rpc VoidInvoiceById(InvoiceVoidRequest)
 		returns(google.protobuf.Empty);
 
-    rpc CreateWithoutSave(.holms.types.crm.groups.GroupIndicator)
+    	rpc CreateWithoutSave(.holms.types.crm.groups.GroupIndicator)
 		returns (.holms.types.booking.groups.GroupBookingExt);
+
+	rpc IncreaseEventGroupHoldForNewReservation(IncreaseGroupHoldForReservationRequest)
+		returns(IncreaseGroupHoldForReservationResponse);
 }
