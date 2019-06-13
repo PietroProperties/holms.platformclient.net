@@ -24,7 +24,7 @@ namespace HOLMS.Types.Operations.Housekeeping {
           string.Concat(
             "CkBvcGVyYXRpb25zL2hvdXNla2VlcGluZy9yb29tX3Jlc2VydmF0aW9uX2Fz",
             "c2lnbm1lbnRfc3RhdHVzLnByb3RvEiNob2xtcy50eXBlcy5vcGVyYXRpb25z",
-            "LmhvdXNla2VlcGluZyqPBQofUm9vbVJlc2VydmF0aW9uQXNzaWdubWVudFN0",
+            "LmhvdXNla2VlcGluZyrOBQofUm9vbVJlc2VydmF0aW9uQXNzaWdubWVudFN0",
             "YXR1cxI0CjBST09NX1JFU0VSVkFUSU9OX0FTU0lHTk1FTlRfU1RBVFVTX1ZB",
             "Q0FOVF9WQUNBTlQQABI7CjdST09NX1JFU0VSVkFUSU9OX0FTU0lHTk1FTlRf",
             "U1RBVFVTX1ZBQ0FOVF9XSVRIX0lOQ09NSU5HEAESLworUk9PTV9SRVNFUlZB",
@@ -38,8 +38,10 @@ namespace HOLMS.Types.Operations.Housekeeping {
             "U19MRUZUX1dJVEhfSU5DT01JTkcQBxI8CjhST09NX1JFU0VSVkFUSU9OX0FT",
             "U0lHTk1FTlRfU1RBVFVTX0FSUklWRURfQUZURVJfVkFDQU5DWRAIEiwKKFJP",
             "T01fUkVTRVJWQVRJT05fQVNTSUdOTUVOVF9PVVRfT0ZfT1JERVIQCRIsCihS",
-            "T09NX1JFU0VSVkFUSU9OX0FTU0lHTk1FTlRfU1RBVFVTX09USEVSEApCJqoC",
-            "I0hPTE1TLlR5cGVzLk9wZXJhdGlvbnMuSG91c2VrZWVwaW5nYgZwcm90bzM="));
+            "T09NX1JFU0VSVkFUSU9OX0FTU0lHTk1FTlRfU1RBVFVTX09USEVSEAoSPQo5",
+            "Uk9PTV9SRVNFUlZBVElPTl9BU1NJR05NRU5UX1NUQVRVU19MRUZUX1dJVEhf",
+            "T1VUX09GX09SREVSEAtCJqoCI0hPTE1TLlR5cGVzLk9wZXJhdGlvbnMuSG91",
+            "c2VrZWVwaW5nYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Operations.Housekeeping.RoomReservationAssignmentStatus), }, null));
@@ -60,6 +62,7 @@ namespace HOLMS.Types.Operations.Housekeeping {
     [pbr::OriginalName("ROOM_RESERVATION_ASSIGNMENT_STATUS_ARRIVED_AFTER_VACANCY")] ArrivedAfterVacancy = 8,
     [pbr::OriginalName("ROOM_RESERVATION_ASSIGNMENT_OUT_OF_ORDER")] RoomReservationAssignmentOutOfOrder = 9,
     [pbr::OriginalName("ROOM_RESERVATION_ASSIGNMENT_STATUS_OTHER")] Other = 10,
+    [pbr::OriginalName("ROOM_RESERVATION_ASSIGNMENT_STATUS_LEFT_WITH_OUT_OF_ORDER")] LeftWithOutOfOrder = 11,
   }
 
   #endregion
