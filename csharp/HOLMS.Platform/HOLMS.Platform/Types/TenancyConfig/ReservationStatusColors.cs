@@ -11,7 +11,9 @@ namespace HOLMS.Types.TenancyConfig {
             StatusColor departureColorIndividual, StatusColor departureColorGroup,
             StatusColor checkedOutColorIndividual, StatusColor checkedOutColorGroup,
             StatusColor noShowColorIndividual, StatusColor noShowColorGroup,
-            StatusColor canceledColorIndividual, StatusColor canceledColorGroup) {
+            StatusColor canceledColorIndividual, StatusColor canceledColorGroup,
+            StatusColor canceledWithFeeColorIndividual, StatusColor canceledWithFeeColorGroup,
+            StatusColor openColorIndividual, StatusColor openColorGroup) {
             UnguaranteedNotDueIndividual = tentativeColorIndividual;
             UnguaranteedNotDueGroup = tentativeColorGroup;
             GuaranteedColorIndividual = guaranteedColorIndividual;
@@ -30,6 +32,10 @@ namespace HOLMS.Types.TenancyConfig {
             NoShowColorGroup = noShowColorGroup;
             CanceledColorIndividual = canceledColorIndividual;
             CanceledColorGroup = canceledColorGroup;
+            CanceledWithFeeColorIndividual = canceledWithFeeColorIndividual;
+            CanceledWithFeeColorGroup = canceledWithFeeColorGroup;
+            OpenColorIndividual = openColorIndividual;
+            OpenColorGroup = openColorGroup;
         }
     }
 }

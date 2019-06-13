@@ -25,4 +25,8 @@ message ReservationStatusColors {
     .holms.types.primitive.StatusColor no_show_color_group = 16;
     .holms.types.primitive.StatusColor canceled_color_individual = 17;
     .holms.types.primitive.StatusColor canceled_color_group = 18;
+	.holms.types.primitive.StatusColor canceled_with_fee_color_individual = 19;
+	.holms.types.primitive.StatusColor canceled_with_fee_color_group = 20;
+	.holms.types.primitive.StatusColor open_color_individual = 21;
+	.holms.types.primitive.StatusColor open_color_group = 22;
 }
