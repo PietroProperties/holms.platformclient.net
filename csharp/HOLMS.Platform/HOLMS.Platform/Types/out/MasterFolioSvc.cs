@@ -69,54 +69,65 @@ namespace HOLMS.Types.Folio.RPC {
             "aG9yaXphdGlvbkNoZWNrUmVzcG9uc2USKQohaXNfYXV0aG9yaXphdGlvbl9p",
             "bmNyZWFzZV9zdWNjZXNzGAEgASgIEioKIm5vX2NoYWdlX3RvX2F1dGhvcml6",
             "YXRpb25fcmVxdWlyZWQYAiABKAgSKgoiaXNfYXV0aG9yaXphdGlvbl9pbmNy",
-            "ZWFzZV9yZXF1aXJlZBgDIAEoCCKPAgoZVXBkYXRlQ2xpZW50Rm9saW9zUmVx",
+            "ZWFzZV9yZXF1aXJlZBgDIAEoCCLRAwoZVXBkYXRlQ2xpZW50Rm9saW9zUmVx",
             "dWVzdBJKCgxtYXN0ZXJfZm9saW8YASABKAsyNC5ob2xtcy50eXBlcy5ib29r",
             "aW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISUQoTYWRkZWRf",
             "Y2xpZW50X2ZvbGlvcxgCIAMoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5k",
             "aWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvchJTChVyZW1vdmVkX2NsaWVu",
             "dF9mb2xpb3MYAyADKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRv",
-            "cnMuUmVzZXJ2YXRpb25JbmRpY2F0b3IiMwoaVXBkYXRlQ2xpZW50Rm9saW9z",
-            "UmVzcG9uc2USFQoNaXNfc3VjY2Vzc2Z1bBgBIAEoCCqyAworUmVzZXJ2YXRp",
-            "b25Gb2xpb1N2Y1JlcXVlc3RNYXN0ZXJGb2xpb1Jlc3VsdBIsCihNQVNURVJf",
-            "Rk9MSU9fU1ZDX1JFUVVFU1RfTUFTVEVSX0ZPTElPX09LEAASOwo3TUFTVEVS",
-            "X0ZPTElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19DTElFTlRfSEFTX01B",
-            "U1RFUhABEjsKN01BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNURVJfRk9M",
-            "SU9fTUFTVEVSX0hBU19NQVNURVIQAhIuCipNQVNURVJfRk9MSU9fU1ZDX1JF",
-            "UVVFU1RfQ0xJRU5UX0hBU19DTElFTlQQAxI7CjdNQVNURVJfRk9MSU9fU1ZD",
-            "X1JFUVVFU1RfTUFTVEVSX0ZPTElPX0RJU0FMTE9XRURfTUFTVEVSEAQSOwo3",
-            "TUFTVEVSX0ZPTElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19ESVNBTExP",
-            "V0VEX0NMSUVOVBAFEjEKLU1BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9NQVNU",
-            "RVJfRk9MSU9fRkFJTFVSRRAGKr8BCipSZXNlcnZhdGlvbkZvbGlvU3ZjUmVt",
-            "b3ZlTWFzdGVyRm9saW9SZXN1bHQSKwonTUFTVEVSX0ZPTElPX1NWQ19SRU1P",
-            "VkVfTUFTVEVSX0ZPTElPX09LEAASMgouTUFTVEVSX0ZPTElPX1NWQ19SRU1P",
-            "VkVfTUFTVEVSX0ZPTElPX05PX01BU1RFUhABEjAKLE1BU1RFUl9GT0xJT19T",
-            "VkNfUkVNT1ZFX01BU1RFUl9GT0xJT19GQUlMVVJFEAIq3gEKHU1hc3RlckZv",
-            "bGlvU3ZjRm9saW9Td2FwUmVzdWx0EiIKHk1BU1RFUl9GT0xJT19TVkNfRk9M",
-            "SU9fU1dBUF9PSxAAEjcKM01BU1RFUl9GT0xJT19TVkNfRk9MSU9fU1dBUF9J",
-            "TlZBTElEX05PX01BU1RFUl9GT0xJTxABEi8KK01BU1RFUl9GT0xJT19TVkNf",
-            "Rk9MSU9fU1dBUF9JTlZBTElEX1VOS05PV04QAhIvCitNQVNURVJfRk9MSU9f",
-            "U1ZDX0ZPTElPX1NXQVBfRkFJTFVSRV9VTktOT1dOEAMqhgEKIE1hc3RlckZv",
-            "bGlvU3ZjRm9saW9Td2FwRGlyZWN0aW9uEjAKLE1BU1RFUl9GT0xJT19TVkNf",
-            "Rk9MSU9fU1dBUF9DTElFTlRfVE9fTUFTVEVSEAASMAosTUFTVEVSX0ZPTElP",
-            "X1NWQ19GT0xJT19TV0FQX01BU1RFUl9UT19DTElFTlQQATLdBQoOTWFzdGVy",
-            "Rm9saW9TdmMSlgEKElJlcXVlc3RNYXN0ZXJGb2xpbxI7LmhvbG1zLnR5cGVz",
-            "LmZvbGlvLnJwYy5NYXN0ZXJGb2xpb1NlcnZpY2VNYXN0ZXJGb2xpb1JlcXVl",
-            "c3QaQy5ob2xtcy50eXBlcy5mb2xpby5ycGMuTWFzdGVyRm9saW9TZXJ2aWNl",
-            "UmVxdWVzdE1hc3RlckZvbGlvUmVzcG9uc2USlgEKEVJlbW92ZU1hc3RlckZv",
-            "bGlvEj0uaG9sbXMudHlwZXMuZm9saW8ucnBjLk1hc3RlckZvbGlvU3ZjUmVt",
-            "b3ZlTWFzdGVyRm9saW9SZXF1ZXN0GkIuaG9sbXMudHlwZXMuZm9saW8ucnBj",
-            "Lk1hc3RlckZvbGlvU2VydmljZVJlbW92ZU1hc3RlckZvbGlvUmVzcG9uc2US",
-            "igEKFUF0b21pY0ZvbGlvQ2hhcmdlU3dhcBI5LmhvbG1zLnR5cGVzLmZvbGlv",
-            "LnJwYy5NYXN0ZXJGb2xpb1NlcnZpY2VGb2xpb1N3YXBSZXF1ZXN0GjYuaG9s",
-            "bXMudHlwZXMuZm9saW8ucnBjLk1hc3RlckZvbGlvU3ZjRm9saW9Td2FwUmVz",
-            "cG9uc2USkAEKFUF1dGhvcml6YXRpb25JbmNyZWFzZRI6LmhvbG1zLnR5cGVz",
-            "LmZvbGlvLnJwYy5MaW5rTWFzdGVyQXV0aG9yaXphdGlvbkNoZWNrUmVxdWVz",
-            "dBo7LmhvbG1zLnR5cGVzLmZvbGlvLnJwYy5MaW5rTWFzdGVyQXV0aG9yaXph",
-            "dGlvbkNoZWNrUmVzcG9uc2USeQoSVXBkYXRlQ2xpZW50Rm9saW9zEjAuaG9s",
-            "bXMudHlwZXMuZm9saW8ucnBjLlVwZGF0ZUNsaWVudEZvbGlvc1JlcXVlc3Qa",
-            "MS5ob2xtcy50eXBlcy5mb2xpby5ycGMuVXBkYXRlQ2xpZW50Rm9saW9zUmVz",
-            "cG9uc2VCI1oJZm9saW8vcnBjqgIVSE9MTVMuVHlwZXMuRm9saW8uUlBDYgZw",
-            "cm90bzM="));
+            "cnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISVAoWZXhpc3RpbmdfY2xpZW50X2Zv",
+            "bGlvcxgEIAMoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5S",
+            "ZXNlcnZhdGlvbkluZGljYXRvchIeChZtYXN0ZXJfYWNjcnVlc19sb2RnaW5n",
+            "GAUgASgIEiIKGm1hc3Rlcl9hY2NydWVzX2luY2lkZW50YWxzGAYgASgIEiYK",
+            "HmlzX2FsbF9jbGllbnRfdXBkYXRlX3JlcXVlc3RlZBgHIAEoCCIzChpVcGRh",
+            "dGVDbGllbnRGb2xpb3NSZXNwb25zZRIVCg1pc19zdWNjZXNzZnVsGAEgASgI",
+            "ImYKGElzTWFzdGVyUGF5c0NoZWNrUmVxdWVzdBJKCgxyZXNlcnZhdGlvbnMY",
+            "ASADKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2",
+            "YXRpb25JbmRpY2F0b3IiXwoZSXNNYXN0ZXJQYXlzQ2hlY2tSZXNwb25zZRIe",
+            "ChZpc19tYXN0ZXJfcGF5c19sb2RnaW5nGAEgASgIEiIKGmlzX21hc3Rlcl9w",
+            "YXlzX2luY2lkZW50YWxzGAIgASgIKrIDCitSZXNlcnZhdGlvbkZvbGlvU3Zj",
+            "UmVxdWVzdE1hc3RlckZvbGlvUmVzdWx0EiwKKE1BU1RFUl9GT0xJT19TVkNf",
+            "UkVRVUVTVF9NQVNURVJfRk9MSU9fT0sQABI7CjdNQVNURVJfRk9MSU9fU1ZD",
+            "X1JFUVVFU1RfTUFTVEVSX0ZPTElPX0NMSUVOVF9IQVNfTUFTVEVSEAESOwo3",
+            "TUFTVEVSX0ZPTElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19NQVNURVJf",
+            "SEFTX01BU1RFUhACEi4KKk1BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9DTElF",
+            "TlRfSEFTX0NMSUVOVBADEjsKN01BU1RFUl9GT0xJT19TVkNfUkVRVUVTVF9N",
+            "QVNURVJfRk9MSU9fRElTQUxMT1dFRF9NQVNURVIQBBI7CjdNQVNURVJfRk9M",
+            "SU9fU1ZDX1JFUVVFU1RfTUFTVEVSX0ZPTElPX0RJU0FMTE9XRURfQ0xJRU5U",
+            "EAUSMQotTUFTVEVSX0ZPTElPX1NWQ19SRVFVRVNUX01BU1RFUl9GT0xJT19G",
+            "QUlMVVJFEAYqvwEKKlJlc2VydmF0aW9uRm9saW9TdmNSZW1vdmVNYXN0ZXJG",
+            "b2xpb1Jlc3VsdBIrCidNQVNURVJfRk9MSU9fU1ZDX1JFTU9WRV9NQVNURVJf",
+            "Rk9MSU9fT0sQABIyCi5NQVNURVJfRk9MSU9fU1ZDX1JFTU9WRV9NQVNURVJf",
+            "Rk9MSU9fTk9fTUFTVEVSEAESMAosTUFTVEVSX0ZPTElPX1NWQ19SRU1PVkVf",
+            "TUFTVEVSX0ZPTElPX0ZBSUxVUkUQAireAQodTWFzdGVyRm9saW9TdmNGb2xp",
+            "b1N3YXBSZXN1bHQSIgoeTUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX09L",
+            "EAASNwozTUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQX0lOVkFMSURfTk9f",
+            "TUFTVEVSX0ZPTElPEAESLworTUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQ",
+            "X0lOVkFMSURfVU5LTk9XThACEi8KK01BU1RFUl9GT0xJT19TVkNfRk9MSU9f",
+            "U1dBUF9GQUlMVVJFX1VOS05PV04QAyqGAQogTWFzdGVyRm9saW9TdmNGb2xp",
+            "b1N3YXBEaXJlY3Rpb24SMAosTUFTVEVSX0ZPTElPX1NWQ19GT0xJT19TV0FQ",
+            "X0NMSUVOVF9UT19NQVNURVIQABIwCixNQVNURVJfRk9MSU9fU1ZDX0ZPTElP",
+            "X1NXQVBfTUFTVEVSX1RPX0NMSUVOVBABMtUGCg5NYXN0ZXJGb2xpb1N2YxKW",
+            "AQoSUmVxdWVzdE1hc3RlckZvbGlvEjsuaG9sbXMudHlwZXMuZm9saW8ucnBj",
+            "Lk1hc3RlckZvbGlvU2VydmljZU1hc3RlckZvbGlvUmVxdWVzdBpDLmhvbG1z",
+            "LnR5cGVzLmZvbGlvLnJwYy5NYXN0ZXJGb2xpb1NlcnZpY2VSZXF1ZXN0TWFz",
+            "dGVyRm9saW9SZXNwb25zZRKWAQoRUmVtb3ZlTWFzdGVyRm9saW8SPS5ob2xt",
+            "cy50eXBlcy5mb2xpby5ycGMuTWFzdGVyRm9saW9TdmNSZW1vdmVNYXN0ZXJG",
+            "b2xpb1JlcXVlc3QaQi5ob2xtcy50eXBlcy5mb2xpby5ycGMuTWFzdGVyRm9s",
+            "aW9TZXJ2aWNlUmVtb3ZlTWFzdGVyRm9saW9SZXNwb25zZRKKAQoVQXRvbWlj",
+            "Rm9saW9DaGFyZ2VTd2FwEjkuaG9sbXMudHlwZXMuZm9saW8ucnBjLk1hc3Rl",
+            "ckZvbGlvU2VydmljZUZvbGlvU3dhcFJlcXVlc3QaNi5ob2xtcy50eXBlcy5m",
+            "b2xpby5ycGMuTWFzdGVyRm9saW9TdmNGb2xpb1N3YXBSZXNwb25zZRKQAQoV",
+            "QXV0aG9yaXphdGlvbkluY3JlYXNlEjouaG9sbXMudHlwZXMuZm9saW8ucnBj",
+            "LkxpbmtNYXN0ZXJBdXRob3JpemF0aW9uQ2hlY2tSZXF1ZXN0GjsuaG9sbXMu",
+            "dHlwZXMuZm9saW8ucnBjLkxpbmtNYXN0ZXJBdXRob3JpemF0aW9uQ2hlY2tS",
+            "ZXNwb25zZRJ5ChJVcGRhdGVDbGllbnRGb2xpb3MSMC5ob2xtcy50eXBlcy5m",
+            "b2xpby5ycGMuVXBkYXRlQ2xpZW50Rm9saW9zUmVxdWVzdBoxLmhvbG1zLnR5",
+            "cGVzLmZvbGlvLnJwYy5VcGRhdGVDbGllbnRGb2xpb3NSZXNwb25zZRJ2ChFJ",
+            "c01hc3RlclBheXNDaGVjaxIvLmhvbG1zLnR5cGVzLmZvbGlvLnJwYy5Jc01h",
+            "c3RlclBheXNDaGVja1JlcXVlc3QaMC5ob2xtcy50eXBlcy5mb2xpby5ycGMu",
+            "SXNNYXN0ZXJQYXlzQ2hlY2tSZXNwb25zZUIjWglmb2xpby9ycGOqAhVIT0xN",
+            "Uy5UeXBlcy5Gb2xpby5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcRequestMasterFolioResult), typeof(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcRemoveMasterFolioResult), typeof(global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResult), typeof(global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapDirection), }, new pbr::GeneratedClrTypeInfo[] {
@@ -129,8 +140,10 @@ namespace HOLMS.Types.Folio.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse), global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest), global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest.Parser, new[]{ "MasterFolio", "ClientFolio" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse), global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse.Parser, new[]{ "IsAuthorizationIncreaseSuccess", "NoChageToAuthorizationRequired", "IsAuthorizationIncreaseRequired" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest), global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest.Parser, new[]{ "MasterFolio", "AddedClientFolios", "RemovedClientFolios" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse), global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse.Parser, new[]{ "IsSuccessful" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest), global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest.Parser, new[]{ "MasterFolio", "AddedClientFolios", "RemovedClientFolios", "ExistingClientFolios", "MasterAccruesLodging", "MasterAccruesIncidentals", "IsAllClientUpdateRequested" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse), global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse.Parser, new[]{ "IsSuccessful" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest), global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest.Parser, new[]{ "Reservations" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse), global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse.Parser, new[]{ "IsMasterPaysLodging", "IsMasterPaysIncidentals" }, null, null, null)
           }));
     }
     #endregion
@@ -1754,6 +1767,10 @@ namespace HOLMS.Types.Folio.RPC {
       MasterFolio = other.masterFolio_ != null ? other.MasterFolio.Clone() : null;
       addedClientFolios_ = other.addedClientFolios_.Clone();
       removedClientFolios_ = other.removedClientFolios_.Clone();
+      existingClientFolios_ = other.existingClientFolios_.Clone();
+      masterAccruesLodging_ = other.masterAccruesLodging_;
+      masterAccruesIncidentals_ = other.masterAccruesIncidentals_;
+      isAllClientUpdateRequested_ = other.isAllClientUpdateRequested_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1792,6 +1809,49 @@ namespace HOLMS.Types.Folio.RPC {
       get { return removedClientFolios_; }
     }
 
+    /// <summary>Field number for the "existing_client_folios" field.</summary>
+    public const int ExistingClientFoliosFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> _repeated_existingClientFolios_codec
+        = pb::FieldCodec.ForMessage(34, global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> existingClientFolios_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> ExistingClientFolios {
+      get { return existingClientFolios_; }
+    }
+
+    /// <summary>Field number for the "master_accrues_lodging" field.</summary>
+    public const int MasterAccruesLodgingFieldNumber = 5;
+    private bool masterAccruesLodging_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool MasterAccruesLodging {
+      get { return masterAccruesLodging_; }
+      set {
+        masterAccruesLodging_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "master_accrues_incidentals" field.</summary>
+    public const int MasterAccruesIncidentalsFieldNumber = 6;
+    private bool masterAccruesIncidentals_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool MasterAccruesIncidentals {
+      get { return masterAccruesIncidentals_; }
+      set {
+        masterAccruesIncidentals_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_all_client_update_requested" field.</summary>
+    public const int IsAllClientUpdateRequestedFieldNumber = 7;
+    private bool isAllClientUpdateRequested_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsAllClientUpdateRequested {
+      get { return isAllClientUpdateRequested_; }
+      set {
+        isAllClientUpdateRequested_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as UpdateClientFoliosRequest);
@@ -1808,6 +1868,10 @@ namespace HOLMS.Types.Folio.RPC {
       if (!object.Equals(MasterFolio, other.MasterFolio)) return false;
       if(!addedClientFolios_.Equals(other.addedClientFolios_)) return false;
       if(!removedClientFolios_.Equals(other.removedClientFolios_)) return false;
+      if(!existingClientFolios_.Equals(other.existingClientFolios_)) return false;
+      if (MasterAccruesLodging != other.MasterAccruesLodging) return false;
+      if (MasterAccruesIncidentals != other.MasterAccruesIncidentals) return false;
+      if (IsAllClientUpdateRequested != other.IsAllClientUpdateRequested) return false;
       return true;
     }
 
@@ -1817,6 +1881,10 @@ namespace HOLMS.Types.Folio.RPC {
       if (masterFolio_ != null) hash ^= MasterFolio.GetHashCode();
       hash ^= addedClientFolios_.GetHashCode();
       hash ^= removedClientFolios_.GetHashCode();
+      hash ^= existingClientFolios_.GetHashCode();
+      if (MasterAccruesLodging != false) hash ^= MasterAccruesLodging.GetHashCode();
+      if (MasterAccruesIncidentals != false) hash ^= MasterAccruesIncidentals.GetHashCode();
+      if (IsAllClientUpdateRequested != false) hash ^= IsAllClientUpdateRequested.GetHashCode();
       return hash;
     }
 
@@ -1833,6 +1901,19 @@ namespace HOLMS.Types.Folio.RPC {
       }
       addedClientFolios_.WriteTo(output, _repeated_addedClientFolios_codec);
       removedClientFolios_.WriteTo(output, _repeated_removedClientFolios_codec);
+      existingClientFolios_.WriteTo(output, _repeated_existingClientFolios_codec);
+      if (MasterAccruesLodging != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(MasterAccruesLodging);
+      }
+      if (MasterAccruesIncidentals != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(MasterAccruesIncidentals);
+      }
+      if (IsAllClientUpdateRequested != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(IsAllClientUpdateRequested);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1843,6 +1924,16 @@ namespace HOLMS.Types.Folio.RPC {
       }
       size += addedClientFolios_.CalculateSize(_repeated_addedClientFolios_codec);
       size += removedClientFolios_.CalculateSize(_repeated_removedClientFolios_codec);
+      size += existingClientFolios_.CalculateSize(_repeated_existingClientFolios_codec);
+      if (MasterAccruesLodging != false) {
+        size += 1 + 1;
+      }
+      if (MasterAccruesIncidentals != false) {
+        size += 1 + 1;
+      }
+      if (IsAllClientUpdateRequested != false) {
+        size += 1 + 1;
+      }
       return size;
     }
 
@@ -1859,6 +1950,16 @@ namespace HOLMS.Types.Folio.RPC {
       }
       addedClientFolios_.Add(other.addedClientFolios_);
       removedClientFolios_.Add(other.removedClientFolios_);
+      existingClientFolios_.Add(other.existingClientFolios_);
+      if (other.MasterAccruesLodging != false) {
+        MasterAccruesLodging = other.MasterAccruesLodging;
+      }
+      if (other.MasterAccruesIncidentals != false) {
+        MasterAccruesIncidentals = other.MasterAccruesIncidentals;
+      }
+      if (other.IsAllClientUpdateRequested != false) {
+        IsAllClientUpdateRequested = other.IsAllClientUpdateRequested;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1882,6 +1983,22 @@ namespace HOLMS.Types.Folio.RPC {
           }
           case 26: {
             removedClientFolios_.AddEntriesFrom(input, _repeated_removedClientFolios_codec);
+            break;
+          }
+          case 34: {
+            existingClientFolios_.AddEntriesFrom(input, _repeated_existingClientFolios_codec);
+            break;
+          }
+          case 40: {
+            MasterAccruesLodging = input.ReadBool();
+            break;
+          }
+          case 48: {
+            MasterAccruesIncidentals = input.ReadBool();
+            break;
+          }
+          case 56: {
+            IsAllClientUpdateRequested = input.ReadBool();
             break;
           }
         }
@@ -1999,6 +2116,260 @@ namespace HOLMS.Types.Folio.RPC {
             break;
           case 8: {
             IsSuccessful = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class IsMasterPaysCheckRequest : pb::IMessage<IsMasterPaysCheckRequest> {
+    private static readonly pb::MessageParser<IsMasterPaysCheckRequest> _parser = new pb::MessageParser<IsMasterPaysCheckRequest>(() => new IsMasterPaysCheckRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<IsMasterPaysCheckRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Folio.RPC.MasterFolioSvcReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsMasterPaysCheckRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsMasterPaysCheckRequest(IsMasterPaysCheckRequest other) : this() {
+      reservations_ = other.reservations_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsMasterPaysCheckRequest Clone() {
+      return new IsMasterPaysCheckRequest(this);
+    }
+
+    /// <summary>Field number for the "reservations" field.</summary>
+    public const int ReservationsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> _repeated_reservations_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Booking.Indicators.ReservationIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> reservations_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Booking.Indicators.ReservationIndicator> Reservations {
+      get { return reservations_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as IsMasterPaysCheckRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(IsMasterPaysCheckRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!reservations_.Equals(other.reservations_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= reservations_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      reservations_.WriteTo(output, _repeated_reservations_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += reservations_.CalculateSize(_repeated_reservations_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(IsMasterPaysCheckRequest other) {
+      if (other == null) {
+        return;
+      }
+      reservations_.Add(other.reservations_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            reservations_.AddEntriesFrom(input, _repeated_reservations_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class IsMasterPaysCheckResponse : pb::IMessage<IsMasterPaysCheckResponse> {
+    private static readonly pb::MessageParser<IsMasterPaysCheckResponse> _parser = new pb::MessageParser<IsMasterPaysCheckResponse>(() => new IsMasterPaysCheckResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<IsMasterPaysCheckResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Folio.RPC.MasterFolioSvcReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsMasterPaysCheckResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsMasterPaysCheckResponse(IsMasterPaysCheckResponse other) : this() {
+      isMasterPaysLodging_ = other.isMasterPaysLodging_;
+      isMasterPaysIncidentals_ = other.isMasterPaysIncidentals_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsMasterPaysCheckResponse Clone() {
+      return new IsMasterPaysCheckResponse(this);
+    }
+
+    /// <summary>Field number for the "is_master_pays_lodging" field.</summary>
+    public const int IsMasterPaysLodgingFieldNumber = 1;
+    private bool isMasterPaysLodging_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsMasterPaysLodging {
+      get { return isMasterPaysLodging_; }
+      set {
+        isMasterPaysLodging_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_master_pays_incidentals" field.</summary>
+    public const int IsMasterPaysIncidentalsFieldNumber = 2;
+    private bool isMasterPaysIncidentals_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsMasterPaysIncidentals {
+      get { return isMasterPaysIncidentals_; }
+      set {
+        isMasterPaysIncidentals_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as IsMasterPaysCheckResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(IsMasterPaysCheckResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsMasterPaysLodging != other.IsMasterPaysLodging) return false;
+      if (IsMasterPaysIncidentals != other.IsMasterPaysIncidentals) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsMasterPaysLodging != false) hash ^= IsMasterPaysLodging.GetHashCode();
+      if (IsMasterPaysIncidentals != false) hash ^= IsMasterPaysIncidentals.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IsMasterPaysLodging != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsMasterPaysLodging);
+      }
+      if (IsMasterPaysIncidentals != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(IsMasterPaysIncidentals);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsMasterPaysLodging != false) {
+        size += 1 + 1;
+      }
+      if (IsMasterPaysIncidentals != false) {
+        size += 1 + 1;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(IsMasterPaysCheckResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsMasterPaysLodging != false) {
+        IsMasterPaysLodging = other.IsMasterPaysLodging;
+      }
+      if (other.IsMasterPaysIncidentals != false) {
+        IsMasterPaysIncidentals = other.IsMasterPaysIncidentals;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            IsMasterPaysLodging = input.ReadBool();
+            break;
+          }
+          case 16: {
+            IsMasterPaysIncidentals = input.ReadBool();
             break;
           }
         }
