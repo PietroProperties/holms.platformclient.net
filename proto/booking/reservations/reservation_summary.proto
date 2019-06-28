@@ -52,5 +52,6 @@ message ReservationSummary {
 	.holms.types.primitive.MonetaryAmount total_master_charges = 28;
 	.holms.types.primitive.MonetaryAmount total_master_taxes = 29;
 	.holms.types.primitive.MonetaryAmount total_master_fees = 30;
+	.holms.types.primitive.MonetaryAmount current_due_from_guest = 31;
 }
 

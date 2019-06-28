@@ -29,36 +29,38 @@ namespace HOLMS.Types.Supply.RPC {
             "c2hvdC9sb2RnaW5nX3NuYXBzaG90X3JlcXVlc3RfcmVzcG9uc2UucHJvdG8a",
             "QHN1cHBseS9zbmFwc2hvdC9sb2RnaW5nX3F1YW50aXR5X3NuYXBzaG90X3Jl",
             "cXVlc3RfcmVzcG9uc2UucHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRv",
-            "cnMvcHJvcGVydHlfaW5kaWNhdG9yLnByb3RvIv4BCiRTdXBwbHlTbmFwc2hv",
+            "cnMvcHJvcGVydHlfaW5kaWNhdG9yLnByb3RvIr4CCiRTdXBwbHlTbmFwc2hv",
             "dFN2Y1NuYXBzaG90V2l0aFRhZ3NSZXESSgoIcHJvcGVydHkYASABKAsyOC5o",
             "b2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5",
             "SW5kaWNhdG9yEkIKCmRhdGVfcmFuZ2UYAiABKAsyLi5ob2xtcy50eXBlcy5w",
             "cmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2USGAoQcmVzZXJ2YXRp",
             "b25fdGFncxgDIAMoCRIsCiRpc19tb2NrX3ByaWNlX3JlcXVpcmVkX3dpdGhv",
-            "dXRfaG9sZHMYBCABKAgiqwEKGUluY2lkZW50YWxTbmFwc2hvdFJlcXVlc3QS",
-            "SgoIcHJvcGVydHkYASABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZp",
-            "Zy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEkIKCmRhdGVfcmFuZ2UY",
-            "AiABKAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNk",
-            "YXRlUmFuZ2UyhQUKEVN1cHBseVNuYXBzaG90U3ZjEpoBCh1Mb2RnaW5nU25h",
-            "cHNob3RGcm9tVGFnc1N0cmljdBI8LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMu",
-            "U3VwcGx5U25hcHNob3RTdmNTbmFwc2hvdFdpdGhUYWdzUmVxGjsuaG9sbXMu",
-            "dHlwZXMuc3VwcGx5LnNuYXBzaG90LkxvZGdpbmdTbmFwc2hvdFJlcXVlc3RS",
-            "ZXNwb25zZRKaAQodTG9kZ2luZ1NuYXBzaG90RnJvbVRhZ3NNZXJnZWQSPC5o",
-            "b2xtcy50eXBlcy5zdXBwbHkucnBjLlN1cHBseVNuYXBzaG90U3ZjU25hcHNo",
-            "b3RXaXRoVGFnc1JlcRo7LmhvbG1zLnR5cGVzLnN1cHBseS5zbmFwc2hvdC5M",
-            "b2RnaW5nU25hcHNob3RSZXF1ZXN0UmVzcG9uc2USqgEKJUxvZGdpbmdRdWFu",
-            "dGl0eVNuYXBzaG90RnJvbVRhZ3NTdHJpY3QSPC5ob2xtcy50eXBlcy5zdXBw",
-            "bHkucnBjLlN1cHBseVNuYXBzaG90U3ZjU25hcHNob3RXaXRoVGFnc1JlcRpD",
-            "LmhvbG1zLnR5cGVzLnN1cHBseS5zbmFwc2hvdC5Mb2RnaW5nUXVhbnRpdHlT",
-            "bmFwc2hvdFJlcXVlc3RSZXNwb25zZRKIAQoSSW5jaWRlbnRhbFNuYXBzaG90",
-            "EjEuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5JbmNpZGVudGFsU25hcHNob3RS",
-            "ZXF1ZXN0Gj8uaG9sbXMudHlwZXMuc3VwcGx5LnNuYXBzaG90LkluY2lkZW50",
-            "YWxzU25hcHNob3RSZXF1ZXN0UmVzcG9uc2VCJVoKc3VwcGx5L3JwY6oCFkhP",
-            "TE1TLlR5cGVzLlN1cHBseS5SUENiBnByb3RvMw=="));
+            "dXRfaG9sZHMYBCABKAgSHgoWbnVtYmVyX29mX2FkdWx0X2d1ZXN0cxgFIAEo",
+            "BRIeChZudW1iZXJfb2ZfY2hpbGRfZ3Vlc3RzGAYgASgFIqsBChlJbmNpZGVu",
+            "dGFsU25hcHNob3RSZXF1ZXN0EkoKCHByb3BlcnR5GAEgASgLMjguaG9sbXMu",
+            "dHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGlj",
+            "YXRvchJCCgpkYXRlX3JhbmdlGAIgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0",
+            "aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlMoUFChFTdXBwbHlTbmFwc2hv",
+            "dFN2YxKaAQodTG9kZ2luZ1NuYXBzaG90RnJvbVRhZ3NTdHJpY3QSPC5ob2xt",
+            "cy50eXBlcy5zdXBwbHkucnBjLlN1cHBseVNuYXBzaG90U3ZjU25hcHNob3RX",
+            "aXRoVGFnc1JlcRo7LmhvbG1zLnR5cGVzLnN1cHBseS5zbmFwc2hvdC5Mb2Rn",
+            "aW5nU25hcHNob3RSZXF1ZXN0UmVzcG9uc2USmgEKHUxvZGdpbmdTbmFwc2hv",
+            "dEZyb21UYWdzTWVyZ2VkEjwuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5TdXBw",
+            "bHlTbmFwc2hvdFN2Y1NuYXBzaG90V2l0aFRhZ3NSZXEaOy5ob2xtcy50eXBl",
+            "cy5zdXBwbHkuc25hcHNob3QuTG9kZ2luZ1NuYXBzaG90UmVxdWVzdFJlc3Bv",
+            "bnNlEqoBCiVMb2RnaW5nUXVhbnRpdHlTbmFwc2hvdEZyb21UYWdzU3RyaWN0",
+            "EjwuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5TdXBwbHlTbmFwc2hvdFN2Y1Nu",
+            "YXBzaG90V2l0aFRhZ3NSZXEaQy5ob2xtcy50eXBlcy5zdXBwbHkuc25hcHNo",
+            "b3QuTG9kZ2luZ1F1YW50aXR5U25hcHNob3RSZXF1ZXN0UmVzcG9uc2USiAEK",
+            "EkluY2lkZW50YWxTbmFwc2hvdBIxLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMu",
+            "SW5jaWRlbnRhbFNuYXBzaG90UmVxdWVzdBo/LmhvbG1zLnR5cGVzLnN1cHBs",
+            "eS5zbmFwc2hvdC5JbmNpZGVudGFsc1NuYXBzaG90UmVxdWVzdFJlc3BvbnNl",
+            "QiVaCnN1cHBseS9ycGOqAhZIT0xNUy5UeXBlcy5TdXBwbHkuUlBDYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.Snapshot.IncidentalsSnapshotRequestResponseReflection.Descriptor, global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponseReflection.Descriptor, global::HOLMS.Types.Supply.Snapshot.LodgingQuantitySnapshotRequestResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithTagsReq), global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithTagsReq.Parser, new[]{ "Property", "DateRange", "ReservationTags", "IsMockPriceRequiredWithoutHolds" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithTagsReq), global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithTagsReq.Parser, new[]{ "Property", "DateRange", "ReservationTags", "IsMockPriceRequiredWithoutHolds", "NumberOfAdultGuests", "NumberOfChildGuests" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.IncidentalSnapshotRequest), global::HOLMS.Types.Supply.RPC.IncidentalSnapshotRequest.Parser, new[]{ "Property", "DateRange" }, null, null, null)
           }));
     }
@@ -94,6 +96,8 @@ namespace HOLMS.Types.Supply.RPC {
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
       reservationTags_ = other.reservationTags_.Clone();
       isMockPriceRequiredWithoutHolds_ = other.isMockPriceRequiredWithoutHolds_;
+      numberOfAdultGuests_ = other.numberOfAdultGuests_;
+      numberOfChildGuests_ = other.numberOfChildGuests_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -144,6 +148,28 @@ namespace HOLMS.Types.Supply.RPC {
       }
     }
 
+    /// <summary>Field number for the "number_of_adult_guests" field.</summary>
+    public const int NumberOfAdultGuestsFieldNumber = 5;
+    private int numberOfAdultGuests_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int NumberOfAdultGuests {
+      get { return numberOfAdultGuests_; }
+      set {
+        numberOfAdultGuests_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "number_of_child_guests" field.</summary>
+    public const int NumberOfChildGuestsFieldNumber = 6;
+    private int numberOfChildGuests_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int NumberOfChildGuests {
+      get { return numberOfChildGuests_; }
+      set {
+        numberOfChildGuests_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SupplySnapshotSvcSnapshotWithTagsReq);
@@ -161,6 +187,8 @@ namespace HOLMS.Types.Supply.RPC {
       if (!object.Equals(DateRange, other.DateRange)) return false;
       if(!reservationTags_.Equals(other.reservationTags_)) return false;
       if (IsMockPriceRequiredWithoutHolds != other.IsMockPriceRequiredWithoutHolds) return false;
+      if (NumberOfAdultGuests != other.NumberOfAdultGuests) return false;
+      if (NumberOfChildGuests != other.NumberOfChildGuests) return false;
       return true;
     }
 
@@ -171,6 +199,8 @@ namespace HOLMS.Types.Supply.RPC {
       if (dateRange_ != null) hash ^= DateRange.GetHashCode();
       hash ^= reservationTags_.GetHashCode();
       if (IsMockPriceRequiredWithoutHolds != false) hash ^= IsMockPriceRequiredWithoutHolds.GetHashCode();
+      if (NumberOfAdultGuests != 0) hash ^= NumberOfAdultGuests.GetHashCode();
+      if (NumberOfChildGuests != 0) hash ^= NumberOfChildGuests.GetHashCode();
       return hash;
     }
 
@@ -194,6 +224,14 @@ namespace HOLMS.Types.Supply.RPC {
         output.WriteRawTag(32);
         output.WriteBool(IsMockPriceRequiredWithoutHolds);
       }
+      if (NumberOfAdultGuests != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(NumberOfAdultGuests);
+      }
+      if (NumberOfChildGuests != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(NumberOfChildGuests);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -208,6 +246,12 @@ namespace HOLMS.Types.Supply.RPC {
       size += reservationTags_.CalculateSize(_repeated_reservationTags_codec);
       if (IsMockPriceRequiredWithoutHolds != false) {
         size += 1 + 1;
+      }
+      if (NumberOfAdultGuests != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NumberOfAdultGuests);
+      }
+      if (NumberOfChildGuests != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NumberOfChildGuests);
       }
       return size;
     }
@@ -232,6 +276,12 @@ namespace HOLMS.Types.Supply.RPC {
       reservationTags_.Add(other.reservationTags_);
       if (other.IsMockPriceRequiredWithoutHolds != false) {
         IsMockPriceRequiredWithoutHolds = other.IsMockPriceRequiredWithoutHolds;
+      }
+      if (other.NumberOfAdultGuests != 0) {
+        NumberOfAdultGuests = other.NumberOfAdultGuests;
+      }
+      if (other.NumberOfChildGuests != 0) {
+        NumberOfChildGuests = other.NumberOfChildGuests;
       }
     }
 
@@ -263,6 +313,14 @@ namespace HOLMS.Types.Supply.RPC {
           }
           case 32: {
             IsMockPriceRequiredWithoutHolds = input.ReadBool();
+            break;
+          }
+          case 40: {
+            NumberOfAdultGuests = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            NumberOfChildGuests = input.ReadInt32();
             break;
           }
         }
