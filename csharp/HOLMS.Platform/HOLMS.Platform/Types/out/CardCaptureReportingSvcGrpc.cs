@@ -16,6 +16,7 @@ namespace HOLMS.Types.Reporting.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest> __Marshaller_CardCaptureReportingSvcGetPendingTransactionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> __Marshaller_CardCaptureReportingSvcReportResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest> __Marshaller_CardCaptureReportSvcGetSettledTransactionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetOpenClosedTransactionsRequest> __Marshaller_CardCaptureReportingSvcGetOpenClosedTransactionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetOpenClosedTransactionsRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest, global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> __Method_GetPendingTransactionsReport = new grpc::Method<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetPendingTransactionsRequest, global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse>(
         grpc::MethodType.Unary,
@@ -29,6 +30,13 @@ namespace HOLMS.Types.Reporting.RPC {
         __ServiceName,
         "GetSettledTransactionsReport",
         __Marshaller_CardCaptureReportSvcGetSettledTransactionsRequest,
+        __Marshaller_CardCaptureReportingSvcReportResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetOpenClosedTransactionsRequest, global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> __Method_GetOpenClosedTransactionsReport = new grpc::Method<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetOpenClosedTransactionsRequest, global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetOpenClosedTransactionsReport",
+        __Marshaller_CardCaptureReportingSvcGetOpenClosedTransactionsRequest,
         __Marshaller_CardCaptureReportingSvcReportResponse);
 
     /// <summary>Service descriptor</summary>
@@ -46,6 +54,11 @@ namespace HOLMS.Types.Reporting.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetSettledTransactionsReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportSvcGetSettledTransactionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetOpenClosedTransactionsReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetOpenClosedTransactionsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -107,6 +120,22 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetSettledTransactionsReport, null, options, request);
       }
+      public virtual global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse GetOpenClosedTransactionsReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetOpenClosedTransactionsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetOpenClosedTransactionsReport(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse GetOpenClosedTransactionsReport(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetOpenClosedTransactionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetOpenClosedTransactionsReport, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetOpenClosedTransactionsReportAsync(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetOpenClosedTransactionsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetOpenClosedTransactionsReportAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcReportResponse> GetOpenClosedTransactionsReportAsync(global::HOLMS.Types.Reporting.RPC.CardCaptureReportingSvcGetOpenClosedTransactionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetOpenClosedTransactionsReport, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override CardCaptureReportingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -120,7 +149,8 @@ namespace HOLMS.Types.Reporting.RPC {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetPendingTransactionsReport, serviceImpl.GetPendingTransactionsReport)
-          .AddMethod(__Method_GetSettledTransactionsReport, serviceImpl.GetSettledTransactionsReport).Build();
+          .AddMethod(__Method_GetSettledTransactionsReport, serviceImpl.GetSettledTransactionsReport)
+          .AddMethod(__Method_GetOpenClosedTransactionsReport, serviceImpl.GetOpenClosedTransactionsReport).Build();
     }
 
   }

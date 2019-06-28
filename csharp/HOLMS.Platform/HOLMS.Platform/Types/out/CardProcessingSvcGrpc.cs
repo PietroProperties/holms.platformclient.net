@@ -23,6 +23,7 @@ namespace HOLMS.Types.Money.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator> __Marshaller_PaymentCardSaleIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicator.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResponse> __Marshaller_CardProcessingSvcVoidTransactionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator> __Marshaller_PaymentCardRefundIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchOpenClosedBatchesRequest> __Marshaller_CardProcessingSvcSearchOpenClosedBatchesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchOpenClosedBatchesRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> __Method_VerifyAndTokenizeNotPresentCard = new grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse>(
         grpc::MethodType.Unary,
@@ -65,6 +66,13 @@ namespace HOLMS.Types.Money.RPC {
         "VoidRefund",
         __Marshaller_PaymentCardRefundIndicator,
         __Marshaller_CardProcessingSvcVoidTransactionResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchOpenClosedBatchesRequest, global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse> __Method_GetOpenClosedBatchState = new grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchOpenClosedBatchesRequest, global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetOpenClosedBatchState",
+        __Marshaller_CardProcessingSvcSearchOpenClosedBatchesRequest,
+        __Marshaller_GetOpenBatchStateResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -127,6 +135,11 @@ namespace HOLMS.Types.Money.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResponse> VoidRefund(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse> GetOpenClosedBatchState(global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchOpenClosedBatchesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -372,6 +385,22 @@ namespace HOLMS.Types.Money.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_VoidRefund, null, options, request);
       }
+      public virtual global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse GetOpenClosedBatchState(global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchOpenClosedBatchesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetOpenClosedBatchState(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse GetOpenClosedBatchState(global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchOpenClosedBatchesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetOpenClosedBatchState, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse> GetOpenClosedBatchStateAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchOpenClosedBatchesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetOpenClosedBatchStateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse> GetOpenClosedBatchStateAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchOpenClosedBatchesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetOpenClosedBatchState, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override CardProcessingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -389,7 +418,8 @@ namespace HOLMS.Types.Money.RPC {
           .AddMethod(__Method_SearchHistoricalBatches, serviceImpl.SearchHistoricalBatches)
           .AddMethod(__Method_CloseProcessorBatch, serviceImpl.CloseProcessorBatch)
           .AddMethod(__Method_VoidSale, serviceImpl.VoidSale)
-          .AddMethod(__Method_VoidRefund, serviceImpl.VoidRefund).Build();
+          .AddMethod(__Method_VoidRefund, serviceImpl.VoidRefund)
+          .AddMethod(__Method_GetOpenClosedBatchState, serviceImpl.GetOpenClosedBatchState).Build();
     }
 
   }
