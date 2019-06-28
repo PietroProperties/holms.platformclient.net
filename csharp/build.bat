@@ -51,6 +51,7 @@ for %%P in (..\proto\operations\attractions\*.proto) do %PROTOC% -I..\proto\ -I%
 for %%P in (..\proto\operations\housekeeping\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\operations\messaging\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\operations\note_requests\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
+for %%P in (..\proto\operations\note_requests_room_types\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\operations\out_of_order\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\operations\pbx_events\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
 for %%P in (..\proto\operations\reporting\*.proto) do %PROTOC% -I..\proto\ -I%INCL_DIR% --csharp_out=%OUT_DIR% %%P || exit /b 255
