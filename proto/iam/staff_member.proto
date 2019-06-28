@@ -22,4 +22,5 @@ message StaffMember {
 	holms.types.iam.DepartmentIndicator department = 9;
 	string department_name = 10;
 	.holms.types.primitive.ContactInformation contact_info = 11;
+	bool is_included = 12;
 }

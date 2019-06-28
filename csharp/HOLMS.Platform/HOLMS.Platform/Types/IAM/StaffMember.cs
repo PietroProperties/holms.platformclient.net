@@ -10,7 +10,7 @@ namespace HOLMS.Types.IAM {
         public StaffMember(StaffMemberIndicator s, string userid, string password,
             string displayName, string emergencyContactPhone, bool isPhoneDisplayable,
             DateTime dateHired, bool isActive,
-            DepartmentIndicator dept, string deptName, ContactInformation contact) {
+            DepartmentIndicator dept, string deptName, ContactInformation contact,bool isIncluded = false) {
             EntityId = s;
             UserId = userid;
 
@@ -23,6 +23,7 @@ namespace HOLMS.Types.IAM {
             IsPhoneDataDisplayable = isPhoneDisplayable;
             DateHired = dateHired.ToTS();
             IsActive = isActive;
+			IsIncluded = isIncluded;
             Department = dept;
             DepartmentName = deptName;
             ContactInfo = contact;

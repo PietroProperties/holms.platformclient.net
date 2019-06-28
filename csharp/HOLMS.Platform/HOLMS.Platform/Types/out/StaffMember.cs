@@ -25,7 +25,7 @@ namespace HOLMS.Types.IAM {
             "ChZpYW0vc3RhZmZfbWVtYmVyLnByb3RvEg9ob2xtcy50eXBlcy5pYW0aH2dv",
             "b2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aI3ByaW1pdGl2ZS9jb250",
             "YWN0X2luZm9ybWF0aW9uLnByb3RvGh5pYW0vZGVwYXJ0bWVudF9pbmRpY2F0",
-            "b3IucHJvdG8aIGlhbS9zdGFmZl9tZW1iZXJfaW5kaWNhdG9yLnByb3RvIqID",
+            "b3IucHJvdG8aIGlhbS9zdGFmZl9tZW1iZXJfaW5kaWNhdG9yLnByb3RvIrcD",
             "CgtTdGFmZk1lbWJlchI4CgllbnRpdHlfaWQYASABKAsyJS5ob2xtcy50eXBl",
             "cy5pYW0uU3RhZmZNZW1iZXJJbmRpY2F0b3ISDwoHdXNlcl9pZBgCIAEoCRIQ",
             "CghwYXNzd29yZBgDIAEoCRIUCgxkaXNwbGF5X25hbWUYBCABKAkSJgoeZW1l",
@@ -35,12 +35,12 @@ namespace HOLMS.Types.IAM {
             "EjgKCmRlcGFydG1lbnQYCSABKAsyJC5ob2xtcy50eXBlcy5pYW0uRGVwYXJ0",
             "bWVudEluZGljYXRvchIXCg9kZXBhcnRtZW50X25hbWUYCiABKAkSPwoMY29u",
             "dGFjdF9pbmZvGAsgASgLMikuaG9sbXMudHlwZXMucHJpbWl0aXZlLkNvbnRh",
-            "Y3RJbmZvcm1hdGlvbkIXWgNpYW2qAg9IT0xNUy5UeXBlcy5JQU1iBnByb3Rv",
-            "Mw=="));
+            "Y3RJbmZvcm1hdGlvbhITCgtpc19pbmNsdWRlZBgMIAEoCEIXWgNpYW2qAg9I",
+            "T0xNUy5UeXBlcy5JQU1iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Primitive.ContactInformationReflection.Descriptor, global::HOLMS.Types.IAM.DepartmentIndicatorReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.StaffMember), global::HOLMS.Types.IAM.StaffMember.Parser, new[]{ "EntityId", "UserId", "Password", "DisplayName", "EmergencyContactPhoneNumber", "IsPhoneDataDisplayable", "DateHired", "IsActive", "Department", "DepartmentName", "ContactInfo" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.IAM.StaffMember), global::HOLMS.Types.IAM.StaffMember.Parser, new[]{ "EntityId", "UserId", "Password", "DisplayName", "EmergencyContactPhoneNumber", "IsPhoneDataDisplayable", "DateHired", "IsActive", "Department", "DepartmentName", "ContactInfo", "IsIncluded" }, null, null, null)
           }));
     }
     #endregion
@@ -82,6 +82,7 @@ namespace HOLMS.Types.IAM {
       Department = other.department_ != null ? other.Department.Clone() : null;
       departmentName_ = other.departmentName_;
       ContactInfo = other.contactInfo_ != null ? other.ContactInfo.Clone() : null;
+      isIncluded_ = other.isIncluded_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -210,6 +211,17 @@ namespace HOLMS.Types.IAM {
       }
     }
 
+    /// <summary>Field number for the "is_included" field.</summary>
+    public const int IsIncludedFieldNumber = 12;
+    private bool isIncluded_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsIncluded {
+      get { return isIncluded_; }
+      set {
+        isIncluded_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as StaffMember);
@@ -234,6 +246,7 @@ namespace HOLMS.Types.IAM {
       if (!object.Equals(Department, other.Department)) return false;
       if (DepartmentName != other.DepartmentName) return false;
       if (!object.Equals(ContactInfo, other.ContactInfo)) return false;
+      if (IsIncluded != other.IsIncluded) return false;
       return true;
     }
 
@@ -251,6 +264,7 @@ namespace HOLMS.Types.IAM {
       if (department_ != null) hash ^= Department.GetHashCode();
       if (DepartmentName.Length != 0) hash ^= DepartmentName.GetHashCode();
       if (contactInfo_ != null) hash ^= ContactInfo.GetHashCode();
+      if (IsIncluded != false) hash ^= IsIncluded.GetHashCode();
       return hash;
     }
 
@@ -305,6 +319,10 @@ namespace HOLMS.Types.IAM {
         output.WriteRawTag(90);
         output.WriteMessage(ContactInfo);
       }
+      if (IsIncluded != false) {
+        output.WriteRawTag(96);
+        output.WriteBool(IsIncluded);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -342,6 +360,9 @@ namespace HOLMS.Types.IAM {
       }
       if (contactInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContactInfo);
+      }
+      if (IsIncluded != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -395,6 +416,9 @@ namespace HOLMS.Types.IAM {
           contactInfo_ = new global::HOLMS.Types.Primitive.ContactInformation();
         }
         ContactInfo.MergeFrom(other.ContactInfo);
+      }
+      if (other.IsIncluded != false) {
+        IsIncluded = other.IsIncluded;
       }
     }
 
@@ -460,6 +484,10 @@ namespace HOLMS.Types.IAM {
               contactInfo_ = new global::HOLMS.Types.Primitive.ContactInformation();
             }
             input.ReadMessage(contactInfo_);
+            break;
+          }
+          case 96: {
+            IsIncluded = input.ReadBool();
             break;
           }
         }
