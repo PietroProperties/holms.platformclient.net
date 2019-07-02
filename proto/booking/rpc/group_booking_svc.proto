@@ -91,9 +91,6 @@ message IncreaseGroupHoldForReservationResponse{
 	bool result=1;
 }
 
-message GroupBookingSvcAllByDateRangeResponse {
-	repeated .holms.types.booking.groups.GroupBooking booking = 1;
-}
 service GroupBookingSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (GroupBookingSvcAllBookings);
@@ -153,5 +150,5 @@ service GroupBookingSvc {
 		returns(google.protobuf.Empty);
 
 	rpc AllByDateRange(.holms.types.primitive.PbInclusiveOpsdateRange)
-		returns(GroupBookingSvcAllByDateRangeResponse);	
+		returns(GroupBookingSvcAllBookings);	
 }
