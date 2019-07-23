@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package holms.types.booking.guarantees;
+option csharp_namespace = "HOLMS.Types.Booking.Guarantees";
+option go_package = "booking/guarantees";
+
+enum VoidGuaranteeResult {
+	CARD_GUARANTEE_VOID_RESULT_SUCCESS = 0;
+	CARD_GUARANTEE_VOID_RESULT_GUARANTEE_NOT_FOUND = 1;
+	CARD_GUARANTEE_VOID_RESULT_CARD_VERIFICATION_FAILED = 2;
+	CARD_GUARANTEE_VOID_RESULT_RESERVATION_GUARANTEED_BY_MASTER_RESERVATION = 3;
+}

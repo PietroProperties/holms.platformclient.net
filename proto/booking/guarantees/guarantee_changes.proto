@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package holms.types.booking.guarantees;
+option csharp_namespace = "HOLMS.Types.Booking.Guarantees";
+
+import "booking/indicators/reservation_indicator.proto";
+import "booking/guarantees/void_guarantee_result.proto";
+
+message VoidGuaranteeRequest{
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+}
+message VoidGuaranteeResponse{
+	holms.types.booking.guarantees.VoidGuaranteeResult void_guarantee_result = 1;
+}

@@ -20,6 +20,8 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.ResGSvcTenderNewNotPresentCardGuaranteeRequest> __Marshaller_ResGSvcTenderNewNotPresentCardGuaranteeRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ResGSvcTenderNewNotPresentCardGuaranteeRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.ResGSvcTenderNotPresentCardGuaranteeResponse> __Marshaller_ResGSvcTenderNotPresentCardGuaranteeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ResGSvcTenderNotPresentCardGuaranteeResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.ResGSvcTenderStoredNotPresentCardGuaranteeRequest> __Marshaller_ResGSvcTenderStoredNotPresentCardGuaranteeRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ResGSvcTenderStoredNotPresentCardGuaranteeRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeRequest> __Marshaller_VoidGuaranteeRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeResponse> __Marshaller_VoidGuaranteeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus> __Method_GetPreTenderStatus = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ResGSvcPreTenderStatus>(
         grpc::MethodType.Unary,
@@ -49,6 +51,13 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_ResGSvcTenderStoredNotPresentCardGuaranteeRequest,
         __Marshaller_ResGSvcTenderNotPresentCardGuaranteeResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeRequest, global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeResponse> __Method_VoidGuarantee = new grpc::Method<global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeRequest, global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "VoidGuarantee",
+        __Marshaller_VoidGuaranteeRequest,
+        __Marshaller_VoidGuaranteeResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -74,6 +83,11 @@ namespace HOLMS.Types.Folio.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.ResGSvcTenderNotPresentCardGuaranteeResponse> TenderStoredNotPresentCardGuarantee(global::HOLMS.Types.Folio.RPC.ResGSvcTenderStoredNotPresentCardGuaranteeRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeResponse> VoidGuarantee(global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -167,6 +181,22 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_TenderStoredNotPresentCardGuarantee, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeResponse VoidGuarantee(global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return VoidGuarantee(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeResponse VoidGuarantee(global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_VoidGuarantee, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeResponse> VoidGuaranteeAsync(global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return VoidGuaranteeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeResponse> VoidGuaranteeAsync(global::HOLMS.Types.Booking.Guarantees.VoidGuaranteeRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_VoidGuarantee, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override ReservationGuaranteeSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -182,7 +212,8 @@ namespace HOLMS.Types.Folio.RPC {
           .AddMethod(__Method_GetPreTenderStatus, serviceImpl.GetPreTenderStatus)
           .AddMethod(__Method_TenderCheckGuarantee, serviceImpl.TenderCheckGuarantee)
           .AddMethod(__Method_TenderNewNotPresentCardGuarantee, serviceImpl.TenderNewNotPresentCardGuarantee)
-          .AddMethod(__Method_TenderStoredNotPresentCardGuarantee, serviceImpl.TenderStoredNotPresentCardGuarantee).Build();
+          .AddMethod(__Method_TenderStoredNotPresentCardGuarantee, serviceImpl.TenderStoredNotPresentCardGuarantee)
+          .AddMethod(__Method_VoidGuarantee, serviceImpl.VoidGuarantee).Build();
     }
 
   }
