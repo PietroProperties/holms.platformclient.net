@@ -8,6 +8,7 @@ import "booking/indicators/reservation_indicator.proto";
 import "primitive/pb_local_date.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
 import "primitive/uuid.proto";
+import "google/protobuf/empty.proto";
 
 message MasterFolioServiceMasterFolioRequest {
 	.holms.types.booking.indicators.ReservationIndicator client_folio = 1;
@@ -130,4 +131,7 @@ service MasterFolioSvc {
 
 	rpc IsMasterPaysCheck(IsMasterPaysCheckRequest)
 		returns(IsMasterPaysCheckResponse);
+
+	rpc RemoveMasterOrGroupGuaranteeFromClient(MasterFolioSvcRemoveMasterFolioRequest)
+		returns(google.protobuf.Empty);
 }
