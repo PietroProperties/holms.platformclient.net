@@ -13,4 +13,5 @@ message ReservationBookedNotification {
 	holms.types.booking.indicators.ReservationIndicator reservation = 2;
 	holms.types.booking.pricing.PretaxReservationQuote price_quote = 3;
 	holms.types.booking.reservations.ReservationSummary reservation_summary = 4;
+	bool has_last_minute_waiver = 5;
 }
