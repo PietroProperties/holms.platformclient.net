@@ -19,6 +19,7 @@ import "primitive/uuid.proto";
 import "iam/staff_member_indicator.proto";
 import "google/protobuf/timestamp.proto";
 import "supply/room_types/room_type_indicator.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
 
 message GroupBookingSvcAllBookings {
 	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
@@ -89,6 +90,7 @@ message IncreaseGroupHoldForReservationRequest{
 message IncreaseGroupHoldForReservationResponse{
 	bool result=1;
 }
+
 service GroupBookingSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (GroupBookingSvcAllBookings);
@@ -146,4 +148,7 @@ service GroupBookingSvc {
 
 	rpc FolioSync(.holms.types.booking.groups.GroupBooking)
 		returns(google.protobuf.Empty);
+
+	rpc AllByDateRange(.holms.types.primitive.PbInclusiveOpsdateRange)
+		returns(GroupBookingSvcAllBookings);	
 }

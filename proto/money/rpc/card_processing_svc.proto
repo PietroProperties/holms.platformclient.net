@@ -38,6 +38,12 @@ message CardProcessingSvcSearchHistoricalBatchesRequest {
 	.holms.types.primitive.PbInterval search_range = 2;
 }
 
+message CardProcessingSvcSearchOpenClosedBatchesRequest {
+	  holms.types.money.cards.CardMerchantIndicator merchant = 1;
+	 .holms.types.primitive.PbInterval search_date_range = 2;
+	  string card_number = 3; 
+}
+
 enum CardProcessingSvcVoidTransactionResult {
 	CARD_PROCESSING_SVC_VOID_TRANSACTION_SUCCESS = 0;
 	CARD_PROCESSING_SVC_VOID_TRANSACTION_NOT_FOUND = 1;
@@ -69,6 +75,8 @@ service CardProcessingSvc {
 	rpc VoidSale(holms.types.money.cards.transactions.PaymentCardSaleIndicator)
 		returns (CardProcessingSvcVoidTransactionResponse);
 	rpc VoidRefund(holms.types.money.cards.transactions.PaymentCardRefundIndicator)
-		returns (CardProcessingSvcVoidTransactionResponse);
+		returns (CardProcessingSvcVoidTransactionResponse);		
+    rpc GetOpenClosedBatchState(CardProcessingSvcSearchOpenClosedBatchesRequest)
+		returns (holms.types.money.cards.transactions.GetOpenBatchStateResponse); 
 }
 

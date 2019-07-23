@@ -43,5 +43,6 @@ message ManagementOpsdateRangeReportManifest {
 	bool tax_exempt_detail_report = 8;
 	bool folio_gross_summary_report = 9;
 	bool summary_report = 10;
+	bool unused_group_holds_report = 11;
 }
 
