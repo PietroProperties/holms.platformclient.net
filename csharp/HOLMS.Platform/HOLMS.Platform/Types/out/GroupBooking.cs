@@ -32,7 +32,7 @@ namespace HOLMS.Types.Booking.Groups {
             "X3N0YXR1cy5wcm90bxogY3JtL2dyb3Vwcy9ncm91cF9pbmRpY2F0b3IucHJv",
             "dG8aJHN1cHBseS9yYXRlX3NjaGVkdWxlX2luZGljYXRvci5wcm90bxo+dGVu",
             "YW5jeV9jb25maWcvaW5kaWNhdG9ycy9ncm91cF9ib29raW5nX21ldGhvZF9p",
-            "bmRpY2F0b3IucHJvdG8i0wcKDEdyb3VwQm9va2luZxJICgllbnRpdHlfaWQY",
+            "bmRpY2F0b3IucHJvdG8i6QcKDEdyb3VwQm9va2luZxJICgllbnRpdHlfaWQY",
             "ASABKAsyNS5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBC",
             "b29raW5nSW5kaWNhdG9yEj4KBnN0YXR1cxgCIAEoDjIuLmhvbG1zLnR5cGVz",
             "LmJvb2tpbmcuZ3JvdXBzLkdyb3VwQm9va2luZ1N0YXR1cxISCgp0YXhfZXhl",
@@ -54,12 +54,12 @@ namespace HOLMS.Types.Booking.Groups {
             "dG9yElgKE2NhbmNlbGxhdGlvbl9wb2xpY3kYEiABKAsyOy5ob2xtcy50eXBl",
             "cy5ib29raW5nLmluZGljYXRvcnMuQ2FuY2VsbGF0aW9uUG9saWN5SW5kaWNh",
             "dG9yEhIKCmdyb3VwX25hbWUYEyABKAkSGgoSc3VycHJlc3NfcmF0ZV9pbmZv",
-            "GBQgASgIQi1aDmJvb2tpbmcvZ3JvdXBzqgIaSE9MTVMuVHlwZXMuQm9va2lu",
-            "Zy5Hcm91cHNiBnByb3RvMw=="));
+            "GBQgASgIEhQKDHRheF9jYXRlZ29yeRgVIAEoCUItWg5ib29raW5nL2dyb3Vw",
+            "c6oCGkhPTE1TLlR5cGVzLkJvb2tpbmcuR3JvdXBzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.TravelAgentIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingStatusReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.GroupBookingMethodIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBooking), global::HOLMS.Types.Booking.Groups.GroupBooking.Parser, new[]{ "EntityId", "Status", "TaxExempt", "TaxId", "GroupPaysLodging", "GroupPaysIncidentals", "AdditionalNotes", "CustomerBookingId", "DateRange", "RateSchedule", "Group", "ConfirmationTemplateId", "BookingMethod", "ArrivalTemplateId", "ReservationSourceId", "TravelAgent", "CancellationPolicy", "GroupName", "SurpressRateInfo" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBooking), global::HOLMS.Types.Booking.Groups.GroupBooking.Parser, new[]{ "EntityId", "Status", "TaxExempt", "TaxId", "GroupPaysLodging", "GroupPaysIncidentals", "AdditionalNotes", "CustomerBookingId", "DateRange", "RateSchedule", "Group", "ConfirmationTemplateId", "BookingMethod", "ArrivalTemplateId", "ReservationSourceId", "TravelAgent", "CancellationPolicy", "GroupName", "SurpressRateInfo", "TaxCategory" }, null, null, null)
           }));
     }
     #endregion
@@ -109,6 +109,7 @@ namespace HOLMS.Types.Booking.Groups {
       CancellationPolicy = other.cancellationPolicy_ != null ? other.CancellationPolicy.Clone() : null;
       groupName_ = other.groupName_;
       surpressRateInfo_ = other.surpressRateInfo_;
+      taxCategory_ = other.taxCategory_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -325,6 +326,17 @@ namespace HOLMS.Types.Booking.Groups {
       }
     }
 
+    /// <summary>Field number for the "tax_category" field.</summary>
+    public const int TaxCategoryFieldNumber = 21;
+    private string taxCategory_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string TaxCategory {
+      get { return taxCategory_; }
+      set {
+        taxCategory_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GroupBooking);
@@ -357,6 +369,7 @@ namespace HOLMS.Types.Booking.Groups {
       if (!object.Equals(CancellationPolicy, other.CancellationPolicy)) return false;
       if (GroupName != other.GroupName) return false;
       if (SurpressRateInfo != other.SurpressRateInfo) return false;
+      if (TaxCategory != other.TaxCategory) return false;
       return true;
     }
 
@@ -382,6 +395,7 @@ namespace HOLMS.Types.Booking.Groups {
       if (cancellationPolicy_ != null) hash ^= CancellationPolicy.GetHashCode();
       if (GroupName.Length != 0) hash ^= GroupName.GetHashCode();
       if (SurpressRateInfo != false) hash ^= SurpressRateInfo.GetHashCode();
+      if (TaxCategory.Length != 0) hash ^= TaxCategory.GetHashCode();
       return hash;
     }
 
@@ -468,6 +482,10 @@ namespace HOLMS.Types.Booking.Groups {
         output.WriteRawTag(160, 1);
         output.WriteBool(SurpressRateInfo);
       }
+      if (TaxCategory.Length != 0) {
+        output.WriteRawTag(170, 1);
+        output.WriteString(TaxCategory);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -529,6 +547,9 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (SurpressRateInfo != false) {
         size += 2 + 1;
+      }
+      if (TaxCategory.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(TaxCategory);
       }
       return size;
     }
@@ -624,6 +645,9 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (other.SurpressRateInfo != false) {
         SurpressRateInfo = other.SurpressRateInfo;
+      }
+      if (other.TaxCategory.Length != 0) {
+        TaxCategory = other.TaxCategory;
       }
     }
 
@@ -739,6 +763,10 @@ namespace HOLMS.Types.Booking.Groups {
           }
           case 160: {
             SurpressRateInfo = input.ReadBool();
+            break;
+          }
+          case 170: {
+            TaxCategory = input.ReadString();
             break;
           }
         }
