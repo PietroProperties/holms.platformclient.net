@@ -12,6 +12,7 @@ import "supply/room_types/room_type.proto";
 import "operations/housekeeping/housekeeping_time.proto";
 import "operations/rooms/room_indicator.proto";
 import "booking/indicators/cancellation_policy_indicator.proto";
+import "tenancy_config/reservation_source.proto";
 
 message CompleteOpenReservation {
 	holms.types.booking.indicators.ReservationIndicator entity_id = 1;
@@ -40,4 +41,5 @@ message CompleteOpenReservation {
 	string reservation_id_from_channel = 25;
 	string rush_reservation_id_from_channel = 26;
 	string source_indirect_channel = 27;
+	holms.types.tenancy_config.ReservationSource reservation_source = 28;
 }
