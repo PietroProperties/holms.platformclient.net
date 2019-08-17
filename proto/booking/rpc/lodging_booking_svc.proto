@@ -14,6 +14,7 @@ import "booking/reservations/remove_guest_from_reservation_request.proto";
 import "booking/reservations/reservation_frp_amendment_request.proto";
 import "booking/reservations/frp_amendment_response.proto";
 import "booking/reservations/reservation_channel_amendment_request.proto";
+import "tenancy_config/indicators/reservation_source_indicator.proto";
 
 message GetReservationNamesRequest{
 	repeated .holms.types.booking.indicators.ReservationIndicator reservation_indicators=1;
@@ -27,6 +28,11 @@ message SwapChargesRequest{
 }
 message SwapChargesResponse{
 	bool charges_present_and_moved=1;
+}
+
+message SourceOfReservationRequest{
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	holms.types.tenancy_config.indicators.ReservationSourceIndicator reservation_source=2;
 }
 service LodgingBookingSvc {
 	rpc BookGenesisReservation(.holms.types.booking.reservations.BookGenesisReservationRequest)
@@ -55,4 +61,7 @@ service LodgingBookingSvc {
 
 	rpc SwapExtraStayCharges(SwapChargesRequest)
 		returns(SwapChargesResponse);
+
+	rpc SetSourceOfReservation(SourceOfReservationRequest)
+		returns (google.protobuf.Empty);
 }
