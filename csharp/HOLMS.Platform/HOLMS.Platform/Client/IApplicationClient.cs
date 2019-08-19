@@ -125,6 +125,7 @@ namespace HOLMS.Platform.Client {
         FrontDeskReportingSvc.FrontDeskReportingSvcClient FrontDeskReportingSvc { get; }
         ManagementReportingSvc.ManagementReportingSvcClient ManagementReportingSvc { get; }
         OperationsReportingSvc.OperationsReportingSvcClient OperationsReportingSvc { get; }
+        ReportingDefaultSvc.ReportingDefaultSvcClient ReportingDefaultSvc { get; }
         #endregion
 
         StaffMemberIndicator AuthenticatedUser { get; }

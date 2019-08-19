@@ -139,6 +139,7 @@ namespace HOLMS.Platform.Client {
         public FrontDeskReportingSvc.FrontDeskReportingSvcClient FrontDeskReportingSvc { get; protected set; }
         public ManagementReportingSvc.ManagementReportingSvcClient ManagementReportingSvc { get; protected set; }
         public OperationsReportingSvc.OperationsReportingSvcClient OperationsReportingSvc { get; protected set; }
+        public ReportingDefaultSvc.ReportingDefaultSvcClient ReportingDefaultSvc { get; protected set; }
         #endregion
 
         public SessionService SS { get; protected set; }
@@ -352,7 +353,7 @@ namespace HOLMS.Platform.Client {
             FrontDeskReportingSvc = new FrontDeskReportingSvc.FrontDeskReportingSvcClient(_authenticatedChannel);
             ManagementReportingSvc = new ManagementReportingSvc.ManagementReportingSvcClient(_authenticatedChannel);
             OperationsReportingSvc = new OperationsReportingSvc.OperationsReportingSvcClient(_authenticatedChannel);
-
+            ReportingDefaultSvc = new ReportingDefaultSvc.ReportingDefaultSvcClient(_authenticatedChannel);
             #endregion
         }
 
