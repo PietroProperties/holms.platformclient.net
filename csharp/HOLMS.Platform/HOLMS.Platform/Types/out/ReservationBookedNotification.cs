@@ -27,19 +27,18 @@ namespace HOLMS.Types.Booking.Reservations {
             "aW9ucxouYm9va2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRv",
             "ci5wcm90bxouYm9va2luZy9wcmljaW5nL3ByZXRheF9yZXNlcnZhdGlvbl9x",
             "dW90ZS5wcm90bxouYm9va2luZy9yZXNlcnZhdGlvbnMvcmVzZXJ2YXRpb25f",
-            "c3VtbWFyeS5wcm90byK6AgodUmVzZXJ2YXRpb25Cb29rZWROb3RpZmljYXRp",
+            "c3VtbWFyeS5wcm90byKaAgodUmVzZXJ2YXRpb25Cb29rZWROb3RpZmljYXRp",
             "b24SEQoJal93X3Rva2VuGAEgASgJEkkKC3Jlc2VydmF0aW9uGAIgASgLMjQu",
             "aG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uSW5k",
             "aWNhdG9yEkgKC3ByaWNlX3F1b3RlGAMgASgLMjMuaG9sbXMudHlwZXMuYm9v",
             "a2luZy5wcmljaW5nLlByZXRheFJlc2VydmF0aW9uUXVvdGUSUQoTcmVzZXJ2",
             "YXRpb25fc3VtbWFyeRgEIAEoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcucmVz",
-            "ZXJ2YXRpb25zLlJlc2VydmF0aW9uU3VtbWFyeRIeChZoYXNfbGFzdF9taW51",
-            "dGVfd2FpdmVyGAUgASgIQiOqAiBIT0xNUy5UeXBlcy5Cb29raW5nLlJlc2Vy",
-            "dmF0aW9uc2IGcHJvdG8z"));
+            "ZXJ2YXRpb25zLlJlc2VydmF0aW9uU3VtbWFyeUIjqgIgSE9MTVMuVHlwZXMu",
+            "Qm9va2luZy5SZXNlcnZhdGlvbnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Pricing.PretaxReservationQuoteReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationSummaryReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationBookedNotification), global::HOLMS.Types.Booking.Reservations.ReservationBookedNotification.Parser, new[]{ "JWToken", "Reservation", "PriceQuote", "ReservationSummary", "HasLastMinuteWaiver" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationBookedNotification), global::HOLMS.Types.Booking.Reservations.ReservationBookedNotification.Parser, new[]{ "JWToken", "Reservation", "PriceQuote", "ReservationSummary" }, null, null, null)
           }));
     }
     #endregion
@@ -74,7 +73,6 @@ namespace HOLMS.Types.Booking.Reservations {
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
       PriceQuote = other.priceQuote_ != null ? other.PriceQuote.Clone() : null;
       ReservationSummary = other.reservationSummary_ != null ? other.ReservationSummary.Clone() : null;
-      hasLastMinuteWaiver_ = other.hasLastMinuteWaiver_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -126,17 +124,6 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
-    /// <summary>Field number for the "has_last_minute_waiver" field.</summary>
-    public const int HasLastMinuteWaiverFieldNumber = 5;
-    private bool hasLastMinuteWaiver_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasLastMinuteWaiver {
-      get { return hasLastMinuteWaiver_; }
-      set {
-        hasLastMinuteWaiver_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationBookedNotification);
@@ -154,7 +141,6 @@ namespace HOLMS.Types.Booking.Reservations {
       if (!object.Equals(Reservation, other.Reservation)) return false;
       if (!object.Equals(PriceQuote, other.PriceQuote)) return false;
       if (!object.Equals(ReservationSummary, other.ReservationSummary)) return false;
-      if (HasLastMinuteWaiver != other.HasLastMinuteWaiver) return false;
       return true;
     }
 
@@ -165,7 +151,6 @@ namespace HOLMS.Types.Booking.Reservations {
       if (reservation_ != null) hash ^= Reservation.GetHashCode();
       if (priceQuote_ != null) hash ^= PriceQuote.GetHashCode();
       if (reservationSummary_ != null) hash ^= ReservationSummary.GetHashCode();
-      if (HasLastMinuteWaiver != false) hash ^= HasLastMinuteWaiver.GetHashCode();
       return hash;
     }
 
@@ -192,10 +177,6 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(34);
         output.WriteMessage(ReservationSummary);
       }
-      if (HasLastMinuteWaiver != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(HasLastMinuteWaiver);
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -212,9 +193,6 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (reservationSummary_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReservationSummary);
-      }
-      if (HasLastMinuteWaiver != false) {
-        size += 1 + 1;
       }
       return size;
     }
@@ -244,9 +222,6 @@ namespace HOLMS.Types.Booking.Reservations {
           reservationSummary_ = new global::HOLMS.Types.Booking.Reservations.ReservationSummary();
         }
         ReservationSummary.MergeFrom(other.ReservationSummary);
-      }
-      if (other.HasLastMinuteWaiver != false) {
-        HasLastMinuteWaiver = other.HasLastMinuteWaiver;
       }
     }
 
@@ -281,10 +256,6 @@ namespace HOLMS.Types.Booking.Reservations {
               reservationSummary_ = new global::HOLMS.Types.Booking.Reservations.ReservationSummary();
             }
             input.ReadMessage(reservationSummary_);
-            break;
-          }
-          case 40: {
-            HasLastMinuteWaiver = input.ReadBool();
             break;
           }
         }

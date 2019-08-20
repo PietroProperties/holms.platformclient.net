@@ -140,7 +140,5 @@ service GroupBookingFolioSvc {
 		//Card Refund Cancelation
 	rpc CancelCardRefund(holms.types.money.cards.transactions.PaymentCardRefundIndicator)
 		returns (FolioSvcCancelPaymentResponse);
-	rpc SuggestAuthorizationAmount(.holms.types.booking.indicators.GroupBookingIndicator)
-		returns(holms.types.primitive.MonetaryAmount);
 }
 

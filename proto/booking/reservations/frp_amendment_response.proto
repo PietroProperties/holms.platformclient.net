@@ -18,8 +18,6 @@ message FRPAmendmentResponse {
 		DIFFERENT_PROPERTY = 7;
 		ILLEGAL_ARRIVAL_AMENDMENT_AFTER_CHECKIN = 8;
 		ERROR_UPDATING_HOLDS = 9;
-		SUCCESSFUL_WITH_CONFLICTS = 10;
 	}
 	AmendmentResult result = 2;
-	string response_result = 3;
 }

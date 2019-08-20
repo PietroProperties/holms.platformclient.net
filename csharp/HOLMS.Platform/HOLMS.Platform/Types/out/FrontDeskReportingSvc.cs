@@ -28,7 +28,7 @@ namespace HOLMS.Types.Reporting.RPC {
             "b3RvGjhyZXBvcnRpbmcvaW5wdXRfcGFyYW1zL2Zyb250X2Rlc2tfcmVwb3J0",
             "X21hbmlmZXN0cy5wcm90bxoscmVwb3J0aW5nL291dHB1dHMvaHRtbF9yZXBv",
             "cnRfcmVzcG9uc2UucHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMv",
-            "cHJvcGVydHlfaW5kaWNhdG9yLnByb3RvIosDCiFGcm9udERlc2tCYXRjaFJl",
+            "cHJvcGVydHlfaW5kaWNhdG9yLnByb3RvItICCiFGcm9udERlc2tCYXRjaFJl",
             "cG9ydGluZ1N2Y1JlcXVlc3QSTAoKcHJvcGVydGllcxgBIAMoCzI4LmhvbG1z",
             "LnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRp",
             "Y2F0b3ISbgoeY2FsZW5kYXJfZGF0ZV9yZXBvcnRzX21hbmlmZXN0GAIgASgL",
@@ -36,24 +36,22 @@ namespace HOLMS.Types.Reporting.RPC {
             "c2tDdXJyZW50RGF0ZVJlcG9ydE1hbmlmZXN0Em8KHm9wc2RhdGVfcmFuZ2Vf",
             "cmVwb3J0c19tYW5pZmVzdBgDIAEoCzJHLmhvbG1zLnR5cGVzLnJlcG9ydGlu",
             "Zy5pbnB1dF9wYXJhbXMuRnJvbnREZXNrT3BzZGF0ZVJhbmdlUmVwb3J0TWFu",
-            "aWZlc3QSGgoSaW5jbHVkZV9jaGVja2VkX2luGAQgASgIEhsKE2luY2x1ZGVf",
-            "Y2hlY2tlZF9vdXQYBSABKAgirQEKKEZyb250RGVza1JlcG9ydGluZ1N2Y0hv",
-            "dXNla2VlcGluZ1JlcXVlc3QSPAoNc3RhZmZfbWVtYmVycxgBIAMoCzIlLmhv",
-            "bG1zLnR5cGVzLmlhbS5TdGFmZk1lbWJlckluZGljYXRvchIRCglhZGRfbm90",
-            "ZXMYAiABKAkSMAoEZGF0ZRgDIAEoCzIiLmhvbG1zLnR5cGVzLnByaW1pdGl2",
-            "ZS5QYkxvY2FsRGF0ZTK9AgoVRnJvbnREZXNrUmVwb3J0aW5nU3ZjEoYBChNH",
-            "ZXRGcm9udERlc2tSZXBvcnRzEjwuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJw",
-            "Yy5Gcm9udERlc2tCYXRjaFJlcG9ydGluZ1N2Y1JlcXVlc3QaMS5ob2xtcy50",
-            "eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USmgEK",
-            "IEdldEhvdXNla2VlcGluZ0Fzc2lnbm1lbnRzUmVwb3J0EkMuaG9sbXMudHlw",
-            "ZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNIb3VzZWtl",
-            "ZXBpbmdSZXF1ZXN0GjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMu",
-            "SHRtbFJlcG9ydFJlc3BvbnNlQhyqAhlIT0xNUy5UeXBlcy5SZXBvcnRpbmcu",
-            "UlBDYgZwcm90bzM="));
+            "aWZlc3QirQEKKEZyb250RGVza1JlcG9ydGluZ1N2Y0hvdXNla2VlcGluZ1Jl",
+            "cXVlc3QSPAoNc3RhZmZfbWVtYmVycxgBIAMoCzIlLmhvbG1zLnR5cGVzLmlh",
+            "bS5TdGFmZk1lbWJlckluZGljYXRvchIRCglhZGRfbm90ZXMYAiABKAkSMAoE",
+            "ZGF0ZRgDIAEoCzIiLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkxvY2FsRGF0",
+            "ZTK9AgoVRnJvbnREZXNrUmVwb3J0aW5nU3ZjEoYBChNHZXRGcm9udERlc2tS",
+            "ZXBvcnRzEjwuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5Gcm9udERlc2tC",
+            "YXRjaFJlcG9ydGluZ1N2Y1JlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRp",
+            "bmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USmgEKIEdldEhvdXNla2Vl",
+            "cGluZ0Fzc2lnbm1lbnRzUmVwb3J0EkMuaG9sbXMudHlwZXMucmVwb3J0aW5n",
+            "LnJwYy5Gcm9udERlc2tSZXBvcnRpbmdTdmNIb3VzZWtlZXBpbmdSZXF1ZXN0",
+            "GjEuaG9sbXMudHlwZXMucmVwb3J0aW5nLm91dHB1dHMuSHRtbFJlcG9ydFJl",
+            "c3BvbnNlQhyqAhlIT0xNUy5UeXBlcy5SZXBvcnRpbmcuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportManifestsReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest.Parser, new[]{ "Properties", "CalendarDateReportsManifest", "OpsdateRangeReportsManifest", "IncludeCheckedIn", "IncludeCheckedOut" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest.Parser, new[]{ "Properties", "CalendarDateReportsManifest", "OpsdateRangeReportsManifest" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest), global::HOLMS.Types.Reporting.RPC.FrontDeskReportingSvcHousekeepingRequest.Parser, new[]{ "StaffMembers", "AddNotes", "Date" }, null, null, null)
           }));
     }
@@ -88,8 +86,6 @@ namespace HOLMS.Types.Reporting.RPC {
       properties_ = other.properties_.Clone();
       CalendarDateReportsManifest = other.calendarDateReportsManifest_ != null ? other.CalendarDateReportsManifest.Clone() : null;
       OpsdateRangeReportsManifest = other.opsdateRangeReportsManifest_ != null ? other.OpsdateRangeReportsManifest.Clone() : null;
-      includeCheckedIn_ = other.includeCheckedIn_;
-      includeCheckedOut_ = other.includeCheckedOut_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -129,28 +125,6 @@ namespace HOLMS.Types.Reporting.RPC {
       }
     }
 
-    /// <summary>Field number for the "include_checked_in" field.</summary>
-    public const int IncludeCheckedInFieldNumber = 4;
-    private bool includeCheckedIn_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IncludeCheckedIn {
-      get { return includeCheckedIn_; }
-      set {
-        includeCheckedIn_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "include_checked_out" field.</summary>
-    public const int IncludeCheckedOutFieldNumber = 5;
-    private bool includeCheckedOut_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IncludeCheckedOut {
-      get { return includeCheckedOut_; }
-      set {
-        includeCheckedOut_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FrontDeskBatchReportingSvcRequest);
@@ -167,8 +141,6 @@ namespace HOLMS.Types.Reporting.RPC {
       if(!properties_.Equals(other.properties_)) return false;
       if (!object.Equals(CalendarDateReportsManifest, other.CalendarDateReportsManifest)) return false;
       if (!object.Equals(OpsdateRangeReportsManifest, other.OpsdateRangeReportsManifest)) return false;
-      if (IncludeCheckedIn != other.IncludeCheckedIn) return false;
-      if (IncludeCheckedOut != other.IncludeCheckedOut) return false;
       return true;
     }
 
@@ -178,8 +150,6 @@ namespace HOLMS.Types.Reporting.RPC {
       hash ^= properties_.GetHashCode();
       if (calendarDateReportsManifest_ != null) hash ^= CalendarDateReportsManifest.GetHashCode();
       if (opsdateRangeReportsManifest_ != null) hash ^= OpsdateRangeReportsManifest.GetHashCode();
-      if (IncludeCheckedIn != false) hash ^= IncludeCheckedIn.GetHashCode();
-      if (IncludeCheckedOut != false) hash ^= IncludeCheckedOut.GetHashCode();
       return hash;
     }
 
@@ -199,14 +169,6 @@ namespace HOLMS.Types.Reporting.RPC {
         output.WriteRawTag(26);
         output.WriteMessage(OpsdateRangeReportsManifest);
       }
-      if (IncludeCheckedIn != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(IncludeCheckedIn);
-      }
-      if (IncludeCheckedOut != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(IncludeCheckedOut);
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -218,12 +180,6 @@ namespace HOLMS.Types.Reporting.RPC {
       }
       if (opsdateRangeReportsManifest_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(OpsdateRangeReportsManifest);
-      }
-      if (IncludeCheckedIn != false) {
-        size += 1 + 1;
-      }
-      if (IncludeCheckedOut != false) {
-        size += 1 + 1;
       }
       return size;
     }
@@ -245,12 +201,6 @@ namespace HOLMS.Types.Reporting.RPC {
           opsdateRangeReportsManifest_ = new global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest();
         }
         OpsdateRangeReportsManifest.MergeFrom(other.OpsdateRangeReportsManifest);
-      }
-      if (other.IncludeCheckedIn != false) {
-        IncludeCheckedIn = other.IncludeCheckedIn;
-      }
-      if (other.IncludeCheckedOut != false) {
-        IncludeCheckedOut = other.IncludeCheckedOut;
       }
     }
 
@@ -278,14 +228,6 @@ namespace HOLMS.Types.Reporting.RPC {
               opsdateRangeReportsManifest_ = new global::HOLMS.Types.Reporting.ReportParams.FrontDeskOpsdateRangeReportManifest();
             }
             input.ReadMessage(opsdateRangeReportsManifest_);
-            break;
-          }
-          case 32: {
-            IncludeCheckedIn = input.ReadBool();
-            break;
-          }
-          case 40: {
-            IncludeCheckedOut = input.ReadBool();
             break;
           }
         }

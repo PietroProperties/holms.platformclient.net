@@ -28,7 +28,7 @@ namespace HOLMS.Types.Folio {
             "YXJkX3NhbGUucHJvdG8aJGZvbGlvL2ZvbGlvX2NoZWNrX2Nhc2hfcGF5bWVu",
             "dC5wcm90bxolZm9saW8vcmVzZXJ2YXRpb25fZm9saW9fc3VtbWFyeS5wcm90",
             "bxoaZm9saW8vdGF4X2Fzc2Vzc21lbnQucHJvdG8aH3ByaW1pdGl2ZS9tb25l",
-            "dGFyeV9hbW91bnQucHJvdG8inQ4KFVJlc2VydmF0aW9uRm9saW9TdGF0ZRI/",
+            "dGFyeV9hbW91bnQucHJvdG8i9Q0KFVJlc2VydmF0aW9uRm9saW9TdGF0ZRI/",
             "ChFlZmZlY3RpdmVfY2hhcmdlcxgBIAMoCzIkLmhvbG1zLnR5cGVzLmZvbGlv",
             "LkZvbGlvQXRvbWljQ2hhcmdlEjgKDGNhcmRfcmVmdW5kcxgCIAMoCzIiLmhv",
             "bG1zLnR5cGVzLmZvbGlvLkZvbGlvQ2FyZFJlZnVuZBI0CgpjYXJkX3NhbGVz",
@@ -68,12 +68,11 @@ namespace HOLMS.Types.Folio {
             "GBsgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
             "EjkKCm1heF9yZWZ1bmQYHCABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
             "TW9uZXRhcnlBbW91bnQSHgoWaXNfZ3VhcmFudGVlX2J5X21hc3RlchgdIAEo",
-            "CBImCh5pc19ndWFyYW50ZWVkX2J5X2dyb3VwX2Jvb2tpbmcYHiABKAhCFKoC",
-            "EUhPTE1TLlR5cGVzLkZvbGlvYgZwcm90bzM="));
+            "CEIUqgIRSE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.ReservationFolioSummaryReflection.Descriptor, global::HOLMS.Types.Folio.TaxAssessmentReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentCharges", "AnticipatedCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges", "RemainingTenderRequiredForGuarantee", "TotalMasterCharges", "TotalMasterTaxes", "TotalMasterFees", "MaxRefund", "IsGuaranteeByMaster", "IsGuaranteedByGroupBooking" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentCharges", "AnticipatedCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges", "RemainingTenderRequiredForGuarantee", "TotalMasterCharges", "TotalMasterTaxes", "TotalMasterFees", "MaxRefund", "IsGuaranteeByMaster" }, null, null, null)
           }));
     }
     #endregion
@@ -131,7 +130,6 @@ namespace HOLMS.Types.Folio {
       TotalMasterFees = other.totalMasterFees_ != null ? other.TotalMasterFees.Clone() : null;
       MaxRefund = other.maxRefund_ != null ? other.MaxRefund.Clone() : null;
       isGuaranteeByMaster_ = other.isGuaranteeByMaster_;
-      isGuaranteedByGroupBooking_ = other.isGuaranteedByGroupBooking_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -427,17 +425,6 @@ namespace HOLMS.Types.Folio {
       }
     }
 
-    /// <summary>Field number for the "is_guaranteed_by_group_booking" field.</summary>
-    public const int IsGuaranteedByGroupBookingFieldNumber = 30;
-    private bool isGuaranteedByGroupBooking_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsGuaranteedByGroupBooking {
-      get { return isGuaranteedByGroupBooking_; }
-      set {
-        isGuaranteedByGroupBooking_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationFolioState);
@@ -478,7 +465,6 @@ namespace HOLMS.Types.Folio {
       if (!object.Equals(TotalMasterFees, other.TotalMasterFees)) return false;
       if (!object.Equals(MaxRefund, other.MaxRefund)) return false;
       if (IsGuaranteeByMaster != other.IsGuaranteeByMaster) return false;
-      if (IsGuaranteedByGroupBooking != other.IsGuaranteedByGroupBooking) return false;
       return true;
     }
 
@@ -512,7 +498,6 @@ namespace HOLMS.Types.Folio {
       if (totalMasterFees_ != null) hash ^= TotalMasterFees.GetHashCode();
       if (maxRefund_ != null) hash ^= MaxRefund.GetHashCode();
       if (IsGuaranteeByMaster != false) hash ^= IsGuaranteeByMaster.GetHashCode();
-      if (IsGuaranteedByGroupBooking != false) hash ^= IsGuaranteedByGroupBooking.GetHashCode();
       return hash;
     }
 
@@ -604,10 +589,6 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(232, 1);
         output.WriteBool(IsGuaranteeByMaster);
       }
-      if (IsGuaranteedByGroupBooking != false) {
-        output.WriteRawTag(240, 1);
-        output.WriteBool(IsGuaranteedByGroupBooking);
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -674,9 +655,6 @@ namespace HOLMS.Types.Folio {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(MaxRefund);
       }
       if (IsGuaranteeByMaster != false) {
-        size += 2 + 1;
-      }
-      if (IsGuaranteedByGroupBooking != false) {
         size += 2 + 1;
       }
       return size;
@@ -791,9 +769,6 @@ namespace HOLMS.Types.Folio {
       }
       if (other.IsGuaranteeByMaster != false) {
         IsGuaranteeByMaster = other.IsGuaranteeByMaster;
-      }
-      if (other.IsGuaranteedByGroupBooking != false) {
-        IsGuaranteedByGroupBooking = other.IsGuaranteedByGroupBooking;
       }
     }
 
@@ -953,10 +928,6 @@ namespace HOLMS.Types.Folio {
           }
           case 232: {
             IsGuaranteeByMaster = input.ReadBool();
-            break;
-          }
-          case 240: {
-            IsGuaranteedByGroupBooking = input.ReadBool();
             break;
           }
         }

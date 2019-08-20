@@ -13,8 +13,6 @@ message FrontDeskBatchReportingSvcRequest {
 	repeated holms.types.tenancy_config.indicators.PropertyIndicator properties = 1;
 	holms.types.reporting.input_params.FrontDeskCurrentDateReportManifest calendar_date_reports_manifest = 2;
 	holms.types.reporting.input_params.FrontDeskOpsdateRangeReportManifest opsdate_range_reports_manifest = 3;
-	bool include_checked_in = 4;
-	bool include_checked_out = 5;
 }
 
 message FrontDeskReportingSvcHousekeepingRequest {
