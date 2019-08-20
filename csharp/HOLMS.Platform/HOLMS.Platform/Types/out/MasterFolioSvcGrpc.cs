@@ -25,6 +25,7 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse> __Marshaller_UpdateClientFoliosResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest> __Marshaller_IsMasterPaysCheckRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse> __Marshaller_IsMasterPaysCheckResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Folio.RPC.MasterFolioServiceMasterFolioRequest, global::HOLMS.Types.Folio.RPC.MasterFolioServiceRequestMasterFolioResponse> __Method_RequestMasterFolio = new grpc::Method<global::HOLMS.Types.Folio.RPC.MasterFolioServiceMasterFolioRequest, global::HOLMS.Types.Folio.RPC.MasterFolioServiceRequestMasterFolioResponse>(
         grpc::MethodType.Unary,
@@ -68,6 +69,13 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_IsMasterPaysCheckRequest,
         __Marshaller_IsMasterPaysCheckResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Folio.RPC.MasterFolioSvcRemoveMasterFolioRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_RemoveMasterOrGroupGuaranteeFromClient = new grpc::Method<global::HOLMS.Types.Folio.RPC.MasterFolioSvcRemoveMasterFolioRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "RemoveMasterOrGroupGuaranteeFromClient",
+        __Marshaller_MasterFolioSvcRemoveMasterFolioRequest,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -103,6 +111,11 @@ namespace HOLMS.Types.Folio.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse> IsMasterPaysCheck(global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> RemoveMasterOrGroupGuaranteeFromClient(global::HOLMS.Types.Folio.RPC.MasterFolioSvcRemoveMasterFolioRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -228,6 +241,22 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_IsMasterPaysCheck, null, options, request);
       }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RemoveMasterOrGroupGuaranteeFromClient(global::HOLMS.Types.Folio.RPC.MasterFolioSvcRemoveMasterFolioRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return RemoveMasterOrGroupGuaranteeFromClient(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RemoveMasterOrGroupGuaranteeFromClient(global::HOLMS.Types.Folio.RPC.MasterFolioSvcRemoveMasterFolioRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RemoveMasterOrGroupGuaranteeFromClient, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RemoveMasterOrGroupGuaranteeFromClientAsync(global::HOLMS.Types.Folio.RPC.MasterFolioSvcRemoveMasterFolioRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return RemoveMasterOrGroupGuaranteeFromClientAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RemoveMasterOrGroupGuaranteeFromClientAsync(global::HOLMS.Types.Folio.RPC.MasterFolioSvcRemoveMasterFolioRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RemoveMasterOrGroupGuaranteeFromClient, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MasterFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -245,7 +274,8 @@ namespace HOLMS.Types.Folio.RPC {
           .AddMethod(__Method_AtomicFolioChargeSwap, serviceImpl.AtomicFolioChargeSwap)
           .AddMethod(__Method_AuthorizationIncrease, serviceImpl.AuthorizationIncrease)
           .AddMethod(__Method_UpdateClientFolios, serviceImpl.UpdateClientFolios)
-          .AddMethod(__Method_IsMasterPaysCheck, serviceImpl.IsMasterPaysCheck).Build();
+          .AddMethod(__Method_IsMasterPaysCheck, serviceImpl.IsMasterPaysCheck)
+          .AddMethod(__Method_RemoveMasterOrGroupGuaranteeFromClient, serviceImpl.RemoveMasterOrGroupGuaranteeFromClient).Build();
     }
 
   }

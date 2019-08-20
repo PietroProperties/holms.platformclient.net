@@ -109,7 +109,7 @@ namespace HOLMS.Types.Folio.RPC {
             "CgZhbW91bnQYAiABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRh",
             "cnlBbW91bnQSQwoEY2FyZBgDIAEoCzI1LmhvbG1zLnR5cGVzLm1vbmV5LmNh",
             "cmRzLkN1c3RvbWVyUGF5bWVudENhcmRJbmRpY2F0b3ISEwoLZGVzY3JpcHRp",
-            "b24YBCABKAkyuxMKFEdyb3VwQm9va2luZ0ZvbGlvU3ZjEn0KGUdldEdyb3Vw",
+            "b24YBCABKAkytxQKFEdyb3VwQm9va2luZ0ZvbGlvU3ZjEn0KGUdldEdyb3Vw",
             "Qm9va2luZ0ZvbGlvU3RhdGUSNS5ob2xtcy50eXBlcy5ib29raW5nLmluZGlj",
             "YXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yGikuaG9sbXMudHlwZXMuZm9s",
             "aW8uR3JvdXBCb29raW5nRm9saW9TdGF0ZRJ+Cg5HZXRPbkZpbGVDYXJkcxI1",
@@ -164,8 +164,11 @@ namespace HOLMS.Types.Folio.RPC {
             "Z29vZ2xlLnByb3RvYnVmLkVtcHR5EooBChBDYW5jZWxDYXJkUmVmdW5kEkAu",
             "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLlBheW1lbnRD",
             "YXJkUmVmdW5kSW5kaWNhdG9yGjQuaG9sbXMudHlwZXMuZm9saW8ucnBjLkZv",
-            "bGlvU3ZjQ2FuY2VsUGF5bWVudFJlc3BvbnNlQiNaCWZvbGlvL3JwY6oCFUhP",
-            "TE1TLlR5cGVzLkZvbGlvLlJQQ2IGcHJvdG8z"));
+            "bGlvU3ZjQ2FuY2VsUGF5bWVudFJlc3BvbnNlEnoKGlN1Z2dlc3RBdXRob3Jp",
+            "emF0aW9uQW1vdW50EjUuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3Jz",
+            "Lkdyb3VwQm9va2luZ0luZGljYXRvcholLmhvbG1zLnR5cGVzLnByaW1pdGl2",
+            "ZS5Nb25ldGFyeUFtb3VudEIjWglmb2xpby9ycGOqAhVIT0xNUy5UeXBlcy5G",
+            "b2xpby5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentIndicatorReflection.Descriptor, global::HOLMS.Types.Folio.GroupBookingFolioStateReflection.Descriptor, global::HOLMS.Types.Folio.RPC.FolioSvcAuthorizationModificationRequestReflection.Descriptor, global::HOLMS.Types.Folio.RPC.FolioSvcAuthorizationModificationResponseReflection.Descriptor, global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponseReflection.Descriptor, global::HOLMS.Types.Folio.RPC.FolioSvcGetOnFileCardsResponseReflection.Descriptor, global::HOLMS.Types.Folio.RPC.FolioSvcPostCardPaymentResponseReflection.Descriptor, global::HOLMS.Types.Folio.RPC.FolioSvcPostCashResponseReflection.Descriptor, global::HOLMS.Types.Folio.RPC.FolioSvcPostCheckPaymentResponseReflection.Descriptor, global::HOLMS.Types.Folio.RPC.FolioSvcRefundResponseReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardSalePurposeReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.CardAuthorizationResponseReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.NotPresentPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Supply.IncidentalItems.IncidentalItemIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
