@@ -21,6 +21,10 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse> __Marshaller_MasterFolioSvcFolioSwapResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.MasterFolioSvcFolioSwapResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest> __Marshaller_LinkMasterAuthorizationCheckRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse> __Marshaller_LinkMasterAuthorizationCheckResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest> __Marshaller_UpdateClientFoliosRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse> __Marshaller_UpdateClientFoliosResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest> __Marshaller_IsMasterPaysCheckRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse> __Marshaller_IsMasterPaysCheckResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Folio.RPC.MasterFolioServiceMasterFolioRequest, global::HOLMS.Types.Folio.RPC.MasterFolioServiceRequestMasterFolioResponse> __Method_RequestMasterFolio = new grpc::Method<global::HOLMS.Types.Folio.RPC.MasterFolioServiceMasterFolioRequest, global::HOLMS.Types.Folio.RPC.MasterFolioServiceRequestMasterFolioResponse>(
         grpc::MethodType.Unary,
@@ -50,6 +54,20 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_LinkMasterAuthorizationCheckRequest,
         __Marshaller_LinkMasterAuthorizationCheckResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest, global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse> __Method_UpdateClientFolios = new grpc::Method<global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest, global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateClientFolios",
+        __Marshaller_UpdateClientFoliosRequest,
+        __Marshaller_UpdateClientFoliosResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest, global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse> __Method_IsMasterPaysCheck = new grpc::Method<global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest, global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "IsMasterPaysCheck",
+        __Marshaller_IsMasterPaysCheckRequest,
+        __Marshaller_IsMasterPaysCheckResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -75,6 +93,16 @@ namespace HOLMS.Types.Folio.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckResponse> AuthorizationIncrease(global::HOLMS.Types.Folio.RPC.LinkMasterAuthorizationCheckRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse> UpdateClientFolios(global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse> IsMasterPaysCheck(global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -168,6 +196,38 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_AuthorizationIncrease, null, options, request);
       }
+      public virtual global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse UpdateClientFolios(global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UpdateClientFolios(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse UpdateClientFolios(global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateClientFolios, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse> UpdateClientFoliosAsync(global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UpdateClientFoliosAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.UpdateClientFoliosResponse> UpdateClientFoliosAsync(global::HOLMS.Types.Folio.RPC.UpdateClientFoliosRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateClientFolios, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse IsMasterPaysCheck(global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return IsMasterPaysCheck(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse IsMasterPaysCheck(global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_IsMasterPaysCheck, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse> IsMasterPaysCheckAsync(global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return IsMasterPaysCheckAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckResponse> IsMasterPaysCheckAsync(global::HOLMS.Types.Folio.RPC.IsMasterPaysCheckRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_IsMasterPaysCheck, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MasterFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -183,7 +243,9 @@ namespace HOLMS.Types.Folio.RPC {
           .AddMethod(__Method_RequestMasterFolio, serviceImpl.RequestMasterFolio)
           .AddMethod(__Method_RemoveMasterFolio, serviceImpl.RemoveMasterFolio)
           .AddMethod(__Method_AtomicFolioChargeSwap, serviceImpl.AtomicFolioChargeSwap)
-          .AddMethod(__Method_AuthorizationIncrease, serviceImpl.AuthorizationIncrease).Build();
+          .AddMethod(__Method_AuthorizationIncrease, serviceImpl.AuthorizationIncrease)
+          .AddMethod(__Method_UpdateClientFolios, serviceImpl.UpdateClientFolios)
+          .AddMethod(__Method_IsMasterPaysCheck, serviceImpl.IsMasterPaysCheck).Build();
     }
 
   }

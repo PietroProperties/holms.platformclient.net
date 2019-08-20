@@ -34,6 +34,7 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest> __Marshaller_InvoiceVoidRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest> __Marshaller_IncreaseGroupHoldForReservationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse> __Marshaller_IncreaseGroupHoldForReservationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange> __Marshaller_PbInclusiveOpsdateRange = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings> __Method_All = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings>(
         grpc::MethodType.Unary,
@@ -168,6 +169,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_GroupBooking,
         __Marshaller_Empty);
 
+    static readonly grpc::Method<global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange, global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings> __Method_AllByDateRange = new grpc::Method<global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange, global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AllByDateRange",
+        __Marshaller_PbInclusiveOpsdateRange,
+        __Marshaller_GroupBookingSvcAllBookings);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -268,6 +276,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> FolioSync(global::HOLMS.Types.Booking.Groups.GroupBooking request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings> AllByDateRange(global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -601,6 +614,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_FolioSync, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings AllByDateRange(global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AllByDateRange(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings AllByDateRange(global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AllByDateRange, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings> AllByDateRangeAsync(global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AllByDateRangeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings> AllByDateRangeAsync(global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AllByDateRange, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GroupBookingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -631,7 +660,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_VoidInvoiceById, serviceImpl.VoidInvoiceById)
           .AddMethod(__Method_CreateWithoutSave, serviceImpl.CreateWithoutSave)
           .AddMethod(__Method_IncreaseEventGroupHoldForNewReservation, serviceImpl.IncreaseEventGroupHoldForNewReservation)
-          .AddMethod(__Method_FolioSync, serviceImpl.FolioSync).Build();
+          .AddMethod(__Method_FolioSync, serviceImpl.FolioSync)
+          .AddMethod(__Method_AllByDateRange, serviceImpl.AllByDateRange).Build();
     }
 
   }

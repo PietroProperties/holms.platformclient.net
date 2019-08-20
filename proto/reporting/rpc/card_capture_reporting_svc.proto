@@ -5,6 +5,7 @@ option csharp_namespace = "HOLMS.Types.Reporting.RPC";
 
 import "money/cards/card_merchant_indicator.proto";
 import "money/cards/transactions/closed_merchant_batch_indicator.proto";
+import "primitive/pb_interval.proto";
 
 message CardCaptureReportingSvcGetPendingTransactionsRequest {
 	.holms.types.money.cards.CardMerchantIndicator card_merchant = 1;
@@ -18,10 +19,18 @@ message CardCaptureReportingSvcReportResponse {
 	string document = 1;
 }
 
+message CardCaptureReportingSvcGetOpenClosedTransactionsRequest {
+	.holms.types.money.cards.CardMerchantIndicator card_merchant = 1;
+	 string card_number = 2;
+	.holms.types.primitive.PbInterval search_range = 3;
+}
+
 service CardCaptureReportingSvc {
 	rpc GetPendingTransactionsReport(CardCaptureReportingSvcGetPendingTransactionsRequest)
 		returns (CardCaptureReportingSvcReportResponse);
 	rpc GetSettledTransactionsReport(CardCaptureReportSvcGetSettledTransactionsRequest)
 		returns (CardCaptureReportingSvcReportResponse);
+    rpc GetOpenClosedTransactionsReport(CardCaptureReportingSvcGetOpenClosedTransactionsRequest)
+		returns (CardCaptureReportingSvcReportResponse);		
 }
 

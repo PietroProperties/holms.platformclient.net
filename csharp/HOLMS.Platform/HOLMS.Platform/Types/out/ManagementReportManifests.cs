@@ -43,7 +43,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "EiYKHmxlZGdlcl9hY3Rpdml0eV9zdW1tYXJ5X3JlcG9ydBgEIAEoCBIlCh1s",
             "ZWRnZXJfam91cm5hbF9lbnRyaWVzX3JlcG9ydBgFIAEoCBIhChlib29raW5n",
             "c19ieV9wZXJpb2RfcmVwb3J0GAYgASgIEiYKHmZvbGlvX2ltbWVkaWF0ZV9j",
-            "aGFyZ2VzX3JlcG9ydBgHIAEoCCKlAwokTWFuYWdlbWVudE9wc2RhdGVSYW5n",
+            "aGFyZ2VzX3JlcG9ydBgHIAEoCCLIAwokTWFuYWdlbWVudE9wc2RhdGVSYW5n",
             "ZVJlcG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5ob2xtcy50",
             "eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2USIgoacm9v",
             "bV91c2FnZV9kZXRhaWxlZF9yZXBvcnQYAiABKAgSIQoZcm9vbV91c2FnZV9z",
@@ -52,14 +52,15 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "cnQYBSABKAgSIgoaZm9saW9fZ3Jvc3NfY2hhcmdlc19yZXBvcnQYBiABKAgS",
             "IQoZdGF4X2V4ZW1wdF9zdW1tYXJ5X3JlcG9ydBgHIAEoCBIgChh0YXhfZXhl",
             "bXB0X2RldGFpbF9yZXBvcnQYCCABKAgSIgoaZm9saW9fZ3Jvc3Nfc3VtbWFy",
-            "eV9yZXBvcnQYCSABKAgSFgoOc3VtbWFyeV9yZXBvcnQYCiABKAhCJaoCIkhP",
-            "TE1TLlR5cGVzLlJlcG9ydGluZy5SZXBvcnRQYXJhbXNiBnByb3RvMw=="));
+            "eV9yZXBvcnQYCSABKAgSFgoOc3VtbWFyeV9yZXBvcnQYCiABKAgSIQoZdW51",
+            "c2VkX2dyb3VwX2hvbGRzX3JlcG9ydBgLIAEoCEIlqgIiSE9MTVMuVHlwZXMu",
+            "UmVwb3J0aW5nLlJlcG9ydFBhcmFtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbIntervalReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport", "PropStatsYesterday", "PropStatsTrailing7D", "PropStatsTrailing28D", "PropStatsLastFullWeek", "PropStatsLastFullMonth", "PropStatsLastFullYear", "CustomRanges", "VacantAndCleanRoomsReport" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest.Parser, new[]{ "ReportingRange", "FolioPaymentsReport", "CallAccountingReport", "LedgerActivitySummaryReport", "LedgerJournalEntriesReport", "BookingsByPeriodReport", "FolioImmediateChargesReport" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport", "PlannedLodgingRevenueBySource", "PropertyStatisticsReport", "FolioGrossChargesReport", "TaxExemptSummaryReport", "TaxExemptDetailReport", "FolioGrossSummaryReport", "SummaryReport" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport", "PlannedLodgingRevenueBySource", "PropertyStatisticsReport", "FolioGrossChargesReport", "TaxExemptSummaryReport", "TaxExemptDetailReport", "FolioGrossSummaryReport", "SummaryReport", "UnusedGroupHoldsReport" }, null, null, null)
           }));
     }
     #endregion
@@ -808,6 +809,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       taxExemptDetailReport_ = other.taxExemptDetailReport_;
       folioGrossSummaryReport_ = other.folioGrossSummaryReport_;
       summaryReport_ = other.summaryReport_;
+      unusedGroupHoldsReport_ = other.unusedGroupHoldsReport_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -925,6 +927,17 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
+    /// <summary>Field number for the "unused_group_holds_report" field.</summary>
+    public const int UnusedGroupHoldsReportFieldNumber = 11;
+    private bool unusedGroupHoldsReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool UnusedGroupHoldsReport {
+      get { return unusedGroupHoldsReport_; }
+      set {
+        unusedGroupHoldsReport_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ManagementOpsdateRangeReportManifest);
@@ -948,6 +961,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (TaxExemptDetailReport != other.TaxExemptDetailReport) return false;
       if (FolioGrossSummaryReport != other.FolioGrossSummaryReport) return false;
       if (SummaryReport != other.SummaryReport) return false;
+      if (UnusedGroupHoldsReport != other.UnusedGroupHoldsReport) return false;
       return true;
     }
 
@@ -964,6 +978,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (TaxExemptDetailReport != false) hash ^= TaxExemptDetailReport.GetHashCode();
       if (FolioGrossSummaryReport != false) hash ^= FolioGrossSummaryReport.GetHashCode();
       if (SummaryReport != false) hash ^= SummaryReport.GetHashCode();
+      if (UnusedGroupHoldsReport != false) hash ^= UnusedGroupHoldsReport.GetHashCode();
       return hash;
     }
 
@@ -1014,6 +1029,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(80);
         output.WriteBool(SummaryReport);
       }
+      if (UnusedGroupHoldsReport != false) {
+        output.WriteRawTag(88);
+        output.WriteBool(UnusedGroupHoldsReport);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1047,6 +1066,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
         size += 1 + 1;
       }
       if (SummaryReport != false) {
+        size += 1 + 1;
+      }
+      if (UnusedGroupHoldsReport != false) {
         size += 1 + 1;
       }
       return size;
@@ -1089,6 +1111,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
       if (other.SummaryReport != false) {
         SummaryReport = other.SummaryReport;
+      }
+      if (other.UnusedGroupHoldsReport != false) {
+        UnusedGroupHoldsReport = other.UnusedGroupHoldsReport;
       }
     }
 
@@ -1141,6 +1166,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 80: {
             SummaryReport = input.ReadBool();
+            break;
+          }
+          case 88: {
+            UnusedGroupHoldsReport = input.ReadBool();
             break;
           }
         }

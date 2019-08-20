@@ -89,6 +89,29 @@ message LinkMasterAuthorizationCheckResponse{
 	bool is_authorization_increase_required=3;
 }
 
+message UpdateClientFoliosRequest{
+.holms.types.booking.indicators.ReservationIndicator master_folio = 1;
+repeated .holms.types.booking.indicators.ReservationIndicator added_client_folios = 2;
+repeated .holms.types.booking.indicators.ReservationIndicator removed_client_folios = 3;
+repeated .holms.types.booking.indicators.ReservationIndicator existing_client_folios = 4;
+bool master_accrues_lodging = 5;
+bool master_accrues_incidentals = 6;
+bool is_all_client_update_requested =7;
+}
+
+message UpdateClientFoliosResponse{
+bool is_successful = 1;
+}
+
+message IsMasterPaysCheckRequest{
+repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
+}
+
+message IsMasterPaysCheckResponse{
+bool is_master_pays_lodging = 1;
+bool is_master_pays_incidentals=2;
+}
+
 service MasterFolioSvc {
 	rpc RequestMasterFolio(MasterFolioServiceMasterFolioRequest)
 		returns(MasterFolioServiceRequestMasterFolioResponse);
@@ -101,4 +124,10 @@ service MasterFolioSvc {
 
 	rpc AuthorizationIncrease(LinkMasterAuthorizationCheckRequest)
 		returns(LinkMasterAuthorizationCheckResponse);
+
+	rpc UpdateClientFolios(UpdateClientFoliosRequest)
+		returns(UpdateClientFoliosResponse);
+
+	rpc IsMasterPaysCheck(IsMasterPaysCheckRequest)
+		returns(IsMasterPaysCheckResponse);
 }
