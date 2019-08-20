@@ -35,5 +35,4 @@ message GroupBooking {
     .holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 18;
 	string group_name = 19;
     bool surpress_rate_info = 20;
-	string tax_category = 21;
 }

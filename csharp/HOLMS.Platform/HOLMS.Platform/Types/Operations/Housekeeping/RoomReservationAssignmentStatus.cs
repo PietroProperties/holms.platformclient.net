@@ -28,10 +28,6 @@ namespace HOLMS.Types.Operations.Housekeeping {
                     return "Checked In";
                 case RoomReservationAssignmentStatus.RoomReservationAssignmentOutOfOrder:
                     return "Out of order";
-                case RoomReservationAssignmentStatus.VacantLeavingWithIncoming:
-                    return "Vacant/ Arrival";
-                case RoomReservationAssignmentStatus.VacantLeavingWithOutOfOrder:
-                    return "Vacant/ OOO";
                 case RoomReservationAssignmentStatus.Other:
                     return "Other";
                 default:

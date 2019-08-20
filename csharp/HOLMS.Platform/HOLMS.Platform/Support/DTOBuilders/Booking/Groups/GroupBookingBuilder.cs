@@ -29,19 +29,17 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Groups {
         private readonly Guid? _travelAgent;
         private readonly Guid? _cancellationPolicy;
         private readonly bool _surpressratecheck;
-        private readonly string _taxCategory;
 
         public GroupBookingBuilder(GroupBookingIndicator id, GroupBookingStatus status,
             bool taxExempt, string taxId, bool groupPaysLodging, bool groupPaysIncidentals,
             string additionalNotes, string customerBookingId, InclusiveOpsdateRange bookingDates,
             RateScheduleIndicator rs, GroupIndicator g, Guid? groupBookingMethodId,
             Guid? reservationSourceId, Guid? travelAgentId, Guid? cancellationPolicy,
-            string groupName, bool surpressratecheck, string taxCatgeory) {
+            string groupName, bool surpressratecheck) {
             _gbi = id;
             _gbs = status;
             _taxExempt = taxExempt;
             _taxId = taxId;
-            _taxCategory = taxCatgeory;
             _groupPaysLodging = groupPaysLodging;
             _groupPaysIncidentals = groupPaysIncidentals;
             _additionalNotes = additionalNotes;
@@ -72,8 +70,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Groups {
                 RateSchedule = _rateSchedule,
                 Group = _group,
                 GroupName = _groupName,
-                SurpressRateInfo = _surpressratecheck,
-                TaxCategory = _taxCategory
+                SurpressRateInfo = _surpressratecheck
             };
 
             if (_bookingDates != null) {

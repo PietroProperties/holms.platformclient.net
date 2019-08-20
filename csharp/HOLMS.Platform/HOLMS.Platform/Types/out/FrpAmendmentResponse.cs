@@ -24,25 +24,24 @@ namespace HOLMS.Types.Booking.Reservations {
           string.Concat(
             "CjFib29raW5nL3Jlc2VydmF0aW9ucy9mcnBfYW1lbmRtZW50X3Jlc3BvbnNl",
             "LnByb3RvEiBob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucxouYm9v",
-            "a2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90byKR",
-            "BAoURlJQQW1lbmRtZW50UmVzcG9uc2USSwoNcmVzX2luZGljYXRvchgBIAEo",
+            "a2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90byLZ",
+            "AwoURlJQQW1lbmRtZW50UmVzcG9uc2USSwoNcmVzX2luZGljYXRvchgBIAEo",
             "CzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlv",
             "bkluZGljYXRvchJWCgZyZXN1bHQYAiABKA4yRi5ob2xtcy50eXBlcy5ib29r",
             "aW5nLnJlc2VydmF0aW9ucy5GUlBBbWVuZG1lbnRSZXNwb25zZS5BbWVuZG1l",
-            "bnRSZXN1bHQSFwoPcmVzcG9uc2VfcmVzdWx0GAMgASgJIroCCg9BbWVuZG1l",
-            "bnRSZXN1bHQSDgoKU1VDQ0VTU0ZVTBAAEg8KC1VOQVZBSUxBQkxFEAESDwoL",
-            "VU5QUklDRUFCTEUQAhIsCihQT0xJQ1lfVklPTEFUSU9OX1RPT19NQU5ZX0dV",
-            "RVNUU19JTl9ST09NEAMSJgoiTUlOSU1VTV9MRU5HVEhfT0ZfU1RBWV9SRVNU",
-            "UklDVElPThAFEiEKHUNMT1NFRF9UT19BUlJJVkFMX1JFU1RSSUNUSU9OEAYS",
-            "FgoSRElGRkVSRU5UX1BST1BFUlRZEAcSKwonSUxMRUdBTF9BUlJJVkFMX0FN",
-            "RU5ETUVOVF9BRlRFUl9DSEVDS0lOEAgSGAoURVJST1JfVVBEQVRJTkdfSE9M",
-            "RFMQCRIdChlTVUNDRVNTRlVMX1dJVEhfQ09ORkxJQ1RTEApCOVoUYm9va2lu",
-            "Zy9yZXNlcnZhdGlvbnOqAiBIT0xNUy5UeXBlcy5Cb29raW5nLlJlc2VydmF0",
-            "aW9uc2IGcHJvdG8z"));
+            "bnRSZXN1bHQimwIKD0FtZW5kbWVudFJlc3VsdBIOCgpTVUNDRVNTRlVMEAAS",
+            "DwoLVU5BVkFJTEFCTEUQARIPCgtVTlBSSUNFQUJMRRACEiwKKFBPTElDWV9W",
+            "SU9MQVRJT05fVE9PX01BTllfR1VFU1RTX0lOX1JPT00QAxImCiJNSU5JTVVN",
+            "X0xFTkdUSF9PRl9TVEFZX1JFU1RSSUNUSU9OEAUSIQodQ0xPU0VEX1RPX0FS",
+            "UklWQUxfUkVTVFJJQ1RJT04QBhIWChJESUZGRVJFTlRfUFJPUEVSVFkQBxIr",
+            "CidJTExFR0FMX0FSUklWQUxfQU1FTkRNRU5UX0FGVEVSX0NIRUNLSU4QCBIY",
+            "ChRFUlJPUl9VUERBVElOR19IT0xEUxAJQjlaFGJvb2tpbmcvcmVzZXJ2YXRp",
+            "b25zqgIgSE9MTVMuVHlwZXMuQm9va2luZy5SZXNlcnZhdGlvbnNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse), global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse.Parser, new[]{ "ResIndicator", "Result", "ResponseResult" }, null, new[]{ typeof(global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse.Types.AmendmentResult) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse), global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse.Parser, new[]{ "ResIndicator", "Result" }, null, new[]{ typeof(global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse.Types.AmendmentResult) }, null)
           }));
     }
     #endregion
@@ -75,7 +74,6 @@ namespace HOLMS.Types.Booking.Reservations {
     public FRPAmendmentResponse(FRPAmendmentResponse other) : this() {
       ResIndicator = other.resIndicator_ != null ? other.ResIndicator.Clone() : null;
       result_ = other.result_;
-      responseResult_ = other.responseResult_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -105,17 +103,6 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
-    /// <summary>Field number for the "response_result" field.</summary>
-    public const int ResponseResultFieldNumber = 3;
-    private string responseResult_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ResponseResult {
-      get { return responseResult_; }
-      set {
-        responseResult_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FRPAmendmentResponse);
@@ -131,7 +118,6 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (!object.Equals(ResIndicator, other.ResIndicator)) return false;
       if (Result != other.Result) return false;
-      if (ResponseResult != other.ResponseResult) return false;
       return true;
     }
 
@@ -140,7 +126,6 @@ namespace HOLMS.Types.Booking.Reservations {
       int hash = 1;
       if (resIndicator_ != null) hash ^= ResIndicator.GetHashCode();
       if (Result != 0) hash ^= Result.GetHashCode();
-      if (ResponseResult.Length != 0) hash ^= ResponseResult.GetHashCode();
       return hash;
     }
 
@@ -159,10 +144,6 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(16);
         output.WriteEnum((int) Result);
       }
-      if (ResponseResult.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(ResponseResult);
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -173,9 +154,6 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (Result != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
-      }
-      if (ResponseResult.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ResponseResult);
       }
       return size;
     }
@@ -193,9 +171,6 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (other.Result != 0) {
         Result = other.Result;
-      }
-      if (other.ResponseResult.Length != 0) {
-        ResponseResult = other.ResponseResult;
       }
     }
 
@@ -218,10 +193,6 @@ namespace HOLMS.Types.Booking.Reservations {
             result_ = (global::HOLMS.Types.Booking.Reservations.FRPAmendmentResponse.Types.AmendmentResult) input.ReadEnum();
             break;
           }
-          case 26: {
-            ResponseResult = input.ReadString();
-            break;
-          }
         }
       }
     }
@@ -240,7 +211,6 @@ namespace HOLMS.Types.Booking.Reservations {
         [pbr::OriginalName("DIFFERENT_PROPERTY")] DifferentProperty = 7,
         [pbr::OriginalName("ILLEGAL_ARRIVAL_AMENDMENT_AFTER_CHECKIN")] IllegalArrivalAmendmentAfterCheckin = 8,
         [pbr::OriginalName("ERROR_UPDATING_HOLDS")] ErrorUpdatingHolds = 9,
-        [pbr::OriginalName("SUCCESSFUL_WITH_CONFLICTS")] SuccessfulWithConflicts = 10,
       }
 
     }
