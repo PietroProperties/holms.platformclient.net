@@ -131,6 +131,7 @@ namespace HOLMS.Platform.Client {
         public RoomStatusSettingsSvc.RoomStatusSettingsSvcClient RoomStatusSettingsSvc { get; protected set; }
         public TaxExemptCategorySvc.TaxExemptCategorySvcClient TaxExemptCategorySvc { get; protected set; }
         public ReportingConfigurationSvc.ReportingConfigurationSvcClient ReportingConfigurationSvc { get; protected set; }
+        public DefaultSettingsSvc.DefaultSettingsSvcClient DefaultSettingsSvc { get; protected set; }
         #endregion
 
         #region Reporting
@@ -343,6 +344,7 @@ namespace HOLMS.Platform.Client {
             RoomStatusSettingsSvc = new RoomStatusSettingsSvc.RoomStatusSettingsSvcClient(_authenticatedChannel);
             TaxExemptCategorySvc = new HOLMS.Types.TenancyConfig.RPC.TaxExemptCategorySvc.TaxExemptCategorySvcClient(_authenticatedChannel);
             ReportingConfigurationSvc = new ReportingConfigurationSvc.ReportingConfigurationSvcClient(_authenticatedChannel);
+            DefaultSettingsSvc = new DefaultSettingsSvc.DefaultSettingsSvcClient(_authenticatedChannel);
             #endregion
 
             #region Reporting

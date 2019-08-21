@@ -13,6 +13,7 @@ import "booking/reservations/reservation_management_hold.proto";
 message ReservationSearchSvcGetFilteredReservationListRequest {
 	.holms.types.booking.QueryFilter filter = 1;
 	bool include_canceled = 2;
+	bool include_limited = 3;
 }
 
 message ReservationSearchSvcGetDateFilteredReservationListRequest {

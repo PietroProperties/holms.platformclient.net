@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+
+import "google/protobuf/empty.proto";
+import "tenancy_config/default_settings.proto";
+
+message DefaultSettingsSvcResponse { 
+	repeated .holms.types.tenancy_config.DefaultSettings instances = 1;
+}
+
+service DefaultSettingsSvc {
+	rpc All(google.protobuf.Empty) 
+		returns (DefaultSettingsSvcResponse);
+
+	rpc Update(.holms.types.tenancy_config.DefaultSettings)
+		returns (.holms.types.tenancy_config.DefaultSettings);
+}
+
+
