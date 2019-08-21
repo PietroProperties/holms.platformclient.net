@@ -18,6 +18,7 @@ enum ManagementReportingSvcNotesSelection {
 	all_notes = 0;
 	only_housekeeping_notes = 1;
 	only_front_desk_notes = 2;
+	no_notes = 3;
 }
 
 message ManagementReportingSvcHousekeeperManagementReportRequest {
