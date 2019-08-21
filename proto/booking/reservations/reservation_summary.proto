@@ -15,6 +15,7 @@ import "tenancy_config/indicators/property_indicator.proto";
 import "booking/indicators/cancellation_policy_indicator.proto";
 import "operations/housekeeping/housekeeping_time.proto";
 import "google/protobuf/timestamp.proto";
+import "tenancy_config/reservation_source.proto";
 
 import "operations/rooms/room_indicator.proto";
 import "primitive/monetary_amount.proto";
@@ -53,5 +54,6 @@ message ReservationSummary {
 	.holms.types.primitive.MonetaryAmount total_master_taxes = 29;
 	.holms.types.primitive.MonetaryAmount total_master_fees = 30;
 	.holms.types.primitive.MonetaryAmount current_due_from_guest = 31;
+	holms.types.tenancy_config.ReservationSource reservation_source = 32;
 }
 
