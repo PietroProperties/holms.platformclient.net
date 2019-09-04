@@ -5,21 +5,10 @@ option csharp_namespace = "HOLMS.Types.Reporting.RPC";
 
 import "google/protobuf/empty.proto";
 import "reporting/rpc/management_reporting_svc.proto";
-import "reporting/rpc/front_desk_reporting_svc.proto";
 
 service ReportingDefaultSvc {
 	rpc GetManagementReportingDefaultSelection(google.protobuf.Empty)
 		returns (ManagmentReportingSvcBatchReportRequest);
 	rpc SetManagementReportingDefaultSelection(ManagmentReportingSvcBatchReportRequest)
-		returns (google.protobuf.Empty);
-
-	rpc GetFrontDeskReportingDefaultSelection(google.protobuf.Empty)
-		returns (FrontDeskBatchReportingSvcRequest);
-	rpc SetFrontDeskReportingDefaultSelection(FrontDeskBatchReportingSvcRequest)
-		returns (google.protobuf.Empty);
-
-	rpc GetHousekeeperReportingDefaultSelection(google.protobuf.Empty)
-		returns (ManagementReportingSvcHousekeeperManagementReportRequest);
-	rpc SetHousekeeperReportingDefaultSelection(ManagementReportingSvcHousekeeperManagementReportRequest)
 		returns (google.protobuf.Empty);
 }

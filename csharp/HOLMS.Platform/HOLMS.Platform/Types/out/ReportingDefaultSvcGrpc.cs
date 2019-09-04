@@ -15,8 +15,6 @@ namespace HOLMS.Types.Reporting.RPC {
 
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest> __Marshaller_ManagmentReportingSvcBatchReportRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest> __Marshaller_FrontDeskBatchReportingSvcRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest> __Marshaller_ManagementReportingSvcHousekeeperManagementReportRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest> __Method_GetManagementReportingDefaultSelection = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest>(
         grpc::MethodType.Unary,
@@ -30,34 +28,6 @@ namespace HOLMS.Types.Reporting.RPC {
         __ServiceName,
         "SetManagementReportingDefaultSelection",
         __Marshaller_ManagmentReportingSvcBatchReportRequest,
-        __Marshaller_Empty);
-
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest> __Method_GetFrontDeskReportingDefaultSelection = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetFrontDeskReportingDefaultSelection",
-        __Marshaller_Empty,
-        __Marshaller_FrontDeskBatchReportingSvcRequest);
-
-    static readonly grpc::Method<global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetFrontDeskReportingDefaultSelection = new grpc::Method<global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "SetFrontDeskReportingDefaultSelection",
-        __Marshaller_FrontDeskBatchReportingSvcRequest,
-        __Marshaller_Empty);
-
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest> __Method_GetHousekeeperReportingDefaultSelection = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetHousekeeperReportingDefaultSelection",
-        __Marshaller_Empty,
-        __Marshaller_ManagementReportingSvcHousekeeperManagementReportRequest);
-
-    static readonly grpc::Method<global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetHousekeeperReportingDefaultSelection = new grpc::Method<global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "SetHousekeeperReportingDefaultSelection",
-        __Marshaller_ManagementReportingSvcHousekeeperManagementReportRequest,
         __Marshaller_Empty);
 
     /// <summary>Service descriptor</summary>
@@ -75,26 +45,6 @@ namespace HOLMS.Types.Reporting.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetManagementReportingDefaultSelection(global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest> GetFrontDeskReportingDefaultSelection(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetFrontDeskReportingDefaultSelection(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest> GetHousekeeperReportingDefaultSelection(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetHousekeeperReportingDefaultSelection(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -156,70 +106,6 @@ namespace HOLMS.Types.Reporting.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetManagementReportingDefaultSelection, null, options, request);
       }
-      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest GetFrontDeskReportingDefaultSelection(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetFrontDeskReportingDefaultSelection(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest GetFrontDeskReportingDefaultSelection(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetFrontDeskReportingDefaultSelection, null, options, request);
-      }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest> GetFrontDeskReportingDefaultSelectionAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetFrontDeskReportingDefaultSelectionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest> GetFrontDeskReportingDefaultSelectionAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetFrontDeskReportingDefaultSelection, null, options, request);
-      }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetFrontDeskReportingDefaultSelection(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return SetFrontDeskReportingDefaultSelection(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetFrontDeskReportingDefaultSelection(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_SetFrontDeskReportingDefaultSelection, null, options, request);
-      }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetFrontDeskReportingDefaultSelectionAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return SetFrontDeskReportingDefaultSelectionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetFrontDeskReportingDefaultSelectionAsync(global::HOLMS.Types.Reporting.RPC.FrontDeskBatchReportingSvcRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_SetFrontDeskReportingDefaultSelection, null, options, request);
-      }
-      public virtual global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest GetHousekeeperReportingDefaultSelection(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetHousekeeperReportingDefaultSelection(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest GetHousekeeperReportingDefaultSelection(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetHousekeeperReportingDefaultSelection, null, options, request);
-      }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest> GetHousekeeperReportingDefaultSelectionAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return GetHousekeeperReportingDefaultSelectionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest> GetHousekeeperReportingDefaultSelectionAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetHousekeeperReportingDefaultSelection, null, options, request);
-      }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetHousekeeperReportingDefaultSelection(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return SetHousekeeperReportingDefaultSelection(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetHousekeeperReportingDefaultSelection(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_SetHousekeeperReportingDefaultSelection, null, options, request);
-      }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetHousekeeperReportingDefaultSelectionAsync(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return SetHousekeeperReportingDefaultSelectionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetHousekeeperReportingDefaultSelectionAsync(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_SetHousekeeperReportingDefaultSelection, null, options, request);
-      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override ReportingDefaultSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -233,11 +119,7 @@ namespace HOLMS.Types.Reporting.RPC {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetManagementReportingDefaultSelection, serviceImpl.GetManagementReportingDefaultSelection)
-          .AddMethod(__Method_SetManagementReportingDefaultSelection, serviceImpl.SetManagementReportingDefaultSelection)
-          .AddMethod(__Method_GetFrontDeskReportingDefaultSelection, serviceImpl.GetFrontDeskReportingDefaultSelection)
-          .AddMethod(__Method_SetFrontDeskReportingDefaultSelection, serviceImpl.SetFrontDeskReportingDefaultSelection)
-          .AddMethod(__Method_GetHousekeeperReportingDefaultSelection, serviceImpl.GetHousekeeperReportingDefaultSelection)
-          .AddMethod(__Method_SetHousekeeperReportingDefaultSelection, serviceImpl.SetHousekeeperReportingDefaultSelection).Build();
+          .AddMethod(__Method_SetManagementReportingDefaultSelection, serviceImpl.SetManagementReportingDefaultSelection).Build();
     }
 
   }
