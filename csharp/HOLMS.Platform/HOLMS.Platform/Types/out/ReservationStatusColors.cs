@@ -24,7 +24,7 @@ namespace HOLMS.Types.TenancyConfig {
           string.Concat(
             "Ci50ZW5hbmN5X2NvbmZpZy9yZXNlcnZhdGlvbl9zdGF0dXNfY29sb3JzLnBy",
             "b3RvEhpob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZxoccHJpbWl0aXZlL3N0",
-            "YXR1c19jb2xvci5wcm90byKkDAoXUmVzZXJ2YXRpb25TdGF0dXNDb2xvcnMS",
+            "YXR1c19jb2xvci5wcm90byK7DQoXUmVzZXJ2YXRpb25TdGF0dXNDb2xvcnMS",
             "SwofdW5ndWFyYW50ZWVkX25vdF9kdWVfaW5kaXZpZHVhbBgBIAEoDjIiLmhv",
             "bG1zLnR5cGVzLnByaW1pdGl2ZS5TdGF0dXNDb2xvchJGChp1bmd1YXJhbnRl",
             "ZWRfbm90X2R1ZV9ncm91cBgCIAEoDjIiLmhvbG1zLnR5cGVzLnByaW1pdGl2",
@@ -59,12 +59,15 @@ namespace HOLMS.Types.TenancyConfig {
             "LnByaW1pdGl2ZS5TdGF0dXNDb2xvchJBChVvcGVuX2NvbG9yX2luZGl2aWR1",
             "YWwYFSABKA4yIi5ob2xtcy50eXBlcy5wcmltaXRpdmUuU3RhdHVzQ29sb3IS",
             "PAoQb3Blbl9jb2xvcl9ncm91cBgWIAEoDjIiLmhvbG1zLnR5cGVzLnByaW1p",
-            "dGl2ZS5TdGF0dXNDb2xvckIrWg10ZW5hbmN5Y29uZmlnqgIZSE9MTVMuVHlw",
-            "ZXMuVGVuYW5jeUNvbmZpZ2IGcHJvdG8z"));
+            "dGl2ZS5TdGF0dXNDb2xvchJMCiBhcnJpdmFsX292ZXJkdWVfY29sb3JfaW5k",
+            "aXZpZHVhbBgXIAEoDjIiLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5TdGF0dXND",
+            "b2xvchJHChthcnJpdmFsX292ZXJkdWVfY29sb3JfZ3JvdXAYGCABKA4yIi5o",
+            "b2xtcy50eXBlcy5wcmltaXRpdmUuU3RhdHVzQ29sb3JCK1oNdGVuYW5jeWNv",
+            "bmZpZ6oCGUhPTE1TLlR5cGVzLlRlbmFuY3lDb25maWdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.StatusColorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ReservationStatusColors), global::HOLMS.Types.TenancyConfig.ReservationStatusColors.Parser, new[]{ "UnguaranteedNotDueIndividual", "UnguaranteedNotDueGroup", "GuaranteedColorIndividual", "GuaranteedColorGroup", "UnguaranteedOverdueIndividual", "UnguaranteedOverdueGroup", "ArrivalColorIndividual", "ArrivalColorGroup", "InhouseColorIndividual", "InhouseColorGroup", "DepartureColorIndividual", "DepartureColorGroup", "CheckedOutColorIndividual", "CheckedOutColorGroup", "NoShowColorIndividual", "NoShowColorGroup", "CanceledColorIndividual", "CanceledColorGroup", "CanceledWithFeeColorIndividual", "CanceledWithFeeColorGroup", "OpenColorIndividual", "OpenColorGroup" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ReservationStatusColors), global::HOLMS.Types.TenancyConfig.ReservationStatusColors.Parser, new[]{ "UnguaranteedNotDueIndividual", "UnguaranteedNotDueGroup", "GuaranteedColorIndividual", "GuaranteedColorGroup", "UnguaranteedOverdueIndividual", "UnguaranteedOverdueGroup", "ArrivalColorIndividual", "ArrivalColorGroup", "InhouseColorIndividual", "InhouseColorGroup", "DepartureColorIndividual", "DepartureColorGroup", "CheckedOutColorIndividual", "CheckedOutColorGroup", "NoShowColorIndividual", "NoShowColorGroup", "CanceledColorIndividual", "CanceledColorGroup", "CanceledWithFeeColorIndividual", "CanceledWithFeeColorGroup", "OpenColorIndividual", "OpenColorGroup", "ArrivalOverdueColorIndividual", "ArrivalOverdueColorGroup" }, null, null, null)
           }));
     }
     #endregion
@@ -117,6 +120,8 @@ namespace HOLMS.Types.TenancyConfig {
       canceledWithFeeColorGroup_ = other.canceledWithFeeColorGroup_;
       openColorIndividual_ = other.openColorIndividual_;
       openColorGroup_ = other.openColorGroup_;
+      arrivalOverdueColorIndividual_ = other.arrivalOverdueColorIndividual_;
+      arrivalOverdueColorGroup_ = other.arrivalOverdueColorGroup_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -366,6 +371,28 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "arrival_overdue_color_individual" field.</summary>
+    public const int ArrivalOverdueColorIndividualFieldNumber = 23;
+    private global::HOLMS.Types.Primitive.StatusColor arrivalOverdueColorIndividual_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.StatusColor ArrivalOverdueColorIndividual {
+      get { return arrivalOverdueColorIndividual_; }
+      set {
+        arrivalOverdueColorIndividual_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "arrival_overdue_color_group" field.</summary>
+    public const int ArrivalOverdueColorGroupFieldNumber = 24;
+    private global::HOLMS.Types.Primitive.StatusColor arrivalOverdueColorGroup_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.StatusColor ArrivalOverdueColorGroup {
+      get { return arrivalOverdueColorGroup_; }
+      set {
+        arrivalOverdueColorGroup_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationStatusColors);
@@ -401,6 +428,8 @@ namespace HOLMS.Types.TenancyConfig {
       if (CanceledWithFeeColorGroup != other.CanceledWithFeeColorGroup) return false;
       if (OpenColorIndividual != other.OpenColorIndividual) return false;
       if (OpenColorGroup != other.OpenColorGroup) return false;
+      if (ArrivalOverdueColorIndividual != other.ArrivalOverdueColorIndividual) return false;
+      if (ArrivalOverdueColorGroup != other.ArrivalOverdueColorGroup) return false;
       return true;
     }
 
@@ -429,6 +458,8 @@ namespace HOLMS.Types.TenancyConfig {
       if (CanceledWithFeeColorGroup != 0) hash ^= CanceledWithFeeColorGroup.GetHashCode();
       if (OpenColorIndividual != 0) hash ^= OpenColorIndividual.GetHashCode();
       if (OpenColorGroup != 0) hash ^= OpenColorGroup.GetHashCode();
+      if (ArrivalOverdueColorIndividual != 0) hash ^= ArrivalOverdueColorIndividual.GetHashCode();
+      if (ArrivalOverdueColorGroup != 0) hash ^= ArrivalOverdueColorGroup.GetHashCode();
       return hash;
     }
 
@@ -527,6 +558,14 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(176, 1);
         output.WriteEnum((int) OpenColorGroup);
       }
+      if (ArrivalOverdueColorIndividual != 0) {
+        output.WriteRawTag(184, 1);
+        output.WriteEnum((int) ArrivalOverdueColorIndividual);
+      }
+      if (ArrivalOverdueColorGroup != 0) {
+        output.WriteRawTag(192, 1);
+        output.WriteEnum((int) ArrivalOverdueColorGroup);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -597,6 +636,12 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (OpenColorGroup != 0) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) OpenColorGroup);
+      }
+      if (ArrivalOverdueColorIndividual != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ArrivalOverdueColorIndividual);
+      }
+      if (ArrivalOverdueColorGroup != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ArrivalOverdueColorGroup);
       }
       return size;
     }
@@ -671,6 +716,12 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.OpenColorGroup != 0) {
         OpenColorGroup = other.OpenColorGroup;
+      }
+      if (other.ArrivalOverdueColorIndividual != 0) {
+        ArrivalOverdueColorIndividual = other.ArrivalOverdueColorIndividual;
+      }
+      if (other.ArrivalOverdueColorGroup != 0) {
+        ArrivalOverdueColorGroup = other.ArrivalOverdueColorGroup;
       }
     }
 
@@ -768,6 +819,14 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 176: {
             openColorGroup_ = (global::HOLMS.Types.Primitive.StatusColor) input.ReadEnum();
+            break;
+          }
+          case 184: {
+            arrivalOverdueColorIndividual_ = (global::HOLMS.Types.Primitive.StatusColor) input.ReadEnum();
+            break;
+          }
+          case 192: {
+            arrivalOverdueColorGroup_ = (global::HOLMS.Types.Primitive.StatusColor) input.ReadEnum();
             break;
           }
         }
