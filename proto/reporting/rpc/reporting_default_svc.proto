@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package holms.types.reporting.rpc;
+option csharp_namespace = "HOLMS.Types.Reporting.RPC";
+
+import "google/protobuf/empty.proto";
+import "reporting/rpc/management_reporting_svc.proto";
+
+service ReportingDefaultSvc {
+	rpc GetManagementReportingDefaultSelection(google.protobuf.Empty)
+		returns (ManagmentReportingSvcBatchReportRequest);
+	rpc SetManagementReportingDefaultSelection(ManagmentReportingSvcBatchReportRequest)
+		returns (google.protobuf.Empty);
+}

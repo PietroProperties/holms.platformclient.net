@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "tenancy_config/indicators/default_settings_indicator.proto";
+
+message DefaultSettings {
+	.holms.types.tenancy_config.indicators.DefaultSettingsIndicator id = 1;
+	string display_text = 2;
+	string value = 3;
+}

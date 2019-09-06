@@ -64,6 +64,7 @@ message PrintReservationRequest{
 	repeated .holms.types.money.cards.transactions.PaymentCardSaleIndicator card_payment_indicators = 3;
 	repeated .holms.types.money.cards.transactions.PaymentCardRefundIndicator refund_indicators = 4;
 	repeated .holms.types.primitive.Uuid folio_event_id = 5;
+	bool include_expected_charges = 6;
 
 }
 
@@ -73,6 +74,7 @@ message PrintGroupReservationRequest{
 	repeated .holms.types.money.cards.transactions.PaymentCardSaleIndicator card_payment_indicators = 3;
 	repeated .holms.types.money.cards.transactions.PaymentCardRefundIndicator refund_indicators = 4;
 	repeated .holms.types.primitive.Uuid folio_event_id = 5;
+	bool include_expected_charges = 6;
 
 }
 

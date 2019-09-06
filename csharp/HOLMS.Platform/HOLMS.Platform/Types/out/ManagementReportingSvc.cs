@@ -40,19 +40,19 @@ namespace HOLMS.Types.Reporting.RPC {
             "CjhNYW5hZ2VtZW50UmVwb3J0aW5nU3ZjSG91c2VrZWVwZXJNYW5hZ2VtZW50",
             "UmVwb3J0UmVxdWVzdBIcChRvbmx5X2F0dGVudGlvbl9yb29tcxgBIAEoCBJX",
             "Cg5ub3RlX3NlbGVjdGlvbhgCIAEoDjI/LmhvbG1zLnR5cGVzLnJlcG9ydGlu",
-            "Zy5ycGMuTWFuYWdlbWVudFJlcG9ydGluZ1N2Y05vdGVzU2VsZWN0aW9uKm0K",
+            "Zy5ycGMuTWFuYWdlbWVudFJlcG9ydGluZ1N2Y05vdGVzU2VsZWN0aW9uKnsK",
             "JE1hbmFnZW1lbnRSZXBvcnRpbmdTdmNOb3Rlc1NlbGVjdGlvbhINCglhbGxf",
             "bm90ZXMQABIbChdvbmx5X2hvdXNla2VlcGluZ19ub3RlcxABEhkKFW9ubHlf",
-            "ZnJvbnRfZGVza19ub3RlcxACMt4CChZNYW5hZ2VtZW50UmVwb3J0aW5nU3Zj",
-            "EpEBChhHZXRNYW5hZ2VtZW50UmVwb3J0QmF0Y2gSQi5ob2xtcy50eXBlcy5y",
-            "ZXBvcnRpbmcucnBjLk1hbmFnbWVudFJlcG9ydGluZ1N2Y0JhdGNoUmVwb3J0",
-            "UmVxdWVzdBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5vdXRwdXRzLkh0bWxS",
-            "ZXBvcnRSZXNwb25zZRKvAQolR2V0Q3VycmVudEhvdXNla2VlcGVyTWFuYWdl",
-            "bWVudFJlcG9ydBJTLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuTWFuYWdl",
-            "bWVudFJlcG9ydGluZ1N2Y0hvdXNla2VlcGVyTWFuYWdlbWVudFJlcG9ydFJl",
-            "cXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRpbmcub3V0cHV0cy5IdG1sUmVw",
-            "b3J0UmVzcG9uc2VCHKoCGUhPTE1TLlR5cGVzLlJlcG9ydGluZy5SUENiBnBy",
-            "b3RvMw=="));
+            "ZnJvbnRfZGVza19ub3RlcxACEgwKCG5vX25vdGVzEAMy3gIKFk1hbmFnZW1l",
+            "bnRSZXBvcnRpbmdTdmMSkQEKGEdldE1hbmFnZW1lbnRSZXBvcnRCYXRjaBJC",
+            "LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuTWFuYWdtZW50UmVwb3J0aW5n",
+            "U3ZjQmF0Y2hSZXBvcnRSZXF1ZXN0GjEuaG9sbXMudHlwZXMucmVwb3J0aW5n",
+            "Lm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEq8BCiVHZXRDdXJyZW50SG91",
+            "c2VrZWVwZXJNYW5hZ2VtZW50UmVwb3J0ElMuaG9sbXMudHlwZXMucmVwb3J0",
+            "aW5nLnJwYy5NYW5hZ2VtZW50UmVwb3J0aW5nU3ZjSG91c2VrZWVwZXJNYW5h",
+            "Z2VtZW50UmVwb3J0UmVxdWVzdBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5v",
+            "dXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZUIcqgIZSE9MTVMuVHlwZXMuUmVw",
+            "b3J0aW5nLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Reporting.ReportParams.ManagementReportManifestsReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcNotesSelection), }, new pbr::GeneratedClrTypeInfo[] {
@@ -68,6 +68,7 @@ namespace HOLMS.Types.Reporting.RPC {
     [pbr::OriginalName("all_notes")] AllNotes = 0,
     [pbr::OriginalName("only_housekeeping_notes")] OnlyHousekeepingNotes = 1,
     [pbr::OriginalName("only_front_desk_notes")] OnlyFrontDeskNotes = 2,
+    [pbr::OriginalName("no_notes")] NoNotes = 3,
   }
 
   #endregion
