@@ -29,4 +29,6 @@ message ReservationStatusColors {
 	.holms.types.primitive.StatusColor canceled_with_fee_color_group = 20;
 	.holms.types.primitive.StatusColor open_color_individual = 21;
 	.holms.types.primitive.StatusColor open_color_group = 22;
+    .holms.types.primitive.StatusColor arrival_overdue_color_individual = 23;
+    .holms.types.primitive.StatusColor arrival_overdue_color_group = 24;
 }
