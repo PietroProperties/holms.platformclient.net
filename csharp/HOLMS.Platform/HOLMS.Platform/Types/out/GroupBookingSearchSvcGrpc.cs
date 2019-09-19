@@ -16,6 +16,7 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest> __Marshaller_GroupBookingSvcGetFilteredBookingsListRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse> __Marshaller_GroupBookingSvcGetFilteredBookingsListResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetDateFilteredBookingsListRequest> __Marshaller_GroupBookingSvcGetDateFilteredBookingsListRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetDateFilteredBookingsListRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange> __Marshaller_PbInclusiveOpsdateRange = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest, global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse> __Method_GetFilteredBookingsList = new grpc::Method<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListRequest, global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse>(
         grpc::MethodType.Unary,
@@ -45,6 +46,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_GroupBookingSvcGetDateFilteredBookingsListRequest,
         __Marshaller_GroupBookingSvcGetFilteredBookingsListResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange, global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse> __Method_GetGroupBookingForMasterClient = new grpc::Method<global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange, global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetGroupBookingForMasterClient",
+        __Marshaller_PbInclusiveOpsdateRange,
+        __Marshaller_GroupBookingSvcGetFilteredBookingsListResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -70,6 +78,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse> GetAllDuringDate(global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetDateFilteredBookingsListRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse> GetGroupBookingForMasterClient(global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -163,6 +176,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAllDuringDate, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse GetGroupBookingForMasterClient(global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetGroupBookingForMasterClient(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse GetGroupBookingForMasterClient(global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetGroupBookingForMasterClient, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse> GetGroupBookingForMasterClientAsync(global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetGroupBookingForMasterClientAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetFilteredBookingsListResponse> GetGroupBookingForMasterClientAsync(global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetGroupBookingForMasterClient, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GroupBookingSearchSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -178,7 +207,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetFilteredBookingsList, serviceImpl.GetFilteredBookingsList)
           .AddMethod(__Method_GetArrivalsByCalendarDate, serviceImpl.GetArrivalsByCalendarDate)
           .AddMethod(__Method_GetDeparturesByCalendarDate, serviceImpl.GetDeparturesByCalendarDate)
-          .AddMethod(__Method_GetAllDuringDate, serviceImpl.GetAllDuringDate).Build();
+          .AddMethod(__Method_GetAllDuringDate, serviceImpl.GetAllDuringDate)
+          .AddMethod(__Method_GetGroupBookingForMasterClient, serviceImpl.GetGroupBookingForMasterClient).Build();
     }
 
   }
