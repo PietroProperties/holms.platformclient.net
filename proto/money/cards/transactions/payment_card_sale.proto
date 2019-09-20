@@ -29,4 +29,5 @@ message PaymentCardSale {
 	repeated holms.types.money.cards.transactions.PaymentCardAuthorizationReversal reversals = 11;
 	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture captures = 12;
 	repeated holms.types.money.cards.transactions.PaymentCardSaleVoid voids = 13;
+	string folio_booking_number = 14;
 }
