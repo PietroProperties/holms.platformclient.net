@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "primitive/uuid.proto";
+
+message RoomStatus {
+    .holms.types.primitive.Uuid id = 1;
+     string sts_code = 2;
+     string description = 3;
+}

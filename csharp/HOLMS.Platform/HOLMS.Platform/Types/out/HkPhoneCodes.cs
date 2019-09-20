@@ -23,15 +23,15 @@ namespace HOLMS.Types.TenancyConfig {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiN0ZW5hbmN5X2NvbmZpZy9oa19waG9uZV9jb2Rlcy5wcm90bxIaaG9sbXMu",
-            "dHlwZXMudGVuYW5jeV9jb25maWcieQoMSEtQaG9uZUNvZGVzEhQKDG1haWRf",
-            "aW5fcm9vbRgBIAEoCRIPCgdpbnNwZWN0GAIgASgJEiAKGGNsZWFuX3NoZWV0",
-            "c19ub3RfY2hhbmdlZBgDIAEoCRIgChhjbGVhbl9hbmRfc2hlZXRzX2NoYW5n",
-            "ZWQYBCABKAlCK1oNdGVuYW5jeWNvbmZpZ6oCGUhPTE1TLlR5cGVzLlRlbmFu",
-            "Y3lDb25maWdiBnByb3RvMw=="));
+            "dHlwZXMudGVuYW5jeV9jb25maWciiAEKDEhLUGhvbmVDb2RlcxIUCgxtYWlk",
+            "X2luX3Jvb20YASABKAkSDwoHaW5zcGVjdBgCIAEoCRIgChhjbGVhbl9zaGVl",
+            "dHNfbm90X2NoYW5nZWQYAyABKAkSIAoYY2xlYW5fYW5kX3NoZWV0c19jaGFu",
+            "Z2VkGAQgASgJEg0KBWRpcnR5GAUgASgJQitaDXRlbmFuY3ljb25maWeqAhlI",
+            "T0xNUy5UeXBlcy5UZW5hbmN5Q29uZmlnYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.HKPhoneCodes), global::HOLMS.Types.TenancyConfig.HKPhoneCodes.Parser, new[]{ "MaidInRoom", "Inspect", "CleanSheetsNotChanged", "CleanAndSheetsChanged" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.HKPhoneCodes), global::HOLMS.Types.TenancyConfig.HKPhoneCodes.Parser, new[]{ "MaidInRoom", "Inspect", "CleanSheetsNotChanged", "CleanAndSheetsChanged", "Dirty" }, null, null, null)
           }));
     }
     #endregion
@@ -66,6 +66,7 @@ namespace HOLMS.Types.TenancyConfig {
       inspect_ = other.inspect_;
       cleanSheetsNotChanged_ = other.cleanSheetsNotChanged_;
       cleanAndSheetsChanged_ = other.cleanAndSheetsChanged_;
+      dirty_ = other.dirty_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -117,6 +118,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "dirty" field.</summary>
+    public const int DirtyFieldNumber = 5;
+    private string dirty_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Dirty {
+      get { return dirty_; }
+      set {
+        dirty_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as HKPhoneCodes);
@@ -134,6 +146,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (Inspect != other.Inspect) return false;
       if (CleanSheetsNotChanged != other.CleanSheetsNotChanged) return false;
       if (CleanAndSheetsChanged != other.CleanAndSheetsChanged) return false;
+      if (Dirty != other.Dirty) return false;
       return true;
     }
 
@@ -144,6 +157,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (Inspect.Length != 0) hash ^= Inspect.GetHashCode();
       if (CleanSheetsNotChanged.Length != 0) hash ^= CleanSheetsNotChanged.GetHashCode();
       if (CleanAndSheetsChanged.Length != 0) hash ^= CleanAndSheetsChanged.GetHashCode();
+      if (Dirty.Length != 0) hash ^= Dirty.GetHashCode();
       return hash;
     }
 
@@ -170,6 +184,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(34);
         output.WriteString(CleanAndSheetsChanged);
       }
+      if (Dirty.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Dirty);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -186,6 +204,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (CleanAndSheetsChanged.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CleanAndSheetsChanged);
+      }
+      if (Dirty.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Dirty);
       }
       return size;
     }
@@ -206,6 +227,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.CleanAndSheetsChanged.Length != 0) {
         CleanAndSheetsChanged = other.CleanAndSheetsChanged;
+      }
+      if (other.Dirty.Length != 0) {
+        Dirty = other.Dirty;
       }
     }
 
@@ -231,6 +255,10 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 34: {
             CleanAndSheetsChanged = input.ReadString();
+            break;
+          }
+          case 42: {
+            Dirty = input.ReadString();
             break;
           }
         }

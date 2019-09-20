@@ -118,7 +118,8 @@ namespace HOLMS.Platform.Client {
         TaxExemptCategorySvc.TaxExemptCategorySvcClient TaxExemptCategorySvc { get; }
         ReportingConfigurationSvc.ReportingConfigurationSvcClient ReportingConfigurationSvc { get; }
         DefaultSettingsSvc.DefaultSettingsSvcClient DefaultSettingsSvc { get; }
-            #endregion
+        RoomStatusSvc.RoomStatusSvcClient RoomStatusSvc { get; }
+        #endregion
 
         #region Reporting
         CardCaptureReportingSvc.CardCaptureReportingSvcClient CardCaptureReportingSvc { get; }
