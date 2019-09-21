@@ -23,6 +23,7 @@ namespace HOLMS.Types.CRM.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate> __Marshaller_ReservationNoteTemplate = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Guests.ReservationNoteTemplate.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator> __Marshaller_ReservationNoteTemplateIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse> __Marshaller_GuestSvcGetNoteTemplatesForGuestResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.MergeGuestRequest> __Marshaller_MergeGuestRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.MergeGuestRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> __Method_All = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse>(
         grpc::MethodType.Unary,
@@ -101,6 +102,13 @@ namespace HOLMS.Types.CRM.RPC {
         __Marshaller_GuestIndicator,
         __Marshaller_GuestSvcGetNoteTemplatesForGuestResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.CRM.RPC.MergeGuestRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_MergeGuests = new grpc::Method<global::HOLMS.Types.CRM.RPC.MergeGuestRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "MergeGuests",
+        __Marshaller_MergeGuestRequest,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -161,6 +169,11 @@ namespace HOLMS.Types.CRM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse> GetNoteTemplatesForGuest(global::HOLMS.Types.CRM.Guests.GuestIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> MergeGuests(global::HOLMS.Types.CRM.RPC.MergeGuestRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -366,6 +379,22 @@ namespace HOLMS.Types.CRM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetNoteTemplatesForGuest, null, options, request);
       }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty MergeGuests(global::HOLMS.Types.CRM.RPC.MergeGuestRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return MergeGuests(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty MergeGuests(global::HOLMS.Types.CRM.RPC.MergeGuestRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_MergeGuests, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> MergeGuestsAsync(global::HOLMS.Types.CRM.RPC.MergeGuestRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return MergeGuestsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> MergeGuestsAsync(global::HOLMS.Types.CRM.RPC.MergeGuestRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_MergeGuests, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GuestSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -388,7 +417,8 @@ namespace HOLMS.Types.CRM.RPC {
           .AddMethod(__Method_AddNoteTemplateToGuest, serviceImpl.AddNoteTemplateToGuest)
           .AddMethod(__Method_AmendNoteTemplate, serviceImpl.AmendNoteTemplate)
           .AddMethod(__Method_RemoveNoteTemplateFromGuest, serviceImpl.RemoveNoteTemplateFromGuest)
-          .AddMethod(__Method_GetNoteTemplatesForGuest, serviceImpl.GetNoteTemplatesForGuest).Build();
+          .AddMethod(__Method_GetNoteTemplatesForGuest, serviceImpl.GetNoteTemplatesForGuest)
+          .AddMethod(__Method_MergeGuests, serviceImpl.MergeGuests).Build();
     }
 
   }
