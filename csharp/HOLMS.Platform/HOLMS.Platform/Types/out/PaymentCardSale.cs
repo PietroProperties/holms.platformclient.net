@@ -37,7 +37,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             "cm90bxo1bW9uZXkvY2FyZHMvdHJhbnNhY3Rpb25zL3BheW1lbnRfY2FyZF9z",
             "YWxlX3ZvaWQucHJvdG8aLm1vbmV5L2NhcmRzL3RyYW5zYWN0aW9ucy9jYXJk",
             "X3NhbGVfc3RhdGUucHJvdG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQu",
-            "cHJvdG8izwcKD1BheW1lbnRDYXJkU2FsZRJRCgllbnRpdHlfaWQYASABKAsy",
+            "cHJvdG8i7QcKD1BheW1lbnRDYXJkU2FsZRJRCgllbnRpdHlfaWQYASABKAsy",
             "Pi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVu",
             "dENhcmRTYWxlSW5kaWNhdG9yEkMKC21lcmNoYW50X2lkGAIgASgLMi4uaG9s",
             "bXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZE1lcmNoYW50SW5kaWNhdG9yEkIK",
@@ -58,12 +58,13 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             "dGhvcml6YXRpb25SZXZlcnNhbBJOCghjYXB0dXJlcxgMIAMoCzI8LmhvbG1z",
             "LnR5cGVzLm1vbmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNh",
             "bGVDYXB0dXJlEkgKBXZvaWRzGA0gAygLMjkuaG9sbXMudHlwZXMubW9uZXku",
-            "Y2FyZHMudHJhbnNhY3Rpb25zLlBheW1lbnRDYXJkU2FsZVZvaWRCJ6oCJEhP",
-            "TE1TLlR5cGVzLk1vbmV5LkNhcmRzLlRyYW5zYWN0aW9uc2IGcHJvdG8z"));
+            "Y2FyZHMudHJhbnNhY3Rpb25zLlBheW1lbnRDYXJkU2FsZVZvaWQSHAoUZm9s",
+            "aW9fYm9va2luZ19udW1iZXIYDiABKAlCJ6oCJEhPTE1TLlR5cGVzLk1vbmV5",
+            "LkNhcmRzLlRyYW5zYWN0aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CustomerPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.AuthorizationEntryMethodReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationIncreaseReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardAuthorizationReversalReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleVoidReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.CardSaleStateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale.Parser, new[]{ "EntityId", "MerchantId", "PaymentCard", "AuthorizedAmount", "CapturedAmount", "HostReferenceNumber", "EntryMethod", "Authorization", "State", "Increases", "Reversals", "Captures", "Voids" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSale.Parser, new[]{ "EntityId", "MerchantId", "PaymentCard", "AuthorizedAmount", "CapturedAmount", "HostReferenceNumber", "EntryMethod", "Authorization", "State", "Increases", "Reversals", "Captures", "Voids", "FolioBookingNumber" }, null, null, null)
           }));
     }
     #endregion
@@ -107,6 +108,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       reversals_ = other.reversals_.Clone();
       captures_ = other.captures_.Clone();
       voids_ = other.voids_.Clone();
+      folioBookingNumber_ = other.folioBookingNumber_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -253,6 +255,17 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       get { return voids_; }
     }
 
+    /// <summary>Field number for the "folio_booking_number" field.</summary>
+    public const int FolioBookingNumberFieldNumber = 14;
+    private string folioBookingNumber_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string FolioBookingNumber {
+      get { return folioBookingNumber_; }
+      set {
+        folioBookingNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PaymentCardSale);
@@ -279,6 +292,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       if(!reversals_.Equals(other.reversals_)) return false;
       if(!captures_.Equals(other.captures_)) return false;
       if(!voids_.Equals(other.voids_)) return false;
+      if (FolioBookingNumber != other.FolioBookingNumber) return false;
       return true;
     }
 
@@ -298,6 +312,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       hash ^= reversals_.GetHashCode();
       hash ^= captures_.GetHashCode();
       hash ^= voids_.GetHashCode();
+      if (FolioBookingNumber.Length != 0) hash ^= FolioBookingNumber.GetHashCode();
       return hash;
     }
 
@@ -348,6 +363,10 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       reversals_.WriteTo(output, _repeated_reversals_codec);
       captures_.WriteTo(output, _repeated_captures_codec);
       voids_.WriteTo(output, _repeated_voids_codec);
+      if (FolioBookingNumber.Length != 0) {
+        output.WriteRawTag(114);
+        output.WriteString(FolioBookingNumber);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -384,6 +403,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       size += reversals_.CalculateSize(_repeated_reversals_codec);
       size += captures_.CalculateSize(_repeated_captures_codec);
       size += voids_.CalculateSize(_repeated_voids_codec);
+      if (FolioBookingNumber.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FolioBookingNumber);
+      }
       return size;
     }
 
@@ -441,6 +463,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
       reversals_.Add(other.reversals_);
       captures_.Add(other.captures_);
       voids_.Add(other.voids_);
+      if (other.FolioBookingNumber.Length != 0) {
+        FolioBookingNumber = other.FolioBookingNumber;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -519,6 +544,10 @@ namespace HOLMS.Types.Money.Cards.Transactions {
           }
           case 106: {
             voids_.AddEntriesFrom(input, _repeated_voids_codec);
+            break;
+          }
+          case 114: {
+            FolioBookingNumber = input.ReadString();
             break;
           }
         }

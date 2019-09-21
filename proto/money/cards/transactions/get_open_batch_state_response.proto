@@ -5,6 +5,7 @@ option csharp_namespace = "HOLMS.Types.Money.Cards.Transactions";
 
 import "money/cards/transactions/payment_card_sale_capture.proto";
 import "money/cards/transactions/payment_card_refund.proto";
+import "money/cards/transactions/payment_card_sale.proto";
 
 enum GetCurrentBatchStateResult {
 	CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_UNKNOWN_ERROR = 0;
@@ -18,5 +19,6 @@ message GetOpenBatchStateResponse {
 	GetCurrentBatchStateResult result = 1;
 	repeated holms.types.money.cards.transactions.PaymentCardSaleCapture pending_captures = 2;
 	repeated holms.types.money.cards.transactions.PaymentCardRefund pending_refunds = 3;
+	repeated holms.types.money.cards.transactions.PaymentCardSale payment_sales = 4;
 }
 

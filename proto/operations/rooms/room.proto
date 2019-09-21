@@ -10,6 +10,7 @@ import "operations/room_maintenance_state.proto";
 import "operations/room_occupancy_state.proto";
 import "operations/rooms/room_indicator.proto";
 import "supply/room_types/room_type_indicator.proto";
+import "tenancy_config/room_status.proto";
 
 message Room {
 	holms.types.operations.rooms.RoomIndicator entity_id = 1;
@@ -27,5 +28,7 @@ message Room {
 	string trunk_id = 13;
 	holms.types.booking.indicators.ReservationIndicator occupying_reservation = 14;
 	string kcr_room_number = 15;
+	string room_status_code = 16;
+	.holms.types.tenancy_config.RoomStatus room_status = 17;
 }
 
