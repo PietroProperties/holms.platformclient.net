@@ -9,4 +9,5 @@ message HKPhoneCodes {
     string inspect = 2;
     string clean_sheets_not_changed = 3;
     string clean_and_sheets_changed = 4;
+    string dirty = 5;
 }

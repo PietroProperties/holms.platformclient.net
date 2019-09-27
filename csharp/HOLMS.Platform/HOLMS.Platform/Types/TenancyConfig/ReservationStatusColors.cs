@@ -13,7 +13,8 @@ namespace HOLMS.Types.TenancyConfig {
             StatusColor noShowColorIndividual, StatusColor noShowColorGroup,
             StatusColor canceledColorIndividual, StatusColor canceledColorGroup,
             StatusColor canceledWithFeeColorIndividual, StatusColor canceledWithFeeColorGroup,
-            StatusColor openColorIndividual, StatusColor openColorGroup) {
+            StatusColor openColorIndividual, StatusColor openColorGroup,
+            StatusColor arrivalOverdueColorIndividual, StatusColor arrivalOverdueColorGroup) {
             UnguaranteedNotDueIndividual = tentativeColorIndividual;
             UnguaranteedNotDueGroup = tentativeColorGroup;
             GuaranteedColorIndividual = guaranteedColorIndividual;
@@ -36,6 +37,8 @@ namespace HOLMS.Types.TenancyConfig {
             CanceledWithFeeColorGroup = canceledWithFeeColorGroup;
             OpenColorIndividual = openColorIndividual;
             OpenColorGroup = openColorGroup;
+            ArrivalOverdueColorIndividual = arrivalOverdueColorIndividual;
+            ArrivalOverdueColorGroup = arrivalOverdueColorGroup;
         }
     }
 }
