@@ -12,6 +12,7 @@ import "booking/indicators/reservation_indicator.proto";
 import "booking/reservations/reservation_state.proto";
 import "crm/guests/guest.proto";
 import "supply/room_types/room_type.proto";
+import "tenancy_config/reservation_source.proto";
 
 message CancelledReservation {
 	holms.types.booking.indicators.ReservationIndicator entity_id = 1;
@@ -31,4 +32,5 @@ message CancelledReservation {
 	holms.types.primitive.PbLocalDate cancellation_date = 16;
 	int64 cancellation_number = 17;
 	repeated string active_tags = 18;
+	holms.types.tenancy_config.ReservationSource reservation_source = 19;
 }
