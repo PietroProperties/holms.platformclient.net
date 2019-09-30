@@ -28,11 +28,16 @@ message FolioPaymentReceiptRequest{
 	.holms.types.primitive.MonetaryAmount credit_amount=6;
 }
 
+message GroupBookingAssociatedFoliosRequest {
+	.holms.types.booking.indicators.GroupBookingIndicator group_booking_indicator = 1;
+	bool show_cancelled = 2;
+}
+
 service FoliosReportingSvc {
-	rpc GetBookingAssociatedFoliosDetail(.holms.types.booking.indicators.GroupBookingIndicator)
+	rpc GetBookingAssociatedFoliosDetail(GroupBookingAssociatedFoliosRequest)
 		returns(.holms.types.reporting.outputs.HtmlReportResponse);
 
-      	rpc GetBookingAssociatedFoliosSummary(.holms.types.booking.indicators.GroupBookingIndicator)
+		rpc GetBookingAssociatedFoliosSummary(GroupBookingAssociatedFoliosRequest)
 		returns(.holms.types.reporting.outputs.HtmlReportResponse);
 
 	rpc GetReservationFolioSummary(.holms.types.booking.indicators.GroupBookingIndicator) 
