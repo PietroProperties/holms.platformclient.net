@@ -37,32 +37,37 @@ namespace HOLMS.Types.CRM.RPC {
             "ZXF1ZXN0EhUKDWVtYWlsX2FkZHJlc3MYASABKAkibgooR3Vlc3RTdmNHZXRO",
             "b3RlVGVtcGxhdGVzRm9yR3Vlc3RSZXNwb25zZRJCCgl0ZW1wbGF0ZXMYASAD",
             "KAsyLy5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLlJlc2VydmF0aW9uTm90ZVRl",
-            "bXBsYXRlMtcICghHdWVzdFN2YxJOCgNBbGwSFi5nb29nbGUucHJvdG9idWYu",
-            "RW1wdHkaLy5ob2xtcy50eXBlcy5jcm0ucnBjLkd1ZXN0U3ZjTWFueUd1ZXN0",
-            "c1Jlc3BvbnNlElAKB0dldEJ5SWQSJi5ob2xtcy50eXBlcy5jcm0uZ3Vlc3Rz",
-            "Lkd1ZXN0SW5kaWNhdG9yGh0uaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVz",
-            "dBJuCg5HZXRTZXZlcmFsQnlJZBIrLmhvbG1zLnR5cGVzLmNybS5ycGMuR3Vl",
-            "c3RTdmNHZXRNYW55UmVxdWVzdBovLmhvbG1zLnR5cGVzLmNybS5ycGMuR3Vl",
-            "c3RTdmNNYW55R3Vlc3RzUmVzcG9uc2USdwoSU2VhcmNoQnlOYW1lUHJlZml4",
-            "EjAuaG9sbXMudHlwZXMuY3JtLnJwYy5HdWVzdFN2Y1ByZWZpeFNlYXJjaFJl",
-            "cXVlc3QaLy5ob2xtcy50eXBlcy5jcm0ucnBjLkd1ZXN0U3ZjTWFueUd1ZXN0",
-            "c1Jlc3BvbnNlEnoKFFNlYXJjaEJ5RW1haWxBZGRyZXNzEjEuaG9sbXMudHlw",
-            "ZXMuY3JtLnJwYy5HdWVzdFN2Y1NlYXJjaEJ5RW1haWxSZXF1ZXN0Gi8uaG9s",
-            "bXMudHlwZXMuY3JtLnJwYy5HdWVzdFN2Y01hbnlHdWVzdHNSZXNwb25zZRJG",
-            "CgZDcmVhdGUSHS5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0Gh0uaG9s",
-            "bXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdBJGCgZVcGRhdGUSHS5ob2xtcy50",
-            "eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0Gh0uaG9sbXMudHlwZXMuY3JtLmd1ZXN0",
-            "cy5HdWVzdBJhChZBZGROb3RlVGVtcGxhdGVUb0d1ZXN0Ei8uaG9sbXMudHlw",
-            "ZXMuY3JtLmd1ZXN0cy5SZXNlcnZhdGlvbk5vdGVUZW1wbGF0ZRoWLmdvb2ds",
-            "ZS5wcm90b2J1Zi5FbXB0eRJcChFBbWVuZE5vdGVUZW1wbGF0ZRIvLmhvbG1z",
-            "LnR5cGVzLmNybS5ndWVzdHMuUmVzZXJ2YXRpb25Ob3RlVGVtcGxhdGUaFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkSbwobUmVtb3ZlTm90ZVRlbXBsYXRlRnJv",
-            "bUd1ZXN0EjguaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5SZXNlcnZhdGlvbk5v",
-            "dGVUZW1wbGF0ZUluZGljYXRvchoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRKB",
-            "AQoYR2V0Tm90ZVRlbXBsYXRlc0Zvckd1ZXN0EiYuaG9sbXMudHlwZXMuY3Jt",
-            "Lmd1ZXN0cy5HdWVzdEluZGljYXRvcho9LmhvbG1zLnR5cGVzLmNybS5ycGMu",
-            "R3Vlc3RTdmNHZXROb3RlVGVtcGxhdGVzRm9yR3Vlc3RSZXNwb25zZUIfWgdj",
-            "cm0vcnBjqgITSE9MTVMuVHlwZXMuQ1JNLlJQQ2IGcHJvdG8z"));
+            "bXBsYXRlIoMBChFNZXJnZUd1ZXN0UmVxdWVzdBI5CglvbGRHdWVzdHMYASAD",
+            "KAsyJi5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0SW5kaWNhdG9yEjMK",
+            "DG1lcmdlZF9ndWVzdBgCIAEoCzIdLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMu",
+            "R3Vlc3QypgkKCEd1ZXN0U3ZjEk4KA0FsbBIWLmdvb2dsZS5wcm90b2J1Zi5F",
+            "bXB0eRovLmhvbG1zLnR5cGVzLmNybS5ycGMuR3Vlc3RTdmNNYW55R3Vlc3Rz",
+            "UmVzcG9uc2USUAoHR2V0QnlJZBImLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMu",
+            "R3Vlc3RJbmRpY2F0b3IaHS5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0",
+            "Em4KDkdldFNldmVyYWxCeUlkEisuaG9sbXMudHlwZXMuY3JtLnJwYy5HdWVz",
+            "dFN2Y0dldE1hbnlSZXF1ZXN0Gi8uaG9sbXMudHlwZXMuY3JtLnJwYy5HdWVz",
+            "dFN2Y01hbnlHdWVzdHNSZXNwb25zZRJ3ChJTZWFyY2hCeU5hbWVQcmVmaXgS",
+            "MC5ob2xtcy50eXBlcy5jcm0ucnBjLkd1ZXN0U3ZjUHJlZml4U2VhcmNoUmVx",
+            "dWVzdBovLmhvbG1zLnR5cGVzLmNybS5ycGMuR3Vlc3RTdmNNYW55R3Vlc3Rz",
+            "UmVzcG9uc2USegoUU2VhcmNoQnlFbWFpbEFkZHJlc3MSMS5ob2xtcy50eXBl",
+            "cy5jcm0ucnBjLkd1ZXN0U3ZjU2VhcmNoQnlFbWFpbFJlcXVlc3QaLy5ob2xt",
+            "cy50eXBlcy5jcm0ucnBjLkd1ZXN0U3ZjTWFueUd1ZXN0c1Jlc3BvbnNlEkYK",
+            "BkNyZWF0ZRIdLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3QaHS5ob2xt",
+            "cy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0EkYKBlVwZGF0ZRIdLmhvbG1zLnR5",
+            "cGVzLmNybS5ndWVzdHMuR3Vlc3QaHS5ob2xtcy50eXBlcy5jcm0uZ3Vlc3Rz",
+            "Lkd1ZXN0EmEKFkFkZE5vdGVUZW1wbGF0ZVRvR3Vlc3QSLy5ob2xtcy50eXBl",
+            "cy5jcm0uZ3Vlc3RzLlJlc2VydmF0aW9uTm90ZVRlbXBsYXRlGhYuZ29vZ2xl",
+            "LnByb3RvYnVmLkVtcHR5ElwKEUFtZW5kTm90ZVRlbXBsYXRlEi8uaG9sbXMu",
+            "dHlwZXMuY3JtLmd1ZXN0cy5SZXNlcnZhdGlvbk5vdGVUZW1wbGF0ZRoWLmdv",
+            "b2dsZS5wcm90b2J1Zi5FbXB0eRJvChtSZW1vdmVOb3RlVGVtcGxhdGVGcm9t",
+            "R3Vlc3QSOC5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLlJlc2VydmF0aW9uTm90",
+            "ZVRlbXBsYXRlSW5kaWNhdG9yGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EoEB",
+            "ChhHZXROb3RlVGVtcGxhdGVzRm9yR3Vlc3QSJi5ob2xtcy50eXBlcy5jcm0u",
+            "Z3Vlc3RzLkd1ZXN0SW5kaWNhdG9yGj0uaG9sbXMudHlwZXMuY3JtLnJwYy5H",
+            "dWVzdFN2Y0dldE5vdGVUZW1wbGF0ZXNGb3JHdWVzdFJlc3BvbnNlEk0KC01l",
+            "cmdlR3Vlc3RzEiYuaG9sbXMudHlwZXMuY3JtLnJwYy5NZXJnZUd1ZXN0UmVx",
+            "dWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eUIfWgdjcm0vcnBjqgITSE9M",
+            "TVMuVHlwZXMuQ1JNLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestReflection.Descriptor, global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateReflection.Descriptor, global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -70,7 +75,8 @@ namespace HOLMS.Types.CRM.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestSvcGetManyRequest), global::HOLMS.Types.CRM.RPC.GuestSvcGetManyRequest.Parser, new[]{ "Ids" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestSvcPrefixSearchRequest), global::HOLMS.Types.CRM.RPC.GuestSvcPrefixSearchRequest.Parser, new[]{ "FamilyNamePrefix", "GivenNamePrefix", "IncludeIndirectChannelGuests" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest), global::HOLMS.Types.CRM.RPC.GuestSvcSearchByEmailRequest.Parser, new[]{ "EmailAddress" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse), global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse.Parser, new[]{ "Templates" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse), global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse.Parser, new[]{ "Templates" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.MergeGuestRequest), global::HOLMS.Types.CRM.RPC.MergeGuestRequest.Parser, new[]{ "OldGuests", "MergedGuest" }, null, null, null)
           }));
     }
     #endregion
@@ -686,6 +692,149 @@ namespace HOLMS.Types.CRM.RPC {
             break;
           case 10: {
             templates_.AddEntriesFrom(input, _repeated_templates_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class MergeGuestRequest : pb::IMessage<MergeGuestRequest> {
+    private static readonly pb::MessageParser<MergeGuestRequest> _parser = new pb::MessageParser<MergeGuestRequest>(() => new MergeGuestRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MergeGuestRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.CRM.RPC.GuestSvcReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MergeGuestRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MergeGuestRequest(MergeGuestRequest other) : this() {
+      oldGuests_ = other.oldGuests_.Clone();
+      MergedGuest = other.mergedGuest_ != null ? other.MergedGuest.Clone() : null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MergeGuestRequest Clone() {
+      return new MergeGuestRequest(this);
+    }
+
+    /// <summary>Field number for the "oldGuests" field.</summary>
+    public const int OldGuestsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.CRM.Guests.GuestIndicator> _repeated_oldGuests_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.CRM.Guests.GuestIndicator.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.CRM.Guests.GuestIndicator> oldGuests_ = new pbc::RepeatedField<global::HOLMS.Types.CRM.Guests.GuestIndicator>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.CRM.Guests.GuestIndicator> OldGuests {
+      get { return oldGuests_; }
+    }
+
+    /// <summary>Field number for the "merged_guest" field.</summary>
+    public const int MergedGuestFieldNumber = 2;
+    private global::HOLMS.Types.CRM.Guests.Guest mergedGuest_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.CRM.Guests.Guest MergedGuest {
+      get { return mergedGuest_; }
+      set {
+        mergedGuest_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MergeGuestRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MergeGuestRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!oldGuests_.Equals(other.oldGuests_)) return false;
+      if (!object.Equals(MergedGuest, other.MergedGuest)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= oldGuests_.GetHashCode();
+      if (mergedGuest_ != null) hash ^= MergedGuest.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      oldGuests_.WriteTo(output, _repeated_oldGuests_codec);
+      if (mergedGuest_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MergedGuest);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += oldGuests_.CalculateSize(_repeated_oldGuests_codec);
+      if (mergedGuest_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MergedGuest);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MergeGuestRequest other) {
+      if (other == null) {
+        return;
+      }
+      oldGuests_.Add(other.oldGuests_);
+      if (other.mergedGuest_ != null) {
+        if (mergedGuest_ == null) {
+          mergedGuest_ = new global::HOLMS.Types.CRM.Guests.Guest();
+        }
+        MergedGuest.MergeFrom(other.MergedGuest);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            oldGuests_.AddEntriesFrom(input, _repeated_oldGuests_codec);
+            break;
+          }
+          case 18: {
+            if (mergedGuest_ == null) {
+              mergedGuest_ = new global::HOLMS.Types.CRM.Guests.Guest();
+            }
+            input.ReadMessage(mergedGuest_);
             break;
           }
         }
