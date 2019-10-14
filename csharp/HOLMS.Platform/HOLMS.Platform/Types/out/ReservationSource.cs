@@ -24,15 +24,16 @@ namespace HOLMS.Types.TenancyConfig {
           string.Concat(
             "Cid0ZW5hbmN5X2NvbmZpZy9yZXNlcnZhdGlvbl9zb3VyY2UucHJvdG8SGmhv",
             "bG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnGjx0ZW5hbmN5X2NvbmZpZy9pbmRp",
-            "Y2F0b3JzL3Jlc2VydmF0aW9uX3NvdXJjZV9pbmRpY2F0b3IucHJvdG8ifgoR",
-            "UmVzZXJ2YXRpb25Tb3VyY2USVAoJZW50aXR5X2lkGAEgASgLMkEuaG9sbXMu",
-            "dHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvblNv",
-            "dXJjZUluZGljYXRvchITCgtkZXNjcmlwdGlvbhgCIAEoCUIrWg10ZW5hbmN5",
-            "Y29uZmlnqgIZSE9MTVMuVHlwZXMuVGVuYW5jeUNvbmZpZ2IGcHJvdG8z"));
+            "Y2F0b3JzL3Jlc2VydmF0aW9uX3NvdXJjZV9pbmRpY2F0b3IucHJvdG8inwEK",
+            "EVJlc2VydmF0aW9uU291cmNlElQKCWVudGl0eV9pZBgBIAEoCzJBLmhvbG1z",
+            "LnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUmVzZXJ2YXRpb25T",
+            "b3VyY2VJbmRpY2F0b3ISEwoLZGVzY3JpcHRpb24YAiABKAkSHwoXaGlkZVRh",
+            "YmxlQ29ycmVzcG9uZGVuY2UYAyABKAhCK1oNdGVuYW5jeWNvbmZpZ6oCGUhP",
+            "TE1TLlR5cGVzLlRlbmFuY3lDb25maWdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.TenancyConfig.Indicators.ReservationSourceIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ReservationSource), global::HOLMS.Types.TenancyConfig.ReservationSource.Parser, new[]{ "EntityId", "Description" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ReservationSource), global::HOLMS.Types.TenancyConfig.ReservationSource.Parser, new[]{ "EntityId", "Description", "HideTableCorrespondence" }, null, null, null)
           }));
     }
     #endregion
@@ -65,6 +66,7 @@ namespace HOLMS.Types.TenancyConfig {
     public ReservationSource(ReservationSource other) : this() {
       EntityId = other.entityId_ != null ? other.EntityId.Clone() : null;
       description_ = other.description_;
+      hideTableCorrespondence_ = other.hideTableCorrespondence_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -94,6 +96,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "hideTableCorrespondence" field.</summary>
+    public const int HideTableCorrespondenceFieldNumber = 3;
+    private bool hideTableCorrespondence_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HideTableCorrespondence {
+      get { return hideTableCorrespondence_; }
+      set {
+        hideTableCorrespondence_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationSource);
@@ -109,6 +122,7 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (!object.Equals(EntityId, other.EntityId)) return false;
       if (Description != other.Description) return false;
+      if (HideTableCorrespondence != other.HideTableCorrespondence) return false;
       return true;
     }
 
@@ -117,6 +131,7 @@ namespace HOLMS.Types.TenancyConfig {
       int hash = 1;
       if (entityId_ != null) hash ^= EntityId.GetHashCode();
       if (Description.Length != 0) hash ^= Description.GetHashCode();
+      if (HideTableCorrespondence != false) hash ^= HideTableCorrespondence.GetHashCode();
       return hash;
     }
 
@@ -135,6 +150,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(18);
         output.WriteString(Description);
       }
+      if (HideTableCorrespondence != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(HideTableCorrespondence);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -145,6 +164,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (Description.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
+      if (HideTableCorrespondence != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -162,6 +184,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.Description.Length != 0) {
         Description = other.Description;
+      }
+      if (other.HideTableCorrespondence != false) {
+        HideTableCorrespondence = other.HideTableCorrespondence;
       }
     }
 
@@ -182,6 +207,10 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 18: {
             Description = input.ReadString();
+            break;
+          }
+          case 24: {
+            HideTableCorrespondence = input.ReadBool();
             break;
           }
         }
