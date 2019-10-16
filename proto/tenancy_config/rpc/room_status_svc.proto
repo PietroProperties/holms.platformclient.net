@@ -1,0 +1,32 @@
+﻿syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+option go_package = "tenancyconfig/rpc";
+
+import "google/protobuf/empty.proto";
+import "tenancy_config/room_status.proto";
+
+message RoomStatusSvcAllResponse {
+	repeated .holms.types.tenancy_config.RoomStatus room_statuses = 1;
+}
+
+message RoomStatusSvcAllRequest {
+	repeated .holms.types.tenancy_config.RoomStatus room_statuses = 1;
+}
+
+message RoomStatusAddRequestResponse {
+	bool result = 1;
+}
+
+service RoomStatusSvc {
+	rpc All (google.protobuf.Empty) 
+		returns (RoomStatusSvcAllResponse);
+
+	rpc Update (RoomStatusSvcAllRequest)
+		returns (RoomStatusSvcAllResponse);
+
+	rpc Add (RoomStatus)
+		returns (RoomStatusAddRequestResponse);
+
+}

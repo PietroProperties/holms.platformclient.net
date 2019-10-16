@@ -19,6 +19,7 @@ message ReservationSearchSvcGetFilteredReservationListRequest {
 message ReservationSearchSvcGetDateFilteredReservationListRequest {
 	.holms.types.primitive.PbLocalDate date = 1;
 	bool include_canceled = 2;
+	bool include_limited = 3;
 }
 
 message ReservationSearchSvcGetFilteredReservationListResponse {
