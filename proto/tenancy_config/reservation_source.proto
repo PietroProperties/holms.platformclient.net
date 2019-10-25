@@ -9,4 +9,5 @@ import "tenancy_config/indicators/reservation_source_indicator.proto";
 message ReservationSource {
 	holms.types.tenancy_config.indicators.ReservationSourceIndicator entity_id = 1;
 	string description = 2;
+        bool hideTableCorrespondence = 3;
 }
