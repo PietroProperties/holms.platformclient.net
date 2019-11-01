@@ -150,5 +150,8 @@ service GroupBookingSvc {
 		returns(google.protobuf.Empty);
 
 	rpc AllByDateRange(.holms.types.primitive.PbInclusiveOpsdateRange)
-		returns(GroupBookingSvcAllBookings);	
+		returns(GroupBookingSvcAllBookings);
+
+	rpc DropUnusedHolds (GroupBookingSvcQuantityUpdateRequest)
+		returns (google.protobuf.Empty);
 }
