@@ -20,6 +20,9 @@ import "iam/staff_member_indicator.proto";
 import "google/protobuf/timestamp.proto";
 import "supply/room_types/room_type_indicator.proto";
 import "primitive/pb_inclusive_opsdate_range.proto";
+import "supply/event_booking_hold_indicator.proto";
+import "booking/groups/unassigned_booking_holds.proto";
+import "booking/indicators/reservation_indicator.proto";
 
 message GroupBookingSvcAllBookings {
 	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
@@ -33,6 +36,8 @@ message GroupBookingSvcPriceUpdateRequest {
 message GroupBookingSvcQuantityUpdateRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
 	repeated .holms.types.booking.groups.GroupBookingRoomTypeQuantity quantities = 2;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 3;
+	repeated .holms.types.booking.groups.GroupBookingRoomTypeQuantity add_hold_quantities = 4;
 }
 
 message GroupBookingSvcGetReservationsWithTagResponse {
@@ -89,6 +94,28 @@ message IncreaseGroupHoldForReservationRequest{
 
 message IncreaseGroupHoldForReservationResponse{
 	bool result=1;
+}
+
+message GroupBookingSvcDeleteHoldRequest {
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	.holms.types.supply.EventBookingHoldIndicator event_booking_hold = 2;
+}
+
+message GroupBookingUnassignedHoldsResponse{
+	repeated .holms.types.booking.groups.UnassignedBookingHolds unassigned_holds = 1;
+}
+
+message UpdateHoldRequest{
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
+	.holms.types.supply.EventBookingHoldIndicator event_booking_hold = 2;
+}
+
+message SyncHoldRequest{
+	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
+	.holms.types.supply.room_types.RoomTypeIndicator room_type = 2;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 3;
+	.holms.types.booking.indicators.ReservationIndicator reservation = 4;
+	bool booking_tag_present = 5;
 }
 
 service GroupBookingSvc {
@@ -150,5 +177,26 @@ service GroupBookingSvc {
 		returns(google.protobuf.Empty);
 
 	rpc AllByDateRange(.holms.types.primitive.PbInclusiveOpsdateRange)
-		returns(GroupBookingSvcAllBookings);	
+		returns(GroupBookingSvcAllBookings);
+
+	rpc DropUnusedHolds (GroupBookingSvcQuantityUpdateRequest)
+		returns (google.protobuf.Empty);
+
+	rpc CreateHolds (GroupBookingSvcQuantityUpdateRequest)
+		returns (google.protobuf.Empty);
+
+	rpc DeleteHold (GroupBookingSvcDeleteHoldRequest)
+		returns (google.protobuf.Empty);
+
+	rpc GetUnassignedBookingHolds (.holms.types.booking.indicators.GroupBookingIndicator)
+		returns (GroupBookingUnassignedHoldsResponse);
+
+	rpc UpdateHold (UpdateHoldRequest)
+		returns (google.protobuf.Empty);
+
+	rpc MigrateBookingToNewDesign (.holms.types.booking.indicators.GroupBookingIndicator)
+		returns (google.protobuf.Empty);
+
+	rpc SyncReservationHoldWithEventBookingHold (SyncHoldRequest)
+		returns (google.protobuf.Empty);
 }
