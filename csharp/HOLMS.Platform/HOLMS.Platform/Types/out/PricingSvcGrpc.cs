@@ -18,6 +18,7 @@ namespace HOLMS.Types.Supply.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest> __Marshaller_PricingSvcPropertyQueryRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest> __Marshaller_PricingSvcUpdateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest> __Marshaller_PricingSvcWithoutPropertyQueryRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> __Method_QueryByRoomType = new grpc::Method<global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse>(
         grpc::MethodType.Unary,
@@ -40,6 +41,13 @@ namespace HOLMS.Types.Supply.RPC {
         __Marshaller_PricingSvcUpdateRequest,
         __Marshaller_Empty);
 
+    static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> __Method_QueryByWithoutProperty = new grpc::Method<global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "QueryByWithoutProperty",
+        __Marshaller_PricingSvcWithoutPropertyQueryRequest,
+        __Marshaller_PricingSvcQueryResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -60,6 +68,11 @@ namespace HOLMS.Types.Supply.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> Update(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> QueryByWithoutProperty(global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -137,6 +150,22 @@ namespace HOLMS.Types.Supply.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }
+      public virtual global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse QueryByWithoutProperty(global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return QueryByWithoutProperty(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse QueryByWithoutProperty(global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_QueryByWithoutProperty, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> QueryByWithoutPropertyAsync(global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return QueryByWithoutPropertyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> QueryByWithoutPropertyAsync(global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_QueryByWithoutProperty, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override PricingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -151,7 +180,8 @@ namespace HOLMS.Types.Supply.RPC {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_QueryByRoomType, serviceImpl.QueryByRoomType)
           .AddMethod(__Method_QueryByProperty, serviceImpl.QueryByProperty)
-          .AddMethod(__Method_Update, serviceImpl.Update).Build();
+          .AddMethod(__Method_Update, serviceImpl.Update)
+          .AddMethod(__Method_QueryByWithoutProperty, serviceImpl.QueryByWithoutProperty).Build();
     }
 
   }

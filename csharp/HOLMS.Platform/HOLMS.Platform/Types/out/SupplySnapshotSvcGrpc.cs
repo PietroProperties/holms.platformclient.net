@@ -18,6 +18,7 @@ namespace HOLMS.Types.Supply.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.Snapshot.LodgingQuantitySnapshotRequestResponse> __Marshaller_LodgingQuantitySnapshotRequestResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.Snapshot.LodgingQuantitySnapshotRequestResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.IncidentalSnapshotRequest> __Marshaller_IncidentalSnapshotRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.IncidentalSnapshotRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.Snapshot.IncidentalsSnapshotRequestResponse> __Marshaller_IncidentalsSnapshotRequestResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.Snapshot.IncidentalsSnapshotRequestResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq> __Marshaller_SupplySnapshotSvcSnapshotWithoutPropertyTagsReq = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithTagsReq, global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponse> __Method_LodgingSnapshotFromTagsStrict = new grpc::Method<global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithTagsReq, global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponse>(
         grpc::MethodType.Unary,
@@ -47,6 +48,20 @@ namespace HOLMS.Types.Supply.RPC {
         __Marshaller_IncidentalSnapshotRequest,
         __Marshaller_IncidentalsSnapshotRequestResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq, global::HOLMS.Types.Supply.Snapshot.LodgingQuantitySnapshotRequestResponse> __Method_LodgingQuantitySnapshotWithoutPropertyFromTagsStrict = new grpc::Method<global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq, global::HOLMS.Types.Supply.Snapshot.LodgingQuantitySnapshotRequestResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "LodgingQuantitySnapshotWithoutPropertyFromTagsStrict",
+        __Marshaller_SupplySnapshotSvcSnapshotWithoutPropertyTagsReq,
+        __Marshaller_LodgingQuantitySnapshotRequestResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq, global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponse> __Method_LodgingSnapshotFromTagsMergedWithoutProperty = new grpc::Method<global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq, global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "LodgingSnapshotFromTagsMergedWithoutProperty",
+        __Marshaller_SupplySnapshotSvcSnapshotWithoutPropertyTagsReq,
+        __Marshaller_LodgingSnapshotRequestResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -72,6 +87,16 @@ namespace HOLMS.Types.Supply.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.Snapshot.IncidentalsSnapshotRequestResponse> IncidentalSnapshot(global::HOLMS.Types.Supply.RPC.IncidentalSnapshotRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.Snapshot.LodgingQuantitySnapshotRequestResponse> LodgingQuantitySnapshotWithoutPropertyFromTagsStrict(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponse> LodgingSnapshotFromTagsMergedWithoutProperty(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -165,6 +190,38 @@ namespace HOLMS.Types.Supply.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_IncidentalSnapshot, null, options, request);
       }
+      public virtual global::HOLMS.Types.Supply.Snapshot.LodgingQuantitySnapshotRequestResponse LodgingQuantitySnapshotWithoutPropertyFromTagsStrict(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return LodgingQuantitySnapshotWithoutPropertyFromTagsStrict(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Supply.Snapshot.LodgingQuantitySnapshotRequestResponse LodgingQuantitySnapshotWithoutPropertyFromTagsStrict(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_LodgingQuantitySnapshotWithoutPropertyFromTagsStrict, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.Snapshot.LodgingQuantitySnapshotRequestResponse> LodgingQuantitySnapshotWithoutPropertyFromTagsStrictAsync(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return LodgingQuantitySnapshotWithoutPropertyFromTagsStrictAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.Snapshot.LodgingQuantitySnapshotRequestResponse> LodgingQuantitySnapshotWithoutPropertyFromTagsStrictAsync(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_LodgingQuantitySnapshotWithoutPropertyFromTagsStrict, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponse LodgingSnapshotFromTagsMergedWithoutProperty(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return LodgingSnapshotFromTagsMergedWithoutProperty(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponse LodgingSnapshotFromTagsMergedWithoutProperty(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_LodgingSnapshotFromTagsMergedWithoutProperty, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponse> LodgingSnapshotFromTagsMergedWithoutPropertyAsync(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return LodgingSnapshotFromTagsMergedWithoutPropertyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.Snapshot.LodgingSnapshotRequestResponse> LodgingSnapshotFromTagsMergedWithoutPropertyAsync(global::HOLMS.Types.Supply.RPC.SupplySnapshotSvcSnapshotWithoutPropertyTagsReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_LodgingSnapshotFromTagsMergedWithoutProperty, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override SupplySnapshotSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -180,7 +237,9 @@ namespace HOLMS.Types.Supply.RPC {
           .AddMethod(__Method_LodgingSnapshotFromTagsStrict, serviceImpl.LodgingSnapshotFromTagsStrict)
           .AddMethod(__Method_LodgingSnapshotFromTagsMerged, serviceImpl.LodgingSnapshotFromTagsMerged)
           .AddMethod(__Method_LodgingQuantitySnapshotFromTagsStrict, serviceImpl.LodgingQuantitySnapshotFromTagsStrict)
-          .AddMethod(__Method_IncidentalSnapshot, serviceImpl.IncidentalSnapshot).Build();
+          .AddMethod(__Method_IncidentalSnapshot, serviceImpl.IncidentalSnapshot)
+          .AddMethod(__Method_LodgingQuantitySnapshotWithoutPropertyFromTagsStrict, serviceImpl.LodgingQuantitySnapshotWithoutPropertyFromTagsStrict)
+          .AddMethod(__Method_LodgingSnapshotFromTagsMergedWithoutProperty, serviceImpl.LodgingSnapshotFromTagsMergedWithoutProperty).Build();
     }
 
   }
