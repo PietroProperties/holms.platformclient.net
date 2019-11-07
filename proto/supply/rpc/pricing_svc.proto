@@ -24,6 +24,11 @@ message PricingSvcPropertyQueryRequest {
 	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 3;
 }
 
+message PricingSvcWithoutPropertyQueryRequest {
+	.holms.types.supply.RateScheduleIndicator rate_schedule = 1;	
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
+}
+
 message PricingSvcQueryResponse {
 	repeated .holms.types.supply.ScheduledPrice prices = 1;
 }
@@ -37,4 +42,5 @@ service PricingSvc {
 	rpc QueryByRoomType (PricingSvcRoomTypeQueryRequest) returns (PricingSvcQueryResponse);
 	rpc QueryByProperty (PricingSvcPropertyQueryRequest) returns (PricingSvcQueryResponse);
 	rpc Update (PricingSvcUpdateRequest) returns (google.protobuf.Empty);
+	rpc QueryByWithoutProperty (PricingSvcWithoutPropertyQueryRequest) returns (PricingSvcQueryResponse);
 }
