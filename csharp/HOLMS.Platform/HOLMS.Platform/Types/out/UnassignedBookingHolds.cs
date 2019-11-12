@@ -26,18 +26,20 @@ namespace HOLMS.Types.Booking.Groups {
             "dG8SGmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzGipwcmltaXRpdmUvcGJf",
             "aW5jbHVzaXZlX29wc2RhdGVfcmFuZ2UucHJvdG8aKXN1cHBseS9ldmVudF9i",
             "b29raW5nX2hvbGRfaW5kaWNhdG9yLnByb3RvGitzdXBwbHkvcm9vbV90eXBl",
-            "cy9yb29tX3R5cGVfaW5kaWNhdG9yLnByb3RvIuwBChZVbmFzc2lnbmVkQm9v",
-            "a2luZ0hvbGRzEkkKEmV2ZW50X2Jvb2tpbmdfaG9sZBgBIAEoCzItLmhvbG1z",
-            "LnR5cGVzLnN1cHBseS5FdmVudEJvb2tpbmdIb2xkSW5kaWNhdG9yEkIKCmRh",
-            "dGVfcmFuZ2UYAiABKAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNs",
-            "dXNpdmVPcHNkYXRlUmFuZ2USQwoJcm9vbV90eXBlGAMgASgLMjAuaG9sbXMu",
-            "dHlwZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9vbVR5cGVJbmRpY2F0b3JCLVoO",
-            "Ym9va2luZy9ncm91cHOqAhpIT0xNUy5UeXBlcy5Cb29raW5nLkdyb3Vwc2IG",
-            "cHJvdG8z"));
+            "cy9yb29tX3R5cGVfaW5kaWNhdG9yLnByb3RvGi5ib29raW5nL2luZGljYXRv",
+            "cnMvcmVzZXJ2YXRpb25faW5kaWNhdG9yLnByb3RvIroCChZVbmFzc2lnbmVk",
+            "Qm9va2luZ0hvbGRzEkkKEmV2ZW50X2Jvb2tpbmdfaG9sZBgBIAEoCzItLmhv",
+            "bG1zLnR5cGVzLnN1cHBseS5FdmVudEJvb2tpbmdIb2xkSW5kaWNhdG9yEkIK",
+            "CmRhdGVfcmFuZ2UYAiABKAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJ",
+            "bmNsdXNpdmVPcHNkYXRlUmFuZ2USQwoJcm9vbV90eXBlGAMgASgLMjAuaG9s",
+            "bXMudHlwZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9vbVR5cGVJbmRpY2F0b3IS",
+            "TAoOcmVzZXJ2YXRpb25faWQYBCABKAsyNC5ob2xtcy50eXBlcy5ib29raW5n",
+            "LmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3JCLVoOYm9va2luZy9n",
+            "cm91cHOqAhpIT0xNUy5UeXBlcy5Cb29raW5nLkdyb3Vwc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.EventBookingHoldIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.EventBookingHoldIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.UnassignedBookingHolds), global::HOLMS.Types.Booking.Groups.UnassignedBookingHolds.Parser, new[]{ "EventBookingHold", "DateRange", "RoomType" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.UnassignedBookingHolds), global::HOLMS.Types.Booking.Groups.UnassignedBookingHolds.Parser, new[]{ "EventBookingHold", "DateRange", "RoomType", "ReservationId" }, null, null, null)
           }));
     }
     #endregion
@@ -71,6 +73,7 @@ namespace HOLMS.Types.Booking.Groups {
       EventBookingHold = other.eventBookingHold_ != null ? other.EventBookingHold.Clone() : null;
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
       RoomType = other.roomType_ != null ? other.RoomType.Clone() : null;
+      ReservationId = other.reservationId_ != null ? other.ReservationId.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -111,6 +114,17 @@ namespace HOLMS.Types.Booking.Groups {
       }
     }
 
+    /// <summary>Field number for the "reservation_id" field.</summary>
+    public const int ReservationIdFieldNumber = 4;
+    private global::HOLMS.Types.Booking.Indicators.ReservationIndicator reservationId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.Indicators.ReservationIndicator ReservationId {
+      get { return reservationId_; }
+      set {
+        reservationId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as UnassignedBookingHolds);
@@ -127,6 +141,7 @@ namespace HOLMS.Types.Booking.Groups {
       if (!object.Equals(EventBookingHold, other.EventBookingHold)) return false;
       if (!object.Equals(DateRange, other.DateRange)) return false;
       if (!object.Equals(RoomType, other.RoomType)) return false;
+      if (!object.Equals(ReservationId, other.ReservationId)) return false;
       return true;
     }
 
@@ -136,6 +151,7 @@ namespace HOLMS.Types.Booking.Groups {
       if (eventBookingHold_ != null) hash ^= EventBookingHold.GetHashCode();
       if (dateRange_ != null) hash ^= DateRange.GetHashCode();
       if (roomType_ != null) hash ^= RoomType.GetHashCode();
+      if (reservationId_ != null) hash ^= ReservationId.GetHashCode();
       return hash;
     }
 
@@ -158,6 +174,10 @@ namespace HOLMS.Types.Booking.Groups {
         output.WriteRawTag(26);
         output.WriteMessage(RoomType);
       }
+      if (reservationId_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ReservationId);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -171,6 +191,9 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (roomType_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomType);
+      }
+      if (reservationId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReservationId);
       }
       return size;
     }
@@ -197,6 +220,12 @@ namespace HOLMS.Types.Booking.Groups {
           roomType_ = new global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator();
         }
         RoomType.MergeFrom(other.RoomType);
+      }
+      if (other.reservationId_ != null) {
+        if (reservationId_ == null) {
+          reservationId_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+        }
+        ReservationId.MergeFrom(other.ReservationId);
       }
     }
 
@@ -227,6 +256,13 @@ namespace HOLMS.Types.Booking.Groups {
               roomType_ = new global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator();
             }
             input.ReadMessage(roomType_);
+            break;
+          }
+          case 34: {
+            if (reservationId_ == null) {
+              reservationId_ = new global::HOLMS.Types.Booking.Indicators.ReservationIndicator();
+            }
+            input.ReadMessage(reservationId_);
             break;
           }
         }

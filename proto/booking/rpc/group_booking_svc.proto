@@ -188,7 +188,7 @@ service GroupBookingSvc {
 	rpc DeleteHold (GroupBookingSvcDeleteHoldRequest)
 		returns (google.protobuf.Empty);
 
-	rpc GetUnassignedBookingHolds (.holms.types.booking.indicators.GroupBookingIndicator)
+	rpc GetAllBookingHolds (.holms.types.booking.indicators.GroupBookingIndicator)
 		returns (GroupBookingUnassignedHoldsResponse);
 
 	rpc UpdateHold (UpdateHoldRequest)

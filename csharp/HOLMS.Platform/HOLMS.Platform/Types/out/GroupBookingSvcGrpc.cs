@@ -201,10 +201,10 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_GroupBookingSvcDeleteHoldRequest,
         __Marshaller_Empty);
 
-    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse> __Method_GetUnassignedBookingHolds = new grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse> __Method_GetAllBookingHolds = new grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetUnassignedBookingHolds",
+        "GetAllBookingHolds",
         __Marshaller_GroupBookingIndicator,
         __Marshaller_GroupBookingUnassignedHoldsResponse);
 
@@ -353,7 +353,7 @@ namespace HOLMS.Types.Booking.RPC {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse> GetUnassignedBookingHolds(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse> GetAllBookingHolds(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -766,21 +766,21 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteHold, null, options, request);
       }
-      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse GetUnassignedBookingHolds(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse GetAllBookingHolds(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetUnassignedBookingHolds(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetAllBookingHolds(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse GetUnassignedBookingHolds(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse GetAllBookingHolds(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetUnassignedBookingHolds, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetAllBookingHolds, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse> GetUnassignedBookingHoldsAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse> GetAllBookingHoldsAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetUnassignedBookingHoldsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetAllBookingHoldsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse> GetUnassignedBookingHoldsAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse> GetAllBookingHoldsAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetUnassignedBookingHolds, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetAllBookingHolds, null, options, request);
       }
       public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateHold(global::HOLMS.Types.Booking.RPC.UpdateHoldRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
@@ -865,7 +865,7 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_DropUnusedHolds, serviceImpl.DropUnusedHolds)
           .AddMethod(__Method_CreateHolds, serviceImpl.CreateHolds)
           .AddMethod(__Method_DeleteHold, serviceImpl.DeleteHold)
-          .AddMethod(__Method_GetUnassignedBookingHolds, serviceImpl.GetUnassignedBookingHolds)
+          .AddMethod(__Method_GetAllBookingHolds, serviceImpl.GetAllBookingHolds)
           .AddMethod(__Method_UpdateHold, serviceImpl.UpdateHold)
           .AddMethod(__Method_MigrateBookingToNewDesign, serviceImpl.MigrateBookingToNewDesign)
           .AddMethod(__Method_SyncReservationHoldWithEventBookingHold, serviceImpl.SyncReservationHoldWithEventBookingHold).Build();
