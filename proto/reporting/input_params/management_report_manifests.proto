@@ -10,8 +10,7 @@ message ManagementCurrentTimeReportManifest {
 	bool unoccupied_rooms_report = 1;
 	bool folio_balance_report = 2;
 	bool lodging_verification_report = 3;
-	bool comp_stay_report = 4;
-
+    bool comp_stay_report = 4;
 	bool prop_stats_yesterday = 5;
 	bool prop_stats_trailing_7d = 6;
 	bool prop_stats_trailing_28d = 7;
@@ -44,5 +43,6 @@ message ManagementOpsdateRangeReportManifest {
 	bool folio_gross_summary_report = 9;
 	bool summary_report = 10;
 	bool unused_group_holds_report = 11;
+	bool comp_stay_report = 12;
 }
 
