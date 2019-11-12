@@ -19,6 +19,15 @@ message SupplySnapshotSvcSnapshotWithTagsReq {
 	int32 number_of_child_guests = 6;
 }
 
+message SupplySnapshotSvcSnapshotWithoutPropertyTagsReq {	
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
+	repeated string reservation_tags = 2;
+	bool is_mock_price_required_without_holds = 3;
+    int32 number_of_adult_guests = 4;
+	int32 number_of_child_guests = 5;
+	
+}
+
 message IncidentalSnapshotRequest {
 	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
 	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
@@ -36,4 +45,10 @@ service SupplySnapshotSvc {
 
 	rpc IncidentalSnapshot (IncidentalSnapshotRequest)
 		returns (.holms.types.supply.snapshot.IncidentalsSnapshotRequestResponse);
+		
+    rpc LodgingQuantitySnapshotWithoutPropertyFromTagsStrict (SupplySnapshotSvcSnapshotWithoutPropertyTagsReq)
+		returns (.holms.types.supply.snapshot.LodgingQuantitySnapshotRequestResponse);
+		
+	rpc LodgingSnapshotFromTagsMergedWithoutProperty (SupplySnapshotSvcSnapshotWithoutPropertyTagsReq)
+		returns (.holms.types.supply.snapshot.LodgingSnapshotRequestResponse);
 }

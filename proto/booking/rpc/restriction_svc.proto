@@ -7,11 +7,9 @@ option go_package = "booking/rpc";
 import "google/protobuf/empty.proto";
 import "primitive/pb_inclusive_opsdate_range.proto";
 import "booking/date_restriction.proto";
-import "tenancy_config/indicators/property_indicator.proto";
 
-message RestrictionSvcGetRequest {
-	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
-	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
+message RestrictionSvcGetRequest {	
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
 }
 
 message RestrictionSvcGetResponse {

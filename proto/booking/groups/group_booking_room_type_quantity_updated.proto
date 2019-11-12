@@ -6,9 +6,12 @@ option go_package = "booking/groups";
 
 import "booking/indicators/group_booking_indicator.proto";
 import "booking/groups/group_booking_room_type_quantity.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
 
 message GroupBookingRoomTypeQuantityUpdated {
 	string j_w_token = 1;
 	.holms.types.booking.indicators.GroupBookingIndicator group_booking = 2;
 	repeated GroupBookingRoomTypeQuantity room_type_quantities = 3;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 4;
+	repeated GroupBookingRoomTypeQuantity add_hold_quantities = 5;
 }
