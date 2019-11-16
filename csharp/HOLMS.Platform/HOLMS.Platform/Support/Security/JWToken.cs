@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace HOLMS.Platform.Support.Security {
     public sealed class JWToken {
-        public const int AccessTokenExpirationMinutes = 60;
+        public const int AccessTokenExpirationMinutes = 1440;
         public const string ClientIdKey = "client_id";
         public const string TenancyIdKey = "tenancy_id";
         public const string GrantsDocumentKey = "user_entitlements";
