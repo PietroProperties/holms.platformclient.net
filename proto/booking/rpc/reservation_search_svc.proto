@@ -10,6 +10,7 @@ import "primitive/pb_local_date.proto";
 import "operations/rooms/room.proto";
 import "booking/reservations/reservation_management_hold.proto";
 import "booking/reservations/reservation_summary_lite.proto";
+import "google/protobuf/empty.proto";
 
 message ReservationSearchSvcGetFilteredReservationListRequest {
 	.holms.types.booking.QueryFilter filter = 1;
@@ -61,6 +62,10 @@ message ReservationSearchDuringDateRangeRequest {
 	bool include_canceled = 3;
 }
 
+message SyncSpecificReservationsRequest {
+repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
+}
+
 service ReservationSearchSvc {
 	
 	rpc GetAllDuringDateLite(ReservationSearchSvcGetDateFilteredReservationListRequest)
@@ -110,5 +115,11 @@ service ReservationSearchSvc {
 
 	rpc GetReservationsInDateRange(ReservationSearchDuringDateRangeRequest)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+
+	rpc SyncAllReservations(google.protobuf.Empty)
+		returns (google.protobuf.Empty);
+
+	rpc SyncSpecificReservations(SyncSpecificReservationsRequest)
+		returns (google.protobuf.Empty);
 }
 

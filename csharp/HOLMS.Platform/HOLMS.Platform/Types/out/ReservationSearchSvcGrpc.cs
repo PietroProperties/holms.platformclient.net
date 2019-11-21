@@ -23,6 +23,8 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest> __Marshaller_ReservationSearchSvcSearchReservationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationSearchSvcSearchReservationsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse> __Marshaller_ReservationSearchSvcGetAssociatedHoldsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetAssociatedHoldsResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationSearchDuringDateRangeRequest> __Marshaller_ReservationSearchDuringDateRangeRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationSearchDuringDateRangeRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.SyncSpecificReservationsRequest> __Marshaller_SyncSpecificReservationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.SyncSpecificReservationsRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetDateFilteredReservationListRequest, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListLiteResponse> __Method_GetAllDuringDateLite = new grpc::Method<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetDateFilteredReservationListRequest, global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListLiteResponse>(
         grpc::MethodType.Unary,
@@ -129,6 +131,20 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_ReservationSearchDuringDateRangeRequest,
         __Marshaller_ReservationSearchSvcGetFilteredReservationListResponse);
 
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SyncAllReservations = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SyncAllReservations",
+        __Marshaller_Empty,
+        __Marshaller_Empty);
+
+    static readonly grpc::Method<global::HOLMS.Types.Booking.RPC.SyncSpecificReservationsRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SyncSpecificReservations = new grpc::Method<global::HOLMS.Types.Booking.RPC.SyncSpecificReservationsRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SyncSpecificReservations",
+        __Marshaller_SyncSpecificReservationsRequest,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -227,6 +243,16 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.ReservationSearchSvcGetFilteredReservationListResponse> GetReservationsInDateRange(global::HOLMS.Types.Booking.RPC.ReservationSearchDuringDateRangeRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SyncAllReservations(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SyncSpecificReservations(global::HOLMS.Types.Booking.RPC.SyncSpecificReservationsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -580,6 +606,38 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetReservationsInDateRange, null, options, request);
       }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SyncAllReservations(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SyncAllReservations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SyncAllReservations(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SyncAllReservations, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SyncAllReservationsAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SyncAllReservationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SyncAllReservationsAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SyncAllReservations, null, options, request);
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SyncSpecificReservations(global::HOLMS.Types.Booking.RPC.SyncSpecificReservationsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SyncSpecificReservations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SyncSpecificReservations(global::HOLMS.Types.Booking.RPC.SyncSpecificReservationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SyncSpecificReservations, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SyncSpecificReservationsAsync(global::HOLMS.Types.Booking.RPC.SyncSpecificReservationsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SyncSpecificReservationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SyncSpecificReservationsAsync(global::HOLMS.Types.Booking.RPC.SyncSpecificReservationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SyncSpecificReservations, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override ReservationSearchSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -606,7 +664,9 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetReservationSummaries, serviceImpl.GetReservationSummaries)
           .AddMethod(__Method_SearchReservations, serviceImpl.SearchReservations)
           .AddMethod(__Method_GetAssociatedManagementHolds, serviceImpl.GetAssociatedManagementHolds)
-          .AddMethod(__Method_GetReservationsInDateRange, serviceImpl.GetReservationsInDateRange).Build();
+          .AddMethod(__Method_GetReservationsInDateRange, serviceImpl.GetReservationsInDateRange)
+          .AddMethod(__Method_SyncAllReservations, serviceImpl.SyncAllReservations)
+          .AddMethod(__Method_SyncSpecificReservations, serviceImpl.SyncSpecificReservations).Build();
     }
 
   }
