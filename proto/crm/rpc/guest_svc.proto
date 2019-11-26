@@ -32,6 +32,11 @@ message GuestSvcGetNoteTemplatesForGuestResponse {
 	repeated .holms.types.crm.guests.ReservationNoteTemplate templates = 1;
 }
 
+message MergeGuestRequest {
+	repeated .holms.types.crm.guests.GuestIndicator oldGuests= 1;
+	.holms.types.crm.guests.Guest merged_guest = 2;
+}
+
 service GuestSvc {
 	rpc All(google.protobuf.Empty) 
 		returns (GuestSvcManyGuestsResponse);
@@ -65,4 +70,8 @@ service GuestSvc {
 
 	rpc GetNoteTemplatesForGuest(.holms.types.crm.guests.GuestIndicator)
 		returns(GuestSvcGetNoteTemplatesForGuestResponse);
+
+	rpc MergeGuests(MergeGuestRequest )
+		returns (google.protobuf.Empty);
+
 }

@@ -9,6 +9,8 @@ import "booking/reservations/reservation_summary.proto";
 import "primitive/pb_local_date.proto";
 import "operations/rooms/room.proto";
 import "booking/reservations/reservation_management_hold.proto";
+import "booking/reservations/reservation_summary_lite.proto";
+import "google/protobuf/empty.proto";
 
 message ReservationSearchSvcGetFilteredReservationListRequest {
 	.holms.types.booking.QueryFilter filter = 1;
@@ -24,6 +26,11 @@ message ReservationSearchSvcGetDateFilteredReservationListRequest {
 
 message ReservationSearchSvcGetFilteredReservationListResponse {
 	repeated .holms.types.booking.reservations.ReservationSummary reservations = 1;
+	repeated .holms.types.operations.rooms.Room rooms = 2;
+}
+
+message ReservationSearchSvcGetFilteredReservationListLiteResponse {
+	repeated .holms.types.booking.reservations.ReservationSummaryLite reservations = 1;
 	repeated .holms.types.operations.rooms.Room rooms = 2;
 }
 
@@ -55,7 +62,24 @@ message ReservationSearchDuringDateRangeRequest {
 	bool include_canceled = 3;
 }
 
+message SyncSpecificReservationsRequest {
+repeated .holms.types.booking.indicators.ReservationIndicator reservations = 1;
+}
+
 service ReservationSearchSvc {
+	
+	rpc GetAllDuringDateLite(ReservationSearchSvcGetDateFilteredReservationListRequest)
+		returns	(ReservationSearchSvcGetFilteredReservationListLiteResponse);
+
+	rpc GetArrivalsByCalendarDateLite(ReservationSearchSvcGetDateFilteredReservationListRequest)
+		returns (ReservationSearchSvcGetFilteredReservationListLiteResponse);
+
+	rpc GetDeparturesByCalendarDateLite(ReservationSearchSvcGetDateFilteredReservationListRequest)
+		returns (ReservationSearchSvcGetFilteredReservationListLiteResponse);
+
+	rpc GetFilteredReservationListLite (ReservationSearchSvcGetFilteredReservationListRequest)
+		returns (ReservationSearchSvcGetFilteredReservationListLiteResponse);
+	
 	// Get all of type - no date
 	rpc GetFilteredReservationList (ReservationSearchSvcGetFilteredReservationListRequest)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
@@ -91,5 +115,11 @@ service ReservationSearchSvc {
 
 	rpc GetReservationsInDateRange(ReservationSearchDuringDateRangeRequest)
 		returns (ReservationSearchSvcGetFilteredReservationListResponse);
+
+	rpc SyncAllReservations(google.protobuf.Empty)
+		returns (google.protobuf.Empty);
+
+	rpc SyncSpecificReservations(SyncSpecificReservationsRequest)
+		returns (google.protobuf.Empty);
 }
 
