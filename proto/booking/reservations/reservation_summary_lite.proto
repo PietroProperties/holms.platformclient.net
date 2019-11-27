@@ -31,7 +31,7 @@ message ReservationSummaryLite {
 	bool IsGroupAssociated = 15;
 	holms.types.primitive.MonetaryAmount CurrentDueFromGuest = 16;
 	holms.types.booking.reservations.ReservationGuaranteeStatus GuaranteeStatus = 17;
-
+	string reservation_source = 18;
 
 
 
