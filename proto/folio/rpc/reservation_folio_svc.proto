@@ -164,5 +164,8 @@ service ReservationFolioSvc {
 	//Card Refund Cancelation
 	rpc CancelCardRefund(holms.types.money.cards.transactions.PaymentCardRefundIndicator)
 		returns (FolioSvcCancelPaymentResponse);
+		
+	rpc SoftDeleteCard(holms.types.money.cards.CustomerPaymentCardIndicator)
+		returns (FolioSvcCancelPaymentResponse);
 }
 
