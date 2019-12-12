@@ -14,6 +14,10 @@ message SchedulerStartAttemptResponse{
 	bool  IsSchedulerStarted=1;
 }
 
+message PBXServiceStartAttemptResponse{
+	bool  IsPBXServiceStarted=1;
+}
+
 service OTASyncSvc {
 	rpc SyncReservations(google.protobuf.Empty)
 		returns (google.protobuf.Empty);
@@ -23,4 +27,7 @@ service OTASyncSvc {
 
 	rpc AttemptStartScheduler(google.protobuf.Empty)
 		returns(SchedulerStartAttemptResponse);
+
+	rpc AttemptStartPBXService(google.protobuf.Empty)
+		returns(PBXServiceStartAttemptResponse);
 }	

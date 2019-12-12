@@ -27,19 +27,24 @@ namespace HOLMS.Types.Booking.RPC {
             "b2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8iSAoRU2VydmVyVGFza0Rl",
             "dGFpbHMSMwoPbGFzdF93b3JraW5nX2F0GAEgASgLMhouZ29vZ2xlLnByb3Rv",
             "YnVmLlRpbWVzdGFtcCI7Ch1TY2hlZHVsZXJTdGFydEF0dGVtcHRSZXNwb25z",
-            "ZRIaChJJc1NjaGVkdWxlclN0YXJ0ZWQYASABKAgynAIKCk9UQVN5bmNTdmMS",
-            "QgoQU3luY1Jlc2VydmF0aW9ucxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoW",
-            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJhChtHZXRTY2hlZHVsZXJMYXN0V29y",
-            "a2luZ1RpbWUSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaKi5ob2xtcy50eXBl",
-            "cy5ib29raW5nLnJwYy5TZXJ2ZXJUYXNrRGV0YWlscxJnChVBdHRlbXB0U3Rh",
-            "cnRTY2hlZHVsZXISFi5nb29nbGUucHJvdG9idWYuRW1wdHkaNi5ob2xtcy50",
-            "eXBlcy5ib29raW5nLnJwYy5TY2hlZHVsZXJTdGFydEF0dGVtcHRSZXNwb25z",
-            "ZUIaqgIXSE9MTVMuVHlwZXMuQm9va2luZy5SUENiBnByb3RvMw=="));
+            "ZRIaChJJc1NjaGVkdWxlclN0YXJ0ZWQYASABKAgiPQoeUEJYU2VydmljZVN0",
+            "YXJ0QXR0ZW1wdFJlc3BvbnNlEhsKE0lzUEJYU2VydmljZVN0YXJ0ZWQYASAB",
+            "KAgyhwMKCk9UQVN5bmNTdmMSQgoQU3luY1Jlc2VydmF0aW9ucxIWLmdvb2ds",
+            "ZS5wcm90b2J1Zi5FbXB0eRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJhChtH",
+            "ZXRTY2hlZHVsZXJMYXN0V29ya2luZ1RpbWUSFi5nb29nbGUucHJvdG9idWYu",
+            "RW1wdHkaKi5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5TZXJ2ZXJUYXNrRGV0",
+            "YWlscxJnChVBdHRlbXB0U3RhcnRTY2hlZHVsZXISFi5nb29nbGUucHJvdG9i",
+            "dWYuRW1wdHkaNi5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5TY2hlZHVsZXJT",
+            "dGFydEF0dGVtcHRSZXNwb25zZRJpChZBdHRlbXB0U3RhcnRQQlhTZXJ2aWNl",
+            "EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GjcuaG9sbXMudHlwZXMuYm9va2lu",
+            "Zy5ycGMuUEJYU2VydmljZVN0YXJ0QXR0ZW1wdFJlc3BvbnNlQhqqAhdIT0xN",
+            "Uy5UeXBlcy5Cb29raW5nLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.ServerTaskDetails), global::HOLMS.Types.Booking.RPC.ServerTaskDetails.Parser, new[]{ "LastWorkingAt" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse), global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse.Parser, new[]{ "IsSchedulerStarted" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse), global::HOLMS.Types.Booking.RPC.SchedulerStartAttemptResponse.Parser, new[]{ "IsSchedulerStarted" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.PBXServiceStartAttemptResponse), global::HOLMS.Types.Booking.RPC.PBXServiceStartAttemptResponse.Parser, new[]{ "IsPBXServiceStarted" }, null, null, null)
           }));
     }
     #endregion
@@ -278,6 +283,123 @@ namespace HOLMS.Types.Booking.RPC {
             break;
           case 8: {
             IsSchedulerStarted = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PBXServiceStartAttemptResponse : pb::IMessage<PBXServiceStartAttemptResponse> {
+    private static readonly pb::MessageParser<PBXServiceStartAttemptResponse> _parser = new pb::MessageParser<PBXServiceStartAttemptResponse>(() => new PBXServiceStartAttemptResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PBXServiceStartAttemptResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Booking.RPC.OtaSyncSvcReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PBXServiceStartAttemptResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PBXServiceStartAttemptResponse(PBXServiceStartAttemptResponse other) : this() {
+      isPBXServiceStarted_ = other.isPBXServiceStarted_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PBXServiceStartAttemptResponse Clone() {
+      return new PBXServiceStartAttemptResponse(this);
+    }
+
+    /// <summary>Field number for the "IsPBXServiceStarted" field.</summary>
+    public const int IsPBXServiceStartedFieldNumber = 1;
+    private bool isPBXServiceStarted_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsPBXServiceStarted {
+      get { return isPBXServiceStarted_; }
+      set {
+        isPBXServiceStarted_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PBXServiceStartAttemptResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PBXServiceStartAttemptResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsPBXServiceStarted != other.IsPBXServiceStarted) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsPBXServiceStarted != false) hash ^= IsPBXServiceStarted.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IsPBXServiceStarted != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsPBXServiceStarted);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsPBXServiceStarted != false) {
+        size += 1 + 1;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PBXServiceStartAttemptResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsPBXServiceStarted != false) {
+        IsPBXServiceStarted = other.IsPBXServiceStarted;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            IsPBXServiceStarted = input.ReadBool();
             break;
           }
         }
