@@ -6,6 +6,7 @@ option go_package = "tenancyconfig/rpc";
 
 import "google/protobuf/empty.proto";
 import "tenancy_config/room_status.proto";
+import "primitive/uuid.proto";
 
 message RoomStatusSvcAllResponse {
 	repeated .holms.types.tenancy_config.RoomStatus room_statuses = 1;
@@ -29,4 +30,6 @@ service RoomStatusSvc {
 	rpc Add (RoomStatus)
 		returns (RoomStatusAddRequestResponse);
 
+	rpc Delete (.holms.types.primitive.Uuid)
+		returns (google.protobuf.Empty);
 }
