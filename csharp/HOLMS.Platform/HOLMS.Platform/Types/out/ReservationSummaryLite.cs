@@ -28,7 +28,7 @@ namespace HOLMS.Types.Booking.Reservations {
             "Gixib29raW5nL3Jlc2VydmF0aW9ucy9yZXNlcnZhdGlvbl9zdGF0ZS5wcm90",
             "bxodcHJpbWl0aXZlL3BiX2xvY2FsX2RhdGUucHJvdG8aH3ByaW1pdGl2ZS9t",
             "b25ldGFyeV9hbW91bnQucHJvdG8aM2ZvbGlvL2d1YXJhbnRlZXMvcmVzZXJ2",
-            "YXRpb25fZ3VhcmFudGVlX3N0YXR1cy5wcm90byLfBQoWUmVzZXJ2YXRpb25T",
+            "YXRpb25fZ3VhcmFudGVlX3N0YXR1cy5wcm90byL7BQoWUmVzZXJ2YXRpb25T",
             "dW1tYXJ5TGl0ZRJHCgllbnRpdHlfaWQYASABKAsyNC5ob2xtcy50eXBlcy5i",
             "b29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISQQoFc3Rh",
             "dGUYAiABKA4yMi5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9ucy5S",
@@ -45,12 +45,13 @@ namespace HOLMS.Types.Booking.Reservations {
             "dWVzdBgQIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFt",
             "b3VudBJVCg9HdWFyYW50ZWVTdGF0dXMYESABKA4yPC5ob2xtcy50eXBlcy5i",
             "b29raW5nLnJlc2VydmF0aW9ucy5SZXNlcnZhdGlvbkd1YXJhbnRlZVN0YXR1",
-            "c0I5WhRib29raW5nL3Jlc2VydmF0aW9uc6oCIEhPTE1TLlR5cGVzLkJvb2tp",
-            "bmcuUmVzZXJ2YXRpb25zYgZwcm90bzM="));
+            "cxIaChJyZXNlcnZhdGlvbl9zb3VyY2UYEiABKAlCOVoUYm9va2luZy9yZXNl",
+            "cnZhdGlvbnOqAiBIT0xNUy5UeXBlcy5Cb29raW5nLlJlc2VydmF0aW9uc2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationStateReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Folio.Guarantees.ReservationGuaranteeStatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationSummaryLite), global::HOLMS.Types.Booking.Reservations.ReservationSummaryLite.Parser, new[]{ "EntityId", "State", "BookingNumber", "BookingPrefix", "CurrentOccupiedRoomNumber", "TerminalOccupiedRoomNumber", "FirstNightAssignedRoomNumber", "VehiclePlateInformation", "ArrivalDate", "DepartureDate", "RoomTypeName", "OTANumber", "GuestText", "MasterFolioText", "IsGroupAssociated", "CurrentDueFromGuest", "GuaranteeStatus" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.ReservationSummaryLite), global::HOLMS.Types.Booking.Reservations.ReservationSummaryLite.Parser, new[]{ "EntityId", "State", "BookingNumber", "BookingPrefix", "CurrentOccupiedRoomNumber", "TerminalOccupiedRoomNumber", "FirstNightAssignedRoomNumber", "VehiclePlateInformation", "ArrivalDate", "DepartureDate", "RoomTypeName", "OTANumber", "GuestText", "MasterFolioText", "IsGroupAssociated", "CurrentDueFromGuest", "GuaranteeStatus", "ReservationSource" }, null, null, null)
           }));
     }
     #endregion
@@ -98,6 +99,7 @@ namespace HOLMS.Types.Booking.Reservations {
       isGroupAssociated_ = other.isGroupAssociated_;
       CurrentDueFromGuest = other.currentDueFromGuest_ != null ? other.CurrentDueFromGuest.Clone() : null;
       guaranteeStatus_ = other.guaranteeStatus_;
+      reservationSource_ = other.reservationSource_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -292,6 +294,17 @@ namespace HOLMS.Types.Booking.Reservations {
       }
     }
 
+    /// <summary>Field number for the "reservation_source" field.</summary>
+    public const int ReservationSourceFieldNumber = 18;
+    private string reservationSource_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ReservationSource {
+      get { return reservationSource_; }
+      set {
+        reservationSource_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationSummaryLite);
@@ -322,6 +335,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (IsGroupAssociated != other.IsGroupAssociated) return false;
       if (!object.Equals(CurrentDueFromGuest, other.CurrentDueFromGuest)) return false;
       if (GuaranteeStatus != other.GuaranteeStatus) return false;
+      if (ReservationSource != other.ReservationSource) return false;
       return true;
     }
 
@@ -345,6 +359,7 @@ namespace HOLMS.Types.Booking.Reservations {
       if (IsGroupAssociated != false) hash ^= IsGroupAssociated.GetHashCode();
       if (currentDueFromGuest_ != null) hash ^= CurrentDueFromGuest.GetHashCode();
       if (GuaranteeStatus != 0) hash ^= GuaranteeStatus.GetHashCode();
+      if (ReservationSource.Length != 0) hash ^= ReservationSource.GetHashCode();
       return hash;
     }
 
@@ -423,6 +438,10 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteRawTag(136, 1);
         output.WriteEnum((int) GuaranteeStatus);
       }
+      if (ReservationSource.Length != 0) {
+        output.WriteRawTag(146, 1);
+        output.WriteString(ReservationSource);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -478,6 +497,9 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (GuaranteeStatus != 0) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) GuaranteeStatus);
+      }
+      if (ReservationSource.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(ReservationSource);
       }
       return size;
     }
@@ -549,6 +571,9 @@ namespace HOLMS.Types.Booking.Reservations {
       }
       if (other.GuaranteeStatus != 0) {
         GuaranteeStatus = other.GuaranteeStatus;
+      }
+      if (other.ReservationSource.Length != 0) {
+        ReservationSource = other.ReservationSource;
       }
     }
 
@@ -638,6 +663,10 @@ namespace HOLMS.Types.Booking.Reservations {
           }
           case 136: {
             guaranteeStatus_ = (global::HOLMS.Types.Folio.Guarantees.ReservationGuaranteeStatus) input.ReadEnum();
+            break;
+          }
+          case 146: {
+            ReservationSource = input.ReadString();
             break;
           }
         }

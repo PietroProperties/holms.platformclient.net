@@ -77,6 +77,9 @@ message PrintGroupReservationRequest{
 	bool include_expected_charges = 6;
 
 }
+message CorrespondenceHideRateResponse {
+	bool hide_rate = 1;
+}
 
 
 service CorrespondenceSvc {
@@ -115,6 +118,9 @@ service CorrespondenceSvc {
 	
 	rpc SendGuestFolioExcluded(CorrespondenceRequestWithExclusions) 
 		returns (CorrespondenceServiceEmailSendResponse);
+		
+	rpc GetCorrespondenceHideRate(holms.types.booking.indicators.ReservationIndicator)
+		returns(CorrespondenceHideRateResponse);
 
 }
 
