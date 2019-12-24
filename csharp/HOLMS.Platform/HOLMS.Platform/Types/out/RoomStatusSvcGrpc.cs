@@ -19,6 +19,7 @@ namespace HOLMS.Types.TenancyConfig.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.TenancyConfig.RoomStatus> __Marshaller_RoomStatus = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.RoomStatus.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.TenancyConfig.RPC.RoomStatusAddRequestResponse> __Marshaller_RoomStatusAddRequestResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.RPC.RoomStatusAddRequestResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Primitive.Uuid> __Marshaller_Uuid = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.Uuid.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.TenancyConfig.RPC.DeleteRequestResponse> __Marshaller_DeleteRequestResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.RPC.DeleteRequestResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.TenancyConfig.RPC.RoomStatusSvcAllResponse> __Method_All = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.TenancyConfig.RPC.RoomStatusSvcAllResponse>(
         grpc::MethodType.Unary,
@@ -41,12 +42,12 @@ namespace HOLMS.Types.TenancyConfig.RPC {
         __Marshaller_RoomStatus,
         __Marshaller_RoomStatusAddRequestResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.Primitive.Uuid, global::Google.Protobuf.WellKnownTypes.Empty> __Method_Delete = new grpc::Method<global::HOLMS.Types.Primitive.Uuid, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly grpc::Method<global::HOLMS.Types.Primitive.Uuid, global::HOLMS.Types.TenancyConfig.RPC.DeleteRequestResponse> __Method_Delete = new grpc::Method<global::HOLMS.Types.Primitive.Uuid, global::HOLMS.Types.TenancyConfig.RPC.DeleteRequestResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Delete",
         __Marshaller_Uuid,
-        __Marshaller_Empty);
+        __Marshaller_DeleteRequestResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -72,7 +73,7 @@ namespace HOLMS.Types.TenancyConfig.RPC {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> Delete(global::HOLMS.Types.Primitive.Uuid request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.TenancyConfig.RPC.DeleteRequestResponse> Delete(global::HOLMS.Types.Primitive.Uuid request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -150,19 +151,19 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Add, null, options, request);
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty Delete(global::HOLMS.Types.Primitive.Uuid request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.TenancyConfig.RPC.DeleteRequestResponse Delete(global::HOLMS.Types.Primitive.Uuid request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Delete(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty Delete(global::HOLMS.Types.Primitive.Uuid request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.TenancyConfig.RPC.DeleteRequestResponse Delete(global::HOLMS.Types.Primitive.Uuid request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Delete, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> DeleteAsync(global::HOLMS.Types.Primitive.Uuid request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.DeleteRequestResponse> DeleteAsync(global::HOLMS.Types.Primitive.Uuid request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return DeleteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> DeleteAsync(global::HOLMS.Types.Primitive.Uuid request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.TenancyConfig.RPC.DeleteRequestResponse> DeleteAsync(global::HOLMS.Types.Primitive.Uuid request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Delete, null, options, request);
       }

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+
+enum CanDeleteResult{
+    FAILURE= 0;
+    SUCCESS= 1;   
+}
+
