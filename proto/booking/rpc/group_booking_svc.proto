@@ -199,4 +199,7 @@ service GroupBookingSvc {
 
 	rpc SyncReservationHoldWithEventBookingHold (SyncHoldRequest)
 		returns (google.protobuf.Empty);
+		
+	rpc GetReservationSummariesWithFolioGBTag (.holms.types.booking.indicators.GroupBookingIndicator)
+		returns (GroupBookingSvcGetReservationsWithTagResponse);
 }
