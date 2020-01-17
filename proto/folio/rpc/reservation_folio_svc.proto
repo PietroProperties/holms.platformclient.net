@@ -46,8 +46,9 @@ enum ReservationFolioSvcGetFolioStateResult {
 }
 
 message ReservationFolioSvcGetFolioStateResponse {
-	ReservationFolioSvcGetFolioStateResult result = 1;
+	 ReservationFolioSvcGetFolioStateResult result = 1;
 	.holms.types.folio.ReservationFolioState folio_state = 2;
+	.holms.types.booking.indicators.ReservationIndicator reservation_id = 3;
 }
 
 message ReservationFolioSvcPostCheckPaymentRequest {
