@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package holms.types.booking.groups;
+option csharp_namespace = "HOLMS.Types.Booking.Groups";
+option go_package = "booking/groups";
+
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "supply/event_booking_hold_indicator.proto";
+import "supply/room_types/room_type_indicator.proto";
+import "booking/indicators/reservation_indicator.proto";
+
+message UnassignedBookingHolds{
+	.holms.types.supply.EventBookingHoldIndicator event_booking_hold = 1;
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 2;
+	holms.types.supply.room_types.RoomTypeIndicator room_type = 3;
+	.holms.types.booking.indicators.ReservationIndicator reservation_id = 4;
+}

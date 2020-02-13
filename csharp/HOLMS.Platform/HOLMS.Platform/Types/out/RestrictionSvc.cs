@@ -25,26 +25,23 @@ namespace HOLMS.Types.Booking.RPC {
             "CiFib29raW5nL3JwYy9yZXN0cmljdGlvbl9zdmMucHJvdG8SF2hvbG1zLnR5",
             "cGVzLmJvb2tpbmcucnBjGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8a",
             "KnByaW1pdGl2ZS9wYl9pbmNsdXNpdmVfb3BzZGF0ZV9yYW5nZS5wcm90bxoe",
-            "Ym9va2luZy9kYXRlX3Jlc3RyaWN0aW9uLnByb3RvGjJ0ZW5hbmN5X2NvbmZp",
-            "Zy9pbmRpY2F0b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byKqAQoYUmVz",
-            "dHJpY3Rpb25TdmNHZXRSZXF1ZXN0EkoKCHByb3BlcnR5GAEgASgLMjguaG9s",
-            "bXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUlu",
-            "ZGljYXRvchJCCgpkYXRlX3JhbmdlGAIgASgLMi4uaG9sbXMudHlwZXMucHJp",
-            "bWl0aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlIlcKGVJlc3RyaWN0aW9u",
-            "U3ZjR2V0UmVzcG9uc2USOgoMcmVzdHJpY3Rpb25zGAEgAygLMiQuaG9sbXMu",
-            "dHlwZXMuYm9va2luZy5EYXRlUmVzdHJpY3Rpb24iWQobUmVzdHJpY3Rpb25T",
-            "dmNVcGRhdGVSZXF1ZXN0EjoKDHJlc3RyaWN0aW9ucxgBIAMoCzIkLmhvbG1z",
-            "LnR5cGVzLmJvb2tpbmcuRGF0ZVJlc3RyaWN0aW9uMuIBCg5SZXN0cmljdGlv",
-            "blN2YxJsCgNHZXQSMS5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5SZXN0cmlj",
-            "dGlvblN2Y0dldFJlcXVlc3QaMi5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5S",
-            "ZXN0cmljdGlvblN2Y0dldFJlc3BvbnNlEmIKElVwZGF0ZVJlc3RyaWN0aW9u",
-            "cxI0LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlJlc3RyaWN0aW9uU3ZjVXBk",
-            "YXRlUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eUInWgtib29raW5n",
-            "L3JwY6oCF0hPTE1TLlR5cGVzLkJvb2tpbmcuUlBDYgZwcm90bzM="));
+            "Ym9va2luZy9kYXRlX3Jlc3RyaWN0aW9uLnByb3RvIl4KGFJlc3RyaWN0aW9u",
+            "U3ZjR2V0UmVxdWVzdBJCCgpkYXRlX3JhbmdlGAEgASgLMi4uaG9sbXMudHlw",
+            "ZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJhbmdlIlcKGVJlc3Ry",
+            "aWN0aW9uU3ZjR2V0UmVzcG9uc2USOgoMcmVzdHJpY3Rpb25zGAEgAygLMiQu",
+            "aG9sbXMudHlwZXMuYm9va2luZy5EYXRlUmVzdHJpY3Rpb24iWQobUmVzdHJp",
+            "Y3Rpb25TdmNVcGRhdGVSZXF1ZXN0EjoKDHJlc3RyaWN0aW9ucxgBIAMoCzIk",
+            "LmhvbG1zLnR5cGVzLmJvb2tpbmcuRGF0ZVJlc3RyaWN0aW9uMuIBCg5SZXN0",
+            "cmljdGlvblN2YxJsCgNHZXQSMS5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5S",
+            "ZXN0cmljdGlvblN2Y0dldFJlcXVlc3QaMi5ob2xtcy50eXBlcy5ib29raW5n",
+            "LnJwYy5SZXN0cmljdGlvblN2Y0dldFJlc3BvbnNlEmIKElVwZGF0ZVJlc3Ry",
+            "aWN0aW9ucxI0LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlJlc3RyaWN0aW9u",
+            "U3ZjVXBkYXRlUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eUInWgti",
+            "b29raW5nL3JwY6oCF0hPTE1TLlR5cGVzLkJvb2tpbmcuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Booking.DateRestrictionReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Booking.DateRestrictionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.RestrictionSvcGetRequest), global::HOLMS.Types.Booking.RPC.RestrictionSvcGetRequest.Parser, new[]{ "Property", "DateRange" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.RestrictionSvcGetRequest), global::HOLMS.Types.Booking.RPC.RestrictionSvcGetRequest.Parser, new[]{ "DateRange" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.RestrictionSvcGetResponse), global::HOLMS.Types.Booking.RPC.RestrictionSvcGetResponse.Parser, new[]{ "Restrictions" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.RestrictionSvcUpdateRequest), global::HOLMS.Types.Booking.RPC.RestrictionSvcUpdateRequest.Parser, new[]{ "Restrictions" }, null, null, null)
           }));
@@ -77,7 +74,6 @@ namespace HOLMS.Types.Booking.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RestrictionSvcGetRequest(RestrictionSvcGetRequest other) : this() {
-      Property = other.property_ != null ? other.Property.Clone() : null;
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
     }
 
@@ -86,19 +82,8 @@ namespace HOLMS.Types.Booking.RPC {
       return new RestrictionSvcGetRequest(this);
     }
 
-    /// <summary>Field number for the "property" field.</summary>
-    public const int PropertyFieldNumber = 1;
-    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
-      get { return property_; }
-      set {
-        property_ = value;
-      }
-    }
-
     /// <summary>Field number for the "date_range" field.</summary>
-    public const int DateRangeFieldNumber = 2;
+    public const int DateRangeFieldNumber = 1;
     private global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange dateRange_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange DateRange {
@@ -121,7 +106,6 @@ namespace HOLMS.Types.Booking.RPC {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Property, other.Property)) return false;
       if (!object.Equals(DateRange, other.DateRange)) return false;
       return true;
     }
@@ -129,7 +113,6 @@ namespace HOLMS.Types.Booking.RPC {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (property_ != null) hash ^= Property.GetHashCode();
       if (dateRange_ != null) hash ^= DateRange.GetHashCode();
       return hash;
     }
@@ -141,12 +124,8 @@ namespace HOLMS.Types.Booking.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (property_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Property);
-      }
       if (dateRange_ != null) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteMessage(DateRange);
       }
     }
@@ -154,9 +133,6 @@ namespace HOLMS.Types.Booking.RPC {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (property_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
-      }
       if (dateRange_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DateRange);
       }
@@ -167,12 +143,6 @@ namespace HOLMS.Types.Booking.RPC {
     public void MergeFrom(RestrictionSvcGetRequest other) {
       if (other == null) {
         return;
-      }
-      if (other.property_ != null) {
-        if (property_ == null) {
-          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
-        }
-        Property.MergeFrom(other.Property);
       }
       if (other.dateRange_ != null) {
         if (dateRange_ == null) {
@@ -191,13 +161,6 @@ namespace HOLMS.Types.Booking.RPC {
             input.SkipLastField();
             break;
           case 10: {
-            if (property_ == null) {
-              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
-            }
-            input.ReadMessage(property_);
-            break;
-          }
-          case 18: {
             if (dateRange_ == null) {
               dateRange_ = new global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange();
             }
