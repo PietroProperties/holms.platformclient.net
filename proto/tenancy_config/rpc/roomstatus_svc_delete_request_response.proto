@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+
+import "tenancy_config/rpc/roomstatus_svc_delete_request_result.proto";
+
+message DeleteRequestResponse {
+	CanDeleteResult status = 1;
+}
+

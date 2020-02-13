@@ -46,8 +46,9 @@ enum ReservationFolioSvcGetFolioStateResult {
 }
 
 message ReservationFolioSvcGetFolioStateResponse {
-	ReservationFolioSvcGetFolioStateResult result = 1;
+	 ReservationFolioSvcGetFolioStateResult result = 1;
 	.holms.types.folio.ReservationFolioState folio_state = 2;
+	.holms.types.booking.indicators.ReservationIndicator reservation_id = 3;
 }
 
 message ReservationFolioSvcPostCheckPaymentRequest {
@@ -163,6 +164,9 @@ service ReservationFolioSvc {
 
 	//Card Refund Cancelation
 	rpc CancelCardRefund(holms.types.money.cards.transactions.PaymentCardRefundIndicator)
+		returns (FolioSvcCancelPaymentResponse);
+		
+	rpc SoftDeleteCard(holms.types.money.cards.CustomerPaymentCardIndicator)
 		returns (FolioSvcCancelPaymentResponse);
 }
 

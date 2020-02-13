@@ -41,6 +41,7 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostIncidentalChargeCorrectionRequest> __Marshaller_ReservationFolioSvcPostIncidentalChargeCorrectionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostIncidentalChargeCorrectionRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest> __Marshaller_ReservationFolioSvcPostMiscChargeCorrectionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator> __Marshaller_PaymentCardRefundIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator> __Marshaller_CustomerPaymentCardIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponse> __Method_GetReservationFolioState = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponse>(
         grpc::MethodType.Unary,
@@ -175,6 +176,13 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_PaymentCardRefundIndicator,
         __Marshaller_FolioSvcCancelPaymentResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator, global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> __Method_SoftDeleteCard = new grpc::Method<global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator, global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SoftDeleteCard",
+        __Marshaller_CustomerPaymentCardIndicator,
+        __Marshaller_FolioSvcCancelPaymentResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -305,6 +313,11 @@ namespace HOLMS.Types.Folio.RPC {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> CancelCardRefund(global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> SoftDeleteCard(global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -778,6 +791,22 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_CancelCardRefund, null, options, request);
       }
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse SoftDeleteCard(global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SoftDeleteCard(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse SoftDeleteCard(global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SoftDeleteCard, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> SoftDeleteCardAsync(global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SoftDeleteCardAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> SoftDeleteCardAsync(global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SoftDeleteCard, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override ReservationFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -808,7 +837,8 @@ namespace HOLMS.Types.Folio.RPC {
           .AddMethod(__Method_PostLodgingChargeCorrection, serviceImpl.PostLodgingChargeCorrection)
           .AddMethod(__Method_PostIncidentalChargeCorrection, serviceImpl.PostIncidentalChargeCorrection)
           .AddMethod(__Method_PostMiscChargeCorrection, serviceImpl.PostMiscChargeCorrection)
-          .AddMethod(__Method_CancelCardRefund, serviceImpl.CancelCardRefund).Build();
+          .AddMethod(__Method_CancelCardRefund, serviceImpl.CancelCardRefund)
+          .AddMethod(__Method_SoftDeleteCard, serviceImpl.SoftDeleteCard).Build();
     }
 
   }
