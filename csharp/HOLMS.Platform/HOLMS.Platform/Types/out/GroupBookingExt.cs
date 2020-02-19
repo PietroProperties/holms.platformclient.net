@@ -26,21 +26,18 @@ namespace HOLMS.Types.Booking.Groups {
             "bXMudHlwZXMuYm9va2luZy5ncm91cHMaImJvb2tpbmcvZ3JvdXBzL2dyb3Vw",
             "X2Jvb2tpbmcucHJvdG8aNWJvb2tpbmcvZ3JvdXBzL2dyb3VwX2Jvb2tpbmdf",
             "cm9vbV90eXBlX3F1YW50aXR5LnByb3RvGhtjcm0vZ3JvdXBzL2dyb3VwX3R5",
-            "cGUucHJvdG8aMnRlbmFuY3lfY29uZmlnL2luZGljYXRvcnMvcHJvcGVydHlf",
-            "aW5kaWNhdG9yLnByb3RvIukCCg9Hcm91cEJvb2tpbmdFeHQSOQoHYm9va2lu",
-            "ZxgBIAEoCzIoLmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdyb3VwQm9v",
-            "a2luZxISCgpncm91cF9uYW1lGAIgASgJEhQKDGdyb3VwX251bWJlchgDIAEo",
-            "CRIaChJncm91cF9jb250YWN0X25hbWUYBCABKAkSNQoKZ3JvdXBfdHlwZRgF",
-            "IAEoDjIhLmhvbG1zLnR5cGVzLmNybS5ncm91cHMuR3JvdXBUeXBlElAKDmdy",
-            "b3VwX3Byb3BlcnR5GAYgASgLMjguaG9sbXMudHlwZXMudGVuYW5jeV9jb25m",
-            "aWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRvchJMCgpxdWFudGl0aWVz",
-            "GAcgAygLMjguaG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMuR3JvdXBCb29r",
-            "aW5nUm9vbVR5cGVRdWFudGl0eUItWg5ib29raW5nL2dyb3Vwc6oCGkhPTE1T",
-            "LlR5cGVzLkJvb2tpbmcuR3JvdXBzYgZwcm90bzM="));
+            "cGUucHJvdG8ilwIKD0dyb3VwQm9va2luZ0V4dBI5Cgdib29raW5nGAEgASgL",
+            "MiguaG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMuR3JvdXBCb29raW5nEhIK",
+            "Cmdyb3VwX25hbWUYAiABKAkSFAoMZ3JvdXBfbnVtYmVyGAMgASgJEhoKEmdy",
+            "b3VwX2NvbnRhY3RfbmFtZRgEIAEoCRI1Cgpncm91cF90eXBlGAUgASgOMiEu",
+            "aG9sbXMudHlwZXMuY3JtLmdyb3Vwcy5Hcm91cFR5cGUSTAoKcXVhbnRpdGll",
+            "cxgGIAMoCzI4LmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdyb3VwQm9v",
+            "a2luZ1Jvb21UeXBlUXVhbnRpdHlCLVoOYm9va2luZy9ncm91cHOqAhpIT0xN",
+            "Uy5UeXBlcy5Cb29raW5nLkdyb3Vwc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Groups.GroupBookingReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantityReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupTypeReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Groups.GroupBookingReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantityReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBookingExt), global::HOLMS.Types.Booking.Groups.GroupBookingExt.Parser, new[]{ "Booking", "GroupName", "GroupNumber", "GroupContactName", "GroupType", "GroupProperty", "Quantities" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Groups.GroupBookingExt), global::HOLMS.Types.Booking.Groups.GroupBookingExt.Parser, new[]{ "Booking", "GroupName", "GroupNumber", "GroupContactName", "GroupType", "Quantities" }, null, null, null)
           }));
     }
     #endregion
@@ -76,7 +73,6 @@ namespace HOLMS.Types.Booking.Groups {
       groupNumber_ = other.groupNumber_;
       groupContactName_ = other.groupContactName_;
       groupType_ = other.groupType_;
-      GroupProperty = other.groupProperty_ != null ? other.GroupProperty.Clone() : null;
       quantities_ = other.quantities_.Clone();
     }
 
@@ -140,21 +136,10 @@ namespace HOLMS.Types.Booking.Groups {
       }
     }
 
-    /// <summary>Field number for the "group_property" field.</summary>
-    public const int GroupPropertyFieldNumber = 6;
-    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator groupProperty_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator GroupProperty {
-      get { return groupProperty_; }
-      set {
-        groupProperty_ = value;
-      }
-    }
-
     /// <summary>Field number for the "quantities" field.</summary>
-    public const int QuantitiesFieldNumber = 7;
+    public const int QuantitiesFieldNumber = 6;
     private static readonly pb::FieldCodec<global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantity> _repeated_quantities_codec
-        = pb::FieldCodec.ForMessage(58, global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantity.Parser);
+        = pb::FieldCodec.ForMessage(50, global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantity.Parser);
     private readonly pbc::RepeatedField<global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantity> quantities_ = new pbc::RepeatedField<global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantity>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantity> Quantities {
@@ -179,7 +164,6 @@ namespace HOLMS.Types.Booking.Groups {
       if (GroupNumber != other.GroupNumber) return false;
       if (GroupContactName != other.GroupContactName) return false;
       if (GroupType != other.GroupType) return false;
-      if (!object.Equals(GroupProperty, other.GroupProperty)) return false;
       if(!quantities_.Equals(other.quantities_)) return false;
       return true;
     }
@@ -192,7 +176,6 @@ namespace HOLMS.Types.Booking.Groups {
       if (GroupNumber.Length != 0) hash ^= GroupNumber.GetHashCode();
       if (GroupContactName.Length != 0) hash ^= GroupContactName.GetHashCode();
       if (GroupType != 0) hash ^= GroupType.GetHashCode();
-      if (groupProperty_ != null) hash ^= GroupProperty.GetHashCode();
       hash ^= quantities_.GetHashCode();
       return hash;
     }
@@ -224,10 +207,6 @@ namespace HOLMS.Types.Booking.Groups {
         output.WriteRawTag(40);
         output.WriteEnum((int) GroupType);
       }
-      if (groupProperty_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(GroupProperty);
-      }
       quantities_.WriteTo(output, _repeated_quantities_codec);
     }
 
@@ -248,9 +227,6 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (GroupType != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) GroupType);
-      }
-      if (groupProperty_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GroupProperty);
       }
       size += quantities_.CalculateSize(_repeated_quantities_codec);
       return size;
@@ -278,12 +254,6 @@ namespace HOLMS.Types.Booking.Groups {
       }
       if (other.GroupType != 0) {
         GroupType = other.GroupType;
-      }
-      if (other.groupProperty_ != null) {
-        if (groupProperty_ == null) {
-          groupProperty_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
-        }
-        GroupProperty.MergeFrom(other.GroupProperty);
       }
       quantities_.Add(other.quantities_);
     }
@@ -320,13 +290,6 @@ namespace HOLMS.Types.Booking.Groups {
             break;
           }
           case 50: {
-            if (groupProperty_ == null) {
-              groupProperty_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
-            }
-            input.ReadMessage(groupProperty_);
-            break;
-          }
-          case 58: {
             quantities_.AddEntriesFrom(input, _repeated_quantities_codec);
             break;
           }

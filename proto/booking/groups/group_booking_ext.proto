@@ -9,7 +9,6 @@ option go_package = "booking/groups";
 import "booking/groups/group_booking.proto";
 import "booking/groups/group_booking_room_type_quantity.proto";
 import "crm/groups/group_type.proto";
-import "tenancy_config/indicators/property_indicator.proto";
 
 message GroupBookingExt {
 	.holms.types.booking.groups.GroupBooking booking = 1;
@@ -17,6 +16,5 @@ message GroupBookingExt {
 	string group_number = 3;
 	string group_contact_name = 4;
 	.holms.types.crm.groups.GroupType group_type = 5;
-	.holms.types.tenancy_config.indicators.PropertyIndicator group_property = 6;
-	repeated GroupBookingRoomTypeQuantity quantities = 7;
+	repeated GroupBookingRoomTypeQuantity quantities = 6;
 }

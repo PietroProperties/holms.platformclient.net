@@ -15,7 +15,7 @@ namespace HOLMS.Types.Booking.RPC {
 
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings> __Marshaller_GroupBookingSvcAllBookings = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcAllBookings.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::HOLMS.Types.CRM.Groups.GroupIndicator> __Marshaller_GroupIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Groups.GroupIndicator.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingRequest> __Marshaller_GroupBookingRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Groups.GroupBookingExt> __Marshaller_GroupBookingExt = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Groups.GroupBookingExt.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Groups.GroupBooking> __Marshaller_GroupBooking = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Groups.GroupBooking.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.GroupBookingSvcPriceUpdateRequest> __Marshaller_GroupBookingSvcPriceUpdateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.GroupBookingSvcPriceUpdateRequest.Parser.ParseFrom);
@@ -32,6 +32,7 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingRequest> __Marshaller_ReservationInvoiceMappingRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse> __Marshaller_ReservationInvoiceMappingResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationInvoiceMappingResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest> __Marshaller_InvoiceVoidRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.InvoiceVoidRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.CRM.Groups.GroupIndicator> __Marshaller_GroupIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Groups.GroupIndicator.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest> __Marshaller_IncreaseGroupHoldForReservationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse> __Marshaller_IncreaseGroupHoldForReservationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.IncreaseGroupHoldForReservationResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange> __Marshaller_PbInclusiveOpsdateRange = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.PbInclusiveOpsdateRange.Parser.ParseFrom);
@@ -47,11 +48,11 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_Empty,
         __Marshaller_GroupBookingSvcAllBookings);
 
-    static readonly grpc::Method<global::HOLMS.Types.CRM.Groups.GroupIndicator, global::HOLMS.Types.Booking.Groups.GroupBookingExt> __Method_Create = new grpc::Method<global::HOLMS.Types.CRM.Groups.GroupIndicator, global::HOLMS.Types.Booking.Groups.GroupBookingExt>(
+    static readonly grpc::Method<global::HOLMS.Types.Booking.RPC.GroupBookingRequest, global::HOLMS.Types.Booking.Groups.GroupBookingExt> __Method_Create = new grpc::Method<global::HOLMS.Types.Booking.RPC.GroupBookingRequest, global::HOLMS.Types.Booking.Groups.GroupBookingExt>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Create",
-        __Marshaller_GroupIndicator,
+        __Marshaller_GroupBookingRequest,
         __Marshaller_GroupBookingExt);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.Groups.GroupBooking, global::HOLMS.Types.Booking.Groups.GroupBookingExt> __Method_Update = new grpc::Method<global::HOLMS.Types.Booking.Groups.GroupBooking, global::HOLMS.Types.Booking.Groups.GroupBookingExt>(
@@ -250,7 +251,7 @@ namespace HOLMS.Types.Booking.RPC {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Groups.GroupBookingExt> Create(global::HOLMS.Types.CRM.Groups.GroupIndicator request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Groups.GroupBookingExt> Create(global::HOLMS.Types.Booking.RPC.GroupBookingRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -426,19 +427,19 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_All, null, options, request);
       }
-      public virtual global::HOLMS.Types.Booking.Groups.GroupBookingExt Create(global::HOLMS.Types.CRM.Groups.GroupIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Booking.Groups.GroupBookingExt Create(global::HOLMS.Types.Booking.RPC.GroupBookingRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Create(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.Booking.Groups.GroupBookingExt Create(global::HOLMS.Types.CRM.Groups.GroupIndicator request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Booking.Groups.GroupBookingExt Create(global::HOLMS.Types.Booking.RPC.GroupBookingRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Create, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.Groups.GroupBookingExt> CreateAsync(global::HOLMS.Types.CRM.Groups.GroupIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.Groups.GroupBookingExt> CreateAsync(global::HOLMS.Types.Booking.RPC.GroupBookingRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return CreateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.Groups.GroupBookingExt> CreateAsync(global::HOLMS.Types.CRM.Groups.GroupIndicator request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.Groups.GroupBookingExt> CreateAsync(global::HOLMS.Types.Booking.RPC.GroupBookingRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Create, null, options, request);
       }
