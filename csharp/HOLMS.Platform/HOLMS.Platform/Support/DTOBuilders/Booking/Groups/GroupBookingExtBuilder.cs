@@ -31,7 +31,8 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Groups {
                 GroupType = _groupType,
                 GroupContactName = _groupContactName ?? string.Empty,
                 GroupName = _groupName ?? string.Empty,
-                GroupNumber = _groupNumber ?? string.Empty
+                GroupNumber = _groupNumber ?? string.Empty,
+                BookingProperty = _property
             };
 
             if (_quantities != null) {

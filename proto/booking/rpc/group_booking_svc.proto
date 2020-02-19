@@ -172,7 +172,7 @@ service GroupBookingSvc {
 	rpc VoidInvoiceById(InvoiceVoidRequest)
 		returns(google.protobuf.Empty);
 
-    	rpc CreateWithoutSave(.holms.types.crm.groups.GroupIndicator)
+    	rpc CreateWithoutSave(GroupBookingRequest)
 		returns (.holms.types.booking.groups.GroupBookingExt);
 
 	rpc IncreaseEventGroupHoldForNewReservation(IncreaseGroupHoldForReservationRequest)
