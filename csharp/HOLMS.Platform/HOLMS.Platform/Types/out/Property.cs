@@ -29,36 +29,35 @@ namespace HOLMS.Types.TenancyConfig {
             "b25ldGFyeV9hbW91bnQucHJvdG8aNmJvb2tpbmcvaW5kaWNhdG9ycy9jYW5j",
             "ZWxsYXRpb25fcG9saWN5X2luZGljYXRvci5wcm90bxoydGVuYW5jeV9jb25m",
             "aWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8aHXByaW1p",
-            "dGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvIrUICghQcm9wZXJ0eRJLCgllbnRp",
+            "dGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvIuoHCghQcm9wZXJ0eRJLCgllbnRp",
             "dHlfaWQYASABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRp",
             "Y2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEhMKC2Rlc2NyaXB0aW9uGAIgASgJ",
             "EjYKE2NoZWNraW5fdGltZV9vZl9kYXkYAyABKAsyGS5nb29nbGUucHJvdG9i",
             "dWYuRHVyYXRpb24SOAoVY2hlY2tfb3V0X3RpbWVfb2ZfZGF5GAQgASgLMhku",
-            "Z29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uEjYKE2Rpc2JhbGVfdGltZV9vZl9k",
-            "YXkYBSABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb24SIwobYWxsb3dl",
-            "ZF9lYXJseV9jaGVja2luX2hvdXJzGAYgASgNEhkKEWlpZl9kb2NudW1fcHJl",
-            "Zml4GAcgASgJEhkKEWlpZl9jdXN0b21lcl9uYW1lGAggASgJEj4KD2NoZWNr",
-            "aW5fZGVwb3NpdBgJIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25l",
-            "dGFyeUFtb3VudBI+ChpsYXN0X3JldmVudWVfYWNjcnVhbF9zdGFydBgKIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASRQoZbGFzdF9kYXRlX2hr",
-            "X3JvbGxvdmVyX3JhbhgLIAEoCzIiLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Q",
-            "YkxvY2FsRGF0ZRIQCghhZGRyZXNzMRgMIAEoCRIQCghhZGRyZXNzMhgNIAEo",
-            "CRIMCgRjaXR5GA4gASgJEg0KBXN0YXRlGA8gASgJEgsKA3ppcBgQIAEoCRIU",
-            "CgxwaG9uZV9udW1iZXIYESABKAkSRQoNY2FyZF9tZXJjaGFudBgSIAEoCzIu",
-            "LmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRNZXJjaGFudEluZGljYXRv",
-            "chJYChNjYW5jZWxsYXRpb25fcG9saWN5GBMgASgLMjsuaG9sbXMudHlwZXMu",
-            "Ym9va2luZy5pbmRpY2F0b3JzLkNhbmNlbGxhdGlvblBvbGljeUluZGljYXRv",
-            "chIRCglpc19hY3RpdmUYFCABKAgSGwoTZGVmYXVsdF9zdGF5X2xlbmd0aBgV",
-            "IAEoBRIPCgd3ZWJzaXRlGBYgASgJEhkKEXJlc2VydmF0aW9uX2VtYWlsGBcg",
-            "ASgJEhIKCmZheF9udW1iZXIYHiABKAkSFgoOYm9va2luZ19wcmVmaXgYHyAB",
-            "KAkSJgoedm9pZF9hdXRob3JpemF0aW9uc19hZnRlcl9kYXlzGCAgASgNEhsK",
-            "E25vX3Nob3dfZGVsYXlfaG91cnMYISABKA0SKQohZ3VhcmFudGVlX2R1ZV9k",
-            "YXlzX2JlZm9yZV9hcnJpdmFsGCIgASgNQitaDXRlbmFuY3ljb25maWeqAhlI",
-            "T0xNUy5UeXBlcy5UZW5hbmN5Q29uZmlnYgZwcm90bzM="));
+            "Z29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uEiMKG2FsbG93ZWRfZWFybHlfY2hl",
+            "Y2tpbl9ob3VycxgGIAEoDRIZChFpaWZfZG9jbnVtX3ByZWZpeBgHIAEoCRIZ",
+            "ChFpaWZfY3VzdG9tZXJfbmFtZRgIIAEoCRI+Cg9jaGVja2luX2RlcG9zaXQY",
+            "CSABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQS",
+            "PgoabGFzdF9yZXZlbnVlX2FjY3J1YWxfc3RhcnQYCiABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wEkUKGWxhc3RfZGF0ZV9oa19yb2xsb3Zlcl9y",
+            "YW4YCyABKAsyIi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGUS",
+            "EAoIYWRkcmVzczEYDCABKAkSEAoIYWRkcmVzczIYDSABKAkSDAoEY2l0eRgO",
+            "IAEoCRINCgVzdGF0ZRgPIAEoCRILCgN6aXAYECABKAkSFAoMcGhvbmVfbnVt",
+            "YmVyGBEgASgJEkUKDWNhcmRfbWVyY2hhbnQYEiABKAsyLi5ob2xtcy50eXBl",
+            "cy5tb25leS5jYXJkcy5DYXJkTWVyY2hhbnRJbmRpY2F0b3ISWAoTY2FuY2Vs",
+            "bGF0aW9uX3BvbGljeRgTIAEoCzI7LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5k",
+            "aWNhdG9ycy5DYW5jZWxsYXRpb25Qb2xpY3lJbmRpY2F0b3ISGwoTZGVmYXVs",
+            "dF9zdGF5X2xlbmd0aBgVIAEoBRIPCgd3ZWJzaXRlGBYgASgJEhkKEXJlc2Vy",
+            "dmF0aW9uX2VtYWlsGBcgASgJEhIKCmZheF9udW1iZXIYHiABKAkSFgoOYm9v",
+            "a2luZ19wcmVmaXgYHyABKAkSJgoedm9pZF9hdXRob3JpemF0aW9uc19hZnRl",
+            "cl9kYXlzGCAgASgNEhsKE25vX3Nob3dfZGVsYXlfaG91cnMYISABKA0SKQoh",
+            "Z3VhcmFudGVlX2R1ZV9kYXlzX2JlZm9yZV9hcnJpdmFsGCIgASgNQitaDXRl",
+            "bmFuY3ljb25maWeqAhlIT0xNUy5UeXBlcy5UZW5hbmN5Q29uZmlnYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.Property), global::HOLMS.Types.TenancyConfig.Property.Parser, new[]{ "EntityId", "Description", "CheckinTimeOfDay", "CheckOutTimeOfDay", "DisbaleTimeOfDay", "AllowedEarlyCheckinHours", "IifDocnumPrefix", "IifCustomerName", "CheckinDeposit", "LastRevenueAccrualStart", "LastDateHkRolloverRan", "Address1", "Address2", "City", "State", "Zip", "PhoneNumber", "CardMerchant", "CancellationPolicy", "IsActive", "DefaultStayLength", "Website", "ReservationEmail", "FaxNumber", "BookingPrefix", "VoidAuthorizationsAfterDays", "NoShowDelayHours", "GuaranteeDueDaysBeforeArrival" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.Property), global::HOLMS.Types.TenancyConfig.Property.Parser, new[]{ "EntityId", "Description", "CheckinTimeOfDay", "CheckOutTimeOfDay", "AllowedEarlyCheckinHours", "IifDocnumPrefix", "IifCustomerName", "CheckinDeposit", "LastRevenueAccrualStart", "LastDateHkRolloverRan", "Address1", "Address2", "City", "State", "Zip", "PhoneNumber", "CardMerchant", "CancellationPolicy", "DefaultStayLength", "Website", "ReservationEmail", "FaxNumber", "BookingPrefix", "VoidAuthorizationsAfterDays", "NoShowDelayHours", "GuaranteeDueDaysBeforeArrival" }, null, null, null)
           }));
     }
     #endregion
@@ -93,7 +92,6 @@ namespace HOLMS.Types.TenancyConfig {
       description_ = other.description_;
       CheckinTimeOfDay = other.checkinTimeOfDay_ != null ? other.CheckinTimeOfDay.Clone() : null;
       CheckOutTimeOfDay = other.checkOutTimeOfDay_ != null ? other.CheckOutTimeOfDay.Clone() : null;
-      DisbaleTimeOfDay = other.disbaleTimeOfDay_ != null ? other.DisbaleTimeOfDay.Clone() : null;
       allowedEarlyCheckinHours_ = other.allowedEarlyCheckinHours_;
       iifDocnumPrefix_ = other.iifDocnumPrefix_;
       iifCustomerName_ = other.iifCustomerName_;
@@ -108,7 +106,6 @@ namespace HOLMS.Types.TenancyConfig {
       phoneNumber_ = other.phoneNumber_;
       CardMerchant = other.cardMerchant_ != null ? other.CardMerchant.Clone() : null;
       CancellationPolicy = other.cancellationPolicy_ != null ? other.CancellationPolicy.Clone() : null;
-      isActive_ = other.isActive_;
       defaultStayLength_ = other.defaultStayLength_;
       website_ = other.website_;
       reservationEmail_ = other.reservationEmail_;
@@ -165,17 +162,6 @@ namespace HOLMS.Types.TenancyConfig {
       get { return checkOutTimeOfDay_; }
       set {
         checkOutTimeOfDay_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "disbale_time_of_day" field.</summary>
-    public const int DisbaleTimeOfDayFieldNumber = 5;
-    private global::Google.Protobuf.WellKnownTypes.Duration disbaleTimeOfDay_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Duration DisbaleTimeOfDay {
-      get { return disbaleTimeOfDay_; }
-      set {
-        disbaleTimeOfDay_ = value;
       }
     }
 
@@ -333,17 +319,6 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
-    /// <summary>Field number for the "is_active" field.</summary>
-    public const int IsActiveFieldNumber = 20;
-    private bool isActive_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsActive {
-      get { return isActive_; }
-      set {
-        isActive_ = value;
-      }
-    }
-
     /// <summary>Field number for the "default_stay_length" field.</summary>
     public const int DefaultStayLengthFieldNumber = 21;
     private int defaultStayLength_;
@@ -449,7 +424,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (Description != other.Description) return false;
       if (!object.Equals(CheckinTimeOfDay, other.CheckinTimeOfDay)) return false;
       if (!object.Equals(CheckOutTimeOfDay, other.CheckOutTimeOfDay)) return false;
-      if (!object.Equals(DisbaleTimeOfDay, other.DisbaleTimeOfDay)) return false;
       if (AllowedEarlyCheckinHours != other.AllowedEarlyCheckinHours) return false;
       if (IifDocnumPrefix != other.IifDocnumPrefix) return false;
       if (IifCustomerName != other.IifCustomerName) return false;
@@ -464,7 +438,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (PhoneNumber != other.PhoneNumber) return false;
       if (!object.Equals(CardMerchant, other.CardMerchant)) return false;
       if (!object.Equals(CancellationPolicy, other.CancellationPolicy)) return false;
-      if (IsActive != other.IsActive) return false;
       if (DefaultStayLength != other.DefaultStayLength) return false;
       if (Website != other.Website) return false;
       if (ReservationEmail != other.ReservationEmail) return false;
@@ -483,7 +456,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (checkinTimeOfDay_ != null) hash ^= CheckinTimeOfDay.GetHashCode();
       if (checkOutTimeOfDay_ != null) hash ^= CheckOutTimeOfDay.GetHashCode();
-      if (disbaleTimeOfDay_ != null) hash ^= DisbaleTimeOfDay.GetHashCode();
       if (AllowedEarlyCheckinHours != 0) hash ^= AllowedEarlyCheckinHours.GetHashCode();
       if (IifDocnumPrefix.Length != 0) hash ^= IifDocnumPrefix.GetHashCode();
       if (IifCustomerName.Length != 0) hash ^= IifCustomerName.GetHashCode();
@@ -498,7 +470,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (PhoneNumber.Length != 0) hash ^= PhoneNumber.GetHashCode();
       if (cardMerchant_ != null) hash ^= CardMerchant.GetHashCode();
       if (cancellationPolicy_ != null) hash ^= CancellationPolicy.GetHashCode();
-      if (IsActive != false) hash ^= IsActive.GetHashCode();
       if (DefaultStayLength != 0) hash ^= DefaultStayLength.GetHashCode();
       if (Website.Length != 0) hash ^= Website.GetHashCode();
       if (ReservationEmail.Length != 0) hash ^= ReservationEmail.GetHashCode();
@@ -532,10 +503,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (checkOutTimeOfDay_ != null) {
         output.WriteRawTag(34);
         output.WriteMessage(CheckOutTimeOfDay);
-      }
-      if (disbaleTimeOfDay_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(DisbaleTimeOfDay);
       }
       if (AllowedEarlyCheckinHours != 0) {
         output.WriteRawTag(48);
@@ -593,10 +560,6 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(154, 1);
         output.WriteMessage(CancellationPolicy);
       }
-      if (IsActive != false) {
-        output.WriteRawTag(160, 1);
-        output.WriteBool(IsActive);
-      }
       if (DefaultStayLength != 0) {
         output.WriteRawTag(168, 1);
         output.WriteInt32(DefaultStayLength);
@@ -646,9 +609,6 @@ namespace HOLMS.Types.TenancyConfig {
       if (checkOutTimeOfDay_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CheckOutTimeOfDay);
       }
-      if (disbaleTimeOfDay_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DisbaleTimeOfDay);
-      }
       if (AllowedEarlyCheckinHours != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AllowedEarlyCheckinHours);
       }
@@ -690,9 +650,6 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (cancellationPolicy_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(CancellationPolicy);
-      }
-      if (IsActive != false) {
-        size += 2 + 1;
       }
       if (DefaultStayLength != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(DefaultStayLength);
@@ -746,12 +703,6 @@ namespace HOLMS.Types.TenancyConfig {
           checkOutTimeOfDay_ = new global::Google.Protobuf.WellKnownTypes.Duration();
         }
         CheckOutTimeOfDay.MergeFrom(other.CheckOutTimeOfDay);
-      }
-      if (other.disbaleTimeOfDay_ != null) {
-        if (disbaleTimeOfDay_ == null) {
-          disbaleTimeOfDay_ = new global::Google.Protobuf.WellKnownTypes.Duration();
-        }
-        DisbaleTimeOfDay.MergeFrom(other.DisbaleTimeOfDay);
       }
       if (other.AllowedEarlyCheckinHours != 0) {
         AllowedEarlyCheckinHours = other.AllowedEarlyCheckinHours;
@@ -810,9 +761,6 @@ namespace HOLMS.Types.TenancyConfig {
         }
         CancellationPolicy.MergeFrom(other.CancellationPolicy);
       }
-      if (other.IsActive != false) {
-        IsActive = other.IsActive;
-      }
       if (other.DefaultStayLength != 0) {
         DefaultStayLength = other.DefaultStayLength;
       }
@@ -870,13 +818,6 @@ namespace HOLMS.Types.TenancyConfig {
               checkOutTimeOfDay_ = new global::Google.Protobuf.WellKnownTypes.Duration();
             }
             input.ReadMessage(checkOutTimeOfDay_);
-            break;
-          }
-          case 42: {
-            if (disbaleTimeOfDay_ == null) {
-              disbaleTimeOfDay_ = new global::Google.Protobuf.WellKnownTypes.Duration();
-            }
-            input.ReadMessage(disbaleTimeOfDay_);
             break;
           }
           case 48: {
@@ -948,10 +889,6 @@ namespace HOLMS.Types.TenancyConfig {
               cancellationPolicy_ = new global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicator();
             }
             input.ReadMessage(cancellationPolicy_);
-            break;
-          }
-          case 160: {
-            IsActive = input.ReadBool();
             break;
           }
           case 168: {
