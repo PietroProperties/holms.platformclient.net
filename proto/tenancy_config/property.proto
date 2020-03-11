@@ -16,7 +16,8 @@ message Property {
 	.holms.types.tenancy_config.indicators.PropertyIndicator entity_id = 1;
 	string description = 2;
 	google.protobuf.Duration checkin_time_of_day = 3;
-	google.protobuf.Duration check_out_time_of_day = 4;    
+	google.protobuf.Duration check_out_time_of_day = 4;
+    google.protobuf.Duration disbale_time_of_day = 5;
 	uint32 allowed_early_checkin_hours = 6;
 	string iif_docnum_prefix = 7;
 	string iif_customer_name = 8;
@@ -30,7 +31,8 @@ message Property {
 	string zip = 16;
 	string phone_number = 17;
 	holms.types.money.cards.CardMerchantIndicator card_merchant = 18;
-	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 19;    
+	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 19;
+    bool is_active = 20;
 	int32 default_stay_length = 21;
 	string website = 22;
 	string reservation_email = 23;
