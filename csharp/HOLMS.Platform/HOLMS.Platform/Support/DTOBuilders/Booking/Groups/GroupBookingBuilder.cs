@@ -21,6 +21,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Groups {
         private readonly RateScheduleIndicator _rateSchedule;
         private readonly GroupIndicator _group;
         private string _groupName;
+        private readonly PropertyIndicator _property;
 
         // Everything below here is nullable
         private readonly InclusiveOpsdateRange _bookingDates;
@@ -36,7 +37,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Groups {
             string additionalNotes, string customerBookingId, InclusiveOpsdateRange bookingDates,
             RateScheduleIndicator rs, GroupIndicator g, Guid? groupBookingMethodId,
             Guid? reservationSourceId, Guid? travelAgentId, Guid? cancellationPolicy,
-            string groupName, bool surpressratecheck, string taxCatgeory) {
+            string groupName, bool surpressratecheck, string taxCatgeory, PropertyIndicator property) {
             _gbi = id;
             _gbs = status;
             _taxExempt = taxExempt;
@@ -48,6 +49,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Groups {
             _customerBookingId = customerBookingId;
             _rateSchedule = rs;
             _group = g;
+            _property = property;
 
             // Nullables
             _bookingDates = bookingDates;
@@ -73,7 +75,8 @@ namespace HOLMS.Platform.Support.DTOBuilders.Booking.Groups {
                 Group = _group,
                 GroupName = _groupName,
                 SurpressRateInfo = _surpressratecheck,
-                TaxCategory = _taxCategory
+                TaxCategory = _taxCategory,
+                BookingProperty = _property
             };
 
             if (_bookingDates != null) {
