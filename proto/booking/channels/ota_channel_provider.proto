@@ -14,4 +14,5 @@ message OTAChannelProvider {
 	bool disable_guest_correspondence = 4;
 	bool disable_correspondence_rate_table = 5;
 	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 6;
+	string virtual_card_identifier = 7;
 }
