@@ -8,6 +8,9 @@ import "booking/indicators/reservation_indicator.proto";
 import "booking/indicators/reservation_note_indicator.proto";
 import "operations/note_requests/note_request_indicator.proto";
 import "operations/note_requests/note_category.proto";
+import "primitive/pb_local_date.proto";
+import "supply/incidental_items/incidental_item_indicator.proto";
+import "booking/indicators/incidental_item_reservation_indicator.proto";
 
 message ReservationNote {
 	.holms.types.booking.indicators.ReservationNoteIndicator entity_id = 1;
@@ -19,4 +22,8 @@ message ReservationNote {
 	string source_note_subject = 7;
 	bool is_fulfilled = 8;
 	bool permanent_on_guest_record = 9;
+        .holms.types.supply.incidental_items.IncidentalItemIndicator incidental_item_id = 10;
+	.holms.types.primitive.PbLocalDate inc_start_date =11;
+       .holms.types.primitive.PbLocalDate inc_end_date =12;
 }
+
