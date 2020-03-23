@@ -17,6 +17,6 @@ message GroupBookingExt {
 	string group_number = 3;
 	string group_contact_name = 4;
 	.holms.types.crm.groups.GroupType group_type = 5;
-	.holms.types.tenancy_config.indicators.PropertyIndicator group_property = 6;
+	.holms.types.tenancy_config.indicators.PropertyIndicator booking_property = 6;
 	repeated GroupBookingRoomTypeQuantity quantities = 7;
 }

@@ -23,6 +23,7 @@ import "primitive/pb_inclusive_opsdate_range.proto";
 import "supply/event_booking_hold_indicator.proto";
 import "booking/groups/unassigned_booking_holds.proto";
 import "booking/indicators/reservation_indicator.proto";
+import "tenancy_config/indicators/property_indicator.proto";
 
 message GroupBookingSvcAllBookings {
 	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
@@ -118,11 +119,15 @@ message SyncHoldRequest{
 	bool booking_tag_present = 5;
 }
 
+message GroupBookingRequest{
+	.holms.types.crm.groups.GroupIndicator group=1;
+	.holms.types.tenancy_config.indicators.PropertyIndicator property=2;
+}
 service GroupBookingSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (GroupBookingSvcAllBookings);
 
-	rpc Create (.holms.types.crm.groups.GroupIndicator)
+	rpc Create (GroupBookingRequest)
 		returns (.holms.types.booking.groups.GroupBookingExt);
 
 	rpc Update (.holms.types.booking.groups.GroupBooking)
@@ -167,7 +172,7 @@ service GroupBookingSvc {
 	rpc VoidInvoiceById(InvoiceVoidRequest)
 		returns(google.protobuf.Empty);
 
-    	rpc CreateWithoutSave(.holms.types.crm.groups.GroupIndicator)
+    	rpc CreateWithoutSave(GroupBookingRequest)
 		returns (.holms.types.booking.groups.GroupBookingExt);
 
 	rpc IncreaseEventGroupHoldForNewReservation(IncreaseGroupHoldForReservationRequest)

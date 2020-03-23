@@ -8,7 +8,6 @@ import "crm/groups/group_indicator.proto";
 import "crm/groups/group_type.proto";
 import "primitive/contact_information.proto";
 import "primitive/monetary_amount.proto";
-import "tenancy_config/indicators/property_indicator.proto";
 
 message Group {
     .holms.types.crm.groups.GroupIndicator entity_id = 1;
@@ -18,5 +17,4 @@ message Group {
 	.holms.types.primitive.MonetaryAmount credit_limit = 5;
 	bool active = 6;
 	.holms.types.primitive.ContactInformation contact_info = 7;
-	.holms.types.tenancy_config.indicators.PropertyIndicator property = 8;
 }
