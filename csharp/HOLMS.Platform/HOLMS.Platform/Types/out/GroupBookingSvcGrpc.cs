@@ -229,6 +229,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_SyncHoldRequest,
         __Marshaller_Empty);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse> __Method_GetReservationSummariesWithFolioGBTag = new grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetReservationSummariesWithFolioGBTag",
+        __Marshaller_GroupBookingIndicator,
+        __Marshaller_GroupBookingSvcGetReservationsWithTagResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -369,6 +376,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SyncReservationHoldWithEventBookingHold(global::HOLMS.Types.Booking.RPC.SyncHoldRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse> GetReservationSummariesWithFolioGBTag(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -830,6 +842,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SyncReservationHoldWithEventBookingHold, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse GetReservationSummariesWithFolioGBTag(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetReservationSummariesWithFolioGBTag(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse GetReservationSummariesWithFolioGBTag(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetReservationSummariesWithFolioGBTag, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse> GetReservationSummariesWithFolioGBTagAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetReservationSummariesWithFolioGBTagAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.GroupBookingSvcGetReservationsWithTagResponse> GetReservationSummariesWithFolioGBTagAsync(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetReservationSummariesWithFolioGBTag, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GroupBookingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -868,7 +896,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetAllBookingHolds, serviceImpl.GetAllBookingHolds)
           .AddMethod(__Method_UpdateHold, serviceImpl.UpdateHold)
           .AddMethod(__Method_MigrateBookingToNewDesign, serviceImpl.MigrateBookingToNewDesign)
-          .AddMethod(__Method_SyncReservationHoldWithEventBookingHold, serviceImpl.SyncReservationHoldWithEventBookingHold).Build();
+          .AddMethod(__Method_SyncReservationHoldWithEventBookingHold, serviceImpl.SyncReservationHoldWithEventBookingHold)
+          .AddMethod(__Method_GetReservationSummariesWithFolioGBTag, serviceImpl.GetReservationSummariesWithFolioGBTag).Build();
     }
 
   }
