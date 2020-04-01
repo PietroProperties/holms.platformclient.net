@@ -10,7 +10,6 @@ import "operations/note_requests/note_request_indicator.proto";
 import "operations/note_requests/note_category.proto";
 import "primitive/pb_local_date.proto";
 import "supply/incidental_items/incidental_item_indicator.proto";
-import "booking/indicators/incidental_item_reservation_indicator.proto";
 
 message ReservationNote {
 	.holms.types.booking.indicators.ReservationNoteIndicator entity_id = 1;
