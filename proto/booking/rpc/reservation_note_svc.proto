@@ -8,8 +8,6 @@ import "google/protobuf/empty.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "booking/reservations/reservation_note.proto";
 import "booking/indicators/reservation_note_indicator.proto";
-import "supply/incidental_items/incidental_item_indicator.proto";
-import "booking/indicators/incidental_item_reservation_indicator.proto";
 
 message ReservationNoteSvcGetNotesResponse {
 	repeated .holms.types.booking.reservations.ReservationNote notes = 1;
