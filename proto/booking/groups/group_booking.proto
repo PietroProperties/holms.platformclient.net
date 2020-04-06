@@ -13,6 +13,7 @@ import "booking/groups/group_booking_status.proto";
 import "crm/groups/group_indicator.proto";
 import "supply/rate_schedule_indicator.proto";
 import "tenancy_config/indicators/group_booking_method_indicator.proto";
+import "tenancy_config/indicators/property_indicator.proto";
 
 message GroupBooking {
     .holms.types.booking.indicators.GroupBookingIndicator entity_id = 1;
@@ -36,4 +37,5 @@ message GroupBooking {
 	string group_name = 19;
     bool surpress_rate_info = 20;
 	string tax_category = 21;
+    .holms.types.tenancy_config.indicators.PropertyIndicator booking_property = 22;
 }

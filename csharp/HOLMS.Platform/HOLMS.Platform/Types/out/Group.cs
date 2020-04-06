@@ -26,21 +26,18 @@ namespace HOLMS.Types.CRM.Groups {
             "dXBzGiBjcm0vZ3JvdXBzL2dyb3VwX2luZGljYXRvci5wcm90bxobY3JtL2dy",
             "b3Vwcy9ncm91cF90eXBlLnByb3RvGiNwcmltaXRpdmUvY29udGFjdF9pbmZv",
             "cm1hdGlvbi5wcm90bxofcHJpbWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90",
-            "bxoydGVuYW5jeV9jb25maWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0",
-            "b3IucHJvdG8i9wIKBUdyb3VwEjkKCWVudGl0eV9pZBgBIAEoCzImLmhvbG1z",
-            "LnR5cGVzLmNybS5ncm91cHMuR3JvdXBJbmRpY2F0b3ISDAoEbmFtZRgCIAEo",
-            "CRI1Cgpncm91cF90eXBlGAMgASgOMiEuaG9sbXMudHlwZXMuY3JtLmdyb3Vw",
-            "cy5Hcm91cFR5cGUSFAoMZ3JvdXBfbnVtYmVyGAQgASgJEjsKDGNyZWRpdF9s",
-            "aW1pdBgFIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFt",
-            "b3VudBIOCgZhY3RpdmUYBiABKAgSPwoMY29udGFjdF9pbmZvGAcgASgLMiku",
-            "aG9sbXMudHlwZXMucHJpbWl0aXZlLkNvbnRhY3RJbmZvcm1hdGlvbhJKCghw",
-            "cm9wZXJ0eRgIIAEoCzI4LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLmlu",
-            "ZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3JCJVoKY3JtL2dyb3Vwc6oCFkhP",
-            "TE1TLlR5cGVzLkNSTS5Hcm91cHNiBnByb3RvMw=="));
+            "byKrAgoFR3JvdXASOQoJZW50aXR5X2lkGAEgASgLMiYuaG9sbXMudHlwZXMu",
+            "Y3JtLmdyb3Vwcy5Hcm91cEluZGljYXRvchIMCgRuYW1lGAIgASgJEjUKCmdy",
+            "b3VwX3R5cGUYAyABKA4yIS5ob2xtcy50eXBlcy5jcm0uZ3JvdXBzLkdyb3Vw",
+            "VHlwZRIUCgxncm91cF9udW1iZXIYBCABKAkSOwoMY3JlZGl0X2xpbWl0GAUg",
+            "ASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50Eg4K",
+            "BmFjdGl2ZRgGIAEoCBI/Cgxjb250YWN0X2luZm8YByABKAsyKS5ob2xtcy50",
+            "eXBlcy5wcmltaXRpdmUuQ29udGFjdEluZm9ybWF0aW9uQiVaCmNybS9ncm91",
+            "cHOqAhZIT0xNUy5UeXBlcy5DUk0uR3JvdXBzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Groups.GroupIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupTypeReflection.Descriptor, global::HOLMS.Types.Primitive.ContactInformationReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Groups.GroupIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupTypeReflection.Descriptor, global::HOLMS.Types.Primitive.ContactInformationReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.Groups.Group), global::HOLMS.Types.CRM.Groups.Group.Parser, new[]{ "EntityId", "Name", "GroupType", "GroupNumber", "CreditLimit", "Active", "ContactInfo", "Property" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.Groups.Group), global::HOLMS.Types.CRM.Groups.Group.Parser, new[]{ "EntityId", "Name", "GroupType", "GroupNumber", "CreditLimit", "Active", "ContactInfo" }, null, null, null)
           }));
     }
     #endregion
@@ -78,7 +75,6 @@ namespace HOLMS.Types.CRM.Groups {
       CreditLimit = other.creditLimit_ != null ? other.CreditLimit.Clone() : null;
       active_ = other.active_;
       ContactInfo = other.contactInfo_ != null ? other.ContactInfo.Clone() : null;
-      Property = other.property_ != null ? other.Property.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -163,17 +159,6 @@ namespace HOLMS.Types.CRM.Groups {
       }
     }
 
-    /// <summary>Field number for the "property" field.</summary>
-    public const int PropertyFieldNumber = 8;
-    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
-      get { return property_; }
-      set {
-        property_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Group);
@@ -194,7 +179,6 @@ namespace HOLMS.Types.CRM.Groups {
       if (!object.Equals(CreditLimit, other.CreditLimit)) return false;
       if (Active != other.Active) return false;
       if (!object.Equals(ContactInfo, other.ContactInfo)) return false;
-      if (!object.Equals(Property, other.Property)) return false;
       return true;
     }
 
@@ -208,7 +192,6 @@ namespace HOLMS.Types.CRM.Groups {
       if (creditLimit_ != null) hash ^= CreditLimit.GetHashCode();
       if (Active != false) hash ^= Active.GetHashCode();
       if (contactInfo_ != null) hash ^= ContactInfo.GetHashCode();
-      if (property_ != null) hash ^= Property.GetHashCode();
       return hash;
     }
 
@@ -247,10 +230,6 @@ namespace HOLMS.Types.CRM.Groups {
         output.WriteRawTag(58);
         output.WriteMessage(ContactInfo);
       }
-      if (property_ != null) {
-        output.WriteRawTag(66);
-        output.WriteMessage(Property);
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -276,9 +255,6 @@ namespace HOLMS.Types.CRM.Groups {
       }
       if (contactInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContactInfo);
-      }
-      if (property_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
       }
       return size;
     }
@@ -317,12 +293,6 @@ namespace HOLMS.Types.CRM.Groups {
           contactInfo_ = new global::HOLMS.Types.Primitive.ContactInformation();
         }
         ContactInfo.MergeFrom(other.ContactInfo);
-      }
-      if (other.property_ != null) {
-        if (property_ == null) {
-          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
-        }
-        Property.MergeFrom(other.Property);
       }
     }
 
@@ -369,13 +339,6 @@ namespace HOLMS.Types.CRM.Groups {
               contactInfo_ = new global::HOLMS.Types.Primitive.ContactInformation();
             }
             input.ReadMessage(contactInfo_);
-            break;
-          }
-          case 66: {
-            if (property_ == null) {
-              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
-            }
-            input.ReadMessage(property_);
             break;
           }
         }
