@@ -17,6 +17,7 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Checkout.CheckoutCandidateViability> __Marshaller_CheckoutCandidateViability = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Checkout.CheckoutCandidateViability.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.CheckoutSvcCheckOutResponse> __Marshaller_CheckoutSvcCheckOutResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.CheckoutSvcCheckOutResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.CheckoutSvcAmendForEarlyImmediateCheckoutResponse> __Marshaller_CheckoutSvcAmendForEarlyImmediateCheckoutResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.CheckoutSvcAmendForEarlyImmediateCheckoutResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResponse> __Marshaller_CheckoutUndoSvcResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.Checkout.CheckoutCandidateViability> __Method_GetCheckoutCandidateViability = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.Checkout.CheckoutCandidateViability>(
         grpc::MethodType.Unary,
@@ -39,6 +40,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_ReservationIndicator,
         __Marshaller_CheckoutSvcAmendForEarlyImmediateCheckoutResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResponse> __Method_UndoCheckout = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UndoCheckout",
+        __Marshaller_ReservationIndicator,
+        __Marshaller_CheckoutUndoSvcResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -59,6 +67,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.CheckoutSvcAmendForEarlyImmediateCheckoutResponse> AmendForEarlyImmediateCheckout(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResponse> UndoCheckout(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -136,6 +149,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_AmendForEarlyImmediateCheckout, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResponse UndoCheckout(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UndoCheckout(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResponse UndoCheckout(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UndoCheckout, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResponse> UndoCheckoutAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UndoCheckoutAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResponse> UndoCheckoutAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UndoCheckout, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override CheckoutSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -150,7 +179,8 @@ namespace HOLMS.Types.Booking.RPC {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetCheckoutCandidateViability, serviceImpl.GetCheckoutCandidateViability)
           .AddMethod(__Method_CheckOutReservation, serviceImpl.CheckOutReservation)
-          .AddMethod(__Method_AmendForEarlyImmediateCheckout, serviceImpl.AmendForEarlyImmediateCheckout).Build();
+          .AddMethod(__Method_AmendForEarlyImmediateCheckout, serviceImpl.AmendForEarlyImmediateCheckout)
+          .AddMethod(__Method_UndoCheckout, serviceImpl.UndoCheckout).Build();
     }
 
   }
