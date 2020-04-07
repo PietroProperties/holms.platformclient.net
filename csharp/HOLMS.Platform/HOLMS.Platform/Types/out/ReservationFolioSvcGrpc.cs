@@ -42,6 +42,8 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest> __Marshaller_ReservationFolioSvcPostMiscChargeCorrectionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcPostMiscChargeCorrectionRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator> __Marshaller_PaymentCardRefundIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator> __Marshaller_CustomerPaymentCardIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationRequest> __Marshaller_ReservationFolioSvcTransferOpenAuthorizationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationResponse> __Marshaller_ReservationFolioSvcTransferOpenAuthorizationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponse> __Method_GetReservationFolioState = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcGetFolioStateResponse>(
         grpc::MethodType.Unary,
@@ -183,6 +185,13 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_CustomerPaymentCardIndicator,
         __Marshaller_FolioSvcCancelPaymentResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationRequest, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationResponse> __Method_TransferOpenAuthorizations = new grpc::Method<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationRequest, global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "TransferOpenAuthorizations",
+        __Marshaller_ReservationFolioSvcTransferOpenAuthorizationRequest,
+        __Marshaller_ReservationFolioSvcTransferOpenAuthorizationResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -318,6 +327,11 @@ namespace HOLMS.Types.Folio.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioSvcCancelPaymentResponse> SoftDeleteCard(global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationResponse> TransferOpenAuthorizations(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -807,6 +821,22 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SoftDeleteCard, null, options, request);
       }
+      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationResponse TransferOpenAuthorizations(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return TransferOpenAuthorizations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationResponse TransferOpenAuthorizations(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_TransferOpenAuthorizations, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationResponse> TransferOpenAuthorizationsAsync(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return TransferOpenAuthorizationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationResponse> TransferOpenAuthorizationsAsync(global::HOLMS.Types.Folio.RPC.ReservationFolioSvcTransferOpenAuthorizationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_TransferOpenAuthorizations, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override ReservationFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -838,7 +868,8 @@ namespace HOLMS.Types.Folio.RPC {
           .AddMethod(__Method_PostIncidentalChargeCorrection, serviceImpl.PostIncidentalChargeCorrection)
           .AddMethod(__Method_PostMiscChargeCorrection, serviceImpl.PostMiscChargeCorrection)
           .AddMethod(__Method_CancelCardRefund, serviceImpl.CancelCardRefund)
-          .AddMethod(__Method_SoftDeleteCard, serviceImpl.SoftDeleteCard).Build();
+          .AddMethod(__Method_SoftDeleteCard, serviceImpl.SoftDeleteCard)
+          .AddMethod(__Method_TransferOpenAuthorizations, serviceImpl.TransferOpenAuthorizations).Build();
     }
 
   }
