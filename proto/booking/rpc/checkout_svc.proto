@@ -26,6 +26,18 @@ message CheckoutSvcAmendForEarlyImmediateCheckoutResponse {
 	CheckoutSvcAmendForEarlyImmediateCheckoutResult Result = 1;
 }
 
+enum CheckoutUndoSvcResult {
+	CHECKOUT_SVC_UNDO_SUCCESSFUL = 0;
+	CHECKOUT_SVC_NOT_CHECKED_OUT = 1;
+	CHECKOUT_SVC_INAPPROPRIATE_UNDO_DATE = 2;
+	CHECKOUT_SVC_UNKNOWN_FAILURE = 3;
+	CHECKOUT_SVC_ROOM_ALREADY_OCCUPIED = 4;
+}
+
+message CheckoutUndoSvcResponse {
+	CheckoutUndoSvcResult Result = 1;
+}
+
 service CheckoutSvc {
 	rpc GetCheckoutCandidateViability(.holms.types.booking.indicators.ReservationIndicator)
 		returns (.holms.types.booking.checkout.CheckoutCandidateViability);
@@ -33,4 +45,6 @@ service CheckoutSvc {
 		returns (CheckoutSvcCheckOutResponse);
 	rpc AmendForEarlyImmediateCheckout(.holms.types.booking.indicators.ReservationIndicator)
 		returns (CheckoutSvcAmendForEarlyImmediateCheckoutResponse);
+	rpc UndoCheckout(.holms.types.booking.indicators.ReservationIndicator)
+		returns (CheckoutUndoSvcResponse);
 }
