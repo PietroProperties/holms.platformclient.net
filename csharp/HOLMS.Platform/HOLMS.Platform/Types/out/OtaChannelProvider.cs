@@ -26,19 +26,20 @@ namespace HOLMS.Types.Booking.Channels {
             "Ehxob2xtcy50eXBlcy5ib29raW5nLmNoYW5uZWxzGjZib29raW5nL2luZGlj",
             "YXRvcnMvY2FuY2VsbGF0aW9uX3BvbGljeV9pbmRpY2F0b3IucHJvdG8aNWJv",
             "b2tpbmcvY2hhbm5lbHMvb3RhX2NoYW5uZWxfcHJvdmlkZXJfaW5kaWNhdG9y",
-            "LnByb3RvIrsCChJPVEFDaGFubmVsUHJvdmlkZXISTAoJZW50aXR5X2lkGAEg",
+            "LnByb3RvItwCChJPVEFDaGFubmVsUHJvdmlkZXISTAoJZW50aXR5X2lkGAEg",
             "ASgLMjkuaG9sbXMudHlwZXMuYm9va2luZy5jaGFubmVscy5PVEFDaGFubmVs",
             "UHJvdmlkZXJJbmRpY2F0b3ISFQoNcHJvdmlkZXJfbmFtZRgCIAEoCRIVCg1w",
             "cm92aWRlcl9jb2RlGAMgASgJEiQKHGRpc2FibGVfZ3Vlc3RfY29ycmVzcG9u",
             "ZGVuY2UYBCABKAgSKQohZGlzYWJsZV9jb3JyZXNwb25kZW5jZV9yYXRlX3Rh",
             "YmxlGAUgASgIElgKE2NhbmNlbGxhdGlvbl9wb2xpY3kYBiABKAsyOy5ob2xt",
             "cy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuQ2FuY2VsbGF0aW9uUG9saWN5",
-            "SW5kaWNhdG9yQjFaEGJvb2tpbmcvY2hhbm5lbHOqAhxIT0xNUy5UeXBlcy5C",
-            "b29raW5nLkNoYW5uZWxzYgZwcm90bzM="));
+            "SW5kaWNhdG9yEh8KF3ZpcnR1YWxfY2FyZF9pZGVudGlmaWVyGAcgASgJQjFa",
+            "EGJvb2tpbmcvY2hhbm5lbHOqAhxIT0xNUy5UeXBlcy5Cb29raW5nLkNoYW5u",
+            "ZWxzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.OtaChannelProviderIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Channels.OTAChannelProvider), global::HOLMS.Types.Booking.Channels.OTAChannelProvider.Parser, new[]{ "EntityId", "ProviderName", "ProviderCode", "DisableGuestCorrespondence", "DisableCorrespondenceRateTable", "CancellationPolicy" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Channels.OTAChannelProvider), global::HOLMS.Types.Booking.Channels.OTAChannelProvider.Parser, new[]{ "EntityId", "ProviderName", "ProviderCode", "DisableGuestCorrespondence", "DisableCorrespondenceRateTable", "CancellationPolicy", "VirtualCardIdentifier" }, null, null, null)
           }));
     }
     #endregion
@@ -75,6 +76,7 @@ namespace HOLMS.Types.Booking.Channels {
       disableGuestCorrespondence_ = other.disableGuestCorrespondence_;
       disableCorrespondenceRateTable_ = other.disableCorrespondenceRateTable_;
       CancellationPolicy = other.cancellationPolicy_ != null ? other.CancellationPolicy.Clone() : null;
+      virtualCardIdentifier_ = other.virtualCardIdentifier_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -148,6 +150,17 @@ namespace HOLMS.Types.Booking.Channels {
       }
     }
 
+    /// <summary>Field number for the "virtual_card_identifier" field.</summary>
+    public const int VirtualCardIdentifierFieldNumber = 7;
+    private string virtualCardIdentifier_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string VirtualCardIdentifier {
+      get { return virtualCardIdentifier_; }
+      set {
+        virtualCardIdentifier_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as OTAChannelProvider);
@@ -167,6 +180,7 @@ namespace HOLMS.Types.Booking.Channels {
       if (DisableGuestCorrespondence != other.DisableGuestCorrespondence) return false;
       if (DisableCorrespondenceRateTable != other.DisableCorrespondenceRateTable) return false;
       if (!object.Equals(CancellationPolicy, other.CancellationPolicy)) return false;
+      if (VirtualCardIdentifier != other.VirtualCardIdentifier) return false;
       return true;
     }
 
@@ -179,6 +193,7 @@ namespace HOLMS.Types.Booking.Channels {
       if (DisableGuestCorrespondence != false) hash ^= DisableGuestCorrespondence.GetHashCode();
       if (DisableCorrespondenceRateTable != false) hash ^= DisableCorrespondenceRateTable.GetHashCode();
       if (cancellationPolicy_ != null) hash ^= CancellationPolicy.GetHashCode();
+      if (VirtualCardIdentifier.Length != 0) hash ^= VirtualCardIdentifier.GetHashCode();
       return hash;
     }
 
@@ -213,6 +228,10 @@ namespace HOLMS.Types.Booking.Channels {
         output.WriteRawTag(50);
         output.WriteMessage(CancellationPolicy);
       }
+      if (VirtualCardIdentifier.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(VirtualCardIdentifier);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -235,6 +254,9 @@ namespace HOLMS.Types.Booking.Channels {
       }
       if (cancellationPolicy_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CancellationPolicy);
+      }
+      if (VirtualCardIdentifier.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(VirtualCardIdentifier);
       }
       return size;
     }
@@ -267,6 +289,9 @@ namespace HOLMS.Types.Booking.Channels {
           cancellationPolicy_ = new global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicator();
         }
         CancellationPolicy.MergeFrom(other.CancellationPolicy);
+      }
+      if (other.VirtualCardIdentifier.Length != 0) {
+        VirtualCardIdentifier = other.VirtualCardIdentifier;
       }
     }
 
@@ -306,6 +331,10 @@ namespace HOLMS.Types.Booking.Channels {
               cancellationPolicy_ = new global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicator();
             }
             input.ReadMessage(cancellationPolicy_);
+            break;
+          }
+          case 58: {
+            VirtualCardIdentifier = input.ReadString();
             break;
           }
         }
