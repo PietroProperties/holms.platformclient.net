@@ -28,52 +28,55 @@ namespace HOLMS.Types.Folio {
             "YXJkX3NhbGUucHJvdG8aJGZvbGlvL2ZvbGlvX2NoZWNrX2Nhc2hfcGF5bWVu",
             "dC5wcm90bxolZm9saW8vcmVzZXJ2YXRpb25fZm9saW9fc3VtbWFyeS5wcm90",
             "bxoaZm9saW8vdGF4X2Fzc2Vzc21lbnQucHJvdG8aH3ByaW1pdGl2ZS9tb25l",
-            "dGFyeV9hbW91bnQucHJvdG8inQ4KFVJlc2VydmF0aW9uRm9saW9TdGF0ZRI/",
-            "ChFlZmZlY3RpdmVfY2hhcmdlcxgBIAMoCzIkLmhvbG1zLnR5cGVzLmZvbGlv",
-            "LkZvbGlvQXRvbWljQ2hhcmdlEjgKDGNhcmRfcmVmdW5kcxgCIAMoCzIiLmhv",
-            "bG1zLnR5cGVzLmZvbGlvLkZvbGlvQ2FyZFJlZnVuZBI0CgpjYXJkX3NhbGVz",
-            "GAMgAygLMiAuaG9sbXMudHlwZXMuZm9saW8uRm9saW9DYXJkU2FsZRJFChNj",
-            "aGVja19jYXNoX3BheW1lbnRzGAQgAygLMiguaG9sbXMudHlwZXMuZm9saW8u",
-            "Rm9saW9DaGVja0Nhc2hQYXltZW50EkEKF2N1cnJlbnRfdGF4X2Fzc2Vzc21l",
-            "bnRzGAUgAygLMiAuaG9sbXMudHlwZXMuZm9saW8uVGF4QXNzZXNzbWVudBJL",
-            "CiFhbnRpY2lwYXRlZF9lbmRpbmdfdGF4X2Fzc2Vzc21lbnQYBiADKAsyIC5o",
-            "b2xtcy50eXBlcy5mb2xpby5UYXhBc3Nlc3NtZW50EjwKDm5hdGl2ZV9jaGFy",
-            "Z2VzGAcgAygLMiQuaG9sbXMudHlwZXMuZm9saW8uRm9saW9BdG9taWNDaGFy",
-            "Z2USTQofZXhwb3J0ZWRfdG9fb3RoZXJfZm9saW9fY2hhcmdlcxgIIAMoCzIk",
-            "LmhvbG1zLnR5cGVzLmZvbGlvLkZvbGlvQXRvbWljQ2hhcmdlEk8KIWltcG9y",
-            "dGVkX2Zyb21fb3RoZXJfZm9saW9fY2hhcmdlcxgJIAMoCzIkLmhvbG1zLnR5",
-            "cGVzLmZvbGlvLkZvbGlvQXRvbWljQ2hhcmdlEj4KD2N1cnJlbnRfY2hhcmdl",
-            "cxgKIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3Vu",
-            "dBJCChNhbnRpY2lwYXRlZF9jaGFyZ2VzGAsgASgLMiUuaG9sbXMudHlwZXMu",
-            "cHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50Ej4KD3Bvc3RlZF9wYXltZW50cxgM",
-            "IAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI9",
-            "Cg5wb3N0ZWRfcmVmdW5kcxgNIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2",
-            "ZS5Nb25ldGFyeUFtb3VudBJMCh11bnVzZWRfcGF5bWVudF9hdXRob3JpemF0",
-            "aW9ucxgQIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFt",
-            "b3VudBJOCh91bnVzZWRfZ3VhcmFudGVlX2F1dGhvcml6YXRpb25zGBEgASgL",
-            "MiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkUKFmN1",
-            "cnJlbnRfZHVlX2Zyb21fZ3Vlc3QYEiABKAsyJS5ob2xtcy50eXBlcy5wcmlt",
-            "aXRpdmUuTW9uZXRhcnlBbW91bnQSUgojYW50aWNpcGF0ZWRfY2hlY2tvdXRf",
-            "ZHVlX2Zyb21fZ3Vlc3QYEyABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
-            "TW9uZXRhcnlBbW91bnQSIQoZZ3JhY2VmdWxfY2xvc3VyZV9wb3NzaWJsZRgU",
-            "IAEoCBI7CgdzdW1tYXJ5GBUgASgLMiouaG9sbXMudHlwZXMuZm9saW8uUmVz",
-            "ZXJ2YXRpb25Gb2xpb1N1bW1hcnkSLAokbWFzdGVyX2ZvbGlvX2FjY3J1ZXNf",
-            "bG9kZ2luZ19jaGFyZ2VzGBYgASgIEi8KJ21hc3Rlcl9mb2xpb19hY2NydWVz",
-            "X2luY2lkZW50YWxfY2hhcmdlcxgXIAEoCBJWCidyZW1haW5pbmdfdGVuZGVy",
-            "X3JlcXVpcmVkX2Zvcl9ndWFyYW50ZWUYGCABKAsyJS5ob2xtcy50eXBlcy5w",
-            "cmltaXRpdmUuTW9uZXRhcnlBbW91bnQSQwoUdG90YWxfbWFzdGVyX2NoYXJn",
-            "ZXMYGSABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91",
-            "bnQSQQoSdG90YWxfbWFzdGVyX3RheGVzGBogASgLMiUuaG9sbXMudHlwZXMu",
-            "cHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkAKEXRvdGFsX21hc3Rlcl9mZWVz",
-            "GBsgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
-            "EjkKCm1heF9yZWZ1bmQYHCABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
-            "TW9uZXRhcnlBbW91bnQSHgoWaXNfZ3VhcmFudGVlX2J5X21hc3RlchgdIAEo",
-            "CBImCh5pc19ndWFyYW50ZWVkX2J5X2dyb3VwX2Jvb2tpbmcYHiABKAhCFKoC",
-            "EUhPTE1TLlR5cGVzLkZvbGlvYgZwcm90bzM="));
+            "dGFyeV9hbW91bnQucHJvdG8aJ21vbmV5L2NhcmRzL2N1c3RvbWVyX3BheW1l",
+            "bnRfY2FyZC5wcm90byL6DgoVUmVzZXJ2YXRpb25Gb2xpb1N0YXRlEj8KEWVm",
+            "ZmVjdGl2ZV9jaGFyZ2VzGAEgAygLMiQuaG9sbXMudHlwZXMuZm9saW8uRm9s",
+            "aW9BdG9taWNDaGFyZ2USOAoMY2FyZF9yZWZ1bmRzGAIgAygLMiIuaG9sbXMu",
+            "dHlwZXMuZm9saW8uRm9saW9DYXJkUmVmdW5kEjQKCmNhcmRfc2FsZXMYAyAD",
+            "KAsyIC5ob2xtcy50eXBlcy5mb2xpby5Gb2xpb0NhcmRTYWxlEkUKE2NoZWNr",
+            "X2Nhc2hfcGF5bWVudHMYBCADKAsyKC5ob2xtcy50eXBlcy5mb2xpby5Gb2xp",
+            "b0NoZWNrQ2FzaFBheW1lbnQSQQoXY3VycmVudF90YXhfYXNzZXNzbWVudHMY",
+            "BSADKAsyIC5ob2xtcy50eXBlcy5mb2xpby5UYXhBc3Nlc3NtZW50EksKIWFu",
+            "dGljaXBhdGVkX2VuZGluZ190YXhfYXNzZXNzbWVudBgGIAMoCzIgLmhvbG1z",
+            "LnR5cGVzLmZvbGlvLlRheEFzc2Vzc21lbnQSPAoObmF0aXZlX2NoYXJnZXMY",
+            "ByADKAsyJC5ob2xtcy50eXBlcy5mb2xpby5Gb2xpb0F0b21pY0NoYXJnZRJN",
+            "Ch9leHBvcnRlZF90b19vdGhlcl9mb2xpb19jaGFyZ2VzGAggAygLMiQuaG9s",
+            "bXMudHlwZXMuZm9saW8uRm9saW9BdG9taWNDaGFyZ2USTwohaW1wb3J0ZWRf",
+            "ZnJvbV9vdGhlcl9mb2xpb19jaGFyZ2VzGAkgAygLMiQuaG9sbXMudHlwZXMu",
+            "Zm9saW8uRm9saW9BdG9taWNDaGFyZ2USPgoPY3VycmVudF9jaGFyZ2VzGAog",
+            "ASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50EkIK",
+            "E2FudGljaXBhdGVkX2NoYXJnZXMYCyABKAsyJS5ob2xtcy50eXBlcy5wcmlt",
+            "aXRpdmUuTW9uZXRhcnlBbW91bnQSPgoPcG9zdGVkX3BheW1lbnRzGAwgASgL",
+            "MiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50Ej0KDnBv",
+            "c3RlZF9yZWZ1bmRzGA0gASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1v",
+            "bmV0YXJ5QW1vdW50EkwKHXVudXNlZF9wYXltZW50X2F1dGhvcml6YXRpb25z",
+            "GBAgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50",
+            "Ek4KH3VudXNlZF9ndWFyYW50ZWVfYXV0aG9yaXphdGlvbnMYESABKAsyJS5o",
+            "b2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSRQoWY3VycmVu",
+            "dF9kdWVfZnJvbV9ndWVzdBgSIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2",
+            "ZS5Nb25ldGFyeUFtb3VudBJSCiNhbnRpY2lwYXRlZF9jaGVja291dF9kdWVf",
+            "ZnJvbV9ndWVzdBgTIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25l",
+            "dGFyeUFtb3VudBIhChlncmFjZWZ1bF9jbG9zdXJlX3Bvc3NpYmxlGBQgASgI",
+            "EjsKB3N1bW1hcnkYFSABKAsyKi5ob2xtcy50eXBlcy5mb2xpby5SZXNlcnZh",
+            "dGlvbkZvbGlvU3VtbWFyeRIsCiRtYXN0ZXJfZm9saW9fYWNjcnVlc19sb2Rn",
+            "aW5nX2NoYXJnZXMYFiABKAgSLwonbWFzdGVyX2ZvbGlvX2FjY3J1ZXNfaW5j",
+            "aWRlbnRhbF9jaGFyZ2VzGBcgASgIElYKJ3JlbWFpbmluZ190ZW5kZXJfcmVx",
+            "dWlyZWRfZm9yX2d1YXJhbnRlZRgYIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1p",
+            "dGl2ZS5Nb25ldGFyeUFtb3VudBJDChR0b3RhbF9tYXN0ZXJfY2hhcmdlcxgZ",
+            "IAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBJB",
+            "ChJ0b3RhbF9tYXN0ZXJfdGF4ZXMYGiABKAsyJS5ob2xtcy50eXBlcy5wcmlt",
+            "aXRpdmUuTW9uZXRhcnlBbW91bnQSQAoRdG90YWxfbWFzdGVyX2ZlZXMYGyAB",
+            "KAsyJS5ob2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSOQoK",
+            "bWF4X3JlZnVuZBgcIAEoCzIlLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25l",
+            "dGFyeUFtb3VudBIeChZpc19ndWFyYW50ZWVfYnlfbWFzdGVyGB0gASgIEiYK",
+            "HmlzX2d1YXJhbnRlZWRfYnlfZ3JvdXBfYm9va2luZxgeIAEoCBJDCg12ZXJp",
+            "ZmllZF9jYXJkGB8gAygLMiwuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ3Vz",
+            "dG9tZXJQYXltZW50Q2FyZBIWCg5ib29raW5nX251bWJlchggIAEoCUIUqgIR",
+            "SE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.ReservationFolioSummaryReflection.Descriptor, global::HOLMS.Types.Folio.TaxAssessmentReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.FolioAtomicChargeReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardRefundReflection.Descriptor, global::HOLMS.Types.Folio.FolioCardSaleReflection.Descriptor, global::HOLMS.Types.Folio.FolioCheckCashPaymentReflection.Descriptor, global::HOLMS.Types.Folio.ReservationFolioSummaryReflection.Descriptor, global::HOLMS.Types.Folio.TaxAssessmentReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Money.Cards.CustomerPaymentCardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentCharges", "AnticipatedCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges", "RemainingTenderRequiredForGuarantee", "TotalMasterCharges", "TotalMasterTaxes", "TotalMasterFees", "MaxRefund", "IsGuaranteeByMaster", "IsGuaranteedByGroupBooking" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.ReservationFolioState), global::HOLMS.Types.Folio.ReservationFolioState.Parser, new[]{ "EffectiveCharges", "CardRefunds", "CardSales", "CheckCashPayments", "CurrentTaxAssessments", "AnticipatedEndingTaxAssessment", "NativeCharges", "ExportedToOtherFolioCharges", "ImportedFromOtherFolioCharges", "CurrentCharges", "AnticipatedCharges", "PostedPayments", "PostedRefunds", "UnusedPaymentAuthorizations", "UnusedGuaranteeAuthorizations", "CurrentDueFromGuest", "AnticipatedCheckoutDueFromGuest", "GracefulClosurePossible", "Summary", "MasterFolioAccruesLodgingCharges", "MasterFolioAccruesIncidentalCharges", "RemainingTenderRequiredForGuarantee", "TotalMasterCharges", "TotalMasterTaxes", "TotalMasterFees", "MaxRefund", "IsGuaranteeByMaster", "IsGuaranteedByGroupBooking", "VerifiedCard", "BookingNumber" }, null, null, null)
           }));
     }
     #endregion
@@ -132,6 +135,8 @@ namespace HOLMS.Types.Folio {
       MaxRefund = other.maxRefund_ != null ? other.MaxRefund.Clone() : null;
       isGuaranteeByMaster_ = other.isGuaranteeByMaster_;
       isGuaranteedByGroupBooking_ = other.isGuaranteedByGroupBooking_;
+      verifiedCard_ = other.verifiedCard_.Clone();
+      bookingNumber_ = other.bookingNumber_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -438,6 +443,27 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "verified_card" field.</summary>
+    public const int VerifiedCardFieldNumber = 31;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Money.Cards.CustomerPaymentCard> _repeated_verifiedCard_codec
+        = pb::FieldCodec.ForMessage(250, global::HOLMS.Types.Money.Cards.CustomerPaymentCard.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Money.Cards.CustomerPaymentCard> verifiedCard_ = new pbc::RepeatedField<global::HOLMS.Types.Money.Cards.CustomerPaymentCard>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Money.Cards.CustomerPaymentCard> VerifiedCard {
+      get { return verifiedCard_; }
+    }
+
+    /// <summary>Field number for the "booking_number" field.</summary>
+    public const int BookingNumberFieldNumber = 32;
+    private string bookingNumber_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string BookingNumber {
+      get { return bookingNumber_; }
+      set {
+        bookingNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationFolioState);
@@ -479,6 +505,8 @@ namespace HOLMS.Types.Folio {
       if (!object.Equals(MaxRefund, other.MaxRefund)) return false;
       if (IsGuaranteeByMaster != other.IsGuaranteeByMaster) return false;
       if (IsGuaranteedByGroupBooking != other.IsGuaranteedByGroupBooking) return false;
+      if(!verifiedCard_.Equals(other.verifiedCard_)) return false;
+      if (BookingNumber != other.BookingNumber) return false;
       return true;
     }
 
@@ -513,6 +541,8 @@ namespace HOLMS.Types.Folio {
       if (maxRefund_ != null) hash ^= MaxRefund.GetHashCode();
       if (IsGuaranteeByMaster != false) hash ^= IsGuaranteeByMaster.GetHashCode();
       if (IsGuaranteedByGroupBooking != false) hash ^= IsGuaranteedByGroupBooking.GetHashCode();
+      hash ^= verifiedCard_.GetHashCode();
+      if (BookingNumber.Length != 0) hash ^= BookingNumber.GetHashCode();
       return hash;
     }
 
@@ -608,6 +638,11 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(240, 1);
         output.WriteBool(IsGuaranteedByGroupBooking);
       }
+      verifiedCard_.WriteTo(output, _repeated_verifiedCard_codec);
+      if (BookingNumber.Length != 0) {
+        output.WriteRawTag(130, 2);
+        output.WriteString(BookingNumber);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -678,6 +713,10 @@ namespace HOLMS.Types.Folio {
       }
       if (IsGuaranteedByGroupBooking != false) {
         size += 2 + 1;
+      }
+      size += verifiedCard_.CalculateSize(_repeated_verifiedCard_codec);
+      if (BookingNumber.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(BookingNumber);
       }
       return size;
     }
@@ -794,6 +833,10 @@ namespace HOLMS.Types.Folio {
       }
       if (other.IsGuaranteedByGroupBooking != false) {
         IsGuaranteedByGroupBooking = other.IsGuaranteedByGroupBooking;
+      }
+      verifiedCard_.Add(other.verifiedCard_);
+      if (other.BookingNumber.Length != 0) {
+        BookingNumber = other.BookingNumber;
       }
     }
 
@@ -957,6 +1000,14 @@ namespace HOLMS.Types.Folio {
           }
           case 240: {
             IsGuaranteedByGroupBooking = input.ReadBool();
+            break;
+          }
+          case 250: {
+            verifiedCard_.AddEntriesFrom(input, _repeated_verifiedCard_codec);
+            break;
+          }
+          case 258: {
+            BookingNumber = input.ReadString();
             break;
           }
         }

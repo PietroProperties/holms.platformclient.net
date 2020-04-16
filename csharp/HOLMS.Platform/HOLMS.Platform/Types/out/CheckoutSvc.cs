@@ -30,32 +30,42 @@ namespace HOLMS.Types.Booking.RPC {
             "bmcucnBjLkNoZWNrb3V0U3ZjQ2hlY2tPdXRSZXN1bHQijQEKMUNoZWNrb3V0",
             "U3ZjQW1lbmRGb3JFYXJseUltbWVkaWF0ZUNoZWNrb3V0UmVzcG9uc2USWAoG",
             "UmVzdWx0GAEgASgOMkguaG9sbXMudHlwZXMuYm9va2luZy5ycGMuQ2hlY2tv",
-            "dXRTdmNBbWVuZEZvckVhcmx5SW1tZWRpYXRlQ2hlY2tvdXRSZXN1bHQq0gEK",
-            "GUNoZWNrb3V0U3ZjQ2hlY2tPdXRSZXN1bHQSJQohQ0hFQ0tPVVRfU1ZDX0NI",
-            "RUNLX09VVF9TVUNDRVNTRlVMEAASKQolQ0hFQ0tPVVRfU1ZDX0NIRUNLX09V",
-            "VF9OT1RfQ0hFQ0tFRF9JThABEjcKM0NIRUNLT1VUX1NWQ19DSEVDS19PVVRf",
-            "SU5BUFBST1BSSUFURV9ERVBBUlRVUkVfREFURRACEioKJkNIRUNLT1VUX1NW",
-            "Q19DSEVDS19PVVRfVU5LTk9XTl9GQUlMVVJFEAMqrgEKL0NoZWNrb3V0U3Zj",
-            "QW1lbmRGb3JFYXJseUltbWVkaWF0ZUNoZWNrb3V0UmVzdWx0Ej4KOkNIRUNL",
-            "T1VUX1NWQ19BTUVORF9GT1JfRUFSTFlfSU1NRURJQVRFX0NIRUNLT1VUX1NV",
-            "Q0NFU1NGVUwQABI7CjdDSEVDS09VVF9TVkNfQU1FTkRfRk9SX0VBUkxZX0lN",
-            "TUVESUFURV9DSEVDS09VVF9GQUlMVVJFEAEyyAMKC0NoZWNrb3V0U3ZjEo8B",
-            "Ch1HZXRDaGVja291dENhbmRpZGF0ZVZpYWJpbGl0eRI0LmhvbG1zLnR5cGVz",
-            "LmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRvcho4Lmhv",
-            "bG1zLnR5cGVzLmJvb2tpbmcuY2hlY2tvdXQuQ2hlY2tvdXRDYW5kaWRhdGVW",
-            "aWFiaWxpdHkSgQEKE0NoZWNrT3V0UmVzZXJ2YXRpb24SNC5ob2xtcy50eXBl",
-            "cy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3IaNC5o",
-            "b2xtcy50eXBlcy5ib29raW5nLnJwYy5DaGVja291dFN2Y0NoZWNrT3V0UmVz",
-            "cG9uc2USogEKHkFtZW5kRm9yRWFybHlJbW1lZGlhdGVDaGVja291dBI0Lmhv",
-            "bG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGlj",
-            "YXRvchpKLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkNoZWNrb3V0U3ZjQW1l",
-            "bmRGb3JFYXJseUltbWVkaWF0ZUNoZWNrb3V0UmVzcG9uc2VCGqoCF0hPTE1T",
-            "LlR5cGVzLkJvb2tpbmcuUlBDYgZwcm90bzM="));
+            "dXRTdmNBbWVuZEZvckVhcmx5SW1tZWRpYXRlQ2hlY2tvdXRSZXN1bHQiWQoX",
+            "Q2hlY2tvdXRVbmRvU3ZjUmVzcG9uc2USPgoGUmVzdWx0GAEgASgOMi4uaG9s",
+            "bXMudHlwZXMuYm9va2luZy5ycGMuQ2hlY2tvdXRVbmRvU3ZjUmVzdWx0KtIB",
+            "ChlDaGVja291dFN2Y0NoZWNrT3V0UmVzdWx0EiUKIUNIRUNLT1VUX1NWQ19D",
+            "SEVDS19PVVRfU1VDQ0VTU0ZVTBAAEikKJUNIRUNLT1VUX1NWQ19DSEVDS19P",
+            "VVRfTk9UX0NIRUNLRURfSU4QARI3CjNDSEVDS09VVF9TVkNfQ0hFQ0tfT1VU",
+            "X0lOQVBQUk9QUklBVEVfREVQQVJUVVJFX0RBVEUQAhIqCiZDSEVDS09VVF9T",
+            "VkNfQ0hFQ0tfT1VUX1VOS05PV05fRkFJTFVSRRADKq4BCi9DaGVja291dFN2",
+            "Y0FtZW5kRm9yRWFybHlJbW1lZGlhdGVDaGVja291dFJlc3VsdBI+CjpDSEVD",
+            "S09VVF9TVkNfQU1FTkRfRk9SX0VBUkxZX0lNTUVESUFURV9DSEVDS09VVF9T",
+            "VUNDRVNTRlVMEAASOwo3Q0hFQ0tPVVRfU1ZDX0FNRU5EX0ZPUl9FQVJMWV9J",
+            "TU1FRElBVEVfQ0hFQ0tPVVRfRkFJTFVSRRABKs8BChVDaGVja291dFVuZG9T",
+            "dmNSZXN1bHQSIAocQ0hFQ0tPVVRfU1ZDX1VORE9fU1VDQ0VTU0ZVTBAAEiAK",
+            "HENIRUNLT1VUX1NWQ19OT1RfQ0hFQ0tFRF9PVVQQARIoCiRDSEVDS09VVF9T",
+            "VkNfSU5BUFBST1BSSUFURV9VTkRPX0RBVEUQAhIgChxDSEVDS09VVF9TVkNf",
+            "VU5LTk9XTl9GQUlMVVJFEAMSJgoiQ0hFQ0tPVVRfU1ZDX1JPT01fQUxSRUFE",
+            "WV9PQ0NVUElFRBAEMsAECgtDaGVja291dFN2YxKPAQodR2V0Q2hlY2tvdXRD",
+            "YW5kaWRhdGVWaWFiaWxpdHkSNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGlj",
+            "YXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3IaOC5ob2xtcy50eXBlcy5ib29r",
+            "aW5nLmNoZWNrb3V0LkNoZWNrb3V0Q2FuZGlkYXRlVmlhYmlsaXR5EoEBChND",
+            "aGVja091dFJlc2VydmF0aW9uEjQuaG9sbXMudHlwZXMuYm9va2luZy5pbmRp",
+            "Y2F0b3JzLlJlc2VydmF0aW9uSW5kaWNhdG9yGjQuaG9sbXMudHlwZXMuYm9v",
+            "a2luZy5ycGMuQ2hlY2tvdXRTdmNDaGVja091dFJlc3BvbnNlEqIBCh5BbWVu",
+            "ZEZvckVhcmx5SW1tZWRpYXRlQ2hlY2tvdXQSNC5ob2xtcy50eXBlcy5ib29r",
+            "aW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3IaSi5ob2xtcy50",
+            "eXBlcy5ib29raW5nLnJwYy5DaGVja291dFN2Y0FtZW5kRm9yRWFybHlJbW1l",
+            "ZGlhdGVDaGVja291dFJlc3BvbnNlEnYKDFVuZG9DaGVja291dBI0LmhvbG1z",
+            "LnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5SZXNlcnZhdGlvbkluZGljYXRv",
+            "chowLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkNoZWNrb3V0VW5kb1N2Y1Jl",
+            "c3BvbnNlQhqqAhdIT0xNUy5UeXBlcy5Cb29raW5nLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Checkout.CheckoutCandidateViabilityReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Booking.RPC.CheckoutSvcCheckOutResult), typeof(global::HOLMS.Types.Booking.RPC.CheckoutSvcAmendForEarlyImmediateCheckoutResult), }, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Booking.RPC.CheckoutSvcCheckOutResult), typeof(global::HOLMS.Types.Booking.RPC.CheckoutSvcAmendForEarlyImmediateCheckoutResult), typeof(global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResult), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.CheckoutSvcCheckOutResponse), global::HOLMS.Types.Booking.RPC.CheckoutSvcCheckOutResponse.Parser, new[]{ "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.CheckoutSvcAmendForEarlyImmediateCheckoutResponse), global::HOLMS.Types.Booking.RPC.CheckoutSvcAmendForEarlyImmediateCheckoutResponse.Parser, new[]{ "Result" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.CheckoutSvcAmendForEarlyImmediateCheckoutResponse), global::HOLMS.Types.Booking.RPC.CheckoutSvcAmendForEarlyImmediateCheckoutResponse.Parser, new[]{ "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResponse), global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResponse.Parser, new[]{ "Result" }, null, null, null)
           }));
     }
     #endregion
@@ -72,6 +82,14 @@ namespace HOLMS.Types.Booking.RPC {
   public enum CheckoutSvcAmendForEarlyImmediateCheckoutResult {
     [pbr::OriginalName("CHECKOUT_SVC_AMEND_FOR_EARLY_IMMEDIATE_CHECKOUT_SUCCESSFUL")] CheckoutSvcAmendForEarlyImmediateCheckoutSuccessful = 0,
     [pbr::OriginalName("CHECKOUT_SVC_AMEND_FOR_EARLY_IMMEDIATE_CHECKOUT_FAILURE")] CheckoutSvcAmendForEarlyImmediateCheckoutFailure = 1,
+  }
+
+  public enum CheckoutUndoSvcResult {
+    [pbr::OriginalName("CHECKOUT_SVC_UNDO_SUCCESSFUL")] CheckoutSvcUndoSuccessful = 0,
+    [pbr::OriginalName("CHECKOUT_SVC_NOT_CHECKED_OUT")] CheckoutSvcNotCheckedOut = 1,
+    [pbr::OriginalName("CHECKOUT_SVC_INAPPROPRIATE_UNDO_DATE")] CheckoutSvcInappropriateUndoDate = 2,
+    [pbr::OriginalName("CHECKOUT_SVC_UNKNOWN_FAILURE")] CheckoutSvcUnknownFailure = 3,
+    [pbr::OriginalName("CHECKOUT_SVC_ROOM_ALREADY_OCCUPIED")] CheckoutSvcRoomAlreadyOccupied = 4,
   }
 
   #endregion
@@ -303,6 +321,123 @@ namespace HOLMS.Types.Booking.RPC {
             break;
           case 8: {
             result_ = (global::HOLMS.Types.Booking.RPC.CheckoutSvcAmendForEarlyImmediateCheckoutResult) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CheckoutUndoSvcResponse : pb::IMessage<CheckoutUndoSvcResponse> {
+    private static readonly pb::MessageParser<CheckoutUndoSvcResponse> _parser = new pb::MessageParser<CheckoutUndoSvcResponse>(() => new CheckoutUndoSvcResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CheckoutUndoSvcResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Booking.RPC.CheckoutSvcReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CheckoutUndoSvcResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CheckoutUndoSvcResponse(CheckoutUndoSvcResponse other) : this() {
+      result_ = other.result_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CheckoutUndoSvcResponse Clone() {
+      return new CheckoutUndoSvcResponse(this);
+    }
+
+    /// <summary>Field number for the "Result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResult result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CheckoutUndoSvcResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CheckoutUndoSvcResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Result != 0) hash ^= Result.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CheckoutUndoSvcResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            result_ = (global::HOLMS.Types.Booking.RPC.CheckoutUndoSvcResult) input.ReadEnum();
             break;
           }
         }
