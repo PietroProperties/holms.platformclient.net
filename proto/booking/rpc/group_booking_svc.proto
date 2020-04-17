@@ -24,6 +24,7 @@ import "supply/event_booking_hold_indicator.proto";
 import "booking/groups/unassigned_booking_holds.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "tenancy_config/indicators/property_indicator.proto";
+import "booking/history/history_event.proto";
 
 message GroupBookingSvcAllBookings {
 	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
@@ -123,6 +124,12 @@ message GroupBookingRequest{
 	.holms.types.crm.groups.GroupIndicator group=1;
 	.holms.types.tenancy_config.indicators.PropertyIndicator property=2;
 }
+
+message GetBookingHistoryResponse {
+	repeated holms.types.booking.history.HistoryEvent booking_history_log = 1;
+	repeated holms.types.booking.history.HistoryEvent folio_history_log = 2;
+}
+
 service GroupBookingSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (GroupBookingSvcAllBookings);
@@ -207,4 +214,7 @@ service GroupBookingSvc {
 		
 	rpc GetReservationSummariesWithFolioGBTag (.holms.types.booking.indicators.GroupBookingIndicator)
 		returns (GroupBookingSvcGetReservationsWithTagResponse);
+
+	rpc GetBookingHistory (.holms.types.booking.indicators.GroupBookingIndicator)
+		returns (GetBookingHistoryResponse);
 }
