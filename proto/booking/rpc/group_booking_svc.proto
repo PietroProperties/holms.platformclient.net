@@ -33,6 +33,7 @@ message GroupBookingSvcAllBookings {
 message GroupBookingSvcPriceUpdateRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
 	repeated .holms.types.supply.PriceUpdateRequest prices = 2;
+	bool is_dirty=3;
 }
 
 message GroupBookingSvcQuantityUpdateRequest {
