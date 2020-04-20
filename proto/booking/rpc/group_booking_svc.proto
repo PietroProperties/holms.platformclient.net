@@ -123,11 +123,17 @@ message SyncHoldRequest{
 message GroupBookingRequest{
 	.holms.types.crm.groups.GroupIndicator group=1;
 	.holms.types.tenancy_config.indicators.PropertyIndicator property=2;
+	bool is_initial_save=3;
 }
 
 message GetBookingHistoryResponse {
 	repeated holms.types.booking.history.HistoryEvent booking_history_log = 1;
 	repeated holms.types.booking.history.HistoryEvent folio_history_log = 2;
+}
+
+message UpdateGroupBookingRequest{
+	.holms.types.booking.groups.GroupBooking booking = 1;
+	bool is_initial_save=2;
 }
 
 service GroupBookingSvc {
@@ -137,7 +143,7 @@ service GroupBookingSvc {
 	rpc Create (GroupBookingRequest)
 		returns (.holms.types.booking.groups.GroupBookingExt);
 
-	rpc Update (.holms.types.booking.groups.GroupBooking)
+	rpc Update (UpdateGroupBookingRequest)
 		returns (.holms.types.booking.groups.GroupBookingExt);
 
 	rpc UpdateGroupBookingPrices (GroupBookingSvcPriceUpdateRequest)
