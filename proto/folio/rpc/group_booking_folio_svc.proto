@@ -96,6 +96,18 @@ message GroupBookingFolioSvcPaymentCardRefundRequest {
         string description = 4;
 }
 
+message GetFolioBalanceRequest {
+	repeated holms.types.booking.indicators.GroupBookingIndicator group_bookings = 1;
+}
+
+message FolioBalancesResponse {
+	repeated FolioBalances balances=1;
+}
+message FolioBalances{
+	holms.types.booking.indicators.GroupBookingIndicator group_booking = 1;
+	holms.types.primitive.MonetaryAmount amount = 2;
+}
+
 service GroupBookingFolioSvc {
 	// Get info
 	rpc GetGroupBookingFolioState(.holms.types.booking.indicators.GroupBookingIndicator)
@@ -142,5 +154,8 @@ service GroupBookingFolioSvc {
 		returns (FolioSvcCancelPaymentResponse);
 	rpc SuggestAuthorizationAmount(.holms.types.booking.indicators.GroupBookingIndicator)
 		returns(holms.types.primitive.MonetaryAmount);
+
+	rpc GetFolioBalances(GetFolioBalanceRequest)
+		returns(FolioBalancesResponse);
 }
 

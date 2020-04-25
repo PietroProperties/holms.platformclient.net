@@ -13,4 +13,5 @@ message ReservationDefaults {
 	bool require_phone_number = 3;
 	.holms.types.primitive.CharacterCaseType character_case = 4;
 	int32 block_drop_days = 5;
+	int32 view_folio_highlight_days=6;
 }
