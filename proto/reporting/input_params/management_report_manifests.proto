@@ -5,6 +5,7 @@ option csharp_namespace = "HOLMS.Types.Reporting.ReportParams";
 
 import "primitive/pb_inclusive_opsdate_range.proto";
 import "primitive/pb_interval.proto";
+import "primitive/pb_local_date.proto";
 
 message ManagementCurrentTimeReportManifest {
 	bool unoccupied_rooms_report = 1;
@@ -19,6 +20,11 @@ message ManagementCurrentTimeReportManifest {
 	bool prop_stats_last_full_year = 10;
 	repeated .holms.types.primitive.PbInclusiveOpsdateRange custom_ranges = 11;
 	bool vacant_and_clean_rooms_report = 12;
+        bool group_aging_report = 13;
+       .holms.types.primitive.PbLocalDate selected_date = 14;
+        string group_aging_for = 15;
+        bool show_credit = 16;
+        bool include_checkout = 17;
 }
 
 message ManagementClockTimeRangeReportManifest {
