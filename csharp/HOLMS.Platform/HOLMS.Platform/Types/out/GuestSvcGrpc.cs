@@ -24,6 +24,8 @@ namespace HOLMS.Types.CRM.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator> __Marshaller_ReservationNoteTemplateIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicator.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse> __Marshaller_GuestSvcGetNoteTemplatesForGuestResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestSvcGetNoteTemplatesForGuestResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.MergeGuestRequest> __Marshaller_MergeGuestRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.MergeGuestRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage> __Marshaller_GuestSvcRequestPage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.GuestCountResponse> __Marshaller_GuestCountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestCountResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> __Method_All = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse>(
         grpc::MethodType.Unary,
@@ -109,6 +111,20 @@ namespace HOLMS.Types.CRM.RPC {
         __Marshaller_MergeGuestRequest,
         __Marshaller_Empty);
 
+    static readonly grpc::Method<global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> __Method_GetByPage = new grpc::Method<global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetByPage",
+        __Marshaller_GuestSvcRequestPage,
+        __Marshaller_GuestSvcManyGuestsResponse);
+
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestCountResponse> __Method_GetGuestCount = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestCountResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetGuestCount",
+        __Marshaller_Empty,
+        __Marshaller_GuestCountResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -174,6 +190,16 @@ namespace HOLMS.Types.CRM.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> MergeGuests(global::HOLMS.Types.CRM.RPC.MergeGuestRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> GetByPage(global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.GuestCountResponse> GetGuestCount(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -395,6 +421,38 @@ namespace HOLMS.Types.CRM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_MergeGuests, null, options, request);
       }
+      public virtual global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse GetByPage(global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetByPage(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse GetByPage(global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetByPage, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> GetByPageAsync(global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetByPageAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> GetByPageAsync(global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetByPage, null, options, request);
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.GuestCountResponse GetGuestCount(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetGuestCount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.CRM.RPC.GuestCountResponse GetGuestCount(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetGuestCount, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.GuestCountResponse> GetGuestCountAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetGuestCountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.GuestCountResponse> GetGuestCountAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetGuestCount, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GuestSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -418,7 +476,9 @@ namespace HOLMS.Types.CRM.RPC {
           .AddMethod(__Method_AmendNoteTemplate, serviceImpl.AmendNoteTemplate)
           .AddMethod(__Method_RemoveNoteTemplateFromGuest, serviceImpl.RemoveNoteTemplateFromGuest)
           .AddMethod(__Method_GetNoteTemplatesForGuest, serviceImpl.GetNoteTemplatesForGuest)
-          .AddMethod(__Method_MergeGuests, serviceImpl.MergeGuests).Build();
+          .AddMethod(__Method_MergeGuests, serviceImpl.MergeGuests)
+          .AddMethod(__Method_GetByPage, serviceImpl.GetByPage)
+          .AddMethod(__Method_GetGuestCount, serviceImpl.GetGuestCount).Build();
     }
 
   }
