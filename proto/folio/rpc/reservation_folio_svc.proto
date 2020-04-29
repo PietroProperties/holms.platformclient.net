@@ -115,6 +115,24 @@ message ReservationFolioSvcPaymentCardRefundRequest {
 	string description = 4;
 }
 
+message ReservationFolioSvcTransferOpenAuthorizationRequest {
+	.holms.types.booking.indicators.ReservationIndicator transfer_to_reservation = 1;
+	.holms.types.booking.indicators.ReservationIndicator transfer_from_reservation = 2;
+	.holms.types.money.cards.transactions.PaymentCardSaleIndicator payment_card_sale_id = 3;
+}
+
+enum ReservationFolioSvcTransferAuthorizationStatus {
+	AUTHORIZATION_TRANSFERRED = 0;
+	AUTHORIZATION_TRANSFERRED_REQUEST_INVALID = 1;
+	AUTHORIZATION_CANNOT_TRANSFERRED_TO_ANOTHER_PROPERTY = 2;
+	AUTHORIZATION_TRANSFERRED_SERVICE_FAILURE = 3;
+	AUTHORIZATION_TRANSFERRED_INCORRECT_SALE_ID =4;
+}
+
+message ReservationFolioSvcTransferOpenAuthorizationResponse {
+	ReservationFolioSvcTransferAuthorizationStatus transfer_status = 1;
+}
+
 service ReservationFolioSvc {
 	// Get info
 	rpc GetReservationFolioState(.holms.types.booking.indicators.ReservationIndicator)
@@ -168,5 +186,8 @@ service ReservationFolioSvc {
 		
 	rpc SoftDeleteCard(holms.types.money.cards.CustomerPaymentCardIndicator)
 		returns (FolioSvcCancelPaymentResponse);
+
+	rpc TransferOpenAuthorizations(ReservationFolioSvcTransferOpenAuthorizationRequest)
+		returns (ReservationFolioSvcTransferOpenAuthorizationResponse);
 }
 

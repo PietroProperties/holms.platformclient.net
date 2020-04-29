@@ -10,6 +10,7 @@ import "folio/folio_check_cash_payment.proto";
 import "folio/reservation_folio_summary.proto";
 import "folio/tax_assessment.proto";
 import "primitive/monetary_amount.proto";
+import "money/cards/customer_payment_card.proto";
 
 
 message ReservationFolioState {
@@ -47,5 +48,7 @@ message ReservationFolioState {
 	.holms.types.primitive.MonetaryAmount max_refund = 28;
 	bool is_guarantee_by_master = 29;
 	bool is_guaranteed_by_group_booking= 30;
+	repeated .holms.types.money.cards.CustomerPaymentCard verified_card = 31;
+	string booking_number = 32;
 }
 
