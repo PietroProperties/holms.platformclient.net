@@ -24,6 +24,7 @@ import "supply/event_booking_hold_indicator.proto";
 import "booking/groups/unassigned_booking_holds.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "tenancy_config/indicators/property_indicator.proto";
+import "booking/history/history_event.proto";
 
 message GroupBookingSvcAllBookings {
 	repeated .holms.types.booking.groups.GroupBookingExt bookings = 1;
@@ -32,6 +33,7 @@ message GroupBookingSvcAllBookings {
 message GroupBookingSvcPriceUpdateRequest {
 	.holms.types.booking.indicators.GroupBookingIndicator booking = 1;
 	repeated .holms.types.supply.PriceUpdateRequest prices = 2;
+	bool is_dirty=3;
 }
 
 message GroupBookingSvcQuantityUpdateRequest {
@@ -122,7 +124,19 @@ message SyncHoldRequest{
 message GroupBookingRequest{
 	.holms.types.crm.groups.GroupIndicator group=1;
 	.holms.types.tenancy_config.indicators.PropertyIndicator property=2;
+	bool is_initial_save=3;
 }
+
+message GetBookingHistoryResponse {
+	repeated holms.types.booking.history.HistoryEvent booking_history_log = 1;
+	repeated holms.types.booking.history.HistoryEvent folio_history_log = 2;
+}
+
+message UpdateGroupBookingRequest{
+	.holms.types.booking.groups.GroupBooking booking = 1;
+	bool is_initial_save=2;
+}
+
 service GroupBookingSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (GroupBookingSvcAllBookings);
@@ -130,7 +144,7 @@ service GroupBookingSvc {
 	rpc Create (GroupBookingRequest)
 		returns (.holms.types.booking.groups.GroupBookingExt);
 
-	rpc Update (.holms.types.booking.groups.GroupBooking)
+	rpc Update (UpdateGroupBookingRequest)
 		returns (.holms.types.booking.groups.GroupBookingExt);
 
 	rpc UpdateGroupBookingPrices (GroupBookingSvcPriceUpdateRequest)
@@ -207,4 +221,7 @@ service GroupBookingSvc {
 		
 	rpc GetReservationSummariesWithFolioGBTag (.holms.types.booking.indicators.GroupBookingIndicator)
 		returns (GroupBookingSvcGetReservationsWithTagResponse);
+
+	rpc GetBookingHistory (.holms.types.booking.indicators.GroupBookingIndicator)
+		returns (GetBookingHistoryResponse);
 }
