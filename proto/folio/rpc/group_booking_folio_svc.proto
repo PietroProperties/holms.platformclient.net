@@ -106,6 +106,8 @@ message FolioBalancesResponse {
 message FolioBalances{
 	holms.types.booking.indicators.GroupBookingIndicator group_booking = 1;
 	holms.types.primitive.MonetaryAmount amount = 2;
+	bool is_over_due = 3;
+	
 }
 
 service GroupBookingFolioSvc {
