@@ -6,6 +6,7 @@ option csharp_namespace = "HOLMS.Types.Reporting.ReportParams";
 import "primitive/pb_inclusive_opsdate_range.proto";
 import "primitive/pb_interval.proto";
 import "primitive/pb_local_date.proto";
+import "primitive/uuid.proto";
 
 message ManagementCurrentTimeReportManifest {
 	bool unoccupied_rooms_report = 1;
@@ -25,6 +26,7 @@ message ManagementCurrentTimeReportManifest {
         string group_aging_for = 15;
         bool show_credit = 16;
         bool include_checkout = 17;
+        holms.types.primitive.Uuid id = 18;
 }
 
 message ManagementClockTimeRangeReportManifest {

@@ -26,44 +26,45 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "bmlmZXN0cy5wcm90bxIiaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3Bh",
             "cmFtcxoqcHJpbWl0aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnBy",
             "b3RvGhtwcmltaXRpdmUvcGJfaW50ZXJ2YWwucHJvdG8aHXByaW1pdGl2ZS9w",
-            "Yl9sb2NhbF9kYXRlLnByb3RvIvkECiNNYW5hZ2VtZW50Q3VycmVudFRpbWVS",
-            "ZXBvcnRNYW5pZmVzdBIfChd1bm9jY3VwaWVkX3Jvb21zX3JlcG9ydBgBIAEo",
-            "CBIcChRmb2xpb19iYWxhbmNlX3JlcG9ydBgCIAEoCBIjChtsb2RnaW5nX3Zl",
-            "cmlmaWNhdGlvbl9yZXBvcnQYAyABKAgSGAoQY29tcF9zdGF5X3JlcG9ydBgE",
-            "IAEoCBIcChRwcm9wX3N0YXRzX3llc3RlcmRheRgFIAEoCBIeChZwcm9wX3N0",
-            "YXRzX3RyYWlsaW5nXzdkGAYgASgIEh8KF3Byb3Bfc3RhdHNfdHJhaWxpbmdf",
-            "MjhkGAcgASgIEiEKGXByb3Bfc3RhdHNfbGFzdF9mdWxsX3dlZWsYCCABKAgS",
-            "IgoacHJvcF9zdGF0c19sYXN0X2Z1bGxfbW9udGgYCSABKAgSIQoZcHJvcF9z",
-            "dGF0c19sYXN0X2Z1bGxfeWVhchgKIAEoCBJFCg1jdXN0b21fcmFuZ2VzGAsg",
-            "AygLMi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZlT3BzZGF0",
-            "ZVJhbmdlEiUKHXZhY2FudF9hbmRfY2xlYW5fcm9vbXNfcmVwb3J0GAwgASgI",
-            "EhoKEmdyb3VwX2FnaW5nX3JlcG9ydBgNIAEoCBI5Cg1zZWxlY3RlZF9kYXRl",
-            "GA4gASgLMiIuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiTG9jYWxEYXRlEhcK",
-            "D2dyb3VwX2FnaW5nX2ZvchgPIAEoCRITCgtzaG93X2NyZWRpdBgQIAEoCBIY",
-            "ChBpbmNsdWRlX2NoZWNrb3V0GBEgASgIIr0CCiZNYW5hZ2VtZW50Q2xvY2tU",
-            "aW1lUmFuZ2VSZXBvcnRNYW5pZmVzdBI6Cg9yZXBvcnRpbmdfcmFuZ2UYASAB",
-            "KAsyIS5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbnRlcnZhbBIdChVmb2xp",
-            "b19wYXltZW50c19yZXBvcnQYAiABKAgSHgoWY2FsbF9hY2NvdW50aW5nX3Jl",
-            "cG9ydBgDIAEoCBImCh5sZWRnZXJfYWN0aXZpdHlfc3VtbWFyeV9yZXBvcnQY",
-            "BCABKAgSJQodbGVkZ2VyX2pvdXJuYWxfZW50cmllc19yZXBvcnQYBSABKAgS",
-            "IQoZYm9va2luZ3NfYnlfcGVyaW9kX3JlcG9ydBgGIAEoCBImCh5mb2xpb19p",
-            "bW1lZGlhdGVfY2hhcmdlc19yZXBvcnQYByABKAgi4gMKJE1hbmFnZW1lbnRP",
-            "cHNkYXRlUmFuZ2VSZXBvcnRNYW5pZmVzdBJCCgpkYXRlX3JhbmdlGAEgASgL",
-            "Mi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiSW5jbHVzaXZlT3BzZGF0ZVJh",
-            "bmdlEiIKGnJvb21fdXNhZ2VfZGV0YWlsZWRfcmVwb3J0GAIgASgIEiEKGXJv",
-            "b21fdXNhZ2Vfc3VtbWFyeV9yZXBvcnQYAyABKAgSKQohcGxhbm5lZF9sb2Rn",
-            "aW5nX3JldmVudWVfYnlfc291cmNlGAQgASgIEiIKGnByb3BlcnR5X3N0YXRp",
-            "c3RpY3NfcmVwb3J0GAUgASgIEiIKGmZvbGlvX2dyb3NzX2NoYXJnZXNfcmVw",
-            "b3J0GAYgASgIEiEKGXRheF9leGVtcHRfc3VtbWFyeV9yZXBvcnQYByABKAgS",
-            "IAoYdGF4X2V4ZW1wdF9kZXRhaWxfcmVwb3J0GAggASgIEiIKGmZvbGlvX2dy",
-            "b3NzX3N1bW1hcnlfcmVwb3J0GAkgASgIEhYKDnN1bW1hcnlfcmVwb3J0GAog",
-            "ASgIEiEKGXVudXNlZF9ncm91cF9ob2xkc19yZXBvcnQYCyABKAgSGAoQY29t",
-            "cF9zdGF5X3JlcG9ydBgMIAEoCEIlqgIiSE9MTVMuVHlwZXMuUmVwb3J0aW5n",
-            "LlJlcG9ydFBhcmFtc2IGcHJvdG8z"));
+            "Yl9sb2NhbF9kYXRlLnByb3RvGhRwcmltaXRpdmUvdXVpZC5wcm90byKiBQoj",
+            "TWFuYWdlbWVudEN1cnJlbnRUaW1lUmVwb3J0TWFuaWZlc3QSHwoXdW5vY2N1",
+            "cGllZF9yb29tc19yZXBvcnQYASABKAgSHAoUZm9saW9fYmFsYW5jZV9yZXBv",
+            "cnQYAiABKAgSIwobbG9kZ2luZ192ZXJpZmljYXRpb25fcmVwb3J0GAMgASgI",
+            "EhgKEGNvbXBfc3RheV9yZXBvcnQYBCABKAgSHAoUcHJvcF9zdGF0c195ZXN0",
+            "ZXJkYXkYBSABKAgSHgoWcHJvcF9zdGF0c190cmFpbGluZ183ZBgGIAEoCBIf",
+            "Chdwcm9wX3N0YXRzX3RyYWlsaW5nXzI4ZBgHIAEoCBIhChlwcm9wX3N0YXRz",
+            "X2xhc3RfZnVsbF93ZWVrGAggASgIEiIKGnByb3Bfc3RhdHNfbGFzdF9mdWxs",
+            "X21vbnRoGAkgASgIEiEKGXByb3Bfc3RhdHNfbGFzdF9mdWxsX3llYXIYCiAB",
+            "KAgSRQoNY3VzdG9tX3JhbmdlcxgLIAMoCzIuLmhvbG1zLnR5cGVzLnByaW1p",
+            "dGl2ZS5QYkluY2x1c2l2ZU9wc2RhdGVSYW5nZRIlCh12YWNhbnRfYW5kX2Ns",
+            "ZWFuX3Jvb21zX3JlcG9ydBgMIAEoCBIaChJncm91cF9hZ2luZ19yZXBvcnQY",
+            "DSABKAgSOQoNc2VsZWN0ZWRfZGF0ZRgOIAEoCzIiLmhvbG1zLnR5cGVzLnBy",
+            "aW1pdGl2ZS5QYkxvY2FsRGF0ZRIXCg9ncm91cF9hZ2luZ19mb3IYDyABKAkS",
+            "EwoLc2hvd19jcmVkaXQYECABKAgSGAoQaW5jbHVkZV9jaGVja291dBgRIAEo",
+            "CBInCgJpZBgSIAEoCzIbLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5VdWlkIr0C",
+            "CiZNYW5hZ2VtZW50Q2xvY2tUaW1lUmFuZ2VSZXBvcnRNYW5pZmVzdBI6Cg9y",
+            "ZXBvcnRpbmdfcmFuZ2UYASABKAsyIS5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
+            "UGJJbnRlcnZhbBIdChVmb2xpb19wYXltZW50c19yZXBvcnQYAiABKAgSHgoW",
+            "Y2FsbF9hY2NvdW50aW5nX3JlcG9ydBgDIAEoCBImCh5sZWRnZXJfYWN0aXZp",
+            "dHlfc3VtbWFyeV9yZXBvcnQYBCABKAgSJQodbGVkZ2VyX2pvdXJuYWxfZW50",
+            "cmllc19yZXBvcnQYBSABKAgSIQoZYm9va2luZ3NfYnlfcGVyaW9kX3JlcG9y",
+            "dBgGIAEoCBImCh5mb2xpb19pbW1lZGlhdGVfY2hhcmdlc19yZXBvcnQYByAB",
+            "KAgi4gMKJE1hbmFnZW1lbnRPcHNkYXRlUmFuZ2VSZXBvcnRNYW5pZmVzdBJC",
+            "CgpkYXRlX3JhbmdlGAEgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBi",
+            "SW5jbHVzaXZlT3BzZGF0ZVJhbmdlEiIKGnJvb21fdXNhZ2VfZGV0YWlsZWRf",
+            "cmVwb3J0GAIgASgIEiEKGXJvb21fdXNhZ2Vfc3VtbWFyeV9yZXBvcnQYAyAB",
+            "KAgSKQohcGxhbm5lZF9sb2RnaW5nX3JldmVudWVfYnlfc291cmNlGAQgASgI",
+            "EiIKGnByb3BlcnR5X3N0YXRpc3RpY3NfcmVwb3J0GAUgASgIEiIKGmZvbGlv",
+            "X2dyb3NzX2NoYXJnZXNfcmVwb3J0GAYgASgIEiEKGXRheF9leGVtcHRfc3Vt",
+            "bWFyeV9yZXBvcnQYByABKAgSIAoYdGF4X2V4ZW1wdF9kZXRhaWxfcmVwb3J0",
+            "GAggASgIEiIKGmZvbGlvX2dyb3NzX3N1bW1hcnlfcmVwb3J0GAkgASgIEhYK",
+            "DnN1bW1hcnlfcmVwb3J0GAogASgIEiEKGXVudXNlZF9ncm91cF9ob2xkc19y",
+            "ZXBvcnQYCyABKAgSGAoQY29tcF9zdGF5X3JlcG9ydBgMIAEoCEIlqgIiSE9M",
+            "TVMuVHlwZXMuUmVwb3J0aW5nLlJlcG9ydFBhcmFtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbIntervalReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbIntervalReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport", "PropStatsYesterday", "PropStatsTrailing7D", "PropStatsTrailing28D", "PropStatsLastFullWeek", "PropStatsLastFullMonth", "PropStatsLastFullYear", "CustomRanges", "VacantAndCleanRoomsReport", "GroupAgingReport", "SelectedDate", "GroupAgingFor", "ShowCredit", "IncludeCheckout" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport", "PropStatsYesterday", "PropStatsTrailing7D", "PropStatsTrailing28D", "PropStatsLastFullWeek", "PropStatsLastFullMonth", "PropStatsLastFullYear", "CustomRanges", "VacantAndCleanRoomsReport", "GroupAgingReport", "SelectedDate", "GroupAgingFor", "ShowCredit", "IncludeCheckout", "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest.Parser, new[]{ "ReportingRange", "FolioPaymentsReport", "CallAccountingReport", "LedgerActivitySummaryReport", "LedgerJournalEntriesReport", "BookingsByPeriodReport", "FolioImmediateChargesReport" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport", "PlannedLodgingRevenueBySource", "PropertyStatisticsReport", "FolioGrossChargesReport", "TaxExemptSummaryReport", "TaxExemptDetailReport", "FolioGrossSummaryReport", "SummaryReport", "UnusedGroupHoldsReport", "CompStayReport" }, null, null, null)
           }));
@@ -113,6 +114,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       groupAgingFor_ = other.groupAgingFor_;
       showCredit_ = other.showCredit_;
       includeCheckout_ = other.includeCheckout_;
+      Id = other.id_ != null ? other.Id.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -306,6 +308,17 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 18;
+    private global::HOLMS.Types.Primitive.Uuid id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.Uuid Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ManagementCurrentTimeReportManifest);
@@ -336,6 +349,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (GroupAgingFor != other.GroupAgingFor) return false;
       if (ShowCredit != other.ShowCredit) return false;
       if (IncludeCheckout != other.IncludeCheckout) return false;
+      if (!object.Equals(Id, other.Id)) return false;
       return true;
     }
 
@@ -359,6 +373,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (GroupAgingFor.Length != 0) hash ^= GroupAgingFor.GetHashCode();
       if (ShowCredit != false) hash ^= ShowCredit.GetHashCode();
       if (IncludeCheckout != false) hash ^= IncludeCheckout.GetHashCode();
+      if (id_ != null) hash ^= Id.GetHashCode();
       return hash;
     }
 
@@ -434,6 +449,10 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(136, 1);
         output.WriteBool(IncludeCheckout);
       }
+      if (id_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(Id);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -487,6 +506,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
       if (IncludeCheckout != false) {
         size += 2 + 1;
+      }
+      if (id_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Id);
       }
       return size;
     }
@@ -547,6 +569,12 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
       if (other.IncludeCheckout != false) {
         IncludeCheckout = other.IncludeCheckout;
+      }
+      if (other.id_ != null) {
+        if (id_ == null) {
+          id_ = new global::HOLMS.Types.Primitive.Uuid();
+        }
+        Id.MergeFrom(other.Id);
       }
     }
 
@@ -627,6 +655,13 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 136: {
             IncludeCheckout = input.ReadBool();
+            break;
+          }
+          case 146: {
+            if (id_ == null) {
+              id_ = new global::HOLMS.Types.Primitive.Uuid();
+            }
+            input.ReadMessage(id_);
             break;
           }
         }
