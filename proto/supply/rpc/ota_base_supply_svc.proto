@@ -38,11 +38,18 @@ message ChannelStopSellUpdateRequest {
 }
 
 message ChannelAllocationUpdateResponse {
-
+	ChannelAllocationUpdateResult Result = 1;
 }
 
 message OtaSupplyDetailsResponse {
 	repeated ChannelAllocationPricing channel_allocation_pricing = 1;
+}
+
+enum ChannelAllocationUpdateResult {
+	UPDATE_FAILED = 0;
+	DB_UPDATE_CR_FAILED = 1;
+	CR_UPDATE_SYNC_STATUS_FAILED = 2;
+	UPDATE_SUCCESSFUL = 3;
 }
 
 service OtaBaseSupplySvc {

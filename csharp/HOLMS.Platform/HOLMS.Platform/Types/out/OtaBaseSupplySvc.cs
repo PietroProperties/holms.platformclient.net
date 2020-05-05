@@ -45,36 +45,50 @@ namespace HOLMS.Types.Supply.RPC {
             "bmVsX2FsbG9jYXRpb25fcHJpY2luZxgBIAMoCzIwLmhvbG1zLnR5cGVzLnN1",
             "cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25QcmljaW5nImIKHENoYW5uZWxT",
             "dG9wU2VsbFVwZGF0ZVJlcXVlc3QSQgoRY2hhbm5lbF9zdG9wX3NlbGwYASAD",
-            "KAsyJy5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkNoYW5uZWxTdG9wU2VsbCIh",
-            "Ch9DaGFubmVsQWxsb2NhdGlvblVwZGF0ZVJlc3BvbnNlInAKGE90YVN1cHBs",
-            "eURldGFpbHNSZXNwb25zZRJUChpjaGFubmVsX2FsbG9jYXRpb25fcHJpY2lu",
-            "ZxgBIAMoCzIwLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9j",
-            "YXRpb25QcmljaW5nMo8DChBPdGFCYXNlU3VwcGx5U3ZjEnAKC0FsbEZvckRh",
-            "dGVzEi8uaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5PdGFTdXBwbHlEZXRhaWxz",
-            "UmVxdWVzdBowLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuT3RhU3VwcGx5RGV0",
-            "YWlsc1Jlc3BvbnNlEocBChRJbnNlcnRPclVwZGF0ZVN1cHBseRI2LmhvbG1z",
-            "LnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXF1",
-            "ZXN0GjcuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlv",
-            "blVwZGF0ZVJlc3BvbnNlEn8KDlVwZGF0ZVN0b3BTZWxsEjQuaG9sbXMudHlw",
-            "ZXMuc3VwcGx5LnJwYy5DaGFubmVsU3RvcFNlbGxVcGRhdGVSZXF1ZXN0Gjcu",
-            "aG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblVwZGF0",
-            "ZVJlc3BvbnNlQiVaCnN1cHBseS9ycGOqAhZIT0xNUy5UeXBlcy5TdXBwbHku",
-            "UlBDYgZwcm90bzM="));
+            "KAsyJy5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkNoYW5uZWxTdG9wU2VsbCJo",
+            "Ch9DaGFubmVsQWxsb2NhdGlvblVwZGF0ZVJlc3BvbnNlEkUKBlJlc3VsdBgB",
+            "IAEoDjI1LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRp",
+            "b25VcGRhdGVSZXN1bHQicAoYT3RhU3VwcGx5RGV0YWlsc1Jlc3BvbnNlElQK",
+            "GmNoYW5uZWxfYWxsb2NhdGlvbl9wcmljaW5nGAEgAygLMjAuaG9sbXMudHlw",
+            "ZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblByaWNpbmcqhAEKHUNo",
+            "YW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVzdWx0EhEKDVVQREFURV9GQUlMRUQQ",
+            "ABIXChNEQl9VUERBVEVfQ1JfRkFJTEVEEAESIAocQ1JfVVBEQVRFX1NZTkNf",
+            "U1RBVFVTX0ZBSUxFRBACEhUKEVVQREFURV9TVUNDRVNTRlVMEAMyjwMKEE90",
+            "YUJhc2VTdXBwbHlTdmMScAoLQWxsRm9yRGF0ZXMSLy5ob2xtcy50eXBlcy5z",
+            "dXBwbHkucnBjLk90YVN1cHBseURldGFpbHNSZXF1ZXN0GjAuaG9sbXMudHlw",
+            "ZXMuc3VwcGx5LnJwYy5PdGFTdXBwbHlEZXRhaWxzUmVzcG9uc2UShwEKFElu",
+            "c2VydE9yVXBkYXRlU3VwcGx5EjYuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5D",
+            "aGFubmVsQWxsb2NhdGlvblVwZGF0ZVJlcXVlc3QaNy5ob2xtcy50eXBlcy5z",
+            "dXBwbHkucnBjLkNoYW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVzcG9uc2USfwoO",
+            "VXBkYXRlU3RvcFNlbGwSNC5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkNoYW5u",
+            "ZWxTdG9wU2VsbFVwZGF0ZVJlcXVlc3QaNy5ob2xtcy50eXBlcy5zdXBwbHku",
+            "cnBjLkNoYW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVzcG9uc2VCJVoKc3VwcGx5",
+            "L3JwY6oCFkhPTE1TLlR5cGVzLlN1cHBseS5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.OtaChannelProviderIndicatorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResult), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsRequest), global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsRequest.Parser, new[]{ "DateRange" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationPricing), global::HOLMS.Types.Supply.RPC.ChannelAllocationPricing.Parser, new[]{ "RoomType", "Date", "OfferedPrice", "Available", "OtaProvider", "IsStopSell" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelStopSell), global::HOLMS.Types.Supply.RPC.ChannelStopSell.Parser, new[]{ "RoomType", "Date", "IsStopSell" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateRequest), global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateRequest.Parser, new[]{ "ChannelAllocationPricing" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelStopSellUpdateRequest), global::HOLMS.Types.Supply.RPC.ChannelStopSellUpdateRequest.Parser, new[]{ "ChannelStopSell" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse), global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse), global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsResponse), global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsResponse.Parser, new[]{ "ChannelAllocationPricing" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum ChannelAllocationUpdateResult {
+    [pbr::OriginalName("UPDATE_FAILED")] UpdateFailed = 0,
+    [pbr::OriginalName("DB_UPDATE_CR_FAILED")] DbUpdateCrFailed = 1,
+    [pbr::OriginalName("CR_UPDATE_SYNC_STATUS_FAILED")] CrUpdateSyncStatusFailed = 2,
+    [pbr::OriginalName("UPDATE_SUCCESSFUL")] UpdateSuccessful = 3,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class OtaSupplyDetailsRequest : pb::IMessage<OtaSupplyDetailsRequest> {
     private static readonly pb::MessageParser<OtaSupplyDetailsRequest> _parser = new pb::MessageParser<OtaSupplyDetailsRequest>(() => new OtaSupplyDetailsRequest());
@@ -907,11 +921,23 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ChannelAllocationUpdateResponse(ChannelAllocationUpdateResponse other) : this() {
+      result_ = other.result_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ChannelAllocationUpdateResponse Clone() {
       return new ChannelAllocationUpdateResponse(this);
+    }
+
+    /// <summary>Field number for the "Result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResult result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -927,12 +953,14 @@ namespace HOLMS.Types.Supply.RPC {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Result != other.Result) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (Result != 0) hash ^= Result.GetHashCode();
       return hash;
     }
 
@@ -943,11 +971,18 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
       return size;
     }
 
@@ -955,6 +990,9 @@ namespace HOLMS.Types.Supply.RPC {
     public void MergeFrom(ChannelAllocationUpdateResponse other) {
       if (other == null) {
         return;
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
       }
     }
 
@@ -966,6 +1004,10 @@ namespace HOLMS.Types.Supply.RPC {
           default:
             input.SkipLastField();
             break;
+          case 8: {
+            result_ = (global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResult) input.ReadEnum();
+            break;
+          }
         }
       }
     }
