@@ -37,6 +37,15 @@ message MergeGuestRequest {
 	.holms.types.crm.guests.Guest merged_guest = 2;
 }
 
+message GuestSvcRequestPage {
+	int32 page_number = 1;
+	int32 page_size = 2;
+}
+
+message GuestCountResponse {
+	int32 guest_count = 1;	
+}
+
 service GuestSvc {
 	rpc All(google.protobuf.Empty) 
 		returns (GuestSvcManyGuestsResponse);
@@ -73,5 +82,11 @@ service GuestSvc {
 
 	rpc MergeGuests(MergeGuestRequest )
 		returns (google.protobuf.Empty);
+		
+	rpc GetByPage(GuestSvcRequestPage) 
+		returns (GuestSvcManyGuestsResponse);
+		
+	rpc GetGuestCount(google.protobuf.Empty) 
+		returns (GuestCountResponse);
 
 }

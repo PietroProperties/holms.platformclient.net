@@ -62,6 +62,11 @@ message GetRAPsForReservationsResponse {
 	repeated holms.types.booking.ReservationAssociatedParties raps = 1;
 }
 
+message GuestPersonalInformationUpdateRequest{
+	holms.types.booking.indicators.ReservationIndicator reservation = 1;
+	string guest_personal_information = 2;
+}
+
 service OpenLodgingReservationSvc {
 	rpc GetReservationHistory (holms.types.booking.indicators.ReservationIndicator)
 		returns (GetReservationHistoryResponse);
@@ -91,5 +96,8 @@ service OpenLodgingReservationSvc {
 		returns(GetRAPsForReservationsResponse);
 
 	rpc UpdateVehiclePlateInformation(VehiclePlateInformationUpdateRequest)
+		returns(google.protobuf.Empty);
+
+	rpc UpdateGovernmentIdInformation(GuestPersonalInformationUpdateRequest)
 		returns(google.protobuf.Empty);
 }
