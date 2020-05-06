@@ -15,6 +15,7 @@ message FrontDeskBatchReportingSvcRequest {
 	holms.types.reporting.input_params.FrontDeskOpsdateRangeReportManifest opsdate_range_reports_manifest = 3;
 	bool include_checked_in = 4;
 	bool include_checked_out = 5;
+	bool include_checked_in_daterange = 6;
 }
 
 message FrontDeskReportingSvcHousekeepingRequest {
