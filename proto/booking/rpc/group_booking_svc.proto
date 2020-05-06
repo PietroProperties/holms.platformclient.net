@@ -135,6 +135,7 @@ message GetBookingHistoryResponse {
 message UpdateGroupBookingRequest{
 	.holms.types.booking.groups.GroupBooking booking = 1;
 	bool is_initial_save=2;
+	repeated .holms.types.booking.groups.GroupBookingRoomTypeQuantity quantities = 3;
 }
 
 service GroupBookingSvc {
