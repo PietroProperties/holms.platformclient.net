@@ -27,7 +27,7 @@ namespace HOLMS.Types.Reporting.RPC {
             "X3BhcmFtcy9tYW5hZ2VtZW50X3JlcG9ydF9tYW5pZmVzdHMucHJvdG8aLHJl",
             "cG9ydGluZy9vdXRwdXRzL2h0bWxfcmVwb3J0X3Jlc3BvbnNlLnByb3RvGjJ0",
             "ZW5hbmN5X2NvbmZpZy9pbmRpY2F0b3JzL3Byb3BlcnR5X2luZGljYXRvci5w",
-            "cm90byK4AwonTWFuYWdtZW50UmVwb3J0aW5nU3ZjQmF0Y2hSZXBvcnRSZXF1",
+            "cm90byKUBAonTWFuYWdtZW50UmVwb3J0aW5nU3ZjQmF0Y2hSZXBvcnRSZXF1",
             "ZXN0EkwKCnByb3BlcnRpZXMYASADKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5",
             "X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEmYKFWN1cnJl",
             "bnRfdGltZV9tYW5pZmVzdBgCIAEoCzJHLmhvbG1zLnR5cGVzLnJlcG9ydGlu",
@@ -36,27 +36,29 @@ namespace HOLMS.Types.Reporting.RPC {
             "bG1zLnR5cGVzLnJlcG9ydGluZy5pbnB1dF9wYXJhbXMuTWFuYWdlbWVudENs",
             "b2NrVGltZVJhbmdlUmVwb3J0TWFuaWZlc3QSaAoWb3BzZGF0ZV9yYW5nZV9t",
             "YW5pZmVzdBgEIAEoCzJILmhvbG1zLnR5cGVzLnJlcG9ydGluZy5pbnB1dF9w",
-            "YXJhbXMuTWFuYWdlbWVudE9wc2RhdGVSYW5nZVJlcG9ydE1hbmlmZXN0IrEB",
-            "CjhNYW5hZ2VtZW50UmVwb3J0aW5nU3ZjSG91c2VrZWVwZXJNYW5hZ2VtZW50",
-            "UmVwb3J0UmVxdWVzdBIcChRvbmx5X2F0dGVudGlvbl9yb29tcxgBIAEoCBJX",
-            "Cg5ub3RlX3NlbGVjdGlvbhgCIAEoDjI/LmhvbG1zLnR5cGVzLnJlcG9ydGlu",
-            "Zy5ycGMuTWFuYWdlbWVudFJlcG9ydGluZ1N2Y05vdGVzU2VsZWN0aW9uKnsK",
-            "JE1hbmFnZW1lbnRSZXBvcnRpbmdTdmNOb3Rlc1NlbGVjdGlvbhINCglhbGxf",
-            "bm90ZXMQABIbChdvbmx5X2hvdXNla2VlcGluZ19ub3RlcxABEhkKFW9ubHlf",
-            "ZnJvbnRfZGVza19ub3RlcxACEgwKCG5vX25vdGVzEAMy3gIKFk1hbmFnZW1l",
-            "bnRSZXBvcnRpbmdTdmMSkQEKGEdldE1hbmFnZW1lbnRSZXBvcnRCYXRjaBJC",
-            "LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5ycGMuTWFuYWdtZW50UmVwb3J0aW5n",
-            "U3ZjQmF0Y2hSZXBvcnRSZXF1ZXN0GjEuaG9sbXMudHlwZXMucmVwb3J0aW5n",
-            "Lm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlEq8BCiVHZXRDdXJyZW50SG91",
-            "c2VrZWVwZXJNYW5hZ2VtZW50UmVwb3J0ElMuaG9sbXMudHlwZXMucmVwb3J0",
-            "aW5nLnJwYy5NYW5hZ2VtZW50UmVwb3J0aW5nU3ZjSG91c2VrZWVwZXJNYW5h",
-            "Z2VtZW50UmVwb3J0UmVxdWVzdBoxLmhvbG1zLnR5cGVzLnJlcG9ydGluZy5v",
-            "dXRwdXRzLkh0bWxSZXBvcnRSZXNwb25zZUIcqgIZSE9MTVMuVHlwZXMuUmVw",
-            "b3J0aW5nLlJQQ2IGcHJvdG8z"));
+            "YXJhbXMuTWFuYWdlbWVudE9wc2RhdGVSYW5nZVJlcG9ydE1hbmlmZXN0EloK",
+            "FHNpbmdsZV9kYXRlX21hbmlmZXN0GAUgASgLMjwuaG9sbXMudHlwZXMucmVw",
+            "b3J0aW5nLmlucHV0X3BhcmFtcy5TaW5nbGVEYXRlUmVwb3J0TWFuaWZlc3Qi",
+            "sQEKOE1hbmFnZW1lbnRSZXBvcnRpbmdTdmNIb3VzZWtlZXBlck1hbmFnZW1l",
+            "bnRSZXBvcnRSZXF1ZXN0EhwKFG9ubHlfYXR0ZW50aW9uX3Jvb21zGAEgASgI",
+            "ElcKDm5vdGVfc2VsZWN0aW9uGAIgASgOMj8uaG9sbXMudHlwZXMucmVwb3J0",
+            "aW5nLnJwYy5NYW5hZ2VtZW50UmVwb3J0aW5nU3ZjTm90ZXNTZWxlY3Rpb24q",
+            "ewokTWFuYWdlbWVudFJlcG9ydGluZ1N2Y05vdGVzU2VsZWN0aW9uEg0KCWFs",
+            "bF9ub3RlcxAAEhsKF29ubHlfaG91c2VrZWVwaW5nX25vdGVzEAESGQoVb25s",
+            "eV9mcm9udF9kZXNrX25vdGVzEAISDAoIbm9fbm90ZXMQAzLeAgoWTWFuYWdl",
+            "bWVudFJlcG9ydGluZ1N2YxKRAQoYR2V0TWFuYWdlbWVudFJlcG9ydEJhdGNo",
+            "EkIuaG9sbXMudHlwZXMucmVwb3J0aW5nLnJwYy5NYW5hZ21lbnRSZXBvcnRp",
+            "bmdTdmNCYXRjaFJlcG9ydFJlcXVlc3QaMS5ob2xtcy50eXBlcy5yZXBvcnRp",
+            "bmcub3V0cHV0cy5IdG1sUmVwb3J0UmVzcG9uc2USrwEKJUdldEN1cnJlbnRI",
+            "b3VzZWtlZXBlck1hbmFnZW1lbnRSZXBvcnQSUy5ob2xtcy50eXBlcy5yZXBv",
+            "cnRpbmcucnBjLk1hbmFnZW1lbnRSZXBvcnRpbmdTdmNIb3VzZWtlZXBlck1h",
+            "bmFnZW1lbnRSZXBvcnRSZXF1ZXN0GjEuaG9sbXMudHlwZXMucmVwb3J0aW5n",
+            "Lm91dHB1dHMuSHRtbFJlcG9ydFJlc3BvbnNlQhyqAhlIT0xNUy5UeXBlcy5S",
+            "ZXBvcnRpbmcuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Reporting.ReportParams.ManagementReportManifestsReflection.Descriptor, global::HOLMS.Types.Reporting.Outputs.HtmlReportResponseReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcNotesSelection), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest), global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest.Parser, new[]{ "Properties", "CurrentTimeManifest", "ClockTimeRangeManifest", "OpsdateRangeManifest" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest), global::HOLMS.Types.Reporting.RPC.ManagmentReportingSvcBatchReportRequest.Parser, new[]{ "Properties", "CurrentTimeManifest", "ClockTimeRangeManifest", "OpsdateRangeManifest", "SingleDateManifest" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest), global::HOLMS.Types.Reporting.RPC.ManagementReportingSvcHousekeeperManagementReportRequest.Parser, new[]{ "OnlyAttentionRooms", "NoteSelection" }, null, null, null)
           }));
     }
@@ -102,6 +104,7 @@ namespace HOLMS.Types.Reporting.RPC {
       CurrentTimeManifest = other.currentTimeManifest_ != null ? other.CurrentTimeManifest.Clone() : null;
       ClockTimeRangeManifest = other.clockTimeRangeManifest_ != null ? other.ClockTimeRangeManifest.Clone() : null;
       OpsdateRangeManifest = other.opsdateRangeManifest_ != null ? other.OpsdateRangeManifest.Clone() : null;
+      SingleDateManifest = other.singleDateManifest_ != null ? other.SingleDateManifest.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -152,6 +155,17 @@ namespace HOLMS.Types.Reporting.RPC {
       }
     }
 
+    /// <summary>Field number for the "single_date_manifest" field.</summary>
+    public const int SingleDateManifestFieldNumber = 5;
+    private global::HOLMS.Types.Reporting.ReportParams.SingleDateReportManifest singleDateManifest_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Reporting.ReportParams.SingleDateReportManifest SingleDateManifest {
+      get { return singleDateManifest_; }
+      set {
+        singleDateManifest_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ManagmentReportingSvcBatchReportRequest);
@@ -169,6 +183,7 @@ namespace HOLMS.Types.Reporting.RPC {
       if (!object.Equals(CurrentTimeManifest, other.CurrentTimeManifest)) return false;
       if (!object.Equals(ClockTimeRangeManifest, other.ClockTimeRangeManifest)) return false;
       if (!object.Equals(OpsdateRangeManifest, other.OpsdateRangeManifest)) return false;
+      if (!object.Equals(SingleDateManifest, other.SingleDateManifest)) return false;
       return true;
     }
 
@@ -179,6 +194,7 @@ namespace HOLMS.Types.Reporting.RPC {
       if (currentTimeManifest_ != null) hash ^= CurrentTimeManifest.GetHashCode();
       if (clockTimeRangeManifest_ != null) hash ^= ClockTimeRangeManifest.GetHashCode();
       if (opsdateRangeManifest_ != null) hash ^= OpsdateRangeManifest.GetHashCode();
+      if (singleDateManifest_ != null) hash ^= SingleDateManifest.GetHashCode();
       return hash;
     }
 
@@ -202,6 +218,10 @@ namespace HOLMS.Types.Reporting.RPC {
         output.WriteRawTag(34);
         output.WriteMessage(OpsdateRangeManifest);
       }
+      if (singleDateManifest_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(SingleDateManifest);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -216,6 +236,9 @@ namespace HOLMS.Types.Reporting.RPC {
       }
       if (opsdateRangeManifest_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(OpsdateRangeManifest);
+      }
+      if (singleDateManifest_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SingleDateManifest);
       }
       return size;
     }
@@ -243,6 +266,12 @@ namespace HOLMS.Types.Reporting.RPC {
           opsdateRangeManifest_ = new global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest();
         }
         OpsdateRangeManifest.MergeFrom(other.OpsdateRangeManifest);
+      }
+      if (other.singleDateManifest_ != null) {
+        if (singleDateManifest_ == null) {
+          singleDateManifest_ = new global::HOLMS.Types.Reporting.ReportParams.SingleDateReportManifest();
+        }
+        SingleDateManifest.MergeFrom(other.SingleDateManifest);
       }
     }
 
@@ -277,6 +306,13 @@ namespace HOLMS.Types.Reporting.RPC {
               opsdateRangeManifest_ = new global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest();
             }
             input.ReadMessage(opsdateRangeManifest_);
+            break;
+          }
+          case 42: {
+            if (singleDateManifest_ == null) {
+              singleDateManifest_ = new global::HOLMS.Types.Reporting.ReportParams.SingleDateReportManifest();
+            }
+            input.ReadMessage(singleDateManifest_);
             break;
           }
         }

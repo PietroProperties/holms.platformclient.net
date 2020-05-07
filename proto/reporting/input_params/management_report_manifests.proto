@@ -5,6 +5,7 @@ option csharp_namespace = "HOLMS.Types.Reporting.ReportParams";
 
 import "primitive/pb_inclusive_opsdate_range.proto";
 import "primitive/pb_interval.proto";
+import "primitive/pb_local_date.proto";
 
 message ManagementCurrentTimeReportManifest {
 	bool unoccupied_rooms_report = 1;
@@ -46,3 +47,7 @@ message ManagementOpsdateRangeReportManifest {
 	bool comp_stay_report = 12;
 }
 
+message SingleDateReportManifest{
+	.holms.types.primitive.PbLocalDate selected_date = 1;
+	bool advance_deposit_report=2;
+}
