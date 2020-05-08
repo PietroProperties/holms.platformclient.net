@@ -7,6 +7,11 @@ import "primitive/pb_inclusive_opsdate_range.proto";
 import "primitive/pb_interval.proto";
 import "primitive/pb_local_date.proto";
 
+enum AdvanceDepositSorting {
+	BY_GUEST_NAME=0;
+	BY_ARRIVAL_DATE=1;
+}
+
 message ManagementCurrentTimeReportManifest {
 	bool unoccupied_rooms_report = 1;
 	bool folio_balance_report = 2;
@@ -50,4 +55,5 @@ message ManagementOpsdateRangeReportManifest {
 message SingleDateReportManifest{
 	.holms.types.primitive.PbLocalDate selected_date = 1;
 	bool advance_deposit_report=2;
+	AdvanceDepositSorting advance_deposit_sorting=3;
 }
