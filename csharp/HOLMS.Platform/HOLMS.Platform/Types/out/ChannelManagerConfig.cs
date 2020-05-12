@@ -23,18 +23,19 @@ namespace HOLMS.Types.TenancyConfig {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cit0ZW5hbmN5X2NvbmZpZy9jaGFubmVsX21hbmFnZXJfY29uZmlnLnByb3Rv",
-            "Ehpob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZyKCAgoUQ2hhbm5lbE1hbmFn",
+            "Ehpob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZyKlAgoUQ2hhbm5lbE1hbmFn",
             "ZXJDb25maWcSFAoMcHJvdmlkZXJfaV9kGAEgASgJEhoKEnByb3ZpZGVyX3Vz",
             "ZXJfbmFtZRgCIAEoCRIZChFwcm92aWRlcl9wYXNzd29yZBgDIAEoCRIRCglo",
             "b3RlbF9pX2QYBCABKAkSKAogZGV2X2Rpc2FibGVfYm9va2luZ19jb25maXJt",
             "YXRpb24YBSABKAgSJwofZGlzYWJsZV9jaGFubmVsX3N5bmNocm9uaXphdGlv",
             "bhgGIAEoCBIcChRkaXNhYmxlX2NhbmNlbGxhdGlvbhgHIAEoCBIZChFkaXNh",
-            "YmxlX2FtZW5kbWVudBgIIAEoCEIrWg10ZW5hbmN5Y29uZmlnqgIZSE9MTVMu",
-            "VHlwZXMuVGVuYW5jeUNvbmZpZ2IGcHJvdG8z"));
+            "YmxlX2FtZW5kbWVudBgIIAEoCBIhChllbmFibGVfcHJpY2luZ19jb25uZWN0",
+            "aW9uGAkgASgIQitaDXRlbmFuY3ljb25maWeqAhlIT0xNUy5UeXBlcy5UZW5h",
+            "bmN5Q29uZmlnYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ChannelManagerConfig), global::HOLMS.Types.TenancyConfig.ChannelManagerConfig.Parser, new[]{ "ProviderID", "ProviderUserName", "ProviderPassword", "HotelID", "DevDisableBookingConfirmation", "DisableChannelSynchronization", "DisableCancellation", "DisableAmendment" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ChannelManagerConfig), global::HOLMS.Types.TenancyConfig.ChannelManagerConfig.Parser, new[]{ "ProviderID", "ProviderUserName", "ProviderPassword", "HotelID", "DevDisableBookingConfirmation", "DisableChannelSynchronization", "DisableCancellation", "DisableAmendment", "EnablePricingConnection" }, null, null, null)
           }));
     }
     #endregion
@@ -73,6 +74,7 @@ namespace HOLMS.Types.TenancyConfig {
       disableChannelSynchronization_ = other.disableChannelSynchronization_;
       disableCancellation_ = other.disableCancellation_;
       disableAmendment_ = other.disableAmendment_;
+      enablePricingConnection_ = other.enablePricingConnection_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -168,6 +170,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "enable_pricing_connection" field.</summary>
+    public const int EnablePricingConnectionFieldNumber = 9;
+    private bool enablePricingConnection_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool EnablePricingConnection {
+      get { return enablePricingConnection_; }
+      set {
+        enablePricingConnection_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ChannelManagerConfig);
@@ -189,6 +202,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (DisableChannelSynchronization != other.DisableChannelSynchronization) return false;
       if (DisableCancellation != other.DisableCancellation) return false;
       if (DisableAmendment != other.DisableAmendment) return false;
+      if (EnablePricingConnection != other.EnablePricingConnection) return false;
       return true;
     }
 
@@ -203,6 +217,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (DisableChannelSynchronization != false) hash ^= DisableChannelSynchronization.GetHashCode();
       if (DisableCancellation != false) hash ^= DisableCancellation.GetHashCode();
       if (DisableAmendment != false) hash ^= DisableAmendment.GetHashCode();
+      if (EnablePricingConnection != false) hash ^= EnablePricingConnection.GetHashCode();
       return hash;
     }
 
@@ -245,6 +260,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(64);
         output.WriteBool(DisableAmendment);
       }
+      if (EnablePricingConnection != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(EnablePricingConnection);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -272,6 +291,9 @@ namespace HOLMS.Types.TenancyConfig {
         size += 1 + 1;
       }
       if (DisableAmendment != false) {
+        size += 1 + 1;
+      }
+      if (EnablePricingConnection != false) {
         size += 1 + 1;
       }
       return size;
@@ -305,6 +327,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.DisableAmendment != false) {
         DisableAmendment = other.DisableAmendment;
+      }
+      if (other.EnablePricingConnection != false) {
+        EnablePricingConnection = other.EnablePricingConnection;
       }
     }
 
@@ -346,6 +371,10 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 64: {
             DisableAmendment = input.ReadBool();
+            break;
+          }
+          case 72: {
+            EnablePricingConnection = input.ReadBool();
             break;
           }
         }
