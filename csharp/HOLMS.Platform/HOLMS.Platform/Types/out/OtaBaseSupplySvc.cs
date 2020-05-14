@@ -28,47 +28,52 @@ namespace HOLMS.Types.Supply.RPC {
             "dG8aH3ByaW1pdGl2ZS9tb25ldGFyeV9hbW91bnQucHJvdG8aK3N1cHBseS9y",
             "b29tX3R5cGVzL3Jvb21fdHlwZV9pbmRpY2F0b3IucHJvdG8aNWJvb2tpbmcv",
             "Y2hhbm5lbHMvb3RhX2NoYW5uZWxfcHJvdmlkZXJfaW5kaWNhdG9yLnByb3Rv",
-            "Il0KF090YVN1cHBseURldGFpbHNSZXF1ZXN0EkIKCmRhdGVfcmFuZ2UYASAB",
-            "KAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRl",
-            "UmFuZ2UiyQIKGENoYW5uZWxBbGxvY2F0aW9uUHJpY2luZxJDCglyb29tX3R5",
-            "cGUYASABKAsyMC5ob2xtcy50eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29t",
-            "VHlwZUluZGljYXRvchIwCgRkYXRlGAIgASgLMiIuaG9sbXMudHlwZXMucHJp",
-            "bWl0aXZlLlBiTG9jYWxEYXRlEjwKDW9mZmVyZWRfcHJpY2UYAyABKAsyJS5o",
-            "b2xtcy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSEQoJYXZhaWxh",
-            "YmxlGAQgASgFEk8KDG90YV9wcm92aWRlchgFIAEoCzI5LmhvbG1zLnR5cGVz",
-            "LmJvb2tpbmcuY2hhbm5lbHMuT1RBQ2hhbm5lbFByb3ZpZGVySW5kaWNhdG9y",
-            "EhQKDGlzX1N0b3Bfc2VsbBgGIAEoCCKeAQoPQ2hhbm5lbFN0b3BTZWxsEkMK",
-            "CXJvb21fdHlwZRgBIAEoCzIwLmhvbG1zLnR5cGVzLnN1cHBseS5yb29tX3R5",
-            "cGVzLlJvb21UeXBlSW5kaWNhdG9yEjAKBGRhdGUYAiABKAsyIi5ob2xtcy50",
-            "eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGUSFAoMaXNfU3RvcF9zZWxsGAMg",
-            "ASgIInYKHkNoYW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVxdWVzdBJUChpjaGFu",
-            "bmVsX2FsbG9jYXRpb25fcHJpY2luZxgBIAMoCzIwLmhvbG1zLnR5cGVzLnN1",
-            "cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25QcmljaW5nImIKHENoYW5uZWxT",
-            "dG9wU2VsbFVwZGF0ZVJlcXVlc3QSQgoRY2hhbm5lbF9zdG9wX3NlbGwYASAD",
-            "KAsyJy5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkNoYW5uZWxTdG9wU2VsbCJo",
-            "Ch9DaGFubmVsQWxsb2NhdGlvblVwZGF0ZVJlc3BvbnNlEkUKBlJlc3VsdBgB",
-            "IAEoDjI1LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRp",
-            "b25VcGRhdGVSZXN1bHQicAoYT3RhU3VwcGx5RGV0YWlsc1Jlc3BvbnNlElQK",
+            "GiFwcmltaXRpdmUvZml4ZWRfcG9pbnRfcmF0aW8ucHJvdG8iXQoXT3RhU3Vw",
+            "cGx5RGV0YWlsc1JlcXVlc3QSQgoKZGF0ZV9yYW5nZRgBIAEoCzIuLmhvbG1z",
+            "LnR5cGVzLnByaW1pdGl2ZS5QYkluY2x1c2l2ZU9wc2RhdGVSYW5nZSKFAwoY",
+            "Q2hhbm5lbEFsbG9jYXRpb25QcmljaW5nEkMKCXJvb21fdHlwZRgBIAEoCzIw",
+            "LmhvbG1zLnR5cGVzLnN1cHBseS5yb29tX3R5cGVzLlJvb21UeXBlSW5kaWNh",
+            "dG9yEjAKBGRhdGUYAiABKAsyIi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJM",
+            "b2NhbERhdGUSPAoNb2ZmZXJlZF9wcmljZRgDIAEoCzIlLmhvbG1zLnR5cGVz",
+            "LnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIRCglhdmFpbGFibGUYBCABKAUS",
+            "TwoMb3RhX3Byb3ZpZGVyGAUgASgLMjkuaG9sbXMudHlwZXMuYm9va2luZy5j",
+            "aGFubmVscy5PVEFDaGFubmVsUHJvdmlkZXJJbmRpY2F0b3ISFAoMaXNfU3Rv",
+            "cF9zZWxsGAYgASgIEjoKCnByaWNlX3JhdGUYByABKAsyJi5ob2xtcy50eXBl",
+            "cy5wcmltaXRpdmUuRml4ZWRQb2ludFJhdGlvIp4BCg9DaGFubmVsU3RvcFNl",
+            "bGwSQwoJcm9vbV90eXBlGAEgASgLMjAuaG9sbXMudHlwZXMuc3VwcGx5LnJv",
+            "b21fdHlwZXMuUm9vbVR5cGVJbmRpY2F0b3ISMAoEZGF0ZRgCIAEoCzIiLmhv",
+            "bG1zLnR5cGVzLnByaW1pdGl2ZS5QYkxvY2FsRGF0ZRIUCgxpc19TdG9wX3Nl",
+            "bGwYAyABKAgidgoeQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXF1ZXN0ElQK",
             "GmNoYW5uZWxfYWxsb2NhdGlvbl9wcmljaW5nGAEgAygLMjAuaG9sbXMudHlw",
-            "ZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblByaWNpbmcqhAEKHUNo",
-            "YW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVzdWx0EhEKDVVQREFURV9GQUlMRUQQ",
-            "ABIXChNEQl9VUERBVEVfQ1JfRkFJTEVEEAESIAocQ1JfVVBEQVRFX1NZTkNf",
-            "U1RBVFVTX0ZBSUxFRBACEhUKEVVQREFURV9TVUNDRVNTRlVMEAMyjwMKEE90",
-            "YUJhc2VTdXBwbHlTdmMScAoLQWxsRm9yRGF0ZXMSLy5ob2xtcy50eXBlcy5z",
-            "dXBwbHkucnBjLk90YVN1cHBseURldGFpbHNSZXF1ZXN0GjAuaG9sbXMudHlw",
-            "ZXMuc3VwcGx5LnJwYy5PdGFTdXBwbHlEZXRhaWxzUmVzcG9uc2UShwEKFElu",
-            "c2VydE9yVXBkYXRlU3VwcGx5EjYuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5D",
-            "aGFubmVsQWxsb2NhdGlvblVwZGF0ZVJlcXVlc3QaNy5ob2xtcy50eXBlcy5z",
-            "dXBwbHkucnBjLkNoYW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVzcG9uc2USfwoO",
-            "VXBkYXRlU3RvcFNlbGwSNC5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkNoYW5u",
-            "ZWxTdG9wU2VsbFVwZGF0ZVJlcXVlc3QaNy5ob2xtcy50eXBlcy5zdXBwbHku",
-            "cnBjLkNoYW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVzcG9uc2VCJVoKc3VwcGx5",
-            "L3JwY6oCFkhPTE1TLlR5cGVzLlN1cHBseS5SUENiBnByb3RvMw=="));
+            "ZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblByaWNpbmciYgocQ2hh",
+            "bm5lbFN0b3BTZWxsVXBkYXRlUmVxdWVzdBJCChFjaGFubmVsX3N0b3Bfc2Vs",
+            "bBgBIAMoCzInLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbFN0b3BT",
+            "ZWxsImgKH0NoYW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVzcG9uc2USRQoGUmVz",
+            "dWx0GAEgASgOMjUuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxs",
+            "b2NhdGlvblVwZGF0ZVJlc3VsdCJwChhPdGFTdXBwbHlEZXRhaWxzUmVzcG9u",
+            "c2USVAoaY2hhbm5lbF9hbGxvY2F0aW9uX3ByaWNpbmcYASADKAsyMC5ob2xt",
+            "cy50eXBlcy5zdXBwbHkucnBjLkNoYW5uZWxBbGxvY2F0aW9uUHJpY2luZyqE",
+            "AQodQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXN1bHQSEQoNVVBEQVRFX0ZB",
+            "SUxFRBAAEhcKE0RCX1VQREFURV9DUl9GQUlMRUQQARIgChxDUl9VUERBVEVf",
+            "U1lOQ19TVEFUVVNfRkFJTEVEEAISFQoRVVBEQVRFX1NVQ0NFU1NGVUwQAzKP",
+            "BAoQT3RhQmFzZVN1cHBseVN2YxJwCgtBbGxGb3JEYXRlcxIvLmhvbG1zLnR5",
+            "cGVzLnN1cHBseS5ycGMuT3RhU3VwcGx5RGV0YWlsc1JlcXVlc3QaMC5ob2xt",
+            "cy50eXBlcy5zdXBwbHkucnBjLk90YVN1cHBseURldGFpbHNSZXNwb25zZRKH",
+            "AQoUSW5zZXJ0T3JVcGRhdGVTdXBwbHkSNi5ob2xtcy50eXBlcy5zdXBwbHku",
+            "cnBjLkNoYW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVxdWVzdBo3LmhvbG1zLnR5",
+            "cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXNwb25z",
+            "ZRJ/Cg5VcGRhdGVTdG9wU2VsbBI0LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMu",
+            "Q2hhbm5lbFN0b3BTZWxsVXBkYXRlUmVxdWVzdBo3LmhvbG1zLnR5cGVzLnN1",
+            "cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXNwb25zZRJ+CgtV",
+            "cGRhdGVQcmljZRI2LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFs",
+            "bG9jYXRpb25VcGRhdGVSZXF1ZXN0GjcuaG9sbXMudHlwZXMuc3VwcGx5LnJw",
+            "Yy5DaGFubmVsQWxsb2NhdGlvblVwZGF0ZVJlc3BvbnNlQiVaCnN1cHBseS9y",
+            "cGOqAhZIT0xNUy5UeXBlcy5TdXBwbHkuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.OtaChannelProviderIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.OtaChannelProviderIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.FixedPointRatioReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResult), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsRequest), global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsRequest.Parser, new[]{ "DateRange" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationPricing), global::HOLMS.Types.Supply.RPC.ChannelAllocationPricing.Parser, new[]{ "RoomType", "Date", "OfferedPrice", "Available", "OtaProvider", "IsStopSell" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationPricing), global::HOLMS.Types.Supply.RPC.ChannelAllocationPricing.Parser, new[]{ "RoomType", "Date", "OfferedPrice", "Available", "OtaProvider", "IsStopSell", "PriceRate" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelStopSell), global::HOLMS.Types.Supply.RPC.ChannelStopSell.Parser, new[]{ "RoomType", "Date", "IsStopSell" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateRequest), global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateRequest.Parser, new[]{ "ChannelAllocationPricing" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelStopSellUpdateRequest), global::HOLMS.Types.Supply.RPC.ChannelStopSellUpdateRequest.Parser, new[]{ "ChannelStopSell" }, null, null, null),
@@ -243,6 +248,7 @@ namespace HOLMS.Types.Supply.RPC {
       available_ = other.available_;
       OtaProvider = other.otaProvider_ != null ? other.OtaProvider.Clone() : null;
       isStopSell_ = other.isStopSell_;
+      PriceRate = other.priceRate_ != null ? other.PriceRate.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -316,6 +322,17 @@ namespace HOLMS.Types.Supply.RPC {
       }
     }
 
+    /// <summary>Field number for the "price_rate" field.</summary>
+    public const int PriceRateFieldNumber = 7;
+    private global::HOLMS.Types.Primitive.FixedPointRatio priceRate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.FixedPointRatio PriceRate {
+      get { return priceRate_; }
+      set {
+        priceRate_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ChannelAllocationPricing);
@@ -335,6 +352,7 @@ namespace HOLMS.Types.Supply.RPC {
       if (Available != other.Available) return false;
       if (!object.Equals(OtaProvider, other.OtaProvider)) return false;
       if (IsStopSell != other.IsStopSell) return false;
+      if (!object.Equals(PriceRate, other.PriceRate)) return false;
       return true;
     }
 
@@ -347,6 +365,7 @@ namespace HOLMS.Types.Supply.RPC {
       if (Available != 0) hash ^= Available.GetHashCode();
       if (otaProvider_ != null) hash ^= OtaProvider.GetHashCode();
       if (IsStopSell != false) hash ^= IsStopSell.GetHashCode();
+      if (priceRate_ != null) hash ^= PriceRate.GetHashCode();
       return hash;
     }
 
@@ -381,6 +400,10 @@ namespace HOLMS.Types.Supply.RPC {
         output.WriteRawTag(48);
         output.WriteBool(IsStopSell);
       }
+      if (priceRate_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(PriceRate);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -403,6 +426,9 @@ namespace HOLMS.Types.Supply.RPC {
       }
       if (IsStopSell != false) {
         size += 1 + 1;
+      }
+      if (priceRate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PriceRate);
       }
       return size;
     }
@@ -441,6 +467,12 @@ namespace HOLMS.Types.Supply.RPC {
       }
       if (other.IsStopSell != false) {
         IsStopSell = other.IsStopSell;
+      }
+      if (other.priceRate_ != null) {
+        if (priceRate_ == null) {
+          priceRate_ = new global::HOLMS.Types.Primitive.FixedPointRatio();
+        }
+        PriceRate.MergeFrom(other.PriceRate);
       }
     }
 
@@ -486,6 +518,13 @@ namespace HOLMS.Types.Supply.RPC {
           }
           case 48: {
             IsStopSell = input.ReadBool();
+            break;
+          }
+          case 58: {
+            if (priceRate_ == null) {
+              priceRate_ = new global::HOLMS.Types.Primitive.FixedPointRatio();
+            }
+            input.ReadMessage(priceRate_);
             break;
           }
         }
