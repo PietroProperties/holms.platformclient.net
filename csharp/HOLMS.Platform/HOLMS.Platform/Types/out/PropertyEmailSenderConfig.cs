@@ -24,17 +24,20 @@ namespace HOLMS.Types.TenancyConfig {
           string.Concat(
             "CjF0ZW5hbmN5X2NvbmZpZy9wcm9wZXJ0eV9lbWFpbF9zZW5kZXJfY29uZmln",
             "LnByb3RvEhpob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZxoydGVuYW5jeV9j",
-            "b25maWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8izAEK",
+            "b25maWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8i2gIK",
             "GVByb3BlcnR5RW1haWxTZW5kZXJDb25maWcSSgoIcHJvcGVydHkYASABKAsy",
             "OC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3Bl",
             "cnR5SW5kaWNhdG9yEiUKHXBvc3RtYXJrX2VtYWlsX3NlbmRlcl9hZGRyZXNz",
             "GAIgASgJEhgKEHBvc3RtYXJrX2FwaV9rZXkYAyABKAkSIgoaZGlzYWJsZV9h",
-            "bGxfY29ycmVzcG9uZGVuY2UYBCABKAhCHKoCGUhPTE1TLlR5cGVzLlRlbmFu",
-            "Y3lDb25maWdiBnByb3RvMw=="));
+            "bGxfY29ycmVzcG9uZGVuY2UYBCABKAgSIQoZc210cF9lbWFpbF9zZW5kZXJf",
+            "YWRkcmVzcxgFIAEoCRITCgtwb3J0X251bWJlchgGIAEoCRITCgtpc19wb3N0",
+            "bWFyaxgHIAEoCBIlCh1leGNoYW5nZV9lbWFpbF9zZW5kZXJfYWRkcmVzcxgI",
+            "IAEoCRIYChBleGNoYW5nZV9hcGlfa2V5GAkgASgJQhyqAhlIT0xNUy5UeXBl",
+            "cy5UZW5hbmN5Q29uZmlnYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig), global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig.Parser, new[]{ "Property", "PostmarkEmailSenderAddress", "PostmarkApiKey", "DisableAllCorrespondence" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig), global::HOLMS.Types.TenancyConfig.PropertyEmailSenderConfig.Parser, new[]{ "Property", "PostmarkEmailSenderAddress", "PostmarkApiKey", "DisableAllCorrespondence", "SmtpEmailSenderAddress", "PortNumber", "IsPostmark", "ExchangeEmailSenderAddress", "ExchangeApiKey" }, null, null, null)
           }));
     }
     #endregion
@@ -69,6 +72,11 @@ namespace HOLMS.Types.TenancyConfig {
       postmarkEmailSenderAddress_ = other.postmarkEmailSenderAddress_;
       postmarkApiKey_ = other.postmarkApiKey_;
       disableAllCorrespondence_ = other.disableAllCorrespondence_;
+      smtpEmailSenderAddress_ = other.smtpEmailSenderAddress_;
+      portNumber_ = other.portNumber_;
+      isPostmark_ = other.isPostmark_;
+      exchangeEmailSenderAddress_ = other.exchangeEmailSenderAddress_;
+      exchangeApiKey_ = other.exchangeApiKey_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -120,6 +128,61 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "smtp_email_sender_address" field.</summary>
+    public const int SmtpEmailSenderAddressFieldNumber = 5;
+    private string smtpEmailSenderAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SmtpEmailSenderAddress {
+      get { return smtpEmailSenderAddress_; }
+      set {
+        smtpEmailSenderAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "port_number" field.</summary>
+    public const int PortNumberFieldNumber = 6;
+    private string portNumber_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PortNumber {
+      get { return portNumber_; }
+      set {
+        portNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "is_postmark" field.</summary>
+    public const int IsPostmarkFieldNumber = 7;
+    private bool isPostmark_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsPostmark {
+      get { return isPostmark_; }
+      set {
+        isPostmark_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "exchange_email_sender_address" field.</summary>
+    public const int ExchangeEmailSenderAddressFieldNumber = 8;
+    private string exchangeEmailSenderAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ExchangeEmailSenderAddress {
+      get { return exchangeEmailSenderAddress_; }
+      set {
+        exchangeEmailSenderAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "exchange_api_key" field.</summary>
+    public const int ExchangeApiKeyFieldNumber = 9;
+    private string exchangeApiKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ExchangeApiKey {
+      get { return exchangeApiKey_; }
+      set {
+        exchangeApiKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PropertyEmailSenderConfig);
@@ -137,6 +200,11 @@ namespace HOLMS.Types.TenancyConfig {
       if (PostmarkEmailSenderAddress != other.PostmarkEmailSenderAddress) return false;
       if (PostmarkApiKey != other.PostmarkApiKey) return false;
       if (DisableAllCorrespondence != other.DisableAllCorrespondence) return false;
+      if (SmtpEmailSenderAddress != other.SmtpEmailSenderAddress) return false;
+      if (PortNumber != other.PortNumber) return false;
+      if (IsPostmark != other.IsPostmark) return false;
+      if (ExchangeEmailSenderAddress != other.ExchangeEmailSenderAddress) return false;
+      if (ExchangeApiKey != other.ExchangeApiKey) return false;
       return true;
     }
 
@@ -147,6 +215,11 @@ namespace HOLMS.Types.TenancyConfig {
       if (PostmarkEmailSenderAddress.Length != 0) hash ^= PostmarkEmailSenderAddress.GetHashCode();
       if (PostmarkApiKey.Length != 0) hash ^= PostmarkApiKey.GetHashCode();
       if (DisableAllCorrespondence != false) hash ^= DisableAllCorrespondence.GetHashCode();
+      if (SmtpEmailSenderAddress.Length != 0) hash ^= SmtpEmailSenderAddress.GetHashCode();
+      if (PortNumber.Length != 0) hash ^= PortNumber.GetHashCode();
+      if (IsPostmark != false) hash ^= IsPostmark.GetHashCode();
+      if (ExchangeEmailSenderAddress.Length != 0) hash ^= ExchangeEmailSenderAddress.GetHashCode();
+      if (ExchangeApiKey.Length != 0) hash ^= ExchangeApiKey.GetHashCode();
       return hash;
     }
 
@@ -173,6 +246,26 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(32);
         output.WriteBool(DisableAllCorrespondence);
       }
+      if (SmtpEmailSenderAddress.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(SmtpEmailSenderAddress);
+      }
+      if (PortNumber.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(PortNumber);
+      }
+      if (IsPostmark != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(IsPostmark);
+      }
+      if (ExchangeEmailSenderAddress.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(ExchangeEmailSenderAddress);
+      }
+      if (ExchangeApiKey.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(ExchangeApiKey);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -189,6 +282,21 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (DisableAllCorrespondence != false) {
         size += 1 + 1;
+      }
+      if (SmtpEmailSenderAddress.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SmtpEmailSenderAddress);
+      }
+      if (PortNumber.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PortNumber);
+      }
+      if (IsPostmark != false) {
+        size += 1 + 1;
+      }
+      if (ExchangeEmailSenderAddress.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExchangeEmailSenderAddress);
+      }
+      if (ExchangeApiKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExchangeApiKey);
       }
       return size;
     }
@@ -212,6 +320,21 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.DisableAllCorrespondence != false) {
         DisableAllCorrespondence = other.DisableAllCorrespondence;
+      }
+      if (other.SmtpEmailSenderAddress.Length != 0) {
+        SmtpEmailSenderAddress = other.SmtpEmailSenderAddress;
+      }
+      if (other.PortNumber.Length != 0) {
+        PortNumber = other.PortNumber;
+      }
+      if (other.IsPostmark != false) {
+        IsPostmark = other.IsPostmark;
+      }
+      if (other.ExchangeEmailSenderAddress.Length != 0) {
+        ExchangeEmailSenderAddress = other.ExchangeEmailSenderAddress;
+      }
+      if (other.ExchangeApiKey.Length != 0) {
+        ExchangeApiKey = other.ExchangeApiKey;
       }
     }
 
@@ -240,6 +363,26 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 32: {
             DisableAllCorrespondence = input.ReadBool();
+            break;
+          }
+          case 42: {
+            SmtpEmailSenderAddress = input.ReadString();
+            break;
+          }
+          case 50: {
+            PortNumber = input.ReadString();
+            break;
+          }
+          case 56: {
+            IsPostmark = input.ReadBool();
+            break;
+          }
+          case 66: {
+            ExchangeEmailSenderAddress = input.ReadString();
+            break;
+          }
+          case 74: {
+            ExchangeApiKey = input.ReadString();
             break;
           }
         }

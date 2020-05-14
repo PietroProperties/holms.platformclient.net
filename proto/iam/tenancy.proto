@@ -31,4 +31,9 @@ message Tenancy {
 	string default_admin_email = 14;
 	string postmark_email_sender_address = 15;
 	string postmark_api_key = 16;
+	string smtp_email_sender_address = 17;
+	string port_number = 18;
+	bool is_postmark = 19;
+	string exchange_email_sender_address = 20;
+	string exchange_api_key = 21;
 }
