@@ -1,0 +1,65 @@
+﻿syntax = "proto3";
+
+package holms.types.supply.rpc;
+option csharp_namespace = "HOLMS.Types.Supply.RPC";
+option go_package = "supply/rpc";
+
+import "primitive/pb_inclusive_opsdate_range.proto";
+import "primitive/pb_local_date.proto";
+import "primitive/monetary_amount.proto";
+import "supply/room_types/room_type_indicator.proto";
+import "booking/channels/ota_channel_provider_indicator.proto";
+
+message OtaSupplyDetailsRequest {
+	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
+}
+
+message ChannelAllocationPricing {
+	holms.types.supply.room_types.RoomTypeIndicator room_type = 1;
+	holms.types.primitive.PbLocalDate date = 2;
+	holms.types.primitive.MonetaryAmount offered_price = 3;
+	int32 available = 4;
+	holms.types.booking.channels.OTAChannelProviderIndicator ota_provider = 5;
+	bool is_Stop_sell = 6;
+}
+
+message ChannelStopSell {
+	holms.types.supply.room_types.RoomTypeIndicator room_type = 1;
+	holms.types.primitive.PbLocalDate date = 2;
+	bool is_Stop_sell = 3;
+}
+
+message ChannelAllocationUpdateRequest {
+	repeated ChannelAllocationPricing channel_allocation_pricing = 1;
+}
+
+message ChannelStopSellUpdateRequest {
+	repeated ChannelStopSell channel_stop_sell = 1;
+}
+
+message ChannelAllocationUpdateResponse {
+	ChannelAllocationUpdateResult Result = 1;
+}
+
+message OtaSupplyDetailsResponse {
+	repeated ChannelAllocationPricing channel_allocation_pricing = 1;
+}
+
+enum ChannelAllocationUpdateResult {
+	UPDATE_FAILED = 0;
+	DB_UPDATE_CR_FAILED = 1;
+	CR_UPDATE_SYNC_STATUS_FAILED = 2;
+	UPDATE_SUCCESSFUL = 3;
+}
+
+service OtaBaseSupplySvc {
+	rpc AllForDates (OtaSupplyDetailsRequest)
+		returns (OtaSupplyDetailsResponse);
+	
+	rpc InsertOrUpdateSupply (ChannelAllocationUpdateRequest)
+		returns (ChannelAllocationUpdateResponse);
+
+	rpc UpdateStopSell (ChannelStopSellUpdateRequest)
+		returns (ChannelAllocationUpdateResponse);
+
+}

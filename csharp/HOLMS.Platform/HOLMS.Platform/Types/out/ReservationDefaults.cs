@@ -25,18 +25,18 @@ namespace HOLMS.Types.TenancyConfig {
             "Cil0ZW5hbmN5X2NvbmZpZy9yZXNlcnZhdGlvbl9kZWZhdWx0cy5wcm90bxIa",
             "aG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcaI3ByaW1pdGl2ZS9jaGFyYWN0",
             "ZXJfY2FzZV90eXBlLnByb3RvGiRzdXBwbHkvcmF0ZV9zY2hlZHVsZV9pbmRp",
-            "Y2F0b3IucHJvdG8i+gEKE1Jlc2VydmF0aW9uRGVmYXVsdHMSSAoVZGVmYXVs",
+            "Y2F0b3IucHJvdG8inQIKE1Jlc2VydmF0aW9uRGVmYXVsdHMSSAoVZGVmYXVs",
             "dF9yYXRlX3NjaGVkdWxlGAEgASgLMikuaG9sbXMudHlwZXMuc3VwcGx5LlJh",
             "dGVTY2hlZHVsZUluZGljYXRvchIgChhzaG93X2NhbmNlbGxhdGlvbl9wb2xp",
             "Y3kYAiABKAgSHAoUcmVxdWlyZV9waG9uZV9udW1iZXIYAyABKAgSQAoOY2hh",
             "cmFjdGVyX2Nhc2UYBCABKA4yKC5ob2xtcy50eXBlcy5wcmltaXRpdmUuQ2hh",
-            "cmFjdGVyQ2FzZVR5cGUSFwoPYmxvY2tfZHJvcF9kYXlzGAUgASgFQitaDXRl",
-            "bmFuY3ljb25maWeqAhlIT0xNUy5UeXBlcy5UZW5hbmN5Q29uZmlnYgZwcm90",
-            "bzM="));
+            "cmFjdGVyQ2FzZVR5cGUSFwoPYmxvY2tfZHJvcF9kYXlzGAUgASgFEiEKGXZp",
+            "ZXdfZm9saW9faGlnaGxpZ2h0X2RheXMYBiABKAVCK1oNdGVuYW5jeWNvbmZp",
+            "Z6oCGUhPTE1TLlR5cGVzLlRlbmFuY3lDb25maWdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.CharacterCaseTypeReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ReservationDefaults), global::HOLMS.Types.TenancyConfig.ReservationDefaults.Parser, new[]{ "DefaultRateSchedule", "ShowCancellationPolicy", "RequirePhoneNumber", "CharacterCase", "BlockDropDays" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.ReservationDefaults), global::HOLMS.Types.TenancyConfig.ReservationDefaults.Parser, new[]{ "DefaultRateSchedule", "ShowCancellationPolicy", "RequirePhoneNumber", "CharacterCase", "BlockDropDays", "ViewFolioHighlightDays" }, null, null, null)
           }));
     }
     #endregion
@@ -72,6 +72,7 @@ namespace HOLMS.Types.TenancyConfig {
       requirePhoneNumber_ = other.requirePhoneNumber_;
       characterCase_ = other.characterCase_;
       blockDropDays_ = other.blockDropDays_;
+      viewFolioHighlightDays_ = other.viewFolioHighlightDays_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -134,6 +135,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "view_folio_highlight_days" field.</summary>
+    public const int ViewFolioHighlightDaysFieldNumber = 6;
+    private int viewFolioHighlightDays_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ViewFolioHighlightDays {
+      get { return viewFolioHighlightDays_; }
+      set {
+        viewFolioHighlightDays_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ReservationDefaults);
@@ -152,6 +164,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (RequirePhoneNumber != other.RequirePhoneNumber) return false;
       if (CharacterCase != other.CharacterCase) return false;
       if (BlockDropDays != other.BlockDropDays) return false;
+      if (ViewFolioHighlightDays != other.ViewFolioHighlightDays) return false;
       return true;
     }
 
@@ -163,6 +176,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (RequirePhoneNumber != false) hash ^= RequirePhoneNumber.GetHashCode();
       if (CharacterCase != 0) hash ^= CharacterCase.GetHashCode();
       if (BlockDropDays != 0) hash ^= BlockDropDays.GetHashCode();
+      if (ViewFolioHighlightDays != 0) hash ^= ViewFolioHighlightDays.GetHashCode();
       return hash;
     }
 
@@ -193,6 +207,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(40);
         output.WriteInt32(BlockDropDays);
       }
+      if (ViewFolioHighlightDays != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(ViewFolioHighlightDays);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -212,6 +230,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (BlockDropDays != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BlockDropDays);
+      }
+      if (ViewFolioHighlightDays != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ViewFolioHighlightDays);
       }
       return size;
     }
@@ -238,6 +259,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.BlockDropDays != 0) {
         BlockDropDays = other.BlockDropDays;
+      }
+      if (other.ViewFolioHighlightDays != 0) {
+        ViewFolioHighlightDays = other.ViewFolioHighlightDays;
       }
     }
 
@@ -270,6 +294,10 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 40: {
             BlockDropDays = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            ViewFolioHighlightDays = input.ReadInt32();
             break;
           }
         }

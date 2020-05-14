@@ -40,6 +40,8 @@ namespace HOLMS.Types.Folio.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostMiscChargeCorrectionRequest> __Marshaller_GroupBookingFolioSvcPostMiscChargeCorrectionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GroupBookingFolioSvcPostMiscChargeCorrectionRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator> __Marshaller_PaymentCardRefundIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicator.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Primitive.MonetaryAmount> __Marshaller_MonetaryAmount = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.MonetaryAmount.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.GetFolioBalanceRequest> __Marshaller_GetFolioBalanceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.GetFolioBalanceRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Folio.RPC.FolioBalancesResponse> __Marshaller_FolioBalancesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Folio.RPC.FolioBalancesResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Folio.GroupBookingFolioState> __Method_GetGroupBookingFolioState = new grpc::Method<global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator, global::HOLMS.Types.Folio.GroupBookingFolioState>(
         grpc::MethodType.Unary,
@@ -167,6 +169,13 @@ namespace HOLMS.Types.Folio.RPC {
         __Marshaller_GroupBookingIndicator,
         __Marshaller_MonetaryAmount);
 
+    static readonly grpc::Method<global::HOLMS.Types.Folio.RPC.GetFolioBalanceRequest, global::HOLMS.Types.Folio.RPC.FolioBalancesResponse> __Method_GetFolioBalances = new grpc::Method<global::HOLMS.Types.Folio.RPC.GetFolioBalanceRequest, global::HOLMS.Types.Folio.RPC.FolioBalancesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetFolioBalances",
+        __Marshaller_GetFolioBalanceRequest,
+        __Marshaller_FolioBalancesResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -292,6 +301,11 @@ namespace HOLMS.Types.Folio.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Primitive.MonetaryAmount> SuggestAuthorizationAmount(global::HOLMS.Types.Booking.Indicators.GroupBookingIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.RPC.FolioBalancesResponse> GetFolioBalances(global::HOLMS.Types.Folio.RPC.GetFolioBalanceRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -749,6 +763,22 @@ namespace HOLMS.Types.Folio.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SuggestAuthorizationAmount, null, options, request);
       }
+      public virtual global::HOLMS.Types.Folio.RPC.FolioBalancesResponse GetFolioBalances(global::HOLMS.Types.Folio.RPC.GetFolioBalanceRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetFolioBalances(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Folio.RPC.FolioBalancesResponse GetFolioBalances(global::HOLMS.Types.Folio.RPC.GetFolioBalanceRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetFolioBalances, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioBalancesResponse> GetFolioBalancesAsync(global::HOLMS.Types.Folio.RPC.GetFolioBalanceRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetFolioBalancesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.RPC.FolioBalancesResponse> GetFolioBalancesAsync(global::HOLMS.Types.Folio.RPC.GetFolioBalanceRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetFolioBalances, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GroupBookingFolioSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -778,7 +808,8 @@ namespace HOLMS.Types.Folio.RPC {
           .AddMethod(__Method_PostIncidentalChargeCorrection, serviceImpl.PostIncidentalChargeCorrection)
           .AddMethod(__Method_PostMiscChargeCorrection, serviceImpl.PostMiscChargeCorrection)
           .AddMethod(__Method_CancelCardRefund, serviceImpl.CancelCardRefund)
-          .AddMethod(__Method_SuggestAuthorizationAmount, serviceImpl.SuggestAuthorizationAmount).Build();
+          .AddMethod(__Method_SuggestAuthorizationAmount, serviceImpl.SuggestAuthorizationAmount)
+          .AddMethod(__Method_GetFolioBalances, serviceImpl.GetFolioBalances).Build();
     }
 
   }
