@@ -50,7 +50,5 @@ message FrontDeskCurrentDateReportManifest {
 message FrontDeskOpsdateRangeReportManifest {
 	holms.types.primitive.PbInclusiveOpsdateRange date_range = 1;
 	bool general_availability_report = 2;
-	bool cancelled_reservations_report = 3;
-	ArrivalReportSorting arrival_report_daterange_sorting = 4;
-	bool arrivals_report_daterange = 5;
+	bool cancelled_reservations_report = 3;	
 }
