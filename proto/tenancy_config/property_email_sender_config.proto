@@ -11,4 +11,9 @@ message PropertyEmailSenderConfig {
 	string postmark_email_sender_address = 2;
 	string postmark_api_key = 3;
 	bool disable_all_correspondence = 4;
+	string smtp_email_sender_address = 5;
+	string port_number = 6;
+	bool is_postmark = 7;
+	string exchange_email_sender_address = 8;
+	string exchange_api_key = 9;
 }
