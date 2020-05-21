@@ -44,39 +44,42 @@ namespace HOLMS.Types.CRM.RPC {
             "Y1JlcXVlc3RQYWdlEhMKC3BhZ2VfbnVtYmVyGAEgASgFEhEKCXBhZ2Vfc2l6",
             "ZRgCIAEoBSIpChJHdWVzdENvdW50UmVzcG9uc2USEwoLZ3Vlc3RfY291bnQY",
             "ASABKAUiRgoRR3Vlc3RMaXRlUmVzcG9uc2USMQoGZ3Vlc3RzGAEgAygLMiEu",
-            "aG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdExpdGUy4AoKCEd1ZXN0U3Zj",
-            "Ek4KA0FsbBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRovLmhvbG1zLnR5cGVz",
-            "LmNybS5ycGMuR3Vlc3RTdmNNYW55R3Vlc3RzUmVzcG9uc2USUAoHR2V0QnlJ",
-            "ZBImLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJbmRpY2F0b3IaHS5o",
-            "b2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0Em4KDkdldFNldmVyYWxCeUlk",
-            "EisuaG9sbXMudHlwZXMuY3JtLnJwYy5HdWVzdFN2Y0dldE1hbnlSZXF1ZXN0",
-            "Gi8uaG9sbXMudHlwZXMuY3JtLnJwYy5HdWVzdFN2Y01hbnlHdWVzdHNSZXNw",
-            "b25zZRJ3ChJTZWFyY2hCeU5hbWVQcmVmaXgSMC5ob2xtcy50eXBlcy5jcm0u",
-            "cnBjLkd1ZXN0U3ZjUHJlZml4U2VhcmNoUmVxdWVzdBovLmhvbG1zLnR5cGVz",
-            "LmNybS5ycGMuR3Vlc3RTdmNNYW55R3Vlc3RzUmVzcG9uc2USegoUU2VhcmNo",
-            "QnlFbWFpbEFkZHJlc3MSMS5ob2xtcy50eXBlcy5jcm0ucnBjLkd1ZXN0U3Zj",
-            "U2VhcmNoQnlFbWFpbFJlcXVlc3QaLy5ob2xtcy50eXBlcy5jcm0ucnBjLkd1",
-            "ZXN0U3ZjTWFueUd1ZXN0c1Jlc3BvbnNlEkYKBkNyZWF0ZRIdLmhvbG1zLnR5",
-            "cGVzLmNybS5ndWVzdHMuR3Vlc3QaHS5ob2xtcy50eXBlcy5jcm0uZ3Vlc3Rz",
-            "Lkd1ZXN0EkYKBlVwZGF0ZRIdLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vl",
-            "c3QaHS5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0EmEKFkFkZE5vdGVU",
-            "ZW1wbGF0ZVRvR3Vlc3QSLy5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLlJlc2Vy",
-            "dmF0aW9uTm90ZVRlbXBsYXRlGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5ElwK",
-            "EUFtZW5kTm90ZVRlbXBsYXRlEi8uaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5S",
-            "ZXNlcnZhdGlvbk5vdGVUZW1wbGF0ZRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
-            "eRJvChtSZW1vdmVOb3RlVGVtcGxhdGVGcm9tR3Vlc3QSOC5ob2xtcy50eXBl",
-            "cy5jcm0uZ3Vlc3RzLlJlc2VydmF0aW9uTm90ZVRlbXBsYXRlSW5kaWNhdG9y",
-            "GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EoEBChhHZXROb3RlVGVtcGxhdGVz",
-            "Rm9yR3Vlc3QSJi5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLkd1ZXN0SW5kaWNh",
-            "dG9yGj0uaG9sbXMudHlwZXMuY3JtLnJwYy5HdWVzdFN2Y0dldE5vdGVUZW1w",
-            "bGF0ZXNGb3JHdWVzdFJlc3BvbnNlEk0KC01lcmdlR3Vlc3RzEiYuaG9sbXMu",
-            "dHlwZXMuY3JtLnJwYy5NZXJnZUd1ZXN0UmVxdWVzdBoWLmdvb2dsZS5wcm90",
-            "b2J1Zi5FbXB0eRJmCglHZXRCeVBhZ2USKC5ob2xtcy50eXBlcy5jcm0ucnBj",
-            "Lkd1ZXN0U3ZjUmVxdWVzdFBhZ2UaLy5ob2xtcy50eXBlcy5jcm0ucnBjLkd1",
-            "ZXN0U3ZjTWFueUd1ZXN0c1Jlc3BvbnNlElAKDUdldEd1ZXN0Q291bnQSFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkaJy5ob2xtcy50eXBlcy5jcm0ucnBjLkd1",
-            "ZXN0Q291bnRSZXNwb25zZUIfWgdjcm0vcnBjqgITSE9MTVMuVHlwZXMuQ1JN",
-            "LlJQQ2IGcHJvdG8z"));
+            "aG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdExpdGUiKgoRR3Vlc3RGZXRj",
+            "aFJlcXVlc3QSFQoNZ3Vlc3RfcmVxdWVzdBgBIAEoBTLACwoIR3Vlc3RTdmMS",
+            "TgoDQWxsEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gi8uaG9sbXMudHlwZXMu",
+            "Y3JtLnJwYy5HdWVzdFN2Y01hbnlHdWVzdHNSZXNwb25zZRJQCgdHZXRCeUlk",
+            "EiYuaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdEluZGljYXRvchodLmhv",
+            "bG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3QSbgoOR2V0U2V2ZXJhbEJ5SWQS",
+            "Ky5ob2xtcy50eXBlcy5jcm0ucnBjLkd1ZXN0U3ZjR2V0TWFueVJlcXVlc3Qa",
+            "Ly5ob2xtcy50eXBlcy5jcm0ucnBjLkd1ZXN0U3ZjTWFueUd1ZXN0c1Jlc3Bv",
+            "bnNlEncKElNlYXJjaEJ5TmFtZVByZWZpeBIwLmhvbG1zLnR5cGVzLmNybS5y",
+            "cGMuR3Vlc3RTdmNQcmVmaXhTZWFyY2hSZXF1ZXN0Gi8uaG9sbXMudHlwZXMu",
+            "Y3JtLnJwYy5HdWVzdFN2Y01hbnlHdWVzdHNSZXNwb25zZRJ6ChRTZWFyY2hC",
+            "eUVtYWlsQWRkcmVzcxIxLmhvbG1zLnR5cGVzLmNybS5ycGMuR3Vlc3RTdmNT",
+            "ZWFyY2hCeUVtYWlsUmVxdWVzdBovLmhvbG1zLnR5cGVzLmNybS5ycGMuR3Vl",
+            "c3RTdmNNYW55R3Vlc3RzUmVzcG9uc2USRgoGQ3JlYXRlEh0uaG9sbXMudHlw",
+            "ZXMuY3JtLmd1ZXN0cy5HdWVzdBodLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMu",
+            "R3Vlc3QSRgoGVXBkYXRlEh0uaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVz",
+            "dBodLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3QSYQoWQWRkTm90ZVRl",
+            "bXBsYXRlVG9HdWVzdBIvLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuUmVzZXJ2",
+            "YXRpb25Ob3RlVGVtcGxhdGUaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSXAoR",
+            "QW1lbmROb3RlVGVtcGxhdGUSLy5ob2xtcy50eXBlcy5jcm0uZ3Vlc3RzLlJl",
+            "c2VydmF0aW9uTm90ZVRlbXBsYXRlGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5",
+            "Em8KG1JlbW92ZU5vdGVUZW1wbGF0ZUZyb21HdWVzdBI4LmhvbG1zLnR5cGVz",
+            "LmNybS5ndWVzdHMuUmVzZXJ2YXRpb25Ob3RlVGVtcGxhdGVJbmRpY2F0b3Ia",
+            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkSgQEKGEdldE5vdGVUZW1wbGF0ZXNG",
+            "b3JHdWVzdBImLmhvbG1zLnR5cGVzLmNybS5ndWVzdHMuR3Vlc3RJbmRpY2F0",
+            "b3IaPS5ob2xtcy50eXBlcy5jcm0ucnBjLkd1ZXN0U3ZjR2V0Tm90ZVRlbXBs",
+            "YXRlc0Zvckd1ZXN0UmVzcG9uc2USTQoLTWVyZ2VHdWVzdHMSJi5ob2xtcy50",
+            "eXBlcy5jcm0ucnBjLk1lcmdlR3Vlc3RSZXF1ZXN0GhYuZ29vZ2xlLnByb3Rv",
+            "YnVmLkVtcHR5EmYKCUdldEJ5UGFnZRIoLmhvbG1zLnR5cGVzLmNybS5ycGMu",
+            "R3Vlc3RTdmNSZXF1ZXN0UGFnZRovLmhvbG1zLnR5cGVzLmNybS5ycGMuR3Vl",
+            "c3RTdmNNYW55R3Vlc3RzUmVzcG9uc2USUAoNR2V0R3Vlc3RDb3VudBIWLmdv",
+            "b2dsZS5wcm90b2J1Zi5FbXB0eRonLmhvbG1zLnR5cGVzLmNybS5ycGMuR3Vl",
+            "c3RDb3VudFJlc3BvbnNlEl4KDEFsbEd1ZXN0TGl0ZRImLmhvbG1zLnR5cGVz",
+            "LmNybS5ycGMuR3Vlc3RGZXRjaFJlcXVlc3QaJi5ob2xtcy50eXBlcy5jcm0u",
+            "cnBjLkd1ZXN0TGl0ZVJlc3BvbnNlQh9aB2NybS9ycGOqAhNIT0xNUy5UeXBl",
+            "cy5DUk0uUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestReflection.Descriptor, global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateReflection.Descriptor, global::HOLMS.Types.CRM.Guests.ReservationNoteTemplateIndicatorReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestLiteReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -88,7 +91,8 @@ namespace HOLMS.Types.CRM.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.MergeGuestRequest), global::HOLMS.Types.CRM.RPC.MergeGuestRequest.Parser, new[]{ "OldGuests", "MergedGuest" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage), global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage.Parser, new[]{ "PageNumber", "PageSize" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestCountResponse), global::HOLMS.Types.CRM.RPC.GuestCountResponse.Parser, new[]{ "GuestCount" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestLiteResponse), global::HOLMS.Types.CRM.RPC.GuestLiteResponse.Parser, new[]{ "Guests" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestLiteResponse), global::HOLMS.Types.CRM.RPC.GuestLiteResponse.Parser, new[]{ "Guests" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.RPC.GuestFetchRequest), global::HOLMS.Types.CRM.RPC.GuestFetchRequest.Parser, new[]{ "GuestRequest" }, null, null, null)
           }));
     }
     #endregion
@@ -1218,6 +1222,123 @@ namespace HOLMS.Types.CRM.RPC {
             break;
           case 10: {
             guests_.AddEntriesFrom(input, _repeated_guests_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GuestFetchRequest : pb::IMessage<GuestFetchRequest> {
+    private static readonly pb::MessageParser<GuestFetchRequest> _parser = new pb::MessageParser<GuestFetchRequest>(() => new GuestFetchRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GuestFetchRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.CRM.RPC.GuestSvcReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GuestFetchRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GuestFetchRequest(GuestFetchRequest other) : this() {
+      guestRequest_ = other.guestRequest_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GuestFetchRequest Clone() {
+      return new GuestFetchRequest(this);
+    }
+
+    /// <summary>Field number for the "guest_request" field.</summary>
+    public const int GuestRequestFieldNumber = 1;
+    private int guestRequest_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int GuestRequest {
+      get { return guestRequest_; }
+      set {
+        guestRequest_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GuestFetchRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GuestFetchRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GuestRequest != other.GuestRequest) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GuestRequest != 0) hash ^= GuestRequest.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GuestRequest != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(GuestRequest);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GuestRequest != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GuestRequest);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GuestFetchRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GuestRequest != 0) {
+        GuestRequest = other.GuestRequest;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            GuestRequest = input.ReadInt32();
             break;
           }
         }

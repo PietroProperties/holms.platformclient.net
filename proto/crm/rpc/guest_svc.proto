@@ -52,6 +52,10 @@ message GuestLiteResponse {
 	
 }
 
+message GuestFetchRequest {
+	int32 guest_request = 1;
+}
+
 
 service GuestSvc {
 	rpc All(google.protobuf.Empty) 
@@ -94,7 +98,11 @@ service GuestSvc {
 		returns (GuestSvcManyGuestsResponse);
 		
 	rpc GetGuestCount(google.protobuf.Empty) 
-		returns (GuestCountResponse);
+		returns (GuestCountResponse);		
+	
+
+    rpc AllGuestLite(GuestFetchRequest) 
+		returns (GuestLiteResponse);
 		
 	
 
