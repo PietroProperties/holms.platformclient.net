@@ -9,6 +9,7 @@ import "crm/guests/guest_indicator.proto";
 import "crm/guests/guest.proto";
 import "crm/guests/reservation_note_template.proto";
 import "crm/guests/reservation_note_template_indicator.proto";
+import "crm/guests/guest_lite.proto";
 
 message GuestSvcManyGuestsResponse {
 	repeated .holms.types.crm.guests.Guest guests = 1;
@@ -44,6 +45,14 @@ message GuestSvcRequestPage {
 
 message GuestCountResponse {
 	int32 guest_count = 1;	
+}
+
+message GuestLiteResponse {
+	repeated .holms.types.crm.guests.GuestLite guests = 1;
+	
+}
+message GuestFetchRequest {
+	int32 guest_request = 1;
 }
 
 service GuestSvc {
@@ -88,5 +97,8 @@ service GuestSvc {
 		
 	rpc GetGuestCount(google.protobuf.Empty) 
 		returns (GuestCountResponse);
+		
+	rpc AllGuestLite(GuestFetchRequest) 
+		returns (GuestLiteResponse);
 
 }
