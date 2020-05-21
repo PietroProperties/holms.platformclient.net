@@ -51,9 +51,7 @@ message GuestLiteResponse {
 	repeated .holms.types.crm.guests.GuestLite guests = 1;
 	
 }
-message GuestFetchRequest {
-	int32 guest_request = 1;
-}
+
 
 service GuestSvc {
 	rpc All(google.protobuf.Empty) 
@@ -98,7 +96,6 @@ service GuestSvc {
 	rpc GetGuestCount(google.protobuf.Empty) 
 		returns (GuestCountResponse);
 		
-	rpc AllGuestLite(GuestFetchRequest) 
-		returns (GuestLiteResponse);
+	
 
 }

@@ -29,6 +29,5 @@ message GuestLite {
 	string email_address = 20;
 	bool is_blacklisted = 21;
 	string company_name = 22;
-	string given_name_2 = 23;	
-	
+	string given_name_2 = 23;
 }
