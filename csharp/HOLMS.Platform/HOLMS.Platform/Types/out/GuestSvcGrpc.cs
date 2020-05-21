@@ -26,6 +26,7 @@ namespace HOLMS.Types.CRM.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.MergeGuestRequest> __Marshaller_MergeGuestRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.MergeGuestRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage> __Marshaller_GuestSvcRequestPage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestSvcRequestPage.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.GuestCountResponse> __Marshaller_GuestCountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestCountResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.GuestFetchRequest> __Marshaller_GuestFetchRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestFetchRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.CRM.RPC.GuestLiteResponse> __Marshaller_GuestLiteResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.CRM.RPC.GuestLiteResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse> __Method_All = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestSvcManyGuestsResponse>(
@@ -126,11 +127,11 @@ namespace HOLMS.Types.CRM.RPC {
         __Marshaller_Empty,
         __Marshaller_GuestCountResponse);
 
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestLiteResponse> __Method_AllGuestLite = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.CRM.RPC.GuestLiteResponse>(
+    static readonly grpc::Method<global::HOLMS.Types.CRM.RPC.GuestFetchRequest, global::HOLMS.Types.CRM.RPC.GuestLiteResponse> __Method_AllGuestLite = new grpc::Method<global::HOLMS.Types.CRM.RPC.GuestFetchRequest, global::HOLMS.Types.CRM.RPC.GuestLiteResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "AllGuestLite",
-        __Marshaller_Empty,
+        __Marshaller_GuestFetchRequest,
         __Marshaller_GuestLiteResponse);
 
     /// <summary>Service descriptor</summary>
@@ -212,7 +213,7 @@ namespace HOLMS.Types.CRM.RPC {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.GuestLiteResponse> AllGuestLite(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.CRM.RPC.GuestLiteResponse> AllGuestLite(global::HOLMS.Types.CRM.RPC.GuestFetchRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -466,19 +467,19 @@ namespace HOLMS.Types.CRM.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetGuestCount, null, options, request);
       }
-      public virtual global::HOLMS.Types.CRM.RPC.GuestLiteResponse AllGuestLite(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.CRM.RPC.GuestLiteResponse AllGuestLite(global::HOLMS.Types.CRM.RPC.GuestFetchRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AllGuestLite(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::HOLMS.Types.CRM.RPC.GuestLiteResponse AllGuestLite(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.CRM.RPC.GuestLiteResponse AllGuestLite(global::HOLMS.Types.CRM.RPC.GuestFetchRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AllGuestLite, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.GuestLiteResponse> AllGuestLiteAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.GuestLiteResponse> AllGuestLiteAsync(global::HOLMS.Types.CRM.RPC.GuestFetchRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return AllGuestLiteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.GuestLiteResponse> AllGuestLiteAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.CRM.RPC.GuestLiteResponse> AllGuestLiteAsync(global::HOLMS.Types.CRM.RPC.GuestFetchRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AllGuestLite, null, options, request);
       }

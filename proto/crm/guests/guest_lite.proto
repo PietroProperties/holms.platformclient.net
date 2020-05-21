@@ -5,7 +5,6 @@ option csharp_namespace = "HOLMS.Types.CRM.Guests";
 option go_package = "crm/guests";
 
 import "crm/guests/guest_indicator.proto";
-import "primitive/contact_information.proto";
 
 message GuestLite {
 	holms.types.crm.guests.GuestIndicator entity_id = 1;
@@ -31,5 +30,5 @@ message GuestLite {
 	bool is_blacklisted = 21;
 	string company_name = 22;
 	string given_name_2 = 23;	
-	holms.types.primitive.ContactInformation contact_info = 24;
+	
 }

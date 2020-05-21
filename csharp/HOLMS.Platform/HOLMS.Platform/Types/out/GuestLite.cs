@@ -23,27 +23,25 @@ namespace HOLMS.Types.CRM.Guests {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chtjcm0vZ3Vlc3RzL2d1ZXN0X2xpdGUucHJvdG8SFmhvbG1zLnR5cGVzLmNy",
-            "bS5ndWVzdHMaIGNybS9ndWVzdHMvZ3Vlc3RfaW5kaWNhdG9yLnByb3RvGiNw",
-            "cmltaXRpdmUvY29udGFjdF9pbmZvcm1hdGlvbi5wcm90byL2BAoJR3Vlc3RM",
-            "aXRlEjkKCWVudGl0eV9pZBgBIAEoCzImLmhvbG1zLnR5cGVzLmNybS5ndWVz",
-            "dHMuR3Vlc3RJbmRpY2F0b3ISEgoKZmlyc3RfbmFtZRgCIAEoCRIRCglsYXN0",
-            "X25hbWUYAyABKAkSFQoNaG9tZV9hZGRyZXNzMRgEIAEoCRIVCg1ob21lX2Fk",
-            "ZHJlc3MyGAUgASgJEhEKCWhvbWVfY2l0eRgGIAEoCRISCgpob21lX3N0YXRl",
-            "GAcgASgJEhAKCGhvbWVfemlwGAggASgJEhMKC2hvbWVfbmF0aW9uGAkgASgJ",
-            "EhkKEWhvbWVfcGhvbmVfbnVtYmVyGAogASgJEhcKD29mZmljZV9hZGRyZXNz",
-            "MRgLIAEoCRIXCg9vZmZpY2VfYWRkcmVzczIYDCABKAkSEwoLb2ZmaWNlX2Np",
-            "dHkYDSABKAkSFAoMb2ZmaWNlX3N0YXRlGA4gASgJEhIKCm9mZmljZV96aXAY",
-            "DyABKAkSFQoNb2ZmaWNlX25hdGlvbhgQIAEoCRIbChNvZmZpY2VfcGhvbmVf",
-            "bnVtYmVyGBEgASgJEhsKE21vYmlsZV9waG9uZV9udW1iZXIYEiABKAkSEgoK",
-            "ZmF4X251bWJlchgTIAEoCRIVCg1lbWFpbF9hZGRyZXNzGBQgASgJEhYKDmlz",
-            "X2JsYWNrbGlzdGVkGBUgASgIEhQKDGNvbXBhbnlfbmFtZRgWIAEoCRIUCgxn",
-            "aXZlbl9uYW1lXzIYFyABKAkSPwoMY29udGFjdF9pbmZvGBggASgLMikuaG9s",
-            "bXMudHlwZXMucHJpbWl0aXZlLkNvbnRhY3RJbmZvcm1hdGlvbkIlWgpjcm0v",
-            "Z3Vlc3RzqgIWSE9MTVMuVHlwZXMuQ1JNLkd1ZXN0c2IGcHJvdG8z"));
+            "bS5ndWVzdHMaIGNybS9ndWVzdHMvZ3Vlc3RfaW5kaWNhdG9yLnByb3RvIrUE",
+            "CglHdWVzdExpdGUSOQoJZW50aXR5X2lkGAEgASgLMiYuaG9sbXMudHlwZXMu",
+            "Y3JtLmd1ZXN0cy5HdWVzdEluZGljYXRvchISCgpmaXJzdF9uYW1lGAIgASgJ",
+            "EhEKCWxhc3RfbmFtZRgDIAEoCRIVCg1ob21lX2FkZHJlc3MxGAQgASgJEhUK",
+            "DWhvbWVfYWRkcmVzczIYBSABKAkSEQoJaG9tZV9jaXR5GAYgASgJEhIKCmhv",
+            "bWVfc3RhdGUYByABKAkSEAoIaG9tZV96aXAYCCABKAkSEwoLaG9tZV9uYXRp",
+            "b24YCSABKAkSGQoRaG9tZV9waG9uZV9udW1iZXIYCiABKAkSFwoPb2ZmaWNl",
+            "X2FkZHJlc3MxGAsgASgJEhcKD29mZmljZV9hZGRyZXNzMhgMIAEoCRITCgtv",
+            "ZmZpY2VfY2l0eRgNIAEoCRIUCgxvZmZpY2Vfc3RhdGUYDiABKAkSEgoKb2Zm",
+            "aWNlX3ppcBgPIAEoCRIVCg1vZmZpY2VfbmF0aW9uGBAgASgJEhsKE29mZmlj",
+            "ZV9waG9uZV9udW1iZXIYESABKAkSGwoTbW9iaWxlX3Bob25lX251bWJlchgS",
+            "IAEoCRISCgpmYXhfbnVtYmVyGBMgASgJEhUKDWVtYWlsX2FkZHJlc3MYFCAB",
+            "KAkSFgoOaXNfYmxhY2tsaXN0ZWQYFSABKAgSFAoMY29tcGFueV9uYW1lGBYg",
+            "ASgJEhQKDGdpdmVuX25hbWVfMhgXIAEoCUIlWgpjcm0vZ3Vlc3RzqgIWSE9M",
+            "TVMuVHlwZXMuQ1JNLkd1ZXN0c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.ContactInformationReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.Guests.GuestLite), global::HOLMS.Types.CRM.Guests.GuestLite.Parser, new[]{ "EntityId", "FirstName", "LastName", "HomeAddress1", "HomeAddress2", "HomeCity", "HomeState", "HomeZip", "HomeNation", "HomePhoneNumber", "OfficeAddress1", "OfficeAddress2", "OfficeCity", "OfficeState", "OfficeZip", "OfficeNation", "OfficePhoneNumber", "MobilePhoneNumber", "FaxNumber", "EmailAddress", "IsBlacklisted", "CompanyName", "GivenName2", "ContactInfo" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.CRM.Guests.GuestLite), global::HOLMS.Types.CRM.Guests.GuestLite.Parser, new[]{ "EntityId", "FirstName", "LastName", "HomeAddress1", "HomeAddress2", "HomeCity", "HomeState", "HomeZip", "HomeNation", "HomePhoneNumber", "OfficeAddress1", "OfficeAddress2", "OfficeCity", "OfficeState", "OfficeZip", "OfficeNation", "OfficePhoneNumber", "MobilePhoneNumber", "FaxNumber", "EmailAddress", "IsBlacklisted", "CompanyName", "GivenName2" }, null, null, null)
           }));
     }
     #endregion
@@ -97,7 +95,6 @@ namespace HOLMS.Types.CRM.Guests {
       isBlacklisted_ = other.isBlacklisted_;
       companyName_ = other.companyName_;
       givenName2_ = other.givenName2_;
-      ContactInfo = other.contactInfo_ != null ? other.ContactInfo.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -358,17 +355,6 @@ namespace HOLMS.Types.CRM.Guests {
       }
     }
 
-    /// <summary>Field number for the "contact_info" field.</summary>
-    public const int ContactInfoFieldNumber = 24;
-    private global::HOLMS.Types.Primitive.ContactInformation contactInfo_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Primitive.ContactInformation ContactInfo {
-      get { return contactInfo_; }
-      set {
-        contactInfo_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GuestLite);
@@ -405,7 +391,6 @@ namespace HOLMS.Types.CRM.Guests {
       if (IsBlacklisted != other.IsBlacklisted) return false;
       if (CompanyName != other.CompanyName) return false;
       if (GivenName2 != other.GivenName2) return false;
-      if (!object.Equals(ContactInfo, other.ContactInfo)) return false;
       return true;
     }
 
@@ -435,7 +420,6 @@ namespace HOLMS.Types.CRM.Guests {
       if (IsBlacklisted != false) hash ^= IsBlacklisted.GetHashCode();
       if (CompanyName.Length != 0) hash ^= CompanyName.GetHashCode();
       if (GivenName2.Length != 0) hash ^= GivenName2.GetHashCode();
-      if (contactInfo_ != null) hash ^= ContactInfo.GetHashCode();
       return hash;
     }
 
@@ -538,10 +522,6 @@ namespace HOLMS.Types.CRM.Guests {
         output.WriteRawTag(186, 1);
         output.WriteString(GivenName2);
       }
-      if (contactInfo_ != null) {
-        output.WriteRawTag(194, 1);
-        output.WriteMessage(ContactInfo);
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -615,9 +595,6 @@ namespace HOLMS.Types.CRM.Guests {
       }
       if (GivenName2.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(GivenName2);
-      }
-      if (contactInfo_ != null) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ContactInfo);
       }
       return size;
     }
@@ -698,12 +675,6 @@ namespace HOLMS.Types.CRM.Guests {
       }
       if (other.GivenName2.Length != 0) {
         GivenName2 = other.GivenName2;
-      }
-      if (other.contactInfo_ != null) {
-        if (contactInfo_ == null) {
-          contactInfo_ = new global::HOLMS.Types.Primitive.ContactInformation();
-        }
-        ContactInfo.MergeFrom(other.ContactInfo);
       }
     }
 
@@ -808,13 +779,6 @@ namespace HOLMS.Types.CRM.Guests {
           }
           case 186: {
             GivenName2 = input.ReadString();
-            break;
-          }
-          case 194: {
-            if (contactInfo_ == null) {
-              contactInfo_ = new global::HOLMS.Types.Primitive.ContactInformation();
-            }
-            input.ReadMessage(contactInfo_);
             break;
           }
         }
