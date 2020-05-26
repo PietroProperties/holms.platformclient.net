@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package holms.types.booking.channels;
+option csharp_namespace = "HOLMS.Types.Booking.Channels";
+option go_package = "booking/channels";
+
+import "booking/channels/ota_provider_room_types_indicator.proto";
+import "booking/channels/ota_channel_provider_indicator.proto";
+import "supply/room_types/room_type_indicator.proto";
+
+message OTAProviderRoomTypes {
+	.holms.types.booking.channels.OTAProviderRoomTypeIndicator entity_id = 1;
+	.holms.types.booking.channels.OTAChannelProviderIndicator ota_provider_id = 2;
+	.holms.types.supply.room_types.RoomTypeIndicator room_type_id = 3;
+	}

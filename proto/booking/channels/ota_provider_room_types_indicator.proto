@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package holms.types.booking.channels;
+option csharp_namespace = "HOLMS.Types.Booking.Channels";
+option go_package = "booking/channels";
+
+import "primitive/uuid.proto";
+
+message OTAProviderRoomTypeIndicator {
+	.holms.types.primitive.Uuid id = 1;
+}
