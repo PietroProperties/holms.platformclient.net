@@ -26,20 +26,22 @@ namespace HOLMS.Types.Booking.Channels {
             "Ehxob2xtcy50eXBlcy5ib29raW5nLmNoYW5uZWxzGjZib29raW5nL2luZGlj",
             "YXRvcnMvY2FuY2VsbGF0aW9uX3BvbGljeV9pbmRpY2F0b3IucHJvdG8aNWJv",
             "b2tpbmcvY2hhbm5lbHMvb3RhX2NoYW5uZWxfcHJvdmlkZXJfaW5kaWNhdG9y",
-            "LnByb3RvItwCChJPVEFDaGFubmVsUHJvdmlkZXISTAoJZW50aXR5X2lkGAEg",
-            "ASgLMjkuaG9sbXMudHlwZXMuYm9va2luZy5jaGFubmVscy5PVEFDaGFubmVs",
-            "UHJvdmlkZXJJbmRpY2F0b3ISFQoNcHJvdmlkZXJfbmFtZRgCIAEoCRIVCg1w",
-            "cm92aWRlcl9jb2RlGAMgASgJEiQKHGRpc2FibGVfZ3Vlc3RfY29ycmVzcG9u",
-            "ZGVuY2UYBCABKAgSKQohZGlzYWJsZV9jb3JyZXNwb25kZW5jZV9yYXRlX3Rh",
-            "YmxlGAUgASgIElgKE2NhbmNlbGxhdGlvbl9wb2xpY3kYBiABKAsyOy5ob2xt",
-            "cy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuQ2FuY2VsbGF0aW9uUG9saWN5",
-            "SW5kaWNhdG9yEh8KF3ZpcnR1YWxfY2FyZF9pZGVudGlmaWVyGAcgASgJQjFa",
-            "EGJvb2tpbmcvY2hhbm5lbHOqAhxIT0xNUy5UeXBlcy5Cb29raW5nLkNoYW5u",
-            "ZWxzYgZwcm90bzM="));
+            "LnByb3RvGiFzdXBwbHkvcm9vbV90eXBlcy9yb29tX3R5cGUucHJvdG8ioAMK",
+            "Ek9UQUNoYW5uZWxQcm92aWRlchJMCgllbnRpdHlfaWQYASABKAsyOS5ob2xt",
+            "cy50eXBlcy5ib29raW5nLmNoYW5uZWxzLk9UQUNoYW5uZWxQcm92aWRlcklu",
+            "ZGljYXRvchIVCg1wcm92aWRlcl9uYW1lGAIgASgJEhUKDXByb3ZpZGVyX2Nv",
+            "ZGUYAyABKAkSJAocZGlzYWJsZV9ndWVzdF9jb3JyZXNwb25kZW5jZRgEIAEo",
+            "CBIpCiFkaXNhYmxlX2NvcnJlc3BvbmRlbmNlX3JhdGVfdGFibGUYBSABKAgS",
+            "WAoTY2FuY2VsbGF0aW9uX3BvbGljeRgGIAEoCzI7LmhvbG1zLnR5cGVzLmJv",
+            "b2tpbmcuaW5kaWNhdG9ycy5DYW5jZWxsYXRpb25Qb2xpY3lJbmRpY2F0b3IS",
+            "HwoXdmlydHVhbF9jYXJkX2lkZW50aWZpZXIYByABKAkSQgoRcmVxdWVzdF9y",
+            "b29tX3R5cGUYCCADKAsyJy5ob2xtcy50eXBlcy5zdXBwbHkucm9vbV90eXBl",
+            "cy5Sb29tVHlwZUIxWhBib29raW5nL2NoYW5uZWxzqgIcSE9MTVMuVHlwZXMu",
+            "Qm9va2luZy5DaGFubmVsc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.OtaChannelProviderIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.OtaChannelProviderIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Channels.OTAChannelProvider), global::HOLMS.Types.Booking.Channels.OTAChannelProvider.Parser, new[]{ "EntityId", "ProviderName", "ProviderCode", "DisableGuestCorrespondence", "DisableCorrespondenceRateTable", "CancellationPolicy", "VirtualCardIdentifier" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Channels.OTAChannelProvider), global::HOLMS.Types.Booking.Channels.OTAChannelProvider.Parser, new[]{ "EntityId", "ProviderName", "ProviderCode", "DisableGuestCorrespondence", "DisableCorrespondenceRateTable", "CancellationPolicy", "VirtualCardIdentifier", "RequestRoomType" }, null, null, null)
           }));
     }
     #endregion
@@ -77,6 +79,7 @@ namespace HOLMS.Types.Booking.Channels {
       disableCorrespondenceRateTable_ = other.disableCorrespondenceRateTable_;
       CancellationPolicy = other.cancellationPolicy_ != null ? other.CancellationPolicy.Clone() : null;
       virtualCardIdentifier_ = other.virtualCardIdentifier_;
+      requestRoomType_ = other.requestRoomType_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -161,6 +164,16 @@ namespace HOLMS.Types.Booking.Channels {
       }
     }
 
+    /// <summary>Field number for the "request_room_type" field.</summary>
+    public const int RequestRoomTypeFieldNumber = 8;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Supply.RoomTypes.RoomType> _repeated_requestRoomType_codec
+        = pb::FieldCodec.ForMessage(66, global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Supply.RoomTypes.RoomType> requestRoomType_ = new pbc::RepeatedField<global::HOLMS.Types.Supply.RoomTypes.RoomType>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Supply.RoomTypes.RoomType> RequestRoomType {
+      get { return requestRoomType_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as OTAChannelProvider);
@@ -181,6 +194,7 @@ namespace HOLMS.Types.Booking.Channels {
       if (DisableCorrespondenceRateTable != other.DisableCorrespondenceRateTable) return false;
       if (!object.Equals(CancellationPolicy, other.CancellationPolicy)) return false;
       if (VirtualCardIdentifier != other.VirtualCardIdentifier) return false;
+      if(!requestRoomType_.Equals(other.requestRoomType_)) return false;
       return true;
     }
 
@@ -194,6 +208,7 @@ namespace HOLMS.Types.Booking.Channels {
       if (DisableCorrespondenceRateTable != false) hash ^= DisableCorrespondenceRateTable.GetHashCode();
       if (cancellationPolicy_ != null) hash ^= CancellationPolicy.GetHashCode();
       if (VirtualCardIdentifier.Length != 0) hash ^= VirtualCardIdentifier.GetHashCode();
+      hash ^= requestRoomType_.GetHashCode();
       return hash;
     }
 
@@ -232,6 +247,7 @@ namespace HOLMS.Types.Booking.Channels {
         output.WriteRawTag(58);
         output.WriteString(VirtualCardIdentifier);
       }
+      requestRoomType_.WriteTo(output, _repeated_requestRoomType_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -258,6 +274,7 @@ namespace HOLMS.Types.Booking.Channels {
       if (VirtualCardIdentifier.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(VirtualCardIdentifier);
       }
+      size += requestRoomType_.CalculateSize(_repeated_requestRoomType_codec);
       return size;
     }
 
@@ -293,6 +310,7 @@ namespace HOLMS.Types.Booking.Channels {
       if (other.VirtualCardIdentifier.Length != 0) {
         VirtualCardIdentifier = other.VirtualCardIdentifier;
       }
+      requestRoomType_.Add(other.requestRoomType_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -335,6 +353,10 @@ namespace HOLMS.Types.Booking.Channels {
           }
           case 58: {
             VirtualCardIdentifier = input.ReadString();
+            break;
+          }
+          case 66: {
+            requestRoomType_.AddEntriesFrom(input, _repeated_requestRoomType_codec);
             break;
           }
         }

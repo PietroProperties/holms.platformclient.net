@@ -6,6 +6,7 @@ option go_package = "booking/channels";
 
 import "booking/indicators/cancellation_policy_indicator.proto";
 import "booking/channels/ota_channel_provider_indicator.proto";
+import "supply/room_types/room_type.proto";
 
 message OTAChannelProvider {
 	holms.types.booking.channels.OTAChannelProviderIndicator entity_id = 1;
@@ -15,4 +16,5 @@ message OTAChannelProvider {
 	bool disable_correspondence_rate_table = 5;
 	holms.types.booking.indicators.CancellationPolicyIndicator cancellation_policy = 6;
 	string virtual_card_identifier = 7;
+	repeated .holms.types.supply.room_types.RoomType request_room_type= 8;
 }
