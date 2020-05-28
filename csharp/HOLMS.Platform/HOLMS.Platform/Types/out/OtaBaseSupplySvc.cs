@@ -48,27 +48,28 @@ namespace HOLMS.Types.Supply.RPC {
             "ZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblByaWNpbmciYgocQ2hh",
             "bm5lbFN0b3BTZWxsVXBkYXRlUmVxdWVzdBJCChFjaGFubmVsX3N0b3Bfc2Vs",
             "bBgBIAMoCzInLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbFN0b3BT",
-            "ZWxsImgKH0NoYW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVzcG9uc2USRQoGUmVz",
+            "ZWxsIn8KH0NoYW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVzcG9uc2USRQoGUmVz",
             "dWx0GAEgASgOMjUuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxs",
-            "b2NhdGlvblVwZGF0ZVJlc3VsdCJwChhPdGFTdXBwbHlEZXRhaWxzUmVzcG9u",
-            "c2USVAoaY2hhbm5lbF9hbGxvY2F0aW9uX3ByaWNpbmcYASADKAsyMC5ob2xt",
-            "cy50eXBlcy5zdXBwbHkucnBjLkNoYW5uZWxBbGxvY2F0aW9uUHJpY2luZyqE",
-            "AQodQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXN1bHQSEQoNVVBEQVRFX0ZB",
-            "SUxFRBAAEhcKE0RCX1VQREFURV9DUl9GQUlMRUQQARIgChxDUl9VUERBVEVf",
-            "U1lOQ19TVEFUVVNfRkFJTEVEEAISFQoRVVBEQVRFX1NVQ0NFU1NGVUwQAzKP",
-            "BAoQT3RhQmFzZVN1cHBseVN2YxJwCgtBbGxGb3JEYXRlcxIvLmhvbG1zLnR5",
-            "cGVzLnN1cHBseS5ycGMuT3RhU3VwcGx5RGV0YWlsc1JlcXVlc3QaMC5ob2xt",
-            "cy50eXBlcy5zdXBwbHkucnBjLk90YVN1cHBseURldGFpbHNSZXNwb25zZRKH",
-            "AQoUSW5zZXJ0T3JVcGRhdGVTdXBwbHkSNi5ob2xtcy50eXBlcy5zdXBwbHku",
-            "cnBjLkNoYW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVxdWVzdBo3LmhvbG1zLnR5",
-            "cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXNwb25z",
-            "ZRJ/Cg5VcGRhdGVTdG9wU2VsbBI0LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMu",
-            "Q2hhbm5lbFN0b3BTZWxsVXBkYXRlUmVxdWVzdBo3LmhvbG1zLnR5cGVzLnN1",
-            "cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXNwb25zZRJ+CgtV",
-            "cGRhdGVQcmljZRI2LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFs",
-            "bG9jYXRpb25VcGRhdGVSZXF1ZXN0GjcuaG9sbXMudHlwZXMuc3VwcGx5LnJw",
-            "Yy5DaGFubmVsQWxsb2NhdGlvblVwZGF0ZVJlc3BvbnNlQiVaCnN1cHBseS9y",
-            "cGOqAhZIT0xNUy5UeXBlcy5TdXBwbHkuUlBDYgZwcm90bzM="));
+            "b2NhdGlvblVwZGF0ZVJlc3VsdBIVCg1FcnJvck1lc3NhZ2VzGAIgAygJInAK",
+            "GE90YVN1cHBseURldGFpbHNSZXNwb25zZRJUChpjaGFubmVsX2FsbG9jYXRp",
+            "b25fcHJpY2luZxgBIAMoCzIwLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hh",
+            "bm5lbEFsbG9jYXRpb25QcmljaW5nKoQBCh1DaGFubmVsQWxsb2NhdGlvblVw",
+            "ZGF0ZVJlc3VsdBIRCg1VUERBVEVfRkFJTEVEEAASFwoTREJfVVBEQVRFX0NS",
+            "X0ZBSUxFRBABEiAKHENSX1VQREFURV9TWU5DX1NUQVRVU19GQUlMRUQQAhIV",
+            "ChFVUERBVEVfU1VDQ0VTU0ZVTBADMo8EChBPdGFCYXNlU3VwcGx5U3ZjEnAK",
+            "C0FsbEZvckRhdGVzEi8uaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5PdGFTdXBw",
+            "bHlEZXRhaWxzUmVxdWVzdBowLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuT3Rh",
+            "U3VwcGx5RGV0YWlsc1Jlc3BvbnNlEocBChRJbnNlcnRPclVwZGF0ZVN1cHBs",
+            "eRI2LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25V",
+            "cGRhdGVSZXF1ZXN0GjcuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVs",
+            "QWxsb2NhdGlvblVwZGF0ZVJlc3BvbnNlEn8KDlVwZGF0ZVN0b3BTZWxsEjQu",
+            "aG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsU3RvcFNlbGxVcGRhdGVS",
+            "ZXF1ZXN0GjcuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2Nh",
+            "dGlvblVwZGF0ZVJlc3BvbnNlEn4KC1VwZGF0ZVByaWNlEjYuaG9sbXMudHlw",
+            "ZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblVwZGF0ZVJlcXVlc3Qa",
+            "Ny5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkNoYW5uZWxBbGxvY2F0aW9uVXBk",
+            "YXRlUmVzcG9uc2VCJVoKc3VwcGx5L3JwY6oCFkhPTE1TLlR5cGVzLlN1cHBs",
+            "eS5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.OtaChannelProviderIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.FixedPointRatioReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResult), }, new pbr::GeneratedClrTypeInfo[] {
@@ -77,7 +78,7 @@ namespace HOLMS.Types.Supply.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelStopSell), global::HOLMS.Types.Supply.RPC.ChannelStopSell.Parser, new[]{ "RoomType", "Date", "IsStopSell" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateRequest), global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateRequest.Parser, new[]{ "ChannelAllocationPricing" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelStopSellUpdateRequest), global::HOLMS.Types.Supply.RPC.ChannelStopSellUpdateRequest.Parser, new[]{ "ChannelStopSell" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse), global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse.Parser, new[]{ "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse), global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse.Parser, new[]{ "Result", "ErrorMessages" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsResponse), global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsResponse.Parser, new[]{ "ChannelAllocationPricing" }, null, null, null)
           }));
     }
@@ -961,6 +962,7 @@ namespace HOLMS.Types.Supply.RPC {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ChannelAllocationUpdateResponse(ChannelAllocationUpdateResponse other) : this() {
       result_ = other.result_;
+      errorMessages_ = other.errorMessages_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -979,6 +981,16 @@ namespace HOLMS.Types.Supply.RPC {
       }
     }
 
+    /// <summary>Field number for the "ErrorMessages" field.</summary>
+    public const int ErrorMessagesFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_errorMessages_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> errorMessages_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> ErrorMessages {
+      get { return errorMessages_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ChannelAllocationUpdateResponse);
@@ -993,6 +1005,7 @@ namespace HOLMS.Types.Supply.RPC {
         return true;
       }
       if (Result != other.Result) return false;
+      if(!errorMessages_.Equals(other.errorMessages_)) return false;
       return true;
     }
 
@@ -1000,6 +1013,7 @@ namespace HOLMS.Types.Supply.RPC {
     public override int GetHashCode() {
       int hash = 1;
       if (Result != 0) hash ^= Result.GetHashCode();
+      hash ^= errorMessages_.GetHashCode();
       return hash;
     }
 
@@ -1014,6 +1028,7 @@ namespace HOLMS.Types.Supply.RPC {
         output.WriteRawTag(8);
         output.WriteEnum((int) Result);
       }
+      errorMessages_.WriteTo(output, _repeated_errorMessages_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1022,6 +1037,7 @@ namespace HOLMS.Types.Supply.RPC {
       if (Result != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
       }
+      size += errorMessages_.CalculateSize(_repeated_errorMessages_codec);
       return size;
     }
 
@@ -1033,6 +1049,7 @@ namespace HOLMS.Types.Supply.RPC {
       if (other.Result != 0) {
         Result = other.Result;
       }
+      errorMessages_.Add(other.errorMessages_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1045,6 +1062,10 @@ namespace HOLMS.Types.Supply.RPC {
             break;
           case 8: {
             result_ = (global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResult) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            errorMessages_.AddEntriesFrom(input, _repeated_errorMessages_codec);
             break;
           }
         }
