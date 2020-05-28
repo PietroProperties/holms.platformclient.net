@@ -4,7 +4,6 @@ package holms.types.supply.rpc;
 option csharp_namespace = "HOLMS.Types.Supply.RPC";
 option go_package = "supply/rpc";
 
-import "google/protobuf/empty.proto";
 import "primitive/pb_inclusive_opsdate_range.proto";
 import "supply/room_types/room_type_indicator.proto";
 import "supply/price_update_request.proto";
@@ -38,9 +37,13 @@ message PricingSvcUpdateRequest {
 	repeated .holms.types.supply.PriceUpdateRequest price_updates = 2;
 }
 
+message PricingSvcChannelRushResponse{
+	repeated string ErrorMessages = 1;
+}
+
 service PricingSvc {
 	rpc QueryByRoomType (PricingSvcRoomTypeQueryRequest) returns (PricingSvcQueryResponse);
 	rpc QueryByProperty (PricingSvcPropertyQueryRequest) returns (PricingSvcQueryResponse);
-	rpc Update (PricingSvcUpdateRequest) returns (google.protobuf.Empty);
+	rpc Update (PricingSvcUpdateRequest) returns (PricingSvcChannelRushResponse);
 	rpc QueryByWithoutProperty (PricingSvcWithoutPropertyQueryRequest) returns (PricingSvcQueryResponse);
 }
