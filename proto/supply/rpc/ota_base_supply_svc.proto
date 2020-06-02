@@ -41,6 +41,7 @@ message ChannelStopSellUpdateRequest {
 
 message ChannelAllocationUpdateResponse {
 	ChannelAllocationUpdateResult Result = 1;
+	repeated string ErrorMessages = 2;
 }
 
 message OtaSupplyDetailsResponse {
