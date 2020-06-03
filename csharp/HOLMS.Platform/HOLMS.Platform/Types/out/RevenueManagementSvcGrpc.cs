@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using grpc = global::Grpc.Core;
 
 namespace HOLMS.Types.TenancyConfig.RPC {
-  public static partial class ForeignPropertyConfigurationSvc
+  public static partial class ReveneueManagementSvc
   {
-    static readonly string __ServiceName = "holms.types.tenancy_config.rpc.ForeignPropertyConfigurationSvc";
+    static readonly string __ServiceName = "holms.types.tenancy_config.rpc.ReveneueManagementSvc";
 
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.TenancyConfig.RPC.ReveneueManagementResponse> __Marshaller_ReveneueManagementResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.TenancyConfig.RPC.ReveneueManagementResponse.Parser.ParseFrom);
@@ -37,8 +37,8 @@ namespace HOLMS.Types.TenancyConfig.RPC {
       get { return global::HOLMS.Types.TenancyConfig.RPC.RevenueManagementSvcReflection.Descriptor.Services[0]; }
     }
 
-    /// <summary>Base class for server-side implementations of ForeignPropertyConfigurationSvc</summary>
-    public abstract partial class ForeignPropertyConfigurationSvcBase
+    /// <summary>Base class for server-side implementations of ReveneueManagementSvc</summary>
+    public abstract partial class ReveneueManagementSvcBase
     {
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.TenancyConfig.RPC.ReveneueManagementResponse> Get(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
       {
@@ -52,26 +52,26 @@ namespace HOLMS.Types.TenancyConfig.RPC {
 
     }
 
-    /// <summary>Client for ForeignPropertyConfigurationSvc</summary>
-    public partial class ForeignPropertyConfigurationSvcClient : grpc::ClientBase<ForeignPropertyConfigurationSvcClient>
+    /// <summary>Client for ReveneueManagementSvc</summary>
+    public partial class ReveneueManagementSvcClient : grpc::ClientBase<ReveneueManagementSvcClient>
     {
-      /// <summary>Creates a new client for ForeignPropertyConfigurationSvc</summary>
+      /// <summary>Creates a new client for ReveneueManagementSvc</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public ForeignPropertyConfigurationSvcClient(grpc::Channel channel) : base(channel)
+      public ReveneueManagementSvcClient(grpc::Channel channel) : base(channel)
       {
       }
-      /// <summary>Creates a new client for ForeignPropertyConfigurationSvc that uses a custom <c>CallInvoker</c>.</summary>
+      /// <summary>Creates a new client for ReveneueManagementSvc that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public ForeignPropertyConfigurationSvcClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      public ReveneueManagementSvcClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
-      protected ForeignPropertyConfigurationSvcClient() : base()
+      protected ReveneueManagementSvcClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
-      protected ForeignPropertyConfigurationSvcClient(ClientBaseConfiguration configuration) : base(configuration)
+      protected ReveneueManagementSvcClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
@@ -108,15 +108,15 @@ namespace HOLMS.Types.TenancyConfig.RPC {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
-      protected override ForeignPropertyConfigurationSvcClient NewInstance(ClientBaseConfiguration configuration)
+      protected override ReveneueManagementSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
-        return new ForeignPropertyConfigurationSvcClient(configuration);
+        return new ReveneueManagementSvcClient(configuration);
       }
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    public static grpc::ServerServiceDefinition BindService(ForeignPropertyConfigurationSvcBase serviceImpl)
+    public static grpc::ServerServiceDefinition BindService(ReveneueManagementSvcBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_Get, serviceImpl.Get)

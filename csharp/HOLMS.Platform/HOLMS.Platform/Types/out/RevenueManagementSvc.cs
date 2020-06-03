@@ -38,13 +38,13 @@ namespace HOLMS.Types.TenancyConfig.RPC {
             "ZmlnEksKEG9jY3VwYW5jeV9mYWN0b3IYAiADKAsyMS5ob2xtcy50eXBlcy50",
             "ZW5hbmN5X2NvbmZpZy5PY2N1cGFuY3lGYWN0b3JDb25maWcSQQoLdGltZV9m",
             "YWN0b3IYAyADKAsyLC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5UaW1l",
-            "RmFjdG9yQ29uZmlnMv0BCh9Gb3JlaWduUHJvcGVydHlDb25maWd1cmF0aW9u",
-            "U3ZjElkKA0dldBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRo6LmhvbG1zLnR5",
-            "cGVzLnRlbmFuY3lfY29uZmlnLnJwYy5SZXZlbmV1ZU1hbmFnZW1lbnRSZXNw",
-            "b25zZRJ/CgZVcGRhdGUSOS5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5y",
-            "cGMuUmV2ZW5ldWVNYW5hZ2VtZW50UmVxdWVzdBo6LmhvbG1zLnR5cGVzLnRl",
-            "bmFuY3lfY29uZmlnLnJwYy5SZXZlbmV1ZU1hbmFnZW1lbnRSZXNwb25zZUIg",
-            "qgIdSE9MTVMuVHlwZXMuVGVuYW5jeUNvbmZpZy5SUENiBnByb3RvMw=="));
+            "RmFjdG9yQ29uZmlnMvMBChVSZXZlbmV1ZU1hbmFnZW1lbnRTdmMSWQoDR2V0",
+            "EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GjouaG9sbXMudHlwZXMudGVuYW5j",
+            "eV9jb25maWcucnBjLlJldmVuZXVlTWFuYWdlbWVudFJlc3BvbnNlEn8KBlVw",
+            "ZGF0ZRI5LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLnJwYy5SZXZlbmV1",
+            "ZU1hbmFnZW1lbnRSZXF1ZXN0GjouaG9sbXMudHlwZXMudGVuYW5jeV9jb25m",
+            "aWcucnBjLlJldmVuZXVlTWFuYWdlbWVudFJlc3BvbnNlQiCqAh1IT0xNUy5U",
+            "eXBlcy5UZW5hbmN5Q29uZmlnLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.TenancyConfig.RevenueManagementConfigReflection.Descriptor, global::HOLMS.Types.TenancyConfig.OccupancyFactorConfigReflection.Descriptor, global::HOLMS.Types.TenancyConfig.TimeFactorConfigReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

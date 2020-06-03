@@ -20,7 +20,7 @@ message ReveneueManagementResponse {
 	repeated holms.types.tenancy_config.TimeFactorConfig time_factor = 3;
 }
 
-service ForeignPropertyConfigurationSvc {
+service ReveneueManagementSvc {
 	rpc Get(google.protobuf.Empty) 
 		returns (ReveneueManagementResponse);
 
