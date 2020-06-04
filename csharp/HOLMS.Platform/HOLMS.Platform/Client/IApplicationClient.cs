@@ -120,6 +120,7 @@ namespace HOLMS.Platform.Client {
         ReportingConfigurationSvc.ReportingConfigurationSvcClient ReportingConfigurationSvc { get; }
         DefaultSettingsSvc.DefaultSettingsSvcClient DefaultSettingsSvc { get; }
         RoomStatusSvc.RoomStatusSvcClient RoomStatusSvc { get; }
+        ReveneueManagementSvc.ReveneueManagementSvcClient RevManagementSvc { get; }
         #endregion
 
         #region Reporting

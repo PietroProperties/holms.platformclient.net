@@ -134,6 +134,7 @@ namespace HOLMS.Platform.Client {
         public ReportingConfigurationSvc.ReportingConfigurationSvcClient ReportingConfigurationSvc { get; protected set; }
         public DefaultSettingsSvc.DefaultSettingsSvcClient DefaultSettingsSvc { get; protected set; }
         public RoomStatusSvc.RoomStatusSvcClient RoomStatusSvc { get; protected set; }
+        public ReveneueManagementSvc.ReveneueManagementSvcClient RevManagementSvc { get; protected set; }
         #endregion
 
         #region Reporting
@@ -350,6 +351,7 @@ namespace HOLMS.Platform.Client {
             ReportingConfigurationSvc = new ReportingConfigurationSvc.ReportingConfigurationSvcClient(_authenticatedChannel);
             DefaultSettingsSvc = new DefaultSettingsSvc.DefaultSettingsSvcClient(_authenticatedChannel);
             RoomStatusSvc = new RoomStatusSvc.RoomStatusSvcClient(_authenticatedChannel);
+            RevManagementSvc = new ReveneueManagementSvc.ReveneueManagementSvcClient(_authenticatedChannel);
             #endregion
 
             #region Reporting
