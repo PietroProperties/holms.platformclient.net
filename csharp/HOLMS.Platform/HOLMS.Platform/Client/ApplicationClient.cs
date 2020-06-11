@@ -112,6 +112,7 @@ namespace HOLMS.Platform.Client {
         public SupplyHistorySnapshotSvc.SupplyHistorySnapshotSvcClient SupplyHistorySnapshotSvc { get; protected set; }
         public SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc { get; protected set; }
         public OtaBaseSupplySvc.OtaBaseSupplySvcClient OtaBaseSupplySvc { get; protected set; }
+        public PricingOverrideSvc.PricingOverrideSvcClient PricingOverrideSvc { get; protected set; }
         #endregion
 
         #region Tenancy Config
@@ -328,6 +329,7 @@ namespace HOLMS.Platform.Client {
             SupplyHistorySnapshotSvc = new SupplyHistorySnapshotSvc.SupplyHistorySnapshotSvcClient(_authenticatedChannel);
             SupplySnapshotSvc = new SupplySnapshotSvc.SupplySnapshotSvcClient(_authenticatedChannel);
             OtaBaseSupplySvc = new OtaBaseSupplySvc.OtaBaseSupplySvcClient(_authenticatedChannel);
+            PricingOverrideSvc = new PricingOverrideSvc.PricingOverrideSvcClient(_authenticatedChannel);
             #endregion
 
             #region Tenancy Config
