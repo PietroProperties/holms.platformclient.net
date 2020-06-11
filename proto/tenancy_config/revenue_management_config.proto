@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "tenancy_config/indicators/revenue_management_config_indicator.proto";
+
+message RevenueManagementConfig {
+	holms.types.tenancy_config.indicators.RevenueManagementConfigIndicator entity_id = 1;
+	bool enable_occupancy_factor = 2;
+	bool enable_time_factor = 3;
+}
