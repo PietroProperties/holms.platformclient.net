@@ -46,6 +46,20 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_Empty,
         __Marshaller_PBXServiceStartAttemptResponse);
 
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SyncPriceForTimeFactor = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SyncPriceForTimeFactor",
+        __Marshaller_Empty,
+        __Marshaller_Empty);
+
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SyncPriceForOccupancyFactor = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SyncPriceForOccupancyFactor",
+        __Marshaller_Empty,
+        __Marshaller_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -71,6 +85,16 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.PBXServiceStartAttemptResponse> AttemptStartPBXService(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SyncPriceForTimeFactor(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SyncPriceForOccupancyFactor(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -164,6 +188,38 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_AttemptStartPBXService, null, options, request);
       }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SyncPriceForTimeFactor(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SyncPriceForTimeFactor(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SyncPriceForTimeFactor(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SyncPriceForTimeFactor, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SyncPriceForTimeFactorAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SyncPriceForTimeFactorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SyncPriceForTimeFactorAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SyncPriceForTimeFactor, null, options, request);
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SyncPriceForOccupancyFactor(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SyncPriceForOccupancyFactor(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SyncPriceForOccupancyFactor(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SyncPriceForOccupancyFactor, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SyncPriceForOccupancyFactorAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SyncPriceForOccupancyFactorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SyncPriceForOccupancyFactorAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SyncPriceForOccupancyFactor, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override OTASyncSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -179,7 +235,9 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_SyncReservations, serviceImpl.SyncReservations)
           .AddMethod(__Method_GetSchedulerLastWorkingTime, serviceImpl.GetSchedulerLastWorkingTime)
           .AddMethod(__Method_AttemptStartScheduler, serviceImpl.AttemptStartScheduler)
-          .AddMethod(__Method_AttemptStartPBXService, serviceImpl.AttemptStartPBXService).Build();
+          .AddMethod(__Method_AttemptStartPBXService, serviceImpl.AttemptStartPBXService)
+          .AddMethod(__Method_SyncPriceForTimeFactor, serviceImpl.SyncPriceForTimeFactor)
+          .AddMethod(__Method_SyncPriceForOccupancyFactor, serviceImpl.SyncPriceForOccupancyFactor).Build();
     }
 
   }
