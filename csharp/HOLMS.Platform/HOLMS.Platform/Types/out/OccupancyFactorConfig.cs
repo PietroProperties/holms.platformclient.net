@@ -25,18 +25,18 @@ namespace HOLMS.Types.TenancyConfig {
             "Cix0ZW5hbmN5X2NvbmZpZy9vY2N1cGFuY3lfZmFjdG9yX2NvbmZpZy5wcm90",
             "bxIaaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcaQXRlbmFuY3lfY29uZmln",
             "L2luZGljYXRvcnMvb2NjdXBhbmN5X2ZhY3Rvcl9jb25maWdfaW5kaWNhdG9y",
-            "LnByb3RvIocCChVPY2N1cGFuY3lGYWN0b3JDb25maWcSWAoJZW50aXR5X2lk",
+            "LnByb3RvIpYCChVPY2N1cGFuY3lGYWN0b3JDb25maWcSWAoJZW50aXR5X2lk",
             "GAEgASgLMkUuaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9y",
             "cy5PY2N1cGFuY3lGYWN0b3JDb25maWdJbmRpY2F0b3ISHAoUb2NjdXBhbmN5",
             "X3JhbmdlX25hbWUYAiABKAkSFgoOcHJpY2luZ19mYWN0b3IYAyABKAESDwoH",
             "aG9yaXpvbhgEIAEoBRITCgtmYWN0b3JfcmF0ZRgFIAEoARIbChNvY3V1cGFu",
             "Y3lfcmFuZ2VfbWluGAYgASgFEhsKE29jY3VwYW5jeV9yYW5nZV9tYXgYByAB",
-            "KAVCK1oNdGVuYW5jeWNvbmZpZ6oCGUhPTE1TLlR5cGVzLlRlbmFuY3lDb25m",
-            "aWdiBnByb3RvMw=="));
+            "KAUSDQoFc2xvcGUYCCABKAFCK1oNdGVuYW5jeWNvbmZpZ6oCGUhPTE1TLlR5",
+            "cGVzLlRlbmFuY3lDb25maWdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.TenancyConfig.Indicators.OccupancyFactorConfigIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.OccupancyFactorConfig), global::HOLMS.Types.TenancyConfig.OccupancyFactorConfig.Parser, new[]{ "EntityId", "OccupancyRangeName", "PricingFactor", "Horizon", "FactorRate", "OcuupancyRangeMin", "OccupancyRangeMax" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.OccupancyFactorConfig), global::HOLMS.Types.TenancyConfig.OccupancyFactorConfig.Parser, new[]{ "EntityId", "OccupancyRangeName", "PricingFactor", "Horizon", "FactorRate", "OcuupancyRangeMin", "OccupancyRangeMax", "Slope" }, null, null, null)
           }));
     }
     #endregion
@@ -74,6 +74,7 @@ namespace HOLMS.Types.TenancyConfig {
       factorRate_ = other.factorRate_;
       ocuupancyRangeMin_ = other.ocuupancyRangeMin_;
       occupancyRangeMax_ = other.occupancyRangeMax_;
+      slope_ = other.slope_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -158,6 +159,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "slope" field.</summary>
+    public const int SlopeFieldNumber = 8;
+    private double slope_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double Slope {
+      get { return slope_; }
+      set {
+        slope_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as OccupancyFactorConfig);
@@ -178,6 +190,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (FactorRate != other.FactorRate) return false;
       if (OcuupancyRangeMin != other.OcuupancyRangeMin) return false;
       if (OccupancyRangeMax != other.OccupancyRangeMax) return false;
+      if (Slope != other.Slope) return false;
       return true;
     }
 
@@ -191,6 +204,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (FactorRate != 0D) hash ^= FactorRate.GetHashCode();
       if (OcuupancyRangeMin != 0) hash ^= OcuupancyRangeMin.GetHashCode();
       if (OccupancyRangeMax != 0) hash ^= OccupancyRangeMax.GetHashCode();
+      if (Slope != 0D) hash ^= Slope.GetHashCode();
       return hash;
     }
 
@@ -229,6 +243,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(56);
         output.WriteInt32(OccupancyRangeMax);
       }
+      if (Slope != 0D) {
+        output.WriteRawTag(65);
+        output.WriteDouble(Slope);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -254,6 +272,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (OccupancyRangeMax != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(OccupancyRangeMax);
+      }
+      if (Slope != 0D) {
+        size += 1 + 8;
       }
       return size;
     }
@@ -286,6 +307,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.OccupancyRangeMax != 0) {
         OccupancyRangeMax = other.OccupancyRangeMax;
+      }
+      if (other.Slope != 0D) {
+        Slope = other.Slope;
       }
     }
 
@@ -326,6 +350,10 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 56: {
             OccupancyRangeMax = input.ReadInt32();
+            break;
+          }
+          case 65: {
+            Slope = input.ReadDouble();
             break;
           }
         }

@@ -14,6 +14,7 @@ message OccupancyFactorConfig {
 	double factor_rate = 5;
 	int32 ocuupancy_range_min = 6;
 	int32 occupancy_range_max = 7;
+	double slope = 8;
 }
 
 /*
