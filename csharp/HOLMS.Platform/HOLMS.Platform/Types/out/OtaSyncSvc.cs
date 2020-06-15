@@ -29,7 +29,7 @@ namespace HOLMS.Types.Booking.RPC {
             "YnVmLlRpbWVzdGFtcCI7Ch1TY2hlZHVsZXJTdGFydEF0dGVtcHRSZXNwb25z",
             "ZRIaChJJc1NjaGVkdWxlclN0YXJ0ZWQYASABKAgiPQoeUEJYU2VydmljZVN0",
             "YXJ0QXR0ZW1wdFJlc3BvbnNlEhsKE0lzUEJYU2VydmljZVN0YXJ0ZWQYASAB",
-            "KAgyoAQKCk9UQVN5bmNTdmMSQgoQU3luY1Jlc2VydmF0aW9ucxIWLmdvb2ds",
+            "KAgyhwMKCk9UQVN5bmNTdmMSQgoQU3luY1Jlc2VydmF0aW9ucxIWLmdvb2ds",
             "ZS5wcm90b2J1Zi5FbXB0eRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJhChtH",
             "ZXRTY2hlZHVsZXJMYXN0V29ya2luZ1RpbWUSFi5nb29nbGUucHJvdG9idWYu",
             "RW1wdHkaKi5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5TZXJ2ZXJUYXNrRGV0",
@@ -37,11 +37,8 @@ namespace HOLMS.Types.Booking.RPC {
             "dWYuRW1wdHkaNi5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5TY2hlZHVsZXJT",
             "dGFydEF0dGVtcHRSZXNwb25zZRJpChZBdHRlbXB0U3RhcnRQQlhTZXJ2aWNl",
             "EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GjcuaG9sbXMudHlwZXMuYm9va2lu",
-            "Zy5ycGMuUEJYU2VydmljZVN0YXJ0QXR0ZW1wdFJlc3BvbnNlEkgKFlN5bmNQ",
-            "cmljZUZvclRpbWVGYWN0b3ISFi5nb29nbGUucHJvdG9idWYuRW1wdHkaFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkSTQobU3luY1ByaWNlRm9yT2NjdXBhbmN5",
-            "RmFjdG9yEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhYuZ29vZ2xlLnByb3Rv",
-            "YnVmLkVtcHR5QhqqAhdIT0xNUy5UeXBlcy5Cb29raW5nLlJQQ2IGcHJvdG8z"));
+            "Zy5ycGMuUEJYU2VydmljZVN0YXJ0QXR0ZW1wdFJlc3BvbnNlQhqqAhdIT0xN",
+            "Uy5UeXBlcy5Cb29raW5nLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
