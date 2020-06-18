@@ -97,6 +97,7 @@ namespace HOLMS.Platform.Client {
         RoomTypeSvc.RoomTypeSvcClient RoomTypeSvc { get; }
         SupplyHistorySnapshotSvc.SupplyHistorySnapshotSvcClient SupplyHistorySnapshotSvc { get; }
         SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc { get; }
+        OtaBaseSupplySvc.OtaBaseSupplySvcClient OtaBaseSupplySvc { get; }
         #endregion
 
         #region TenancyConfig

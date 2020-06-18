@@ -1,0 +1,33 @@
+﻿syntax = "proto3";
+
+package holms.types.crm.guests;
+option csharp_namespace = "HOLMS.Types.CRM.Guests";
+option go_package = "crm/guests";
+
+import "crm/guests/guest_indicator.proto";
+
+message GuestLite {
+	holms.types.crm.guests.GuestIndicator entity_id = 1;
+	string first_name = 2;
+	string last_name = 3;
+	string home_address1 = 4;
+    string home_address2 = 5;
+    string home_city = 6;
+    string home_state = 7;
+	string home_zip = 8;
+	string home_nation = 9;
+	string home_phone_number = 10;	
+    string office_address1 = 11;
+    string office_address2 = 12;
+    string office_city = 13;	
+    string office_state = 14;
+    string office_zip = 15;
+    string office_nation = 16;
+	string office_phone_number = 17;
+	string mobile_phone_number = 18;
+	string fax_number = 19;
+	string email_address = 20;
+	bool is_blacklisted = 21;
+	string company_name = 22;
+	string given_name_2 = 23;
+}

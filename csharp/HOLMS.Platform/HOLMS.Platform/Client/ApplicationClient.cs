@@ -111,6 +111,7 @@ namespace HOLMS.Platform.Client {
         public RoomTypeSvc.RoomTypeSvcClient RoomTypeSvc { get; protected set; }
         public SupplyHistorySnapshotSvc.SupplyHistorySnapshotSvcClient SupplyHistorySnapshotSvc { get; protected set; }
         public SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc { get; protected set; }
+        public OtaBaseSupplySvc.OtaBaseSupplySvcClient OtaBaseSupplySvc { get; protected set; }
         #endregion
 
         #region Tenancy Config
@@ -325,6 +326,7 @@ namespace HOLMS.Platform.Client {
             RoomTypeSvc = new RoomTypeSvc.RoomTypeSvcClient(_authenticatedChannel);
             SupplyHistorySnapshotSvc = new SupplyHistorySnapshotSvc.SupplyHistorySnapshotSvcClient(_authenticatedChannel);
             SupplySnapshotSvc = new SupplySnapshotSvc.SupplySnapshotSvcClient(_authenticatedChannel);
+            OtaBaseSupplySvc = new OtaBaseSupplySvc.OtaBaseSupplySvcClient(_authenticatedChannel);
             #endregion
 
             #region Tenancy Config

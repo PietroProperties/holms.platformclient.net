@@ -12,6 +12,7 @@ message ManagmentReportingSvcBatchReportRequest {
 	holms.types.reporting.input_params.ManagementCurrentTimeReportManifest current_time_manifest = 2;
 	holms.types.reporting.input_params.ManagementClockTimeRangeReportManifest clock_time_range_manifest = 3;
 	holms.types.reporting.input_params.ManagementOpsdateRangeReportManifest opsdate_range_manifest = 4;
+	holms.types.reporting.input_params.SingleDateReportManifest single_date_manifest = 5;
 }
 
 enum ManagementReportingSvcNotesSelection {
@@ -25,6 +26,7 @@ message ManagementReportingSvcHousekeeperManagementReportRequest {
 	bool only_attention_rooms = 1;
 	ManagementReportingSvcNotesSelection note_selection = 2;
 }
+
 
 service ManagementReportingSvc {
 	rpc GetManagementReportBatch(ManagmentReportingSvcBatchReportRequest)

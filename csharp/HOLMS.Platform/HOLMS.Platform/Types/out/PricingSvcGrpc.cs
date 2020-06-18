@@ -17,7 +17,7 @@ namespace HOLMS.Types.Supply.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> __Marshaller_PricingSvcQueryResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest> __Marshaller_PricingSvcPropertyQueryRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcPropertyQueryRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest> __Marshaller_PricingSvcUpdateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcChannelRushResponse> __Marshaller_PricingSvcChannelRushResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcChannelRushResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest> __Marshaller_PricingSvcWithoutPropertyQueryRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> __Method_QueryByRoomType = new grpc::Method<global::HOLMS.Types.Supply.RPC.PricingSvcRoomTypeQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse>(
@@ -34,12 +34,12 @@ namespace HOLMS.Types.Supply.RPC {
         __Marshaller_PricingSvcPropertyQueryRequest,
         __Marshaller_PricingSvcQueryResponse);
 
-    static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_Update = new grpc::Method<global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest, global::HOLMS.Types.Supply.RPC.PricingSvcChannelRushResponse> __Method_Update = new grpc::Method<global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest, global::HOLMS.Types.Supply.RPC.PricingSvcChannelRushResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Update",
         __Marshaller_PricingSvcUpdateRequest,
-        __Marshaller_Empty);
+        __Marshaller_PricingSvcChannelRushResponse);
 
     static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse> __Method_QueryByWithoutProperty = new grpc::Method<global::HOLMS.Types.Supply.RPC.PricingSvcWithoutPropertyQueryRequest, global::HOLMS.Types.Supply.RPC.PricingSvcQueryResponse>(
         grpc::MethodType.Unary,
@@ -67,7 +67,7 @@ namespace HOLMS.Types.Supply.RPC {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> Update(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.PricingSvcChannelRushResponse> Update(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -134,19 +134,19 @@ namespace HOLMS.Types.Supply.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_QueryByProperty, null, options, request);
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty Update(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::HOLMS.Types.Supply.RPC.PricingSvcChannelRushResponse Update(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return Update(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty Update(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest request, grpc::CallOptions options)
+      public virtual global::HOLMS.Types.Supply.RPC.PricingSvcChannelRushResponse Update(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Update, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateAsync(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.PricingSvcChannelRushResponse> UpdateAsync(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return UpdateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateAsync(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.PricingSvcChannelRushResponse> UpdateAsync(global::HOLMS.Types.Supply.RPC.PricingSvcUpdateRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
       }

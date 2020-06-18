@@ -13,4 +13,5 @@ message ChannelManagerConfig {
 	bool disable_channel_synchronization = 6;
 	bool disable_cancellation = 7;
 	bool disable_amendment = 8;
+	bool enable_pricing_connection = 9;
 }

@@ -25,48 +25,69 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "CjhyZXBvcnRpbmcvaW5wdXRfcGFyYW1zL21hbmFnZW1lbnRfcmVwb3J0X21h",
             "bmlmZXN0cy5wcm90bxIiaG9sbXMudHlwZXMucmVwb3J0aW5nLmlucHV0X3Bh",
             "cmFtcxoqcHJpbWl0aXZlL3BiX2luY2x1c2l2ZV9vcHNkYXRlX3JhbmdlLnBy",
-            "b3RvGhtwcmltaXRpdmUvcGJfaW50ZXJ2YWwucHJvdG8i2gMKI01hbmFnZW1l",
-            "bnRDdXJyZW50VGltZVJlcG9ydE1hbmlmZXN0Eh8KF3Vub2NjdXBpZWRfcm9v",
-            "bXNfcmVwb3J0GAEgASgIEhwKFGZvbGlvX2JhbGFuY2VfcmVwb3J0GAIgASgI",
-            "EiMKG2xvZGdpbmdfdmVyaWZpY2F0aW9uX3JlcG9ydBgDIAEoCBIYChBjb21w",
-            "X3N0YXlfcmVwb3J0GAQgASgIEhwKFHByb3Bfc3RhdHNfeWVzdGVyZGF5GAUg",
-            "ASgIEh4KFnByb3Bfc3RhdHNfdHJhaWxpbmdfN2QYBiABKAgSHwoXcHJvcF9z",
-            "dGF0c190cmFpbGluZ18yOGQYByABKAgSIQoZcHJvcF9zdGF0c19sYXN0X2Z1",
-            "bGxfd2VlaxgIIAEoCBIiChpwcm9wX3N0YXRzX2xhc3RfZnVsbF9tb250aBgJ",
-            "IAEoCBIhChlwcm9wX3N0YXRzX2xhc3RfZnVsbF95ZWFyGAogASgIEkUKDWN1",
-            "c3RvbV9yYW5nZXMYCyADKAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJ",
-            "bmNsdXNpdmVPcHNkYXRlUmFuZ2USJQoddmFjYW50X2FuZF9jbGVhbl9yb29t",
-            "c19yZXBvcnQYDCABKAgivQIKJk1hbmFnZW1lbnRDbG9ja1RpbWVSYW5nZVJl",
-            "cG9ydE1hbmlmZXN0EjoKD3JlcG9ydGluZ19yYW5nZRgBIAEoCzIhLmhvbG1z",
-            "LnR5cGVzLnByaW1pdGl2ZS5QYkludGVydmFsEh0KFWZvbGlvX3BheW1lbnRz",
-            "X3JlcG9ydBgCIAEoCBIeChZjYWxsX2FjY291bnRpbmdfcmVwb3J0GAMgASgI",
-            "EiYKHmxlZGdlcl9hY3Rpdml0eV9zdW1tYXJ5X3JlcG9ydBgEIAEoCBIlCh1s",
-            "ZWRnZXJfam91cm5hbF9lbnRyaWVzX3JlcG9ydBgFIAEoCBIhChlib29raW5n",
-            "c19ieV9wZXJpb2RfcmVwb3J0GAYgASgIEiYKHmZvbGlvX2ltbWVkaWF0ZV9j",
-            "aGFyZ2VzX3JlcG9ydBgHIAEoCCLiAwokTWFuYWdlbWVudE9wc2RhdGVSYW5n",
-            "ZVJlcG9ydE1hbmlmZXN0EkIKCmRhdGVfcmFuZ2UYASABKAsyLi5ob2xtcy50",
-            "eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRlUmFuZ2USIgoacm9v",
-            "bV91c2FnZV9kZXRhaWxlZF9yZXBvcnQYAiABKAgSIQoZcm9vbV91c2FnZV9z",
-            "dW1tYXJ5X3JlcG9ydBgDIAEoCBIpCiFwbGFubmVkX2xvZGdpbmdfcmV2ZW51",
-            "ZV9ieV9zb3VyY2UYBCABKAgSIgoacHJvcGVydHlfc3RhdGlzdGljc19yZXBv",
-            "cnQYBSABKAgSIgoaZm9saW9fZ3Jvc3NfY2hhcmdlc19yZXBvcnQYBiABKAgS",
-            "IQoZdGF4X2V4ZW1wdF9zdW1tYXJ5X3JlcG9ydBgHIAEoCBIgChh0YXhfZXhl",
-            "bXB0X2RldGFpbF9yZXBvcnQYCCABKAgSIgoaZm9saW9fZ3Jvc3Nfc3VtbWFy",
-            "eV9yZXBvcnQYCSABKAgSFgoOc3VtbWFyeV9yZXBvcnQYCiABKAgSIQoZdW51",
-            "c2VkX2dyb3VwX2hvbGRzX3JlcG9ydBgLIAEoCBIYChBjb21wX3N0YXlfcmVw",
-            "b3J0GAwgASgIQiWqAiJIT0xNUy5UeXBlcy5SZXBvcnRpbmcuUmVwb3J0UGFy",
-            "YW1zYgZwcm90bzM="));
+            "b3RvGhtwcmltaXRpdmUvcGJfaW50ZXJ2YWwucHJvdG8aHXByaW1pdGl2ZS9w",
+            "Yl9sb2NhbF9kYXRlLnByb3RvGhRwcmltaXRpdmUvdXVpZC5wcm90byKiBQoj",
+            "TWFuYWdlbWVudEN1cnJlbnRUaW1lUmVwb3J0TWFuaWZlc3QSHwoXdW5vY2N1",
+            "cGllZF9yb29tc19yZXBvcnQYASABKAgSHAoUZm9saW9fYmFsYW5jZV9yZXBv",
+            "cnQYAiABKAgSIwobbG9kZ2luZ192ZXJpZmljYXRpb25fcmVwb3J0GAMgASgI",
+            "EhgKEGNvbXBfc3RheV9yZXBvcnQYBCABKAgSHAoUcHJvcF9zdGF0c195ZXN0",
+            "ZXJkYXkYBSABKAgSHgoWcHJvcF9zdGF0c190cmFpbGluZ183ZBgGIAEoCBIf",
+            "Chdwcm9wX3N0YXRzX3RyYWlsaW5nXzI4ZBgHIAEoCBIhChlwcm9wX3N0YXRz",
+            "X2xhc3RfZnVsbF93ZWVrGAggASgIEiIKGnByb3Bfc3RhdHNfbGFzdF9mdWxs",
+            "X21vbnRoGAkgASgIEiEKGXByb3Bfc3RhdHNfbGFzdF9mdWxsX3llYXIYCiAB",
+            "KAgSRQoNY3VzdG9tX3JhbmdlcxgLIAMoCzIuLmhvbG1zLnR5cGVzLnByaW1p",
+            "dGl2ZS5QYkluY2x1c2l2ZU9wc2RhdGVSYW5nZRIlCh12YWNhbnRfYW5kX2Ns",
+            "ZWFuX3Jvb21zX3JlcG9ydBgMIAEoCBIaChJncm91cF9hZ2luZ19yZXBvcnQY",
+            "DSABKAgSOQoNc2VsZWN0ZWRfZGF0ZRgOIAEoCzIiLmhvbG1zLnR5cGVzLnBy",
+            "aW1pdGl2ZS5QYkxvY2FsRGF0ZRIXCg9ncm91cF9hZ2luZ19mb3IYDyABKAkS",
+            "EwoLc2hvd19jcmVkaXQYECABKAgSGAoQaW5jbHVkZV9jaGVja291dBgRIAEo",
+            "CBInCgJpZBgSIAEoCzIbLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5VdWlkIr0C",
+            "CiZNYW5hZ2VtZW50Q2xvY2tUaW1lUmFuZ2VSZXBvcnRNYW5pZmVzdBI6Cg9y",
+            "ZXBvcnRpbmdfcmFuZ2UYASABKAsyIS5ob2xtcy50eXBlcy5wcmltaXRpdmUu",
+            "UGJJbnRlcnZhbBIdChVmb2xpb19wYXltZW50c19yZXBvcnQYAiABKAgSHgoW",
+            "Y2FsbF9hY2NvdW50aW5nX3JlcG9ydBgDIAEoCBImCh5sZWRnZXJfYWN0aXZp",
+            "dHlfc3VtbWFyeV9yZXBvcnQYBCABKAgSJQodbGVkZ2VyX2pvdXJuYWxfZW50",
+            "cmllc19yZXBvcnQYBSABKAgSIQoZYm9va2luZ3NfYnlfcGVyaW9kX3JlcG9y",
+            "dBgGIAEoCBImCh5mb2xpb19pbW1lZGlhdGVfY2hhcmdlc19yZXBvcnQYByAB",
+            "KAgi4gMKJE1hbmFnZW1lbnRPcHNkYXRlUmFuZ2VSZXBvcnRNYW5pZmVzdBJC",
+            "CgpkYXRlX3JhbmdlGAEgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBi",
+            "SW5jbHVzaXZlT3BzZGF0ZVJhbmdlEiIKGnJvb21fdXNhZ2VfZGV0YWlsZWRf",
+            "cmVwb3J0GAIgASgIEiEKGXJvb21fdXNhZ2Vfc3VtbWFyeV9yZXBvcnQYAyAB",
+            "KAgSKQohcGxhbm5lZF9sb2RnaW5nX3JldmVudWVfYnlfc291cmNlGAQgASgI",
+            "EiIKGnByb3BlcnR5X3N0YXRpc3RpY3NfcmVwb3J0GAUgASgIEiIKGmZvbGlv",
+            "X2dyb3NzX2NoYXJnZXNfcmVwb3J0GAYgASgIEiEKGXRheF9leGVtcHRfc3Vt",
+            "bWFyeV9yZXBvcnQYByABKAgSIAoYdGF4X2V4ZW1wdF9kZXRhaWxfcmVwb3J0",
+            "GAggASgIEiIKGmZvbGlvX2dyb3NzX3N1bW1hcnlfcmVwb3J0GAkgASgIEhYK",
+            "DnN1bW1hcnlfcmVwb3J0GAogASgIEiEKGXVudXNlZF9ncm91cF9ob2xkc19y",
+            "ZXBvcnQYCyABKAgSGAoQY29tcF9zdGF5X3JlcG9ydBgMIAEoCCLRAQoYU2lu",
+            "Z2xlRGF0ZVJlcG9ydE1hbmlmZXN0EjkKDXNlbGVjdGVkX2RhdGUYASABKAsy",
+            "Ii5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGUSHgoWYWR2YW5j",
+            "ZV9kZXBvc2l0X3JlcG9ydBgCIAEoCBJaChdhZHZhbmNlX2RlcG9zaXRfc29y",
+            "dGluZxgDIAEoDjI5LmhvbG1zLnR5cGVzLnJlcG9ydGluZy5pbnB1dF9wYXJh",
+            "bXMuQWR2YW5jZURlcG9zaXRTb3J0aW5nKj8KFUFkdmFuY2VEZXBvc2l0U29y",
+            "dGluZxIRCg1CWV9HVUVTVF9OQU1FEAASEwoPQllfQVJSSVZBTF9EQVRFEAFC",
+            "JaoCIkhPTE1TLlR5cGVzLlJlcG9ydGluZy5SZXBvcnRQYXJhbXNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbIntervalReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport", "PropStatsYesterday", "PropStatsTrailing7D", "PropStatsTrailing28D", "PropStatsLastFullWeek", "PropStatsLastFullMonth", "PropStatsLastFullYear", "CustomRanges", "VacantAndCleanRoomsReport" }, null, null, null),
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbIntervalReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.ReportParams.AdvanceDepositSorting), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementCurrentTimeReportManifest.Parser, new[]{ "UnoccupiedRoomsReport", "FolioBalanceReport", "LodgingVerificationReport", "CompStayReport", "PropStatsYesterday", "PropStatsTrailing7D", "PropStatsTrailing28D", "PropStatsLastFullWeek", "PropStatsLastFullMonth", "PropStatsLastFullYear", "CustomRanges", "VacantAndCleanRoomsReport", "GroupAgingReport", "SelectedDate", "GroupAgingFor", "ShowCredit", "IncludeCheckout", "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementClockTimeRangeReportManifest.Parser, new[]{ "ReportingRange", "FolioPaymentsReport", "CallAccountingReport", "LedgerActivitySummaryReport", "LedgerJournalEntriesReport", "BookingsByPeriodReport", "FolioImmediateChargesReport" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport", "PlannedLodgingRevenueBySource", "PropertyStatisticsReport", "FolioGrossChargesReport", "TaxExemptSummaryReport", "TaxExemptDetailReport", "FolioGrossSummaryReport", "SummaryReport", "UnusedGroupHoldsReport", "CompStayReport" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest), global::HOLMS.Types.Reporting.ReportParams.ManagementOpsdateRangeReportManifest.Parser, new[]{ "DateRange", "RoomUsageDetailedReport", "RoomUsageSummaryReport", "PlannedLodgingRevenueBySource", "PropertyStatisticsReport", "FolioGrossChargesReport", "TaxExemptSummaryReport", "TaxExemptDetailReport", "FolioGrossSummaryReport", "SummaryReport", "UnusedGroupHoldsReport", "CompStayReport" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Reporting.ReportParams.SingleDateReportManifest), global::HOLMS.Types.Reporting.ReportParams.SingleDateReportManifest.Parser, new[]{ "SelectedDate", "AdvanceDepositReport", "AdvanceDepositSorting" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum AdvanceDepositSorting {
+    [pbr::OriginalName("BY_GUEST_NAME")] ByGuestName = 0,
+    [pbr::OriginalName("BY_ARRIVAL_DATE")] ByArrivalDate = 1,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class ManagementCurrentTimeReportManifest : pb::IMessage<ManagementCurrentTimeReportManifest> {
     private static readonly pb::MessageParser<ManagementCurrentTimeReportManifest> _parser = new pb::MessageParser<ManagementCurrentTimeReportManifest>(() => new ManagementCurrentTimeReportManifest());
@@ -104,6 +125,12 @@ namespace HOLMS.Types.Reporting.ReportParams {
       propStatsLastFullYear_ = other.propStatsLastFullYear_;
       customRanges_ = other.customRanges_.Clone();
       vacantAndCleanRoomsReport_ = other.vacantAndCleanRoomsReport_;
+      groupAgingReport_ = other.groupAgingReport_;
+      SelectedDate = other.selectedDate_ != null ? other.SelectedDate.Clone() : null;
+      groupAgingFor_ = other.groupAgingFor_;
+      showCredit_ = other.showCredit_;
+      includeCheckout_ = other.includeCheckout_;
+      Id = other.id_ != null ? other.Id.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -242,6 +269,72 @@ namespace HOLMS.Types.Reporting.ReportParams {
       }
     }
 
+    /// <summary>Field number for the "group_aging_report" field.</summary>
+    public const int GroupAgingReportFieldNumber = 13;
+    private bool groupAgingReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool GroupAgingReport {
+      get { return groupAgingReport_; }
+      set {
+        groupAgingReport_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "selected_date" field.</summary>
+    public const int SelectedDateFieldNumber = 14;
+    private global::HOLMS.Types.Primitive.PbLocalDate selectedDate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate SelectedDate {
+      get { return selectedDate_; }
+      set {
+        selectedDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "group_aging_for" field.</summary>
+    public const int GroupAgingForFieldNumber = 15;
+    private string groupAgingFor_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string GroupAgingFor {
+      get { return groupAgingFor_; }
+      set {
+        groupAgingFor_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "show_credit" field.</summary>
+    public const int ShowCreditFieldNumber = 16;
+    private bool showCredit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool ShowCredit {
+      get { return showCredit_; }
+      set {
+        showCredit_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "include_checkout" field.</summary>
+    public const int IncludeCheckoutFieldNumber = 17;
+    private bool includeCheckout_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IncludeCheckout {
+      get { return includeCheckout_; }
+      set {
+        includeCheckout_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 18;
+    private global::HOLMS.Types.Primitive.Uuid id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.Uuid Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ManagementCurrentTimeReportManifest);
@@ -267,6 +360,12 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (PropStatsLastFullYear != other.PropStatsLastFullYear) return false;
       if(!customRanges_.Equals(other.customRanges_)) return false;
       if (VacantAndCleanRoomsReport != other.VacantAndCleanRoomsReport) return false;
+      if (GroupAgingReport != other.GroupAgingReport) return false;
+      if (!object.Equals(SelectedDate, other.SelectedDate)) return false;
+      if (GroupAgingFor != other.GroupAgingFor) return false;
+      if (ShowCredit != other.ShowCredit) return false;
+      if (IncludeCheckout != other.IncludeCheckout) return false;
+      if (!object.Equals(Id, other.Id)) return false;
       return true;
     }
 
@@ -285,6 +384,12 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (PropStatsLastFullYear != false) hash ^= PropStatsLastFullYear.GetHashCode();
       hash ^= customRanges_.GetHashCode();
       if (VacantAndCleanRoomsReport != false) hash ^= VacantAndCleanRoomsReport.GetHashCode();
+      if (GroupAgingReport != false) hash ^= GroupAgingReport.GetHashCode();
+      if (selectedDate_ != null) hash ^= SelectedDate.GetHashCode();
+      if (GroupAgingFor.Length != 0) hash ^= GroupAgingFor.GetHashCode();
+      if (ShowCredit != false) hash ^= ShowCredit.GetHashCode();
+      if (IncludeCheckout != false) hash ^= IncludeCheckout.GetHashCode();
+      if (id_ != null) hash ^= Id.GetHashCode();
       return hash;
     }
 
@@ -340,6 +445,30 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(96);
         output.WriteBool(VacantAndCleanRoomsReport);
       }
+      if (GroupAgingReport != false) {
+        output.WriteRawTag(104);
+        output.WriteBool(GroupAgingReport);
+      }
+      if (selectedDate_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(SelectedDate);
+      }
+      if (GroupAgingFor.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(GroupAgingFor);
+      }
+      if (ShowCredit != false) {
+        output.WriteRawTag(128, 1);
+        output.WriteBool(ShowCredit);
+      }
+      if (IncludeCheckout != false) {
+        output.WriteRawTag(136, 1);
+        output.WriteBool(IncludeCheckout);
+      }
+      if (id_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(Id);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -378,6 +507,24 @@ namespace HOLMS.Types.Reporting.ReportParams {
       size += customRanges_.CalculateSize(_repeated_customRanges_codec);
       if (VacantAndCleanRoomsReport != false) {
         size += 1 + 1;
+      }
+      if (GroupAgingReport != false) {
+        size += 1 + 1;
+      }
+      if (selectedDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SelectedDate);
+      }
+      if (GroupAgingFor.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(GroupAgingFor);
+      }
+      if (ShowCredit != false) {
+        size += 2 + 1;
+      }
+      if (IncludeCheckout != false) {
+        size += 2 + 1;
+      }
+      if (id_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Id);
       }
       return size;
     }
@@ -420,6 +567,30 @@ namespace HOLMS.Types.Reporting.ReportParams {
       customRanges_.Add(other.customRanges_);
       if (other.VacantAndCleanRoomsReport != false) {
         VacantAndCleanRoomsReport = other.VacantAndCleanRoomsReport;
+      }
+      if (other.GroupAgingReport != false) {
+        GroupAgingReport = other.GroupAgingReport;
+      }
+      if (other.selectedDate_ != null) {
+        if (selectedDate_ == null) {
+          selectedDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        SelectedDate.MergeFrom(other.SelectedDate);
+      }
+      if (other.GroupAgingFor.Length != 0) {
+        GroupAgingFor = other.GroupAgingFor;
+      }
+      if (other.ShowCredit != false) {
+        ShowCredit = other.ShowCredit;
+      }
+      if (other.IncludeCheckout != false) {
+        IncludeCheckout = other.IncludeCheckout;
+      }
+      if (other.id_ != null) {
+        if (id_ == null) {
+          id_ = new global::HOLMS.Types.Primitive.Uuid();
+        }
+        Id.MergeFrom(other.Id);
       }
     }
 
@@ -477,6 +648,36 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 96: {
             VacantAndCleanRoomsReport = input.ReadBool();
+            break;
+          }
+          case 104: {
+            GroupAgingReport = input.ReadBool();
+            break;
+          }
+          case 114: {
+            if (selectedDate_ == null) {
+              selectedDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(selectedDate_);
+            break;
+          }
+          case 122: {
+            GroupAgingFor = input.ReadString();
+            break;
+          }
+          case 128: {
+            ShowCredit = input.ReadBool();
+            break;
+          }
+          case 136: {
+            IncludeCheckout = input.ReadBool();
+            break;
+          }
+          case 146: {
+            if (id_ == null) {
+              id_ = new global::HOLMS.Types.Primitive.Uuid();
+            }
+            input.ReadMessage(id_);
             break;
           }
         }
@@ -1199,6 +1400,185 @@ namespace HOLMS.Types.Reporting.ReportParams {
           }
           case 96: {
             CompStayReport = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class SingleDateReportManifest : pb::IMessage<SingleDateReportManifest> {
+    private static readonly pb::MessageParser<SingleDateReportManifest> _parser = new pb::MessageParser<SingleDateReportManifest>(() => new SingleDateReportManifest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SingleDateReportManifest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Reporting.ReportParams.ManagementReportManifestsReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SingleDateReportManifest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SingleDateReportManifest(SingleDateReportManifest other) : this() {
+      SelectedDate = other.selectedDate_ != null ? other.SelectedDate.Clone() : null;
+      advanceDepositReport_ = other.advanceDepositReport_;
+      advanceDepositSorting_ = other.advanceDepositSorting_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SingleDateReportManifest Clone() {
+      return new SingleDateReportManifest(this);
+    }
+
+    /// <summary>Field number for the "selected_date" field.</summary>
+    public const int SelectedDateFieldNumber = 1;
+    private global::HOLMS.Types.Primitive.PbLocalDate selectedDate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate SelectedDate {
+      get { return selectedDate_; }
+      set {
+        selectedDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "advance_deposit_report" field.</summary>
+    public const int AdvanceDepositReportFieldNumber = 2;
+    private bool advanceDepositReport_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool AdvanceDepositReport {
+      get { return advanceDepositReport_; }
+      set {
+        advanceDepositReport_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "advance_deposit_sorting" field.</summary>
+    public const int AdvanceDepositSortingFieldNumber = 3;
+    private global::HOLMS.Types.Reporting.ReportParams.AdvanceDepositSorting advanceDepositSorting_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Reporting.ReportParams.AdvanceDepositSorting AdvanceDepositSorting {
+      get { return advanceDepositSorting_; }
+      set {
+        advanceDepositSorting_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SingleDateReportManifest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SingleDateReportManifest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(SelectedDate, other.SelectedDate)) return false;
+      if (AdvanceDepositReport != other.AdvanceDepositReport) return false;
+      if (AdvanceDepositSorting != other.AdvanceDepositSorting) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (selectedDate_ != null) hash ^= SelectedDate.GetHashCode();
+      if (AdvanceDepositReport != false) hash ^= AdvanceDepositReport.GetHashCode();
+      if (AdvanceDepositSorting != 0) hash ^= AdvanceDepositSorting.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (selectedDate_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SelectedDate);
+      }
+      if (AdvanceDepositReport != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(AdvanceDepositReport);
+      }
+      if (AdvanceDepositSorting != 0) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) AdvanceDepositSorting);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (selectedDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SelectedDate);
+      }
+      if (AdvanceDepositReport != false) {
+        size += 1 + 1;
+      }
+      if (AdvanceDepositSorting != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AdvanceDepositSorting);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SingleDateReportManifest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.selectedDate_ != null) {
+        if (selectedDate_ == null) {
+          selectedDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        SelectedDate.MergeFrom(other.SelectedDate);
+      }
+      if (other.AdvanceDepositReport != false) {
+        AdvanceDepositReport = other.AdvanceDepositReport;
+      }
+      if (other.AdvanceDepositSorting != 0) {
+        AdvanceDepositSorting = other.AdvanceDepositSorting;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (selectedDate_ == null) {
+              selectedDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(selectedDate_);
+            break;
+          }
+          case 16: {
+            AdvanceDepositReport = input.ReadBool();
+            break;
+          }
+          case 24: {
+            advanceDepositSorting_ = (global::HOLMS.Types.Reporting.ReportParams.AdvanceDepositSorting) input.ReadEnum();
             break;
           }
         }
