@@ -68,4 +68,6 @@ service OtaBaseSupplySvc {
 	rpc UpdatePrice (ChannelAllocationUpdateRequest)
 		returns (ChannelAllocationUpdateResponse);
 
+	rpc SyncChannelRush (OtaSupplyDetailsRequest)
+		returns (ChannelAllocationUpdateResponse);
 }

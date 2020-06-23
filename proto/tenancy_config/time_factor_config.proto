@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config;
+option csharp_namespace = "HOLMS.Types.TenancyConfig";
+option go_package = "tenancyconfig";
+
+import "tenancy_config/indicators/time_factor_config_indicator.proto";
+
+message TimeFactorConfig {
+	holms.types.tenancy_config.indicators.TimeFactorConfigIndicator entity_id = 1;
+	string time_interval_name = 2;
+	double fator_rate = 3;
+	int32 hour_of_the_day = 4;
+}
+
+/*
+time_interval_name	varchar(128)  not null,
+	fator_rate numeric(3,2) not null default 1.00,
+	hour_of_the_day integer not null
+)*/

@@ -25,18 +25,19 @@ namespace HOLMS.Types.Supply {
             "ChxzdXBwbHkvc2NoZWR1bGVkX3ByaWNlLnByb3RvEhJob2xtcy50eXBlcy5z",
             "dXBwbHkaIXN1cHBseS9yb29tX3R5cGVzL3Jvb21fdHlwZS5wcm90bxofcHJp",
             "bWl0aXZlL21vbmV0YXJ5X2Ftb3VudC5wcm90bxodcHJpbWl0aXZlL3BiX2xv",
-            "Y2FsX2RhdGUucHJvdG8aGnN1cHBseS9yYXRlX3NjaGVkdWxlLnByb3RvIvUB",
+            "Y2FsX2RhdGUucHJvdG8aGnN1cHBseS9yYXRlX3NjaGVkdWxlLnByb3RvIpoC",
             "Cg5TY2hlZHVsZWRQcmljZRIwCgRkYXRlGAEgASgLMiIuaG9sbXMudHlwZXMu",
             "cHJpbWl0aXZlLlBiTG9jYWxEYXRlEjcKDXJhdGVfc2NoZWR1bGUYAiABKAsy",
             "IC5ob2xtcy50eXBlcy5zdXBwbHkuUmF0ZVNjaGVkdWxlEjoKCXJvb21fdHlw",
             "ZRgDIAEoCzInLmhvbG1zLnR5cGVzLnN1cHBseS5yb29tX3R5cGVzLlJvb21U",
             "eXBlEjwKDW5pZ2h0bHlfcHJpY2UYBCABKAsyJS5ob2xtcy50eXBlcy5wcmlt",
-            "aXRpdmUuTW9uZXRhcnlBbW91bnRCHVoGc3VwcGx5qgISSE9MTVMuVHlwZXMu",
-            "U3VwcGx5YgZwcm90bzM="));
+            "aXRpdmUuTW9uZXRhcnlBbW91bnQSIwobaXNfcHJpY2Vfb3ZlcnJpZGRlbl9i",
+            "b29raW5nGAUgASgIQh1aBnN1cHBseaoCEkhPTE1TLlR5cGVzLlN1cHBseWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Supply.RateScheduleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.ScheduledPrice), global::HOLMS.Types.Supply.ScheduledPrice.Parser, new[]{ "Date", "RateSchedule", "RoomType", "NightlyPrice" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.ScheduledPrice), global::HOLMS.Types.Supply.ScheduledPrice.Parser, new[]{ "Date", "RateSchedule", "RoomType", "NightlyPrice", "IsPriceOverriddenBooking" }, null, null, null)
           }));
     }
     #endregion
@@ -71,6 +72,7 @@ namespace HOLMS.Types.Supply {
       RateSchedule = other.rateSchedule_ != null ? other.RateSchedule.Clone() : null;
       RoomType = other.roomType_ != null ? other.RoomType.Clone() : null;
       NightlyPrice = other.nightlyPrice_ != null ? other.NightlyPrice.Clone() : null;
+      isPriceOverriddenBooking_ = other.isPriceOverriddenBooking_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -122,6 +124,17 @@ namespace HOLMS.Types.Supply {
       }
     }
 
+    /// <summary>Field number for the "is_price_overridden_booking" field.</summary>
+    public const int IsPriceOverriddenBookingFieldNumber = 5;
+    private bool isPriceOverriddenBooking_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsPriceOverriddenBooking {
+      get { return isPriceOverriddenBooking_; }
+      set {
+        isPriceOverriddenBooking_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ScheduledPrice);
@@ -139,6 +152,7 @@ namespace HOLMS.Types.Supply {
       if (!object.Equals(RateSchedule, other.RateSchedule)) return false;
       if (!object.Equals(RoomType, other.RoomType)) return false;
       if (!object.Equals(NightlyPrice, other.NightlyPrice)) return false;
+      if (IsPriceOverriddenBooking != other.IsPriceOverriddenBooking) return false;
       return true;
     }
 
@@ -149,6 +163,7 @@ namespace HOLMS.Types.Supply {
       if (rateSchedule_ != null) hash ^= RateSchedule.GetHashCode();
       if (roomType_ != null) hash ^= RoomType.GetHashCode();
       if (nightlyPrice_ != null) hash ^= NightlyPrice.GetHashCode();
+      if (IsPriceOverriddenBooking != false) hash ^= IsPriceOverriddenBooking.GetHashCode();
       return hash;
     }
 
@@ -175,6 +190,10 @@ namespace HOLMS.Types.Supply {
         output.WriteRawTag(34);
         output.WriteMessage(NightlyPrice);
       }
+      if (IsPriceOverriddenBooking != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(IsPriceOverriddenBooking);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -191,6 +210,9 @@ namespace HOLMS.Types.Supply {
       }
       if (nightlyPrice_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(NightlyPrice);
+      }
+      if (IsPriceOverriddenBooking != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -223,6 +245,9 @@ namespace HOLMS.Types.Supply {
           nightlyPrice_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
         }
         NightlyPrice.MergeFrom(other.NightlyPrice);
+      }
+      if (other.IsPriceOverriddenBooking != false) {
+        IsPriceOverriddenBooking = other.IsPriceOverriddenBooking;
       }
     }
 
@@ -260,6 +285,10 @@ namespace HOLMS.Types.Supply {
               nightlyPrice_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
             }
             input.ReadMessage(nightlyPrice_);
+            break;
+          }
+          case 40: {
+            IsPriceOverriddenBooking = input.ReadBool();
             break;
           }
         }

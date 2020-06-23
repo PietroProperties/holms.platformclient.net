@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package holms.types.tenancy_config.rpc;
+option csharp_namespace = "HOLMS.Types.TenancyConfig.RPC";
+
+import "google/protobuf/empty.proto";
+import "tenancy_config/revenue_management_config.proto";
+import "tenancy_config/occupancy_factor_config.proto";
+import "tenancy_config/time_factor_config.proto";
+
+message ReveneueManagementRequest {
+	holms.types.tenancy_config.RevenueManagementConfig config = 1;
+	repeated holms.types.tenancy_config.OccupancyFactorConfig occupancy_factor = 2;
+	repeated holms.types.tenancy_config.TimeFactorConfig time_factor = 3;
+}
+
+message ReveneueManagementResponse {
+	holms.types.tenancy_config.RevenueManagementConfig config = 1;
+	repeated holms.types.tenancy_config.OccupancyFactorConfig occupancy_factor = 2;
+	repeated holms.types.tenancy_config.TimeFactorConfig time_factor = 3;
+}
+
+service ReveneueManagementSvc {
+	rpc Get(google.protobuf.Empty) 
+		returns (ReveneueManagementResponse);
+
+	rpc Update(ReveneueManagementRequest)
+		returns (ReveneueManagementResponse);
+}

@@ -112,6 +112,7 @@ namespace HOLMS.Platform.Client {
         public SupplyHistorySnapshotSvc.SupplyHistorySnapshotSvcClient SupplyHistorySnapshotSvc { get; protected set; }
         public SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc { get; protected set; }
         public OtaBaseSupplySvc.OtaBaseSupplySvcClient OtaBaseSupplySvc { get; protected set; }
+        public PricingOverrideSvc.PricingOverrideSvcClient PricingOverrideSvc { get; protected set; }
         #endregion
 
         #region Tenancy Config
@@ -134,6 +135,7 @@ namespace HOLMS.Platform.Client {
         public ReportingConfigurationSvc.ReportingConfigurationSvcClient ReportingConfigurationSvc { get; protected set; }
         public DefaultSettingsSvc.DefaultSettingsSvcClient DefaultSettingsSvc { get; protected set; }
         public RoomStatusSvc.RoomStatusSvcClient RoomStatusSvc { get; protected set; }
+        public ReveneueManagementSvc.ReveneueManagementSvcClient RevManagementSvc { get; protected set; }
         #endregion
 
         #region Reporting
@@ -327,6 +329,7 @@ namespace HOLMS.Platform.Client {
             SupplyHistorySnapshotSvc = new SupplyHistorySnapshotSvc.SupplyHistorySnapshotSvcClient(_authenticatedChannel);
             SupplySnapshotSvc = new SupplySnapshotSvc.SupplySnapshotSvcClient(_authenticatedChannel);
             OtaBaseSupplySvc = new OtaBaseSupplySvc.OtaBaseSupplySvcClient(_authenticatedChannel);
+            PricingOverrideSvc = new PricingOverrideSvc.PricingOverrideSvcClient(_authenticatedChannel);
             #endregion
 
             #region Tenancy Config
@@ -350,6 +353,7 @@ namespace HOLMS.Platform.Client {
             ReportingConfigurationSvc = new ReportingConfigurationSvc.ReportingConfigurationSvcClient(_authenticatedChannel);
             DefaultSettingsSvc = new DefaultSettingsSvc.DefaultSettingsSvcClient(_authenticatedChannel);
             RoomStatusSvc = new RoomStatusSvc.RoomStatusSvcClient(_authenticatedChannel);
+            RevManagementSvc = new ReveneueManagementSvc.ReveneueManagementSvcClient(_authenticatedChannel);
             #endregion
 
             #region Reporting

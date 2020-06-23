@@ -30,4 +30,10 @@ service OTASyncSvc {
 
 	rpc AttemptStartPBXService(google.protobuf.Empty)
 		returns(PBXServiceStartAttemptResponse);
+
+	rpc SyncPriceForOccupancyFactor(google.protobuf.Empty)
+		returns (google.protobuf.Empty);
+
+	rpc SyncPriceForTimeFactor(google.protobuf.Empty)
+		returns (google.protobuf.Empty);	
 }	
