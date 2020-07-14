@@ -18,5 +18,6 @@ message PricedOfferedLodging {
 	holms.types.primitive.MonetaryAmount nightly_price = 5;
 	repeated string required_tags = 6;
 	int32 releasable_holds = 7;
+	bool is_price_overridden = 8;
 }
 

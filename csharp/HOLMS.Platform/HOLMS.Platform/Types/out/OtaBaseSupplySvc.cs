@@ -56,7 +56,7 @@ namespace HOLMS.Types.Supply.RPC {
             "bm5lbEFsbG9jYXRpb25QcmljaW5nKoQBCh1DaGFubmVsQWxsb2NhdGlvblVw",
             "ZGF0ZVJlc3VsdBIRCg1VUERBVEVfRkFJTEVEEAASFwoTREJfVVBEQVRFX0NS",
             "X0ZBSUxFRBABEiAKHENSX1VQREFURV9TWU5DX1NUQVRVU19GQUlMRUQQAhIV",
-            "ChFVUERBVEVfU1VDQ0VTU0ZVTBADMo8EChBPdGFCYXNlU3VwcGx5U3ZjEnAK",
+            "ChFVUERBVEVfU1VDQ0VTU0ZVTBADMowFChBPdGFCYXNlU3VwcGx5U3ZjEnAK",
             "C0FsbEZvckRhdGVzEi8uaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5PdGFTdXBw",
             "bHlEZXRhaWxzUmVxdWVzdBowLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuT3Rh",
             "U3VwcGx5RGV0YWlsc1Jlc3BvbnNlEocBChRJbnNlcnRPclVwZGF0ZVN1cHBs",
@@ -68,8 +68,11 @@ namespace HOLMS.Types.Supply.RPC {
             "dGlvblVwZGF0ZVJlc3BvbnNlEn4KC1VwZGF0ZVByaWNlEjYuaG9sbXMudHlw",
             "ZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblVwZGF0ZVJlcXVlc3Qa",
             "Ny5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkNoYW5uZWxBbGxvY2F0aW9uVXBk",
-            "YXRlUmVzcG9uc2VCJVoKc3VwcGx5L3JwY6oCFkhPTE1TLlR5cGVzLlN1cHBs",
-            "eS5SUENiBnByb3RvMw=="));
+            "YXRlUmVzcG9uc2USewoPU3luY0NoYW5uZWxSdXNoEi8uaG9sbXMudHlwZXMu",
+            "c3VwcGx5LnJwYy5PdGFTdXBwbHlEZXRhaWxzUmVxdWVzdBo3LmhvbG1zLnR5",
+            "cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXNwb25z",
+            "ZUIlWgpzdXBwbHkvcnBjqgIWSE9MTVMuVHlwZXMuU3VwcGx5LlJQQ2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.OtaChannelProviderIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.FixedPointRatioReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResult), }, new pbr::GeneratedClrTypeInfo[] {

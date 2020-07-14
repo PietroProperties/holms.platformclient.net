@@ -14,4 +14,5 @@ message ScheduledPrice {
     RateSchedule rate_schedule = 2;
     holms.types.supply.room_types.RoomType room_type = 3;
     holms.types.primitive.MonetaryAmount nightly_price = 4;
+    bool is_price_overridden_booking = 5;
 }

@@ -98,6 +98,7 @@ namespace HOLMS.Platform.Client {
         SupplyHistorySnapshotSvc.SupplyHistorySnapshotSvcClient SupplyHistorySnapshotSvc { get; }
         SupplySnapshotSvc.SupplySnapshotSvcClient SupplySnapshotSvc { get; }
         OtaBaseSupplySvc.OtaBaseSupplySvcClient OtaBaseSupplySvc { get; }
+        PricingOverrideSvc.PricingOverrideSvcClient PricingOverrideSvc { get; }
         #endregion
 
         #region TenancyConfig
@@ -120,6 +121,7 @@ namespace HOLMS.Platform.Client {
         ReportingConfigurationSvc.ReportingConfigurationSvcClient ReportingConfigurationSvc { get; }
         DefaultSettingsSvc.DefaultSettingsSvcClient DefaultSettingsSvc { get; }
         RoomStatusSvc.RoomStatusSvcClient RoomStatusSvc { get; }
+        ReveneueManagementSvc.ReveneueManagementSvcClient RevManagementSvc { get; }
         #endregion
 
         #region Reporting
