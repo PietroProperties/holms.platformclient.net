@@ -48,11 +48,11 @@ namespace HOLMS.Types.Operations.RPC {
         __Marshaller_MailboxEntry,
         __Marshaller_Empty);
 
-    static readonly grpc::Method<global::HOLMS.Types.Operations.Messaging.MailboxEntryIndicator, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UpdateViewedTime = new grpc::Method<global::HOLMS.Types.Operations.Messaging.MailboxEntryIndicator, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly grpc::Method<global::HOLMS.Types.Operations.Messaging.MailboxEntry, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UpdateViewedTime = new grpc::Method<global::HOLMS.Types.Operations.Messaging.MailboxEntry, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UpdateViewedTime",
-        __Marshaller_MailboxEntryIndicator,
+        __Marshaller_MailboxEntry,
         __Marshaller_Empty);
 
     static readonly grpc::Method<global::HOLMS.Types.Operations.Messaging.MailboxEntry, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UpsertDraft = new grpc::Method<global::HOLMS.Types.Operations.Messaging.MailboxEntry, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -91,7 +91,7 @@ namespace HOLMS.Types.Operations.RPC {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> UpdateViewedTime(global::HOLMS.Types.Operations.Messaging.MailboxEntryIndicator request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> UpdateViewedTime(global::HOLMS.Types.Operations.Messaging.MailboxEntry request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -190,19 +190,19 @@ namespace HOLMS.Types.Operations.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SendMessage, null, options, request);
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateViewedTime(global::HOLMS.Types.Operations.Messaging.MailboxEntryIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateViewedTime(global::HOLMS.Types.Operations.Messaging.MailboxEntry request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return UpdateViewedTime(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateViewedTime(global::HOLMS.Types.Operations.Messaging.MailboxEntryIndicator request, grpc::CallOptions options)
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty UpdateViewedTime(global::HOLMS.Types.Operations.Messaging.MailboxEntry request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateViewedTime, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateViewedTimeAsync(global::HOLMS.Types.Operations.Messaging.MailboxEntryIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateViewedTimeAsync(global::HOLMS.Types.Operations.Messaging.MailboxEntry request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return UpdateViewedTimeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateViewedTimeAsync(global::HOLMS.Types.Operations.Messaging.MailboxEntryIndicator request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> UpdateViewedTimeAsync(global::HOLMS.Types.Operations.Messaging.MailboxEntry request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateViewedTime, null, options, request);
       }

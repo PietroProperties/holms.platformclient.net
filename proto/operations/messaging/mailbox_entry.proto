@@ -7,6 +7,7 @@ option go_package = "operations/messaging";
 import "google/protobuf/timestamp.proto";
 import "operations/messaging/mailbox_entry_indicator.proto";
 import "iam/staff_member.proto";
+import "primitive/uuid.proto";
 
 message MailboxEntry {
 	.holms.types.operations.messaging.MailboxEntryIndicator entity_id = 1;
@@ -16,4 +17,5 @@ message MailboxEntry {
 	repeated .holms.types.iam.StaffMember recipients = 5;
 	google.protobuf.Timestamp viewed_at = 6;
 	google.protobuf.Timestamp created_at = 7;
+    string message_id = 8;
 }
