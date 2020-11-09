@@ -26,19 +26,20 @@ namespace HOLMS.Types.Operations.Messaging {
             "b2xtcy50eXBlcy5vcGVyYXRpb25zLm1lc3NhZ2luZxofZ29vZ2xlL3Byb3Rv",
             "YnVmL3RpbWVzdGFtcC5wcm90bxoyb3BlcmF0aW9ucy9tZXNzYWdpbmcvbWFp",
             "bGJveF9lbnRyeV9pbmRpY2F0b3IucHJvdG8aFmlhbS9zdGFmZl9tZW1iZXIu",
-            "cHJvdG8iuAIKDE1haWxib3hFbnRyeRJKCgllbnRpdHlfaWQYASABKAsyNy5o",
-            "b2xtcy50eXBlcy5vcGVyYXRpb25zLm1lc3NhZ2luZy5NYWlsYm94RW50cnlJ",
-            "bmRpY2F0b3ISDwoHc3ViamVjdBgCIAEoCRIMCgRib2R5GAMgASgJEiwKBnNl",
-            "bmRlchgEIAEoCzIcLmhvbG1zLnR5cGVzLmlhbS5TdGFmZk1lbWJlchIwCgpy",
-            "ZWNpcGllbnRzGAUgAygLMhwuaG9sbXMudHlwZXMuaWFtLlN0YWZmTWVtYmVy",
-            "Ei0KCXZpZXdlZF9hdBgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
-            "bXASLgoKY3JlYXRlZF9hdBgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
-            "c3RhbXBCOVoUb3BlcmF0aW9ucy9tZXNzYWdpbmeqAiBIT0xNUy5UeXBlcy5P",
-            "cGVyYXRpb25zLk1lc3NhZ2luZ2IGcHJvdG8z"));
+            "cHJvdG8aFHByaW1pdGl2ZS91dWlkLnByb3RvIswCCgxNYWlsYm94RW50cnkS",
+            "SgoJZW50aXR5X2lkGAEgASgLMjcuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5t",
+            "ZXNzYWdpbmcuTWFpbGJveEVudHJ5SW5kaWNhdG9yEg8KB3N1YmplY3QYAiAB",
+            "KAkSDAoEYm9keRgDIAEoCRIsCgZzZW5kZXIYBCABKAsyHC5ob2xtcy50eXBl",
+            "cy5pYW0uU3RhZmZNZW1iZXISMAoKcmVjaXBpZW50cxgFIAMoCzIcLmhvbG1z",
+            "LnR5cGVzLmlhbS5TdGFmZk1lbWJlchItCgl2aWV3ZWRfYXQYBiABKAsyGi5n",
+            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wEi4KCmNyZWF0ZWRfYXQYByABKAsy",
+            "Gi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhIKCm1lc3NhZ2VfaWQYCCAB",
+            "KAlCOVoUb3BlcmF0aW9ucy9tZXNzYWdpbmeqAiBIT0xNUy5UeXBlcy5PcGVy",
+            "YXRpb25zLk1lc3NhZ2luZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Operations.Messaging.MailboxEntryIndicatorReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Operations.Messaging.MailboxEntryIndicatorReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.Messaging.MailboxEntry), global::HOLMS.Types.Operations.Messaging.MailboxEntry.Parser, new[]{ "EntityId", "Subject", "Body", "Sender", "Recipients", "ViewedAt", "CreatedAt" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.Messaging.MailboxEntry), global::HOLMS.Types.Operations.Messaging.MailboxEntry.Parser, new[]{ "EntityId", "Subject", "Body", "Sender", "Recipients", "ViewedAt", "CreatedAt", "MessageId" }, null, null, null)
           }));
     }
     #endregion
@@ -76,6 +77,7 @@ namespace HOLMS.Types.Operations.Messaging {
       recipients_ = other.recipients_.Clone();
       ViewedAt = other.viewedAt_ != null ? other.ViewedAt.Clone() : null;
       CreatedAt = other.createdAt_ != null ? other.CreatedAt.Clone() : null;
+      messageId_ = other.messageId_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -159,6 +161,17 @@ namespace HOLMS.Types.Operations.Messaging {
       }
     }
 
+    /// <summary>Field number for the "message_id" field.</summary>
+    public const int MessageIdFieldNumber = 8;
+    private string messageId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MessageId {
+      get { return messageId_; }
+      set {
+        messageId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MailboxEntry);
@@ -179,6 +192,7 @@ namespace HOLMS.Types.Operations.Messaging {
       if(!recipients_.Equals(other.recipients_)) return false;
       if (!object.Equals(ViewedAt, other.ViewedAt)) return false;
       if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
+      if (MessageId != other.MessageId) return false;
       return true;
     }
 
@@ -192,6 +206,7 @@ namespace HOLMS.Types.Operations.Messaging {
       hash ^= recipients_.GetHashCode();
       if (viewedAt_ != null) hash ^= ViewedAt.GetHashCode();
       if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
+      if (MessageId.Length != 0) hash ^= MessageId.GetHashCode();
       return hash;
     }
 
@@ -227,6 +242,10 @@ namespace HOLMS.Types.Operations.Messaging {
         output.WriteRawTag(58);
         output.WriteMessage(CreatedAt);
       }
+      if (MessageId.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(MessageId);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -250,6 +269,9 @@ namespace HOLMS.Types.Operations.Messaging {
       }
       if (createdAt_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreatedAt);
+      }
+      if (MessageId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MessageId);
       }
       return size;
     }
@@ -289,6 +311,9 @@ namespace HOLMS.Types.Operations.Messaging {
           createdAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         CreatedAt.MergeFrom(other.CreatedAt);
+      }
+      if (other.MessageId.Length != 0) {
+        MessageId = other.MessageId;
       }
     }
 
@@ -338,6 +363,10 @@ namespace HOLMS.Types.Operations.Messaging {
               createdAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(createdAt_);
+            break;
+          }
+          case 66: {
+            MessageId = input.ReadString();
             break;
           }
         }
