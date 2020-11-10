@@ -13,9 +13,10 @@ namespace HOLMS.Platform.Support.DTOBuilders.Operations {
         private readonly List<StaffMember> _recipients;
         private readonly DateTime? _viewedAt;
         private readonly DateTime _createdAt;
+        private readonly string _messageId;
 
         public MailboxEntryBuilder(MailboxEntryIndicator ind, string subject, string body,
-            StaffMember sender, IEnumerable<StaffMember> recipients, DateTime? viewedAt,
+            StaffMember sender, IEnumerable<StaffMember> recipients, string Id, DateTime? viewedAt,
             DateTime createdAt) {
             _ind = ind;
             _subject = subject;
@@ -24,6 +25,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Operations {
             _recipients = new List<StaffMember>(recipients);
             _viewedAt = viewedAt;
             _createdAt = createdAt;
+            _messageId = Id;
         }
 
         public MailboxEntry Build() {
@@ -32,6 +34,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Operations {
                 Body = _body ?? string.Empty,
                 CreatedAt = _createdAt.ToTS(),
                 Subject = _subject ?? string.Empty,
+                MessageId = _messageId ?? string.Empty
             };
 
             if (_viewedAt.HasValue) {

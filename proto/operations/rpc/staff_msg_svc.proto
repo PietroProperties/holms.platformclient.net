@@ -34,7 +34,7 @@ service StaffMsgSvc {
 	rpc SendMessage (.holms.types.operations.messaging.MailboxEntry) 
 		returns (google.protobuf.Empty);
 
-	rpc UpdateViewedTime (.holms.types.operations.messaging.MailboxEntryIndicator)
+	rpc UpdateViewedTime (.holms.types.operations.messaging.MailboxEntry)
 		returns (google.protobuf.Empty);
 
 	rpc UpsertDraft (.holms.types.operations.messaging.MailboxEntry) 
