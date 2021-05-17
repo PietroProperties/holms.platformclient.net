@@ -29,7 +29,7 @@ namespace HOLMS.Types.TenancyConfig {
             "b25ldGFyeV9hbW91bnQucHJvdG8aNmJvb2tpbmcvaW5kaWNhdG9ycy9jYW5j",
             "ZWxsYXRpb25fcG9saWN5X2luZGljYXRvci5wcm90bxoydGVuYW5jeV9jb25m",
             "aWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8aHXByaW1p",
-            "dGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvIrUICghQcm9wZXJ0eRJLCgllbnRp",
+            "dGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvIucICghQcm9wZXJ0eRJLCgllbnRp",
             "dHlfaWQYASABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRp",
             "Y2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEhMKC2Rlc2NyaXB0aW9uGAIgASgJ",
             "EjYKE2NoZWNraW5fdGltZV9vZl9kYXkYAyABKAsyGS5nb29nbGUucHJvdG9i",
@@ -53,12 +53,13 @@ namespace HOLMS.Types.TenancyConfig {
             "ASgJEhIKCmZheF9udW1iZXIYHiABKAkSFgoOYm9va2luZ19wcmVmaXgYHyAB",
             "KAkSJgoedm9pZF9hdXRob3JpemF0aW9uc19hZnRlcl9kYXlzGCAgASgNEhsK",
             "E25vX3Nob3dfZGVsYXlfaG91cnMYISABKA0SKQohZ3VhcmFudGVlX2R1ZV9k",
-            "YXlzX2JlZm9yZV9hcnJpdmFsGCIgASgNQitaDXRlbmFuY3ljb25maWeqAhlI",
-            "T0xNUy5UeXBlcy5UZW5hbmN5Q29uZmlnYgZwcm90bzM="));
+            "YXlzX2JlZm9yZV9hcnJpdmFsGCIgASgNEjAKDXJvbGxvdmVyX3RpbWUYIyAB",
+            "KAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb25CK1oNdGVuYW5jeWNvbmZp",
+            "Z6oCGUhPTE1TLlR5cGVzLlRlbmFuY3lDb25maWdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.CancellationPolicyIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.Property), global::HOLMS.Types.TenancyConfig.Property.Parser, new[]{ "EntityId", "Description", "CheckinTimeOfDay", "CheckOutTimeOfDay", "DisbaleTimeOfDay", "AllowedEarlyCheckinHours", "IifDocnumPrefix", "IifCustomerName", "CheckinDeposit", "LastRevenueAccrualStart", "LastDateHkRolloverRan", "Address1", "Address2", "City", "State", "Zip", "PhoneNumber", "CardMerchant", "CancellationPolicy", "IsActive", "DefaultStayLength", "Website", "ReservationEmail", "FaxNumber", "BookingPrefix", "VoidAuthorizationsAfterDays", "NoShowDelayHours", "GuaranteeDueDaysBeforeArrival" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.Property), global::HOLMS.Types.TenancyConfig.Property.Parser, new[]{ "EntityId", "Description", "CheckinTimeOfDay", "CheckOutTimeOfDay", "DisbaleTimeOfDay", "AllowedEarlyCheckinHours", "IifDocnumPrefix", "IifCustomerName", "CheckinDeposit", "LastRevenueAccrualStart", "LastDateHkRolloverRan", "Address1", "Address2", "City", "State", "Zip", "PhoneNumber", "CardMerchant", "CancellationPolicy", "IsActive", "DefaultStayLength", "Website", "ReservationEmail", "FaxNumber", "BookingPrefix", "VoidAuthorizationsAfterDays", "NoShowDelayHours", "GuaranteeDueDaysBeforeArrival", "RolloverTime" }, null, null, null)
           }));
     }
     #endregion
@@ -117,6 +118,7 @@ namespace HOLMS.Types.TenancyConfig {
       voidAuthorizationsAfterDays_ = other.voidAuthorizationsAfterDays_;
       noShowDelayHours_ = other.noShowDelayHours_;
       guaranteeDueDaysBeforeArrival_ = other.guaranteeDueDaysBeforeArrival_;
+      RolloverTime = other.rolloverTime_ != null ? other.RolloverTime.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -432,6 +434,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "rollover_time" field.</summary>
+    public const int RolloverTimeFieldNumber = 35;
+    private global::Google.Protobuf.WellKnownTypes.Duration rolloverTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Duration RolloverTime {
+      get { return rolloverTime_; }
+      set {
+        rolloverTime_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Property);
@@ -473,6 +486,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (VoidAuthorizationsAfterDays != other.VoidAuthorizationsAfterDays) return false;
       if (NoShowDelayHours != other.NoShowDelayHours) return false;
       if (GuaranteeDueDaysBeforeArrival != other.GuaranteeDueDaysBeforeArrival) return false;
+      if (!object.Equals(RolloverTime, other.RolloverTime)) return false;
       return true;
     }
 
@@ -507,6 +521,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (VoidAuthorizationsAfterDays != 0) hash ^= VoidAuthorizationsAfterDays.GetHashCode();
       if (NoShowDelayHours != 0) hash ^= NoShowDelayHours.GetHashCode();
       if (GuaranteeDueDaysBeforeArrival != 0) hash ^= GuaranteeDueDaysBeforeArrival.GetHashCode();
+      if (rolloverTime_ != null) hash ^= RolloverTime.GetHashCode();
       return hash;
     }
 
@@ -629,6 +644,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(144, 2);
         output.WriteUInt32(GuaranteeDueDaysBeforeArrival);
       }
+      if (rolloverTime_ != null) {
+        output.WriteRawTag(154, 2);
+        output.WriteMessage(RolloverTime);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -717,6 +736,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (GuaranteeDueDaysBeforeArrival != 0) {
         size += 2 + pb::CodedOutputStream.ComputeUInt32Size(GuaranteeDueDaysBeforeArrival);
+      }
+      if (rolloverTime_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(RolloverTime);
       }
       return size;
     }
@@ -836,6 +858,12 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.GuaranteeDueDaysBeforeArrival != 0) {
         GuaranteeDueDaysBeforeArrival = other.GuaranteeDueDaysBeforeArrival;
+      }
+      if (other.rolloverTime_ != null) {
+        if (rolloverTime_ == null) {
+          rolloverTime_ = new global::Google.Protobuf.WellKnownTypes.Duration();
+        }
+        RolloverTime.MergeFrom(other.RolloverTime);
       }
     }
 
@@ -984,6 +1012,13 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 272: {
             GuaranteeDueDaysBeforeArrival = input.ReadUInt32();
+            break;
+          }
+          case 282: {
+            if (rolloverTime_ == null) {
+              rolloverTime_ = new global::Google.Protobuf.WellKnownTypes.Duration();
+            }
+            input.ReadMessage(rolloverTime_);
             break;
           }
         }
