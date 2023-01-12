@@ -102,104 +102,105 @@ namespace HOLMS.Types.Booking.RPC {
             "ZV9yYW5nZRgBIAEoCzIuLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYkluY2x1",
             "c2l2ZU9wc2RhdGVSYW5nZRJJChJldmVudF9ib29raW5nX2hvbGQYAiABKAsy",
             "LS5ob2xtcy50eXBlcy5zdXBwbHkuRXZlbnRCb29raW5nSG9sZEluZGljYXRv",
-            "ciLKAgoPU3luY0hvbGRSZXF1ZXN0EkYKB2Jvb2tpbmcYASABKAsyNS5ob2xt",
+            "ciLzAgoPU3luY0hvbGRSZXF1ZXN0EkYKB2Jvb2tpbmcYASABKAsyNS5ob2xt",
             "cy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNh",
             "dG9yEkMKCXJvb21fdHlwZRgCIAEoCzIwLmhvbG1zLnR5cGVzLnN1cHBseS5y",
             "b29tX3R5cGVzLlJvb21UeXBlSW5kaWNhdG9yEkIKCmRhdGVfcmFuZ2UYAyAB",
             "KAsyLi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJJbmNsdXNpdmVPcHNkYXRl",
             "UmFuZ2USSQoLcmVzZXJ2YXRpb24YBCABKAsyNC5ob2xtcy50eXBlcy5ib29r",
             "aW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3ISGwoTYm9va2lu",
-            "Z190YWdfcHJlc2VudBgFIAEoCCKxAQoTR3JvdXBCb29raW5nUmVxdWVzdBI1",
-            "CgVncm91cBgBIAEoCzImLmhvbG1zLnR5cGVzLmNybS5ncm91cHMuR3JvdXBJ",
-            "bmRpY2F0b3ISSgoIcHJvcGVydHkYAiABKAsyOC5ob2xtcy50eXBlcy50ZW5h",
-            "bmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEhcKD2lz",
-            "X2luaXRpYWxfc2F2ZRgDIAEoCCKpAQoZR2V0Qm9va2luZ0hpc3RvcnlSZXNw",
-            "b25zZRJGChNib29raW5nX2hpc3RvcnlfbG9nGAEgAygLMikuaG9sbXMudHlw",
-            "ZXMuYm9va2luZy5oaXN0b3J5Lkhpc3RvcnlFdmVudBJEChFmb2xpb19oaXN0",
-            "b3J5X2xvZxgCIAMoCzIpLmhvbG1zLnR5cGVzLmJvb2tpbmcuaGlzdG9yeS5I",
-            "aXN0b3J5RXZlbnQivQEKGVVwZGF0ZUdyb3VwQm9va2luZ1JlcXVlc3QSOQoH",
-            "Ym9va2luZxgBIAEoCzIoLmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdy",
-            "b3VwQm9va2luZxIXCg9pc19pbml0aWFsX3NhdmUYAiABKAgSTAoKcXVhbnRp",
-            "dGllcxgDIAMoCzI4LmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdyb3Vw",
-            "Qm9va2luZ1Jvb21UeXBlUXVhbnRpdHkykBsKD0dyb3VwQm9va2luZ1N2YxJS",
-            "CgNBbGwSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaMy5ob2xtcy50eXBlcy5i",
-            "b29raW5nLnJwYy5Hcm91cEJvb2tpbmdTdmNBbGxCb29raW5ncxJjCgZDcmVh",
-            "dGUSLC5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5Hcm91cEJvb2tpbmdSZXF1",
-            "ZXN0GisuaG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMuR3JvdXBCb29raW5n",
-            "RXh0EmkKBlVwZGF0ZRIyLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlVwZGF0",
-            "ZUdyb3VwQm9va2luZ1JlcXVlc3QaKy5ob2xtcy50eXBlcy5ib29raW5nLmdy",
-            "b3Vwcy5Hcm91cEJvb2tpbmdFeHQSbgoYVXBkYXRlR3JvdXBCb29raW5nUHJp",
-            "Y2VzEjouaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBCb29raW5nU3Zj",
-            "UHJpY2VVcGRhdGVSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EmkK",
-            "EFVwZGF0ZVF1YW50aXRpZXMSPS5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5H",
-            "cm91cEJvb2tpbmdTdmNRdWFudGl0eVVwZGF0ZVJlcXVlc3QaFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHkSoQEKIEdldFJlc2VydmF0aW9uU3VtbWFyaWVzV2l0",
-            "aEdCVGFnEjUuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3Vw",
-            "Qm9va2luZ0luZGljYXRvchpGLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdy",
-            "b3VwQm9va2luZ1N2Y0dldFJlc2VydmF0aW9uc1dpdGhUYWdSZXNwb25zZRJq",
-            "CgdHZXRCeUlkEjUuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdy",
-            "b3VwQm9va2luZ0luZGljYXRvchooLmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3Jv",
-            "dXBzLkdyb3VwQm9va2luZxJxCgtHZXRCeUlkRnVsbBI1LmhvbG1zLnR5cGVz",
-            "LmJvb2tpbmcuaW5kaWNhdG9ycy5Hcm91cEJvb2tpbmdJbmRpY2F0b3IaKy5o",
-            "b2xtcy50eXBlcy5ib29raW5nLmdyb3Vwcy5Hcm91cEJvb2tpbmdFeHQSfQoI",
-            "R2V0QnlJZHMSNy5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5Hcm91cEJvb2tp",
-            "bmdTdmNHZXRCeUlkc1JlcXVlc3QaOC5ob2xtcy50eXBlcy5ib29raW5nLnJw",
-            "Yy5Hcm91cEJvb2tpbmdTdmNHZXRCeUlkc1Jlc3BvbnNlEm4KGU1hcFBheW1l",
-            "bnRXaXRoUmVzZXJ2YXRpb24SOS5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5Q",
-            "YXltZW50UmVzZXJ2YXRpb25NYXBwaW5nUmVxdWVzdBoWLmdvb2dsZS5wcm90",
-            "b2J1Zi5FbXB0eRKLAQoVR2V0UGF5bWVudE1hcHBpbmdCeUlkEjUuaG9sbXMu",
-            "dHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGljYXRv",
-            "cho7LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3VwQm9va2luZ1BheW1l",
-            "bnRNYXBwaW5nUmVzcG9uc2UShgEKF0dldEdyb3VwQm9va2luZ0ludm9pY2Vz",
-            "EjUuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2lu",
-            "Z0luZGljYXRvcho0LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3VwQm9v",
-            "a2luZ0ludm9pY2VSZXNwb25zZRKXAQocQ3JlYXRlSW52b2ljZUZvckdyb3Vw",
-            "Qm9va2luZxI6LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3VwQm9va2lu",
-            "Z0ludm9pY2VNYXBwaW5nUmVxdWVzdBo7LmhvbG1zLnR5cGVzLmJvb2tpbmcu",
-            "cnBjLkdyb3VwQm9va2luZ0ludm9pY2VNYXBwaW5nUmVzcG9uc2USdQogQ3Jl",
-            "YXRlUmVzZXJ2YXRpb25JbnZvaWNlTWFwcGluZ3MSOS5ob2xtcy50eXBlcy5i",
-            "b29raW5nLnJwYy5SZXNlcnZhdGlvbkludm9pY2VNYXBwaW5nUmVxdWVzdBoW",
-            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eRKVAQogR2V0UmVzZXJ2YXRpb25JbnZv",
-            "aWNlRnJvbUdyb3VwSWQSNS5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRv",
-            "cnMuR3JvdXBCb29raW5nSW5kaWNhdG9yGjouaG9sbXMudHlwZXMuYm9va2lu",
-            "Zy5ycGMuUmVzZXJ2YXRpb25JbnZvaWNlTWFwcGluZ1Jlc3BvbnNlElYKD1Zv",
-            "aWRJbnZvaWNlQnlJZBIrLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkludm9p",
-            "Y2VWb2lkUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJuChFDcmVh",
-            "dGVXaXRob3V0U2F2ZRIsLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3Vw",
-            "Qm9va2luZ1JlcXVlc3QaKy5ob2xtcy50eXBlcy5ib29raW5nLmdyb3Vwcy5H",
-            "cm91cEJvb2tpbmdFeHQSrAEKJ0luY3JlYXNlRXZlbnRHcm91cEhvbGRGb3JO",
-            "ZXdSZXNlcnZhdGlvbhI/LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkluY3Jl",
-            "YXNlR3JvdXBIb2xkRm9yUmVzZXJ2YXRpb25SZXF1ZXN0GkAuaG9sbXMudHlw",
-            "ZXMuYm9va2luZy5ycGMuSW5jcmVhc2VHcm91cEhvbGRGb3JSZXNlcnZhdGlv",
-            "blJlc3BvbnNlEk0KCUZvbGlvU3luYxIoLmhvbG1zLnR5cGVzLmJvb2tpbmcu",
-            "Z3JvdXBzLkdyb3VwQm9va2luZxoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJ1",
-            "Cg5BbGxCeURhdGVSYW5nZRIuLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5QYklu",
-            "Y2x1c2l2ZU9wc2RhdGVSYW5nZRozLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBj",
-            "Lkdyb3VwQm9va2luZ1N2Y0FsbEJvb2tpbmdzEmgKD0Ryb3BVbnVzZWRIb2xk",
-            "cxI9LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3VwQm9va2luZ1N2Y1F1",
-            "YW50aXR5VXBkYXRlUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJk",
-            "CgtDcmVhdGVIb2xkcxI9LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3Vw",
+            "Z190YWdfcHJlc2VudBgFIAEoCBInCh9yZXF1aXJlc19sYXJnZXJfaG9sZF9h",
+            "ZGp1c3RtZW50GAYgASgIIrEBChNHcm91cEJvb2tpbmdSZXF1ZXN0EjUKBWdy",
+            "b3VwGAEgASgLMiYuaG9sbXMudHlwZXMuY3JtLmdyb3Vwcy5Hcm91cEluZGlj",
+            "YXRvchJKCghwcm9wZXJ0eRgCIAEoCzI4LmhvbG1zLnR5cGVzLnRlbmFuY3lf",
+            "Y29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3ISFwoPaXNfaW5p",
+            "dGlhbF9zYXZlGAMgASgIIqkBChlHZXRCb29raW5nSGlzdG9yeVJlc3BvbnNl",
+            "EkYKE2Jvb2tpbmdfaGlzdG9yeV9sb2cYASADKAsyKS5ob2xtcy50eXBlcy5i",
+            "b29raW5nLmhpc3RvcnkuSGlzdG9yeUV2ZW50EkQKEWZvbGlvX2hpc3Rvcnlf",
+            "bG9nGAIgAygLMikuaG9sbXMudHlwZXMuYm9va2luZy5oaXN0b3J5Lkhpc3Rv",
+            "cnlFdmVudCK9AQoZVXBkYXRlR3JvdXBCb29raW5nUmVxdWVzdBI5Cgdib29r",
+            "aW5nGAEgASgLMiguaG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMuR3JvdXBC",
+            "b29raW5nEhcKD2lzX2luaXRpYWxfc2F2ZRgCIAEoCBJMCgpxdWFudGl0aWVz",
+            "GAMgAygLMjguaG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMuR3JvdXBCb29r",
+            "aW5nUm9vbVR5cGVRdWFudGl0eTKQGwoPR3JvdXBCb29raW5nU3ZjElIKA0Fs",
+            "bBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRozLmhvbG1zLnR5cGVzLmJvb2tp",
+            "bmcucnBjLkdyb3VwQm9va2luZ1N2Y0FsbEJvb2tpbmdzEmMKBkNyZWF0ZRIs",
+            "LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3VwQm9va2luZ1JlcXVlc3Qa",
+            "Ky5ob2xtcy50eXBlcy5ib29raW5nLmdyb3Vwcy5Hcm91cEJvb2tpbmdFeHQS",
+            "aQoGVXBkYXRlEjIuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuVXBkYXRlR3Jv",
+            "dXBCb29raW5nUmVxdWVzdBorLmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBz",
+            "Lkdyb3VwQm9va2luZ0V4dBJuChhVcGRhdGVHcm91cEJvb2tpbmdQcmljZXMS",
+            "Oi5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5Hcm91cEJvb2tpbmdTdmNQcmlj",
+            "ZVVwZGF0ZVJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSaQoQVXBk",
+            "YXRlUXVhbnRpdGllcxI9LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3Vw",
             "Qm9va2luZ1N2Y1F1YW50aXR5VXBkYXRlUmVxdWVzdBoWLmdvb2dsZS5wcm90",
-            "b2J1Zi5FbXB0eRJfCgpEZWxldGVIb2xkEjkuaG9sbXMudHlwZXMuYm9va2lu",
-            "Zy5ycGMuR3JvdXBCb29raW5nU3ZjRGVsZXRlSG9sZFJlcXVlc3QaFi5nb29n",
-            "bGUucHJvdG9idWYuRW1wdHkSiQEKEkdldEFsbEJvb2tpbmdIb2xkcxI1Lmhv",
-            "bG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5Hcm91cEJvb2tpbmdJbmRp",
-            "Y2F0b3IaPC5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5Hcm91cEJvb2tpbmdV",
-            "bmFzc2lnbmVkSG9sZHNSZXNwb25zZRJQCgpVcGRhdGVIb2xkEiouaG9sbXMu",
-            "dHlwZXMuYm9va2luZy5ycGMuVXBkYXRlSG9sZFJlcXVlc3QaFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHkSagoZTWlncmF0ZUJvb2tpbmdUb05ld0Rlc2lnbhI1",
-            "LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5Hcm91cEJvb2tpbmdJ",
-            "bmRpY2F0b3IaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSawonU3luY1Jlc2Vy",
-            "dmF0aW9uSG9sZFdpdGhFdmVudEJvb2tpbmdIb2xkEiguaG9sbXMudHlwZXMu",
-            "Ym9va2luZy5ycGMuU3luY0hvbGRSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVm",
-            "LkVtcHR5EqYBCiVHZXRSZXNlcnZhdGlvblN1bW1hcmllc1dpdGhGb2xpb0dC",
-            "VGFnEjUuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9v",
-            "a2luZ0luZGljYXRvchpGLmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3Vw",
-            "Qm9va2luZ1N2Y0dldFJlc2VydmF0aW9uc1dpdGhUYWdSZXNwb25zZRJ+ChFH",
-            "ZXRCb29raW5nSGlzdG9yeRI1LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNh",
-            "dG9ycy5Hcm91cEJvb2tpbmdJbmRpY2F0b3IaMi5ob2xtcy50eXBlcy5ib29r",
-            "aW5nLnJwYy5HZXRCb29raW5nSGlzdG9yeVJlc3BvbnNlQidaC2Jvb2tpbmcv",
-            "cnBjqgIXSE9MTVMuVHlwZXMuQm9va2luZy5SUENiBnByb3RvMw=="));
+            "b2J1Zi5FbXB0eRKhAQogR2V0UmVzZXJ2YXRpb25TdW1tYXJpZXNXaXRoR0JU",
+            "YWcSNS5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29r",
+            "aW5nSW5kaWNhdG9yGkYuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBC",
+            "b29raW5nU3ZjR2V0UmVzZXJ2YXRpb25zV2l0aFRhZ1Jlc3BvbnNlEmoKB0dl",
+            "dEJ5SWQSNS5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBC",
+            "b29raW5nSW5kaWNhdG9yGiguaG9sbXMudHlwZXMuYm9va2luZy5ncm91cHMu",
+            "R3JvdXBCb29raW5nEnEKC0dldEJ5SWRGdWxsEjUuaG9sbXMudHlwZXMuYm9v",
+            "a2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGljYXRvchorLmhvbG1z",
+            "LnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdyb3VwQm9va2luZ0V4dBJ9CghHZXRC",
+            "eUlkcxI3LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3VwQm9va2luZ1N2",
+            "Y0dldEJ5SWRzUmVxdWVzdBo4LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdy",
+            "b3VwQm9va2luZ1N2Y0dldEJ5SWRzUmVzcG9uc2USbgoZTWFwUGF5bWVudFdp",
+            "dGhSZXNlcnZhdGlvbhI5LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLlBheW1l",
+            "bnRSZXNlcnZhdGlvbk1hcHBpbmdSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVm",
+            "LkVtcHR5EosBChVHZXRQYXltZW50TWFwcGluZ0J5SWQSNS5ob2xtcy50eXBl",
+            "cy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5kaWNhdG9yGjsu",
+            "aG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBCb29raW5nUGF5bWVudE1h",
+            "cHBpbmdSZXNwb25zZRKGAQoXR2V0R3JvdXBCb29raW5nSW52b2ljZXMSNS5o",
+            "b2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5nSW5k",
+            "aWNhdG9yGjQuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBCb29raW5n",
+            "SW52b2ljZVJlc3BvbnNlEpcBChxDcmVhdGVJbnZvaWNlRm9yR3JvdXBCb29r",
+            "aW5nEjouaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBCb29raW5nSW52",
+            "b2ljZU1hcHBpbmdSZXF1ZXN0GjsuaG9sbXMudHlwZXMuYm9va2luZy5ycGMu",
+            "R3JvdXBCb29raW5nSW52b2ljZU1hcHBpbmdSZXNwb25zZRJ1CiBDcmVhdGVS",
+            "ZXNlcnZhdGlvbkludm9pY2VNYXBwaW5ncxI5LmhvbG1zLnR5cGVzLmJvb2tp",
+            "bmcucnBjLlJlc2VydmF0aW9uSW52b2ljZU1hcHBpbmdSZXF1ZXN0GhYuZ29v",
+            "Z2xlLnByb3RvYnVmLkVtcHR5EpUBCiBHZXRSZXNlcnZhdGlvbkludm9pY2VG",
+            "cm9tR3JvdXBJZBI1LmhvbG1zLnR5cGVzLmJvb2tpbmcuaW5kaWNhdG9ycy5H",
+            "cm91cEJvb2tpbmdJbmRpY2F0b3IaOi5ob2xtcy50eXBlcy5ib29raW5nLnJw",
+            "Yy5SZXNlcnZhdGlvbkludm9pY2VNYXBwaW5nUmVzcG9uc2USVgoPVm9pZElu",
+            "dm9pY2VCeUlkEisuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuSW52b2ljZVZv",
+            "aWRSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Em4KEUNyZWF0ZVdp",
+            "dGhvdXRTYXZlEiwuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBCb29r",
+            "aW5nUmVxdWVzdBorLmhvbG1zLnR5cGVzLmJvb2tpbmcuZ3JvdXBzLkdyb3Vw",
+            "Qm9va2luZ0V4dBKsAQonSW5jcmVhc2VFdmVudEdyb3VwSG9sZEZvck5ld1Jl",
+            "c2VydmF0aW9uEj8uaG9sbXMudHlwZXMuYm9va2luZy5ycGMuSW5jcmVhc2VH",
+            "cm91cEhvbGRGb3JSZXNlcnZhdGlvblJlcXVlc3QaQC5ob2xtcy50eXBlcy5i",
+            "b29raW5nLnJwYy5JbmNyZWFzZUdyb3VwSG9sZEZvclJlc2VydmF0aW9uUmVz",
+            "cG9uc2USTQoJRm9saW9TeW5jEiguaG9sbXMudHlwZXMuYm9va2luZy5ncm91",
+            "cHMuR3JvdXBCb29raW5nGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EnUKDkFs",
+            "bEJ5RGF0ZVJhbmdlEi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiSW5jbHVz",
+            "aXZlT3BzZGF0ZVJhbmdlGjMuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3Jv",
+            "dXBCb29raW5nU3ZjQWxsQm9va2luZ3MSaAoPRHJvcFVudXNlZEhvbGRzEj0u",
+            "aG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBCb29raW5nU3ZjUXVhbnRp",
+            "dHlVcGRhdGVSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EmQKC0Ny",
+            "ZWF0ZUhvbGRzEj0uaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBCb29r",
+            "aW5nU3ZjUXVhbnRpdHlVcGRhdGVSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVm",
+            "LkVtcHR5El8KCkRlbGV0ZUhvbGQSOS5ob2xtcy50eXBlcy5ib29raW5nLnJw",
+            "Yy5Hcm91cEJvb2tpbmdTdmNEZWxldGVIb2xkUmVxdWVzdBoWLmdvb2dsZS5w",
+            "cm90b2J1Zi5FbXB0eRKJAQoSR2V0QWxsQm9va2luZ0hvbGRzEjUuaG9sbXMu",
+            "dHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGljYXRv",
+            "cho8LmhvbG1zLnR5cGVzLmJvb2tpbmcucnBjLkdyb3VwQm9va2luZ1VuYXNz",
+            "aWduZWRIb2xkc1Jlc3BvbnNlElAKClVwZGF0ZUhvbGQSKi5ob2xtcy50eXBl",
+            "cy5ib29raW5nLnJwYy5VcGRhdGVIb2xkUmVxdWVzdBoWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eRJqChlNaWdyYXRlQm9va2luZ1RvTmV3RGVzaWduEjUuaG9s",
+            "bXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLkdyb3VwQm9va2luZ0luZGlj",
+            "YXRvchoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJrCidTeW5jUmVzZXJ2YXRp",
+            "b25Ib2xkV2l0aEV2ZW50Qm9va2luZ0hvbGQSKC5ob2xtcy50eXBlcy5ib29r",
+            "aW5nLnJwYy5TeW5jSG9sZFJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1w",
+            "dHkSpgEKJUdldFJlc2VydmF0aW9uU3VtbWFyaWVzV2l0aEZvbGlvR0JUYWcS",
+            "NS5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuR3JvdXBCb29raW5n",
+            "SW5kaWNhdG9yGkYuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuR3JvdXBCb29r",
+            "aW5nU3ZjR2V0UmVzZXJ2YXRpb25zV2l0aFRhZ1Jlc3BvbnNlEn4KEUdldEJv",
+            "b2tpbmdIaXN0b3J5EjUuaG9sbXMudHlwZXMuYm9va2luZy5pbmRpY2F0b3Jz",
+            "Lkdyb3VwQm9va2luZ0luZGljYXRvchoyLmhvbG1zLnR5cGVzLmJvb2tpbmcu",
+            "cnBjLkdldEJvb2tpbmdIaXN0b3J5UmVzcG9uc2VCJ1oLYm9va2luZy9ycGOq",
+            "AhdIT0xNUy5UeXBlcy5Cb29raW5nLlJQQ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingExtReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.GroupBookingIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingRoomTypeQuantityReflection.Descriptor, global::HOLMS.Types.CRM.Groups.GroupIndicatorReflection.Descriptor, global::HOLMS.Types.Supply.PriceUpdateRequestReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationSummaryReflection.Descriptor, global::HOLMS.Types.Booking.Groups.PaymentReservationMappingReflection.Descriptor, global::HOLMS.Types.Booking.Groups.GroupBookingsInvoicesReflection.Descriptor, global::HOLMS.Types.Booking.Groups.ReservationInvoicesReflection.Descriptor, global::HOLMS.Types.Primitive.UuidReflection.Descriptor, global::HOLMS.Types.IAM.StaffMemberIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Supply.EventBookingHoldIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Groups.UnassignedBookingHoldsReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.History.HistoryEventReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -222,7 +223,7 @@ namespace HOLMS.Types.Booking.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GroupBookingSvcDeleteHoldRequest), global::HOLMS.Types.Booking.RPC.GroupBookingSvcDeleteHoldRequest.Parser, new[]{ "Booking", "EventBookingHold" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse), global::HOLMS.Types.Booking.RPC.GroupBookingUnassignedHoldsResponse.Parser, new[]{ "UnassignedHolds" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.UpdateHoldRequest), global::HOLMS.Types.Booking.RPC.UpdateHoldRequest.Parser, new[]{ "DateRange", "EventBookingHold" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.SyncHoldRequest), global::HOLMS.Types.Booking.RPC.SyncHoldRequest.Parser, new[]{ "Booking", "RoomType", "DateRange", "Reservation", "BookingTagPresent" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.SyncHoldRequest), global::HOLMS.Types.Booking.RPC.SyncHoldRequest.Parser, new[]{ "Booking", "RoomType", "DateRange", "Reservation", "BookingTagPresent", "RequiresLargerHoldAdjustment" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GroupBookingRequest), global::HOLMS.Types.Booking.RPC.GroupBookingRequest.Parser, new[]{ "Group", "Property", "IsInitialSave" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.GetBookingHistoryResponse), global::HOLMS.Types.Booking.RPC.GetBookingHistoryResponse.Parser, new[]{ "BookingHistoryLog", "FolioHistoryLog" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.UpdateGroupBookingRequest), global::HOLMS.Types.Booking.RPC.UpdateGroupBookingRequest.Parser, new[]{ "Booking", "IsInitialSave", "Quantities" }, null, null, null)
@@ -2758,6 +2759,7 @@ namespace HOLMS.Types.Booking.RPC {
       DateRange = other.dateRange_ != null ? other.DateRange.Clone() : null;
       Reservation = other.reservation_ != null ? other.Reservation.Clone() : null;
       bookingTagPresent_ = other.bookingTagPresent_;
+      requiresLargerHoldAdjustment_ = other.requiresLargerHoldAdjustment_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2820,6 +2822,17 @@ namespace HOLMS.Types.Booking.RPC {
       }
     }
 
+    /// <summary>Field number for the "requires_larger_hold_adjustment" field.</summary>
+    public const int RequiresLargerHoldAdjustmentFieldNumber = 6;
+    private bool requiresLargerHoldAdjustment_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool RequiresLargerHoldAdjustment {
+      get { return requiresLargerHoldAdjustment_; }
+      set {
+        requiresLargerHoldAdjustment_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SyncHoldRequest);
@@ -2838,6 +2851,7 @@ namespace HOLMS.Types.Booking.RPC {
       if (!object.Equals(DateRange, other.DateRange)) return false;
       if (!object.Equals(Reservation, other.Reservation)) return false;
       if (BookingTagPresent != other.BookingTagPresent) return false;
+      if (RequiresLargerHoldAdjustment != other.RequiresLargerHoldAdjustment) return false;
       return true;
     }
 
@@ -2849,6 +2863,7 @@ namespace HOLMS.Types.Booking.RPC {
       if (dateRange_ != null) hash ^= DateRange.GetHashCode();
       if (reservation_ != null) hash ^= Reservation.GetHashCode();
       if (BookingTagPresent != false) hash ^= BookingTagPresent.GetHashCode();
+      if (RequiresLargerHoldAdjustment != false) hash ^= RequiresLargerHoldAdjustment.GetHashCode();
       return hash;
     }
 
@@ -2879,6 +2894,10 @@ namespace HOLMS.Types.Booking.RPC {
         output.WriteRawTag(40);
         output.WriteBool(BookingTagPresent);
       }
+      if (RequiresLargerHoldAdjustment != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(RequiresLargerHoldAdjustment);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2897,6 +2916,9 @@ namespace HOLMS.Types.Booking.RPC {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Reservation);
       }
       if (BookingTagPresent != false) {
+        size += 1 + 1;
+      }
+      if (RequiresLargerHoldAdjustment != false) {
         size += 1 + 1;
       }
       return size;
@@ -2933,6 +2955,9 @@ namespace HOLMS.Types.Booking.RPC {
       }
       if (other.BookingTagPresent != false) {
         BookingTagPresent = other.BookingTagPresent;
+      }
+      if (other.RequiresLargerHoldAdjustment != false) {
+        RequiresLargerHoldAdjustment = other.RequiresLargerHoldAdjustment;
       }
     }
 
@@ -2974,6 +2999,10 @@ namespace HOLMS.Types.Booking.RPC {
           }
           case 40: {
             BookingTagPresent = input.ReadBool();
+            break;
+          }
+          case 48: {
+            RequiresLargerHoldAdjustment = input.ReadBool();
             break;
           }
         }
