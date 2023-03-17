@@ -1,4 +1,5 @@
-﻿using HOLMS.Types.Supply.RoomTypes;
+﻿using Google.Protobuf;
+using HOLMS.Types.Supply.RoomTypes;
 using HOLMS.Types.TenancyConfig.Indicators;
 
 namespace HOLMS.Platform.Support.DTOBuilders.Supply {
@@ -19,6 +20,9 @@ namespace HOLMS.Platform.Support.DTOBuilders.Supply {
         public PropertyIndicator PropertyId;
         public string PropertyName;
         public string ChannelId;
+        public ByteString RoomImage;
+        public string RoomImageName;
+
 
         public RoomType Build() {
             var rt = new RoomType {
@@ -33,6 +37,8 @@ namespace HOLMS.Platform.Support.DTOBuilders.Supply {
                 CleaningTimeDeepMins = CleaningTimeDeepMins,
                 BaseManagementHolds = BaseManagementHolds,
                 AdditionalWebHolds = AdditionalWebHolds,
+                RoomImage = RoomImage,
+                RoomImageName = RoomImageName,
             };
 
             if (PropertyId != null) {
