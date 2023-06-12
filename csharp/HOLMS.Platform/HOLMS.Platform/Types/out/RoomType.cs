@@ -25,7 +25,7 @@ namespace HOLMS.Types.Supply.RoomTypes {
             "CiFzdXBwbHkvcm9vbV90eXBlcy9yb29tX3R5cGUucHJvdG8SHWhvbG1zLnR5",
             "cGVzLnN1cHBseS5yb29tX3R5cGVzGitzdXBwbHkvcm9vbV90eXBlcy9yb29t",
             "X3R5cGVfaW5kaWNhdG9yLnByb3RvGjJ0ZW5hbmN5X2NvbmZpZy9pbmRpY2F0",
-            "b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byLuAwoIUm9vbVR5cGUSQwoJ",
+            "b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byKbBAoIUm9vbVR5cGUSQwoJ",
             "ZW50aXR5X2lkGAEgASgLMjAuaG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlw",
             "ZXMuUm9vbVR5cGVJbmRpY2F0b3ISEwoLZGVzY3JpcHRpb24YAiABKAkSGAoQ",
             "bm9ybWFsX29jY3VwYW5jeRgEIAEoBRIVCg1tYXhfb2NjdXBhbmN5GAUgASgF",
@@ -36,12 +36,13 @@ namespace HOLMS.Types.Supply.RoomTypes {
             "aW9uYWxfd2ViX2hvbGRzGAsgASgFEgwKBG5hbWUYDCABKAkSTQoLcHJvcGVy",
             "dHlfaWQYDSABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRp",
             "Y2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEhUKDXByb3BlcnR5X25hbWUYDiAB",
-            "KAkSGgoSY2hhbm5lbF9tYW5hZ2VyX2lkGA8gASgJQjFaEHN1cHBseS9yb29t",
+            "KAkSGgoSY2hhbm5lbF9tYW5hZ2VyX2lkGA8gASgJEhIKCnJvb21faW1hZ2UY",
+            "ECABKAwSFwoPcm9vbV9pbWFnZV9uYW1lGBEgASgJQjFaEHN1cHBseS9yb29t",
             "dHlwZXOqAhxIT0xNUy5UeXBlcy5TdXBwbHkuUm9vbVR5cGVzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RoomTypes.RoomType), global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser, new[]{ "EntityId", "Description", "NormalOccupancy", "MaxOccupancy", "CleaningTimeCheckoutMins", "CleaningTimeStayoverMins", "CleaningTimeDustMins", "CleaningTimeDeepMins", "BaseManagementHolds", "AdditionalWebHolds", "Name", "PropertyId", "PropertyName", "ChannelManagerId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RoomTypes.RoomType), global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser, new[]{ "EntityId", "Description", "NormalOccupancy", "MaxOccupancy", "CleaningTimeCheckoutMins", "CleaningTimeStayoverMins", "CleaningTimeDustMins", "CleaningTimeDeepMins", "BaseManagementHolds", "AdditionalWebHolds", "Name", "PropertyId", "PropertyName", "ChannelManagerId", "RoomImage", "RoomImageName" }, null, null, null)
           }));
     }
     #endregion
@@ -86,6 +87,8 @@ namespace HOLMS.Types.Supply.RoomTypes {
       PropertyId = other.propertyId_ != null ? other.PropertyId.Clone() : null;
       propertyName_ = other.propertyName_;
       channelManagerId_ = other.channelManagerId_;
+      roomImage_ = other.roomImage_;
+      roomImageName_ = other.roomImageName_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -247,6 +250,28 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
     }
 
+    /// <summary>Field number for the "room_image" field.</summary>
+    public const int RoomImageFieldNumber = 16;
+    private pb::ByteString roomImage_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString RoomImage {
+      get { return roomImage_; }
+      set {
+        roomImage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "room_image_name" field.</summary>
+    public const int RoomImageNameFieldNumber = 17;
+    private string roomImageName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RoomImageName {
+      get { return roomImageName_; }
+      set {
+        roomImageName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RoomType);
@@ -274,6 +299,8 @@ namespace HOLMS.Types.Supply.RoomTypes {
       if (!object.Equals(PropertyId, other.PropertyId)) return false;
       if (PropertyName != other.PropertyName) return false;
       if (ChannelManagerId != other.ChannelManagerId) return false;
+      if (RoomImage != other.RoomImage) return false;
+      if (RoomImageName != other.RoomImageName) return false;
       return true;
     }
 
@@ -294,6 +321,8 @@ namespace HOLMS.Types.Supply.RoomTypes {
       if (propertyId_ != null) hash ^= PropertyId.GetHashCode();
       if (PropertyName.Length != 0) hash ^= PropertyName.GetHashCode();
       if (ChannelManagerId.Length != 0) hash ^= ChannelManagerId.GetHashCode();
+      if (RoomImage.Length != 0) hash ^= RoomImage.GetHashCode();
+      if (RoomImageName.Length != 0) hash ^= RoomImageName.GetHashCode();
       return hash;
     }
 
@@ -360,6 +389,14 @@ namespace HOLMS.Types.Supply.RoomTypes {
         output.WriteRawTag(122);
         output.WriteString(ChannelManagerId);
       }
+      if (RoomImage.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteBytes(RoomImage);
+      }
+      if (RoomImageName.Length != 0) {
+        output.WriteRawTag(138, 1);
+        output.WriteString(RoomImageName);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -406,6 +443,12 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
       if (ChannelManagerId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ChannelManagerId);
+      }
+      if (RoomImage.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeBytesSize(RoomImage);
+      }
+      if (RoomImageName.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(RoomImageName);
       }
       return size;
     }
@@ -462,6 +505,12 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
       if (other.ChannelManagerId.Length != 0) {
         ChannelManagerId = other.ChannelManagerId;
+      }
+      if (other.RoomImage.Length != 0) {
+        RoomImage = other.RoomImage;
+      }
+      if (other.RoomImageName.Length != 0) {
+        RoomImageName = other.RoomImageName;
       }
     }
 
@@ -533,6 +582,14 @@ namespace HOLMS.Types.Supply.RoomTypes {
           }
           case 122: {
             ChannelManagerId = input.ReadString();
+            break;
+          }
+          case 130: {
+            RoomImage = input.ReadBytes();
+            break;
+          }
+          case 138: {
+            RoomImageName = input.ReadString();
             break;
           }
         }
