@@ -100,4 +100,7 @@ service OpenLodgingReservationSvc {
 
 	rpc UpdateGovernmentIdInformation(GuestPersonalInformationUpdateRequest)
 		returns(google.protobuf.Empty);
+
+	rpc GetRoomAssignmentsWithHistoricalOccupancy(holms.types.booking.indicators.ReservationIndicator) 
+		returns (holms.types.booking.reservations.ReservationRoomAssignmentSchedule);
 }
