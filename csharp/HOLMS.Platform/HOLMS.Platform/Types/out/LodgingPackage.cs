@@ -26,17 +26,19 @@ namespace HOLMS.Types.Supply.Packages {
             "cy50eXBlcy5zdXBwbHkucGFja2FnZXMaH2dvb2dsZS9wcm90b2J1Zi90aW1l",
             "c3RhbXAucHJvdG8aI3N1cHBseS9wcmljZWRfb2ZmZXJlZF9sb2RnaW5nLnBy",
             "b3RvGi9zdXBwbHkvcGFja2FnZXMvbG9kZ2luZ19wYWNrYWdlX2luZGljYXRv",
-            "ci5wcm90byL3AQoOTG9kZ2luZ1BhY2thZ2USEAoIYm9va2FibGUYASABKAgS",
+            "ci5wcm90byLLAgoOTG9kZ2luZ1BhY2thZ2USEAoIYm9va2FibGUYASABKAgS",
             "HwoXYm9va2FibGVfd2l0aF9ob2xkX2Ryb3AYAiABKAgSOAoGb2ZmZXJzGAMg",
             "AygLMiguaG9sbXMudHlwZXMuc3VwcGx5LlByaWNlZE9mZmVyZWRMb2RnaW5n",
             "EkgKCnBhY2thZ2VfaWQYBCABKAsyNC5ob2xtcy50eXBlcy5zdXBwbHkucGFj",
             "a2FnZXMuTG9kZ2luZ1BhY2thZ2VJbmRpY2F0b3ISLgoKZXhwaXJlc19hdBgF",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCHqoCG0hPTE1TLlR5",
-            "cGVzLlN1cHBseS5QYWNrYWdlc2IGcHJvdG8z"));
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASIQoZbm9uX2Jvb2th",
+            "YmxlX2luX3Bhc3RfZGF5cxgGIAEoCBIvCidub25fYm9va2FibGVfaW5fcHJl",
+            "c2VudF9hbmRfZnV0dXJlX2RheXMYByABKAhCHqoCG0hPTE1TLlR5cGVzLlN1",
+            "cHBseS5QYWNrYWdlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::HOLMS.Types.Supply.PricedOfferedLodgingReflection.Descriptor, global::HOLMS.Types.Supply.Packages.LodgingPackageIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.Packages.LodgingPackage), global::HOLMS.Types.Supply.Packages.LodgingPackage.Parser, new[]{ "Bookable", "BookableWithHoldDrop", "Offers", "PackageId", "ExpiresAt" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.Packages.LodgingPackage), global::HOLMS.Types.Supply.Packages.LodgingPackage.Parser, new[]{ "Bookable", "BookableWithHoldDrop", "Offers", "PackageId", "ExpiresAt", "NonBookableInPastDays", "NonBookableInPresentAndFutureDays" }, null, null, null)
           }));
     }
     #endregion
@@ -72,6 +74,8 @@ namespace HOLMS.Types.Supply.Packages {
       offers_ = other.offers_.Clone();
       PackageId = other.packageId_ != null ? other.PackageId.Clone() : null;
       ExpiresAt = other.expiresAt_ != null ? other.ExpiresAt.Clone() : null;
+      nonBookableInPastDays_ = other.nonBookableInPastDays_;
+      nonBookableInPresentAndFutureDays_ = other.nonBookableInPresentAndFutureDays_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -133,6 +137,28 @@ namespace HOLMS.Types.Supply.Packages {
       }
     }
 
+    /// <summary>Field number for the "non_bookable_in_past_days" field.</summary>
+    public const int NonBookableInPastDaysFieldNumber = 6;
+    private bool nonBookableInPastDays_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool NonBookableInPastDays {
+      get { return nonBookableInPastDays_; }
+      set {
+        nonBookableInPastDays_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "non_bookable_in_present_and_future_days" field.</summary>
+    public const int NonBookableInPresentAndFutureDaysFieldNumber = 7;
+    private bool nonBookableInPresentAndFutureDays_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool NonBookableInPresentAndFutureDays {
+      get { return nonBookableInPresentAndFutureDays_; }
+      set {
+        nonBookableInPresentAndFutureDays_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LodgingPackage);
@@ -151,6 +177,8 @@ namespace HOLMS.Types.Supply.Packages {
       if(!offers_.Equals(other.offers_)) return false;
       if (!object.Equals(PackageId, other.PackageId)) return false;
       if (!object.Equals(ExpiresAt, other.ExpiresAt)) return false;
+      if (NonBookableInPastDays != other.NonBookableInPastDays) return false;
+      if (NonBookableInPresentAndFutureDays != other.NonBookableInPresentAndFutureDays) return false;
       return true;
     }
 
@@ -162,6 +190,8 @@ namespace HOLMS.Types.Supply.Packages {
       hash ^= offers_.GetHashCode();
       if (packageId_ != null) hash ^= PackageId.GetHashCode();
       if (expiresAt_ != null) hash ^= ExpiresAt.GetHashCode();
+      if (NonBookableInPastDays != false) hash ^= NonBookableInPastDays.GetHashCode();
+      if (NonBookableInPresentAndFutureDays != false) hash ^= NonBookableInPresentAndFutureDays.GetHashCode();
       return hash;
     }
 
@@ -189,6 +219,14 @@ namespace HOLMS.Types.Supply.Packages {
         output.WriteRawTag(42);
         output.WriteMessage(ExpiresAt);
       }
+      if (NonBookableInPastDays != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(NonBookableInPastDays);
+      }
+      if (NonBookableInPresentAndFutureDays != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(NonBookableInPresentAndFutureDays);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -206,6 +244,12 @@ namespace HOLMS.Types.Supply.Packages {
       }
       if (expiresAt_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExpiresAt);
+      }
+      if (NonBookableInPastDays != false) {
+        size += 1 + 1;
+      }
+      if (NonBookableInPresentAndFutureDays != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -233,6 +277,12 @@ namespace HOLMS.Types.Supply.Packages {
           expiresAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         ExpiresAt.MergeFrom(other.ExpiresAt);
+      }
+      if (other.NonBookableInPastDays != false) {
+        NonBookableInPastDays = other.NonBookableInPastDays;
+      }
+      if (other.NonBookableInPresentAndFutureDays != false) {
+        NonBookableInPresentAndFutureDays = other.NonBookableInPresentAndFutureDays;
       }
     }
 
@@ -268,6 +318,14 @@ namespace HOLMS.Types.Supply.Packages {
               expiresAt_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(expiresAt_);
+            break;
+          }
+          case 48: {
+            NonBookableInPastDays = input.ReadBool();
+            break;
+          }
+          case 56: {
+            NonBookableInPresentAndFutureDays = input.ReadBool();
             break;
           }
         }

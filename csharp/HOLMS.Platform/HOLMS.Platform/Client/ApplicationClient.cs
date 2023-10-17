@@ -235,7 +235,10 @@ namespace HOLMS.Platform.Client {
             var priorChannel = _authenticatedChannel;
 
             _authenticatedChannel = new Channel($"{_sp.AppSvcHostname}:{_sp.AppSvcPort}",
-                sessionContextToken.ToChannelCredentials());
+                sessionContextToken.ToChannelCredentials(), new ChannelOption[] {
+      new ChannelOption(ChannelOptions.MaxReceiveMessageLength, 100 * 1024 * 1024),
+      new ChannelOption(ChannelOptions.MaxSendMessageLength, 100 * 1024 * 1024)
+	});
 
             MakeServices();
 

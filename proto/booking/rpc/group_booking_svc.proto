@@ -119,6 +119,7 @@ message SyncHoldRequest{
 	.holms.types.primitive.PbInclusiveOpsdateRange date_range = 3;
 	.holms.types.booking.indicators.ReservationIndicator reservation = 4;
 	bool booking_tag_present = 5;
+	bool requires_larger_hold_adjustment = 6;
 }
 
 message GroupBookingRequest{

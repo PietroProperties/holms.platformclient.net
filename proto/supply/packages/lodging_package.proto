@@ -13,5 +13,7 @@ message LodgingPackage {
 	repeated holms.types.supply.PricedOfferedLodging offers = 3;
 	.holms.types.supply.packages.LodgingPackageIndicator package_id = 4;
 	google.protobuf.Timestamp expires_at = 5;
+	bool non_bookable_in_past_days = 6;
+	bool non_bookable_in_present_and_future_days = 7;
 }
 

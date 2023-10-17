@@ -106,6 +106,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_GuestPersonalInformationUpdateRequest,
         __Marshaller_Empty);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.Reservations.ReservationRoomAssignmentSchedule> __Method_GetRoomAssignmentsWithHistoricalOccupancy = new grpc::Method<global::HOLMS.Types.Booking.Indicators.ReservationIndicator, global::HOLMS.Types.Booking.Reservations.ReservationRoomAssignmentSchedule>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetRoomAssignmentsWithHistoricalOccupancy",
+        __Marshaller_ReservationIndicator,
+        __Marshaller_ReservationRoomAssignmentSchedule);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -166,6 +173,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> UpdateGovernmentIdInformation(global::HOLMS.Types.Booking.RPC.GuestPersonalInformationUpdateRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.Reservations.ReservationRoomAssignmentSchedule> GetRoomAssignmentsWithHistoricalOccupancy(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -371,6 +383,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateGovernmentIdInformation, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.Reservations.ReservationRoomAssignmentSchedule GetRoomAssignmentsWithHistoricalOccupancy(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetRoomAssignmentsWithHistoricalOccupancy(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.Reservations.ReservationRoomAssignmentSchedule GetRoomAssignmentsWithHistoricalOccupancy(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetRoomAssignmentsWithHistoricalOccupancy, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.Reservations.ReservationRoomAssignmentSchedule> GetRoomAssignmentsWithHistoricalOccupancyAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return GetRoomAssignmentsWithHistoricalOccupancyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.Reservations.ReservationRoomAssignmentSchedule> GetRoomAssignmentsWithHistoricalOccupancyAsync(global::HOLMS.Types.Booking.Indicators.ReservationIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetRoomAssignmentsWithHistoricalOccupancy, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override OpenLodgingReservationSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -393,7 +421,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetReservationAssociatedParties, serviceImpl.GetReservationAssociatedParties)
           .AddMethod(__Method_GetReservationAssociatedPartiesForReservations, serviceImpl.GetReservationAssociatedPartiesForReservations)
           .AddMethod(__Method_UpdateVehiclePlateInformation, serviceImpl.UpdateVehiclePlateInformation)
-          .AddMethod(__Method_UpdateGovernmentIdInformation, serviceImpl.UpdateGovernmentIdInformation).Build();
+          .AddMethod(__Method_UpdateGovernmentIdInformation, serviceImpl.UpdateGovernmentIdInformation)
+          .AddMethod(__Method_GetRoomAssignmentsWithHistoricalOccupancy, serviceImpl.GetRoomAssignmentsWithHistoricalOccupancy).Build();
     }
 
   }
