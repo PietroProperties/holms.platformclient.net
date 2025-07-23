@@ -25,15 +25,16 @@ namespace HOLMS.Types.TenancyConfig {
             "CjZ0ZW5hbmN5X2NvbmZpZy9wcm9wZXJ0eV9jYW5jZWxsYXRpb25fbGV0dGVy",
             "X3RleHQucHJvdG8SGmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnGjJ0ZW5h",
             "bmN5X2NvbmZpZy9pbmRpY2F0b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90",
-            "byKyAQoeUHJvcGVydHlDYW5jZWxsYXRpb25MZXR0ZXJUZXh0EkoKCHByb3Bl",
+            "byLYAQoeUHJvcGVydHlDYW5jZWxsYXRpb25MZXR0ZXJUZXh0EkoKCHByb3Bl",
             "cnR5GAEgASgLMjguaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNh",
             "dG9ycy5Qcm9wZXJ0eUluZGljYXRvchIhChljYW5jZWxsYXRpb25fb3Blbmlu",
             "Z190ZXh0GAIgASgJEiEKGWNhbmNlbGxhdGlvbl9jbG9zaW5nX3RleHQYAyAB",
-            "KAlCHKoCGUhPTE1TLlR5cGVzLlRlbmFuY3lDb25maWdiBnByb3RvMw=="));
+            "KAkSJAocaGVhZGluZ19jb250ZW50X2NhbmNlbGxhdGlvbhgEIAEoCUIcqgIZ",
+            "SE9MTVMuVHlwZXMuVGVuYW5jeUNvbmZpZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText), global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText.Parser, new[]{ "Property", "CancellationOpeningText", "CancellationClosingText" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText), global::HOLMS.Types.TenancyConfig.PropertyCancellationLetterText.Parser, new[]{ "Property", "CancellationOpeningText", "CancellationClosingText", "HeadingContentCancellation" }, null, null, null)
           }));
     }
     #endregion
@@ -67,6 +68,7 @@ namespace HOLMS.Types.TenancyConfig {
       Property = other.property_ != null ? other.Property.Clone() : null;
       cancellationOpeningText_ = other.cancellationOpeningText_;
       cancellationClosingText_ = other.cancellationClosingText_;
+      headingContentCancellation_ = other.headingContentCancellation_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -107,6 +109,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "heading_content_cancellation" field.</summary>
+    public const int HeadingContentCancellationFieldNumber = 4;
+    private string headingContentCancellation_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HeadingContentCancellation {
+      get { return headingContentCancellation_; }
+      set {
+        headingContentCancellation_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PropertyCancellationLetterText);
@@ -123,6 +136,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (!object.Equals(Property, other.Property)) return false;
       if (CancellationOpeningText != other.CancellationOpeningText) return false;
       if (CancellationClosingText != other.CancellationClosingText) return false;
+      if (HeadingContentCancellation != other.HeadingContentCancellation) return false;
       return true;
     }
 
@@ -132,6 +146,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (property_ != null) hash ^= Property.GetHashCode();
       if (CancellationOpeningText.Length != 0) hash ^= CancellationOpeningText.GetHashCode();
       if (CancellationClosingText.Length != 0) hash ^= CancellationClosingText.GetHashCode();
+      if (HeadingContentCancellation.Length != 0) hash ^= HeadingContentCancellation.GetHashCode();
       return hash;
     }
 
@@ -154,6 +169,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(26);
         output.WriteString(CancellationClosingText);
       }
+      if (HeadingContentCancellation.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(HeadingContentCancellation);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -167,6 +186,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (CancellationClosingText.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CancellationClosingText);
+      }
+      if (HeadingContentCancellation.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(HeadingContentCancellation);
       }
       return size;
     }
@@ -187,6 +209,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.CancellationClosingText.Length != 0) {
         CancellationClosingText = other.CancellationClosingText;
+      }
+      if (other.HeadingContentCancellation.Length != 0) {
+        HeadingContentCancellation = other.HeadingContentCancellation;
       }
     }
 
@@ -211,6 +236,10 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 26: {
             CancellationClosingText = input.ReadString();
+            break;
+          }
+          case 34: {
+            HeadingContentCancellation = input.ReadString();
             break;
           }
         }
