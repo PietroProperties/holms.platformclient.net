@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Custom version number (e.g., 2.172.0)'
+        description: 'Custom version number (e.g., 2.127.0)'
         required: true
         default: '2.0.0'
 
@@ -19,16 +19,16 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '6.0.x'  # Adjust to your .NET version
+        dotnet-version: '6.0.x'  # Compatible with .NET Standard 2.0
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore csharp/HOLMS.Platform/HOLMS.Platform/HOLMS.Platform.csproj
 
     - name: Build project
-      run: dotnet build --no-restore --configuration Release
+      run: dotnet build csharp/HOLMS.Platform/HOLMS.Platform/HOLMS.Platform.csproj --no-restore --configuration Release
 
     - name: Pack NuGet package
-      run: dotnet pack --no-build --configuration Release /p:PackageVersion=${{ github.event.inputs.version }} -o ./nupkg
+      run: dotnet pack csharp/HOLMS.Platform/HOLMS.Platform/HOLMS.Platform.csproj --no-build --configuration Release /p:PackageVersion=${{ github.event.inputs.version }} -o ./nupkg
 
     - name: Push to MyGet
       run: dotnet nuget push ./nupkg/*.nupkg --source https://www.myget.org/F/shortbar-holms/api/v2/package --api-key 9ccdc610-2160-4720-a558-79563feaa449
