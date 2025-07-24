@@ -1,0 +1,34 @@
+name: Build and Publish NuGet Package
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Custom version number (e.g., 2.172.0)'
+        required: true
+        default: '2.0.0'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '6.0.x'  # Adjust to your .NET version
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build project
+      run: dotnet build --no-restore --configuration Release
+
+    - name: Pack NuGet package
+      run: dotnet pack --no-build --configuration Release /p:PackageVersion=${{ github.event.inputs.version }} -o ./nupkg
+
+    - name: Push to MyGet
+      run: dotnet nuget push ./nupkg/*.nupkg --source https://www.myget.org/F/shortbar-holms/api/v2/package --api-key 9ccdc610-2160-4720-a558-79563feaa449
