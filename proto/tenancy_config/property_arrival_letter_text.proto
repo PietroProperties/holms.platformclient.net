@@ -11,5 +11,6 @@ message PropertyArrivalLetterText {
 	string arrival_letter_opening_text = 2;
 	string arrival_policy_agreement_text = 3;
 	string liability_disclaimer = 4;
+	string heading_content_arrival = 5;
 }
 

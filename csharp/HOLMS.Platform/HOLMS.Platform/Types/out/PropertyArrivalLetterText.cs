@@ -24,17 +24,18 @@ namespace HOLMS.Types.TenancyConfig {
           string.Concat(
             "CjF0ZW5hbmN5X2NvbmZpZy9wcm9wZXJ0eV9hcnJpdmFsX2xldHRlcl90ZXh0",
             "LnByb3RvEhpob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZxoydGVuYW5jeV9j",
-            "b25maWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8i0QEK",
+            "b25maWcvaW5kaWNhdG9ycy9wcm9wZXJ0eV9pbmRpY2F0b3IucHJvdG8i8gEK",
             "GVByb3BlcnR5QXJyaXZhbExldHRlclRleHQSSgoIcHJvcGVydHkYASABKAsy",
             "OC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3Bl",
             "cnR5SW5kaWNhdG9yEiMKG2Fycml2YWxfbGV0dGVyX29wZW5pbmdfdGV4dBgC",
             "IAEoCRIlCh1hcnJpdmFsX3BvbGljeV9hZ3JlZW1lbnRfdGV4dBgDIAEoCRIc",
-            "ChRsaWFiaWxpdHlfZGlzY2xhaW1lchgEIAEoCUIcqgIZSE9MTVMuVHlwZXMu",
-            "VGVuYW5jeUNvbmZpZ2IGcHJvdG8z"));
+            "ChRsaWFiaWxpdHlfZGlzY2xhaW1lchgEIAEoCRIfChdoZWFkaW5nX2NvbnRl",
+            "bnRfYXJyaXZhbBgFIAEoCUIcqgIZSE9MTVMuVHlwZXMuVGVuYW5jeUNvbmZp",
+            "Z2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText), global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText.Parser, new[]{ "Property", "ArrivalLetterOpeningText", "ArrivalPolicyAgreementText", "LiabilityDisclaimer" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText), global::HOLMS.Types.TenancyConfig.PropertyArrivalLetterText.Parser, new[]{ "Property", "ArrivalLetterOpeningText", "ArrivalPolicyAgreementText", "LiabilityDisclaimer", "HeadingContentArrival" }, null, null, null)
           }));
     }
     #endregion
@@ -69,6 +70,7 @@ namespace HOLMS.Types.TenancyConfig {
       arrivalLetterOpeningText_ = other.arrivalLetterOpeningText_;
       arrivalPolicyAgreementText_ = other.arrivalPolicyAgreementText_;
       liabilityDisclaimer_ = other.liabilityDisclaimer_;
+      headingContentArrival_ = other.headingContentArrival_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -120,6 +122,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "heading_content_arrival" field.</summary>
+    public const int HeadingContentArrivalFieldNumber = 5;
+    private string headingContentArrival_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HeadingContentArrival {
+      get { return headingContentArrival_; }
+      set {
+        headingContentArrival_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PropertyArrivalLetterText);
@@ -137,6 +150,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (ArrivalLetterOpeningText != other.ArrivalLetterOpeningText) return false;
       if (ArrivalPolicyAgreementText != other.ArrivalPolicyAgreementText) return false;
       if (LiabilityDisclaimer != other.LiabilityDisclaimer) return false;
+      if (HeadingContentArrival != other.HeadingContentArrival) return false;
       return true;
     }
 
@@ -147,6 +161,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (ArrivalLetterOpeningText.Length != 0) hash ^= ArrivalLetterOpeningText.GetHashCode();
       if (ArrivalPolicyAgreementText.Length != 0) hash ^= ArrivalPolicyAgreementText.GetHashCode();
       if (LiabilityDisclaimer.Length != 0) hash ^= LiabilityDisclaimer.GetHashCode();
+      if (HeadingContentArrival.Length != 0) hash ^= HeadingContentArrival.GetHashCode();
       return hash;
     }
 
@@ -173,6 +188,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(34);
         output.WriteString(LiabilityDisclaimer);
       }
+      if (HeadingContentArrival.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(HeadingContentArrival);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -189,6 +208,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (LiabilityDisclaimer.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LiabilityDisclaimer);
+      }
+      if (HeadingContentArrival.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(HeadingContentArrival);
       }
       return size;
     }
@@ -212,6 +234,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.LiabilityDisclaimer.Length != 0) {
         LiabilityDisclaimer = other.LiabilityDisclaimer;
+      }
+      if (other.HeadingContentArrival.Length != 0) {
+        HeadingContentArrival = other.HeadingContentArrival;
       }
     }
 
@@ -240,6 +265,10 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 34: {
             LiabilityDisclaimer = input.ReadString();
+            break;
+          }
+          case 42: {
+            HeadingContentArrival = input.ReadString();
             break;
           }
         }
