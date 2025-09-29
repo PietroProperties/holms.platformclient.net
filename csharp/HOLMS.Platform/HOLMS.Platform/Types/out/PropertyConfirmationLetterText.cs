@@ -25,16 +25,17 @@ namespace HOLMS.Types.TenancyConfig {
             "CjZ0ZW5hbmN5X2NvbmZpZy9wcm9wZXJ0eV9jb25maXJtYXRpb25fbGV0dGVy",
             "X3RleHQucHJvdG8SGmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnGjJ0ZW5h",
             "bmN5X2NvbmZpZy9pbmRpY2F0b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90",
-            "byLOAQoeUHJvcGVydHlDb25maXJtYXRpb25MZXR0ZXJUZXh0EkoKCHByb3Bl",
+            "byL0AQoeUHJvcGVydHlDb25maXJtYXRpb25MZXR0ZXJUZXh0EkoKCHByb3Bl",
             "cnR5GAEgASgLMjguaG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNh",
             "dG9ycy5Qcm9wZXJ0eUluZGljYXRvchIbChNsZXR0ZXJfb3BlbmluZ190ZXh0",
             "GAIgASgJEiYKHnByb3BlcnR5X3BvbGljeV9hZ3JlZW1lbnRfdGV4dBgDIAEo",
-            "CRIbChNsZXR0ZXJfY2xvc2luZ190ZXh0GAQgASgJQhyqAhlIT0xNUy5UeXBl",
-            "cy5UZW5hbmN5Q29uZmlnYgZwcm90bzM="));
+            "CRIbChNsZXR0ZXJfY2xvc2luZ190ZXh0GAQgASgJEiQKHGhlYWRpbmdfY29u",
+            "dGVudF9jb25maXJtYXRpb24YBSABKAlCHKoCGUhPTE1TLlR5cGVzLlRlbmFu",
+            "Y3lDb25maWdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText), global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText.Parser, new[]{ "Property", "LetterOpeningText", "PropertyPolicyAgreementText", "LetterClosingText" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText), global::HOLMS.Types.TenancyConfig.PropertyConfirmationLetterText.Parser, new[]{ "Property", "LetterOpeningText", "PropertyPolicyAgreementText", "LetterClosingText", "HeadingContentConfirmation" }, null, null, null)
           }));
     }
     #endregion
@@ -69,6 +70,7 @@ namespace HOLMS.Types.TenancyConfig {
       letterOpeningText_ = other.letterOpeningText_;
       propertyPolicyAgreementText_ = other.propertyPolicyAgreementText_;
       letterClosingText_ = other.letterClosingText_;
+      headingContentConfirmation_ = other.headingContentConfirmation_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -120,6 +122,17 @@ namespace HOLMS.Types.TenancyConfig {
       }
     }
 
+    /// <summary>Field number for the "heading_content_confirmation" field.</summary>
+    public const int HeadingContentConfirmationFieldNumber = 5;
+    private string headingContentConfirmation_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HeadingContentConfirmation {
+      get { return headingContentConfirmation_; }
+      set {
+        headingContentConfirmation_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PropertyConfirmationLetterText);
@@ -137,6 +150,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (LetterOpeningText != other.LetterOpeningText) return false;
       if (PropertyPolicyAgreementText != other.PropertyPolicyAgreementText) return false;
       if (LetterClosingText != other.LetterClosingText) return false;
+      if (HeadingContentConfirmation != other.HeadingContentConfirmation) return false;
       return true;
     }
 
@@ -147,6 +161,7 @@ namespace HOLMS.Types.TenancyConfig {
       if (LetterOpeningText.Length != 0) hash ^= LetterOpeningText.GetHashCode();
       if (PropertyPolicyAgreementText.Length != 0) hash ^= PropertyPolicyAgreementText.GetHashCode();
       if (LetterClosingText.Length != 0) hash ^= LetterClosingText.GetHashCode();
+      if (HeadingContentConfirmation.Length != 0) hash ^= HeadingContentConfirmation.GetHashCode();
       return hash;
     }
 
@@ -173,6 +188,10 @@ namespace HOLMS.Types.TenancyConfig {
         output.WriteRawTag(34);
         output.WriteString(LetterClosingText);
       }
+      if (HeadingContentConfirmation.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(HeadingContentConfirmation);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -189,6 +208,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (LetterClosingText.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LetterClosingText);
+      }
+      if (HeadingContentConfirmation.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(HeadingContentConfirmation);
       }
       return size;
     }
@@ -212,6 +234,9 @@ namespace HOLMS.Types.TenancyConfig {
       }
       if (other.LetterClosingText.Length != 0) {
         LetterClosingText = other.LetterClosingText;
+      }
+      if (other.HeadingContentConfirmation.Length != 0) {
+        HeadingContentConfirmation = other.HeadingContentConfirmation;
       }
     }
 
@@ -240,6 +265,10 @@ namespace HOLMS.Types.TenancyConfig {
           }
           case 34: {
             LetterClosingText = input.ReadString();
+            break;
+          }
+          case 42: {
+            HeadingContentConfirmation = input.ReadString();
             break;
           }
         }

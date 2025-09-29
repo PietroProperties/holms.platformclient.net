@@ -10,5 +10,6 @@ message PropertyCancellationLetterText {
 	.holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
 	string cancellation_opening_text = 2;
 	string cancellation_closing_text = 3;
+	string heading_content_cancellation = 4;
 }
 
