@@ -23,10 +23,9 @@ enum ArrivalReportSorting {
 }
 
 enum FrontDeskReportsNotesFilter {
-	NONE = 0;
-	ALL_NOTES = 1;
-	FRONT_DESK = 2;
-	HOUSEKEEPING = 3;
+	GUEST_PHONE_NUMBER = 0;
+	FRONT_DESK = 1;
+	HOUSEKEEPING = 2;
 }
 
 message FrontDeskCurrentDateReportManifest {
@@ -41,7 +40,7 @@ message FrontDeskCurrentDateReportManifest {
 	string start_time = 10;
 	string cash_drop_for = 11;
 	string end_time = 12;
-	FrontDeskReportsNotesFilter note_category = 13;
+	repeated FrontDeskReportsNotesFilter note_category = 13;
 	DepartureReportSorting departure_report_sorting = 14;
 	.holms.types.primitive.PbLocalDate selected_date = 15;
 	ArrivalReportSorting arrival_report_sorting = 16;

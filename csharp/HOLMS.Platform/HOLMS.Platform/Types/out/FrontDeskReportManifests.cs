@@ -34,7 +34,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "BiABKAgSFwoPbm9fc2hvd3NfcmVwb3J0GAcgASgIEh8KF3Vub2NjdXBpZWRf",
             "cm9vbXNfcmVwb3J0GAggASgIEhgKEGNhc2hfZHJvcF9yZXBvcnQYCSABKAgS",
             "EgoKc3RhcnRfdGltZRgKIAEoCRIVCg1jYXNoX2Ryb3BfZm9yGAsgASgJEhAK",
-            "CGVuZF90aW1lGAwgASgJElYKDW5vdGVfY2F0ZWdvcnkYDSABKA4yPy5ob2xt",
+            "CGVuZF90aW1lGAwgASgJElYKDW5vdGVfY2F0ZWdvcnkYDSADKA4yPy5ob2xt",
             "cy50eXBlcy5yZXBvcnRpbmcuaW5wdXRfcGFyYW1zLkZyb250RGVza1JlcG9y",
             "dHNOb3Rlc0ZpbHRlchJcChhkZXBhcnR1cmVfcmVwb3J0X3NvcnRpbmcYDiAB",
             "KA4yOi5ob2xtcy50eXBlcy5yZXBvcnRpbmcuaW5wdXRfcGFyYW1zLkRlcGFy",
@@ -53,11 +53,11 @@ namespace HOLMS.Types.Reporting.ReportParams {
             "Uk9PTV9OVU1CRVIQASo9ChZEZXBhcnR1cmVSZXBvcnRTb3J0aW5nEhYKEkJZ",
             "X0dVRVNUX05BTUVfU09SVBAAEgsKB0JZX1JPT00QASpQChRBcnJpdmFsUmVw",
             "b3J0U29ydGluZxIeChpBUlJJVkFMX0JZX0dVRVNUX05BTUVfU09SVBAAEhgK",
-            "FEFSUklWQUxfQllfUk9PTV9TT1JUEAEqWAobRnJvbnREZXNrUmVwb3J0c05v",
-            "dGVzRmlsdGVyEggKBE5PTkUQABINCglBTExfTk9URVMQARIOCgpGUk9OVF9E",
-            "RVNLEAISEAoMSE9VU0VLRUVQSU5HEANCPVoWcmVwb3J0aW5nL2lucHV0X3Bh",
-            "cmFtc6oCIkhPTE1TLlR5cGVzLlJlcG9ydGluZy5SZXBvcnRQYXJhbXNiBnBy",
-            "b3RvMw=="));
+            "FEFSUklWQUxfQllfUk9PTV9TT1JUEAEqVwobRnJvbnREZXNrUmVwb3J0c05v",
+            "dGVzRmlsdGVyEhYKEkdVRVNUX1BIT05FX05VTUJFUhAAEg4KCkZST05UX0RF",
+            "U0sQARIQCgxIT1VTRUtFRVBJTkcQAkI9WhZyZXBvcnRpbmcvaW5wdXRfcGFy",
+            "YW1zqgIiSE9MTVMuVHlwZXMuUmVwb3J0aW5nLlJlcG9ydFBhcmFtc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Reporting.ReportParams.InHouseGuestReportSorting), typeof(global::HOLMS.Types.Reporting.ReportParams.DepartureReportSorting), typeof(global::HOLMS.Types.Reporting.ReportParams.ArrivalReportSorting), typeof(global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter), }, new pbr::GeneratedClrTypeInfo[] {
@@ -85,10 +85,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
   }
 
   public enum FrontDeskReportsNotesFilter {
-    [pbr::OriginalName("NONE")] None = 0,
-    [pbr::OriginalName("ALL_NOTES")] AllNotes = 1,
-    [pbr::OriginalName("FRONT_DESK")] FrontDesk = 2,
-    [pbr::OriginalName("HOUSEKEEPING")] Housekeeping = 3,
+    [pbr::OriginalName("GUEST_PHONE_NUMBER")] GuestPhoneNumber = 0,
+    [pbr::OriginalName("FRONT_DESK")] FrontDesk = 1,
+    [pbr::OriginalName("HOUSEKEEPING")] Housekeeping = 2,
   }
 
   #endregion
@@ -129,7 +128,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       startTime_ = other.startTime_;
       cashDropFor_ = other.cashDropFor_;
       endTime_ = other.endTime_;
-      noteCategory_ = other.noteCategory_;
+      noteCategory_ = other.noteCategory_.Clone();
       departureReportSorting_ = other.departureReportSorting_;
       SelectedDate = other.selectedDate_ != null ? other.SelectedDate.Clone() : null;
       arrivalReportSorting_ = other.arrivalReportSorting_;
@@ -263,13 +262,12 @@ namespace HOLMS.Types.Reporting.ReportParams {
 
     /// <summary>Field number for the "note_category" field.</summary>
     public const int NoteCategoryFieldNumber = 13;
-    private global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter noteCategory_ = 0;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter> _repeated_noteCategory_codec
+        = pb::FieldCodec.ForEnum(106, x => (int) x, x => (global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter) x);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter> noteCategory_ = new pbc::RepeatedField<global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter NoteCategory {
+    public pbc::RepeatedField<global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter> NoteCategory {
       get { return noteCategory_; }
-      set {
-        noteCategory_ = value;
-      }
     }
 
     /// <summary>Field number for the "departure_report_sorting" field.</summary>
@@ -329,7 +327,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (StartTime != other.StartTime) return false;
       if (CashDropFor != other.CashDropFor) return false;
       if (EndTime != other.EndTime) return false;
-      if (NoteCategory != other.NoteCategory) return false;
+      if(!noteCategory_.Equals(other.noteCategory_)) return false;
       if (DepartureReportSorting != other.DepartureReportSorting) return false;
       if (!object.Equals(SelectedDate, other.SelectedDate)) return false;
       if (ArrivalReportSorting != other.ArrivalReportSorting) return false;
@@ -350,7 +348,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (StartTime.Length != 0) hash ^= StartTime.GetHashCode();
       if (CashDropFor.Length != 0) hash ^= CashDropFor.GetHashCode();
       if (EndTime.Length != 0) hash ^= EndTime.GetHashCode();
-      if (NoteCategory != 0) hash ^= NoteCategory.GetHashCode();
+      hash ^= noteCategory_.GetHashCode();
       if (DepartureReportSorting != 0) hash ^= DepartureReportSorting.GetHashCode();
       if (selectedDate_ != null) hash ^= SelectedDate.GetHashCode();
       if (ArrivalReportSorting != 0) hash ^= ArrivalReportSorting.GetHashCode();
@@ -408,10 +406,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
         output.WriteRawTag(98);
         output.WriteString(EndTime);
       }
-      if (NoteCategory != 0) {
-        output.WriteRawTag(104);
-        output.WriteEnum((int) NoteCategory);
-      }
+      noteCategory_.WriteTo(output, _repeated_noteCategory_codec);
       if (DepartureReportSorting != 0) {
         output.WriteRawTag(112);
         output.WriteEnum((int) DepartureReportSorting);
@@ -462,9 +457,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (EndTime.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(EndTime);
       }
-      if (NoteCategory != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) NoteCategory);
-      }
+      size += noteCategory_.CalculateSize(_repeated_noteCategory_codec);
       if (DepartureReportSorting != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DepartureReportSorting);
       }
@@ -515,9 +508,7 @@ namespace HOLMS.Types.Reporting.ReportParams {
       if (other.EndTime.Length != 0) {
         EndTime = other.EndTime;
       }
-      if (other.NoteCategory != 0) {
-        NoteCategory = other.NoteCategory;
-      }
+      noteCategory_.Add(other.noteCategory_);
       if (other.DepartureReportSorting != 0) {
         DepartureReportSorting = other.DepartureReportSorting;
       }
@@ -584,8 +575,9 @@ namespace HOLMS.Types.Reporting.ReportParams {
             EndTime = input.ReadString();
             break;
           }
+          case 106:
           case 104: {
-            noteCategory_ = (global::HOLMS.Types.Reporting.ReportParams.FrontDeskReportsNotesFilter) input.ReadEnum();
+            noteCategory_.AddEntriesFrom(input, _repeated_noteCategory_codec);
             break;
           }
           case 112: {
