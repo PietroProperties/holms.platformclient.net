@@ -27,7 +27,7 @@ namespace HOLMS.Types.Operations.NoteRequests {
             "dGlvbnMvbm90ZV9yZXF1ZXN0cy9ub3RlX3JlcXVlc3RfaW5kaWNhdG9yLnBy",
             "b3RvGixvcGVyYXRpb25zL25vdGVfcmVxdWVzdHMvbm90ZV9jYXRlZ29yeS5w",
             "cm90bxoob3BlcmF0aW9ucy9ub3RlX3JlcXVlc3RzL25vdGVfdHlwZS5wcm90",
-            "bxohc3VwcGx5L3Jvb21fdHlwZXMvcm9vbV90eXBlLnByb3RvItoCCgtOb3Rl",
+            "bxohc3VwcGx5L3Jvb21fdHlwZXMvcm9vbV90eXBlLnByb3RvIu0CCgtOb3Rl",
             "UmVxdWVzdBJNCgllbnRpdHlfaWQYASABKAsyOi5ob2xtcy50eXBlcy5vcGVy",
             "YXRpb25zLm5vdGVfcmVxdWVzdHMuTm90ZVJlcXVlc3RJbmRpY2F0b3ISDwoH",
             "c3ViamVjdBgCIAEoCRJGCgpkZXBhcnRtZW50GAMgASgOMjIuaG9sbXMudHlw",
@@ -35,13 +35,13 @@ namespace HOLMS.Types.Operations.NoteRequests {
             "b3RlX3R5cGUYBCABKA4yLi5ob2xtcy50eXBlcy5vcGVyYXRpb25zLm5vdGVf",
             "cmVxdWVzdHMuTm90ZVR5cGUSHAoUYXZhaWxhYmxlX29uX3dlYnNpdGUYBSAB",
             "KAgSQgoRcmVxdWVzdF9yb29tX3R5cGUYBiADKAsyJy5ob2xtcy50eXBlcy5z",
-            "dXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZUI/WhdvcGVyYXRpb25zL25vdGVy",
-            "ZXF1ZXN0c6oCI0hPTE1TLlR5cGVzLk9wZXJhdGlvbnMuTm90ZVJlcXVlc3Rz",
-            "YgZwcm90bzM="));
+            "dXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZRIRCglpc19hY3RpdmUYByABKAhC",
+            "P1oXb3BlcmF0aW9ucy9ub3RlcmVxdWVzdHOqAiNIT0xNUy5UeXBlcy5PcGVy",
+            "YXRpb25zLk5vdGVSZXF1ZXN0c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Operations.NoteRequests.NoteRequestIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.NoteRequests.NoteCategoryReflection.Descriptor, global::HOLMS.Types.Operations.NoteRequests.NoteTypeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.NoteRequests.NoteRequest), global::HOLMS.Types.Operations.NoteRequests.NoteRequest.Parser, new[]{ "EntityId", "Subject", "Department", "NoteType", "AvailableOnWebsite", "RequestRoomType" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Operations.NoteRequests.NoteRequest), global::HOLMS.Types.Operations.NoteRequests.NoteRequest.Parser, new[]{ "EntityId", "Subject", "Department", "NoteType", "AvailableOnWebsite", "RequestRoomType", "IsActive" }, null, null, null)
           }));
     }
     #endregion
@@ -78,6 +78,7 @@ namespace HOLMS.Types.Operations.NoteRequests {
       noteType_ = other.noteType_;
       availableOnWebsite_ = other.availableOnWebsite_;
       requestRoomType_ = other.requestRoomType_.Clone();
+      isActive_ = other.isActive_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -153,6 +154,17 @@ namespace HOLMS.Types.Operations.NoteRequests {
       get { return requestRoomType_; }
     }
 
+    /// <summary>Field number for the "is_active" field.</summary>
+    public const int IsActiveFieldNumber = 7;
+    private bool isActive_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsActive {
+      get { return isActive_; }
+      set {
+        isActive_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as NoteRequest);
@@ -172,6 +184,7 @@ namespace HOLMS.Types.Operations.NoteRequests {
       if (NoteType != other.NoteType) return false;
       if (AvailableOnWebsite != other.AvailableOnWebsite) return false;
       if(!requestRoomType_.Equals(other.requestRoomType_)) return false;
+      if (IsActive != other.IsActive) return false;
       return true;
     }
 
@@ -184,6 +197,7 @@ namespace HOLMS.Types.Operations.NoteRequests {
       if (NoteType != 0) hash ^= NoteType.GetHashCode();
       if (AvailableOnWebsite != false) hash ^= AvailableOnWebsite.GetHashCode();
       hash ^= requestRoomType_.GetHashCode();
+      if (IsActive != false) hash ^= IsActive.GetHashCode();
       return hash;
     }
 
@@ -215,6 +229,10 @@ namespace HOLMS.Types.Operations.NoteRequests {
         output.WriteBool(AvailableOnWebsite);
       }
       requestRoomType_.WriteTo(output, _repeated_requestRoomType_codec);
+      if (IsActive != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(IsActive);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -236,6 +254,9 @@ namespace HOLMS.Types.Operations.NoteRequests {
         size += 1 + 1;
       }
       size += requestRoomType_.CalculateSize(_repeated_requestRoomType_codec);
+      if (IsActive != false) {
+        size += 1 + 1;
+      }
       return size;
     }
 
@@ -263,6 +284,9 @@ namespace HOLMS.Types.Operations.NoteRequests {
         AvailableOnWebsite = other.AvailableOnWebsite;
       }
       requestRoomType_.Add(other.requestRoomType_);
+      if (other.IsActive != false) {
+        IsActive = other.IsActive;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -298,6 +322,10 @@ namespace HOLMS.Types.Operations.NoteRequests {
           }
           case 50: {
             requestRoomType_.AddEntriesFrom(input, _repeated_requestRoomType_codec);
+            break;
+          }
+          case 56: {
+            IsActive = input.ReadBool();
             break;
           }
         }
