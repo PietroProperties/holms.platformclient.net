@@ -22,6 +22,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Supply {
         public string ChannelId;
         public ByteString RoomImage;
         public string RoomImageName;
+        public bool IsActive;
 
 
         public RoomType Build() {
@@ -39,6 +40,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Supply {
                 AdditionalWebHolds = AdditionalWebHolds,
                 RoomImage = RoomImage,
                 RoomImageName = RoomImageName,
+                IsActive = IsActive,
             };
 
             if (PropertyId != null) {

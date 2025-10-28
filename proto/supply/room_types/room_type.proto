@@ -25,4 +25,5 @@ message RoomType {
 	string channel_manager_id = 15;
 	bytes room_image= 16;
 	string room_image_name=17;
+	bool is_active = 18;
 }
