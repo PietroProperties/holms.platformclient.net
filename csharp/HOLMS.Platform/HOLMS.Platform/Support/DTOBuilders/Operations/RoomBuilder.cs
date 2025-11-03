@@ -20,6 +20,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Operations {
         public string RoomTypeName;
         public RoomIndicator ConnectedRoomInd;
         public string PhoneTrunkID;
+        public bool RoomTypeActive;
 
         public Room Build() {
             var r = new Room {
@@ -35,7 +36,8 @@ namespace HOLMS.Platform.Support.DTOBuilders.Operations {
                 RoomTypeId = new RoomTypeIndicator(RoomTypeId),
                 RoomTypeName = RoomTypeName,
                 TrunkId = PhoneTrunkID ?? string.Empty,
-                MarkedDirtyAt = MarkedDirtyAt.ToTS()
+                MarkedDirtyAt = MarkedDirtyAt.ToTS(),
+                RoomTypeActive = RoomTypeActive
             };
 
             if (ConnectedRoomInd != null) {

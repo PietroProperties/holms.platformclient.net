@@ -45,29 +45,32 @@ namespace HOLMS.Types.Supply.RPC {
             "EkoKDHJlc2VydmF0aW9ucxgBIAMoCzI0LmhvbG1zLnR5cGVzLmJvb2tpbmcu",
             "cmVzZXJ2YXRpb25zLlJlc2VydmF0aW9uU3VtbWFyeRI6Cg5hdHRhY2hlZF9y",
             "b29tcxgCIAMoCzIiLmhvbG1zLnR5cGVzLm9wZXJhdGlvbnMucm9vbXMuUm9v",
-            "bSqQAQoXUm9vbVR5cGVTdmNVcGRhdGVSZXN1bHQSIgoeUk9PTV9UWVBFX1NW",
-            "Q19VUERBVEVfUkVTVUxUX09LEAASIgoeUk9PTV9UWVBFX1NWQ19VUERBVEVf",
-            "Tk9UX0ZPVU5EEAESLQopUk9PTV9UWVBFX1NWQ19VUERBVEVfUkVTVUxUX0lM",
-            "TEVHQUxfSE9MRFMQAjK7BgoLUm9vbVR5cGVTdmMSTQoDQWxsEhYuZ29vZ2xl",
-            "LnByb3RvYnVmLkVtcHR5Gi4uaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5Sb29t",
-            "VHlwZVN2Y0FsbFJlc3BvbnNlEl8KDEFsbFdpdGhSb29tcxIWLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbXB0eRo3LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuUm9vbVR5",
-            "cGVTdmNBbGxXaXRoUm9vbXNSZXNwb25zZRJkCgdHZXRCeUlkEjAuaG9sbXMu",
-            "dHlwZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9vbVR5cGVJbmRpY2F0b3IaJy5o",
-            "b2xtcy50eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZRJ/ChVHZXRC",
-            "eUNoYW5uZWxNYW5hZ2VySWQSPS5ob2xtcy50eXBlcy5zdXBwbHkucnBjLlJv",
-            "b21UeXBlU3ZjR2V0QnlDaGFubmVsTWFuYWdlclJlcXVlc3QaJy5ob2xtcy50",
-            "eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZRJaCgZDcmVhdGUSJy5o",
-            "b2xtcy50eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZRonLmhvbG1z",
-            "LnR5cGVzLnN1cHBseS5yb29tX3R5cGVzLlJvb21UeXBlEmQKBlVwZGF0ZRIn",
-            "LmhvbG1zLnR5cGVzLnN1cHBseS5yb29tX3R5cGVzLlJvb21UeXBlGjEuaG9s",
-            "bXMudHlwZXMuc3VwcGx5LnJwYy5Sb29tVHlwZVN2Y1VwZGF0ZVJlc3BvbnNl",
-            "EmIKBkRlbGV0ZRInLmhvbG1zLnR5cGVzLnN1cHBseS5yb29tX3R5cGVzLlJv",
-            "b21UeXBlGi8uaG9sbXMudHlwZXMucHJpbWl0aXZlLlNlcnZlckFjdGlvbkNv",
-            "bmZpcm1hdGlvbhJvChFDaGVja0RlcGVuZGVuY2llcxInLmhvbG1zLnR5cGVz",
-            "LnN1cHBseS5yb29tX3R5cGVzLlJvb21UeXBlGjEuaG9sbXMudHlwZXMuc3Vw",
-            "cGx5LnJwYy5DaGVja0RlcGVuZGVuY2llc1Jlc3BvbnNlQhmqAhZIT0xNUy5U",
-            "eXBlcy5TdXBwbHkuUlBDYgZwcm90bzM="));
+            "bSIbCghSb29tSG9sZBIPCgdpc19ob2xkGAEgASgIKpABChdSb29tVHlwZVN2",
+            "Y1VwZGF0ZVJlc3VsdBIiCh5ST09NX1RZUEVfU1ZDX1VQREFURV9SRVNVTFRf",
+            "T0sQABIiCh5ST09NX1RZUEVfU1ZDX1VQREFURV9OT1RfRk9VTkQQARItCilS",
+            "T09NX1RZUEVfU1ZDX1VQREFURV9SRVNVTFRfSUxMRUdBTF9IT0xEUxACMqEH",
+            "CgtSb29tVHlwZVN2YxJNCgNBbGwSFi5nb29nbGUucHJvdG9idWYuRW1wdHka",
+            "Li5ob2xtcy50eXBlcy5zdXBwbHkucnBjLlJvb21UeXBlU3ZjQWxsUmVzcG9u",
+            "c2USXwoMQWxsV2l0aFJvb21zEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gjcu",
+            "aG9sbXMudHlwZXMuc3VwcGx5LnJwYy5Sb29tVHlwZVN2Y0FsbFdpdGhSb29t",
+            "c1Jlc3BvbnNlEmQKB0dldEJ5SWQSMC5ob2xtcy50eXBlcy5zdXBwbHkucm9v",
+            "bV90eXBlcy5Sb29tVHlwZUluZGljYXRvchonLmhvbG1zLnR5cGVzLnN1cHBs",
+            "eS5yb29tX3R5cGVzLlJvb21UeXBlEn8KFUdldEJ5Q2hhbm5lbE1hbmFnZXJJ",
+            "ZBI9LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuUm9vbVR5cGVTdmNHZXRCeUNo",
+            "YW5uZWxNYW5hZ2VyUmVxdWVzdBonLmhvbG1zLnR5cGVzLnN1cHBseS5yb29t",
+            "X3R5cGVzLlJvb21UeXBlEloKBkNyZWF0ZRInLmhvbG1zLnR5cGVzLnN1cHBs",
+            "eS5yb29tX3R5cGVzLlJvb21UeXBlGicuaG9sbXMudHlwZXMuc3VwcGx5LnJv",
+            "b21fdHlwZXMuUm9vbVR5cGUSZAoGVXBkYXRlEicuaG9sbXMudHlwZXMuc3Vw",
+            "cGx5LnJvb21fdHlwZXMuUm9vbVR5cGUaMS5ob2xtcy50eXBlcy5zdXBwbHku",
+            "cnBjLlJvb21UeXBlU3ZjVXBkYXRlUmVzcG9uc2USYgoGRGVsZXRlEicuaG9s",
+            "bXMudHlwZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9vbVR5cGUaLy5ob2xtcy50",
+            "eXBlcy5wcmltaXRpdmUuU2VydmVyQWN0aW9uQ29uZmlybWF0aW9uEm8KEUNo",
+            "ZWNrRGVwZW5kZW5jaWVzEicuaG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlw",
+            "ZXMuUm9vbVR5cGUaMS5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkNoZWNrRGVw",
+            "ZW5kZW5jaWVzUmVzcG9uc2USZAoOSXNSb29tVHlwZUhvbGQSMC5ob2xtcy50",
+            "eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZUluZGljYXRvchogLmhv",
+            "bG1zLnR5cGVzLnN1cHBseS5ycGMuUm9vbUhvbGRCGaoCFkhPTE1TLlR5cGVz",
+            "LlN1cHBseS5SUENiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.ServerActionConfirmationReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.FullRoomTypeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationSummaryReflection.Descriptor, global::HOLMS.Types.Operations.Rooms.RoomReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResult), }, new pbr::GeneratedClrTypeInfo[] {
@@ -75,7 +78,8 @@ namespace HOLMS.Types.Supply.RPC {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllWithRoomsResponse), global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllWithRoomsResponse.Parser, new[]{ "RoomTypes" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest), global::HOLMS.Types.Supply.RPC.RoomTypeSvcGetByChannelManagerRequest.Parser, new[]{ "ChannelManagerId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse), global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse.Parser, new[]{ "Result", "Updated", "TotalIllegalHoldDates", "FirstIllegalHoldDates" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse), global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse.Parser, new[]{ "Reservations", "AttachedRooms" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse), global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse.Parser, new[]{ "Reservations", "AttachedRooms" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.RoomHold), global::HOLMS.Types.Supply.RPC.RoomHold.Parser, new[]{ "IsHold" }, null, null, null)
           }));
     }
     #endregion
@@ -746,6 +750,123 @@ namespace HOLMS.Types.Supply.RPC {
           }
           case 18: {
             attachedRooms_.AddEntriesFrom(input, _repeated_attachedRooms_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class RoomHold : pb::IMessage<RoomHold> {
+    private static readonly pb::MessageParser<RoomHold> _parser = new pb::MessageParser<RoomHold>(() => new RoomHold());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RoomHold> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Supply.RPC.RoomTypeSvcReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RoomHold() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RoomHold(RoomHold other) : this() {
+      isHold_ = other.isHold_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RoomHold Clone() {
+      return new RoomHold(this);
+    }
+
+    /// <summary>Field number for the "is_hold" field.</summary>
+    public const int IsHoldFieldNumber = 1;
+    private bool isHold_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsHold {
+      get { return isHold_; }
+      set {
+        isHold_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RoomHold);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RoomHold other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsHold != other.IsHold) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsHold != false) hash ^= IsHold.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IsHold != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsHold);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsHold != false) {
+        size += 1 + 1;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RoomHold other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsHold != false) {
+        IsHold = other.IsHold;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            IsHold = input.ReadBool();
             break;
           }
         }
