@@ -25,18 +25,20 @@ namespace HOLMS.Types.Folio {
             "ChNmb2xpby90YXhfZmVlLnByb3RvEhFob2xtcy50eXBlcy5mb2xpbxocZm9s",
             "aW8vdGF4X2ZlZV9jYXRlZ29yeS5wcm90bxodZm9saW8vdGF4X2ZlZV9pbmRp",
             "Y2F0b3IucHJvdG8aKG1vbmV5L2FjY291bnRpbmcvYWNjb3VudF9pbmRpY2F0",
-            "b3IucHJvdG8aIXByaW1pdGl2ZS9maXhlZF9wb2ludF9yYXRpby5wcm90byKR",
-            "AgoGVGF4RmVlEjUKCWVudGl0eV9pZBgBIAEoCzIiLmhvbG1zLnR5cGVzLmZv",
-            "bGlvLlRheEZlZUluZGljYXRvchITCgtkZXNjcmlwdGlvbhgCIAEoCRI4Cgh0",
-            "YXhfcmF0ZRgDIAEoCzImLmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5GaXhlZFBv",
-            "aW50UmF0aW8SMwoIY2F0ZWdvcnkYBCABKA4yIS5ob2xtcy50eXBlcy5mb2xp",
-            "by5UYXhGZWVDYXRlZ29yeRJMChRsaWFiaWxpdHlfYWNjb3VudF9pZBgFIAEo",
-            "CzIuLmhvbG1zLnR5cGVzLm1vbmV5LmFjY291bnRpbmcuQWNjb3VudEluZGlj",
-            "YXRvckIUqgIRSE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
+            "b3IucHJvdG8aIXByaW1pdGl2ZS9maXhlZF9wb2ludF9yYXRpby5wcm90bxod",
+            "cHJpbWl0aXZlL3BiX2xvY2FsX2RhdGUucHJvdG8iygIKBlRheEZlZRI1Cgll",
+            "bnRpdHlfaWQYASABKAsyIi5ob2xtcy50eXBlcy5mb2xpby5UYXhGZWVJbmRp",
+            "Y2F0b3ISEwoLZGVzY3JpcHRpb24YAiABKAkSOAoIdGF4X3JhdGUYAyABKAsy",
+            "Ji5ob2xtcy50eXBlcy5wcmltaXRpdmUuRml4ZWRQb2ludFJhdGlvEjMKCGNh",
+            "dGVnb3J5GAQgASgOMiEuaG9sbXMudHlwZXMuZm9saW8uVGF4RmVlQ2F0ZWdv",
+            "cnkSTAoUbGlhYmlsaXR5X2FjY291bnRfaWQYBSABKAsyLi5ob2xtcy50eXBl",
+            "cy5tb25leS5hY2NvdW50aW5nLkFjY291bnRJbmRpY2F0b3ISNwoLZXhwaXJl",
+            "X2RhdGUYBiABKAsyIi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJMb2NhbERh",
+            "dGVCFKoCEUhPTE1TLlR5cGVzLkZvbGlvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.TaxFeeCategoryReflection.Descriptor, global::HOLMS.Types.Folio.TaxFeeIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.FixedPointRatioReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.TaxFeeCategoryReflection.Descriptor, global::HOLMS.Types.Folio.TaxFeeIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.FixedPointRatioReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxFee), global::HOLMS.Types.Folio.TaxFee.Parser, new[]{ "EntityId", "Description", "TaxRate", "Category", "LiabilityAccountId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxFee), global::HOLMS.Types.Folio.TaxFee.Parser, new[]{ "EntityId", "Description", "TaxRate", "Category", "LiabilityAccountId", "ExpireDate" }, null, null, null)
           }));
     }
     #endregion
@@ -72,6 +74,7 @@ namespace HOLMS.Types.Folio {
       TaxRate = other.taxRate_ != null ? other.TaxRate.Clone() : null;
       category_ = other.category_;
       LiabilityAccountId = other.liabilityAccountId_ != null ? other.LiabilityAccountId.Clone() : null;
+      ExpireDate = other.expireDate_ != null ? other.ExpireDate.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -134,6 +137,17 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "expire_date" field.</summary>
+    public const int ExpireDateFieldNumber = 6;
+    private global::HOLMS.Types.Primitive.PbLocalDate expireDate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate ExpireDate {
+      get { return expireDate_; }
+      set {
+        expireDate_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as TaxFee);
@@ -152,6 +166,7 @@ namespace HOLMS.Types.Folio {
       if (!object.Equals(TaxRate, other.TaxRate)) return false;
       if (Category != other.Category) return false;
       if (!object.Equals(LiabilityAccountId, other.LiabilityAccountId)) return false;
+      if (!object.Equals(ExpireDate, other.ExpireDate)) return false;
       return true;
     }
 
@@ -163,6 +178,7 @@ namespace HOLMS.Types.Folio {
       if (taxRate_ != null) hash ^= TaxRate.GetHashCode();
       if (Category != 0) hash ^= Category.GetHashCode();
       if (liabilityAccountId_ != null) hash ^= LiabilityAccountId.GetHashCode();
+      if (expireDate_ != null) hash ^= ExpireDate.GetHashCode();
       return hash;
     }
 
@@ -193,6 +209,10 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(42);
         output.WriteMessage(LiabilityAccountId);
       }
+      if (expireDate_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(ExpireDate);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -212,6 +232,9 @@ namespace HOLMS.Types.Folio {
       }
       if (liabilityAccountId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LiabilityAccountId);
+      }
+      if (expireDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExpireDate);
       }
       return size;
     }
@@ -244,6 +267,12 @@ namespace HOLMS.Types.Folio {
           liabilityAccountId_ = new global::HOLMS.Types.Money.Accounting.AccountIndicator();
         }
         LiabilityAccountId.MergeFrom(other.LiabilityAccountId);
+      }
+      if (other.expireDate_ != null) {
+        if (expireDate_ == null) {
+          expireDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        ExpireDate.MergeFrom(other.ExpireDate);
       }
     }
 
@@ -282,6 +311,13 @@ namespace HOLMS.Types.Folio {
               liabilityAccountId_ = new global::HOLMS.Types.Money.Accounting.AccountIndicator();
             }
             input.ReadMessage(liabilityAccountId_);
+            break;
+          }
+          case 50: {
+            if (expireDate_ == null) {
+              expireDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(expireDate_);
             break;
           }
         }
