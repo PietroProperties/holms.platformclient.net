@@ -25,24 +25,27 @@ namespace HOLMS.Types.Supply.RoomTypes {
             "CiFzdXBwbHkvcm9vbV90eXBlcy9yb29tX3R5cGUucHJvdG8SHWhvbG1zLnR5",
             "cGVzLnN1cHBseS5yb29tX3R5cGVzGitzdXBwbHkvcm9vbV90eXBlcy9yb29t",
             "X3R5cGVfaW5kaWNhdG9yLnByb3RvGjJ0ZW5hbmN5X2NvbmZpZy9pbmRpY2F0",
-            "b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byKbBAoIUm9vbVR5cGUSQwoJ",
-            "ZW50aXR5X2lkGAEgASgLMjAuaG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlw",
-            "ZXMuUm9vbVR5cGVJbmRpY2F0b3ISEwoLZGVzY3JpcHRpb24YAiABKAkSGAoQ",
-            "bm9ybWFsX29jY3VwYW5jeRgEIAEoBRIVCg1tYXhfb2NjdXBhbmN5GAUgASgF",
-            "EiMKG2NsZWFuaW5nX3RpbWVfY2hlY2tvdXRfbWlucxgGIAEoBRIjChtjbGVh",
-            "bmluZ190aW1lX3N0YXlvdmVyX21pbnMYByABKAUSHwoXY2xlYW5pbmdfdGlt",
-            "ZV9kdXN0X21pbnMYCCABKAUSHwoXY2xlYW5pbmdfdGltZV9kZWVwX21pbnMY",
-            "CSABKAUSHQoVYmFzZV9tYW5hZ2VtZW50X2hvbGRzGAogASgFEhwKFGFkZGl0",
-            "aW9uYWxfd2ViX2hvbGRzGAsgASgFEgwKBG5hbWUYDCABKAkSTQoLcHJvcGVy",
-            "dHlfaWQYDSABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRp",
-            "Y2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEhUKDXByb3BlcnR5X25hbWUYDiAB",
-            "KAkSGgoSY2hhbm5lbF9tYW5hZ2VyX2lkGA8gASgJEhIKCnJvb21faW1hZ2UY",
-            "ECABKAwSFwoPcm9vbV9pbWFnZV9uYW1lGBEgASgJQjFaEHN1cHBseS9yb29t",
-            "dHlwZXOqAhxIT0xNUy5UeXBlcy5TdXBwbHkuUm9vbVR5cGVzYgZwcm90bzM="));
+            "b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90bxofcHJpbWl0aXZlL21vbmV0",
+            "YXJ5X2Ftb3VudC5wcm90byLbBAoIUm9vbVR5cGUSQwoJZW50aXR5X2lkGAEg",
+            "ASgLMjAuaG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9vbVR5cGVJ",
+            "bmRpY2F0b3ISEwoLZGVzY3JpcHRpb24YAiABKAkSGAoQbm9ybWFsX29jY3Vw",
+            "YW5jeRgEIAEoBRIVCg1tYXhfb2NjdXBhbmN5GAUgASgFEiMKG2NsZWFuaW5n",
+            "X3RpbWVfY2hlY2tvdXRfbWlucxgGIAEoBRIjChtjbGVhbmluZ190aW1lX3N0",
+            "YXlvdmVyX21pbnMYByABKAUSHwoXY2xlYW5pbmdfdGltZV9kdXN0X21pbnMY",
+            "CCABKAUSHwoXY2xlYW5pbmdfdGltZV9kZWVwX21pbnMYCSABKAUSHQoVYmFz",
+            "ZV9tYW5hZ2VtZW50X2hvbGRzGAogASgFEhwKFGFkZGl0aW9uYWxfd2ViX2hv",
+            "bGRzGAsgASgFEgwKBG5hbWUYDCABKAkSTQoLcHJvcGVydHlfaWQYDSABKAsy",
+            "OC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3Bl",
+            "cnR5SW5kaWNhdG9yEhUKDXByb3BlcnR5X25hbWUYDiABKAkSGgoSY2hhbm5l",
+            "bF9tYW5hZ2VyX2lkGA8gASgJEhIKCnJvb21faW1hZ2UYECABKAwSFwoPcm9v",
+            "bV9pbWFnZV9uYW1lGBEgASgJEj4KD2NoZWNraW5fZGVwb3NpdBgTIAEoCzIl",
+            "LmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudEIxWhBzdXBw",
+            "bHkvcm9vbXR5cGVzqgIcSE9MTVMuVHlwZXMuU3VwcGx5LlJvb21UeXBlc2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RoomTypes.RoomType), global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser, new[]{ "EntityId", "Description", "NormalOccupancy", "MaxOccupancy", "CleaningTimeCheckoutMins", "CleaningTimeStayoverMins", "CleaningTimeDustMins", "CleaningTimeDeepMins", "BaseManagementHolds", "AdditionalWebHolds", "Name", "PropertyId", "PropertyName", "ChannelManagerId", "RoomImage", "RoomImageName" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RoomTypes.RoomType), global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser, new[]{ "EntityId", "Description", "NormalOccupancy", "MaxOccupancy", "CleaningTimeCheckoutMins", "CleaningTimeStayoverMins", "CleaningTimeDustMins", "CleaningTimeDeepMins", "BaseManagementHolds", "AdditionalWebHolds", "Name", "PropertyId", "PropertyName", "ChannelManagerId", "RoomImage", "RoomImageName", "CheckinDeposit" }, null, null, null)
           }));
     }
     #endregion
@@ -89,6 +92,7 @@ namespace HOLMS.Types.Supply.RoomTypes {
       channelManagerId_ = other.channelManagerId_;
       roomImage_ = other.roomImage_;
       roomImageName_ = other.roomImageName_;
+      CheckinDeposit = other.checkinDeposit_ != null ? other.CheckinDeposit.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -272,6 +276,17 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
     }
 
+    /// <summary>Field number for the "checkin_deposit" field.</summary>
+    public const int CheckinDepositFieldNumber = 19;
+    private global::HOLMS.Types.Primitive.MonetaryAmount checkinDeposit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount CheckinDeposit {
+      get { return checkinDeposit_; }
+      set {
+        checkinDeposit_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RoomType);
@@ -301,6 +316,7 @@ namespace HOLMS.Types.Supply.RoomTypes {
       if (ChannelManagerId != other.ChannelManagerId) return false;
       if (RoomImage != other.RoomImage) return false;
       if (RoomImageName != other.RoomImageName) return false;
+      if (!object.Equals(CheckinDeposit, other.CheckinDeposit)) return false;
       return true;
     }
 
@@ -323,6 +339,7 @@ namespace HOLMS.Types.Supply.RoomTypes {
       if (ChannelManagerId.Length != 0) hash ^= ChannelManagerId.GetHashCode();
       if (RoomImage.Length != 0) hash ^= RoomImage.GetHashCode();
       if (RoomImageName.Length != 0) hash ^= RoomImageName.GetHashCode();
+      if (checkinDeposit_ != null) hash ^= CheckinDeposit.GetHashCode();
       return hash;
     }
 
@@ -397,6 +414,10 @@ namespace HOLMS.Types.Supply.RoomTypes {
         output.WriteRawTag(138, 1);
         output.WriteString(RoomImageName);
       }
+      if (checkinDeposit_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(CheckinDeposit);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -449,6 +470,9 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
       if (RoomImageName.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(RoomImageName);
+      }
+      if (checkinDeposit_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(CheckinDeposit);
       }
       return size;
     }
@@ -511,6 +535,12 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
       if (other.RoomImageName.Length != 0) {
         RoomImageName = other.RoomImageName;
+      }
+      if (other.checkinDeposit_ != null) {
+        if (checkinDeposit_ == null) {
+          checkinDeposit_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        CheckinDeposit.MergeFrom(other.CheckinDeposit);
       }
     }
 
@@ -590,6 +620,13 @@ namespace HOLMS.Types.Supply.RoomTypes {
           }
           case 138: {
             RoomImageName = input.ReadString();
+            break;
+          }
+          case 154: {
+            if (checkinDeposit_ == null) {
+              checkinDeposit_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(checkinDeposit_);
             break;
           }
         }

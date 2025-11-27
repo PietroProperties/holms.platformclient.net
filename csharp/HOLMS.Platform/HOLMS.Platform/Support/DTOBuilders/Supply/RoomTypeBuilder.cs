@@ -1,4 +1,5 @@
 ﻿using Google.Protobuf;
+using HOLMS.Platform.Support.Currency;
 using HOLMS.Types.Supply.RoomTypes;
 using HOLMS.Types.TenancyConfig.Indicators;
 
@@ -22,6 +23,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Supply {
         public string ChannelId;
         public ByteString RoomImage;
         public string RoomImageName;
+        public DecimalDollars CheckinDeposit;
 
 
         public RoomType Build() {
@@ -39,6 +41,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Supply {
                 AdditionalWebHolds = AdditionalWebHolds,
                 RoomImage = RoomImage,
                 RoomImageName = RoomImageName,
+                CheckinDeposit = CheckinDeposit.ToPb,
             };
 
             if (PropertyId != null) {
