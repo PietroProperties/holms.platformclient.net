@@ -42,6 +42,10 @@ message CheckDependenciesResponse {
 	repeated .holms.types.operations.rooms.Room attached_rooms = 2;
 }
 
+message RoomHold {
+	bool is_hold = 1;
+}
+
 service RoomTypeSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (RoomTypeSvcAllResponse);
@@ -66,4 +70,7 @@ service RoomTypeSvc {
 
 	rpc CheckDependencies (.holms.types.supply.room_types.RoomType)
 		returns (CheckDependenciesResponse);
+
+	rpc IsRoomTypeHold (.holms.types.supply.room_types.RoomTypeIndicator)
+		returns (RoomHold);
 }

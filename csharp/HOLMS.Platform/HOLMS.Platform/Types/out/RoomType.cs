@@ -25,7 +25,7 @@ namespace HOLMS.Types.Supply.RoomTypes {
             "CiFzdXBwbHkvcm9vbV90eXBlcy9yb29tX3R5cGUucHJvdG8SHWhvbG1zLnR5",
             "cGVzLnN1cHBseS5yb29tX3R5cGVzGitzdXBwbHkvcm9vbV90eXBlcy9yb29t",
             "X3R5cGVfaW5kaWNhdG9yLnByb3RvGjJ0ZW5hbmN5X2NvbmZpZy9pbmRpY2F0",
-            "b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byKbBAoIUm9vbVR5cGUSQwoJ",
+            "b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90byKuBAoIUm9vbVR5cGUSQwoJ",
             "ZW50aXR5X2lkGAEgASgLMjAuaG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlw",
             "ZXMuUm9vbVR5cGVJbmRpY2F0b3ISEwoLZGVzY3JpcHRpb24YAiABKAkSGAoQ",
             "bm9ybWFsX29jY3VwYW5jeRgEIAEoBRIVCg1tYXhfb2NjdXBhbmN5GAUgASgF",
@@ -37,12 +37,13 @@ namespace HOLMS.Types.Supply.RoomTypes {
             "dHlfaWQYDSABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRp",
             "Y2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEhUKDXByb3BlcnR5X25hbWUYDiAB",
             "KAkSGgoSY2hhbm5lbF9tYW5hZ2VyX2lkGA8gASgJEhIKCnJvb21faW1hZ2UY",
-            "ECABKAwSFwoPcm9vbV9pbWFnZV9uYW1lGBEgASgJQjFaEHN1cHBseS9yb29t",
-            "dHlwZXOqAhxIT0xNUy5UeXBlcy5TdXBwbHkuUm9vbVR5cGVzYgZwcm90bzM="));
+            "ECABKAwSFwoPcm9vbV9pbWFnZV9uYW1lGBEgASgJEhEKCWlzX2FjdGl2ZRgS",
+            "IAEoCEIxWhBzdXBwbHkvcm9vbXR5cGVzqgIcSE9MTVMuVHlwZXMuU3VwcGx5",
+            "LlJvb21UeXBlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RoomTypes.RoomType), global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser, new[]{ "EntityId", "Description", "NormalOccupancy", "MaxOccupancy", "CleaningTimeCheckoutMins", "CleaningTimeStayoverMins", "CleaningTimeDustMins", "CleaningTimeDeepMins", "BaseManagementHolds", "AdditionalWebHolds", "Name", "PropertyId", "PropertyName", "ChannelManagerId", "RoomImage", "RoomImageName" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RoomTypes.RoomType), global::HOLMS.Types.Supply.RoomTypes.RoomType.Parser, new[]{ "EntityId", "Description", "NormalOccupancy", "MaxOccupancy", "CleaningTimeCheckoutMins", "CleaningTimeStayoverMins", "CleaningTimeDustMins", "CleaningTimeDeepMins", "BaseManagementHolds", "AdditionalWebHolds", "Name", "PropertyId", "PropertyName", "ChannelManagerId", "RoomImage", "RoomImageName", "IsActive" }, null, null, null)
           }));
     }
     #endregion
@@ -89,6 +90,7 @@ namespace HOLMS.Types.Supply.RoomTypes {
       channelManagerId_ = other.channelManagerId_;
       roomImage_ = other.roomImage_;
       roomImageName_ = other.roomImageName_;
+      isActive_ = other.isActive_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -272,6 +274,17 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
     }
 
+    /// <summary>Field number for the "is_active" field.</summary>
+    public const int IsActiveFieldNumber = 18;
+    private bool isActive_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsActive {
+      get { return isActive_; }
+      set {
+        isActive_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RoomType);
@@ -301,6 +314,7 @@ namespace HOLMS.Types.Supply.RoomTypes {
       if (ChannelManagerId != other.ChannelManagerId) return false;
       if (RoomImage != other.RoomImage) return false;
       if (RoomImageName != other.RoomImageName) return false;
+      if (IsActive != other.IsActive) return false;
       return true;
     }
 
@@ -323,6 +337,7 @@ namespace HOLMS.Types.Supply.RoomTypes {
       if (ChannelManagerId.Length != 0) hash ^= ChannelManagerId.GetHashCode();
       if (RoomImage.Length != 0) hash ^= RoomImage.GetHashCode();
       if (RoomImageName.Length != 0) hash ^= RoomImageName.GetHashCode();
+      if (IsActive != false) hash ^= IsActive.GetHashCode();
       return hash;
     }
 
@@ -397,6 +412,10 @@ namespace HOLMS.Types.Supply.RoomTypes {
         output.WriteRawTag(138, 1);
         output.WriteString(RoomImageName);
       }
+      if (IsActive != false) {
+        output.WriteRawTag(144, 1);
+        output.WriteBool(IsActive);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -449,6 +468,9 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
       if (RoomImageName.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(RoomImageName);
+      }
+      if (IsActive != false) {
+        size += 2 + 1;
       }
       return size;
     }
@@ -511,6 +533,9 @@ namespace HOLMS.Types.Supply.RoomTypes {
       }
       if (other.RoomImageName.Length != 0) {
         RoomImageName = other.RoomImageName;
+      }
+      if (other.IsActive != false) {
+        IsActive = other.IsActive;
       }
     }
 
@@ -590,6 +615,10 @@ namespace HOLMS.Types.Supply.RoomTypes {
           }
           case 138: {
             RoomImageName = input.ReadString();
+            break;
+          }
+          case 144: {
+            IsActive = input.ReadBool();
             break;
           }
         }
