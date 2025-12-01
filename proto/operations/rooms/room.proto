@@ -32,5 +32,6 @@ message Room {
 	.holms.types.tenancy_config.RoomStatus room_status = 17;
 	google.protobuf.Timestamp marked_dirty_at = 18;
 	bool is_left_dirty = 19;
+	bool room_type_active = 20;
 }
 

@@ -12,6 +12,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Operations {
         public string AdditionalDescription;
         public int NightsOccupiedCounter;
         public DateTime LastCleanedAt;
+        public DateTime MarkedDirtyAt;
         public RoomOccupancyState OccupancyState;
         public RoomMaintenanceState MaintenanceState;
         public RoomMaintenanceRequest MaintenanceRequest;
@@ -19,6 +20,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Operations {
         public string RoomTypeName;
         public RoomIndicator ConnectedRoomInd;
         public string PhoneTrunkID;
+        public bool RoomTypeActive;
 
         public Room Build() {
             var r = new Room {
@@ -33,7 +35,9 @@ namespace HOLMS.Platform.Support.DTOBuilders.Operations {
                 MaintenanceRequest = MaintenanceRequest,
                 RoomTypeId = new RoomTypeIndicator(RoomTypeId),
                 RoomTypeName = RoomTypeName,
-                TrunkId = PhoneTrunkID ?? string.Empty
+                TrunkId = PhoneTrunkID ?? string.Empty,
+                MarkedDirtyAt = MarkedDirtyAt.ToTS(),
+                RoomTypeActive = RoomTypeActive
             };
 
             if (ConnectedRoomInd != null) {
