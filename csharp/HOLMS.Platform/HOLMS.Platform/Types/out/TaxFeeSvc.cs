@@ -27,24 +27,22 @@ namespace HOLMS.Types.Folio {
             "bmRpY2F0b3IucHJvdG8aG2dvb2dsZS9wcm90b2J1Zi9lbXB0eS5wcm90bxoq",
             "cHJpbWl0aXZlL3NlcnZlcl9hY3Rpb25fY29uZmlybWF0aW9uLnByb3RvIkMK",
             "FFRheEZlZVN2Y0FsbFJlc3BvbnNlEisKCHRheF9mZWVzGAEgAygLMhkuaG9s",
-            "bXMudHlwZXMuZm9saW8uVGF4RmVlIjAKE1RheEZlZVN2Y0FsbFJlcXVlc3QS",
-            "GQoRaXNfZXhwaXJlX2luY2x1ZGUYASABKAgy4QMKCVRheEZlZVN2YxJKCgNB",
-            "bGwSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaKy5ob2xtcy50eXBlcy5mb2xp",
-            "by5ycGMuVGF4RmVlU3ZjQWxsUmVzcG9uc2USaAoNQWxsV2l0aEV4cGlyZRIq",
-            "LmhvbG1zLnR5cGVzLmZvbGlvLnJwYy5UYXhGZWVTdmNBbGxSZXF1ZXN0Gisu",
-            "aG9sbXMudHlwZXMuZm9saW8ucnBjLlRheEZlZVN2Y0FsbFJlc3BvbnNlEkgK",
-            "B0dldEJ5SWQSIi5ob2xtcy50eXBlcy5mb2xpby5UYXhGZWVJbmRpY2F0b3Ia",
-            "GS5ob2xtcy50eXBlcy5mb2xpby5UYXhGZWUSPgoGQ3JlYXRlEhkuaG9sbXMu",
-            "dHlwZXMuZm9saW8uVGF4RmVlGhkuaG9sbXMudHlwZXMuZm9saW8uVGF4RmVl",
-            "Ej4KBlVwZGF0ZRIZLmhvbG1zLnR5cGVzLmZvbGlvLlRheEZlZRoZLmhvbG1z",
-            "LnR5cGVzLmZvbGlvLlRheEZlZRJUCgZEZWxldGUSGS5ob2xtcy50eXBlcy5m",
-            "b2xpby5UYXhGZWUaLy5ob2xtcy50eXBlcy5wcmltaXRpdmUuU2VydmVyQWN0",
-            "aW9uQ29uZmlybWF0aW9uQhSqAhFIT0xNUy5UeXBlcy5Gb2xpb2IGcHJvdG8z"));
+            "bXMudHlwZXMuZm9saW8uVGF4RmVlMs0DCglUYXhGZWVTdmMSSgoDQWxsEhYu",
+            "Z29vZ2xlLnByb3RvYnVmLkVtcHR5GisuaG9sbXMudHlwZXMuZm9saW8ucnBj",
+            "LlRheEZlZVN2Y0FsbFJlc3BvbnNlElQKDUFsbFdpdGhFeHBpcmUSFi5nb29n",
+            "bGUucHJvdG9idWYuRW1wdHkaKy5ob2xtcy50eXBlcy5mb2xpby5ycGMuVGF4",
+            "RmVlU3ZjQWxsUmVzcG9uc2USSAoHR2V0QnlJZBIiLmhvbG1zLnR5cGVzLmZv",
+            "bGlvLlRheEZlZUluZGljYXRvchoZLmhvbG1zLnR5cGVzLmZvbGlvLlRheEZl",
+            "ZRI+CgZDcmVhdGUSGS5ob2xtcy50eXBlcy5mb2xpby5UYXhGZWUaGS5ob2xt",
+            "cy50eXBlcy5mb2xpby5UYXhGZWUSPgoGVXBkYXRlEhkuaG9sbXMudHlwZXMu",
+            "Zm9saW8uVGF4RmVlGhkuaG9sbXMudHlwZXMuZm9saW8uVGF4RmVlElQKBkRl",
+            "bGV0ZRIZLmhvbG1zLnR5cGVzLmZvbGlvLlRheEZlZRovLmhvbG1zLnR5cGVz",
+            "LnByaW1pdGl2ZS5TZXJ2ZXJBY3Rpb25Db25maXJtYXRpb25CFKoCEUhPTE1T",
+            "LlR5cGVzLkZvbGlvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.TaxFeeReflection.Descriptor, global::HOLMS.Types.Folio.TaxFeeIndicatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Primitive.ServerActionConfirmationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxFeeSvcAllResponse), global::HOLMS.Types.Folio.TaxFeeSvcAllResponse.Parser, new[]{ "TaxFees" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxFeeSvcAllRequest), global::HOLMS.Types.Folio.TaxFeeSvcAllRequest.Parser, new[]{ "IsExpireInclude" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxFeeSvcAllResponse), global::HOLMS.Types.Folio.TaxFeeSvcAllResponse.Parser, new[]{ "TaxFees" }, null, null, null)
           }));
     }
     #endregion
@@ -152,123 +150,6 @@ namespace HOLMS.Types.Folio {
             break;
           case 10: {
             taxFees_.AddEntriesFrom(input, _repeated_taxFees_codec);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class TaxFeeSvcAllRequest : pb::IMessage<TaxFeeSvcAllRequest> {
-    private static readonly pb::MessageParser<TaxFeeSvcAllRequest> _parser = new pb::MessageParser<TaxFeeSvcAllRequest>(() => new TaxFeeSvcAllRequest());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<TaxFeeSvcAllRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Folio.TaxFeeSvcReflection.Descriptor.MessageTypes[1]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public TaxFeeSvcAllRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public TaxFeeSvcAllRequest(TaxFeeSvcAllRequest other) : this() {
-      isExpireInclude_ = other.isExpireInclude_;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public TaxFeeSvcAllRequest Clone() {
-      return new TaxFeeSvcAllRequest(this);
-    }
-
-    /// <summary>Field number for the "is_expire_include" field.</summary>
-    public const int IsExpireIncludeFieldNumber = 1;
-    private bool isExpireInclude_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsExpireInclude {
-      get { return isExpireInclude_; }
-      set {
-        isExpireInclude_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as TaxFeeSvcAllRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(TaxFeeSvcAllRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (IsExpireInclude != other.IsExpireInclude) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (IsExpireInclude != false) hash ^= IsExpireInclude.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (IsExpireInclude != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(IsExpireInclude);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (IsExpireInclude != false) {
-        size += 1 + 1;
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(TaxFeeSvcAllRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.IsExpireInclude != false) {
-        IsExpireInclude = other.IsExpireInclude;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 8: {
-            IsExpireInclude = input.ReadBool();
             break;
           }
         }

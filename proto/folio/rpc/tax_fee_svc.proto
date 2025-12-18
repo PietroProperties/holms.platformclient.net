@@ -12,15 +12,11 @@ message TaxFeeSvcAllResponse {
 	repeated .holms.types.folio.TaxFee tax_fees = 1;
 }
 
-message TaxFeeSvcAllRequest {
-	bool is_expire_include = 1;
-}
-
 service TaxFeeSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (TaxFeeSvcAllResponse);
 
-	rpc AllWithExpire (TaxFeeSvcAllRequest) 
+	rpc AllWithExpire (google.protobuf.Empty) 
 		returns (TaxFeeSvcAllResponse);
 
 	rpc GetById (.holms.types.folio.TaxFeeIndicator) 
