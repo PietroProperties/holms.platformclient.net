@@ -1,4 +1,5 @@
 ﻿using Google.Protobuf;
+using HOLMS.Platform.Support.Currency;
 using HOLMS.Types.Supply.RoomTypes;
 using HOLMS.Types.TenancyConfig.Indicators;
 
@@ -23,6 +24,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Supply {
         public ByteString RoomImage;
         public string RoomImageName;
         public bool IsActive;
+        public DecimalDollars CheckinDeposit;
 
 
         public RoomType Build() {
@@ -41,6 +43,7 @@ namespace HOLMS.Platform.Support.DTOBuilders.Supply {
                 RoomImage = RoomImage,
                 RoomImageName = RoomImageName,
                 IsActive = IsActive,
+                CheckinDeposit = CheckinDeposit.ToPb,
             };
 
             if (PropertyId != null) {

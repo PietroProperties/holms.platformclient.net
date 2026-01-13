@@ -6,6 +6,7 @@ option go_package = "supply/roomtypes";
 
 import "supply/room_types/room_type_indicator.proto";
 import "tenancy_config/indicators/property_indicator.proto";
+import "primitive/monetary_amount.proto";
 
 message RoomType {
 	holms.types.supply.room_types.RoomTypeIndicator entity_id = 1;
@@ -26,4 +27,5 @@ message RoomType {
 	bytes room_image= 16;
 	string room_image_name=17;
 	bool is_active = 18;
+	holms.types.primitive.MonetaryAmount checkin_deposit = 19;
 }
