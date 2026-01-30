@@ -28,6 +28,8 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.SwapChargesRequest> __Marshaller_SwapChargesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.SwapChargesRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.SwapChargesResponse> __Marshaller_SwapChargesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.SwapChargesResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.SourceOfReservationRequest> __Marshaller_SourceOfReservationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.SourceOfReservationRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Reservations.DuplicateReservationRequest> __Marshaller_DuplicateReservationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.DuplicateReservationRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.DuplicateReservationResponse> __Marshaller_DuplicateReservationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.DuplicateReservationResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest, global::HOLMS.Types.Booking.Reservations.GenesisBookingResult> __Method_BookGenesisReservation = new grpc::Method<global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest, global::HOLMS.Types.Booking.Reservations.GenesisBookingResult>(
         grpc::MethodType.Unary,
@@ -99,6 +101,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_SourceOfReservationRequest,
         __Marshaller_Empty);
 
+    static readonly grpc::Method<global::HOLMS.Types.Booking.Reservations.DuplicateReservationRequest, global::HOLMS.Types.Booking.RPC.DuplicateReservationResponse> __Method_VerifyDuplicateReservationExists = new grpc::Method<global::HOLMS.Types.Booking.Reservations.DuplicateReservationRequest, global::HOLMS.Types.Booking.RPC.DuplicateReservationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "VerifyDuplicateReservationExists",
+        __Marshaller_DuplicateReservationRequest,
+        __Marshaller_DuplicateReservationResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -154,6 +163,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetSourceOfReservation(global::HOLMS.Types.Booking.RPC.SourceOfReservationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.DuplicateReservationResponse> VerifyDuplicateReservationExists(global::HOLMS.Types.Booking.Reservations.DuplicateReservationRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -343,6 +357,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetSourceOfReservation, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.DuplicateReservationResponse VerifyDuplicateReservationExists(global::HOLMS.Types.Booking.Reservations.DuplicateReservationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return VerifyDuplicateReservationExists(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.DuplicateReservationResponse VerifyDuplicateReservationExists(global::HOLMS.Types.Booking.Reservations.DuplicateReservationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_VerifyDuplicateReservationExists, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.DuplicateReservationResponse> VerifyDuplicateReservationExistsAsync(global::HOLMS.Types.Booking.Reservations.DuplicateReservationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return VerifyDuplicateReservationExistsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.DuplicateReservationResponse> VerifyDuplicateReservationExistsAsync(global::HOLMS.Types.Booking.Reservations.DuplicateReservationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_VerifyDuplicateReservationExists, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override LodgingBookingSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -364,7 +394,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_RequestUpdateChannelDetailsReservation, serviceImpl.RequestUpdateChannelDetailsReservation)
           .AddMethod(__Method_GetReservationNames, serviceImpl.GetReservationNames)
           .AddMethod(__Method_SwapExtraStayCharges, serviceImpl.SwapExtraStayCharges)
-          .AddMethod(__Method_SetSourceOfReservation, serviceImpl.SetSourceOfReservation).Build();
+          .AddMethod(__Method_SetSourceOfReservation, serviceImpl.SetSourceOfReservation)
+          .AddMethod(__Method_VerifyDuplicateReservationExists, serviceImpl.VerifyDuplicateReservationExists).Build();
     }
 
   }

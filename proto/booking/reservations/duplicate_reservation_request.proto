@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package holms.types.booking.reservations;
+option csharp_namespace = "HOLMS.Types.Booking.Reservations";
+option go_package = "booking/reservations";
+
+import "supply/room_types/room_type_indicator.proto";
+import "primitive/pb_inclusive_opsdate_range.proto";
+
+message DuplicateReservationRequest {
+	string given_name = 1;
+	string family_name = 2;
+	string contact_number = 3;
+	holms.types.supply.room_types.RoomTypeIndicator room_type = 4;
+	holms.types.primitive.PbInclusiveOpsdateRange date_range = 5;
+}
