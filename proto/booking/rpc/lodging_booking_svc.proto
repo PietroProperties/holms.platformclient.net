@@ -6,6 +6,7 @@ option go_package = "booking/rpc";
 
 import "google/protobuf/empty.proto";
 import "booking/reservations/book_genesis_reservation_request.proto";
+import "booking/reservations/duplicate_reservation_request.proto";
 import "booking/reservations/genesis_booking_result.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "booking/reservations/complete_open_reservation.proto";
@@ -28,6 +29,9 @@ message SwapChargesRequest{
 }
 message SwapChargesResponse{
 	bool charges_present_and_moved=1;
+}
+message DuplicateReservationResponse{
+	bool is_exist=1;
 }
 
 message SourceOfReservationRequest{
@@ -64,4 +68,7 @@ service LodgingBookingSvc {
 
 	rpc SetSourceOfReservation(SourceOfReservationRequest)
 		returns (google.protobuf.Empty);
+	
+	rpc VerifyDuplicateReservationExists(.holms.types.booking.reservations.DuplicateReservationRequest)
+		returns (DuplicateReservationResponse);
 }
