@@ -43,44 +43,67 @@ namespace HOLMS.Types.Supply.RPC {
             "bGwSQwoJcm9vbV90eXBlGAEgASgLMjAuaG9sbXMudHlwZXMuc3VwcGx5LnJv",
             "b21fdHlwZXMuUm9vbVR5cGVJbmRpY2F0b3ISMAoEZGF0ZRgCIAEoCzIiLmhv",
             "bG1zLnR5cGVzLnByaW1pdGl2ZS5QYkxvY2FsRGF0ZRIUCgxpc19TdG9wX3Nl",
-            "bGwYAyABKAgidgoeQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXF1ZXN0ElQK",
-            "GmNoYW5uZWxfYWxsb2NhdGlvbl9wcmljaW5nGAEgAygLMjAuaG9sbXMudHlw",
-            "ZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblByaWNpbmciYgocQ2hh",
-            "bm5lbFN0b3BTZWxsVXBkYXRlUmVxdWVzdBJCChFjaGFubmVsX3N0b3Bfc2Vs",
-            "bBgBIAMoCzInLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbFN0b3BT",
-            "ZWxsIn8KH0NoYW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVzcG9uc2USRQoGUmVz",
-            "dWx0GAEgASgOMjUuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxs",
-            "b2NhdGlvblVwZGF0ZVJlc3VsdBIVCg1FcnJvck1lc3NhZ2VzGAIgAygJInAK",
-            "GE90YVN1cHBseURldGFpbHNSZXNwb25zZRJUChpjaGFubmVsX2FsbG9jYXRp",
-            "b25fcHJpY2luZxgBIAMoCzIwLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hh",
-            "bm5lbEFsbG9jYXRpb25QcmljaW5nKoQBCh1DaGFubmVsQWxsb2NhdGlvblVw",
-            "ZGF0ZVJlc3VsdBIRCg1VUERBVEVfRkFJTEVEEAASFwoTREJfVVBEQVRFX0NS",
-            "X0ZBSUxFRBABEiAKHENSX1VQREFURV9TWU5DX1NUQVRVU19GQUlMRUQQAhIV",
-            "ChFVUERBVEVfU1VDQ0VTU0ZVTBADMowFChBPdGFCYXNlU3VwcGx5U3ZjEnAK",
-            "C0FsbEZvckRhdGVzEi8uaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5PdGFTdXBw",
-            "bHlEZXRhaWxzUmVxdWVzdBowLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuT3Rh",
-            "U3VwcGx5RGV0YWlsc1Jlc3BvbnNlEocBChRJbnNlcnRPclVwZGF0ZVN1cHBs",
-            "eRI2LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25V",
-            "cGRhdGVSZXF1ZXN0GjcuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVs",
-            "QWxsb2NhdGlvblVwZGF0ZVJlc3BvbnNlEn8KDlVwZGF0ZVN0b3BTZWxsEjQu",
-            "aG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsU3RvcFNlbGxVcGRhdGVS",
-            "ZXF1ZXN0GjcuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2Nh",
-            "dGlvblVwZGF0ZVJlc3BvbnNlEn4KC1VwZGF0ZVByaWNlEjYuaG9sbXMudHlw",
-            "ZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblVwZGF0ZVJlcXVlc3Qa",
-            "Ny5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkNoYW5uZWxBbGxvY2F0aW9uVXBk",
-            "YXRlUmVzcG9uc2USewoPU3luY0NoYW5uZWxSdXNoEi8uaG9sbXMudHlwZXMu",
-            "c3VwcGx5LnJwYy5PdGFTdXBwbHlEZXRhaWxzUmVxdWVzdBo3LmhvbG1zLnR5",
-            "cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXNwb25z",
-            "ZUIlWgpzdXBwbHkvcnBjqgIWSE9MTVMuVHlwZXMuU3VwcGx5LlJQQ2IGcHJv",
-            "dG8z"));
+            "bGwYAyABKAgi3AEKCkNoYW5uZWxDVEESQwoJcm9vbV90eXBlGAEgASgLMjAu",
+            "aG9sbXMudHlwZXMuc3VwcGx5LnJvb21fdHlwZXMuUm9vbVR5cGVJbmRpY2F0",
+            "b3ISNgoKc3RhcnRfZGF0ZRgCIAEoCzIiLmhvbG1zLnR5cGVzLnByaW1pdGl2",
+            "ZS5QYkxvY2FsRGF0ZRI0CghlbmRfZGF0ZRgDIAEoCzIiLmhvbG1zLnR5cGVz",
+            "LnByaW1pdGl2ZS5QYkxvY2FsRGF0ZRIbChNpc19jbG9zZV90b19hcnJpdmFs",
+            "GAQgASgIIt0BCgtDaGFubmVsTUxPUxJDCglyb29tX3R5cGUYASABKAsyMC5o",
+            "b2xtcy50eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZUluZGljYXRv",
+            "chI2CgpzdGFydF9kYXRlGAIgASgLMiIuaG9sbXMudHlwZXMucHJpbWl0aXZl",
+            "LlBiTG9jYWxEYXRlEjQKCGVuZF9kYXRlGAMgASgLMiIuaG9sbXMudHlwZXMu",
+            "cHJpbWl0aXZlLlBiTG9jYWxEYXRlEhsKE21pbmltdW1fc3RheV9uaWdodHMY",
+            "BCABKA0idgoeQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXF1ZXN0ElQKGmNo",
+            "YW5uZWxfYWxsb2NhdGlvbl9wcmljaW5nGAEgAygLMjAuaG9sbXMudHlwZXMu",
+            "c3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblByaWNpbmciYgocQ2hhbm5l",
+            "bFN0b3BTZWxsVXBkYXRlUmVxdWVzdBJCChFjaGFubmVsX3N0b3Bfc2VsbBgB",
+            "IAMoCzInLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbFN0b3BTZWxs",
+            "IlIKF0NoYW5uZWxDVEFVcGRhdGVSZXF1ZXN0EjcKC2NoYW5uZWxfY3RhGAEg",
+            "AygLMiIuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsQ1RBIlUKGENo",
+            "YW5uZWxNTE9TVXBkYXRlUmVxdWVzdBI5CgxjaGFubmVsX21sb3MYASADKAsy",
+            "Iy5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkNoYW5uZWxNTE9TIn8KH0NoYW5u",
+            "ZWxBbGxvY2F0aW9uVXBkYXRlUmVzcG9uc2USRQoGUmVzdWx0GAEgASgOMjUu",
+            "aG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblVwZGF0",
+            "ZVJlc3VsdBIVCg1FcnJvck1lc3NhZ2VzGAIgAygJInAKGE90YVN1cHBseURl",
+            "dGFpbHNSZXNwb25zZRJUChpjaGFubmVsX2FsbG9jYXRpb25fcHJpY2luZxgB",
+            "IAMoCzIwLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRp",
+            "b25QcmljaW5nKoQBCh1DaGFubmVsQWxsb2NhdGlvblVwZGF0ZVJlc3VsdBIR",
+            "Cg1VUERBVEVfRkFJTEVEEAASFwoTREJfVVBEQVRFX0NSX0ZBSUxFRBABEiAK",
+            "HENSX1VQREFURV9TWU5DX1NUQVRVU19GQUlMRUQQAhIVChFVUERBVEVfU1VD",
+            "Q0VTU0ZVTBADMvwGChBPdGFCYXNlU3VwcGx5U3ZjEnAKC0FsbEZvckRhdGVz",
+            "Ei8uaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5PdGFTdXBwbHlEZXRhaWxzUmVx",
+            "dWVzdBowLmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuT3RhU3VwcGx5RGV0YWls",
+            "c1Jlc3BvbnNlEocBChRJbnNlcnRPclVwZGF0ZVN1cHBseRI2LmhvbG1zLnR5",
+            "cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXF1ZXN0",
+            "GjcuaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblVw",
+            "ZGF0ZVJlc3BvbnNlEn8KDlVwZGF0ZVN0b3BTZWxsEjQuaG9sbXMudHlwZXMu",
+            "c3VwcGx5LnJwYy5DaGFubmVsU3RvcFNlbGxVcGRhdGVSZXF1ZXN0GjcuaG9s",
+            "bXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsQWxsb2NhdGlvblVwZGF0ZVJl",
+            "c3BvbnNlEn4KC1VwZGF0ZVByaWNlEjYuaG9sbXMudHlwZXMuc3VwcGx5LnJw",
+            "Yy5DaGFubmVsQWxsb2NhdGlvblVwZGF0ZVJlcXVlc3QaNy5ob2xtcy50eXBl",
+            "cy5zdXBwbHkucnBjLkNoYW5uZWxBbGxvY2F0aW9uVXBkYXRlUmVzcG9uc2US",
+            "dQoJVXBkYXRlQ1RBEi8uaG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVs",
+            "Q1RBVXBkYXRlUmVxdWVzdBo3LmhvbG1zLnR5cGVzLnN1cHBseS5ycGMuQ2hh",
+            "bm5lbEFsbG9jYXRpb25VcGRhdGVSZXNwb25zZRJ3CgpVcGRhdGVNTE9TEjAu",
+            "aG9sbXMudHlwZXMuc3VwcGx5LnJwYy5DaGFubmVsTUxPU1VwZGF0ZVJlcXVl",
+            "c3QaNy5ob2xtcy50eXBlcy5zdXBwbHkucnBjLkNoYW5uZWxBbGxvY2F0aW9u",
+            "VXBkYXRlUmVzcG9uc2USewoPU3luY0NoYW5uZWxSdXNoEi8uaG9sbXMudHlw",
+            "ZXMuc3VwcGx5LnJwYy5PdGFTdXBwbHlEZXRhaWxzUmVxdWVzdBo3LmhvbG1z",
+            "LnR5cGVzLnN1cHBseS5ycGMuQ2hhbm5lbEFsbG9jYXRpb25VcGRhdGVSZXNw",
+            "b25zZUIlWgpzdXBwbHkvcnBjqgIWSE9MTVMuVHlwZXMuU3VwcGx5LlJQQ2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.OtaChannelProviderIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.FixedPointRatioReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResult), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsRequest), global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsRequest.Parser, new[]{ "DateRange" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationPricing), global::HOLMS.Types.Supply.RPC.ChannelAllocationPricing.Parser, new[]{ "RoomType", "Date", "OfferedPrice", "Available", "OtaProvider", "IsStopSell", "PriceRate" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelStopSell), global::HOLMS.Types.Supply.RPC.ChannelStopSell.Parser, new[]{ "RoomType", "Date", "IsStopSell" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelCTA), global::HOLMS.Types.Supply.RPC.ChannelCTA.Parser, new[]{ "RoomType", "StartDate", "EndDate", "IsCloseToArrival" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelMLOS), global::HOLMS.Types.Supply.RPC.ChannelMLOS.Parser, new[]{ "RoomType", "StartDate", "EndDate", "MinimumStayNights" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateRequest), global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateRequest.Parser, new[]{ "ChannelAllocationPricing" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelStopSellUpdateRequest), global::HOLMS.Types.Supply.RPC.ChannelStopSellUpdateRequest.Parser, new[]{ "ChannelStopSell" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelCTAUpdateRequest), global::HOLMS.Types.Supply.RPC.ChannelCTAUpdateRequest.Parser, new[]{ "ChannelCta" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelMLOSUpdateRequest), global::HOLMS.Types.Supply.RPC.ChannelMLOSUpdateRequest.Parser, new[]{ "ChannelMlos" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse), global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse.Parser, new[]{ "Result", "ErrorMessages" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsResponse), global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsResponse.Parser, new[]{ "ChannelAllocationPricing" }, null, null, null)
           }));
@@ -722,6 +745,444 @@ namespace HOLMS.Types.Supply.RPC {
 
   }
 
+  public sealed partial class ChannelCTA : pb::IMessage<ChannelCTA> {
+    private static readonly pb::MessageParser<ChannelCTA> _parser = new pb::MessageParser<ChannelCTA>(() => new ChannelCTA());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ChannelCTA> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Supply.RPC.OtaBaseSupplySvcReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChannelCTA() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChannelCTA(ChannelCTA other) : this() {
+      RoomType = other.roomType_ != null ? other.RoomType.Clone() : null;
+      StartDate = other.startDate_ != null ? other.StartDate.Clone() : null;
+      EndDate = other.endDate_ != null ? other.EndDate.Clone() : null;
+      isCloseToArrival_ = other.isCloseToArrival_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChannelCTA Clone() {
+      return new ChannelCTA(this);
+    }
+
+    /// <summary>Field number for the "room_type" field.</summary>
+    public const int RoomTypeFieldNumber = 1;
+    private global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator roomType_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator RoomType {
+      get { return roomType_; }
+      set {
+        roomType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "start_date" field.</summary>
+    public const int StartDateFieldNumber = 2;
+    private global::HOLMS.Types.Primitive.PbLocalDate startDate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate StartDate {
+      get { return startDate_; }
+      set {
+        startDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "end_date" field.</summary>
+    public const int EndDateFieldNumber = 3;
+    private global::HOLMS.Types.Primitive.PbLocalDate endDate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate EndDate {
+      get { return endDate_; }
+      set {
+        endDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_close_to_arrival" field.</summary>
+    public const int IsCloseToArrivalFieldNumber = 4;
+    private bool isCloseToArrival_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsCloseToArrival {
+      get { return isCloseToArrival_; }
+      set {
+        isCloseToArrival_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ChannelCTA);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ChannelCTA other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(RoomType, other.RoomType)) return false;
+      if (!object.Equals(StartDate, other.StartDate)) return false;
+      if (!object.Equals(EndDate, other.EndDate)) return false;
+      if (IsCloseToArrival != other.IsCloseToArrival) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (roomType_ != null) hash ^= RoomType.GetHashCode();
+      if (startDate_ != null) hash ^= StartDate.GetHashCode();
+      if (endDate_ != null) hash ^= EndDate.GetHashCode();
+      if (IsCloseToArrival != false) hash ^= IsCloseToArrival.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (roomType_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(RoomType);
+      }
+      if (startDate_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(StartDate);
+      }
+      if (endDate_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(EndDate);
+      }
+      if (IsCloseToArrival != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsCloseToArrival);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (roomType_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomType);
+      }
+      if (startDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartDate);
+      }
+      if (endDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EndDate);
+      }
+      if (IsCloseToArrival != false) {
+        size += 1 + 1;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ChannelCTA other) {
+      if (other == null) {
+        return;
+      }
+      if (other.roomType_ != null) {
+        if (roomType_ == null) {
+          roomType_ = new global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator();
+        }
+        RoomType.MergeFrom(other.RoomType);
+      }
+      if (other.startDate_ != null) {
+        if (startDate_ == null) {
+          startDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        StartDate.MergeFrom(other.StartDate);
+      }
+      if (other.endDate_ != null) {
+        if (endDate_ == null) {
+          endDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        EndDate.MergeFrom(other.EndDate);
+      }
+      if (other.IsCloseToArrival != false) {
+        IsCloseToArrival = other.IsCloseToArrival;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (roomType_ == null) {
+              roomType_ = new global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator();
+            }
+            input.ReadMessage(roomType_);
+            break;
+          }
+          case 18: {
+            if (startDate_ == null) {
+              startDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(startDate_);
+            break;
+          }
+          case 26: {
+            if (endDate_ == null) {
+              endDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(endDate_);
+            break;
+          }
+          case 32: {
+            IsCloseToArrival = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class ChannelMLOS : pb::IMessage<ChannelMLOS> {
+    private static readonly pb::MessageParser<ChannelMLOS> _parser = new pb::MessageParser<ChannelMLOS>(() => new ChannelMLOS());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ChannelMLOS> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Supply.RPC.OtaBaseSupplySvcReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChannelMLOS() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChannelMLOS(ChannelMLOS other) : this() {
+      RoomType = other.roomType_ != null ? other.RoomType.Clone() : null;
+      StartDate = other.startDate_ != null ? other.StartDate.Clone() : null;
+      EndDate = other.endDate_ != null ? other.EndDate.Clone() : null;
+      minimumStayNights_ = other.minimumStayNights_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChannelMLOS Clone() {
+      return new ChannelMLOS(this);
+    }
+
+    /// <summary>Field number for the "room_type" field.</summary>
+    public const int RoomTypeFieldNumber = 1;
+    private global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator roomType_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator RoomType {
+      get { return roomType_; }
+      set {
+        roomType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "start_date" field.</summary>
+    public const int StartDateFieldNumber = 2;
+    private global::HOLMS.Types.Primitive.PbLocalDate startDate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate StartDate {
+      get { return startDate_; }
+      set {
+        startDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "end_date" field.</summary>
+    public const int EndDateFieldNumber = 3;
+    private global::HOLMS.Types.Primitive.PbLocalDate endDate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.PbLocalDate EndDate {
+      get { return endDate_; }
+      set {
+        endDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "minimum_stay_nights" field.</summary>
+    public const int MinimumStayNightsFieldNumber = 4;
+    private uint minimumStayNights_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint MinimumStayNights {
+      get { return minimumStayNights_; }
+      set {
+        minimumStayNights_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ChannelMLOS);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ChannelMLOS other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(RoomType, other.RoomType)) return false;
+      if (!object.Equals(StartDate, other.StartDate)) return false;
+      if (!object.Equals(EndDate, other.EndDate)) return false;
+      if (MinimumStayNights != other.MinimumStayNights) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (roomType_ != null) hash ^= RoomType.GetHashCode();
+      if (startDate_ != null) hash ^= StartDate.GetHashCode();
+      if (endDate_ != null) hash ^= EndDate.GetHashCode();
+      if (MinimumStayNights != 0) hash ^= MinimumStayNights.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (roomType_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(RoomType);
+      }
+      if (startDate_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(StartDate);
+      }
+      if (endDate_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(EndDate);
+      }
+      if (MinimumStayNights != 0) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(MinimumStayNights);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (roomType_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomType);
+      }
+      if (startDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartDate);
+      }
+      if (endDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EndDate);
+      }
+      if (MinimumStayNights != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MinimumStayNights);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ChannelMLOS other) {
+      if (other == null) {
+        return;
+      }
+      if (other.roomType_ != null) {
+        if (roomType_ == null) {
+          roomType_ = new global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator();
+        }
+        RoomType.MergeFrom(other.RoomType);
+      }
+      if (other.startDate_ != null) {
+        if (startDate_ == null) {
+          startDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        StartDate.MergeFrom(other.StartDate);
+      }
+      if (other.endDate_ != null) {
+        if (endDate_ == null) {
+          endDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+        }
+        EndDate.MergeFrom(other.EndDate);
+      }
+      if (other.MinimumStayNights != 0) {
+        MinimumStayNights = other.MinimumStayNights;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (roomType_ == null) {
+              roomType_ = new global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator();
+            }
+            input.ReadMessage(roomType_);
+            break;
+          }
+          case 18: {
+            if (startDate_ == null) {
+              startDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(startDate_);
+            break;
+          }
+          case 26: {
+            if (endDate_ == null) {
+              endDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
+            }
+            input.ReadMessage(endDate_);
+            break;
+          }
+          case 32: {
+            MinimumStayNights = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class ChannelAllocationUpdateRequest : pb::IMessage<ChannelAllocationUpdateRequest> {
     private static readonly pb::MessageParser<ChannelAllocationUpdateRequest> _parser = new pb::MessageParser<ChannelAllocationUpdateRequest>(() => new ChannelAllocationUpdateRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -729,7 +1190,7 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Supply.RPC.OtaBaseSupplySvcReflection.Descriptor.MessageTypes[3]; }
+      get { return global::HOLMS.Types.Supply.RPC.OtaBaseSupplySvcReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -838,7 +1299,7 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Supply.RPC.OtaBaseSupplySvcReflection.Descriptor.MessageTypes[4]; }
+      get { return global::HOLMS.Types.Supply.RPC.OtaBaseSupplySvcReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -940,6 +1401,224 @@ namespace HOLMS.Types.Supply.RPC {
 
   }
 
+  public sealed partial class ChannelCTAUpdateRequest : pb::IMessage<ChannelCTAUpdateRequest> {
+    private static readonly pb::MessageParser<ChannelCTAUpdateRequest> _parser = new pb::MessageParser<ChannelCTAUpdateRequest>(() => new ChannelCTAUpdateRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ChannelCTAUpdateRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Supply.RPC.OtaBaseSupplySvcReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChannelCTAUpdateRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChannelCTAUpdateRequest(ChannelCTAUpdateRequest other) : this() {
+      channelCta_ = other.channelCta_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChannelCTAUpdateRequest Clone() {
+      return new ChannelCTAUpdateRequest(this);
+    }
+
+    /// <summary>Field number for the "channel_cta" field.</summary>
+    public const int ChannelCtaFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Supply.RPC.ChannelCTA> _repeated_channelCta_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Supply.RPC.ChannelCTA.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Supply.RPC.ChannelCTA> channelCta_ = new pbc::RepeatedField<global::HOLMS.Types.Supply.RPC.ChannelCTA>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Supply.RPC.ChannelCTA> ChannelCta {
+      get { return channelCta_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ChannelCTAUpdateRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ChannelCTAUpdateRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!channelCta_.Equals(other.channelCta_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= channelCta_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      channelCta_.WriteTo(output, _repeated_channelCta_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += channelCta_.CalculateSize(_repeated_channelCta_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ChannelCTAUpdateRequest other) {
+      if (other == null) {
+        return;
+      }
+      channelCta_.Add(other.channelCta_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            channelCta_.AddEntriesFrom(input, _repeated_channelCta_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class ChannelMLOSUpdateRequest : pb::IMessage<ChannelMLOSUpdateRequest> {
+    private static readonly pb::MessageParser<ChannelMLOSUpdateRequest> _parser = new pb::MessageParser<ChannelMLOSUpdateRequest>(() => new ChannelMLOSUpdateRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ChannelMLOSUpdateRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Supply.RPC.OtaBaseSupplySvcReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChannelMLOSUpdateRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChannelMLOSUpdateRequest(ChannelMLOSUpdateRequest other) : this() {
+      channelMlos_ = other.channelMlos_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChannelMLOSUpdateRequest Clone() {
+      return new ChannelMLOSUpdateRequest(this);
+    }
+
+    /// <summary>Field number for the "channel_mlos" field.</summary>
+    public const int ChannelMlosFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::HOLMS.Types.Supply.RPC.ChannelMLOS> _repeated_channelMlos_codec
+        = pb::FieldCodec.ForMessage(10, global::HOLMS.Types.Supply.RPC.ChannelMLOS.Parser);
+    private readonly pbc::RepeatedField<global::HOLMS.Types.Supply.RPC.ChannelMLOS> channelMlos_ = new pbc::RepeatedField<global::HOLMS.Types.Supply.RPC.ChannelMLOS>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::HOLMS.Types.Supply.RPC.ChannelMLOS> ChannelMlos {
+      get { return channelMlos_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ChannelMLOSUpdateRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ChannelMLOSUpdateRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!channelMlos_.Equals(other.channelMlos_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= channelMlos_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      channelMlos_.WriteTo(output, _repeated_channelMlos_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += channelMlos_.CalculateSize(_repeated_channelMlos_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ChannelMLOSUpdateRequest other) {
+      if (other == null) {
+        return;
+      }
+      channelMlos_.Add(other.channelMlos_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            channelMlos_.AddEntriesFrom(input, _repeated_channelMlos_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class ChannelAllocationUpdateResponse : pb::IMessage<ChannelAllocationUpdateResponse> {
     private static readonly pb::MessageParser<ChannelAllocationUpdateResponse> _parser = new pb::MessageParser<ChannelAllocationUpdateResponse>(() => new ChannelAllocationUpdateResponse());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -947,7 +1626,7 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Supply.RPC.OtaBaseSupplySvcReflection.Descriptor.MessageTypes[5]; }
+      get { return global::HOLMS.Types.Supply.RPC.OtaBaseSupplySvcReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1084,7 +1763,7 @@ namespace HOLMS.Types.Supply.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Supply.RPC.OtaBaseSupplySvcReflection.Descriptor.MessageTypes[6]; }
+      get { return global::HOLMS.Types.Supply.RPC.OtaBaseSupplySvcReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
