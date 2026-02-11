@@ -12,4 +12,5 @@ message DateRestriction {
 	holms.types.primitive.PbLocalDate opsdate = 2;
 	bool closed_to_arrival = 3;
 	uint32 minimum_stay_nights = 4;
+	bool is_cta_change = 5;
 }
