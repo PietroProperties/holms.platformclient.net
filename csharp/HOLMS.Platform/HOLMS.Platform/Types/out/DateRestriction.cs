@@ -25,16 +25,17 @@ namespace HOLMS.Types.Booking {
             "Ch5ib29raW5nL2RhdGVfcmVzdHJpY3Rpb24ucHJvdG8SE2hvbG1zLnR5cGVz",
             "LmJvb2tpbmcaHXByaW1pdGl2ZS9wYl9sb2NhbF9kYXRlLnByb3RvGjJ0ZW5h",
             "bmN5X2NvbmZpZy9pbmRpY2F0b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90",
-            "byLNAQoPRGF0ZVJlc3RyaWN0aW9uEk0KC3Byb3BlcnR5X2lkGAEgASgLMjgu",
+            "byLkAQoPRGF0ZVJlc3RyaWN0aW9uEk0KC3Byb3BlcnR5X2lkGAEgASgLMjgu",
             "aG9sbXMudHlwZXMudGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0",
             "eUluZGljYXRvchIzCgdvcHNkYXRlGAIgASgLMiIuaG9sbXMudHlwZXMucHJp",
             "bWl0aXZlLlBiTG9jYWxEYXRlEhkKEWNsb3NlZF90b19hcnJpdmFsGAMgASgI",
-            "EhsKE21pbmltdW1fc3RheV9uaWdodHMYBCABKA1CH1oHYm9va2luZ6oCE0hP",
-            "TE1TLlR5cGVzLkJvb2tpbmdiBnByb3RvMw=="));
+            "EhsKE21pbmltdW1fc3RheV9uaWdodHMYBCABKA0SFQoNaXNfY3RhX2NoYW5n",
+            "ZRgFIAEoCEIfWgdib29raW5nqgITSE9MTVMuVHlwZXMuQm9va2luZ2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.DateRestriction), global::HOLMS.Types.Booking.DateRestriction.Parser, new[]{ "PropertyId", "Opsdate", "ClosedToArrival", "MinimumStayNights" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.DateRestriction), global::HOLMS.Types.Booking.DateRestriction.Parser, new[]{ "PropertyId", "Opsdate", "ClosedToArrival", "MinimumStayNights", "IsCtaChange" }, null, null, null)
           }));
     }
     #endregion
@@ -69,6 +70,7 @@ namespace HOLMS.Types.Booking {
       Opsdate = other.opsdate_ != null ? other.Opsdate.Clone() : null;
       closedToArrival_ = other.closedToArrival_;
       minimumStayNights_ = other.minimumStayNights_;
+      isCtaChange_ = other.isCtaChange_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -120,6 +122,17 @@ namespace HOLMS.Types.Booking {
       }
     }
 
+    /// <summary>Field number for the "is_cta_change" field.</summary>
+    public const int IsCtaChangeFieldNumber = 5;
+    private bool isCtaChange_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsCtaChange {
+      get { return isCtaChange_; }
+      set {
+        isCtaChange_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as DateRestriction);
@@ -137,6 +150,7 @@ namespace HOLMS.Types.Booking {
       if (!object.Equals(Opsdate, other.Opsdate)) return false;
       if (ClosedToArrival != other.ClosedToArrival) return false;
       if (MinimumStayNights != other.MinimumStayNights) return false;
+      if (IsCtaChange != other.IsCtaChange) return false;
       return true;
     }
 
@@ -147,6 +161,7 @@ namespace HOLMS.Types.Booking {
       if (opsdate_ != null) hash ^= Opsdate.GetHashCode();
       if (ClosedToArrival != false) hash ^= ClosedToArrival.GetHashCode();
       if (MinimumStayNights != 0) hash ^= MinimumStayNights.GetHashCode();
+      if (IsCtaChange != false) hash ^= IsCtaChange.GetHashCode();
       return hash;
     }
 
@@ -173,6 +188,10 @@ namespace HOLMS.Types.Booking {
         output.WriteRawTag(32);
         output.WriteUInt32(MinimumStayNights);
       }
+      if (IsCtaChange != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(IsCtaChange);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -189,6 +208,9 @@ namespace HOLMS.Types.Booking {
       }
       if (MinimumStayNights != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MinimumStayNights);
+      }
+      if (IsCtaChange != false) {
+        size += 1 + 1;
       }
       return size;
     }
@@ -215,6 +237,9 @@ namespace HOLMS.Types.Booking {
       }
       if (other.MinimumStayNights != 0) {
         MinimumStayNights = other.MinimumStayNights;
+      }
+      if (other.IsCtaChange != false) {
+        IsCtaChange = other.IsCtaChange;
       }
     }
 
@@ -246,6 +271,10 @@ namespace HOLMS.Types.Booking {
           }
           case 32: {
             MinimumStayNights = input.ReadUInt32();
+            break;
+          }
+          case 40: {
+            IsCtaChange = input.ReadBool();
             break;
           }
         }

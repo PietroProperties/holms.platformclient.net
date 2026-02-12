@@ -18,6 +18,8 @@ namespace HOLMS.Types.Supply.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateRequest> __Marshaller_ChannelAllocationUpdateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse> __Marshaller_ChannelAllocationUpdateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.ChannelStopSellUpdateRequest> __Marshaller_ChannelStopSellUpdateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.ChannelStopSellUpdateRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.ChannelCTAUpdateRequest> __Marshaller_ChannelCTAUpdateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.ChannelCTAUpdateRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.ChannelMLOSUpdateRequest> __Marshaller_ChannelMLOSUpdateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.ChannelMLOSUpdateRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsRequest, global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsResponse> __Method_AllForDates = new grpc::Method<global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsRequest, global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsResponse>(
         grpc::MethodType.Unary,
@@ -45,6 +47,20 @@ namespace HOLMS.Types.Supply.RPC {
         __ServiceName,
         "UpdatePrice",
         __Marshaller_ChannelAllocationUpdateRequest,
+        __Marshaller_ChannelAllocationUpdateResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.ChannelCTAUpdateRequest, global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse> __Method_UpdateCTA = new grpc::Method<global::HOLMS.Types.Supply.RPC.ChannelCTAUpdateRequest, global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateCTA",
+        __Marshaller_ChannelCTAUpdateRequest,
+        __Marshaller_ChannelAllocationUpdateResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.ChannelMLOSUpdateRequest, global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse> __Method_UpdateMLOS = new grpc::Method<global::HOLMS.Types.Supply.RPC.ChannelMLOSUpdateRequest, global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateMLOS",
+        __Marshaller_ChannelMLOSUpdateRequest,
         __Marshaller_ChannelAllocationUpdateResponse);
 
     static readonly grpc::Method<global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsRequest, global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse> __Method_SyncChannelRush = new grpc::Method<global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsRequest, global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse>(
@@ -79,6 +95,16 @@ namespace HOLMS.Types.Supply.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse> UpdatePrice(global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse> UpdateCTA(global::HOLMS.Types.Supply.RPC.ChannelCTAUpdateRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse> UpdateMLOS(global::HOLMS.Types.Supply.RPC.ChannelMLOSUpdateRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -177,6 +203,38 @@ namespace HOLMS.Types.Supply.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdatePrice, null, options, request);
       }
+      public virtual global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse UpdateCTA(global::HOLMS.Types.Supply.RPC.ChannelCTAUpdateRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UpdateCTA(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse UpdateCTA(global::HOLMS.Types.Supply.RPC.ChannelCTAUpdateRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateCTA, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse> UpdateCTAAsync(global::HOLMS.Types.Supply.RPC.ChannelCTAUpdateRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UpdateCTAAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse> UpdateCTAAsync(global::HOLMS.Types.Supply.RPC.ChannelCTAUpdateRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateCTA, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse UpdateMLOS(global::HOLMS.Types.Supply.RPC.ChannelMLOSUpdateRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UpdateMLOS(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse UpdateMLOS(global::HOLMS.Types.Supply.RPC.ChannelMLOSUpdateRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateMLOS, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse> UpdateMLOSAsync(global::HOLMS.Types.Supply.RPC.ChannelMLOSUpdateRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return UpdateMLOSAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse> UpdateMLOSAsync(global::HOLMS.Types.Supply.RPC.ChannelMLOSUpdateRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateMLOS, null, options, request);
+      }
       public virtual global::HOLMS.Types.Supply.RPC.ChannelAllocationUpdateResponse SyncChannelRush(global::HOLMS.Types.Supply.RPC.OtaSupplyDetailsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
         return SyncChannelRush(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -209,6 +267,8 @@ namespace HOLMS.Types.Supply.RPC {
           .AddMethod(__Method_InsertOrUpdateSupply, serviceImpl.InsertOrUpdateSupply)
           .AddMethod(__Method_UpdateStopSell, serviceImpl.UpdateStopSell)
           .AddMethod(__Method_UpdatePrice, serviceImpl.UpdatePrice)
+          .AddMethod(__Method_UpdateCTA, serviceImpl.UpdateCTA)
+          .AddMethod(__Method_UpdateMLOS, serviceImpl.UpdateMLOS)
           .AddMethod(__Method_SyncChannelRush, serviceImpl.SyncChannelRush).Build();
     }
 
