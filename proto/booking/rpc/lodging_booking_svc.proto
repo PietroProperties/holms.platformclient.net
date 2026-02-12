@@ -32,6 +32,7 @@ message SwapChargesResponse{
 }
 message DuplicateReservationResponse{
 	bool is_exist=1;
+	string booking_number=2;
 }
 
 message SourceOfReservationRequest{
