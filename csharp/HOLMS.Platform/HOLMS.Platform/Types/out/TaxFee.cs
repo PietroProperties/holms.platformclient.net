@@ -26,19 +26,21 @@ namespace HOLMS.Types.Folio {
             "aW8vdGF4X2ZlZV9jYXRlZ29yeS5wcm90bxodZm9saW8vdGF4X2ZlZV9pbmRp",
             "Y2F0b3IucHJvdG8aKG1vbmV5L2FjY291bnRpbmcvYWNjb3VudF9pbmRpY2F0",
             "b3IucHJvdG8aIXByaW1pdGl2ZS9maXhlZF9wb2ludF9yYXRpby5wcm90bxod",
-            "cHJpbWl0aXZlL3BiX2xvY2FsX2RhdGUucHJvdG8iygIKBlRheEZlZRI1Cgll",
-            "bnRpdHlfaWQYASABKAsyIi5ob2xtcy50eXBlcy5mb2xpby5UYXhGZWVJbmRp",
-            "Y2F0b3ISEwoLZGVzY3JpcHRpb24YAiABKAkSOAoIdGF4X3JhdGUYAyABKAsy",
-            "Ji5ob2xtcy50eXBlcy5wcmltaXRpdmUuRml4ZWRQb2ludFJhdGlvEjMKCGNh",
-            "dGVnb3J5GAQgASgOMiEuaG9sbXMudHlwZXMuZm9saW8uVGF4RmVlQ2F0ZWdv",
-            "cnkSTAoUbGlhYmlsaXR5X2FjY291bnRfaWQYBSABKAsyLi5ob2xtcy50eXBl",
-            "cy5tb25leS5hY2NvdW50aW5nLkFjY291bnRJbmRpY2F0b3ISNwoLZXhwaXJl",
-            "X2RhdGUYBiABKAsyIi5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJMb2NhbERh",
-            "dGVCFKoCEUhPTE1TLlR5cGVzLkZvbGlvYgZwcm90bzM="));
+            "cHJpbWl0aXZlL3BiX2xvY2FsX2RhdGUucHJvdG8aH2dvb2dsZS9wcm90b2J1",
+            "Zi90aW1lc3RhbXAucHJvdG8i/AIKBlRheEZlZRI1CgllbnRpdHlfaWQYASAB",
+            "KAsyIi5ob2xtcy50eXBlcy5mb2xpby5UYXhGZWVJbmRpY2F0b3ISEwoLZGVz",
+            "Y3JpcHRpb24YAiABKAkSOAoIdGF4X3JhdGUYAyABKAsyJi5ob2xtcy50eXBl",
+            "cy5wcmltaXRpdmUuRml4ZWRQb2ludFJhdGlvEjMKCGNhdGVnb3J5GAQgASgO",
+            "MiEuaG9sbXMudHlwZXMuZm9saW8uVGF4RmVlQ2F0ZWdvcnkSTAoUbGlhYmls",
+            "aXR5X2FjY291bnRfaWQYBSABKAsyLi5ob2xtcy50eXBlcy5tb25leS5hY2Nv",
+            "dW50aW5nLkFjY291bnRJbmRpY2F0b3ISNwoLZXhwaXJlX2RhdGUYBiABKAsy",
+            "Ii5ob2xtcy50eXBlcy5wcmltaXRpdmUuUGJMb2NhbERhdGUSMAoMY3JlYXRl",
+            "ZF9kYXRlGAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIUqgIR",
+            "SE9MTVMuVHlwZXMuRm9saW9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.TaxFeeCategoryReflection.Descriptor, global::HOLMS.Types.Folio.TaxFeeIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.FixedPointRatioReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::HOLMS.Types.Folio.TaxFeeCategoryReflection.Descriptor, global::HOLMS.Types.Folio.TaxFeeIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Accounting.AccountIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.FixedPointRatioReflection.Descriptor, global::HOLMS.Types.Primitive.PbLocalDateReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxFee), global::HOLMS.Types.Folio.TaxFee.Parser, new[]{ "EntityId", "Description", "TaxRate", "Category", "LiabilityAccountId", "ExpireDate" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Folio.TaxFee), global::HOLMS.Types.Folio.TaxFee.Parser, new[]{ "EntityId", "Description", "TaxRate", "Category", "LiabilityAccountId", "ExpireDate", "CreatedDate" }, null, null, null)
           }));
     }
     #endregion
@@ -75,6 +77,7 @@ namespace HOLMS.Types.Folio {
       category_ = other.category_;
       LiabilityAccountId = other.liabilityAccountId_ != null ? other.LiabilityAccountId.Clone() : null;
       ExpireDate = other.expireDate_ != null ? other.ExpireDate.Clone() : null;
+      CreatedDate = other.createdDate_ != null ? other.CreatedDate.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -148,6 +151,17 @@ namespace HOLMS.Types.Folio {
       }
     }
 
+    /// <summary>Field number for the "created_date" field.</summary>
+    public const int CreatedDateFieldNumber = 7;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp createdDate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp CreatedDate {
+      get { return createdDate_; }
+      set {
+        createdDate_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as TaxFee);
@@ -167,6 +181,7 @@ namespace HOLMS.Types.Folio {
       if (Category != other.Category) return false;
       if (!object.Equals(LiabilityAccountId, other.LiabilityAccountId)) return false;
       if (!object.Equals(ExpireDate, other.ExpireDate)) return false;
+      if (!object.Equals(CreatedDate, other.CreatedDate)) return false;
       return true;
     }
 
@@ -179,6 +194,7 @@ namespace HOLMS.Types.Folio {
       if (Category != 0) hash ^= Category.GetHashCode();
       if (liabilityAccountId_ != null) hash ^= LiabilityAccountId.GetHashCode();
       if (expireDate_ != null) hash ^= ExpireDate.GetHashCode();
+      if (createdDate_ != null) hash ^= CreatedDate.GetHashCode();
       return hash;
     }
 
@@ -213,6 +229,10 @@ namespace HOLMS.Types.Folio {
         output.WriteRawTag(50);
         output.WriteMessage(ExpireDate);
       }
+      if (createdDate_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(CreatedDate);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -235,6 +255,9 @@ namespace HOLMS.Types.Folio {
       }
       if (expireDate_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExpireDate);
+      }
+      if (createdDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreatedDate);
       }
       return size;
     }
@@ -273,6 +296,12 @@ namespace HOLMS.Types.Folio {
           expireDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
         }
         ExpireDate.MergeFrom(other.ExpireDate);
+      }
+      if (other.createdDate_ != null) {
+        if (createdDate_ == null) {
+          createdDate_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        CreatedDate.MergeFrom(other.CreatedDate);
       }
     }
 
@@ -318,6 +347,13 @@ namespace HOLMS.Types.Folio {
               expireDate_ = new global::HOLMS.Types.Primitive.PbLocalDate();
             }
             input.ReadMessage(expireDate_);
+            break;
+          }
+          case 58: {
+            if (createdDate_ == null) {
+              createdDate_ = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(createdDate_);
             break;
           }
         }
