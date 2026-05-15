@@ -11,4 +11,5 @@ message PropertyConfirmationLetterText {
 	string letter_opening_text = 2;
 	string property_policy_agreement_text = 3;
 	string letter_closing_text = 4;
+	string heading_content_confirmation = 5;
 }

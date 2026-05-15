@@ -31,12 +31,34 @@ message ChannelStopSell {
 	bool is_Stop_sell = 3;
 }
 
+message ChannelCTA {
+	holms.types.supply.room_types.RoomTypeIndicator room_type = 1;
+	holms.types.primitive.PbLocalDate start_date = 2;
+	holms.types.primitive.PbLocalDate end_date = 3;
+	bool is_close_to_arrival = 4;
+}
+
+message ChannelMLOS {
+	holms.types.supply.room_types.RoomTypeIndicator room_type = 1;
+	holms.types.primitive.PbLocalDate start_date = 2;
+	holms.types.primitive.PbLocalDate end_date = 3;
+	uint32 minimum_stay_nights = 4;
+}
+
 message ChannelAllocationUpdateRequest {
 	repeated ChannelAllocationPricing channel_allocation_pricing = 1;
 }
 
 message ChannelStopSellUpdateRequest {
 	repeated ChannelStopSell channel_stop_sell = 1;
+}
+
+message ChannelCTAUpdateRequest {
+	repeated ChannelCTA channel_cta = 1;
+}
+
+message ChannelMLOSUpdateRequest {
+	repeated ChannelMLOS channel_mlos = 1;
 }
 
 message ChannelAllocationUpdateResponse {
@@ -66,6 +88,12 @@ service OtaBaseSupplySvc {
 		returns (ChannelAllocationUpdateResponse);
 
 	rpc UpdatePrice (ChannelAllocationUpdateRequest)
+		returns (ChannelAllocationUpdateResponse);
+
+	rpc UpdateCTA (ChannelCTAUpdateRequest)
+		returns (ChannelAllocationUpdateResponse);
+
+	rpc UpdateMLOS (ChannelMLOSUpdateRequest)
 		returns (ChannelAllocationUpdateResponse);
 
 	rpc SyncChannelRush (OtaSupplyDetailsRequest)

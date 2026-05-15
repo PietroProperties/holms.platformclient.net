@@ -17,4 +17,5 @@ message NoteRequest {
 	NoteType note_type = 4;
 	bool available_on_website = 5;
 	repeated .holms.types.supply.room_types.RoomType request_room_type= 6;
+	bool is_active = 7;
 }

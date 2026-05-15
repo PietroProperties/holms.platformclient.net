@@ -19,6 +19,8 @@ namespace HOLMS.Types.Booking.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.ReservationNoteSvcGetNotesResponse> __Marshaller_ReservationNoteSvcGetNotesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.ReservationNoteSvcGetNotesResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Reservations.ReservationNote> __Marshaller_ReservationNote = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Reservations.ReservationNote.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Booking.Indicators.ReservationNoteIndicator> __Marshaller_ReservationNoteIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.Indicators.ReservationNoteIndicator.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Operations.NoteRequests.NoteRequest> __Marshaller_NoteRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Operations.NoteRequests.NoteRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Booking.RPC.NoteLinkedWithReservation> __Marshaller_NoteLinkedWithReservation = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Booking.RPC.NoteLinkedWithReservation.Parser.ParseFrom);
 
     static readonly grpc::Method<global::HOLMS.Types.Booking.RPC.ReservationNoteFulfillmentRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetNoteFulfillment = new grpc::Method<global::HOLMS.Types.Booking.RPC.ReservationNoteFulfillmentRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
@@ -55,6 +57,13 @@ namespace HOLMS.Types.Booking.RPC {
         __Marshaller_ReservationNoteIndicator,
         __Marshaller_Empty);
 
+    static readonly grpc::Method<global::HOLMS.Types.Operations.NoteRequests.NoteRequest, global::HOLMS.Types.Booking.RPC.NoteLinkedWithReservation> __Method_IsNoteLinkedWithReservation = new grpc::Method<global::HOLMS.Types.Operations.NoteRequests.NoteRequest, global::HOLMS.Types.Booking.RPC.NoteLinkedWithReservation>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "IsNoteLinkedWithReservation",
+        __Marshaller_NoteRequest,
+        __Marshaller_NoteLinkedWithReservation);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -85,6 +94,11 @@ namespace HOLMS.Types.Booking.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> RemoveReservationNote(global::HOLMS.Types.Booking.Indicators.ReservationNoteIndicator request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Booking.RPC.NoteLinkedWithReservation> IsNoteLinkedWithReservation(global::HOLMS.Types.Operations.NoteRequests.NoteRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -194,6 +208,22 @@ namespace HOLMS.Types.Booking.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_RemoveReservationNote, null, options, request);
       }
+      public virtual global::HOLMS.Types.Booking.RPC.NoteLinkedWithReservation IsNoteLinkedWithReservation(global::HOLMS.Types.Operations.NoteRequests.NoteRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return IsNoteLinkedWithReservation(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Booking.RPC.NoteLinkedWithReservation IsNoteLinkedWithReservation(global::HOLMS.Types.Operations.NoteRequests.NoteRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_IsNoteLinkedWithReservation, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.NoteLinkedWithReservation> IsNoteLinkedWithReservationAsync(global::HOLMS.Types.Operations.NoteRequests.NoteRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return IsNoteLinkedWithReservationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Booking.RPC.NoteLinkedWithReservation> IsNoteLinkedWithReservationAsync(global::HOLMS.Types.Operations.NoteRequests.NoteRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_IsNoteLinkedWithReservation, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override ReservationNoteSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -210,7 +240,8 @@ namespace HOLMS.Types.Booking.RPC {
           .AddMethod(__Method_GetReservationNotes, serviceImpl.GetReservationNotes)
           .AddMethod(__Method_AddReservationNote, serviceImpl.AddReservationNote)
           .AddMethod(__Method_UpdateReservationNote, serviceImpl.UpdateReservationNote)
-          .AddMethod(__Method_RemoveReservationNote, serviceImpl.RemoveReservationNote).Build();
+          .AddMethod(__Method_RemoveReservationNote, serviceImpl.RemoveReservationNote)
+          .AddMethod(__Method_IsNoteLinkedWithReservation, serviceImpl.IsNoteLinkedWithReservation).Build();
     }
 
   }

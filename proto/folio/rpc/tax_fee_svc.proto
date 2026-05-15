@@ -16,6 +16,9 @@ service TaxFeeSvc {
 	rpc All (google.protobuf.Empty) 
 		returns (TaxFeeSvcAllResponse);
 
+	rpc AllWithExpire (google.protobuf.Empty) 
+		returns (TaxFeeSvcAllResponse);
+
 	rpc GetById (.holms.types.folio.TaxFeeIndicator) 
 		returns (.holms.types.folio.TaxFee);
 

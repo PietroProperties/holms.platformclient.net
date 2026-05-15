@@ -26,6 +26,13 @@ namespace HOLMS.Types.Folio {
         __Marshaller_Empty,
         __Marshaller_TaxFeeSvcAllResponse);
 
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Folio.TaxFeeSvcAllResponse> __Method_AllWithExpire = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Folio.TaxFeeSvcAllResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AllWithExpire",
+        __Marshaller_Empty,
+        __Marshaller_TaxFeeSvcAllResponse);
+
     static readonly grpc::Method<global::HOLMS.Types.Folio.TaxFeeIndicator, global::HOLMS.Types.Folio.TaxFee> __Method_GetById = new grpc::Method<global::HOLMS.Types.Folio.TaxFeeIndicator, global::HOLMS.Types.Folio.TaxFee>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -64,6 +71,11 @@ namespace HOLMS.Types.Folio {
     public abstract partial class TaxFeeSvcBase
     {
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.TaxFeeSvcAllResponse> All(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Folio.TaxFeeSvcAllResponse> AllWithExpire(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -128,6 +140,22 @@ namespace HOLMS.Types.Folio {
       public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.TaxFeeSvcAllResponse> AllAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_All, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Folio.TaxFeeSvcAllResponse AllWithExpire(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AllWithExpire(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Folio.TaxFeeSvcAllResponse AllWithExpire(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AllWithExpire, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.TaxFeeSvcAllResponse> AllWithExpireAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return AllWithExpireAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Folio.TaxFeeSvcAllResponse> AllWithExpireAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AllWithExpire, null, options, request);
       }
       public virtual global::HOLMS.Types.Folio.TaxFee GetById(global::HOLMS.Types.Folio.TaxFeeIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
@@ -206,6 +234,7 @@ namespace HOLMS.Types.Folio {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_All, serviceImpl.All)
+          .AddMethod(__Method_AllWithExpire, serviceImpl.AllWithExpire)
           .AddMethod(__Method_GetById, serviceImpl.GetById)
           .AddMethod(__Method_Create, serviceImpl.Create)
           .AddMethod(__Method_Update, serviceImpl.Update)

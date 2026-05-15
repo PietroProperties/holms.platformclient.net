@@ -27,31 +27,37 @@ namespace HOLMS.Types.Booking.RPC {
             "cm90bxouYm9va2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRv",
             "ci5wcm90bxorYm9va2luZy9yZXNlcnZhdGlvbnMvcmVzZXJ2YXRpb25fbm90",
             "ZS5wcm90bxozYm9va2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX25vdGVf",
-            "aW5kaWNhdG9yLnByb3RvImYKIlJlc2VydmF0aW9uTm90ZVN2Y0dldE5vdGVz",
+            "aW5kaWNhdG9yLnByb3RvGitvcGVyYXRpb25zL25vdGVfcmVxdWVzdHMvbm90",
+            "ZV9yZXF1ZXN0LnByb3RvImYKIlJlc2VydmF0aW9uTm90ZVN2Y0dldE5vdGVz",
             "UmVzcG9uc2USQAoFbm90ZXMYASADKAsyMS5ob2xtcy50eXBlcy5ib29raW5n",
             "LnJlc2VydmF0aW9ucy5SZXNlcnZhdGlvbk5vdGUigQEKIVJlc2VydmF0aW9u",
             "Tm90ZUZ1bGZpbGxtZW50UmVxdWVzdBJGCgRub3RlGAEgASgLMjguaG9sbXMu",
             "dHlwZXMuYm9va2luZy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uTm90ZUluZGlj",
-            "YXRvchIUCgxpc19mdWxmaWxsZWQYAiABKAgyuQQKElJlc2VydmF0aW9uTm90",
-            "ZVN2YxJoChJTZXROb3RlRnVsZmlsbG1lbnQSOi5ob2xtcy50eXBlcy5ib29r",
-            "aW5nLnJwYy5SZXNlcnZhdGlvbk5vdGVGdWxmaWxsbWVudFJlcXVlc3QaFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkSiAEKE0dldFJlc2VydmF0aW9uTm90ZXMS",
-            "NC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25J",
-            "bmRpY2F0b3IaOy5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5SZXNlcnZhdGlv",
-            "bk5vdGVTdmNHZXROb3Rlc1Jlc3BvbnNlEl8KEkFkZFJlc2VydmF0aW9uTm90",
-            "ZRIxLmhvbG1zLnR5cGVzLmJvb2tpbmcucmVzZXJ2YXRpb25zLlJlc2VydmF0",
-            "aW9uTm90ZRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJiChVVcGRhdGVSZXNl",
-            "cnZhdGlvbk5vdGUSMS5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0aW9u",
-            "cy5SZXNlcnZhdGlvbk5vdGUaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSaQoV",
-            "UmVtb3ZlUmVzZXJ2YXRpb25Ob3RlEjguaG9sbXMudHlwZXMuYm9va2luZy5p",
-            "bmRpY2F0b3JzLlJlc2VydmF0aW9uTm90ZUluZGljYXRvchoWLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbXB0eUInWgtib29raW5nL3JwY6oCF0hPTE1TLlR5cGVzLkJv",
-            "b2tpbmcuUlBDYgZwcm90bzM="));
+            "YXRvchIUCgxpc19mdWxmaWxsZWQYAiABKAgiLgoZTm90ZUxpbmtlZFdpdGhS",
+            "ZXNlcnZhdGlvbhIRCglpc19saW5rZWQYASABKAgywAUKElJlc2VydmF0aW9u",
+            "Tm90ZVN2YxJoChJTZXROb3RlRnVsZmlsbG1lbnQSOi5ob2xtcy50eXBlcy5i",
+            "b29raW5nLnJwYy5SZXNlcnZhdGlvbk5vdGVGdWxmaWxsbWVudFJlcXVlc3Qa",
+            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkSiAEKE0dldFJlc2VydmF0aW9uTm90",
+            "ZXMSNC5ob2xtcy50eXBlcy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRp",
+            "b25JbmRpY2F0b3IaOy5ob2xtcy50eXBlcy5ib29raW5nLnJwYy5SZXNlcnZh",
+            "dGlvbk5vdGVTdmNHZXROb3Rlc1Jlc3BvbnNlEl8KEkFkZFJlc2VydmF0aW9u",
+            "Tm90ZRIxLmhvbG1zLnR5cGVzLmJvb2tpbmcucmVzZXJ2YXRpb25zLlJlc2Vy",
+            "dmF0aW9uTm90ZRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJiChVVcGRhdGVS",
+            "ZXNlcnZhdGlvbk5vdGUSMS5ob2xtcy50eXBlcy5ib29raW5nLnJlc2VydmF0",
+            "aW9ucy5SZXNlcnZhdGlvbk5vdGUaFi5nb29nbGUucHJvdG9idWYuRW1wdHkS",
+            "aQoVUmVtb3ZlUmVzZXJ2YXRpb25Ob3RlEjguaG9sbXMudHlwZXMuYm9va2lu",
+            "Zy5pbmRpY2F0b3JzLlJlc2VydmF0aW9uTm90ZUluZGljYXRvchoWLmdvb2ds",
+            "ZS5wcm90b2J1Zi5FbXB0eRKEAQobSXNOb3RlTGlua2VkV2l0aFJlc2VydmF0",
+            "aW9uEjEuaG9sbXMudHlwZXMub3BlcmF0aW9ucy5ub3RlX3JlcXVlc3RzLk5v",
+            "dGVSZXF1ZXN0GjIuaG9sbXMudHlwZXMuYm9va2luZy5ycGMuTm90ZUxpbmtl",
+            "ZFdpdGhSZXNlcnZhdGlvbkInWgtib29raW5nL3JwY6oCF0hPTE1TLlR5cGVz",
+            "LkJvb2tpbmcuUlBDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationNoteReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationNoteIndicatorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Reservations.ReservationNoteReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationNoteIndicatorReflection.Descriptor, global::HOLMS.Types.Operations.NoteRequests.NoteRequestReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.ReservationNoteSvcGetNotesResponse), global::HOLMS.Types.Booking.RPC.ReservationNoteSvcGetNotesResponse.Parser, new[]{ "Notes" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.ReservationNoteFulfillmentRequest), global::HOLMS.Types.Booking.RPC.ReservationNoteFulfillmentRequest.Parser, new[]{ "Note", "IsFulfilled" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.ReservationNoteFulfillmentRequest), global::HOLMS.Types.Booking.RPC.ReservationNoteFulfillmentRequest.Parser, new[]{ "Note", "IsFulfilled" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.RPC.NoteLinkedWithReservation), global::HOLMS.Types.Booking.RPC.NoteLinkedWithReservation.Parser, new[]{ "IsLinked" }, null, null, null)
           }));
     }
     #endregion
@@ -310,6 +316,123 @@ namespace HOLMS.Types.Booking.RPC {
           }
           case 16: {
             IsFulfilled = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class NoteLinkedWithReservation : pb::IMessage<NoteLinkedWithReservation> {
+    private static readonly pb::MessageParser<NoteLinkedWithReservation> _parser = new pb::MessageParser<NoteLinkedWithReservation>(() => new NoteLinkedWithReservation());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<NoteLinkedWithReservation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Booking.RPC.ReservationNoteSvcReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public NoteLinkedWithReservation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public NoteLinkedWithReservation(NoteLinkedWithReservation other) : this() {
+      isLinked_ = other.isLinked_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public NoteLinkedWithReservation Clone() {
+      return new NoteLinkedWithReservation(this);
+    }
+
+    /// <summary>Field number for the "is_linked" field.</summary>
+    public const int IsLinkedFieldNumber = 1;
+    private bool isLinked_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsLinked {
+      get { return isLinked_; }
+      set {
+        isLinked_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as NoteLinkedWithReservation);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(NoteLinkedWithReservation other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsLinked != other.IsLinked) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsLinked != false) hash ^= IsLinked.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IsLinked != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsLinked);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsLinked != false) {
+        size += 1 + 1;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(NoteLinkedWithReservation other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsLinked != false) {
+        IsLinked = other.IsLinked;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            IsLinked = input.ReadBool();
             break;
           }
         }

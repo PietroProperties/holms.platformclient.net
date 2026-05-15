@@ -22,6 +22,7 @@ namespace HOLMS.Types.Supply.RPC {
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse> __Marshaller_RoomTypeSvcUpdateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.RoomTypeSvcUpdateResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Primitive.ServerActionConfirmation> __Marshaller_ServerActionConfirmation = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Primitive.ServerActionConfirmation.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse> __Marshaller_CheckDependenciesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Supply.RPC.RoomHold> __Marshaller_RoomHold = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Supply.RPC.RoomHold.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllResponse> __Method_All = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::HOLMS.Types.Supply.RPC.RoomTypeSvcAllResponse>(
         grpc::MethodType.Unary,
@@ -79,6 +80,13 @@ namespace HOLMS.Types.Supply.RPC {
         __Marshaller_RoomType,
         __Marshaller_CheckDependenciesResponse);
 
+    static readonly grpc::Method<global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator, global::HOLMS.Types.Supply.RPC.RoomHold> __Method_IsRoomTypeHold = new grpc::Method<global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator, global::HOLMS.Types.Supply.RPC.RoomHold>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "IsRoomTypeHold",
+        __Marshaller_RoomTypeIndicator,
+        __Marshaller_RoomHold);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -124,6 +132,11 @@ namespace HOLMS.Types.Supply.RPC {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.CheckDependenciesResponse> CheckDependencies(global::HOLMS.Types.Supply.RoomTypes.RoomType request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Supply.RPC.RoomHold> IsRoomTypeHold(global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -281,6 +294,22 @@ namespace HOLMS.Types.Supply.RPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_CheckDependencies, null, options, request);
       }
+      public virtual global::HOLMS.Types.Supply.RPC.RoomHold IsRoomTypeHold(global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return IsRoomTypeHold(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Supply.RPC.RoomHold IsRoomTypeHold(global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_IsRoomTypeHold, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.RoomHold> IsRoomTypeHoldAsync(global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return IsRoomTypeHoldAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Supply.RPC.RoomHold> IsRoomTypeHoldAsync(global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicator request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_IsRoomTypeHold, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override RoomTypeSvcClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -300,7 +329,8 @@ namespace HOLMS.Types.Supply.RPC {
           .AddMethod(__Method_Create, serviceImpl.Create)
           .AddMethod(__Method_Update, serviceImpl.Update)
           .AddMethod(__Method_Delete, serviceImpl.Delete)
-          .AddMethod(__Method_CheckDependencies, serviceImpl.CheckDependencies).Build();
+          .AddMethod(__Method_CheckDependencies, serviceImpl.CheckDependencies)
+          .AddMethod(__Method_IsRoomTypeHold, serviceImpl.IsRoomTypeHold).Build();
     }
 
   }
