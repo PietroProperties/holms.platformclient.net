@@ -36,68 +36,185 @@ namespace HOLMS.Types.Money.RPC {
             "cy9wcm9jZXNzb3JfdHJhbnNhY3Rpb25fcmVzdWx0LnByb3RvGjJ0ZW5hbmN5",
             "X2NvbmZpZy9pbmRpY2F0b3JzL3Byb3BlcnR5X2luZGljYXRvci5wcm90bxou",
             "Ym9va2luZy9pbmRpY2F0b3JzL3Jlc2VydmF0aW9uX2luZGljYXRvci5wcm90",
-            "bxobcHJpbWl0aXZlL3BiX2ludGVydmFsLnByb3RvIsMCCjdDYXJkUHJvY2Vz",
-            "c2luZ1N2Y1ZlcmlmeUFuZFRva2VuaXplTm90UHJlc2VudENhcmRSZXF1ZXN0",
-            "EjUKBWd1ZXN0GAEgASgLMiYuaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVz",
-            "dEluZGljYXRvchJKCghwcm9wZXJ0eRgCIAEoCzI4LmhvbG1zLnR5cGVzLnRl",
-            "bmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3ISPAoE",
-            "Y2FyZBgDIAEoCzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLk5vdFByZXNl",
-            "bnRQYXltZW50Q2FyZBJHCglyZXNfZm9saW8YBCABKAsyNC5ob2xtcy50eXBl",
-            "cy5ib29raW5nLmluZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3Ii0QEK",
-            "OENhcmRQcm9jZXNzaW5nU3ZjVmVyaWZ5QW5kVG9rZW5pemVOb3RQcmVzZW50",
-            "Q2FyZFJlc3BvbnNlElAKBnJlc3VsdBgBIAEoDjJALmhvbG1zLnR5cGVzLm1v",
-            "bmV5LmNhcmRzLnRyYW5zYWN0aW9ucy5Qcm9jZXNzb3JUcmFuc2FjdGlvblJl",
-            "c3VsdBJDCgRjYXJkGAIgASgLMjUuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMu",
-            "Q3VzdG9tZXJQYXltZW50Q2FyZEluZGljYXRvciJnChlNZXJjaGFudEJhdGNo",
-            "RW51bVJlc3BvbnNlEkoKB2JhdGNoZXMYASADKAsyOS5ob2xtcy50eXBlcy5t",
-            "b25leS5jYXJkcy50cmFuc2FjdGlvbnMuQ2xvc2VkTWVyY2hhbnRCYXRjaCKs",
-            "AQovQ2FyZFByb2Nlc3NpbmdTdmNTZWFyY2hIaXN0b3JpY2FsQmF0Y2hlc1Jl",
-            "cXVlc3QSQAoIbWVyY2hhbnQYASABKAsyLi5ob2xtcy50eXBlcy5tb25leS5j",
-            "YXJkcy5DYXJkTWVyY2hhbnRJbmRpY2F0b3ISNwoMc2VhcmNoX3JhbmdlGAIg",
-            "ASgLMiEuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiSW50ZXJ2YWwixgEKL0Nh",
-            "cmRQcm9jZXNzaW5nU3ZjU2VhcmNoT3BlbkNsb3NlZEJhdGNoZXNSZXF1ZXN0",
-            "EkAKCG1lcmNoYW50GAEgASgLMi4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMu",
-            "Q2FyZE1lcmNoYW50SW5kaWNhdG9yEjwKEXNlYXJjaF9kYXRlX3JhbmdlGAIg",
-            "ASgLMiEuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiSW50ZXJ2YWwSEwoLY2Fy",
-            "ZF9udW1iZXIYAyABKAkieQooQ2FyZFByb2Nlc3NpbmdTdmNWb2lkVHJhbnNh",
-            "Y3Rpb25SZXNwb25zZRJNCgZyZXN1bHQYASABKA4yPS5ob2xtcy50eXBlcy5t",
-            "b25leS5ycGMuQ2FyZFByb2Nlc3NpbmdTdmNWb2lkVHJhbnNhY3Rpb25SZXN1",
-            "bHQq/wEKJkNhcmRQcm9jZXNzaW5nU3ZjVm9pZFRyYW5zYWN0aW9uUmVzdWx0",
-            "EjAKLENBUkRfUFJPQ0VTU0lOR19TVkNfVk9JRF9UUkFOU0FDVElPTl9TVUND",
-            "RVNTEAASMgouQ0FSRF9QUk9DRVNTSU5HX1NWQ19WT0lEX1RSQU5TQUNUSU9O",
-            "X05PVF9GT1VORBABEjUKMUNBUkRfUFJPQ0VTU0lOR19TVkNfVk9JRF9UUkFO",
-            "U0FDVElPTl9OT1RfVk9JREFCTEUQAhI4CjRDQVJEX1BST0NFU1NJTkdfU1ZD",
-            "X1ZPSURfVFJBTlNBQ1RJT05fVU5LTk9XTl9GQUlMVVJFEAMywAgKEUNhcmRQ",
-            "cm9jZXNzaW5nU3ZjEsIBCh9WZXJpZnlBbmRUb2tlbml6ZU5vdFByZXNlbnRD",
-            "YXJkEk4uaG9sbXMudHlwZXMubW9uZXkucnBjLkNhcmRQcm9jZXNzaW5nU3Zj",
-            "VmVyaWZ5QW5kVG9rZW5pemVOb3RQcmVzZW50Q2FyZFJlcXVlc3QaTy5ob2xt",
-            "cy50eXBlcy5tb25leS5ycGMuQ2FyZFByb2Nlc3NpbmdTdmNWZXJpZnlBbmRU",
-            "b2tlbml6ZU5vdFByZXNlbnRDYXJkUmVzcG9uc2UShwEKFEdldEN1cnJlbnRC",
-            "YXRjaFN0YXRlEi4uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZE1lcmNo",
-            "YW50SW5kaWNhdG9yGj8uaG9sbXMudHlwZXMubW9uZXkuY2FyZHMudHJhbnNh",
-            "Y3Rpb25zLkdldE9wZW5CYXRjaFN0YXRlUmVzcG9uc2USkwEKF1NlYXJjaEhp",
-            "c3RvcmljYWxCYXRjaGVzEkYuaG9sbXMudHlwZXMubW9uZXkucnBjLkNhcmRQ",
-            "cm9jZXNzaW5nU3ZjU2VhcmNoSGlzdG9yaWNhbEJhdGNoZXNSZXF1ZXN0GjAu",
-            "aG9sbXMudHlwZXMubW9uZXkucnBjLk1lcmNoYW50QmF0Y2hFbnVtUmVzcG9u",
-            "c2USgAEKE0Nsb3NlUHJvY2Vzc29yQmF0Y2gSLi5ob2xtcy50eXBlcy5tb25l",
-            "eS5jYXJkcy5DYXJkTWVyY2hhbnRJbmRpY2F0b3IaOS5ob2xtcy50eXBlcy5t",
-            "b25leS5jYXJkcy50cmFuc2FjdGlvbnMuQ2xvc2VkTWVyY2hhbnRCYXRjaBKL",
-            "AQoIVm9pZFNhbGUSPi5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2Fj",
-            "dGlvbnMuUGF5bWVudENhcmRTYWxlSW5kaWNhdG9yGj8uaG9sbXMudHlwZXMu",
-            "bW9uZXkucnBjLkNhcmRQcm9jZXNzaW5nU3ZjVm9pZFRyYW5zYWN0aW9uUmVz",
-            "cG9uc2USjwEKClZvaWRSZWZ1bmQSQC5ob2xtcy50eXBlcy5tb25leS5jYXJk",
-            "cy50cmFuc2FjdGlvbnMuUGF5bWVudENhcmRSZWZ1bmRJbmRpY2F0b3IaPy5o",
-            "b2xtcy50eXBlcy5tb25leS5ycGMuQ2FyZFByb2Nlc3NpbmdTdmNWb2lkVHJh",
-            "bnNhY3Rpb25SZXNwb25zZRKiAQoXR2V0T3BlbkNsb3NlZEJhdGNoU3RhdGUS",
-            "Ri5ob2xtcy50eXBlcy5tb25leS5ycGMuQ2FyZFByb2Nlc3NpbmdTdmNTZWFy",
-            "Y2hPcGVuQ2xvc2VkQmF0Y2hlc1JlcXVlc3QaPy5ob2xtcy50eXBlcy5tb25l",
-            "eS5jYXJkcy50cmFuc2FjdGlvbnMuR2V0T3BlbkJhdGNoU3RhdGVSZXNwb25z",
-            "ZUIYqgIVSE9MTVMuVHlwZXMuTW9uZXkuUlBDYgZwcm90bzM="));
+            "bxobcHJpbWl0aXZlL3BiX2ludGVydmFsLnByb3RvGh9wcmltaXRpdmUvbW9u",
+            "ZXRhcnlfYW1vdW50LnByb3RvIsMCCjdDYXJkUHJvY2Vzc2luZ1N2Y1Zlcmlm",
+            "eUFuZFRva2VuaXplTm90UHJlc2VudENhcmRSZXF1ZXN0EjUKBWd1ZXN0GAEg",
+            "ASgLMiYuaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5HdWVzdEluZGljYXRvchJK",
+            "Cghwcm9wZXJ0eRgCIAEoCzI4LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmln",
+            "LmluZGljYXRvcnMuUHJvcGVydHlJbmRpY2F0b3ISPAoEY2FyZBgDIAEoCzIu",
+            "LmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLk5vdFByZXNlbnRQYXltZW50Q2Fy",
+            "ZBJHCglyZXNfZm9saW8YBCABKAsyNC5ob2xtcy50eXBlcy5ib29raW5nLmlu",
+            "ZGljYXRvcnMuUmVzZXJ2YXRpb25JbmRpY2F0b3Ii0QEKOENhcmRQcm9jZXNz",
+            "aW5nU3ZjVmVyaWZ5QW5kVG9rZW5pemVOb3RQcmVzZW50Q2FyZFJlc3BvbnNl",
+            "ElAKBnJlc3VsdBgBIAEoDjJALmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLnRy",
+            "YW5zYWN0aW9ucy5Qcm9jZXNzb3JUcmFuc2FjdGlvblJlc3VsdBJDCgRjYXJk",
+            "GAIgASgLMjUuaG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ3VzdG9tZXJQYXlt",
+            "ZW50Q2FyZEluZGljYXRvciKqAQoxQ2FyZFByb2Nlc3NpbmdTdmNJbml0aWF0",
+            "ZUhvc3RlZENhcmRDYXB0dXJlUmVxdWVzdBJKCghwcm9wZXJ0eRgBIAEoCzI4",
+            "LmhvbG1zLnR5cGVzLnRlbmFuY3lfY29uZmlnLmluZGljYXRvcnMuUHJvcGVy",
+            "dHlJbmRpY2F0b3ISFAoMcGF5bWVudF9tb2RlGAIgASgJEhMKC3RvdGFsX3By",
+            "aWNlGAMgASgBIpsBCjJDYXJkUHJvY2Vzc2luZ1N2Y0luaXRpYXRlSG9zdGVk",
+            "Q2FyZENhcHR1cmVSZXNwb25zZRIgChhpc19ob3N0ZWRfY2FwdHVyZV9hY3Rp",
+            "dmUYASABKAgSEwoLaWZyYW1lX2h0bWwYAiABKAkSEwoLc2Vzc2lvbl9rZXkY",
+            "AyABKAkSGQoRY2xpZW50X3NjcmlwdF91cmwYBCABKAkihwUKP0NhcmRQcm9j",
+            "ZXNzaW5nU3ZjVmVyaWZ5QW5kVG9rZW5pemVFeHRlcm5hbGx5Q2FwdHVyZWRD",
+            "YXJkUmVxdWVzdBI1CgVndWVzdBgBIAEoCzImLmhvbG1zLnR5cGVzLmNybS5n",
+            "dWVzdHMuR3Vlc3RJbmRpY2F0b3ISSgoIcHJvcGVydHkYAiABKAsyOC5ob2xt",
+            "cy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5k",
+            "aWNhdG9yEhMKC3Nlc3Npb25fa2V5GAMgASgJEhMKC3BheW1lbnRfa2V5GAQg",
+            "ASgJEhcKD2NhcmRob2xkZXJfbmFtZRgFIAEoCRIPCgd6aXBjb2RlGAYgASgJ",
+            "EjwKDWNoYXJnZV9hbW91bnQYByABKAsyJS5ob2xtcy50eXBlcy5wcmltaXRp",
+            "dmUuTW9uZXRhcnlBbW91bnQSOQoKdGF4X2Ftb3VudBgIIAEoCzIlLmhvbG1z",
+            "LnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBIUCgxjaGVja2luX2Rh",
+            "dGUYCSABKAkSFQoNY2hlY2tvdXRfZGF0ZRgKIAEoCRIUCgxleHBpcnlfbW9u",
+            "dGgYCyABKAUSHgoWZm91cl9kaWdpdF9leHBpcnlfeWVhchgMIAEoBRJICg9i",
+            "aWxsaW5nX2FkZHJlc3MYDSABKAsyLy5ob2xtcy50eXBlcy5tb25leS5ycGMu",
+            "RnJlZWRvbVBheUJpbGxpbmdBZGRyZXNzEhUKDXJlcXVlc3RfdG9rZW4YDiAB",
+            "KAgSGgoSbWFza2VkX2NhcmRfbnVtYmVyGA8gASgJEhQKDHBheW1lbnRfbW9k",
+            "ZRgQIAEoCSKhBAotQ2FyZFByb2Nlc3NpbmdTdmNQcm9jZXNzRnJlZWRvbVBh",
+            "eVNhbGVSZXF1ZXN0EkoKCHByb3BlcnR5GAEgASgLMjguaG9sbXMudHlwZXMu",
+            "dGVuYW5jeV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRvchIT",
+            "CgtzZXNzaW9uX2tleRgCIAEoCRITCgtwYXltZW50X2tleRgDIAEoCRIXCg9j",
+            "YXJkaG9sZGVyX25hbWUYBCABKAkSPAoNY2hhcmdlX2Ftb3VudBgFIAEoCzIl",
+            "LmhvbG1zLnR5cGVzLnByaW1pdGl2ZS5Nb25ldGFyeUFtb3VudBI5Cgp0YXhf",
+            "YW1vdW50GAYgASgLMiUuaG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5",
+            "QW1vdW50EhQKDGNoZWNraW5fZGF0ZRgHIAEoCRIVCg1jaGVja291dF9kYXRl",
+            "GAggASgJEh8KF21lcmNoYW50X3JlZmVyZW5jZV9jb2RlGAkgASgJEkgKD2Jp",
+            "bGxpbmdfYWRkcmVzcxgKIAEoCzIvLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5G",
+            "cmVlZG9tUGF5QmlsbGluZ0FkZHJlc3MSGgoSbWFza2VkX2NhcmRfbnVtYmVy",
+            "GAsgASgJEhQKDGV4cGlyeV9tb250aBgMIAEoBRIeChZmb3VyX2RpZ2l0X2V4",
+            "cGlyeV95ZWFyGA0gASgFIvkBCi5DYXJkUHJvY2Vzc2luZ1N2Y1Byb2Nlc3NG",
+            "cmVlZG9tUGF5U2FsZVJlc3BvbnNlEkwKBnJlc3VsdBgBIAEoDjI8LmhvbG1z",
+            "LnR5cGVzLm1vbmV5LnJwYy5DYXJkUHJvY2Vzc2luZ1N2Y0ZyZWVkb21QYXlT",
+            "YWxlUmVzdWx0EhIKCnJlcXVlc3RfaWQYAiABKAkSGgoSYXV0aG9yaXphdGlv",
+            "bl9jb2RlGAMgASgJEhIKCm1hc2tlZF9wYW4YBCABKAkSEgoKYnJhbmRfY29k",
+            "ZRgFIAEoCRIQCghhdnNfY29kZRgGIAEoCRIPCgdjdl9jb2RlGAcgASgJIpoB",
+            "ChhGcmVlZG9tUGF5QmlsbGluZ0FkZHJlc3MSEgoKZmlyc3RfbmFtZRgBIAEo",
+            "CRIRCglsYXN0X25hbWUYAiABKAkSDwoHc3RyZWV0MRgDIAEoCRIMCgRjaXR5",
+            "GAQgASgJEg0KBXN0YXRlGAUgASgJEhMKC3Bvc3RhbF9jb2RlGAYgASgJEhQK",
+            "DGNvdW50cnlfY29kZRgHIAEoCSL6AgosQ2FyZFByb2Nlc3NpbmdTdmNWZXJp",
+            "ZnlGcmVlZG9tUGF5Q2FyZFJlcXVlc3QSSgoIcHJvcGVydHkYASABKAsyOC5o",
+            "b2xtcy50eXBlcy50ZW5hbmN5X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5",
+            "SW5kaWNhdG9yEhMKC3Nlc3Npb25fa2V5GAIgASgJEhMKC3BheW1lbnRfa2V5",
+            "GAMgASgJEhcKD2NhcmRob2xkZXJfbmFtZRgEIAEoCRJICg9iaWxsaW5nX2Fk",
+            "ZHJlc3MYBSABKAsyLy5ob2xtcy50eXBlcy5tb25leS5ycGMuRnJlZWRvbVBh",
+            "eUJpbGxpbmdBZGRyZXNzEh8KF21lcmNoYW50X3JlZmVyZW5jZV9jb2RlGAYg",
+            "ASgJEhoKEm1hc2tlZF9jYXJkX251bWJlchgHIAEoCRIUCgxleHBpcnlfbW9u",
+            "dGgYCCABKAUSHgoWZm91cl9kaWdpdF9leHBpcnlfeWVhchgJIAEoBSK0AQot",
+            "Q2FyZFByb2Nlc3NpbmdTdmNWZXJpZnlGcmVlZG9tUGF5Q2FyZFJlc3BvbnNl",
+            "EkwKBnJlc3VsdBgBIAEoDjI8LmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5DYXJk",
+            "UHJvY2Vzc2luZ1N2Y0ZyZWVkb21QYXlTYWxlUmVzdWx0EhIKCnJlcXVlc3Rf",
+            "aWQYAiABKAkSEAoIYXZzX2NvZGUYAyABKAkSDwoHY3ZfY29kZRgEIAEoCSL4",
+            "AQowQ2FyZFByb2Nlc3NpbmdTdmNQcm9jZXNzRnJlZWRvbVBheUNhcHR1cmVS",
+            "ZXF1ZXN0EkoKCHByb3BlcnR5GAEgASgLMjguaG9sbXMudHlwZXMudGVuYW5j",
+            "eV9jb25maWcuaW5kaWNhdG9ycy5Qcm9wZXJ0eUluZGljYXRvchIYChBvcmRl",
+            "cl9yZXF1ZXN0X2lkGAIgASgJEj0KDmNhcHR1cmVfYW1vdW50GAMgASgLMiUu",
+            "aG9sbXMudHlwZXMucHJpbWl0aXZlLk1vbmV0YXJ5QW1vdW50Eh8KF21lcmNo",
+            "YW50X3JlZmVyZW5jZV9jb2RlGAQgASgJIpUBCjFDYXJkUHJvY2Vzc2luZ1N2",
+            "Y1Byb2Nlc3NGcmVlZG9tUGF5Q2FwdHVyZVJlc3BvbnNlEkwKBnJlc3VsdBgB",
+            "IAEoDjI8LmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5DYXJkUHJvY2Vzc2luZ1N2",
+            "Y0ZyZWVkb21QYXlTYWxlUmVzdWx0EhIKCnJlcXVlc3RfaWQYAiABKAkiswIK",
+            "MUNhcmRQcm9jZXNzaW5nU3ZjUHJvY2Vzc0ZyZWVkb21QYXlUb2tlbk1pdFJl",
+            "cXVlc3QSSgoIcHJvcGVydHkYASABKAsyOC5ob2xtcy50eXBlcy50ZW5hbmN5",
+            "X2NvbmZpZy5pbmRpY2F0b3JzLlByb3BlcnR5SW5kaWNhdG9yEkMKBGNhcmQY",
+            "AiABKAsyNS5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5DdXN0b21lclBheW1l",
+            "bnRDYXJkSW5kaWNhdG9yEjwKDWNoYXJnZV9hbW91bnQYAyABKAsyJS5ob2xt",
+            "cy50eXBlcy5wcmltaXRpdmUuTW9uZXRhcnlBbW91bnQSHwoXbWVyY2hhbnRf",
+            "cmVmZXJlbmNlX2NvZGUYBCABKAkSDgoGcmVhc29uGAUgASgJIrIBCjJDYXJk",
+            "UHJvY2Vzc2luZ1N2Y1Byb2Nlc3NGcmVlZG9tUGF5VG9rZW5NaXRSZXNwb25z",
+            "ZRJMCgZyZXN1bHQYASABKA4yPC5ob2xtcy50eXBlcy5tb25leS5ycGMuQ2Fy",
+            "ZFByb2Nlc3NpbmdTdmNGcmVlZG9tUGF5U2FsZVJlc3VsdBISCgpyZXF1ZXN0",
+            "X2lkGAIgASgJEhoKEmF1dGhvcml6YXRpb25fY29kZRgDIAEoCSJnChlNZXJj",
+            "aGFudEJhdGNoRW51bVJlc3BvbnNlEkoKB2JhdGNoZXMYASADKAsyOS5ob2xt",
+            "cy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuQ2xvc2VkTWVyY2hh",
+            "bnRCYXRjaCKsAQovQ2FyZFByb2Nlc3NpbmdTdmNTZWFyY2hIaXN0b3JpY2Fs",
+            "QmF0Y2hlc1JlcXVlc3QSQAoIbWVyY2hhbnQYASABKAsyLi5ob2xtcy50eXBl",
+            "cy5tb25leS5jYXJkcy5DYXJkTWVyY2hhbnRJbmRpY2F0b3ISNwoMc2VhcmNo",
+            "X3JhbmdlGAIgASgLMiEuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiSW50ZXJ2",
+            "YWwixgEKL0NhcmRQcm9jZXNzaW5nU3ZjU2VhcmNoT3BlbkNsb3NlZEJhdGNo",
+            "ZXNSZXF1ZXN0EkAKCG1lcmNoYW50GAEgASgLMi4uaG9sbXMudHlwZXMubW9u",
+            "ZXkuY2FyZHMuQ2FyZE1lcmNoYW50SW5kaWNhdG9yEjwKEXNlYXJjaF9kYXRl",
+            "X3JhbmdlGAIgASgLMiEuaG9sbXMudHlwZXMucHJpbWl0aXZlLlBiSW50ZXJ2",
+            "YWwSEwoLY2FyZF9udW1iZXIYAyABKAkieQooQ2FyZFByb2Nlc3NpbmdTdmNW",
+            "b2lkVHJhbnNhY3Rpb25SZXNwb25zZRJNCgZyZXN1bHQYASABKA4yPS5ob2xt",
+            "cy50eXBlcy5tb25leS5ycGMuQ2FyZFByb2Nlc3NpbmdTdmNWb2lkVHJhbnNh",
+            "Y3Rpb25SZXN1bHQqvAEKJUNhcmRQcm9jZXNzaW5nU3ZjRnJlZWRvbVBheVNh",
+            "bGVSZXN1bHQSMAosQ0FSRF9QUk9DRVNTSU5HX1NWQ19GUkVFRE9NX1BBWV9T",
+            "QUxFX1NVQ0NFU1MQABIxCi1DQVJEX1BST0NFU1NJTkdfU1ZDX0ZSRUVET01f",
+            "UEFZX1NBTEVfREVDTElORUQQARIuCipDQVJEX1BST0NFU1NJTkdfU1ZDX0ZS",
+            "RUVET01fUEFZX1NBTEVfRVJST1IQAir/AQomQ2FyZFByb2Nlc3NpbmdTdmNW",
+            "b2lkVHJhbnNhY3Rpb25SZXN1bHQSMAosQ0FSRF9QUk9DRVNTSU5HX1NWQ19W",
+            "T0lEX1RSQU5TQUNUSU9OX1NVQ0NFU1MQABIyCi5DQVJEX1BST0NFU1NJTkdf",
+            "U1ZDX1ZPSURfVFJBTlNBQ1RJT05fTk9UX0ZPVU5EEAESNQoxQ0FSRF9QUk9D",
+            "RVNTSU5HX1NWQ19WT0lEX1RSQU5TQUNUSU9OX05PVF9WT0lEQUJMRRACEjgK",
+            "NENBUkRfUFJPQ0VTU0lOR19TVkNfVk9JRF9UUkFOU0FDVElPTl9VTktOT1dO",
+            "X0ZBSUxVUkUQAzL2EAoRQ2FyZFByb2Nlc3NpbmdTdmMSwgEKH1ZlcmlmeUFu",
+            "ZFRva2VuaXplTm90UHJlc2VudENhcmQSTi5ob2xtcy50eXBlcy5tb25leS5y",
+            "cGMuQ2FyZFByb2Nlc3NpbmdTdmNWZXJpZnlBbmRUb2tlbml6ZU5vdFByZXNl",
+            "bnRDYXJkUmVxdWVzdBpPLmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5DYXJkUHJv",
+            "Y2Vzc2luZ1N2Y1ZlcmlmeUFuZFRva2VuaXplTm90UHJlc2VudENhcmRSZXNw",
+            "b25zZRKwAQoZSW5pdGlhdGVIb3N0ZWRDYXJkQ2FwdHVyZRJILmhvbG1zLnR5",
+            "cGVzLm1vbmV5LnJwYy5DYXJkUHJvY2Vzc2luZ1N2Y0luaXRpYXRlSG9zdGVk",
+            "Q2FyZENhcHR1cmVSZXF1ZXN0GkkuaG9sbXMudHlwZXMubW9uZXkucnBjLkNh",
+            "cmRQcm9jZXNzaW5nU3ZjSW5pdGlhdGVIb3N0ZWRDYXJkQ2FwdHVyZVJlc3Bv",
+            "bnNlEtIBCidWZXJpZnlBbmRUb2tlbml6ZUV4dGVybmFsbHlDYXB0dXJlZENh",
+            "cmQSVi5ob2xtcy50eXBlcy5tb25leS5ycGMuQ2FyZFByb2Nlc3NpbmdTdmNW",
+            "ZXJpZnlBbmRUb2tlbml6ZUV4dGVybmFsbHlDYXB0dXJlZENhcmRSZXF1ZXN0",
+            "Gk8uaG9sbXMudHlwZXMubW9uZXkucnBjLkNhcmRQcm9jZXNzaW5nU3ZjVmVy",
+            "aWZ5QW5kVG9rZW5pemVOb3RQcmVzZW50Q2FyZFJlc3BvbnNlEqQBChVQcm9j",
+            "ZXNzRnJlZWRvbVBheVNhbGUSRC5ob2xtcy50eXBlcy5tb25leS5ycGMuQ2Fy",
+            "ZFByb2Nlc3NpbmdTdmNQcm9jZXNzRnJlZWRvbVBheVNhbGVSZXF1ZXN0GkUu",
+            "aG9sbXMudHlwZXMubW9uZXkucnBjLkNhcmRQcm9jZXNzaW5nU3ZjUHJvY2Vz",
+            "c0ZyZWVkb21QYXlTYWxlUmVzcG9uc2USoQEKFFZlcmlmeUZyZWVkb21QYXlD",
+            "YXJkEkMuaG9sbXMudHlwZXMubW9uZXkucnBjLkNhcmRQcm9jZXNzaW5nU3Zj",
+            "VmVyaWZ5RnJlZWRvbVBheUNhcmRSZXF1ZXN0GkQuaG9sbXMudHlwZXMubW9u",
+            "ZXkucnBjLkNhcmRQcm9jZXNzaW5nU3ZjVmVyaWZ5RnJlZWRvbVBheUNhcmRS",
+            "ZXNwb25zZRKtAQoYUHJvY2Vzc0ZyZWVkb21QYXlDYXB0dXJlEkcuaG9sbXMu",
+            "dHlwZXMubW9uZXkucnBjLkNhcmRQcm9jZXNzaW5nU3ZjUHJvY2Vzc0ZyZWVk",
+            "b21QYXlDYXB0dXJlUmVxdWVzdBpILmhvbG1zLnR5cGVzLm1vbmV5LnJwYy5D",
+            "YXJkUHJvY2Vzc2luZ1N2Y1Byb2Nlc3NGcmVlZG9tUGF5Q2FwdHVyZVJlc3Bv",
+            "bnNlErABChlQcm9jZXNzRnJlZWRvbVBheVRva2VuTWl0EkguaG9sbXMudHlw",
+            "ZXMubW9uZXkucnBjLkNhcmRQcm9jZXNzaW5nU3ZjUHJvY2Vzc0ZyZWVkb21Q",
+            "YXlUb2tlbk1pdFJlcXVlc3QaSS5ob2xtcy50eXBlcy5tb25leS5ycGMuQ2Fy",
+            "ZFByb2Nlc3NpbmdTdmNQcm9jZXNzRnJlZWRvbVBheVRva2VuTWl0UmVzcG9u",
+            "c2UShwEKFEdldEN1cnJlbnRCYXRjaFN0YXRlEi4uaG9sbXMudHlwZXMubW9u",
+            "ZXkuY2FyZHMuQ2FyZE1lcmNoYW50SW5kaWNhdG9yGj8uaG9sbXMudHlwZXMu",
+            "bW9uZXkuY2FyZHMudHJhbnNhY3Rpb25zLkdldE9wZW5CYXRjaFN0YXRlUmVz",
+            "cG9uc2USkwEKF1NlYXJjaEhpc3RvcmljYWxCYXRjaGVzEkYuaG9sbXMudHlw",
+            "ZXMubW9uZXkucnBjLkNhcmRQcm9jZXNzaW5nU3ZjU2VhcmNoSGlzdG9yaWNh",
+            "bEJhdGNoZXNSZXF1ZXN0GjAuaG9sbXMudHlwZXMubW9uZXkucnBjLk1lcmNo",
+            "YW50QmF0Y2hFbnVtUmVzcG9uc2USgAEKE0Nsb3NlUHJvY2Vzc29yQmF0Y2gS",
+            "Li5ob2xtcy50eXBlcy5tb25leS5jYXJkcy5DYXJkTWVyY2hhbnRJbmRpY2F0",
+            "b3IaOS5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuQ2xv",
+            "c2VkTWVyY2hhbnRCYXRjaBKLAQoIVm9pZFNhbGUSPi5ob2xtcy50eXBlcy5t",
+            "b25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVudENhcmRTYWxlSW5kaWNh",
+            "dG9yGj8uaG9sbXMudHlwZXMubW9uZXkucnBjLkNhcmRQcm9jZXNzaW5nU3Zj",
+            "Vm9pZFRyYW5zYWN0aW9uUmVzcG9uc2USjwEKClZvaWRSZWZ1bmQSQC5ob2xt",
+            "cy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVudENhcmRS",
+            "ZWZ1bmRJbmRpY2F0b3IaPy5ob2xtcy50eXBlcy5tb25leS5ycGMuQ2FyZFBy",
+            "b2Nlc3NpbmdTdmNWb2lkVHJhbnNhY3Rpb25SZXNwb25zZRKiAQoXR2V0T3Bl",
+            "bkNsb3NlZEJhdGNoU3RhdGUSRi5ob2xtcy50eXBlcy5tb25leS5ycGMuQ2Fy",
+            "ZFByb2Nlc3NpbmdTdmNTZWFyY2hPcGVuQ2xvc2VkQmF0Y2hlc1JlcXVlc3Qa",
+            "Py5ob2xtcy50eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuR2V0T3Bl",
+            "bkJhdGNoU3RhdGVSZXNwb25zZUIYqgIVSE9MTVMuVHlwZXMuTW9uZXkuUlBD",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.NotPresentPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatchReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponseReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbIntervalReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResult), }, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::FileDescriptor[] { global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.NotPresentPaymentCardReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ClosedMerchantBatchReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponseReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.ProcessorTransactionResultReflection.Descriptor, global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Indicators.ReservationIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbIntervalReflection.Descriptor, global::HOLMS.Types.Primitive.MonetaryAmountReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult), typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVoidTransactionResult), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest.Parser, new[]{ "Guest", "Property", "Card", "ResFolio" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse.Parser, new[]{ "Result", "Card" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureRequest.Parser, new[]{ "Property", "PaymentMode", "TotalPrice" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureResponse.Parser, new[]{ "IsHostedCaptureActive", "IframeHtml", "SessionKey", "ClientScriptUrl" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest.Parser, new[]{ "Guest", "Property", "SessionKey", "PaymentKey", "CardholderName", "Zipcode", "ChargeAmount", "TaxAmount", "CheckinDate", "CheckoutDate", "ExpiryMonth", "FourDigitExpiryYear", "BillingAddress", "RequestToken", "MaskedCardNumber", "PaymentMode" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleRequest.Parser, new[]{ "Property", "SessionKey", "PaymentKey", "CardholderName", "ChargeAmount", "TaxAmount", "CheckinDate", "CheckoutDate", "MerchantReferenceCode", "BillingAddress", "MaskedCardNumber", "ExpiryMonth", "FourDigitExpiryYear" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleResponse.Parser, new[]{ "Result", "RequestId", "AuthorizationCode", "MaskedPan", "BrandCode", "AvsCode", "CvCode" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress), global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress.Parser, new[]{ "FirstName", "LastName", "Street1", "City", "State", "PostalCode", "CountryCode" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardRequest.Parser, new[]{ "Property", "SessionKey", "PaymentKey", "CardholderName", "BillingAddress", "MerchantReferenceCode", "MaskedCardNumber", "ExpiryMonth", "FourDigitExpiryYear" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardResponse.Parser, new[]{ "Result", "RequestId", "AvsCode", "CvCode" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureRequest.Parser, new[]{ "Property", "OrderRequestId", "CaptureAmount", "MerchantReferenceCode" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureResponse.Parser, new[]{ "Result", "RequestId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitRequest.Parser, new[]{ "Property", "Card", "ChargeAmount", "MerchantReferenceCode", "Reason" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitResponse), global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitResponse.Parser, new[]{ "Result", "RequestId", "AuthorizationCode" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse), global::HOLMS.Types.Money.RPC.MerchantBatchEnumResponse.Parser, new[]{ "Batches" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest.Parser, new[]{ "Merchant", "SearchRange" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchOpenClosedBatchesRequest), global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchOpenClosedBatchesRequest.Parser, new[]{ "Merchant", "SearchDateRange", "CardNumber" }, null, null, null),
@@ -108,6 +225,12 @@ namespace HOLMS.Types.Money.RPC {
 
   }
   #region Enums
+  public enum CardProcessingSvcFreedomPaySaleResult {
+    [pbr::OriginalName("CARD_PROCESSING_SVC_FREEDOM_PAY_SALE_SUCCESS")] CardProcessingSvcFreedomPaySaleSuccess = 0,
+    [pbr::OriginalName("CARD_PROCESSING_SVC_FREEDOM_PAY_SALE_DECLINED")] CardProcessingSvcFreedomPaySaleDeclined = 1,
+    [pbr::OriginalName("CARD_PROCESSING_SVC_FREEDOM_PAY_SALE_ERROR")] CardProcessingSvcFreedomPaySaleError = 2,
+  }
+
   public enum CardProcessingSvcVoidTransactionResult {
     [pbr::OriginalName("CARD_PROCESSING_SVC_VOID_TRANSACTION_SUCCESS")] CardProcessingSvcVoidTransactionSuccess = 0,
     [pbr::OriginalName("CARD_PROCESSING_SVC_VOID_TRANSACTION_NOT_FOUND")] CardProcessingSvcVoidTransactionNotFound = 1,
@@ -494,6 +617,3436 @@ namespace HOLMS.Types.Money.RPC {
 
   }
 
+  /// <summary>
+  /// Used by hosted-iframe processors (currently FreedomPay HPC) to stand up the browser-side
+  /// card-capture UI. Card data never reaches this app's clients (booking engine, LodgeIC) or
+  /// this server -- it's captured directly by the processor's iframe in the cardholder's browser.
+  /// </summary>
+  public sealed partial class CardProcessingSvcInitiateHostedCardCaptureRequest : pb::IMessage<CardProcessingSvcInitiateHostedCardCaptureRequest> {
+    private static readonly pb::MessageParser<CardProcessingSvcInitiateHostedCardCaptureRequest> _parser = new pb::MessageParser<CardProcessingSvcInitiateHostedCardCaptureRequest>(() => new CardProcessingSvcInitiateHostedCardCaptureRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcInitiateHostedCardCaptureRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcInitiateHostedCardCaptureRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcInitiateHostedCardCaptureRequest(CardProcessingSvcInitiateHostedCardCaptureRequest other) : this() {
+      Property = other.property_ != null ? other.Property.Clone() : null;
+      paymentMode_ = other.paymentMode_;
+      totalPrice_ = other.totalPrice_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcInitiateHostedCardCaptureRequest Clone() {
+      return new CardProcessingSvcInitiateHostedCardCaptureRequest(this);
+    }
+
+    /// <summary>Field number for the "property" field.</summary>
+    public const int PropertyFieldNumber = 1;
+    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
+      get { return property_; }
+      set {
+        property_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "payment_mode" field.</summary>
+    public const int PaymentModeFieldNumber = 2;
+    private string paymentMode_ = "";
+    /// <summary>
+    /// "Card" | "GPay" | "ApplePay" -- selects which FreedomPay HPC iframe (card entry vs wallet
+    /// button) controls/init stands up. Empty/unrecognized falls back to "Card".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PaymentMode {
+      get { return paymentMode_; }
+      set {
+        paymentMode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "total_price" field.</summary>
+    public const int TotalPriceFieldNumber = 3;
+    private double totalPrice_;
+    /// <summary>
+    /// Reservation total, required by FreedomPay's controls/init payload for GPay/ApplePay (shown
+    /// on the native wallet sheet) -- unused for Card mode.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double TotalPrice {
+      get { return totalPrice_; }
+      set {
+        totalPrice_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcInitiateHostedCardCaptureRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcInitiateHostedCardCaptureRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Property, other.Property)) return false;
+      if (PaymentMode != other.PaymentMode) return false;
+      if (TotalPrice != other.TotalPrice) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (property_ != null) hash ^= Property.GetHashCode();
+      if (PaymentMode.Length != 0) hash ^= PaymentMode.GetHashCode();
+      if (TotalPrice != 0D) hash ^= TotalPrice.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (property_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Property);
+      }
+      if (PaymentMode.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PaymentMode);
+      }
+      if (TotalPrice != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(TotalPrice);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (property_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
+      }
+      if (PaymentMode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PaymentMode);
+      }
+      if (TotalPrice != 0D) {
+        size += 1 + 8;
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcInitiateHostedCardCaptureRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.property_ != null) {
+        if (property_ == null) {
+          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+        }
+        Property.MergeFrom(other.Property);
+      }
+      if (other.PaymentMode.Length != 0) {
+        PaymentMode = other.PaymentMode;
+      }
+      if (other.TotalPrice != 0D) {
+        TotalPrice = other.TotalPrice;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (property_ == null) {
+              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+            }
+            input.ReadMessage(property_);
+            break;
+          }
+          case 18: {
+            PaymentMode = input.ReadString();
+            break;
+          }
+          case 25: {
+            TotalPrice = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CardProcessingSvcInitiateHostedCardCaptureResponse : pb::IMessage<CardProcessingSvcInitiateHostedCardCaptureResponse> {
+    private static readonly pb::MessageParser<CardProcessingSvcInitiateHostedCardCaptureResponse> _parser = new pb::MessageParser<CardProcessingSvcInitiateHostedCardCaptureResponse>(() => new CardProcessingSvcInitiateHostedCardCaptureResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcInitiateHostedCardCaptureResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcInitiateHostedCardCaptureResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcInitiateHostedCardCaptureResponse(CardProcessingSvcInitiateHostedCardCaptureResponse other) : this() {
+      isHostedCaptureActive_ = other.isHostedCaptureActive_;
+      iframeHtml_ = other.iframeHtml_;
+      sessionKey_ = other.sessionKey_;
+      clientScriptUrl_ = other.clientScriptUrl_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcInitiateHostedCardCaptureResponse Clone() {
+      return new CardProcessingSvcInitiateHostedCardCaptureResponse(this);
+    }
+
+    /// <summary>Field number for the "is_hosted_capture_active" field.</summary>
+    public const int IsHostedCaptureActiveFieldNumber = 1;
+    private bool isHostedCaptureActive_;
+    /// <summary>
+    /// True if the property's active CardMerchant uses a hosted-iframe processor and the fields
+    /// below are populated. False (with the other fields empty) if the property uses a processor
+    /// that collects raw card fields directly instead (e.g. Heartland) -- callers should fall back
+    /// to their existing raw-field card entry UI in that case.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsHostedCaptureActive {
+      get { return isHostedCaptureActive_; }
+      set {
+        isHostedCaptureActive_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "iframe_html" field.</summary>
+    public const int IframeHtmlFieldNumber = 2;
+    private string iframeHtml_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string IframeHtml {
+      get { return iframeHtml_; }
+      set {
+        iframeHtml_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "session_key" field.</summary>
+    public const int SessionKeyFieldNumber = 3;
+    private string sessionKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SessionKey {
+      get { return sessionKey_; }
+      set {
+        sessionKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "client_script_url" field.</summary>
+    public const int ClientScriptUrlFieldNumber = 4;
+    private string clientScriptUrl_ = "";
+    /// <summary>
+    /// The processor's client-side JS include (e.g. FreedomPay's hpc_min.js) the caller must load
+    /// on the checkout page for the iframe to function -- environment (UAT/Prod) is a server-side
+    /// config concern, so this URL is already fully resolved.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ClientScriptUrl {
+      get { return clientScriptUrl_; }
+      set {
+        clientScriptUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcInitiateHostedCardCaptureResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcInitiateHostedCardCaptureResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsHostedCaptureActive != other.IsHostedCaptureActive) return false;
+      if (IframeHtml != other.IframeHtml) return false;
+      if (SessionKey != other.SessionKey) return false;
+      if (ClientScriptUrl != other.ClientScriptUrl) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsHostedCaptureActive != false) hash ^= IsHostedCaptureActive.GetHashCode();
+      if (IframeHtml.Length != 0) hash ^= IframeHtml.GetHashCode();
+      if (SessionKey.Length != 0) hash ^= SessionKey.GetHashCode();
+      if (ClientScriptUrl.Length != 0) hash ^= ClientScriptUrl.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IsHostedCaptureActive != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsHostedCaptureActive);
+      }
+      if (IframeHtml.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(IframeHtml);
+      }
+      if (SessionKey.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(SessionKey);
+      }
+      if (ClientScriptUrl.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ClientScriptUrl);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsHostedCaptureActive != false) {
+        size += 1 + 1;
+      }
+      if (IframeHtml.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(IframeHtml);
+      }
+      if (SessionKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SessionKey);
+      }
+      if (ClientScriptUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ClientScriptUrl);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcInitiateHostedCardCaptureResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsHostedCaptureActive != false) {
+        IsHostedCaptureActive = other.IsHostedCaptureActive;
+      }
+      if (other.IframeHtml.Length != 0) {
+        IframeHtml = other.IframeHtml;
+      }
+      if (other.SessionKey.Length != 0) {
+        SessionKey = other.SessionKey;
+      }
+      if (other.ClientScriptUrl.Length != 0) {
+        ClientScriptUrl = other.ClientScriptUrl;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            IsHostedCaptureActive = input.ReadBool();
+            break;
+          }
+          case 18: {
+            IframeHtml = input.ReadString();
+            break;
+          }
+          case 26: {
+            SessionKey = input.ReadString();
+            break;
+          }
+          case 34: {
+            ClientScriptUrl = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Verifies/tokenizes a card that was captured by a hosted iframe (see
+  /// InitiateHostedCardCapture) rather than a raw PAN this app itself received. Returns the same
+  /// response shape as VerifyAndTokenizeNotPresentCard so downstream guarantee/authorization flows
+  /// are identical regardless of which processor captured the card.
+  /// </summary>
+  public sealed partial class CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest : pb::IMessage<CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest> {
+    private static readonly pb::MessageParser<CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest> _parser = new pb::MessageParser<CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest>(() => new CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest(CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest other) : this() {
+      Guest = other.guest_ != null ? other.Guest.Clone() : null;
+      Property = other.property_ != null ? other.Property.Clone() : null;
+      sessionKey_ = other.sessionKey_;
+      paymentKey_ = other.paymentKey_;
+      cardholderName_ = other.cardholderName_;
+      zipcode_ = other.zipcode_;
+      ChargeAmount = other.chargeAmount_ != null ? other.ChargeAmount.Clone() : null;
+      TaxAmount = other.taxAmount_ != null ? other.TaxAmount.Clone() : null;
+      checkinDate_ = other.checkinDate_;
+      checkoutDate_ = other.checkoutDate_;
+      expiryMonth_ = other.expiryMonth_;
+      fourDigitExpiryYear_ = other.fourDigitExpiryYear_;
+      BillingAddress = other.billingAddress_ != null ? other.BillingAddress.Clone() : null;
+      requestToken_ = other.requestToken_;
+      maskedCardNumber_ = other.maskedCardNumber_;
+      paymentMode_ = other.paymentMode_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest Clone() {
+      return new CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest(this);
+    }
+
+    /// <summary>Field number for the "guest" field.</summary>
+    public const int GuestFieldNumber = 1;
+    private global::HOLMS.Types.CRM.Guests.GuestIndicator guest_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.CRM.Guests.GuestIndicator Guest {
+      get { return guest_; }
+      set {
+        guest_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "property" field.</summary>
+    public const int PropertyFieldNumber = 2;
+    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
+      get { return property_; }
+      set {
+        property_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "session_key" field.</summary>
+    public const int SessionKeyFieldNumber = 3;
+    private string sessionKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SessionKey {
+      get { return sessionKey_; }
+      set {
+        sessionKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "payment_key" field.</summary>
+    public const int PaymentKeyFieldNumber = 4;
+    private string paymentKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PaymentKey {
+      get { return paymentKey_; }
+      set {
+        paymentKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "cardholder_name" field.</summary>
+    public const int CardholderNameFieldNumber = 5;
+    private string cardholderName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CardholderName {
+      get { return cardholderName_; }
+      set {
+        cardholderName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "zipcode" field.</summary>
+    public const int ZipcodeFieldNumber = 6;
+    private string zipcode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Zipcode {
+      get { return zipcode_; }
+      set {
+        zipcode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "charge_amount" field.</summary>
+    public const int ChargeAmountFieldNumber = 7;
+    private global::HOLMS.Types.Primitive.MonetaryAmount chargeAmount_;
+    /// <summary>
+    /// Amount to place on hold for the guarantee (room + tax for the stay, mirroring what the
+    /// existing Heartland verify/guarantee flow effectively secures).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount ChargeAmount {
+      get { return chargeAmount_; }
+      set {
+        chargeAmount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tax_amount" field.</summary>
+    public const int TaxAmountFieldNumber = 8;
+    private global::HOLMS.Types.Primitive.MonetaryAmount taxAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount TaxAmount {
+      get { return taxAmount_; }
+      set {
+        taxAmount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "checkin_date" field.</summary>
+    public const int CheckinDateFieldNumber = 9;
+    private string checkinDate_ = "";
+    /// <summary>
+    /// ISO 8601 dates (yyyy-MM-dd), for FreedomPay's hotelData.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CheckinDate {
+      get { return checkinDate_; }
+      set {
+        checkinDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "checkout_date" field.</summary>
+    public const int CheckoutDateFieldNumber = 10;
+    private string checkoutDate_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CheckoutDate {
+      get { return checkoutDate_; }
+      set {
+        checkoutDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "expiry_month" field.</summary>
+    public const int ExpiryMonthFieldNumber = 11;
+    private int expiryMonth_;
+    /// <summary>
+    /// Captured client-side from the HPC iframe's PaymentKey response attributes (display data
+    /// only -- the raw PAN backing this expiry never reaches this server).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ExpiryMonth {
+      get { return expiryMonth_; }
+      set {
+        expiryMonth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "four_digit_expiry_year" field.</summary>
+    public const int FourDigitExpiryYearFieldNumber = 12;
+    private int fourDigitExpiryYear_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int FourDigitExpiryYear {
+      get { return fourDigitExpiryYear_; }
+      set {
+        fourDigitExpiryYear_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "billing_address" field.</summary>
+    public const int BillingAddressFieldNumber = 13;
+    private global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress billingAddress_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress BillingAddress {
+      get { return billingAddress_; }
+      set {
+        billingAddress_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "request_token" field.</summary>
+    public const int RequestTokenFieldNumber = 14;
+    private bool requestToken_;
+    /// <summary>
+    /// When true, asks FreedomPay to also mint a reusable Card-on-File token (in addition to the
+    /// authorization hold) so a later Merchant-Initiated Transaction (see
+    /// ProcessFreedomPayTokenMit, e.g. a no-show charge) can reuse this exact card without the
+    /// cardholder re-entering it.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool RequestToken {
+      get { return requestToken_; }
+      set {
+        requestToken_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "masked_card_number" field.</summary>
+    public const int MaskedCardNumberFieldNumber = 15;
+    private string maskedCardNumber_ = "";
+    /// <summary>
+    /// Masked PAN captured client-side from the HPC iframe's PaymentKey response attributes
+    /// (e.g. "411111XXXXXX1111") -- required by Freeway's payment request schema alongside
+    /// PaymentKey, even though the real PAN is resolved server-side from PaymentKey itself.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MaskedCardNumber {
+      get { return maskedCardNumber_; }
+      set {
+        maskedCardNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "payment_mode" field.</summary>
+    public const int PaymentModeFieldNumber = 16;
+    private string paymentMode_ = "";
+    /// <summary>
+    /// Which HPC payment mode the guest actually used to produce this PaymentKey: "Card",
+    /// "GPay", or "ApplePay" (matches the paymentMode values InitiateHostedCardCapture already
+    /// accepts). Purely descriptive/for-reporting -- persisted on the resulting RawPaymentCard,
+    /// never used to branch tokenize/guarantee/authorization behavior, which stays identical
+    /// regardless of mode. Optional; empty/unset is treated as unknown, not "Card".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PaymentMode {
+      get { return paymentMode_; }
+      set {
+        paymentMode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Guest, other.Guest)) return false;
+      if (!object.Equals(Property, other.Property)) return false;
+      if (SessionKey != other.SessionKey) return false;
+      if (PaymentKey != other.PaymentKey) return false;
+      if (CardholderName != other.CardholderName) return false;
+      if (Zipcode != other.Zipcode) return false;
+      if (!object.Equals(ChargeAmount, other.ChargeAmount)) return false;
+      if (!object.Equals(TaxAmount, other.TaxAmount)) return false;
+      if (CheckinDate != other.CheckinDate) return false;
+      if (CheckoutDate != other.CheckoutDate) return false;
+      if (ExpiryMonth != other.ExpiryMonth) return false;
+      if (FourDigitExpiryYear != other.FourDigitExpiryYear) return false;
+      if (!object.Equals(BillingAddress, other.BillingAddress)) return false;
+      if (RequestToken != other.RequestToken) return false;
+      if (MaskedCardNumber != other.MaskedCardNumber) return false;
+      if (PaymentMode != other.PaymentMode) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (guest_ != null) hash ^= Guest.GetHashCode();
+      if (property_ != null) hash ^= Property.GetHashCode();
+      if (SessionKey.Length != 0) hash ^= SessionKey.GetHashCode();
+      if (PaymentKey.Length != 0) hash ^= PaymentKey.GetHashCode();
+      if (CardholderName.Length != 0) hash ^= CardholderName.GetHashCode();
+      if (Zipcode.Length != 0) hash ^= Zipcode.GetHashCode();
+      if (chargeAmount_ != null) hash ^= ChargeAmount.GetHashCode();
+      if (taxAmount_ != null) hash ^= TaxAmount.GetHashCode();
+      if (CheckinDate.Length != 0) hash ^= CheckinDate.GetHashCode();
+      if (CheckoutDate.Length != 0) hash ^= CheckoutDate.GetHashCode();
+      if (ExpiryMonth != 0) hash ^= ExpiryMonth.GetHashCode();
+      if (FourDigitExpiryYear != 0) hash ^= FourDigitExpiryYear.GetHashCode();
+      if (billingAddress_ != null) hash ^= BillingAddress.GetHashCode();
+      if (RequestToken != false) hash ^= RequestToken.GetHashCode();
+      if (MaskedCardNumber.Length != 0) hash ^= MaskedCardNumber.GetHashCode();
+      if (PaymentMode.Length != 0) hash ^= PaymentMode.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (guest_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Guest);
+      }
+      if (property_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Property);
+      }
+      if (SessionKey.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(SessionKey);
+      }
+      if (PaymentKey.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(PaymentKey);
+      }
+      if (CardholderName.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(CardholderName);
+      }
+      if (Zipcode.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Zipcode);
+      }
+      if (chargeAmount_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ChargeAmount);
+      }
+      if (taxAmount_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(TaxAmount);
+      }
+      if (CheckinDate.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(CheckinDate);
+      }
+      if (CheckoutDate.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(CheckoutDate);
+      }
+      if (ExpiryMonth != 0) {
+        output.WriteRawTag(88);
+        output.WriteInt32(ExpiryMonth);
+      }
+      if (FourDigitExpiryYear != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(FourDigitExpiryYear);
+      }
+      if (billingAddress_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(BillingAddress);
+      }
+      if (RequestToken != false) {
+        output.WriteRawTag(112);
+        output.WriteBool(RequestToken);
+      }
+      if (MaskedCardNumber.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(MaskedCardNumber);
+      }
+      if (PaymentMode.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(PaymentMode);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (guest_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Guest);
+      }
+      if (property_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
+      }
+      if (SessionKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SessionKey);
+      }
+      if (PaymentKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PaymentKey);
+      }
+      if (CardholderName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CardholderName);
+      }
+      if (Zipcode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Zipcode);
+      }
+      if (chargeAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ChargeAmount);
+      }
+      if (taxAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TaxAmount);
+      }
+      if (CheckinDate.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CheckinDate);
+      }
+      if (CheckoutDate.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CheckoutDate);
+      }
+      if (ExpiryMonth != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ExpiryMonth);
+      }
+      if (FourDigitExpiryYear != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FourDigitExpiryYear);
+      }
+      if (billingAddress_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BillingAddress);
+      }
+      if (RequestToken != false) {
+        size += 1 + 1;
+      }
+      if (MaskedCardNumber.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MaskedCardNumber);
+      }
+      if (PaymentMode.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PaymentMode);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.guest_ != null) {
+        if (guest_ == null) {
+          guest_ = new global::HOLMS.Types.CRM.Guests.GuestIndicator();
+        }
+        Guest.MergeFrom(other.Guest);
+      }
+      if (other.property_ != null) {
+        if (property_ == null) {
+          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+        }
+        Property.MergeFrom(other.Property);
+      }
+      if (other.SessionKey.Length != 0) {
+        SessionKey = other.SessionKey;
+      }
+      if (other.PaymentKey.Length != 0) {
+        PaymentKey = other.PaymentKey;
+      }
+      if (other.CardholderName.Length != 0) {
+        CardholderName = other.CardholderName;
+      }
+      if (other.Zipcode.Length != 0) {
+        Zipcode = other.Zipcode;
+      }
+      if (other.chargeAmount_ != null) {
+        if (chargeAmount_ == null) {
+          chargeAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        ChargeAmount.MergeFrom(other.ChargeAmount);
+      }
+      if (other.taxAmount_ != null) {
+        if (taxAmount_ == null) {
+          taxAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        TaxAmount.MergeFrom(other.TaxAmount);
+      }
+      if (other.CheckinDate.Length != 0) {
+        CheckinDate = other.CheckinDate;
+      }
+      if (other.CheckoutDate.Length != 0) {
+        CheckoutDate = other.CheckoutDate;
+      }
+      if (other.ExpiryMonth != 0) {
+        ExpiryMonth = other.ExpiryMonth;
+      }
+      if (other.FourDigitExpiryYear != 0) {
+        FourDigitExpiryYear = other.FourDigitExpiryYear;
+      }
+      if (other.billingAddress_ != null) {
+        if (billingAddress_ == null) {
+          billingAddress_ = new global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress();
+        }
+        BillingAddress.MergeFrom(other.BillingAddress);
+      }
+      if (other.RequestToken != false) {
+        RequestToken = other.RequestToken;
+      }
+      if (other.MaskedCardNumber.Length != 0) {
+        MaskedCardNumber = other.MaskedCardNumber;
+      }
+      if (other.PaymentMode.Length != 0) {
+        PaymentMode = other.PaymentMode;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (guest_ == null) {
+              guest_ = new global::HOLMS.Types.CRM.Guests.GuestIndicator();
+            }
+            input.ReadMessage(guest_);
+            break;
+          }
+          case 18: {
+            if (property_ == null) {
+              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+            }
+            input.ReadMessage(property_);
+            break;
+          }
+          case 26: {
+            SessionKey = input.ReadString();
+            break;
+          }
+          case 34: {
+            PaymentKey = input.ReadString();
+            break;
+          }
+          case 42: {
+            CardholderName = input.ReadString();
+            break;
+          }
+          case 50: {
+            Zipcode = input.ReadString();
+            break;
+          }
+          case 58: {
+            if (chargeAmount_ == null) {
+              chargeAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(chargeAmount_);
+            break;
+          }
+          case 66: {
+            if (taxAmount_ == null) {
+              taxAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(taxAmount_);
+            break;
+          }
+          case 74: {
+            CheckinDate = input.ReadString();
+            break;
+          }
+          case 82: {
+            CheckoutDate = input.ReadString();
+            break;
+          }
+          case 88: {
+            ExpiryMonth = input.ReadInt32();
+            break;
+          }
+          case 96: {
+            FourDigitExpiryYear = input.ReadInt32();
+            break;
+          }
+          case 106: {
+            if (billingAddress_ == null) {
+              billingAddress_ = new global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress();
+            }
+            input.ReadMessage(billingAddress_);
+            break;
+          }
+          case 112: {
+            RequestToken = input.ReadBool();
+            break;
+          }
+          case 122: {
+            MaskedCardNumber = input.ReadString();
+            break;
+          }
+          case 130: {
+            PaymentMode = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Immediate one-step charge (authorization + capture) via FreedomPay HPX, in contrast to
+  /// VerifyAndTokenizeExternallyCapturedCard's authorization-only hold used for guarantees at
+  /// booking time. Used when funds must be captured right away (e.g. a deposit or full prepayment
+  /// charged at time of booking) rather than held pending a later, separate Capture call.
+  /// </summary>
+  public sealed partial class CardProcessingSvcProcessFreedomPaySaleRequest : pb::IMessage<CardProcessingSvcProcessFreedomPaySaleRequest> {
+    private static readonly pb::MessageParser<CardProcessingSvcProcessFreedomPaySaleRequest> _parser = new pb::MessageParser<CardProcessingSvcProcessFreedomPaySaleRequest>(() => new CardProcessingSvcProcessFreedomPaySaleRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcProcessFreedomPaySaleRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPaySaleRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPaySaleRequest(CardProcessingSvcProcessFreedomPaySaleRequest other) : this() {
+      Property = other.property_ != null ? other.Property.Clone() : null;
+      sessionKey_ = other.sessionKey_;
+      paymentKey_ = other.paymentKey_;
+      cardholderName_ = other.cardholderName_;
+      ChargeAmount = other.chargeAmount_ != null ? other.ChargeAmount.Clone() : null;
+      TaxAmount = other.taxAmount_ != null ? other.TaxAmount.Clone() : null;
+      checkinDate_ = other.checkinDate_;
+      checkoutDate_ = other.checkoutDate_;
+      merchantReferenceCode_ = other.merchantReferenceCode_;
+      BillingAddress = other.billingAddress_ != null ? other.BillingAddress.Clone() : null;
+      maskedCardNumber_ = other.maskedCardNumber_;
+      expiryMonth_ = other.expiryMonth_;
+      fourDigitExpiryYear_ = other.fourDigitExpiryYear_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPaySaleRequest Clone() {
+      return new CardProcessingSvcProcessFreedomPaySaleRequest(this);
+    }
+
+    /// <summary>Field number for the "property" field.</summary>
+    public const int PropertyFieldNumber = 1;
+    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
+      get { return property_; }
+      set {
+        property_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "session_key" field.</summary>
+    public const int SessionKeyFieldNumber = 2;
+    private string sessionKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SessionKey {
+      get { return sessionKey_; }
+      set {
+        sessionKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "payment_key" field.</summary>
+    public const int PaymentKeyFieldNumber = 3;
+    private string paymentKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PaymentKey {
+      get { return paymentKey_; }
+      set {
+        paymentKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "cardholder_name" field.</summary>
+    public const int CardholderNameFieldNumber = 4;
+    private string cardholderName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CardholderName {
+      get { return cardholderName_; }
+      set {
+        cardholderName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "charge_amount" field.</summary>
+    public const int ChargeAmountFieldNumber = 5;
+    private global::HOLMS.Types.Primitive.MonetaryAmount chargeAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount ChargeAmount {
+      get { return chargeAmount_; }
+      set {
+        chargeAmount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tax_amount" field.</summary>
+    public const int TaxAmountFieldNumber = 6;
+    private global::HOLMS.Types.Primitive.MonetaryAmount taxAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount TaxAmount {
+      get { return taxAmount_; }
+      set {
+        taxAmount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "checkin_date" field.</summary>
+    public const int CheckinDateFieldNumber = 7;
+    private string checkinDate_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CheckinDate {
+      get { return checkinDate_; }
+      set {
+        checkinDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "checkout_date" field.</summary>
+    public const int CheckoutDateFieldNumber = 8;
+    private string checkoutDate_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CheckoutDate {
+      get { return checkoutDate_; }
+      set {
+        checkoutDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "merchant_reference_code" field.</summary>
+    public const int MerchantReferenceCodeFieldNumber = 9;
+    private string merchantReferenceCode_ = "";
+    /// <summary>
+    /// Caller-supplied idempotency/reference id; a new guid is used if left empty.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MerchantReferenceCode {
+      get { return merchantReferenceCode_; }
+      set {
+        merchantReferenceCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "billing_address" field.</summary>
+    public const int BillingAddressFieldNumber = 10;
+    private global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress billingAddress_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress BillingAddress {
+      get { return billingAddress_; }
+      set {
+        billingAddress_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "masked_card_number" field.</summary>
+    public const int MaskedCardNumberFieldNumber = 11;
+    private string maskedCardNumber_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MaskedCardNumber {
+      get { return maskedCardNumber_; }
+      set {
+        maskedCardNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "expiry_month" field.</summary>
+    public const int ExpiryMonthFieldNumber = 12;
+    private int expiryMonth_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ExpiryMonth {
+      get { return expiryMonth_; }
+      set {
+        expiryMonth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "four_digit_expiry_year" field.</summary>
+    public const int FourDigitExpiryYearFieldNumber = 13;
+    private int fourDigitExpiryYear_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int FourDigitExpiryYear {
+      get { return fourDigitExpiryYear_; }
+      set {
+        fourDigitExpiryYear_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcProcessFreedomPaySaleRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcProcessFreedomPaySaleRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Property, other.Property)) return false;
+      if (SessionKey != other.SessionKey) return false;
+      if (PaymentKey != other.PaymentKey) return false;
+      if (CardholderName != other.CardholderName) return false;
+      if (!object.Equals(ChargeAmount, other.ChargeAmount)) return false;
+      if (!object.Equals(TaxAmount, other.TaxAmount)) return false;
+      if (CheckinDate != other.CheckinDate) return false;
+      if (CheckoutDate != other.CheckoutDate) return false;
+      if (MerchantReferenceCode != other.MerchantReferenceCode) return false;
+      if (!object.Equals(BillingAddress, other.BillingAddress)) return false;
+      if (MaskedCardNumber != other.MaskedCardNumber) return false;
+      if (ExpiryMonth != other.ExpiryMonth) return false;
+      if (FourDigitExpiryYear != other.FourDigitExpiryYear) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (property_ != null) hash ^= Property.GetHashCode();
+      if (SessionKey.Length != 0) hash ^= SessionKey.GetHashCode();
+      if (PaymentKey.Length != 0) hash ^= PaymentKey.GetHashCode();
+      if (CardholderName.Length != 0) hash ^= CardholderName.GetHashCode();
+      if (chargeAmount_ != null) hash ^= ChargeAmount.GetHashCode();
+      if (taxAmount_ != null) hash ^= TaxAmount.GetHashCode();
+      if (CheckinDate.Length != 0) hash ^= CheckinDate.GetHashCode();
+      if (CheckoutDate.Length != 0) hash ^= CheckoutDate.GetHashCode();
+      if (MerchantReferenceCode.Length != 0) hash ^= MerchantReferenceCode.GetHashCode();
+      if (billingAddress_ != null) hash ^= BillingAddress.GetHashCode();
+      if (MaskedCardNumber.Length != 0) hash ^= MaskedCardNumber.GetHashCode();
+      if (ExpiryMonth != 0) hash ^= ExpiryMonth.GetHashCode();
+      if (FourDigitExpiryYear != 0) hash ^= FourDigitExpiryYear.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (property_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Property);
+      }
+      if (SessionKey.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(SessionKey);
+      }
+      if (PaymentKey.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(PaymentKey);
+      }
+      if (CardholderName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(CardholderName);
+      }
+      if (chargeAmount_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ChargeAmount);
+      }
+      if (taxAmount_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(TaxAmount);
+      }
+      if (CheckinDate.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(CheckinDate);
+      }
+      if (CheckoutDate.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(CheckoutDate);
+      }
+      if (MerchantReferenceCode.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(MerchantReferenceCode);
+      }
+      if (billingAddress_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(BillingAddress);
+      }
+      if (MaskedCardNumber.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(MaskedCardNumber);
+      }
+      if (ExpiryMonth != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(ExpiryMonth);
+      }
+      if (FourDigitExpiryYear != 0) {
+        output.WriteRawTag(104);
+        output.WriteInt32(FourDigitExpiryYear);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (property_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
+      }
+      if (SessionKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SessionKey);
+      }
+      if (PaymentKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PaymentKey);
+      }
+      if (CardholderName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CardholderName);
+      }
+      if (chargeAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ChargeAmount);
+      }
+      if (taxAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TaxAmount);
+      }
+      if (CheckinDate.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CheckinDate);
+      }
+      if (CheckoutDate.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CheckoutDate);
+      }
+      if (MerchantReferenceCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MerchantReferenceCode);
+      }
+      if (billingAddress_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BillingAddress);
+      }
+      if (MaskedCardNumber.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MaskedCardNumber);
+      }
+      if (ExpiryMonth != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ExpiryMonth);
+      }
+      if (FourDigitExpiryYear != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FourDigitExpiryYear);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcProcessFreedomPaySaleRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.property_ != null) {
+        if (property_ == null) {
+          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+        }
+        Property.MergeFrom(other.Property);
+      }
+      if (other.SessionKey.Length != 0) {
+        SessionKey = other.SessionKey;
+      }
+      if (other.PaymentKey.Length != 0) {
+        PaymentKey = other.PaymentKey;
+      }
+      if (other.CardholderName.Length != 0) {
+        CardholderName = other.CardholderName;
+      }
+      if (other.chargeAmount_ != null) {
+        if (chargeAmount_ == null) {
+          chargeAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        ChargeAmount.MergeFrom(other.ChargeAmount);
+      }
+      if (other.taxAmount_ != null) {
+        if (taxAmount_ == null) {
+          taxAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        TaxAmount.MergeFrom(other.TaxAmount);
+      }
+      if (other.CheckinDate.Length != 0) {
+        CheckinDate = other.CheckinDate;
+      }
+      if (other.CheckoutDate.Length != 0) {
+        CheckoutDate = other.CheckoutDate;
+      }
+      if (other.MerchantReferenceCode.Length != 0) {
+        MerchantReferenceCode = other.MerchantReferenceCode;
+      }
+      if (other.billingAddress_ != null) {
+        if (billingAddress_ == null) {
+          billingAddress_ = new global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress();
+        }
+        BillingAddress.MergeFrom(other.BillingAddress);
+      }
+      if (other.MaskedCardNumber.Length != 0) {
+        MaskedCardNumber = other.MaskedCardNumber;
+      }
+      if (other.ExpiryMonth != 0) {
+        ExpiryMonth = other.ExpiryMonth;
+      }
+      if (other.FourDigitExpiryYear != 0) {
+        FourDigitExpiryYear = other.FourDigitExpiryYear;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (property_ == null) {
+              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+            }
+            input.ReadMessage(property_);
+            break;
+          }
+          case 18: {
+            SessionKey = input.ReadString();
+            break;
+          }
+          case 26: {
+            PaymentKey = input.ReadString();
+            break;
+          }
+          case 34: {
+            CardholderName = input.ReadString();
+            break;
+          }
+          case 42: {
+            if (chargeAmount_ == null) {
+              chargeAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(chargeAmount_);
+            break;
+          }
+          case 50: {
+            if (taxAmount_ == null) {
+              taxAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(taxAmount_);
+            break;
+          }
+          case 58: {
+            CheckinDate = input.ReadString();
+            break;
+          }
+          case 66: {
+            CheckoutDate = input.ReadString();
+            break;
+          }
+          case 74: {
+            MerchantReferenceCode = input.ReadString();
+            break;
+          }
+          case 82: {
+            if (billingAddress_ == null) {
+              billingAddress_ = new global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress();
+            }
+            input.ReadMessage(billingAddress_);
+            break;
+          }
+          case 90: {
+            MaskedCardNumber = input.ReadString();
+            break;
+          }
+          case 96: {
+            ExpiryMonth = input.ReadInt32();
+            break;
+          }
+          case 104: {
+            FourDigitExpiryYear = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CardProcessingSvcProcessFreedomPaySaleResponse : pb::IMessage<CardProcessingSvcProcessFreedomPaySaleResponse> {
+    private static readonly pb::MessageParser<CardProcessingSvcProcessFreedomPaySaleResponse> _parser = new pb::MessageParser<CardProcessingSvcProcessFreedomPaySaleResponse>(() => new CardProcessingSvcProcessFreedomPaySaleResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcProcessFreedomPaySaleResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPaySaleResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPaySaleResponse(CardProcessingSvcProcessFreedomPaySaleResponse other) : this() {
+      result_ = other.result_;
+      requestId_ = other.requestId_;
+      authorizationCode_ = other.authorizationCode_;
+      maskedPan_ = other.maskedPan_;
+      brandCode_ = other.brandCode_;
+      avsCode_ = other.avsCode_;
+      cvCode_ = other.cvCode_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPaySaleResponse Clone() {
+      return new CardProcessingSvcProcessFreedomPaySaleResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "request_id" field.</summary>
+    public const int RequestIdFieldNumber = 2;
+    private string requestId_ = "";
+    /// <summary>
+    /// The HPX requestId, to reuse as OriginalRequestId on a follow-on Void/Refund if needed.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RequestId {
+      get { return requestId_; }
+      set {
+        requestId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "authorization_code" field.</summary>
+    public const int AuthorizationCodeFieldNumber = 3;
+    private string authorizationCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AuthorizationCode {
+      get { return authorizationCode_; }
+      set {
+        authorizationCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "masked_pan" field.</summary>
+    public const int MaskedPanFieldNumber = 4;
+    private string maskedPan_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MaskedPan {
+      get { return maskedPan_; }
+      set {
+        maskedPan_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "brand_code" field.</summary>
+    public const int BrandCodeFieldNumber = 5;
+    private string brandCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string BrandCode {
+      get { return brandCode_; }
+      set {
+        brandCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "avs_code" field.</summary>
+    public const int AvsCodeFieldNumber = 6;
+    private string avsCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AvsCode {
+      get { return avsCode_; }
+      set {
+        avsCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "cv_code" field.</summary>
+    public const int CvCodeFieldNumber = 7;
+    private string cvCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CvCode {
+      get { return cvCode_; }
+      set {
+        cvCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcProcessFreedomPaySaleResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcProcessFreedomPaySaleResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      if (RequestId != other.RequestId) return false;
+      if (AuthorizationCode != other.AuthorizationCode) return false;
+      if (MaskedPan != other.MaskedPan) return false;
+      if (BrandCode != other.BrandCode) return false;
+      if (AvsCode != other.AvsCode) return false;
+      if (CvCode != other.CvCode) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Result != 0) hash ^= Result.GetHashCode();
+      if (RequestId.Length != 0) hash ^= RequestId.GetHashCode();
+      if (AuthorizationCode.Length != 0) hash ^= AuthorizationCode.GetHashCode();
+      if (MaskedPan.Length != 0) hash ^= MaskedPan.GetHashCode();
+      if (BrandCode.Length != 0) hash ^= BrandCode.GetHashCode();
+      if (AvsCode.Length != 0) hash ^= AvsCode.GetHashCode();
+      if (CvCode.Length != 0) hash ^= CvCode.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
+      if (RequestId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(RequestId);
+      }
+      if (AuthorizationCode.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(AuthorizationCode);
+      }
+      if (MaskedPan.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(MaskedPan);
+      }
+      if (BrandCode.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(BrandCode);
+      }
+      if (AvsCode.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(AvsCode);
+      }
+      if (CvCode.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(CvCode);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (RequestId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RequestId);
+      }
+      if (AuthorizationCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AuthorizationCode);
+      }
+      if (MaskedPan.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MaskedPan);
+      }
+      if (BrandCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BrandCode);
+      }
+      if (AvsCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AvsCode);
+      }
+      if (CvCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CvCode);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcProcessFreedomPaySaleResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      if (other.RequestId.Length != 0) {
+        RequestId = other.RequestId;
+      }
+      if (other.AuthorizationCode.Length != 0) {
+        AuthorizationCode = other.AuthorizationCode;
+      }
+      if (other.MaskedPan.Length != 0) {
+        MaskedPan = other.MaskedPan;
+      }
+      if (other.BrandCode.Length != 0) {
+        BrandCode = other.BrandCode;
+      }
+      if (other.AvsCode.Length != 0) {
+        AvsCode = other.AvsCode;
+      }
+      if (other.CvCode.Length != 0) {
+        CvCode = other.CvCode;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            result_ = (global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            RequestId = input.ReadString();
+            break;
+          }
+          case 26: {
+            AuthorizationCode = input.ReadString();
+            break;
+          }
+          case 34: {
+            MaskedPan = input.ReadString();
+            break;
+          }
+          case 42: {
+            BrandCode = input.ReadString();
+            break;
+          }
+          case 50: {
+            AvsCode = input.ReadString();
+            break;
+          }
+          case 58: {
+            CvCode = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Shared billing-address shape for AVS scoring on FreedomPay HPX calls. All fields optional --
+  /// omit for card-not-present flows where no billing address was collected.
+  /// </summary>
+  public sealed partial class FreedomPayBillingAddress : pb::IMessage<FreedomPayBillingAddress> {
+    private static readonly pb::MessageParser<FreedomPayBillingAddress> _parser = new pb::MessageParser<FreedomPayBillingAddress>(() => new FreedomPayBillingAddress());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FreedomPayBillingAddress> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FreedomPayBillingAddress() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FreedomPayBillingAddress(FreedomPayBillingAddress other) : this() {
+      firstName_ = other.firstName_;
+      lastName_ = other.lastName_;
+      street1_ = other.street1_;
+      city_ = other.city_;
+      state_ = other.state_;
+      postalCode_ = other.postalCode_;
+      countryCode_ = other.countryCode_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FreedomPayBillingAddress Clone() {
+      return new FreedomPayBillingAddress(this);
+    }
+
+    /// <summary>Field number for the "first_name" field.</summary>
+    public const int FirstNameFieldNumber = 1;
+    private string firstName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string FirstName {
+      get { return firstName_; }
+      set {
+        firstName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "last_name" field.</summary>
+    public const int LastNameFieldNumber = 2;
+    private string lastName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string LastName {
+      get { return lastName_; }
+      set {
+        lastName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "street1" field.</summary>
+    public const int Street1FieldNumber = 3;
+    private string street1_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Street1 {
+      get { return street1_; }
+      set {
+        street1_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "city" field.</summary>
+    public const int CityFieldNumber = 4;
+    private string city_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string City {
+      get { return city_; }
+      set {
+        city_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "state" field.</summary>
+    public const int StateFieldNumber = 5;
+    private string state_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string State {
+      get { return state_; }
+      set {
+        state_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "postal_code" field.</summary>
+    public const int PostalCodeFieldNumber = 6;
+    private string postalCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PostalCode {
+      get { return postalCode_; }
+      set {
+        postalCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "country_code" field.</summary>
+    public const int CountryCodeFieldNumber = 7;
+    private string countryCode_ = "";
+    /// <summary>
+    /// Numeric 3-digit ISO 3166-1 country code (e.g. "840" for United States).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CountryCode {
+      get { return countryCode_; }
+      set {
+        countryCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FreedomPayBillingAddress);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FreedomPayBillingAddress other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (FirstName != other.FirstName) return false;
+      if (LastName != other.LastName) return false;
+      if (Street1 != other.Street1) return false;
+      if (City != other.City) return false;
+      if (State != other.State) return false;
+      if (PostalCode != other.PostalCode) return false;
+      if (CountryCode != other.CountryCode) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (FirstName.Length != 0) hash ^= FirstName.GetHashCode();
+      if (LastName.Length != 0) hash ^= LastName.GetHashCode();
+      if (Street1.Length != 0) hash ^= Street1.GetHashCode();
+      if (City.Length != 0) hash ^= City.GetHashCode();
+      if (State.Length != 0) hash ^= State.GetHashCode();
+      if (PostalCode.Length != 0) hash ^= PostalCode.GetHashCode();
+      if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (FirstName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(FirstName);
+      }
+      if (LastName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(LastName);
+      }
+      if (Street1.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Street1);
+      }
+      if (City.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(City);
+      }
+      if (State.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(State);
+      }
+      if (PostalCode.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(PostalCode);
+      }
+      if (CountryCode.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(CountryCode);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (FirstName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FirstName);
+      }
+      if (LastName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(LastName);
+      }
+      if (Street1.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Street1);
+      }
+      if (City.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(City);
+      }
+      if (State.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(State);
+      }
+      if (PostalCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PostalCode);
+      }
+      if (CountryCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FreedomPayBillingAddress other) {
+      if (other == null) {
+        return;
+      }
+      if (other.FirstName.Length != 0) {
+        FirstName = other.FirstName;
+      }
+      if (other.LastName.Length != 0) {
+        LastName = other.LastName;
+      }
+      if (other.Street1.Length != 0) {
+        Street1 = other.Street1;
+      }
+      if (other.City.Length != 0) {
+        City = other.City;
+      }
+      if (other.State.Length != 0) {
+        State = other.State;
+      }
+      if (other.PostalCode.Length != 0) {
+        PostalCode = other.PostalCode;
+      }
+      if (other.CountryCode.Length != 0) {
+        CountryCode = other.CountryCode;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            FirstName = input.ReadString();
+            break;
+          }
+          case 18: {
+            LastName = input.ReadString();
+            break;
+          }
+          case 26: {
+            Street1 = input.ReadString();
+            break;
+          }
+          case 34: {
+            City = input.ReadString();
+            break;
+          }
+          case 42: {
+            State = input.ReadString();
+            break;
+          }
+          case 50: {
+            PostalCode = input.ReadString();
+            break;
+          }
+          case 58: {
+            CountryCode = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Zero-value auth verification (ZVAV) -- confirms a tokenized card is valid without placing any
+  /// real hold, mirroring Heartland's VerifyAndTokenizeCard verify-only behavior. Does not persist a
+  /// CustomerPaymentCard; callers that need a stored/reusable card should use
+  /// VerifyAndTokenizeExternallyCapturedCard instead.
+  /// </summary>
+  public sealed partial class CardProcessingSvcVerifyFreedomPayCardRequest : pb::IMessage<CardProcessingSvcVerifyFreedomPayCardRequest> {
+    private static readonly pb::MessageParser<CardProcessingSvcVerifyFreedomPayCardRequest> _parser = new pb::MessageParser<CardProcessingSvcVerifyFreedomPayCardRequest>(() => new CardProcessingSvcVerifyFreedomPayCardRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcVerifyFreedomPayCardRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVerifyFreedomPayCardRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVerifyFreedomPayCardRequest(CardProcessingSvcVerifyFreedomPayCardRequest other) : this() {
+      Property = other.property_ != null ? other.Property.Clone() : null;
+      sessionKey_ = other.sessionKey_;
+      paymentKey_ = other.paymentKey_;
+      cardholderName_ = other.cardholderName_;
+      BillingAddress = other.billingAddress_ != null ? other.BillingAddress.Clone() : null;
+      merchantReferenceCode_ = other.merchantReferenceCode_;
+      maskedCardNumber_ = other.maskedCardNumber_;
+      expiryMonth_ = other.expiryMonth_;
+      fourDigitExpiryYear_ = other.fourDigitExpiryYear_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVerifyFreedomPayCardRequest Clone() {
+      return new CardProcessingSvcVerifyFreedomPayCardRequest(this);
+    }
+
+    /// <summary>Field number for the "property" field.</summary>
+    public const int PropertyFieldNumber = 1;
+    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
+      get { return property_; }
+      set {
+        property_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "session_key" field.</summary>
+    public const int SessionKeyFieldNumber = 2;
+    private string sessionKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SessionKey {
+      get { return sessionKey_; }
+      set {
+        sessionKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "payment_key" field.</summary>
+    public const int PaymentKeyFieldNumber = 3;
+    private string paymentKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PaymentKey {
+      get { return paymentKey_; }
+      set {
+        paymentKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "cardholder_name" field.</summary>
+    public const int CardholderNameFieldNumber = 4;
+    private string cardholderName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CardholderName {
+      get { return cardholderName_; }
+      set {
+        cardholderName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "billing_address" field.</summary>
+    public const int BillingAddressFieldNumber = 5;
+    private global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress billingAddress_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress BillingAddress {
+      get { return billingAddress_; }
+      set {
+        billingAddress_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "merchant_reference_code" field.</summary>
+    public const int MerchantReferenceCodeFieldNumber = 6;
+    private string merchantReferenceCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MerchantReferenceCode {
+      get { return merchantReferenceCode_; }
+      set {
+        merchantReferenceCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "masked_card_number" field.</summary>
+    public const int MaskedCardNumberFieldNumber = 7;
+    private string maskedCardNumber_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MaskedCardNumber {
+      get { return maskedCardNumber_; }
+      set {
+        maskedCardNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "expiry_month" field.</summary>
+    public const int ExpiryMonthFieldNumber = 8;
+    private int expiryMonth_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ExpiryMonth {
+      get { return expiryMonth_; }
+      set {
+        expiryMonth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "four_digit_expiry_year" field.</summary>
+    public const int FourDigitExpiryYearFieldNumber = 9;
+    private int fourDigitExpiryYear_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int FourDigitExpiryYear {
+      get { return fourDigitExpiryYear_; }
+      set {
+        fourDigitExpiryYear_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcVerifyFreedomPayCardRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcVerifyFreedomPayCardRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Property, other.Property)) return false;
+      if (SessionKey != other.SessionKey) return false;
+      if (PaymentKey != other.PaymentKey) return false;
+      if (CardholderName != other.CardholderName) return false;
+      if (!object.Equals(BillingAddress, other.BillingAddress)) return false;
+      if (MerchantReferenceCode != other.MerchantReferenceCode) return false;
+      if (MaskedCardNumber != other.MaskedCardNumber) return false;
+      if (ExpiryMonth != other.ExpiryMonth) return false;
+      if (FourDigitExpiryYear != other.FourDigitExpiryYear) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (property_ != null) hash ^= Property.GetHashCode();
+      if (SessionKey.Length != 0) hash ^= SessionKey.GetHashCode();
+      if (PaymentKey.Length != 0) hash ^= PaymentKey.GetHashCode();
+      if (CardholderName.Length != 0) hash ^= CardholderName.GetHashCode();
+      if (billingAddress_ != null) hash ^= BillingAddress.GetHashCode();
+      if (MerchantReferenceCode.Length != 0) hash ^= MerchantReferenceCode.GetHashCode();
+      if (MaskedCardNumber.Length != 0) hash ^= MaskedCardNumber.GetHashCode();
+      if (ExpiryMonth != 0) hash ^= ExpiryMonth.GetHashCode();
+      if (FourDigitExpiryYear != 0) hash ^= FourDigitExpiryYear.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (property_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Property);
+      }
+      if (SessionKey.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(SessionKey);
+      }
+      if (PaymentKey.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(PaymentKey);
+      }
+      if (CardholderName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(CardholderName);
+      }
+      if (billingAddress_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(BillingAddress);
+      }
+      if (MerchantReferenceCode.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(MerchantReferenceCode);
+      }
+      if (MaskedCardNumber.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(MaskedCardNumber);
+      }
+      if (ExpiryMonth != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(ExpiryMonth);
+      }
+      if (FourDigitExpiryYear != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(FourDigitExpiryYear);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (property_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
+      }
+      if (SessionKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SessionKey);
+      }
+      if (PaymentKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PaymentKey);
+      }
+      if (CardholderName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CardholderName);
+      }
+      if (billingAddress_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BillingAddress);
+      }
+      if (MerchantReferenceCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MerchantReferenceCode);
+      }
+      if (MaskedCardNumber.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MaskedCardNumber);
+      }
+      if (ExpiryMonth != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ExpiryMonth);
+      }
+      if (FourDigitExpiryYear != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FourDigitExpiryYear);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcVerifyFreedomPayCardRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.property_ != null) {
+        if (property_ == null) {
+          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+        }
+        Property.MergeFrom(other.Property);
+      }
+      if (other.SessionKey.Length != 0) {
+        SessionKey = other.SessionKey;
+      }
+      if (other.PaymentKey.Length != 0) {
+        PaymentKey = other.PaymentKey;
+      }
+      if (other.CardholderName.Length != 0) {
+        CardholderName = other.CardholderName;
+      }
+      if (other.billingAddress_ != null) {
+        if (billingAddress_ == null) {
+          billingAddress_ = new global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress();
+        }
+        BillingAddress.MergeFrom(other.BillingAddress);
+      }
+      if (other.MerchantReferenceCode.Length != 0) {
+        MerchantReferenceCode = other.MerchantReferenceCode;
+      }
+      if (other.MaskedCardNumber.Length != 0) {
+        MaskedCardNumber = other.MaskedCardNumber;
+      }
+      if (other.ExpiryMonth != 0) {
+        ExpiryMonth = other.ExpiryMonth;
+      }
+      if (other.FourDigitExpiryYear != 0) {
+        FourDigitExpiryYear = other.FourDigitExpiryYear;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (property_ == null) {
+              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+            }
+            input.ReadMessage(property_);
+            break;
+          }
+          case 18: {
+            SessionKey = input.ReadString();
+            break;
+          }
+          case 26: {
+            PaymentKey = input.ReadString();
+            break;
+          }
+          case 34: {
+            CardholderName = input.ReadString();
+            break;
+          }
+          case 42: {
+            if (billingAddress_ == null) {
+              billingAddress_ = new global::HOLMS.Types.Money.RPC.FreedomPayBillingAddress();
+            }
+            input.ReadMessage(billingAddress_);
+            break;
+          }
+          case 50: {
+            MerchantReferenceCode = input.ReadString();
+            break;
+          }
+          case 58: {
+            MaskedCardNumber = input.ReadString();
+            break;
+          }
+          case 64: {
+            ExpiryMonth = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            FourDigitExpiryYear = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CardProcessingSvcVerifyFreedomPayCardResponse : pb::IMessage<CardProcessingSvcVerifyFreedomPayCardResponse> {
+    private static readonly pb::MessageParser<CardProcessingSvcVerifyFreedomPayCardResponse> _parser = new pb::MessageParser<CardProcessingSvcVerifyFreedomPayCardResponse>(() => new CardProcessingSvcVerifyFreedomPayCardResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcVerifyFreedomPayCardResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVerifyFreedomPayCardResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVerifyFreedomPayCardResponse(CardProcessingSvcVerifyFreedomPayCardResponse other) : this() {
+      result_ = other.result_;
+      requestId_ = other.requestId_;
+      avsCode_ = other.avsCode_;
+      cvCode_ = other.cvCode_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcVerifyFreedomPayCardResponse Clone() {
+      return new CardProcessingSvcVerifyFreedomPayCardResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "request_id" field.</summary>
+    public const int RequestIdFieldNumber = 2;
+    private string requestId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RequestId {
+      get { return requestId_; }
+      set {
+        requestId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "avs_code" field.</summary>
+    public const int AvsCodeFieldNumber = 3;
+    private string avsCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AvsCode {
+      get { return avsCode_; }
+      set {
+        avsCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "cv_code" field.</summary>
+    public const int CvCodeFieldNumber = 4;
+    private string cvCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CvCode {
+      get { return cvCode_; }
+      set {
+        cvCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcVerifyFreedomPayCardResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcVerifyFreedomPayCardResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      if (RequestId != other.RequestId) return false;
+      if (AvsCode != other.AvsCode) return false;
+      if (CvCode != other.CvCode) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Result != 0) hash ^= Result.GetHashCode();
+      if (RequestId.Length != 0) hash ^= RequestId.GetHashCode();
+      if (AvsCode.Length != 0) hash ^= AvsCode.GetHashCode();
+      if (CvCode.Length != 0) hash ^= CvCode.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
+      if (RequestId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(RequestId);
+      }
+      if (AvsCode.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(AvsCode);
+      }
+      if (CvCode.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(CvCode);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (RequestId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RequestId);
+      }
+      if (AvsCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AvsCode);
+      }
+      if (CvCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CvCode);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcVerifyFreedomPayCardResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      if (other.RequestId.Length != 0) {
+        RequestId = other.RequestId;
+      }
+      if (other.AvsCode.Length != 0) {
+        AvsCode = other.AvsCode;
+      }
+      if (other.CvCode.Length != 0) {
+        CvCode = other.CvCode;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            result_ = (global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            RequestId = input.ReadString();
+            break;
+          }
+          case 26: {
+            AvsCode = input.ReadString();
+            break;
+          }
+          case 34: {
+            CvCode = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Captures a prior FreedomPay HPX Authorization (see VerifyAndTokenizeExternallyCapturedCard),
+  /// converting the hold into an actual charge. amount defaults to the original authorized amount
+  /// if left unset (partial captures are not currently supported by this method).
+  /// </summary>
+  public sealed partial class CardProcessingSvcProcessFreedomPayCaptureRequest : pb::IMessage<CardProcessingSvcProcessFreedomPayCaptureRequest> {
+    private static readonly pb::MessageParser<CardProcessingSvcProcessFreedomPayCaptureRequest> _parser = new pb::MessageParser<CardProcessingSvcProcessFreedomPayCaptureRequest>(() => new CardProcessingSvcProcessFreedomPayCaptureRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcProcessFreedomPayCaptureRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPayCaptureRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPayCaptureRequest(CardProcessingSvcProcessFreedomPayCaptureRequest other) : this() {
+      Property = other.property_ != null ? other.Property.Clone() : null;
+      orderRequestId_ = other.orderRequestId_;
+      CaptureAmount = other.captureAmount_ != null ? other.CaptureAmount.Clone() : null;
+      merchantReferenceCode_ = other.merchantReferenceCode_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPayCaptureRequest Clone() {
+      return new CardProcessingSvcProcessFreedomPayCaptureRequest(this);
+    }
+
+    /// <summary>Field number for the "property" field.</summary>
+    public const int PropertyFieldNumber = 1;
+    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
+      get { return property_; }
+      set {
+        property_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "order_request_id" field.</summary>
+    public const int OrderRequestIdFieldNumber = 2;
+    private string orderRequestId_ = "";
+    /// <summary>
+    /// The HPX requestId returned by the original Authorization/Sale response.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string OrderRequestId {
+      get { return orderRequestId_; }
+      set {
+        orderRequestId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "capture_amount" field.</summary>
+    public const int CaptureAmountFieldNumber = 3;
+    private global::HOLMS.Types.Primitive.MonetaryAmount captureAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount CaptureAmount {
+      get { return captureAmount_; }
+      set {
+        captureAmount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "merchant_reference_code" field.</summary>
+    public const int MerchantReferenceCodeFieldNumber = 4;
+    private string merchantReferenceCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MerchantReferenceCode {
+      get { return merchantReferenceCode_; }
+      set {
+        merchantReferenceCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcProcessFreedomPayCaptureRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcProcessFreedomPayCaptureRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Property, other.Property)) return false;
+      if (OrderRequestId != other.OrderRequestId) return false;
+      if (!object.Equals(CaptureAmount, other.CaptureAmount)) return false;
+      if (MerchantReferenceCode != other.MerchantReferenceCode) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (property_ != null) hash ^= Property.GetHashCode();
+      if (OrderRequestId.Length != 0) hash ^= OrderRequestId.GetHashCode();
+      if (captureAmount_ != null) hash ^= CaptureAmount.GetHashCode();
+      if (MerchantReferenceCode.Length != 0) hash ^= MerchantReferenceCode.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (property_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Property);
+      }
+      if (OrderRequestId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(OrderRequestId);
+      }
+      if (captureAmount_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(CaptureAmount);
+      }
+      if (MerchantReferenceCode.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(MerchantReferenceCode);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (property_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
+      }
+      if (OrderRequestId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(OrderRequestId);
+      }
+      if (captureAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CaptureAmount);
+      }
+      if (MerchantReferenceCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MerchantReferenceCode);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcProcessFreedomPayCaptureRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.property_ != null) {
+        if (property_ == null) {
+          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+        }
+        Property.MergeFrom(other.Property);
+      }
+      if (other.OrderRequestId.Length != 0) {
+        OrderRequestId = other.OrderRequestId;
+      }
+      if (other.captureAmount_ != null) {
+        if (captureAmount_ == null) {
+          captureAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        CaptureAmount.MergeFrom(other.CaptureAmount);
+      }
+      if (other.MerchantReferenceCode.Length != 0) {
+        MerchantReferenceCode = other.MerchantReferenceCode;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (property_ == null) {
+              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+            }
+            input.ReadMessage(property_);
+            break;
+          }
+          case 18: {
+            OrderRequestId = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (captureAmount_ == null) {
+              captureAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(captureAmount_);
+            break;
+          }
+          case 34: {
+            MerchantReferenceCode = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CardProcessingSvcProcessFreedomPayCaptureResponse : pb::IMessage<CardProcessingSvcProcessFreedomPayCaptureResponse> {
+    private static readonly pb::MessageParser<CardProcessingSvcProcessFreedomPayCaptureResponse> _parser = new pb::MessageParser<CardProcessingSvcProcessFreedomPayCaptureResponse>(() => new CardProcessingSvcProcessFreedomPayCaptureResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcProcessFreedomPayCaptureResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPayCaptureResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPayCaptureResponse(CardProcessingSvcProcessFreedomPayCaptureResponse other) : this() {
+      result_ = other.result_;
+      requestId_ = other.requestId_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPayCaptureResponse Clone() {
+      return new CardProcessingSvcProcessFreedomPayCaptureResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "request_id" field.</summary>
+    public const int RequestIdFieldNumber = 2;
+    private string requestId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RequestId {
+      get { return requestId_; }
+      set {
+        requestId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcProcessFreedomPayCaptureResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcProcessFreedomPayCaptureResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      if (RequestId != other.RequestId) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Result != 0) hash ^= Result.GetHashCode();
+      if (RequestId.Length != 0) hash ^= RequestId.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
+      if (RequestId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(RequestId);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (RequestId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RequestId);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcProcessFreedomPayCaptureResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      if (other.RequestId.Length != 0) {
+        RequestId = other.RequestId;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            result_ = (global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            RequestId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Merchant-Initiated Transaction (MIT) against a previously stored/tokenized card -- e.g. a
+  /// no-show charge run by front-desk staff after a guest fails to arrive, with no cardholder
+  /// present and no fresh HPC session. LodgeIC-facing only; no booking-engine UI calls this today.
+  /// </summary>
+  public sealed partial class CardProcessingSvcProcessFreedomPayTokenMitRequest : pb::IMessage<CardProcessingSvcProcessFreedomPayTokenMitRequest> {
+    private static readonly pb::MessageParser<CardProcessingSvcProcessFreedomPayTokenMitRequest> _parser = new pb::MessageParser<CardProcessingSvcProcessFreedomPayTokenMitRequest>(() => new CardProcessingSvcProcessFreedomPayTokenMitRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcProcessFreedomPayTokenMitRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPayTokenMitRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPayTokenMitRequest(CardProcessingSvcProcessFreedomPayTokenMitRequest other) : this() {
+      Property = other.property_ != null ? other.Property.Clone() : null;
+      Card = other.card_ != null ? other.Card.Clone() : null;
+      ChargeAmount = other.chargeAmount_ != null ? other.ChargeAmount.Clone() : null;
+      merchantReferenceCode_ = other.merchantReferenceCode_;
+      reason_ = other.reason_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPayTokenMitRequest Clone() {
+      return new CardProcessingSvcProcessFreedomPayTokenMitRequest(this);
+    }
+
+    /// <summary>Field number for the "property" field.</summary>
+    public const int PropertyFieldNumber = 1;
+    private global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator property_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator Property {
+      get { return property_; }
+      set {
+        property_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "card" field.</summary>
+    public const int CardFieldNumber = 2;
+    private global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator card_;
+    /// <summary>
+    /// The previously tokenized/stored card (created via VerifyAndTokenizeExternallyCapturedCard
+    /// with request_token = true).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator Card {
+      get { return card_; }
+      set {
+        card_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "charge_amount" field.</summary>
+    public const int ChargeAmountFieldNumber = 3;
+    private global::HOLMS.Types.Primitive.MonetaryAmount chargeAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Primitive.MonetaryAmount ChargeAmount {
+      get { return chargeAmount_; }
+      set {
+        chargeAmount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "merchant_reference_code" field.</summary>
+    public const int MerchantReferenceCodeFieldNumber = 4;
+    private string merchantReferenceCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MerchantReferenceCode {
+      get { return merchantReferenceCode_; }
+      set {
+        merchantReferenceCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "reason" field.</summary>
+    public const int ReasonFieldNumber = 5;
+    private string reason_ = "";
+    /// <summary>
+    /// Free-text reason recorded on the transaction, e.g. "NoShow".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Reason {
+      get { return reason_; }
+      set {
+        reason_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcProcessFreedomPayTokenMitRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcProcessFreedomPayTokenMitRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Property, other.Property)) return false;
+      if (!object.Equals(Card, other.Card)) return false;
+      if (!object.Equals(ChargeAmount, other.ChargeAmount)) return false;
+      if (MerchantReferenceCode != other.MerchantReferenceCode) return false;
+      if (Reason != other.Reason) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (property_ != null) hash ^= Property.GetHashCode();
+      if (card_ != null) hash ^= Card.GetHashCode();
+      if (chargeAmount_ != null) hash ^= ChargeAmount.GetHashCode();
+      if (MerchantReferenceCode.Length != 0) hash ^= MerchantReferenceCode.GetHashCode();
+      if (Reason.Length != 0) hash ^= Reason.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (property_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Property);
+      }
+      if (card_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Card);
+      }
+      if (chargeAmount_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ChargeAmount);
+      }
+      if (MerchantReferenceCode.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(MerchantReferenceCode);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Reason);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (property_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Property);
+      }
+      if (card_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Card);
+      }
+      if (chargeAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ChargeAmount);
+      }
+      if (MerchantReferenceCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MerchantReferenceCode);
+      }
+      if (Reason.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Reason);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcProcessFreedomPayTokenMitRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.property_ != null) {
+        if (property_ == null) {
+          property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+        }
+        Property.MergeFrom(other.Property);
+      }
+      if (other.card_ != null) {
+        if (card_ == null) {
+          card_ = new global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator();
+        }
+        Card.MergeFrom(other.Card);
+      }
+      if (other.chargeAmount_ != null) {
+        if (chargeAmount_ == null) {
+          chargeAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+        }
+        ChargeAmount.MergeFrom(other.ChargeAmount);
+      }
+      if (other.MerchantReferenceCode.Length != 0) {
+        MerchantReferenceCode = other.MerchantReferenceCode;
+      }
+      if (other.Reason.Length != 0) {
+        Reason = other.Reason;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            if (property_ == null) {
+              property_ = new global::HOLMS.Types.TenancyConfig.Indicators.PropertyIndicator();
+            }
+            input.ReadMessage(property_);
+            break;
+          }
+          case 18: {
+            if (card_ == null) {
+              card_ = new global::HOLMS.Types.Money.Cards.CustomerPaymentCardIndicator();
+            }
+            input.ReadMessage(card_);
+            break;
+          }
+          case 26: {
+            if (chargeAmount_ == null) {
+              chargeAmount_ = new global::HOLMS.Types.Primitive.MonetaryAmount();
+            }
+            input.ReadMessage(chargeAmount_);
+            break;
+          }
+          case 34: {
+            MerchantReferenceCode = input.ReadString();
+            break;
+          }
+          case 42: {
+            Reason = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CardProcessingSvcProcessFreedomPayTokenMitResponse : pb::IMessage<CardProcessingSvcProcessFreedomPayTokenMitResponse> {
+    private static readonly pb::MessageParser<CardProcessingSvcProcessFreedomPayTokenMitResponse> _parser = new pb::MessageParser<CardProcessingSvcProcessFreedomPayTokenMitResponse>(() => new CardProcessingSvcProcessFreedomPayTokenMitResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CardProcessingSvcProcessFreedomPayTokenMitResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPayTokenMitResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPayTokenMitResponse(CardProcessingSvcProcessFreedomPayTokenMitResponse other) : this() {
+      result_ = other.result_;
+      requestId_ = other.requestId_;
+      authorizationCode_ = other.authorizationCode_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CardProcessingSvcProcessFreedomPayTokenMitResponse Clone() {
+      return new CardProcessingSvcProcessFreedomPayTokenMitResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult result_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "request_id" field.</summary>
+    public const int RequestIdFieldNumber = 2;
+    private string requestId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RequestId {
+      get { return requestId_; }
+      set {
+        requestId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "authorization_code" field.</summary>
+    public const int AuthorizationCodeFieldNumber = 3;
+    private string authorizationCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AuthorizationCode {
+      get { return authorizationCode_; }
+      set {
+        authorizationCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CardProcessingSvcProcessFreedomPayTokenMitResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CardProcessingSvcProcessFreedomPayTokenMitResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      if (RequestId != other.RequestId) return false;
+      if (AuthorizationCode != other.AuthorizationCode) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Result != 0) hash ^= Result.GetHashCode();
+      if (RequestId.Length != 0) hash ^= RequestId.GetHashCode();
+      if (AuthorizationCode.Length != 0) hash ^= AuthorizationCode.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
+      if (RequestId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(RequestId);
+      }
+      if (AuthorizationCode.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(AuthorizationCode);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (RequestId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RequestId);
+      }
+      if (AuthorizationCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AuthorizationCode);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CardProcessingSvcProcessFreedomPayTokenMitResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      if (other.RequestId.Length != 0) {
+        RequestId = other.RequestId;
+      }
+      if (other.AuthorizationCode.Length != 0) {
+        AuthorizationCode = other.AuthorizationCode;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            result_ = (global::HOLMS.Types.Money.RPC.CardProcessingSvcFreedomPaySaleResult) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            RequestId = input.ReadString();
+            break;
+          }
+          case 26: {
+            AuthorizationCode = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class MerchantBatchEnumResponse : pb::IMessage<MerchantBatchEnumResponse> {
     private static readonly pb::MessageParser<MerchantBatchEnumResponse> _parser = new pb::MessageParser<MerchantBatchEnumResponse>(() => new MerchantBatchEnumResponse());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -501,7 +4054,7 @@ namespace HOLMS.Types.Money.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[2]; }
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -610,7 +4163,7 @@ namespace HOLMS.Types.Money.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[3]; }
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -767,7 +4320,7 @@ namespace HOLMS.Types.Money.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[4]; }
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -952,7 +4505,7 @@ namespace HOLMS.Types.Money.RPC {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[5]; }
+      get { return global::HOLMS.Types.Money.RPC.CardProcessingSvcReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

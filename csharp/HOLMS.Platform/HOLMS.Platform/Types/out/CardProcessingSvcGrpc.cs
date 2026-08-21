@@ -15,6 +15,17 @@ namespace HOLMS.Types.Money.RPC {
 
     static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest> __Marshaller_CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> __Marshaller_CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureRequest> __Marshaller_CardProcessingSvcInitiateHostedCardCaptureRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureResponse> __Marshaller_CardProcessingSvcInitiateHostedCardCaptureResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest> __Marshaller_CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleRequest> __Marshaller_CardProcessingSvcProcessFreedomPaySaleRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleResponse> __Marshaller_CardProcessingSvcProcessFreedomPaySaleResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardRequest> __Marshaller_CardProcessingSvcVerifyFreedomPayCardRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardResponse> __Marshaller_CardProcessingSvcVerifyFreedomPayCardResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureRequest> __Marshaller_CardProcessingSvcProcessFreedomPayCaptureRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureResponse> __Marshaller_CardProcessingSvcProcessFreedomPayCaptureResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitRequest> __Marshaller_CardProcessingSvcProcessFreedomPayTokenMitRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitResponse> __Marshaller_CardProcessingSvcProcessFreedomPayTokenMitResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Money.Cards.CardMerchantIndicator> __Marshaller_CardMerchantIndicator = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.CardMerchantIndicator.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse> __Marshaller_GetOpenBatchStateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest> __Marshaller_CardProcessingSvcSearchHistoricalBatchesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::HOLMS.Types.Money.RPC.CardProcessingSvcSearchHistoricalBatchesRequest.Parser.ParseFrom);
@@ -31,6 +42,48 @@ namespace HOLMS.Types.Money.RPC {
         "VerifyAndTokenizeNotPresentCard",
         __Marshaller_CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest,
         __Marshaller_CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureResponse> __Method_InitiateHostedCardCapture = new grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "InitiateHostedCardCapture",
+        __Marshaller_CardProcessingSvcInitiateHostedCardCaptureRequest,
+        __Marshaller_CardProcessingSvcInitiateHostedCardCaptureResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> __Method_VerifyAndTokenizeExternallyCapturedCard = new grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "VerifyAndTokenizeExternallyCapturedCard",
+        __Marshaller_CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest,
+        __Marshaller_CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleResponse> __Method_ProcessFreedomPaySale = new grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ProcessFreedomPaySale",
+        __Marshaller_CardProcessingSvcProcessFreedomPaySaleRequest,
+        __Marshaller_CardProcessingSvcProcessFreedomPaySaleResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardResponse> __Method_VerifyFreedomPayCard = new grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "VerifyFreedomPayCard",
+        __Marshaller_CardProcessingSvcVerifyFreedomPayCardRequest,
+        __Marshaller_CardProcessingSvcVerifyFreedomPayCardResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureResponse> __Method_ProcessFreedomPayCapture = new grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ProcessFreedomPayCapture",
+        __Marshaller_CardProcessingSvcProcessFreedomPayCaptureRequest,
+        __Marshaller_CardProcessingSvcProcessFreedomPayCaptureResponse);
+
+    static readonly grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitResponse> __Method_ProcessFreedomPayTokenMit = new grpc::Method<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitRequest, global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ProcessFreedomPayTokenMit",
+        __Marshaller_CardProcessingSvcProcessFreedomPayTokenMitRequest,
+        __Marshaller_CardProcessingSvcProcessFreedomPayTokenMitResponse);
 
     static readonly grpc::Method<global::HOLMS.Types.Money.Cards.CardMerchantIndicator, global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse> __Method_GetCurrentBatchState = new grpc::Method<global::HOLMS.Types.Money.Cards.CardMerchantIndicator, global::HOLMS.Types.Money.Cards.Transactions.GetOpenBatchStateResponse>(
         grpc::MethodType.Unary,
@@ -91,6 +144,42 @@ namespace HOLMS.Types.Money.RPC {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeNotPresentCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Hosted-iframe (FreedomPay HPC) card capture
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureResponse> InitiateHostedCardCapture(global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeExternallyCapturedCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleResponse> ProcessFreedomPaySale(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardResponse> VerifyFreedomPayCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureResponse> ProcessFreedomPayCapture(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitResponse> ProcessFreedomPayTokenMit(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -216,6 +305,130 @@ namespace HOLMS.Types.Money.RPC {
       public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeNotPresentCardAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_VerifyAndTokenizeNotPresentCard, null, options, request);
+      }
+      /// <summary>
+      /// Hosted-iframe (FreedomPay HPC) card capture
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureResponse InitiateHostedCardCapture(global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return InitiateHostedCardCapture(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Hosted-iframe (FreedomPay HPC) card capture
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureResponse InitiateHostedCardCapture(global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_InitiateHostedCardCapture, null, options, request);
+      }
+      /// <summary>
+      /// Hosted-iframe (FreedomPay HPC) card capture
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureResponse> InitiateHostedCardCaptureAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return InitiateHostedCardCaptureAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Hosted-iframe (FreedomPay HPC) card capture
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureResponse> InitiateHostedCardCaptureAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcInitiateHostedCardCaptureRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_InitiateHostedCardCapture, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse VerifyAndTokenizeExternallyCapturedCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return VerifyAndTokenizeExternallyCapturedCard(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse VerifyAndTokenizeExternallyCapturedCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_VerifyAndTokenizeExternallyCapturedCard, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeExternallyCapturedCardAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return VerifyAndTokenizeExternallyCapturedCardAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse> VerifyAndTokenizeExternallyCapturedCardAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_VerifyAndTokenizeExternallyCapturedCard, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleResponse ProcessFreedomPaySale(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ProcessFreedomPaySale(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleResponse ProcessFreedomPaySale(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ProcessFreedomPaySale, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleResponse> ProcessFreedomPaySaleAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ProcessFreedomPaySaleAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleResponse> ProcessFreedomPaySaleAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPaySaleRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ProcessFreedomPaySale, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardResponse VerifyFreedomPayCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return VerifyFreedomPayCard(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardResponse VerifyFreedomPayCard(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_VerifyFreedomPayCard, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardResponse> VerifyFreedomPayCardAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return VerifyFreedomPayCardAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardResponse> VerifyFreedomPayCardAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcVerifyFreedomPayCardRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_VerifyFreedomPayCard, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureResponse ProcessFreedomPayCapture(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ProcessFreedomPayCapture(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureResponse ProcessFreedomPayCapture(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ProcessFreedomPayCapture, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureResponse> ProcessFreedomPayCaptureAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ProcessFreedomPayCaptureAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureResponse> ProcessFreedomPayCaptureAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayCaptureRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ProcessFreedomPayCapture, null, options, request);
+      }
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitResponse ProcessFreedomPayTokenMit(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ProcessFreedomPayTokenMit(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitResponse ProcessFreedomPayTokenMit(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ProcessFreedomPayTokenMit, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitResponse> ProcessFreedomPayTokenMitAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ProcessFreedomPayTokenMitAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitResponse> ProcessFreedomPayTokenMitAsync(global::HOLMS.Types.Money.RPC.CardProcessingSvcProcessFreedomPayTokenMitRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ProcessFreedomPayTokenMit, null, options, request);
       }
       /// <summary>
       /// Batches
@@ -414,6 +627,12 @@ namespace HOLMS.Types.Money.RPC {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_VerifyAndTokenizeNotPresentCard, serviceImpl.VerifyAndTokenizeNotPresentCard)
+          .AddMethod(__Method_InitiateHostedCardCapture, serviceImpl.InitiateHostedCardCapture)
+          .AddMethod(__Method_VerifyAndTokenizeExternallyCapturedCard, serviceImpl.VerifyAndTokenizeExternallyCapturedCard)
+          .AddMethod(__Method_ProcessFreedomPaySale, serviceImpl.ProcessFreedomPaySale)
+          .AddMethod(__Method_VerifyFreedomPayCard, serviceImpl.VerifyFreedomPayCard)
+          .AddMethod(__Method_ProcessFreedomPayCapture, serviceImpl.ProcessFreedomPayCapture)
+          .AddMethod(__Method_ProcessFreedomPayTokenMit, serviceImpl.ProcessFreedomPayTokenMit)
           .AddMethod(__Method_GetCurrentBatchState, serviceImpl.GetCurrentBatchState)
           .AddMethod(__Method_SearchHistoricalBatches, serviceImpl.SearchHistoricalBatches)
           .AddMethod(__Method_CloseProcessorBatch, serviceImpl.CloseProcessorBatch)

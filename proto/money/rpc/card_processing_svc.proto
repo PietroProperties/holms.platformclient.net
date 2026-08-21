@@ -15,6 +15,7 @@ import "money/cards/transactions/processor_transaction_result.proto";
 import "tenancy_config/indicators/property_indicator.proto";
 import "booking/indicators/reservation_indicator.proto";
 import "primitive/pb_interval.proto";
+import "primitive/monetary_amount.proto";
 
 message CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest {
 	holms.types.crm.guests.GuestIndicator guest = 1;
@@ -26,6 +27,183 @@ message CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest {
 message CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse {
 	holms.types.money.cards.transactions.ProcessorTransactionResult result = 1;
 	holms.types.money.cards.CustomerPaymentCardIndicator card = 2;
+}
+
+// Used by hosted-iframe processors (currently FreedomPay HPC) to stand up the browser-side
+// card-capture UI. Card data never reaches this app's clients (booking engine, LodgeIC) or
+// this server -- it's captured directly by the processor's iframe in the cardholder's browser.
+message CardProcessingSvcInitiateHostedCardCaptureRequest {
+	holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
+	// "Card" | "GPay" | "ApplePay" -- selects which FreedomPay HPC iframe (card entry vs wallet
+	// button) controls/init stands up. Empty/unrecognized falls back to "Card".
+	string payment_mode = 2;
+	// Reservation total, required by FreedomPay's controls/init payload for GPay/ApplePay (shown
+	// on the native wallet sheet) -- unused for Card mode.
+	double total_price = 3;
+}
+
+message CardProcessingSvcInitiateHostedCardCaptureResponse {
+	// True if the property's active CardMerchant uses a hosted-iframe processor and the fields
+	// below are populated. False (with the other fields empty) if the property uses a processor
+	// that collects raw card fields directly instead (e.g. Heartland) -- callers should fall back
+	// to their existing raw-field card entry UI in that case.
+	bool is_hosted_capture_active = 1;
+	string iframe_html = 2;
+	string session_key = 3;
+	// The processor's client-side JS include (e.g. FreedomPay's hpc_min.js) the caller must load
+	// on the checkout page for the iframe to function -- environment (UAT/Prod) is a server-side
+	// config concern, so this URL is already fully resolved.
+	string client_script_url = 4;
+}
+
+// Verifies/tokenizes a card that was captured by a hosted iframe (see
+// InitiateHostedCardCapture) rather than a raw PAN this app itself received. Returns the same
+// response shape as VerifyAndTokenizeNotPresentCard so downstream guarantee/authorization flows
+// are identical regardless of which processor captured the card.
+message CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest {
+	holms.types.crm.guests.GuestIndicator guest = 1;
+	holms.types.tenancy_config.indicators.PropertyIndicator property = 2;
+	string session_key = 3;
+	string payment_key = 4;
+	string cardholder_name = 5;
+	string zipcode = 6;
+	// Amount to place on hold for the guarantee (room + tax for the stay, mirroring what the
+	// existing Heartland verify/guarantee flow effectively secures).
+	.holms.types.primitive.MonetaryAmount charge_amount = 7;
+	.holms.types.primitive.MonetaryAmount tax_amount = 8;
+	// ISO 8601 dates (yyyy-MM-dd), for FreedomPay's hotelData.
+	string checkin_date = 9;
+	string checkout_date = 10;
+	// Captured client-side from the HPC iframe's PaymentKey response attributes (display data
+	// only -- the raw PAN backing this expiry never reaches this server).
+	int32 expiry_month = 11;
+	int32 four_digit_expiry_year = 12;
+	FreedomPayBillingAddress billing_address = 13;
+	// When true, asks FreedomPay to also mint a reusable Card-on-File token (in addition to the
+	// authorization hold) so a later Merchant-Initiated Transaction (see
+	// ProcessFreedomPayTokenMit, e.g. a no-show charge) can reuse this exact card without the
+	// cardholder re-entering it.
+	bool request_token = 14;
+	// Masked PAN captured client-side from the HPC iframe's PaymentKey response attributes
+	// (e.g. "411111XXXXXX1111") -- required by Freeway's payment request schema alongside
+	// PaymentKey, even though the real PAN is resolved server-side from PaymentKey itself.
+	string masked_card_number = 15;
+	// Which HPC payment mode the guest actually used to produce this PaymentKey: "Card",
+	// "GPay", or "ApplePay" (matches the paymentMode values InitiateHostedCardCapture already
+	// accepts). Purely descriptive/for-reporting -- persisted on the resulting RawPaymentCard,
+	// never used to branch tokenize/guarantee/authorization behavior, which stays identical
+	// regardless of mode. Optional; empty/unset is treated as unknown, not "Card".
+	string payment_mode = 16;
+}
+
+// Immediate one-step charge (authorization + capture) via FreedomPay HPX, in contrast to
+// VerifyAndTokenizeExternallyCapturedCard's authorization-only hold used for guarantees at
+// booking time. Used when funds must be captured right away (e.g. a deposit or full prepayment
+// charged at time of booking) rather than held pending a later, separate Capture call.
+message CardProcessingSvcProcessFreedomPaySaleRequest {
+	holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
+	string session_key = 2;
+	string payment_key = 3;
+	string cardholder_name = 4;
+	.holms.types.primitive.MonetaryAmount charge_amount = 5;
+	.holms.types.primitive.MonetaryAmount tax_amount = 6;
+	string checkin_date = 7;
+	string checkout_date = 8;
+	// Caller-supplied idempotency/reference id; a new guid is used if left empty.
+	string merchant_reference_code = 9;
+	FreedomPayBillingAddress billing_address = 10;
+	string masked_card_number = 11;
+	int32 expiry_month = 12;
+	int32 four_digit_expiry_year = 13;
+}
+
+enum CardProcessingSvcFreedomPaySaleResult {
+	CARD_PROCESSING_SVC_FREEDOM_PAY_SALE_SUCCESS = 0;
+	CARD_PROCESSING_SVC_FREEDOM_PAY_SALE_DECLINED = 1;
+	CARD_PROCESSING_SVC_FREEDOM_PAY_SALE_ERROR = 2;
+}
+
+message CardProcessingSvcProcessFreedomPaySaleResponse {
+	CardProcessingSvcFreedomPaySaleResult result = 1;
+	// The HPX requestId, to reuse as OriginalRequestId on a follow-on Void/Refund if needed.
+	string request_id = 2;
+	string authorization_code = 3;
+	string masked_pan = 4;
+	string brand_code = 5;
+	string avs_code = 6;
+	string cv_code = 7;
+}
+
+// Shared billing-address shape for AVS scoring on FreedomPay HPX calls. All fields optional --
+// omit for card-not-present flows where no billing address was collected.
+message FreedomPayBillingAddress {
+	string first_name = 1;
+	string last_name = 2;
+	string street1 = 3;
+	string city = 4;
+	string state = 5;
+	string postal_code = 6;
+	// Numeric 3-digit ISO 3166-1 country code (e.g. "840" for United States).
+	string country_code = 7;
+}
+
+// Zero-value auth verification (ZVAV) -- confirms a tokenized card is valid without placing any
+// real hold, mirroring Heartland's VerifyAndTokenizeCard verify-only behavior. Does not persist a
+// CustomerPaymentCard; callers that need a stored/reusable card should use
+// VerifyAndTokenizeExternallyCapturedCard instead.
+message CardProcessingSvcVerifyFreedomPayCardRequest {
+	holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
+	string session_key = 2;
+	string payment_key = 3;
+	string cardholder_name = 4;
+	FreedomPayBillingAddress billing_address = 5;
+	string merchant_reference_code = 6;
+	string masked_card_number = 7;
+	int32 expiry_month = 8;
+	int32 four_digit_expiry_year = 9;
+}
+
+message CardProcessingSvcVerifyFreedomPayCardResponse {
+	CardProcessingSvcFreedomPaySaleResult result = 1;
+	string request_id = 2;
+	string avs_code = 3;
+	string cv_code = 4;
+}
+
+// Captures a prior FreedomPay HPX Authorization (see VerifyAndTokenizeExternallyCapturedCard),
+// converting the hold into an actual charge. amount defaults to the original authorized amount
+// if left unset (partial captures are not currently supported by this method).
+message CardProcessingSvcProcessFreedomPayCaptureRequest {
+	holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
+	// The HPX requestId returned by the original Authorization/Sale response.
+	string order_request_id = 2;
+	.holms.types.primitive.MonetaryAmount capture_amount = 3;
+	string merchant_reference_code = 4;
+}
+
+message CardProcessingSvcProcessFreedomPayCaptureResponse {
+	CardProcessingSvcFreedomPaySaleResult result = 1;
+	string request_id = 2;
+}
+
+// Merchant-Initiated Transaction (MIT) against a previously stored/tokenized card -- e.g. a
+// no-show charge run by front-desk staff after a guest fails to arrive, with no cardholder
+// present and no fresh HPC session. LodgeIC-facing only; no booking-engine UI calls this today.
+message CardProcessingSvcProcessFreedomPayTokenMitRequest {
+	holms.types.tenancy_config.indicators.PropertyIndicator property = 1;
+	// The previously tokenized/stored card (created via VerifyAndTokenizeExternallyCapturedCard
+	// with request_token = true).
+	holms.types.money.cards.CustomerPaymentCardIndicator card = 2;
+	.holms.types.primitive.MonetaryAmount charge_amount = 3;
+	string merchant_reference_code = 4;
+	// Free-text reason recorded on the transaction, e.g. "NoShow".
+	string reason = 5;
+}
+
+message CardProcessingSvcProcessFreedomPayTokenMitResponse {
+	CardProcessingSvcFreedomPaySaleResult result = 1;
+	string request_id = 2;
+	string authorization_code = 3;
 }
 
 message MerchantBatchEnumResponse {
@@ -60,6 +238,20 @@ service CardProcessingSvc {
 	// TODO (DRA): Move this onto the reservation folio svc endpoint
 	rpc VerifyAndTokenizeNotPresentCard(CardProcessingSvcVerifyAndTokenizeNotPresentCardRequest)
 		returns (CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse);
+
+	// Hosted-iframe (FreedomPay HPC) card capture
+	rpc InitiateHostedCardCapture(CardProcessingSvcInitiateHostedCardCaptureRequest)
+		returns (CardProcessingSvcInitiateHostedCardCaptureResponse);
+	rpc VerifyAndTokenizeExternallyCapturedCard(CardProcessingSvcVerifyAndTokenizeExternallyCapturedCardRequest)
+		returns (CardProcessingSvcVerifyAndTokenizeNotPresentCardResponse);
+	rpc ProcessFreedomPaySale(CardProcessingSvcProcessFreedomPaySaleRequest)
+		returns (CardProcessingSvcProcessFreedomPaySaleResponse);
+	rpc VerifyFreedomPayCard(CardProcessingSvcVerifyFreedomPayCardRequest)
+		returns (CardProcessingSvcVerifyFreedomPayCardResponse);
+	rpc ProcessFreedomPayCapture(CardProcessingSvcProcessFreedomPayCaptureRequest)
+		returns (CardProcessingSvcProcessFreedomPayCaptureResponse);
+	rpc ProcessFreedomPayTokenMit(CardProcessingSvcProcessFreedomPayTokenMitRequest)
+		returns (CardProcessingSvcProcessFreedomPayTokenMitResponse);
 
 	// Batches
 	// Get info about batches

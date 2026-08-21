@@ -22,4 +22,10 @@ message CardMerchant {
 	string portico_developer_id = 12;
 	string portico_version_number = 13;
 	bool suppress_authorizations_in_folio = 14;
+	// FreedomPay-specific credentials (only populated when card_processor == FREEDOM_PAY).
+	// freedom_pay_environment selects UAT vs Production endpoints.
+	string freedom_pay_environment = 15;
+	string freedom_pay_es_key = 16;
+	string freedom_pay_store_id = 17;
+	string freedom_pay_terminal_id = 18;
 }

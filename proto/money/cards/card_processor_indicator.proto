@@ -8,4 +8,5 @@ enum CardProcessorIndicator {
     FAKE_PROCESSOR = 0;
 	HEARTLAND = 1;
 	HEARTLAND_TOKENIZATION_ONLY = 2;
+	FREEDOM_PAY = 3;
 }

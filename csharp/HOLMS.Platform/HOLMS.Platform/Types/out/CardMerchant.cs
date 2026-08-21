@@ -25,7 +25,7 @@ namespace HOLMS.Types.Money.Cards {
             "Ch9tb25leS9jYXJkcy9jYXJkX21lcmNoYW50LnByb3RvEhdob2xtcy50eXBl",
             "cy5tb25leS5jYXJkcxopbW9uZXkvY2FyZHMvY2FyZF9tZXJjaGFudF9pbmRp",
             "Y2F0b3IucHJvdG8aKm1vbmV5L2NhcmRzL2NhcmRfcHJvY2Vzc29yX2luZGlj",
-            "YXRvci5wcm90byK6AwoMQ2FyZE1lcmNoYW50EkEKCWVudGl0eV9pZBgBIAEo",
+            "YXRvci5wcm90byK2BAoMQ2FyZE1lcmNoYW50EkEKCWVudGl0eV9pZBgBIAEo",
             "CzIuLmhvbG1zLnR5cGVzLm1vbmV5LmNhcmRzLkNhcmRNZXJjaGFudEluZGlj",
             "YXRvchIMCgRuYW1lGAIgASgJEkcKDmNhcmRfcHJvY2Vzc29yGAMgASgOMi8u",
             "aG9sbXMudHlwZXMubW9uZXkuY2FyZHMuQ2FyZFByb2Nlc3NvckluZGljYXRv",
@@ -35,12 +35,14 @@ namespace HOLMS.Types.Money.Cards {
             "CiABKAkSHQoVZGVidWdfbG9nZ2luZ19lbmFibGVkGAsgASgIEhwKFHBvcnRp",
             "Y29fZGV2ZWxvcGVyX2lkGAwgASgJEh4KFnBvcnRpY29fdmVyc2lvbl9udW1i",
             "ZXIYDSABKAkSKAogc3VwcHJlc3NfYXV0aG9yaXphdGlvbnNfaW5fZm9saW8Y",
-            "DiABKAhCJ1oLbW9uZXkvY2FyZHOqAhdIT0xNUy5UeXBlcy5Nb25leS5DYXJk",
-            "c2IGcHJvdG8z"));
+            "DiABKAgSHwoXZnJlZWRvbV9wYXlfZW52aXJvbm1lbnQYDyABKAkSGgoSZnJl",
+            "ZWRvbV9wYXlfZXNfa2V5GBAgASgJEhwKFGZyZWVkb21fcGF5X3N0b3JlX2lk",
+            "GBEgASgJEh8KF2ZyZWVkb21fcGF5X3Rlcm1pbmFsX2lkGBIgASgJQidaC21v",
+            "bmV5L2NhcmRzqgIXSE9MTVMuVHlwZXMuTW9uZXkuQ2FyZHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.CardMerchantIndicatorReflection.Descriptor, global::HOLMS.Types.Money.Cards.CardProcessorIndicatorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.CardMerchant), global::HOLMS.Types.Money.Cards.CardMerchant.Parser, new[]{ "EntityId", "Name", "CardProcessor", "CardAgreement", "LicenseId", "SiteId", "DeviceId", "Username", "Password", "ServiceURI", "DebugLoggingEnabled", "PorticoDeveloperId", "PorticoVersionNumber", "SuppressAuthorizationsInFolio" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Money.Cards.CardMerchant), global::HOLMS.Types.Money.Cards.CardMerchant.Parser, new[]{ "EntityId", "Name", "CardProcessor", "CardAgreement", "LicenseId", "SiteId", "DeviceId", "Username", "Password", "ServiceURI", "DebugLoggingEnabled", "PorticoDeveloperId", "PorticoVersionNumber", "SuppressAuthorizationsInFolio", "FreedomPayEnvironment", "FreedomPayEsKey", "FreedomPayStoreId", "FreedomPayTerminalId" }, null, null, null)
           }));
     }
     #endregion
@@ -85,6 +87,10 @@ namespace HOLMS.Types.Money.Cards {
       porticoDeveloperId_ = other.porticoDeveloperId_;
       porticoVersionNumber_ = other.porticoVersionNumber_;
       suppressAuthorizationsInFolio_ = other.suppressAuthorizationsInFolio_;
+      freedomPayEnvironment_ = other.freedomPayEnvironment_;
+      freedomPayEsKey_ = other.freedomPayEsKey_;
+      freedomPayStoreId_ = other.freedomPayStoreId_;
+      freedomPayTerminalId_ = other.freedomPayTerminalId_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -246,6 +252,54 @@ namespace HOLMS.Types.Money.Cards {
       }
     }
 
+    /// <summary>Field number for the "freedom_pay_environment" field.</summary>
+    public const int FreedomPayEnvironmentFieldNumber = 15;
+    private string freedomPayEnvironment_ = "";
+    /// <summary>
+    /// FreedomPay-specific credentials (only populated when card_processor == FREEDOM_PAY).
+    /// freedom_pay_environment selects UAT vs Production endpoints.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string FreedomPayEnvironment {
+      get { return freedomPayEnvironment_; }
+      set {
+        freedomPayEnvironment_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "freedom_pay_es_key" field.</summary>
+    public const int FreedomPayEsKeyFieldNumber = 16;
+    private string freedomPayEsKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string FreedomPayEsKey {
+      get { return freedomPayEsKey_; }
+      set {
+        freedomPayEsKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "freedom_pay_store_id" field.</summary>
+    public const int FreedomPayStoreIdFieldNumber = 17;
+    private string freedomPayStoreId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string FreedomPayStoreId {
+      get { return freedomPayStoreId_; }
+      set {
+        freedomPayStoreId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "freedom_pay_terminal_id" field.</summary>
+    public const int FreedomPayTerminalIdFieldNumber = 18;
+    private string freedomPayTerminalId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string FreedomPayTerminalId {
+      get { return freedomPayTerminalId_; }
+      set {
+        freedomPayTerminalId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CardMerchant);
@@ -273,6 +327,10 @@ namespace HOLMS.Types.Money.Cards {
       if (PorticoDeveloperId != other.PorticoDeveloperId) return false;
       if (PorticoVersionNumber != other.PorticoVersionNumber) return false;
       if (SuppressAuthorizationsInFolio != other.SuppressAuthorizationsInFolio) return false;
+      if (FreedomPayEnvironment != other.FreedomPayEnvironment) return false;
+      if (FreedomPayEsKey != other.FreedomPayEsKey) return false;
+      if (FreedomPayStoreId != other.FreedomPayStoreId) return false;
+      if (FreedomPayTerminalId != other.FreedomPayTerminalId) return false;
       return true;
     }
 
@@ -293,6 +351,10 @@ namespace HOLMS.Types.Money.Cards {
       if (PorticoDeveloperId.Length != 0) hash ^= PorticoDeveloperId.GetHashCode();
       if (PorticoVersionNumber.Length != 0) hash ^= PorticoVersionNumber.GetHashCode();
       if (SuppressAuthorizationsInFolio != false) hash ^= SuppressAuthorizationsInFolio.GetHashCode();
+      if (FreedomPayEnvironment.Length != 0) hash ^= FreedomPayEnvironment.GetHashCode();
+      if (FreedomPayEsKey.Length != 0) hash ^= FreedomPayEsKey.GetHashCode();
+      if (FreedomPayStoreId.Length != 0) hash ^= FreedomPayStoreId.GetHashCode();
+      if (FreedomPayTerminalId.Length != 0) hash ^= FreedomPayTerminalId.GetHashCode();
       return hash;
     }
 
@@ -359,6 +421,22 @@ namespace HOLMS.Types.Money.Cards {
         output.WriteRawTag(112);
         output.WriteBool(SuppressAuthorizationsInFolio);
       }
+      if (FreedomPayEnvironment.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(FreedomPayEnvironment);
+      }
+      if (FreedomPayEsKey.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(FreedomPayEsKey);
+      }
+      if (FreedomPayStoreId.Length != 0) {
+        output.WriteRawTag(138, 1);
+        output.WriteString(FreedomPayStoreId);
+      }
+      if (FreedomPayTerminalId.Length != 0) {
+        output.WriteRawTag(146, 1);
+        output.WriteString(FreedomPayTerminalId);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -405,6 +483,18 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (SuppressAuthorizationsInFolio != false) {
         size += 1 + 1;
+      }
+      if (FreedomPayEnvironment.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FreedomPayEnvironment);
+      }
+      if (FreedomPayEsKey.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(FreedomPayEsKey);
+      }
+      if (FreedomPayStoreId.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(FreedomPayStoreId);
+      }
+      if (FreedomPayTerminalId.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(FreedomPayTerminalId);
       }
       return size;
     }
@@ -458,6 +548,18 @@ namespace HOLMS.Types.Money.Cards {
       }
       if (other.SuppressAuthorizationsInFolio != false) {
         SuppressAuthorizationsInFolio = other.SuppressAuthorizationsInFolio;
+      }
+      if (other.FreedomPayEnvironment.Length != 0) {
+        FreedomPayEnvironment = other.FreedomPayEnvironment;
+      }
+      if (other.FreedomPayEsKey.Length != 0) {
+        FreedomPayEsKey = other.FreedomPayEsKey;
+      }
+      if (other.FreedomPayStoreId.Length != 0) {
+        FreedomPayStoreId = other.FreedomPayStoreId;
+      }
+      if (other.FreedomPayTerminalId.Length != 0) {
+        FreedomPayTerminalId = other.FreedomPayTerminalId;
       }
     }
 
@@ -526,6 +628,22 @@ namespace HOLMS.Types.Money.Cards {
           }
           case 112: {
             SuppressAuthorizationsInFolio = input.ReadBool();
+            break;
+          }
+          case 122: {
+            FreedomPayEnvironment = input.ReadString();
+            break;
+          }
+          case 130: {
+            FreedomPayEsKey = input.ReadString();
+            break;
+          }
+          case 138: {
+            FreedomPayStoreId = input.ReadString();
+            break;
+          }
+          case 146: {
+            FreedomPayTerminalId = input.ReadString();
             break;
           }
         }
