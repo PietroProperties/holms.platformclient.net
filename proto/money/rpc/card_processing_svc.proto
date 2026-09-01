@@ -43,10 +43,16 @@ message CardProcessingSvcInitiateHostedCardCaptureRequest {
 }
 
 message CardProcessingSvcInitiateHostedCardCaptureResponse {
-	// True if the property's active CardMerchant uses a hosted-iframe processor and the fields
-	// below are populated. False (with the other fields empty) if the property uses a processor
-	// that collects raw card fields directly instead (e.g. Heartland) -- callers should fall back
-	// to their existing raw-field card entry UI in that case.
+	// True only once the hosted iframe actually loaded and the fields below are populated.
+	// False can mean either of two different things -- see is_freedom_pay_merchant to tell them
+	// apart:
+	//   - is_freedom_pay_merchant == false: this property uses a processor that collects raw card
+	//     fields directly instead (e.g. Heartland). Callers should show their raw-field card entry
+	//     UI, same as always.
+	//   - is_freedom_pay_merchant == true: this property IS on a hosted-iframe processor, but the
+	//     init call itself failed (network error, bad credentials, processor outage, ...). Callers
+	//     must NOT fall back to raw-field entry here -- a FreedomPay-configured merchant should
+	//     never receive a raw PAN. Show a retry/error state instead.
 	bool is_hosted_capture_active = 1;
 	string iframe_html = 2;
 	string session_key = 3;
@@ -54,6 +60,10 @@ message CardProcessingSvcInitiateHostedCardCaptureResponse {
 	// on the checkout page for the iframe to function -- environment (UAT/Prod) is a server-side
 	// config concern, so this URL is already fully resolved.
 	string client_script_url = 4;
+	// True whenever this property's CardMerchant.CardProcessor is a hosted-iframe processor (e.g.
+	// FreedomPay), regardless of whether is_hosted_capture_active ended up true or the init call
+	// failed. Distinguishes "not this processor" from "this processor, but errored" -- see above.
+	bool is_freedom_pay_merchant = 5;
 }
 
 // Verifies/tokenizes a card that was captured by a hosted iframe (see

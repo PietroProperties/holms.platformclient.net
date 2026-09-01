@@ -12,6 +12,10 @@ enum GetCurrentBatchStateResult {
 	CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_PROCESSOR_COMMUNICATION_ERROR = 1;
 	CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_BATCH_NOT_OPEN = 2;
 	CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_BATCH_OPEN = 3;
+	// Processor (e.g. FreedomPay, pending its Freeway integration) doesn't support batch
+	// management yet -- distinct from BATCH_NOT_OPEN so callers can show a "not available for
+	// this processor" message instead of implying there's simply nothing open right now.
+	CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_NOT_SUPPORTED_FOR_PROCESSOR = 4;
 }
 
 

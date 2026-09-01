@@ -35,7 +35,7 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             "YWxlQ2FwdHVyZRJQCg9wZW5kaW5nX3JlZnVuZHMYAyADKAsyNy5ob2xtcy50",
             "eXBlcy5tb25leS5jYXJkcy50cmFuc2FjdGlvbnMuUGF5bWVudENhcmRSZWZ1",
             "bmQSTAoNcGF5bWVudF9zYWxlcxgEIAMoCzI1LmhvbG1zLnR5cGVzLm1vbmV5",
-            "LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNhbGUqwgIKGkdldEN1",
+            "LmNhcmRzLnRyYW5zYWN0aW9ucy5QYXltZW50Q2FyZFNhbGUqlgMKGkdldEN1",
             "cnJlbnRCYXRjaFN0YXRlUmVzdWx0EkQKQENBUkRfUFJPQ0VTU0lOR19TVkNf",
             "R0VUX0NVUlJFTlRfQkFUQ0hfU1RBVEVfUkVTVUxUX1VOS05PV05fRVJST1IQ",
             "ABJUClBDQVJEX1BST0NFU1NJTkdfU1ZDX0dFVF9DVVJSRU5UX0JBVENIX1NU",
@@ -43,8 +43,9 @@ namespace HOLMS.Types.Money.Cards.Transactions {
             "QUNBUkRfUFJPQ0VTU0lOR19TVkNfR0VUX0NVUlJFTlRfQkFUQ0hfU1RBVEVf",
             "UkVTVUxUX0JBVENIX05PVF9PUEVOEAISQQo9Q0FSRF9QUk9DRVNTSU5HX1NW",
             "Q19HRVRfQ1VSUkVOVF9CQVRDSF9TVEFURV9SRVNVTFRfQkFUQ0hfT1BFThAD",
-            "QieqAiRIT0xNUy5UeXBlcy5Nb25leS5DYXJkcy5UcmFuc2FjdGlvbnNiBnBy",
-            "b3RvMw=="));
+            "ElIKTkNBUkRfUFJPQ0VTU0lOR19TVkNfR0VUX0NVUlJFTlRfQkFUQ0hfU1RB",
+            "VEVfUkVTVUxUX05PVF9TVVBQT1JURURfRk9SX1BST0NFU1NPUhAEQieqAiRI",
+            "T0xNUy5UeXBlcy5Nb25leS5DYXJkcy5UcmFuc2FjdGlvbnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleCaptureReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardRefundReflection.Descriptor, global::HOLMS.Types.Money.Cards.Transactions.PaymentCardSaleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HOLMS.Types.Money.Cards.Transactions.GetCurrentBatchStateResult), }, new pbr::GeneratedClrTypeInfo[] {
@@ -60,6 +61,12 @@ namespace HOLMS.Types.Money.Cards.Transactions {
     [pbr::OriginalName("CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_PROCESSOR_COMMUNICATION_ERROR")] CardProcessingSvcGetCurrentBatchStateResultProcessorCommunicationError = 1,
     [pbr::OriginalName("CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_BATCH_NOT_OPEN")] CardProcessingSvcGetCurrentBatchStateResultBatchNotOpen = 2,
     [pbr::OriginalName("CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_BATCH_OPEN")] CardProcessingSvcGetCurrentBatchStateResultBatchOpen = 3,
+    /// <summary>
+    /// Processor (e.g. FreedomPay, pending its Freeway integration) doesn't support batch
+    /// management yet -- distinct from BATCH_NOT_OPEN so callers can show a "not available for
+    /// this processor" message instead of implying there's simply nothing open right now.
+    /// </summary>
+    [pbr::OriginalName("CARD_PROCESSING_SVC_GET_CURRENT_BATCH_STATE_RESULT_NOT_SUPPORTED_FOR_PROCESSOR")] CardProcessingSvcGetCurrentBatchStateResultNotSupportedForProcessor = 4,
   }
 
   #endregion
