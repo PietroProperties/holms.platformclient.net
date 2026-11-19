@@ -27,7 +27,7 @@ namespace HOLMS.Types.Booking.Reservations {
             "dGlvbnMaK3N1cHBseS9yb29tX3R5cGVzL3Jvb21fdHlwZV9pbmRpY2F0b3Iu",
             "cHJvdG8aKnByaW1pdGl2ZS9wYl9pbmNsdXNpdmVfb3BzZGF0ZV9yYW5nZS5w",
             "cm90bxogY3JtL2d1ZXN0cy9ndWVzdF9pbmRpY2F0b3IucHJvdG8aI2Jvb2tp",
-            "bmcvY2hhbm5lbHMvY2hhbm5lbF9pbmZvLnByb3RvIvECCh1Cb29rR2VuZXNp",
+            "bmcvY2hhbm5lbHMvY2hhbm5lbF9pbmZvLnByb3RvIscDCh1Cb29rR2VuZXNp",
             "c1Jlc2VydmF0aW9uUmVxdWVzdBJDCglyb29tX3R5cGUYASABKAsyMC5ob2xt",
             "cy50eXBlcy5zdXBwbHkucm9vbV90eXBlcy5Sb29tVHlwZUluZGljYXRvchJC",
             "CgpkYXRlX3JhbmdlGAIgASgLMi4uaG9sbXMudHlwZXMucHJpbWl0aXZlLlBi",
@@ -35,13 +35,15 @@ namespace HOLMS.Types.Booking.Reservations {
             "AyABKAsyKS5ob2xtcy50eXBlcy5ib29raW5nLmNoYW5uZWxzLkNoYW5uZWxJ",
             "bmZvEjUKBWd1ZXN0GAQgASgLMiYuaG9sbXMudHlwZXMuY3JtLmd1ZXN0cy5H",
             "dWVzdEluZGljYXRvchIVCg1udW1iZXJfYWR1bHRzGAUgASgFEhcKD251bWJl",
-            "cl9jaGlsZHJlbhgGIAEoBRIYChByZXNlcnZhdGlvbl90YWdzGAcgAygJQjla",
-            "FGJvb2tpbmcvcmVzZXJ2YXRpb25zqgIgSE9MTVMuVHlwZXMuQm9va2luZy5S",
-            "ZXNlcnZhdGlvbnNiBnByb3RvMw=="));
+            "cl9jaGlsZHJlbhgGIAEoBRIYChByZXNlcnZhdGlvbl90YWdzGAcgAygJEisK",
+            "I3N5bmNocm9uaXplX2dyb3VwX2hvbGRfd2l0aF9ib29raW5nGAggASgIEicK",
+            "H3JlcXVpcmVzX2xhcmdlcl9ob2xkX2FkanVzdG1lbnQYCSABKAhCOVoUYm9v",
+            "a2luZy9yZXNlcnZhdGlvbnOqAiBIT0xNUy5UeXBlcy5Cb29raW5nLlJlc2Vy",
+            "dmF0aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::HOLMS.Types.Supply.RoomTypes.RoomTypeIndicatorReflection.Descriptor, global::HOLMS.Types.Primitive.PbInclusiveOpsdateRangeReflection.Descriptor, global::HOLMS.Types.CRM.Guests.GuestIndicatorReflection.Descriptor, global::HOLMS.Types.Booking.Channels.ChannelInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest), global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest.Parser, new[]{ "RoomType", "DateRange", "SourceChannelInfo", "Guest", "NumberAdults", "NumberChildren", "ReservationTags" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest), global::HOLMS.Types.Booking.Reservations.BookGenesisReservationRequest.Parser, new[]{ "RoomType", "DateRange", "SourceChannelInfo", "Guest", "NumberAdults", "NumberChildren", "ReservationTags", "SynchronizeGroupHoldWithBooking", "RequiresLargerHoldAdjustment" }, null, null, null)
           }));
     }
     #endregion
@@ -79,6 +81,8 @@ namespace HOLMS.Types.Booking.Reservations {
       numberAdults_ = other.numberAdults_;
       numberChildren_ = other.numberChildren_;
       reservationTags_ = other.reservationTags_.Clone();
+      synchronizeGroupHoldWithBooking_ = other.synchronizeGroupHoldWithBooking_;
+      requiresLargerHoldAdjustment_ = other.requiresLargerHoldAdjustment_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -162,6 +166,28 @@ namespace HOLMS.Types.Booking.Reservations {
       get { return reservationTags_; }
     }
 
+    /// <summary>Field number for the "synchronize_group_hold_with_booking" field.</summary>
+    public const int SynchronizeGroupHoldWithBookingFieldNumber = 8;
+    private bool synchronizeGroupHoldWithBooking_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SynchronizeGroupHoldWithBooking {
+      get { return synchronizeGroupHoldWithBooking_; }
+      set {
+        synchronizeGroupHoldWithBooking_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "requires_larger_hold_adjustment" field.</summary>
+    public const int RequiresLargerHoldAdjustmentFieldNumber = 9;
+    private bool requiresLargerHoldAdjustment_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool RequiresLargerHoldAdjustment {
+      get { return requiresLargerHoldAdjustment_; }
+      set {
+        requiresLargerHoldAdjustment_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as BookGenesisReservationRequest);
@@ -182,6 +208,8 @@ namespace HOLMS.Types.Booking.Reservations {
       if (NumberAdults != other.NumberAdults) return false;
       if (NumberChildren != other.NumberChildren) return false;
       if(!reservationTags_.Equals(other.reservationTags_)) return false;
+      if (SynchronizeGroupHoldWithBooking != other.SynchronizeGroupHoldWithBooking) return false;
+      if (RequiresLargerHoldAdjustment != other.RequiresLargerHoldAdjustment) return false;
       return true;
     }
 
@@ -195,6 +223,8 @@ namespace HOLMS.Types.Booking.Reservations {
       if (NumberAdults != 0) hash ^= NumberAdults.GetHashCode();
       if (NumberChildren != 0) hash ^= NumberChildren.GetHashCode();
       hash ^= reservationTags_.GetHashCode();
+      if (SynchronizeGroupHoldWithBooking != false) hash ^= SynchronizeGroupHoldWithBooking.GetHashCode();
+      if (RequiresLargerHoldAdjustment != false) hash ^= RequiresLargerHoldAdjustment.GetHashCode();
       return hash;
     }
 
@@ -230,6 +260,14 @@ namespace HOLMS.Types.Booking.Reservations {
         output.WriteInt32(NumberChildren);
       }
       reservationTags_.WriteTo(output, _repeated_reservationTags_codec);
+      if (SynchronizeGroupHoldWithBooking != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(SynchronizeGroupHoldWithBooking);
+      }
+      if (RequiresLargerHoldAdjustment != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(RequiresLargerHoldAdjustment);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -254,6 +292,12 @@ namespace HOLMS.Types.Booking.Reservations {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(NumberChildren);
       }
       size += reservationTags_.CalculateSize(_repeated_reservationTags_codec);
+      if (SynchronizeGroupHoldWithBooking != false) {
+        size += 1 + 1;
+      }
+      if (RequiresLargerHoldAdjustment != false) {
+        size += 1 + 1;
+      }
       return size;
     }
 
@@ -293,6 +337,12 @@ namespace HOLMS.Types.Booking.Reservations {
         NumberChildren = other.NumberChildren;
       }
       reservationTags_.Add(other.reservationTags_);
+      if (other.SynchronizeGroupHoldWithBooking != false) {
+        SynchronizeGroupHoldWithBooking = other.SynchronizeGroupHoldWithBooking;
+      }
+      if (other.RequiresLargerHoldAdjustment != false) {
+        RequiresLargerHoldAdjustment = other.RequiresLargerHoldAdjustment;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -341,6 +391,14 @@ namespace HOLMS.Types.Booking.Reservations {
           }
           case 58: {
             reservationTags_.AddEntriesFrom(input, _repeated_reservationTags_codec);
+            break;
+          }
+          case 64: {
+            SynchronizeGroupHoldWithBooking = input.ReadBool();
+            break;
+          }
+          case 72: {
+            RequiresLargerHoldAdjustment = input.ReadBool();
             break;
           }
         }

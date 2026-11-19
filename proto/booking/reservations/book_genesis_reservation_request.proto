@@ -17,5 +17,7 @@ message BookGenesisReservationRequest {
 	int32 number_adults = 5;
 	int32 number_children = 6;
 	repeated string reservation_tags = 7;
+	bool synchronize_group_hold_with_booking = 8;
+	bool requires_larger_hold_adjustment = 9;
 }
 
